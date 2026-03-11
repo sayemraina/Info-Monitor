@@ -1,0 +1,149 @@
+{
+  "slice_a": {
+    "id": "x_platform",
+    "type": "platform",
+    "label": "X Platform",
+    "active_volume": 723,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.45,
+    "is_influencer_framing": false
+  },
+  "slice_b": {
+    "id": "reddit_platform",
+    "type": "platform",
+    "label": "Reddit Platform",
+    "active_volume": 4232,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.33,
+    "is_influencer_framing": false
+  },
+  "divergence": {
+    "jsd": 0.1164,
+    "jsd_sqrt": 0.3412,
+    "trend": [
+      0.2846,
+      0.4079,
+      0.3142,
+      0.3483,
+      0.334,
+      0.3625,
+      0.3224,
+      0.3083
+    ],
+    "typology": {
+      "information_asymmetry": 0.51,
+      "interpretive": 0.44,
+      "paradigmatic": 0.05,
+      "dominant_mode": "Information Asymmetry",
+      "paradigmatic_caveat": false
+    }
+  },
+  "per_cluster": [
+    {
+      "cluster_id": "clu_706a04c37c10",
+      "label": "The humanitarian crisis in Gaza constitutes a violation of international law",
+      "salience_a": 0.7309,
+      "salience_b": 0.4166,
+      "arousal_a": 0.24,
+      "arousal_b": 0.68,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ec8a04ec615f",
+      "label": "Israel has the right to defend itself against terrorist attacks on its civilians",
+      "salience_a": 0.5918,
+      "salience_b": 0.1831,
+      "arousal_a": 0.29,
+      "arousal_b": 0.32,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_18677c7614d1",
+      "label": "Both sides have committed atrocities and moral absolutism prevents productive di",
+      "salience_a": 0.1191,
+      "salience_b": 0.2796,
+      "arousal_a": 0.13,
+      "arousal_b": 0.7,
+      "mutation_a": "stable",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_9311bd496b39",
+      "label": "A two-state solution remains the only viable path to lasting peace",
+      "salience_a": 0.167,
+      "salience_b": 0.5325,
+      "arousal_a": 0.85,
+      "arousal_b": 0.13,
+      "mutation_a": "radicalizing",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_0a3fc7ed0ccc",
+      "label": "Media coverage of the conflict is systematically biased against Israel",
+      "salience_a": 0.0691,
+      "salience_b": 0.7628,
+      "arousal_a": 0.29,
+      "arousal_b": 0.85,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_642bd1b7919d",
+      "label": "Western governments are complicit in the crisis through continued arms sales and",
+      "salience_a": 0.9197,
+      "salience_b": 0.7194,
+      "arousal_a": 0.52,
+      "arousal_b": 0.18,
+      "mutation_a": "stable",
+      "mutation_b": "mainstreaming"
+    }
+  ],
+  "arousal_comparison": {
+    "slice_a_avg": 0.68,
+    "slice_b_avg": 0.39
+  },
+  "exposure_comparison": {
+    "slice_a": {
+      "value": 0.7764,
+      "confidence_interval": [
+        0.7264,
+        0.8264
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [
+        0.2846,
+        0.4079,
+        0.3142,
+        0.3483,
+        0.334,
+        0.3625,
+        0.3224,
+        0.3083
+      ],
+      "source_distribution": "production"
+    },
+    "slice_b": {
+      "value": 0.6838,
+      "confidence_interval": [
+        0.6338,
+        0.7338
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [
+        0.2846,
+        0.4079,
+        0.3142,
+        0.3483,
+        0.334,
+        0.3625,
+        0.3224,
+        0.3083
+      ],
+      "source_distribution": "production"
+    }
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "slice_a": {
+    "id": "x_platform",
+    "type": "platform",
+    "label": "X Platform",
+    "active_volume": 3076,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.64,
+    "is_influencer_framing": false
+  },
+  "slice_b": {
+    "id": "reddit_platform",
+    "type": "platform",
+    "label": "Reddit Platform",
+    "active_volume": 4125,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.48,
+    "is_influencer_framing": false
+  },
+  "divergence": {
+    "jsd": 0.0391,
+    "jsd_sqrt": 0.1978,
+    "trend": [
+      0.2262,
+      0.1648,
+      0.2473,
+      0.1269,
+      0.1764,
+      0.229,
+      0.2041,
+      0.2232
+    ],
+    "typology": {
+      "information_asymmetry": 0.55,
+      "interpretive": 0.2,
+      "paradigmatic": 0.25,
+      "dominant_mode": "Information Asymmetry",
+      "paradigmatic_caveat": false
+    }
+  },
+  "per_cluster": [
+    {
+      "cluster_id": "clu_258e39bac07c",
+      "label": "Open source AI models enable dangerous capabilities to be freely distributed wit",
+      "salience_a": 0.1605,
+      "salience_b": 0.8043,
+      "arousal_a": 0.68,
+      "arousal_b": 0.32,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_8efd412f0c83",
+      "label": "AI regulation should be modeled after pharmaceutical oversight with staged appro",
+      "salience_a": 0.5843,
+      "salience_b": 0.7307,
+      "arousal_a": 0.74,
+      "arousal_b": 0.85,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_46f6e3549fb0",
+      "label": "Open source AI development is essential to prevent concentration of AI power in ",
+      "salience_a": 0.65,
+      "salience_b": 0.9051,
+      "arousal_a": 0.89,
+      "arousal_b": 0.51,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_31c8d4f3591b",
+      "label": "AI regulation should target specific harms rather than impose blanket restrictio",
+      "salience_a": 0.1472,
+      "salience_b": 0.2756,
+      "arousal_a": 0.5,
+      "arousal_b": 0.6,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_06af3b13841f",
+      "label": "AI systems require government regulation to prevent harm to society",
+      "salience_a": 0.1396,
+      "salience_b": 0.0976,
+      "arousal_a": 0.15,
+      "arousal_b": 0.64,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_eefef5641b57",
+      "label": "AI regulation will stifle innovation and put domestic companies at a competitive",
+      "salience_a": 0.5941,
+      "salience_b": 0.3443,
+      "arousal_a": 0.34,
+      "arousal_b": 0.6,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_0ae367db6f8a",
+      "label": "AI will eliminate millions of jobs and governments must prepare workforce transi",
+      "salience_a": 0.7264,
+      "salience_b": 0.7408,
+      "arousal_a": 0.73,
+      "arousal_b": 0.26,
+      "mutation_a": "stable",
+      "mutation_b": "radicalizing"
+    }
+  ],
+  "arousal_comparison": {
+    "slice_a_avg": 0.31,
+    "slice_b_avg": 0.52
+  },
+  "exposure_comparison": {
+    "slice_a": {
+      "value": 0.7302,
+      "confidence_interval": [
+        0.6802,
+        0.7802
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [
+        0.2262,
+        0.1648,
+        0.2473,
+        0.1269,
+        0.1764,
+        0.229,
+        0.2041,
+        0.2232
+      ],
+      "source_distribution": "production"
+    },
+    "slice_b": {
+      "value": 0.4515,
+      "confidence_interval": [
+        0.4015,
+        0.5015
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [
+        0.2262,
+        0.1648,
+        0.2473,
+        0.1269,
+        0.1764,
+        0.229,
+        0.2041,
+        0.2232
+      ],
+      "source_distribution": "production"
+    }
+  }
+}

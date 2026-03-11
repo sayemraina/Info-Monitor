@@ -1,0 +1,169 @@
+{
+  "slice_a": {
+    "id": "x_platform",
+    "type": "platform",
+    "label": "X Platform",
+    "active_volume": 4365,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.57,
+    "is_influencer_framing": false
+  },
+  "slice_b": {
+    "id": "reddit_platform",
+    "type": "platform",
+    "label": "Reddit Platform",
+    "active_volume": 3533,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.31,
+    "is_influencer_framing": false
+  },
+  "divergence": {
+    "jsd": 0.0939,
+    "jsd_sqrt": 0.3065,
+    "trend": [
+      0.3143,
+      0.2257,
+      0.2307,
+      0.267,
+      0.278,
+      0.3315,
+      0.2976,
+      0.3065
+    ],
+    "typology": {
+      "information_asymmetry": 0.61,
+      "interpretive": 0.16,
+      "paradigmatic": 0.23,
+      "dominant_mode": "Information Asymmetry",
+      "paradigmatic_caveat": false
+    }
+  },
+  "per_cluster": [
+    {
+      "cluster_id": "clu_0404a3444715",
+      "label": "Current immigration levels are part of a deliberate agenda to change national de",
+      "salience_a": 0.9407,
+      "salience_b": 0.3878,
+      "arousal_a": 0.53,
+      "arousal_b": 0.4,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_53ab4de687e2",
+      "label": "Immigration reform should focus on skills-based selection to match labor market ",
+      "salience_a": 0.4062,
+      "salience_b": 0.2402,
+      "arousal_a": 0.19,
+      "arousal_b": 0.33,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_3769f37f637a",
+      "label": "Border security is a fundamental sovereign right and must be enforced strictly",
+      "salience_a": 0.931,
+      "salience_b": 0.5451,
+      "arousal_a": 0.38,
+      "arousal_b": 0.27,
+      "mutation_a": "stable",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_98e39fbb3ae3",
+      "label": "A path to citizenship for undocumented immigrants is both morally right and econ",
+      "salience_a": 0.3375,
+      "salience_b": 0.3769,
+      "arousal_a": 0.18,
+      "arousal_b": 0.81,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_761560f05672",
+      "label": "Immigrants commit crimes at lower rates than native-born citizens according to r",
+      "salience_a": 0.336,
+      "salience_b": 0.5321,
+      "arousal_a": 0.41,
+      "arousal_b": 0.79,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_60d4b2224391",
+      "label": "Immigration strengthens the economy through labor force growth and entrepreneurs",
+      "salience_a": 0.3077,
+      "salience_b": 0.8821,
+      "arousal_a": 0.23,
+      "arousal_b": 0.8,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_4daf1453ee65",
+      "label": "Unchecked immigration undermines wages for native workers and strains public ser",
+      "salience_a": 0.053,
+      "salience_b": 0.7969,
+      "arousal_a": 0.71,
+      "arousal_b": 0.62,
+      "mutation_a": "stable",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_38e079a0a605",
+      "label": "Immigration policy should prioritize humanitarian obligations and asylum rights",
+      "salience_a": 0.395,
+      "salience_b": 0.6378,
+      "arousal_a": 0.88,
+      "arousal_b": 0.43,
+      "mutation_a": "stable",
+      "mutation_b": "mainstreaming"
+    }
+  ],
+  "arousal_comparison": {
+    "slice_a_avg": 0.54,
+    "slice_b_avg": 0.62
+  },
+  "exposure_comparison": {
+    "slice_a": {
+      "value": 0.4947,
+      "confidence_interval": [
+        0.4447,
+        0.5447
+      ],
+      "baseline": "global",
+      "time_window": "7d",
+      "sparkline": [
+        0.3143,
+        0.2257,
+        0.2307,
+        0.267,
+        0.278,
+        0.3315,
+        0.2976,
+        0.3065
+      ],
+      "source_distribution": "production"
+    },
+    "slice_b": {
+      "value": 0.5557,
+      "confidence_interval": [
+        0.5057,
+        0.6057
+      ],
+      "baseline": "global",
+      "time_window": "7d",
+      "sparkline": [
+        0.3143,
+        0.2257,
+        0.2307,
+        0.267,
+        0.278,
+        0.3315,
+        0.2976,
+        0.3065
+      ],
+      "source_distribution": "production"
+    }
+  }
+}

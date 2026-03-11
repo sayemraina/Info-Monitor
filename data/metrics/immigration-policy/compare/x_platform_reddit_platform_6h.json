@@ -1,0 +1,169 @@
+{
+  "slice_a": {
+    "id": "x_platform",
+    "type": "platform",
+    "label": "X Platform",
+    "active_volume": 3523,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.44,
+    "is_influencer_framing": false
+  },
+  "slice_b": {
+    "id": "reddit_platform",
+    "type": "platform",
+    "label": "Reddit Platform",
+    "active_volume": 4607,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.63,
+    "is_influencer_framing": false
+  },
+  "divergence": {
+    "jsd": 0.0444,
+    "jsd_sqrt": 0.2108,
+    "trend": [
+      0.1937,
+      0.2017,
+      0.2179,
+      0.1616,
+      0.2144,
+      0.1926,
+      0.1998,
+      0.171
+    ],
+    "typology": {
+      "information_asymmetry": 0.67,
+      "interpretive": 0.27,
+      "paradigmatic": 0.06,
+      "dominant_mode": "Information Asymmetry",
+      "paradigmatic_caveat": false
+    }
+  },
+  "per_cluster": [
+    {
+      "cluster_id": "clu_0404a3444715",
+      "label": "Current immigration levels are part of a deliberate agenda to change national de",
+      "salience_a": 0.9187,
+      "salience_b": 0.8986,
+      "arousal_a": 0.26,
+      "arousal_b": 0.88,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_53ab4de687e2",
+      "label": "Immigration reform should focus on skills-based selection to match labor market ",
+      "salience_a": 0.6471,
+      "salience_b": 0.7597,
+      "arousal_a": 0.14,
+      "arousal_b": 0.17,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_3769f37f637a",
+      "label": "Border security is a fundamental sovereign right and must be enforced strictly",
+      "salience_a": 0.4628,
+      "salience_b": 0.1988,
+      "arousal_a": 0.1,
+      "arousal_b": 0.22,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_98e39fbb3ae3",
+      "label": "A path to citizenship for undocumented immigrants is both morally right and econ",
+      "salience_a": 0.3268,
+      "salience_b": 0.2161,
+      "arousal_a": 0.79,
+      "arousal_b": 0.45,
+      "mutation_a": "stable",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_761560f05672",
+      "label": "Immigrants commit crimes at lower rates than native-born citizens according to r",
+      "salience_a": 0.1887,
+      "salience_b": 0.5498,
+      "arousal_a": 0.72,
+      "arousal_b": 0.1,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_60d4b2224391",
+      "label": "Immigration strengthens the economy through labor force growth and entrepreneurs",
+      "salience_a": 0.1399,
+      "salience_b": 0.5448,
+      "arousal_a": 0.42,
+      "arousal_b": 0.27,
+      "mutation_a": "radicalizing",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_4daf1453ee65",
+      "label": "Unchecked immigration undermines wages for native workers and strains public ser",
+      "salience_a": 0.3887,
+      "salience_b": 0.4671,
+      "arousal_a": 0.29,
+      "arousal_b": 0.83,
+      "mutation_a": "radicalizing",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_38e079a0a605",
+      "label": "Immigration policy should prioritize humanitarian obligations and asylum rights",
+      "salience_a": 0.3365,
+      "salience_b": 0.8917,
+      "arousal_a": 0.42,
+      "arousal_b": 0.36,
+      "mutation_a": "radicalizing",
+      "mutation_b": "stable"
+    }
+  ],
+  "arousal_comparison": {
+    "slice_a_avg": 0.54,
+    "slice_b_avg": 0.6
+  },
+  "exposure_comparison": {
+    "slice_a": {
+      "value": 0.7573,
+      "confidence_interval": [
+        0.7073,
+        0.8073
+      ],
+      "baseline": "global",
+      "time_window": "6h",
+      "sparkline": [
+        0.1937,
+        0.2017,
+        0.2179,
+        0.1616,
+        0.2144,
+        0.1926,
+        0.1998,
+        0.171
+      ],
+      "source_distribution": "production"
+    },
+    "slice_b": {
+      "value": 0.6228,
+      "confidence_interval": [
+        0.5728,
+        0.6728
+      ],
+      "baseline": "global",
+      "time_window": "6h",
+      "sparkline": [
+        0.1937,
+        0.2017,
+        0.2179,
+        0.1616,
+        0.2144,
+        0.1926,
+        0.1998,
+        0.171
+      ],
+      "source_distribution": "production"
+    }
+  }
+}

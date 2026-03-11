@@ -1,0 +1,159 @@
+{
+  "slice_a": {
+    "id": "x_platform",
+    "type": "platform",
+    "label": "X Platform",
+    "active_volume": 4222,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.31,
+    "is_influencer_framing": false
+  },
+  "slice_b": {
+    "id": "youtube_influencer",
+    "type": "platform",
+    "label": "Influencer Framing (YouTube)",
+    "active_volume": 2913,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.33,
+    "is_influencer_framing": true
+  },
+  "divergence": {
+    "jsd": 0.0662,
+    "jsd_sqrt": 0.2573,
+    "trend": [
+      0.2743,
+      0.2715,
+      0.2736,
+      0.2938,
+      0.235,
+      0.2664,
+      0.2816,
+      0.2776
+    ],
+    "typology": {
+      "information_asymmetry": 0.43,
+      "interpretive": 0.23,
+      "paradigmatic": 0.34,
+      "dominant_mode": "Information Asymmetry",
+      "paradigmatic_caveat": true
+    }
+  },
+  "per_cluster": [
+    {
+      "cluster_id": "clu_84deb5127c57",
+      "label": "Climate justice requires wealthy nations to fund adaptation in developing countr",
+      "salience_a": 0.1116,
+      "salience_b": 0.2331,
+      "arousal_a": 0.71,
+      "arousal_b": 0.32,
+      "mutation_a": "radicalizing",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_dbf4d59a7f9b",
+      "label": "Climate alarmism exaggerates risks and the proposed policies would devastate the",
+      "salience_a": 0.4518,
+      "salience_b": 0.3876,
+      "arousal_a": 0.56,
+      "arousal_b": 0.58,
+      "mutation_a": "radicalizing",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_0b4654815225",
+      "label": "Individual carbon footprint reduction is meaningless compared to corporate and i",
+      "salience_a": 0.8515,
+      "salience_b": 0.296,
+      "arousal_a": 0.42,
+      "arousal_b": 0.45,
+      "mutation_a": "stable",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_436b5b1bb46a",
+      "label": "Nuclear energy should be central to climate policy as the only scalable clean ba",
+      "salience_a": 0.1359,
+      "salience_b": 0.5455,
+      "arousal_a": 0.31,
+      "arousal_b": 0.62,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_fcb23d82f44e",
+      "label": "Carbon capture technology is a fossil fuel industry distraction from real emissi",
+      "salience_a": 0.6857,
+      "salience_b": 0.5352,
+      "arousal_a": 0.17,
+      "arousal_b": 0.51,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_6bc5595205a3",
+      "label": "Climate change is a natural cyclical phenomenon and human contribution is overst",
+      "salience_a": 0.2502,
+      "salience_b": 0.4521,
+      "arousal_a": 0.84,
+      "arousal_b": 0.33,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_44290d062458",
+      "label": "Rapid transition to renewable energy is essential to avoid catastrophic climate ",
+      "salience_a": 0.9149,
+      "salience_b": 0.402,
+      "arousal_a": 0.13,
+      "arousal_b": 0.38,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "radicalizing"
+    }
+  ],
+  "arousal_comparison": {
+    "slice_a_avg": 0.55,
+    "slice_b_avg": 0.7
+  },
+  "exposure_comparison": {
+    "slice_a": {
+      "value": 0.58,
+      "confidence_interval": [
+        0.53,
+        0.63
+      ],
+      "baseline": "global",
+      "time_window": "7d",
+      "sparkline": [
+        0.2743,
+        0.2715,
+        0.2736,
+        0.2938,
+        0.235,
+        0.2664,
+        0.2816,
+        0.2776
+      ],
+      "source_distribution": "production"
+    },
+    "slice_b": {
+      "value": 0.3697,
+      "confidence_interval": [
+        0.3197,
+        0.4197
+      ],
+      "baseline": "global",
+      "time_window": "7d",
+      "sparkline": [
+        0.2743,
+        0.2715,
+        0.2736,
+        0.2938,
+        0.235,
+        0.2664,
+        0.2816,
+        0.2776
+      ],
+      "source_distribution": "production"
+    }
+  }
+}
