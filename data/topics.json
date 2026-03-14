@@ -4,19 +4,69 @@
     "name": "AI Regulation",
     "cluster_count": 7,
     "contestation_level": "high",
-    "contestation_emergence": null,
+    "contestation_emergence": {
+      "emerged_hours_ago": 50,
+      "source_diversity": 0.69
+    },
     "headline_divergence": {
-      "jsd": 0.75,
+      "jsd": 0.4,
       "dominant_typology": "Information Asymmetry",
       "trend": "increasing"
     },
     "top_accelerating_claim": {
       "text": "Unregulated AI development poses existential risks that demand immediate policy action",
-      "momentum": 0.69,
-      "source_diversity": 0.3
+      "momentum": 0.87,
+      "source_diversity": 0.32
     },
     "most_persistent_claim": {
       "text": "AI regulation will stifle innovation and put domestic companies at a competitive disadvantage",
+      "persistence_windows": 14
+    },
+    "key_signal": {
+      "type": "momentum_spike",
+      "summary": "'AI will eliminate millions of jobs and governments must prep...' accelerated from 20th to 72nd perc"
+    },
+    "activity_sparkline": [
+      0.52,
+      0.68,
+      0.25,
+      0.67,
+      0.64,
+      0.82,
+      0.61,
+      0.71,
+      0.2,
+      0.89,
+      0.55,
+      0.47
+    ],
+    "ifi": {
+      "value": 13.3,
+      "trend": "stable"
+    },
+    "top_situation": {
+      "summary": "'AI regulation should target sp...' radicalizing \u2014 moving toward extreme framing",
+      "severity": "high"
+    }
+  },
+  {
+    "id": "immigration-policy",
+    "name": "Immigration Policy",
+    "cluster_count": 8,
+    "contestation_level": "high",
+    "contestation_emergence": null,
+    "headline_divergence": {
+      "jsd": 0.35,
+      "dominant_typology": "Information Asymmetry",
+      "trend": "decreasing"
+    },
+    "top_accelerating_claim": {
+      "text": "Border security is a fundamental sovereign right and must be enforced strictly",
+      "momentum": 0.83,
+      "source_diversity": 0.56
+    },
+    "most_persistent_claim": {
+      "text": "Immigration strengthens the economy through labor force growth and entrepreneurship",
       "persistence_windows": 14
     },
     "key_signal": {
@@ -24,61 +74,27 @@
       "summary": "Near-duplicate content: 47 similar posts from non-overlapping accounts within 3h."
     },
     "activity_sparkline": [
-      0.24,
-      0.5,
-      0.22,
-      0.26,
-      0.59,
-      0.57,
-      0.52,
-      0.22,
-      0.71,
-      0.72,
-      0.32,
-      0.89
-    ]
-  },
-  {
-    "id": "immigration-policy",
-    "name": "Immigration Policy",
-    "cluster_count": 8,
-    "contestation_level": "high",
-    "contestation_emergence": {
-      "emerged_hours_ago": 71,
-      "source_diversity": 0.61
-    },
-    "headline_divergence": {
-      "jsd": 0.36,
-      "dominant_typology": "Information Asymmetry",
+      0.65,
+      0.6,
+      0.8,
+      0.62,
+      0.53,
+      0.64,
+      0.85,
+      0.69,
+      0.85,
+      0.84,
+      0.8,
+      0.35
+    ],
+    "ifi": {
+      "value": 16.5,
       "trend": "stable"
     },
-    "top_accelerating_claim": {
-      "text": "Border security is a fundamental sovereign right and must be enforced strictly",
-      "momentum": 0.54,
-      "source_diversity": 0.22
-    },
-    "most_persistent_claim": {
-      "text": "Immigration strengthens the economy through labor force growth and entrepreneurship",
-      "persistence_windows": 14
-    },
-    "key_signal": {
-      "type": "momentum_spike",
-      "summary": "'Border security is a fundamental sovereign right and must be...' accelerated from 20th to 72nd perc"
-    },
-    "activity_sparkline": [
-      0.83,
-      0.86,
-      0.7,
-      0.21,
-      0.71,
-      0.5,
-      0.43,
-      0.87,
-      0.74,
-      0.71,
-      0.88,
-      0.38
-    ]
+    "top_situation": {
+      "summary": "'Immigration policy should prio...' radicalizing \u2014 moving toward extreme framing",
+      "severity": "high"
+    }
   },
   {
     "id": "israel-palestine",
@@ -87,14 +103,14 @@
     "contestation_level": "high",
     "contestation_emergence": null,
     "headline_divergence": {
-      "jsd": 0.49,
-      "dominant_typology": "Interpretive",
+      "jsd": 0.56,
+      "dominant_typology": "Paradigmatic",
       "trend": "decreasing"
     },
     "top_accelerating_claim": {
       "text": "Media coverage of the conflict is systematically biased against Israel",
-      "momentum": 0.57,
-      "source_diversity": 0.29
+      "momentum": 0.77,
+      "source_diversity": 0.73
     },
     "most_persistent_claim": {
       "text": "Israel has the right to defend itself against terrorist attacks on its civilians",
@@ -105,38 +121,43 @@
       "summary": "'Western governments are complicit in the crisis through cont...' accelerated from 20th to 72nd perc"
     },
     "activity_sparkline": [
-      0.51,
-      0.89,
+      0.3,
+      0.46,
+      0.65,
+      0.86,
       0.8,
-      0.41,
-      0.78,
-      0.22,
-      0.64,
-      0.43,
-      0.2,
-      0.55,
-      0.72,
-      0.64
-    ]
+      0.56,
+      0.56,
+      0.27,
+      0.74,
+      0.38,
+      0.36,
+      0.6
+    ],
+    "ifi": {
+      "value": 12.7,
+      "trend": "stable"
+    },
+    "top_situation": {
+      "summary": "'Both sides have committed atro...' polarizing \u2014 high friction (0.86)",
+      "severity": "high"
+    }
   },
   {
     "id": "climate-policy",
     "name": "Climate Policy",
     "cluster_count": 7,
     "contestation_level": "high",
-    "contestation_emergence": {
-      "emerged_hours_ago": 43,
-      "source_diversity": 0.72
-    },
+    "contestation_emergence": null,
     "headline_divergence": {
-      "jsd": 0.4,
-      "dominant_typology": "Interpretive",
-      "trend": "increasing"
+      "jsd": 0.5,
+      "dominant_typology": "Paradigmatic",
+      "trend": "decreasing"
     },
     "top_accelerating_claim": {
       "text": "Carbon capture technology is a fossil fuel industry distraction from real emissions reduction",
-      "momentum": 0.64,
-      "source_diversity": 0.78
+      "momentum": 0.5,
+      "source_diversity": 0.2
     },
     "most_persistent_claim": {
       "text": "Rapid transition to renewable energy is essential to avoid catastrophic climate outcomes",
@@ -147,18 +168,26 @@
       "summary": "'Carbon capture technology is a fossil fuel industry distract...' accelerated from 20th to 72nd perc"
     },
     "activity_sparkline": [
-      0.26,
-      0.9,
-      0.57,
-      0.31,
-      0.42,
-      0.27,
-      0.68,
-      0.78,
-      0.67,
-      0.33,
+      0.37,
+      0.61,
+      0.63,
+      0.89,
+      0.79,
+      0.86,
+      0.66,
+      0.41,
+      0.39,
       0.52,
-      0.2
-    ]
+      0.83,
+      0.66
+    ],
+    "ifi": {
+      "value": 19.4,
+      "trend": "stable"
+    },
+    "top_situation": {
+      "summary": "'Individual carbon footprint re...' radicalizing \u2014 moving toward extreme framing",
+      "severity": "high"
+    }
   }
 ]

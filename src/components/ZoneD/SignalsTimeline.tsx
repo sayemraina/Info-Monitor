@@ -14,7 +14,7 @@ interface SignalsTimelineProps {
 export function SignalsTimeline({
   topicId,
   timeWindow,
-  eventTypeFilter,
+  eventTypeFilter: _eventTypeFilter,
   onSetEventTypeFilter,
   onSelectClaim,
 }: SignalsTimelineProps) {
@@ -42,9 +42,9 @@ export function SignalsTimeline({
   }
 
   return (
-    <div className="h-full flex flex-col p-2">
+    <div className="h-full flex flex-col p-3">
       <FilterChips active={activeFilter} onChange={handleFilterChange} />
-      <div className="flex-1 overflow-y-auto mt-2 space-y-1">
+      <div className="flex-1 overflow-y-auto mt-2 space-y-1.5">
         {events.length === 0 ? (
           <p className="text-xs text-center mt-4" style={{ color: 'var(--color-text-muted)' }}>
             No signals detected

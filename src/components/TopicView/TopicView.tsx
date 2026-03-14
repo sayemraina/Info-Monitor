@@ -1,13 +1,14 @@
-import { useMemo } from 'react'
+import { useState, useMemo } from 'react'
 import type { TimeWindow, EventType } from '../../types'
 import { useLandscape } from '../../hooks/useLandscape'
 import { useCompare } from '../../hooks/useCompare'
 import { ZonePanel } from './ZonePanel'
+import { LensBar } from './LensBar'
 import { ClaimLandscape } from '../ZoneA/ClaimLandscape'
 import { TimeWindowControl } from '../ZoneA/TimeWindowControl'
-import { VitalsPanel } from '../ZoneB/VitalsPanel'
-import { DivergencePanel } from '../ZoneC/DivergencePanel'
-import { SignalsTimeline } from '../ZoneD/SignalsTimeline'
+import { RightSidebar } from './RightSidebar'
+import { IFICard } from '../IntelligencePanel/IFICard'
+import { DivergenceCard } from '../IntelligencePanel/DivergenceCard'
 
 interface TopicViewProps {
   topicId: string
@@ -40,9 +41,18 @@ export function TopicView({
 }: TopicViewProps) {
   const { landscape, loading, error } = useLandscape(topicId, timeWindow)
 
-  // Use selected slices from App state for compare data
-  const sliceA = selectedSlices?.[0] ?? 'x_platform'
-  const sliceB = selectedSlices?.[1] ?? 'reddit_platform'
+  const [activeLensPair, setActiveLensPair] = useState({
+    label: 'X vs Reddit', a: 'x_platform', b: 'reddit_platform',
+  })
+
+  const handleLensChange = (pair: { label: string; a: string; b: string }) => {
+    setActiveLensPair(pair)
+    onSetSelectedSlices([pair.a, pair.b])
+  }
+
+  // Use selected slices from App state, falling back to active lens pair
+  const sliceA = selectedSlices?.[0] ?? activeLensPair.a
+  const sliceB = selectedSlices?.[1] ?? activeLensPair.b
   const { compare } = useCompare(topicId, sliceA, sliceB, timeWindow)
 
   // Build salience maps keyed by cluster_id for compare mode
@@ -76,7 +86,7 @@ export function TopicView({
     compareMode ? (
       // Split landscape: left = Slice A, right = Slice B
       <div className="w-full h-full flex gap-px">
-        <div className="flex-1 h-full border-r" style={{ borderColor: '#1E293B' }}>
+        <div className="flex-1 h-full border-r" style={{ borderColor: '#152540' }}>
           <ClaimLandscape
             landscape={landscape}
             selectedClaimId={null}
@@ -108,20 +118,22 @@ export function TopicView({
   ) : null
 
   return (
-    <div
-      className="h-full gap-1.5 p-1.5"
-      style={{
-        display: 'grid',
-        gridTemplateColumns: '1fr 1fr 1fr 25%',
-        gridTemplateRows: '60% 40%',
-      }}
-    >
-      {/* Zone A: Claim Landscape — top left, spans 3 cols */}
+    <div className="h-full flex flex-col relative">
+      <LensBar activePair={activeLensPair} onSelectPair={handleLensChange} />
+      <div
+        className="flex-1 min-h-0 gap-2 p-2"
+        style={{
+          display: 'grid',
+          gridTemplateColumns: 'minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr)',
+          gridTemplateRows: '60% 40%',
+        }}
+      >
+      {/* Zone A: Claim Landscape (Top Left, 75% width, 60% height) */}
       <ZonePanel
         title={compareMode
           ? `Comparing ${compare?.slice_a.label ?? sliceA} vs ${compare?.slice_b.label ?? sliceB} — ${topicId} [${timeWindow}]`
           : `Claim Landscape — ${topicId} [${timeWindow}]`}
-        className="col-span-3 row-span-1"
+        className="col-span-2 row-span-1"
         noPadding
         headerRight={
           <TimeWindowControl value={timeWindow} onChange={onSetTimeWindow} />
@@ -130,51 +142,45 @@ export function TopicView({
         {landscapeContent}
       </ZonePanel>
 
-      {/* Zone B: Vitals — right sidebar, full height */}
-      <ZonePanel
-        title={!compareMode && selectedClaimId ? 'Claim Vitals' : 'Topic Overview'}
-        className="col-start-4 row-span-2"
-        noPadding
-      >
-        <VitalsPanel
+      {/* Zone B: Right Sidebar (Right, 25% width, 100% height) */}
+      <div className="col-start-3 row-span-2 min-h-0 relative">
+        <RightSidebar
           topicId={topicId}
           selectedClaimId={selectedClaimId}
           landscape={landscape}
           compareMode={compareMode}
+          timeWindow={timeWindow}
+          eventTypeFilter={eventTypeFilter}
+          onSetEventTypeFilter={onSetEventTypeFilter}
+          onSelectClaim={onSelectClaim}
+          onDeselectClaim={onDeselectClaim}
         />
-      </ZonePanel>
+      </div>
 
-      {/* Zone C: Divergence — bottom left */}
-      <ZonePanel
-        title="Divergence"
-        className="col-span-2 row-start-2"
-        noPadding
-      >
-        <DivergencePanel
+      {/* Zone C: Divergence (Bottom Left, 50% width, 40% height) */}
+      <div className="col-span-1 row-start-2 min-h-0 rounded-lg p-3 overflow-hidden" style={{ backgroundColor: 'var(--color-bg-panel)', border: '1px solid var(--color-border)' }}>
+        <DivergenceCard
           topicId={topicId}
           timeWindow={timeWindow}
           sliceA={sliceA}
           sliceB={sliceB}
           compareMode={compareMode}
           onSetCompareMode={onSetCompareMode}
-          onSetSlices={onSetSelectedSlices}
+          landscape={landscape}
         />
-      </ZonePanel>
+      </div>
 
-      {/* Zone D: Signals — bottom right of left area */}
-      <ZonePanel
-        title={`Signals [${eventTypeFilter}]`}
-        className="col-start-3 row-start-2"
-        noPadding
-      >
-        <SignalsTimeline
-          topicId={topicId}
-          timeWindow={timeWindow}
-          eventTypeFilter={eventTypeFilter}
-          onSetEventTypeFilter={onSetEventTypeFilter}
-          onSelectClaim={onSelectClaim}
-        />
-      </ZonePanel>
+      {/* Zone D: IFI (Bottom Middle, 25% width, 40% height) */}
+      <div className="col-start-2 row-start-2 min-h-0 rounded-lg p-3 overflow-hidden flex flex-col items-center justify-center" style={{ backgroundColor: 'var(--color-bg-panel)', border: '1px solid var(--color-border)' }}>
+        {landscape?.topic_metrics.ifi ? (
+          <div className="w-full h-full">
+            <IFICard ifi={landscape.topic_metrics.ifi} />
+          </div>
+        ) : (
+          <p className="text-xs text-slate-500">Loading IFI...</p>
+        )}
+      </div>
+      </div>
     </div>
   )
 }

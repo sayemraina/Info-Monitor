@@ -1,17 +1,17 @@
 # CLAUDE.md — Narrative Monitoring System
 
 ## What This Is
-Real-time narrative topology system. Extracts claims from social media, maps them into semantic space, measures divergence across populations. Single-page dark-themed intelligence dashboard. Demo runs entirely on pre-computed cached data.
+Real-time narrative topology system. Extracts claims from social media, maps them into semantic space, measures divergence across populations. Single-page dark-themed intelligence instrument. Demo runs entirely on pre-computed cached data.
 
 ## Reference Docs (read on demand, not upfront)
 - `docs/concept-note-v6.md` — WHAT we measure and WHY. Metric definitions, analytical frameworks, epistemic constraints. Read before implementing any metric.
-- `docs/end-state-v3.md` — WHAT the user sees and HOW data flows. Screen spec, zone layout, data contracts, API surface, visual design. Read before implementing any UI component.
+- `docs/Frontend_Rebuild_Brief.md` — WHAT the frontend looks like and HOW to build it. This REPLACES end-state-v3 zone layout entirely. Read before implementing any UI component.
 - `scripts/prompts/extraction.md` — The claim extraction prompt sent to Claude Sonnet. Read before modifying extract.py.
 
 ## Tech Stack
 - **Frontend:** React + TypeScript + Vite. Single page app, zero routing.
 - **Visualization:** D3.js (force-directed claim landscape) + Recharts (sparklines, bars)
-- **Styling:** Tailwind CSS. Dark theme only. Background #0A0E17.
+- **Styling:** Tailwind CSS. Dark theme only. Background #030508 (see Frontend_Rebuild_Brief.md for full color spec).
 - **Data layer for demo:** Frontend reads static JSON files from `/data/`. No backend server needed.
 - **Backend (post-demo):** Python FastAPI. Not built during the 5-day sprint unless stretch goal (live topic input) is reached.
 - **Storage:** JSON files for demo. PostgreSQL + pgvector for production.
@@ -29,7 +29,7 @@ Real-time narrative topology system. Extracts claims from social media, maps the
 ├── SCRATCHPAD.md                  # Session-persistent notes: bugs hit, patterns learned, decisions made mid-build. Update via # command.
 ├── docs/
 │   ├── concept-note-v6.md         # Analytical spec (read on demand)
-│   └── end-state-v3.md            # Product spec (read on demand)
+│   └── end-state-v3.md            # Product spec (DEPRECATED — see Frontend_Rebuild_Brief.md)
 ├── scripts/
 │   ├── prompts/
 │   │   └── extraction.md          # Claim extraction prompt for Claude Sonnet
@@ -46,6 +46,7 @@ Real-time narrative topology system. Extracts claims from social media, maps the
 ├── src/
 │   ├── App.tsx                    # Single page app. State-based levels, NOT routes.
 │   ├── components/
+│   │   # NOTE: Zone folders below are from old architecture. See docs/Frontend_Rebuild_Brief.md §9 for new component structure (Terrain/, HUD/, Overlays/, MetricVisuals/, Shared/).
 │   │   ├── Level0/                # Multi-topic overview (landing state)
 │   │   ├── TopicView/             # Single-topic zone layout container
 │   │   ├── ZoneA/                 # Claim landscape (D3 force-directed graph)
@@ -53,7 +54,7 @@ Real-time narrative topology system. Extracts claims from social media, maps the
 │   │   ├── ZoneC/                 # Divergence (heatmap + comparison + Full Compare mode)
 │   │   └── ZoneD/                 # Signals timeline (event feed)
 │   ├── hooks/                     # Data fetching, state management
-│   ├── types/                     # TypeScript types. MUST match end-state §8 exactly.
+│   ├── types/                     # TypeScript types. Must match data contracts below.
 │   └── utils/                     # Metric display helpers, formatting, tooltip content generators
 └── public/
     └── data/ -> ../data/          # Symlink or copy so Vite serves JSON files
@@ -75,7 +76,7 @@ Real-time narrative topology system. Extracts claims from social media, maps the
 
 ### Do Not
 - Do not add routing. Level 0 → Level 1 → Level 2 are state changes, not URL routes.
-- Do not add a platform toggle to the UI. Platforms are data sources, not user-facing filters. Platform details surface in provenance/supply chain within Zone B.
+- Do not add a platform toggle to the UI. Platforms are data sources, not user-facing filters. Platform details surface in provenance/supply chain within the briefing strip (claim detail view).
 - Do not add light theme.
 - Do not add user auth, accounts, or multi-tenancy.
 - Do not build the FastAPI backend during the 5-day sprint. Demo reads JSON directly.
@@ -85,7 +86,7 @@ Real-time narrative topology system. Extracts claims from social media, maps the
 - Do not make salience baseline user-configurable in v1. Auto-select: platform-local for single-platform views, global for cross-platform.
 
 ## Data Contracts (Quick Reference)
-Types in `src/types/`. Must match end-state §8 exactly:
+Types in `src/types/`. Quick reference:
 - `Claim` — id, text, subject, assertion, framing, stance, confidence, arousal, register, cluster_id, concept_id, first_seen_platform, first_seen_timestamp
 - `Cluster` — id, concept_id, label, member_count, mutation_direction, mutation_magnitude, arousal_trend, arousal_value, adversarial_pairs
 - `Metric` — value, confidence_interval, baseline, time_window, sparkline, source_distribution
@@ -96,7 +97,7 @@ Types in `src/types/`. Must match end-state §8 exactly:
 - `SupplyChain` — concept_id, hops [{platform, timestamp, claim_id, fidelity_to_origin, fidelity_to_previous}], observation_boundary
 - `TopicSummary` — id, name, cluster_count, contestation_level, headline_divergence, top_accelerating_claim, key_signal, activity_sparkline, mini_landscape_nodes
 
-## Event Types (Zone D)
+## Event Types (Signal Ticker)
 8 types. Each has a trigger condition. Sorted severity-first then recency. Scrollable beyond initial 5.
 1. `momentum_spike` — claim percentile jump exceeds threshold in single window
 2. `divergence_shift` — JSD change exceeds threshold over 2+ windows
@@ -107,6 +108,7 @@ Types in `src/types/`. Must match end-state §8 exactly:
 7. `phase_transition` — mutation trajectory reverses (radicalizing ↔ mainstreaming)
 8. `lead_lag` — same claim detected across platforms with consistent temporal offset
 
+**NOTE: The zone layout below is DEPRECATED. See docs/Frontend_Rebuild_Brief.md for the new full-viewport instrument architecture.**
 ## Zone Layout
 Single page. Fixed zones. All visible simultaneously in Level 1.
 ```
@@ -143,9 +145,9 @@ Implement in this order. Items 4-6 can slip to Day 3 morning:
 8. Exposure decomposition (production / amplification / estimated exposure)
 
 ## Visual Design (Quick Reference)
-Full spec in end-state §4.
-- **Background:** #0A0E17 (dark navy-black)
-- **Panels:** #111827
+Full spec in docs/Frontend_Rebuild_Brief.md §3.
+- **Background:** #030508 (true black void)
+- **Panels:** N/A — no panels in new architecture. HUD overlays with semi-transparent backgrounds.
 - **Text values:** #F1F5F9 in JetBrains Mono
 - **Labels:** #94A3B8 in Inter
 - **Sparklines:** #06B6D4 (cyan)
@@ -164,6 +166,6 @@ Full spec in end-state §4.
 3. Re-read this CLAUDE.md.
 4. Break the task into atomic units.
 5. Metric unclear → read `docs/concept-note-v6.md` §7.
-6. UI component unclear → read `docs/end-state-v3.md` §3.
+6. UI component unclear → read `docs/Frontend_Rebuild_Brief.md`.
 7. Extraction producing bad results → iterate on `scripts/prompts/extraction.md`.
 8. Log what went wrong in SCRATCHPAD.md so next session doesn't repeat.

@@ -56,6 +56,42 @@ Session-persistent notes, bugs, decisions, and spec compliance tracker.
 - B3 ✅ `ClaimTooltip.tsx`: Relabeled "Persistence" → "Cluster", shows `{cluster.member_count} claims`.
 - B4 ✅ `TopicCard.tsx`: Added hover tooltip via React portal (`createPortal`). Shows contestation level, JSD, key signal.
 
+### Session 6 — IFI Rearchitecture: Temporal √JSD + Entropic Flux Direction
+**Problem:** IFI formula (`0.3×Δ(JSD) + 0.25×max(momentum) + ...`) used arbitrary weights with no geometric meaning.
+**Solution:** Replaced with temporal √JSD + ΔEntropy (zero free parameters, pure information theory).
+
+**Core change:**
+- IFI value (0–100) = √JSD(p_t, p_{t-1}) × 100, where p = normalized cluster-salience vector per window
+- flux_character = sign(ΔEntropy) → `consolidating | diversifying | reshuffling`
+- flags (coordination_detected, arousal_escalating) are qualitative annotations, NOT weighted in
+
+**Files changed:**
+- `scripts/generate_synthetic.py` — added `_ifi_normalize`, `_ifi_entropy_bits`, `_ifi_jsd_sqrt`, `_ifi_flux_character`, `_ifi_window_salience` helpers + new `generate_ifi(clusters, window, coord_count, arousal_escalating)`. Window-specific salience perturbation: 6h amplifies volatile clusters, 7d amplifies stable clusters, 24h is baseline.
+- `src/types/index.ts` — `InformationFluxIndex` now has `entropy_delta`, `flux_character`, `flags`, `temporal_window_pair`. Removed `components` (the arbitrary-weights breakdown).
+- `src/components/IntelligencePanel/IFICard.tsx` — closed card shows flux character + "Comparing X → Y" label + flag warnings. Expanded shows "Structural Direction" section with ΔEntropy value + character explanation + qualitative flags.
+- `src/App.tsx` — added `InfoButtonProvider` wrapper (was missing — InfoButton always threw without it)
+
+**Pre-existing TS errors also fixed:** ReactNode type-only imports in InfoButton/InfoButtonContext/ExpandedCardOverlay, unused `pad` var in ClaimLandscape, unused `divergence` in DivergenceHeatmap, unused `CompareData` import in DivergencePanel, unused `eventTypeFilter` param in SignalsTimeline, unused `value` param in tooltips.ts momentum().
+
+**Result:** `npx tsc -b --force` clean. App live. IFI expanded overlay shows √JSD value, ΔEntropy, flux character with plain-language description, and qualitative flags clearly labeled as non-weighted.
+
+### Session 5 — Frontend Revamp Execution (AG completed, CC fixed issues)
+**AG completed Phases 1-6:**
+- ✅ All foundation components created (InfoButton, Card, ExpandedCardOverlay, MetricIsolation, etc.)
+- ✅ 40/60 layout grid implemented
+- ✅ Intelligence Panel container built with 4 default cards (IFI, Situations, Divergence, Signals)
+- ✅ 3 claim detail cards (Behavior, Provenance, Coordination)
+- ✅ Landscape enhancements (Legend, mutation badges, pulse animation)
+- ✅ Level 0 upgrades (IFI + situation on topic cards)
+- ✅ New features live: IFI composite score, situation alerts with cross-linking, card-based UI, drill-down model
+
+**CC issue fixes:**
+- Fixed invalid Tailwind color class patterns (`text-#EF4444` → inline styles)
+- Fixed TypeScript strict mode errors (type-only imports for ReactNode, NodeJS.Timeout → ReturnType<typeof setTimeout>)
+- Fixed callback handling (IntelligencePanel close button now properly calls onDeselectClaim)
+- Removed unused imports and variables
+- **Result:** App now fully functional and live at localhost:5173 ✅
+
 ---
 
 ## Priority Gap List (ranked — do these next)

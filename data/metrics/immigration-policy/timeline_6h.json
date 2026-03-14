@@ -1,13 +1,28 @@
 {
   "events": [
     {
-      "id": "evt_9f791b064585",
-      "type": "momentum_spike",
-      "timestamp": "2026-03-09T08:00:00+00:00",
+      "id": "evt_ad36c5a8b6b0",
+      "type": "coordination_flag",
+      "timestamp": "2026-03-09T20:00:00+00:00",
       "claim_id": "clm_f7169af13aea",
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.76,
+      "confidence": 0.61,
+      "summary": "Near-duplicate content: 47 similar posts from non-overlapping accounts within 3h.",
+      "detail": {
+        "signal": "near_duplicate",
+        "count": 47,
+        "window_hours": 3
+      }
+    },
+    {
+      "id": "evt_9f791b064585",
+      "type": "momentum_spike",
+      "timestamp": "2026-03-09T15:00:00+00:00",
+      "claim_id": "clm_f7169af13aea",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.84,
       "summary": "'Border security is a fundamental sovereign right and must be...' accelerated from 20th to 72nd percentile in 12h. Source diversity: low.",
       "detail": {
         "percentile_from": 20,
@@ -18,11 +33,11 @@
     {
       "id": "evt_a93ad49d39af",
       "type": "momentum_spike",
-      "timestamp": "2026-03-09T06:00:00+00:00",
+      "timestamp": "2026-03-09T00:00:00+00:00",
       "claim_id": "clm_34a0d4d8f672",
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.8,
+      "confidence": 0.93,
       "summary": "'Current immigration levels are part of a deliberate agenda t...' accelerated from 20th to 72nd percentile in 12h. Source diversity: low.",
       "detail": {
         "percentile_from": 20,
@@ -31,28 +46,13 @@
       }
     },
     {
-      "id": "evt_aac36f759058",
-      "type": "coordination_flag",
-      "timestamp": "2026-03-08T18:00:00+00:00",
-      "claim_id": "clm_f7169af13aea",
-      "slice_id": null,
-      "severity": "high",
-      "confidence": 0.66,
-      "summary": "Near-duplicate content: 47 similar posts from non-overlapping accounts within 3h.",
-      "detail": {
-        "signal": "near_duplicate",
-        "count": 47,
-        "window_hours": 3
-      }
-    },
-    {
       "id": "evt_d519ffa7e0eb",
       "type": "claim_dark",
-      "timestamp": "2026-03-10T03:00:00+00:00",
+      "timestamp": "2026-03-10T07:00:00+00:00",
       "claim_id": "clm_feaba4eb393d",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.72,
+      "confidence": 0.78,
       "summary": "'Immigrants commit crimes at lower rates than nativ...' went dark \u2014 active in last 3 windows, now zero production.",
       "detail": {
         "last_active_window": 3,
@@ -62,11 +62,11 @@
     {
       "id": "evt_60dc4a63f872",
       "type": "arousal_escalation",
-      "timestamp": "2026-03-09T18:00:00+00:00",
+      "timestamp": "2026-03-09T17:00:00+00:00",
       "claim_id": "clm_aa03e52ba9ac",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.77,
+      "confidence": 0.76,
       "summary": "'immigration impact' arousal shifted low to high over 48h, semantic content stable.",
       "detail": {
         "arousal_from": "low",
@@ -75,13 +75,27 @@
       }
     },
     {
+      "id": "evt_e300bc6d36c1",
+      "type": "vocabulary_rotation",
+      "timestamp": "2026-03-09T15:00:00+00:00",
+      "claim_id": "clm_be2d1fdcee3d",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.67,
+      "summary": "Vocabulary rotation detected in 'immigration economics': emerging terminology overlaps with adjacent narratives.",
+      "detail": {
+        "rotation_shift": 0.42,
+        "hours": 24
+      }
+    },
+    {
       "id": "evt_2c2c142f4f14",
       "type": "arousal_escalation",
-      "timestamp": "2026-03-09T08:00:00+00:00",
+      "timestamp": "2026-03-08T10:00:00+00:00",
       "claim_id": "clm_34a0d4d8f672",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.77,
+      "confidence": 0.85,
       "summary": "'immigration conspiracy' arousal shifted low to high over 48h, semantic content stable.",
       "detail": {
         "arousal_from": "low",
@@ -90,29 +104,13 @@
       }
     },
     {
-      "id": "evt_5ecac7594efd",
-      "type": "coordination_flag",
-      "timestamp": "2026-03-08T15:00:00+00:00",
-      "claim_id": null,
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.62,
-      "summary": "Counter-narrative response lag of 7h between 'immigration economics' and 'immigration impact' clusters \u2014 consistent with organized rapid response.",
-      "detail": {
-        "signal": "adversarial_response_lag",
-        "cluster_a": "pro-immigration-economic",
-        "cluster_b": "anti-immigration-economic",
-        "lag_hours": 7
-      }
-    },
-    {
       "id": "evt_813ef2ce9390",
       "type": "arousal_escalation",
-      "timestamp": "2026-03-07T15:00:00+00:00",
+      "timestamp": "2026-03-07T16:00:00+00:00",
       "claim_id": "clm_f7169af13aea",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.84,
+      "confidence": 0.73,
       "summary": "'border security' arousal shifted low to high over 48h, semantic content stable.",
       "detail": {
         "arousal_from": "low",
@@ -121,13 +119,13 @@
       }
     },
     {
-      "id": "evt_e300bc6d36c1",
+      "id": "evt_aac36f759058",
       "type": "divergence_shift",
-      "timestamp": "2026-03-07T03:00:00+00:00",
+      "timestamp": "2026-03-06T14:00:00+00:00",
       "claim_id": null,
       "slice_id": "x_platform",
       "severity": "medium",
-      "confidence": 0.8,
+      "confidence": 0.83,
       "summary": "X vs Reddit divergence increased 23% over 48h. Mode: information asymmetry.",
       "detail": {
         "jsd_change": 0.23,
@@ -136,13 +134,29 @@
       }
     },
     {
-      "id": "evt_ad36c5a8b6b0",
+      "id": "evt_5f16fb09fbe4",
+      "type": "coordination_flag",
+      "timestamp": "2026-03-10T00:00:00+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "low",
+      "confidence": 0.67,
+      "summary": "Counter-narrative response lag of 9h between 'immigration economics' and 'immigration impact' clusters \u2014 consistent with organic counter-mobilization.",
+      "detail": {
+        "signal": "adversarial_response_lag",
+        "cluster_a": "pro-immigration-economic",
+        "cluster_b": "anti-immigration-economic",
+        "lag_hours": 9
+      }
+    },
+    {
+      "id": "evt_5ecac7594efd",
       "type": "lead_lag",
-      "timestamp": "2026-03-08T08:00:00+00:00",
+      "timestamp": "2026-03-08T07:00:00+00:00",
       "claim_id": "clm_be2d1fdcee3d",
       "slice_id": null,
       "severity": "low",
-      "confidence": 0.7,
+      "confidence": 0.74,
       "summary": "'Immigration strengthens the economy thro...' first detected on Reddit, appeared on X 22h later. Fidelity: 81%.",
       "detail": {
         "source_platform": "reddit",
@@ -152,5 +166,5 @@
       }
     }
   ],
-  "total_count": 10
+  "total_count": 11
 }

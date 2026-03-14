@@ -1,8 +1,7 @@
 import type { AdversarialPair } from '../../types'
 import { getCorrelationColor } from '../../utils/colors'
-import * as Tooltips from '../../utils/tooltips'
-import { useTooltip } from '../../hooks/useTooltip'
-import { MethodologyTooltip } from './MethodologyTooltip'
+import { InfoButton } from '../shared/InfoButton'
+import { GLOSSARY } from '../../constants/glossary'
 
 interface AdversarialPairsSectionProps {
   pairs: AdversarialPair[]
@@ -10,8 +9,6 @@ interface AdversarialPairsSectionProps {
 }
 
 export function AdversarialPairsSection({ pairs, thisClusterId }: AdversarialPairsSectionProps) {
-  const headerTooltip = useTooltip<HTMLHeadingElement>()
-
   // Derive the opposing cluster label for each pair
   const getOpposingLabel = (pair: AdversarialPair): string => {
     return pair.cluster_id_a === thisClusterId
@@ -21,30 +18,15 @@ export function AdversarialPairsSection({ pairs, thisClusterId }: AdversarialPai
 
   return (
     <div>
-      <h4
-        ref={headerTooltip.ref}
-        className="text-[10px] font-medium uppercase tracking-wide mb-1"
-        style={{
-          color: 'var(--color-text-muted)',
-          cursor: 'help',
-          textDecoration: 'underline dotted',
-          textUnderlineOffset: '3px',
-        }}
-        {...headerTooltip.handlers}
-      >
-        Counter-Narrative Dynamics
-      </h4>
-      {headerTooltip.rect && pairs.length > 0 && (
-        <MethodologyTooltip
-          content={Tooltips.adversarialPair(
-            pairs[0].momentum_correlation,
-            pairs[0].response_lag.median_hours,
-            pairs[0].response_lag.consistency,
-            pairs[0].mutation_evidence.detected,
-          )}
-          rect={headerTooltip.rect}
-        />
-      )}
+      <div className="flex items-center gap-1 mb-1">
+        <h4
+          className="text-[10px] font-semibold uppercase tracking-wide"
+          style={{ color: 'var(--color-text-muted)' }}
+        >
+          Counter-Narrative Dynamics
+        </h4>
+        <InfoButton term="Counter-Narrative Dynamics" content={GLOSSARY.CounterNarrative} />
+      </div>
 
       {pairs.length === 0 ? (
         <p className="text-[10px]" style={{ color: 'var(--color-text-muted)', opacity: 0.3 }}>

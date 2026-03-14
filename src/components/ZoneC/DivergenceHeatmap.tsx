@@ -5,80 +5,112 @@ interface DivergenceHeatmapProps {
   clusters: PerClusterComparison[]
 }
 
+function heatmapTextColor(value: number): string {
+  return value > 0.5 ? '#F1F5F9' : '#CBD5E1'
+}
+
 export function DivergenceHeatmap({ clusters }: DivergenceHeatmapProps) {
   if (clusters.length === 0) return null
 
-  const cellH = 18
-  const labelW = 90
-  const colW = 50
-  const width = labelW + colW * 2 + 10
-  const height = clusters.length * cellH + 24
+  // Stable sort by cluster_id — matches the Cluster N badge numbers on the map
+  const sorted = [...clusters].sort((a, b) => a.cluster_id.localeCompare(b.cluster_id))
+
+  const cellH = 22
+  const labelW = 52   // just enough for "Claim 8" at 10px
+  const colW = 52
+  const gap = 16      // generous column separation for clean visual rhythm
+  const totalW = labelW + gap + colW + gap + colW
+  const totalH = sorted.length * cellH + 22  // 22px for headers
 
   return (
-    <svg width="100%" height={height} viewBox={`0 0 ${width} ${height}`} className="block">
+    <svg width="100%" height={totalH} viewBox={`0 0 ${totalW} ${totalH}`} className="block">
       {/* Column headers */}
-      <text x={labelW + colW / 2} y={12} textAnchor="middle" fill="var(--color-text-muted)" fontSize={8} fontFamily="var(--font-data)">
+      <text
+        x={labelW + gap + colW / 2}
+        y={12}
+        textAnchor="middle"
+        fill="var(--color-text-muted)"
+        fontSize={9}
+        fontFamily="var(--font-data)"
+        fontWeight={600}
+        letterSpacing={0.5}
+      >
         Slice A
       </text>
-      <text x={labelW + colW + 5 + colW / 2} y={12} textAnchor="middle" fill="var(--color-text-muted)" fontSize={8} fontFamily="var(--font-data)">
+      <text
+        x={labelW + gap + colW + gap + colW / 2}
+        y={12}
+        textAnchor="middle"
+        fill="var(--color-text-muted)"
+        fontSize={9}
+        fontFamily="var(--font-data)"
+        fontWeight={600}
+        letterSpacing={0.5}
+      >
         Slice B
       </text>
 
-      {clusters.map((c, i) => {
+      {sorted.map((c, i) => {
         const y = 20 + i * cellH
-        const diffA = c.salience_a
-        const diffB = c.salience_b
-        // Normalize for color: use the absolute difference from mean
-        const mean = (diffA + diffB) / 2 || 0.01
-        const divergence = Math.abs(diffA - diffB) / (mean * 2)
+        const a = c.salience_a
+        const b = c.salience_b
+        const label = `Claim ${i + 1}`
 
         return (
           <g key={c.cluster_id}>
+            {/* Row label — right-aligned, fixed column */}
             <text
-              x={labelW - 4}
+              x={labelW - 2}
               y={y + cellH / 2 + 3}
               textAnchor="end"
-              fill="var(--color-text-muted)"
-              fontSize={8}
+              fill="#64748B"
+              fontSize={10}
               fontFamily="var(--font-sans)"
+              fontWeight={500}
             >
-              {c.label.length > 16 ? c.label.slice(0, 15) + '…' : c.label}
+              {label}
             </text>
+
+            {/* Slice A cell */}
             <rect
-              x={labelW}
-              y={y}
+              x={labelW + gap}
+              y={y + 1}
               width={colW}
-              height={cellH - 2}
-              rx={2}
-              fill={getDivergenceHeatmapColor(Math.min(diffA, 1))}
+              height={cellH - 3}
+              rx={3}
+              fill={getDivergenceHeatmapColor(Math.min(a, 1))}
             />
             <text
-              x={labelW + colW / 2}
+              x={labelW + gap + colW / 2}
               y={y + cellH / 2 + 3}
               textAnchor="middle"
-              fill="#F1F5F9"
-              fontSize={8}
+              fill={heatmapTextColor(a)}
+              fontSize={10}
               fontFamily="var(--font-data)"
+              fontWeight={600}
             >
-              {diffA.toFixed(2)}
+              {a.toFixed(2)}
             </text>
+
+            {/* Slice B cell */}
             <rect
-              x={labelW + colW + 5}
-              y={y}
+              x={labelW + gap + colW + gap}
+              y={y + 1}
               width={colW}
-              height={cellH - 2}
-              rx={2}
-              fill={getDivergenceHeatmapColor(Math.min(diffB, 1))}
+              height={cellH - 3}
+              rx={3}
+              fill={getDivergenceHeatmapColor(Math.min(b, 1))}
             />
             <text
-              x={labelW + colW + 5 + colW / 2}
+              x={labelW + gap + colW + gap + colW / 2}
               y={y + cellH / 2 + 3}
               textAnchor="middle"
-              fill="#F1F5F9"
-              fontSize={8}
+              fill={heatmapTextColor(b)}
+              fontSize={10}
               fontFamily="var(--font-data)"
+              fontWeight={600}
             >
-              {diffB.toFixed(2)}
+              {b.toFixed(2)}
             </text>
           </g>
         )

@@ -1,32 +1,20 @@
-import { useState } from 'react'
-import type { CompareData, TimeWindow, TooltipContent } from '../../types'
+import type { LandscapeData, TimeWindow } from '../../types'
 import { useCompare } from '../../hooks/useCompare'
-import { useTooltip } from '../../hooks/useTooltip'
-import * as Tooltips from '../../utils/tooltips'
 import { Sparkline } from '../shared/Sparkline'
-import { MethodologyTooltip } from '../ZoneB/MethodologyTooltip'
 import { DivergenceHeatmap } from './DivergenceHeatmap'
-
-const SLICE_PAIRS: Array<{ label: string; a: string; b: string }> = [
-  { label: 'X vs Reddit', a: 'x_platform', b: 'reddit_platform' },
-  { label: 'X vs YouTube', a: 'x_platform', b: 'youtube_influencer' },
-]
+import { InfoButton } from '../shared/InfoButton'
+import { GLOSSARY } from '../../constants/glossary'
 
 interface DivergencePanelProps {
   topicId: string
   timeWindow: TimeWindow
   sliceA: string
   sliceB: string
-  compareMode?: boolean
-  onSetCompareMode?: (mode: boolean) => void
-  onSetSlices?: (slices: [string, string]) => void
+  landscape?: LandscapeData | null
 }
 
-export function DivergencePanel({ topicId, timeWindow, compareMode, onSetCompareMode, onSetSlices }: DivergencePanelProps) {
-  const [pairIdx, setPairIdx] = useState(0)
-  const activePair = SLICE_PAIRS[pairIdx]
-  const { compare, loading, error } = useCompare(topicId, activePair.a, activePair.b, timeWindow)
-  const jsdTooltip = useTooltip<HTMLDivElement>()
+export function DivergencePanel({ topicId, timeWindow, sliceA, sliceB, landscape }: DivergencePanelProps) {
+  const { compare, loading, error } = useCompare(topicId, sliceA, sliceB, timeWindow, landscape)
 
   if (loading) {
     return (
@@ -51,53 +39,23 @@ export function DivergencePanel({ topicId, timeWindow, compareMode, onSetCompare
 
   return (
     <div className="p-3 h-full overflow-y-auto space-y-3">
-      {/* Slice selector */}
-      <div className="flex items-center gap-1">
-        {SLICE_PAIRS.map((pair, i) => (
-          <button
-            key={pair.label}
-            onClick={() => {
-              setPairIdx(i)
-              onSetSlices?.([pair.a, pair.b])
-            }}
-            className="text-[10px] px-2 py-0.5 rounded transition-colors"
-            style={{
-              backgroundColor: i === pairIdx ? 'rgba(6,182,212,0.15)' : 'transparent',
-              color: i === pairIdx ? '#06B6D4' : 'var(--color-text-muted)',
-              border: `1px solid ${i === pairIdx ? 'rgba(6,182,212,0.3)' : 'var(--color-border)'}`,
-              cursor: 'pointer',
-            }}
-          >
-            {pair.label}
-          </button>
-        ))}
-      </div>
-
       {/* Headline JSD */}
-      <div
-        ref={jsdTooltip.ref}
-        className="flex items-center justify-between"
-        style={{ cursor: 'help' }}
-        {...jsdTooltip.handlers}
-      >
-        {jsdTooltip.rect && (
-          <MethodologyTooltip
-            content={{
-              title: 'Jensen-Shannon Divergence',
-              calculation: 'Symmetric measure of distributional difference between two populations. 0 = identical, 1 = maximally different.',
-              reading: `JSD of ${divergence.jsd.toFixed(3)} — ${divergence.jsd > 0.5 ? 'high' : divergence.jsd > 0.25 ? 'moderate' : 'low'} divergence between these populations.`,
-              caveat: 'JSD is sensitive to small-sample clusters. Scores above 0.7 with fewer than 50 claims per slice warrant caution.',
-            }}
-            rect={jsdTooltip.rect}
-          />
-        )}
-        <div>
-          <span className="text-xs" style={{ color: 'var(--color-text-muted)', textDecoration: 'underline dotted', textUnderlineOffset: '3px' }}>JSD: </span>
-          <span className="font-data text-sm" style={{ color: 'var(--color-text-primary)' }}>
-            {divergence.jsd.toFixed(3)}
-          </span>
+      <div>
+        <div className="flex items-center justify-between mb-1">
+          <div className="flex items-center gap-1.5">
+            <span className="text-xs font-semibold" style={{ color: 'var(--color-text-muted)' }}>Overall Divergence (JSD)</span>
+            <InfoButton term="Divergence" content={GLOSSARY.Divergence} />
+          </div>
+          <div className="flex items-center gap-3">
+            <span className="font-data text-sm" style={{ color: 'var(--color-text-primary)' }}>
+              {divergence.jsd.toFixed(3)}
+            </span>
+            <Sparkline data={divergence.trend} width={70} height={18} />
+          </div>
         </div>
-        <Sparkline data={divergence.trend} width={70} height={18} />
+        <div className="text-[10px] text-slate-500 italic mb-2">
+          (0 = identical narratives, 1 = completely disjointed information realities)
+        </div>
       </div>
 
       {/* Slices */}
@@ -113,9 +71,9 @@ export function DivergencePanel({ topicId, timeWindow, compareMode, onSetCompare
 
       {/* Typology scores */}
       <div className="space-y-1.5">
-        <TypologyBar label="Info Asymmetry" value={typo.information_asymmetry} dominant={typo.dominant_mode === 'information_asymmetry'} tooltip={Tooltips.divergenceTypology(typo)} />
-        <TypologyBar label="Interpretive" value={typo.interpretive} dominant={typo.dominant_mode === 'interpretive'} tooltip={Tooltips.divergenceTypology(typo)} />
-        <TypologyBar label="Paradigmatic" value={typo.paradigmatic} dominant={typo.dominant_mode === 'paradigmatic'} tooltip={Tooltips.divergenceTypology(typo)} />
+        <TypologyBar label="Info Asymmetry" value={typo.information_asymmetry} dominant={typo.dominant_mode === 'information_asymmetry'} />
+        <TypologyBar label="Interpretive" value={typo.interpretive} dominant={typo.dominant_mode === 'interpretive'} />
+        <TypologyBar label="Paradigmatic" value={typo.paradigmatic} dominant={typo.dominant_mode === 'paradigmatic'} />
         {typo.paradigmatic_caveat && (
           <p className="text-[9px] italic" style={{ color: '#F59E0B' }}>
             Extraction confidence differs across slices — paradigmatic score may be inflated
@@ -123,53 +81,52 @@ export function DivergencePanel({ topicId, timeWindow, compareMode, onSetCompare
         )}
       </div>
 
-      {/* Heatmap */}
+      {/* Emotional Temperature insight — headline metric, shown before heatmap detail */}
+      {(() => {
+        const a = arousal_comparison.slice_a_avg;
+        const b = arousal_comparison.slice_b_avg;
+        const diff = Math.abs(a - b);
+        const higherSlice = a > b ? compare.slice_a.label : compare.slice_b.label;
+        const lowerSlice = a > b ? compare.slice_b.label : compare.slice_a.label;
+        const higherVal = Math.max(a, b).toFixed(2);
+        const lowerVal = Math.min(a, b).toFixed(2);
+        const intensity = diff > 0.3 ? 'dramatically more charged' : diff > 0.15 ? 'significantly more charged' : 'slightly more charged';
+        return (
+          <div
+            className="rounded-lg p-2.5"
+            style={{ backgroundColor: 'rgba(239,68,68,0.07)', border: '1px solid rgba(239,68,68,0.15)' }}
+          >
+            <div className="flex items-center gap-1.5 mb-1.5">
+              <span className="text-[9px] font-bold uppercase tracking-wider" style={{ color: '#EF4444' }}>Emotional Temperature</span>
+              <InfoButton term="Arousal" content={GLOSSARY.Arousal} />
+            </div>
+            <p className="text-[12px] leading-snug" style={{ color: '#CBD5E1' }}>
+              <span className="font-semibold" style={{ color: '#F1F5F9' }}>{higherSlice}</span> is{' '}
+              <span className="font-semibold" style={{ color: '#EF4444' }}>{intensity}</span>{' '}
+              ({higherVal}) compared to {lowerSlice} ({lowerVal})
+            </p>
+          </div>
+        );
+      })()}
+
+      {/* Per-cluster heatmap — detail breakdown */}
       <DivergenceHeatmap clusters={per_cluster} />
 
-      {/* Arousal comparison */}
-      <div className="flex items-center justify-between text-[10px]">
-        <span style={{ color: 'var(--color-text-muted)' }}>Arousal</span>
-        <div className="flex items-center gap-3">
-          <span className="font-data" style={{ color: '#3B82F6' }}>
-            A: {arousal_comparison.slice_a_avg.toFixed(2)}
-          </span>
-          <span className="font-data" style={{ color: '#EF4444' }}>
-            B: {arousal_comparison.slice_b_avg.toFixed(2)}
-          </span>
-        </div>
-      </div>
-
-      {/* Full Compare toggle */}
-      {onSetCompareMode && (
-        <button
-          onClick={() => onSetCompareMode(!compareMode)}
-          className="w-full text-[10px] py-1 rounded transition-colors"
-          style={{
-            backgroundColor: compareMode ? 'rgba(6,182,212,0.15)' : 'transparent',
-            color: compareMode ? '#06B6D4' : 'var(--color-text-muted)',
-            border: `1px solid ${compareMode ? 'rgba(6,182,212,0.3)' : 'var(--color-border)'}`,
-            cursor: 'pointer',
-          }}
-        >
-          {compareMode ? '← Exit Compare Mode' : 'Full Compare Mode →'}
-        </button>
-      )}
     </div>
   )
 }
 
-function TypologyBar({ label, value, dominant, tooltip }: { label: string; value: number; dominant: boolean; tooltip?: TooltipContent }) {
-  const { ref, rect, handlers } = useTooltip<HTMLDivElement>()
+function TypologyBar({ label, value, dominant }: { label: string; value: number; dominant: boolean }) {
+  const glossaryContent = label === 'Info Asymmetry' ? GLOSSARY.InformationAsymmetry
+    : label === 'Interpretive' ? GLOSSARY.InterpretiveDivergence
+    : GLOSSARY.ParadigmaticDivergence
+
   return (
-    <div ref={ref} style={{ cursor: tooltip ? 'help' : 'default' }} {...handlers}>
-      {rect && tooltip && <MethodologyTooltip content={tooltip} rect={rect} />}
+    <div>
       <div className="flex items-center justify-between text-[10px] mb-0.5">
-        <span style={{
-          color: dominant ? 'var(--color-text-primary)' : 'var(--color-text-muted)',
-          textDecoration: tooltip ? 'underline dotted' : 'none',
-          textUnderlineOffset: '3px',
-        }}>
+        <span className="flex items-center gap-1" style={{ color: dominant ? 'var(--color-text-primary)' : 'var(--color-text-muted)' }}>
           {label} {dominant && '*'}
+          <InfoButton term={label} content={glossaryContent} />
         </span>
         <span className="font-data" style={{ color: 'var(--color-text-primary)' }}>
           {value.toFixed(2)}

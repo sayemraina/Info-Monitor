@@ -423,17 +423,27 @@ def generate_2d_positions(
             250 + radius * np.sin(angle),
         )
 
+    total_claims = len(claims)
+    cluster_counts = {}
+    for c in claims:
+        cluster_counts[c["cluster_id"]] = cluster_counts.get(c["cluster_id"], 0) + 1
+
     positions = []
     for claim in claims:
         cx, cy = cluster_centers.get(claim["cluster_id"], (300, 250))
         base_momentum = momentum_map.get(claim["id"], 0.0) if momentum_map else 0.0
-        # Add small per-claim noise so same-archetype claims aren't identical
         noisy_momentum = round(max(-1.0, min(1.0, base_momentum + random.gauss(0, 0.08))), 3)
+        
+        expected_share = cluster_counts.get(claim["cluster_id"], 1) / max(1, total_claims)
+        production_share = random.uniform(expected_share * 0.5, expected_share * 2.5)
+        salience = round(production_share / expected_share, 3)
+        
         positions.append({
             "claim_id": claim["id"],
             "x": round(cx + random.gauss(0, 35), 2),
             "y": round(cy + random.gauss(0, 35), 2),
             "momentum": noisy_momentum,
+            "salience": salience,
         })
     return positions
 
@@ -585,6 +595,24 @@ def generate_events(topic_id: str, claims: list[dict], archetypes: list[dict]) -
                 "summary": f"'{arch['subject']}' arousal shifted low to high over 48h, semantic content stable.",
                 "detail": {"arousal_from": "low", "arousal_to": "high", "hours": 48},
             })
+
+    # Add vocabulary_rotation
+    mutating_archs = [a for a in archetypes if a.get("mutation_direction", "stable") != "stable"]
+    m_arch = mutating_archs[0] if mutating_archs else archetypes[0]
+    matching_c = [c for c in claims if c["concept_id"] == m_arch["concept"]]
+    if matching_c:
+        event_counter += 1
+        events.append({
+            "id": gen_id("evt", topic_id, str(event_counter)),
+            "type": "vocabulary_rotation",
+            "timestamp": (NOW - timedelta(hours=random.randint(12, 60))).isoformat(),
+            "claim_id": matching_c[0]["id"],
+            "slice_id": None,
+            "severity": "medium",
+            "confidence": round(random.uniform(0.65, 0.85), 2),
+            "summary": f"Vocabulary rotation detected in '{m_arch['subject'][:30]}': emerging terminology overlaps with adjacent narratives.",
+            "detail": {"rotation_shift": 0.42, "hours": 24},
+        })
 
     # Add a divergence shift event
     event_counter += 1
@@ -826,6 +854,210 @@ def generate_compare_data(topic_id: str, clusters: list[dict],
     }
 
 
+
+
+def _platform_presence(claim_id: str, first_seen_platform: str) -> dict:
+    """Generate platform presence distribution for a claim.
+    Distributional share: what fraction of this claim's volume comes from each platform."""
+    PLATFORM_SLUG = {"x": "x_platform", "reddit": "reddit_platform", "youtube": "youtube_influencer"}
+    rng = random.Random(hash(claim_id + "platform_presence"))
+    slug = PLATFORM_SLUG.get(first_seen_platform, first_seen_platform)
+    out_platforms = ["x_platform", "reddit_platform", "youtube_influencer"]
+    weights = {}
+    for p in out_platforms:
+        weights[p] = rng.uniform(0.4, 0.85) if p == slug else rng.uniform(0.02, 0.4)
+    total = sum(weights.values())
+    return {k: round(v / total, 2) for k, v in weights.items()}
+
+
+# ---------------------------------------------------------------------------
+# IFI helper functions — temporal √JSD + Entropic Flux Direction
+# ---------------------------------------------------------------------------
+
+def _ifi_normalize(v: list) -> list:
+    total = sum(v) + 1e-12
+    return [x / total for x in v]
+
+def _ifi_entropy_bits(p: list) -> float:
+    """Shannon entropy in bits: H(p) = −Σ pᵢ log₂(pᵢ)"""
+    import math
+    p = _ifi_normalize(p)
+    return -sum(x * math.log2(x + 1e-12) for x in p if x > 0)
+
+def _ifi_jsd_sqrt(p: list, q: list) -> float:
+    """√JSD between two distributions. Bounded [0,1], true metric."""
+    import math
+    p, q = _ifi_normalize(p), _ifi_normalize(q)
+    m = [(pi + qi) / 2 for pi, qi in zip(p, q)]
+    def kl(a: list, b: list) -> float:
+        return sum(ai * math.log2(ai / (bi + 1e-12) + 1e-12) for ai, bi in zip(a, b) if ai > 0)
+    jsd = max(0.0, 0.5 * kl(p, m) + 0.5 * kl(q, m))
+    return math.sqrt(jsd)
+
+def _ifi_flux_character(delta_h: float, threshold: float = 0.05) -> str:
+    if delta_h > threshold:
+        return "diversifying"
+    elif delta_h < -threshold:
+        return "consolidating"
+    return "reshuffling"
+
+def _ifi_window_salience(clusters: list, window: str) -> list:
+    """
+    Build a cluster salience vector for the given time window.
+    Applies deterministic per-window perturbation that reflects realistic dynamics:
+      6h  — amplifies volatile clusters (radicalizing / fragmenting)
+      24h — baseline proportional to member_count (no perturbation)
+      7d  — amplifies stable clusters; shrinks fragmenting
+    Uses a seeded RNG so results are reproducible across calls.
+    """
+    base = [float(c.get("member_count", 1)) for c in clusters]
+    # Seed from window name + cluster IDs so results are deterministic but topic-specific
+    rng = random.Random(hash(window + "".join(c["id"] for c in clusters)))
+    if window == "6h":
+        for i, c in enumerate(clusters):
+            if c.get("mutation_direction") in ("radicalizing", "fragmenting"):
+                base[i] *= rng.uniform(1.3, 1.9)
+            elif c.get("mutation_direction") == "stable":
+                base[i] *= rng.uniform(0.4, 0.7)
+    elif window == "7d":
+        for i, c in enumerate(clusters):
+            if c.get("mutation_direction") == "stable":
+                base[i] *= rng.uniform(1.4, 1.8)
+            elif c.get("mutation_direction") == "fragmenting":
+                base[i] *= rng.uniform(0.2, 0.5)
+    # 24h — no perturbation, pure member_count baseline
+    return _ifi_normalize(base)
+
+
+def generate_ifi(clusters: list, window: str, coord_count: int = 0, arousal_escalating: bool = False) -> dict:
+    """
+    Compute IFI using temporal √JSD + ΔEntropy (Entropic Flux Direction).
+
+    Value (0–100): √JSD(p_current, p_previous) × 100
+      — magnitude of structural change in cluster-salience distribution
+    flux_character: consolidating | diversifying | reshuffling
+      — derived from ΔEntropy = H(p_current) − H(p_previous), zero free parameters
+    flags: qualitative annotations, NOT weighted into the numeric value
+    """
+    window_order = ["6h", "24h", "7d"]
+    idx = window_order.index(window)
+    prev_window = window_order[max(0, idx - 1)]
+
+    p = _ifi_window_salience(clusters, window)
+    # For 6h (first window), compare against 7d as the "long-run baseline"
+    q = _ifi_window_salience(clusters, prev_window if window != prev_window else "7d")
+
+    jsd_sqrt_val = _ifi_jsd_sqrt(p, q)
+    delta_h = _ifi_entropy_bits(p) - _ifi_entropy_bits(q)
+    character = _ifi_flux_character(delta_h)
+
+    value_100 = round(jsd_sqrt_val * 100, 1)
+
+    # Trend: diversifying + high flux = increasing; consolidating + high flux = decreasing
+    if character == "diversifying" and jsd_sqrt_val > 0.25:
+        trend = "increasing"
+    elif character == "consolidating" and jsd_sqrt_val > 0.25:
+        trend = "decreasing"
+    else:
+        trend = "stable"
+
+    # Sparkline: 12 historical readings seeded around current value
+    rng = random.Random(hash(window + str(value_100) + "sparkline"))
+    sparkline = [round(max(0.0, min(100.0, value_100 + rng.uniform(-12, 12))), 1) for _ in range(12)]
+
+    # Confidence interval: Fisher approximation ±50/√n, clamped [2, 8]
+    n = sum(c.get("member_count", 1) for c in clusters)
+    ci_width = max(2.0, min(8.0, 50.0 / (n ** 0.5 + 1)))
+
+    return {
+        "value": value_100,
+        "trend": trend,
+        "sparkline": sparkline,
+        "entropy_delta": round(delta_h, 4),
+        "flux_character": character,
+        "flags": {
+            "coordination_detected": coord_count >= 3,
+            "arousal_escalating": arousal_escalating,
+        },
+        "temporal_window_pair": [prev_window if window != prev_window else "7d", window],
+        "confidence_interval": [
+            max(0.0, round(value_100 - ci_width, 1)),
+            min(100.0, round(value_100 + ci_width, 1)),
+        ],
+    }
+
+def generate_situations(clusters: list[dict], archetypes: list[dict], events: list[dict]) -> list[dict]:
+    import random
+    situations = []
+    concept_to_arch = {a["concept"]: a for a in archetypes}
+    for c in clusters:
+        arch = concept_to_arch.get(c["concept_id"])
+        if not arch: continue
+        momentum = random.uniform(0.1, 0.9)
+        friction = round(random.uniform(0.1, 0.9), 2)
+        source_div = round(random.uniform(0.1, 0.9), 2)
+        if momentum > 0.5 and c["arousal_trend"] == "warming" and friction > 0.6:
+            situations.append({
+                "id": gen_id("sit", c["id"], "esc"),
+                "severity": "high",
+                "summary": f"'{c['label'][:30]}...' escalating — gaining speed, emotionally charged, actively fought over",
+                "cluster_id": c["id"],
+                "metric_basis": "momentum > 0.5 AND arousal = warming AND friction > 0.6"
+            })
+        elif c["mutation_direction"] == "mainstreaming" and arch["persistence"] > 10:
+            situations.append({
+                "id": gen_id("sit", c["id"], "main"),
+                "severity": "medium",
+                "summary": f"'{c['label'][:30]}...' mainstreaming — deeply embedded",
+                "cluster_id": c["id"],
+                "metric_basis": "mutation = mainstreaming AND persistence > 10"
+            })
+        elif friction > 0.8:
+            situations.append({
+                "id": gen_id("sit", c["id"], "pol"),
+                "severity": "high",
+                "summary": f"'{c['label'][:30]}...' polarizing — high friction ({friction})",
+                "cluster_id": c["id"],
+                "metric_basis": "friction > 0.8"
+            })
+        elif momentum > 0.5 and source_div < 0.3:
+            situations.append({
+                "id": gen_id("sit", c["id"], "acc"),
+                "severity": "medium",
+                "summary": f"'{c['label'][:30]}...' accelerating with low source diversity",
+                "cluster_id": c["id"],
+                "metric_basis": "momentum > 0.5 AND source_diversity < 0.3"
+            })
+        elif c["mutation_direction"] == "radicalizing":
+            situations.append({
+                "id": gen_id("sit", c["id"], "rad"),
+                "severity": "high",
+                "summary": f"'{c['label'][:30]}...' radicalizing — moving toward extreme framing",
+                "cluster_id": c["id"],
+                "metric_basis": "mutation = radicalizing"
+            })
+        elif momentum > 0.35:
+            situations.append({
+                "id": gen_id("sit", c["id"], "mon"),
+                "severity": "low",
+                "summary": f"'{c['label'][:30]}...' under active monitoring — rising signals detected",
+                "cluster_id": c["id"],
+                "metric_basis": "momentum > 0.35"
+            })
+    severity_order = {"high": 0, "medium": 1, "low": 2}
+    situations.sort(key=lambda x: severity_order[x["severity"]])
+    for e in events:
+        if e["type"] == "claim_dark":
+            situations.append({
+                "id": gen_id("sit", "dark"),
+                "severity": "medium",
+                "summary": f"A claim went dark — previously active, now zero production",
+                "cluster_id": clusters[0]["id"] if clusters else "",
+                "metric_basis": "claim_dark event detected"
+            })
+    situations.sort(key=lambda x: severity_order[x["severity"]])
+    return situations[:5]
+
 def generate_topic(topic_def: dict) -> None:
     """Generate all data files for a single topic."""
     topic_id = topic_def["id"]
@@ -878,6 +1110,7 @@ def generate_topic(topic_def: dict) -> None:
                 "concept_id": arch["concept"],
                 "first_seen_platform": platform,
                 "first_seen_timestamp": timestamp,
+                "platform_presence": _platform_presence(claim_id, platform),
                 "embedding": gen_embedding(base_vec, noise_scale=0.12),
                 # Extra fields for metrics computation
                 "_archetype_cluster": arch["cluster"],
@@ -934,6 +1167,7 @@ def generate_topic(topic_def: dict) -> None:
     }
 
     # Generate landscape data per time window
+    events = generate_events(topic_id, frontend_claims, archetypes)
     for window in ["6h", "24h", "7d"]:
         positions = generate_2d_positions(cluster_objects, frontend_claims, momentum_map=_momentum_map)
 
@@ -987,6 +1221,13 @@ def generate_topic(topic_def: dict) -> None:
                     "concept_id": notable_mut["concept"],
                     "direction": "mainstreaming",
                 } if notable_mut else None,
+                "ifi": generate_ifi(
+                    clusters=cluster_objects,
+                    window=window,
+                    coord_count=random.randint(2, 10),
+                    arousal_escalating=(top_arousal["momentum_pattern"] in ("spike", "rising")),
+                ),
+                "situations": generate_situations(cluster_objects, archetypes, events)
             },
         }
 
@@ -998,62 +1239,62 @@ def generate_topic(topic_def: dict) -> None:
         matching = [c for c in claims if c["concept_id"] == arch["concept"]]
         if not matching:
             continue
-        claim = matching[0]
-        momentum_series = generate_momentum_series(arch["momentum_pattern"])
-        current_momentum = momentum_series[-1]
+        for claim in matching[:4]:
+            momentum_series = generate_momentum_series(arch["momentum_pattern"])
+            current_momentum = momentum_series[-1]
 
-        detail = {
-            "claim": {k: v for k, v in claim.items() if not k.startswith("_") and k != "embedding"},
-            "momentum": make_momentum_extended(current_momentum, "24h", momentum_series, arch),
-            "salience": make_metric(round(random.uniform(0.3, 0.9), 4), "24h", momentum_series, ci_width=0.15),
-            "friction": make_metric(round(random.uniform(0.1, 0.8), 4), "24h",
-                                    [round(random.uniform(0.1, 0.8), 2) for _ in range(8)]),
-            "persistence": make_metric(arch["persistence"] / NUM_6H_WINDOWS, "24h",
-                                       [round(i / NUM_6H_WINDOWS, 2) for i in range(8)]),
-            "arousal": make_metric(arousal_to_float(arch["arousal"]), "24h",
-                                   [round(arousal_to_float(arch["arousal"]) + random.gauss(0, 0.05), 2) for _ in range(8)]),
-            "expressibility": make_metric(round(random.uniform(0.15, 0.65), 4), "24h",
-                                          [round(random.uniform(0.15, 0.65), 2) for _ in range(8)]),
-            "exposure": {
-                "production": make_metric(round(random.uniform(0.2, 0.6), 4), "24h", momentum_series),
-                "amplification": make_metric(round(random.uniform(0.3, 0.8), 4), "24h", momentum_series),
-                "estimated_exposure": make_metric(round(random.uniform(0.4, 0.95), 4), "24h", momentum_series,
-                                                   ci_width=0.25),
-            },
-            "confidence_detail": {
-                "score": claim["confidence"],
-                "factors": random.sample([
-                    "sarcasm detected", "quote-tweet ambiguity", "short content",
-                    "cross-register variation", "meme reference", "clear direct assertion",
-                ], k=random.randint(1, 3)),
-            },
-            "provenance": {
-                "first_platform": claim["first_seen_platform"],
-                "first_timestamp": claim["first_seen_timestamp"],
-                "lead_lag": [
-                    {"platform": p, "lag_hours": random.randint(4, 48)}
-                    for p in ["x", "reddit", "youtube"]
-                    if p != claim["first_seen_platform"] and random.random() > 0.4
+            detail = {
+                "claim": {k: v for k, v in claim.items() if not k.startswith("_") and k != "embedding"},
+                "momentum": make_momentum_extended(current_momentum, "24h", momentum_series, arch),
+                "salience": make_metric(round(random.uniform(0.3, 0.9), 4), "24h", momentum_series, ci_width=0.15),
+                "friction": make_metric(round(random.uniform(0.1, 0.8), 4), "24h",
+                                        [round(random.uniform(0.1, 0.8), 2) for _ in range(8)]),
+                "persistence": make_metric(arch["persistence"] / NUM_6H_WINDOWS, "24h",
+                                           [round(i / NUM_6H_WINDOWS, 2) for i in range(8)]),
+                "arousal": make_metric(arousal_to_float(arch["arousal"]), "24h",
+                                       [round(arousal_to_float(arch["arousal"]) + random.gauss(0, 0.05), 2) for _ in range(8)]),
+                "expressibility": make_metric(round(random.uniform(0.15, 0.65), 4), "24h",
+                                              [round(random.uniform(0.15, 0.65), 2) for _ in range(8)]),
+                "exposure": {
+                    "production": make_metric(round(random.uniform(0.2, 0.6), 4), "24h", momentum_series),
+                    "amplification": make_metric(round(random.uniform(0.3, 0.8), 4), "24h", momentum_series),
+                    "estimated_exposure": make_metric(round(random.uniform(0.4, 0.95), 4), "24h", momentum_series,
+                                                       ci_width=0.25),
+                },
+                "confidence_detail": {
+                    "score": claim["confidence"],
+                    "factors": random.sample([
+                        "sarcasm detected", "quote-tweet ambiguity", "short content",
+                        "cross-register variation", "meme reference", "clear direct assertion",
+                    ], k=random.randint(1, 3)),
+                },
+                "provenance": {
+                    "first_platform": claim["first_seen_platform"],
+                    "first_timestamp": claim["first_seen_timestamp"],
+                    "lead_lag": [
+                        {"platform": p, "lag_hours": random.randint(4, 48)}
+                        for p in ["x", "reddit", "youtube"]
+                        if p != claim["first_seen_platform"] and random.random() > 0.4
+                    ],
+                },
+                "supply_chain": generate_supply_chain(claim, topic_id),
+                "coordination": generate_coordination_check(),
+                "semantic_neighbors": [
+                    {"claim_id": c["id"], "similarity": round(random.uniform(0.50, 0.82), 2)}
+                    for c in random.sample(
+                        [c for c in frontend_claims if c["concept_id"] != arch["concept"]],
+                        min(3, len([c for c in frontend_claims if c["concept_id"] != arch["concept"]])),
+                    )
                 ],
-            },
-            "supply_chain": generate_supply_chain(claim, topic_id),
-            "coordination": generate_coordination_check(),
-            "semantic_neighbors": [
-                {"claim_id": c["id"], "similarity": round(random.uniform(0.50, 0.82), 2)}
-                for c in random.sample(
-                    [c for c in frontend_claims if c["concept_id"] != arch["concept"]],
-                    min(3, len([c for c in frontend_claims if c["concept_id"] != arch["concept"]])),
-                )
-            ],
-            "adversarial_pairs": [
-                p for p in adv_pairs
-                if claim["cluster_id"] in (p["cluster_id_a"], p["cluster_id_b"])
-            ],
-            "example_content": generate_example_content(arch, claim["first_seen_platform"]),
-        }
-
-        with open(claims_detail_dir / f"{claim['id']}.json", "w") as f:
-            json.dump(detail, f, indent=2)
+                "adversarial_pairs": [
+                    p for p in adv_pairs
+                    if claim["cluster_id"] in (p["cluster_id_a"], p["cluster_id_b"])
+                ],
+                "example_content": generate_example_content(arch, claim["first_seen_platform"]),
+            }
+    
+            with open(claims_detail_dir / f"{claim['id']}.json", "w") as f:
+                json.dump(detail, f, indent=2)
 
     # Generate comparison data for slice pairs
     slice_pairs = [("x_platform", "reddit_platform"), ("x_platform", "youtube_influencer")]
@@ -1064,8 +1305,7 @@ def generate_topic(topic_def: dict) -> None:
             with open(compare_dir / filename, "w") as f:
                 json.dump(compare, f, indent=2)
 
-    # Generate timeline data per window
-    events = generate_events(topic_id, frontend_claims, archetypes)
+
     for window in ["6h", "24h", "7d"]:
         timeline = {
             "events": events,
@@ -1139,6 +1379,22 @@ def generate_topics_json(topic_results: dict) -> None:
             "key_signal": key_signal,
             "activity_sparkline": [round(random.uniform(0.2, 0.9), 2) for _ in range(12)],
         }
+        
+        landscape_24h_path = DATA_DIR / "metrics" / tid / "landscape_24h.json"
+        ifi_val = None
+        top_sit = None
+        if landscape_24h_path.exists():
+            with open(landscape_24h_path) as f:
+                l24 = json.load(f)
+                ifi = l24.get("topic_metrics", {}).get("ifi")
+                if ifi:
+                    ifi_val = {"value": ifi["value"], "trend": ifi["trend"]}
+                sits = l24.get("topic_metrics", {}).get("situations", [])
+                if sits:
+                    top_sit = {"summary": sits[0]["summary"], "severity": sits[0]["severity"]}
+        summary["ifi"] = ifi_val
+        summary["top_situation"] = top_sit
+
         summaries.append(summary)
 
     with open(DATA_DIR / "topics.json", "w") as f:
@@ -1280,6 +1536,22 @@ def main():
             "key_signal": key_signal,
             "activity_sparkline": [round(random.uniform(0.2, 0.9), 2) for _ in range(12)],
         }
+        
+        landscape_24h_path = DATA_DIR / "metrics" / tid / "landscape_24h.json"
+        ifi_val = None
+        top_sit = None
+        if landscape_24h_path.exists():
+            with open(landscape_24h_path) as f:
+                l24 = json.load(f)
+                ifi = l24.get("topic_metrics", {}).get("ifi")
+                if ifi:
+                    ifi_val = {"value": ifi["value"], "trend": ifi["trend"]}
+                sits = l24.get("topic_metrics", {}).get("situations", [])
+                if sits:
+                    top_sit = {"summary": sits[0]["summary"], "severity": sits[0]["severity"]}
+        summary["ifi"] = ifi_val
+        summary["top_situation"] = top_sit
+
         # Merge into existing topics.json
         topics_path = DATA_DIR / "topics.json"
         existing: list = []

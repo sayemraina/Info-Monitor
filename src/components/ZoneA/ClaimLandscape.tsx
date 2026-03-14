@@ -3,6 +3,7 @@ import * as d3 from 'd3'
 import type { LandscapeData, Claim, Cluster, ClaimPosition, AdversarialPair } from '../../types'
 import { getMomentumColor, getArousalGlowFilter, getMutationColor } from '../../utils/colors'
 import { ClaimTooltip } from './ClaimTooltip'
+import { Legend } from './Legend'
 
 interface ClaimLandscapeProps {
   landscape: LandscapeData
@@ -43,11 +44,13 @@ export function ClaimLandscape({
   compareSalience,
   compareLabel,
 }: ClaimLandscapeProps) {
-  const svgRef = useRef<SVGSVGElement>(null)
   const containerRef = useRef<HTMLDivElement>(null)
+  const svgRef = useRef<SVGSVGElement>(null)
+  const gRef = useRef<SVGGElement>(null)
   const [dimensions, setDimensions] = useState({ width: 800, height: 500 })
   const [tooltip, setTooltip] = useState<{ claim: Claim; cluster: Cluster | undefined; momentum: number; x: number; y: number } | null>(null)
   const simulationRef = useRef<d3.Simulation<SimNode, undefined> | null>(null)
+  const hoverTimeoutRef = useRef<number | null>(null)
 
   // Observe container size
   useEffect(() => {
@@ -126,9 +129,9 @@ export function ClaimLandscape({
       const arousalVal = arousalToNumber(claim.arousal)
       const confidence = claim.confidence
 
-      // Salience approximation: use confidence as proxy for radius
-      // In compare mode, scale by cluster-level salience for this slice
-      const baseRadius = 2.5 + confidence * 5
+      // Salience used directly for radius mapping
+      const salience = pos.salience ?? confidence
+      const baseRadius = 2 + salience * 4
       const salienceScale = compareSalience ? (compareSalience.get(claim.cluster_id) ?? 0.15) : 1
       const radius = baseRadius * Math.max(0.2, salienceScale)
 
@@ -217,7 +220,6 @@ export function ClaimLandscape({
     const yMin = Math.min(...ys), yMax = Math.max(...ys)
     const xRange = xMax - xMin || 1
     const yRange = yMax - yMin || 1
-    const pad = 60
 
     const simPad = 40
     const scaledCentroids = new Map<string, { x: number; y: number }>()
@@ -229,18 +231,18 @@ export function ClaimLandscape({
     })
 
     const sim = d3.forceSimulation<SimNode>(nodes)
-      .force('charge', d3.forceManyBody<SimNode>().strength(-30).distanceMax(320))
-      .force('collide', d3.forceCollide<SimNode>().radius(d => d.radius + 1.5).strength(0.9).iterations(3))
-      .force('center', d3.forceCenter(width / 2, height / 2).strength(0.008))
-      // Attract nodes toward their cluster centroid — stronger pull for clear cluster separation
+      .force('charge', d3.forceManyBody<SimNode>().strength(-20).distanceMax(240))
+      .force('collide', d3.forceCollide<SimNode>().radius(d => d.radius + 1).strength(0.95).iterations(3))
+      .force('center', d3.forceCenter(width / 2, height / 2).strength(0.01))
+      // Attract nodes toward their cluster centroid
       .force('clusterX', d3.forceX<SimNode>(d => {
         const c = scaledCentroids.get(d.claim.cluster_id)
         return c?.x ?? width / 2
-      }).strength(0.14))
+      }).strength(0.10))
       .force('clusterY', d3.forceY<SimNode>(d => {
         const c = scaledCentroids.get(d.claim.cluster_id)
         return c?.y ?? height / 2
-      }).strength(0.14))
+      }).strength(0.10))
       .alphaDecay(0.012)
       .velocityDecay(0.4)
       .on('tick', () => {
@@ -261,14 +263,16 @@ export function ClaimLandscape({
           .attr('cx', d => d.x!)
           .attr('cy', d => d.y!)
 
-        // Build per-cluster node groups
+        // Build per-cluster node groups and node map
         const groups = new Map<string, [number, number][]>()
         const clusterNodeMap = new Map<string, SimNode[]>()
+        const nodeMap = new Map<string, SimNode>()
         for (const node of nodes) {
           const key = node.claim.cluster_id
           if (!groups.has(key)) { groups.set(key, []); clusterNodeMap.set(key, []) }
           groups.get(key)!.push([node.x!, node.y!])
           clusterNodeMap.get(key)!.push(node)
+          nodeMap.set(node.id, node)
         }
 
         // Update hulls
@@ -291,22 +295,7 @@ export function ClaimLandscape({
             return d3.line().curve(d3.curveCatmullRomClosed.alpha(0.5))(expanded) ?? ''
           })
 
-        // Update cluster label positions — sit below each cluster's lowest node
-        svg.selectAll<SVGTextElement, string>('.cluster-label')
-          .attr('x', function() {
-            const cid = this.getAttribute('data-cluster-id')
-            if (!cid) return 0
-            const cn = clusterNodeMap.get(cid)
-            if (!cn?.length) return 0
-            return cn.reduce((s, n) => s + (n.x ?? 0), 0) / cn.length
-          })
-          .attr('y', function() {
-            const cid = this.getAttribute('data-cluster-id')
-            if (!cid) return 0
-            const cn = clusterNodeMap.get(cid)
-            if (!cn?.length) return 0
-            return Math.max(...cn.map(n => (n.y ?? 0) + n.radius)) + 10
-          })
+        // (cluster labels are now React-computed — no D3 positioning needed)
 
         // Update adversarial link positions
         const advPairs = landscape.adversarial_pairs ?? []
@@ -336,6 +325,22 @@ export function ClaimLandscape({
     return () => { sim.stop() }
   }, [nodes.length, dimensions.width, dimensions.height]) // eslint-disable-line react-hooks/exhaustive-deps
 
+  // D3 Zoom Behavior
+  useEffect(() => {
+    if (!svgRef.current || !gRef.current) return
+    const svg = d3.select(svgRef.current)
+    const g = d3.select(gRef.current)
+
+    const zoom = d3.zoom<SVGSVGElement, unknown>()
+      .scaleExtent([0.5, 4])
+      .on('zoom', (event) => {
+        g.attr('transform', event.transform)
+      })
+
+    // Remove zoom double click to prevent accidental annoying bounces, but keep scroll/drag
+    svg.call(zoom).on('dblclick.zoom', null)
+  }, [])
+
   // Mutation arrows for cluster centroids
   const mutationArrows = useMemo(() => {
     const arrows: Array<{ x: number; y: number; direction: string; label: string }> = []
@@ -351,6 +356,18 @@ export function ClaimLandscape({
     return arrows
   }, [landscape.clusters, nodes])
 
+  // Cluster label positions — sorted by cluster_id for stable numbering (must match DivergenceHeatmap order)
+  const clusterLabels = useMemo(() => {
+    const sorted = [...landscape.clusters].sort((a, b) => a.id.localeCompare(b.id))
+    return sorted.flatMap((cluster, i) => {
+      const cn = nodes.filter(n => n.claim.cluster_id === cluster.id)
+      if (cn.length === 0) return []
+      const cx = cn.reduce((s, n) => s + (n.x ?? 0), 0) / cn.length
+      const cy = Math.max(...cn.map(n => (n.y ?? 0) + (n.radius ?? 8))) + 16
+      return [{ cluster, cx, cy, index: i + 1 }]
+    })
+  }, [landscape.clusters, nodes])
+
   const handleNodeClick = useCallback((claimId: string) => {
     onSelectClaim(claimId)
   }, [onSelectClaim])
@@ -361,10 +378,17 @@ export function ClaimLandscape({
   }, [onDeselectClaim])
 
   const handleNodeHover = useCallback((node: SimNode | null, event?: React.MouseEvent) => {
+    if (hoverTimeoutRef.current) {
+      window.clearTimeout(hoverTimeoutRef.current)
+      hoverTimeoutRef.current = null
+    }
+
     if (node && event) {
       setTooltip({ claim: node.claim, cluster: node.cluster, momentum: node.momentum, x: event.clientX, y: event.clientY })
     } else {
-      setTooltip(null)
+      hoverTimeoutRef.current = window.setTimeout(() => {
+        setTooltip(null)
+      }, 300)
     }
   }, [])
 
@@ -374,11 +398,12 @@ export function ClaimLandscape({
         ref={svgRef}
         width={dimensions.width}
         height={dimensions.height}
-        className="w-full h-full"
+        className="w-full h-full cursor-grab active:cursor-grabbing"
         onClick={handleBackgroundClick}
       >
-        {/* Cluster hulls */}
-        {clusterHulls.map(hull => (
+        <g ref={gRef}>
+          {/* Cluster hulls */}
+          {clusterHulls.map(hull => (
           <path
             key={hull.clusterId}
             className="cluster-hull"
@@ -489,46 +514,56 @@ export function ClaimLandscape({
           )
         })}
 
-        {/* Cluster labels — positions driven by D3 tick handler */}
-        {landscape.clusters.map(cluster => {
-          const clusterNodes = nodes.filter(n => n.claim.cluster_id === cluster.id)
-          if (clusterNodes.length === 0) return null
-          // Initial position: below cluster, updated each tick by D3
-          const initX = clusterNodes.reduce((s, n) => s + (n.x ?? 0), 0) / clusterNodes.length
-          const initY = Math.max(...clusterNodes.map(n => (n.y ?? 0) + n.radius)) + 10
+        {/* Cluster labels — numbered short badges, full name available on hover tooltip */}
+        {clusterLabels.map(({ cluster, cx, cy, index }) => {
+          const shortLabel = `Cluster ${index}`
+          const badgeW = 58
           return (
-            <text
-              key={cluster.id}
-              className="cluster-label"
-              data-cluster-id={cluster.id}
-              x={initX}
-              y={initY}
-              textAnchor="middle"
-              fill="var(--color-text-muted)"
-              fontSize={9}
-              fontFamily="var(--font-sans)"
-              opacity={0.65}
-              pointerEvents="none"
-            >
-              {cluster.label.slice(0, 28)}
-            </text>
+            <g key={`clbl-${cluster.id}`} pointerEvents="none">
+              <rect
+                x={cx - badgeW / 2}
+                y={cy - 2}
+                width={badgeW}
+                height={16}
+                rx={4}
+                fill="rgba(19,31,48,0.85)"
+                stroke="rgba(71,85,105,0.6)"
+                strokeWidth={0.8}
+              />
+              <text
+                x={cx}
+                y={cy + 9}
+                textAnchor="middle"
+                fill="#94A3B8"
+                fontSize={9}
+                fontWeight={600}
+                fontFamily="var(--font-sans, Inter, sans-serif)"
+                letterSpacing="0.4"
+              >
+                {shortLabel}
+              </text>
+            </g>
           )
         })}
+        </g>
       </svg>
 
       {/* Compare mode label */}
       {compareLabel && (
         <div
-          className="absolute top-2 left-2 px-2 py-0.5 rounded text-[10px] font-medium pointer-events-none"
+          className="absolute top-3 left-3 px-2 py-1 rounded text-[10px] font-medium pointer-events-none"
           style={{
             backgroundColor: 'rgba(0,0,0,0.6)',
             color: '#94A3B8',
-            border: '1px solid #2D3748',
+            border: '1px solid #1E3044',
           }}
         >
           {compareLabel}
         </div>
       )}
+
+      {/* Topology Legend */}
+      <Legend />
 
       {/* Tooltip overlay */}
       {tooltip && (
@@ -538,6 +573,22 @@ export function ClaimLandscape({
           momentum={tooltip.momentum}
           x={tooltip.x}
           y={tooltip.y}
+          onMouseEnter={() => {
+            if (hoverTimeoutRef.current) {
+              window.clearTimeout(hoverTimeoutRef.current)
+              hoverTimeoutRef.current = null
+            }
+          }}
+          onMouseLeave={() => {
+            hoverTimeoutRef.current = window.setTimeout(() => {
+              setTooltip(null)
+            }, 300)
+          }}
+          onClick={(e) => {
+            e.stopPropagation()
+            onSelectClaim(tooltip.claim.id)
+            setTooltip(null)
+          }}
         />
       )}
     </div>

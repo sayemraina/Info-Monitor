@@ -3,145 +3,145 @@
     "id": "x_platform",
     "type": "platform",
     "label": "X Platform",
-    "active_volume": 688,
+    "active_volume": 2993,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.7,
+    "base_rate_weight": 0.41,
     "is_influencer_framing": false
   },
   "slice_b": {
     "id": "reddit_platform",
     "type": "platform",
     "label": "Reddit Platform",
-    "active_volume": 4374,
+    "active_volume": 3806,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.36,
+    "base_rate_weight": 0.35,
     "is_influencer_framing": false
   },
   "divergence": {
-    "jsd": 0.0322,
-    "jsd_sqrt": 0.1794,
+    "jsd": 0.0546,
+    "jsd_sqrt": 0.2336,
     "trend": [
-      0.1609,
-      0.1869,
-      0.1595,
-      0.1893,
-      0.1284,
-      0.1445,
-      0.1959,
-      0.1892
+      0.2167,
+      0.2605,
+      0.2116,
+      0.2296,
+      0.2299,
+      0.2011,
+      0.2389,
+      0.2489
     ],
     "typology": {
-      "information_asymmetry": 0.35,
-      "interpretive": 0.44,
-      "paradigmatic": 0.21,
-      "dominant_mode": "Interpretive",
+      "information_asymmetry": 0.79,
+      "interpretive": 0.32,
+      "paradigmatic": 0,
+      "dominant_mode": "Information Asymmetry",
       "paradigmatic_caveat": false
     }
   },
   "per_cluster": [
     {
-      "cluster_id": "clu_706a04c37c10",
-      "label": "The humanitarian crisis in Gaza constitutes a violation of international law",
-      "salience_a": 0.4126,
-      "salience_b": 0.5881,
-      "arousal_a": 0.56,
-      "arousal_b": 0.85,
-      "mutation_a": "radicalizing",
+      "cluster_id": "clu_642bd1b7919d",
+      "label": "Western governments are complicit in the crisis through continued arms sales and",
+      "salience_a": 0.0766,
+      "salience_b": 0.7034,
+      "arousal_a": 0.57,
+      "arousal_b": 0.67,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_18677c7614d1",
+      "label": "Both sides have committed atrocities and moral absolutism prevents productive di",
+      "salience_a": 0.552,
+      "salience_b": 0.2197,
+      "arousal_a": 0.4,
+      "arousal_b": 0.47,
+      "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_ec8a04ec615f",
       "label": "Israel has the right to defend itself against terrorist attacks on its civilians",
-      "salience_a": 0.5654,
-      "salience_b": 0.3883,
-      "arousal_a": 0.72,
-      "arousal_b": 0.34,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_18677c7614d1",
-      "label": "Both sides have committed atrocities and moral absolutism prevents productive di",
-      "salience_a": 0.5942,
-      "salience_b": 0.5903,
-      "arousal_a": 0.68,
-      "arousal_b": 0.64,
-      "mutation_a": "radicalizing",
-      "mutation_b": "mainstreaming"
+      "salience_a": 0.3898,
+      "salience_b": 0.4239,
+      "arousal_a": 0.45,
+      "arousal_b": 0.16,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_9311bd496b39",
       "label": "A two-state solution remains the only viable path to lasting peace",
-      "salience_a": 0.8502,
-      "salience_b": 0.316,
-      "arousal_a": 0.53,
-      "arousal_b": 0.39,
-      "mutation_a": "radicalizing",
-      "mutation_b": "stable"
+      "salience_a": 0.7219,
+      "salience_b": 0.8737,
+      "arousal_a": 0.32,
+      "arousal_b": 0.75,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "mainstreaming"
     },
     {
       "cluster_id": "clu_0a3fc7ed0ccc",
       "label": "Media coverage of the conflict is systematically biased against Israel",
-      "salience_a": 0.9067,
-      "salience_b": 0.2734,
-      "arousal_a": 0.36,
-      "arousal_b": 0.18,
+      "salience_a": 0.7641,
+      "salience_b": 0.8045,
+      "arousal_a": 0.21,
+      "arousal_b": 0.66,
       "mutation_a": "mainstreaming",
-      "mutation_b": "stable"
+      "mutation_b": "radicalizing"
     },
     {
-      "cluster_id": "clu_642bd1b7919d",
-      "label": "Western governments are complicit in the crisis through continued arms sales and",
-      "salience_a": 0.8486,
-      "salience_b": 0.5625,
-      "arousal_a": 0.73,
-      "arousal_b": 0.79,
-      "mutation_a": "mainstreaming",
-      "mutation_b": "mainstreaming"
+      "cluster_id": "clu_706a04c37c10",
+      "label": "The humanitarian crisis in Gaza constitutes a violation of international law",
+      "salience_a": 0.6023,
+      "salience_b": 0.5398,
+      "arousal_a": 0.16,
+      "arousal_b": 0.89,
+      "mutation_a": "stable",
+      "mutation_b": "radicalizing"
     }
   ],
   "arousal_comparison": {
-    "slice_a_avg": 0.56,
-    "slice_b_avg": 0.48
+    "slice_a_avg": 0.42,
+    "slice_b_avg": 0.55
   },
   "exposure_comparison": {
     "slice_a": {
-      "value": 0.5089,
+      "value": 0.4056,
       "confidence_interval": [
-        0.4589,
-        0.5589
+        0.3556,
+        0.4556
       ],
       "baseline": "global",
       "time_window": "7d",
       "sparkline": [
-        0.1609,
-        0.1869,
-        0.1595,
-        0.1893,
-        0.1284,
-        0.1445,
-        0.1959,
-        0.1892
+        0.2167,
+        0.2605,
+        0.2116,
+        0.2296,
+        0.2299,
+        0.2011,
+        0.2389,
+        0.2489
       ],
       "source_distribution": "production"
     },
     "slice_b": {
-      "value": 0.7458,
+      "value": 0.6884,
       "confidence_interval": [
-        0.6958,
-        0.7958
+        0.6384,
+        0.7384
       ],
       "baseline": "global",
       "time_window": "7d",
       "sparkline": [
-        0.1609,
-        0.1869,
-        0.1595,
-        0.1893,
-        0.1284,
-        0.1445,
-        0.1959,
-        0.1892
+        0.2167,
+        0.2605,
+        0.2116,
+        0.2296,
+        0.2299,
+        0.2011,
+        0.2389,
+        0.2489
       ],
       "source_distribution": "production"
     }

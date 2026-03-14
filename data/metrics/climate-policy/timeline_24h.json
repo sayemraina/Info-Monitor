@@ -3,11 +3,11 @@
     {
       "id": "evt_4be1c26c04cc",
       "type": "momentum_spike",
-      "timestamp": "2026-03-09T08:00:00+00:00",
+      "timestamp": "2026-03-09T23:00:00+00:00",
       "claim_id": "clm_eda7cf3563b9",
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.82,
+      "confidence": 0.83,
       "summary": "'Carbon capture technology is a fossil fuel industry distract...' accelerated from 20th to 72nd percentile in 12h. Source diversity: low.",
       "detail": {
         "percentile_from": 20,
@@ -22,7 +22,7 @@
       "claim_id": "clm_edf386ab2210",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.67,
+      "confidence": 0.66,
       "summary": "'Climate justice requires wealthy nations to fund a...' went dark \u2014 active in last 3 windows, now zero production.",
       "detail": {
         "last_active_window": 3,
@@ -30,29 +30,13 @@
       }
     },
     {
-      "id": "evt_0a63d6db5e9e",
+      "id": "evt_8ea7d6f04b9b",
       "type": "coordination_flag",
-      "timestamp": "2026-03-09T06:00:00+00:00",
-      "claim_id": null,
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.72,
-      "summary": "Counter-narrative response lag of 3h between 'energy transition' and 'climate policy economics' clusters \u2014 consistent with organized rapid response.",
-      "detail": {
-        "signal": "adversarial_response_lag",
-        "cluster_a": "rapid-transition",
-        "cluster_b": "climate-skeptic",
-        "lag_hours": 3
-      }
-    },
-    {
-      "id": "evt_27b09cd52d0d",
-      "type": "coordination_flag",
-      "timestamp": "2026-03-08T14:00:00+00:00",
+      "timestamp": "2026-03-09T16:00:00+00:00",
       "claim_id": "clm_eda7cf3563b9",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.64,
+      "confidence": 0.73,
       "summary": "Near-duplicate content: 47 similar posts from non-overlapping accounts within 3h.",
       "detail": {
         "signal": "near_duplicate",
@@ -61,13 +45,13 @@
       }
     },
     {
-      "id": "evt_1dd54a570fba",
+      "id": "evt_27b09cd52d0d",
       "type": "divergence_shift",
-      "timestamp": "2026-03-07T07:00:00+00:00",
+      "timestamp": "2026-03-09T05:00:00+00:00",
       "claim_id": null,
       "slice_id": "x_platform",
       "severity": "medium",
-      "confidence": 0.84,
+      "confidence": 0.72,
       "summary": "X vs Reddit divergence increased 23% over 48h. Mode: information asymmetry.",
       "detail": {
         "jsd_change": 0.23,
@@ -76,13 +60,43 @@
       }
     },
     {
-      "id": "evt_8ea7d6f04b9b",
+      "id": "evt_1dd54a570fba",
+      "type": "vocabulary_rotation",
+      "timestamp": "2026-03-08T11:00:00+00:00",
+      "claim_id": "clm_c8b35bc32e54",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.83,
+      "summary": "Vocabulary rotation detected in 'energy transition': emerging terminology overlaps with adjacent narratives.",
+      "detail": {
+        "rotation_shift": 0.42,
+        "hours": 24
+      }
+    },
+    {
+      "id": "evt_1b53a5d00bf1",
+      "type": "coordination_flag",
+      "timestamp": "2026-03-08T02:00:00+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "low",
+      "confidence": 0.65,
+      "summary": "Counter-narrative response lag of 18h between 'energy transition' and 'climate policy economics' clusters \u2014 consistent with organic counter-mobilization.",
+      "detail": {
+        "signal": "adversarial_response_lag",
+        "cluster_a": "rapid-transition",
+        "cluster_b": "climate-skeptic",
+        "lag_hours": 18
+      }
+    },
+    {
+      "id": "evt_0a63d6db5e9e",
       "type": "lead_lag",
-      "timestamp": "2026-03-06T19:00:00+00:00",
+      "timestamp": "2026-03-05T19:00:00+00:00",
       "claim_id": "clm_c8b35bc32e54",
       "slice_id": null,
       "severity": "low",
-      "confidence": 0.62,
+      "confidence": 0.61,
       "summary": "'Rapid transition to renewable energy is ...' first detected on Reddit, appeared on X 22h later. Fidelity: 81%.",
       "detail": {
         "source_platform": "reddit",
@@ -92,5 +106,5 @@
       }
     }
   ],
-  "total_count": 6
+  "total_count": 7
 }

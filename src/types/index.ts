@@ -21,6 +21,7 @@ export interface Claim {
   concept_id: string
   first_seen_platform: string
   first_seen_timestamp: string // ISO8601
+  platform_presence?: Record<string, number> // distributional share per platform, e.g. { x_platform: 0.82, reddit_platform: 0.45 }
 }
 
 export interface Cluster {
@@ -36,6 +37,29 @@ export interface Cluster {
 }
 
 // --- Metric Types ---
+
+export interface InformationFluxIndex {
+  value: number // 0–100, scaled √JSD between consecutive window distributions
+  trend: 'increasing' | 'stable' | 'decreasing'
+  sparkline: number[]
+  confidence_interval: [number, number]
+  // Entropic flux direction — zero free parameters, computed from same salience vectors
+  entropy_delta: number // ΔH = H(p_t) − H(p_{t-1}). Positive = diversifying, negative = consolidating
+  flux_character: 'consolidating' | 'diversifying' | 'reshuffling'
+  flags: {
+    coordination_detected: boolean
+    arousal_escalating: boolean
+  }
+  temporal_window_pair: [string, string] // e.g., ["6h", "24h"] — windows being compared
+}
+
+export interface Situation {
+  id: string
+  severity: 'high' | 'medium' | 'low'
+  summary: string // plain-language alert
+  cluster_id: string // for cross-linking
+  metric_basis: string // which rule triggered
+}
 
 export interface Metric {
   value: number
@@ -100,6 +124,7 @@ export type EventType =
   | 'arousal_escalation'
   | 'phase_transition'
   | 'lead_lag'
+  | 'vocabulary_rotation'
 
 export interface NarrativeEvent {
   id: string
@@ -172,6 +197,7 @@ export interface ClaimPosition {
   x: number
   y: number
   momentum?: number // -1 to +1, emitted by data pipeline
+  salience?: number
 }
 
 export interface TopicMetrics {
@@ -182,6 +208,8 @@ export interface TopicMetrics {
   top_friction: { claim_id: string; friction: number }
   highest_arousal: { concept_id: string; arousal_trend: string }
   notable_mutation: { concept_id: string; direction: string } | null
+  ifi: InformationFluxIndex
+  situations: Situation[]
 }
 
 export interface LandscapeData {
@@ -281,6 +309,8 @@ export interface TopicSummary {
     summary: string
   } | null
   activity_sparkline: number[]
+  ifi?: { value: number; trend: string }
+  top_situation?: { summary: string; severity: string }
 }
 
 // --- Shared UI Types ---

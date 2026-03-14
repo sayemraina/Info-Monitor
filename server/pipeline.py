@@ -2,16 +2,23 @@
 Background pipeline runner for live topic ingestion.
 Runs the 5-step Python pipeline as sequential asyncio subprocesses.
 Falls back to generate_synthetic.py if API keys are not detected.
+
+Includes a batch scheduler that refreshes all topics on a configurable interval.
+Activate with ENABLE_SCHEDULER=true environment variable.
 """
 
 from __future__ import annotations
 
 import asyncio
 import json
+import logging
 import os
 import uuid
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, List, Literal, Optional, Tuple
+
+logger = logging.getLogger(__name__)
 
 DATA_DIR = Path(__file__).parent.parent / "data"
 SCRIPTS_DIR = Path(__file__).parent.parent / "scripts"
@@ -212,3 +219,97 @@ async def _finalize(job_id: str, topic_id: str) -> None:
 
     except Exception as exc:
         _update_job(job_id, status="failed", error=f"Failed to update topics.json: {exc}")
+
+
+# =============================================================================
+# Batch Scheduler — refreshes all topics on a configurable interval
+# =============================================================================
+
+_scheduler_task: Optional[asyncio.Task[None]] = None
+_scheduler_state: Dict[str, object] = {
+    "enabled": False,
+    "interval_hours": 6,
+    "last_run": None,
+    "next_run": None,
+    "running": False,
+}
+
+
+def get_schedule_status() -> dict:
+    """Return current scheduler status."""
+    return dict(_scheduler_state)
+
+
+def update_schedule(interval_hours: Optional[int] = None, enabled: Optional[bool] = None) -> dict:
+    """Update scheduler configuration. Returns new status."""
+    if interval_hours is not None:
+        _scheduler_state["interval_hours"] = max(1, interval_hours)
+    if enabled is not None:
+        _scheduler_state["enabled"] = enabled
+    return get_schedule_status()
+
+
+async def _run_batch() -> None:
+    """Run pipeline for all topics in topics.json."""
+    topics_path = DATA_DIR / "topics.json"
+    if not topics_path.exists():
+        logger.warning("Scheduler: topics.json not found, skipping batch")
+        return
+
+    topics = json.loads(topics_path.read_text())
+    topic_ids = [t["id"] for t in topics if isinstance(t, dict) and "id" in t]
+
+    _scheduler_state["running"] = True
+    _scheduler_state["last_run"] = datetime.now(timezone.utc).isoformat()
+
+    for topic_id in topic_ids:
+        job_id = create_job(topic_id)
+        logger.info("Scheduler: running pipeline for %s (job %s)", topic_id, job_id)
+        try:
+            await run_pipeline(job_id, topic_id)
+        except Exception:
+            logger.exception("Scheduler: pipeline failed for %s", topic_id)
+
+    _scheduler_state["running"] = False
+    logger.info("Scheduler: batch complete for %d topics", len(topic_ids))
+
+
+async def _scheduler_loop() -> None:
+    """Main scheduler loop — runs indefinitely until cancelled."""
+    interval_seconds = int(_scheduler_state["interval_hours"]) * 3600  # type: ignore[arg-type]
+    while True:
+        _scheduler_state["next_run"] = datetime.fromtimestamp(
+            datetime.now(timezone.utc).timestamp() + interval_seconds, tz=timezone.utc
+        ).isoformat()
+        await asyncio.sleep(interval_seconds)
+        if _scheduler_state["enabled"]:
+            try:
+                await _run_batch()
+            except Exception:
+                logger.exception("Scheduler: batch run failed")
+
+
+async def start_scheduler(interval_hours: int = 6) -> None:
+    """Start the batch scheduler. Call from FastAPI lifespan."""
+    global _scheduler_task
+    if _scheduler_task is not None:
+        return  # Already running
+
+    _scheduler_state["enabled"] = True
+    _scheduler_state["interval_hours"] = interval_hours
+    _scheduler_task = asyncio.create_task(_scheduler_loop())
+    logger.info("Scheduler started with %dh interval", interval_hours)
+
+
+async def stop_scheduler() -> None:
+    """Stop the batch scheduler. Call from FastAPI lifespan shutdown."""
+    global _scheduler_task
+    if _scheduler_task is not None:
+        _scheduler_task.cancel()
+        try:
+            await _scheduler_task
+        except asyncio.CancelledError:
+            pass
+        _scheduler_task = None
+        _scheduler_state["enabled"] = False
+        logger.info("Scheduler stopped")

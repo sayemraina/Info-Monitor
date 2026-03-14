@@ -15,7 +15,7 @@ export function salience(
 }
 
 export function momentum(
-  value: number,
+  _value: number,
   percentileFrom: number,
   percentileTo: number,
   hours: number,

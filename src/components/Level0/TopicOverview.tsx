@@ -24,7 +24,7 @@ export function TopicOverview({ topics, searchQuery, totalCount, onSelectTopic }
         </div>
 
         {topics.length === 0 ? (
-          <div className="rounded-lg p-8 text-center" style={{ backgroundColor: '#141B2D', border: '1px solid #2D3748' }}>
+          <div className="rounded-lg p-8 text-center" style={{ backgroundColor: '#131F30', border: '1px solid #1E3044' }}>
             <p className="text-sm mb-1" style={{ color: '#94A3B8' }}>
               {searchQuery ? `No data available for "${searchQuery}"` : 'Loading topics...'}
             </p>

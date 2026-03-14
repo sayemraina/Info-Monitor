@@ -4,6 +4,7 @@ import { useTopics } from './hooks/useTopics'
 import { Header } from './components/Header'
 import { TopicOverview } from './components/Level0/TopicOverview'
 import { TopicView } from './components/TopicView/TopicView'
+import { InfoButtonProvider } from './components/shared/InfoButtonContext'
 
 function App() {
   const { topics, refetch: refetchTopics } = useTopics()
@@ -78,6 +79,7 @@ function App() {
     : topics
 
   return (
+    <InfoButtonProvider>
     <div className="h-screen w-screen flex flex-col" style={{ backgroundColor: 'var(--color-bg-primary)' }}>
       <Header
         topics={topics}
@@ -120,6 +122,7 @@ function App() {
         ) : null}
       </main>
     </div>
+    </InfoButtonProvider>
   )
 }
 

@@ -69,7 +69,7 @@ export function getSourceDiversityColor(score: number): string {
 // Divergence heatmap: dark → amber → crimson
 export function getDivergenceHeatmapColor(value: number): string {
   if (value < 0.5) {
-    return interpolateColor('#0A0E17', '#F59E0B', value * 2)
+    return interpolateColor('#131F30', '#F59E0B', value * 2)
   }
   return interpolateColor('#F59E0B', '#DC2626', (value - 0.5) * 2)
 }

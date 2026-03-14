@@ -28,26 +28,36 @@ export function Header({
       style={{ backgroundColor: 'var(--color-bg-panel)', borderColor: 'var(--color-border)' }}
     >
       {/* Search bar */}
-      <div className="relative w-64">
+      <div className="relative" style={{ width: 220 }}>
+        <input
+          type="text"
+          placeholder="Search topics…"
+          value={searchQuery}
+          onChange={e => onSearch(e.target.value)}
+          className="w-full h-7 pl-3 pr-8 text-xs outline-none transition-all duration-200 font-semibold"
+          style={{
+            borderRadius: '8px',
+            backgroundColor: 'rgba(19,31,48,0.9)',
+            border: '1px solid rgba(30,48,68,0.8)',
+            color: '#F1F5F9',
+            caretColor: '#22D3EE',
+          }}
+          onFocus={e => {
+            e.currentTarget.style.borderColor = '#22D3EE'
+            e.currentTarget.style.boxShadow = '0 0 0 2px rgba(34,211,238,0.12)'
+          }}
+          onBlur={e => {
+            e.currentTarget.style.borderColor = 'rgba(30,48,68,0.8)'
+            e.currentTarget.style.boxShadow = 'none'
+          }}
+        />
         <svg
-          className="absolute left-2 top-1/2 -translate-y-1/2 w-3.5 h-3.5"
-          style={{ color: 'var(--color-text-muted)' }}
+          className="absolute right-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 pointer-events-none"
+          style={{ color: 'rgba(34,211,238,0.55)' }}
           fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}
         >
           <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
         </svg>
-        <input
-          type="text"
-          placeholder="Search topics..."
-          value={searchQuery}
-          onChange={e => onSearch(e.target.value)}
-          className="w-full h-7 pl-7 pr-2 rounded text-xs border outline-none focus:border-cyan-500"
-          style={{
-            backgroundColor: 'var(--color-bg-primary)',
-            borderColor: 'var(--color-border)',
-            color: 'var(--color-text-primary)',
-          }}
-        />
       </div>
 
       {/* Topic tabs (shown in Level 1+) */}

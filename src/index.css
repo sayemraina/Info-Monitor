@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 @theme {
-  --color-bg-primary: #0A0E17;
-  --color-bg-panel: #141B2D;
-  --color-bg-panel-hover: #1E293B;
-  --color-border: #2D3748;
+  --color-bg-primary: #131F30;
+  --color-bg-panel: #131F30;
+  --color-bg-panel-hover: #1A2A3C;
+  --color-border: #1E3044;
   --color-border-subtle: #4A5568;
 
   --color-text-primary: #F1F5F9;
@@ -101,3 +101,42 @@ body {
 .animate-highlight-pulse {
   animation: highlightPulse 800ms ease forwards;
 }
+
+/* Phase 1 Animations: drill-down overlay, tooltips, landscape */
+@keyframes infoPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(6, 182, 212, 0.4); border-color: rgba(6, 182, 212, 0.4); }
+  50% { box-shadow: 0 0 6px 2px rgba(6, 182, 212, 0.1); border-color: rgba(100, 116, 139, 1); }
+}
+.animate-infoPulse {
+  animation: infoPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes expandIn {
+  from { opacity: 0; transform: scale(0.97); }
+  to   { opacity: 1; transform: scale(1); }
+}
+.animate-expandIn {
+  animation: expandIn 150ms ease-out forwards;
+}
+
+input::placeholder {
+  color: rgba(226,232,240,0.55);
+  font-weight: 600;
+}
+
+@keyframes searchGlow {
+  0%, 100% { box-shadow: 0 0 0px rgba(34,211,238,0); }
+  50% { box-shadow: 0 0 14px rgba(34,211,238,0.1); }
+}
+.search-idle {
+  animation: searchGlow 3s ease-in-out infinite;
+}
+
+@keyframes nodePulse {
+  0%, 100% { r: var(--base-r); }
+  50% { r: calc(var(--base-r) + 2px); }
+}
+.node-pulse {
+  animation: nodePulse 1.5s ease-in-out infinite;
+}
+
