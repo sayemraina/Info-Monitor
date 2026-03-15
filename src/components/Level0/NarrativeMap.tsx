@@ -139,7 +139,7 @@ export function NarrativeMap({ activeTopic, topics, onSelectTopic, onLockTopic, 
     // Fit the continental US bounds with padding for the left sidebar.
     // This auto-centers regardless of viewport size.
     map.fitBounds(
-      [[-125, 24], [-66, 50]], // SW corner (SoCal/Texas) to NE corner (Maine)
+      [[-122, 26], [-68, 48]], // SW corner (SoCal) to NE corner (Maine) — tighter crop
       { padding: { left: 230, top: 10, right: 10, bottom: 10 }, duration: 0 }
     )
 
