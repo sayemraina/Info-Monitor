@@ -116,12 +116,12 @@ export function NarrativeMap({ activeTopic, topics, onSelectTopic, onLockTopic, 
     if (!containerRef.current || mapInitialized.current) return
     mapInitialized.current = true
 
-    // Center offset right to compensate for left search panel overlay.
-    // Zoom 3.4 = full US just visible; scroll/pinch zoom enabled for exploration.
+    // Center offset right and down to compensate for left search panel overlay.
+    // Zoom 3.3 = full US just visible; scroll/pinch zoom enabled for exploration.
     const map = new maplibregl.Map({
       container: containerRef.current,
       style: DARK_STYLE,
-      center: [-96, 39],
+      center: [-92, 37.5],
       zoom: 3.3,
       minZoom: 2.5,
       maxZoom: 7,
