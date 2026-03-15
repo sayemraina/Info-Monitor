@@ -209,10 +209,13 @@ export function Header({
 
         {/* Meta block: demo badge + version badge + github handle */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '14px', paddingTop: '3px' }}>
-          {/* Demo data indicator */}
+          {/* Demo data indicator with live pulse dot */}
           <span
             className="font-data"
             style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '5px',
               fontSize: '10px',
               fontWeight: 500,
               letterSpacing: '0.08em',
@@ -223,8 +226,24 @@ export function Header({
               lineHeight: 1,
             }}
           >
-            SYNTHETIC DATA
+            <span
+              style={{
+                width: '6px',
+                height: '6px',
+                borderRadius: '50%',
+                backgroundColor: '#22C55E',
+                boxShadow: '0 0 4px rgba(34,197,94,0.6)',
+                animation: 'pulse-dot 2s ease-in-out infinite',
+              }}
+            />
+            USING SYNTHETIC DATA
           </span>
+          <style>{`
+            @keyframes pulse-dot {
+              0%, 100% { opacity: 1; }
+              50% { opacity: 0.4; }
+            }
+          `}</style>
 
           {/* Version badge */}
           <span
