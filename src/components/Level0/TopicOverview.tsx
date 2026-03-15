@@ -26,6 +26,17 @@ interface TopicOverviewProps {
 export function TopicOverview({ topics, searchQuery, totalCount, onSelectTopic }: TopicOverviewProps) {
   const [syncState, syncActions] = useTopicSync(topics)
 
+  // Show per-topic confidence when a topic is active, otherwise global average
+  const activeTopicConfidence = useMemo(() => {
+    if (syncState.activeTopic) {
+      const active = topics.find(t => t.id === syncState.activeTopic)
+      if (active?.system_confidence != null) return active.system_confidence
+    }
+    const withConf = topics.filter(t => t.system_confidence != null)
+    if (withConf.length === 0) return undefined
+    return withConf.reduce((sum, t) => sum + t.system_confidence!, 0) / withConf.length
+  }, [topics, syncState.activeTopic])
+
   // Filter topics by search query for the card grid
   const filteredTopics = useMemo(() => {
     if (!searchQuery) return topics
@@ -51,7 +62,7 @@ export function TopicOverview({ topics, searchQuery, totalCount, onSelectTopic }
   return (
     <div className="flex flex-col" style={{ minHeight: '100%' }}>
       {/* Row 1: System Bar — 22px */}
-      <SystemBar />
+      <SystemBar systemConfidence={activeTopicConfidence} />
 
       {/* Row 2: Geographic Narrative Map — ~50% viewport */}
       <div

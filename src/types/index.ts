@@ -311,6 +311,7 @@ export interface TopicSummary {
   activity_sparkline: number[]
   ifi?: { value: number; trend: string }
   top_situation?: { summary: string; severity: string }
+  system_confidence?: number
 }
 
 // --- Level 0 Redesign Types ---

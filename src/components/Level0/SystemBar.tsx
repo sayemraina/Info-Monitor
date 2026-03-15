@@ -1,13 +1,21 @@
 import { useState, useEffect, useRef } from 'react'
 import { createPortal } from 'react-dom'
 
-export function SystemBar() {
+interface SystemBarProps {
+  systemConfidence?: number
+}
+
+export function SystemBar({ systemConfidence }: SystemBarProps) {
   const [time, setTime] = useState(new Date())
   const [showInfo, setShowInfo] = useState(false)
   const [popupPos, setPopupPos] = useState({ top: 0, left: 0 })
   const hideTimer = useRef<ReturnType<typeof setTimeout>>(null)
   const showTimer = useRef<ReturnType<typeof setTimeout>>(null)
   const iconRef = useRef<HTMLSpanElement>(null)
+
+  const confidence = systemConfidence ?? 0.87
+  const confidenceLabel = confidence >= 0.85 ? 'HIGH' : confidence >= 0.70 ? 'MODERATE' : 'LOW'
+  const confidenceColor = confidence >= 0.85 ? '#22D3EE' : confidence >= 0.70 ? '#F59E0B' : '#EF4444'
 
   useEffect(() => {
     const interval = setInterval(() => setTime(new Date()), 1000)
@@ -75,16 +83,16 @@ export function SystemBar() {
         <span>SYSTEM CONFIDENCE:</span>
         <span
           style={{
-            color: '#22D3EE',
+            color: confidenceColor,
             fontSize: '9.5px',
             fontWeight: 600,
-            border: '1px solid rgba(34,211,238,0.25)',
+            border: `1px solid ${confidenceColor}40`,
             borderRadius: '3px',
             padding: '1px 6px',
             lineHeight: 1,
           }}
         >
-          0.87
+          {confidence.toFixed(2)}
         </span>
 
         {/* Info icon with hover popup */}
@@ -104,7 +112,7 @@ export function SystemBar() {
             color: 'rgba(148,163,184,0.5)',
             cursor: 'pointer',
             transition: 'all 200ms',
-            ...(showInfo ? { color: '#22D3EE', borderColor: 'rgba(34,211,238,0.4)' } : {}),
+            ...(showInfo ? { color: confidenceColor, borderColor: `${confidenceColor}66` } : {}),
           }}
         >
           i
@@ -160,8 +168,8 @@ export function SystemBar() {
 
             <div style={{ display: 'flex', alignItems: 'center', gap: '6px', paddingTop: '6px', borderTop: '1px solid rgba(148,163,184,0.1)' }}>
               <span style={{ color: 'rgba(148,163,184,0.5)' }}>Current:</span>
-              <span style={{ color: '#22D3EE', fontWeight: 600, fontSize: '11px' }}>0.87</span>
-              <span style={{ color: 'rgba(34,211,238,0.5)', fontSize: '9px' }}>HIGH</span>
+              <span style={{ color: confidenceColor, fontWeight: 600, fontSize: '11px' }}>{confidence.toFixed(2)}</span>
+              <span style={{ color: `${confidenceColor}80`, fontSize: '9px' }}>{confidenceLabel}</span>
             </div>
           </div>,
           document.body

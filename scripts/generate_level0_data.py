@@ -35,6 +35,7 @@ TOPICS = [
         "activity_sparkline": [0.52, 0.68, 0.25, 0.67, 0.64, 0.82, 0.61, 0.71, 0.20, 0.89, 0.55, 0.47],
         "ifi": {"value": 13.3, "trend": "stable"},
         "top_situation": {"summary": "'AI regulation should target sp...' radicalizing — moving toward extreme framing", "severity": "high"},
+        "system_confidence": 0.91,
         "clusters": [
             {"id": "ai-targeted", "label": "Targeted Regulation", "momentum": 0.45},
             {"id": "ai-innovation", "label": "Innovation Stifling", "momentum": -0.3},
@@ -64,6 +65,7 @@ TOPICS = [
         "activity_sparkline": [0.65, 0.60, 0.80, 0.62, 0.53, 0.64, 0.85, 0.69, 0.85, 0.84, 0.80, 0.35],
         "ifi": {"value": 16.5, "trend": "stable"},
         "top_situation": {"summary": "'Immigration policy should prio...' radicalizing — moving toward extreme framing", "severity": "high"},
+        "system_confidence": 0.88,
         "clusters": [
             {"id": "imm-border", "label": "Border Security", "momentum": 0.83},
             {"id": "imm-economy", "label": "Economic Impact", "momentum": 0.4},
@@ -94,6 +96,7 @@ TOPICS = [
         "activity_sparkline": [0.30, 0.46, 0.65, 0.86, 0.80, 0.56, 0.56, 0.27, 0.74, 0.38, 0.36, 0.60],
         "ifi": {"value": 12.7, "trend": "stable"},
         "top_situation": {"summary": "'The conflict is destabilizing the entire region...' polarizing — high friction (0.86)", "severity": "high"},
+        "system_confidence": 0.82,
         "clusters": [
             {"id": "uii-us-involvement", "label": "US Involvement", "momentum": 0.65},
             {"id": "uii-iran-proxies", "label": "Iran Proxies", "momentum": 0.80},
@@ -124,6 +127,7 @@ TOPICS = [
         "activity_sparkline": [0.37, 0.61, 0.63, 0.89, 0.79, 0.86, 0.66, 0.41, 0.39, 0.52, 0.83, 0.66],
         "ifi": {"value": 19.4, "trend": "stable"},
         "top_situation": {"summary": "'Individual carbon footprint re...' radicalizing — moving toward extreme framing", "severity": "high"},
+        "system_confidence": 0.85,
         "clusters": [
             {"id": "clim-carbon", "label": "Carbon Capture Critique", "momentum": 0.50},
             {"id": "clim-renewable", "label": "Renewable Transition", "momentum": 0.45},
@@ -154,6 +158,7 @@ TOPICS = [
         "activity_sparkline": [0.45, 0.52, 0.71, 0.68, 0.83, 0.76, 0.91, 0.85, 0.72, 0.69, 0.78, 0.82],
         "ifi": {"value": 21.2, "trend": "increasing"},
         "top_situation": {"summary": "'Companies pushing AI hardest are quietly laying off...' fragmenting — divergent sub-narratives", "severity": "medium"},
+        "system_confidence": 0.79,
         "clusters": [
             {"id": "aiw-displacement", "label": "Job Displacement", "momentum": 0.80},
             {"id": "aiw-augmentation", "label": "AI Augmentation", "momentum": 0.45},
@@ -182,6 +187,7 @@ TOPICS = [
         "activity_sparkline": [0.55, 0.63, 0.78, 0.82, 0.75, 0.88, 0.92, 0.85, 0.79, 0.83, 0.90, 0.87],
         "ifi": {"value": 24.1, "trend": "increasing"},
         "top_situation": {"summary": "'Most crypto projects are scams designed to transfer wealth...' high coordination signal detected", "severity": "high"},
+        "system_confidence": 0.74,
         "clusters": [
             {"id": "cw-future", "label": "Crypto Future", "momentum": 0.65},
             {"id": "cw-scam", "label": "Crypto Scam", "momentum": 0.75},
@@ -210,6 +216,7 @@ TOPICS = [
         "activity_sparkline": [0.35, 0.42, 0.38, 0.55, 0.48, 0.62, 0.58, 0.71, 0.65, 0.60, 0.57, 0.63],
         "ifi": {"value": 11.4, "trend": "stable"},
         "top_situation": {"summary": "'Tech companies knowingly designed addictive algorithms...' high friction — contested advance", "severity": "medium"},
+        "system_confidence": 0.80,
         "clusters": [
             {"id": "smy-ban", "label": "Ban Platforms", "momentum": 0.81},
             {"id": "smy-parents", "label": "Parental Responsibility", "momentum": 0.45},
@@ -238,6 +245,7 @@ TOPICS = [
         "activity_sparkline": [0.40, 0.45, 0.55, 0.50, 0.62, 0.58, 0.70, 0.65, 0.72, 0.68, 0.75, 0.71],
         "ifi": {"value": 8.7, "trend": "increasing"},
         "top_situation": {"summary": "'Algorithm changes can destroy a creator's livelihood overnight...' warming — arousal escalating", "severity": "medium"},
+        "system_confidence": 0.73,
         "clusters": [
             {"id": "ce-exploitation", "label": "Platform Exploitation", "momentum": 0.72},
             {"id": "ce-opportunity", "label": "Creator Opportunity", "momentum": 0.40},
@@ -266,6 +274,7 @@ TOPICS = [
         "activity_sparkline": [0.30, 0.35, 0.45, 0.42, 0.55, 0.50, 0.48, 0.60, 0.57, 0.65, 0.62, 0.58],
         "ifi": {"value": 7.3, "trend": "stable"},
         "top_situation": {"summary": "'Remote work is eroding company culture...' lead-lag pattern detected across platforms", "severity": "low"},
+        "system_confidence": 0.77,
         "clusters": [
             {"id": "rw-remote", "label": "Remote Forever", "momentum": 0.65},
             {"id": "rw-rto", "label": "RTO Mandate", "momentum": 0.55},
@@ -294,6 +303,7 @@ TOPICS = [
         "activity_sparkline": [0.50, 0.58, 0.72, 0.68, 0.80, 0.75, 0.85, 0.82, 0.78, 0.88, 0.83, 0.90],
         "ifi": {"value": 18.6, "trend": "increasing"},
         "top_situation": {"summary": "'Export controls are backfiring as China accelerates...' coordination signal — burstiness anomaly", "severity": "high"},
+        "system_confidence": 0.84,
         "clusters": [
             {"id": "uct-decouple", "label": "Decouple Now", "momentum": 0.75},
             {"id": "uct-engagement", "label": "Engagement Needed", "momentum": 0.25},
