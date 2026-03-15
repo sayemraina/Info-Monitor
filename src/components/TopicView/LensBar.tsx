@@ -166,7 +166,7 @@ export function LensBar({ activePair, onSelectPair }: LensBarProps) {
         className="flex items-center px-3 shrink-0 relative"
         style={{
           height: '32px',
-          backgroundColor: '#131F30',
+          backgroundColor: '#0F1923',
           borderBottom: '1px solid #1E3044',
           gap: '10px',
         }}
@@ -273,7 +273,7 @@ export function LensBar({ activePair, onSelectPair }: LensBarProps) {
           style={{
             top: '32px',
             maxHeight: 'calc(100vh - 120px)',
-            backgroundColor: '#131F30',
+            backgroundColor: '#0F1923',
             border: '1px solid rgba(30,48,68,0.6)',
             borderTop: 'none',
             boxShadow: '0 20px 40px rgba(0,0,0,0.5)',

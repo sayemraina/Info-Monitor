@@ -92,7 +92,7 @@ function App() {
         refetchTopics={refetchTopics}
       />
 
-      <main className="flex-1 overflow-hidden">
+      <main className="flex-1" style={{ overflow: state.level === 0 ? 'auto' : 'hidden' }}>
         {state.level === 0 ? (
           <div key="level-0" className="h-full animate-fade-in">
             <TopicOverview

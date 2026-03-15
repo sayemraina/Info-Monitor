@@ -1,182 +1,164 @@
 import { useState } from 'react'
 import type { TopicSummary } from '../../types'
 import { MiniSparkline } from './MiniSparkline'
-import { getContestationColor, getTrendColor } from '../../utils/colors'
-import { createPortal } from 'react-dom'
+import { getContestationColor } from '../../utils/colors'
 
 interface TopicCardProps {
   topic: TopicSummary
-  onSelect: (id: string) => void
+  isActive: boolean
+  isLocked: boolean
+  onClick: () => void
+  onNavigate: () => void
 }
 
-const CONTESTATION_BORDER: Record<string, string> = {
-  high: '#EF4444',
-  medium: '#F59E0B',
-  low: '#22C55E',
-}
+export function TopicCard({ topic, isActive, isLocked, onClick, onNavigate }: TopicCardProps) {
+  const [hovered, setHovered] = useState(false)
 
-export function TopicCard({ topic, onSelect }: TopicCardProps) {
+  // IFI color based on severity thresholds
+  const ifiColor = (topic.ifi?.value ?? 0) > 30 ? '#EF4444'
+    : (topic.ifi?.value ?? 0) > 15 ? '#F59E0B'
+    : '#22C55E'
+
   const contestColor = getContestationColor(topic.contestation_level)
-  const accentColor = CONTESTATION_BORDER[topic.contestation_level] ?? '#94A3B8'
-
-  const [mousePos, setMousePos] = useState<{ x: number, y: number } | null>(null)
 
   return (
-    <button
-      onClick={() => onSelect(topic.id)}
-      className="text-left rounded-lg p-4 w-full transition-all cursor-pointer relative overflow-hidden"
+    <div
+      className="relative rounded-lg cursor-pointer"
       style={{
-        backgroundColor: '#131F30',
-        border: '1px solid #1E3044',
-        borderLeft: `3px solid ${accentColor}`,
+        padding: '10px 12px',
+        backgroundColor: isActive
+          ? 'rgba(233,69,96,0.06)'
+          : hovered
+            ? 'rgba(255,255,255,0.03)'
+            : 'rgba(255,255,255,0.015)',
+        border: isActive
+          ? '1px solid rgba(233,69,96,0.4)'
+          : hovered
+            ? '1px solid rgba(148,163,184,0.15)'
+            : '1px solid rgba(148,163,184,0.06)',
+        boxShadow: isActive
+          ? '0 0 12px rgba(233,69,96,0.12)'
+          : 'none',
+        transition: 'all 200ms ease',
       }}
-      onMouseMove={e => {
-        if (mousePos) {
-          setMousePos({ x: e.clientX, y: e.clientY })
-        }
-      }}
-      onMouseEnter={e => {
-        e.currentTarget.style.borderColor = `#1E3044`
-        e.currentTarget.style.borderLeftColor = accentColor
-        e.currentTarget.style.backgroundColor = '#1A2A3C'
-        e.currentTarget.style.boxShadow = `0 0 20px rgba(6, 182, 212, 0.08), inset 0 0 0 1px rgba(6,182,212,0.1)`
-        setMousePos({ x: e.clientX, y: e.clientY })
-      }}
-      onMouseLeave={e => {
-        e.currentTarget.style.backgroundColor = '#131F30'
-        e.currentTarget.style.boxShadow = 'none'
-        e.currentTarget.style.borderColor = '#1E3044'
-        e.currentTarget.style.borderLeftColor = accentColor
-        setMousePos(null)
-      }}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      onClick={onClick}
     >
-      {/* Header row */}
-      <div className="flex items-center justify-between mb-3">
-        <h3 className="text-sm font-semibold tracking-wide" style={{ color: '#F1F5F9' }}>
+      {/* Row 1: Topic name + navigate arrow */}
+      <div className="flex items-center justify-between" style={{ marginBottom: '6px' }}>
+        <span
+          className="font-semibold truncate"
+          style={{ color: 'rgba(241,245,249,0.85)', fontSize: '12px' }}
+        >
           {topic.name}
-        </h3>
-        <div className="flex items-center gap-2">
-          {topic.ifi && (
-            <span 
-              className="font-mono text-[10px] px-1.5 py-0.5 rounded border"
-              style={{
-                borderColor: topic.ifi.trend === 'increasing' ? 'rgba(239,68,68,0.5)' : '#0f766e',
-                backgroundColor: topic.ifi.trend === 'increasing' ? 'rgba(239,68,68,0.1)' : 'rgba(15,118,110,0.1)',
-                color: topic.ifi.trend === 'increasing' ? '#EF4444' : '#2dd4bf'
-              }}
-            >
-              IFI {topic.ifi.value.toFixed(1)} {topic.ifi.trend === 'increasing' ? '↑' : topic.ifi.trend === 'decreasing' ? '↓' : '→'}
-            </span>
-          )}
+        </span>
+        <button
+          onClick={(e) => { e.stopPropagation(); onNavigate() }}
+          className="cursor-pointer flex-shrink-0"
+          style={{
+            color: hovered ? '#06B6D4' : 'rgba(148,163,184,0.4)',
+            fontSize: hovered ? '9.5px' : '11px',
+            background: 'none',
+            border: 'none',
+            padding: '0 0 0 6px',
+            transition: 'color 150ms ease',
+            whiteSpace: 'nowrap',
+          }}
+          title="View topic analysis"
+        >
+          {hovered ? 'Explore →' : '→'}
+        </button>
+      </div>
+
+      {/* Row 2: IFI + contestation + sparkline */}
+      <div className="flex items-center gap-3">
+        {/* IFI score */}
+        {topic.ifi && (
           <span
-            className="font-data text-xs px-2 py-0.5 rounded-full"
-            style={{
-              backgroundColor: `${contestColor}18`,
-              color: contestColor,
-              border: `1px solid ${contestColor}30`,
-            }}
+            className="font-data font-bold"
+            style={{ fontSize: '14px', color: ifiColor }}
           >
-            {topic.cluster_count} clusters
+            {topic.ifi.value.toFixed(1)}
           </span>
-        </div>
-      </div>
+        )}
 
-      <div className="space-y-2 text-xs">
-        {/* Divergence row */}
-        <div className="flex items-center gap-2">
-          <span style={{ color: '#64748B' }}>Divergence</span>
-          <span className="font-data font-semibold" style={{ color: '#F1F5F9' }}>
-            {topic.headline_divergence.jsd.toFixed(2)}
-          </span>
-          <span style={{ color: '#64748B' }}>—</span>
-          <span style={{ color: '#94A3B8' }}>
-            {topic.headline_divergence.dominant_typology}
-          </span>
-          <span style={{ color: getTrendColor(topic.headline_divergence.trend), fontSize: 11 }}>
-            {topic.headline_divergence.trend === 'increasing' ? '↑' :
-              topic.headline_divergence.trend === 'decreasing' ? '↓' : '→'}
-          </span>
-        </div>
-
-        {/* Top accelerating claim */}
-        <div className="leading-relaxed" style={{ color: '#64748B' }}>
-          Top accelerating:{' '}
-          <span style={{ color: '#94A3B8', fontStyle: 'italic' }}>
-            "{topic.top_accelerating_claim.text.length > 80 ? topic.top_accelerating_claim.text.slice(0, 80) + '...' : topic.top_accelerating_claim.text}"
-          </span>
-        </div>
-
-        {/* Sparkline + key signal */}
-        <div className="flex items-center justify-between pt-1">
-          <MiniSparkline data={topic.activity_sparkline} width={80} height={22} />
-          {topic.key_signal && (
-            <span
-              className="text-[11px] px-2 py-1 rounded truncate ml-3"
-              style={{
-                backgroundColor: 'rgba(245,158,11,0.08)',
-                color: '#F59E0B',
-                border: '1px solid rgba(245,158,11,0.2)',
-                maxWidth: '65%',
-              }}
-            >
-              {topic.key_signal.summary.length > 65 ? topic.key_signal.summary.slice(0, 65) + '…' : topic.key_signal.summary}
-            </span>
-          )}
-        </div>
-      </div>
-      
-      {/* Top Situation (Phase 6 Enhancement) */}
-      {topic.top_situation && (
-        <div 
-          className="mt-3 px-2 py-1.5 rounded flex items-center gap-2"
-          style={{ 
-            backgroundColor: topic.top_situation.severity === 'high' ? 'rgba(239, 68, 68, 0.1)' : 'rgba(245, 158, 11, 0.1)',
-            border: `1px solid ${topic.top_situation.severity === 'high' ? 'rgba(239, 68, 68, 0.3)' : 'rgba(245, 158, 11, 0.3)'}`
+        {/* Contestation badge */}
+        <span
+          className="font-data uppercase"
+          style={{
+            fontSize: '7.5px',
+            letterSpacing: '1px',
+            color: contestColor,
+            opacity: 0.8,
           }}
         >
-          <span className="text-[9px] uppercase font-bold px-1 rounded bg-[#131F30]/50" style={{ color: topic.top_situation.severity === 'high' ? '#EF4444' : '#F59E0B' }}>
-            {topic.top_situation.severity}
-          </span>
-          <span className="text-[10px] text-slate-300 truncate">
+          {topic.contestation_level}
+        </span>
+
+        {/* Sparkline — pushed to right */}
+        <div className="ml-auto">
+          <MiniSparkline data={topic.activity_sparkline} width={60} height={18} />
+        </div>
+      </div>
+
+      {/* Row 3: Top signal — one-line preview */}
+      {topic.key_signal && (
+        <p
+          className="truncate"
+          style={{
+            fontSize: '9px',
+            color: 'rgba(148,163,184,0.5)',
+            marginTop: '5px',
+          }}
+        >
+          {topic.key_signal.summary}
+        </p>
+      )}
+
+      {/* Row 4: Situation alert (conditional) */}
+      {topic.top_situation && (
+        <div
+          className="flex items-center gap-2"
+          style={{ marginTop: '5px' }}
+        >
+          <div
+            style={{
+              width: '14px',
+              height: '2px',
+              borderRadius: '1px',
+              backgroundColor: topic.top_situation.severity === 'high' ? '#EF4444' : '#F59E0B',
+              flexShrink: 0,
+            }}
+          />
+          <span
+            className="truncate"
+            style={{
+              fontSize: '8.5px',
+              color: topic.top_situation.severity === 'high'
+                ? 'rgba(239,68,68,0.7)'
+                : 'rgba(245,158,11,0.7)',
+            }}
+          >
             {topic.top_situation.summary}
           </span>
         </div>
       )}
 
-      {mousePos && createPortal(
+      {/* Locked indicator */}
+      {isLocked && (
         <div
-          className="fixed z-50 pointer-events-none rounded-lg text-xs"
           style={{
-            left: Math.min(mousePos.x + 14, window.innerWidth - 300),
-            top: Math.min(mousePos.y + 14, window.innerHeight - 100),
-            width: 280,
-            backgroundColor: '#131F30',
-            border: '1px solid #1E3044',
-            boxShadow: '0 8px 32px rgba(0,0,0,0.75)',
-            padding: '10px 12px',
+            position: 'absolute',
+            top: '4px',
+            right: '4px',
+            width: '4px',
+            height: '4px',
+            borderRadius: '50%',
+            backgroundColor: '#E94560',
           }}
-        >
-          <div className="font-semibold mb-1.5" style={{ color: '#F1F5F9', fontSize: 11 }}>
-            {topic.name}
-          </div>
-          <div className="space-y-1">
-            <div>
-              <span style={{ color: '#64748B' }}>Contestation: </span>
-              <span style={{ color: '#94A3B8' }}>{topic.contestation_level} · {topic.cluster_count} clusters</span>
-            </div>
-            <div>
-              <span style={{ color: '#64748B' }}>Divergence: </span>
-              <span style={{ color: '#94A3B8' }}>{topic.headline_divergence.jsd.toFixed(2)} ({topic.headline_divergence.dominant_typology})</span>
-            </div>
-            {topic.key_signal && (
-              <div className="mt-2 text-[11px]" style={{ color: '#F1F5F9' }}>
-                {topic.key_signal.summary}
-              </div>
-            )}
-          </div>
-        </div>,
-        document.body
+        />
       )}
-    </button>
+    </div>
   )
 }

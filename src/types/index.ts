@@ -313,6 +313,54 @@ export interface TopicSummary {
   top_situation?: { summary: string; severity: string }
 }
 
+// --- Level 0 Redesign Types ---
+
+export interface GeoRegion {
+  lat: number
+  lng: number
+  radius_km: number
+  salience: number
+  momentum: number
+}
+
+export interface GeoCluster {
+  cluster_id: string
+  cluster_label: string
+  regions: GeoRegion[]
+}
+
+export interface TopicGeoData {
+  topic_id: string
+  geo_clusters: GeoCluster[]
+}
+
+export interface VideoMetadata {
+  video_id: string
+  title: string
+  channel_name: string
+  view_count: number
+  published_at: string // ISO8601
+  // Optional fields from discovery pipeline (not present in static demo data)
+  tier?: 1 | 2 | 3
+  composite_score?: number
+  channel_subscribers?: number
+}
+
+export interface DiscoursePost {
+  platform: 'x' | 'reddit'
+  username: string
+  text: string
+  cluster_id: string
+  system_tags: string[]
+  extracted_at: string // ISO8601
+}
+
+export interface Level0State {
+  activeTopic: string
+  isLocked: boolean
+  rotationTimer: number
+}
+
 // --- Shared UI Types ---
 
 export type TimeWindow = '6h' | '24h' | '7d'

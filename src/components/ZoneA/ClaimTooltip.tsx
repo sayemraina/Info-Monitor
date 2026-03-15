@@ -48,7 +48,7 @@ export function ClaimTooltip({ claim, cluster, momentum, x, y, onMouseEnter, onM
         left: leftPos,
         top: topPos,
         width: 300,
-        backgroundColor: '#131F30',
+        backgroundColor: '#0F1923',
         borderColor: '#1E3044',
         boxShadow: '0 8px 24px rgba(0,0,0,0.6)',
       }}

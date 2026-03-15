@@ -44,6 +44,16 @@ export const api = {
   getTimeline: (topicId: string, window: string): Promise<Response> =>
     fetch(`${BASE}/data/metrics/${topicId}/timeline_${window}.json`),
 
+  // Level 0 data endpoints
+  getGeoData: (topicId: string): Promise<Response> =>
+    fetch(`${BASE}/data/geo/${topicId}.json`),
+
+  getYouTubeData: (topicId: string): Promise<Response> =>
+    fetch(`${BASE}/data/youtube/${topicId}.json`),
+
+  getDiscourseData: (topicId: string): Promise<Response> =>
+    fetch(`${BASE}/data/discourse/${topicId}.json`),
+
   // Server-mode only endpoints (Live Topic Input)
   postIngest: (body: IngestRequest): Promise<Response> =>
     fetch(`${BASE}/api/ingest`, {

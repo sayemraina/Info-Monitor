@@ -127,6 +127,7 @@ export const IFICard: React.FC<IFICardProps> = ({ ifi }) => {
       expandable={true}
       onExpand={() => setIsExpanded(true)}
       className="h-full"
+      headerRight={<InfoButton term="Information Flux Index" content={ifiInfo} />}
     >
       {/* Value + trend + flux character */}
       <div className="flex items-center justify-between pb-1">

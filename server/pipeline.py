@@ -27,14 +27,15 @@ SCRIPTS_DIR = Path(__file__).parent.parent / "scripts"
 _jobs: Dict[str, dict] = {}
 
 PipelineStatus = Literal["pending", "running", "complete", "failed"]
-PipelineStep = Literal["ingest", "extract", "embed", "cluster", "metrics", "done"]
+PipelineStep = Literal["ingest", "youtube", "extract", "embed", "cluster", "metrics", "done"]
 
 REAL_STEPS: List[Tuple[str, int, List[str]]] = [
-    ("ingest",  18, ["python3", str(SCRIPTS_DIR / "ingest.py"),          "--topic", "{topic_id}"]),
-    ("extract", 38, ["python3", str(SCRIPTS_DIR / "extract.py"),         "--topic", "{topic_id}"]),
-    ("embed",   58, ["python3", str(SCRIPTS_DIR / "embed.py"),           "--topic", "{topic_id}"]),
-    ("cluster", 78, ["python3", str(SCRIPTS_DIR / "cluster.py"),         "--topic", "{topic_id}"]),
-    ("metrics", 95, ["python3", str(SCRIPTS_DIR / "compute_metrics.py"), "--topic", "{topic_id}"]),
+    ("ingest",  15, ["python3", str(SCRIPTS_DIR / "ingest.py"),            "--topic", "{topic_id}"]),
+    ("youtube", 22, ["python3", str(SCRIPTS_DIR / "youtube_discover.py"),  "--topic", "{topic_id}"]),
+    ("extract", 38, ["python3", str(SCRIPTS_DIR / "extract.py"),           "--topic", "{topic_id}"]),
+    ("embed",   58, ["python3", str(SCRIPTS_DIR / "embed.py"),             "--topic", "{topic_id}"]),
+    ("cluster", 78, ["python3", str(SCRIPTS_DIR / "cluster.py"),           "--topic", "{topic_id}"]),
+    ("metrics", 95, ["python3", str(SCRIPTS_DIR / "compute_metrics.py"),   "--topic", "{topic_id}"]),
 ]
 
 SYNTHETIC_STEPS: List[Tuple[str, int, List[str]]] = [
@@ -91,13 +92,19 @@ async def run_pipeline(job_id: str, topic_id: str, use_synthetic: bool = False) 
         await _run_real_pipeline(job_id, topic_id)
 
 
+OPTIONAL_STEPS = {"youtube"}  # Non-blocking: failure won't halt the pipeline
+
 async def _run_real_pipeline(job_id: str, topic_id: str) -> None:
     for step_name, progress_after, cmd_template in REAL_STEPS:
         _update_job(job_id, step=step_name)
         cmd = [c.replace("{topic_id}", topic_id) for c in cmd_template]
         success = await _exec(job_id, cmd, topic_id)
         if not success:
-            return
+            if step_name in OPTIONAL_STEPS:
+                logger.warning("Optional step '%s' failed for %s — continuing", step_name, topic_id)
+                _update_job(job_id, status="running", error=None)  # Clear error, keep going
+            else:
+                return
         _update_job(job_id, progress_pct=progress_after)
 
     await _finalize(job_id, topic_id)

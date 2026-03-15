@@ -39,7 +39,7 @@ export const SignalsCard: React.FC<SignalsCardProps> = (props) => {
           <SignalsTimeline {...props} />
         </div>
         {/* Fade-out gradient at the bottom — purely cosmetic */}
-        <div className="sticky bottom-0 inset-x-0 h-12 bg-gradient-to-t from-slate-900 via-slate-900/70 to-transparent pointer-events-none" />
+        <div className="sticky bottom-0 inset-x-0 h-12 pointer-events-none" style={{ background: 'linear-gradient(to top, #030508, rgba(3,5,8,0.7), transparent)' }} />
       </div>
 
       {/* Always-visible View Details button pinned above the gradient */}

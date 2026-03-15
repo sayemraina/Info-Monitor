@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import { getMomentumColor, getMutationColor } from '../../utils/colors';
 import { InfoButton } from '../shared/InfoButton';
 import { GLOSSARY } from '../../constants/glossary';
@@ -27,17 +27,8 @@ function Row({
 }
 
 export const Legend: React.FC = () => {
-  const [collapsed, setCollapsed] = useState(true);
   const hoverRef = useRef(false);
   const [hovered, setHovered] = useState(false);
-
-  // Auto-collapse after 5s if not hovered
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      if (!hoverRef.current) setCollapsed(true);
-    }, 5000);
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
     <div
@@ -46,26 +37,11 @@ export const Legend: React.FC = () => {
       onMouseEnter={() => { hoverRef.current = true; setHovered(true) }}
       onMouseLeave={() => { hoverRef.current = false; setHovered(false) }}
     >
-      {/* Collapse toggle pill — always visible to hint the legend exists */}
-      <button
-        onClick={() => setCollapsed(v => !v)}
-        className="flex items-center gap-1.5 px-2 py-1 rounded-lg mb-1 text-[9px] font-semibold uppercase tracking-wider transition-colors cursor-pointer"
-        style={{
-          backgroundColor: 'rgba(19,31,48,0.85)',
-          border: '1px solid rgba(30,48,68,0.6)',
-          color: '#64748B',
-        }}
+      {/* Legend panel — always visible, dims when not hovered */}
+      <div
+        className="rounded-xl backdrop-blur-md shadow-xl"
+        style={{ backgroundColor: 'rgba(19,31,48,0.92)', border: '1px solid rgba(30,48,68,0.7)', padding: '10px 14px 12px' }}
       >
-        <span>{collapsed ? '▸' : '▾'}</span>
-        Map Guide
-      </button>
-
-      {/* Legend panel — hidden when collapsed */}
-      {!collapsed && (
-        <div
-          className="rounded-xl backdrop-blur-md shadow-xl"
-          style={{ backgroundColor: 'rgba(19,31,48,0.92)', border: '1px solid rgba(30,48,68,0.7)', padding: '10px 14px 12px' }}
-        >
           <div className="flex gap-8">
             {/* NODES column */}
             <div>
@@ -166,8 +142,7 @@ export const Legend: React.FC = () => {
               </div>
             </div>
           </div>
-        </div>
-      )}
+      </div>
     </div>
   );
 };

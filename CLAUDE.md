@@ -5,7 +5,8 @@ Real-time narrative topology system. Extracts claims from social media, maps the
 
 ## Reference Docs (read on demand, not upfront)
 - `docs/concept-note-v6.md` — WHAT we measure and WHY. Metric definitions, analytical frameworks, epistemic constraints. Read before implementing any metric.
-- `docs/Frontend_Rebuild_Brief.md` — WHAT the frontend looks like and HOW to build it. This REPLACES end-state-v3 zone layout entirely. Read before implementing any UI component.
+- `docs/End_State_Definition_v3_Final.md` — Original product spec and zone layout reference.
+- `docs/Level0_Redesign_Spec.md` — Level 0 (Topic Overview) redesign spec. Read before implementing any Level 0 UI component.
 - `scripts/prompts/extraction.md` — The claim extraction prompt sent to Claude Sonnet. Read before modifying extract.py.
 
 ## Tech Stack

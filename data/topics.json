@@ -1,51 +1,198 @@
 [
   {
-    "id": "ai-regulation",
-    "name": "AI Regulation",
-    "cluster_count": 7,
+    "id": "social-media-censorship",
+    "name": "Social Media Censorship",
+    "cluster_count": 6,
     "contestation_level": "high",
     "contestation_emergence": {
-      "emerged_hours_ago": 50,
-      "source_diversity": 0.69
+      "emerged_hours_ago": 18,
+      "source_diversity": 0.78
     },
     "headline_divergence": {
-      "jsd": 0.4,
+      "jsd": 0.47,
+      "dominant_typology": "Paradigmatic",
+      "trend": "increasing"
+    },
+    "top_accelerating_claim": {
+      "text": "Platform content moderation is politically biased and systematically suppresses conservative viewpoints",
+      "momentum": 0.81,
+      "source_diversity": 0.38
+    },
+    "most_persistent_claim": {
+      "text": "Content moderation is necessary to prevent the spread of misinformation and protect public health",
+      "persistence_windows": 13
+    },
+    "key_signal": {
+      "type": "coordination_flag",
+      "summary": "Cross-platform sync: identical framing on 'censorship' detected across X and Reddit within 2h"
+    },
+    "activity_sparkline": [
+      0.55,
+      0.63,
+      0.78,
+      0.82,
+      0.75,
+      0.88,
+      0.92,
+      0.85,
+      0.79,
+      0.83,
+      0.9,
+      0.87
+    ],
+    "ifi": {
+      "value": 24.1,
+      "trend": "increasing"
+    },
+    "top_situation": {
+      "summary": "'Government-big tech collusion to suppress...' high coordination signal detected",
+      "severity": "high"
+    }
+  },
+  {
+    "id": "cryptocurrency-regulation",
+    "name": "Cryptocurrency Regulation",
+    "cluster_count": 6,
+    "contestation_level": "high",
+    "contestation_emergence": {
+      "emerged_hours_ago": 30,
+      "source_diversity": 0.55
+    },
+    "headline_divergence": {
+      "jsd": 0.38,
       "dominant_typology": "Information Asymmetry",
       "trend": "increasing"
     },
     "top_accelerating_claim": {
-      "text": "Unregulated AI development poses existential risks that demand immediate policy action",
-      "momentum": 0.87,
-      "source_diversity": 0.32
+      "text": "SEC enforcement actions are killing American crypto innovation while other nations welcome it",
+      "momentum": 0.79,
+      "source_diversity": 0.44
     },
     "most_persistent_claim": {
-      "text": "AI regulation will stifle innovation and put domestic companies at a competitive disadvantage",
+      "text": "Stablecoins need federal regulation to prevent systemic financial risk",
+      "persistence_windows": 11
+    },
+    "key_signal": {
+      "type": "divergence_shift",
+      "summary": "Platform divergence on stablecoin regulation widened 0.12 JSD over 48h"
+    },
+    "activity_sparkline": [
+      0.45,
+      0.52,
+      0.71,
+      0.68,
+      0.83,
+      0.76,
+      0.91,
+      0.85,
+      0.72,
+      0.69,
+      0.78,
+      0.82
+    ],
+    "ifi": {
+      "value": 21.2,
+      "trend": "increasing"
+    },
+    "top_situation": {
+      "summary": "'DeFi protocols are unregulable by design...' fragmenting \u2014 divergent sub-narratives",
+      "severity": "medium"
+    }
+  },
+  {
+    "id": "climate-policy",
+    "name": "Climate Policy",
+    "cluster_count": 7,
+    "contestation_level": "high",
+    "contestation_emergence": null,
+    "headline_divergence": {
+      "jsd": 0.5,
+      "dominant_typology": "Paradigmatic",
+      "trend": "decreasing"
+    },
+    "top_accelerating_claim": {
+      "text": "Carbon capture technology is a fossil fuel industry distraction from real emissions reduction",
+      "momentum": 0.5,
+      "source_diversity": 0.2
+    },
+    "most_persistent_claim": {
+      "text": "Rapid transition to renewable energy is essential to avoid catastrophic climate outcomes",
       "persistence_windows": 14
     },
     "key_signal": {
       "type": "momentum_spike",
-      "summary": "'AI will eliminate millions of jobs and governments must prep...' accelerated from 20th to 72nd perc"
+      "summary": "'Carbon capture technology is a fossil fuel industry distract...' accelerated from 20th to 72nd perc"
     },
     "activity_sparkline": [
-      0.52,
-      0.68,
-      0.25,
-      0.67,
-      0.64,
-      0.82,
+      0.37,
       0.61,
-      0.71,
-      0.2,
+      0.63,
       0.89,
-      0.55,
-      0.47
+      0.79,
+      0.86,
+      0.66,
+      0.41,
+      0.39,
+      0.52,
+      0.83,
+      0.66
     ],
     "ifi": {
-      "value": 13.3,
+      "value": 19.4,
       "trend": "stable"
     },
     "top_situation": {
-      "summary": "'AI regulation should target sp...' radicalizing \u2014 moving toward extreme framing",
+      "summary": "'Individual carbon footprint re...' radicalizing \u2014 moving toward extreme framing",
+      "severity": "high"
+    }
+  },
+  {
+    "id": "us-china-relations",
+    "name": "US-China Relations",
+    "cluster_count": 7,
+    "contestation_level": "high",
+    "contestation_emergence": {
+      "emerged_hours_ago": 40,
+      "source_diversity": 0.62
+    },
+    "headline_divergence": {
+      "jsd": 0.44,
+      "dominant_typology": "Information Asymmetry",
+      "trend": "increasing"
+    },
+    "top_accelerating_claim": {
+      "text": "China's military buildup around Taiwan represents the most significant geopolitical threat of the decade",
+      "momentum": 0.85,
+      "source_diversity": 0.67
+    },
+    "most_persistent_claim": {
+      "text": "Economic decoupling from China would devastate American consumers and businesses",
+      "persistence_windows": 12
+    },
+    "key_signal": {
+      "type": "momentum_spike",
+      "summary": "'Taiwan semiconductor dependence is a national security crisis...' accelerated from 15th to 68th perc"
+    },
+    "activity_sparkline": [
+      0.5,
+      0.58,
+      0.72,
+      0.68,
+      0.8,
+      0.75,
+      0.85,
+      0.82,
+      0.78,
+      0.88,
+      0.83,
+      0.9
+    ],
+    "ifi": {
+      "value": 18.6,
+      "trend": "increasing"
+    },
+    "top_situation": {
+      "summary": "'China's tech transfer is systematic IP theft...' coordination signal \u2014 burstiness anomaly",
       "severity": "high"
     }
   },
@@ -97,6 +244,56 @@
     }
   },
   {
+    "id": "ai-regulation",
+    "name": "AI Regulation",
+    "cluster_count": 7,
+    "contestation_level": "high",
+    "contestation_emergence": {
+      "emerged_hours_ago": 50,
+      "source_diversity": 0.69
+    },
+    "headline_divergence": {
+      "jsd": 0.4,
+      "dominant_typology": "Information Asymmetry",
+      "trend": "increasing"
+    },
+    "top_accelerating_claim": {
+      "text": "Unregulated AI development poses existential risks that demand immediate policy action",
+      "momentum": 0.87,
+      "source_diversity": 0.32
+    },
+    "most_persistent_claim": {
+      "text": "AI regulation will stifle innovation and put domestic companies at a competitive disadvantage",
+      "persistence_windows": 14
+    },
+    "key_signal": {
+      "type": "momentum_spike",
+      "summary": "'AI will eliminate millions of jobs and governments must prep...' accelerated from 20th to 72nd perc"
+    },
+    "activity_sparkline": [
+      0.52,
+      0.68,
+      0.25,
+      0.67,
+      0.64,
+      0.82,
+      0.61,
+      0.71,
+      0.2,
+      0.89,
+      0.55,
+      0.47
+    ],
+    "ifi": {
+      "value": 13.3,
+      "trend": "stable"
+    },
+    "top_situation": {
+      "summary": "'AI regulation should target sp...' radicalizing \u2014 moving toward extreme framing",
+      "severity": "high"
+    }
+  },
+  {
     "id": "israel-palestine",
     "name": "Israel-Palestine Conflict",
     "cluster_count": 6,
@@ -144,50 +341,144 @@
     }
   },
   {
-    "id": "climate-policy",
-    "name": "Climate Policy",
-    "cluster_count": 7,
+    "id": "vaccine-policy",
+    "name": "Vaccine Policy",
+    "cluster_count": 5,
     "contestation_level": "high",
     "contestation_emergence": null,
     "headline_divergence": {
-      "jsd": 0.5,
+      "jsd": 0.52,
       "dominant_typology": "Paradigmatic",
-      "trend": "decreasing"
+      "trend": "stable"
     },
     "top_accelerating_claim": {
-      "text": "Carbon capture technology is a fossil fuel industry distraction from real emissions reduction",
-      "momentum": 0.5,
-      "source_diversity": 0.2
+      "text": "Mandatory vaccination policies violate bodily autonomy and informed consent principles",
+      "momentum": 0.68,
+      "source_diversity": 0.52
     },
     "most_persistent_claim": {
-      "text": "Rapid transition to renewable energy is essential to avoid catastrophic climate outcomes",
-      "persistence_windows": 14
+      "text": "Vaccines are safe, effective, and essential for public health according to overwhelming scientific consensus",
+      "persistence_windows": 18
     },
     "key_signal": {
-      "type": "momentum_spike",
-      "summary": "'Carbon capture technology is a fossil fuel industry distract...' accelerated from 20th to 72nd perc"
+      "type": "phase_transition",
+      "summary": "'Natural immunity is superior' cluster reversed from mainstreaming to radicalizing"
     },
     "activity_sparkline": [
-      0.37,
-      0.61,
-      0.63,
-      0.89,
-      0.79,
-      0.86,
-      0.66,
-      0.41,
-      0.39,
-      0.52,
-      0.83,
-      0.66
+      0.35,
+      0.42,
+      0.38,
+      0.55,
+      0.48,
+      0.62,
+      0.58,
+      0.71,
+      0.65,
+      0.6,
+      0.57,
+      0.63
     ],
     "ifi": {
-      "value": 19.4,
+      "value": 11.4,
       "trend": "stable"
     },
     "top_situation": {
-      "summary": "'Individual carbon footprint re...' radicalizing \u2014 moving toward extreme framing",
-      "severity": "high"
+      "summary": "'Pharma companies have legal immunity from...' high friction \u2014 contested advance",
+      "severity": "medium"
+    }
+  },
+  {
+    "id": "housing-crisis",
+    "name": "US Housing Crisis",
+    "cluster_count": 7,
+    "contestation_level": "medium",
+    "contestation_emergence": null,
+    "headline_divergence": {
+      "jsd": 0.29,
+      "dominant_typology": "Interpretive",
+      "trend": "stable"
+    },
+    "top_accelerating_claim": {
+      "text": "Corporate landlords and institutional investors are the primary driver of housing unaffordability",
+      "momentum": 0.72,
+      "source_diversity": 0.61
+    },
+    "most_persistent_claim": {
+      "text": "Zoning reform and increased housing supply are the most effective solutions to the housing crisis",
+      "persistence_windows": 16
+    },
+    "key_signal": {
+      "type": "arousal_escalation",
+      "summary": "Arousal trend shifted stable \u2192 warming on 'corporate landlord' cluster over 72h"
+    },
+    "activity_sparkline": [
+      0.4,
+      0.45,
+      0.55,
+      0.5,
+      0.62,
+      0.58,
+      0.7,
+      0.65,
+      0.72,
+      0.68,
+      0.75,
+      0.71
+    ],
+    "ifi": {
+      "value": 8.7,
+      "trend": "increasing"
+    },
+    "top_situation": {
+      "summary": "'Wall Street buying single-family homes...' warming \u2014 arousal escalating",
+      "severity": "medium"
+    }
+  },
+  {
+    "id": "education-reform",
+    "name": "Education Reform",
+    "cluster_count": 6,
+    "contestation_level": "medium",
+    "contestation_emergence": null,
+    "headline_divergence": {
+      "jsd": 0.31,
+      "dominant_typology": "Interpretive",
+      "trend": "stable"
+    },
+    "top_accelerating_claim": {
+      "text": "School choice and voucher programs are essential to breaking the public school monopoly",
+      "momentum": 0.62,
+      "source_diversity": 0.48
+    },
+    "most_persistent_claim": {
+      "text": "Public schools are underfunded and need more resources, not competition from private alternatives",
+      "persistence_windows": 15
+    },
+    "key_signal": {
+      "type": "lead_lag",
+      "summary": "'Parental rights in curriculum' detected on X 18h before Reddit with consistent framing"
+    },
+    "activity_sparkline": [
+      0.3,
+      0.35,
+      0.45,
+      0.42,
+      0.55,
+      0.5,
+      0.48,
+      0.6,
+      0.57,
+      0.65,
+      0.62,
+      0.58
+    ],
+    "ifi": {
+      "value": 7.3,
+      "trend": "stable"
+    },
+    "top_situation": {
+      "summary": "'CRT in schools is indoctrination...' lead-lag pattern detected across platforms",
+      "severity": "low"
     }
   }
 ]

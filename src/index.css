@@ -2,16 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 @theme {
-  --color-bg-primary: #131F30;
-  --color-bg-panel: #131F30;
-  --color-bg-panel-hover: #1A2A3C;
-  --color-border: #1E3044;
+  /* Background depth system */
+  --color-bg-primary: #0F1923;
+  --color-surface-1: #0F1923;
+  --color-surface-2: #162030;
+  --color-surface-3: #1C2840;
+  --color-bg-panel: #0F1923;
+  --color-bg-panel-hover: #162030;
+
+  /* Borders */
+  --color-border: rgba(148, 163, 184, 0.06);
+  --color-border-hover: rgba(148, 163, 184, 0.12);
+  --color-border-accent: rgba(6, 182, 212, 0.15);
   --color-border-subtle: #4A5568;
 
+  /* Text */
   --color-text-primary: #F1F5F9;
   --color-text-secondary: #94A3B8;
   --color-text-muted: #64748B;
 
+  /* Accent colors */
   --color-cyan: #06B6D4;
   --color-amber: #F59E0B;
   --color-red: #EF4444;
@@ -21,6 +31,7 @@
   --color-blue: #3B82F6;
   --color-silver: #94A3B8;
 
+  /* Fonts */
   --font-mono: 'JetBrains Mono', ui-monospace, monospace;
   --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
 }
@@ -38,7 +49,8 @@ html, body, #root {
 }
 
 body {
-  background-color: var(--color-bg-primary);
+  background-color: #0F1923;
+  background-image: radial-gradient(ellipse at 50% 40%, rgba(6,182,212,0.02) 0%, transparent 70%);
   color: var(--color-text-primary);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
@@ -120,8 +132,31 @@ body {
 }
 
 input::placeholder {
-  color: rgba(226,232,240,0.55);
-  font-weight: 600;
+  color: rgba(226,232,240,0.35);
+  font-weight: 400;
+}
+
+/* Search bar focus (replaces inline onFocus/onBlur handlers) */
+input.search-input:focus {
+  border-color: rgba(6,182,212,0.3) !important;
+  box-shadow: 0 0 0 3px rgba(6,182,212,0.06) !important;
+}
+
+/* Card entrance animation */
+@keyframes cardFadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-card-fade-up {
+  animation: cardFadeUp 400ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Line clamp utility */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 @keyframes searchGlow {
