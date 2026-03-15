@@ -1,26 +1,39 @@
 [
   {
+    "id": "clu_38e079a0a605",
+    "concept_id": "humanitarian-priority",
+    "label": "Immigration policy should prioritize humanitarian obligations and asylum rights",
+    "member_count": 44,
+    "mutation_direction": "mainstreaming",
+    "mutation_magnitude": 0.19,
+    "arousal_trend": "warming",
+    "arousal_value": 0.5,
+    "adversarial_pairs": [
+      "clu_3769f37f637a"
+    ]
+  },
+  {
     "id": "clu_0404a3444715",
     "concept_id": "demographic-replacement",
     "label": "Current immigration levels are part of a deliberate agenda to change national de",
     "member_count": 15,
-    "mutation_direction": "mainstreaming",
-    "mutation_magnitude": 0.19,
-    "arousal_trend": "warming",
-    "arousal_value": 0.85,
-    "adversarial_pairs": []
-  },
-  {
-    "id": "clu_4daf1453ee65",
-    "concept_id": "immigration-harms",
-    "label": "Unchecked immigration undermines wages for native workers and strains public ser",
-    "member_count": 22,
     "mutation_direction": "fragmenting",
     "mutation_magnitude": 0.5,
     "arousal_trend": "cooling",
     "arousal_value": 0.85,
+    "adversarial_pairs": []
+  },
+  {
+    "id": "clu_3769f37f637a",
+    "concept_id": "strict-enforcement",
+    "label": "Border security is a fundamental sovereign right and must be enforced strictly",
+    "member_count": 24,
+    "mutation_direction": "stable",
+    "mutation_magnitude": 0.29,
+    "arousal_trend": "warming",
+    "arousal_value": 0.85,
     "adversarial_pairs": [
-      "clu_60d4b2224391"
+      "clu_38e079a0a605"
     ]
   },
   {
@@ -28,8 +41,8 @@
     "concept_id": "immigration-benefits",
     "label": "Immigration strengthens the economy through labor force growth and entrepreneurs",
     "member_count": 43,
-    "mutation_direction": "stable",
-    "mutation_magnitude": 0.29,
+    "mutation_direction": "fragmenting",
+    "mutation_magnitude": 0.67,
     "arousal_trend": "warming",
     "arousal_value": 0.15,
     "adversarial_pairs": [
@@ -41,33 +54,9 @@
     "concept_id": "merit-immigration",
     "label": "Immigration reform should focus on skills-based selection to match labor market ",
     "member_count": 25,
-    "mutation_direction": "fragmenting",
-    "mutation_magnitude": 0.67,
-    "arousal_trend": "warming",
-    "arousal_value": 0.15,
-    "adversarial_pairs": []
-  },
-  {
-    "id": "clu_38e079a0a605",
-    "concept_id": "humanitarian-priority",
-    "label": "Immigration policy should prioritize humanitarian obligations and asylum rights",
-    "member_count": 44,
     "mutation_direction": "radicalizing",
     "mutation_magnitude": 0.28,
     "arousal_trend": "cooling",
-    "arousal_value": 0.5,
-    "adversarial_pairs": [
-      "clu_3769f37f637a"
-    ]
-  },
-  {
-    "id": "clu_761560f05672",
-    "concept_id": "immigration-safety",
-    "label": "Immigrants commit crimes at lower rates than native-born citizens according to r",
-    "member_count": 43,
-    "mutation_direction": "mainstreaming",
-    "mutation_magnitude": 0.44,
-    "arousal_trend": "stable",
     "arousal_value": 0.15,
     "adversarial_pairs": []
   },
@@ -76,23 +65,34 @@
     "concept_id": "citizenship-path",
     "label": "A path to citizenship for undocumented immigrants is both morally right and econ",
     "member_count": 33,
-    "mutation_direction": "stable",
-    "mutation_magnitude": 0.27,
-    "arousal_trend": "cooling",
+    "mutation_direction": "mainstreaming",
+    "mutation_magnitude": 0.44,
+    "arousal_trend": "stable",
     "arousal_value": 0.5,
     "adversarial_pairs": []
   },
   {
-    "id": "clu_3769f37f637a",
-    "concept_id": "strict-enforcement",
-    "label": "Border security is a fundamental sovereign right and must be enforced strictly",
-    "member_count": 24,
+    "id": "clu_4daf1453ee65",
+    "concept_id": "immigration-harms",
+    "label": "Unchecked immigration undermines wages for native workers and strains public ser",
+    "member_count": 22,
+    "mutation_direction": "stable",
+    "mutation_magnitude": 0.27,
+    "arousal_trend": "cooling",
+    "arousal_value": 0.85,
+    "adversarial_pairs": [
+      "clu_60d4b2224391"
+    ]
+  },
+  {
+    "id": "clu_761560f05672",
+    "concept_id": "immigration-safety",
+    "label": "Immigrants commit crimes at lower rates than native-born citizens according to r",
+    "member_count": 43,
     "mutation_direction": "fragmenting",
     "mutation_magnitude": 0.55,
     "arousal_trend": "warming",
-    "arousal_value": 0.85,
-    "adversarial_pairs": [
-      "clu_38e079a0a605"
-    ]
+    "arousal_value": 0.15,
+    "adversarial_pairs": []
   }
 ]

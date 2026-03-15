@@ -1,0 +1,149 @@
+{
+  "slice_a": {
+    "id": "x_platform",
+    "type": "platform",
+    "label": "X Platform",
+    "active_volume": 2517,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.39,
+    "is_influencer_framing": false
+  },
+  "slice_b": {
+    "id": "reddit_platform",
+    "type": "platform",
+    "label": "Reddit Platform",
+    "active_volume": 3703,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.64,
+    "is_influencer_framing": false
+  },
+  "divergence": {
+    "jsd": 0.0826,
+    "jsd_sqrt": 0.2874,
+    "trend": [
+      0.2883,
+      0.2847,
+      0.3119,
+      0.3172,
+      0.2835,
+      0.2819,
+      0.2701,
+      0.3128
+    ],
+    "typology": {
+      "information_asymmetry": 0.56,
+      "interpretive": 0.48,
+      "paradigmatic": 0,
+      "dominant_mode": "Information Asymmetry",
+      "paradigmatic_caveat": false
+    }
+  },
+  "per_cluster": [
+    {
+      "cluster_id": "clu_1cc9f6abe607",
+      "label": "In-person collaboration is essential for innovation and companies requiring RTO ",
+      "salience_a": 0.6762,
+      "salience_b": 0.1031,
+      "arousal_a": 0.73,
+      "arousal_b": 0.24,
+      "mutation_a": "stable",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_f0dc2022ac57",
+      "label": "Remote work has proven that most office jobs never required physical presence in",
+      "salience_a": 0.3011,
+      "salience_b": 0.7836,
+      "arousal_a": 0.81,
+      "arousal_b": 0.28,
+      "mutation_a": "stable",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_fd031f5fb4ec",
+      "label": "The commercial real estate market faces a structural collapse as remote work red",
+      "salience_a": 0.133,
+      "salience_b": 0.4119,
+      "arousal_a": 0.16,
+      "arousal_b": 0.88,
+      "mutation_a": "radicalizing",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_b0296f792271",
+      "label": "Productivity data consistently shows remote workers are more productive than the",
+      "salience_a": 0.5584,
+      "salience_b": 0.6253,
+      "arousal_a": 0.59,
+      "arousal_b": 0.38,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_5265931258d7",
+      "label": "Remote work is eroding company culture and creating a generation of isolated, di",
+      "salience_a": 0.4523,
+      "salience_b": 0.9054,
+      "arousal_a": 0.74,
+      "arousal_b": 0.51,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_3442ff2a17d2",
+      "label": "Hybrid work with 2-3 office days is the pragmatic compromise that satisfies most",
+      "salience_a": 0.3327,
+      "salience_b": 0.2876,
+      "arousal_a": 0.49,
+      "arousal_b": 0.14,
+      "mutation_a": "radicalizing",
+      "mutation_b": "stable"
+    }
+  ],
+  "arousal_comparison": {
+    "slice_a_avg": 0.32,
+    "slice_b_avg": 0.53
+  },
+  "exposure_comparison": {
+    "slice_a": {
+      "value": 0.5041,
+      "confidence_interval": [
+        0.4541,
+        0.5541
+      ],
+      "baseline": "global",
+      "time_window": "7d",
+      "sparkline": [
+        0.2883,
+        0.2847,
+        0.3119,
+        0.3172,
+        0.2835,
+        0.2819,
+        0.2701,
+        0.3128
+      ],
+      "source_distribution": "production"
+    },
+    "slice_b": {
+      "value": 0.6762,
+      "confidence_interval": [
+        0.6262,
+        0.7262
+      ],
+      "baseline": "global",
+      "time_window": "7d",
+      "sparkline": [
+        0.2883,
+        0.2847,
+        0.3119,
+        0.3172,
+        0.2835,
+        0.2819,
+        0.2701,
+        0.3128
+      ],
+      "source_distribution": "production"
+    }
+  }
+}

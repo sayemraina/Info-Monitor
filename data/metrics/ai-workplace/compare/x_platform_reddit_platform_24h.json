@@ -1,0 +1,149 @@
+{
+  "slice_a": {
+    "id": "x_platform",
+    "type": "platform",
+    "label": "X Platform",
+    "active_volume": 4217,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.36,
+    "is_influencer_framing": false
+  },
+  "slice_b": {
+    "id": "reddit_platform",
+    "type": "platform",
+    "label": "Reddit Platform",
+    "active_volume": 4764,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.59,
+    "is_influencer_framing": false
+  },
+  "divergence": {
+    "jsd": 0.1429,
+    "jsd_sqrt": 0.3781,
+    "trend": [
+      0.3349,
+      0.3168,
+      0.3288,
+      0.3545,
+      0.3593,
+      0.369,
+      0.3613,
+      0.3877
+    ],
+    "typology": {
+      "information_asymmetry": 0.64,
+      "interpretive": 0.3,
+      "paradigmatic": 0.06,
+      "dominant_mode": "Information Asymmetry",
+      "paradigmatic_caveat": false
+    }
+  },
+  "per_cluster": [
+    {
+      "cluster_id": "clu_dc42d18abdfa",
+      "label": "Companies using AI are seeing measurable productivity gains that benefit both em",
+      "salience_a": 0.6355,
+      "salience_b": 0.2593,
+      "arousal_a": 0.49,
+      "arousal_b": 0.3,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_df45fe3b46cd",
+      "label": "AI-generated content is destroying the value of creative work and undermining ar",
+      "salience_a": 0.8563,
+      "salience_b": 0.7002,
+      "arousal_a": 0.11,
+      "arousal_b": 0.3,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_5ca5659be8e9",
+      "label": "Fears about AI replacing jobs are the same Luddite arguments made about every te",
+      "salience_a": 0.5845,
+      "salience_b": 0.8567,
+      "arousal_a": 0.31,
+      "arousal_b": 0.4,
+      "mutation_a": "stable",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_1e5b7b52fb77",
+      "label": "Massive investment in retraining programs is needed to prepare workers for an AI",
+      "salience_a": 0.109,
+      "salience_b": 0.688,
+      "arousal_a": 0.33,
+      "arousal_b": 0.37,
+      "mutation_a": "stable",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_42605ef6c255",
+      "label": "AI will automate away millions of white-collar jobs within the next five years",
+      "salience_a": 0.9467,
+      "salience_b": 0.1723,
+      "arousal_a": 0.87,
+      "arousal_b": 0.73,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_b71a2467b80f",
+      "label": "AI is a productivity tool that augments human capabilities rather than replacing",
+      "salience_a": 0.7761,
+      "salience_b": 0.052,
+      "arousal_a": 0.71,
+      "arousal_b": 0.39,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    }
+  ],
+  "arousal_comparison": {
+    "slice_a_avg": 0.34,
+    "slice_b_avg": 0.68
+  },
+  "exposure_comparison": {
+    "slice_a": {
+      "value": 0.6924,
+      "confidence_interval": [
+        0.6424,
+        0.7424
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [
+        0.3349,
+        0.3168,
+        0.3288,
+        0.3545,
+        0.3593,
+        0.369,
+        0.3613,
+        0.3877
+      ],
+      "source_distribution": "production"
+    },
+    "slice_b": {
+      "value": 0.3357,
+      "confidence_interval": [
+        0.2857,
+        0.3857
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [
+        0.3349,
+        0.3168,
+        0.3288,
+        0.3545,
+        0.3593,
+        0.369,
+        0.3613,
+        0.3877
+      ],
+      "source_distribution": "production"
+    }
+  }
+}

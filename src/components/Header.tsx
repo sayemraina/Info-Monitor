@@ -207,8 +207,25 @@ export function Header({
       {/* Right side — version + github + add topic */}
       <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: '20px' }}>
 
-        {/* Meta block: version badge + github handle */}
+        {/* Meta block: demo badge + version badge + github handle */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '14px', paddingTop: '3px' }}>
+          {/* Demo data indicator */}
+          <span
+            className="font-data"
+            style={{
+              fontSize: '10px',
+              fontWeight: 500,
+              letterSpacing: '0.08em',
+              color: 'rgba(241,245,249,0.5)',
+              border: '1px solid rgba(148,163,184,0.2)',
+              borderRadius: '4px',
+              padding: '2px 6px',
+              lineHeight: 1,
+            }}
+          >
+            SYNTHETIC DATA
+          </span>
+
           {/* Version badge */}
           <span
             className="font-data"

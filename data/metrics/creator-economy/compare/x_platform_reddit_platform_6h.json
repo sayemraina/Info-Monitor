@@ -1,0 +1,149 @@
+{
+  "slice_a": {
+    "id": "x_platform",
+    "type": "platform",
+    "label": "X Platform",
+    "active_volume": 2180,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.41,
+    "is_influencer_framing": false
+  },
+  "slice_b": {
+    "id": "reddit_platform",
+    "type": "platform",
+    "label": "Reddit Platform",
+    "active_volume": 948,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.63,
+    "is_influencer_framing": false
+  },
+  "divergence": {
+    "jsd": 0.103,
+    "jsd_sqrt": 0.321,
+    "trend": [
+      0.281,
+      0.3259,
+      0.2785,
+      0.3007,
+      0.362,
+      0.3312,
+      0.295,
+      0.3644
+    ],
+    "typology": {
+      "information_asymmetry": 0.48,
+      "interpretive": 0.14,
+      "paradigmatic": 0.38,
+      "dominant_mode": "Information Asymmetry",
+      "paradigmatic_caveat": true
+    }
+  },
+  "per_cluster": [
+    {
+      "cluster_id": "clu_fd69b0a62143",
+      "label": "Platforms exploit creators by keeping the vast majority of ad revenue while crea",
+      "salience_a": 0.4791,
+      "salience_b": 0.4345,
+      "arousal_a": 0.86,
+      "arousal_b": 0.9,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_bbd167f5fa4f",
+      "label": "The creator economy has democratized media and given millions a viable path to i",
+      "salience_a": 0.4755,
+      "salience_b": 0.9451,
+      "arousal_a": 0.61,
+      "arousal_b": 0.64,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_a79e3bc7709b",
+      "label": "Anyone with talent and persistence can build a sustainable career as a content c",
+      "salience_a": 0.9213,
+      "salience_b": 0.1457,
+      "arousal_a": 0.36,
+      "arousal_b": 0.78,
+      "mutation_a": "stable",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_e8989e9d848d",
+      "label": "Creator burnout is reaching epidemic levels as platforms demand constant content",
+      "salience_a": 0.2141,
+      "salience_b": 0.8419,
+      "arousal_a": 0.6,
+      "arousal_b": 0.73,
+      "mutation_a": "radicalizing",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_499007d794f5",
+      "label": "Algorithm changes can destroy a creator's livelihood overnight with zero transpa",
+      "salience_a": 0.777,
+      "salience_b": 0.7045,
+      "arousal_a": 0.14,
+      "arousal_b": 0.39,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_f05378b1c143",
+      "label": "Platform monetization policies are designed to maximize engagement metrics at th",
+      "salience_a": 0.2562,
+      "salience_b": 0.0771,
+      "arousal_a": 0.51,
+      "arousal_b": 0.62,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "stable"
+    }
+  ],
+  "arousal_comparison": {
+    "slice_a_avg": 0.52,
+    "slice_b_avg": 0.47
+  },
+  "exposure_comparison": {
+    "slice_a": {
+      "value": 0.6437,
+      "confidence_interval": [
+        0.5937,
+        0.6937
+      ],
+      "baseline": "global",
+      "time_window": "6h",
+      "sparkline": [
+        0.281,
+        0.3259,
+        0.2785,
+        0.3007,
+        0.362,
+        0.3312,
+        0.295,
+        0.3644
+      ],
+      "source_distribution": "production"
+    },
+    "slice_b": {
+      "value": 0.7667,
+      "confidence_interval": [
+        0.7167,
+        0.8167
+      ],
+      "baseline": "global",
+      "time_window": "6h",
+      "sparkline": [
+        0.281,
+        0.3259,
+        0.2785,
+        0.3007,
+        0.362,
+        0.3312,
+        0.295,
+        0.3644
+      ],
+      "source_distribution": "production"
+    }
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "slice_a": {
+    "id": "x_platform",
+    "type": "platform",
+    "label": "X Platform",
+    "active_volume": 1066,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.62,
+    "is_influencer_framing": false
+  },
+  "slice_b": {
+    "id": "youtube_influencer",
+    "type": "platform",
+    "label": "Influencer Framing (YouTube)",
+    "active_volume": 4282,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.56,
+    "is_influencer_framing": true
+  },
+  "divergence": {
+    "jsd": 0.0237,
+    "jsd_sqrt": 0.154,
+    "trend": [
+      0.1825,
+      0.1687,
+      0.131,
+      0.1061,
+      0.1511,
+      0.1475,
+      0.1824,
+      0.1362
+    ],
+    "typology": {
+      "information_asymmetry": 0.5,
+      "interpretive": 0.17,
+      "paradigmatic": 0.33,
+      "dominant_mode": "Information Asymmetry",
+      "paradigmatic_caveat": true
+    }
+  },
+  "per_cluster": [
+    {
+      "cluster_id": "clu_111af9bb91d8",
+      "label": "Cryptocurrency represents the future of finance and will eventually replace trad",
+      "salience_a": 0.8555,
+      "salience_b": 0.905,
+      "arousal_a": 0.45,
+      "arousal_b": 0.42,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_d0d1e7d82507",
+      "label": "Bitcoin's recent price action confirms the beginning of a new bull cycle that wi",
+      "salience_a": 0.4745,
+      "salience_b": 0.6604,
+      "arousal_a": 0.83,
+      "arousal_b": 0.43,
+      "mutation_a": "radicalizing",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_5eb4366b0bad",
+      "label": "Proof-of-work mining is an environmental catastrophe that no amount of financial",
+      "salience_a": 0.489,
+      "salience_b": 0.1508,
+      "arousal_a": 0.9,
+      "arousal_b": 0.75,
+      "mutation_a": "stable",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_5bbbf2ebef32",
+      "label": "DeFi protocols offer financial freedom to the unbanked and underserved populatio",
+      "salience_a": 0.8578,
+      "salience_b": 0.7626,
+      "arousal_a": 0.19,
+      "arousal_b": 0.5,
+      "mutation_a": "radicalizing",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_65b965b45940",
+      "label": "Crypto regulation is essential to protect consumers and maintain financial syste",
+      "salience_a": 0.2659,
+      "salience_b": 0.104,
+      "arousal_a": 0.26,
+      "arousal_b": 0.19,
+      "mutation_a": "stable",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_06b21905c6ac",
+      "label": "The vast majority of crypto projects are scams designed to transfer wealth from ",
+      "salience_a": 0.8922,
+      "salience_b": 0.5142,
+      "arousal_a": 0.11,
+      "arousal_b": 0.42,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "mainstreaming"
+    }
+  ],
+  "arousal_comparison": {
+    "slice_a_avg": 0.5,
+    "slice_b_avg": 0.65
+  },
+  "exposure_comparison": {
+    "slice_a": {
+      "value": 0.5596,
+      "confidence_interval": [
+        0.5096,
+        0.6096
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [
+        0.1825,
+        0.1687,
+        0.131,
+        0.1061,
+        0.1511,
+        0.1475,
+        0.1824,
+        0.1362
+      ],
+      "source_distribution": "production"
+    },
+    "slice_b": {
+      "value": 0.3115,
+      "confidence_interval": [
+        0.2615,
+        0.3615
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [
+        0.1825,
+        0.1687,
+        0.131,
+        0.1061,
+        0.1511,
+        0.1475,
+        0.1824,
+        0.1362
+      ],
+      "source_distribution": "production"
+    }
+  }
+}

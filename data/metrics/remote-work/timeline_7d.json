@@ -1,0 +1,140 @@
+{
+  "events": [
+    {
+      "id": "evt_d2e69954bfbc",
+      "type": "momentum_spike",
+      "timestamp": "2026-03-16T05:00:00+00:00",
+      "claim_id": "clm_110bd840f76c",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "'Remote work is eroding company culture and creating a genera...' accelerated from 20th to 72nd percentile in 12h. Source diversity: low.",
+      "detail": {
+        "percentile_from": 20,
+        "percentile_to": 72,
+        "hours": 12
+      }
+    },
+    {
+      "id": "evt_d67ce878c57a",
+      "type": "momentum_spike",
+      "timestamp": "2026-03-15T14:00:00+00:00",
+      "claim_id": "clm_ba62e6caca02",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.85,
+      "summary": "'Return-to-office mandates are about justifying commercial re...' accelerated from 20th to 72nd percentile in 12h. Source diversity: low.",
+      "detail": {
+        "percentile_from": 20,
+        "percentile_to": 72,
+        "hours": 12
+      }
+    },
+    {
+      "id": "evt_d30ed604a91b",
+      "type": "coordination_flag",
+      "timestamp": "2026-03-15T07:00:00+00:00",
+      "claim_id": "clm_ba62e6caca02",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.68,
+      "summary": "Near-duplicate content: 47 similar posts from non-overlapping accounts within 3h.",
+      "detail": {
+        "signal": "near_duplicate",
+        "count": 47,
+        "window_hours": 3
+      }
+    },
+    {
+      "id": "evt_5c62fa0f0dcb",
+      "type": "claim_dark",
+      "timestamp": "2026-03-16T08:00:00+00:00",
+      "claim_id": "clm_110bd840f76c",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.83,
+      "summary": "'Junior employees suffer most from remote work as t...' went dark \u2014 active in last 3 windows, now zero production.",
+      "detail": {
+        "last_active_window": 3,
+        "topic_volume_change": 0.05
+      }
+    },
+    {
+      "id": "evt_702b569470b7",
+      "type": "vocabulary_rotation",
+      "timestamp": "2026-03-15T21:00:00+00:00",
+      "claim_id": "clm_ba62e6caca02",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.75,
+      "summary": "Vocabulary rotation detected in 'remote work viability': emerging terminology overlaps with adjacent narratives.",
+      "detail": {
+        "rotation_shift": 0.42,
+        "hours": 24
+      }
+    },
+    {
+      "id": "evt_d5844360481a",
+      "type": "coordination_flag",
+      "timestamp": "2026-03-15T12:00:00+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.61,
+      "summary": "Counter-narrative response lag of 3h between 'remote work viability' and 'in-person value' clusters \u2014 consistent with organized rapid response.",
+      "detail": {
+        "signal": "adversarial_response_lag",
+        "cluster_a": "remote-forever",
+        "cluster_b": "rto-mandate",
+        "lag_hours": 3
+      }
+    },
+    {
+      "id": "evt_a33a5225d705",
+      "type": "arousal_escalation",
+      "timestamp": "2026-03-15T12:00:00+00:00",
+      "claim_id": "clm_ba62e6caca02",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.74,
+      "summary": "'RTO motivation' arousal shifted low to high over 48h, semantic content stable.",
+      "detail": {
+        "arousal_from": "low",
+        "arousal_to": "high",
+        "hours": 48
+      }
+    },
+    {
+      "id": "evt_5690eb54dc68",
+      "type": "divergence_shift",
+      "timestamp": "2026-03-14T17:00:00+00:00",
+      "claim_id": null,
+      "slice_id": "x_platform",
+      "severity": "medium",
+      "confidence": 0.71,
+      "summary": "X vs Reddit divergence increased 23% over 48h. Mode: information asymmetry.",
+      "detail": {
+        "jsd_change": 0.23,
+        "hours": 48,
+        "mode": "information_asymmetry"
+      }
+    },
+    {
+      "id": "evt_bf68f7c08cdb",
+      "type": "lead_lag",
+      "timestamp": "2026-03-12T17:00:00+00:00",
+      "claim_id": "clm_ba62e6caca02",
+      "slice_id": null,
+      "severity": "low",
+      "confidence": 0.67,
+      "summary": "'Remote work has proven that most office ...' first detected on Reddit, appeared on X 22h later. Fidelity: 81%.",
+      "detail": {
+        "source_platform": "reddit",
+        "target_platform": "x",
+        "lag_hours": 22,
+        "fidelity": 0.81
+      }
+    }
+  ],
+  "total_count": 9
+}

@@ -76,36 +76,38 @@ TOPICS = [
         ]
     },
     {
-        "id": "israel-palestine",
-        "name": "Israel-Palestine Conflict",
-        "cluster_count": 6,
+        "id": "us-israel-iran",
+        "name": "US-Israel-Iran War",
+        "cluster_count": 8,
         "contestation_level": "high",
         "contestation_emergence": None,
         "headline_divergence": {"jsd": 0.56, "dominant_typology": "Paradigmatic", "trend": "decreasing"},
         "top_accelerating_claim": {
-            "text": "Media coverage of the conflict is systematically biased against Israel",
-            "momentum": 0.77, "source_diversity": 0.73
+            "text": "Iran's proxy network across the region poses a direct threat to US national security interests",
+            "momentum": 0.80, "source_diversity": 0.73
         },
         "most_persistent_claim": {
-            "text": "Israel has the right to defend itself against terrorist attacks on its civilians",
+            "text": "US military involvement in the Middle East is necessary to contain Iranian expansionism",
             "persistence_windows": 14
         },
-        "key_signal": {"type": "momentum_spike", "summary": "'Western governments are complicit in the crisis through cont...' accelerated from 20th to 72nd perc"},
+        "key_signal": {"type": "momentum_spike", "summary": "'US arms sales to Israel make American taxpayers complicit...' accelerated from 20th to 72nd perc"},
         "activity_sparkline": [0.30, 0.46, 0.65, 0.86, 0.80, 0.56, 0.56, 0.27, 0.74, 0.38, 0.36, 0.60],
         "ifi": {"value": 12.7, "trend": "stable"},
-        "top_situation": {"summary": "'Both sides have committed atro...' polarizing — high friction (0.86)", "severity": "high"},
+        "top_situation": {"summary": "'The conflict is destabilizing the entire region...' polarizing — high friction (0.86)", "severity": "high"},
         "clusters": [
-            {"id": "ip-media-bias", "label": "Media Bias", "momentum": 0.77},
-            {"id": "ip-self-defense", "label": "Self-Defense", "momentum": 0.5},
-            {"id": "ip-civilian", "label": "Civilian Impact", "momentum": 0.65},
-            {"id": "ip-two-state", "label": "Two-State Solution", "momentum": 0.15},
-            {"id": "ip-intl-law", "label": "International Law", "momentum": 0.4},
-            {"id": "ip-complicity", "label": "Western Complicity", "momentum": 0.6},
+            {"id": "uii-us-involvement", "label": "US Involvement", "momentum": 0.65},
+            {"id": "uii-iran-proxies", "label": "Iran Proxies", "momentum": 0.80},
+            {"id": "uii-israel-defense", "label": "Israel Defense", "momentum": 0.55},
+            {"id": "uii-ceasefire", "label": "Ceasefire Now", "momentum": 0.70},
+            {"id": "uii-arms-sales", "label": "Arms Sales", "momentum": 0.60},
+            {"id": "uii-destabilization", "label": "Regional Destabilization", "momentum": 0.45},
+            {"id": "uii-media-bias", "label": "Media Bias", "momentum": 0.35},
+            {"id": "uii-diplomacy", "label": "Diplomacy Path", "momentum": 0.20},
         ]
     },
     {
         "id": "climate-policy",
-        "name": "Climate Policy",
+        "name": "Climate Change",
         "cluster_count": 7,
         "contestation_level": "high",
         "contestation_emergence": None,
@@ -134,172 +136,171 @@ TOPICS = [
     },
     # --- New 6 topics ---
     {
-        "id": "cryptocurrency-regulation",
-        "name": "Cryptocurrency Regulation",
+        "id": "ai-workplace",
+        "name": "AI in the Workplace",
         "cluster_count": 6,
         "contestation_level": "high",
         "contestation_emergence": {"emerged_hours_ago": 30, "source_diversity": 0.55},
         "headline_divergence": {"jsd": 0.38, "dominant_typology": "Information Asymmetry", "trend": "increasing"},
         "top_accelerating_claim": {
-            "text": "SEC enforcement actions are killing American crypto innovation while other nations welcome it",
-            "momentum": 0.79, "source_diversity": 0.44
+            "text": "AI will automate away millions of white-collar jobs within the next five years",
+            "momentum": 0.80, "source_diversity": 0.32
         },
         "most_persistent_claim": {
-            "text": "Stablecoins need federal regulation to prevent systemic financial risk",
-            "persistence_windows": 11
+            "text": "AI is a productivity tool that augments human capabilities rather than replacing workers",
+            "persistence_windows": 12
         },
-        "key_signal": {"type": "divergence_shift", "summary": "Platform divergence on stablecoin regulation widened 0.12 JSD over 48h"},
+        "key_signal": {"type": "divergence_shift", "summary": "Platform divergence on AI job displacement widened 0.14 JSD over 48h"},
         "activity_sparkline": [0.45, 0.52, 0.71, 0.68, 0.83, 0.76, 0.91, 0.85, 0.72, 0.69, 0.78, 0.82],
         "ifi": {"value": 21.2, "trend": "increasing"},
-        "top_situation": {"summary": "'DeFi protocols are unregulable by design...' fragmenting — divergent sub-narratives", "severity": "medium"},
+        "top_situation": {"summary": "'Companies pushing AI hardest are quietly laying off...' fragmenting — divergent sub-narratives", "severity": "medium"},
         "clusters": [
-            {"id": "crypto-sec", "label": "SEC Overreach", "momentum": 0.79},
-            {"id": "crypto-stable", "label": "Stablecoin Risk", "momentum": 0.45},
-            {"id": "crypto-defi", "label": "DeFi Governance", "momentum": 0.6},
-            {"id": "crypto-cbdc", "label": "CBDC Concerns", "momentum": 0.35},
-            {"id": "crypto-fraud", "label": "Consumer Protection", "momentum": 0.5},
-            {"id": "crypto-innovation", "label": "Innovation Flight", "momentum": 0.7},
+            {"id": "aiw-displacement", "label": "Job Displacement", "momentum": 0.80},
+            {"id": "aiw-augmentation", "label": "AI Augmentation", "momentum": 0.45},
+            {"id": "aiw-creative", "label": "Creative Threat", "momentum": 0.70},
+            {"id": "aiw-retraining", "label": "Retraining Programs", "momentum": 0.35},
+            {"id": "aiw-productivity", "label": "Productivity Gains", "momentum": 0.50},
+            {"id": "aiw-luddite", "label": "Luddite Fallacy", "momentum": 0.60},
         ]
     },
     {
-        "id": "housing-crisis",
-        "name": "US Housing Crisis",
-        "cluster_count": 7,
-        "contestation_level": "medium",
-        "contestation_emergence": None,
-        "headline_divergence": {"jsd": 0.29, "dominant_typology": "Interpretive", "trend": "stable"},
-        "top_accelerating_claim": {
-            "text": "Corporate landlords and institutional investors are the primary driver of housing unaffordability",
-            "momentum": 0.72, "source_diversity": 0.61
-        },
-        "most_persistent_claim": {
-            "text": "Zoning reform and increased housing supply are the most effective solutions to the housing crisis",
-            "persistence_windows": 16
-        },
-        "key_signal": {"type": "arousal_escalation", "summary": "Arousal trend shifted stable → warming on 'corporate landlord' cluster over 72h"},
-        "activity_sparkline": [0.40, 0.45, 0.55, 0.50, 0.62, 0.58, 0.70, 0.65, 0.72, 0.68, 0.75, 0.71],
-        "ifi": {"value": 8.7, "trend": "increasing"},
-        "top_situation": {"summary": "'Wall Street buying single-family homes...' warming — arousal escalating", "severity": "medium"},
-        "clusters": [
-            {"id": "house-corp", "label": "Corporate Landlords", "momentum": 0.72},
-            {"id": "house-zoning", "label": "Zoning Reform", "momentum": 0.4},
-            {"id": "house-rate", "label": "Interest Rates", "momentum": 0.3},
-            {"id": "house-supply", "label": "Housing Supply", "momentum": 0.5},
-            {"id": "house-rent", "label": "Rent Control", "momentum": 0.55},
-            {"id": "house-homeless", "label": "Homelessness", "momentum": 0.45},
-            {"id": "house-remote", "label": "Remote Work Impact", "momentum": 0.25},
-        ]
-    },
-    {
-        "id": "social-media-censorship",
-        "name": "Social Media Censorship",
+        "id": "crypto-web3",
+        "name": "Cryptocurrency & Web3",
         "cluster_count": 6,
         "contestation_level": "high",
-        "contestation_emergence": {"emerged_hours_ago": 18, "source_diversity": 0.78},
-        "headline_divergence": {"jsd": 0.47, "dominant_typology": "Paradigmatic", "trend": "increasing"},
+        "contestation_emergence": {"emerged_hours_ago": 18, "source_diversity": 0.62},
+        "headline_divergence": {"jsd": 0.42, "dominant_typology": "Paradigmatic", "trend": "increasing"},
         "top_accelerating_claim": {
-            "text": "Platform content moderation is politically biased and systematically suppresses conservative viewpoints",
-            "momentum": 0.81, "source_diversity": 0.38
+            "text": "Bitcoin's recent price action confirms the beginning of a new bull cycle",
+            "momentum": 0.85, "source_diversity": 0.38
         },
         "most_persistent_claim": {
-            "text": "Content moderation is necessary to prevent the spread of misinformation and protect public health",
-            "persistence_windows": 13
+            "text": "Cryptocurrency represents the future of finance and will eventually replace traditional banking",
+            "persistence_windows": 14
         },
-        "key_signal": {"type": "coordination_flag", "summary": "Cross-platform sync: identical framing on 'censorship' detected across X and Reddit within 2h"},
+        "key_signal": {"type": "coordination_flag", "summary": "Cross-platform sync: identical bull market framing detected across X and Reddit within 2h"},
         "activity_sparkline": [0.55, 0.63, 0.78, 0.82, 0.75, 0.88, 0.92, 0.85, 0.79, 0.83, 0.90, 0.87],
         "ifi": {"value": 24.1, "trend": "increasing"},
-        "top_situation": {"summary": "'Government-big tech collusion to suppress...' high coordination signal detected", "severity": "high"},
+        "top_situation": {"summary": "'Most crypto projects are scams designed to transfer wealth...' high coordination signal detected", "severity": "high"},
         "clusters": [
-            {"id": "cens-bias", "label": "Political Bias", "momentum": 0.81},
-            {"id": "cens-health", "label": "Health Misinfo", "momentum": 0.4},
-            {"id": "cens-free-speech", "label": "Free Speech", "momentum": 0.65},
-            {"id": "cens-section230", "label": "Section 230", "momentum": 0.5},
-            {"id": "cens-foreign", "label": "Foreign Influence", "momentum": 0.35},
-            {"id": "cens-algorithm", "label": "Algorithmic Bias", "momentum": 0.55},
+            {"id": "cw-future", "label": "Crypto Future", "momentum": 0.65},
+            {"id": "cw-scam", "label": "Crypto Scam", "momentum": 0.75},
+            {"id": "cw-defi", "label": "DeFi Freedom", "momentum": 0.55},
+            {"id": "cw-regulation", "label": "Regulation Needed", "momentum": 0.40},
+            {"id": "cw-environment", "label": "Environmental Cost", "momentum": 0.30},
+            {"id": "cw-speculation", "label": "Speculation", "momentum": 0.85},
         ]
     },
     {
-        "id": "vaccine-policy",
-        "name": "Vaccine Policy",
-        "cluster_count": 5,
+        "id": "social-media-youth",
+        "name": "Social Media & Youth Mental Health",
+        "cluster_count": 6,
         "contestation_level": "high",
-        "contestation_emergence": None,
-        "headline_divergence": {"jsd": 0.52, "dominant_typology": "Paradigmatic", "trend": "stable"},
+        "contestation_emergence": {"emerged_hours_ago": 40, "source_diversity": 0.78},
+        "headline_divergence": {"jsd": 0.47, "dominant_typology": "Paradigmatic", "trend": "increasing"},
         "top_accelerating_claim": {
-            "text": "Mandatory vaccination policies violate bodily autonomy and informed consent principles",
-            "momentum": 0.68, "source_diversity": 0.52
+            "text": "Social media platforms should be banned for children under 16 to protect their mental health",
+            "momentum": 0.81, "source_diversity": 0.52
         },
         "most_persistent_claim": {
-            "text": "Vaccines are safe, effective, and essential for public health according to overwhelming scientific consensus",
-            "persistence_windows": 18
+            "text": "Parents bear primary responsibility for managing their children's screen time",
+            "persistence_windows": 12
         },
-        "key_signal": {"type": "phase_transition", "summary": "'Natural immunity is superior' cluster reversed from mainstreaming to radicalizing"},
+        "key_signal": {"type": "phase_transition", "summary": "'Age verification systems' cluster reversed from mainstreaming to radicalizing"},
         "activity_sparkline": [0.35, 0.42, 0.38, 0.55, 0.48, 0.62, 0.58, 0.71, 0.65, 0.60, 0.57, 0.63],
         "ifi": {"value": 11.4, "trend": "stable"},
-        "top_situation": {"summary": "'Pharma companies have legal immunity from...' high friction — contested advance", "severity": "medium"},
+        "top_situation": {"summary": "'Tech companies knowingly designed addictive algorithms...' high friction — contested advance", "severity": "medium"},
         "clusters": [
-            {"id": "vax-mandate", "label": "Mandate Opposition", "momentum": 0.68},
-            {"id": "vax-science", "label": "Scientific Consensus", "momentum": 0.3},
-            {"id": "vax-natural", "label": "Natural Immunity", "momentum": 0.55},
-            {"id": "vax-pharma", "label": "Pharma Accountability", "momentum": 0.6},
-            {"id": "vax-children", "label": "Child Vaccination", "momentum": 0.4},
+            {"id": "smy-ban", "label": "Ban Platforms", "momentum": 0.81},
+            {"id": "smy-parents", "label": "Parental Responsibility", "momentum": 0.45},
+            {"id": "smy-platform", "label": "Platform Accountability", "momentum": 0.68},
+            {"id": "smy-research", "label": "Research Mixed", "momentum": 0.25},
+            {"id": "smy-verification", "label": "Age Verification", "momentum": 0.55},
+            {"id": "smy-crisis", "label": "Mental Health Crisis", "momentum": 0.72},
         ]
     },
     {
-        "id": "education-reform",
-        "name": "Education Reform",
+        "id": "creator-economy",
+        "name": "Content Creator Economy",
         "cluster_count": 6,
         "contestation_level": "medium",
         "contestation_emergence": None,
         "headline_divergence": {"jsd": 0.31, "dominant_typology": "Interpretive", "trend": "stable"},
         "top_accelerating_claim": {
-            "text": "School choice and voucher programs are essential to breaking the public school monopoly",
-            "momentum": 0.62, "source_diversity": 0.48
+            "text": "Platforms exploit creators by keeping the vast majority of ad revenue",
+            "momentum": 0.72, "source_diversity": 0.48
         },
         "most_persistent_claim": {
-            "text": "Public schools are underfunded and need more resources, not competition from private alternatives",
-            "persistence_windows": 15
+            "text": "The creator economy has democratized media and given millions a viable path to income",
+            "persistence_windows": 13
         },
-        "key_signal": {"type": "lead_lag", "summary": "'Parental rights in curriculum' detected on X 18h before Reddit with consistent framing"},
-        "activity_sparkline": [0.30, 0.35, 0.45, 0.42, 0.55, 0.50, 0.48, 0.60, 0.57, 0.65, 0.62, 0.58],
-        "ifi": {"value": 7.3, "trend": "stable"},
-        "top_situation": {"summary": "'CRT in schools is indoctrination...' lead-lag pattern detected across platforms", "severity": "low"},
+        "key_signal": {"type": "arousal_escalation", "summary": "Arousal trend shifted stable → warming on 'algorithm tyranny' cluster over 72h"},
+        "activity_sparkline": [0.40, 0.45, 0.55, 0.50, 0.62, 0.58, 0.70, 0.65, 0.72, 0.68, 0.75, 0.71],
+        "ifi": {"value": 8.7, "trend": "increasing"},
+        "top_situation": {"summary": "'Algorithm changes can destroy a creator's livelihood overnight...' warming — arousal escalating", "severity": "medium"},
         "clusters": [
-            {"id": "edu-choice", "label": "School Choice", "momentum": 0.62},
-            {"id": "edu-funding", "label": "Public Funding", "momentum": 0.35},
-            {"id": "edu-curriculum", "label": "Curriculum Control", "momentum": 0.55},
-            {"id": "edu-teachers", "label": "Teacher Shortage", "momentum": 0.3},
-            {"id": "edu-tech", "label": "EdTech & AI", "momentum": 0.45},
-            {"id": "edu-higher", "label": "Higher Ed Costs", "momentum": 0.4},
+            {"id": "ce-exploitation", "label": "Platform Exploitation", "momentum": 0.72},
+            {"id": "ce-opportunity", "label": "Creator Opportunity", "momentum": 0.40},
+            {"id": "ce-algorithm", "label": "Algorithm Tyranny", "momentum": 0.65},
+            {"id": "ce-burnout", "label": "Burnout Epidemic", "momentum": 0.55},
+            {"id": "ce-democratized", "label": "Democratized Media", "momentum": 0.30},
+            {"id": "ce-monetization", "label": "Monetization Unfair", "momentum": 0.50},
         ]
     },
     {
-        "id": "us-china-relations",
-        "name": "US-China Relations",
-        "cluster_count": 7,
+        "id": "remote-work",
+        "name": "Remote Work vs Return-to-Office",
+        "cluster_count": 6,
+        "contestation_level": "high",
+        "contestation_emergence": None,
+        "headline_divergence": {"jsd": 0.35, "dominant_typology": "Information Asymmetry", "trend": "stable"},
+        "top_accelerating_claim": {
+            "text": "Return-to-office mandates are about justifying commercial real estate, not productivity",
+            "momentum": 0.78, "source_diversity": 0.61
+        },
+        "most_persistent_claim": {
+            "text": "Remote work has proven that most office jobs never required physical presence",
+            "persistence_windows": 14
+        },
+        "key_signal": {"type": "lead_lag", "summary": "'RTO is about real estate' detected on X 18h before Reddit with consistent framing"},
+        "activity_sparkline": [0.30, 0.35, 0.45, 0.42, 0.55, 0.50, 0.48, 0.60, 0.57, 0.65, 0.62, 0.58],
+        "ifi": {"value": 7.3, "trend": "stable"},
+        "top_situation": {"summary": "'Remote work is eroding company culture...' lead-lag pattern detected across platforms", "severity": "low"},
+        "clusters": [
+            {"id": "rw-remote", "label": "Remote Forever", "momentum": 0.65},
+            {"id": "rw-rto", "label": "RTO Mandate", "momentum": 0.55},
+            {"id": "rw-hybrid", "label": "Hybrid Compromise", "momentum": 0.35},
+            {"id": "rw-productivity", "label": "Productivity Debate", "momentum": 0.50},
+            {"id": "rw-realestate", "label": "Commercial Real Estate", "momentum": 0.40},
+            {"id": "rw-culture", "label": "Culture Erosion", "momentum": 0.60},
+        ]
+    },
+    {
+        "id": "us-china-tech",
+        "name": "US-China Tech Competition",
+        "cluster_count": 6,
         "contestation_level": "high",
         "contestation_emergence": {"emerged_hours_ago": 40, "source_diversity": 0.62},
         "headline_divergence": {"jsd": 0.44, "dominant_typology": "Information Asymmetry", "trend": "increasing"},
         "top_accelerating_claim": {
-            "text": "China's military buildup around Taiwan represents the most significant geopolitical threat of the decade",
-            "momentum": 0.85, "source_diversity": 0.67
+            "text": "US chip export controls are successfully slowing China's AI advancement",
+            "momentum": 0.82, "source_diversity": 0.67
         },
         "most_persistent_claim": {
-            "text": "Economic decoupling from China would devastate American consumers and businesses",
+            "text": "The US must decouple from Chinese technology supply chains to protect national security",
             "persistence_windows": 12
         },
-        "key_signal": {"type": "momentum_spike", "summary": "'Taiwan semiconductor dependence is a national security crisis...' accelerated from 15th to 68th perc"},
+        "key_signal": {"type": "momentum_spike", "summary": "'Banning TikTok is necessary to prevent Chinese surveillance...' accelerated from 15th to 68th perc"},
         "activity_sparkline": [0.50, 0.58, 0.72, 0.68, 0.80, 0.75, 0.85, 0.82, 0.78, 0.88, 0.83, 0.90],
         "ifi": {"value": 18.6, "trend": "increasing"},
-        "top_situation": {"summary": "'China's tech transfer is systematic IP theft...' coordination signal — burstiness anomaly", "severity": "high"},
+        "top_situation": {"summary": "'Export controls are backfiring as China accelerates...' coordination signal — burstiness anomaly", "severity": "high"},
         "clusters": [
-            {"id": "china-taiwan", "label": "Taiwan Threat", "momentum": 0.85},
-            {"id": "china-trade", "label": "Trade Decoupling", "momentum": 0.5},
-            {"id": "china-tech", "label": "Tech Competition", "momentum": 0.7},
-            {"id": "china-ip", "label": "IP Theft", "momentum": 0.6},
-            {"id": "china-supply", "label": "Supply Chain", "momentum": 0.55},
-            {"id": "china-diplomacy", "label": "Diplomatic Engagement", "momentum": 0.2},
-            {"id": "china-semiconductor", "label": "Semiconductor War", "momentum": 0.75},
+            {"id": "uct-decouple", "label": "Decouple Now", "momentum": 0.75},
+            {"id": "uct-engagement", "label": "Engagement Needed", "momentum": 0.25},
+            {"id": "uct-chips", "label": "Chip War", "momentum": 0.82},
+            {"id": "uct-tiktok", "label": "TikTok Ban", "momentum": 0.70},
+            {"id": "uct-industrial", "label": "Industrial Policy", "momentum": 0.45},
+            {"id": "uct-coldwar", "label": "Tech Cold War", "momentum": 0.65},
         ]
     },
 ]
@@ -350,12 +351,12 @@ GEO_MAPPING = {
         ("imm-humanitarian", ["dc", "boston", "sf"], 0.55),
         ("imm-workforce", ["austin", "denver", "minneapolis"], 0.50),
     ],
-    "israel-palestine": [
-        ("ip-media-bias", ["nyc", "dc", "la"], 0.80),
-        ("ip-civilian", ["chicago", "detroit", "sf"], 0.70),
-        ("ip-complicity", ["boston", "portland", "seattle"], 0.65),
-        ("ip-self-defense", ["miami", "nyc", "dallas"], 0.60),
-        ("ip-intl-law", ["dc", "boston", "sf"], 0.50),
+    "us-israel-iran": [
+        ("uii-iran-proxies", ["dc", "nyc", "houston"], 0.80),
+        ("uii-ceasefire", ["chicago", "sf", "portland"], 0.70),
+        ("uii-arms-sales", ["dc", "boston", "seattle"], 0.65),
+        ("uii-us-involvement", ["dc", "miami", "dallas"], 0.60),
+        ("uii-destabilization", ["nyc", "la", "atlanta"], 0.50),
     ],
     "climate-policy": [
         ("clim-nuclear", ["dc", "boston", "chicago"], 0.70),
@@ -364,47 +365,47 @@ GEO_MAPPING = {
         ("clim-renewable", ["austin", "denver", "seattle"], 0.55),
         ("clim-skeptic", ["houston", "phoenix", "nashville"], 0.45),
     ],
-    "cryptocurrency-regulation": [
-        ("crypto-sec", ["nyc", "dc", "sf"], 0.80),
-        ("crypto-defi", ["sf", "austin", "miami"], 0.70),
-        ("crypto-innovation", ["miami", "austin", "la"], 0.65),
-        ("crypto-stable", ["dc", "nyc", "chicago"], 0.55),
-        ("crypto-fraud", ["nyc", "la", "atlanta"], 0.50),
+    "ai-workplace": [
+        ("aiw-displacement", ["sf", "nyc", "chicago", "detroit"], 0.85),
+        ("aiw-creative", ["la", "nyc", "austin"], 0.75),
+        ("aiw-augmentation", ["sf", "seattle", "boston"], 0.65),
+        ("aiw-retraining", ["dc", "chicago", "detroit"], 0.55),
+        ("aiw-productivity", ["sf", "austin", "denver"], 0.50),
     ],
-    "housing-crisis": [
-        ("house-corp", ["la", "nyc", "sf", "seattle"], 0.85),
-        ("house-rent", ["nyc", "sf", "boston"], 0.75),
-        ("house-zoning", ["sf", "la", "austin"], 0.65),
-        ("house-homeless", ["la", "sf", "portland", "seattle"], 0.60),
-        ("house-remote", ["denver", "austin", "nashville", "salt_lake"], 0.50),
+    "crypto-web3": [
+        ("cw-speculation", ["nyc", "miami", "sf"], 0.85),
+        ("cw-scam", ["nyc", "la", "chicago"], 0.75),
+        ("cw-defi", ["sf", "austin", "miami"], 0.70),
+        ("cw-regulation", ["dc", "nyc", "boston"], 0.55),
+        ("cw-environment", ["portland", "seattle", "denver"], 0.45),
     ],
-    "social-media-censorship": [
-        ("cens-bias", ["dallas", "houston", "nashville", "phoenix"], 0.85),
-        ("cens-free-speech", ["austin", "dc", "miami"], 0.70),
-        ("cens-algorithm", ["sf", "seattle", "nyc"], 0.60),
-        ("cens-section230", ["dc", "nyc", "boston"], 0.55),
-        ("cens-health", ["la", "chicago", "philly"], 0.50),
+    "social-media-youth": [
+        ("smy-ban", ["dc", "dallas", "nashville", "phoenix"], 0.85),
+        ("smy-platform", ["sf", "seattle", "nyc"], 0.70),
+        ("smy-crisis", ["la", "chicago", "atlanta"], 0.65),
+        ("smy-parents", ["houston", "dallas", "nashville"], 0.55),
+        ("smy-research", ["boston", "dc", "sf"], 0.50),
     ],
-    "vaccine-policy": [
-        ("vax-mandate", ["dallas", "houston", "nashville", "phoenix"], 0.80),
-        ("vax-pharma", ["nyc", "dc", "boston"], 0.65),
-        ("vax-natural", ["austin", "denver", "portland"], 0.60),
-        ("vax-science", ["boston", "sf", "dc", "seattle"], 0.55),
-        ("vax-children", ["la", "chicago", "atlanta", "philly"], 0.50),
+    "creator-economy": [
+        ("ce-exploitation", ["la", "nyc", "miami"], 0.80),
+        ("ce-algorithm", ["sf", "seattle", "austin"], 0.70),
+        ("ce-burnout", ["la", "nyc", "chicago"], 0.60),
+        ("ce-opportunity", ["austin", "miami", "nashville"], 0.55),
+        ("ce-monetization", ["sf", "nyc", "la"], 0.50),
     ],
-    "education-reform": [
-        ("edu-choice", ["dallas", "houston", "nashville", "phoenix"], 0.70),
-        ("edu-funding", ["detroit", "chicago", "philly"], 0.65),
-        ("edu-curriculum", ["dc", "austin", "atlanta"], 0.60),
-        ("edu-tech", ["sf", "seattle", "austin"], 0.50),
-        ("edu-higher", ["nyc", "boston", "la"], 0.55),
+    "remote-work": [
+        ("rw-remote", ["sf", "austin", "denver", "portland"], 0.80),
+        ("rw-rto", ["nyc", "chicago", "dc"], 0.70),
+        ("rw-realestate", ["nyc", "sf", "chicago"], 0.65),
+        ("rw-culture", ["dc", "boston", "atlanta"], 0.55),
+        ("rw-hybrid", ["seattle", "austin", "denver"], 0.50),
     ],
-    "us-china-relations": [
-        ("china-taiwan", ["dc", "sf", "seattle"], 0.85),
-        ("china-tech", ["sf", "seattle", "austin", "boston"], 0.75),
-        ("china-semiconductor", ["sf", "austin", "portland"], 0.70),
-        ("china-trade", ["la", "nyc", "houston", "chicago"], 0.65),
-        ("china-ip", ["dc", "boston", "detroit"], 0.55),
+    "us-china-tech": [
+        ("uct-decouple", ["dc", "sf", "seattle"], 0.85),
+        ("uct-chips", ["sf", "austin", "portland"], 0.75),
+        ("uct-tiktok", ["dc", "la", "nyc"], 0.70),
+        ("uct-coldwar", ["dc", "nyc", "boston"], 0.65),
+        ("uct-industrial", ["detroit", "houston", "phoenix"], 0.55),
     ],
 }
 
@@ -492,13 +493,13 @@ DISCOURSE_TEMPLATES = {
         {"text": "Legal immigration pathways are so broken that waiting legally takes 15-20 years. Fix the system", "cluster_id": "imm-legal", "tags": ["→ Legal Pathways cluster"]},
         {"text": "Cultural integration isn't about assimilation — it's about shared civic values while preserving heritage", "cluster_id": "imm-cultural", "tags": ["→ Cultural Integration cluster"]},
     ],
-    "israel-palestine": [
-        {"text": "Media coverage of the conflict is systematically biased against Israel. Same events, wildly different framing", "cluster_id": "ip-media-bias", "tags": ["→ Media Bias cluster", "🔥 arousal: high"]},
-        {"text": "The civilian death toll is unconscionable. No political goal justifies this level of destruction", "cluster_id": "ip-civilian", "tags": ["→ Civilian Impact cluster", "🔥 arousal: high"]},
-        {"text": "Israel has the right to defend itself against terrorist attacks on its civilians. Full stop.", "cluster_id": "ip-self-defense", "tags": ["→ Self-Defense cluster"]},
-        {"text": "Western governments are complicit through continued arms sales and diplomatic cover", "cluster_id": "ip-complicity", "tags": ["→ Western Complicity cluster", "📈 momentum spike"]},
-        {"text": "Two-state solution is the only viable path. Everything else is fantasy or ethnic cleansing", "cluster_id": "ip-two-state", "tags": ["→ Two-State Solution cluster"]},
-        {"text": "International humanitarian law applies to all parties. Selective enforcement undermines the entire framework", "cluster_id": "ip-intl-law", "tags": ["→ International Law cluster"]},
+    "us-israel-iran": [
+        {"text": "US military involvement is necessary to contain Iranian expansionism. Withdrawal would be catastrophic", "cluster_id": "uii-us-involvement", "tags": ["→ US Involvement cluster", "🔥 arousal: high"]},
+        {"text": "Iran's proxy network — Hezbollah, Houthis, Iraqi militias — is the real threat to regional stability", "cluster_id": "uii-iran-proxies", "tags": ["→ Iran Proxies cluster", "🔥 arousal: high"]},
+        {"text": "An immediate ceasefire is the only way to prevent further civilian casualties. No more escalation", "cluster_id": "uii-ceasefire", "tags": ["→ Ceasefire Now cluster", "📈 momentum spike"]},
+        {"text": "US arms sales to Israel make American taxpayers complicit in the humanitarian crisis", "cluster_id": "uii-arms-sales", "tags": ["→ Arms Sales cluster", "🔥 arousal: medium"]},
+        {"text": "The conflict is destabilizing the entire region. Jordan, Lebanon, Iraq — all feeling the spillover", "cluster_id": "uii-destabilization", "tags": ["→ Regional Destabilization cluster"]},
+        {"text": "Diplomatic engagement with Iran is the only path that doesn't end in regional war", "cluster_id": "uii-diplomacy", "tags": ["→ Diplomacy Path cluster"]},
     ],
     "climate-policy": [
         {"text": "Carbon capture is fossil fuel industry greenwashing. They've known the science for 50 years and did nothing", "cluster_id": "clim-carbon", "tags": ["→ Carbon Capture Critique cluster", "🔥 arousal: high"]},
@@ -508,52 +509,53 @@ DISCOURSE_TEMPLATES = {
         {"text": "Solar and wind are now cheaper than coal in most markets. The transition is economic, not just moral", "cluster_id": "clim-renewable", "tags": ["→ Renewable Transition cluster"]},
         {"text": "Climate models have been wrong for decades. The alarmism is a political tool, not science", "cluster_id": "clim-skeptic", "tags": ["→ Climate Skepticism cluster", "🔥 arousal: medium"]},
     ],
-    "cryptocurrency-regulation": [
-        {"text": "SEC enforcement actions are killing American crypto innovation while Dubai and Singapore welcome builders", "cluster_id": "crypto-sec", "tags": ["→ SEC Overreach cluster", "🔥 arousal: high"]},
-        {"text": "Stablecoins without federal regulation are ticking time bombs — they're shadow banks with no oversight", "cluster_id": "crypto-stable", "tags": ["→ Stablecoin Risk cluster"]},
-        {"text": "DeFi protocols are unregulable by design — and that's the point. Code is law", "cluster_id": "crypto-defi", "tags": ["→ DeFi Governance cluster", "↗ fragmenting"]},
-        {"text": "CBDCs are government surveillance coins. They want to track every transaction you make", "cluster_id": "crypto-cbdc", "tags": ["→ CBDC Concerns cluster", "🔥 arousal: high"]},
-        {"text": "FTX, Celsius, Luna — how many people need to lose everything before we regulate this industry?", "cluster_id": "crypto-fraud", "tags": ["→ Consumer Protection cluster"]},
-        {"text": "The US is losing the crypto talent war. Every enforcement action pushes another team offshore", "cluster_id": "crypto-innovation", "tags": ["→ Innovation Flight cluster", "📈 momentum spike"]},
+    "ai-workplace": [
+        {"text": "AI will automate away millions of white-collar jobs within the next five years. This isn't speculation anymore", "cluster_id": "aiw-displacement", "tags": ["→ Job Displacement cluster", "🔥 arousal: high"]},
+        {"text": "AI is a productivity tool that augments humans. Every tech revolution created more jobs than it destroyed", "cluster_id": "aiw-augmentation", "tags": ["→ AI Augmentation cluster"]},
+        {"text": "AI-generated content is destroying the value of creative work. Artists, writers, designers — all under threat", "cluster_id": "aiw-creative", "tags": ["→ Creative Threat cluster", "🔥 arousal: high"]},
+        {"text": "Massive investment in retraining programs is needed NOW. We can't wait until after the layoffs hit", "cluster_id": "aiw-retraining", "tags": ["→ Retraining Programs cluster"]},
+        {"text": "Fears about AI replacing jobs are the same Luddite arguments made about every technology revolution", "cluster_id": "aiw-luddite", "tags": ["→ Luddite Fallacy cluster", "📈 momentum spike"]},
+        {"text": "The companies pushing AI hardest are quietly laying off the workers it was supposed to augment", "cluster_id": "aiw-displacement", "tags": ["→ Job Displacement cluster", "⚠ coordination signal", "🔥 arousal: high"]},
     ],
-    "housing-crisis": [
-        {"text": "Corporate landlords bought 1 in 4 single-family homes last year. This isn't a market — it's extraction", "cluster_id": "house-corp", "tags": ["→ Corporate Landlords cluster", "🔥 arousal: high"]},
-        {"text": "Zoning reform is the single most impactful thing cities can do. Let people build housing where there's demand", "cluster_id": "house-zoning", "tags": ["→ Zoning Reform cluster"]},
-        {"text": "Rent control doesn't work — it reduces supply and raises rents for everyone not lucky enough to have a unit", "cluster_id": "house-rent", "tags": ["→ Rent Control cluster", "↗ fragmenting"]},
-        {"text": "Remote work hollowed out city centers and made rural towns unaffordable. Nobody planned for this", "cluster_id": "house-remote", "tags": ["→ Remote Work Impact cluster"]},
-        {"text": "The homelessness crisis is a housing crisis. Every city that built more housing saw numbers drop", "cluster_id": "house-homeless", "tags": ["→ Homelessness cluster"]},
-        {"text": "Interest rates make it impossible for first-time buyers. An entire generation is locked out", "cluster_id": "house-rate", "tags": ["→ Interest Rates cluster", "🔥 arousal: medium"]},
+    "crypto-web3": [
+        {"text": "Cryptocurrency represents the future of finance. Traditional banking is a dead system walking", "cluster_id": "cw-future", "tags": ["→ Crypto Future cluster", "🔥 arousal: medium"]},
+        {"text": "The vast majority of crypto projects are scams. FTX, Celsius, Luna — the pattern is clear", "cluster_id": "cw-scam", "tags": ["→ Crypto Scam cluster", "🔥 arousal: high"]},
+        {"text": "DeFi protocols offer financial freedom to billions of unbanked people. This is liberation tech", "cluster_id": "cw-defi", "tags": ["→ DeFi Freedom cluster", "↗ fragmenting"]},
+        {"text": "Crypto regulation is essential to protect consumers. The wild west era needs to end", "cluster_id": "cw-regulation", "tags": ["→ Regulation Needed cluster"]},
+        {"text": "Proof-of-work mining is an environmental catastrophe. No financial innovation justifies this", "cluster_id": "cw-environment", "tags": ["→ Environmental Cost cluster"]},
+        {"text": "Bitcoin's price action confirms a new bull cycle. This is just the beginning of the next run", "cluster_id": "cw-speculation", "tags": ["→ Speculation cluster", "📈 momentum spike", "🔥 arousal: high"]},
     ],
-    "social-media-censorship": [
-        {"text": "Platform content moderation is politically biased and systematically suppresses conservative viewpoints", "cluster_id": "cens-bias", "tags": ["→ Political Bias cluster", "🔥 arousal: high"]},
-        {"text": "Content moderation is necessary. Without it, platforms become cesspools of harassment and disinfo", "cluster_id": "cens-health", "tags": ["→ Health Misinfo cluster"]},
-        {"text": "Section 230 reform would break the internet. Platforms can't review billions of posts manually", "cluster_id": "cens-section230", "tags": ["→ Section 230 cluster"]},
-        {"text": "Free speech means the government can't censor you. It doesn't mean a private company has to host you", "cluster_id": "cens-free-speech", "tags": ["→ Free Speech cluster", "↗ mainstreaming"]},
-        {"text": "Algorithmic amplification is the real censorship. What they DON'T show you matters more than what they remove", "cluster_id": "cens-algorithm", "tags": ["→ Algorithmic Bias cluster", "📈 momentum spike"]},
-        {"text": "Government-big tech collusion to suppress speech is documented. The Twitter files proved it", "cluster_id": "cens-bias", "tags": ["→ Political Bias cluster", "⚠ coordination signal", "🔥 arousal: high"]},
+    "social-media-youth": [
+        {"text": "Social media platforms should be banned for children under 16. The evidence of harm is overwhelming", "cluster_id": "smy-ban", "tags": ["→ Ban Platforms cluster", "🔥 arousal: high"]},
+        {"text": "Parents bear primary responsibility for screen time. Government bans are overreach", "cluster_id": "smy-parents", "tags": ["→ Parental Responsibility cluster"]},
+        {"text": "Tech companies knowingly designed addictive algorithms that exploit developing adolescent brains", "cluster_id": "smy-platform", "tags": ["→ Platform Accountability cluster", "🔥 arousal: high", "↗ radicalizing"]},
+        {"text": "The research on social media and mental health is far more mixed than headlines suggest", "cluster_id": "smy-research", "tags": ["→ Research Mixed cluster"]},
+        {"text": "Age verification systems create new privacy risks for ALL users. Cure worse than the disease", "cluster_id": "smy-verification", "tags": ["→ Age Verification cluster", "🔥 arousal: medium"]},
+        {"text": "We are witnessing a generational mental health crisis directly caused by smartphone social media", "cluster_id": "smy-crisis", "tags": ["→ Mental Health Crisis cluster", "📈 momentum spike"]},
     ],
-    "vaccine-policy": [
-        {"text": "Mandatory vaccination violates bodily autonomy. No government should force a medical procedure", "cluster_id": "vax-mandate", "tags": ["→ Mandate Opposition cluster", "🔥 arousal: high"]},
-        {"text": "Vaccines are safe and effective — overwhelming scientific consensus from decades of research", "cluster_id": "vax-science", "tags": ["→ Scientific Consensus cluster"]},
-        {"text": "Natural immunity from infection provides broader, longer-lasting protection than vaccination alone", "cluster_id": "vax-natural", "tags": ["→ Natural Immunity cluster", "↗ radicalizing"]},
-        {"text": "Pharma companies have legal immunity from vaccine injuries. No accountability means no trust", "cluster_id": "vax-pharma", "tags": ["→ Pharma Accountability cluster", "🔥 arousal: medium"]},
-        {"text": "The childhood vaccination schedule has tripled since the 1980s. Parents deserve answers, not dismissal", "cluster_id": "vax-children", "tags": ["→ Child Vaccination cluster"]},
+    "creator-economy": [
+        {"text": "Platforms exploit creators by keeping the vast majority of ad revenue. Creators do all the work", "cluster_id": "ce-exploitation", "tags": ["→ Platform Exploitation cluster", "🔥 arousal: high"]},
+        {"text": "The creator economy has democratized media. Anyone with talent can build an audience now", "cluster_id": "ce-opportunity", "tags": ["→ Creator Opportunity cluster"]},
+        {"text": "Algorithm changes can destroy a creator's livelihood overnight. Zero transparency, zero recourse", "cluster_id": "ce-algorithm", "tags": ["→ Algorithm Tyranny cluster", "🔥 arousal: high", "📈 momentum spike"]},
+        {"text": "Creator burnout is reaching epidemic levels. Platforms demand constant content output", "cluster_id": "ce-burnout", "tags": ["→ Burnout Epidemic cluster", "🔥 arousal: medium"]},
+        {"text": "The top 1% of creators capture nearly all revenue. Millions earn essentially nothing", "cluster_id": "ce-exploitation", "tags": ["→ Platform Exploitation cluster"]},
+        {"text": "Monetization policies reward engagement metrics, not quality. The incentives are completely broken", "cluster_id": "ce-monetization", "tags": ["→ Monetization Unfair cluster"]},
     ],
-    "education-reform": [
-        {"text": "School choice gives parents the power to find the best environment for their kids. Competition improves all schools", "cluster_id": "edu-choice", "tags": ["→ School Choice cluster"]},
-        {"text": "Public schools are starved of resources while politicians funnel money to private alternatives", "cluster_id": "edu-funding", "tags": ["→ Public Funding cluster", "🔥 arousal: medium"]},
-        {"text": "Parents have a right to know what's being taught. Curriculum transparency shouldn't be controversial", "cluster_id": "edu-curriculum", "tags": ["→ Curriculum Control cluster", "↗ lead-lag: X → Reddit"]},
-        {"text": "We can't keep teachers when starting salary is less than a warehouse job. The shortage is self-inflicted", "cluster_id": "edu-teachers", "tags": ["→ Teacher Shortage cluster"]},
-        {"text": "AI tutoring will personalize education in ways no classroom can. This is the biggest opportunity in a century", "cluster_id": "edu-tech", "tags": ["→ EdTech & AI cluster"]},
-        {"text": "Student debt is $1.7 trillion. Higher education is a broken system extracting wealth from young people", "cluster_id": "edu-higher", "tags": ["→ Higher Ed Costs cluster", "🔥 arousal: high"]},
+    "remote-work": [
+        {"text": "Remote work has proven that most office jobs never required physical presence. The jig is up", "cluster_id": "rw-remote", "tags": ["→ Remote Forever cluster", "🔥 arousal: medium"]},
+        {"text": "Return-to-office mandates are about justifying commercial real estate, not productivity", "cluster_id": "rw-remote", "tags": ["→ Remote Forever cluster", "🔥 arousal: high", "📈 momentum spike"]},
+        {"text": "In-person collaboration is essential for innovation. Companies requiring RTO will outperform", "cluster_id": "rw-rto", "tags": ["→ RTO Mandate cluster"]},
+        {"text": "Hybrid work with 2-3 office days is the pragmatic compromise everyone should adopt", "cluster_id": "rw-hybrid", "tags": ["→ Hybrid Compromise cluster"]},
+        {"text": "Remote work is eroding company culture and creating a generation of isolated, disengaged workers", "cluster_id": "rw-culture", "tags": ["→ Culture Erosion cluster", "🔥 arousal: medium"]},
+        {"text": "The commercial real estate market faces structural collapse. Remote work killed office demand", "cluster_id": "rw-realestate", "tags": ["→ Commercial Real Estate cluster", "↗ lead-lag: X → Reddit"]},
     ],
-    "us-china-relations": [
-        {"text": "China's military buildup around Taiwan represents the most significant geopolitical threat of the decade", "cluster_id": "china-taiwan", "tags": ["→ Taiwan Threat cluster", "🔥 arousal: high"]},
-        {"text": "Economic decoupling from China would devastate American consumers. Everything costs more without them", "cluster_id": "china-trade", "tags": ["→ Trade Decoupling cluster"]},
-        {"text": "China's systematic IP theft has cost the US $600 billion annually. At what point is it economic warfare?", "cluster_id": "china-ip", "tags": ["→ IP Theft cluster", "⚠ coordination signal"]},
-        {"text": "Taiwan semiconductor dependence is a national security crisis. TSMC controls 90% of advanced chips", "cluster_id": "china-semiconductor", "tags": ["→ Semiconductor War cluster", "📈 momentum spike"]},
-        {"text": "We need diplomatic engagement, not saber-rattling. Cold War thinking gets everyone killed", "cluster_id": "china-diplomacy", "tags": ["→ Diplomatic Engagement cluster"]},
-        {"text": "China's AI capabilities are advancing faster than anyone predicted. The tech race is real", "cluster_id": "china-tech", "tags": ["→ Tech Competition cluster", "🔥 arousal: medium"]},
+    "us-china-tech": [
+        {"text": "The US must decouple from Chinese technology supply chains. This is a national security imperative", "cluster_id": "uct-decouple", "tags": ["→ Decouple Now cluster", "🔥 arousal: high"]},
+        {"text": "US chip export controls are successfully slowing China's AI advancement and should be expanded", "cluster_id": "uct-chips", "tags": ["→ Chip War cluster", "📈 momentum spike"]},
+        {"text": "Banning TikTok is necessary to prevent Chinese surveillance on American citizens", "cluster_id": "uct-tiktok", "tags": ["→ TikTok Ban cluster", "🔥 arousal: high"]},
+        {"text": "We are in a technology cold war with China. Treating it otherwise is dangerously naive", "cluster_id": "uct-coldwar", "tags": ["→ Tech Cold War cluster", "🔥 arousal: medium"]},
+        {"text": "Export controls are backfiring — China is accelerating domestic chip development faster than expected", "cluster_id": "uct-engagement", "tags": ["→ Engagement Needed cluster", "⚠ coordination signal"]},
+        {"text": "Industrial policy and government investment in domestic chips will determine tech leadership", "cluster_id": "uct-industrial", "tags": ["→ Industrial Policy cluster"]},
     ],
 }
 

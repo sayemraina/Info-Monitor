@@ -1,0 +1,149 @@
+{
+  "slice_a": {
+    "id": "x_platform",
+    "type": "platform",
+    "label": "X Platform",
+    "active_volume": 1137,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.45,
+    "is_influencer_framing": false
+  },
+  "slice_b": {
+    "id": "reddit_platform",
+    "type": "platform",
+    "label": "Reddit Platform",
+    "active_volume": 2866,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.5,
+    "is_influencer_framing": false
+  },
+  "divergence": {
+    "jsd": 0.0837,
+    "jsd_sqrt": 0.2892,
+    "trend": [
+      0.2715,
+      0.2644,
+      0.2761,
+      0.2952,
+      0.2938,
+      0.3184,
+      0.339,
+      0.2987
+    ],
+    "typology": {
+      "information_asymmetry": 0.76,
+      "interpretive": 0.43,
+      "paradigmatic": 0,
+      "dominant_mode": "Information Asymmetry",
+      "paradigmatic_caveat": false
+    }
+  },
+  "per_cluster": [
+    {
+      "cluster_id": "clu_d64878f775a1",
+      "label": "The US must decouple from Chinese technology supply chains to protect national s",
+      "salience_a": 0.7055,
+      "salience_b": 0.2467,
+      "arousal_a": 0.29,
+      "arousal_b": 0.37,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_1f3c4a06e1d5",
+      "label": "We are in a technology cold war with China and treating it otherwise is dangerou",
+      "salience_a": 0.4496,
+      "salience_b": 0.4041,
+      "arousal_a": 0.13,
+      "arousal_b": 0.76,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ed400b3607d5",
+      "label": "Banning TikTok is necessary to prevent Chinese surveillance and influence operat",
+      "salience_a": 0.1044,
+      "salience_b": 0.5499,
+      "arousal_a": 0.89,
+      "arousal_b": 0.64,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_dcf78355e8d4",
+      "label": "Industrial policy and government investment in domestic chip manufacturing will ",
+      "salience_a": 0.9285,
+      "salience_b": 0.5145,
+      "arousal_a": 0.76,
+      "arousal_b": 0.6,
+      "mutation_a": "radicalizing",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_23fc6097f6d1",
+      "label": "US chip export controls are successfully slowing China's AI advancement and shou",
+      "salience_a": 0.7497,
+      "salience_b": 0.8968,
+      "arousal_a": 0.3,
+      "arousal_b": 0.46,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_bec051c1b5af",
+      "label": "Continued engagement with China's tech sector benefits both economies and reduce",
+      "salience_a": 0.6762,
+      "salience_b": 0.1024,
+      "arousal_a": 0.64,
+      "arousal_b": 0.67,
+      "mutation_a": "stable",
+      "mutation_b": "radicalizing"
+    }
+  ],
+  "arousal_comparison": {
+    "slice_a_avg": 0.33,
+    "slice_b_avg": 0.61
+  },
+  "exposure_comparison": {
+    "slice_a": {
+      "value": 0.3102,
+      "confidence_interval": [
+        0.2602,
+        0.3602
+      ],
+      "baseline": "global",
+      "time_window": "6h",
+      "sparkline": [
+        0.2715,
+        0.2644,
+        0.2761,
+        0.2952,
+        0.2938,
+        0.3184,
+        0.339,
+        0.2987
+      ],
+      "source_distribution": "production"
+    },
+    "slice_b": {
+      "value": 0.6859,
+      "confidence_interval": [
+        0.6359,
+        0.7359
+      ],
+      "baseline": "global",
+      "time_window": "6h",
+      "sparkline": [
+        0.2715,
+        0.2644,
+        0.2761,
+        0.2952,
+        0.2938,
+        0.3184,
+        0.339,
+        0.2987
+      ],
+      "source_distribution": "production"
+    }
+  }
+}

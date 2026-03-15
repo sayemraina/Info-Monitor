@@ -1,0 +1,149 @@
+{
+  "slice_a": {
+    "id": "x_platform",
+    "type": "platform",
+    "label": "X Platform",
+    "active_volume": 778,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.39,
+    "is_influencer_framing": false
+  },
+  "slice_b": {
+    "id": "reddit_platform",
+    "type": "platform",
+    "label": "Reddit Platform",
+    "active_volume": 1898,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.42,
+    "is_influencer_framing": false
+  },
+  "divergence": {
+    "jsd": 0.0255,
+    "jsd_sqrt": 0.1597,
+    "trend": [
+      0.1232,
+      0.1569,
+      0.1392,
+      0.1956,
+      0.1759,
+      0.1183,
+      0.1762,
+      0.1518
+    ],
+    "typology": {
+      "information_asymmetry": 0.79,
+      "interpretive": 0.33,
+      "paradigmatic": 0,
+      "dominant_mode": "Information Asymmetry",
+      "paradigmatic_caveat": false
+    }
+  },
+  "per_cluster": [
+    {
+      "cluster_id": "clu_7fe437567c12",
+      "label": "We are witnessing a generational mental health crisis directly caused by smartph",
+      "salience_a": 0.9484,
+      "salience_b": 0.5722,
+      "arousal_a": 0.2,
+      "arousal_b": 0.24,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_94a296cf9c3c",
+      "label": "Social media platforms should be banned for children under 16 to protect their m",
+      "salience_a": 0.6321,
+      "salience_b": 0.7714,
+      "arousal_a": 0.32,
+      "arousal_b": 0.22,
+      "mutation_a": "stable",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_f8503b6a8608",
+      "label": "The research on social media and mental health is far more mixed than headlines ",
+      "salience_a": 0.6609,
+      "salience_b": 0.492,
+      "arousal_a": 0.17,
+      "arousal_b": 0.14,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_da138ea9742a",
+      "label": "Parents bear primary responsibility for managing their children's screen time an",
+      "salience_a": 0.8288,
+      "salience_b": 0.5729,
+      "arousal_a": 0.57,
+      "arousal_b": 0.87,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_18c9022a655a",
+      "label": "Tech companies knowingly designed addictive algorithms that exploit developing a",
+      "salience_a": 0.3336,
+      "salience_b": 0.0705,
+      "arousal_a": 0.74,
+      "arousal_b": 0.83,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_67bb9b5f6efb",
+      "label": "Age verification systems for social media are invasive and will create new priva",
+      "salience_a": 0.5879,
+      "salience_b": 0.882,
+      "arousal_a": 0.21,
+      "arousal_b": 0.39,
+      "mutation_a": "radicalizing",
+      "mutation_b": "stable"
+    }
+  ],
+  "arousal_comparison": {
+    "slice_a_avg": 0.52,
+    "slice_b_avg": 0.64
+  },
+  "exposure_comparison": {
+    "slice_a": {
+      "value": 0.5339,
+      "confidence_interval": [
+        0.4839,
+        0.5839
+      ],
+      "baseline": "global",
+      "time_window": "6h",
+      "sparkline": [
+        0.1232,
+        0.1569,
+        0.1392,
+        0.1956,
+        0.1759,
+        0.1183,
+        0.1762,
+        0.1518
+      ],
+      "source_distribution": "production"
+    },
+    "slice_b": {
+      "value": 0.6209,
+      "confidence_interval": [
+        0.5709,
+        0.6709
+      ],
+      "baseline": "global",
+      "time_window": "6h",
+      "sparkline": [
+        0.1232,
+        0.1569,
+        0.1392,
+        0.1956,
+        0.1759,
+        0.1183,
+        0.1762,
+        0.1518
+      ],
+      "source_distribution": "production"
+    }
+  }
+}

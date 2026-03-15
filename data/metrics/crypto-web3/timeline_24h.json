@@ -1,0 +1,155 @@
+{
+  "events": [
+    {
+      "id": "evt_90f8ef81b339",
+      "type": "momentum_spike",
+      "timestamp": "2026-03-16T05:00:00+00:00",
+      "claim_id": "clm_5e7ee0757447",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.83,
+      "summary": "'The vast majority of crypto projects are scams designed to t...' accelerated from 20th to 72nd percentile in 12h. Source diversity: low.",
+      "detail": {
+        "percentile_from": 20,
+        "percentile_to": 72,
+        "hours": 12
+      }
+    },
+    {
+      "id": "evt_9414ed7358b9",
+      "type": "coordination_flag",
+      "timestamp": "2026-03-15T10:00:00+00:00",
+      "claim_id": "clm_5e7ee0757447",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.75,
+      "summary": "Near-duplicate content: 47 similar posts from non-overlapping accounts within 3h.",
+      "detail": {
+        "signal": "near_duplicate",
+        "count": 47,
+        "window_hours": 3
+      }
+    },
+    {
+      "id": "evt_f679e6c8a749",
+      "type": "momentum_spike",
+      "timestamp": "2026-03-15T09:00:00+00:00",
+      "claim_id": "clm_7eaff3b5d478",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.8,
+      "summary": "'Bitcoin's recent price action confirms the beginning of a ne...' accelerated from 20th to 72nd percentile in 12h. Source diversity: low.",
+      "detail": {
+        "percentile_from": 20,
+        "percentile_to": 72,
+        "hours": 12
+      }
+    },
+    {
+      "id": "evt_10cad8b4cf63",
+      "type": "claim_dark",
+      "timestamp": "2026-03-16T10:00:00+00:00",
+      "claim_id": "clm_5e7ee0757447",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.71,
+      "summary": "'Web3 is nothing more than a rebranding of failed b...' went dark \u2014 active in last 3 windows, now zero production.",
+      "detail": {
+        "last_active_window": 3,
+        "topic_volume_change": 0.05
+      }
+    },
+    {
+      "id": "evt_ad87179917ac",
+      "type": "divergence_shift",
+      "timestamp": "2026-03-15T06:00:00+00:00",
+      "claim_id": null,
+      "slice_id": "x_platform",
+      "severity": "medium",
+      "confidence": 0.8,
+      "summary": "X vs Reddit divergence increased 23% over 48h. Mode: information asymmetry.",
+      "detail": {
+        "jsd_change": 0.23,
+        "hours": 48,
+        "mode": "information_asymmetry"
+      }
+    },
+    {
+      "id": "evt_b62c4568ca1c",
+      "type": "arousal_escalation",
+      "timestamp": "2026-03-15T01:00:00+00:00",
+      "claim_id": "clm_7eaff3b5d478",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.82,
+      "summary": "'bitcoin price' arousal shifted low to high over 48h, semantic content stable.",
+      "detail": {
+        "arousal_from": "low",
+        "arousal_to": "high",
+        "hours": 48
+      }
+    },
+    {
+      "id": "evt_db77169a96b1",
+      "type": "vocabulary_rotation",
+      "timestamp": "2026-03-14T19:00:00+00:00",
+      "claim_id": "clm_8f81e5e790a6",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.83,
+      "summary": "Vocabulary rotation detected in 'crypto future': emerging terminology overlaps with adjacent narratives.",
+      "detail": {
+        "rotation_shift": 0.42,
+        "hours": 24
+      }
+    },
+    {
+      "id": "evt_579ddbf821a9",
+      "type": "arousal_escalation",
+      "timestamp": "2026-03-14T12:00:00+00:00",
+      "claim_id": "clm_5e7ee0757447",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.87,
+      "summary": "'crypto fraud' arousal shifted low to high over 48h, semantic content stable.",
+      "detail": {
+        "arousal_from": "low",
+        "arousal_to": "high",
+        "hours": 48
+      }
+    },
+    {
+      "id": "evt_ca4dfc48276d",
+      "type": "coordination_flag",
+      "timestamp": "2026-03-16T00:00:00+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "low",
+      "confidence": 0.58,
+      "summary": "Counter-narrative response lag of 18h between 'crypto future' and 'crypto fraud' clusters \u2014 consistent with organic counter-mobilization.",
+      "detail": {
+        "signal": "adversarial_response_lag",
+        "cluster_a": "crypto-future",
+        "cluster_b": "crypto-scam",
+        "lag_hours": 18
+      }
+    },
+    {
+      "id": "evt_0b4bbaa92943",
+      "type": "lead_lag",
+      "timestamp": "2026-03-13T05:00:00+00:00",
+      "claim_id": "clm_8f81e5e790a6",
+      "slice_id": null,
+      "severity": "low",
+      "confidence": 0.56,
+      "summary": "'Cryptocurrency represents the future of ...' first detected on Reddit, appeared on X 22h later. Fidelity: 81%.",
+      "detail": {
+        "source_platform": "reddit",
+        "target_platform": "x",
+        "lag_hours": 22,
+        "fidelity": 0.81
+      }
+    }
+  ],
+  "total_count": 10
+}
