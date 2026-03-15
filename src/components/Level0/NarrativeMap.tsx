@@ -116,12 +116,12 @@ export function NarrativeMap({ activeTopic, topics, onSelectTopic, onLockTopic, 
     if (!containerRef.current || mapInitialized.current) return
     mapInitialized.current = true
 
-    // Center offset right and down to compensate for left search panel overlay.
-    // Zoom 3.3 = full US just visible; scroll/pinch zoom enabled for exploration.
+    // Use fitBounds with left padding to auto-center the continental US
+    // in the visible area (accounting for the search panel overlay).
     const map = new maplibregl.Map({
       container: containerRef.current,
       style: DARK_STYLE,
-      center: [-92, 37.5],
+      center: [-96, 38],
       zoom: 3.3,
       minZoom: 2.5,
       maxZoom: 7,
@@ -135,6 +135,13 @@ export function NarrativeMap({ activeTopic, topics, onSelectTopic, onLockTopic, 
       pitchWithRotate: false,
       touchZoomRotate: true,
     })
+
+    // Fit the continental US bounds with padding for the left sidebar.
+    // This auto-centers regardless of viewport size.
+    map.fitBounds(
+      [[-125, 24], [-66, 50]], // SW corner (SoCal/Texas) to NE corner (Maine)
+      { padding: { left: 230, top: 10, right: 10, bottom: 10 }, duration: 0 }
+    )
 
     map.on('load', () => {
       // Add empty GeoJSON source for heat zones
