@@ -22,7 +22,7 @@ export function SystemBar({ systemConfidence }: SystemBarProps) {
     return () => clearInterval(interval)
   }, [])
 
-  const utc = time.toISOString().slice(11, 19)
+  const et = time.toLocaleTimeString('en-US', { timeZone: 'America/New_York', hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit' })
 
   const handleMouseEnter = () => {
     if (hideTimer.current) clearTimeout(hideTimer.current)
@@ -107,9 +107,9 @@ export function SystemBar({ systemConfidence }: SystemBarProps) {
             width: '13px',
             height: '13px',
             borderRadius: '50%',
-            border: '1px solid rgba(148,163,184,0.3)',
+            border: `1px solid ${confidenceColor}70`,
             fontSize: '8px',
-            color: 'rgba(148,163,184,0.5)',
+            color: confidenceColor,
             cursor: 'pointer',
             transition: 'all 200ms',
             ...(showInfo ? { color: confidenceColor, borderColor: `${confidenceColor}66` } : {}),
@@ -176,9 +176,9 @@ export function SystemBar({ systemConfidence }: SystemBarProps) {
         )}
       </div>
 
-      {/* UTC clock — right */}
+      {/* ET clock — right */}
       <span style={{ color: 'rgba(241,245,249,0.7)' }}>
-        {utc} UTC
+        {et} ET
       </span>
     </div>
   )

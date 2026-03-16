@@ -663,7 +663,7 @@ if __name__ == "__main__":
     print("\n3. Discourse feed data:")
     generate_discourse_data()
 
-    print("\n4. YouTube data (placeholder):")
-    generate_placeholder_youtube()
+    # NOTE: YouTube data is managed manually with real video IDs in data/youtube/*.json
+    # Do NOT call generate_placeholder_youtube() here — it would overwrite real video IDs.
 
-    print("\nDone! YouTube data needs real video IDs — run separately.")
+    print("\nDone! (YouTube data NOT regenerated — managed manually with real video IDs)")
