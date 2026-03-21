@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { createPortal } from 'react-dom'
 import type { TopicSummary } from '../types'
 import { AddTopicButton } from './shared/AddTopicButton'
@@ -96,6 +96,32 @@ interface HeaderProps {
   refetchTopics: () => void
 }
 
+function ExpandIcon() {
+  return (
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+      <polyline points="9,1 13,1 13,5" />
+      <polyline points="5,13 1,13 1,9" />
+      <polyline points="13,9 13,13 9,13" />
+      <polyline points="1,5 1,1 5,1" />
+    </svg>
+  )
+}
+
+function CompressIcon() {
+  return (
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+      <polyline points="10,4 13,1" />
+      <polyline points="1,13 4,10" />
+      <polyline points="4,1 1,4" />
+      <polyline points="13,10 10,13" />
+      <polyline points="10,1 10,4 13,4" />
+      <polyline points="1,10 4,10 4,13" />
+      <polyline points="1,4 4,4 4,1" />
+      <polyline points="13,13 10,13 10,10" />
+    </svg>
+  )
+}
+
 export function Header({
   topics,
   selectedTopicId,
@@ -106,6 +132,22 @@ export function Header({
   onTopicAdded,
   refetchTopics,
 }: HeaderProps) {
+  const [isFullscreen, setIsFullscreen] = useState(false)
+
+  useEffect(() => {
+    const handler = () => setIsFullscreen(!!document.fullscreenElement)
+    document.addEventListener('fullscreenchange', handler)
+    return () => document.removeEventListener('fullscreenchange', handler)
+  }, [])
+
+  const toggleFullscreen = () => {
+    if (!document.fullscreenElement) {
+      document.documentElement.requestFullscreen()
+    } else {
+      document.exitFullscreen()
+    }
+  }
+
   return (
     <header
       style={{
@@ -236,7 +278,7 @@ export function Header({
                 animation: 'pulse-dot 2s ease-in-out infinite',
               }}
             />
-            USING SYNTHETIC DATA
+            USING MODELED DATA
           </span>
           <style>{`
             @keyframes pulse-dot {
@@ -285,6 +327,26 @@ export function Header({
             </svg>
             {GITHUB_HANDLE}
           </a>
+
+          {/* Fullscreen toggle */}
+          <button
+            onClick={toggleFullscreen}
+            title={isFullscreen ? 'Exit fullscreen' : 'Enter fullscreen'}
+            style={{
+              background: 'none',
+              border: 'none',
+              cursor: 'pointer',
+              padding: '4px',
+              color: 'rgba(241,245,249,0.5)',
+              display: 'flex',
+              alignItems: 'center',
+              transition: 'color 0.15s',
+            }}
+            onMouseEnter={e => { e.currentTarget.style.color = '#F1F5F9' }}
+            onMouseLeave={e => { e.currentTarget.style.color = 'rgba(241,245,249,0.5)' }}
+          >
+            {isFullscreen ? <CompressIcon /> : <ExpandIcon />}
+          </button>
         </div>
 
         {/* Add topic button */}

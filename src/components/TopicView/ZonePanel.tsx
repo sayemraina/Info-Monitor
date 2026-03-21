@@ -2,13 +2,14 @@ import type { ReactNode } from 'react'
 
 interface ZonePanelProps {
   title?: string
+  titleInfo?: ReactNode
   headerRight?: ReactNode
   className?: string
   noPadding?: boolean
   children: ReactNode
 }
 
-export function ZonePanel({ title, headerRight, className = '', noPadding, children }: ZonePanelProps) {
+export function ZonePanel({ title, titleInfo, headerRight, className = '', noPadding, children }: ZonePanelProps) {
   return (
     <div
       className={`rounded-lg overflow-hidden flex flex-col ${className}`}
@@ -16,10 +17,10 @@ export function ZonePanel({ title, headerRight, className = '', noPadding, child
     >
       {(title || headerRight) && (
         <div
-          className="px-3 py-1.5 border-b text-xs font-medium shrink-0 flex items-center justify-between"
-          style={{ borderColor: 'var(--color-border)', color: 'var(--color-text-secondary)' }}
+          className="px-3 py-1.5 border-b text-[11px] font-semibold uppercase tracking-wider shrink-0 flex items-center justify-between"
+          style={{ borderColor: 'var(--color-border)', color: '#CBD5E1' }}
         >
-          <span>{title}</span>
+          <span className="flex items-center" style={{ borderLeft: '2.5px solid #06B6D4', paddingLeft: '8px' }}>{title}{titleInfo}</span>
           {headerRight}
         </div>
       )}

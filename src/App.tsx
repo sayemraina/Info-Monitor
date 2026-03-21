@@ -1,5 +1,5 @@
 import { useState, useCallback } from 'react'
-import type { AppState, TimeWindow, EventType } from './types'
+import type { AppState, TimeWindow, EventType, EntryHint } from './types'
 import { useTopics } from './hooks/useTopics'
 import { Header } from './components/Header'
 import { TopicOverview } from './components/Level0/TopicOverview'
@@ -20,14 +20,20 @@ function App() {
     searchQuery: '',
   })
 
-  const selectTopic = useCallback((topicId: string) => {
+  const selectTopic = useCallback((topicId: string, hint?: EntryHint, clusterId?: string) => {
     setState(s => ({
       ...s,
       level: 1,
       selectedTopicId: topicId,
       selectedClaimId: null,
       compareMode: false,
+      entryHint: hint,
+      entryClusterId: clusterId,
     }))
+  }, [])
+
+  const clearEntryHint = useCallback(() => {
+    setState(s => ({ ...s, entryHint: undefined, entryClusterId: undefined }))
   }, [])
 
   const selectClaim = useCallback((claimId: string) => {
@@ -45,6 +51,7 @@ function App() {
       selectedTopicId: null,
       selectedClaimId: null,
       compareMode: false,
+      entryHint: undefined,
     }))
   }, [])
 
@@ -106,17 +113,21 @@ function App() {
           <div key={`level-1-${state.selectedTopicId}`} className="h-full animate-fade-in">
             <TopicView
               topicId={state.selectedTopicId}
+              topicSummary={topics.find(t => t.id === state.selectedTopicId)}
               selectedClaimId={state.selectedClaimId}
               timeWindow={state.timeWindow}
               compareMode={state.compareMode}
               selectedSlices={state.selectedSlices}
               eventTypeFilter={state.eventTypeFilter}
+              entryHint={state.entryHint}
+              entryClusterId={state.entryClusterId}
               onSelectClaim={selectClaim}
               onDeselectClaim={deselectClaim}
               onSetTimeWindow={setTimeWindow}
               onSetCompareMode={setCompareMode}
               onSetSelectedSlices={setSelectedSlices}
               onSetEventTypeFilter={setEventTypeFilter}
+              onClearEntryHint={clearEntryHint}
             />
           </div>
         ) : null}

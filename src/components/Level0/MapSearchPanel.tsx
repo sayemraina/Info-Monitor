@@ -16,8 +16,8 @@ export function MapSearchPanel({ topics, activeTopic, searchQuery, onLockTopic, 
     ? topics.filter(t => t.name.toLowerCase().includes(localSearch.toLowerCase()))
     : topics
 
-  // Sort by IFI descending
-  const sorted = [...filtered].sort((a, b) => (b.ifi?.value ?? 0) - (a.ifi?.value ?? 0))
+  // Preserve original order from topics.json
+  const sorted = filtered
 
   return (
     <div

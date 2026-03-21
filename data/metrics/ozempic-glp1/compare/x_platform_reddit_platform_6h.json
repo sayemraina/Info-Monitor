@@ -1,0 +1,149 @@
+{
+  "slice_a": {
+    "id": "x_platform",
+    "type": "platform",
+    "label": "X Platform",
+    "active_volume": 850,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.33,
+    "is_influencer_framing": false
+  },
+  "slice_b": {
+    "id": "reddit_platform",
+    "type": "platform",
+    "label": "Reddit Platform",
+    "active_volume": 2748,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.34,
+    "is_influencer_framing": false
+  },
+  "divergence": {
+    "jsd": 0.0705,
+    "jsd_sqrt": 0.2655,
+    "trend": [
+      0.2825,
+      0.2908,
+      0.2673,
+      0.2371,
+      0.2499,
+      0.2827,
+      0.2895,
+      0.2412
+    ],
+    "typology": {
+      "information_asymmetry": 0.62,
+      "interpretive": 0.13,
+      "paradigmatic": 0.25,
+      "dominant_mode": "Information Asymmetry",
+      "paradigmatic_caveat": false
+    }
+  },
+  "per_cluster": [
+    {
+      "cluster_id": "clu_debf7d80ba14",
+      "label": "Pharma Profits",
+      "salience_a": 0.8541,
+      "salience_b": 0.0518,
+      "arousal_a": 0.61,
+      "arousal_b": 0.33,
+      "mutation_a": "stable",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_822e352959f3",
+      "label": "Cost Access",
+      "salience_a": 0.8908,
+      "salience_b": 0.4699,
+      "arousal_a": 0.53,
+      "arousal_b": 0.66,
+      "mutation_a": "radicalizing",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_7430dddfbfde",
+      "label": "Medicalization",
+      "salience_a": 0.5231,
+      "salience_b": 0.8688,
+      "arousal_a": 0.44,
+      "arousal_b": 0.58,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_8dfe08b75159",
+      "label": "Side Effects",
+      "salience_a": 0.9338,
+      "salience_b": 0.5881,
+      "arousal_a": 0.88,
+      "arousal_b": 0.12,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_2e59540e8f0d",
+      "label": "Food Industry Impact",
+      "salience_a": 0.9414,
+      "salience_b": 0.6807,
+      "arousal_a": 0.37,
+      "arousal_b": 0.46,
+      "mutation_a": "stable",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_dfcfbecd0518",
+      "label": "Miracle Drug",
+      "salience_a": 0.2374,
+      "salience_b": 0.3777,
+      "arousal_a": 0.5,
+      "arousal_b": 0.81,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "radicalizing"
+    }
+  ],
+  "arousal_comparison": {
+    "slice_a_avg": 0.39,
+    "slice_b_avg": 0.69
+  },
+  "exposure_comparison": {
+    "slice_a": {
+      "value": 0.489,
+      "confidence_interval": [
+        0.439,
+        0.539
+      ],
+      "baseline": "global",
+      "time_window": "6h",
+      "sparkline": [
+        0.2825,
+        0.2908,
+        0.2673,
+        0.2371,
+        0.2499,
+        0.2827,
+        0.2895,
+        0.2412
+      ],
+      "source_distribution": "production"
+    },
+    "slice_b": {
+      "value": 0.6241,
+      "confidence_interval": [
+        0.5741,
+        0.6741
+      ],
+      "baseline": "global",
+      "time_window": "6h",
+      "sparkline": [
+        0.2825,
+        0.2908,
+        0.2673,
+        0.2371,
+        0.2499,
+        0.2827,
+        0.2895,
+        0.2412
+      ],
+      "source_distribution": "production"
+    }
+  }
+}

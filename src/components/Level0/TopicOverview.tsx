@@ -1,5 +1,5 @@
 import { useMemo } from 'react'
-import type { TopicSummary } from '../../types'
+import type { TopicSummary, EntryHint } from '../../types'
 import { useTopicSync } from '../../hooks/useTopicSync'
 import { TopicCard } from './TopicCard'
 import { NarrativeMap } from './NarrativeMap'
@@ -10,17 +10,16 @@ import { SystemBar } from './SystemBar'
 import { InfoButton } from '../shared/InfoButton'
 
 const TOPIC_LANDSCAPE_METHODOLOGY = {
-  plain: 'Topics ranked by narrative flux — the rate and intensity of claim evolution across platforms.',
-  technical: 'Composite ranking = IFI score (40%) × contestation level ordinal (30%) × 7-day activity trend slope (20%) × claim diversity index (10%). Topics with insufficient data are greyed out, not removed.',
-  methodology: 'Pipeline: ingest (X + Reddit + YouTube) → claim extraction (Claude Sonnet) → embedding (OpenAI) → HDBSCAN clustering → per-topic IFI + contestation + activity metrics → rank + display.',
-  caveat: 'Topic selection reflects pre-indexed narratives only. Emerging topics not yet in the index will not appear. Activity sparklines are 7-day windows; longer trends may differ.',
+  what: 'Topics ranked by narrative flux — rate and intensity of claim evolution across platforms.',
+  soWhat: 'Higher rank → more structural change in how this topic is being discussed.',
+  how: 'IFI (40%) × contestation (30%) × 7d trend (20%) × claim diversity (10%). Pre-indexed topics only.',
 }
 
 interface TopicOverviewProps {
   topics: TopicSummary[]
   searchQuery: string
   totalCount: number
-  onSelectTopic: (id: string) => void
+  onSelectTopic: (id: string, hint?: EntryHint, clusterId?: string) => void
 }
 
 export function TopicOverview({ topics, searchQuery, totalCount, onSelectTopic }: TopicOverviewProps) {
@@ -55,8 +54,8 @@ export function TopicOverview({ topics, searchQuery, totalCount, onSelectTopic }
 
   const activeTopicName = topics.find(t => t.id === syncState.activeTopic)?.name ?? syncState.activeTopic
 
-  const handleNavigateToLevel1 = (topicId: string) => {
-    onSelectTopic(topicId)
+  const handleNavigateToLevel1 = (topicId: string, hint?: EntryHint, clusterId?: string) => {
+    onSelectTopic(topicId, hint, clusterId)
   }
 
   return (
@@ -74,7 +73,7 @@ export function TopicOverview({ topics, searchQuery, totalCount, onSelectTopic }
         <NarrativeMap
           activeTopic={syncState.activeTopic}
           topics={topics}
-          onSelectTopic={handleNavigateToLevel1}
+          onSelectTopic={(topicId, hint, clusterId) => handleNavigateToLevel1(topicId, hint ?? 'map_cta', clusterId)}
           onLockTopic={syncActions.lockTopic}
           searchQuery={searchQuery}
         />
@@ -89,7 +88,7 @@ export function TopicOverview({ topics, searchQuery, totalCount, onSelectTopic }
         <YouTubeStrip
           activeTopic={syncState.activeTopic}
           topicName={activeTopicName}
-          onNavigateToLevel1={handleNavigateToLevel1}
+          onNavigateToLevel1={(topicId) => handleNavigateToLevel1(topicId, 'youtube_cta')}
         />
       </div>
 
@@ -164,11 +163,17 @@ export function TopicOverview({ topics, searchQuery, totalCount, onSelectTopic }
               isActive={syncState.activeTopic === topic.id}
               isLocked={syncState.isLocked && syncState.activeTopic === topic.id}
               onClick={() => handleCardClick(topic.id)}
-              onNavigate={() => handleNavigateToLevel1(topic.id)}
+              onNavigate={(hint) => handleNavigateToLevel1(topic.id, hint)}
             />
           ))}
-
         </div>
+
+        {/* Empty state when search returns no matches */}
+        {filteredTopics.length === 0 && searchQuery && (
+          <div style={{ textAlign: 'center', padding: '40px 24px', color: 'rgba(148,163,184,0.4)', fontSize: '12px' }}>
+            No topics match &ldquo;{searchQuery}&rdquo;
+          </div>
+        )}
       </div>
 
       {/* Row 5: Live Discourse Feed — ~100px */}
@@ -179,7 +184,7 @@ export function TopicOverview({ topics, searchQuery, totalCount, onSelectTopic }
       >
         <DiscourseFeed
           activeTopic={syncState.activeTopic}
-          onNavigateToLevel1={handleNavigateToLevel1}
+          onNavigateToLevel1={(topicId) => handleNavigateToLevel1(topicId, 'discourse')}
         />
       </div>
 

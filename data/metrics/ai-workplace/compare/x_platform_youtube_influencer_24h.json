@@ -3,145 +3,155 @@
     "id": "x_platform",
     "type": "platform",
     "label": "X Platform",
-    "active_volume": 4101,
+    "active_volume": 1069,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.68,
+    "base_rate_weight": 0.66,
     "is_influencer_framing": false
   },
   "slice_b": {
     "id": "youtube_influencer",
     "type": "platform",
     "label": "Influencer Framing (YouTube)",
-    "active_volume": 2180,
+    "active_volume": 3661,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.49,
+    "base_rate_weight": 0.41,
     "is_influencer_framing": true
   },
   "divergence": {
-    "jsd": 0.0512,
-    "jsd_sqrt": 0.2264,
+    "jsd": 0.1371,
+    "jsd_sqrt": 0.3702,
     "trend": [
-      0.2649,
-      0.2298,
-      0.1872,
-      0.2414,
-      0.2809,
-      0.2535,
-      0.2474,
-      0.3074
+      0.3807,
+      0.3621,
+      0.4004,
+      0.3934,
+      0.4152,
+      0.3794,
+      0.351,
+      0.3716
     ],
     "typology": {
-      "information_asymmetry": 0.33,
-      "interpretive": 0.41,
-      "paradigmatic": 0.26,
-      "dominant_mode": "Interpretive",
+      "information_asymmetry": 0.58,
+      "interpretive": 0.28,
+      "paradigmatic": 0.14,
+      "dominant_mode": "Information Asymmetry",
       "paradigmatic_caveat": false
     }
   },
   "per_cluster": [
     {
-      "cluster_id": "clu_dc42d18abdfa",
-      "label": "Companies using AI are seeing measurable productivity gains that benefit both em",
-      "salience_a": 0.5747,
-      "salience_b": 0.1266,
-      "arousal_a": 0.36,
-      "arousal_b": 0.18,
-      "mutation_a": "stable",
+      "cluster_id": "clu_b71a2467b80f",
+      "label": "AI Augmentation",
+      "salience_a": 0.1273,
+      "salience_b": 0.8112,
+      "arousal_a": 0.44,
+      "arousal_b": 0.85,
+      "mutation_a": "radicalizing",
       "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_374843c2887a",
+      "label": "Corporate Hypocrisy",
+      "salience_a": 0.4448,
+      "salience_b": 0.8176,
+      "arousal_a": 0.12,
+      "arousal_b": 0.21,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_df45fe3b46cd",
-      "label": "AI-generated content is destroying the value of creative work and undermining ar",
-      "salience_a": 0.2654,
-      "salience_b": 0.2367,
-      "arousal_a": 0.19,
-      "arousal_b": 0.48,
-      "mutation_a": "mainstreaming",
-      "mutation_b": "radicalizing"
+      "label": "Creative Threat",
+      "salience_a": 0.899,
+      "salience_b": 0.0587,
+      "arousal_a": 0.75,
+      "arousal_b": 0.77,
+      "mutation_a": "radicalizing",
+      "mutation_b": "mainstreaming"
     },
     {
-      "cluster_id": "clu_5ca5659be8e9",
-      "label": "Fears about AI replacing jobs are the same Luddite arguments made about every te",
-      "salience_a": 0.901,
-      "salience_b": 0.6588,
-      "arousal_a": 0.24,
-      "arousal_b": 0.31,
+      "cluster_id": "clu_664c519fc265",
+      "label": "Retraining Policy",
+      "salience_a": 0.4272,
+      "salience_b": 0.6672,
+      "arousal_a": 0.42,
+      "arousal_b": 0.72,
       "mutation_a": "stable",
       "mutation_b": "radicalizing"
     },
     {
-      "cluster_id": "clu_1e5b7b52fb77",
-      "label": "Massive investment in retraining programs is needed to prepare workers for an AI",
-      "salience_a": 0.9092,
-      "salience_b": 0.7991,
-      "arousal_a": 0.75,
-      "arousal_b": 0.67,
+      "cluster_id": "clu_dc42d18abdfa",
+      "label": "Productivity Gains",
+      "salience_a": 0.3435,
+      "salience_b": 0.0709,
+      "arousal_a": 0.73,
+      "arousal_b": 0.84,
       "mutation_a": "mainstreaming",
-      "mutation_b": "mainstreaming"
+      "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_42605ef6c255",
-      "label": "AI will automate away millions of white-collar jobs within the next five years",
-      "salience_a": 0.24,
-      "salience_b": 0.7905,
-      "arousal_a": 0.2,
-      "arousal_b": 0.28,
-      "mutation_a": "mainstreaming",
-      "mutation_b": "mainstreaming"
+      "label": "Job Displacement",
+      "salience_a": 0.5614,
+      "salience_b": 0.7692,
+      "arousal_a": 0.83,
+      "arousal_b": 0.56,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     },
     {
-      "cluster_id": "clu_b71a2467b80f",
-      "label": "AI is a productivity tool that augments human capabilities rather than replacing",
-      "salience_a": 0.5519,
-      "salience_b": 0.7568,
-      "arousal_a": 0.52,
-      "arousal_b": 0.36,
-      "mutation_a": "stable",
+      "cluster_id": "clu_ac4164d3d878",
+      "label": "Historical Parallel",
+      "salience_a": 0.2338,
+      "salience_b": 0.4016,
+      "arousal_a": 0.53,
+      "arousal_b": 0.25,
+      "mutation_a": "mainstreaming",
       "mutation_b": "radicalizing"
     }
   ],
   "arousal_comparison": {
-    "slice_a_avg": 0.37,
-    "slice_b_avg": 0.39
+    "slice_a_avg": 0.39,
+    "slice_b_avg": 0.56
   },
   "exposure_comparison": {
     "slice_a": {
-      "value": 0.7937,
+      "value": 0.335,
       "confidence_interval": [
-        0.7437,
-        0.8437
+        0.285,
+        0.385
       ],
       "baseline": "global",
       "time_window": "24h",
       "sparkline": [
-        0.2649,
-        0.2298,
-        0.1872,
-        0.2414,
-        0.2809,
-        0.2535,
-        0.2474,
-        0.3074
+        0.3807,
+        0.3621,
+        0.4004,
+        0.3934,
+        0.4152,
+        0.3794,
+        0.351,
+        0.3716
       ],
       "source_distribution": "production"
     },
     "slice_b": {
-      "value": 0.5121,
+      "value": 0.3287,
       "confidence_interval": [
-        0.4621,
-        0.5621
+        0.2787,
+        0.3787
       ],
       "baseline": "global",
       "time_window": "24h",
       "sparkline": [
-        0.2649,
-        0.2298,
-        0.1872,
-        0.2414,
-        0.2809,
-        0.2535,
-        0.2474,
-        0.3074
+        0.3807,
+        0.3621,
+        0.4004,
+        0.3934,
+        0.4152,
+        0.3794,
+        0.351,
+        0.3716
       ],
       "source_distribution": "production"
     }

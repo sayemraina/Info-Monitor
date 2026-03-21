@@ -1,0 +1,159 @@
+{
+  "slice_a": {
+    "id": "coastal_metros",
+    "type": "geography",
+    "label": "Coastal Metros",
+    "active_volume": 3213,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.44,
+    "is_influencer_framing": false
+  },
+  "slice_b": {
+    "id": "heartland_metros",
+    "type": "geography",
+    "label": "Heartland",
+    "active_volume": 2186,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.52,
+    "is_influencer_framing": false
+  },
+  "divergence": {
+    "jsd": 0.071,
+    "jsd_sqrt": 0.2665,
+    "trend": [
+      0.2447,
+      0.3145,
+      0.318,
+      0.2796,
+      0.2192,
+      0.2944,
+      0.2665,
+      0.2448
+    ],
+    "typology": {
+      "information_asymmetry": 0.74,
+      "interpretive": 0.15,
+      "paradigmatic": 0.11,
+      "dominant_mode": "Information Asymmetry",
+      "paradigmatic_caveat": false
+    }
+  },
+  "per_cluster": [
+    {
+      "cluster_id": "clu_b71a2467b80f",
+      "label": "AI Augmentation",
+      "salience_a": 0.1353,
+      "salience_b": 0.3419,
+      "arousal_a": 0.6,
+      "arousal_b": 0.41,
+      "mutation_a": "stable",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_374843c2887a",
+      "label": "Corporate Hypocrisy",
+      "salience_a": 0.3488,
+      "salience_b": 0.6218,
+      "arousal_a": 0.81,
+      "arousal_b": 0.35,
+      "mutation_a": "stable",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_df45fe3b46cd",
+      "label": "Creative Threat",
+      "salience_a": 0.1108,
+      "salience_b": 0.0659,
+      "arousal_a": 0.83,
+      "arousal_b": 0.46,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_664c519fc265",
+      "label": "Retraining Policy",
+      "salience_a": 0.7176,
+      "salience_b": 0.5031,
+      "arousal_a": 0.66,
+      "arousal_b": 0.11,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_dc42d18abdfa",
+      "label": "Productivity Gains",
+      "salience_a": 0.733,
+      "salience_b": 0.1617,
+      "arousal_a": 0.29,
+      "arousal_b": 0.44,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_42605ef6c255",
+      "label": "Job Displacement",
+      "salience_a": 0.1215,
+      "salience_b": 0.1738,
+      "arousal_a": 0.5,
+      "arousal_b": 0.26,
+      "mutation_a": "radicalizing",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_ac4164d3d878",
+      "label": "Historical Parallel",
+      "salience_a": 0.6278,
+      "salience_b": 0.2643,
+      "arousal_a": 0.68,
+      "arousal_b": 0.89,
+      "mutation_a": "radicalizing",
+      "mutation_b": "stable"
+    }
+  ],
+  "arousal_comparison": {
+    "slice_a_avg": 0.66,
+    "slice_b_avg": 0.57
+  },
+  "exposure_comparison": {
+    "slice_a": {
+      "value": 0.4242,
+      "confidence_interval": [
+        0.3742,
+        0.4742
+      ],
+      "baseline": "global",
+      "time_window": "7d",
+      "sparkline": [
+        0.2447,
+        0.3145,
+        0.318,
+        0.2796,
+        0.2192,
+        0.2944,
+        0.2665,
+        0.2448
+      ],
+      "source_distribution": "production"
+    },
+    "slice_b": {
+      "value": 0.6437,
+      "confidence_interval": [
+        0.5937,
+        0.6937
+      ],
+      "baseline": "global",
+      "time_window": "7d",
+      "sparkline": [
+        0.2447,
+        0.3145,
+        0.318,
+        0.2796,
+        0.2192,
+        0.2944,
+        0.2665,
+        0.2448
+      ],
+      "source_distribution": "production"
+    }
+  }
+}

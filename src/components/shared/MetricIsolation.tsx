@@ -8,10 +8,9 @@ interface MetricIsolationProps {
     confidence_interval?: [number, number];
   };
   infoContent: {
-    plain: string;
-    technical: string;
-    methodology: string;
-    caveat?: string;
+    what: string;
+    soWhat: string;
+    how: string;
   };
   onBack: () => void;
 }
@@ -54,27 +53,16 @@ export const MetricIsolation: React.FC<MetricIsolationProps> = ({ metric, infoCo
         )}
 
         <div className="mt-4 pt-6 border-t border-[#1E3044]">
-          <div className="text-slate-200 text-[14px] leading-relaxed mb-4 font-medium">
-            {infoContent.plain}
+          <div className="text-slate-200 text-[14px] leading-relaxed mb-3 font-medium">
+            {infoContent.what}
           </div>
-          
-          <div className="text-slate-400 text-[13px] italic leading-relaxed mb-6">
-            {infoContent.technical}
+
+          <div className="text-slate-400 text-[12px] leading-relaxed mb-3">
+            {infoContent.soWhat}
           </div>
-          
-          <div className="bg-[#131F30]/50 p-4 rounded border border-[#1E3044]">
-            <div className="font-mono text-[11px] text-slate-500 leading-relaxed mb-1">
-              METHODOLOGY
-            </div>
-            <div className="font-mono text-[11px] text-slate-400 leading-relaxed break-words">
-              {infoContent.methodology}
-            </div>
-            {infoContent.caveat && (
-              <div className="font-mono text-[11px] text-amber-500/80 leading-relaxed mt-4 flex items-start gap-1 p-2 bg-amber-950/20 rounded">
-                <span className="text-[10px] mt-0.5">⚠️</span>
-                <span>{infoContent.caveat}</span>
-              </div>
-            )}
+
+          <div className="text-slate-500 text-[11px] leading-relaxed">
+            {infoContent.how}
           </div>
         </div>
       </div>

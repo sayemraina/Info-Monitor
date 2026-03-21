@@ -210,7 +210,7 @@ export function AddTopicButton({ onTopicAdded, refetchTopics }: AddTopicButtonPr
                     className="rounded"
                   />
                   <span className="text-[10px]" style={{ color: 'var(--color-text-secondary)' }}>
-                    Use synthetic data (no API keys required)
+                    Use modeled data (no API keys required)
                   </span>
                 </label>
 
@@ -317,7 +317,7 @@ export function AddTopicButton({ onTopicAdded, refetchTopics }: AddTopicButtonPr
                         className="flex-1 h-7 rounded text-xs cursor-pointer"
                         style={{ border: '1px solid #F59E0B', color: '#F59E0B' }}
                       >
-                        Retry with synthetic data
+                        Retry with modeled data
                       </button>
                     </div>
                   </div>

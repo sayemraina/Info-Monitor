@@ -34,6 +34,7 @@ export interface Cluster {
   arousal_trend: 'warming' | 'cooling' | 'stable'
   arousal_value: number // 0–1
   adversarial_pairs: string[] // cluster IDs of detected opponents (stretch)
+  influencer_seeding?: InfluencerSeeding
 }
 
 // --- Metric Types ---
@@ -210,6 +211,7 @@ export interface TopicMetrics {
   notable_mutation: { concept_id: string; direction: string } | null
   ifi: InformationFluxIndex
   situations: Situation[]
+  influencer_impact?: InfluencerImpact
 }
 
 export interface LandscapeData {
@@ -312,6 +314,7 @@ export interface TopicSummary {
   ifi?: { value: number; trend: string }
   top_situation?: { summary: string; severity: string }
   system_confidence?: number
+  influencer_impact?: InfluencerImpact
 }
 
 // --- Level 0 Redesign Types ---
@@ -373,6 +376,39 @@ export interface TooltipContent {
   caveat?: string
 }
 
+// --- Entry Hint (Level 0 → Level 1 continuity) ---
+
+export type EntryHint =
+  | 'ifi'
+  | 'contestation'
+  | 'situation'
+  | 'signal'
+  | 'sparkline'
+  | 'diversity'
+  | 'map_cta'
+  | 'youtube_cta'
+  | 'discourse'
+  | 'explore'
+  | 'map_hotspot'
+
+// --- Influencer Impact Types ---
+
+export interface InfluencerSeeding {
+  influencer_seeded: boolean
+  influencer_origin_count: number
+  influencer_salience_contribution: number
+  avg_propagation_hours: { x: number; reddit: number }
+}
+
+export interface InfluencerImpact {
+  seeded_cluster_count: number
+  total_clusters: number
+  influencer_salience_share: number
+  direction: 'top_down' | 'bottom_up' | 'mixed'
+  avg_propagation_x: number
+  avg_propagation_reddit: number
+}
+
 // --- App State ---
 
 export interface AppState {
@@ -384,4 +420,6 @@ export interface AppState {
   selectedSlices: [string, string] | null
   eventTypeFilter: EventType | 'all'
   searchQuery: string
+  entryHint?: EntryHint
+  entryClusterId?: string
 }

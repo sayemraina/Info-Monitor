@@ -11,7 +11,7 @@ interface MetricRowProps {
   color?: string
   dimmed?: boolean
   children?: ReactNode
-  infoContent?: { plain: string; technical: string; methodology: string; caveat?: string }
+  infoContent?: { what: string; soWhat: string; how: string }
   onIsolate?: () => void
 }
 

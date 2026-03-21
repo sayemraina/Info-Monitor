@@ -1,0 +1,149 @@
+{
+  "slice_a": {
+    "id": "x_platform",
+    "type": "platform",
+    "label": "X Platform",
+    "active_volume": 3127,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.56,
+    "is_influencer_framing": false
+  },
+  "slice_b": {
+    "id": "reddit_platform",
+    "type": "platform",
+    "label": "Reddit Platform",
+    "active_volume": 2668,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.59,
+    "is_influencer_framing": false
+  },
+  "divergence": {
+    "jsd": 0.1335,
+    "jsd_sqrt": 0.3654,
+    "trend": [
+      0.3633,
+      0.4128,
+      0.3876,
+      0.3871,
+      0.3829,
+      0.329,
+      0.424,
+      0.2988
+    ],
+    "typology": {
+      "information_asymmetry": 0.75,
+      "interpretive": 0.35,
+      "paradigmatic": 0,
+      "dominant_mode": "Information Asymmetry",
+      "paradigmatic_caveat": false
+    }
+  },
+  "per_cluster": [
+    {
+      "cluster_id": "clu_aac037e81401",
+      "label": "Ceasefire Diplomacy",
+      "salience_a": 0.2616,
+      "salience_b": 0.7503,
+      "arousal_a": 0.43,
+      "arousal_b": 0.44,
+      "mutation_a": "stable",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_54bdefed5ccd",
+      "label": "Media Framing",
+      "salience_a": 0.3021,
+      "salience_b": 0.5163,
+      "arousal_a": 0.23,
+      "arousal_b": 0.51,
+      "mutation_a": "radicalizing",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_e4ccbd641f0b",
+      "label": "Accountability",
+      "salience_a": 0.0598,
+      "salience_b": 0.8708,
+      "arousal_a": 0.59,
+      "arousal_b": 0.14,
+      "mutation_a": "radicalizing",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_5dd6aad8b467",
+      "label": "Self Defense",
+      "salience_a": 0.4392,
+      "salience_b": 0.0782,
+      "arousal_a": 0.56,
+      "arousal_b": 0.41,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_706a04c37c10",
+      "label": "Humanitarian Crisis",
+      "salience_a": 0.7319,
+      "salience_b": 0.4433,
+      "arousal_a": 0.55,
+      "arousal_b": 0.13,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_a128faf3fa40",
+      "label": "Campus Protests",
+      "salience_a": 0.5978,
+      "salience_b": 0.4407,
+      "arousal_a": 0.62,
+      "arousal_b": 0.78,
+      "mutation_a": "stable",
+      "mutation_b": "mainstreaming"
+    }
+  ],
+  "arousal_comparison": {
+    "slice_a_avg": 0.66,
+    "slice_b_avg": 0.44
+  },
+  "exposure_comparison": {
+    "slice_a": {
+      "value": 0.5309,
+      "confidence_interval": [
+        0.4809,
+        0.5809
+      ],
+      "baseline": "global",
+      "time_window": "7d",
+      "sparkline": [
+        0.3633,
+        0.4128,
+        0.3876,
+        0.3871,
+        0.3829,
+        0.329,
+        0.424,
+        0.2988
+      ],
+      "source_distribution": "production"
+    },
+    "slice_b": {
+      "value": 0.7733,
+      "confidence_interval": [
+        0.7233,
+        0.8233
+      ],
+      "baseline": "global",
+      "time_window": "7d",
+      "sparkline": [
+        0.3633,
+        0.4128,
+        0.3876,
+        0.3871,
+        0.3829,
+        0.329,
+        0.424,
+        0.2988
+      ],
+      "source_distribution": "production"
+    }
+  }
+}

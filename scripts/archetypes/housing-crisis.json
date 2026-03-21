@@ -1,0 +1,884 @@
+{
+  "id": "housing-crisis",
+  "name": "The Housing Crisis",
+  "adversarial_pairs": [
+    [
+      "corporate-landlords",
+      "supply-shortage"
+    ],
+    [
+      "nimby-yimby",
+      "affordability"
+    ]
+  ],
+  "archetypes": [
+    {
+      "text": "Blackstone now owns 300,000+ single-family homes in the US. They're not investing in housing \u2014 they're cornering the market so you have to rent from them forever.",
+      "subject": "Blackstone institutional home buying",
+      "assertion": "Private equity firms are buying up housing stock to force permanent renting",
+      "framing": "corporate exploitation",
+      "stance": "anti",
+      "arousal": "high",
+      "cluster": "corporate-landlords",
+      "concept": "institutional-buying",
+      "platforms": {
+        "x": 0.55,
+        "reddit": 0.3,
+        "youtube": 0.15
+      },
+      "momentum_pattern": "rising",
+      "persistence": 7,
+      "time_anchor": {
+        "event": "Reports on Blackstone-backed Invitation Homes expanding single-family rental portfolio",
+        "date": "2024-08-15"
+      },
+      "variations": [
+        {
+          "text": "Blackstone owns 300K+ houses and you're wondering why you can't afford one. It's not a mystery.",
+          "platform": "x"
+        },
+        {
+          "text": "Private equity bought your starter home and turned it into a rental. Blackstone's portfolio is bigger than most cities' entire housing stock.",
+          "platform": "x"
+        },
+        {
+          "text": "They want you renting forever. Blackstone didn't buy 300,000 homes because they care about housing \u2014 they bought them because you're a revenue stream.",
+          "platform": "x"
+        },
+        {
+          "text": "The institutional buying numbers are staggering. Invitation Homes (Blackstone-backed) is the largest single-family landlord in the US. They don't just buy homes \u2014 they buy entire neighborhoods and set rental prices for the area. This is market manipulation at scale.",
+          "platform": "reddit"
+        },
+        {
+          "text": "I've been tracking institutional home purchases in my metro area (Phoenix). In some zip codes, 25-30% of SFH sales in 2023-2024 went to corporate buyers. These aren't getting flipped \u2014 they're being converted to permanent rentals.",
+          "platform": "reddit"
+        },
+        {
+          "text": "How private equity firms like Blackstone are buying hundreds of thousands of American homes, and why economists say it's reshaping who gets to own property in this country.",
+          "platform": "youtube"
+        },
+        {
+          "text": "Blackstone's housing empire explained: 300,000+ homes, billions in revenue, and a business model built on making sure you never stop paying rent.",
+          "platform": "youtube"
+        }
+      ],
+      "geo_hotspots": [
+        "phoenix",
+        "tampa",
+        "atlanta",
+        "charlotte",
+        "las-vegas",
+        "sacramento",
+        "oakland",
+        "san-jose",
+        "columbus"
+      ]
+    },
+    {
+      "text": "Median home price hit $420K nationally. Median household income is $80K. You need to make $115K to afford the median home. The math doesn't work for most Americans.",
+      "subject": "Home price to income ratio",
+      "assertion": "Housing has become mathematically unaffordable for median-income households",
+      "framing": "economic exclusion",
+      "stance": "neutral",
+      "arousal": "medium",
+      "cluster": "affordability",
+      "concept": "price-income-gap",
+      "platforms": {
+        "x": 0.4,
+        "reddit": 0.35,
+        "youtube": 0.25
+      },
+      "momentum_pattern": "stable",
+      "persistence": 8,
+      "time_anchor": {
+        "event": "NAR reports median existing-home sales price reaches $420,800",
+        "date": "2024-06-20"
+      },
+      "variations": [
+        {
+          "text": "Median home: $420K. Median income: $80K. You need $115K to qualify. Housing isn't expensive \u2014 it's inaccessible.",
+          "platform": "x"
+        },
+        {
+          "text": "$420K for the median home and people are still saying 'just save more.' Save WHAT? The math is broken.",
+          "platform": "x"
+        },
+        {
+          "text": "The median American literally cannot afford the median American home. That's not a market correction \u2014 that's a systemic failure.",
+          "platform": "x"
+        },
+        {
+          "text": "I ran the numbers on the current housing market and it's genuinely bleak. At $420K median with 7% rates, your monthly payment is ~$2,800 before insurance and taxes. That requires roughly $115K household income. Median HHI is $80K. We've locked out the majority of Americans from homeownership.",
+          "platform": "reddit"
+        },
+        {
+          "text": "The price-to-income ratio is now at its highest point since tracking began. In the 1980s, the median home cost 3.5x median income. Now it's over 5x. And that's BEFORE you factor in 7% mortgage rates vs. the sub-4% rates of the 2010s.",
+          "platform": "reddit"
+        },
+        {
+          "text": "Breaking down why the median American can no longer afford the median American home \u2014 and what the data says about whether this is a bubble or the new normal.",
+          "platform": "youtube"
+        },
+        {
+          "text": "I calculated exactly how much you need to earn to buy a home in 2024. The numbers explain why an entire generation has given up on homeownership.",
+          "platform": "youtube"
+        }
+      ],
+      "geo_hotspots": [
+        "nyc",
+        "miami",
+        "sf",
+        "la",
+        "denver",
+        "pittsburgh",
+        "cleveland",
+        "milwaukee",
+        "st-louis"
+      ]
+    },
+    {
+      "text": "Minneapolis eliminated single-family zoning in 2020 and rents actually went DOWN 4% while neighboring cities went up. YIMBY works. Build more housing.",
+      "subject": "Minneapolis zoning reform results",
+      "assertion": "Eliminating restrictive zoning increases supply and reduces housing costs",
+      "framing": "policy success story",
+      "stance": "pro",
+      "arousal": "medium",
+      "cluster": "nimby-yimby",
+      "concept": "zoning-reform",
+      "platforms": {
+        "x": 0.4,
+        "reddit": 0.4,
+        "youtube": 0.2
+      },
+      "momentum_pattern": "rising",
+      "persistence": 6,
+      "time_anchor": {
+        "event": "Studies show Minneapolis rents declining after 2040 Plan zoning reform",
+        "date": "2024-03-10"
+      },
+      "variations": [
+        {
+          "text": "Minneapolis: eliminated single-family zoning. Result: rents went DOWN 4%. Every city council blocking density should explain why they prefer higher rents.",
+          "platform": "x"
+        },
+        {
+          "text": "Minneapolis proved YIMBY works. Build more housing \u2192 prices go down. It's not complicated. The NIMBYs just don't want it.",
+          "platform": "x"
+        },
+        {
+          "text": "You know what happened when Minneapolis let people build housing? Housing got cheaper. Wild concept.",
+          "platform": "x"
+        },
+        {
+          "text": "The Minneapolis data is the strongest empirical evidence for YIMBY policy to date. After allowing duplexes and triplexes citywide, rents dropped ~4% while comparable metros saw 5-10% increases. The supply-demand mechanism works exactly as predicted.",
+          "platform": "reddit"
+        },
+        {
+          "text": "As a Minneapolis resident who watched the 2040 Plan debate: the apocalyptic predictions from NIMBYs never materialized. No parking chaos, no neighborhood destruction. Just more housing options and lower rents. The opposition was driven by property value protection, not genuine community concern.",
+          "platform": "reddit"
+        },
+        {
+          "text": "How Minneapolis became the most important housing experiment in America \u2014 the results of eliminating single-family zoning are in, and they change everything.",
+          "platform": "youtube"
+        },
+        {
+          "text": "Minneapolis let people build more housing and rents went down. Why aren't other cities copying this? A deep dive into the NIMBY-YIMBY war.",
+          "platform": "youtube"
+        }
+      ],
+      "geo_hotspots": [
+        "sf",
+        "portland",
+        "seattle",
+        "minneapolis",
+        "austin",
+        "cincinnati",
+        "dallas",
+        "houston",
+        "salt-lake"
+      ]
+    },
+    {
+      "text": "The Fed is keeping rates at 5.5% and acting surprised that nobody can afford a house. Powell keeps saying 'we need to bring down inflation' while making housing MORE expensive.",
+      "subject": "Federal Reserve interest rate policy and housing",
+      "assertion": "Fed rate policy is making housing unaffordable while claiming to fight inflation",
+      "framing": "policy contradiction",
+      "stance": "anti",
+      "arousal": "high",
+      "cluster": "fed-policy",
+      "concept": "rate-impact",
+      "platforms": {
+        "x": 0.55,
+        "reddit": 0.25,
+        "youtube": 0.2
+      },
+      "momentum_pattern": "spike",
+      "persistence": 4,
+      "time_anchor": {
+        "event": "Fed holds rates steady at 5.25-5.50% for eighth consecutive meeting",
+        "date": "2024-06-12"
+      },
+      "variations": [
+        {
+          "text": "Fed holds rates at 5.5%. Mortgage rates stuck at 7%. Powell: 'We need more data.' Meanwhile an entire generation can't buy a home.",
+          "platform": "x"
+        },
+        {
+          "text": "Powell literally said housing costs are driving inflation while keeping rates so high nobody can afford a mortgage. Make it make sense.",
+          "platform": "x"
+        },
+        {
+          "text": "The Fed's 'fight inflation' strategy is making housing more expensive. Shelter is 1/3 of CPI. High rates = no building = higher rents. They're creating the problem they claim to solve.",
+          "platform": "x"
+        },
+        {
+          "text": "The circular logic of Fed housing policy is maddening. High rates suppress construction starts, reduced supply drives up rents, rents drive shelter CPI, high shelter CPI justifies keeping rates high. We're in a doom loop and Powell won't acknowledge it.",
+          "platform": "reddit"
+        },
+        {
+          "text": "Economist here \u2014 the Fed's rate policy has effectively frozen the housing market. Existing homeowners won't sell (why trade a 3% mortgage for 7%?), new construction has cratered, and first-time buyers are locked out. This isn't a side effect \u2014 it's the primary transmission mechanism.",
+          "platform": "reddit"
+        },
+        {
+          "text": "Why the Fed's interest rate policy is actually making the housing crisis worse \u2014 the doom loop nobody's talking about.",
+          "platform": "youtube"
+        },
+        {
+          "text": "Jerome Powell says he's fighting inflation, but his rate policy is driving up housing costs. Here's how the Fed accidentally broke the housing market.",
+          "platform": "youtube"
+        }
+      ],
+      "geo_hotspots": [
+        "dc",
+        "nyc",
+        "sf",
+        "chicago",
+        "boston",
+        "richmond",
+        "birmingham",
+        "kansas-city",
+        "omaha"
+      ]
+    },
+    {
+      "text": "Supreme Court ruled 6-3 in Grants Pass that cities CAN criminalize sleeping outdoors. So the plan is: make housing unaffordable, then arrest people for being homeless. Got it.",
+      "subject": "SCOTUS Grants Pass v. Johnson ruling",
+      "assertion": "Criminalizing homelessness without providing housing alternatives is cruel policy",
+      "framing": "systemic cruelty",
+      "stance": "anti",
+      "arousal": "high",
+      "cluster": "homelessness",
+      "concept": "criminalization",
+      "platforms": {
+        "x": 0.6,
+        "reddit": 0.25,
+        "youtube": 0.15
+      },
+      "momentum_pattern": "spike",
+      "persistence": 5,
+      "time_anchor": {
+        "event": "SCOTUS rules 6-3 in City of Grants Pass v. Johnson allowing outdoor sleeping bans",
+        "date": "2024-06-28"
+      },
+      "variations": [
+        {
+          "text": "SCOTUS: you can criminalize sleeping outside. Also, housing costs 5x median income. They're making it illegal to be priced out.",
+          "platform": "x"
+        },
+        {
+          "text": "Grants Pass ruling: can't afford a home? Sleep outside. Can't sleep outside? Go to jail. America in 2024.",
+          "platform": "x"
+        },
+        {
+          "text": "6-3. The Supreme Court just said cities can arrest people for sleeping outdoors. In a country where a studio apartment costs $1,500/month. This is policy violence.",
+          "platform": "x"
+        },
+        {
+          "text": "The Grants Pass ruling is going to be catastrophic. Cities now have legal cover to sweep encampments without providing alternatives. LA alone has 75,000+ unhoused people. Where exactly are they supposed to go? This doesn't solve homelessness \u2014 it criminalizes poverty.",
+          "platform": "reddit"
+        },
+        {
+          "text": "Constitutional law perspective on Grants Pass: the 6-3 decision overturns Martin v. Boise (2018) which held that punishing people for sleeping outside when no shelter is available violates the 8th Amendment. Gorsuch's majority opinion essentially says the Cruel and Unusual Punishment clause doesn't apply to status-based conduct.",
+          "platform": "reddit"
+        },
+        {
+          "text": "The Supreme Court just made it legal to arrest homeless people for sleeping outside. What the Grants Pass ruling means and why homelessness advocates say it will make the crisis worse.",
+          "platform": "youtube"
+        },
+        {
+          "text": "Grants Pass v. Johnson explained: the Supreme Court ruling that lets cities criminalize homelessness, and what's already happening in cities that are using it.",
+          "platform": "youtube"
+        }
+      ],
+      "geo_hotspots": [
+        "la",
+        "sf",
+        "portland",
+        "seattle",
+        "las-vegas",
+        "indianapolis",
+        "charlotte",
+        "san-diego",
+        "detroit"
+      ]
+    },
+    {
+      "text": "We don't have a housing crisis \u2014 we have a BUILDING crisis. The US is short 4-7 million homes. You can't regulate your way to affordability if you won't let anyone build.",
+      "subject": "Housing supply deficit",
+      "assertion": "The housing crisis is primarily caused by insufficient construction and supply",
+      "framing": "supply-side economics",
+      "stance": "neutral",
+      "arousal": "medium",
+      "cluster": "supply-shortage",
+      "concept": "construction-deficit",
+      "platforms": {
+        "x": 0.35,
+        "reddit": 0.35,
+        "youtube": 0.3
+      },
+      "momentum_pattern": "stable",
+      "persistence": 8,
+      "time_anchor": {
+        "event": "Freddie Mac and NAR estimates of 4-7 million unit housing shortage",
+        "date": "2024-05-01"
+      },
+      "variations": [
+        {
+          "text": "The US is short 4-7 MILLION homes and people are blaming investors. Build more housing. That's it. That's the policy.",
+          "platform": "x"
+        },
+        {
+          "text": "Every city complaining about housing costs has one thing in common: they don't build enough housing. The shortage is 4-7 million units. This isn't a mystery.",
+          "platform": "x"
+        },
+        {
+          "text": "Rent control? Investor bans? Price caps? None of it works if you're 4-7 million homes short. BUILD. MORE. HOUSING.",
+          "platform": "x"
+        },
+        {
+          "text": "The conversation about housing needs to start with one fact: we are 4-7 million units short nationally. Until that gap closes, every demand-side intervention (rent control, buyer assistance programs, investor restrictions) is just rearranging deck chairs. You cannot price-control your way out of a physical shortage.",
+          "platform": "reddit"
+        },
+        {
+          "text": "Construction permits are at a 10-year low while population continues to grow. We're adding roughly 1.4M units/year against a need of 1.8-2.0M. The deficit grows every single year. The fix is unglamorous: upzone, streamline permitting, reduce regulatory costs. But nobody runs for office on 'let builders build.'",
+          "platform": "reddit"
+        },
+        {
+          "text": "Why America is 4 to 7 million homes short, how we got here, and what it would actually take to close the gap \u2014 a supply-side analysis.",
+          "platform": "youtube"
+        },
+        {
+          "text": "The housing crisis isn't about greedy landlords or bad policy alone. It's about math: we stopped building enough homes 15 years ago and never caught up.",
+          "platform": "youtube"
+        }
+      ],
+      "geo_hotspots": [
+        "austin",
+        "denver",
+        "raleigh",
+        "nashville",
+        "phoenix",
+        "philly",
+        "new-orleans",
+        "memphis",
+        "sacramento"
+      ]
+    },
+    {
+      "text": "NYC's Airbnb crackdown killed 80% of short-term listings in 6 months. 15,000 units back on the market. Turns out when you enforce housing laws, housing appears.",
+      "subject": "NYC Local Law 18 Airbnb regulations",
+      "assertion": "Enforcing short-term rental regulations returns housing to the long-term market",
+      "framing": "regulatory success",
+      "stance": "pro",
+      "arousal": "medium",
+      "cluster": "corporate-landlords",
+      "concept": "short-term-rental-regulation",
+      "platforms": {
+        "x": 0.45,
+        "reddit": 0.35,
+        "youtube": 0.2
+      },
+      "momentum_pattern": "stable",
+      "persistence": 6,
+      "time_anchor": {
+        "event": "NYC Local Law 18 enforcement drastically reduces Airbnb listings",
+        "date": "2024-01-15"
+      },
+      "variations": [
+        {
+          "text": "NYC cracked down on Airbnb: 80% of listings gone, 15K units back on the rental market. Every city should be doing this yesterday.",
+          "platform": "x"
+        },
+        {
+          "text": "Airbnb listings in NYC dropped 80% after enforcement. Thousands of apartments are back on the market. Turns out the 'housing shortage' was partly just Airbnbs.",
+          "platform": "x"
+        },
+        {
+          "text": "NYC proved it: enforce short-term rental laws \u2192 housing appears. 15,000 units. It was never a shortage \u2014 it was an allocation problem.",
+          "platform": "x"
+        },
+        {
+          "text": "The NYC Airbnb data is remarkable. After Local Law 18 enforcement, active Airbnb listings fell from ~22,000 to under 4,500. Long-term rental inventory increased noticeably in Manhattan and Brooklyn. Rents in affected neighborhoods have stabilized or slightly declined.",
+          "platform": "reddit"
+        },
+        {
+          "text": "I live in the East Village and the difference is visible. Three units in my building that were full-time Airbnbs are now long-term rentals. One went for $500/month less than comparable units were listed at last year. LL18 is actually working.",
+          "platform": "reddit"
+        },
+        {
+          "text": "How NYC's Airbnb crackdown put 15,000 apartments back on the rental market \u2014 and why other cities are watching closely.",
+          "platform": "youtube"
+        },
+        {
+          "text": "NYC went to war with Airbnb and won. What happened to rents, listings, and the housing market after the strictest short-term rental law in America.",
+          "platform": "youtube"
+        }
+      ],
+      "geo_hotspots": [
+        "phoenix",
+        "tampa",
+        "atlanta",
+        "charlotte",
+        "las-vegas",
+        "oakland",
+        "san-jose",
+        "columbus",
+        "pittsburgh"
+      ]
+    },
+    {
+      "text": "I'm a millennial making $95K and I still can't qualify for a mortgage in my city. My parents bought their house on a single $40K income in 1992. The generational wealth ladder got pulled up.",
+      "subject": "Generational homeownership gap",
+      "assertion": "Current economic conditions have eliminated the homeownership path that previous generations took",
+      "framing": "generational injustice",
+      "stance": "anti",
+      "arousal": "medium",
+      "cluster": "affordability",
+      "concept": "generational-lockout",
+      "platforms": {
+        "x": 0.4,
+        "reddit": 0.45,
+        "youtube": 0.15
+      },
+      "momentum_pattern": "stable",
+      "persistence": 7,
+      "time_anchor": {
+        "event": "Census data shows millennial homeownership rate at historic low vs. prior generations at same age",
+        "date": "2024-09-01"
+      },
+      "variations": [
+        {
+          "text": "Making $95K and can't buy a house. My dad bought his on $40K in '92. They really did pull the ladder up.",
+          "platform": "x"
+        },
+        {
+          "text": "Boomers at 30: bought a house on one income. Millennials at 35: making 6 figures and still renting. 'Just work harder' isn't the flex they think it is.",
+          "platform": "x"
+        },
+        {
+          "text": "My parents' house cost 2.5x their income. The same house now costs 8x the median income in that zip code. This isn't avocado toast. The math changed.",
+          "platform": "x"
+        },
+        {
+          "text": "I make $95K in Denver, have zero debt, $30K saved, and 780 credit. Ran the numbers with a lender: I qualify for $310K. The median home here is $575K. I would need a $115K down payment or a household income of $150K. My parents bought in 1994 on a combined $55K. The system is broken.",
+          "platform": "reddit"
+        },
+        {
+          "text": "The generational homeownership data is damning. At age 30, Boomers had a 51% homeownership rate. Gen X: 45%. Millennials: 36%. Gen Z is tracking even lower. This isn't a 'lifestyle choice' \u2014 the price-to-income ratio has fundamentally changed.",
+          "platform": "reddit"
+        },
+        {
+          "text": "I earn six figures and can't afford a home in my city. Let me show you the exact math of why homeownership has become impossible for an entire generation.",
+          "platform": "youtube"
+        },
+        {
+          "text": "What your parents paid for their home vs. what the same home costs now, adjusted for everything \u2014 and why 'just save more' is no longer valid advice.",
+          "platform": "youtube"
+        }
+      ],
+      "geo_hotspots": [
+        "nyc",
+        "miami",
+        "sf",
+        "la",
+        "denver",
+        "cleveland",
+        "milwaukee",
+        "st-louis",
+        "cincinnati"
+      ]
+    },
+    {
+      "text": "NIMBYs in my neighborhood just killed a 200-unit apartment proposal because of 'neighborhood character.' Character = keeping out renters. Just say that.",
+      "subject": "NIMBY opposition to multi-family housing",
+      "assertion": "Anti-development activists use coded language to oppose housing that would help lower-income residents",
+      "framing": "exclusionary hypocrisy",
+      "stance": "anti",
+      "arousal": "medium",
+      "cluster": "nimby-yimby",
+      "concept": "neighborhood-character",
+      "platforms": {
+        "x": 0.5,
+        "reddit": 0.35,
+        "youtube": 0.15
+      },
+      "momentum_pattern": "stable",
+      "persistence": 5,
+      "time_anchor": {
+        "event": "Multiple cities see community opposition block affordable housing developments",
+        "date": "2024-10-05"
+      },
+      "variations": [
+        {
+          "text": "200-unit apartment complex killed by NIMBYs citing 'parking concerns' and 'neighborhood character.' They mean 'we don't want renters here.' Just say it.",
+          "platform": "x"
+        },
+        {
+          "text": "'Neighborhood character' is doing a LOT of heavy lifting for 'we don't want affordable housing near us'",
+          "platform": "x"
+        },
+        {
+          "text": "My city needs 10,000 units. NIMBYs just blocked 200. They'll complain about homelessness at the next council meeting. Guaranteed.",
+          "platform": "x"
+        },
+        {
+          "text": "I attend my city's planning meetings. The pattern is always the same: developer proposes apartments, neighbors show up screaming about parking/traffic/shadows/character. Council caves. Then those same people post on NextDoor about 'why is rent so high?' It's a feedback loop of self-inflicted scarcity.",
+          "platform": "reddit"
+        },
+        {
+          "text": "The research on NIMBY opposition is clear: 'neighborhood character' objections are strongly correlated with racial and economic demographics of proposed developments. In predominantly white single-family neighborhoods, multi-family proposals are 3x more likely to face organized opposition.",
+          "platform": "reddit"
+        },
+        {
+          "text": "I went to a city planning meeting where NIMBYs killed a 200-unit housing project. Here's what 'neighborhood character' actually means and why it's making your rent higher.",
+          "platform": "youtube"
+        },
+        {
+          "text": "How NIMBY homeowners use zoning meetings to block new housing \u2014 and why it's one of the biggest drivers of the affordability crisis.",
+          "platform": "youtube"
+        }
+      ],
+      "geo_hotspots": [
+        "sf",
+        "portland",
+        "seattle",
+        "minneapolis",
+        "austin",
+        "dallas",
+        "houston",
+        "salt-lake",
+        "richmond"
+      ]
+    },
+    {
+      "text": "Austin built more housing than any major city and rents dropped 7% in a year. You know what policy worked? Letting people build. Not rent control. Not subsidies. Building.",
+      "subject": "Austin housing construction and rent decline",
+      "assertion": "Austin's aggressive building resulted in measurable rent decreases",
+      "framing": "market solution evidence",
+      "stance": "pro",
+      "arousal": "medium",
+      "cluster": "supply-shortage",
+      "concept": "build-more",
+      "platforms": {
+        "x": 0.4,
+        "reddit": 0.35,
+        "youtube": 0.25
+      },
+      "momentum_pattern": "rising",
+      "persistence": 6,
+      "time_anchor": {
+        "event": "Austin TX rents decline 7% year-over-year amid construction boom",
+        "date": "2024-07-20"
+      },
+      "variations": [
+        {
+          "text": "Austin: built a ton of housing. Rents dropped 7%. This is not complicated economics. Build more \u2192 prices go down.",
+          "platform": "x"
+        },
+        {
+          "text": "Austin rents dropped 7% because they actually built housing. Meanwhile SF is still debating whether a 4-story building will ruin the skyline.",
+          "platform": "x"
+        },
+        {
+          "text": "Every city council member should be forced to look at Austin's rent data. They built, prices dropped. That's it. That's the whole policy.",
+          "platform": "x"
+        },
+        {
+          "text": "Austin's rent decline is the best natural experiment in housing policy we've seen in years. They permitted and built at unprecedented rates \u2014 55,000+ units in 2022-2023 \u2014 and rents dropped 7% YoY while most comparable metros saw increases. Supply works.",
+          "platform": "reddit"
+        },
+        {
+          "text": "I moved to Austin in 2022 when rents were peaking. My 1BR was $1,850. I just renewed at $1,650. Three new apartment complexes opened within a mile of me. They're competing for tenants with move-in specials. This is what happens when you build.",
+          "platform": "reddit"
+        },
+        {
+          "text": "Austin built more apartments than any city its size and rents dropped 7%. Is this the model every American city should follow?",
+          "platform": "youtube"
+        },
+        {
+          "text": "The Austin housing experiment: what happened when one city actually let developers build, and what it means for the national housing debate.",
+          "platform": "youtube"
+        }
+      ],
+      "geo_hotspots": [
+        "austin",
+        "denver",
+        "raleigh",
+        "nashville",
+        "phoenix",
+        "birmingham",
+        "kansas-city",
+        "omaha",
+        "indianapolis"
+      ]
+    },
+    {
+      "text": "California passed 100+ housing bills since 2017 and housing is still unaffordable. Maybe the problem isn't a lack of laws \u2014 it's that local governments just ignore them.",
+      "subject": "California housing legislation enforcement gap",
+      "assertion": "California's housing laws are ineffective because local governments resist implementation",
+      "framing": "governance failure",
+      "stance": "neutral",
+      "arousal": "low",
+      "cluster": "nimby-yimby",
+      "concept": "enforcement-gap",
+      "platforms": {
+        "x": 0.3,
+        "reddit": 0.45,
+        "youtube": 0.25
+      },
+      "momentum_pattern": "declining",
+      "persistence": 7,
+      "time_anchor": {
+        "event": "California HCD reports ongoing local noncompliance with state housing mandates",
+        "date": "2024-11-01"
+      },
+      "variations": [
+        {
+          "text": "California: 100+ housing bills since 2017. Result: still the most unaffordable state. Laws don't build houses. Enforcement does.",
+          "platform": "x"
+        },
+        {
+          "text": "Gavin Newsom signed 100 housing bills and rents are still insane. Maybe the problem isn't legislation.",
+          "platform": "x"
+        },
+        {
+          "text": "California proves you can pass all the housing laws you want. If cities just ignore them, nothing changes.",
+          "platform": "x"
+        },
+        {
+          "text": "California's housing policy failure is a masterclass in the gap between legislation and implementation. The state has passed SB 9, SB 10, AB 2011, the Builder's Remedy \u2014 all designed to force cities to allow more housing. Most cities have simply... not complied. HCD enforcement has been toothless.",
+          "platform": "reddit"
+        },
+        {
+          "text": "I work in CA housing policy and the frustration is real. We pass great laws at the state level \u2014 accessory dwelling units, density bonuses, streamlined approvals \u2014 and then cities use environmental review, design standards, and procedural delays to effectively block everything. The law says yes; the permit office says 'file another study.'",
+          "platform": "reddit"
+        },
+        {
+          "text": "California passed more housing legislation than any state in history \u2014 and housing is still unaffordable. Here's why: the enforcement gap between Sacramento and your city hall.",
+          "platform": "youtube"
+        },
+        {
+          "text": "100+ housing bills and nothing changed: the story of California's housing policy failure and what it tells us about the limits of legislation.",
+          "platform": "youtube"
+        }
+      ],
+      "geo_hotspots": [
+        "sf",
+        "portland",
+        "seattle",
+        "minneapolis",
+        "austin",
+        "charlotte",
+        "san-diego",
+        "detroit",
+        "philly"
+      ]
+    },
+    {
+      "text": "The 'lock-in effect' is wild. 60% of mortgages are below 4%. Nobody's selling because they'd lose their rate. So inventory is frozen and first-time buyers are competing for scraps.",
+      "subject": "Mortgage rate lock-in effect",
+      "assertion": "Low existing mortgage rates have frozen housing inventory by discouraging current homeowners from selling",
+      "framing": "market dysfunction",
+      "stance": "neutral",
+      "arousal": "low",
+      "cluster": "fed-policy",
+      "concept": "rate-lock-in",
+      "platforms": {
+        "x": 0.35,
+        "reddit": 0.4,
+        "youtube": 0.25
+      },
+      "momentum_pattern": "declining",
+      "persistence": 8,
+      "time_anchor": {
+        "event": "Redfin data shows 60% of mortgages carry rates below 4%, suppressing listing inventory",
+        "date": "2024-04-15"
+      },
+      "variations": [
+        {
+          "text": "60% of US mortgages are under 4%. Current rates: 7%. Nobody's selling. First-time buyers are fighting over the 10% of inventory that actually exists.",
+          "platform": "x"
+        },
+        {
+          "text": "The housing lock-in effect: homeowners won't sell because they'd lose their 3% rate. Buyers can't find inventory. Everyone's stuck.",
+          "platform": "x"
+        },
+        {
+          "text": "You're not imagining it: there's nothing to buy. 60% of homeowners have sub-4% mortgages. They are never moving.",
+          "platform": "x"
+        },
+        {
+          "text": "The rate lock-in is the most underappreciated factor in the housing crisis. According to Redfin, ~60% of outstanding mortgages are below 4%. For someone with a 2.8% rate on a $400K home, selling and rebuying at 7% would cost an extra $1,200/month for the same house. There's zero financial incentive to move.",
+          "platform": "reddit"
+        },
+        {
+          "text": "We have a 2.75% rate from 2021 and our house has appreciated $180K. We want to move \u2014 need more space, kids \u2014 but the math is punishing. Our payment would nearly double for a similar house. So we're staying. Multiply this by millions of households and you get the inventory crisis.",
+          "platform": "reddit"
+        },
+        {
+          "text": "Why there are no houses for sale in America right now, explained: the mortgage rate lock-in effect and how 7% rates froze the entire market.",
+          "platform": "youtube"
+        },
+        {
+          "text": "60% of American homeowners have mortgages below 4%. Here's why that means the housing market is effectively frozen \u2014 and when it might thaw.",
+          "platform": "youtube"
+        }
+      ],
+      "geo_hotspots": [
+        "dc",
+        "nyc",
+        "sf",
+        "chicago",
+        "boston",
+        "new-orleans",
+        "memphis",
+        "sacramento",
+        "oakland"
+      ]
+    },
+    {
+      "text": "Zillow's Rent Affordability report: the average renter spends 30.4% of income on rent. In Miami it's 43%. We passed the cost-burdened threshold nationally. This is an emergency.",
+      "subject": "Rent burden reaching crisis levels",
+      "assertion": "National average rent burden has exceeded the 30% affordability threshold",
+      "framing": "crisis declaration",
+      "stance": "anti",
+      "arousal": "medium",
+      "cluster": "affordability",
+      "concept": "rent-burden",
+      "platforms": {
+        "x": 0.4,
+        "reddit": 0.35,
+        "youtube": 0.25
+      },
+      "momentum_pattern": "rising",
+      "persistence": 7,
+      "time_anchor": {
+        "event": "Zillow rental affordability report shows national average rent burden exceeds 30%",
+        "date": "2025-01-10"
+      },
+      "variations": [
+        {
+          "text": "Average American renter: 30.4% of income to rent. Miami: 43%. NYC: 40%. We crossed the 'cost-burdened' line nationally. This is the emergency nobody's treating like one.",
+          "platform": "x"
+        },
+        {
+          "text": "When the NATIONAL AVERAGE rent burden is above 30%, you don't have a housing market. You have a housing crisis. Period.",
+          "platform": "x"
+        },
+        {
+          "text": "43% of income to rent in Miami. 40% in NYC. 38% in LA. At what percentage do we start calling this what it is?",
+          "platform": "x"
+        },
+        {
+          "text": "Zillow's latest data confirms what most renters already know: the median renter is now cost-burdened (30%+ of income to rent) at the national level. But the metro-level numbers are devastating \u2014 Miami at 43%, NYC at 40%, LA at 38%. These aren't outliers anymore, they're the norm in any major job market.",
+          "platform": "reddit"
+        },
+        {
+          "text": "The 30% rent burden rule was established by HUD in the 1980s as the threshold above which housing costs begin crowding out other necessities. We've now passed that threshold nationally for the first time. In 23 of the 50 largest metros, the median renter spends 35%+. This is historically unprecedented.",
+          "platform": "reddit"
+        },
+        {
+          "text": "The average American renter now spends over 30% of their income on rent. In cities like Miami, it's over 40%. Here's what the data says and why experts are calling it an emergency.",
+          "platform": "youtube"
+        },
+        {
+          "text": "Zillow just published devastating rent affordability data. I'll break down the numbers city by city and explain why the 30% threshold matters.",
+          "platform": "youtube"
+        }
+      ],
+      "geo_hotspots": [
+        "nyc",
+        "miami",
+        "sf",
+        "la",
+        "denver",
+        "san-jose",
+        "tampa",
+        "columbus",
+        "pittsburgh"
+      ]
+    },
+    {
+      "text": "California Gov just signed an executive order fast-tracking homeless encampment removals after the Grants Pass ruling. Progressives cleaning camps without building housing. Make it make sense.",
+      "subject": "California executive order on encampment removals post-Grants Pass",
+      "assertion": "Progressive officials are using Grants Pass to clear encampments without providing housing alternatives",
+      "framing": "political hypocrisy",
+      "stance": "anti",
+      "arousal": "high",
+      "cluster": "homelessness",
+      "concept": "encampment-sweeps",
+      "platforms": {
+        "x": 0.55,
+        "reddit": 0.3,
+        "youtube": 0.15
+      },
+      "momentum_pattern": "declining",
+      "persistence": 4,
+      "time_anchor": {
+        "event": "California Governor Newsom issues executive order for encampment removals after Grants Pass",
+        "date": "2024-07-25"
+      },
+      "variations": [
+        {
+          "text": "Newsom signed an order to sweep homeless camps 3 weeks after Grants Pass. Blue state governor using a conservative SCOTUS ruling to criminalize poverty. Horseshoe theory is real.",
+          "platform": "x"
+        },
+        {
+          "text": "California: can't afford rent \u2192 become homeless \u2192 get swept. The progressive state is speedrunning cruelty.",
+          "platform": "x"
+        },
+        {
+          "text": "Newsom out here clearing encampments with no housing plan. At least the red states are honest about not caring. This is worse \u2014 it's pretending to care while doing the same thing.",
+          "platform": "x"
+        },
+        {
+          "text": "The speed with which Newsom leveraged Grants Pass is remarkable. Within weeks of the ruling, he issued an executive order directing state agencies to clear encampments. No corresponding order to build emergency housing. No new funding. Just removal. The bipartisan consensus on homelessness is apparently 'out of sight, out of mind.'",
+          "platform": "reddit"
+        },
+        {
+          "text": "I work in homeless services in Sacramento. The encampment sweeps are devastating our outreach efforts. We spend months building trust with unhoused individuals, connecting them to services, and then a sweep displaces them. They lose belongings, documents, medications. And then we start over. The executive order prioritizes aesthetics over outcomes.",
+          "platform": "reddit"
+        },
+        {
+          "text": "California's governor is clearing homeless camps after the Supreme Court said it's legal \u2014 but without building housing. Why progressive and conservative approaches to homelessness are converging.",
+          "platform": "youtube"
+        },
+        {
+          "text": "From Grants Pass to Gavin Newsom: how America decided to criminalize homelessness \u2014 from both sides of the political aisle.",
+          "platform": "youtube"
+        }
+      ],
+      "geo_hotspots": [
+        "la",
+        "sf",
+        "portland",
+        "seattle",
+        "las-vegas",
+        "cleveland",
+        "milwaukee",
+        "st-louis",
+        "cincinnati"
+      ]
+    }
+  ]
+}

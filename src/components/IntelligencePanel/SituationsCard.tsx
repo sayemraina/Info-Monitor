@@ -22,9 +22,9 @@ export const SituationsCard: React.FC<SituationsCardProps> = ({ situations, onSe
   };
 
   const renderSituation = (sit: Situation, detailed: boolean) => (
-    <div 
-      key={sit.id} 
-      className={`p-3.5 bg-[#1A2A3C]/50 border border-[#1E3044]/60 rounded-lg flex gap-3 ${
+    <div
+      key={sit.id}
+      className={`p-2.5 bg-[#1A2A3C]/50 border border-[#1E3044]/60 rounded-lg flex gap-2.5 ${
         detailed && sit.cluster_id ? 'hover:border-cyan-500/50 cursor-pointer transition-colors' : ''
       }`}
       onClick={() => {
@@ -35,19 +35,19 @@ export const SituationsCard: React.FC<SituationsCardProps> = ({ situations, onSe
       }}
     >
       <div className="shrink-0 mt-0.5">
-        <span className="text-[10px] uppercase font-bold px-2 py-1 rounded border" style={getSeverityStyle(sit.severity)}>
+        <span className="text-[8px] uppercase font-bold px-1.5 py-0.5 rounded border" style={getSeverityStyle(sit.severity)}>
           {sit.severity}
         </span>
       </div>
       <div className="flex-1">
-        <p className="text-[13px] text-slate-100 leading-snug font-medium">
+        <p className="text-[10px] text-slate-100 leading-snug font-medium">
           {sit.summary}
         </p>
-        <div className="mt-1.5 text-[10px] font-mono text-slate-500">
+        <div className="mt-1 text-[8px] font-mono text-slate-500">
           TRIGGER: {sit.metric_basis}
         </div>
         {detailed && sit.cluster_id && (
-          <div className="mt-1 text-[10px] text-cyan-500/70">↗ Click to view cluster</div>
+          <div className="mt-1 text-[9px] text-cyan-500/70">↗ Click to view cluster</div>
         )}
       </div>
     </div>
@@ -66,9 +66,9 @@ export const SituationsCard: React.FC<SituationsCardProps> = ({ situations, onSe
           <InfoButton 
             term="Situations"
             content={{
-              plain: "Automated synthesis of underlying metrics into human-readable alerts.",
-              technical: "A rules-engine evaluating bounding boxes around momentum, friction, and persistence.",
-              methodology: "Evaluated per-cluster against predefined heuristics (e.g. momentum > 0.5 AND friction > 0.6 = 'escalating')."
+              what: "Automated synthesis of metrics into human-readable narrative alerts.",
+              soWhat: "Each situation flags a specific combination of momentum, friction, and persistence.",
+              how: "Rules engine evaluating per-cluster metric thresholds."
             }}
           />
         </div>
@@ -89,15 +89,17 @@ export const SituationsCard: React.FC<SituationsCardProps> = ({ situations, onSe
       expandable={situations.length > 0} 
       onExpand={() => setIsExpanded(true)}
     >
-      <div className="flex flex-col gap-2 overflow-hidden max-h-[320px] custom-scrollbar">
-        {situations.slice(0, 4).map(sit => renderSituation(sit, false))}
-        {situations.length > 4 && (
-          <div className="text-[11px] text-slate-500 text-center pt-1 font-medium">
-            +{situations.length - 4} more
+      <div className="flex flex-col gap-1.5 overflow-hidden custom-scrollbar">
+        {situations.slice(0, 2).map(sit => renderSituation(sit, false))}
+        {situations.length > 2 && (
+          <div className="pt-0.5">
+            <span className="text-[9px] text-slate-500 font-medium">
+              +{situations.length - 2} more
+            </span>
           </div>
         )}
         {situations.length === 0 && (
-          <div className="text-[12px] text-slate-500 italic p-2">
+          <div className="text-[10px] text-slate-500 italic p-2">
             No active situations
           </div>
         )}

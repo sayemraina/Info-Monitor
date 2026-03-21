@@ -1,0 +1,33 @@
+{
+  "_description": "Strategic data gaps per topic. These create intentional 'insufficient data' states to satisfy the system's empirical honesty criteria. The generator reads this file and skips/greys out the specified data for each topic.",
+
+  "ozempic-glp1": {
+    "missing_geo_comparison": true,
+    "reason": "Geographic segmentation data insufficient for health discourse — GLP-1 conversation is nationally distributed without strong regional clustering",
+    "affected_ui": "Compare mode geographic slice (coastal_metros vs heartland_metros) unavailable for this topic"
+  },
+
+  "crypto-digital-money": {
+    "low_system_confidence": [0.45, 0.55],
+    "reason": "High bot/shill activity on crypto topics makes claim extraction unreliable — estimated 30-40% of source posts are inauthentic",
+    "affected_ui": "system_confidence badge shows lower value, all metrics carry wider confidence intervals"
+  },
+
+  "dei-rollbacks": {
+    "missing_youtube_compare": true,
+    "reason": "YouTube influencer coverage of DEI rollbacks is too sparse and ideologically clustered for meaningful distributional comparison",
+    "affected_ui": "Compare mode YouTube slice (x_platform vs youtube_influencer) unavailable for this topic"
+  },
+
+  "ai-bubble": {
+    "low_persistence_data": true,
+    "reason": "Topic emerged recently — insufficient temporal depth for reliable persistence scoring on most claims",
+    "affected_ui": "Persistence metric shows wider confidence intervals, some claims show 'Insufficient temporal data' instead of persistence score"
+  },
+
+  "war-on-iran": {
+    "missing_reddit_depth": true,
+    "reason": "Reddit moderation policies limit Iran/war discussion threads — sample size for Reddit slice is below minimum threshold for several clusters",
+    "affected_ui": "Some clusters in x_platform vs reddit_platform comparison show 'Below minimum sample threshold'"
+  }
+}

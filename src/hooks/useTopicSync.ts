@@ -19,12 +19,10 @@ export interface TopicSyncActions {
 }
 
 export function useTopicSync(topics: TopicSummary[]): [TopicSyncState, TopicSyncActions] {
-  // Sort topics by IFI descending — highest flux first
+  // Preserve original topic order from topics.json — stable chronology
   const sortedIds = useRef<string[]>([])
   if (topics.length > 0 && sortedIds.current.length !== topics.length) {
-    sortedIds.current = [...topics]
-      .sort((a, b) => (b.ifi?.value ?? 0) - (a.ifi?.value ?? 0))
-      .map(t => t.id)
+    sortedIds.current = topics.map(t => t.id)
   }
 
   const [activeTopic, setActiveTopic] = useState<string>('')

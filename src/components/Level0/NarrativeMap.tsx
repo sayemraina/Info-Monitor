@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState, useCallback, useMemo } from 'react'
 import maplibregl from 'maplibre-gl'
 import 'maplibre-gl/dist/maplibre-gl.css'
-import type { TopicSummary, GeoCluster } from '../../types'
+import type { TopicSummary, GeoCluster, EntryHint } from '../../types'
 import { useGeoData } from '../../hooks/useGeoData'
 import { getMomentumColor } from '../../utils/colors'
 import { MapSearchPanel } from './MapSearchPanel'
@@ -26,7 +26,7 @@ const GEO_LABELS: { lngLat: [number, number]; text: string }[] = [
 interface NarrativeMapProps {
   activeTopic: string
   topics: TopicSummary[]
-  onSelectTopic: (topicId: string) => void
+  onSelectTopic: (topicId: string, hint?: EntryHint, clusterId?: string) => void
   onLockTopic: (topicId: string) => void
   searchQuery: string
 }
@@ -67,26 +67,101 @@ const DARK_STYLE: maplibregl.StyleSpecification = {
   ],
 }
 
-// Build GeoJSON from geo clusters
+// Build GeoJSON from geo clusters — balanced selection for spread, color variety, and coverage
 function clustersToGeoJSON(clusters: GeoCluster[]) {
-  const features: GeoJSON.Feature[] = []
+  const TARGET_DOTS = 25
+  const MIN_DISTANCE = 1.0 // degrees (~60mi) — prevents dots from stacking on same city
+
+  type Entry = { cluster: GeoCluster; region: GeoCluster['regions'][0]; colorBucket: string }
+  const allRegions: Entry[] = []
   for (const cluster of clusters) {
     for (const region of cluster.regions) {
-      features.push({
-        type: 'Feature',
-        geometry: { type: 'Point', coordinates: [region.lng, region.lat] },
-        properties: {
-          cluster_label: cluster.cluster_label,
-          cluster_id: cluster.cluster_id,
-          salience: region.salience,
-          momentum: region.momentum,
-          color: getMomentumColor(region.momentum),
-          radius: 8 + region.salience * 25,
-          isPulsing: region.salience > 0.7 ? 1 : 0,
-        },
-      })
+      const m = region.momentum
+      const colorBucket = m >= 0.5 ? 'red' : m >= 0.1 ? 'amber' : m > -0.1 ? 'silver' : m > -0.5 ? 'teal' : 'blue'
+      allRegions.push({ cluster, region, colorBucket })
     }
   }
+
+  const selected: Entry[] = []
+  const isTooClose = (r: GeoCluster['regions'][0]) =>
+    selected.some(s => {
+      const dLat = s.region.lat - r.lat
+      const dLng = s.region.lng - r.lng
+      return dLat * dLat + dLng * dLng < MIN_DISTANCE * MIN_DISTANCE
+    })
+
+  // Pass 1: One dot per cluster (highest salience), enforcing spacing
+  const usedClusters = new Set<string>()
+  const bySalience = [...allRegions].sort((a, b) => b.region.salience - a.region.salience)
+  for (const entry of bySalience) {
+    if (!usedClusters.has(entry.cluster.cluster_id) && !isTooClose(entry.region)) {
+      selected.push(entry)
+      usedClusters.add(entry.cluster.cluster_id)
+    }
+  }
+  // Ensure every cluster represented even if spacing conflict
+  for (const entry of bySalience) {
+    if (!usedClusters.has(entry.cluster.cluster_id)) {
+      selected.push(entry)
+      usedClusters.add(entry.cluster.cluster_id)
+    }
+  }
+
+  // Pass 2: Ensure color variety — add at least one of each available color
+  const colorsPresent = new Set(selected.map(e => e.colorBucket))
+  const availableColors = new Set(allRegions.map(e => e.colorBucket))
+  for (const color of availableColors) {
+    if (colorsPresent.has(color) || selected.length >= TARGET_DOTS) continue
+    // Find best candidate of this color that isn't too close
+    const candidates = bySalience.filter(e => e.colorBucket === color && !selected.includes(e))
+    for (const c of candidates) {
+      if (!isTooClose(c.region)) {
+        selected.push(c)
+        colorsPresent.add(color)
+        break
+      }
+    }
+  }
+
+  // Pass 3: Fill remaining slots with geographic spread, round-robin by cluster for balance
+  const remaining = bySalience.filter(e => !selected.includes(e))
+  // Group remaining by cluster
+  const byCluster = new Map<string, Entry[]>()
+  for (const e of remaining) {
+    const cid = e.cluster.cluster_id
+    if (!byCluster.has(cid)) byCluster.set(cid, [])
+    byCluster.get(cid)!.push(e)
+  }
+  // Round-robin: take one from each cluster in turn
+  let added = true
+  while (selected.length < TARGET_DOTS && added) {
+    added = false
+    for (const [, entries] of byCluster) {
+      if (selected.length >= TARGET_DOTS) break
+      for (let i = 0; i < entries.length; i++) {
+        if (!selected.includes(entries[i]) && !isTooClose(entries[i].region)) {
+          selected.push(entries[i])
+          entries.splice(i, 1)
+          added = true
+          break
+        }
+      }
+    }
+  }
+
+  const features: GeoJSON.Feature[] = selected.map(({ cluster, region }) => ({
+    type: 'Feature' as const,
+    geometry: { type: 'Point' as const, coordinates: [region.lng, region.lat] },
+    properties: {
+      cluster_label: cluster.cluster_label,
+      cluster_id: cluster.cluster_id,
+      salience: region.salience,
+      momentum: region.momentum,
+      color: getMomentumColor(region.momentum),
+      radius: 6 + region.salience * 18,
+      isPulsing: region.salience > 0.7 ? 1 : 0,
+    },
+  }))
   return { type: 'FeatureCollection' as const, features }
 }
 
@@ -150,7 +225,7 @@ export function NarrativeMap({ activeTopic, topics, onSelectTopic, onLockTopic, 
         data: { type: 'FeatureCollection', features: [] },
       })
 
-      // Outer glow layer
+      // Outer glow — warm diffuse halo
       map.addLayer({
         id: 'heat-glow',
         type: 'circle',
@@ -158,12 +233,12 @@ export function NarrativeMap({ activeTopic, topics, onSelectTopic, onLockTopic, 
         paint: {
           'circle-radius': ['*', ['get', 'radius'], 2.2],
           'circle-color': ['get', 'color'],
-          'circle-opacity': ['*', ['get', 'salience'], 0.12],
+          'circle-opacity': ['+', 0.06, ['*', ['get', 'salience'], 0.10]],
           'circle-blur': 1,
         },
       })
 
-      // Core circle layer
+      // Core circle — saturated center
       map.addLayer({
         id: 'heat-core',
         type: 'circle',
@@ -171,12 +246,12 @@ export function NarrativeMap({ activeTopic, topics, onSelectTopic, onLockTopic, 
         paint: {
           'circle-radius': ['get', 'radius'],
           'circle-color': ['get', 'color'],
-          'circle-opacity': ['*', ['get', 'salience'], 0.5],
+          'circle-opacity': ['+', 0.25, ['*', ['get', 'salience'], 0.35]],
           'circle-blur': 0.4,
         },
       })
 
-      // Center dot layer
+      // Center dot — bright point
       map.addLayer({
         id: 'heat-dot',
         type: 'circle',
@@ -281,9 +356,10 @@ export function NarrativeMap({ activeTopic, topics, onSelectTopic, onLockTopic, 
       }
     })
 
-    // Click heat zone → Level 1
-    map.on('click', 'heat-core', () => {
-      onSelectTopic(activeTopicRef.current)
+    // Click heat zone → Level 1 with cluster context
+    map.on('click', 'heat-core', (e) => {
+      const clusterId = e.features?.[0]?.properties?.cluster_id as string | undefined
+      onSelectTopic(activeTopicRef.current, 'map_hotspot', clusterId)
     })
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -478,7 +554,7 @@ export function NarrativeMap({ activeTopic, topics, onSelectTopic, onLockTopic, 
       {/* CTA button — bottom-left under search panel, navigates to Level 1 */}
       {mapReady && (
         <button
-          onClick={() => onSelectTopic(activeTopicRef.current)}
+          onClick={() => onSelectTopic(activeTopicRef.current, 'explore')}
           onMouseEnter={() => setCtaHovered(true)}
           onMouseLeave={() => setCtaHovered(false)}
           className="cursor-pointer font-data"

@@ -1,0 +1,201 @@
+{
+  "events": [
+    {
+      "id": "evt_7fb5c1850f3e",
+      "type": "momentum_spike",
+      "timestamp": "2026-03-16T04:00:00+00:00",
+      "claim_id": "clm_f89f26154cf7",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.87,
+      "summary": "'Amnesty International published a 300-page report concluding Israel is committing genocide in Gaza. Not 'apartheid.' Not 'war crimes.' Genocide. Amnesty. International.' accelerated from 20th to 72nd percentile in 12h. Source diversity: low.",
+      "detail": {
+        "percentile_from": 20,
+        "percentile_to": 72,
+        "hours": 12
+      }
+    },
+    {
+      "id": "evt_3f461482492b",
+      "type": "coordination_flag",
+      "timestamp": "2026-03-15T03:00:00+00:00",
+      "claim_id": "clm_b1b268ef1f55",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.79,
+      "summary": "Near-duplicate content: 29 similar posts from non-overlapping accounts within 6h.",
+      "detail": {
+        "signal": "near_duplicate",
+        "count": 89,
+        "window_hours": 2
+      }
+    },
+    {
+      "id": "evt_0e39727693ea",
+      "type": "momentum_spike",
+      "timestamp": "2026-03-15T01:00:00+00:00",
+      "claim_id": "clm_b1b268ef1f55",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.78,
+      "summary": "'Columbia students got arrested for setting up protest tents. Meanwhile the university's endowment invests in weapons manufacturers supplying bombs dropped on Gaza. But sure, the students are the problem.' accelerated from 20th to 72nd percentile in 12h. Source diversity: low.",
+      "detail": {
+        "percentile_from": 20,
+        "percentile_to": 72,
+        "hours": 12
+      }
+    },
+    {
+      "id": "evt_ea43eefc7eb3",
+      "type": "arousal_escalation",
+      "timestamp": "2026-03-15T19:00:00+00:00",
+      "claim_id": "clm_e617798e08ec",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.9,
+      "summary": "'antisemitism at campus protests' arousal shifted low to high over 48h, semantic content stable.",
+      "detail": {
+        "arousal_from": "low",
+        "arousal_to": "high",
+        "hours": 48
+      }
+    },
+    {
+      "id": "evt_d91758ecb40f",
+      "type": "arousal_escalation",
+      "timestamp": "2026-03-15T10:00:00+00:00",
+      "claim_id": "clm_b8f0544411e2",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.82,
+      "summary": "'Gaza civilian death toll and Rafah offensive' arousal shifted low to high over 48h, semantic content stable.",
+      "detail": {
+        "arousal_from": "low",
+        "arousal_to": "high",
+        "hours": 48
+      }
+    },
+    {
+      "id": "evt_84d04ef266d8",
+      "type": "arousal_escalation",
+      "timestamp": "2026-03-14T13:00:00+00:00",
+      "claim_id": "clm_b1b268ef1f55",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.81,
+      "summary": "'Columbia University pro-Palestine encampment' arousal shifted low to high over 48h, semantic content stable.",
+      "detail": {
+        "arousal_from": "low",
+        "arousal_to": "high",
+        "hours": 48
+      }
+    },
+    {
+      "id": "evt_bc550c56e1b5",
+      "type": "vocabulary_rotation",
+      "timestamp": "2026-03-14T10:00:00+00:00",
+      "claim_id": "clm_b8f0544411e2",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.66,
+      "summary": "Vocabulary rotation detected in 'Gaza civilian death toll and Rafah offensive': emerging terminology overlaps with adjacent narratives.",
+      "detail": {
+        "rotation_shift": 0.42,
+        "hours": 24
+      }
+    },
+    {
+      "id": "evt_27f184113d91",
+      "type": "arousal_escalation",
+      "timestamp": "2026-03-14T05:00:00+00:00",
+      "claim_id": "clm_f89f26154cf7",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.73,
+      "summary": "'Amnesty International genocide report' arousal shifted low to high over 48h, semantic content stable.",
+      "detail": {
+        "arousal_from": "low",
+        "arousal_to": "high",
+        "hours": 48
+      }
+    },
+    {
+      "id": "evt_b667688b318f",
+      "type": "arousal_escalation",
+      "timestamp": "2026-03-14T03:00:00+00:00",
+      "claim_id": "clm_fa6b8d5994ee",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.83,
+      "summary": "'hostage negotiations and deal' arousal shifted low to high over 48h, semantic content stable.",
+      "detail": {
+        "arousal_from": "low",
+        "arousal_to": "high",
+        "hours": 48
+      }
+    },
+    {
+      "id": "evt_4956d07628c1",
+      "type": "arousal_escalation",
+      "timestamp": "2026-03-13T22:00:00+00:00",
+      "claim_id": "clm_ace4b880e053",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.87,
+      "summary": "'killing of journalists in Gaza' arousal shifted low to high over 48h, semantic content stable.",
+      "detail": {
+        "arousal_from": "low",
+        "arousal_to": "high",
+        "hours": 48
+      }
+    },
+    {
+      "id": "evt_388a631a4607",
+      "type": "divergence_shift",
+      "timestamp": "2026-03-12T20:00:00+00:00",
+      "claim_id": null,
+      "slice_id": "x_platform",
+      "severity": "medium",
+      "confidence": 0.83,
+      "summary": "X vs Reddit divergence increased 23% over 48h. Mode: information asymmetry.",
+      "detail": {
+        "jsd_change": 0.23,
+        "hours": 48,
+        "mode": "information_asymmetry"
+      }
+    },
+    {
+      "id": "evt_ae904169c177",
+      "type": "coordination_flag",
+      "timestamp": "2026-03-14T05:00:00+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "low",
+      "confidence": 0.59,
+      "summary": "Counter-narrative response lag of 17h between 'Gaza civilian death toll and Rafah offensive' and 'Israel's right to respond to October 7' clusters \u2014 consistent with organic counter-mobilization.",
+      "detail": {
+        "signal": "adversarial_response_lag",
+        "cluster_a": "humanitarian-crisis",
+        "cluster_b": "self-defense",
+        "lag_hours": 17
+      }
+    },
+    {
+      "id": "evt_58deb15eb7cd",
+      "type": "lead_lag",
+      "timestamp": "2026-03-12T23:00:00+00:00",
+      "claim_id": "clm_b8f0544411e2",
+      "slice_id": null,
+      "severity": "low",
+      "confidence": 0.61,
+      "summary": "'Over 35,000 confirmed dead in Gaza by May 2024 \u2014 a majority women and children. ...' first detected on Reddit, appeared on Reddit 36h later. Fidelity: 88%.",
+      "detail": {
+        "source_platform": "x",
+        "target_platform": "reddit",
+        "lag_hours": 11,
+        "fidelity": 0.68
+      }
+    }
+  ],
+  "total_count": 13
+}

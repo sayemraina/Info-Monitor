@@ -1,0 +1,192 @@
+{
+  "_description": "Edge case fixtures injected into specific topics to exercise UI states that LLM-authored archetypes may not naturally produce. Each archetype has a 'target_topic' specifying which topic it gets injected into.",
+  "edge_cases": [
+    {
+      "target_topic": "ozempic-glp1",
+      "_purpose": "Tests claim_dark event + greyed-out state in Zone D timeline",
+      "text": "Compounding pharmacies making generic semaglutide are about to get shut down by FDA enforcement",
+      "subject": "compounding pharmacy crackdown",
+      "assertion": "FDA will shut down generic semaglutide compounding",
+      "framing": "regulatory prediction",
+      "stance": "neutral",
+      "arousal": "medium",
+      "cluster": "cost-access",
+      "concept": "compounding-crackdown-ec",
+      "platforms": {"x": 0.70, "reddit": 0.20, "youtube": 0.10},
+      "momentum_pattern": "goes_dark",
+      "persistence": 3,
+      "time_anchor": {"event": "FDA compounding pharmacy enforcement discussions", "date": "2024-12-01"},
+      "variations": [
+        {"text": "So the FDA is really about to kill compounding pharmacies making affordable semaglutide. Cool cool cool.", "platform": "x"},
+        {"text": "RIP cheap semaglutide. FDA enforcement incoming.", "platform": "x"},
+        {"text": "Has anyone else seen the news about FDA going after compounding pharmacies? This could cut off affordable access for millions.", "platform": "reddit"},
+        {"text": "The compounding pharmacy loophole for semaglutide is closing. Here's what that means for patients who can't afford brand-name Ozempic.", "platform": "youtube"}
+      ],
+      "geo_hotspots": ["houston", "miami", "phoenix"]
+    },
+    {
+      "target_topic": "immigration",
+      "_purpose": "Tests coordination_flag event with concentrated platform distribution + high burstiness",
+      "text": "EXPOSED: Same exact talking points about border crossings posted by 50+ accounts within 2 hours — this is coordinated",
+      "subject": "coordinated immigration messaging",
+      "assertion": "immigration discourse shows signs of coordinated amplification",
+      "framing": "coordination exposure",
+      "stance": "neutral",
+      "arousal": "high",
+      "cluster": "border-security",
+      "concept": "coordinated-messaging",
+      "platforms": {"x": 0.85, "reddit": 0.10, "youtube": 0.05},
+      "momentum_pattern": "spike",
+      "persistence": 3,
+      "time_anchor": {"event": "Suspected coordinated posting campaign around border policy debate", "date": "2025-01-20"},
+      "variations": [
+        {"text": "Same border talking points, 50 accounts, 2 hours. Nothing organic about this.", "platform": "x"},
+        {"text": "Thread: I tracked 50+ accounts posting near-identical border takes within a 2-hour window. Here's the evidence.", "platform": "x"},
+        {"text": "Is anyone else noticing the suspiciously uniform messaging around border crossings today? Same stats, same framing, same timeframe.", "platform": "reddit"},
+        {"text": "I've been tracking what looks like a coordinated messaging campaign around border policy. The patterns are hard to ignore.", "platform": "youtube"}
+      ],
+      "geo_hotspots": ["dc", "phoenix", "el-paso"]
+    },
+    {
+      "target_topic": "crypto-digital-money",
+      "_purpose": "Tests very low confidence claim (confidence dimming in UI at 40% opacity)",
+      "text": "Tether is about to depeg and take the entire crypto market with it",
+      "subject": "Tether stability concerns",
+      "assertion": "Tether stablecoin will lose its peg catastrophically",
+      "framing": "systemic risk warning",
+      "stance": "anti",
+      "arousal": "high",
+      "cluster": "regulation-risk",
+      "concept": "tether-risk",
+      "platforms": {"x": 0.60, "reddit": 0.30, "youtube": 0.10},
+      "momentum_pattern": "declining",
+      "persistence": 4,
+      "time_anchor": {"event": "Recurring Tether FUD cycles in crypto markets", "date": "2024-11-15"},
+      "_note": "Low confidence — generator uses arousal and momentum_pattern to determine confidence dimming",
+      "variations": [
+        {"text": "Tether depeg incoming. Not if, when.", "platform": "x"},
+        {"text": "Still holding USDT? Bold move. That thing is a ticking time bomb.", "platform": "x"},
+        {"text": "Serious question: has anyone actually audited Tether's reserves? Every cycle this comes up and every cycle it gets hand-waved away.", "platform": "reddit"},
+        {"text": "The Tether risk nobody wants to talk about: what happens when the music stops?", "platform": "youtube"}
+      ],
+      "geo_hotspots": ["nyc", "sf", "miami"]
+    },
+    {
+      "target_topic": "ai-bubble",
+      "_purpose": "Tests the 'dead' friction quadrant (low momentum + low friction = dormant claim)",
+      "text": "Remember when everyone said quantum computing would change everything? Same energy with AI right now",
+      "subject": "AI hype historical parallel",
+      "assertion": "AI hype mirrors previous technology hype cycles",
+      "framing": "historical skepticism",
+      "stance": "anti",
+      "arousal": "low",
+      "cluster": "bubble-warnings",
+      "concept": "hype-cycle-parallel",
+      "platforms": {"x": 0.30, "reddit": 0.50, "youtube": 0.20},
+      "momentum_pattern": "stable",
+      "persistence": 14,
+      "time_anchor": {"event": "Ongoing tech skepticism discourse", "date": "2024-10-01"},
+      "variations": [
+        {"text": "AI is giving quantum computing energy circa 2018. Change my mind.", "platform": "x"},
+        {"text": "Blockchain. Metaverse. Quantum computing. AI. The hype cycle never learns.", "platform": "x"},
+        {"text": "Unpopular opinion: AI will follow the same hype-crash-mature cycle as every other technology. The question is where we are on the curve.", "platform": "reddit"},
+        {"text": "Let's talk about the pattern nobody in Silicon Valley wants to acknowledge: every decade has its 'this changes everything' technology.", "platform": "youtube"}
+      ],
+      "geo_hotspots": ["sf", "seattle", "boston"]
+    },
+    {
+      "target_topic": "war-on-iran",
+      "_purpose": "Tests arousal_escalation event with high arousal + spike pattern",
+      "text": "If Iran retaliates against US bases in the Gulf, we are looking at $200 oil and a global recession within weeks",
+      "subject": "Iran retaliation economic impact",
+      "assertion": "Iranian retaliation would trigger economic catastrophe",
+      "framing": "economic catastrophism",
+      "stance": "anti",
+      "arousal": "high",
+      "cluster": "escalation-fears",
+      "concept": "economic-fallout",
+      "platforms": {"x": 0.55, "reddit": 0.25, "youtube": 0.20},
+      "momentum_pattern": "spike",
+      "persistence": 4,
+      "time_anchor": {"event": "Escalation fears following US-Iran military tensions", "date": "2025-01-28"},
+      "variations": [
+        {"text": "$200 oil is not a meme if Iran hits US bases. Start thinking about what that means for your commute, your groceries, everything.", "platform": "x"},
+        {"text": "Iran retaliation = $200 oil = global recession. This isn't fear-mongering, it's arithmetic.", "platform": "x"},
+        {"text": "Can someone walk me through the economic modeling on Iranian retaliation scenarios? I keep seeing $200/barrel oil predictions but the transmission mechanisms aren't clear to me.", "platform": "reddit"},
+        {"text": "Breaking down the economic domino effect if Iran retaliates: oil prices, shipping lanes, and why your 401k should be worried.", "platform": "youtube"}
+      ],
+      "geo_hotspots": ["dc", "houston", "nyc"]
+    },
+    {
+      "target_topic": "dei-rollbacks",
+      "_purpose": "Tests phase_transition event (mutation trajectory reversal)",
+      "text": "Companies that dropped DEI are quietly rehiring diversity staff under different titles — the rollback is already rolling back",
+      "subject": "DEI program rebranding",
+      "assertion": "corporate DEI rollbacks are being reversed through rebranding",
+      "framing": "corporate doublespeak",
+      "stance": "pro",
+      "arousal": "medium",
+      "cluster": "corporate-retreat",
+      "concept": "stealth-rehiring",
+      "platforms": {"x": 0.40, "reddit": 0.45, "youtube": 0.15},
+      "momentum_pattern": "rising",
+      "persistence": 8,
+      "time_anchor": {"event": "Reports of companies rebranding DEI programs", "date": "2025-02-10"},
+      "_note": "Phase transition — mutation reversal is inferred from rising momentum + pro stance in corporate-retreat cluster",
+      "variations": [
+        {"text": "The DEI rollback is already being rolled back. Same jobs, new titles. Corporate America can't help itself.", "platform": "x"},
+        {"text": "lol companies dropping DEI then hiring 'belonging and culture' teams. The rebrand is chef's kiss.", "platform": "x"},
+        {"text": "Interesting pattern I'm seeing in job postings: companies that publicly cut DEI are now hiring for 'organizational culture' and 'talent belonging' roles. Same function, different label.", "platform": "reddit"},
+        {"text": "I've been tracking Fortune 500 job postings and there's a fascinating pattern: DEI roles are disappearing but nearly identical positions are appearing under new names.", "platform": "youtube"}
+      ],
+      "geo_hotspots": ["nyc", "sf", "chicago", "atlanta"]
+    },
+    {
+      "target_topic": "housing-crisis",
+      "_purpose": "Tests lead_lag event (cross-platform temporal offset detection)",
+      "text": "Blackstone just bought another 10,000 single-family homes — they now own more houses than some states have residents",
+      "subject": "institutional housing acquisition",
+      "assertion": "institutional investors are accelerating housing consolidation",
+      "framing": "corporate villain",
+      "stance": "anti",
+      "arousal": "high",
+      "cluster": "corporate-landlords",
+      "concept": "institutional-buying-ec",
+      "platforms": {"x": 0.50, "reddit": 0.35, "youtube": 0.15},
+      "momentum_pattern": "spike",
+      "persistence": 5,
+      "time_anchor": {"event": "Reports of institutional investor housing purchases", "date": "2025-01-10"},
+      "_note": "Lead-lag — cross-platform temporal offset inferred from spike momentum + concentrated platform distribution",
+      "variations": [
+        {"text": "Blackstone bought 10,000 more houses. You can't. Any questions?", "platform": "x"},
+        {"text": "They keep telling us it's a supply problem while Blackstone buys another 10K homes. Make it make sense.", "platform": "x"},
+        {"text": "Genuine question: at what point does institutional ownership of single-family homes become a national security issue? Blackstone now controls more housing stock than entire metro areas.", "platform": "reddit"},
+        {"text": "Today we're looking at the numbers behind institutional housing purchases and why Blackstone's latest acquisition should concern every aspiring homeowner.", "platform": "youtube"}
+      ],
+      "geo_hotspots": ["atlanta", "phoenix", "dallas", "charlotte"]
+    },
+    {
+      "target_topic": "inflation-cost-of-living",
+      "_purpose": "Tests divergence_shift event (JSD change between platforms)",
+      "text": "Grocery prices are down 2% but nobody believes it because their actual grocery bill went up 15%",
+      "subject": "inflation measurement vs lived experience",
+      "assertion": "official inflation metrics don't reflect consumer reality",
+      "framing": "measurement skepticism",
+      "stance": "anti",
+      "arousal": "medium",
+      "cluster": "measurement-distrust",
+      "concept": "cpi-vs-reality",
+      "platforms": {"x": 0.55, "reddit": 0.30, "youtube": 0.15},
+      "momentum_pattern": "rising",
+      "persistence": 9,
+      "time_anchor": {"event": "CPI reports showing cooling inflation vs consumer sentiment surveys", "date": "2025-01-15"},
+      "variations": [
+        {"text": "CPI says groceries are down 2%. My grocery bill says otherwise. One of us is lying.", "platform": "x"},
+        {"text": "'Inflation is cooling' they say as I pay $7 for eggs. Sure.", "platform": "x"},
+        {"text": "Can someone explain how CPI shows grocery deflation when my identical weekly shop costs 15% more than last year? Genuine question about methodology.", "platform": "reddit"},
+        {"text": "Today we're comparing the government's inflation numbers against what Americans are actually paying at the checkout line. The gap is... revealing.", "platform": "youtube"}
+      ],
+      "geo_hotspots": ["chicago", "houston", "philly", "detroit"]
+    }
+  ]
+}

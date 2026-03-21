@@ -2,10 +2,12 @@
 """
 Synthetic Data Generator for Narrative Monitoring System.
 
-Generates realistic demo data for 4 topics across 3 platforms (X, Reddit, YouTube).
+Generates modeled demo data for 10 topics across 3 platforms (X, Reddit, YouTube).
+Loads event-anchored archetype definitions from scripts/archetypes/*.json.
 Produces all JSON files the frontend needs, matching TypeScript type contracts exactly.
 
 No API keys required. Uses numpy for synthetic embeddings.
+Archetype files contain real-event-anchored claims with platform-specific variations.
 
 Usage:
     python scripts/generate_synthetic.py
@@ -47,605 +49,79 @@ MOMENTUM_PATTERN_VALUES = {
 }
 
 # ============================================================================
-# Topic Definitions — each chosen to exercise specific metrics
+# Archetype Loading — reads topic definitions from scripts/archetypes/*.json
 # ============================================================================
 
-TOPICS = [
-    {
-        "id": "ai-regulation",
-        "name": "AI Regulation",
-        "archetypes": [
-            # Pro-regulation cluster
-            {"text": "AI systems require government regulation to prevent harm to society",
-             "subject": "AI regulation", "assertion": "government regulation is necessary",
-             "framing": "public safety", "stance": "pro", "arousal": "medium",
-             "cluster": "pro-regulation", "concept": "regulation-needed",
-             "platforms": {"x": 0.35, "reddit": 0.40, "youtube": 0.25},
-             "momentum_pattern": "stable", "persistence": 12},
-            {"text": "Unregulated AI development poses existential risks that demand immediate policy action",
-             "subject": "AI existential risk", "assertion": "AI poses existential risks requiring urgent regulation",
-             "framing": "existential threat", "stance": "pro", "arousal": "high",
-             "cluster": "pro-regulation", "concept": "regulation-needed",
-             "platforms": {"x": 0.50, "reddit": 0.20, "youtube": 0.30},
-             "momentum_pattern": "spike", "persistence": 4},
-            {"text": "AI companies cannot be trusted to self-regulate given profit incentives",
-             "subject": "AI self-regulation", "assertion": "self-regulation fails due to profit motive",
-             "framing": "corporate distrust", "stance": "pro", "arousal": "medium",
-             "cluster": "pro-regulation", "concept": "regulation-needed",
-             "platforms": {"x": 0.45, "reddit": 0.45, "youtube": 0.10},
-             "momentum_pattern": "rising", "persistence": 8},
+ARCHETYPES_DIR = Path(__file__).parent / "archetypes"
 
-            # Anti-regulation cluster
-            {"text": "AI regulation will stifle innovation and put domestic companies at a competitive disadvantage",
-             "subject": "AI regulation", "assertion": "regulation harms innovation and competitiveness",
-             "framing": "innovation vs safety", "stance": "anti", "arousal": "medium",
-             "cluster": "anti-regulation", "concept": "regulation-harmful",
-             "platforms": {"x": 0.50, "reddit": 0.25, "youtube": 0.25},
-             "momentum_pattern": "stable", "persistence": 14},
-            {"text": "Current AI regulatory frameworks are outdated and designed for narrow AI, not general-purpose systems",
-             "subject": "AI regulatory frameworks", "assertion": "existing frameworks are obsolete",
-             "framing": "regulatory lag", "stance": "anti", "arousal": "low",
-             "cluster": "anti-regulation", "concept": "regulation-harmful",
-             "platforms": {"x": 0.20, "reddit": 0.30, "youtube": 0.50},
-             "momentum_pattern": "stable", "persistence": 10},
-
-            # Open source cluster
-            {"text": "Open source AI development is essential to prevent concentration of AI power in large corporations",
-             "subject": "open source AI", "assertion": "open source prevents power concentration",
-             "framing": "power distribution", "stance": "pro", "arousal": "medium",
-             "cluster": "open-source", "concept": "open-source-ai",
-             "platforms": {"x": 0.30, "reddit": 0.60, "youtube": 0.10},
-             "momentum_pattern": "rising", "persistence": 6},
-            {"text": "Open source AI models enable dangerous capabilities to be freely distributed without safeguards",
-             "subject": "open source AI safety", "assertion": "open source AI enables dangerous access",
-             "framing": "security risk", "stance": "anti", "arousal": "high",
-             "cluster": "anti-open-source", "concept": "open-source-danger",
-             "platforms": {"x": 0.55, "reddit": 0.25, "youtube": 0.20},
-             "momentum_pattern": "spike", "persistence": 3},
-
-            # Targeted regulation cluster
-            {"text": "AI regulation should target specific harms rather than impose blanket restrictions",
-             "subject": "AI regulation approach", "assertion": "targeted regulation is better than blanket bans",
-             "framing": "precision regulation", "stance": "neutral", "arousal": "low",
-             "cluster": "targeted-regulation", "concept": "targeted-approach",
-             "platforms": {"x": 0.15, "reddit": 0.65, "youtube": 0.20},
-             "momentum_pattern": "rising", "persistence": 9},
-
-            # AI jobs cluster
-            {"text": "AI will eliminate millions of jobs and governments must prepare workforce transition programs",
-             "subject": "AI and employment", "assertion": "AI will cause mass job displacement",
-             "framing": "economic disruption", "stance": "pro", "arousal": "high",
-             "cluster": "ai-jobs", "concept": "job-displacement",
-             "platforms": {"x": 0.60, "reddit": 0.20, "youtube": 0.20},
-             "momentum_pattern": "spike", "persistence": 5},
-
-            # Silence target — this claim goes dark
-            {"text": "AI regulation should be modeled after pharmaceutical oversight with staged approval processes",
-             "subject": "AI regulatory model", "assertion": "pharmaceutical model should apply to AI",
-             "framing": "established precedent", "stance": "pro", "arousal": "low",
-             "cluster": "pharma-model", "concept": "pharma-regulation",
-             "platforms": {"x": 0.30, "reddit": 0.60, "youtube": 0.10},
-             "momentum_pattern": "goes_dark", "persistence": 6},
-        ],
-    },
-    {
-        "id": "immigration-policy",
-        "name": "Immigration Policy",
-        "archetypes": [
-            {"text": "Immigration strengthens the economy through labor force growth and entrepreneurship",
-             "subject": "immigration economics", "assertion": "immigration is economically beneficial",
-             "framing": "economic growth", "stance": "pro", "arousal": "low",
-             "cluster": "pro-immigration-economic", "concept": "immigration-benefits",
-             "platforms": {"x": 0.25, "reddit": 0.55, "youtube": 0.20},
-             "momentum_pattern": "stable", "persistence": 14},
-            {"text": "Unchecked immigration undermines wages for native workers and strains public services",
-             "subject": "immigration impact", "assertion": "immigration harms native workers and services",
-             "framing": "economic burden", "stance": "anti", "arousal": "high",
-             "cluster": "anti-immigration-economic", "concept": "immigration-harms",
-             "platforms": {"x": 0.60, "reddit": 0.15, "youtube": 0.25},
-             "momentum_pattern": "rising", "persistence": 12},
-            {"text": "Border security is a fundamental sovereign right and must be enforced strictly",
-             "subject": "border security", "assertion": "strict border enforcement is essential",
-             "framing": "national sovereignty", "stance": "anti", "arousal": "high",
-             "cluster": "border-security", "concept": "strict-enforcement",
-             "platforms": {"x": 0.55, "reddit": 0.20, "youtube": 0.25},
-             "momentum_pattern": "spike", "persistence": 8},
-            {"text": "Immigration policy should prioritize humanitarian obligations and asylum rights",
-             "subject": "asylum policy", "assertion": "humanitarian obligations must come first",
-             "framing": "human rights", "stance": "pro", "arousal": "medium",
-             "cluster": "humanitarian", "concept": "humanitarian-priority",
-             "platforms": {"x": 0.30, "reddit": 0.50, "youtube": 0.20},
-             "momentum_pattern": "stable", "persistence": 10},
-            {"text": "A path to citizenship for undocumented immigrants is both morally right and economically sound",
-             "subject": "citizenship pathway", "assertion": "citizenship path is moral and practical",
-             "framing": "integration", "stance": "pro", "arousal": "medium",
-             "cluster": "pathway-citizenship", "concept": "citizenship-path",
-             "platforms": {"x": 0.35, "reddit": 0.45, "youtube": 0.20},
-             "momentum_pattern": "declining", "persistence": 7},
-            {"text": "Current immigration levels are part of a deliberate agenda to change national demographics",
-             "subject": "immigration conspiracy", "assertion": "immigration is a demographic replacement scheme",
-             "framing": "conspiracy", "stance": "anti", "arousal": "high",
-             "cluster": "replacement-theory", "concept": "demographic-replacement",
-             "platforms": {"x": 0.70, "reddit": 0.10, "youtube": 0.20},
-             "momentum_pattern": "spike", "persistence": 3},
-            {"text": "Immigration reform should focus on skills-based selection to match labor market needs",
-             "subject": "immigration reform", "assertion": "skills-based selection optimizes outcomes",
-             "framing": "pragmatic reform", "stance": "neutral", "arousal": "low",
-             "cluster": "skills-based", "concept": "merit-immigration",
-             "platforms": {"x": 0.20, "reddit": 0.50, "youtube": 0.30},
-             "momentum_pattern": "rising", "persistence": 9},
-            {"text": "Immigrants commit crimes at lower rates than native-born citizens according to research",
-             "subject": "immigration and crime", "assertion": "immigrants have lower crime rates",
-             "framing": "evidence-based", "stance": "pro", "arousal": "low",
-             "cluster": "crime-stats", "concept": "immigration-safety",
-             "platforms": {"x": 0.30, "reddit": 0.60, "youtube": 0.10},
-             "momentum_pattern": "goes_dark", "persistence": 5},
-        ],
-    },
-    {
-        "id": "us-israel-iran",
-        "name": "US-Israel-Iran War",
-        "archetypes": [
-            {"text": "US military involvement in the Middle East is necessary to contain Iranian expansionism",
-             "subject": "US involvement", "assertion": "US military presence is necessary to counter Iran",
-             "framing": "strategic necessity", "stance": "pro", "arousal": "high",
-             "cluster": "us-involvement", "concept": "us-military-role",
-             "platforms": {"x": 0.50, "reddit": 0.25, "youtube": 0.25},
-             "momentum_pattern": "stable", "persistence": 14},
-            {"text": "Iran's proxy network across the region poses a direct threat to US national security interests",
-             "subject": "Iran proxies", "assertion": "Iranian proxies threaten US security",
-             "framing": "national security", "stance": "pro", "arousal": "high",
-             "cluster": "iran-proxies", "concept": "proxy-threat",
-             "platforms": {"x": 0.55, "reddit": 0.20, "youtube": 0.25},
-             "momentum_pattern": "spike", "persistence": 5},
-            {"text": "Israel has the right to defend itself against attacks from Iranian-backed groups",
-             "subject": "Israel defense", "assertion": "Israel's military response is justified self-defense",
-             "framing": "self-defense", "stance": "pro", "arousal": "high",
-             "cluster": "israel-defense", "concept": "right-to-defend",
-             "platforms": {"x": 0.45, "reddit": 0.20, "youtube": 0.35},
-             "momentum_pattern": "rising", "persistence": 12},
-            {"text": "An immediate ceasefire is the only way to prevent further civilian casualties and regional escalation",
-             "subject": "ceasefire", "assertion": "ceasefire is urgently needed",
-             "framing": "humanitarian urgency", "stance": "anti", "arousal": "high",
-             "cluster": "ceasefire-now", "concept": "ceasefire-demand",
-             "platforms": {"x": 0.40, "reddit": 0.40, "youtube": 0.20},
-             "momentum_pattern": "spike", "persistence": 6},
-            {"text": "US arms sales to Israel make American taxpayers complicit in the humanitarian crisis",
-             "subject": "arms sales", "assertion": "US arms transfers enable humanitarian violations",
-             "framing": "accountability", "stance": "anti", "arousal": "medium",
-             "cluster": "arms-sales", "concept": "arms-complicity",
-             "platforms": {"x": 0.45, "reddit": 0.35, "youtube": 0.20},
-             "momentum_pattern": "rising", "persistence": 10},
-            {"text": "The conflict is destabilizing the entire region and risks drawing in additional state actors",
-             "subject": "regional destabilization", "assertion": "conflict threatens broader regional stability",
-             "framing": "geopolitical risk", "stance": "neutral", "arousal": "medium",
-             "cluster": "regional-destabilization", "concept": "regional-spillover",
-             "platforms": {"x": 0.30, "reddit": 0.45, "youtube": 0.25},
-             "momentum_pattern": "stable", "persistence": 11},
-            {"text": "Media coverage is systematically biased and fails to provide context for the conflict",
-             "subject": "media bias", "assertion": "media coverage lacks crucial context",
-             "framing": "media critique", "stance": "ambiguous", "arousal": "low",
-             "cluster": "media-bias", "concept": "media-framing",
-             "platforms": {"x": 0.60, "reddit": 0.15, "youtube": 0.25},
-             "momentum_pattern": "declining", "persistence": 8},
-            {"text": "Diplomatic engagement with Iran is preferable to military escalation and should be pursued urgently",
-             "subject": "diplomacy", "assertion": "diplomacy with Iran is the better path",
-             "framing": "de-escalation", "stance": "anti", "arousal": "low",
-             "cluster": "diplomacy-path", "concept": "diplomatic-solution",
-             "platforms": {"x": 0.20, "reddit": 0.55, "youtube": 0.25},
-             "momentum_pattern": "goes_dark", "persistence": 7},
-        ],
-    },
-    {
-        "id": "climate-policy",
-        "name": "Climate Change",
-        "archetypes": [
-            {"text": "Rapid transition to renewable energy is essential to avoid catastrophic climate outcomes",
-             "subject": "energy transition", "assertion": "rapid renewable transition is essential",
-             "framing": "climate urgency", "stance": "pro", "arousal": "medium",
-             "cluster": "rapid-transition", "concept": "energy-transition",
-             "platforms": {"x": 0.35, "reddit": 0.40, "youtube": 0.25},
-             "momentum_pattern": "stable", "persistence": 14},
-            {"text": "Climate alarmism exaggerates risks and the proposed policies would devastate the economy",
-             "subject": "climate policy economics", "assertion": "climate policies are economically destructive",
-             "framing": "economic realism", "stance": "anti", "arousal": "medium",
-             "cluster": "climate-skeptic", "concept": "policy-harm",
-             "platforms": {"x": 0.55, "reddit": 0.15, "youtube": 0.30},
-             "momentum_pattern": "stable", "persistence": 12},
-            {"text": "Nuclear energy should be central to climate policy as the only scalable clean baseload power",
-             "subject": "nuclear energy", "assertion": "nuclear is essential for climate goals",
-             "framing": "pragmatic environmentalism", "stance": "pro", "arousal": "low",
-             "cluster": "nuclear-advocacy", "concept": "nuclear-power",
-             "platforms": {"x": 0.25, "reddit": 0.55, "youtube": 0.20},
-             "momentum_pattern": "rising", "persistence": 10},
-            {"text": "Carbon capture technology is a fossil fuel industry distraction from real emissions reduction",
-             "subject": "carbon capture", "assertion": "carbon capture delays real climate action",
-             "framing": "greenwashing", "stance": "anti", "arousal": "medium",
-             "cluster": "anti-ccs", "concept": "ccs-critique",
-             "platforms": {"x": 0.40, "reddit": 0.45, "youtube": 0.15},
-             "momentum_pattern": "spike", "persistence": 4},
-            {"text": "Individual carbon footprint reduction is meaningless compared to corporate and industrial emissions",
-             "subject": "emissions responsibility", "assertion": "corporate emissions dwarf individual impact",
-             "framing": "systemic critique", "stance": "pro", "arousal": "medium",
-             "cluster": "corporate-responsibility", "concept": "corporate-emissions",
-             "platforms": {"x": 0.50, "reddit": 0.35, "youtube": 0.15},
-             "momentum_pattern": "rising", "persistence": 8},
-            {"text": "Climate change is a natural cyclical phenomenon and human contribution is overstated",
-             "subject": "climate science", "assertion": "human-caused climate change is exaggerated",
-             "framing": "scientific skepticism", "stance": "anti", "arousal": "low",
-             "cluster": "denialism", "concept": "natural-cycles",
-             "platforms": {"x": 0.45, "reddit": 0.10, "youtube": 0.45},
-             "momentum_pattern": "declining", "persistence": 6},
-            {"text": "Climate justice requires wealthy nations to fund adaptation in developing countries",
-             "subject": "climate justice", "assertion": "wealthy nations owe climate debt to developing world",
-             "framing": "global equity", "stance": "pro", "arousal": "medium",
-             "cluster": "climate-justice", "concept": "climate-equity",
-             "platforms": {"x": 0.30, "reddit": 0.40, "youtube": 0.30},
-             "momentum_pattern": "goes_dark", "persistence": 7},
-        ],
-    },
-    {
-        "id": "ai-workplace",
-        "name": "AI in the Workplace",
-        "archetypes": [
-            {"text": "AI will automate away millions of white-collar jobs within the next five years",
-             "subject": "AI job displacement", "assertion": "mass white-collar job loss is imminent",
-             "framing": "economic disruption", "stance": "anti", "arousal": "high",
-             "cluster": "job-displacement", "concept": "mass-automation",
-             "platforms": {"x": 0.55, "reddit": 0.25, "youtube": 0.20},
-             "momentum_pattern": "spike", "persistence": 5},
-            {"text": "AI is a productivity tool that augments human capabilities rather than replacing workers",
-             "subject": "AI augmentation", "assertion": "AI enhances rather than replaces human work",
-             "framing": "technology optimism", "stance": "pro", "arousal": "medium",
-             "cluster": "ai-augmentation", "concept": "human-ai-collaboration",
-             "platforms": {"x": 0.30, "reddit": 0.40, "youtube": 0.30},
-             "momentum_pattern": "stable", "persistence": 12},
-            {"text": "AI-generated content is destroying the value of creative work and undermining artists' livelihoods",
-             "subject": "AI and creative work", "assertion": "generative AI threatens creative professionals",
-             "framing": "creative destruction", "stance": "anti", "arousal": "high",
-             "cluster": "creative-threat", "concept": "creative-displacement",
-             "platforms": {"x": 0.50, "reddit": 0.30, "youtube": 0.20},
-             "momentum_pattern": "rising", "persistence": 10},
-            {"text": "Massive investment in retraining programs is needed to prepare workers for an AI-driven economy",
-             "subject": "workforce retraining", "assertion": "retraining is essential for AI transition",
-             "framing": "policy response", "stance": "neutral", "arousal": "low",
-             "cluster": "retraining", "concept": "workforce-adaptation",
-             "platforms": {"x": 0.20, "reddit": 0.50, "youtube": 0.30},
-             "momentum_pattern": "rising", "persistence": 9},
-            {"text": "Companies using AI are seeing measurable productivity gains that benefit both employers and employees",
-             "subject": "AI productivity", "assertion": "AI demonstrably improves workplace productivity",
-             "framing": "evidence-based", "stance": "pro", "arousal": "low",
-             "cluster": "productivity-gains", "concept": "productivity-evidence",
-             "platforms": {"x": 0.25, "reddit": 0.35, "youtube": 0.40},
-             "momentum_pattern": "stable", "persistence": 11},
-            {"text": "Fears about AI replacing jobs are the same Luddite arguments made about every technological revolution",
-             "subject": "AI job fears", "assertion": "AI job fears repeat historical Luddite fallacy",
-             "framing": "historical precedent", "stance": "pro", "arousal": "medium",
-             "cluster": "luddite-fallacy", "concept": "historical-parallel",
-             "platforms": {"x": 0.60, "reddit": 0.25, "youtube": 0.15},
-             "momentum_pattern": "spike", "persistence": 4},
-            {"text": "AI adoption without worker protections will accelerate income inequality to unsustainable levels",
-             "subject": "AI inequality", "assertion": "unregulated AI adoption worsens inequality",
-             "framing": "social justice", "stance": "anti", "arousal": "medium",
-             "cluster": "job-displacement", "concept": "inequality-risk",
-             "platforms": {"x": 0.40, "reddit": 0.45, "youtube": 0.15},
-             "momentum_pattern": "declining", "persistence": 7},
-            {"text": "The companies pushing AI hardest are quietly laying off the workers it was supposed to augment",
-             "subject": "corporate AI adoption", "assertion": "augmentation rhetoric masks replacement reality",
-             "framing": "corporate critique", "stance": "anti", "arousal": "high",
-             "cluster": "creative-threat", "concept": "augmentation-myth",
-             "platforms": {"x": 0.65, "reddit": 0.20, "youtube": 0.15},
-             "momentum_pattern": "goes_dark", "persistence": 6},
-        ],
-    },
-    {
-        "id": "crypto-web3",
-        "name": "Cryptocurrency & Web3",
-        "archetypes": [
-            {"text": "Cryptocurrency represents the future of finance and will eventually replace traditional banking systems",
-             "subject": "crypto future", "assertion": "crypto will displace traditional finance",
-             "framing": "financial revolution", "stance": "pro", "arousal": "medium",
-             "cluster": "crypto-future", "concept": "crypto-adoption",
-             "platforms": {"x": 0.50, "reddit": 0.35, "youtube": 0.15},
-             "momentum_pattern": "stable", "persistence": 14},
-            {"text": "The vast majority of crypto projects are scams designed to transfer wealth from retail investors to insiders",
-             "subject": "crypto fraud", "assertion": "most crypto projects are scams",
-             "framing": "consumer protection", "stance": "anti", "arousal": "high",
-             "cluster": "crypto-scam", "concept": "fraud-exposure",
-             "platforms": {"x": 0.55, "reddit": 0.30, "youtube": 0.15},
-             "momentum_pattern": "spike", "persistence": 5},
-            {"text": "DeFi protocols offer financial freedom to the unbanked and underserved populations globally",
-             "subject": "DeFi access", "assertion": "DeFi democratizes financial access",
-             "framing": "financial inclusion", "stance": "pro", "arousal": "medium",
-             "cluster": "defi-freedom", "concept": "financial-inclusion",
-             "platforms": {"x": 0.30, "reddit": 0.50, "youtube": 0.20},
-             "momentum_pattern": "rising", "persistence": 10},
-            {"text": "Crypto regulation is essential to protect consumers and maintain financial system stability",
-             "subject": "crypto regulation", "assertion": "regulation needed for consumer protection",
-             "framing": "regulatory necessity", "stance": "neutral", "arousal": "low",
-             "cluster": "regulation-needed", "concept": "crypto-regulation",
-             "platforms": {"x": 0.25, "reddit": 0.45, "youtube": 0.30},
-             "momentum_pattern": "rising", "persistence": 9},
-            {"text": "Proof-of-work mining is an environmental catastrophe that no amount of financial innovation justifies",
-             "subject": "crypto energy", "assertion": "crypto mining causes unacceptable environmental harm",
-             "framing": "environmental critique", "stance": "anti", "arousal": "medium",
-             "cluster": "environmental-cost", "concept": "mining-impact",
-             "platforms": {"x": 0.35, "reddit": 0.40, "youtube": 0.25},
-             "momentum_pattern": "declining", "persistence": 8},
-            {"text": "Bitcoin's recent price action confirms the beginning of a new bull cycle that will surpass previous highs",
-             "subject": "bitcoin price", "assertion": "new crypto bull market is underway",
-             "framing": "market analysis", "stance": "pro", "arousal": "high",
-             "cluster": "speculation", "concept": "price-prediction",
-             "platforms": {"x": 0.65, "reddit": 0.20, "youtube": 0.15},
-             "momentum_pattern": "spike", "persistence": 3},
-            {"text": "Web3 is nothing more than a rebranding of failed blockchain promises with venture capital marketing",
-             "subject": "Web3 critique", "assertion": "Web3 is repackaged hype",
-             "framing": "industry skepticism", "stance": "anti", "arousal": "low",
-             "cluster": "crypto-scam", "concept": "web3-skepticism",
-             "platforms": {"x": 0.40, "reddit": 0.50, "youtube": 0.10},
-             "momentum_pattern": "goes_dark", "persistence": 6},
-        ],
-    },
-    {
-        "id": "social-media-youth",
-        "name": "Social Media & Youth Mental Health",
-        "archetypes": [
-            {"text": "Social media platforms should be banned for children under 16 to protect their mental health",
-             "subject": "social media bans", "assertion": "platforms should be banned for minors",
-             "framing": "child protection", "stance": "pro", "arousal": "high",
-             "cluster": "ban-platforms", "concept": "age-restriction",
-             "platforms": {"x": 0.45, "reddit": 0.30, "youtube": 0.25},
-             "momentum_pattern": "spike", "persistence": 6},
-            {"text": "Parents bear primary responsibility for managing their children's screen time and online activity",
-             "subject": "parental responsibility", "assertion": "parents not platforms are responsible",
-             "framing": "personal responsibility", "stance": "anti", "arousal": "medium",
-             "cluster": "parental-responsibility", "concept": "parent-role",
-             "platforms": {"x": 0.50, "reddit": 0.30, "youtube": 0.20},
-             "momentum_pattern": "stable", "persistence": 12},
-            {"text": "Tech companies knowingly designed addictive algorithms that exploit developing adolescent brains",
-             "subject": "platform design", "assertion": "platforms deliberately exploit youth psychology",
-             "framing": "corporate accountability", "stance": "pro", "arousal": "high",
-             "cluster": "platform-accountability", "concept": "algorithmic-harm",
-             "platforms": {"x": 0.40, "reddit": 0.35, "youtube": 0.25},
-             "momentum_pattern": "rising", "persistence": 10},
-            {"text": "The research on social media and mental health is far more mixed than headlines suggest",
-             "subject": "research evidence", "assertion": "evidence for social media harm is inconclusive",
-             "framing": "scientific nuance", "stance": "neutral", "arousal": "low",
-             "cluster": "research-mixed", "concept": "evidence-uncertainty",
-             "platforms": {"x": 0.15, "reddit": 0.60, "youtube": 0.25},
-             "momentum_pattern": "stable", "persistence": 11},
-            {"text": "Age verification systems for social media are invasive and will create new privacy risks for all users",
-             "subject": "age verification", "assertion": "age verification creates privacy risks",
-             "framing": "privacy concern", "stance": "anti", "arousal": "medium",
-             "cluster": "age-verification", "concept": "verification-privacy",
-             "platforms": {"x": 0.35, "reddit": 0.50, "youtube": 0.15},
-             "momentum_pattern": "rising", "persistence": 8},
-            {"text": "Youth mental health was declining before social media and blaming platforms distracts from real causes",
-             "subject": "mental health trends", "assertion": "social media is scapegoated for broader mental health crisis",
-             "framing": "contextual analysis", "stance": "anti", "arousal": "low",
-             "cluster": "parental-responsibility", "concept": "attribution-error",
-             "platforms": {"x": 0.25, "reddit": 0.55, "youtube": 0.20},
-             "momentum_pattern": "declining", "persistence": 7},
-            {"text": "We are witnessing a generational mental health crisis directly caused by smartphone-based social media",
-             "subject": "mental health crisis", "assertion": "smartphones caused a youth mental health epidemic",
-             "framing": "public health emergency", "stance": "pro", "arousal": "high",
-             "cluster": "mental-health-crisis", "concept": "crisis-framing",
-             "platforms": {"x": 0.55, "reddit": 0.20, "youtube": 0.25},
-             "momentum_pattern": "spike", "persistence": 4},
-            {"text": "Digital literacy education is more effective than bans at protecting young people online",
-             "subject": "digital literacy", "assertion": "education beats prohibition",
-             "framing": "pragmatic solution", "stance": "neutral", "arousal": "low",
-             "cluster": "research-mixed", "concept": "education-approach",
-             "platforms": {"x": 0.20, "reddit": 0.45, "youtube": 0.35},
-             "momentum_pattern": "goes_dark", "persistence": 5},
-        ],
-    },
-    {
-        "id": "creator-economy",
-        "name": "Content Creator Economy",
-        "archetypes": [
-            {"text": "Platforms exploit creators by keeping the vast majority of ad revenue while creators do all the work",
-             "subject": "platform revenue share", "assertion": "platforms unfairly capture creator value",
-             "framing": "labor exploitation", "stance": "anti", "arousal": "high",
-             "cluster": "platform-exploitation", "concept": "revenue-inequality",
-             "platforms": {"x": 0.50, "reddit": 0.30, "youtube": 0.20},
-             "momentum_pattern": "spike", "persistence": 5},
-            {"text": "The creator economy has democratized media and given millions a viable path to independent income",
-             "subject": "creator opportunity", "assertion": "creator economy enables independent income",
-             "framing": "economic opportunity", "stance": "pro", "arousal": "medium",
-             "cluster": "creator-opportunity", "concept": "democratized-media",
-             "platforms": {"x": 0.30, "reddit": 0.25, "youtube": 0.45},
-             "momentum_pattern": "stable", "persistence": 13},
-            {"text": "Algorithm changes can destroy a creator's livelihood overnight with zero transparency or recourse",
-             "subject": "algorithm power", "assertion": "algorithms have unchecked power over creator livelihoods",
-             "framing": "platform tyranny", "stance": "anti", "arousal": "high",
-             "cluster": "algorithm-tyranny", "concept": "algorithmic-control",
-             "platforms": {"x": 0.55, "reddit": 0.30, "youtube": 0.15},
-             "momentum_pattern": "rising", "persistence": 9},
-            {"text": "Creator burnout is reaching epidemic levels as platforms demand constant content output",
-             "subject": "creator burnout", "assertion": "content demands cause widespread burnout",
-             "framing": "mental health", "stance": "anti", "arousal": "medium",
-             "cluster": "burnout-epidemic", "concept": "creator-wellbeing",
-             "platforms": {"x": 0.35, "reddit": 0.40, "youtube": 0.25},
-             "momentum_pattern": "rising", "persistence": 8},
-            {"text": "Anyone with talent and persistence can build a sustainable career as a content creator",
-             "subject": "creator success", "assertion": "creator career is accessible to anyone with talent",
-             "framing": "meritocracy", "stance": "pro", "arousal": "low",
-             "cluster": "democratized-media", "concept": "creator-accessibility",
-             "platforms": {"x": 0.25, "reddit": 0.30, "youtube": 0.45},
-             "momentum_pattern": "stable", "persistence": 11},
-            {"text": "Platform monetization policies are designed to maximize engagement metrics at the expense of content quality",
-             "subject": "monetization incentives", "assertion": "monetization rewards engagement over quality",
-             "framing": "systemic critique", "stance": "anti", "arousal": "medium",
-             "cluster": "monetization-unfair", "concept": "perverse-incentives",
-             "platforms": {"x": 0.40, "reddit": 0.45, "youtube": 0.15},
-             "momentum_pattern": "declining", "persistence": 7},
-            {"text": "The top 1% of creators capture nearly all the revenue while millions earn essentially nothing",
-             "subject": "creator inequality", "assertion": "creator economy is extremely top-heavy",
-             "framing": "income inequality", "stance": "neutral", "arousal": "low",
-             "cluster": "platform-exploitation", "concept": "winner-take-all",
-             "platforms": {"x": 0.35, "reddit": 0.50, "youtube": 0.15},
-             "momentum_pattern": "spike", "persistence": 4},
-            {"text": "Creators who diversify across platforms and own their audience are building real businesses",
-             "subject": "creator strategy", "assertion": "platform diversification enables real business",
-             "framing": "business advice", "stance": "pro", "arousal": "low",
-             "cluster": "creator-opportunity", "concept": "creator-strategy",
-             "platforms": {"x": 0.20, "reddit": 0.35, "youtube": 0.45},
-             "momentum_pattern": "goes_dark", "persistence": 6},
-        ],
-    },
-    {
-        "id": "remote-work",
-        "name": "Remote Work vs Return-to-Office",
-        "archetypes": [
-            {"text": "Remote work has proven that most office jobs never required physical presence in the first place",
-             "subject": "remote work viability", "assertion": "office presence was always unnecessary for most jobs",
-             "framing": "paradigm shift", "stance": "pro", "arousal": "medium",
-             "cluster": "remote-forever", "concept": "remote-proven",
-             "platforms": {"x": 0.45, "reddit": 0.40, "youtube": 0.15},
-             "momentum_pattern": "stable", "persistence": 14},
-            {"text": "Return-to-office mandates are about justifying commercial real estate investments, not productivity",
-             "subject": "RTO motivation", "assertion": "RTO is about real estate not productivity",
-             "framing": "corporate critique", "stance": "pro", "arousal": "high",
-             "cluster": "remote-forever", "concept": "rto-real-estate",
-             "platforms": {"x": 0.60, "reddit": 0.25, "youtube": 0.15},
-             "momentum_pattern": "spike", "persistence": 5},
-            {"text": "In-person collaboration is essential for innovation and companies requiring RTO will outperform",
-             "subject": "in-person value", "assertion": "physical collaboration drives innovation advantage",
-             "framing": "competitive advantage", "stance": "anti", "arousal": "medium",
-             "cluster": "rto-mandate", "concept": "collaboration-value",
-             "platforms": {"x": 0.35, "reddit": 0.30, "youtube": 0.35},
-             "momentum_pattern": "rising", "persistence": 10},
-            {"text": "Hybrid work with 2-3 office days is the pragmatic compromise that satisfies most employees and employers",
-             "subject": "hybrid model", "assertion": "hybrid work balances flexibility and collaboration",
-             "framing": "pragmatic compromise", "stance": "neutral", "arousal": "low",
-             "cluster": "hybrid-compromise", "concept": "hybrid-model",
-             "platforms": {"x": 0.25, "reddit": 0.50, "youtube": 0.25},
-             "momentum_pattern": "stable", "persistence": 12},
-            {"text": "Productivity data consistently shows remote workers are more productive than their in-office counterparts",
-             "subject": "remote productivity", "assertion": "data proves remote workers are more productive",
-             "framing": "evidence-based", "stance": "pro", "arousal": "low",
-             "cluster": "productivity-debate", "concept": "remote-productivity",
-             "platforms": {"x": 0.30, "reddit": 0.45, "youtube": 0.25},
-             "momentum_pattern": "rising", "persistence": 9},
-            {"text": "The commercial real estate market faces a structural collapse as remote work reduces demand for office space",
-             "subject": "commercial real estate", "assertion": "remote work is collapsing office demand",
-             "framing": "market disruption", "stance": "neutral", "arousal": "medium",
-             "cluster": "commercial-real-estate", "concept": "office-market",
-             "platforms": {"x": 0.40, "reddit": 0.35, "youtube": 0.25},
-             "momentum_pattern": "declining", "persistence": 8},
-            {"text": "Remote work is eroding company culture and creating a generation of isolated, disengaged workers",
-             "subject": "remote culture", "assertion": "remote work damages culture and engagement",
-             "framing": "organizational health", "stance": "anti", "arousal": "medium",
-             "cluster": "culture-erosion", "concept": "culture-damage",
-             "platforms": {"x": 0.40, "reddit": 0.30, "youtube": 0.30},
-             "momentum_pattern": "spike", "persistence": 4},
-            {"text": "Junior employees suffer most from remote work as they miss mentorship and informal learning opportunities",
-             "subject": "junior development", "assertion": "remote work harms junior career development",
-             "framing": "career impact", "stance": "anti", "arousal": "low",
-             "cluster": "culture-erosion", "concept": "mentorship-gap",
-             "platforms": {"x": 0.25, "reddit": 0.55, "youtube": 0.20},
-             "momentum_pattern": "goes_dark", "persistence": 6},
-        ],
-    },
-    {
-        "id": "us-china-tech",
-        "name": "US-China Tech Competition",
-        "archetypes": [
-            {"text": "The US must decouple from Chinese technology supply chains to protect national security",
-             "subject": "tech decoupling", "assertion": "decoupling from China is a national security imperative",
-             "framing": "national security", "stance": "pro", "arousal": "high",
-             "cluster": "decouple-now", "concept": "supply-chain-security",
-             "platforms": {"x": 0.50, "reddit": 0.25, "youtube": 0.25},
-             "momentum_pattern": "rising", "persistence": 12},
-            {"text": "Continued engagement with China's tech sector benefits both economies and reduces conflict risk",
-             "subject": "tech engagement", "assertion": "engagement is better than decoupling",
-             "framing": "economic interdependence", "stance": "anti", "arousal": "low",
-             "cluster": "engagement-needed", "concept": "mutual-benefit",
-             "platforms": {"x": 0.20, "reddit": 0.50, "youtube": 0.30},
-             "momentum_pattern": "declining", "persistence": 9},
-            {"text": "US chip export controls are successfully slowing China's AI advancement and should be expanded",
-             "subject": "chip restrictions", "assertion": "export controls effectively limit China's AI progress",
-             "framing": "strategic success", "stance": "pro", "arousal": "medium",
-             "cluster": "chip-war", "concept": "export-controls",
-             "platforms": {"x": 0.45, "reddit": 0.30, "youtube": 0.25},
-             "momentum_pattern": "spike", "persistence": 5},
-            {"text": "Banning TikTok is necessary to prevent Chinese surveillance and influence operations on American citizens",
-             "subject": "TikTok ban", "assertion": "TikTok is a Chinese surveillance and influence tool",
-             "framing": "security threat", "stance": "pro", "arousal": "high",
-             "cluster": "tiktok-ban", "concept": "platform-security",
-             "platforms": {"x": 0.55, "reddit": 0.20, "youtube": 0.25},
-             "momentum_pattern": "spike", "persistence": 4},
-            {"text": "Industrial policy and government investment in domestic chip manufacturing will determine tech leadership",
-             "subject": "industrial policy", "assertion": "government investment is key to tech competitiveness",
-             "framing": "strategic investment", "stance": "neutral", "arousal": "low",
-             "cluster": "industrial-policy", "concept": "domestic-investment",
-             "platforms": {"x": 0.25, "reddit": 0.45, "youtube": 0.30},
-             "momentum_pattern": "stable", "persistence": 11},
-            {"text": "We are in a technology cold war with China and treating it otherwise is dangerously naive",
-             "subject": "tech cold war", "assertion": "US-China tech rivalry is a new cold war",
-             "framing": "geopolitical framing", "stance": "pro", "arousal": "high",
-             "cluster": "tech-cold-war", "concept": "cold-war-framing",
-             "platforms": {"x": 0.60, "reddit": 0.15, "youtube": 0.25},
-             "momentum_pattern": "rising", "persistence": 8},
-            {"text": "Export controls are backfiring as China accelerates domestic chip development and finds alternative suppliers",
-             "subject": "export control effectiveness", "assertion": "controls accelerate Chinese self-sufficiency",
-             "framing": "policy critique", "stance": "anti", "arousal": "medium",
-             "cluster": "engagement-needed", "concept": "backfire-effect",
-             "platforms": {"x": 0.35, "reddit": 0.45, "youtube": 0.20},
-             "momentum_pattern": "stable", "persistence": 10},
-            {"text": "The TikTok ban sets a dangerous precedent for government control of internet platforms",
-             "subject": "TikTok precedent", "assertion": "banning TikTok threatens internet freedom",
-             "framing": "civil liberties", "stance": "anti", "arousal": "medium",
-             "cluster": "tiktok-ban", "concept": "censorship-concern",
-             "platforms": {"x": 0.45, "reddit": 0.40, "youtube": 0.15},
-             "momentum_pattern": "goes_dark", "persistence": 5},
-        ],
-    },
+# Locked topic order — must not change between visits
+TOPIC_ORDER = [
+    "ai-workplace", "war-on-iran", "ozempic-glp1", "immigration",
+    "housing-crisis", "israel-palestine", "crypto-digital-money",
+    "inflation-cost-of-living", "dei-rollbacks", "ai-bubble",
 ]
 
-# Adversarial pair definitions — hand-picked per topic for realistic demo data
-ADVERSARIAL_PAIR_DEFS: dict[str, list[tuple[str, str]]] = {
-    "ai-regulation": [
-        ("pro-regulation", "anti-regulation"),
-        ("open-source", "anti-open-source"),
-    ],
-    "immigration-policy": [
-        ("pro-immigration-economic", "anti-immigration-economic"),
-        ("humanitarian", "border-security"),
-    ],
-    "us-israel-iran": [
-        ("us-involvement", "ceasefire-now"),
-        ("israel-defense", "arms-sales"),
-    ],
-    "climate-policy": [
-        ("rapid-transition", "climate-skeptic"),
-    ],
-    "ai-workplace": [
-        ("job-displacement", "ai-augmentation"),
-        ("creative-threat", "luddite-fallacy"),
-    ],
-    "crypto-web3": [
-        ("crypto-future", "crypto-scam"),
-        ("defi-freedom", "regulation-needed"),
-    ],
-    "social-media-youth": [
-        ("ban-platforms", "parental-responsibility"),
-        ("platform-accountability", "research-mixed"),
-    ],
-    "creator-economy": [
-        ("platform-exploitation", "creator-opportunity"),
-        ("algorithm-tyranny", "democratized-media"),
-    ],
-    "remote-work": [
-        ("remote-forever", "rto-mandate"),
-        ("productivity-debate", "culture-erosion"),
-    ],
-    "us-china-tech": [
-        ("decouple-now", "engagement-needed"),
-        ("tiktok-ban", "industrial-policy"),
-    ],
-}
+
+def load_archetype_file(topic_id: str) -> dict:
+    """Load a single topic archetype definition from JSON."""
+    path = ARCHETYPES_DIR / f"{topic_id}.json"
+    with open(path) as f:
+        return json.load(f)
+
+
+def load_edge_cases() -> list:
+    """Load edge case fixtures from _edge_cases.json."""
+    path = ARCHETYPES_DIR / "_edge_cases.json"
+    if not path.exists():
+        return []
+    with open(path) as f:
+        data = json.load(f)
+    return data.get("edge_cases", [])
+
+
+def load_gaps() -> dict:
+    """Load strategic data gap configuration from _gaps.json."""
+    path = ARCHETYPES_DIR / "_gaps.json"
+    if not path.exists():
+        return {}
+    with open(path) as f:
+        data = json.load(f)
+    return {k: v for k, v in data.items() if not k.startswith("_")}
+
+
+def load_all_topics() -> list:
+    """Load all topic archetype files in locked order, injecting edge cases."""
+    edge_cases = load_edge_cases()
+    topics = []
+    for topic_id in TOPIC_ORDER:
+        data = load_archetype_file(topic_id)
+        # Inject edge cases targeted at this topic
+        for ec in edge_cases:
+            if ec.get("target_topic") == topic_id:
+                ec_copy = {k: v for k, v in ec.items()
+                           if k not in ("target_topic",) and not k.startswith("_")}
+                data["archetypes"].append(ec_copy)
+        # Build adversarial pair defs from the archetype file
+        topics.append({
+            "id": data["id"],
+            "name": data["name"],
+            "archetypes": data["archetypes"],
+            "adversarial_pairs": data.get("adversarial_pairs", []),
+        })
+    return topics
+
+
+# Load topics from archetype files
+TOPICS = load_all_topics()
+GAPS = load_gaps()
+
+# Build ADVERSARIAL_PAIR_DEFS from loaded archetype files
+ADVERSARIAL_PAIR_DEFS: dict[str, list[tuple[str, str]]] = {}
+for _t in TOPICS:
+    pairs = _t.get("adversarial_pairs", [])
+    if pairs:
+        ADVERSARIAL_PAIR_DEFS[_t["id"]] = [tuple(p) for p in pairs]
+
 
 # Time configuration
 NOW = datetime(2026, 3, 16, 12, 0, 0, tzinfo=timezone.utc)
@@ -661,6 +137,107 @@ def gen_id(prefix: str, *parts: str) -> str:
     """Generate deterministic ID from parts."""
     h = hashlib.sha256("|".join(parts).encode()).hexdigest()[:12]
     return f"{prefix}_{h}"
+
+
+# Proper noun overrides for .title() casing
+_CASE_OVERRIDES = {
+    "ai": "AI", "dei": "DEI", "glp": "GLP", "btc": "BTC",
+    "cbdc": "CBDC", "defi": "DeFi", "deepseek": "DeepSeek",
+    "nimby": "NIMBY", "yimby": "YIMBY", "nyc": "NYC",
+    "usa": "USA", "fda": "FDA", "sec": "SEC", "fed": "Fed",
+    "icj": "ICJ", "unrwa": "UNRWA", "sbf": "SBF",
+    "cpi": "CPI", "ifi": "IFI",
+}
+
+def smart_title(slug: str) -> str:
+    """Convert a hyphenated slug to title case with proper noun awareness."""
+    words = slug.replace("-", " ").split()
+    return " ".join(_CASE_OVERRIDES.get(w.lower(), w.title()) for w in words)
+
+
+def compute_time_mapping(archetypes: list) -> dict:
+    """Map real event dates from time_anchor into the 7-day demo window.
+
+    Returns a dict of concept -> mapped datetime within the demo window.
+    Preserves relative ordering of events. Adds per-concept jitter.
+    """
+    anchored = [a for a in archetypes if a.get("time_anchor", {}).get("date")]
+    if not anchored:
+        return {}
+
+    dates = {}
+    for a in anchored:
+        d = datetime.strptime(a["time_anchor"]["date"], "%Y-%m-%d")
+        dates[a["concept"]] = d
+
+    earliest = min(dates.values())
+    latest = max(dates.values())
+    real_span = (latest - earliest).total_seconds() or 1.0
+
+    # Map into window: earliest event → NOW-7d, latest → NOW-6h
+    window_start = NOW - timedelta(days=7)
+    window_end = NOW - timedelta(hours=6)
+    window_span = (window_end - window_start).total_seconds()
+
+    mapping = {}
+    for concept, d in dates.items():
+        offset_ratio = (d - earliest).total_seconds() / real_span
+        mapped = window_start + timedelta(seconds=offset_ratio * window_span)
+        # Add ±6h gaussian jitter
+        jitter = timedelta(hours=random.gauss(0, 3))
+        mapped = max(window_start, min(window_end, mapped + jitter))
+        mapping[concept] = mapped
+
+    return mapping
+
+
+def vary_text(base_text: str, platform: str, j: int,
+              variations: list = None) -> str:
+    """Generate a varied version of a claim text.
+
+    If the archetype carries pre-written platform-specific variations,
+    select from those. Otherwise return the base text for j==0,
+    or a platform-prefixed version for j>0.
+    """
+    if j == 0:
+        return base_text
+
+    # Use pre-written variations if available
+    if variations:
+        platform_matches = [v for v in variations if v.get("platform") == platform]
+        pool = platform_matches if platform_matches else variations
+        return pool[j % len(pool)]["text"]
+
+    # Fallback: simple platform-appropriate prefix (for generic/live topics)
+    x_prefixes = [
+        "This →", "Louder for the people in the back:", "Let me be clear:",
+        "Hot take:", "Thread:", "The data is clear:", "Breaking it down:",
+        "Not enough people are talking about this:", "I keep saying this:",
+    ]
+    reddit_prefixes = [
+        "Genuinely asking —", "I've been following this closely and",
+        "As someone who works in this field,", "Can we talk about how",
+        "The data actually shows that", "Hot take but",
+        "Hear me out:", "PSA:", "Serious question —",
+    ]
+    youtube_prefixes = [
+        "What nobody tells you is that", "I've been researching this for months and",
+        "Here's what's actually happening:", "Let me break this down:",
+        "After looking at the data,", "Quick explainer:",
+    ]
+
+    if platform == "x":
+        prefix = x_prefixes[j % len(x_prefixes)]
+    elif platform == "reddit":
+        prefix = reddit_prefixes[j % len(reddit_prefixes)]
+    else:
+        prefix = youtube_prefixes[j % len(youtube_prefixes)]
+
+    first_char = base_text[0].lower() if base_text[:2] not in (
+        'US', 'AI', 'DE', 'IP', 'CO', 'IF', 'BT', 'GL', 'RF', 'Oz', 'Bi', 'Pr'
+    ) else base_text[0]
+    return f"{prefix} {first_char}{base_text[1:]}"
+
 
 
 def gen_embedding(base_vector: np.ndarray, noise_scale: float = 0.1) -> list[float]:
@@ -864,9 +441,9 @@ def generate_adversarial_pairs(
         mutation_detected = random.random() < 0.4
         if mutation_detected:
             mutation_desc = random.choice([
-                f"Cluster '{ca['label'][:40]}' adopted terminology from the counter-narrative after it gained momentum.",
-                f"Framing shifted in '{ca['label'][:40]}' following emergence of counter-cluster response.",
-                f"Centroid movement detected in '{cb['label'][:40]}' post-counter-emergence — possible strategic reframing.",
+                f"Cluster '{ca['label']}' adopted terminology from the counter-narrative after it gained momentum.",
+                f"Framing shifted in '{ca['label']}' following emergence of counter-cluster response.",
+                f"Centroid movement detected in '{cb['label']}' post-counter-emergence — possible strategic reframing.",
             ])
             mutation_conf = round(random.uniform(0.45, 0.80), 2)
         else:
@@ -918,7 +495,7 @@ def generate_events(topic_id: str, claims: list[dict], archetypes: list[dict]) -
                 "slice_id": None,
                 "severity": "high",
                 "confidence": round(random.uniform(0.75, 0.95), 2),
-                "summary": f"'{arch['text'][:60]}...' accelerated from 20th to 72nd percentile in 12h. Source diversity: {'low' if arch.get('momentum_pattern') == 'spike' else 'moderate'}.",
+                "summary": f"'{arch['text']}' accelerated from 20th to 72nd percentile in 12h. Source diversity: {'low' if arch.get('momentum_pattern') == 'spike' else 'moderate'}.",
                 "detail": {"percentile_from": 20, "percentile_to": 72, "hours": 12},
             })
 
@@ -932,7 +509,7 @@ def generate_events(topic_id: str, claims: list[dict], archetypes: list[dict]) -
                 "slice_id": None,
                 "severity": "medium",
                 "confidence": round(random.uniform(0.65, 0.85), 2),
-                "summary": f"'{arch['text'][:50]}...' went dark — active in last 3 windows, now zero production.",
+                "summary": f"'{arch['text']}' went dark — active in last 3 windows, now zero production.",
                 "detail": {"last_active_window": 3, "topic_volume_change": 0.05},
             })
 
@@ -964,7 +541,7 @@ def generate_events(topic_id: str, claims: list[dict], archetypes: list[dict]) -
             "slice_id": None,
             "severity": "medium",
             "confidence": round(random.uniform(0.65, 0.85), 2),
-            "summary": f"Vocabulary rotation detected in '{m_arch['subject'][:30]}': emerging terminology overlaps with adjacent narratives.",
+            "summary": f"Vocabulary rotation detected in '{m_arch['subject']}': emerging terminology overlaps with adjacent narratives.",
             "detail": {"rotation_shift": 0.42, "hours": 24},
         })
 
@@ -997,8 +574,8 @@ def generate_events(topic_id: str, claims: list[dict], archetypes: list[dict]) -
                 "slice_id": None,
                 "severity": "high" if arch["arousal"] == "high" else "medium",
                 "confidence": round(random.uniform(0.60, 0.80), 2),
-                "summary": f"Near-duplicate content: 47 similar posts from non-overlapping accounts within 3h.",
-                "detail": {"signal": "near_duplicate", "count": 47, "window_hours": 3},
+                "summary": f"Near-duplicate content: {random.randint(23, 89)} similar posts from non-overlapping accounts within {random.choice([2, 3, 4, 6])}h.",
+                "detail": {"signal": "near_duplicate", "count": random.randint(23, 89), "window_hours": random.choice([2, 3, 4, 6])},
             })
 
     # Add a lead-lag event
@@ -1011,8 +588,8 @@ def generate_events(topic_id: str, claims: list[dict], archetypes: list[dict]) -
         "slice_id": None,
         "severity": "low",
         "confidence": round(random.uniform(0.55, 0.75), 2),
-        "summary": f"'{claims[0]['text'][:40]}...' first detected on Reddit, appeared on X 22h later. Fidelity: 81%.",
-        "detail": {"source_platform": "reddit", "target_platform": "x", "lag_hours": 22, "fidelity": 0.81},
+        "summary": f"'{claims[0]['text'][:80]}...' first detected on {random.choice(['Reddit', 'X'])}, appeared on {random.choice(['X', 'Reddit'])} {random.randint(8, 36)}h later. Fidelity: {random.randint(68, 92)}%.",
+        "detail": {"source_platform": random.choice(["reddit", "x"]), "target_platform": random.choice(["x", "reddit"]), "lag_hours": random.randint(8, 36), "fidelity": round(random.uniform(0.65, 0.92), 2)},
     })
 
     # Add adversarial response lag events (uses existing coordination_flag type)
@@ -1033,7 +610,7 @@ def generate_events(topic_id: str, claims: list[dict], archetypes: list[dict]) -
                 "confidence": round(random.uniform(0.55, 0.80), 2),
                 "summary": (
                     f"Counter-narrative response lag of {lag_h}h between "
-                    f"'{arch_a['subject'][:30]}' and '{arch_b['subject'][:30]}' clusters"
+                    f"'{arch_a['subject']}' and '{arch_b['subject']}' clusters"
                     f" — {'consistent with organized rapid response' if lag_h < 8 else 'consistent with organic counter-mobilization'}."
                 ),
                 "detail": {
@@ -1079,10 +656,21 @@ def generate_supply_chain(claim: dict, topic_id: str) -> dict:
             "fidelity_to_previous": round(random.uniform(0.65, 0.95), 2),
         })
 
+    # Varied observation boundaries — empirical honesty about what we can/can't see
+    boundaries = [
+        "No public antecedent detected",
+        "No public antecedent detected",
+        "Earliest observed instance; private channels not monitored",
+        "Observation limited to public posts — DM/group chat propagation not visible",
+        "Cross-platform tracking limited by API rate constraints; gaps possible",
+        "First public mention; may have circulated in closed communities prior",
+    ]
+    boundary = boundaries[hash(claim["id"]) % len(boundaries)]
+
     return {
         "concept_id": claim.get("concept_id", "unknown"),
         "hops": hops,
-        "observation_boundary": "No public antecedent detected",
+        "observation_boundary": boundary,
     }
 
 
@@ -1099,6 +687,14 @@ def generate_coordination_check() -> dict:
             return {"score": score, "organic_baseline": baseline, "severity": "low"}
 
     elevated = random.random() > 0.6
+    # ~20% of claims show clearly no coordination (all below baseline) — honest negative result
+    if random.random() < 0.2:
+        return {
+            "burstiness": signal(False),
+            "near_duplicate": signal(False),
+            "cross_platform_sync": signal(False),
+            "source_diversity_anomaly": signal(False),
+        }
     return {
         "burstiness": signal(elevated and random.random() > 0.5),
         "near_duplicate": signal(elevated),
@@ -1108,22 +704,37 @@ def generate_coordination_check() -> dict:
 
 
 def generate_example_content(archetype: dict, platform: str) -> list[dict]:
-    """Generate 3-5 example posts for a claim."""
+    """Generate 3-5 example posts for a claim.
+    Uses pre-written variations from archetype if available."""
     examples = []
-    variations = [
-        archetype["text"],
-        f"Honestly, {archetype['text'].lower()}",
-        f"People need to understand: {archetype['text'].lower()}",
-        f"This is obvious — {archetype['assertion']}",
-        f"Can't believe we're still debating this. {archetype['text']}",
-    ]
-    for i in range(random.randint(3, 5)):
-        examples.append({
-            "text": variations[i % len(variations)],
-            "platform": platform,
-            "confidence": round(random.uniform(0.7, 0.98), 2),
-            "is_influencer_framing": platform == "youtube",
-        })
+    arch_variations = archetype.get("variations", [])
+    if arch_variations:
+        # Use pre-written variations, preferring platform matches
+        platform_matches = [v for v in arch_variations if v.get("platform") == platform]
+        pool = platform_matches if platform_matches else arch_variations
+        for i in range(min(random.randint(3, 5), max(3, len(pool)))):
+            examples.append({
+                "text": pool[i % len(pool)]["text"],
+                "platform": pool[i % len(pool)].get("platform", platform),
+                "confidence": round(random.uniform(0.7, 0.98), 2),
+                "is_influencer_framing": pool[i % len(pool)].get("platform", platform) == "youtube",
+            })
+    else:
+        # Fallback for generic/live topics
+        fallback_variations = [
+            archetype["text"],
+            f"Honestly, {archetype['text'].lower()}",
+            f"People need to understand: {archetype['text'].lower()}",
+            f"This is obvious — {archetype['assertion']}",
+            f"Can't believe we're still debating this. {archetype['text']}",
+        ]
+        for i in range(random.randint(3, 5)):
+            examples.append({
+                "text": fallback_variations[i % len(fallback_variations)],
+                "platform": platform,
+                "confidence": round(random.uniform(0.7, 0.98), 2),
+                "is_influencer_framing": platform == "youtube",
+            })
     return examples
 
 
@@ -1166,19 +777,35 @@ def generate_compare_data(topic_id: str, clusters: list[dict],
 
     trend = [round(jsd_sqrt + random.gauss(0, 0.03), 4) for _ in range(8)]
 
+    # Determine slice type and labels
+    GEO_LABELS = {
+        "coastal_metros": "Coastal Metros",
+        "heartland_metros": "Heartland",
+        "urban_centers": "Urban Centers",
+        "rural_adjacent": "Rural Adjacent",
+    }
+    is_geo = slice_a_id in GEO_LABELS or slice_b_id in GEO_LABELS
+    slice_type = "geography" if is_geo else "platform"
+
+    def _slice_label(sid: str) -> str:
+        if sid in GEO_LABELS:
+            return GEO_LABELS[sid]
+        if "youtube" in sid:
+            return "Influencer Framing (YouTube)"
+        return sid.replace("_", " ").title()
+
     return {
         "slice_a": {
-            "id": slice_a_id, "type": "platform",
-            "label": slice_a_id.replace("_", " ").title(),
+            "id": slice_a_id, "type": slice_type,
+            "label": _slice_label(slice_a_id),
             "active_volume": random.randint(500, 5000),
             "meets_minimum_threshold": True,
             "base_rate_weight": round(random.uniform(0.3, 0.7), 2),
             "is_influencer_framing": "youtube" in slice_a_id,
         },
         "slice_b": {
-            "id": slice_b_id, "type": "platform",
-            "label": "Influencer Framing (YouTube)" if "youtube" in slice_b_id
-                     else slice_b_id.replace("_", " ").title(),
+            "id": slice_b_id, "type": slice_type,
+            "label": _slice_label(slice_b_id),
             "active_volume": random.randint(500, 5000),
             "meets_minimum_threshold": True,
             "base_rate_weight": round(random.uniform(0.3, 0.7), 2),
@@ -1267,12 +894,29 @@ def _ifi_window_salience(clusters: list, window: str) -> list:
     base = [float(c.get("member_count", 1)) for c in clusters]
     # Seed from window name + cluster IDs so results are deterministic but topic-specific
     rng = random.Random(hash(window + "".join(c["id"] for c in clusters)))
+    # Topic-specific dynamics: some topics consolidate (dominant cluster grows),
+    # some diversify (volatile clusters amplified), some reshuffle (random perturbation)
+    topic_seed = hash("".join(c["id"] for c in clusters)) % 3  # 0=diversify, 1=consolidate, 2=reshuffle
     if window == "6h":
-        for i, c in enumerate(clusters):
-            if c.get("mutation_direction") in ("radicalizing", "fragmenting"):
-                base[i] *= rng.uniform(1.3, 1.9)
-            elif c.get("mutation_direction") == "stable":
-                base[i] *= rng.uniform(0.4, 0.7)
+        if topic_seed == 0:
+            # Diversifying: amplify volatile, suppress stable
+            for i, c in enumerate(clusters):
+                if c.get("mutation_direction") in ("radicalizing", "fragmenting"):
+                    base[i] *= rng.uniform(1.3, 1.9)
+                elif c.get("mutation_direction") == "stable":
+                    base[i] *= rng.uniform(0.4, 0.7)
+        elif topic_seed == 1:
+            # Consolidating: amplify the largest cluster, suppress others
+            max_idx = max(range(len(base)), key=lambda i: base[i])
+            for i in range(len(base)):
+                if i == max_idx:
+                    base[i] *= rng.uniform(1.8, 2.5)
+                else:
+                    base[i] *= rng.uniform(0.3, 0.6)
+        else:
+            # Reshuffling: random perturbation (some up, some down)
+            for i in range(len(base)):
+                base[i] *= rng.uniform(0.5, 1.5)
     elif window == "7d":
         for i, c in enumerate(clusters):
             if c.get("mutation_direction") == "stable":
@@ -1307,10 +951,19 @@ def generate_ifi(clusters: list, window: str, coord_count: int = 0, arousal_esca
 
     value_100 = round(jsd_sqrt_val * 100, 1)
 
-    # Trend: diversifying + high flux = increasing; consolidating + high flux = decreasing
-    if character == "diversifying" and jsd_sqrt_val > 0.25:
+    # Override flux character based on topic dynamics seed for variety
+    topic_seed = hash("".join(c["id"] for c in clusters)) % 3
+    if topic_seed == 1:
+        # Force consolidating for these topics
+        character = "consolidating"
+        delta_h = -abs(delta_h) if delta_h != 0 else -0.08
+    elif topic_seed == 2 and abs(delta_h) < 0.05:
+        character = "reshuffling"
+
+    # Trend: based on flux character + magnitude of change
+    if character == "diversifying" and jsd_sqrt_val > 0.12:
         trend = "increasing"
-    elif character == "consolidating" and jsd_sqrt_val > 0.25:
+    elif character == "consolidating" and jsd_sqrt_val > 0.12:
         trend = "decreasing"
     else:
         trend = "stable"
@@ -1354,7 +1007,7 @@ def generate_situations(clusters: list[dict], archetypes: list[dict], events: li
             situations.append({
                 "id": gen_id("sit", c["id"], "esc"),
                 "severity": "high",
-                "summary": f"'{c['label'][:30]}...' escalating — gaining speed, emotionally charged, actively fought over",
+                "summary": f"'{c['label']}' escalating — gaining speed, emotionally charged, actively fought over",
                 "cluster_id": c["id"],
                 "metric_basis": "momentum > 0.5 AND arousal = warming AND friction > 0.6"
             })
@@ -1362,7 +1015,7 @@ def generate_situations(clusters: list[dict], archetypes: list[dict], events: li
             situations.append({
                 "id": gen_id("sit", c["id"], "main"),
                 "severity": "medium",
-                "summary": f"'{c['label'][:30]}...' mainstreaming — deeply embedded",
+                "summary": f"'{c['label']}' mainstreaming — deeply embedded",
                 "cluster_id": c["id"],
                 "metric_basis": "mutation = mainstreaming AND persistence > 10"
             })
@@ -1370,7 +1023,7 @@ def generate_situations(clusters: list[dict], archetypes: list[dict], events: li
             situations.append({
                 "id": gen_id("sit", c["id"], "pol"),
                 "severity": "high",
-                "summary": f"'{c['label'][:30]}...' polarizing — high friction ({friction})",
+                "summary": f"'{c['label']}' polarizing — high friction ({friction})",
                 "cluster_id": c["id"],
                 "metric_basis": "friction > 0.8"
             })
@@ -1378,7 +1031,7 @@ def generate_situations(clusters: list[dict], archetypes: list[dict], events: li
             situations.append({
                 "id": gen_id("sit", c["id"], "acc"),
                 "severity": "medium",
-                "summary": f"'{c['label'][:30]}...' accelerating with low source diversity",
+                "summary": f"'{c['label']}' accelerating with low source diversity",
                 "cluster_id": c["id"],
                 "metric_basis": "momentum > 0.5 AND source_diversity < 0.3"
             })
@@ -1386,7 +1039,7 @@ def generate_situations(clusters: list[dict], archetypes: list[dict], events: li
             situations.append({
                 "id": gen_id("sit", c["id"], "rad"),
                 "severity": "high",
-                "summary": f"'{c['label'][:30]}...' radicalizing — moving toward extreme framing",
+                "summary": f"'{c['label']}' radicalizing — moving toward extreme framing",
                 "cluster_id": c["id"],
                 "metric_basis": "mutation = radicalizing"
             })
@@ -1394,7 +1047,7 @@ def generate_situations(clusters: list[dict], archetypes: list[dict], events: li
             situations.append({
                 "id": gen_id("sit", c["id"], "mon"),
                 "severity": "low",
-                "summary": f"'{c['label'][:30]}...' under active monitoring — rising signals detected",
+                "summary": f"'{c['label']}' under active monitoring — rising signals detected",
                 "cluster_id": c["id"],
                 "metric_basis": "momentum > 0.35"
             })
@@ -1417,6 +1070,12 @@ def generate_topic(topic_def: dict) -> None:
     topic_id = topic_def["id"]
     archetypes = topic_def["archetypes"]
 
+    # Compute time-anchor mapping for this topic
+    time_map = compute_time_mapping(archetypes)
+
+    # Load strategic gaps for this topic
+    topic_gaps = GAPS.get(topic_id, {})
+
     print(f"  Generating topic: {topic_def['name']} ({topic_id})")
 
     # Create directories
@@ -1435,8 +1094,8 @@ def generate_topic(topic_def: dict) -> None:
 
     # Generate claims from archetypes
     claims = []
-    for arch in archetypes:
-        n_instances = random.randint(15, 45)
+    for arch_idx, arch in enumerate(archetypes):
+        n_instances = random.randint(12, 15)
         base_vec = cluster_vector_map[arch["cluster"]]
 
         for j in range(n_instances):
@@ -1446,18 +1105,30 @@ def generate_topic(topic_def: dict) -> None:
                 k=1,
             )[0]
 
-            days_ago = random.uniform(0, 7)
-            timestamp = (NOW - timedelta(days=days_ago)).isoformat()
+            # Use time-anchor mapping if available, else random
+            if arch.get("concept") in time_map:
+                base_time = time_map[arch["concept"]]
+                jitter = timedelta(hours=random.gauss(0, 6))
+                ts = max(NOW - timedelta(days=7), min(NOW, base_time + jitter))
+                timestamp = ts.isoformat()
+            else:
+                days_ago = random.uniform(0, 7)
+                timestamp = (NOW - timedelta(days=days_ago)).isoformat()
 
-            claim_id = gen_id("clm", topic_id, arch["cluster"], str(j))
+            claim_id = gen_id("clm", topic_id, arch["cluster"], arch["concept"], str(arch_idx), str(j))
+            varied_text = vary_text(arch["text"], platform, j, arch.get("variations"))
             claims.append({
                 "id": claim_id,
-                "text": arch["text"],
+                "text": varied_text,
                 "subject": arch["subject"],
                 "assertion": arch["assertion"],
                 "framing": arch["framing"],
                 "stance": arch["stance"],
-                "confidence": round(random.uniform(0.6, 0.98), 2),
+                # ~12% of claims get low confidence (<0.5) — triggers dimmed metrics in UI
+                # Edge cases with _force_low_confidence always get low confidence
+                "confidence": round(random.uniform(0.25, 0.42), 2) if arch.get("_force_low_confidence") else (
+                    round(random.uniform(0.28, 0.48), 2) if (j % 8 == 7) else round(random.uniform(0.6, 0.98), 2)
+                ),
                 "arousal": arch["arousal"],
                 "register": random.choice(["vernacular", "journalistic", "academic", "meme", "formal"]),
                 "cluster_id": gen_id("clu", topic_id, arch["cluster"]),
@@ -1483,16 +1154,29 @@ def generate_topic(topic_def: dict) -> None:
         arousal_val = np.mean([arousal_to_float(c["arousal"]) for c in cluster_claims])
         mutation_dir = random.choice(["mainstreaming", "radicalizing", "fragmenting", "stable"])
 
+        # Influencer seeding — ~40% of clusters are influencer-seeded
+        is_seeded = random.random() < 0.4
+        influencer_seeding = {
+            "influencer_seeded": is_seeded,
+            "influencer_origin_count": random.randint(2, max(2, len(cluster_claims) // 2)) if is_seeded else 0,
+            "influencer_salience_contribution": round(random.uniform(0.2, 0.6), 2) if is_seeded else 0.0,
+            "avg_propagation_hours": {
+                "x": round(random.uniform(1.5, 8.0), 1),
+                "reddit": round(random.uniform(4.0, 16.0), 1),
+            } if is_seeded else {"x": 0, "reddit": 0},
+        }
+
         cluster_objects.append({
             "id": cluster_id,
             "concept_id": arch["concept"],
-            "label": arch["text"][:80],
+            "label": smart_title(arch["cluster"]),
             "member_count": len(cluster_claims),
             "mutation_direction": mutation_dir,
             "mutation_magnitude": round(random.uniform(0.1, 0.7), 2),
             "arousal_trend": random.choice(["warming", "cooling", "stable"]),
             "arousal_value": round(float(arousal_val), 2),
             "adversarial_pairs": [],
+            "influencer_seeding": influencer_seeding,
         })
 
     # Generate adversarial pairs and populate cluster fields
@@ -1503,6 +1187,32 @@ def generate_topic(topic_def: dict) -> None:
                 co["adversarial_pairs"].append(pair["cluster_id_b"])
             if co["id"] == pair["cluster_id_b"] and pair["cluster_id_a"] not in co["adversarial_pairs"]:
                 co["adversarial_pairs"].append(pair["cluster_id_a"])
+
+    def _compute_influencer_impact(clusters):
+        """Compute topic-level influencer impact rollup from per-cluster seeding data."""
+        seeded = [c for c in clusters if c.get("influencer_seeding", {}).get("influencer_seeded")]
+        total = len(clusters)
+        if not seeded:
+            return {
+                "seeded_cluster_count": 0,
+                "total_clusters": total,
+                "influencer_salience_share": 0.0,
+                "direction": "bottom_up",
+                "avg_propagation_x": 0,
+                "avg_propagation_reddit": 0,
+            }
+        avg_salience = sum(c["influencer_seeding"]["influencer_salience_contribution"] for c in seeded) / total
+        avg_x = sum(c["influencer_seeding"]["avg_propagation_hours"]["x"] for c in seeded) / len(seeded)
+        avg_r = sum(c["influencer_seeding"]["avg_propagation_hours"]["reddit"] for c in seeded) / len(seeded)
+        direction = "top_down" if len(seeded) > total / 2 else "mixed" if len(seeded) > 1 else "bottom_up"
+        return {
+            "seeded_cluster_count": len(seeded),
+            "total_clusters": total,
+            "influencer_salience_share": round(avg_salience, 2),
+            "direction": direction,
+            "avg_propagation_x": round(avg_x, 1),
+            "avg_propagation_reddit": round(avg_r, 1),
+        }
 
     # Save extracted claims (without embedding for frontend, with for pipeline)
     frontend_claims = [{k: v for k, v in c.items()
@@ -1581,7 +1291,8 @@ def generate_topic(topic_def: dict) -> None:
                     coord_count=random.randint(2, 10),
                     arousal_escalating=(top_arousal["momentum_pattern"] in ("spike", "rising")),
                 ),
-                "situations": generate_situations(cluster_objects, archetypes, events)
+                "situations": generate_situations(cluster_objects, archetypes, events),
+                "influencer_impact": _compute_influencer_impact(cluster_objects),
             },
         }
 
@@ -1604,7 +1315,8 @@ def generate_topic(topic_def: dict) -> None:
                 "friction": make_metric(round(random.uniform(0.1, 0.8), 4), "24h",
                                         [round(random.uniform(0.1, 0.8), 2) for _ in range(8)]),
                 "persistence": make_metric(arch["persistence"] / NUM_6H_WINDOWS, "24h",
-                                           [round(i / NUM_6H_WINDOWS, 2) for i in range(8)]),
+                                           [round(i / NUM_6H_WINDOWS, 2) for i in range(8)],
+                                           ci_width=0.35 if topic_gaps.get("low_persistence_data") else 0.1),
                 "arousal": make_metric(arousal_to_float(arch["arousal"]), "24h",
                                        [round(arousal_to_float(arch["arousal"]) + random.gauss(0, 0.05), 2) for _ in range(8)]),
                 "expressibility": make_metric(round(random.uniform(0.15, 0.65), 4), "24h",
@@ -1617,10 +1329,16 @@ def generate_topic(topic_def: dict) -> None:
                 },
                 "confidence_detail": {
                     "score": claim["confidence"],
-                    "factors": random.sample([
-                        "sarcasm detected", "quote-tweet ambiguity", "short content",
-                        "cross-register variation", "meme reference", "clear direct assertion",
-                    ], k=random.randint(1, 3)),
+                    "factors": random.sample(
+                        # Low-confidence claims get extraction-difficulty factors
+                        ["sarcasm detected", "quote-tweet ambiguity", "short content",
+                         "cross-register variation", "meme reference", "implicit framing",
+                         "multi-claim post — extraction uncertain"]
+                        if claim["confidence"] < 0.5 else
+                        ["sarcasm detected", "quote-tweet ambiguity", "short content",
+                         "cross-register variation", "meme reference", "clear direct assertion"],
+                        k=random.randint(2, 3) if claim["confidence"] < 0.5 else random.randint(1, 3),
+                    ),
                 },
                 "provenance": {
                     "first_platform": claim["first_seen_platform"],
@@ -1651,19 +1369,50 @@ def generate_topic(topic_def: dict) -> None:
                 json.dump(detail, f, indent=2)
 
     # Generate comparison data for slice pairs
-    slice_pairs = [("x_platform", "reddit_platform"), ("x_platform", "youtube_influencer")]
+    slice_pairs = [
+        ("x_platform", "reddit_platform"),
+        ("x_platform", "youtube_influencer"),
+        ("coastal_metros", "heartland_metros"),
+    ]
+    # Apply strategic data gaps — skip certain compare pairs per topic
     for window in ["6h", "24h", "7d"]:
         for sa, sb in slice_pairs:
+            # Skip geo comparison if topic has missing_geo_comparison gap
+            if topic_gaps.get("missing_geo_comparison") and (
+                sa in ("coastal_metros", "heartland_metros") or
+                sb in ("coastal_metros", "heartland_metros")
+            ):
+                continue
+            # Skip YouTube comparison if topic has missing_youtube_compare gap
+            if topic_gaps.get("missing_youtube_compare") and (
+                "youtube" in sa or "youtube" in sb
+            ):
+                continue
+            # Skip Reddit comparison if topic has missing_reddit_depth gap
+            if topic_gaps.get("missing_reddit_depth") and (
+                "reddit" in sa or "reddit" in sb
+            ):
+                continue
             compare = generate_compare_data(topic_id, cluster_objects, sa, sb, window)
             filename = f"{sa}_{sb}_{window}.json"
             with open(compare_dir / filename, "w") as f:
                 json.dump(compare, f, indent=2)
 
 
+    # Filter events by time window — each window shows only events within its timespan
+    window_deltas = {"6h": timedelta(hours=6), "24h": timedelta(hours=24), "7d": timedelta(days=7)}
     for window in ["6h", "24h", "7d"]:
+        cutoff = NOW - window_deltas[window]
+        window_events = [
+            e for e in events
+            if datetime.fromisoformat(e["timestamp"].replace("Z", "+00:00")) >= cutoff
+        ]
+        # Always include at least 2 events per window for UI to have content
+        if len(window_events) < 2:
+            window_events = sorted(events, key=lambda e: e["timestamp"], reverse=True)[:2]
         timeline = {
-            "events": events,
-            "total_count": len(events),
+            "events": window_events,
+            "total_count": len(window_events),
         }
         with open(metrics_dir / f"timeline_{window}.json", "w") as f:
             json.dump(timeline, f, indent=2)
@@ -1701,7 +1450,7 @@ def generate_topics_json(topic_results: dict) -> None:
             top_event = events[0]
             key_signal = {
                 "type": top_event["type"],
-                "summary": top_event["summary"][:100],
+                "summary": top_event["summary"],
             }
 
         # Headline divergence
@@ -1748,6 +1497,37 @@ def generate_topics_json(topic_results: dict) -> None:
                     top_sit = {"summary": sits[0]["summary"], "severity": sits[0]["severity"]}
         summary["ifi"] = ifi_val
         summary["top_situation"] = top_sit
+
+        # Pull influencer_impact from landscape data
+        influencer_impact = None
+        if landscape_24h_path.exists():
+            with open(landscape_24h_path) as f2:
+                l24_2 = json.load(f2)
+                influencer_impact = l24_2.get("topic_metrics", {}).get("influencer_impact")
+        summary["influencer_impact"] = influencer_impact
+        # Strategic confidence variation — reflects real data coverage limitations
+        # High confidence: topics with high volume + clear language + multi-platform coverage
+        # Medium: topics with coded language, sarcasm, or uneven platform coverage
+        # Lower: niche/emerging topics with limited data volume
+        TOPIC_CONFIDENCE = {
+            "immigration":           (0.82, 0.91),  # high volume, multi-platform, clear stances
+            "israel-palestine":      (0.74, 0.83),  # high volume but coded language, sarcasm, context-dependent
+            "war-on-iran":           (0.71, 0.80),  # fast-moving, lots of unverified claims
+            "inflation-cost-of-living": (0.80, 0.89),  # clear economic language, good coverage
+            "housing-crisis":        (0.77, 0.86),  # good data but regional variation hard to capture
+            "ai-workplace":          (0.75, 0.84),  # mixed technical/political discourse
+            "crypto-digital-money":  (0.68, 0.77),  # heavy jargon, bot activity, extraction harder
+            "ai-bubble":             (0.70, 0.79),  # financial + tech crossover, nuanced framing
+            "ozempic-glp1":          (0.58, 0.67),  # health misinformation hard to classify, limited political discourse
+            "dei-rollbacks":         (0.55, 0.65),  # corporate + political, lots of coded language, sparse data
+        }
+        # Override with strategic gap data if present (e.g., crypto has known bot activity)
+        topic_gaps = GAPS.get(tid, {})
+        if "low_system_confidence" in topic_gaps:
+            lo, hi = topic_gaps["low_system_confidence"]
+        else:
+            lo, hi = TOPIC_CONFIDENCE.get(tid, (0.72, 0.85))
+        summary["system_confidence"] = round(random.uniform(lo, hi), 2)
 
         summaries.append(summary)
 
@@ -1863,7 +1643,7 @@ def main():
         key_signal = None
         if events:
             top_event = events[0]
-            key_signal = {"type": top_event["type"], "summary": top_event["summary"][:100]}
+            key_signal = {"type": top_event["type"], "summary": top_event["summary"]}
         new_summary = {
             "id": args.topic,
             "name": topic_def["name"],
@@ -1891,7 +1671,7 @@ def main():
             "activity_sparkline": [round(random.uniform(0.2, 0.9), 2) for _ in range(12)],
         }
         
-        landscape_24h_path = DATA_DIR / "metrics" / tid / "landscape_24h.json"
+        landscape_24h_path = DATA_DIR / "metrics" / args.topic / "landscape_24h.json"
         ifi_val = None
         top_sit = None
         if landscape_24h_path.exists():
@@ -1903,8 +1683,36 @@ def main():
                 sits = l24.get("topic_metrics", {}).get("situations", [])
                 if sits:
                     top_sit = {"summary": sits[0]["summary"], "severity": sits[0]["severity"]}
-        summary["ifi"] = ifi_val
-        summary["top_situation"] = top_sit
+        new_summary["ifi"] = ifi_val
+        new_summary["top_situation"] = top_sit
+
+        # Pull influencer_impact from landscape data
+        influencer_impact = None
+        if landscape_24h_path.exists():
+            with open(landscape_24h_path) as f3:
+                l24_3 = json.load(f3)
+                influencer_impact = l24_3.get("topic_metrics", {}).get("influencer_impact")
+        new_summary["influencer_impact"] = influencer_impact
+
+        # System confidence — same logic as generate_topics_json
+        TOPIC_CONFIDENCE_SINGLE = {
+            "immigration":           (0.82, 0.91),
+            "israel-palestine":      (0.74, 0.83),
+            "war-on-iran":           (0.71, 0.80),
+            "inflation-cost-of-living": (0.80, 0.89),
+            "housing-crisis":        (0.77, 0.86),
+            "ai-workplace":          (0.75, 0.84),
+            "crypto-digital-money":  (0.68, 0.77),
+            "ai-bubble":             (0.70, 0.79),
+            "ozempic-glp1":          (0.58, 0.67),
+            "dei-rollbacks":         (0.55, 0.65),
+        }
+        topic_gaps = GAPS.get(args.topic, {})
+        if "low_system_confidence" in topic_gaps:
+            lo, hi = topic_gaps["low_system_confidence"]
+        else:
+            lo, hi = TOPIC_CONFIDENCE_SINGLE.get(args.topic, (0.72, 0.85))
+        new_summary["system_confidence"] = round(random.uniform(lo, hi), 2)
 
         # Merge into existing topics.json
         topics_path = DATA_DIR / "topics.json"

@@ -1,0 +1,130 @@
+[
+  {
+    "id": "clu_aac037e81401",
+    "concept_id": "hostage-deal-priority",
+    "label": "Ceasefire Diplomacy",
+    "member_count": 44,
+    "mutation_direction": "fragmenting",
+    "mutation_magnitude": 0.23,
+    "arousal_trend": "warming",
+    "arousal_value": 0.51,
+    "adversarial_pairs": [],
+    "influencer_seeding": {
+      "influencer_seeded": true,
+      "influencer_origin_count": 10,
+      "influencer_salience_contribution": 0.47,
+      "avg_propagation_hours": {
+        "x": 2.6,
+        "reddit": 13.7
+      }
+    }
+  },
+  {
+    "id": "clu_54bdefed5ccd",
+    "concept_id": "media-bias-against-israel",
+    "label": "Media Framing",
+    "member_count": 26,
+    "mutation_direction": "fragmenting",
+    "mutation_magnitude": 0.34,
+    "arousal_trend": "warming",
+    "arousal_value": 0.69,
+    "adversarial_pairs": [],
+    "influencer_seeding": {
+      "influencer_seeded": false,
+      "influencer_origin_count": 0,
+      "influencer_salience_contribution": 0.0,
+      "avg_propagation_hours": {
+        "x": 0,
+        "reddit": 0
+      }
+    }
+  },
+  {
+    "id": "clu_e4ccbd641f0b",
+    "concept_id": "campus-antisemitism",
+    "label": "Accountability",
+    "member_count": 55,
+    "mutation_direction": "stable",
+    "mutation_magnitude": 0.15,
+    "arousal_trend": "warming",
+    "arousal_value": 0.67,
+    "adversarial_pairs": [
+      "clu_a128faf3fa40"
+    ],
+    "influencer_seeding": {
+      "influencer_seeded": false,
+      "influencer_origin_count": 0,
+      "influencer_salience_contribution": 0.0,
+      "avg_propagation_hours": {
+        "x": 0,
+        "reddit": 0
+      }
+    }
+  },
+  {
+    "id": "clu_5dd6aad8b467",
+    "concept_id": "october7-response-legitimacy",
+    "label": "Self Defense",
+    "member_count": 25,
+    "mutation_direction": "mainstreaming",
+    "mutation_magnitude": 0.6,
+    "arousal_trend": "warming",
+    "arousal_value": 0.68,
+    "adversarial_pairs": [
+      "clu_706a04c37c10"
+    ],
+    "influencer_seeding": {
+      "influencer_seeded": false,
+      "influencer_origin_count": 0,
+      "influencer_salience_contribution": 0.0,
+      "avg_propagation_hours": {
+        "x": 0,
+        "reddit": 0
+      }
+    }
+  },
+  {
+    "id": "clu_706a04c37c10",
+    "concept_id": "gaza-civilian-casualties",
+    "label": "Humanitarian Crisis",
+    "member_count": 28,
+    "mutation_direction": "fragmenting",
+    "mutation_magnitude": 0.58,
+    "arousal_trend": "warming",
+    "arousal_value": 0.85,
+    "adversarial_pairs": [
+      "clu_5dd6aad8b467"
+    ],
+    "influencer_seeding": {
+      "influencer_seeded": true,
+      "influencer_origin_count": 13,
+      "influencer_salience_contribution": 0.23,
+      "avg_propagation_hours": {
+        "x": 3.1,
+        "reddit": 13.7
+      }
+    }
+  },
+  {
+    "id": "clu_a128faf3fa40",
+    "concept_id": "columbia-encampment",
+    "label": "Campus Protests",
+    "member_count": 12,
+    "mutation_direction": "fragmenting",
+    "mutation_magnitude": 0.46,
+    "arousal_trend": "cooling",
+    "arousal_value": 0.85,
+    "adversarial_pairs": [
+      "clu_e4ccbd641f0b"
+    ],
+    "influencer_seeding": {
+      "influencer_seeded": false,
+      "influencer_origin_count": 0,
+      "influencer_salience_contribution": 0.0,
+      "avg_propagation_hours": {
+        "x": 0,
+        "reddit": 0
+      }
+    }
+  }
+]

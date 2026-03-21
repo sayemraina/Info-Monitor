@@ -107,7 +107,7 @@ export function ClaimTooltip({ claim, cluster, momentum, x, y, onMouseEnter, onM
         {/* Cluster — cluster-level proxy */}
         <div>
           <span style={{ color: '#64748B' }} className="flex items-center gap-1">
-            Cluster <InfoButton term="Topic Contestation" content={GLOSSARY.TopicContestation} />
+            Cluster <InfoButton term="Narrative Cluster" content={GLOSSARY.NarrativeCluster} />
           </span>
           {cluster ? (
             <div className="font-data mt-0.5" style={{ color: '#94A3B8' }}>

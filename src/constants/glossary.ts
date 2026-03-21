@@ -1,124 +1,132 @@
 export const GLOSSARY = {
+  ClaimLandscape: {
+    what: "Claims making similar arguments cluster into narrative threads.",
+    soWhat: "Dot size = salience, color = momentum, glow = arousal. Hulls group claims into named clusters.",
+    how: "Claims are embedded into semantic space by similarity. Proximity = conceptual closeness.",
+  },
+  NarrativeCluster: {
+    what: "A group of claims making similar arguments about the same narrative thread. Named by its dominant theme.",
+    soWhat: "Large clusters = dominant narratives. Small clusters = emerging or fringe positions.",
+    how: "Claims are grouped by semantic similarity. Member count shows how many distinct claims share this framing.",
+  },
   Salience: {
-    plain: "How prevalent or visible a specific claim is within a given population slice.",
-    technical: "A measure of disproportionate presence relative to a defined baseline (global, platform-local, or geo-local).",
-    methodology: "Computed as the distributional share of expressions within a slice. Minimum volume thresholds are enforced with conservative shrinkage to prevent small-n volatility."
+    what: "How visible a claim is within a population — its share of the conversation.",
+    soWhat: "High → dominant narrative. Low → fringe or fading.",
+    how: "Distributional share with shrinkage to prevent small-sample volatility.",
   },
   Momentum: {
-    plain: "The acceleration of a narrative—how fast a claim is moving up or down in prominence.",
-    technical: "Rate of change in a claim's distributional position within a slice over a defined time window.",
-    methodology: "Measured by comparing salience percentiles between consecutive windows (e.g., moving from 35th to 70th percentile in 72h). Prioritized over raw salience for influence detection."
+    what: "How fast a claim is rising or falling in prominence.",
+    soWhat: "High → rapid narrative shift. Low → stable or fading.",
+    how: "Salience percentile change between consecutive time windows.",
   },
   Arousal: {
-    plain: "The emotional temperature of a claim—whether it's framed with moral outrage/fear or clinical detachment.",
-    technical: "Arousal classification (high/medium/low) assigned during LLM extraction, aggregated per concept over time to track escalation.",
-    methodology: "LLM rates arousal based on lexical/semantic markers. An escalation signal triggers when a stable concept's arousal profile consistently rises."
+    what: "Emotional temperature — moral outrage and fear vs. clinical detachment.",
+    soWhat: "Rising → escalation risk. Cooling → discourse normalizing.",
+    how: "LLM-classified per claim, aggregated per concept over time.",
   },
   Mutation: {
-    plain: "How a narrative evolves over time—whether it's becoming more mainstream, more extreme, or fracturing.",
-    technical: "The vector difference of a concept's centroid across time windows relative to the overall claim space center.",
-    methodology: "Movement toward the global center = Mainstreaming. Movement away = Radicalizing. Increased internal variance = Fragmenting."
+    what: "How a narrative is evolving — mainstreaming, radicalizing, or fragmenting.",
+    soWhat: "Mainstreaming → consensus forming. Radicalizing → fringe hardening.",
+    how: "Concept centroid movement relative to the overall claim-space center.",
   },
   Confidence: {
-    plain: "How reliably the AI extracted this structured claim from the raw, messy internet text.",
-    technical: "Extraction reliability score penalizing sarcasm, irony, quote-tweets, and ambiguous syntax to prevent phantom divergence.",
-    methodology: "Claims below a threshold are visually dimmed. This prevents noisy extractions in vernacular-heavy slices from skewing the divergence metrics."
+    what: "How reliably the AI extracted this claim from raw, messy internet text.",
+    soWhat: "Low → treat with caution. Dimmed claims may be sarcasm or misparse.",
+    how: "Extraction score penalizing irony, quote-tweets, and ambiguous syntax.",
   },
   Friction: {
-    plain: "The amount of active pushback or disagreement a narrative is facing from its audience.",
-    technical: "Ratio of oppositional engagement (disagreement replies, debunking) to total engagement within a slice.",
-    methodology: "High exposure + zero friction = echo chamber. High friction + high momentum = contested advance. Acts as a key IO tactical signal."
+    what: "Active pushback a narrative is facing — disagreement and debunking.",
+    soWhat: "High friction + high momentum → contested advance. Zero friction → echo chamber.",
+    how: "Ratio of oppositional engagement to total engagement within a slice.",
   },
   Persistence: {
-    plain: "How long a narrative stays relevant—separating flash-in-the-pan viral trends from deeply embedded beliefs.",
-    technical: "Number of consecutive time windows a claim maintains a distributional position above a defined threshold (e.g., 50th percentile).",
-    methodology: "Calculated from the momentum time series. High persistence indicates structural embedding."
+    what: "How long a narrative stays above the noise floor — flash trend vs. embedded belief.",
+    soWhat: "High → structurally embedded. Low → transient spike.",
+    how: "Consecutive windows a claim holds above the 50th salience percentile.",
   },
   SourceDiversity: {
-    plain: "Whether a trend is driven by thousands of regular people or heavily artificially pushed by a few loud accounts.",
-    technical: "Effective number of independent sources contributing to a claim's momentum, normalized by expected diversity.",
-    methodology: "Low diversity flags potential coordination. Never presented simply as volume; always paired with momentum."
+    what: "Whether a trend comes from many independent voices or a concentrated few.",
+    soWhat: "Green → organic spread. Red → potential artificial amplification.",
+    how: "Effective independent source count normalized by expected diversity for this volume.",
   },
   BridgeNodes: {
-    plain: "Highly influential accounts that cross-pollinate narratives by engaging deeply across multiple distinct communities.",
-    technical: "Accounts with engagement history across ≥3 distinct structural communities (subreddits, hashtag clusters), acting as structural cross-pollinators.",
-    methodology: "Identifies whether momentum is community-contained or being deliberately seeded across boundaries."
+    what: "Accounts that cross-pollinate narratives across distinct communities.",
+    soWhat: "Present → narrative is spreading across boundaries, not contained.",
+    how: "Accounts with engagement across 3+ distinct structural communities.",
   },
   Divergence: {
-    plain: "The gap between different populations in how they discuss the same topic or events.",
-    technical: "Distributional distance measuring the structural disparity between two slices' claim representations.",
-    methodology: "Computed using Jensen-Shannon Divergence (JSD). It satisfies symmetry, boundedness, and stability under sparsity."
+    what: "How differently two populations discuss the same topic.",
+    soWhat: "High → populations are in separate realities. Low → broad agreement.",
+    how: "Jensen-Shannon Divergence (JSD) between slice claim distributions.",
   },
   InformationAsymmetry: {
-    plain: "Groups are simply exposed to entirely different sets of facts and claims.",
-    technical: "Divergence characterized by extreme salience differences for the same clusters between slices.",
-    methodology: "Measured as the ratio of maximum to minimum salience for shared clusters across slices."
+    what: "Groups are exposed to entirely different sets of facts and claims.",
+    soWhat: "High → filter-bubble effect. Each side doesn't see what the other sees.",
+    how: "Max-to-min salience ratio for shared clusters across slices.",
   },
   InterpretiveDivergence: {
-    plain: "Groups are looking at the exact same facts, but ranking their importance or interpreting them completely differently.",
-    technical: "Both slices have non-zero mass on identical clusters, but their relative rankings are inverted.",
-    methodology: "Measured via Spearman's rank correlation coefficient between salience rankings. Strong negative correlation flags interpretive divergence."
+    what: "Groups see the same facts but rank their importance completely differently.",
+    soWhat: "High → same evidence, opposite conclusions.",
+    how: "Spearman rank correlation between salience rankings across slices.",
   },
   ParadigmaticDivergence: {
-    plain: "Groups are operating in completely incompatible realities or frameworks with almost zero overlap.",
-    technical: "Characterized by low support overlap—very few claim clusters exist in both slices simultaneously.",
-    methodology: "Measured as the overlap fraction of clusters with non-trivial mass. Cross-checked against extraction confidence bounds."
+    what: "Groups operate in incompatible frameworks with almost zero shared ground.",
+    soWhat: "High → no common language for resolution. Lowest-common-denominator debate.",
+    how: "Overlap fraction of clusters with non-trivial mass in both slices.",
   },
   ExposureAsymmetry: {
-    plain: "When one group's elite/influential accounts push a narrative, but another group's influential accounts completely ignore it.",
-    technical: "Disproportionate presence of a claim in high-visibility platform-specific proxy content (e.g., follower-weighted X, or big YouTube channels).",
-    methodology: "Always explicitly bounded by platform-specific proxy limitations. YouTube is specifically labeled as 'influencer framing' only."
+    what: "One group's influential voices push a narrative that another group's voices ignore.",
+    soWhat: "High → elite-driven gap. The divide is top-down, not grassroots.",
+    how: "Claim presence in high-visibility accounts vs. absence in the other slice.",
   },
   Silence: {
-    plain: "When a narrative that used to be actively discussed suddenly drops off the radar, without the overall topic dying down.",
-    technical: "A claim-level disappearance signal within a slice's production distribution.",
-    methodology: "Detected as an unexpected drop to near-zero salience while total topic volume remains stable."
+    what: "A previously active narrative suddenly drops off while the topic stays alive.",
+    soWhat: "May indicate suppression, narrative pivot, or strategic withdrawal.",
+    how: "Near-zero salience drop while total topic volume remains stable.",
   },
   Expressibility: {
-    plain: "How comfortable people feel actively saying something, compared to just quietly liking or sharing it.",
-    technical: "Approximated via Original-Post Ratio: the ratio of unique original posts expressing the claim to total engagements.",
-    methodology: "Low expressibility indicates high social cost for the position, acting as a leading indicator of Overton window shifts."
+    what: "How comfortable people feel actively stating a position vs. quietly engaging.",
+    soWhat: "Low → high social cost to express. Leading indicator of Overton shifts.",
+    how: "Ratio of original posts expressing the claim to total engagements.",
   },
   CounterNarrative: {
-    plain: "The opposing argument that naturally emerges when a dominant narrative gains traction.",
-    technical: "Adversarial pairs detected via inverse momentum correlation and geometric opposition in semantic embedding space.",
-    methodology: "Provides response lag measurement and mutation tracking to see if the original claim reframes itself in response."
+    what: "The opposing argument that emerges when a dominant claim gains traction.",
+    soWhat: "Strong counter → healthy discourse. Absent → narrative monopoly.",
+    how: "Inverse momentum correlation + geometric opposition in embedding space.",
   },
   Coordination: {
-    plain: "Suspicious, potentially artificial behavior designed to push a narrative faster than organic human sharing would allow.",
-    technical: "Statistical anomaly signatures including extreme burstiness, near-duplicate content proliferation, and synchronized cross-platform seeding.",
-    methodology: "Does not attribute intent. Always presented relative to the topic/slice specific organic baseline."
+    what: "Patterns suggesting artificial amplification rather than organic sharing.",
+    soWhat: "Flagged → narrative may be manufactured. Always relative to baseline.",
+    how: "Composite of burstiness, near-duplicates, cross-platform sync, and source concentration.",
   },
   TopicContestation: {
-    plain: "Whether a topic actually has real disagreement, or if everyone basically agrees.",
-    technical: "The structural requirement for a topic to contain ≥2 distinct claim clusters with detectable semantic opposition.",
-    methodology: "Uncontested topics are not suppressed; they are honestly labeled. Manufactured contestation emergence is flagged for sudden anomalies."
+    what: "Whether a topic has genuine disagreement or broad consensus.",
+    soWhat: "Contested → active fault line. Uncontested → settled or suppressed.",
+    how: "Requires 2+ claim clusters with detectable semantic opposition.",
   },
   Burstiness: {
-    plain: "An unnaturally sudden spike in activity — content that spreads far too fast to be normal human sharing.",
-    technical: "Statistical measure of inter-event timing regularity. Organic sharing follows Weibull distributions; bots and coordinated actors show Poisson-like regularity or extreme brevity.",
-    methodology: "Compared against the topic-specific baseline computed over the prior 14-day rolling window to account for breaking news spikes.",
-    caveat: "High burstiness alone doesn't confirm coordination — a major breaking news event can also spike naturally."
+    what: "Content spreading too fast or too uniformly to be normal human sharing.",
+    soWhat: "High → possible bot activity or coordinated campaign. Can also be breaking news.",
+    how: "Inter-event timing regularity vs. topic-specific 14-day rolling baseline.",
   },
   NearDuplicate: {
-    plain: "Content that is copy-pasted or nearly identical across many accounts — a hallmark of coordinated messaging campaigns.",
-    technical: "Fraction of posts with cosine similarity >0.85 to a cluster centroid that share < 3 hours of post time between them.",
-    methodology: "Threshold calibrated on historical organic resharing behavior. Cross-checked with source diversity to separate organic retweets from inauthentic syndication."
+    what: "Copy-pasted or nearly identical content appearing across many accounts.",
+    soWhat: "High → coordinated messaging campaign. Low → organic rephrasing.",
+    how: "Fraction of posts with >0.85 cosine similarity posted within 3 hours.",
   },
   CrossPlatformSync: {
-    plain: "The same talking points appearing on X, Reddit, and YouTube within hours of each other — as if coordinated from the same source.",
-    technical: "Temporal cross-correlation of salient cluster volumes across platform slices. A high score means all platforms spike simultaneously.",
-    methodology: "Organic cross-platform spillover is expected with a lag (hours to days). Near-zero lag at scale is the anomaly flag."
+    what: "Same talking points appearing on X, Reddit, and YouTube almost simultaneously.",
+    soWhat: "Near-zero lag → likely coordinated. Hours of lag → organic spillover.",
+    how: "Temporal cross-correlation of cluster volumes across platform slices.",
   },
   SourceDiversityAnomaly: {
-    plain: "A narrative being pushed hard, but coming from suspiciously few accounts — suggesting artificial amplification rather than genuine public interest.",
-    technical: "Compares the effective number of unique contributing sources to the expected diversity given volume. Low ratio = concentrated push.",
-    methodology: "Gini impurity applied to source distribution, normalized by empirical volume-diversity curve for the topic over the prior window."
+    what: "High volume coming from suspiciously few accounts.",
+    soWhat: "Flagged → artificial amplification, not genuine public interest.",
+    how: "Gini impurity on source distribution vs. expected volume-diversity curve.",
   },
   PopulationPartitioning: {
-    plain: "The same topic looks different depending on which group you examine. Choosing a lens slices the data by that dimension and reveals how different populations experience the same contested topic.",
-    technical: "Population partitioning decomposes the claim distribution into sub-populations along observable dimensions (platform, geography, language) or inferred dimensions (behavioral clusters, affinity groups). Each tier has different confidence and reveals different dynamics.",
-    methodology: "All comparisons normalized to distributional shares, not raw counts. A population that posts 50× more is not shown as having 50× more influence — we compare what fraction of each group's conversation a claim occupies.",
-    caveat: "Only Platform lens is currently active. Other lenses require additional data sources but are documented here to communicate the analytical framework."
-  }
+    what: "Slicing data by population to reveal how different groups experience the same topic.",
+    soWhat: "Different lenses expose different fault lines — platform, geography, behavior.",
+    how: "Distributional shares, not raw counts. Normalized so volume doesn't equal influence.",
+  },
 };

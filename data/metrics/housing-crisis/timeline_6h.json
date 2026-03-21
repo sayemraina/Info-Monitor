@@ -1,0 +1,35 @@
+{
+  "events": [
+    {
+      "id": "evt_fc277d61dd98",
+      "type": "coordination_flag",
+      "timestamp": "2026-03-16T06:00:00+00:00",
+      "claim_id": "clm_22249e994c3d",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.76,
+      "summary": "Near-duplicate content: 68 similar posts from non-overlapping accounts within 2h.",
+      "detail": {
+        "signal": "near_duplicate",
+        "count": 55,
+        "window_hours": 4
+      }
+    },
+    {
+      "id": "evt_5ba8868babcd",
+      "type": "momentum_spike",
+      "timestamp": "2026-03-15T16:00:00+00:00",
+      "claim_id": "clm_552c47fcafd5",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.83,
+      "summary": "'Blackstone just bought another 10,000 single-family homes \u2014 they now own more houses than some states have residents' accelerated from 20th to 72nd percentile in 12h. Source diversity: low.",
+      "detail": {
+        "percentile_from": 20,
+        "percentile_to": 72,
+        "hours": 12
+      }
+    }
+  ],
+  "total_count": 2
+}

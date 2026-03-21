@@ -1,14 +1,14 @@
 {
   "events": [
     {
-      "id": "evt_61f6d1eec99d",
+      "id": "evt_b432bb688197",
       "type": "momentum_spike",
-      "timestamp": "2026-03-16T04:00:00+00:00",
-      "claim_id": "clm_f7da920600ec",
+      "timestamp": "2026-03-15T18:00:00+00:00",
+      "claim_id": "clm_4fa4567ac879",
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.81,
-      "summary": "'Fears about AI replacing jobs are the same Luddite arguments...' accelerated from 20th to 72nd percentile in 12h. Source diversity: low.",
+      "confidence": 0.84,
+      "summary": "'Devin AI was supposed to be the first AI software engineer. Turns out it can barely handle a junior-level task without hallucinating. The hype machine is real.' accelerated from 20th to 72nd percentile in 12h. Source diversity: low.",
       "detail": {
         "percentile_from": 20,
         "percentile_to": 72,
@@ -18,138 +18,18 @@
     {
       "id": "evt_b1ad3cbbc9e1",
       "type": "momentum_spike",
-      "timestamp": "2026-03-16T02:00:00+00:00",
-      "claim_id": "clm_574f1a446fec",
+      "timestamp": "2026-03-15T15:00:00+00:00",
+      "claim_id": "clm_4780ba717d09",
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.89,
-      "summary": "'AI will automate away millions of white-collar jobs within t...' accelerated from 20th to 72nd percentile in 12h. Source diversity: low.",
+      "confidence": 0.82,
+      "summary": "'Klarna's CEO just said their AI does the work of 700 employees \u2014 and they're not rehiring. This is the template for every company now.' accelerated from 20th to 72nd percentile in 12h. Source diversity: low.",
       "detail": {
         "percentile_from": 20,
         "percentile_to": 72,
         "hours": 12
       }
-    },
-    {
-      "id": "evt_e6b691dd5316",
-      "type": "coordination_flag",
-      "timestamp": "2026-03-15T16:00:00+00:00",
-      "claim_id": "clm_574f1a446fec",
-      "slice_id": null,
-      "severity": "high",
-      "confidence": 0.64,
-      "summary": "Near-duplicate content: 47 similar posts from non-overlapping accounts within 3h.",
-      "detail": {
-        "signal": "near_duplicate",
-        "count": 47,
-        "window_hours": 3
-      }
-    },
-    {
-      "id": "evt_abcc21cffbce",
-      "type": "claim_dark",
-      "timestamp": "2026-03-16T06:00:00+00:00",
-      "claim_id": "clm_00e770be732b",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.76,
-      "summary": "'The companies pushing AI hardest are quietly layin...' went dark \u2014 active in last 3 windows, now zero production.",
-      "detail": {
-        "last_active_window": 3,
-        "topic_volume_change": 0.05
-      }
-    },
-    {
-      "id": "evt_0baf38c7071c",
-      "type": "vocabulary_rotation",
-      "timestamp": "2026-03-15T22:00:00+00:00",
-      "claim_id": "clm_574f1a446fec",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.81,
-      "summary": "Vocabulary rotation detected in 'AI job displacement': emerging terminology overlaps with adjacent narratives.",
-      "detail": {
-        "rotation_shift": 0.42,
-        "hours": 24
-      }
-    },
-    {
-      "id": "evt_7c7159f2782f",
-      "type": "arousal_escalation",
-      "timestamp": "2026-03-15T05:00:00+00:00",
-      "claim_id": "clm_574f1a446fec",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.71,
-      "summary": "'AI job displacement' arousal shifted low to high over 48h, semantic content stable.",
-      "detail": {
-        "arousal_from": "low",
-        "arousal_to": "high",
-        "hours": 48
-      }
-    },
-    {
-      "id": "evt_d192ba308149",
-      "type": "divergence_shift",
-      "timestamp": "2026-03-15T00:00:00+00:00",
-      "claim_id": null,
-      "slice_id": "x_platform",
-      "severity": "medium",
-      "confidence": 0.71,
-      "summary": "X vs Reddit divergence increased 23% over 48h. Mode: information asymmetry.",
-      "detail": {
-        "jsd_change": 0.23,
-        "hours": 48,
-        "mode": "information_asymmetry"
-      }
-    },
-    {
-      "id": "evt_b432bb688197",
-      "type": "arousal_escalation",
-      "timestamp": "2026-03-13T23:00:00+00:00",
-      "claim_id": "clm_00e770be732b",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.83,
-      "summary": "'AI and creative work' arousal shifted low to high over 48h, semantic content stable.",
-      "detail": {
-        "arousal_from": "low",
-        "arousal_to": "high",
-        "hours": 48
-      }
-    },
-    {
-      "id": "evt_ddad9039e8ba",
-      "type": "coordination_flag",
-      "timestamp": "2026-03-15T10:00:00+00:00",
-      "claim_id": null,
-      "slice_id": null,
-      "severity": "low",
-      "confidence": 0.8,
-      "summary": "Counter-narrative response lag of 10h between 'AI job displacement' and 'AI augmentation' clusters \u2014 consistent with organic counter-mobilization.",
-      "detail": {
-        "signal": "adversarial_response_lag",
-        "cluster_a": "job-displacement",
-        "cluster_b": "ai-augmentation",
-        "lag_hours": 10
-      }
-    },
-    {
-      "id": "evt_c86897987a6e",
-      "type": "lead_lag",
-      "timestamp": "2026-03-12T10:00:00+00:00",
-      "claim_id": "clm_574f1a446fec",
-      "slice_id": null,
-      "severity": "low",
-      "confidence": 0.7,
-      "summary": "'AI will automate away millions of white-...' first detected on Reddit, appeared on X 22h later. Fidelity: 81%.",
-      "detail": {
-        "source_platform": "reddit",
-        "target_platform": "x",
-        "lag_hours": 22,
-        "fidelity": 0.81
-      }
     }
   ],
-  "total_count": 10
+  "total_count": 2
 }

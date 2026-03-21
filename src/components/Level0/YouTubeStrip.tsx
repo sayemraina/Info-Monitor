@@ -5,10 +5,9 @@ import { VideoCard } from './VideoCard'
 import type { VideoMetadata } from '../../types'
 
 const YOUTUBE_METHODOLOGY = {
-  plain: 'Videos selected by influence weight — the voices most likely to shape public narrative on this topic.',
-  technical: 'Composite score = channel authority (log-scaled subscribers, 30%) × recency (exponential decay, 30-day half-life, 25%) × view velocity (views/hour, 25%) × engagement ratio (likes+comments/views, 10%) × topic relevance (keyword match, 10%). Results diversified across 3 tiers: institutional (>1M subs), commentator (100K–1M), contrarian (<100K).',
-  methodology: 'YouTube Data API v3 search → channel authority scoring → recency weighting → 3-tier diversification (institutional, commentator, contrarian) → top-6 by composite score.',
-  caveat: 'YouTube API results are influenced by YouTube\'s own recommendation algorithm. High view count ≠ high influence. Channel subscriber count is a proxy for authority, not a measure of it.',
+  what: 'Videos ranked by Narrative Framing Score — voices most likely to shape public thinking on this topic.',
+  soWhat: 'Prioritizes audience impact over channel size. Diversified across institutional, commentator, and contrarian tiers.',
+  how: 'NFS = view velocity (30%) + reach (22%) + framing language (18%) + debate provocation (12%) + authority (10%) + recency (8%). 100K-view minimum.',
 }
 
 interface YouTubeStripProps {

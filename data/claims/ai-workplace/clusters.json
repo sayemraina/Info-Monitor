@@ -1,76 +1,150 @@
 [
   {
-    "id": "clu_dc42d18abdfa",
-    "concept_id": "productivity-evidence",
-    "label": "Companies using AI are seeing measurable productivity gains that benefit both em",
-    "member_count": 43,
-    "mutation_direction": "mainstreaming",
-    "mutation_magnitude": 0.62,
+    "id": "clu_b71a2467b80f",
+    "concept_id": "developer-productivity",
+    "label": "AI Augmentation",
+    "member_count": 38,
+    "mutation_direction": "stable",
+    "mutation_magnitude": 0.56,
+    "arousal_trend": "warming",
+    "arousal_value": 0.38,
+    "adversarial_pairs": [
+      "clu_42605ef6c255"
+    ],
+    "influencer_seeding": {
+      "influencer_seeded": false,
+      "influencer_origin_count": 0,
+      "influencer_salience_contribution": 0.0,
+      "avg_propagation_hours": {
+        "x": 0,
+        "reddit": 0
+      }
+    }
+  },
+  {
+    "id": "clu_374843c2887a",
+    "concept_id": "safety-deprioritization",
+    "label": "Corporate Hypocrisy",
+    "member_count": 40,
+    "mutation_direction": "fragmenting",
+    "mutation_magnitude": 0.66,
     "arousal_trend": "cooling",
-    "arousal_value": 0.15,
-    "adversarial_pairs": []
+    "arousal_value": 0.85,
+    "adversarial_pairs": [],
+    "influencer_seeding": {
+      "influencer_seeded": false,
+      "influencer_origin_count": 0,
+      "influencer_salience_contribution": 0.0,
+      "avg_propagation_hours": {
+        "x": 0,
+        "reddit": 0
+      }
+    }
   },
   {
     "id": "clu_df45fe3b46cd",
-    "concept_id": "creative-displacement",
-    "label": "AI-generated content is destroying the value of creative work and undermining ar",
-    "member_count": 79,
-    "mutation_direction": "fragmenting",
-    "mutation_magnitude": 0.38,
-    "arousal_trend": "warming",
-    "arousal_value": 0.85,
-    "adversarial_pairs": [
-      "clu_5ca5659be8e9"
-    ]
-  },
-  {
-    "id": "clu_5ca5659be8e9",
-    "concept_id": "historical-parallel",
-    "label": "Fears about AI replacing jobs are the same Luddite arguments made about every te",
+    "concept_id": "labor-protection",
+    "label": "Creative Threat",
     "member_count": 28,
     "mutation_direction": "stable",
-    "mutation_magnitude": 0.45,
-    "arousal_trend": "warming",
-    "arousal_value": 0.5,
+    "mutation_magnitude": 0.43,
+    "arousal_trend": "stable",
+    "arousal_value": 0.66,
     "adversarial_pairs": [
-      "clu_df45fe3b46cd"
-    ]
+      "clu_dc42d18abdfa"
+    ],
+    "influencer_seeding": {
+      "influencer_seeded": true,
+      "influencer_origin_count": 12,
+      "influencer_salience_contribution": 0.44,
+      "avg_propagation_hours": {
+        "x": 3.1,
+        "reddit": 5.9
+      }
+    }
   },
   {
-    "id": "clu_1e5b7b52fb77",
-    "concept_id": "workforce-adaptation",
-    "label": "Massive investment in retraining programs is needed to prepare workers for an AI",
-    "member_count": 31,
-    "mutation_direction": "radicalizing",
-    "mutation_magnitude": 0.62,
+    "id": "clu_664c519fc265",
+    "concept_id": "automation-tax",
+    "label": "Retraining Policy",
+    "member_count": 15,
+    "mutation_direction": "stable",
+    "mutation_magnitude": 0.4,
     "arousal_trend": "stable",
+    "arousal_value": 0.5,
+    "adversarial_pairs": [],
+    "influencer_seeding": {
+      "influencer_seeded": true,
+      "influencer_origin_count": 2,
+      "influencer_salience_contribution": 0.38,
+      "avg_propagation_hours": {
+        "x": 2.3,
+        "reddit": 14.0
+      }
+    }
+  },
+  {
+    "id": "clu_dc42d18abdfa",
+    "concept_id": "measurable-gains",
+    "label": "Productivity Gains",
+    "member_count": 15,
+    "mutation_direction": "fragmenting",
+    "mutation_magnitude": 0.26,
+    "arousal_trend": "cooling",
     "arousal_value": 0.15,
-    "adversarial_pairs": []
+    "adversarial_pairs": [
+      "clu_df45fe3b46cd"
+    ],
+    "influencer_seeding": {
+      "influencer_seeded": false,
+      "influencer_origin_count": 0,
+      "influencer_salience_contribution": 0.0,
+      "avg_propagation_hours": {
+        "x": 0,
+        "reddit": 0
+      }
+    }
   },
   {
     "id": "clu_42605ef6c255",
-    "concept_id": "mass-automation",
-    "label": "AI will automate away millions of white-collar jobs within the next five years",
-    "member_count": 70,
-    "mutation_direction": "radicalizing",
-    "mutation_magnitude": 0.12,
-    "arousal_trend": "cooling",
-    "arousal_value": 0.67,
+    "concept_id": "corporate-replacement",
+    "label": "Job Displacement",
+    "member_count": 45,
+    "mutation_direction": "stable",
+    "mutation_magnitude": 0.55,
+    "arousal_trend": "warming",
+    "arousal_value": 0.62,
     "adversarial_pairs": [
       "clu_b71a2467b80f"
-    ]
+    ],
+    "influencer_seeding": {
+      "influencer_seeded": true,
+      "influencer_origin_count": 19,
+      "influencer_salience_contribution": 0.26,
+      "avg_propagation_hours": {
+        "x": 2.7,
+        "reddit": 11.2
+      }
+    }
   },
   {
-    "id": "clu_b71a2467b80f",
-    "concept_id": "human-ai-collaboration",
-    "label": "AI is a productivity tool that augments human capabilities rather than replacing",
-    "member_count": 39,
-    "mutation_direction": "radicalizing",
-    "mutation_magnitude": 0.34,
-    "arousal_trend": "cooling",
-    "arousal_value": 0.5,
-    "adversarial_pairs": [
-      "clu_42605ef6c255"
-    ]
+    "id": "clu_ac4164d3d878",
+    "concept_id": "creative-destruction-cycle",
+    "label": "Historical Parallel",
+    "member_count": 13,
+    "mutation_direction": "mainstreaming",
+    "mutation_magnitude": 0.1,
+    "arousal_trend": "stable",
+    "arousal_value": 0.15,
+    "adversarial_pairs": [],
+    "influencer_seeding": {
+      "influencer_seeded": true,
+      "influencer_origin_count": 5,
+      "influencer_salience_contribution": 0.34,
+      "avg_propagation_hours": {
+        "x": 6.6,
+        "reddit": 7.2
+      }
+    }
   }
 ]

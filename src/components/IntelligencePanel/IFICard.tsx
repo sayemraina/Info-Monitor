@@ -1,31 +1,143 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import type { InformationFluxIndex } from '../../types';
 import { Card } from '../shared/Card';
-import { ExpandedCardOverlay } from '../shared/ExpandedCardOverlay';
-import { MetricIsolation } from '../shared/MetricIsolation';
-import { MetricRow } from '../ZoneB/MetricRow';
 import { InfoButton } from '../shared/InfoButton';
-import { GLOSSARY } from '../../constants/glossary';
+import { HoverTip } from '../shared/HoverTip';
 
 interface IFICardProps {
   ifi: InformationFluxIndex;
+  onOpenRadar?: () => void;
+  radarValues?: { salienceShift: number; mutation: number; arousal: number; friction: number };
 }
 
-export const IFICard: React.FC<IFICardProps> = ({ ifi }) => {
-  const [isExpanded, setIsExpanded] = useState(false);
-  const [isolatedMetric, setIsolatedMetric] = useState<string | null>(null);
+/** Radar sweep that fills its container — dormant by default, activates on hover */
+function SweepCanvas({ active }: { active: boolean }) {
+  const canvasRef = useRef<HTMLCanvasElement>(null)
+  const animRef = useRef<number>(0)
+  const sizeRef = useRef({ w: 0, h: 0 })
+  const angleRef = useRef(270)
+  const sweepAlphaRef = useRef(0)
+
+  useEffect(() => {
+    const canvas = canvasRef.current
+    if (!canvas) return
+    const parent = canvas.parentElement
+    if (!parent) return
+    const ctx = canvas.getContext('2d')
+    if (!ctx) return
+
+    const dpr = window.devicePixelRatio || 1
+
+    function resize() {
+      if (!canvas || !parent) return
+      const rect = parent.getBoundingClientRect()
+      sizeRef.current = { w: rect.width, h: rect.height }
+      canvas.width = rect.width * dpr
+      canvas.height = rect.height * dpr
+      canvas.style.width = `${rect.width}px`
+      canvas.style.height = `${rect.height}px`
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
+    }
+
+    resize()
+    const ro = new ResizeObserver(resize)
+    ro.observe(parent)
+
+    function toRad(deg: number) { return (deg * Math.PI) / 180 }
+
+    function draw() {
+      const { w, h } = sizeRef.current
+      if (w === 0 || h === 0) { animRef.current = requestAnimationFrame(draw); return }
+
+      const target = active ? 1 : 0
+      sweepAlphaRef.current += (target - sweepAlphaRef.current) * 0.08
+
+      ctx.clearRect(0, 0, w, h)
+
+      const cx = w / 2
+      const cy = h / 2
+      const r = Math.min(w, h) / 2 - 12
+
+      // Grid rings
+      for (const frac of [0.45, 0.7, 1.0]) {
+        ctx.beginPath()
+        ctx.arc(cx, cy, r * frac, 0, Math.PI * 2)
+        ctx.strokeStyle = 'rgba(148,163,184,0.12)'
+        ctx.lineWidth = 0.5
+        ctx.stroke()
+      }
+
+      // Axis lines
+      ctx.strokeStyle = 'rgba(148,163,184,0.10)'
+      ctx.lineWidth = 0.5
+      ctx.beginPath(); ctx.moveTo(cx, cy - r); ctx.lineTo(cx, cy + r); ctx.stroke()
+      ctx.beginPath(); ctx.moveTo(cx - r, cy); ctx.lineTo(cx + r, cy); ctx.stroke()
+
+      // Center dot
+      ctx.beginPath()
+      ctx.arc(cx, cy, 2.5, 0, Math.PI * 2)
+      ctx.fillStyle = 'rgba(148,163,184,0.2)'
+      ctx.fill()
+
+      // Sweep — only when active
+      const alpha = sweepAlphaRef.current
+      if (alpha > 0.01) {
+        const sweepRad = toRad(angleRef.current)
+
+        ctx.beginPath()
+        ctx.moveTo(cx, cy)
+        ctx.lineTo(cx + Math.cos(sweepRad) * r, cy + Math.sin(sweepRad) * r)
+        ctx.strokeStyle = `rgba(34,197,94,${0.55 * alpha})`
+        ctx.lineWidth = 1.5
+        ctx.stroke()
+
+        const trailLen = 45 * Math.PI / 180
+        try {
+          const grad = ctx.createConicGradient(sweepRad - trailLen, cx, cy)
+          grad.addColorStop(0, 'rgba(34,197,94,0)')
+          grad.addColorStop(1, `rgba(34,197,94,${0.06 * alpha})`)
+          ctx.beginPath()
+          ctx.moveTo(cx, cy)
+          ctx.arc(cx, cy, r, sweepRad - trailLen, sweepRad)
+          ctx.closePath()
+          ctx.fillStyle = grad
+          ctx.fill()
+        } catch {
+          // fallback
+        }
+
+        angleRef.current = (angleRef.current + 1.5) % 360
+      }
+
+      animRef.current = requestAnimationFrame(draw)
+    }
+
+    animRef.current = requestAnimationFrame(draw)
+    return () => {
+      cancelAnimationFrame(animRef.current)
+      ro.disconnect()
+    }
+  }, [active])
+
+  return (
+    <canvas
+      ref={canvasRef}
+      className="w-full h-full"
+    />
+  )
+}
+
+export const IFICard: React.FC<IFICardProps> = ({ ifi, onOpenRadar }) => {
+  const [hovered, setHovered] = useState(false)
 
   const ifiInfo = {
-    plain: "Rate of structural change in this topic's narrative topology between consecutive time windows.",
-    technical: "√JSD between cluster-salience distributions at consecutive time windows. Zero = no topology change. 100 = complete restructuring.",
-    methodology: "IFI = √JSD(p_t, p_{t−1}) × 100\nFlux character = sign(H(p_t) − H(p_{t−1}))\nwhere p = normalized cluster-salience vector",
-    caveat: "Computed from synthetic distribution snapshots. In production, derived from actual claim volumes per cluster per window."
+    what: "Rate of structural change in this topic's narrative landscape.",
+    soWhat: "High → topic is restructuring rapidly. Low → stable topology.",
+    how: "√JSD between cluster-salience distributions. 0 = no change, 100 = complete restructuring.",
   };
 
-  const trendIcon = ifi.trend === 'increasing' ? '↑' : ifi.trend === 'decreasing' ? '↓' : '→';
-  const trendColor = ifi.trend === 'increasing' ? 'text-red-500' : 'text-slate-400';
+  const trendTextColor = ifi.trend === 'increasing' ? '#EF4444' : ifi.trend === 'decreasing' ? '#14B8A6' : '#64748B';
 
-  // Flux character display
   const fluxIcon = ifi.flux_character === 'diversifying' ? '↗'
     : ifi.flux_character === 'consolidating' ? '↘'
     : '⇄';
@@ -35,137 +147,52 @@ export const IFICard: React.FC<IFICardProps> = ({ ifi }) => {
     : '#94A3B8';
 
   const fluxDescription = ifi.flux_character === 'diversifying'
-    ? 'More clusters gaining proportional presence. Narrative space expanding.'
+    ? 'Diversifying — more clusters gaining prominence. Narrative space expanding.'
     : ifi.flux_character === 'consolidating'
-    ? 'Fewer clusters dominating. A narrative is winning the attention economy.'
-    : 'Clusters trading prominence without overall entropy change. Dominance shift.';
+    ? 'Consolidating — fewer clusters dominating. A narrative is winning attention.'
+    : 'Reshuffling — clusters trading prominence without overall entropy change.';
 
-  const fluxGlossaryTerm = ifi.flux_character === 'diversifying' ? 'Fragmenting/Diversifying' 
-    : ifi.flux_character === 'consolidating' ? 'Consolidating/Mainstreaming' : 'Stable';
-
-  const [prevWindow, currWindow] = ifi.temporal_window_pair;
-
-  if (isExpanded) {
-    return (
-      <ExpandedCardOverlay title="Information Flux Index (IFI) Detail" onClose={() => setIsExpanded(false)}>
-        {isolatedMetric === 'ifi' ? (
-          <MetricIsolation
-            metric={{
-              label: "Information Flux Index",
-              value: <>{ifi.value.toFixed(1)} <span className={`text-[20px] ${trendColor}`}>{trendIcon}</span></>,
-              sparkline: ifi.sparkline,
-              confidence_interval: ifi.confidence_interval
-            }}
-            infoContent={ifiInfo}
-            onBack={() => setIsolatedMetric(null)}
-          />
-        ) : (
-          <div className="flex flex-col gap-4 animate-fadeIn">
-            <MetricRow
-              label="Information Flux Index"
-              value={ifi.value}
-              suffix={trendIcon}
-              color={ifi.trend === 'increasing' ? 'var(--color-crimson)' : undefined}
-              sparkline={ifi.sparkline}
-              infoContent={ifiInfo}
-              onIsolate={() => setIsolatedMetric('ifi')}
-            />
-
-            {/* Structural Direction */}
-            <div className="mt-2">
-              <h4 className="text-[11px] uppercase tracking-widest text-slate-500 mb-2 font-semibold">
-                Structural Direction
-              </h4>
-              <div className="flex items-start gap-3">
-                <span className="text-2xl leading-none mt-0.5" style={{ color: fluxColor }}>
-                  {fluxIcon}
-                </span>
-                <div>
-                  <div className="flex items-center gap-1.5">
-                    <span className="text-sm text-white font-mono capitalize">{ifi.flux_character}</span>
-                    <InfoButton term={fluxGlossaryTerm} content={GLOSSARY.Mutation} />
-                  </div>
-                  <p className="text-[11px] text-slate-400 mt-0.5 leading-relaxed">{fluxDescription}</p>
-                </div>
-              </div>
-              <div className="text-[11px] text-slate-500 font-mono mt-3">
-                ΔEntropy = {ifi.entropy_delta > 0 ? '+' : ''}{ifi.entropy_delta.toFixed(4)} bits
-                &nbsp;·&nbsp;Comparing {prevWindow} → {currWindow}
-              </div>
-            </div>
-
-            {/* Qualitative Flags */}
-            {(ifi.flags.coordination_detected || ifi.flags.arousal_escalating) && (
-              <div className="mt-1 flex flex-col gap-1.5 border-t border-[#1E3044] pt-3">
-                <h4 className="text-[11px] uppercase tracking-widest text-slate-500 font-semibold">
-                  Qualitative Flags
-                </h4>
-                {ifi.flags.coordination_detected && (
-                  <span className="text-[11px] text-amber-400 flex items-center gap-1">
-                    ⚠ Coordination signatures detected <InfoButton term="Coordination" content={GLOSSARY.Coordination} />
-                  </span>
-                )}
-                {ifi.flags.arousal_escalating && (
-                  <span className="text-[11px] text-orange-400 flex items-center gap-1">
-                    ⚠ Emotional escalation active <InfoButton term="Arousal" content={GLOSSARY.Arousal} />
-                  </span>
-                )}
-                <p className="text-[10px] text-slate-600 mt-0.5">
-                  Flags are qualitative annotations. They are not weighted into the IFI value.
-                </p>
-              </div>
-            )}
-          </div>
-        )}
-      </ExpandedCardOverlay>
-    );
-  }
+  const trendLabel = ifi.trend === 'increasing' ? '↑ accelerating'
+    : ifi.trend === 'decreasing' ? '↓ stabilizing' : '→ steady';
 
   return (
     <Card
       title="Information Flux (IFI)"
-      expandable={true}
-      onExpand={() => setIsExpanded(true)}
-      className="h-full"
-      headerRight={<InfoButton term="Information Flux Index" content={ifiInfo} />}
+      className="h-full overflow-hidden"
+      titleInfo={<span style={{ marginLeft: 8, display: 'inline-flex', alignItems: 'center' }}><InfoButton term="Information Flux Index" content={ifiInfo} wrapperClassName="relative inline-flex items-center [&>div]:w-3.5 [&>div]:h-3.5 [&>div]:text-[9px]" /></span>}
     >
-      {/* Value + trend + flux character */}
-      <div className="flex items-center justify-between pb-1">
-        <div className="flex items-baseline gap-2">
-          <span className="text-4xl font-mono text-white">{ifi.value.toFixed(1)}</span>
-          <span className={`text-xl font-bold ${trendColor}`}>{trendIcon}</span>
+      <div
+        className="relative flex flex-col h-full cursor-pointer group"
+        onClick={() => onOpenRadar?.()}
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
+      >
+        {/* Sweep canvas — absolute, fills entire card body */}
+        <div className="absolute inset-0">
+          <SweepCanvas active={hovered} />
         </div>
-        <span className="text-[11px] font-mono" style={{ color: fluxColor }}>
-          {fluxIcon} {ifi.flux_character}
-        </span>
-      </div>
 
-      {/* Mini sparkline */}
-      <div className="flex-1 flex items-end gap-[1px] mt-1 opacity-80 min-h-[32px]">
-        {ifi.sparkline.map((val, i) => (
-          <div
-            key={i}
-            className="w-full bg-cyan-900 rounded-t-sm"
-            style={{ height: `${Math.max(10, val)}%` }}
-          />
-        ))}
-      </div>
+        {/* Overlay content */}
+        <div className="relative z-10 flex flex-col h-full">
+          {/* IFI number — hover reveals trend + flux */}
+          <div className="flex-shrink-0">
+            <HoverTip text={`TREND: ${ifi.trend}\n${ifi.trend === 'increasing' ? "Narrative landscape is restructuring faster" : ifi.trend === 'decreasing' ? "Narrative landscape is settling down" : "Narrative landscape isn't changing much right now"}\n\nDIRECTION: ${ifi.flux_character}\n${ifi.flux_character === 'diversifying' ? 'New narrative threads emerging. More voices in the conversation.' : ifi.flux_character === 'consolidating' ? 'One narrative taking over. Fewer perspectives getting through.' : 'Dominant narratives are rotating but the overall landscape shape is stable.'}`}>
+              <span className="text-3xl font-mono text-white group-hover:text-[#E94560] transition-colors cursor-help ml-1">
+                {ifi.value.toFixed(1)}
+              </span>
+            </HoverTip>
+          </div>
 
-      {/* Comparing label + flags */}
-      <div className="mt-2 flex flex-col gap-[2px]">
-        <span className="text-[10px] text-slate-600 font-mono">
-          Comparing {prevWindow} → {currWindow}
-        </span>
-        {ifi.flags.coordination_detected && (
-          <span className="text-[10px] text-amber-400 flex items-center gap-1">
-            ⚠ coordination signatures detected <InfoButton term="Coordination" content={GLOSSARY.Coordination} />
-          </span>
-        )}
-        {ifi.flags.arousal_escalating && (
-          <span className="text-[10px] text-orange-400 flex items-center gap-1">
-            ⚠ emotional escalation <InfoButton term="Arousal" content={GLOSSARY.Arousal} />
-          </span>
-        )}
+          {/* Spacer */}
+          <div className="flex-1" />
+
+          {/* CTA at bottom */}
+          <div className="flex-shrink-0 text-center">
+            <span className="text-[9px] font-mono tracking-wider text-slate-600 group-hover:text-[#E94560] transition-colors">
+              click to decompose →
+            </span>
+          </div>
+        </div>
       </div>
     </Card>
   );

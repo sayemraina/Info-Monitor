@@ -3,6 +3,7 @@ import type { ReactNode } from 'react';
 
 interface CardProps {
   title: string;
+  titleInfo?: ReactNode;
   headerRight?: ReactNode;
   children: ReactNode;
   expandable?: boolean;
@@ -11,11 +12,12 @@ interface CardProps {
   isExpanded?: boolean;
 }
 
-export const Card: React.FC<CardProps> = ({ 
-  title, 
-  headerRight, 
-  children, 
-  expandable = false, 
+export const Card: React.FC<CardProps> = ({
+  title,
+  titleInfo,
+  headerRight,
+  children,
+  expandable = false,
   onExpand,
   className = '',
   isExpanded = false
@@ -30,10 +32,16 @@ export const Card: React.FC<CardProps> = ({
       }}
       onClick={expandable && !isExpanded ? onExpand : undefined}
     >
-      <div className="flex items-center justify-between px-3 py-2" style={{ borderBottom: '1px solid var(--color-border)' }}>
-        <h3 className="font-sans text-[11px] font-semibold text-slate-400 uppercase tracking-wider">
-          {title}
-        </h3>
+      <div className="flex items-center justify-between px-3 py-1.5" style={{ borderBottom: '1px solid var(--color-border)' }}>
+        <div className="flex items-center">
+          <h3
+            className="font-sans text-[11px] font-semibold uppercase tracking-wider"
+            style={{ color: '#CBD5E1', borderLeft: '2.5px solid #06B6D4', paddingLeft: '8px' }}
+          >
+            {title}
+          </h3>
+          {titleInfo}
+        </div>
         {headerRight && (
           <div className="flex items-center" onClick={(e) => e.stopPropagation()}>
             {headerRight}
@@ -46,9 +54,9 @@ export const Card: React.FC<CardProps> = ({
       </div>
 
       {expandable && !isExpanded && (
-        <div className="px-3 pb-2 pt-1 text-right mt-auto">
+        <div className="px-3 pb-1.5 pt-0 text-right">
           <button
-            className="text-[11px] text-slate-500 hover:text-red-500 transition-colors inline-block"
+            className="text-[10px] text-slate-500 hover:text-cyan-400 transition-colors inline-block"
             onClick={(e) => {
               e.stopPropagation();
               onExpand?.();

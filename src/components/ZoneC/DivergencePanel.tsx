@@ -11,9 +11,11 @@ interface DivergencePanelProps {
   sliceA: string
   sliceB: string
   landscape?: LandscapeData | null
+  compareMode?: boolean
+  onSetCompareMode?: (mode: boolean) => void
 }
 
-export function DivergencePanel({ topicId, timeWindow, sliceA, sliceB, landscape }: DivergencePanelProps) {
+export function DivergencePanel({ topicId, timeWindow, sliceA, sliceB, landscape, compareMode, onSetCompareMode }: DivergencePanelProps) {
   const { compare, loading, error } = useCompare(topicId, sliceA, sliceB, timeWindow, landscape)
 
   if (loading) {
@@ -34,7 +36,7 @@ export function DivergencePanel({ topicId, timeWindow, sliceA, sliceB, landscape
     )
   }
 
-  const { divergence, per_cluster, arousal_comparison } = compare
+  const { divergence, per_cluster, arousal_comparison, exposure_comparison } = compare
   const typo = divergence.typology
 
   return (
@@ -109,8 +111,57 @@ export function DivergencePanel({ topicId, timeWindow, sliceA, sliceB, landscape
         );
       })()}
 
+      {/* Exposure Distribution — how visibility is distributed across slices */}
+      {exposure_comparison && (
+        <div
+          className="rounded-lg p-2.5"
+          style={{ backgroundColor: 'rgba(6,182,212,0.05)', border: '1px solid rgba(6,182,212,0.12)' }}
+        >
+          <div className="flex items-center gap-1.5 mb-1.5">
+            <span className="text-[9px] font-bold uppercase tracking-wider" style={{ color: '#06B6D4' }}>
+              Exposure Distribution
+            </span>
+            <InfoButton term="Exposure" content={GLOSSARY.ExposureAsymmetry} />
+          </div>
+          <div className="flex items-center justify-between text-[11px]">
+            <div>
+              <span style={{ color: '#3B82F6' }}>{compare.slice_a.label}</span>
+              <span className="font-data ml-1.5" style={{ color: '#F1F5F9' }}>
+                {exposure_comparison.slice_a.value.toFixed(2)}
+              </span>
+            </div>
+            <div>
+              <span style={{ color: '#EF4444' }}>{compare.slice_b.label}</span>
+              <span className="font-data ml-1.5" style={{ color: '#F1F5F9' }}>
+                {exposure_comparison.slice_b.value.toFixed(2)}
+              </span>
+            </div>
+          </div>
+          <div className="flex justify-between mt-1.5">
+            <Sparkline data={exposure_comparison.slice_a.sparkline} width={90} height={16} color="#3B82F6" />
+            <Sparkline data={exposure_comparison.slice_b.sparkline} width={90} height={16} color="#EF4444" />
+          </div>
+        </div>
+      )}
+
       {/* Per-cluster heatmap — detail breakdown */}
       <DivergenceHeatmap clusters={per_cluster} />
+
+      {/* Full Compare toggle */}
+      {onSetCompareMode && (
+        <button
+          onClick={() => onSetCompareMode(!compareMode)}
+          className="w-full text-center text-[10px] py-1.5 mt-2 rounded cursor-pointer"
+          style={{
+            color: compareMode ? '#F1F5F9' : '#06B6D4',
+            border: `1px solid ${compareMode ? 'rgba(239,68,68,0.3)' : 'rgba(6,182,212,0.2)'}`,
+            background: compareMode ? 'rgba(239,68,68,0.1)' : 'rgba(6,182,212,0.05)',
+            transition: 'all 150ms ease',
+          }}
+        >
+          {compareMode ? '← Exit Compare' : 'Full Compare →'}
+        </button>
+      )}
 
     </div>
   )

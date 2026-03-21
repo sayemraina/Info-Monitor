@@ -1,0 +1,149 @@
+{
+  "slice_a": {
+    "id": "x_platform",
+    "type": "platform",
+    "label": "X Platform",
+    "active_volume": 1257,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.49,
+    "is_influencer_framing": false
+  },
+  "slice_b": {
+    "id": "youtube_influencer",
+    "type": "platform",
+    "label": "Influencer Framing (YouTube)",
+    "active_volume": 3444,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.52,
+    "is_influencer_framing": true
+  },
+  "divergence": {
+    "jsd": 0.0951,
+    "jsd_sqrt": 0.3083,
+    "trend": [
+      0.2965,
+      0.3484,
+      0.3598,
+      0.3192,
+      0.3313,
+      0.3256,
+      0.2815,
+      0.3389
+    ],
+    "typology": {
+      "information_asymmetry": 0.75,
+      "interpretive": 0.32,
+      "paradigmatic": 0,
+      "dominant_mode": "Information Asymmetry",
+      "paradigmatic_caveat": false
+    }
+  },
+  "per_cluster": [
+    {
+      "cluster_id": "clu_9c3c85d3eaa1",
+      "label": "CBDC Resistance",
+      "salience_a": 0.2981,
+      "salience_b": 0.6884,
+      "arousal_a": 0.86,
+      "arousal_b": 0.29,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_34e814c8c02a",
+      "label": "Environmental Cost",
+      "salience_a": 0.0958,
+      "salience_b": 0.1097,
+      "arousal_a": 0.35,
+      "arousal_b": 0.22,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_d37c0c61f36c",
+      "label": "Regulation Risk",
+      "salience_a": 0.168,
+      "salience_b": 0.7795,
+      "arousal_a": 0.81,
+      "arousal_b": 0.48,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_a0c323498b96",
+      "label": "Scam Accountability",
+      "salience_a": 0.485,
+      "salience_b": 0.6272,
+      "arousal_a": 0.56,
+      "arousal_b": 0.5,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_9d4253eefa43",
+      "label": "BTC Mainstream",
+      "salience_a": 0.6625,
+      "salience_b": 0.1613,
+      "arousal_a": 0.51,
+      "arousal_b": 0.4,
+      "mutation_a": "stable",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_6847bfd92821",
+      "label": "DeFi Innovation",
+      "salience_a": 0.4228,
+      "salience_b": 0.2849,
+      "arousal_a": 0.81,
+      "arousal_b": 0.54,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "mainstreaming"
+    }
+  ],
+  "arousal_comparison": {
+    "slice_a_avg": 0.46,
+    "slice_b_avg": 0.7
+  },
+  "exposure_comparison": {
+    "slice_a": {
+      "value": 0.7247,
+      "confidence_interval": [
+        0.6747,
+        0.7747
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [
+        0.2965,
+        0.3484,
+        0.3598,
+        0.3192,
+        0.3313,
+        0.3256,
+        0.2815,
+        0.3389
+      ],
+      "source_distribution": "production"
+    },
+    "slice_b": {
+      "value": 0.4774,
+      "confidence_interval": [
+        0.4274,
+        0.5274
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [
+        0.2965,
+        0.3484,
+        0.3598,
+        0.3192,
+        0.3313,
+        0.3256,
+        0.2815,
+        0.3389
+      ],
+      "source_distribution": "production"
+    }
+  }
+}

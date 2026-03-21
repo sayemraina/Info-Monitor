@@ -3,145 +3,155 @@
     "id": "x_platform",
     "type": "platform",
     "label": "X Platform",
-    "active_volume": 3749,
+    "active_volume": 1060,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.68,
+    "base_rate_weight": 0.44,
     "is_influencer_framing": false
   },
   "slice_b": {
     "id": "reddit_platform",
     "type": "platform",
     "label": "Reddit Platform",
-    "active_volume": 1908,
+    "active_volume": 4397,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.42,
+    "base_rate_weight": 0.58,
     "is_influencer_framing": false
   },
   "divergence": {
-    "jsd": 0.0507,
-    "jsd_sqrt": 0.2251,
+    "jsd": 0.0527,
+    "jsd_sqrt": 0.2295,
     "trend": [
-      0.2189,
-      0.1852,
-      0.2798,
-      0.2315,
-      0.2343,
-      0.2199,
-      0.2733,
-      0.1976
+      0.2339,
+      0.2848,
+      0.2201,
+      0.2258,
+      0.1838,
+      0.2978,
+      0.2167,
+      0.2139
     ],
     "typology": {
-      "information_asymmetry": 0.77,
-      "interpretive": 0.11,
-      "paradigmatic": 0.12,
+      "information_asymmetry": 0.63,
+      "interpretive": 0.16,
+      "paradigmatic": 0.21,
       "dominant_mode": "Information Asymmetry",
       "paradigmatic_caveat": false
     }
   },
   "per_cluster": [
     {
-      "cluster_id": "clu_dc42d18abdfa",
-      "label": "Companies using AI are seeing measurable productivity gains that benefit both em",
-      "salience_a": 0.5978,
-      "salience_b": 0.2737,
-      "arousal_a": 0.71,
-      "arousal_b": 0.48,
-      "mutation_a": "mainstreaming",
+      "cluster_id": "clu_b71a2467b80f",
+      "label": "AI Augmentation",
+      "salience_a": 0.4678,
+      "salience_b": 0.4353,
+      "arousal_a": 0.6,
+      "arousal_b": 0.18,
+      "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
-      "cluster_id": "clu_df45fe3b46cd",
-      "label": "AI-generated content is destroying the value of creative work and undermining ar",
-      "salience_a": 0.4339,
-      "salience_b": 0.7446,
-      "arousal_a": 0.22,
-      "arousal_b": 0.86,
+      "cluster_id": "clu_374843c2887a",
+      "label": "Corporate Hypocrisy",
+      "salience_a": 0.7546,
+      "salience_b": 0.4587,
+      "arousal_a": 0.36,
+      "arousal_b": 0.25,
       "mutation_a": "mainstreaming",
       "mutation_b": "mainstreaming"
     },
     {
-      "cluster_id": "clu_5ca5659be8e9",
-      "label": "Fears about AI replacing jobs are the same Luddite arguments made about every te",
-      "salience_a": 0.6492,
-      "salience_b": 0.8076,
-      "arousal_a": 0.49,
-      "arousal_b": 0.79,
-      "mutation_a": "mainstreaming",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_1e5b7b52fb77",
-      "label": "Massive investment in retraining programs is needed to prepare workers for an AI",
-      "salience_a": 0.9351,
-      "salience_b": 0.7656,
-      "arousal_a": 0.27,
-      "arousal_b": 0.11,
+      "cluster_id": "clu_df45fe3b46cd",
+      "label": "Creative Threat",
+      "salience_a": 0.5857,
+      "salience_b": 0.1108,
+      "arousal_a": 0.73,
+      "arousal_b": 0.25,
       "mutation_a": "stable",
       "mutation_b": "mainstreaming"
     },
     {
-      "cluster_id": "clu_42605ef6c255",
-      "label": "AI will automate away millions of white-collar jobs within the next five years",
-      "salience_a": 0.5165,
-      "salience_b": 0.6092,
-      "arousal_a": 0.55,
-      "arousal_b": 0.66,
+      "cluster_id": "clu_664c519fc265",
+      "label": "Retraining Policy",
+      "salience_a": 0.6236,
+      "salience_b": 0.2807,
+      "arousal_a": 0.44,
+      "arousal_b": 0.68,
+      "mutation_a": "radicalizing",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_dc42d18abdfa",
+      "label": "Productivity Gains",
+      "salience_a": 0.2688,
+      "salience_b": 0.7673,
+      "arousal_a": 0.15,
+      "arousal_b": 0.35,
       "mutation_a": "radicalizing",
       "mutation_b": "stable"
     },
     {
-      "cluster_id": "clu_b71a2467b80f",
-      "label": "AI is a productivity tool that augments human capabilities rather than replacing",
-      "salience_a": 0.0661,
-      "salience_b": 0.6081,
-      "arousal_a": 0.24,
-      "arousal_b": 0.12,
+      "cluster_id": "clu_42605ef6c255",
+      "label": "Job Displacement",
+      "salience_a": 0.9138,
+      "salience_b": 0.7289,
+      "arousal_a": 0.35,
+      "arousal_b": 0.81,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_ac4164d3d878",
+      "label": "Historical Parallel",
+      "salience_a": 0.4726,
+      "salience_b": 0.593,
+      "arousal_a": 0.33,
+      "arousal_b": 0.88,
       "mutation_a": "stable",
       "mutation_b": "stable"
     }
   ],
   "arousal_comparison": {
-    "slice_a_avg": 0.47,
-    "slice_b_avg": 0.55
+    "slice_a_avg": 0.69,
+    "slice_b_avg": 0.54
   },
   "exposure_comparison": {
     "slice_a": {
-      "value": 0.3452,
+      "value": 0.4656,
       "confidence_interval": [
-        0.2952,
-        0.3952
+        0.4156,
+        0.5156
       ],
       "baseline": "global",
       "time_window": "6h",
       "sparkline": [
-        0.2189,
-        0.1852,
-        0.2798,
-        0.2315,
-        0.2343,
-        0.2199,
-        0.2733,
-        0.1976
+        0.2339,
+        0.2848,
+        0.2201,
+        0.2258,
+        0.1838,
+        0.2978,
+        0.2167,
+        0.2139
       ],
       "source_distribution": "production"
     },
     "slice_b": {
-      "value": 0.4732,
+      "value": 0.5892,
       "confidence_interval": [
-        0.4232,
-        0.5232
+        0.5392,
+        0.6392
       ],
       "baseline": "global",
       "time_window": "6h",
       "sparkline": [
-        0.2189,
-        0.1852,
-        0.2798,
-        0.2315,
-        0.2343,
-        0.2199,
-        0.2733,
-        0.1976
+        0.2339,
+        0.2848,
+        0.2201,
+        0.2258,
+        0.1838,
+        0.2978,
+        0.2167,
+        0.2139
       ],
       "source_distribution": "production"
     }

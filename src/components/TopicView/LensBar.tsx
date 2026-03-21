@@ -39,13 +39,17 @@ const LENS_TIERS: TierConfig[] = [
         pairs: [
           { label: 'X vs Reddit', a: 'x_platform', b: 'reddit_platform' },
           { label: 'X vs YouTube', a: 'x_platform', b: 'youtube_influencer' },
+          { label: 'Reddit vs YouTube', a: 'reddit_platform', b: 'youtube_influencer' },
         ],
       },
       {
         id: 'geography',
         label: 'Geography',
-        available: false,
+        available: true,
         description: 'How claims cluster by region — same event, different salience by locale',
+        pairs: [
+          { label: 'Coastal vs Heartland', a: 'coastal_metros', b: 'heartland_metros' },
+        ],
       },
       {
         id: 'language',
@@ -124,10 +128,18 @@ interface LensBarProps {
 const PAIR_ABBREV: Record<string, string> = {
   'X vs Reddit': 'X / Red',
   'X vs YouTube': 'X / YT',
+  'Reddit vs YouTube': 'Red / YT',
+  'Coastal vs Heartland': 'Coast / Heart',
 }
 
-// Find the active lens to render inline pair toggles
-const activeLens = LENS_TIERS.flatMap(t => t.lenses).find(l => l.available && l.pairs)
+// All available lenses with pairs
+const ALL_AVAILABLE_LENSES = LENS_TIERS.flatMap(t => t.lenses).filter(l => l.available && l.pairs)
+
+function findActiveLens(activePair: LensPair) {
+  return ALL_AVAILABLE_LENSES.find(lens =>
+    lens.pairs?.some(p => p.a === activePair.a && p.b === activePair.b)
+  ) ?? ALL_AVAILABLE_LENSES[0]
+}
 
 export function LensBar({ activePair, onSelectPair }: LensBarProps) {
   const [dropdownOpen, setDropdownOpen] = useState(false)
@@ -180,37 +192,42 @@ export function LensBar({ activePair, onSelectPair }: LensBarProps) {
         {/* PLATFORM ▾ — dropdown trigger */}
         <button
           onClick={() => setDropdownOpen(!dropdownOpen)}
-          className="flex items-center gap-1.5 shrink-0 rounded-md px-2.5 py-1 transition-all"
+          className="flex items-center gap-2 shrink-0 cursor-pointer group"
           style={{
-            color: '#22D3EE',
-            backgroundColor: dropdownOpen ? 'rgba(34,211,238,0.18)' : 'rgba(34,211,238,0.08)',
-            cursor: 'pointer',
-            border: `1px solid ${dropdownOpen ? 'rgba(34,211,238,0.55)' : 'rgba(34,211,238,0.35)'}`,
-            boxShadow: dropdownOpen ? '0 0 8px rgba(34,211,238,0.15)' : '0 0 0 rgba(34,211,238,0)',
-            transition: 'all 120ms ease',
+            padding: '4px 14px 4px 10px',
+            borderRadius: '6px',
+            color: dropdownOpen ? '#FFFFFF' : '#E2E8F0',
+            background: dropdownOpen
+              ? 'linear-gradient(180deg, rgba(6,182,212,0.25) 0%, rgba(6,182,212,0.12) 100%)'
+              : 'linear-gradient(180deg, rgba(241,245,249,0.08) 0%, rgba(241,245,249,0.03) 100%)',
+            border: `1px solid ${dropdownOpen ? 'rgba(6,182,212,0.6)' : 'rgba(241,245,249,0.1)'}`,
+            boxShadow: dropdownOpen
+              ? '0 1px 3px rgba(0,0,0,0.3), 0 0 12px rgba(6,182,212,0.1)'
+              : '0 1px 2px rgba(0,0,0,0.2)',
+            transition: 'all 180ms ease',
           }}
           onMouseEnter={e => {
+            const b = e.currentTarget
             if (!dropdownOpen) {
-              const b = e.currentTarget as HTMLButtonElement
-              b.style.backgroundColor = 'rgba(34,211,238,0.13)'
-              b.style.borderColor = 'rgba(34,211,238,0.50)'
-              b.style.boxShadow = '0 0 6px rgba(34,211,238,0.12)'
+              b.style.background = 'linear-gradient(180deg, rgba(241,245,249,0.12) 0%, rgba(241,245,249,0.05) 100%)'
+              b.style.borderColor = 'rgba(6,182,212,0.4)'
+              b.style.color = '#FFFFFF'
             }
           }}
           onMouseLeave={e => {
+            const b = e.currentTarget
             if (!dropdownOpen) {
-              const b = e.currentTarget as HTMLButtonElement
-              b.style.backgroundColor = 'rgba(34,211,238,0.08)'
-              b.style.borderColor = 'rgba(34,211,238,0.35)'
-              b.style.boxShadow = '0 0 0 rgba(34,211,238,0)'
+              b.style.background = 'linear-gradient(180deg, rgba(241,245,249,0.08) 0%, rgba(241,245,249,0.03) 100%)'
+              b.style.borderColor = 'rgba(241,245,249,0.1)'
+              b.style.color = '#E2E8F0'
             }
           }}
         >
-          <span className="text-[10px] font-bold uppercase tracking-[0.1em]">
-            {activeLens?.label ?? 'Platform'}
+          <span className="text-[10px] font-semibold uppercase tracking-[0.08em]">
+            {findActiveLens(activePair)?.label ?? 'Platform'}
           </span>
-          <span className="text-[9px] font-bold" style={{ color: '#22D3EE', opacity: dropdownOpen ? 1 : 0.8 }}>
-            {dropdownOpen ? '▴' : '▾'}
+          <span className="text-[7px]" style={{ opacity: 0.5 }}>
+            {dropdownOpen ? '▲' : '▼'}
           </span>
         </button>
 
@@ -232,9 +249,9 @@ export function LensBar({ activePair, onSelectPair }: LensBarProps) {
         <div className="flex-1" />
 
         {/* Inline pair toggles */}
-        {activeLens?.pairs && (
+        {findActiveLens(activePair)?.pairs && (
           <div className="flex items-center gap-3 shrink-0">
-            {activeLens.pairs.map((pair) => {
+            {findActiveLens(activePair)!.pairs!.map((pair) => {
               const isActive = pair.a === activePair.a && pair.b === activePair.b
               return (
                 <button

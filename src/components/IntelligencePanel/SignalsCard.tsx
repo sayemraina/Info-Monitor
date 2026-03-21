@@ -9,9 +9,10 @@ interface SignalsCardProps {
   eventTypeFilter: EventType | 'all';
   onSetEventTypeFilter: (filter: EventType | 'all') => void;
   onSelectClaim: (claimId: string) => void;
+  keySignal?: { type: string; summary: string } | null;
 }
 
-export const SignalsCard: React.FC<SignalsCardProps> = (props) => {
+export const SignalsCard: React.FC<SignalsCardProps> = ({ keySignal, ...props }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   if (isExpanded) {
@@ -28,10 +29,20 @@ export const SignalsCard: React.FC<SignalsCardProps> = (props) => {
     <div className="flex flex-col h-full rounded-lg overflow-hidden" style={{ backgroundColor: 'var(--color-bg-panel)', border: '1px solid var(--color-border)' }}>
       {/* Header */}
       <div className="flex items-center justify-between px-3 py-2 shrink-0" style={{ borderBottom: '1px solid var(--color-border)' }}>
-        <h3 className="font-sans text-[11px] font-semibold text-slate-400 uppercase tracking-wider">
+        <h3 className="font-sans text-[11px] font-semibold text-[#CBD5E1] uppercase tracking-wider" style={{ borderLeft: '2.5px solid #06B6D4', paddingLeft: '8px' }}>
           Signals
         </h3>
       </div>
+
+      {/* Pinned key signal */}
+      {keySignal && (
+        <div className="px-3 py-2 shrink-0" style={{ borderBottom: '1px solid var(--color-border)', backgroundColor: 'rgba(6,182,212,0.03)' }}>
+          <div className="flex items-center gap-1.5">
+            <span className="font-data uppercase tracking-wider shrink-0" style={{ fontSize: '8px', color: '#06B6D4', letterSpacing: '0.8px' }}>KEY</span>
+            <span className="text-[10px] text-slate-300 truncate">{keySignal.summary}</span>
+          </div>
+        </div>
+      )}
 
       {/* Scrollable timeline body — overflow-y-auto enables actual scrolling */}
       <div className="flex-1 min-h-0 relative overflow-y-auto custom-scrollbar">
