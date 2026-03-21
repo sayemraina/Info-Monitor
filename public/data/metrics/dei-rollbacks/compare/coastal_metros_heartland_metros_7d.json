@@ -1,0 +1,149 @@
+{
+  "slice_a": {
+    "id": "coastal_metros",
+    "type": "geography",
+    "label": "Coastal Metros",
+    "active_volume": 2870,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.61,
+    "is_influencer_framing": false
+  },
+  "slice_b": {
+    "id": "heartland_metros",
+    "type": "geography",
+    "label": "Heartland",
+    "active_volume": 699,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.63,
+    "is_influencer_framing": false
+  },
+  "divergence": {
+    "jsd": 0.0123,
+    "jsd_sqrt": 0.111,
+    "trend": [
+      0.0806,
+      0.1317,
+      0.1397,
+      0.1324,
+      0.1141,
+      0.1123,
+      0.1129,
+      0.0718
+    ],
+    "typology": {
+      "information_asymmetry": 0.45,
+      "interpretive": 0.16,
+      "paradigmatic": 0.39,
+      "dominant_mode": "Information Asymmetry",
+      "paradigmatic_caveat": true
+    }
+  },
+  "per_cluster": [
+    {
+      "cluster_id": "clu_638f8ed7e9c3",
+      "label": "Legal Landscape",
+      "salience_a": 0.4059,
+      "salience_b": 0.685,
+      "arousal_a": 0.34,
+      "arousal_b": 0.67,
+      "mutation_a": "radicalizing",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_3fabbea35d86",
+      "label": "Corporate Retreat",
+      "salience_a": 0.3765,
+      "salience_b": 0.332,
+      "arousal_a": 0.15,
+      "arousal_b": 0.31,
+      "mutation_a": "radicalizing",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_0ccd6215e5cd",
+      "label": "Pro DEI Equity",
+      "salience_a": 0.3526,
+      "salience_b": 0.5012,
+      "arousal_a": 0.61,
+      "arousal_b": 0.63,
+      "mutation_a": "stable",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_981073b341a5",
+      "label": "Rebranding",
+      "salience_a": 0.7178,
+      "salience_b": 0.949,
+      "arousal_a": 0.16,
+      "arousal_b": 0.35,
+      "mutation_a": "stable",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ffae0004ec6e",
+      "label": "Anti DEI Merit",
+      "salience_a": 0.4553,
+      "salience_b": 0.7971,
+      "arousal_a": 0.4,
+      "arousal_b": 0.7,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_62e0d27becdb",
+      "label": "Campus Impact",
+      "salience_a": 0.3165,
+      "salience_b": 0.8754,
+      "arousal_a": 0.79,
+      "arousal_b": 0.27,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "radicalizing"
+    }
+  ],
+  "arousal_comparison": {
+    "slice_a_avg": 0.48,
+    "slice_b_avg": 0.47
+  },
+  "exposure_comparison": {
+    "slice_a": {
+      "value": 0.7119,
+      "confidence_interval": [
+        0.6619,
+        0.7619
+      ],
+      "baseline": "global",
+      "time_window": "7d",
+      "sparkline": [
+        0.0806,
+        0.1317,
+        0.1397,
+        0.1324,
+        0.1141,
+        0.1123,
+        0.1129,
+        0.0718
+      ],
+      "source_distribution": "production"
+    },
+    "slice_b": {
+      "value": 0.6182,
+      "confidence_interval": [
+        0.5682,
+        0.6682
+      ],
+      "baseline": "global",
+      "time_window": "7d",
+      "sparkline": [
+        0.0806,
+        0.1317,
+        0.1397,
+        0.1324,
+        0.1141,
+        0.1123,
+        0.1129,
+        0.0718
+      ],
+      "source_distribution": "production"
+    }
+  }
+}

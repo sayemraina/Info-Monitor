@@ -1,0 +1,35 @@
+{
+  "events": [
+    {
+      "id": "evt_dcbea73bf9d3",
+      "type": "momentum_spike",
+      "timestamp": "2026-03-16T05:00:00+00:00",
+      "claim_id": "clm_c55dfa192412",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.79,
+      "summary": "'If Iran retaliates against US bases in the Gulf, we are looking at $200 oil and a global recession within weeks' accelerated from 20th to 72nd percentile in 12h. Source diversity: low.",
+      "detail": {
+        "percentile_from": 20,
+        "percentile_to": 72,
+        "hours": 12
+      }
+    },
+    {
+      "id": "evt_bc478687e797",
+      "type": "arousal_escalation",
+      "timestamp": "2026-03-16T00:00:00+00:00",
+      "claim_id": "clm_c55dfa192412",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.71,
+      "summary": "'Iran retaliation economic impact' arousal shifted low to high over 48h, semantic content stable.",
+      "detail": {
+        "arousal_from": "low",
+        "arousal_to": "high",
+        "hours": 48
+      }
+    }
+  ],
+  "total_count": 2
+}

@@ -1,0 +1,130 @@
+[
+  {
+    "id": "clu_58d36a2aa974",
+    "concept_id": "fast-food-affordability-collapse",
+    "label": "Consumer Squeeze",
+    "member_count": 28,
+    "mutation_direction": "mainstreaming",
+    "mutation_magnitude": 0.34,
+    "arousal_trend": "cooling",
+    "arousal_value": 0.5,
+    "adversarial_pairs": [],
+    "influencer_seeding": {
+      "influencer_seeded": true,
+      "influencer_origin_count": 7,
+      "influencer_salience_contribution": 0.35,
+      "avg_propagation_hours": {
+        "x": 6.0,
+        "reddit": 10.1
+      }
+    }
+  },
+  {
+    "id": "clu_525cfc7e4147",
+    "concept_id": "purchasing-power-erosion",
+    "label": "Wage Gap",
+    "member_count": 25,
+    "mutation_direction": "radicalizing",
+    "mutation_magnitude": 0.33,
+    "arousal_trend": "cooling",
+    "arousal_value": 0.68,
+    "adversarial_pairs": [
+      "clu_55b433d61295"
+    ],
+    "influencer_seeding": {
+      "influencer_seeded": true,
+      "influencer_origin_count": 4,
+      "influencer_salience_contribution": 0.55,
+      "avg_propagation_hours": {
+        "x": 7.8,
+        "reddit": 4.2
+      }
+    }
+  },
+  {
+    "id": "clu_55b433d61295",
+    "concept_id": "inflation-reduction-framing",
+    "label": "Political Blame",
+    "member_count": 30,
+    "mutation_direction": "stable",
+    "mutation_magnitude": 0.28,
+    "arousal_trend": "warming",
+    "arousal_value": 0.68,
+    "adversarial_pairs": [
+      "clu_525cfc7e4147"
+    ],
+    "influencer_seeding": {
+      "influencer_seeded": false,
+      "influencer_origin_count": 0,
+      "influencer_salience_contribution": 0.0,
+      "avg_propagation_hours": {
+        "x": 0,
+        "reddit": 0
+      }
+    }
+  },
+  {
+    "id": "clu_5f85e0791f3c",
+    "concept_id": "rate-overshoot",
+    "label": "Fed Policy",
+    "member_count": 30,
+    "mutation_direction": "fragmenting",
+    "mutation_magnitude": 0.23,
+    "arousal_trend": "cooling",
+    "arousal_value": 0.33,
+    "adversarial_pairs": [
+      "clu_295113071b2d"
+    ],
+    "influencer_seeding": {
+      "influencer_seeded": true,
+      "influencer_origin_count": 12,
+      "influencer_salience_contribution": 0.22,
+      "avg_propagation_hours": {
+        "x": 4.8,
+        "reddit": 15.3
+      }
+    }
+  },
+  {
+    "id": "clu_b19ae17628c2",
+    "concept_id": "cpi-disconnect",
+    "label": "Measurement Distrust",
+    "member_count": 52,
+    "mutation_direction": "radicalizing",
+    "mutation_magnitude": 0.65,
+    "arousal_trend": "warming",
+    "arousal_value": 0.49,
+    "adversarial_pairs": [],
+    "influencer_seeding": {
+      "influencer_seeded": true,
+      "influencer_origin_count": 14,
+      "influencer_salience_contribution": 0.6,
+      "avg_propagation_hours": {
+        "x": 7.5,
+        "reddit": 9.6
+      }
+    }
+  },
+  {
+    "id": "clu_295113071b2d",
+    "concept_id": "grocery-profit-extraction",
+    "label": "Greedflation",
+    "member_count": 41,
+    "mutation_direction": "stable",
+    "mutation_magnitude": 0.12,
+    "arousal_trend": "stable",
+    "arousal_value": 0.6,
+    "adversarial_pairs": [
+      "clu_5f85e0791f3c"
+    ],
+    "influencer_seeding": {
+      "influencer_seeded": true,
+      "influencer_origin_count": 15,
+      "influencer_salience_contribution": 0.37,
+      "avg_propagation_hours": {
+        "x": 8.0,
+        "reddit": 11.7
+      }
+    }
+  }
+]

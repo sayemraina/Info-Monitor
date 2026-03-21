@@ -1,0 +1,149 @@
+{
+  "slice_a": {
+    "id": "x_platform",
+    "type": "platform",
+    "label": "X Platform",
+    "active_volume": 1658,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.62,
+    "is_influencer_framing": false
+  },
+  "slice_b": {
+    "id": "youtube_influencer",
+    "type": "platform",
+    "label": "Influencer Framing (YouTube)",
+    "active_volume": 1237,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.34,
+    "is_influencer_framing": true
+  },
+  "divergence": {
+    "jsd": 0.0417,
+    "jsd_sqrt": 0.2042,
+    "trend": [
+      0.2117,
+      0.2591,
+      0.1936,
+      0.2167,
+      0.2386,
+      0.1511,
+      0.1718,
+      0.239
+    ],
+    "typology": {
+      "information_asymmetry": 0.4,
+      "interpretive": 0.19,
+      "paradigmatic": 0.41,
+      "dominant_mode": "Paradigmatic",
+      "paradigmatic_caveat": true
+    }
+  },
+  "per_cluster": [
+    {
+      "cluster_id": "clu_1027311ded64",
+      "label": "Economic Impact",
+      "salience_a": 0.6582,
+      "salience_b": 0.3559,
+      "arousal_a": 0.65,
+      "arousal_b": 0.34,
+      "mutation_a": "stable",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_941ad0332764",
+      "label": "Escalation Fears",
+      "salience_a": 0.6518,
+      "salience_b": 0.4728,
+      "arousal_a": 0.35,
+      "arousal_b": 0.73,
+      "mutation_a": "radicalizing",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_68aef6e34079",
+      "label": "Proxy Network",
+      "salience_a": 0.5681,
+      "salience_b": 0.7832,
+      "arousal_a": 0.5,
+      "arousal_b": 0.83,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_64602e720d85",
+      "label": "Diplomacy",
+      "salience_a": 0.1481,
+      "salience_b": 0.2673,
+      "arousal_a": 0.66,
+      "arousal_b": 0.51,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_337b87a83646",
+      "label": "Anti War",
+      "salience_a": 0.7029,
+      "salience_b": 0.1708,
+      "arousal_a": 0.59,
+      "arousal_b": 0.66,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_342970f351e2",
+      "label": "Pro Strikes",
+      "salience_a": 0.3559,
+      "salience_b": 0.3107,
+      "arousal_a": 0.61,
+      "arousal_b": 0.89,
+      "mutation_a": "radicalizing",
+      "mutation_b": "mainstreaming"
+    }
+  ],
+  "arousal_comparison": {
+    "slice_a_avg": 0.54,
+    "slice_b_avg": 0.51
+  },
+  "exposure_comparison": {
+    "slice_a": {
+      "value": 0.6606,
+      "confidence_interval": [
+        0.6106,
+        0.7106
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [
+        0.2117,
+        0.2591,
+        0.1936,
+        0.2167,
+        0.2386,
+        0.1511,
+        0.1718,
+        0.239
+      ],
+      "source_distribution": "production"
+    },
+    "slice_b": {
+      "value": 0.6937,
+      "confidence_interval": [
+        0.6437,
+        0.7437
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [
+        0.2117,
+        0.2591,
+        0.1936,
+        0.2167,
+        0.2386,
+        0.1511,
+        0.1718,
+        0.239
+      ],
+      "source_distribution": "production"
+    }
+  }
+}

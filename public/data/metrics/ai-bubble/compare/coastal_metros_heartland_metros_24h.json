@@ -1,0 +1,149 @@
+{
+  "slice_a": {
+    "id": "coastal_metros",
+    "type": "geography",
+    "label": "Coastal Metros",
+    "active_volume": 3170,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.37,
+    "is_influencer_framing": false
+  },
+  "slice_b": {
+    "id": "heartland_metros",
+    "type": "geography",
+    "label": "Heartland",
+    "active_volume": 4410,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.47,
+    "is_influencer_framing": false
+  },
+  "divergence": {
+    "jsd": 0.0228,
+    "jsd_sqrt": 0.151,
+    "trend": [
+      0.1456,
+      0.1552,
+      0.137,
+      0.1481,
+      0.1596,
+      0.1473,
+      0.1244,
+      0.1276
+    ],
+    "typology": {
+      "information_asymmetry": 0.47,
+      "interpretive": 0.42,
+      "paradigmatic": 0.11,
+      "dominant_mode": "Information Asymmetry",
+      "paradigmatic_caveat": false
+    }
+  },
+  "per_cluster": [
+    {
+      "cluster_id": "clu_452c0c94e648",
+      "label": "DeepSeek Disruption",
+      "salience_a": 0.2732,
+      "salience_b": 0.1133,
+      "arousal_a": 0.65,
+      "arousal_b": 0.11,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_1dc7188c8291",
+      "label": "Real Revenue",
+      "salience_a": 0.4251,
+      "salience_b": 0.563,
+      "arousal_a": 0.75,
+      "arousal_b": 0.58,
+      "mutation_a": "stable",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_e7c2f993f70e",
+      "label": "Concentration Risk",
+      "salience_a": 0.6059,
+      "salience_b": 0.6733,
+      "arousal_a": 0.66,
+      "arousal_b": 0.42,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_a4367e6c53e4",
+      "label": "Infrastructure Spending",
+      "salience_a": 0.3405,
+      "salience_b": 0.7516,
+      "arousal_a": 0.72,
+      "arousal_b": 0.77,
+      "mutation_a": "stable",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_9c6f3d37f235",
+      "label": "Bubble Warnings",
+      "salience_a": 0.5422,
+      "salience_b": 0.8453,
+      "arousal_a": 0.81,
+      "arousal_b": 0.37,
+      "mutation_a": "radicalizing",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_81b923dc9e46",
+      "label": "Adoption Reality",
+      "salience_a": 0.4406,
+      "salience_b": 0.3182,
+      "arousal_a": 0.49,
+      "arousal_b": 0.51,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "stable"
+    }
+  ],
+  "arousal_comparison": {
+    "slice_a_avg": 0.54,
+    "slice_b_avg": 0.58
+  },
+  "exposure_comparison": {
+    "slice_a": {
+      "value": 0.5707,
+      "confidence_interval": [
+        0.5207,
+        0.6207
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [
+        0.1456,
+        0.1552,
+        0.137,
+        0.1481,
+        0.1596,
+        0.1473,
+        0.1244,
+        0.1276
+      ],
+      "source_distribution": "production"
+    },
+    "slice_b": {
+      "value": 0.7144,
+      "confidence_interval": [
+        0.6644,
+        0.7644
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [
+        0.1456,
+        0.1552,
+        0.137,
+        0.1481,
+        0.1596,
+        0.1473,
+        0.1244,
+        0.1276
+      ],
+      "source_distribution": "production"
+    }
+  }
+}

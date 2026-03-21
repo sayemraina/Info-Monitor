@@ -1,0 +1,34 @@
+{
+  "events": [
+    {
+      "id": "evt_251c1d23926a",
+      "type": "momentum_spike",
+      "timestamp": "2026-03-16T04:00:00+00:00",
+      "claim_id": "clm_c8c1e765399c",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.76,
+      "summary": "'Bitcoin spot ETF just got approved. BlackRock, Fidelity, the biggest names in finance are in. This isn't your cousin's crypto anymore \u2014 it's institutional now.' accelerated from 20th to 72nd percentile in 12h. Source diversity: low.",
+      "detail": {
+        "percentile_from": 20,
+        "percentile_to": 72,
+        "hours": 12
+      }
+    },
+    {
+      "id": "evt_fece97271b92",
+      "type": "vocabulary_rotation",
+      "timestamp": "2026-03-15T17:00:00+00:00",
+      "claim_id": "clm_c8c1e765399c",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.78,
+      "summary": "Vocabulary rotation detected in 'Bitcoin spot ETF approval': emerging terminology overlaps with adjacent narratives.",
+      "detail": {
+        "rotation_shift": 0.42,
+        "hours": 24
+      }
+    }
+  ],
+  "total_count": 2
+}

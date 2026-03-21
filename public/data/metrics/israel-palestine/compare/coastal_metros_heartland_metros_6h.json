@@ -1,0 +1,149 @@
+{
+  "slice_a": {
+    "id": "coastal_metros",
+    "type": "geography",
+    "label": "Coastal Metros",
+    "active_volume": 2319,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.36,
+    "is_influencer_framing": false
+  },
+  "slice_b": {
+    "id": "heartland_metros",
+    "type": "geography",
+    "label": "Heartland",
+    "active_volume": 4795,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.66,
+    "is_influencer_framing": false
+  },
+  "divergence": {
+    "jsd": 0.0502,
+    "jsd_sqrt": 0.2242,
+    "trend": [
+      0.1512,
+      0.1929,
+      0.2135,
+      0.2668,
+      0.2326,
+      0.2581,
+      0.2192,
+      0.2232
+    ],
+    "typology": {
+      "information_asymmetry": 0.78,
+      "interpretive": 0.16,
+      "paradigmatic": 0.06,
+      "dominant_mode": "Information Asymmetry",
+      "paradigmatic_caveat": false
+    }
+  },
+  "per_cluster": [
+    {
+      "cluster_id": "clu_aac037e81401",
+      "label": "Ceasefire Diplomacy",
+      "salience_a": 0.6925,
+      "salience_b": 0.5564,
+      "arousal_a": 0.57,
+      "arousal_b": 0.47,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_54bdefed5ccd",
+      "label": "Media Framing",
+      "salience_a": 0.4452,
+      "salience_b": 0.145,
+      "arousal_a": 0.8,
+      "arousal_b": 0.68,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_e4ccbd641f0b",
+      "label": "Accountability",
+      "salience_a": 0.9152,
+      "salience_b": 0.3813,
+      "arousal_a": 0.59,
+      "arousal_b": 0.41,
+      "mutation_a": "radicalizing",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_5dd6aad8b467",
+      "label": "Self Defense",
+      "salience_a": 0.7714,
+      "salience_b": 0.5535,
+      "arousal_a": 0.49,
+      "arousal_b": 0.46,
+      "mutation_a": "radicalizing",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_706a04c37c10",
+      "label": "Humanitarian Crisis",
+      "salience_a": 0.7832,
+      "salience_b": 0.0874,
+      "arousal_a": 0.67,
+      "arousal_b": 0.4,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_a128faf3fa40",
+      "label": "Campus Protests",
+      "salience_a": 0.6181,
+      "salience_b": 0.1086,
+      "arousal_a": 0.35,
+      "arousal_b": 0.43,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "stable"
+    }
+  ],
+  "arousal_comparison": {
+    "slice_a_avg": 0.41,
+    "slice_b_avg": 0.33
+  },
+  "exposure_comparison": {
+    "slice_a": {
+      "value": 0.3457,
+      "confidence_interval": [
+        0.2957,
+        0.3957
+      ],
+      "baseline": "global",
+      "time_window": "6h",
+      "sparkline": [
+        0.1512,
+        0.1929,
+        0.2135,
+        0.2668,
+        0.2326,
+        0.2581,
+        0.2192,
+        0.2232
+      ],
+      "source_distribution": "production"
+    },
+    "slice_b": {
+      "value": 0.3388,
+      "confidence_interval": [
+        0.2888,
+        0.3888
+      ],
+      "baseline": "global",
+      "time_window": "6h",
+      "sparkline": [
+        0.1512,
+        0.1929,
+        0.2135,
+        0.2668,
+        0.2326,
+        0.2581,
+        0.2192,
+        0.2232
+      ],
+      "source_distribution": "production"
+    }
+  }
+}

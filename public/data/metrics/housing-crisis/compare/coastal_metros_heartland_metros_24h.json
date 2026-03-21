@@ -1,0 +1,149 @@
+{
+  "slice_a": {
+    "id": "coastal_metros",
+    "type": "geography",
+    "label": "Coastal Metros",
+    "active_volume": 1209,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.35,
+    "is_influencer_framing": false
+  },
+  "slice_b": {
+    "id": "heartland_metros",
+    "type": "geography",
+    "label": "Heartland",
+    "active_volume": 3063,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.51,
+    "is_influencer_framing": false
+  },
+  "divergence": {
+    "jsd": 0.0908,
+    "jsd_sqrt": 0.3014,
+    "trend": [
+      0.3132,
+      0.3048,
+      0.2838,
+      0.3534,
+      0.3258,
+      0.3252,
+      0.2819,
+      0.2853
+    ],
+    "typology": {
+      "information_asymmetry": 0.51,
+      "interpretive": 0.26,
+      "paradigmatic": 0.23,
+      "dominant_mode": "Information Asymmetry",
+      "paradigmatic_caveat": false
+    }
+  },
+  "per_cluster": [
+    {
+      "cluster_id": "clu_d420f6a45348",
+      "label": "Homelessness",
+      "salience_a": 0.0699,
+      "salience_b": 0.6919,
+      "arousal_a": 0.76,
+      "arousal_b": 0.49,
+      "mutation_a": "stable",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_706cfe898895",
+      "label": "Affordability",
+      "salience_a": 0.9298,
+      "salience_b": 0.7115,
+      "arousal_a": 0.4,
+      "arousal_b": 0.36,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_6b57df076cb0",
+      "label": "NIMBY YIMBY",
+      "salience_a": 0.8728,
+      "salience_b": 0.2416,
+      "arousal_a": 0.74,
+      "arousal_b": 0.22,
+      "mutation_a": "radicalizing",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_4dbea2adbf41",
+      "label": "Corporate Landlords",
+      "salience_a": 0.6125,
+      "salience_b": 0.7561,
+      "arousal_a": 0.41,
+      "arousal_b": 0.56,
+      "mutation_a": "stable",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_caa1bcca3fc9",
+      "label": "Fed Policy",
+      "salience_a": 0.4533,
+      "salience_b": 0.5098,
+      "arousal_a": 0.77,
+      "arousal_b": 0.26,
+      "mutation_a": "stable",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_b568531cbe60",
+      "label": "Supply Shortage",
+      "salience_a": 0.6569,
+      "salience_b": 0.2104,
+      "arousal_a": 0.26,
+      "arousal_b": 0.14,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "radicalizing"
+    }
+  ],
+  "arousal_comparison": {
+    "slice_a_avg": 0.63,
+    "slice_b_avg": 0.53
+  },
+  "exposure_comparison": {
+    "slice_a": {
+      "value": 0.7468,
+      "confidence_interval": [
+        0.6968,
+        0.7968
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [
+        0.3132,
+        0.3048,
+        0.2838,
+        0.3534,
+        0.3258,
+        0.3252,
+        0.2819,
+        0.2853
+      ],
+      "source_distribution": "production"
+    },
+    "slice_b": {
+      "value": 0.4947,
+      "confidence_interval": [
+        0.4447,
+        0.5447
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [
+        0.3132,
+        0.3048,
+        0.2838,
+        0.3534,
+        0.3258,
+        0.3252,
+        0.2819,
+        0.2853
+      ],
+      "source_distribution": "production"
+    }
+  }
+}

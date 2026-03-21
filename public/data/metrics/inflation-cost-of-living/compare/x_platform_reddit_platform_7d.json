@@ -1,0 +1,149 @@
+{
+  "slice_a": {
+    "id": "x_platform",
+    "type": "platform",
+    "label": "X Platform",
+    "active_volume": 4445,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.34,
+    "is_influencer_framing": false
+  },
+  "slice_b": {
+    "id": "reddit_platform",
+    "type": "platform",
+    "label": "Reddit Platform",
+    "active_volume": 2007,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.49,
+    "is_influencer_framing": false
+  },
+  "divergence": {
+    "jsd": 0.0861,
+    "jsd_sqrt": 0.2934,
+    "trend": [
+      0.2627,
+      0.2919,
+      0.285,
+      0.2579,
+      0.3004,
+      0.2728,
+      0.2897,
+      0.2669
+    ],
+    "typology": {
+      "information_asymmetry": 0.43,
+      "interpretive": 0.32,
+      "paradigmatic": 0.25,
+      "dominant_mode": "Information Asymmetry",
+      "paradigmatic_caveat": false
+    }
+  },
+  "per_cluster": [
+    {
+      "cluster_id": "clu_58d36a2aa974",
+      "label": "Consumer Squeeze",
+      "salience_a": 0.4003,
+      "salience_b": 0.9156,
+      "arousal_a": 0.62,
+      "arousal_b": 0.55,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_525cfc7e4147",
+      "label": "Wage Gap",
+      "salience_a": 0.4166,
+      "salience_b": 0.1868,
+      "arousal_a": 0.87,
+      "arousal_b": 0.76,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_55b433d61295",
+      "label": "Political Blame",
+      "salience_a": 0.1193,
+      "salience_b": 0.5744,
+      "arousal_a": 0.75,
+      "arousal_b": 0.41,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_5f85e0791f3c",
+      "label": "Fed Policy",
+      "salience_a": 0.481,
+      "salience_b": 0.9378,
+      "arousal_a": 0.24,
+      "arousal_b": 0.24,
+      "mutation_a": "stable",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_b19ae17628c2",
+      "label": "Measurement Distrust",
+      "salience_a": 0.4358,
+      "salience_b": 0.0607,
+      "arousal_a": 0.3,
+      "arousal_b": 0.35,
+      "mutation_a": "radicalizing",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_295113071b2d",
+      "label": "Greedflation",
+      "salience_a": 0.5349,
+      "salience_b": 0.5583,
+      "arousal_a": 0.63,
+      "arousal_b": 0.28,
+      "mutation_a": "stable",
+      "mutation_b": "mainstreaming"
+    }
+  ],
+  "arousal_comparison": {
+    "slice_a_avg": 0.53,
+    "slice_b_avg": 0.67
+  },
+  "exposure_comparison": {
+    "slice_a": {
+      "value": 0.5978,
+      "confidence_interval": [
+        0.5478,
+        0.6478
+      ],
+      "baseline": "global",
+      "time_window": "7d",
+      "sparkline": [
+        0.2627,
+        0.2919,
+        0.285,
+        0.2579,
+        0.3004,
+        0.2728,
+        0.2897,
+        0.2669
+      ],
+      "source_distribution": "production"
+    },
+    "slice_b": {
+      "value": 0.6635,
+      "confidence_interval": [
+        0.6135,
+        0.7135
+      ],
+      "baseline": "global",
+      "time_window": "7d",
+      "sparkline": [
+        0.2627,
+        0.2919,
+        0.285,
+        0.2579,
+        0.3004,
+        0.2728,
+        0.2897,
+        0.2669
+      ],
+      "source_distribution": "production"
+    }
+  }
+}

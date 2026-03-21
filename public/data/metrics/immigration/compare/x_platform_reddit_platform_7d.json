@@ -1,0 +1,149 @@
+{
+  "slice_a": {
+    "id": "x_platform",
+    "type": "platform",
+    "label": "X Platform",
+    "active_volume": 2105,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.55,
+    "is_influencer_framing": false
+  },
+  "slice_b": {
+    "id": "reddit_platform",
+    "type": "platform",
+    "label": "Reddit Platform",
+    "active_volume": 583,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.68,
+    "is_influencer_framing": false
+  },
+  "divergence": {
+    "jsd": 0.0674,
+    "jsd_sqrt": 0.2597,
+    "trend": [
+      0.269,
+      0.2708,
+      0.2196,
+      0.253,
+      0.271,
+      0.2343,
+      0.3079,
+      0.2238
+    ],
+    "typology": {
+      "information_asymmetry": 0.71,
+      "interpretive": 0.19,
+      "paradigmatic": 0.1,
+      "dominant_mode": "Information Asymmetry",
+      "paradigmatic_caveat": false
+    }
+  },
+  "per_cluster": [
+    {
+      "cluster_id": "clu_e87163b6ced2",
+      "label": "Cultural Identity",
+      "salience_a": 0.2177,
+      "salience_b": 0.7393,
+      "arousal_a": 0.45,
+      "arousal_b": 0.48,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_dc3b90568486",
+      "label": "Economic Impact",
+      "salience_a": 0.7846,
+      "salience_b": 0.3263,
+      "arousal_a": 0.78,
+      "arousal_b": 0.31,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_098405cffda1",
+      "label": "Humanitarian",
+      "salience_a": 0.2247,
+      "salience_b": 0.6658,
+      "arousal_a": 0.23,
+      "arousal_b": 0.5,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_7fb4a7697265",
+      "label": "Enforcement",
+      "salience_a": 0.2657,
+      "salience_b": 0.5845,
+      "arousal_a": 0.62,
+      "arousal_b": 0.51,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_424d8c544a52",
+      "label": "Asylum Policy",
+      "salience_a": 0.5447,
+      "salience_b": 0.4493,
+      "arousal_a": 0.78,
+      "arousal_b": 0.32,
+      "mutation_a": "stable",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_59fc24f369ce",
+      "label": "Border Security",
+      "salience_a": 0.33,
+      "salience_b": 0.5238,
+      "arousal_a": 0.63,
+      "arousal_b": 0.34,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    }
+  ],
+  "arousal_comparison": {
+    "slice_a_avg": 0.55,
+    "slice_b_avg": 0.62
+  },
+  "exposure_comparison": {
+    "slice_a": {
+      "value": 0.5917,
+      "confidence_interval": [
+        0.5417,
+        0.6417
+      ],
+      "baseline": "global",
+      "time_window": "7d",
+      "sparkline": [
+        0.269,
+        0.2708,
+        0.2196,
+        0.253,
+        0.271,
+        0.2343,
+        0.3079,
+        0.2238
+      ],
+      "source_distribution": "production"
+    },
+    "slice_b": {
+      "value": 0.3056,
+      "confidence_interval": [
+        0.2556,
+        0.3556
+      ],
+      "baseline": "global",
+      "time_window": "7d",
+      "sparkline": [
+        0.269,
+        0.2708,
+        0.2196,
+        0.253,
+        0.271,
+        0.2343,
+        0.3079,
+        0.2238
+      ],
+      "source_distribution": "production"
+    }
+  }
+}
