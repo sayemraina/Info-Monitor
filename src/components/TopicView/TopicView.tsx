@@ -46,7 +46,7 @@ export function TopicView({
   entryClusterId,
   onSelectClaim,
   onDeselectClaim,
-  onSetTimeWindow,
+  onSetTimeWindow: _onSetTimeWindow,
   onSetCompareMode,
   onSetSelectedSlices,
   onSetEventTypeFilter,

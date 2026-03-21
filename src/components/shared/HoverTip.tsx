@@ -15,7 +15,7 @@ const EDGE_PAD = 8
 
 export function HoverTip({ text, children, block, instant }: HoverTipProps) {
   const [show, setShow] = useState(false)
-  const [hinting, setHinting] = useState(false)
+  const [, setHinting] = useState(false)
   const [pos, setPos] = useState({ top: 0, left: 0, flipBelow: false })
   const hideTimer = useRef<ReturnType<typeof setTimeout>>(null)
   const showTimer = useRef<ReturnType<typeof setTimeout>>(null)

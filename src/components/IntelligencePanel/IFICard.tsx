@@ -23,7 +23,7 @@ function SweepCanvas({ active }: { active: boolean }) {
     if (!canvas) return
     const parent = canvas.parentElement
     if (!parent) return
-    const ctx = canvas.getContext('2d')
+    const ctx = canvas.getContext('2d')!
     if (!ctx) return
 
     const dpr = window.devicePixelRatio || 1
@@ -55,7 +55,7 @@ function SweepCanvas({ active }: { active: boolean }) {
       ctx.clearRect(0, 0, w, h)
 
       const cx = w / 2
-      const cy = h / 2
+      const cy = h / 2 - 6  // nudge radar center up just enough to clear CTA
       const r = Math.min(w, h) / 2 - 12
 
       // Grid rings
@@ -136,24 +136,6 @@ export const IFICard: React.FC<IFICardProps> = ({ ifi, onOpenRadar }) => {
     how: "√JSD between cluster-salience distributions. 0 = no change, 100 = complete restructuring.",
   };
 
-  const trendTextColor = ifi.trend === 'increasing' ? '#EF4444' : ifi.trend === 'decreasing' ? '#14B8A6' : '#64748B';
-
-  const fluxIcon = ifi.flux_character === 'diversifying' ? '↗'
-    : ifi.flux_character === 'consolidating' ? '↘'
-    : '⇄';
-
-  const fluxColor = ifi.flux_character === 'diversifying' ? '#F59E0B'
-    : ifi.flux_character === 'consolidating' ? '#06B6D4'
-    : '#94A3B8';
-
-  const fluxDescription = ifi.flux_character === 'diversifying'
-    ? 'Diversifying — more clusters gaining prominence. Narrative space expanding.'
-    : ifi.flux_character === 'consolidating'
-    ? 'Consolidating — fewer clusters dominating. A narrative is winning attention.'
-    : 'Reshuffling — clusters trading prominence without overall entropy change.';
-
-  const trendLabel = ifi.trend === 'increasing' ? '↑ accelerating'
-    : ifi.trend === 'decreasing' ? '↓ stabilizing' : '→ steady';
 
   return (
     <Card
@@ -174,7 +156,7 @@ export const IFICard: React.FC<IFICardProps> = ({ ifi, onOpenRadar }) => {
 
         {/* Overlay content */}
         <div className="relative z-10 flex flex-col h-full">
-          {/* IFI number — hover reveals trend + flux */}
+          {/* IFI number top-left */}
           <div className="flex-shrink-0">
             <HoverTip text={`TREND: ${ifi.trend}\n${ifi.trend === 'increasing' ? "Narrative landscape is restructuring faster" : ifi.trend === 'decreasing' ? "Narrative landscape is settling down" : "Narrative landscape isn't changing much right now"}\n\nDIRECTION: ${ifi.flux_character}\n${ifi.flux_character === 'diversifying' ? 'New narrative threads emerging. More voices in the conversation.' : ifi.flux_character === 'consolidating' ? 'One narrative taking over. Fewer perspectives getting through.' : 'Dominant narratives are rotating but the overall landscape shape is stable.'}`}>
               <span className="text-3xl font-mono text-white group-hover:text-[#E94560] transition-colors cursor-help ml-1">
@@ -183,11 +165,11 @@ export const IFICard: React.FC<IFICardProps> = ({ ifi, onOpenRadar }) => {
             </HoverTip>
           </div>
 
-          {/* Spacer */}
+          {/* Spacer — but leave room for CTA */}
           <div className="flex-1" />
 
           {/* CTA at bottom */}
-          <div className="flex-shrink-0 text-center">
+          <div className="flex-shrink-0 text-center pb-1">
             <span className="text-[9px] font-mono tracking-wider text-slate-600 group-hover:text-[#E94560] transition-colors">
               click to decompose →
             </span>
