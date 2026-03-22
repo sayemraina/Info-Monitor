@@ -1,17 +1,32 @@
 {
   "events": [
     {
-      "id": "evt_fc277d61dd98",
-      "type": "coordination_flag",
-      "timestamp": "2026-03-16T06:00:00+00:00",
+      "id": "evt_4ba44fba945b",
+      "type": "momentum_spike",
+      "timestamp": "2026-03-16T04:00:00+00:00",
       "claim_id": "clm_22249e994c3d",
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.76,
-      "summary": "Near-duplicate content: 68 similar posts from non-overlapping accounts within 2h.",
+      "confidence": 0.85,
+      "summary": "'The Fed is keeping rates at 5.5% and acting surprised that nobody can afford a house. Powell keeps saying 'we need to bring down inflation' while making housing MORE expensive.' accelerated from 20th to 72nd percentile in 12h. Source diversity: low.",
+      "detail": {
+        "percentile_from": 20,
+        "percentile_to": 72,
+        "hours": 12
+      }
+    },
+    {
+      "id": "evt_fc277d61dd98",
+      "type": "coordination_flag",
+      "timestamp": "2026-03-15T21:00:00+00:00",
+      "claim_id": "clm_22249e994c3d",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.74,
+      "summary": "Near-duplicate content: 25 similar posts from non-overlapping accounts within 4h.",
       "detail": {
         "signal": "near_duplicate",
-        "count": 55,
+        "count": 40,
         "window_hours": 4
       }
     },
@@ -22,23 +37,8 @@
       "claim_id": "clm_552c47fcafd5",
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.83,
+      "confidence": 0.9,
       "summary": "'Blackstone just bought another 10,000 single-family homes \u2014 they now own more houses than some states have residents' accelerated from 20th to 72nd percentile in 12h. Source diversity: low.",
-      "detail": {
-        "percentile_from": 20,
-        "percentile_to": 72,
-        "hours": 12
-      }
-    },
-    {
-      "id": "evt_4ba44fba945b",
-      "type": "momentum_spike",
-      "timestamp": "2026-03-15T12:00:00+00:00",
-      "claim_id": "clm_22249e994c3d",
-      "slice_id": null,
-      "severity": "high",
-      "confidence": 0.81,
-      "summary": "'The Fed is keeping rates at 5.5% and acting surprised that nobody can afford a house. Powell keeps saying 'we need to bring down inflation' while making housing MORE expensive.' accelerated from 20th to 72nd percentile in 12h. Source diversity: low.",
       "detail": {
         "percentile_from": 20,
         "percentile_to": 72,
@@ -48,11 +48,11 @@
     {
       "id": "evt_86e9dca5b179",
       "type": "momentum_spike",
-      "timestamp": "2026-03-15T05:00:00+00:00",
+      "timestamp": "2026-03-15T14:00:00+00:00",
       "claim_id": "clm_2ed5adbacbb3",
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.93,
+      "confidence": 0.85,
       "summary": "'Supreme Court ruled 6-3 in Grants Pass that cities CAN criminalize sleeping outdoors. So the plan is: make housing unaffordable, then arrest people for being homeless. Got it.' accelerated from 20th to 72nd percentile in 12h. Source diversity: low.",
       "detail": {
         "percentile_from": 20,
@@ -63,45 +63,16 @@
     {
       "id": "evt_c24404e52b64",
       "type": "arousal_escalation",
-      "timestamp": "2026-03-15T12:00:00+00:00",
+      "timestamp": "2026-03-16T00:00:00+00:00",
       "claim_id": "clm_2ed5adbacbb3",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.86,
+      "confidence": 0.76,
       "summary": "'SCOTUS Grants Pass v. Johnson ruling' arousal shifted low to high over 48h, semantic content stable.",
       "detail": {
         "arousal_from": "low",
         "arousal_to": "high",
         "hours": 48
-      }
-    },
-    {
-      "id": "evt_4a28c618fedb",
-      "type": "divergence_shift",
-      "timestamp": "2026-03-15T03:00:00+00:00",
-      "claim_id": null,
-      "slice_id": "x_platform",
-      "severity": "medium",
-      "confidence": 0.74,
-      "summary": "X vs Reddit divergence increased 23% over 48h. Mode: information asymmetry.",
-      "detail": {
-        "jsd_change": 0.23,
-        "hours": 48,
-        "mode": "information_asymmetry"
-      }
-    },
-    {
-      "id": "evt_f7e49701ced8",
-      "type": "vocabulary_rotation",
-      "timestamp": "2026-03-14T22:00:00+00:00",
-      "claim_id": "clm_e1be04af524a",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.68,
-      "summary": "Vocabulary rotation detected in 'Blackstone institutional home buying': emerging terminology overlaps with adjacent narratives.",
-      "detail": {
-        "rotation_shift": 0.42,
-        "hours": 24
       }
     },
     {
@@ -111,23 +82,8 @@
       "claim_id": "clm_552c47fcafd5",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.84,
+      "confidence": 0.78,
       "summary": "'institutional housing acquisition' arousal shifted low to high over 48h, semantic content stable.",
-      "detail": {
-        "arousal_from": "low",
-        "arousal_to": "high",
-        "hours": 48
-      }
-    },
-    {
-      "id": "evt_d9cd8c42321e",
-      "type": "arousal_escalation",
-      "timestamp": "2026-03-14T12:00:00+00:00",
-      "claim_id": "clm_22249e994c3d",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.82,
-      "summary": "'Federal Reserve interest rate policy and housing' arousal shifted low to high over 48h, semantic content stable.",
       "detail": {
         "arousal_from": "low",
         "arousal_to": "high",
@@ -137,11 +93,11 @@
     {
       "id": "evt_c6e1c8263373",
       "type": "arousal_escalation",
-      "timestamp": "2026-03-13T23:00:00+00:00",
+      "timestamp": "2026-03-14T20:00:00+00:00",
       "claim_id": "clm_e1be04af524a",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.88,
+      "confidence": 0.79,
       "summary": "'Blackstone institutional home buying' arousal shifted low to high over 48h, semantic content stable.",
       "detail": {
         "arousal_from": "low",
@@ -150,35 +106,79 @@
       }
     },
     {
+      "id": "evt_f7e49701ced8",
+      "type": "vocabulary_rotation",
+      "timestamp": "2026-03-14T07:00:00+00:00",
+      "claim_id": "clm_e1be04af524a",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.82,
+      "summary": "Vocabulary rotation detected in 'Blackstone institutional home buying': emerging terminology overlaps with adjacent narratives.",
+      "detail": {
+        "rotation_shift": 0.42,
+        "hours": 24
+      }
+    },
+    {
+      "id": "evt_d9cd8c42321e",
+      "type": "arousal_escalation",
+      "timestamp": "2026-03-14T00:00:00+00:00",
+      "claim_id": "clm_22249e994c3d",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.83,
+      "summary": "'Federal Reserve interest rate policy and housing' arousal shifted low to high over 48h, semantic content stable.",
+      "detail": {
+        "arousal_from": "low",
+        "arousal_to": "high",
+        "hours": 48
+      }
+    },
+    {
+      "id": "evt_4a28c618fedb",
+      "type": "divergence_shift",
+      "timestamp": "2026-03-13T11:00:00+00:00",
+      "claim_id": null,
+      "slice_id": "x_platform",
+      "severity": "medium",
+      "confidence": 0.78,
+      "summary": "X vs Reddit divergence increased 23% over 48h. Mode: information asymmetry.",
+      "detail": {
+        "jsd_change": 0.23,
+        "hours": 48,
+        "mode": "information_asymmetry"
+      }
+    },
+    {
       "id": "evt_49c2627fa515",
       "type": "coordination_flag",
-      "timestamp": "2026-03-14T03:00:00+00:00",
+      "timestamp": "2026-03-14T04:00:00+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "low",
-      "confidence": 0.56,
-      "summary": "Counter-narrative response lag of 9h between 'Blackstone institutional home buying' and 'Housing supply deficit' clusters \u2014 consistent with organic counter-mobilization.",
+      "confidence": 0.61,
+      "summary": "Counter-narrative response lag of 10h between 'Blackstone institutional home buying' and 'Housing supply deficit' clusters \u2014 consistent with organic counter-mobilization.",
       "detail": {
         "signal": "adversarial_response_lag",
         "cluster_a": "corporate-landlords",
         "cluster_b": "supply-shortage",
-        "lag_hours": 9
+        "lag_hours": 10
       }
     },
     {
       "id": "evt_2b45fe81bad3",
       "type": "lead_lag",
-      "timestamp": "2026-03-12T15:00:00+00:00",
+      "timestamp": "2026-03-12T09:00:00+00:00",
       "claim_id": "clm_e1be04af524a",
       "slice_id": null,
       "severity": "low",
-      "confidence": 0.61,
-      "summary": "'Blackstone now owns 300,000+ single-family homes in the US. They're not investin...' first detected on Reddit, appeared on X 36h later. Fidelity: 79%.",
+      "confidence": 0.62,
+      "summary": "'Institutional investors now own over 500,000 single-family homes in the US. They...' first detected on X, appeared on X 24h later. Fidelity: 88%.",
       "detail": {
-        "source_platform": "x",
+        "source_platform": "reddit",
         "target_platform": "reddit",
-        "lag_hours": 11,
-        "fidelity": 0.7
+        "lag_hours": 30,
+        "fidelity": 0.69
       }
     }
   ],

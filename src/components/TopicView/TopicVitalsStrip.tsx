@@ -156,8 +156,12 @@ export function TopicVitalsStrip({ topic, landscape, cascadeClasses, onTagClick 
       {/* Narrative tags row */}
       {tags.length > 0 && (
         <div
-          className="flex items-center gap-2 px-3"
-          style={{ height: '24px', paddingBottom: '4px' }}
+          className={`flex items-center gap-2 px-3 ${isMobile ? 'mobile-scroll-fade' : ''}`}
+          style={{
+            height: isMobile ? '28px' : '24px',
+            paddingBottom: '4px',
+            ...(isMobile ? { overflowX: 'auto', WebkitOverflowScrolling: 'touch', scrollbarWidth: 'none', msOverflowStyle: 'none' } : {}),
+          }}
         >
           {tags.map(tag => (
             <button
@@ -166,15 +170,16 @@ export function TopicVitalsStrip({ topic, landscape, cascadeClasses, onTagClick 
               className={`font-data cursor-pointer ${cascadeClasses?.[tag.hint === 'youtube_cta' ? 'shaper' : ''] ?? ''}`}
               onClick={() => onTagClick?.(tag.hint)}
               style={{
-                fontSize: '8px',
+                fontSize: isMobile ? '9px' : '8px',
                 letterSpacing: '0.8px',
                 color: tag.color,
                 background: `${tag.color}10`,
                 border: `1px solid ${tag.color}30`,
                 borderRadius: '3px',
-                padding: '1px 6px',
+                padding: isMobile ? '3px 8px' : '1px 6px',
                 whiteSpace: 'nowrap',
                 transition: 'all 150ms ease',
+                flexShrink: 0,
               }}
               onMouseEnter={e => {
                 (e.target as HTMLElement).style.background = `${tag.color}20`

@@ -3,155 +3,155 @@
     "id": "x_platform",
     "type": "platform",
     "label": "X Platform",
-    "active_volume": 4592,
+    "active_volume": 3416,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.69,
+    "base_rate_weight": 0.32,
     "is_influencer_framing": false
   },
   "slice_b": {
     "id": "youtube_influencer",
     "type": "platform",
     "label": "Influencer Framing (YouTube)",
-    "active_volume": 1334,
+    "active_volume": 2889,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.59,
+    "base_rate_weight": 0.51,
     "is_influencer_framing": true
   },
   "divergence": {
-    "jsd": 0.0185,
-    "jsd_sqrt": 0.1361,
+    "jsd": 0.0574,
+    "jsd_sqrt": 0.2395,
     "trend": [
-      0.1443,
-      0.1793,
-      0.1287,
-      0.1774,
-      0.1962,
-      0.1532,
-      0.0927,
-      0.1633
+      0.227,
+      0.2248,
+      0.2312,
+      0.1947,
+      0.2507,
+      0.2333,
+      0.2472,
+      0.2121
     ],
     "typology": {
-      "information_asymmetry": 0.31,
-      "interpretive": 0.19,
-      "paradigmatic": 0.5,
-      "dominant_mode": "Paradigmatic",
-      "paradigmatic_caveat": true
+      "information_asymmetry": 0.1,
+      "interpretive": 0.63,
+      "paradigmatic": 0.27,
+      "dominant_mode": "Interpretive",
+      "paradigmatic_caveat": false
     }
   },
   "per_cluster": [
     {
-      "cluster_id": "clu_b71a2467b80f",
-      "label": "AI Augmentation",
-      "salience_a": 0.5206,
-      "salience_b": 0.6463,
-      "arousal_a": 0.63,
-      "arousal_b": 0.18,
-      "mutation_a": "stable",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_374843c2887a",
-      "label": "Corporate Hypocrisy",
-      "salience_a": 0.4496,
-      "salience_b": 0.5884,
-      "arousal_a": 0.14,
-      "arousal_b": 0.4,
-      "mutation_a": "mainstreaming",
-      "mutation_b": "mainstreaming"
+      "cluster_id": "clu_dc42d18abdfa",
+      "label": "Productivity Gains",
+      "salience_a": 0.2174,
+      "salience_b": 0.3936,
+      "arousal_a": 0.54,
+      "arousal_b": 0.13,
+      "mutation_a": "radicalizing",
+      "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_df45fe3b46cd",
       "label": "Creative Threat",
-      "salience_a": 0.3872,
-      "salience_b": 0.2647,
-      "arousal_a": 0.17,
-      "arousal_b": 0.44,
+      "salience_a": 0.3235,
+      "salience_b": 0.5534,
+      "arousal_a": 0.47,
+      "arousal_b": 0.12,
       "mutation_a": "mainstreaming",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_664c519fc265",
-      "label": "Retraining Policy",
-      "salience_a": 0.7885,
-      "salience_b": 0.662,
-      "arousal_a": 0.15,
-      "arousal_b": 0.87,
-      "mutation_a": "mainstreaming",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_dc42d18abdfa",
-      "label": "Productivity Gains",
-      "salience_a": 0.2011,
-      "salience_b": 0.2003,
-      "arousal_a": 0.43,
-      "arousal_b": 0.19,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_42605ef6c255",
-      "label": "Job Displacement",
-      "salience_a": 0.5558,
-      "salience_b": 0.2206,
-      "arousal_a": 0.27,
-      "arousal_b": 0.53,
-      "mutation_a": "radicalizing",
       "mutation_b": "mainstreaming"
     },
     {
       "cluster_id": "clu_ac4164d3d878",
       "label": "Historical Parallel",
-      "salience_a": 0.2592,
-      "salience_b": 0.1453,
-      "arousal_a": 0.36,
-      "arousal_b": 0.11,
+      "salience_a": 0.2864,
+      "salience_b": 0.9104,
+      "arousal_a": 0.77,
+      "arousal_b": 0.48,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_42605ef6c255",
+      "label": "Job Displacement",
+      "salience_a": 0.8534,
+      "salience_b": 0.4254,
+      "arousal_a": 0.49,
+      "arousal_b": 0.65,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_664c519fc265",
+      "label": "Retraining Policy",
+      "salience_a": 0.1574,
+      "salience_b": 0.2995,
+      "arousal_a": 0.9,
+      "arousal_b": 0.15,
       "mutation_a": "stable",
       "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_b71a2467b80f",
+      "label": "AI Augmentation",
+      "salience_a": 0.573,
+      "salience_b": 0.559,
+      "arousal_a": 0.79,
+      "arousal_b": 0.6,
+      "mutation_a": "radicalizing",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_374843c2887a",
+      "label": "Corporate Hypocrisy",
+      "salience_a": 0.7865,
+      "salience_b": 0.3859,
+      "arousal_a": 0.69,
+      "arousal_b": 0.11,
+      "mutation_a": "radicalizing",
+      "mutation_b": "mainstreaming"
     }
   ],
   "arousal_comparison": {
-    "slice_a_avg": 0.62,
-    "slice_b_avg": 0.67
+    "slice_a_avg": 0.67,
+    "slice_b_avg": 0.51
   },
   "exposure_comparison": {
     "slice_a": {
-      "value": 0.5846,
+      "value": 0.6832,
       "confidence_interval": [
-        0.5346,
-        0.6346
+        0.6332,
+        0.7332
       ],
       "baseline": "global",
       "time_window": "7d",
       "sparkline": [
-        0.1443,
-        0.1793,
-        0.1287,
-        0.1774,
-        0.1962,
-        0.1532,
-        0.0927,
-        0.1633
+        0.227,
+        0.2248,
+        0.2312,
+        0.1947,
+        0.2507,
+        0.2333,
+        0.2472,
+        0.2121
       ],
       "source_distribution": "production"
     },
     "slice_b": {
-      "value": 0.426,
+      "value": 0.3916,
       "confidence_interval": [
-        0.376,
-        0.476
+        0.3416,
+        0.4416
       ],
       "baseline": "global",
       "time_window": "7d",
       "sparkline": [
-        0.1443,
-        0.1793,
-        0.1287,
-        0.1774,
-        0.1962,
-        0.1532,
-        0.0927,
-        0.1633
+        0.227,
+        0.2248,
+        0.2312,
+        0.1947,
+        0.2507,
+        0.2333,
+        0.2472,
+        0.2121
       ],
       "source_distribution": "production"
     }

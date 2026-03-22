@@ -3,7 +3,7 @@
     "id": "x_platform",
     "type": "platform",
     "label": "X Platform",
-    "active_volume": 3891,
+    "active_volume": 3516,
     "meets_minimum_threshold": true,
     "base_rate_weight": 0.64,
     "is_influencer_framing": false
@@ -12,136 +12,136 @@
     "id": "youtube_influencer",
     "type": "platform",
     "label": "Influencer Framing (YouTube)",
-    "active_volume": 3807,
+    "active_volume": 4664,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.48,
+    "base_rate_weight": 0.5,
     "is_influencer_framing": true
   },
   "divergence": {
-    "jsd": 0.1415,
-    "jsd_sqrt": 0.3761,
+    "jsd": 0.0261,
+    "jsd_sqrt": 0.1615,
     "trend": [
-      0.3338,
-      0.3761,
-      0.3627,
-      0.379,
-      0.3655,
-      0.348,
-      0.4068,
-      0.3997
+      0.1515,
+      0.1067,
+      0.1818,
+      0.1381,
+      0.1455,
+      0.1701,
+      0.1218,
+      0.1831
     ],
     "typology": {
-      "information_asymmetry": 0.57,
-      "interpretive": 0.22,
-      "paradigmatic": 0.21,
+      "information_asymmetry": 0.71,
+      "interpretive": 0.14,
+      "paradigmatic": 0.15,
       "dominant_mode": "Information Asymmetry",
       "paradigmatic_caveat": false
     }
   },
   "per_cluster": [
     {
-      "cluster_id": "clu_d420f6a45348",
-      "label": "Homelessness",
-      "salience_a": 0.0552,
-      "salience_b": 0.7504,
-      "arousal_a": 0.3,
-      "arousal_b": 0.77,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_706cfe898895",
-      "label": "Affordability",
-      "salience_a": 0.4359,
-      "salience_b": 0.3229,
-      "arousal_a": 0.13,
-      "arousal_b": 0.5,
-      "mutation_a": "mainstreaming",
-      "mutation_b": "radicalizing"
-    },
-    {
       "cluster_id": "clu_6b57df076cb0",
       "label": "NIMBY YIMBY",
-      "salience_a": 0.0885,
-      "salience_b": 0.1942,
-      "arousal_a": 0.35,
-      "arousal_b": 0.69,
-      "mutation_a": "stable",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_4dbea2adbf41",
-      "label": "Corporate Landlords",
-      "salience_a": 0.9071,
-      "salience_b": 0.2323,
-      "arousal_a": 0.5,
-      "arousal_b": 0.39,
-      "mutation_a": "radicalizing",
-      "mutation_b": "mainstreaming"
-    },
-    {
-      "cluster_id": "clu_caa1bcca3fc9",
-      "label": "Fed Policy",
-      "salience_a": 0.5269,
-      "salience_b": 0.8088,
-      "arousal_a": 0.72,
-      "arousal_b": 0.88,
+      "salience_a": 0.7014,
+      "salience_b": 0.3529,
+      "arousal_a": 0.37,
+      "arousal_b": 0.13,
       "mutation_a": "mainstreaming",
-      "mutation_b": "mainstreaming"
+      "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_b568531cbe60",
       "label": "Supply Shortage",
-      "salience_a": 0.2209,
-      "salience_b": 0.819,
-      "arousal_a": 0.55,
-      "arousal_b": 0.12,
+      "salience_a": 0.1615,
+      "salience_b": 0.4309,
+      "arousal_a": 0.68,
+      "arousal_b": 0.76,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_caa1bcca3fc9",
+      "label": "Fed Policy",
+      "salience_a": 0.2856,
+      "salience_b": 0.5016,
+      "arousal_a": 0.41,
+      "arousal_b": 0.64,
+      "mutation_a": "radicalizing",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_d420f6a45348",
+      "label": "Homelessness",
+      "salience_a": 0.7921,
+      "salience_b": 0.736,
+      "arousal_a": 0.51,
+      "arousal_b": 0.33,
       "mutation_a": "stable",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_706cfe898895",
+      "label": "Affordability",
+      "salience_a": 0.8463,
+      "salience_b": 0.8108,
+      "arousal_a": 0.69,
+      "arousal_b": 0.51,
+      "mutation_a": "mainstreaming",
       "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_4dbea2adbf41",
+      "label": "Corporate Landlords",
+      "salience_a": 0.2798,
+      "salience_b": 0.4165,
+      "arousal_a": 0.33,
+      "arousal_b": 0.29,
+      "mutation_a": "radicalizing",
+      "mutation_b": "mainstreaming"
     }
   ],
   "arousal_comparison": {
-    "slice_a_avg": 0.67,
-    "slice_b_avg": 0.57
+    "slice_a_avg": 0.64,
+    "slice_b_avg": 0.5
   },
   "exposure_comparison": {
     "slice_a": {
-      "value": 0.5527,
+      "value": 0.6559,
       "confidence_interval": [
-        0.5027,
-        0.6027
+        0.6059,
+        0.7059
       ],
       "baseline": "global",
       "time_window": "7d",
       "sparkline": [
-        0.3338,
-        0.3761,
-        0.3627,
-        0.379,
-        0.3655,
-        0.348,
-        0.4068,
-        0.3997
+        0.1515,
+        0.1067,
+        0.1818,
+        0.1381,
+        0.1455,
+        0.1701,
+        0.1218,
+        0.1831
       ],
       "source_distribution": "production"
     },
     "slice_b": {
-      "value": 0.6251,
+      "value": 0.632,
       "confidence_interval": [
-        0.5751,
-        0.6751
+        0.582,
+        0.682
       ],
       "baseline": "global",
       "time_window": "7d",
       "sparkline": [
-        0.3338,
-        0.3761,
-        0.3627,
-        0.379,
-        0.3655,
-        0.348,
-        0.4068,
-        0.3997
+        0.1515,
+        0.1067,
+        0.1818,
+        0.1381,
+        0.1455,
+        0.1701,
+        0.1218,
+        0.1831
       ],
       "source_distribution": "production"
     }

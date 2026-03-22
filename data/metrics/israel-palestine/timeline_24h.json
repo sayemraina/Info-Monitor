@@ -1,14 +1,29 @@
 {
   "events": [
     {
+      "id": "evt_3f461482492b",
+      "type": "coordination_flag",
+      "timestamp": "2026-03-15T20:00:00+00:00",
+      "claim_id": "clm_b1b268ef1f55",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.68,
+      "summary": "Near-duplicate content: 39 similar posts from non-overlapping accounts within 6h.",
+      "detail": {
+        "signal": "near_duplicate",
+        "count": 31,
+        "window_hours": 2
+      }
+    },
+    {
       "id": "evt_7fb5c1850f3e",
       "type": "momentum_spike",
-      "timestamp": "2026-03-16T04:00:00+00:00",
+      "timestamp": "2026-03-15T15:00:00+00:00",
       "claim_id": "clm_f89f26154cf7",
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.87,
-      "summary": "'Amnesty International published a 300-page report concluding Israel is committing genocide in Gaza. Not 'apartheid.' Not 'war crimes.' Genocide. Amnesty. International.' accelerated from 20th to 72nd percentile in 12h. Source diversity: low.",
+      "confidence": 0.86,
+      "summary": "'Amnesty International published a 296-page report concluding Israel is committing genocide in Gaza. Not 'apartheid.' Not 'war crimes.' Genocide. Amnesty. International.' accelerated from 20th to 72nd percentile in 12h. Source diversity: low.",
       "detail": {
         "percentile_from": 20,
         "percentile_to": 72,
@@ -16,14 +31,29 @@
       }
     },
     {
-      "id": "evt_ea43eefc7eb3",
+      "id": "evt_4956d07628c1",
       "type": "arousal_escalation",
-      "timestamp": "2026-03-15T19:00:00+00:00",
-      "claim_id": "clm_e617798e08ec",
+      "timestamp": "2026-03-15T15:00:00+00:00",
+      "claim_id": "clm_ace4b880e053",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.9,
-      "summary": "'antisemitism at campus protests' arousal shifted low to high over 48h, semantic content stable.",
+      "confidence": 0.83,
+      "summary": "'killing of journalists in Gaza' arousal shifted low to high over 48h, semantic content stable.",
+      "detail": {
+        "arousal_from": "low",
+        "arousal_to": "high",
+        "hours": 48
+      }
+    },
+    {
+      "id": "evt_b667688b318f",
+      "type": "arousal_escalation",
+      "timestamp": "2026-03-15T13:00:00+00:00",
+      "claim_id": "clm_fa6b8d5994ee",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.87,
+      "summary": "'hostage negotiations and deal' arousal shifted low to high over 48h, semantic content stable.",
       "detail": {
         "arousal_from": "low",
         "arousal_to": "high",
@@ -31,5 +61,5 @@
       }
     }
   ],
-  "total_count": 2
+  "total_count": 4
 }

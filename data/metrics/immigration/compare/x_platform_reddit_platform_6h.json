@@ -3,145 +3,145 @@
     "id": "x_platform",
     "type": "platform",
     "label": "X Platform",
-    "active_volume": 3339,
+    "active_volume": 3972,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.42,
+    "base_rate_weight": 0.53,
     "is_influencer_framing": false
   },
   "slice_b": {
     "id": "reddit_platform",
     "type": "platform",
     "label": "Reddit Platform",
-    "active_volume": 2858,
+    "active_volume": 1186,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.58,
+    "base_rate_weight": 0.54,
     "is_influencer_framing": false
   },
   "divergence": {
-    "jsd": 0.0338,
-    "jsd_sqrt": 0.1839,
+    "jsd": 0.0345,
+    "jsd_sqrt": 0.1858,
     "trend": [
-      0.1578,
-      0.2299,
-      0.2307,
-      0.1646,
-      0.2419,
-      0.1854,
-      0.1763,
-      0.19
+      0.1493,
+      0.1827,
+      0.1335,
+      0.1821,
+      0.1693,
+      0.1921,
+      0.1267,
+      0.1488
     ],
     "typology": {
-      "information_asymmetry": 0.73,
-      "interpretive": 0.47,
-      "paradigmatic": 0,
+      "information_asymmetry": 0.46,
+      "interpretive": 0.33,
+      "paradigmatic": 0.2,
       "dominant_mode": "Information Asymmetry",
       "paradigmatic_caveat": false
     }
   },
   "per_cluster": [
     {
-      "cluster_id": "clu_e87163b6ced2",
-      "label": "Cultural Identity",
-      "salience_a": 0.8524,
-      "salience_b": 0.8692,
-      "arousal_a": 0.39,
-      "arousal_b": 0.87,
+      "cluster_id": "clu_098405cffda1",
+      "label": "Humanitarian",
+      "salience_a": 0.5761,
+      "salience_b": 0.3418,
+      "arousal_a": 0.16,
+      "arousal_b": 0.63,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
-      "cluster_id": "clu_dc3b90568486",
-      "label": "Economic Impact",
-      "salience_a": 0.9221,
-      "salience_b": 0.9306,
-      "arousal_a": 0.12,
-      "arousal_b": 0.58,
+      "cluster_id": "clu_424d8c544a52",
+      "label": "Asylum Policy",
+      "salience_a": 0.7959,
+      "salience_b": 0.3314,
+      "arousal_a": 0.65,
+      "arousal_b": 0.65,
       "mutation_a": "stable",
       "mutation_b": "mainstreaming"
     },
     {
-      "cluster_id": "clu_098405cffda1",
-      "label": "Humanitarian",
-      "salience_a": 0.7729,
-      "salience_b": 0.2977,
-      "arousal_a": 0.74,
-      "arousal_b": 0.15,
+      "cluster_id": "clu_59fc24f369ce",
+      "label": "Border Security",
+      "salience_a": 0.8814,
+      "salience_b": 0.4261,
+      "arousal_a": 0.48,
+      "arousal_b": 0.54,
       "mutation_a": "mainstreaming",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_e87163b6ced2",
+      "label": "Cultural Identity",
+      "salience_a": 0.4601,
+      "salience_b": 0.2727,
+      "arousal_a": 0.3,
+      "arousal_b": 0.18,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_dc3b90568486",
+      "label": "Economic Impact",
+      "salience_a": 0.651,
+      "salience_b": 0.7974,
+      "arousal_a": 0.4,
+      "arousal_b": 0.44,
+      "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_7fb4a7697265",
       "label": "Enforcement",
-      "salience_a": 0.4666,
-      "salience_b": 0.882,
-      "arousal_a": 0.12,
-      "arousal_b": 0.22,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_424d8c544a52",
-      "label": "Asylum Policy",
-      "salience_a": 0.3716,
-      "salience_b": 0.1341,
-      "arousal_a": 0.88,
-      "arousal_b": 0.36,
-      "mutation_a": "mainstreaming",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_59fc24f369ce",
-      "label": "Border Security",
-      "salience_a": 0.1652,
-      "salience_b": 0.1205,
-      "arousal_a": 0.86,
-      "arousal_b": 0.21,
-      "mutation_a": "mainstreaming",
-      "mutation_b": "stable"
+      "salience_a": 0.2001,
+      "salience_b": 0.4329,
+      "arousal_a": 0.81,
+      "arousal_b": 0.24,
+      "mutation_a": "radicalizing",
+      "mutation_b": "mainstreaming"
     }
   ],
   "arousal_comparison": {
-    "slice_a_avg": 0.39,
-    "slice_b_avg": 0.51
+    "slice_a_avg": 0.47,
+    "slice_b_avg": 0.31
   },
   "exposure_comparison": {
     "slice_a": {
-      "value": 0.5217,
+      "value": 0.722,
       "confidence_interval": [
-        0.4717,
-        0.5717
+        0.672,
+        0.772
       ],
       "baseline": "global",
       "time_window": "6h",
       "sparkline": [
-        0.1578,
-        0.2299,
-        0.2307,
-        0.1646,
-        0.2419,
-        0.1854,
-        0.1763,
-        0.19
+        0.1493,
+        0.1827,
+        0.1335,
+        0.1821,
+        0.1693,
+        0.1921,
+        0.1267,
+        0.1488
       ],
       "source_distribution": "production"
     },
     "slice_b": {
-      "value": 0.7123,
+      "value": 0.7615,
       "confidence_interval": [
-        0.6623,
-        0.7623
+        0.7115,
+        0.8115
       ],
       "baseline": "global",
       "time_window": "6h",
       "sparkline": [
-        0.1578,
-        0.2299,
-        0.2307,
-        0.1646,
-        0.2419,
-        0.1854,
-        0.1763,
-        0.19
+        0.1493,
+        0.1827,
+        0.1335,
+        0.1821,
+        0.1693,
+        0.1921,
+        0.1267,
+        0.1488
       ],
       "source_distribution": "production"
     }

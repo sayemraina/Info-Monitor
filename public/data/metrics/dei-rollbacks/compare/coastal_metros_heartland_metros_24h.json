@@ -3,145 +3,145 @@
     "id": "coastal_metros",
     "type": "geography",
     "label": "Coastal Metros",
-    "active_volume": 1894,
+    "active_volume": 2828,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.38,
+    "base_rate_weight": 0.6,
     "is_influencer_framing": false
   },
   "slice_b": {
     "id": "heartland_metros",
     "type": "geography",
     "label": "Heartland",
-    "active_volume": 2272,
+    "active_volume": 4359,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.53,
+    "base_rate_weight": 0.39,
     "is_influencer_framing": false
   },
   "divergence": {
-    "jsd": 0.0846,
-    "jsd_sqrt": 0.2909,
+    "jsd": 0.0671,
+    "jsd_sqrt": 0.2591,
     "trend": [
-      0.2499,
-      0.3235,
-      0.2764,
-      0.3073,
-      0.2943,
-      0.3117,
-      0.2668,
-      0.2788
+      0.2918,
+      0.31,
+      0.268,
+      0.2924,
+      0.2532,
+      0.2159,
+      0.2466,
+      0.217
     ],
     "typology": {
-      "information_asymmetry": 0.37,
-      "interpretive": 0.38,
-      "paradigmatic": 0.25,
+      "information_asymmetry": 0.44,
+      "interpretive": 0.51,
+      "paradigmatic": 0.05,
       "dominant_mode": "Interpretive",
       "paradigmatic_caveat": false
     }
   },
   "per_cluster": [
     {
-      "cluster_id": "clu_638f8ed7e9c3",
-      "label": "Legal Landscape",
-      "salience_a": 0.097,
-      "salience_b": 0.7811,
-      "arousal_a": 0.11,
-      "arousal_b": 0.33,
-      "mutation_a": "stable",
-      "mutation_b": "mainstreaming"
-    },
-    {
-      "cluster_id": "clu_3fabbea35d86",
-      "label": "Corporate Retreat",
-      "salience_a": 0.3677,
-      "salience_b": 0.5533,
-      "arousal_a": 0.27,
-      "arousal_b": 0.78,
-      "mutation_a": "stable",
+      "cluster_id": "clu_981073b341a5",
+      "label": "Rebranding",
+      "salience_a": 0.2484,
+      "salience_b": 0.9037,
+      "arousal_a": 0.41,
+      "arousal_b": 0.61,
+      "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_0ccd6215e5cd",
       "label": "Pro DEI Equity",
-      "salience_a": 0.3631,
-      "salience_b": 0.2264,
-      "arousal_a": 0.77,
-      "arousal_b": 0.75,
-      "mutation_a": "radicalizing",
-      "mutation_b": "mainstreaming"
+      "salience_a": 0.5813,
+      "salience_b": 0.3045,
+      "arousal_a": 0.66,
+      "arousal_b": 0.28,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "radicalizing"
     },
     {
-      "cluster_id": "clu_981073b341a5",
-      "label": "Rebranding",
-      "salience_a": 0.5973,
-      "salience_b": 0.8456,
-      "arousal_a": 0.62,
-      "arousal_b": 0.83,
-      "mutation_a": "stable",
-      "mutation_b": "mainstreaming"
+      "cluster_id": "clu_638f8ed7e9c3",
+      "label": "Legal Landscape",
+      "salience_a": 0.6287,
+      "salience_b": 0.4372,
+      "arousal_a": 0.85,
+      "arousal_b": 0.54,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_ffae0004ec6e",
       "label": "Anti DEI Merit",
-      "salience_a": 0.3587,
-      "salience_b": 0.874,
-      "arousal_a": 0.68,
-      "arousal_b": 0.62,
+      "salience_a": 0.7712,
+      "salience_b": 0.4408,
+      "arousal_a": 0.87,
+      "arousal_b": 0.15,
       "mutation_a": "radicalizing",
-      "mutation_b": "mainstreaming"
+      "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_62e0d27becdb",
       "label": "Campus Impact",
-      "salience_a": 0.4745,
-      "salience_b": 0.1253,
-      "arousal_a": 0.78,
-      "arousal_b": 0.17,
+      "salience_a": 0.4091,
+      "salience_b": 0.6306,
+      "arousal_a": 0.82,
+      "arousal_b": 0.84,
       "mutation_a": "stable",
-      "mutation_b": "stable"
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_3fabbea35d86",
+      "label": "Corporate Retreat",
+      "salience_a": 0.3266,
+      "salience_b": 0.1018,
+      "arousal_a": 0.45,
+      "arousal_b": 0.49,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     }
   ],
   "arousal_comparison": {
-    "slice_a_avg": 0.5,
-    "slice_b_avg": 0.48
+    "slice_a_avg": 0.48,
+    "slice_b_avg": 0.67
   },
   "exposure_comparison": {
     "slice_a": {
-      "value": 0.658,
+      "value": 0.6597,
       "confidence_interval": [
-        0.608,
-        0.708
+        0.6097,
+        0.7097
       ],
       "baseline": "global",
       "time_window": "24h",
       "sparkline": [
-        0.2499,
-        0.3235,
-        0.2764,
-        0.3073,
-        0.2943,
-        0.3117,
-        0.2668,
-        0.2788
+        0.2918,
+        0.31,
+        0.268,
+        0.2924,
+        0.2532,
+        0.2159,
+        0.2466,
+        0.217
       ],
       "source_distribution": "production"
     },
     "slice_b": {
-      "value": 0.7901,
+      "value": 0.3747,
       "confidence_interval": [
-        0.7401,
-        0.8401
+        0.3247,
+        0.4247
       ],
       "baseline": "global",
       "time_window": "24h",
       "sparkline": [
-        0.2499,
-        0.3235,
-        0.2764,
-        0.3073,
-        0.2943,
-        0.3117,
-        0.2668,
-        0.2788
+        0.2918,
+        0.31,
+        0.268,
+        0.2924,
+        0.2532,
+        0.2159,
+        0.2466,
+        0.217
       ],
       "source_distribution": "production"
     }

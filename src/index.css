@@ -245,5 +245,17 @@ input.search-input:focus {
   body {
     overflow-x: hidden;
   }
+
+  /* Horizontal scroll fade hint for tags/chips */
+  .mobile-scroll-fade {
+    position: relative;
+    mask-image: linear-gradient(to right, black 85%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
+  }
+
+  /* Hide scrollbar on mobile scroll containers */
+  .mobile-scroll-fade::-webkit-scrollbar {
+    display: none;
+  }
 }
 

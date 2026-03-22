@@ -8,6 +8,7 @@ interface InfoButtonProps {
     what: string;
     soWhat: string;
     how: string;
+    caveat?: string;
   };
   term: string;
   /** Optional className for the wrapper div (default includes ml-1.5) */
@@ -149,11 +150,20 @@ export const InfoButton: React.FC<InfoButtonProps> = ({ content, term, wrapperCl
           </div>
 
           {/* How — computation */}
-          <div className="px-3.5 py-2.5">
+          <div className="px-3.5 py-2.5" style={content.caveat ? { borderBottom: '1px solid rgba(148,163,184,0.06)' } : undefined}>
             <p className="text-[11px] leading-relaxed" style={{ color: '#64748B' }}>
               {content.how}
             </p>
           </div>
+
+          {/* Caveat — disclaimer (optional) */}
+          {content.caveat && (
+            <div className="px-3.5 py-2.5">
+              <p className="text-[10px] leading-relaxed italic" style={{ color: '#F59E0B', opacity: 0.8 }}>
+                ⚠ {content.caveat}
+              </p>
+            </div>
+          )}
         </div>,
         document.body
       )}

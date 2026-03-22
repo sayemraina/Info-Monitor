@@ -3,145 +3,145 @@
     "id": "x_platform",
     "type": "platform",
     "label": "X Platform",
-    "active_volume": 3589,
+    "active_volume": 1037,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.67,
+    "base_rate_weight": 0.44,
     "is_influencer_framing": false
   },
   "slice_b": {
     "id": "reddit_platform",
     "type": "platform",
     "label": "Reddit Platform",
-    "active_volume": 3395,
+    "active_volume": 3974,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.61,
+    "base_rate_weight": 0.59,
     "is_influencer_framing": false
   },
   "divergence": {
-    "jsd": 0.1383,
-    "jsd_sqrt": 0.3719,
+    "jsd": 0.1229,
+    "jsd_sqrt": 0.3506,
     "trend": [
-      0.3549,
-      0.3311,
-      0.3912,
-      0.3912,
-      0.352,
-      0.4424,
-      0.4445,
-      0.4034
+      0.3096,
+      0.3062,
+      0.3955,
+      0.3338,
+      0.3726,
+      0.3455,
+      0.2912,
+      0.3605
     ],
     "typology": {
-      "information_asymmetry": 0.36,
-      "interpretive": 0.3,
-      "paradigmatic": 0.34,
+      "information_asymmetry": 0.66,
+      "interpretive": 0.06,
+      "paradigmatic": 0.29,
       "dominant_mode": "Information Asymmetry",
-      "paradigmatic_caveat": true
+      "paradigmatic_caveat": false
     }
   },
   "per_cluster": [
     {
-      "cluster_id": "clu_638f8ed7e9c3",
-      "label": "Legal Landscape",
-      "salience_a": 0.6599,
-      "salience_b": 0.3106,
-      "arousal_a": 0.18,
-      "arousal_b": 0.79,
-      "mutation_a": "mainstreaming",
-      "mutation_b": "mainstreaming"
-    },
-    {
-      "cluster_id": "clu_3fabbea35d86",
-      "label": "Corporate Retreat",
-      "salience_a": 0.4704,
-      "salience_b": 0.636,
-      "arousal_a": 0.63,
-      "arousal_b": 0.87,
+      "cluster_id": "clu_981073b341a5",
+      "label": "Rebranding",
+      "salience_a": 0.5887,
+      "salience_b": 0.7076,
+      "arousal_a": 0.66,
+      "arousal_b": 0.86,
       "mutation_a": "radicalizing",
-      "mutation_b": "stable"
+      "mutation_b": "mainstreaming"
     },
     {
       "cluster_id": "clu_0ccd6215e5cd",
       "label": "Pro DEI Equity",
-      "salience_a": 0.4271,
-      "salience_b": 0.0567,
-      "arousal_a": 0.46,
-      "arousal_b": 0.66,
-      "mutation_a": "radicalizing",
+      "salience_a": 0.0613,
+      "salience_b": 0.7914,
+      "arousal_a": 0.82,
+      "arousal_b": 0.44,
+      "mutation_a": "stable",
       "mutation_b": "radicalizing"
     },
     {
-      "cluster_id": "clu_981073b341a5",
-      "label": "Rebranding",
-      "salience_a": 0.6337,
-      "salience_b": 0.1643,
-      "arousal_a": 0.1,
-      "arousal_b": 0.46,
+      "cluster_id": "clu_638f8ed7e9c3",
+      "label": "Legal Landscape",
+      "salience_a": 0.4057,
+      "salience_b": 0.3857,
+      "arousal_a": 0.73,
+      "arousal_b": 0.22,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_ffae0004ec6e",
       "label": "Anti DEI Merit",
-      "salience_a": 0.1426,
-      "salience_b": 0.8944,
-      "arousal_a": 0.4,
-      "arousal_b": 0.56,
-      "mutation_a": "mainstreaming",
+      "salience_a": 0.8373,
+      "salience_b": 0.6372,
+      "arousal_a": 0.35,
+      "arousal_b": 0.57,
+      "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_62e0d27becdb",
       "label": "Campus Impact",
-      "salience_a": 0.2612,
-      "salience_b": 0.2721,
-      "arousal_a": 0.24,
-      "arousal_b": 0.6,
-      "mutation_a": "stable",
+      "salience_a": 0.532,
+      "salience_b": 0.2258,
+      "arousal_a": 0.54,
+      "arousal_b": 0.55,
+      "mutation_a": "radicalizing",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_3fabbea35d86",
+      "label": "Corporate Retreat",
+      "salience_a": 0.6697,
+      "salience_b": 0.0703,
+      "arousal_a": 0.41,
+      "arousal_b": 0.52,
+      "mutation_a": "mainstreaming",
       "mutation_b": "radicalizing"
     }
   ],
   "arousal_comparison": {
-    "slice_a_avg": 0.41,
-    "slice_b_avg": 0.51
+    "slice_a_avg": 0.53,
+    "slice_b_avg": 0.54
   },
   "exposure_comparison": {
     "slice_a": {
-      "value": 0.598,
+      "value": 0.5344,
       "confidence_interval": [
-        0.548,
-        0.648
+        0.4844,
+        0.5844
       ],
       "baseline": "global",
       "time_window": "7d",
       "sparkline": [
-        0.3549,
-        0.3311,
-        0.3912,
-        0.3912,
-        0.352,
-        0.4424,
-        0.4445,
-        0.4034
+        0.3096,
+        0.3062,
+        0.3955,
+        0.3338,
+        0.3726,
+        0.3455,
+        0.2912,
+        0.3605
       ],
       "source_distribution": "production"
     },
     "slice_b": {
-      "value": 0.7536,
+      "value": 0.3655,
       "confidence_interval": [
-        0.7036,
-        0.8036
+        0.3155,
+        0.4155
       ],
       "baseline": "global",
       "time_window": "7d",
       "sparkline": [
-        0.3549,
-        0.3311,
-        0.3912,
-        0.3912,
-        0.352,
-        0.4424,
-        0.4445,
-        0.4034
+        0.3096,
+        0.3062,
+        0.3955,
+        0.3338,
+        0.3726,
+        0.3455,
+        0.2912,
+        0.3605
       ],
       "source_distribution": "production"
     }

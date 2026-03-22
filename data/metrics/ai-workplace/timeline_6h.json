@@ -1,14 +1,14 @@
 {
   "events": [
     {
-      "id": "evt_b432bb688197",
+      "id": "evt_b1ad3cbbc9e1",
       "type": "momentum_spike",
-      "timestamp": "2026-03-15T18:00:00+00:00",
-      "claim_id": "clm_4fa4567ac879",
+      "timestamp": "2026-03-16T01:00:00+00:00",
+      "claim_id": "clm_4780ba717d09",
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.84,
-      "summary": "'Devin AI was supposed to be the first AI software engineer. Turns out it can barely handle a junior-level task without hallucinating. The hype machine is real.' accelerated from 20th to 72nd percentile in 12h. Source diversity: low.",
+      "confidence": 0.94,
+      "summary": "'Klarna's CEO just said their AI does the work of 700 employees \u2014 and they're not rehiring. This is the template for every company now.' accelerated from 20th to 72nd percentile in 12h. Source diversity: low.",
       "detail": {
         "percentile_from": 20,
         "percentile_to": 72,
@@ -16,18 +16,18 @@
       }
     },
     {
-      "id": "evt_b1ad3cbbc9e1",
-      "type": "momentum_spike",
-      "timestamp": "2026-03-15T15:00:00+00:00",
+      "id": "evt_7c7159f2782f",
+      "type": "arousal_escalation",
+      "timestamp": "2026-03-15T18:00:00+00:00",
       "claim_id": "clm_4780ba717d09",
       "slice_id": null,
-      "severity": "high",
+      "severity": "medium",
       "confidence": 0.82,
-      "summary": "'Klarna's CEO just said their AI does the work of 700 employees \u2014 and they're not rehiring. This is the template for every company now.' accelerated from 20th to 72nd percentile in 12h. Source diversity: low.",
+      "summary": "'Klarna AI workforce reduction' arousal shifted low to high over 48h, semantic content stable.",
       "detail": {
-        "percentile_from": 20,
-        "percentile_to": 72,
-        "hours": 12
+        "arousal_from": "low",
+        "arousal_to": "high",
+        "hours": 48
       }
     }
   ],

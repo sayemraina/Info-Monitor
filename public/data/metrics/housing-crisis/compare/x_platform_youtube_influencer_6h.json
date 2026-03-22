@@ -3,145 +3,145 @@
     "id": "x_platform",
     "type": "platform",
     "label": "X Platform",
-    "active_volume": 3804,
+    "active_volume": 2289,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.65,
+    "base_rate_weight": 0.64,
     "is_influencer_framing": false
   },
   "slice_b": {
     "id": "youtube_influencer",
     "type": "platform",
     "label": "Influencer Framing (YouTube)",
-    "active_volume": 1879,
+    "active_volume": 1618,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.59,
+    "base_rate_weight": 0.66,
     "is_influencer_framing": true
   },
   "divergence": {
-    "jsd": 0.0656,
-    "jsd_sqrt": 0.2562,
+    "jsd": 0.1127,
+    "jsd_sqrt": 0.3357,
     "trend": [
-      0.2605,
-      0.2591,
-      0.2484,
-      0.2532,
-      0.2212,
-      0.2998,
-      0.2673,
-      0.259
+      0.3361,
+      0.3296,
+      0.3668,
+      0.2981,
+      0.2377,
+      0.3645,
+      0.3272,
+      0.3282
     ],
     "typology": {
-      "information_asymmetry": 0.33,
-      "interpretive": 0.19,
-      "paradigmatic": 0.48,
-      "dominant_mode": "Paradigmatic",
-      "paradigmatic_caveat": true
+      "information_asymmetry": 0.58,
+      "interpretive": 0.31,
+      "paradigmatic": 0.11,
+      "dominant_mode": "Information Asymmetry",
+      "paradigmatic_caveat": false
     }
   },
   "per_cluster": [
     {
+      "cluster_id": "clu_6b57df076cb0",
+      "label": "NIMBY YIMBY",
+      "salience_a": 0.1588,
+      "salience_b": 0.4164,
+      "arousal_a": 0.4,
+      "arousal_b": 0.88,
+      "mutation_a": "stable",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_b568531cbe60",
+      "label": "Supply Shortage",
+      "salience_a": 0.677,
+      "salience_b": 0.299,
+      "arousal_a": 0.72,
+      "arousal_b": 0.48,
+      "mutation_a": "radicalizing",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_caa1bcca3fc9",
+      "label": "Fed Policy",
+      "salience_a": 0.0998,
+      "salience_b": 0.7726,
+      "arousal_a": 0.32,
+      "arousal_b": 0.38,
+      "mutation_a": "stable",
+      "mutation_b": "radicalizing"
+    },
+    {
       "cluster_id": "clu_d420f6a45348",
       "label": "Homelessness",
-      "salience_a": 0.9056,
-      "salience_b": 0.5827,
-      "arousal_a": 0.22,
-      "arousal_b": 0.39,
+      "salience_a": 0.2466,
+      "salience_b": 0.7797,
+      "arousal_a": 0.67,
+      "arousal_b": 0.77,
       "mutation_a": "radicalizing",
       "mutation_b": "mainstreaming"
     },
     {
       "cluster_id": "clu_706cfe898895",
       "label": "Affordability",
-      "salience_a": 0.7208,
-      "salience_b": 0.6099,
-      "arousal_a": 0.53,
-      "arousal_b": 0.26,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_6b57df076cb0",
-      "label": "NIMBY YIMBY",
-      "salience_a": 0.7566,
-      "salience_b": 0.0989,
-      "arousal_a": 0.52,
-      "arousal_b": 0.56,
+      "salience_a": 0.0913,
+      "salience_b": 0.7143,
+      "arousal_a": 0.21,
+      "arousal_b": 0.39,
       "mutation_a": "mainstreaming",
       "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_4dbea2adbf41",
       "label": "Corporate Landlords",
-      "salience_a": 0.7433,
-      "salience_b": 0.3608,
-      "arousal_a": 0.57,
-      "arousal_b": 0.31,
+      "salience_a": 0.4568,
+      "salience_b": 0.5733,
+      "arousal_a": 0.26,
+      "arousal_b": 0.81,
       "mutation_a": "radicalizing",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_caa1bcca3fc9",
-      "label": "Fed Policy",
-      "salience_a": 0.4688,
-      "salience_b": 0.8404,
-      "arousal_a": 0.41,
-      "arousal_b": 0.69,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_b568531cbe60",
-      "label": "Supply Shortage",
-      "salience_a": 0.0763,
-      "salience_b": 0.2087,
-      "arousal_a": 0.72,
-      "arousal_b": 0.37,
-      "mutation_a": "radicalizing",
-      "mutation_b": "mainstreaming"
+      "mutation_b": "radicalizing"
     }
   ],
   "arousal_comparison": {
-    "slice_a_avg": 0.59,
-    "slice_b_avg": 0.46
+    "slice_a_avg": 0.38,
+    "slice_b_avg": 0.61
   },
   "exposure_comparison": {
     "slice_a": {
-      "value": 0.4205,
+      "value": 0.6097,
       "confidence_interval": [
-        0.3705,
-        0.4705
+        0.5597,
+        0.6597
       ],
       "baseline": "global",
       "time_window": "6h",
       "sparkline": [
-        0.2605,
-        0.2591,
-        0.2484,
-        0.2532,
-        0.2212,
-        0.2998,
-        0.2673,
-        0.259
+        0.3361,
+        0.3296,
+        0.3668,
+        0.2981,
+        0.2377,
+        0.3645,
+        0.3272,
+        0.3282
       ],
       "source_distribution": "production"
     },
     "slice_b": {
-      "value": 0.3311,
+      "value": 0.4322,
       "confidence_interval": [
-        0.2811,
-        0.3811
+        0.3822,
+        0.4822
       ],
       "baseline": "global",
       "time_window": "6h",
       "sparkline": [
-        0.2605,
-        0.2591,
-        0.2484,
-        0.2532,
-        0.2212,
-        0.2998,
-        0.2673,
-        0.259
+        0.3361,
+        0.3296,
+        0.3668,
+        0.2981,
+        0.2377,
+        0.3645,
+        0.3272,
+        0.3282
       ],
       "source_distribution": "production"
     }

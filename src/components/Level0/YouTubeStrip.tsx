@@ -8,7 +8,8 @@ import { useIsMobile } from '../../hooks/useIsMobile'
 const YOUTUBE_METHODOLOGY = {
   what: 'Videos ranked by Narrative Framing Score — voices most likely to shape public thinking on this topic.',
   soWhat: 'Prioritizes audience impact over channel size. Diversified across institutional, commentator, and contrarian tiers.',
-  how: 'NFS = view velocity (30%) + reach (22%) + framing language (18%) + debate provocation (12%) + authority (10%) + recency (8%). 100K-view minimum.',
+  how: 'Narratives are shaped at 6 points in their lifecycle: origin (who framed it first), amplification (who gave it scale), gatekeeping (who others had to respond to), opposition (who challenged the dominant take), ground truth (first-person witness with outsized engagement), and cross-platform spread (who carried it beyond YouTube). We identify the video filling each role per topic by searching the specific triggering events that drove the narrative cycle.',
+  caveat: 'Currently based on curated selections due to data pipeline constraints — automated discovery coming in a future version.',
 }
 
 interface YouTubeStripProps {

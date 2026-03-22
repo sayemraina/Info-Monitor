@@ -1,53 +1,13 @@
 [
   {
-    "id": "clu_9c3c85d3eaa1",
-    "concept_id": "surveillance-money",
-    "label": "CBDC Resistance",
-    "member_count": 24,
-    "mutation_direction": "radicalizing",
-    "mutation_magnitude": 0.23,
-    "arousal_trend": "warming",
-    "arousal_value": 0.5,
-    "adversarial_pairs": [],
-    "influencer_seeding": {
-      "influencer_seeded": true,
-      "influencer_origin_count": 8,
-      "influencer_salience_contribution": 0.32,
-      "avg_propagation_hours": {
-        "x": 1.6,
-        "reddit": 10.1
-      }
-    }
-  },
-  {
-    "id": "clu_34e814c8c02a",
-    "concept_id": "mining-energy-debate",
-    "label": "Environmental Cost",
-    "member_count": 15,
-    "mutation_direction": "radicalizing",
-    "mutation_magnitude": 0.35,
-    "arousal_trend": "cooling",
-    "arousal_value": 0.15,
-    "adversarial_pairs": [],
-    "influencer_seeding": {
-      "influencer_seeded": true,
-      "influencer_origin_count": 5,
-      "influencer_salience_contribution": 0.35,
-      "avg_propagation_hours": {
-        "x": 3.2,
-        "reddit": 5.7
-      }
-    }
-  },
-  {
     "id": "clu_d37c0c61f36c",
     "concept_id": "regulatory-clarity",
     "label": "Regulation Risk",
-    "member_count": 42,
-    "mutation_direction": "radicalizing",
+    "member_count": 20,
+    "mutation_direction": "stable",
     "mutation_magnitude": 0.32,
-    "arousal_trend": "warming",
-    "arousal_value": 0.6,
+    "arousal_trend": "cooling",
+    "arousal_value": 0.59,
     "adversarial_pairs": [
       "clu_6847bfd92821"
     ],
@@ -62,16 +22,16 @@
     }
   },
   {
-    "id": "clu_a0c323498b96",
-    "concept_id": "ftx-accountability",
-    "label": "Scam Accountability",
-    "member_count": 43,
-    "mutation_direction": "fragmenting",
-    "mutation_magnitude": 0.29,
+    "id": "clu_6847bfd92821",
+    "concept_id": "permissionless-finance",
+    "label": "DeFi Innovation",
+    "member_count": 14,
+    "mutation_direction": "stable",
+    "mutation_magnitude": 0.13,
     "arousal_trend": "stable",
-    "arousal_value": 0.62,
+    "arousal_value": 0.33,
     "adversarial_pairs": [
-      "clu_9d4253eefa43"
+      "clu_d37c0c61f36c"
     ],
     "influencer_seeding": {
       "influencer_seeded": false,
@@ -87,36 +47,76 @@
     "id": "clu_9d4253eefa43",
     "concept_id": "etf-legitimacy",
     "label": "BTC Mainstream",
-    "member_count": 56,
-    "mutation_direction": "stable",
-    "mutation_magnitude": 0.35,
+    "member_count": 27,
+    "mutation_direction": "radicalizing",
+    "mutation_magnitude": 0.26,
     "arousal_trend": "warming",
-    "arousal_value": 0.77,
+    "arousal_value": 0.76,
     "adversarial_pairs": [
       "clu_a0c323498b96"
     ],
     "influencer_seeding": {
-      "influencer_seeded": true,
-      "influencer_origin_count": 11,
-      "influencer_salience_contribution": 0.51,
+      "influencer_seeded": false,
+      "influencer_origin_count": 0,
+      "influencer_salience_contribution": 0.0,
       "avg_propagation_hours": {
-        "x": 2.5,
-        "reddit": 15.5
+        "x": 0,
+        "reddit": 0
       }
     }
   },
   {
-    "id": "clu_6847bfd92821",
-    "concept_id": "permissionless-finance",
-    "label": "DeFi Innovation",
-    "member_count": 28,
-    "mutation_direction": "fragmenting",
-    "mutation_magnitude": 0.36,
-    "arousal_trend": "warming",
-    "arousal_value": 0.34,
+    "id": "clu_a0c323498b96",
+    "concept_id": "ftx-accountability",
+    "label": "Scam Accountability",
+    "member_count": 21,
+    "mutation_direction": "stable",
+    "mutation_magnitude": 0.46,
+    "arousal_trend": "cooling",
+    "arousal_value": 0.63,
     "adversarial_pairs": [
-      "clu_d37c0c61f36c"
+      "clu_9d4253eefa43"
     ],
+    "influencer_seeding": {
+      "influencer_seeded": false,
+      "influencer_origin_count": 0,
+      "influencer_salience_contribution": 0.0,
+      "avg_propagation_hours": {
+        "x": 0,
+        "reddit": 0
+      }
+    }
+  },
+  {
+    "id": "clu_34e814c8c02a",
+    "concept_id": "mining-energy-debate",
+    "label": "Environmental Cost",
+    "member_count": 8,
+    "mutation_direction": "stable",
+    "mutation_magnitude": 0.32,
+    "arousal_trend": "stable",
+    "arousal_value": 0.15,
+    "adversarial_pairs": [],
+    "influencer_seeding": {
+      "influencer_seeded": false,
+      "influencer_origin_count": 0,
+      "influencer_salience_contribution": 0.0,
+      "avg_propagation_hours": {
+        "x": 0,
+        "reddit": 0
+      }
+    }
+  },
+  {
+    "id": "clu_9c3c85d3eaa1",
+    "concept_id": "surveillance-money",
+    "label": "CBDC Resistance",
+    "member_count": 15,
+    "mutation_direction": "fragmenting",
+    "mutation_magnitude": 0.27,
+    "arousal_trend": "cooling",
+    "arousal_value": 0.5,
+    "adversarial_pairs": [],
     "influencer_seeding": {
       "influencer_seeded": false,
       "influencer_origin_count": 0,

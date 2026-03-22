@@ -259,14 +259,14 @@ export function Header({
             style={{
               display: 'inline-flex',
               alignItems: 'center',
-              gap: '5px',
-              fontSize: '10px',
+              gap: isMobile ? '3px' : '5px',
+              fontSize: isMobile ? '8px' : '10px',
               fontWeight: 500,
               letterSpacing: '0.08em',
               color: 'rgba(241,245,249,0.5)',
               border: '1px solid rgba(148,163,184,0.2)',
               borderRadius: '4px',
-              padding: '2px 6px',
+              padding: isMobile ? '2px 4px' : '2px 6px',
               lineHeight: 1,
             }}
           >
@@ -280,7 +280,7 @@ export function Header({
                 animation: 'pulse-dot 2s ease-in-out infinite',
               }}
             />
-            USING MODELED DATA
+            {isMobile ? 'MODELED' : 'USING MODELED DATA'}
           </span>
           <style>{`
             @keyframes pulse-dot {

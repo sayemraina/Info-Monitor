@@ -1,5 +1,6 @@
 import React from 'react';
 import type { ReactNode } from 'react';
+import { useIsMobile } from '../../hooks/useIsMobile';
 
 interface CardProps {
   title: string;
@@ -22,6 +23,7 @@ export const Card: React.FC<CardProps> = ({
   className = '',
   isExpanded = false
 }) => {
+  const isMobile = useIsMobile()
   return (
     <div
       className={`rounded-lg flex flex-col transition-all duration-200 ${expandable && !isExpanded ? 'cursor-pointer' : ''} ${className}`}
@@ -56,7 +58,7 @@ export const Card: React.FC<CardProps> = ({
       {expandable && !isExpanded && (
         <div className="px-3 pb-1.5 pt-0 text-right">
           <button
-            className="text-[10px] text-slate-500 hover:text-cyan-400 transition-colors inline-block"
+            className={`${isMobile ? 'text-[12px] py-2 px-3' : 'text-[10px]'} text-slate-500 hover:text-cyan-400 transition-colors inline-block`}
             onClick={(e) => {
               e.stopPropagation();
               onExpand?.();

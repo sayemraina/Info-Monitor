@@ -1,32 +1,33 @@
 {
   "events": [
     {
+      "id": "evt_a81f83206269",
+      "type": "coordination_flag",
+      "timestamp": "2026-03-15T23:00:00+00:00",
+      "claim_id": "clm_1a2cccfd6d5f",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.75,
+      "summary": "Near-duplicate content: 77 similar posts from non-overlapping accounts within 4h.",
+      "detail": {
+        "signal": "near_duplicate",
+        "count": 76,
+        "window_hours": 4
+      }
+    },
+    {
       "id": "evt_437923f0f684",
       "type": "momentum_spike",
       "timestamp": "2026-03-15T21:00:00+00:00",
       "claim_id": "clm_1a2cccfd6d5f",
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.78,
+      "confidence": 0.8,
       "summary": "'Goldman Sachs just released a report titled 'Too Much Spend, Too Little Benefit.' Wall Street is starting to turn on AI. This doesn't end well.' accelerated from 20th to 72nd percentile in 12h. Source diversity: low.",
       "detail": {
         "percentile_from": 20,
         "percentile_to": 72,
         "hours": 12
-      }
-    },
-    {
-      "id": "evt_72f35d6a112c",
-      "type": "vocabulary_rotation",
-      "timestamp": "2026-03-15T21:00:00+00:00",
-      "claim_id": "clm_88704d74e0a1",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.72,
-      "summary": "Vocabulary rotation detected in 'Sequoia Capital AI revenue gap analysis': emerging terminology overlaps with adjacent narratives.",
-      "detail": {
-        "rotation_shift": 0.42,
-        "hours": 24
       }
     }
   ],

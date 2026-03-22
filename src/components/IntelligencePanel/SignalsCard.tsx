@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import type { TimeWindow, EventType } from '../../types';
 import { ExpandedCardOverlay } from '../shared/ExpandedCardOverlay';
 import { SignalsTimeline } from '../ZoneD/SignalsTimeline';
+import { useIsMobile } from '../../hooks/useIsMobile';
 
 interface SignalsCardProps {
   topicId: string;
@@ -13,6 +14,7 @@ interface SignalsCardProps {
 }
 
 export const SignalsCard: React.FC<SignalsCardProps> = ({ keySignal, ...props }) => {
+  const isMobile = useIsMobile()
   const [isExpanded, setIsExpanded] = useState(false);
 
   if (isExpanded) {
@@ -56,7 +58,7 @@ export const SignalsCard: React.FC<SignalsCardProps> = ({ keySignal, ...props })
       {/* Always-visible View Details button pinned above the gradient */}
       <div className="px-3 pb-2 pt-1 text-right shrink-0 relative z-10">
         <button
-          className="text-[11px] text-slate-500 hover:text-red-500 transition-colors inline-block cursor-pointer"
+          className={`${isMobile ? 'text-[13px] py-2 px-3' : 'text-[11px]'} text-slate-500 hover:text-red-500 transition-colors inline-block cursor-pointer`}
           onClick={() => setIsExpanded(true)}
         >
           View details ›

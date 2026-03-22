@@ -309,9 +309,30 @@ def make_metric(value: float, window: str, sparkline: list[float],
 
 
 def make_momentum_extended(value: float, window: str, sparkline: list[float],
-                           archetype: dict) -> dict[str, Any]:
-    """Create a MomentumExtended object."""
-    friction = round(random.uniform(0.1, 0.8), 4)
+                           archetype: dict,
+                           adversarial_momentum: Optional[float] = None) -> dict[str, Any]:
+    """Create a MomentumExtended object.
+
+    friction is computed from adversarial pair activity when available:
+    - If this claim's cluster has an adversarial pair, friction reflects
+      the opposing cluster's momentum (high opposition = high friction).
+    - Otherwise, friction correlates with momentum pattern:
+      spike/rising get moderate friction, stable/declining get low.
+    """
+    # Friction grounded in opposition signals
+    if adversarial_momentum is not None:
+        # Adversarial cluster momentum drives friction (0.3-0.85 range)
+        friction = round(max(0.1, min(0.85, adversarial_momentum * 0.9 + random.gauss(0, 0.05))), 4)
+    else:
+        # No adversarial pair — friction from pattern heuristic
+        pattern = archetype["momentum_pattern"]
+        if pattern in ("spike", "rising"):
+            friction = round(random.uniform(0.25, 0.55), 4)  # moderate — contested but not suppressed
+        elif pattern == "stable":
+            friction = round(random.uniform(0.10, 0.35), 4)  # low — settled
+        else:  # declining, goes_dark
+            friction = round(random.uniform(0.15, 0.45), 4)  # variable
+
     source_div = round(random.uniform(0.3, 0.95), 4)
     bridge = round(random.uniform(0.02, 0.25), 4)
     # Spikes have lower source diversity (concentrated)
@@ -648,12 +669,15 @@ def generate_supply_chain(claim: dict, topic_id: str) -> dict:
         second = random.choice(other_platforms)
         lag_hours = random.randint(8, 48)
         first_ts = datetime.fromisoformat(claim["first_seen_timestamp"])
+        # Fidelity constraint: origin ≤ previous (each hop degrades signal)
+        fidelity_prev = round(random.uniform(0.65, 0.95), 2)
+        fidelity_origin = round(random.uniform(0.55, min(fidelity_prev, 0.90)), 2)
         hops.append({
             "platform": second,
             "timestamp": (first_ts + timedelta(hours=lag_hours)).isoformat(),
             "claim_id": gen_id("clm", topic_id, second, claim["text"][:20]),
-            "fidelity_to_origin": round(random.uniform(0.60, 0.92), 2),
-            "fidelity_to_previous": round(random.uniform(0.65, 0.95), 2),
+            "fidelity_to_origin": fidelity_origin,
+            "fidelity_to_previous": fidelity_prev,
         })
 
     # Varied observation boundaries — empirical honesty about what we can/can't see
@@ -768,10 +792,14 @@ def generate_compare_data(topic_id: str, clusters: list[dict],
     jsd = float(0.5 * np.sum(p * np.log(p / m)) + 0.5 * np.sum(q * np.log(q / m)))
     jsd_sqrt = float(np.sqrt(max(0, jsd)))
 
-    # Typology scores
-    info_asym = round(random.uniform(0.3, 0.8), 2)
-    interpretive = round(random.uniform(0.1, 0.5), 2)
-    paradigmatic = round(max(0, 1.0 - info_asym - interpretive), 2)
+    # Typology scores — Dirichlet distribution for independent, properly normalized scores.
+    # Alpha parameters: info_asym tends highest (most common divergence mode),
+    # interpretive moderate, paradigmatic rarest.
+    alphas = np.array([3.0, 2.0, 1.0])  # info_asym, interpretive, paradigmatic
+    raw = np.random.dirichlet(alphas)
+    info_asym = round(float(raw[0]), 2)
+    interpretive = round(float(raw[1]), 2)
+    paradigmatic = round(float(raw[2]), 2)
     scores = {"information_asymmetry": info_asym, "interpretive": interpretive, "paradigmatic": paradigmatic}
     dominant = max(scores, key=scores.get)  # type: ignore[arg-type]
 
@@ -951,14 +979,9 @@ def generate_ifi(clusters: list, window: str, coord_count: int = 0, arousal_esca
 
     value_100 = round(jsd_sqrt_val * 100, 1)
 
-    # Override flux character based on topic dynamics seed for variety
-    topic_seed = hash("".join(c["id"] for c in clusters)) % 3
-    if topic_seed == 1:
-        # Force consolidating for these topics
-        character = "consolidating"
-        delta_h = -abs(delta_h) if delta_h != 0 else -0.08
-    elif topic_seed == 2 and abs(delta_h) < 0.05:
-        character = "reshuffling"
+    # Flux character is driven purely by entropy delta — no overrides.
+    # The _ifi_window_salience() perturbations already create topic-specific
+    # dynamics (diversifying/consolidating/reshuffling) via the topic_seed there.
 
     # Trend: based on flux character + magnitude of change
     if character == "diversifying" and jsd_sqrt_val > 0.12:
@@ -972,9 +995,18 @@ def generate_ifi(clusters: list, window: str, coord_count: int = 0, arousal_esca
     rng = random.Random(hash(window + str(value_100) + "sparkline"))
     sparkline = [round(max(0.0, min(100.0, value_100 + rng.uniform(-12, 12))), 1) for _ in range(12)]
 
-    # Confidence interval: Fisher approximation ±50/√n, clamped [2, 8]
+    # Confidence interval: bootstrap-style estimation.
+    # Generate 50 perturbations of the salience distribution, compute √JSD for each,
+    # then use 10th/90th percentile as CI bounds.
     n = sum(c.get("member_count", 1) for c in clusters)
-    ci_width = max(2.0, min(8.0, 50.0 / (n ** 0.5 + 1)))
+    bootstrap_vals = []
+    for _ in range(50):
+        p_pert = [max(0.01, v + np.random.normal(0, 0.05)) for v in p]
+        q_pert = [max(0.01, v + np.random.normal(0, 0.05)) for v in q]
+        bootstrap_vals.append(_ifi_jsd_sqrt(p_pert, q_pert) * 100)
+    bootstrap_vals.sort()
+    ci_lo = max(0.0, round(bootstrap_vals[4], 1))   # 10th percentile
+    ci_hi = min(100.0, round(bootstrap_vals[44], 1)) # 90th percentile
 
     return {
         "value": value_100,
@@ -987,10 +1019,7 @@ def generate_ifi(clusters: list, window: str, coord_count: int = 0, arousal_esca
             "arousal_escalating": arousal_escalating,
         },
         "temporal_window_pair": [prev_window if window != prev_window else "7d", window],
-        "confidence_interval": [
-            max(0.0, round(value_100 - ci_width, 1)),
-            min(100.0, round(value_100 + ci_width, 1)),
-        ],
+        "confidence_interval": [ci_lo, ci_hi],
     }
 
 def generate_situations(clusters: list[dict], archetypes: list[dict], events: list[dict]) -> list[dict]:
@@ -1092,8 +1121,9 @@ def generate_topic(topic_def: dict) -> None:
     base_vectors = generate_cluster_base_vectors(n_clusters, dim=128)
     cluster_vector_map = {name: base_vectors[f"cluster_{i}"] for i, name in enumerate(cluster_names)}
 
-    # Generate claims from archetypes
+    # Generate claims from archetypes — deduplicate by text
     claims = []
+    _seen_texts: set[str] = set()
     for arch_idx, arch in enumerate(archetypes):
         n_instances = random.randint(12, 15)
         base_vec = cluster_vector_map[arch["cluster"]]
@@ -1117,6 +1147,11 @@ def generate_topic(topic_def: dict) -> None:
 
             claim_id = gen_id("clm", topic_id, arch["cluster"], arch["concept"], str(arch_idx), str(j))
             varied_text = vary_text(arch["text"], platform, j, arch.get("variations"))
+            # Skip exact duplicate texts — same text should not produce multiple claim IDs
+            text_key = varied_text.strip().lower()
+            if text_key in _seen_texts:
+                continue
+            _seen_texts.add(text_key)
             claims.append({
                 "id": claim_id,
                 "text": varied_text,
@@ -1124,10 +1159,16 @@ def generate_topic(topic_def: dict) -> None:
                 "assertion": arch["assertion"],
                 "framing": arch["framing"],
                 "stance": arch["stance"],
-                # ~12% of claims get low confidence (<0.5) — triggers dimmed metrics in UI
-                # Edge cases with _force_low_confidence always get low confidence
-                "confidence": round(random.uniform(0.25, 0.42), 2) if arch.get("_force_low_confidence") else (
-                    round(random.uniform(0.28, 0.48), 2) if (j % 8 == 7) else round(random.uniform(0.6, 0.98), 2)
+                # Confidence is deterministic per text: same claim text = same confidence.
+                # ~12% of claims get low confidence (<0.5) — triggers dimmed metrics in UI.
+                # Edge cases with _force_low_confidence always get low confidence.
+                "confidence": (
+                    round(random.Random(hashlib.sha256(varied_text.encode()).hexdigest()).uniform(0.25, 0.42), 2)
+                    if arch.get("_force_low_confidence") else (
+                        round(random.Random(hashlib.sha256(varied_text.encode()).hexdigest()).uniform(0.28, 0.48), 2)
+                        if (j % 8 == 7) else
+                        round(random.Random(hashlib.sha256(varied_text.encode()).hexdigest()).uniform(0.6, 0.98), 2)
+                    )
                 ),
                 "arousal": arch["arousal"],
                 "register": random.choice(["vernacular", "journalistic", "academic", "meme", "formal"]),
@@ -1173,7 +1214,15 @@ def generate_topic(topic_def: dict) -> None:
             "member_count": len(cluster_claims),
             "mutation_direction": mutation_dir,
             "mutation_magnitude": round(random.uniform(0.1, 0.7), 2),
-            "arousal_trend": random.choice(["warming", "cooling", "stable"]),
+            # Arousal trend correlates with momentum pattern:
+            # spike/rising → 70% warming, declining → 70% cooling, stable → uniform
+            "arousal_trend": (
+                random.choices(["warming", "cooling", "stable"], weights=[0.70, 0.10, 0.20], k=1)[0]
+                if arch["momentum_pattern"] in ("spike", "rising") else
+                random.choices(["warming", "cooling", "stable"], weights=[0.10, 0.70, 0.20], k=1)[0]
+                if arch["momentum_pattern"] == "declining" else
+                random.choice(["warming", "cooling", "stable"])
+            ),
             "arousal_value": round(float(arousal_val), 2),
             "adversarial_pairs": [],
             "influencer_seeding": influencer_seeding,
@@ -1224,9 +1273,16 @@ def generate_topic(topic_def: dict) -> None:
     with open(claims_dir / "clusters.json", "w") as f:
         json.dump(cluster_objects, f, indent=2)
 
-    # Build momentum lookup from full claims (before _-field stripping)
+    # Build momentum lookup from actual momentum series (not pattern labels).
+    # Each archetype gets ONE series; all claims in that archetype share the
+    # same current-window value. This ensures landscape position, claim detail,
+    # and topic summary all report the same momentum for a given claim.
+    _archetype_momentum_series: dict[str, list[float]] = {}
+    for arch in archetypes:
+        _archetype_momentum_series[arch["concept"]] = generate_momentum_series(arch["momentum_pattern"])
+
     _momentum_map = {
-        c["id"]: MOMENTUM_PATTERN_VALUES.get(c.get("_momentum_pattern", "stable"), 0.0)
+        c["id"]: _archetype_momentum_series.get(c.get("concept_id", ""), [0.5])[-1]
         for c in claims
     }
 
@@ -1242,7 +1298,7 @@ def generate_topic(topic_def: dict) -> None:
 
         top_acc_arch = spike_archs[0] if spike_archs else archetypes[0]
         top_acc_claim = next((c for c in claims if c["concept_id"] == top_acc_arch["concept"]), claims[0])
-        top_acc_momentum = generate_momentum_series(top_acc_arch["momentum_pattern"])
+        top_acc_momentum = _archetype_momentum_series[top_acc_arch["concept"]]
 
         top_pers_arch = persistent_archs[0]
         top_pers_claim = next((c for c in claims if c["concept_id"] == top_pers_arch["concept"]), claims[0])
@@ -1305,7 +1361,8 @@ def generate_topic(topic_def: dict) -> None:
         if not matching:
             continue
         for claim in matching[:4]:
-            momentum_series = generate_momentum_series(arch["momentum_pattern"])
+            # Use the pre-computed series for this archetype (same as landscape positions)
+            momentum_series = _archetype_momentum_series[arch["concept"]]
             current_momentum = momentum_series[-1]
 
             detail = {

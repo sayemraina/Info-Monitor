@@ -3,11 +3,11 @@
     {
       "id": "evt_ec67094898fc",
       "type": "momentum_spike",
-      "timestamp": "2026-03-15T23:00:00+00:00",
+      "timestamp": "2026-03-15T20:00:00+00:00",
       "claim_id": "clm_1449afc41b7a",
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.76,
+      "confidence": 0.8,
       "summary": "'The September rate cut was the right call. CPI is trending down, labor market is cooling, and Powell finally read the room. Soft landing is real.' accelerated from 20th to 72nd percentile in 12h. Source diversity: low.",
       "detail": {
         "percentile_from": 20,
@@ -22,7 +22,7 @@
       "claim_id": "clm_3cb8da6e7b16",
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.83,
+      "confidence": 0.89,
       "summary": "'The $18 Big Mac went viral but the real story is a McDonald's combo meal costs $15-18 in most cities now. Fast food used to be the cheap option. It's not anymore.' accelerated from 20th to 72nd percentile in 12h. Source diversity: low.",
       "detail": {
         "percentile_from": 20,
@@ -33,7 +33,7 @@
     {
       "id": "evt_5f716d93a871",
       "type": "vocabulary_rotation",
-      "timestamp": "2026-03-15T01:00:00+00:00",
+      "timestamp": "2026-03-15T12:00:00+00:00",
       "claim_id": "clm_0a69f87ace3b",
       "slice_id": null,
       "severity": "medium",
@@ -45,13 +45,28 @@
       }
     },
     {
+      "id": "evt_f787f8d6b14a",
+      "type": "divergence_shift",
+      "timestamp": "2026-03-15T11:00:00+00:00",
+      "claim_id": null,
+      "slice_id": "x_platform",
+      "severity": "medium",
+      "confidence": 0.71,
+      "summary": "X vs Reddit divergence increased 23% over 48h. Mode: information asymmetry.",
+      "detail": {
+        "jsd_change": 0.23,
+        "hours": 48,
+        "mode": "information_asymmetry"
+      }
+    },
+    {
       "id": "evt_0cb9d40e5436",
       "type": "arousal_escalation",
-      "timestamp": "2026-03-15T00:00:00+00:00",
+      "timestamp": "2026-03-15T08:00:00+00:00",
       "claim_id": "clm_791ee36b9fef",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.84,
+      "confidence": 0.8,
       "summary": "'real wage purchasing power decline' arousal shifted low to high over 48h, semantic content stable.",
       "detail": {
         "arousal_from": "low",
@@ -62,11 +77,11 @@
     {
       "id": "evt_5633e8eb1d54",
       "type": "arousal_escalation",
-      "timestamp": "2026-03-14T18:00:00+00:00",
+      "timestamp": "2026-03-15T08:00:00+00:00",
       "claim_id": "clm_0a69f87ace3b",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.72,
+      "confidence": 0.79,
       "summary": "'corporate grocery profit margins' arousal shifted low to high over 48h, semantic content stable.",
       "detail": {
         "arousal_from": "low",
@@ -77,11 +92,11 @@
     {
       "id": "evt_1f4c5844f4a2",
       "type": "arousal_escalation",
-      "timestamp": "2026-03-14T16:00:00+00:00",
+      "timestamp": "2026-03-14T23:00:00+00:00",
       "claim_id": "clm_a59d70da233f",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.75,
+      "confidence": 0.77,
       "summary": "'political framing of inflation reduction' arousal shifted low to high over 48h, semantic content stable.",
       "detail": {
         "arousal_from": "low",
@@ -92,63 +107,48 @@
     {
       "id": "evt_4f95c2979c2e",
       "type": "coordination_flag",
-      "timestamp": "2026-03-14T14:00:00+00:00",
+      "timestamp": "2026-03-14T19:00:00+00:00",
       "claim_id": "clm_1449afc41b7a",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.74,
-      "summary": "Near-duplicate content: 75 similar posts from non-overlapping accounts within 6h.",
+      "confidence": 0.75,
+      "summary": "Near-duplicate content: 82 similar posts from non-overlapping accounts within 6h.",
       "detail": {
         "signal": "near_duplicate",
-        "count": 68,
-        "window_hours": 2
-      }
-    },
-    {
-      "id": "evt_768df5d4a777",
-      "type": "coordination_flag",
-      "timestamp": "2026-03-14T05:00:00+00:00",
-      "claim_id": null,
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.56,
-      "summary": "Counter-narrative response lag of 5h between 'corporate grocery profit margins' and 'Federal Reserve rate policy impact' clusters \u2014 consistent with organized rapid response.",
-      "detail": {
-        "signal": "adversarial_response_lag",
-        "cluster_a": "greedflation",
-        "cluster_b": "fed-policy",
-        "lag_hours": 5
-      }
-    },
-    {
-      "id": "evt_f787f8d6b14a",
-      "type": "divergence_shift",
-      "timestamp": "2026-03-12T15:00:00+00:00",
-      "claim_id": null,
-      "slice_id": "x_platform",
-      "severity": "medium",
-      "confidence": 0.7,
-      "summary": "X vs Reddit divergence increased 23% over 48h. Mode: information asymmetry.",
-      "detail": {
-        "jsd_change": 0.23,
-        "hours": 48,
-        "mode": "information_asymmetry"
+        "count": 44,
+        "window_hours": 6
       }
     },
     {
       "id": "evt_2430fa96cafa",
       "type": "lead_lag",
-      "timestamp": "2026-03-13T08:00:00+00:00",
+      "timestamp": "2026-03-14T05:00:00+00:00",
       "claim_id": "clm_0a69f87ace3b",
       "slice_id": null,
       "severity": "low",
-      "confidence": 0.63,
-      "summary": "'Kroger made $2.2 billion in profit last year while eggs are $8 a dozen. They're ...' first detected on X, appeared on X 13h later. Fidelity: 92%.",
+      "confidence": 0.6,
+      "summary": "'Kroger made $2.2 billion in profit last year while eggs are $8 a dozen. They're ...' first detected on Reddit, appeared on Reddit 36h later. Fidelity: 91%.",
       "detail": {
         "source_platform": "reddit",
-        "target_platform": "x",
-        "lag_hours": 25,
-        "fidelity": 0.75
+        "target_platform": "reddit",
+        "lag_hours": 10,
+        "fidelity": 0.88
+      }
+    },
+    {
+      "id": "evt_768df5d4a777",
+      "type": "coordination_flag",
+      "timestamp": "2026-03-14T04:00:00+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "low",
+      "confidence": 0.68,
+      "summary": "Counter-narrative response lag of 14h between 'corporate grocery profit margins' and 'Federal Reserve rate policy impact' clusters \u2014 consistent with organic counter-mobilization.",
+      "detail": {
+        "signal": "adversarial_response_lag",
+        "cluster_a": "greedflation",
+        "cluster_b": "fed-policy",
+        "lag_hours": 14
       }
     }
   ],

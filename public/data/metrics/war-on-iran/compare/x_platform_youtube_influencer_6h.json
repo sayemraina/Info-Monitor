@@ -3,145 +3,145 @@
     "id": "x_platform",
     "type": "platform",
     "label": "X Platform",
-    "active_volume": 4807,
+    "active_volume": 918,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.37,
+    "base_rate_weight": 0.43,
     "is_influencer_framing": false
   },
   "slice_b": {
     "id": "youtube_influencer",
     "type": "platform",
     "label": "Influencer Framing (YouTube)",
-    "active_volume": 1028,
+    "active_volume": 1098,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.32,
+    "base_rate_weight": 0.38,
     "is_influencer_framing": true
   },
   "divergence": {
-    "jsd": 0.0999,
-    "jsd_sqrt": 0.3161,
+    "jsd": 0.0505,
+    "jsd_sqrt": 0.2246,
     "trend": [
-      0.3405,
-      0.291,
-      0.2942,
-      0.2488,
-      0.4027,
-      0.3234,
-      0.2645,
-      0.3726
+      0.1992,
+      0.2379,
+      0.2157,
+      0.218,
+      0.244,
+      0.2266,
+      0.2754,
+      0.2111
     ],
     "typology": {
-      "information_asymmetry": 0.42,
-      "interpretive": 0.34,
-      "paradigmatic": 0.24,
+      "information_asymmetry": 0.5,
+      "interpretive": 0.4,
+      "paradigmatic": 0.1,
       "dominant_mode": "Information Asymmetry",
       "paradigmatic_caveat": false
     }
   },
   "per_cluster": [
     {
+      "cluster_id": "clu_68aef6e34079",
+      "label": "Proxy Network",
+      "salience_a": 0.8657,
+      "salience_b": 0.806,
+      "arousal_a": 0.78,
+      "arousal_b": 0.73,
+      "mutation_a": "stable",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_342970f351e2",
+      "label": "Pro Strikes",
+      "salience_a": 0.7172,
+      "salience_b": 0.3772,
+      "arousal_a": 0.13,
+      "arousal_b": 0.6,
+      "mutation_a": "radicalizing",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_64602e720d85",
+      "label": "Diplomacy",
+      "salience_a": 0.1105,
+      "salience_b": 0.548,
+      "arousal_a": 0.53,
+      "arousal_b": 0.69,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "mainstreaming"
+    },
+    {
       "cluster_id": "clu_1027311ded64",
       "label": "Economic Impact",
-      "salience_a": 0.0882,
-      "salience_b": 0.3915,
-      "arousal_a": 0.13,
-      "arousal_b": 0.45,
+      "salience_a": 0.452,
+      "salience_b": 0.5207,
+      "arousal_a": 0.3,
+      "arousal_b": 0.74,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_337b87a83646",
+      "label": "Anti War",
+      "salience_a": 0.8927,
+      "salience_b": 0.8218,
+      "arousal_a": 0.28,
+      "arousal_b": 0.67,
       "mutation_a": "mainstreaming",
       "mutation_b": "mainstreaming"
     },
     {
       "cluster_id": "clu_941ad0332764",
       "label": "Escalation Fears",
-      "salience_a": 0.5893,
-      "salience_b": 0.0525,
-      "arousal_a": 0.31,
-      "arousal_b": 0.3,
-      "mutation_a": "radicalizing",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_68aef6e34079",
-      "label": "Proxy Network",
-      "salience_a": 0.3573,
-      "salience_b": 0.3753,
-      "arousal_a": 0.51,
-      "arousal_b": 0.52,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_64602e720d85",
-      "label": "Diplomacy",
-      "salience_a": 0.5567,
-      "salience_b": 0.2622,
-      "arousal_a": 0.22,
-      "arousal_b": 0.32,
-      "mutation_a": "mainstreaming",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_337b87a83646",
-      "label": "Anti War",
-      "salience_a": 0.3826,
-      "salience_b": 0.0941,
-      "arousal_a": 0.35,
-      "arousal_b": 0.24,
+      "salience_a": 0.9314,
+      "salience_b": 0.2892,
+      "arousal_a": 0.32,
+      "arousal_b": 0.69,
       "mutation_a": "stable",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_342970f351e2",
-      "label": "Pro Strikes",
-      "salience_a": 0.7066,
-      "salience_b": 0.5473,
-      "arousal_a": 0.13,
-      "arousal_b": 0.48,
-      "mutation_a": "radicalizing",
       "mutation_b": "mainstreaming"
     }
   ],
   "arousal_comparison": {
-    "slice_a_avg": 0.62,
-    "slice_b_avg": 0.67
+    "slice_a_avg": 0.35,
+    "slice_b_avg": 0.33
   },
   "exposure_comparison": {
     "slice_a": {
-      "value": 0.7326,
+      "value": 0.3987,
       "confidence_interval": [
-        0.6826,
-        0.7826
+        0.3487,
+        0.4487
       ],
       "baseline": "global",
       "time_window": "6h",
       "sparkline": [
-        0.3405,
-        0.291,
-        0.2942,
-        0.2488,
-        0.4027,
-        0.3234,
-        0.2645,
-        0.3726
+        0.1992,
+        0.2379,
+        0.2157,
+        0.218,
+        0.244,
+        0.2266,
+        0.2754,
+        0.2111
       ],
       "source_distribution": "production"
     },
     "slice_b": {
-      "value": 0.4264,
+      "value": 0.5712,
       "confidence_interval": [
-        0.3764,
-        0.4764
+        0.5212,
+        0.6212
       ],
       "baseline": "global",
       "time_window": "6h",
       "sparkline": [
-        0.3405,
-        0.291,
-        0.2942,
-        0.2488,
-        0.4027,
-        0.3234,
-        0.2645,
-        0.3726
+        0.1992,
+        0.2379,
+        0.2157,
+        0.218,
+        0.244,
+        0.2266,
+        0.2754,
+        0.2111
       ],
       "source_distribution": "production"
     }

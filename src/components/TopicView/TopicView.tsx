@@ -75,6 +75,18 @@ export function TopicView({
     return () => clearTimeout(timer)
   }, [entryClusterId, landscape]) // eslint-disable-line react-hooks/exhaustive-deps
 
+  // Auto-select top-momentum claim when entering via discourse feed
+  useEffect(() => {
+    if (entryHint !== 'discourse' || !landscape) return
+    const topClaim = landscape.claims.reduce((best, claim) => {
+      const pos = landscape.positions.find(p => p.claim_id === claim.id)
+      const bestPos = landscape.positions.find(p => p.claim_id === best.id)
+      return (pos?.momentum ?? 0) > (bestPos?.momentum ?? 0) ? claim : best
+    })
+    const timer = setTimeout(() => onSelectClaim(topClaim.id), 2700)
+    return () => clearTimeout(timer)
+  }, [entryHint, landscape]) // eslint-disable-line react-hooks/exhaustive-deps
+
   // Global click-to-dismiss: after protected period (3s), any click anywhere dismisses all cascades
   useEffect(() => {
     if (cascade.isProtected) return // Don't listen during protected period
@@ -189,12 +201,12 @@ export function TopicView({
   }, [isMobile, selectedClaimId])
 
   return (
-    <div ref={containerRef} className={isMobile ? 'flex flex-col relative' : 'h-full flex flex-col relative'}>
+    <div ref={containerRef} className={isMobile ? 'flex flex-col relative' : 'h-full flex flex-col relative'} style={isMobile ? { height: '100vh', overflow: 'hidden' } : undefined}>
       <LensBar activePair={activeLensPair} onSelectPair={handleLensChange} />
 
       {isMobile ? (
         /* ═══ MOBILE: Single-column vertical scroll ═══ */
-        <div className="flex flex-col gap-2 p-2" style={{ overflow: 'auto' }}>
+        <div className="flex flex-col gap-2 p-2" style={{ flex: 1, overflowY: 'auto', WebkitOverflowScrolling: 'touch' }}>
           {/* Vitals strip */}
           {topicSummary && (
             <TopicVitalsStrip
@@ -219,8 +231,8 @@ export function TopicView({
             </div>
           </ZonePanel>
 
-          {/* Divergence + IFI side by side */}
-          <div className="flex gap-2" style={{ minHeight: '220px' }}>
+          {/* Divergence + IFI — stacked vertically on mobile, side-by-side on desktop */}
+          <div className={isMobile ? "flex flex-col gap-2" : "flex gap-2"} style={{ minHeight: isMobile ? undefined : '220px' }}>
             <div className={`flex-1 min-w-0 rounded-lg p-3 overflow-hidden ${cascade.state.zones.divergence ?? ''}`} style={{ backgroundColor: 'var(--color-bg-panel)', border: '1px solid var(--color-border)' }}>
               <DivergenceCard
                 topicId={topicId}

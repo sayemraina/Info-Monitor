@@ -339,7 +339,10 @@ export function NarrativeMap({ activeTopic, topics, onSelectTopic, onLockTopic, 
         </div>
       `
       tooltipRef.current.style.display = 'block'
-      tooltipRef.current.style.left = `${e.point.x + 16}px`
+      const tooltipW = 280
+      const vw = window.innerWidth
+      const clampedX = Math.max(8, Math.min(vw - tooltipW - 8, e.point.x + 16))
+      tooltipRef.current.style.left = `${clampedX}px`
       tooltipRef.current.style.top = `${e.point.y - 50}px`
     })
 
@@ -353,7 +356,10 @@ export function NarrativeMap({ activeTopic, topics, onSelectTopic, onLockTopic, 
 
     map.on('mousemove', 'heat-core', (e) => {
       if (tooltipRef.current) {
-        tooltipRef.current.style.left = `${e.point.x + 16}px`
+        const tw = 280
+        const vw2 = window.innerWidth
+        const cx = Math.max(8, Math.min(vw2 - tw - 8, e.point.x + 16))
+        tooltipRef.current.style.left = `${cx}px`
         tooltipRef.current.style.top = `${e.point.y - 40}px`
       }
     })
@@ -433,7 +439,7 @@ export function NarrativeMap({ activeTopic, topics, onSelectTopic, onLockTopic, 
   }, [updateSource])
 
   return (
-    <div className="w-full h-full relative" onWheel={e => e.stopPropagation()}>
+    <div className="w-full h-full relative" style={{ overflow: 'hidden' }} onWheel={e => e.stopPropagation()}>
       {/* MapLibre GL container */}
       <div ref={containerRef} style={{ width: '100%', height: '100%' }} />
 
@@ -565,7 +571,7 @@ export function NarrativeMap({ activeTopic, topics, onSelectTopic, onLockTopic, 
             bottom: '12px',
             left: '16px',
             width: '210px',
-            maxWidth: isMobile ? '50vw' : undefined,
+            maxWidth: isMobile ? 'calc(100vw - 32px)' : undefined,
             zIndex: 10,
             background: ctaHovered ? 'rgba(6,182,212,0.08)' : 'rgba(3,5,8,0.78)',
             backdropFilter: 'blur(8px)',

@@ -1,37 +1,59 @@
 [
   {
-    "id": "clu_452c0c94e648",
-    "concept_id": "cost-disruption",
-    "label": "DeepSeek Disruption",
-    "member_count": 27,
+    "id": "clu_1dc7188c8291",
+    "concept_id": "openai-growth",
+    "label": "Real Revenue",
+    "member_count": 23,
     "mutation_direction": "mainstreaming",
-    "mutation_magnitude": 0.14,
-    "arousal_trend": "warming",
-    "arousal_value": 0.69,
+    "mutation_magnitude": 0.45,
+    "arousal_trend": "cooling",
+    "arousal_value": 0.39,
     "adversarial_pairs": [
-      "clu_a4367e6c53e4"
+      "clu_9c6f3d37f235"
     ],
     "influencer_seeding": {
       "influencer_seeded": true,
-      "influencer_origin_count": 2,
-      "influencer_salience_contribution": 0.29,
+      "influencer_origin_count": 6,
+      "influencer_salience_contribution": 0.53,
       "avg_propagation_hours": {
-        "x": 1.6,
-        "reddit": 5.1
+        "x": 4.7,
+        "reddit": 6.4
       }
     }
   },
   {
-    "id": "clu_1dc7188c8291",
-    "concept_id": "openai-growth",
-    "label": "Real Revenue",
-    "member_count": 43,
-    "mutation_direction": "mainstreaming",
-    "mutation_magnitude": 0.2,
+    "id": "clu_9c6f3d37f235",
+    "concept_id": "revenue-gap",
+    "label": "Bubble Warnings",
+    "member_count": 21,
+    "mutation_direction": "stable",
+    "mutation_magnitude": 0.54,
     "arousal_trend": "stable",
-    "arousal_value": 0.39,
+    "arousal_value": 0.55,
     "adversarial_pairs": [
-      "clu_9c6f3d37f235"
+      "clu_1dc7188c8291"
+    ],
+    "influencer_seeding": {
+      "influencer_seeded": true,
+      "influencer_origin_count": 7,
+      "influencer_salience_contribution": 0.41,
+      "avg_propagation_hours": {
+        "x": 5.2,
+        "reddit": 6.4
+      }
+    }
+  },
+  {
+    "id": "clu_452c0c94e648",
+    "concept_id": "cost-disruption",
+    "label": "DeepSeek Disruption",
+    "member_count": 13,
+    "mutation_direction": "fragmenting",
+    "mutation_magnitude": 0.66,
+    "arousal_trend": "cooling",
+    "arousal_value": 0.66,
+    "adversarial_pairs": [
+      "clu_a4367e6c53e4"
     ],
     "influencer_seeding": {
       "influencer_seeded": false,
@@ -47,19 +69,19 @@
     "id": "clu_e7c2f993f70e",
     "concept_id": "market-concentration",
     "label": "Concentration Risk",
-    "member_count": 28,
-    "mutation_direction": "radicalizing",
-    "mutation_magnitude": 0.42,
-    "arousal_trend": "stable",
-    "arousal_value": 0.66,
+    "member_count": 14,
+    "mutation_direction": "fragmenting",
+    "mutation_magnitude": 0.69,
+    "arousal_trend": "warming",
+    "arousal_value": 0.67,
     "adversarial_pairs": [],
     "influencer_seeding": {
-      "influencer_seeded": true,
-      "influencer_origin_count": 2,
-      "influencer_salience_contribution": 0.28,
+      "influencer_seeded": false,
+      "influencer_origin_count": 0,
+      "influencer_salience_contribution": 0.0,
       "avg_propagation_hours": {
-        "x": 7.7,
-        "reddit": 14.1
+        "x": 0,
+        "reddit": 0
       }
     }
   },
@@ -67,43 +89,21 @@
     "id": "clu_a4367e6c53e4",
     "concept_id": "capex-overshoot",
     "label": "Infrastructure Spending",
-    "member_count": 40,
-    "mutation_direction": "mainstreaming",
-    "mutation_magnitude": 0.36,
-    "arousal_trend": "cooling",
-    "arousal_value": 0.61,
+    "member_count": 20,
+    "mutation_direction": "radicalizing",
+    "mutation_magnitude": 0.32,
+    "arousal_trend": "warming",
+    "arousal_value": 0.62,
     "adversarial_pairs": [
       "clu_452c0c94e648"
     ],
     "influencer_seeding": {
       "influencer_seeded": true,
-      "influencer_origin_count": 11,
-      "influencer_salience_contribution": 0.24,
+      "influencer_origin_count": 3,
+      "influencer_salience_contribution": 0.56,
       "avg_propagation_hours": {
-        "x": 4.8,
-        "reddit": 14.1
-      }
-    }
-  },
-  {
-    "id": "clu_9c6f3d37f235",
-    "concept_id": "revenue-gap",
-    "label": "Bubble Warnings",
-    "member_count": 39,
-    "mutation_direction": "mainstreaming",
-    "mutation_magnitude": 0.62,
-    "arousal_trend": "cooling",
-    "arousal_value": 0.47,
-    "adversarial_pairs": [
-      "clu_1dc7188c8291"
-    ],
-    "influencer_seeding": {
-      "influencer_seeded": false,
-      "influencer_origin_count": 0,
-      "influencer_salience_contribution": 0.0,
-      "avg_propagation_hours": {
-        "x": 0,
-        "reddit": 0
+        "x": 7.6,
+        "reddit": 12.9
       }
     }
   },
@@ -111,19 +111,19 @@
     "id": "clu_81b923dc9e46",
     "concept_id": "enterprise-struggles",
     "label": "Adoption Reality",
-    "member_count": 29,
+    "member_count": 14,
     "mutation_direction": "radicalizing",
-    "mutation_magnitude": 0.62,
-    "arousal_trend": "stable",
+    "mutation_magnitude": 0.35,
+    "arousal_trend": "cooling",
     "arousal_value": 0.15,
     "adversarial_pairs": [],
     "influencer_seeding": {
-      "influencer_seeded": false,
-      "influencer_origin_count": 0,
-      "influencer_salience_contribution": 0.0,
+      "influencer_seeded": true,
+      "influencer_origin_count": 4,
+      "influencer_salience_contribution": 0.37,
       "avg_propagation_hours": {
-        "x": 0,
-        "reddit": 0
+        "x": 2.9,
+        "reddit": 8.3
       }
     }
   }

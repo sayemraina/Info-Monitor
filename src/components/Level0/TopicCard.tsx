@@ -3,6 +3,7 @@ import type { TopicSummary, EntryHint } from '../../types'
 import { MiniSparkline } from './MiniSparkline'
 import { getContestationColor } from '../../utils/colors'
 import { HoverTip } from '../shared/HoverTip'
+import { useIsMobile } from '../../hooks/useIsMobile'
 
 interface TopicCardProps {
   topic: TopicSummary
@@ -13,6 +14,7 @@ interface TopicCardProps {
 }
 
 export function TopicCard({ topic, isActive, isLocked, onClick, onNavigate }: TopicCardProps) {
+  const isMobile = useIsMobile()
   const [hovered, setHovered] = useState(false)
 
   // IFI color based on severity thresholds
@@ -51,8 +53,12 @@ export function TopicCard({ topic, isActive, isLocked, onClick, onNavigate }: To
       {/* Row 1: Topic name + navigate arrow */}
       <div className="flex items-center justify-between" style={{ marginBottom: '6px' }}>
         <span
-          className="font-semibold truncate"
-          style={{ color: 'rgba(241,245,249,0.85)', fontSize: '12px' }}
+          className={isMobile ? "font-semibold" : "font-semibold truncate"}
+          style={{
+            color: 'rgba(241,245,249,0.85)',
+            fontSize: '12px',
+            ...(isMobile ? { display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' as const, overflow: 'hidden' } : {}),
+          }}
         >
           {topic.name}
         </span>

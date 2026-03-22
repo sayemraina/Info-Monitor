@@ -3,145 +3,145 @@
     "id": "x_platform",
     "type": "platform",
     "label": "X Platform",
-    "active_volume": 1658,
+    "active_volume": 2596,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.62,
+    "base_rate_weight": 0.42,
     "is_influencer_framing": false
   },
   "slice_b": {
     "id": "youtube_influencer",
     "type": "platform",
     "label": "Influencer Framing (YouTube)",
-    "active_volume": 1237,
+    "active_volume": 3559,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.34,
+    "base_rate_weight": 0.31,
     "is_influencer_framing": true
   },
   "divergence": {
-    "jsd": 0.0417,
-    "jsd_sqrt": 0.2042,
+    "jsd": 0.0379,
+    "jsd_sqrt": 0.1947,
     "trend": [
-      0.2117,
-      0.2591,
-      0.1936,
-      0.2167,
-      0.2386,
-      0.1511,
-      0.1718,
-      0.239
+      0.2329,
+      0.2221,
+      0.1892,
+      0.2224,
+      0.1181,
+      0.1953,
+      0.1887,
+      0.1888
     ],
     "typology": {
-      "information_asymmetry": 0.4,
-      "interpretive": 0.19,
-      "paradigmatic": 0.41,
+      "information_asymmetry": 0.06,
+      "interpretive": 0.02,
+      "paradigmatic": 0.92,
       "dominant_mode": "Paradigmatic",
       "paradigmatic_caveat": true
     }
   },
   "per_cluster": [
     {
-      "cluster_id": "clu_1027311ded64",
-      "label": "Economic Impact",
-      "salience_a": 0.6582,
-      "salience_b": 0.3559,
-      "arousal_a": 0.65,
-      "arousal_b": 0.34,
-      "mutation_a": "stable",
-      "mutation_b": "mainstreaming"
-    },
-    {
-      "cluster_id": "clu_941ad0332764",
-      "label": "Escalation Fears",
-      "salience_a": 0.6518,
-      "salience_b": 0.4728,
-      "arousal_a": 0.35,
-      "arousal_b": 0.73,
-      "mutation_a": "radicalizing",
-      "mutation_b": "stable"
-    },
-    {
       "cluster_id": "clu_68aef6e34079",
       "label": "Proxy Network",
-      "salience_a": 0.5681,
-      "salience_b": 0.7832,
-      "arousal_a": 0.5,
-      "arousal_b": 0.83,
+      "salience_a": 0.1426,
+      "salience_b": 0.3201,
+      "arousal_a": 0.59,
+      "arousal_b": 0.56,
       "mutation_a": "mainstreaming",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_342970f351e2",
+      "label": "Pro Strikes",
+      "salience_a": 0.1907,
+      "salience_b": 0.7398,
+      "arousal_a": 0.73,
+      "arousal_b": 0.78,
+      "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_64602e720d85",
       "label": "Diplomacy",
-      "salience_a": 0.1481,
-      "salience_b": 0.2673,
-      "arousal_a": 0.66,
-      "arousal_b": 0.51,
+      "salience_a": 0.1914,
+      "salience_b": 0.911,
+      "arousal_a": 0.88,
+      "arousal_b": 0.62,
+      "mutation_a": "radicalizing",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_1027311ded64",
+      "label": "Economic Impact",
+      "salience_a": 0.2924,
+      "salience_b": 0.8896,
+      "arousal_a": 0.48,
+      "arousal_b": 0.78,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_337b87a83646",
       "label": "Anti War",
-      "salience_a": 0.7029,
-      "salience_b": 0.1708,
-      "arousal_a": 0.59,
-      "arousal_b": 0.66,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
+      "salience_a": 0.1805,
+      "salience_b": 0.3503,
+      "arousal_a": 0.38,
+      "arousal_b": 0.7,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     },
     {
-      "cluster_id": "clu_342970f351e2",
-      "label": "Pro Strikes",
-      "salience_a": 0.3559,
-      "salience_b": 0.3107,
-      "arousal_a": 0.61,
-      "arousal_b": 0.89,
+      "cluster_id": "clu_941ad0332764",
+      "label": "Escalation Fears",
+      "salience_a": 0.4328,
+      "salience_b": 0.4042,
+      "arousal_a": 0.43,
+      "arousal_b": 0.71,
       "mutation_a": "radicalizing",
       "mutation_b": "mainstreaming"
     }
   ],
   "arousal_comparison": {
-    "slice_a_avg": 0.54,
-    "slice_b_avg": 0.51
+    "slice_a_avg": 0.47,
+    "slice_b_avg": 0.45
   },
   "exposure_comparison": {
     "slice_a": {
-      "value": 0.6606,
+      "value": 0.579,
       "confidence_interval": [
-        0.6106,
-        0.7106
+        0.529,
+        0.629
       ],
       "baseline": "global",
       "time_window": "24h",
       "sparkline": [
-        0.2117,
-        0.2591,
-        0.1936,
-        0.2167,
-        0.2386,
-        0.1511,
-        0.1718,
-        0.239
+        0.2329,
+        0.2221,
+        0.1892,
+        0.2224,
+        0.1181,
+        0.1953,
+        0.1887,
+        0.1888
       ],
       "source_distribution": "production"
     },
     "slice_b": {
-      "value": 0.6937,
+      "value": 0.6695,
       "confidence_interval": [
-        0.6437,
-        0.7437
+        0.6195,
+        0.7195
       ],
       "baseline": "global",
       "time_window": "24h",
       "sparkline": [
-        0.2117,
-        0.2591,
-        0.1936,
-        0.2167,
-        0.2386,
-        0.1511,
-        0.1718,
-        0.239
+        0.2329,
+        0.2221,
+        0.1892,
+        0.2224,
+        0.1181,
+        0.1953,
+        0.1887,
+        0.1888
       ],
       "source_distribution": "production"
     }

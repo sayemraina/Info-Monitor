@@ -3,145 +3,145 @@
     "id": "x_platform",
     "type": "platform",
     "label": "X Platform",
-    "active_volume": 2455,
+    "active_volume": 4450,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.46,
+    "base_rate_weight": 0.44,
     "is_influencer_framing": false
   },
   "slice_b": {
     "id": "reddit_platform",
     "type": "platform",
     "label": "Reddit Platform",
-    "active_volume": 651,
+    "active_volume": 3330,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.62,
+    "base_rate_weight": 0.32,
     "is_influencer_framing": false
   },
   "divergence": {
-    "jsd": 0.0395,
-    "jsd_sqrt": 0.1988,
+    "jsd": 0.0828,
+    "jsd_sqrt": 0.2877,
     "trend": [
-      0.1822,
-      0.1544,
-      0.2208,
-      0.1685,
-      0.208,
-      0.1777,
-      0.1781,
-      0.2091
+      0.2813,
+      0.2337,
+      0.2665,
+      0.2703,
+      0.2908,
+      0.2483,
+      0.2868,
+      0.2603
     ],
     "typology": {
-      "information_asymmetry": 0.42,
-      "interpretive": 0.42,
-      "paradigmatic": 0.16,
+      "information_asymmetry": 0.57,
+      "interpretive": 0.38,
+      "paradigmatic": 0.05,
       "dominant_mode": "Information Asymmetry",
       "paradigmatic_caveat": false
     }
   },
   "per_cluster": [
     {
-      "cluster_id": "clu_9c3c85d3eaa1",
-      "label": "CBDC Resistance",
-      "salience_a": 0.7812,
-      "salience_b": 0.6122,
-      "arousal_a": 0.27,
-      "arousal_b": 0.34,
-      "mutation_a": "radicalizing",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_34e814c8c02a",
-      "label": "Environmental Cost",
-      "salience_a": 0.3589,
-      "salience_b": 0.9433,
-      "arousal_a": 0.13,
-      "arousal_b": 0.34,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
       "cluster_id": "clu_d37c0c61f36c",
       "label": "Regulation Risk",
-      "salience_a": 0.2849,
-      "salience_b": 0.7319,
-      "arousal_a": 0.71,
-      "arousal_b": 0.57,
-      "mutation_a": "stable",
-      "mutation_b": "mainstreaming"
-    },
-    {
-      "cluster_id": "clu_a0c323498b96",
-      "label": "Scam Accountability",
-      "salience_a": 0.8177,
-      "salience_b": 0.4088,
-      "arousal_a": 0.9,
-      "arousal_b": 0.78,
-      "mutation_a": "mainstreaming",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_9d4253eefa43",
-      "label": "BTC Mainstream",
-      "salience_a": 0.8196,
-      "salience_b": 0.828,
-      "arousal_a": 0.83,
-      "arousal_b": 0.66,
+      "salience_a": 0.5812,
+      "salience_b": 0.1894,
+      "arousal_a": 0.75,
+      "arousal_b": 0.41,
       "mutation_a": "stable",
       "mutation_b": "mainstreaming"
     },
     {
       "cluster_id": "clu_6847bfd92821",
       "label": "DeFi Innovation",
-      "salience_a": 0.5402,
-      "salience_b": 0.5661,
-      "arousal_a": 0.8,
+      "salience_a": 0.5202,
+      "salience_b": 0.7917,
+      "arousal_a": 0.55,
       "arousal_b": 0.56,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_9d4253eefa43",
+      "label": "BTC Mainstream",
+      "salience_a": 0.6297,
+      "salience_b": 0.0811,
+      "arousal_a": 0.43,
+      "arousal_b": 0.23,
       "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_a0c323498b96",
+      "label": "Scam Accountability",
+      "salience_a": 0.2203,
+      "salience_b": 0.6285,
+      "arousal_a": 0.47,
+      "arousal_b": 0.19,
+      "mutation_a": "mainstreaming",
       "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_34e814c8c02a",
+      "label": "Environmental Cost",
+      "salience_a": 0.5475,
+      "salience_b": 0.7812,
+      "arousal_a": 0.81,
+      "arousal_b": 0.79,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_9c3c85d3eaa1",
+      "label": "CBDC Resistance",
+      "salience_a": 0.5201,
+      "salience_b": 0.5076,
+      "arousal_a": 0.85,
+      "arousal_b": 0.39,
+      "mutation_a": "stable",
+      "mutation_b": "mainstreaming"
     }
   ],
   "arousal_comparison": {
-    "slice_a_avg": 0.48,
-    "slice_b_avg": 0.45
+    "slice_a_avg": 0.58,
+    "slice_b_avg": 0.37
   },
   "exposure_comparison": {
     "slice_a": {
-      "value": 0.4284,
+      "value": 0.7043,
       "confidence_interval": [
-        0.3784,
-        0.4784
+        0.6543,
+        0.7543
       ],
       "baseline": "global",
       "time_window": "24h",
       "sparkline": [
-        0.1822,
-        0.1544,
-        0.2208,
-        0.1685,
-        0.208,
-        0.1777,
-        0.1781,
-        0.2091
+        0.2813,
+        0.2337,
+        0.2665,
+        0.2703,
+        0.2908,
+        0.2483,
+        0.2868,
+        0.2603
       ],
       "source_distribution": "production"
     },
     "slice_b": {
-      "value": 0.6256,
+      "value": 0.5385,
       "confidence_interval": [
-        0.5756,
-        0.6756
+        0.4885,
+        0.5885
       ],
       "baseline": "global",
       "time_window": "24h",
       "sparkline": [
-        0.1822,
-        0.1544,
-        0.2208,
-        0.1685,
-        0.208,
-        0.1777,
-        0.1781,
-        0.2091
+        0.2813,
+        0.2337,
+        0.2665,
+        0.2703,
+        0.2908,
+        0.2483,
+        0.2868,
+        0.2603
       ],
       "source_distribution": "production"
     }

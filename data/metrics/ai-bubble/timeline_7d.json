@@ -7,7 +7,7 @@
       "claim_id": "clm_1a2cccfd6d5f",
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.78,
+      "confidence": 0.8,
       "summary": "'Goldman Sachs just released a report titled 'Too Much Spend, Too Little Benefit.' Wall Street is starting to turn on AI. This doesn't end well.' accelerated from 20th to 72nd percentile in 12h. Source diversity: low.",
       "detail": {
         "percentile_from": 20,
@@ -18,11 +18,11 @@
     {
       "id": "evt_927ec2784ce8",
       "type": "momentum_spike",
-      "timestamp": "2026-03-15T00:00:00+00:00",
+      "timestamp": "2026-03-15T12:00:00+00:00",
       "claim_id": "clm_bb066c93779d",
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.78,
+      "confidence": 0.95,
       "summary": "'DeepSeek R1 just matched GPT-4 performance at 1/20th the cost. A Chinese lab with a fraction of the budget. The entire 'you need $10B to train frontier models' narrative just collapsed.' accelerated from 20th to 72nd percentile in 12h. Source diversity: low.",
       "detail": {
         "percentile_from": 20,
@@ -31,27 +31,28 @@
       }
     },
     {
-      "id": "evt_72f35d6a112c",
-      "type": "vocabulary_rotation",
-      "timestamp": "2026-03-15T21:00:00+00:00",
-      "claim_id": "clm_88704d74e0a1",
+      "id": "evt_a81f83206269",
+      "type": "coordination_flag",
+      "timestamp": "2026-03-15T23:00:00+00:00",
+      "claim_id": "clm_1a2cccfd6d5f",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.72,
-      "summary": "Vocabulary rotation detected in 'Sequoia Capital AI revenue gap analysis': emerging terminology overlaps with adjacent narratives.",
+      "confidence": 0.75,
+      "summary": "Near-duplicate content: 77 similar posts from non-overlapping accounts within 4h.",
       "detail": {
-        "rotation_shift": 0.42,
-        "hours": 24
+        "signal": "near_duplicate",
+        "count": 76,
+        "window_hours": 4
       }
     },
     {
       "id": "evt_79ab6d61d8af",
       "type": "arousal_escalation",
-      "timestamp": "2026-03-15T19:00:00+00:00",
+      "timestamp": "2026-03-15T14:00:00+00:00",
       "claim_id": "clm_88704d74e0a1",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.76,
+      "confidence": 0.85,
       "summary": "'Sequoia Capital AI revenue gap analysis' arousal shifted low to high over 48h, semantic content stable.",
       "detail": {
         "arousal_from": "low",
@@ -60,28 +61,27 @@
       }
     },
     {
-      "id": "evt_a81f83206269",
-      "type": "coordination_flag",
-      "timestamp": "2026-03-14T21:00:00+00:00",
-      "claim_id": "clm_1a2cccfd6d5f",
+      "id": "evt_72f35d6a112c",
+      "type": "vocabulary_rotation",
+      "timestamp": "2026-03-14T16:00:00+00:00",
+      "claim_id": "clm_88704d74e0a1",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.65,
-      "summary": "Near-duplicate content: 31 similar posts from non-overlapping accounts within 4h.",
+      "confidence": 0.76,
+      "summary": "Vocabulary rotation detected in 'Sequoia Capital AI revenue gap analysis': emerging terminology overlaps with adjacent narratives.",
       "detail": {
-        "signal": "near_duplicate",
-        "count": 84,
-        "window_hours": 4
+        "rotation_shift": 0.42,
+        "hours": 24
       }
     },
     {
       "id": "evt_b6e06b1e65e3",
       "type": "divergence_shift",
-      "timestamp": "2026-03-14T11:00:00+00:00",
+      "timestamp": "2026-03-14T02:00:00+00:00",
       "claim_id": null,
       "slice_id": "x_platform",
       "severity": "medium",
-      "confidence": 0.84,
+      "confidence": 0.72,
       "summary": "X vs Reddit divergence increased 23% over 48h. Mode: information asymmetry.",
       "detail": {
         "jsd_change": 0.23,
@@ -92,11 +92,11 @@
     {
       "id": "evt_5304ca8c3d0c",
       "type": "arousal_escalation",
-      "timestamp": "2026-03-14T03:00:00+00:00",
+      "timestamp": "2026-03-13T18:00:00+00:00",
       "claim_id": "clm_bb066c93779d",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.85,
+      "confidence": 0.72,
       "summary": "'DeepSeek R1 model release and cost efficiency' arousal shifted low to high over 48h, semantic content stable.",
       "detail": {
         "arousal_from": "low",
@@ -107,33 +107,33 @@
     {
       "id": "evt_863d68a2b8bf",
       "type": "coordination_flag",
-      "timestamp": "2026-03-14T17:00:00+00:00",
+      "timestamp": "2026-03-15T05:00:00+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "low",
-      "confidence": 0.6,
-      "summary": "Counter-narrative response lag of 12h between 'Sequoia Capital AI revenue gap analysis' and 'OpenAI revenue and adoption milestones' clusters \u2014 consistent with organic counter-mobilization.",
+      "confidence": 0.74,
+      "summary": "Counter-narrative response lag of 15h between 'Sequoia Capital AI revenue gap analysis' and 'OpenAI revenue and adoption milestones' clusters \u2014 consistent with organic counter-mobilization.",
       "detail": {
         "signal": "adversarial_response_lag",
         "cluster_a": "bubble-warnings",
         "cluster_b": "real-revenue",
-        "lag_hours": 12
+        "lag_hours": 15
       }
     },
     {
       "id": "evt_506005d6ab58",
       "type": "lead_lag",
-      "timestamp": "2026-03-12T21:00:00+00:00",
+      "timestamp": "2026-03-12T15:00:00+00:00",
       "claim_id": "clm_88704d74e0a1",
       "slice_id": null,
       "severity": "low",
-      "confidence": 0.6,
-      "summary": "'Sequoia's '$600 billion question' essay nailed it \u2014 there's a massive gap betwee...' first detected on X, appeared on X 13h later. Fidelity: 76%.",
+      "confidence": 0.62,
+      "summary": "'Sequoia's '$600 billion question' essay nailed it \u2014 there's a massive gap betwee...' first detected on Reddit, appeared on X 24h later. Fidelity: 76%.",
       "detail": {
         "source_platform": "reddit",
-        "target_platform": "reddit",
-        "lag_hours": 20,
-        "fidelity": 0.76
+        "target_platform": "x",
+        "lag_hours": 16,
+        "fidelity": 0.78
       }
     }
   ],

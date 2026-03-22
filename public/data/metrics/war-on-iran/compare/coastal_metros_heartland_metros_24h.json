@@ -3,145 +3,145 @@
     "id": "coastal_metros",
     "type": "geography",
     "label": "Coastal Metros",
-    "active_volume": 1480,
+    "active_volume": 1057,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.68,
+    "base_rate_weight": 0.65,
     "is_influencer_framing": false
   },
   "slice_b": {
     "id": "heartland_metros",
     "type": "geography",
     "label": "Heartland",
-    "active_volume": 3903,
+    "active_volume": 3071,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.67,
+    "base_rate_weight": 0.68,
     "is_influencer_framing": false
   },
   "divergence": {
-    "jsd": 0.0067,
-    "jsd_sqrt": 0.0818,
+    "jsd": 0.113,
+    "jsd_sqrt": 0.3361,
     "trend": [
-      0.1154,
-      0.077,
-      0.0811,
-      0.0716,
-      0.0567,
-      0.0588,
-      0.0551,
-      0.0745
+      0.3164,
+      0.3553,
+      0.3479,
+      0.2904,
+      0.3136,
+      0.3336,
+      0.3729,
+      0.3345
     ],
     "typology": {
-      "information_asymmetry": 0.57,
-      "interpretive": 0.44,
-      "paradigmatic": 0,
+      "information_asymmetry": 0.6,
+      "interpretive": 0.04,
+      "paradigmatic": 0.36,
       "dominant_mode": "Information Asymmetry",
-      "paradigmatic_caveat": false
+      "paradigmatic_caveat": true
     }
   },
   "per_cluster": [
     {
-      "cluster_id": "clu_1027311ded64",
-      "label": "Economic Impact",
-      "salience_a": 0.5399,
-      "salience_b": 0.5958,
-      "arousal_a": 0.26,
-      "arousal_b": 0.57,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_941ad0332764",
-      "label": "Escalation Fears",
-      "salience_a": 0.2282,
-      "salience_b": 0.2451,
-      "arousal_a": 0.42,
-      "arousal_b": 0.36,
-      "mutation_a": "mainstreaming",
-      "mutation_b": "mainstreaming"
-    },
-    {
       "cluster_id": "clu_68aef6e34079",
       "label": "Proxy Network",
-      "salience_a": 0.8441,
-      "salience_b": 0.8193,
-      "arousal_a": 0.68,
-      "arousal_b": 0.86,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_64602e720d85",
-      "label": "Diplomacy",
-      "salience_a": 0.497,
-      "salience_b": 0.9155,
-      "arousal_a": 0.89,
-      "arousal_b": 0.18,
-      "mutation_a": "stable",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_337b87a83646",
-      "label": "Anti War",
-      "salience_a": 0.751,
-      "salience_b": 0.6983,
-      "arousal_a": 0.52,
-      "arousal_b": 0.11,
+      "salience_a": 0.7677,
+      "salience_b": 0.6058,
+      "arousal_a": 0.45,
+      "arousal_b": 0.32,
       "mutation_a": "mainstreaming",
       "mutation_b": "mainstreaming"
     },
     {
       "cluster_id": "clu_342970f351e2",
       "label": "Pro Strikes",
-      "salience_a": 0.7883,
-      "salience_b": 0.9475,
-      "arousal_a": 0.12,
-      "arousal_b": 0.19,
+      "salience_a": 0.1944,
+      "salience_b": 0.7006,
+      "arousal_a": 0.85,
+      "arousal_b": 0.57,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_64602e720d85",
+      "label": "Diplomacy",
+      "salience_a": 0.4011,
+      "salience_b": 0.9138,
+      "arousal_a": 0.67,
+      "arousal_b": 0.3,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_1027311ded64",
+      "label": "Economic Impact",
+      "salience_a": 0.3875,
+      "salience_b": 0.1413,
+      "arousal_a": 0.61,
+      "arousal_b": 0.32,
       "mutation_a": "radicalizing",
-      "mutation_b": "mainstreaming"
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_337b87a83646",
+      "label": "Anti War",
+      "salience_a": 0.8812,
+      "salience_b": 0.1499,
+      "arousal_a": 0.21,
+      "arousal_b": 0.7,
+      "mutation_a": "radicalizing",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_941ad0332764",
+      "label": "Escalation Fears",
+      "salience_a": 0.4224,
+      "salience_b": 0.1866,
+      "arousal_a": 0.22,
+      "arousal_b": 0.34,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "stable"
     }
   ],
   "arousal_comparison": {
-    "slice_a_avg": 0.65,
-    "slice_b_avg": 0.57
+    "slice_a_avg": 0.44,
+    "slice_b_avg": 0.61
   },
   "exposure_comparison": {
     "slice_a": {
-      "value": 0.4959,
+      "value": 0.6736,
       "confidence_interval": [
-        0.4459,
-        0.5459
+        0.6236,
+        0.7236
       ],
       "baseline": "global",
       "time_window": "24h",
       "sparkline": [
-        0.1154,
-        0.077,
-        0.0811,
-        0.0716,
-        0.0567,
-        0.0588,
-        0.0551,
-        0.0745
+        0.3164,
+        0.3553,
+        0.3479,
+        0.2904,
+        0.3136,
+        0.3336,
+        0.3729,
+        0.3345
       ],
       "source_distribution": "production"
     },
     "slice_b": {
-      "value": 0.6049,
+      "value": 0.4074,
       "confidence_interval": [
-        0.5549,
-        0.6549
+        0.3574,
+        0.4574
       ],
       "baseline": "global",
       "time_window": "24h",
       "sparkline": [
-        0.1154,
-        0.077,
-        0.0811,
-        0.0716,
-        0.0567,
-        0.0588,
-        0.0551,
-        0.0745
+        0.3164,
+        0.3553,
+        0.3479,
+        0.2904,
+        0.3136,
+        0.3336,
+        0.3729,
+        0.3345
       ],
       "source_distribution": "production"
     }

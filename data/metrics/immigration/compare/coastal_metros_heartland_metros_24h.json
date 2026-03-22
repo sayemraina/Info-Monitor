@@ -3,145 +3,145 @@
     "id": "coastal_metros",
     "type": "geography",
     "label": "Coastal Metros",
-    "active_volume": 2736,
+    "active_volume": 4097,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.65,
+    "base_rate_weight": 0.48,
     "is_influencer_framing": false
   },
   "slice_b": {
     "id": "heartland_metros",
     "type": "geography",
     "label": "Heartland",
-    "active_volume": 1606,
+    "active_volume": 1452,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.6,
+    "base_rate_weight": 0.58,
     "is_influencer_framing": false
   },
   "divergence": {
-    "jsd": 0.0713,
-    "jsd_sqrt": 0.2671,
+    "jsd": 0.0876,
+    "jsd_sqrt": 0.296,
     "trend": [
-      0.2467,
-      0.2454,
-      0.3379,
-      0.254,
-      0.2713,
-      0.269,
-      0.2154,
-      0.2464
+      0.2551,
+      0.3032,
+      0.2794,
+      0.3208,
+      0.3105,
+      0.3088,
+      0.2852,
+      0.3014
     ],
     "typology": {
-      "information_asymmetry": 0.57,
-      "interpretive": 0.18,
-      "paradigmatic": 0.25,
+      "information_asymmetry": 0.44,
+      "interpretive": 0.4,
+      "paradigmatic": 0.16,
       "dominant_mode": "Information Asymmetry",
       "paradigmatic_caveat": false
     }
   },
   "per_cluster": [
     {
+      "cluster_id": "clu_098405cffda1",
+      "label": "Humanitarian",
+      "salience_a": 0.4356,
+      "salience_b": 0.2158,
+      "arousal_a": 0.13,
+      "arousal_b": 0.38,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_424d8c544a52",
+      "label": "Asylum Policy",
+      "salience_a": 0.6789,
+      "salience_b": 0.1398,
+      "arousal_a": 0.14,
+      "arousal_b": 0.48,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_59fc24f369ce",
+      "label": "Border Security",
+      "salience_a": 0.1527,
+      "salience_b": 0.2673,
+      "arousal_a": 0.55,
+      "arousal_b": 0.8,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "stable"
+    },
+    {
       "cluster_id": "clu_e87163b6ced2",
       "label": "Cultural Identity",
-      "salience_a": 0.3652,
-      "salience_b": 0.6613,
-      "arousal_a": 0.88,
-      "arousal_b": 0.13,
+      "salience_a": 0.6542,
+      "salience_b": 0.8042,
+      "arousal_a": 0.36,
+      "arousal_b": 0.24,
       "mutation_a": "radicalizing",
-      "mutation_b": "stable"
+      "mutation_b": "mainstreaming"
     },
     {
       "cluster_id": "clu_dc3b90568486",
       "label": "Economic Impact",
-      "salience_a": 0.2272,
-      "salience_b": 0.1205,
+      "salience_a": 0.5262,
+      "salience_b": 0.1228,
       "arousal_a": 0.19,
-      "arousal_b": 0.77,
+      "arousal_b": 0.72,
       "mutation_a": "mainstreaming",
-      "mutation_b": "mainstreaming"
-    },
-    {
-      "cluster_id": "clu_098405cffda1",
-      "label": "Humanitarian",
-      "salience_a": 0.1956,
-      "salience_b": 0.3065,
-      "arousal_a": 0.13,
-      "arousal_b": 0.67,
-      "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_7fb4a7697265",
       "label": "Enforcement",
-      "salience_a": 0.7102,
-      "salience_b": 0.6869,
-      "arousal_a": 0.85,
-      "arousal_b": 0.45,
+      "salience_a": 0.2883,
+      "salience_b": 0.6283,
+      "arousal_a": 0.39,
+      "arousal_b": 0.85,
       "mutation_a": "radicalizing",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_424d8c544a52",
-      "label": "Asylum Policy",
-      "salience_a": 0.0883,
-      "salience_b": 0.8687,
-      "arousal_a": 0.63,
-      "arousal_b": 0.81,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_59fc24f369ce",
-      "label": "Border Security",
-      "salience_a": 0.6227,
-      "salience_b": 0.5169,
-      "arousal_a": 0.85,
-      "arousal_b": 0.9,
-      "mutation_a": "mainstreaming",
       "mutation_b": "stable"
     }
   ],
   "arousal_comparison": {
-    "slice_a_avg": 0.52,
-    "slice_b_avg": 0.42
+    "slice_a_avg": 0.57,
+    "slice_b_avg": 0.5
   },
   "exposure_comparison": {
     "slice_a": {
-      "value": 0.6497,
+      "value": 0.675,
       "confidence_interval": [
-        0.5997,
-        0.6997
+        0.625,
+        0.725
       ],
       "baseline": "global",
       "time_window": "24h",
       "sparkline": [
-        0.2467,
-        0.2454,
-        0.3379,
-        0.254,
-        0.2713,
-        0.269,
-        0.2154,
-        0.2464
+        0.2551,
+        0.3032,
+        0.2794,
+        0.3208,
+        0.3105,
+        0.3088,
+        0.2852,
+        0.3014
       ],
       "source_distribution": "production"
     },
     "slice_b": {
-      "value": 0.3928,
+      "value": 0.7232,
       "confidence_interval": [
-        0.3428,
-        0.4428
+        0.6732,
+        0.7732
       ],
       "baseline": "global",
       "time_window": "24h",
       "sparkline": [
-        0.2467,
-        0.2454,
-        0.3379,
-        0.254,
-        0.2713,
-        0.269,
-        0.2154,
-        0.2464
+        0.2551,
+        0.3032,
+        0.2794,
+        0.3208,
+        0.3105,
+        0.3088,
+        0.2852,
+        0.3014
       ],
       "source_distribution": "production"
     }

@@ -79,9 +79,13 @@ function getTargets(hint: EntryHint): CascadeTarget[] {
       ]
     case 'discourse':
       return [
-        { type: 'vital', key: 'ifi', className: 'cascade-vital-pulse' },
-        { type: 'vital', key: 'contestation', className: 'cascade-vital-pulse' },
-        { type: 'zone', key: 'landscape', className: 'cascade-attention' },
+        // Phase 1 (0-3s): Landscape alone — orient
+        { type: 'zone', key: 'landscape', className: 'cascade-attention', delayMs: 0, endMs: 3000 },
+        // Phase 2 (3-6s): Claim detail — concrete answer
+        { type: 'zone', key: 'claimDetail', className: 'cascade-attention', delayMs: 3000, endMs: 6000 },
+        // Phase 3 (6s+): Both together (no divergence — discourse entry isn't about divergence)
+        { type: 'zone', key: 'landscape', className: 'cascade-attention', delayMs: 6000 },
+        { type: 'zone', key: 'claimDetail', className: 'cascade-attention', delayMs: 6000 },
       ]
     case 'map_hotspot':
       return [

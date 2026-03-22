@@ -3,145 +3,145 @@
     "id": "x_platform",
     "type": "platform",
     "label": "X Platform",
-    "active_volume": 4265,
+    "active_volume": 4867,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.4,
+    "base_rate_weight": 0.56,
     "is_influencer_framing": false
   },
   "slice_b": {
     "id": "youtube_influencer",
     "type": "platform",
     "label": "Influencer Framing (YouTube)",
-    "active_volume": 4205,
+    "active_volume": 4779,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.6,
+    "base_rate_weight": 0.53,
     "is_influencer_framing": true
   },
   "divergence": {
-    "jsd": 0.1818,
-    "jsd_sqrt": 0.4264,
+    "jsd": 0.043,
+    "jsd_sqrt": 0.2073,
     "trend": [
-      0.4154,
-      0.4398,
-      0.3971,
-      0.4029,
-      0.4375,
-      0.4274,
-      0.4521,
-      0.4345
+      0.2317,
+      0.2137,
+      0.247,
+      0.1916,
+      0.2073,
+      0.1992,
+      0.1599,
+      0.215
     ],
     "typology": {
       "information_asymmetry": 0.62,
-      "interpretive": 0.38,
-      "paradigmatic": 0,
+      "interpretive": 0.29,
+      "paradigmatic": 0.09,
       "dominant_mode": "Information Asymmetry",
       "paradigmatic_caveat": false
     }
   },
   "per_cluster": [
     {
-      "cluster_id": "clu_debf7d80ba14",
-      "label": "Pharma Profits",
-      "salience_a": 0.6893,
-      "salience_b": 0.0724,
-      "arousal_a": 0.9,
-      "arousal_b": 0.47,
-      "mutation_a": "stable",
-      "mutation_b": "mainstreaming"
-    },
-    {
       "cluster_id": "clu_822e352959f3",
       "label": "Cost Access",
-      "salience_a": 0.6509,
-      "salience_b": 0.1376,
-      "arousal_a": 0.76,
-      "arousal_b": 0.6,
-      "mutation_a": "stable",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_7430dddfbfde",
-      "label": "Medicalization",
-      "salience_a": 0.2755,
-      "salience_b": 0.8759,
-      "arousal_a": 0.29,
-      "arousal_b": 0.68,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_8dfe08b75159",
-      "label": "Side Effects",
-      "salience_a": 0.0624,
-      "salience_b": 0.7829,
-      "arousal_a": 0.54,
-      "arousal_b": 0.87,
+      "salience_a": 0.4041,
+      "salience_b": 0.8803,
+      "arousal_a": 0.43,
+      "arousal_b": 0.45,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_2e59540e8f0d",
       "label": "Food Industry Impact",
-      "salience_a": 0.5831,
-      "salience_b": 0.3255,
-      "arousal_a": 0.71,
-      "arousal_b": 0.54,
-      "mutation_a": "radicalizing",
-      "mutation_b": "mainstreaming"
+      "salience_a": 0.7283,
+      "salience_b": 0.8372,
+      "arousal_a": 0.85,
+      "arousal_b": 0.33,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_debf7d80ba14",
+      "label": "Pharma Profits",
+      "salience_a": 0.6881,
+      "salience_b": 0.757,
+      "arousal_a": 0.73,
+      "arousal_b": 0.34,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_7430dddfbfde",
+      "label": "Medicalization",
+      "salience_a": 0.5624,
+      "salience_b": 0.5931,
+      "arousal_a": 0.3,
+      "arousal_b": 0.59,
+      "mutation_a": "stable",
+      "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_dfcfbecd0518",
       "label": "Miracle Drug",
-      "salience_a": 0.5683,
-      "salience_b": 0.7129,
-      "arousal_a": 0.77,
-      "arousal_b": 0.58,
+      "salience_a": 0.2982,
+      "salience_b": 0.4558,
+      "arousal_a": 0.28,
+      "arousal_b": 0.8,
       "mutation_a": "radicalizing",
-      "mutation_b": "stable"
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_8dfe08b75159",
+      "label": "Side Effects",
+      "salience_a": 0.0655,
+      "salience_b": 0.7332,
+      "arousal_a": 0.77,
+      "arousal_b": 0.66,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "mainstreaming"
     }
   ],
   "arousal_comparison": {
-    "slice_a_avg": 0.45,
-    "slice_b_avg": 0.66
+    "slice_a_avg": 0.67,
+    "slice_b_avg": 0.34
   },
   "exposure_comparison": {
     "slice_a": {
-      "value": 0.3415,
+      "value": 0.3788,
       "confidence_interval": [
-        0.2915,
-        0.3915
+        0.3288,
+        0.4288
       ],
       "baseline": "global",
       "time_window": "24h",
       "sparkline": [
-        0.4154,
-        0.4398,
-        0.3971,
-        0.4029,
-        0.4375,
-        0.4274,
-        0.4521,
-        0.4345
+        0.2317,
+        0.2137,
+        0.247,
+        0.1916,
+        0.2073,
+        0.1992,
+        0.1599,
+        0.215
       ],
       "source_distribution": "production"
     },
     "slice_b": {
-      "value": 0.4592,
+      "value": 0.7837,
       "confidence_interval": [
-        0.4092,
-        0.5092
+        0.7337,
+        0.8337
       ],
       "baseline": "global",
       "time_window": "24h",
       "sparkline": [
-        0.4154,
-        0.4398,
-        0.3971,
-        0.4029,
-        0.4375,
-        0.4274,
-        0.4521,
-        0.4345
+        0.2317,
+        0.2137,
+        0.247,
+        0.1916,
+        0.2073,
+        0.1992,
+        0.1599,
+        0.215
       ],
       "source_distribution": "production"
     }

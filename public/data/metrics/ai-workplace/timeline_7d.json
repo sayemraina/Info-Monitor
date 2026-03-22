@@ -1,28 +1,13 @@
 {
   "events": [
     {
-      "id": "evt_b432bb688197",
-      "type": "momentum_spike",
-      "timestamp": "2026-03-15T18:00:00+00:00",
-      "claim_id": "clm_4fa4567ac879",
-      "slice_id": null,
-      "severity": "high",
-      "confidence": 0.84,
-      "summary": "'Devin AI was supposed to be the first AI software engineer. Turns out it can barely handle a junior-level task without hallucinating. The hype machine is real.' accelerated from 20th to 72nd percentile in 12h. Source diversity: low.",
-      "detail": {
-        "percentile_from": 20,
-        "percentile_to": 72,
-        "hours": 12
-      }
-    },
-    {
       "id": "evt_b1ad3cbbc9e1",
       "type": "momentum_spike",
-      "timestamp": "2026-03-15T15:00:00+00:00",
+      "timestamp": "2026-03-16T01:00:00+00:00",
       "claim_id": "clm_4780ba717d09",
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.82,
+      "confidence": 0.94,
       "summary": "'Klarna's CEO just said their AI does the work of 700 employees \u2014 and they're not rehiring. This is the template for every company now.' accelerated from 20th to 72nd percentile in 12h. Source diversity: low.",
       "detail": {
         "percentile_from": 20,
@@ -33,70 +18,41 @@
     {
       "id": "evt_c86897987a6e",
       "type": "coordination_flag",
-      "timestamp": "2026-03-15T06:00:00+00:00",
+      "timestamp": "2026-03-15T11:00:00+00:00",
       "claim_id": "clm_4780ba717d09",
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.68,
-      "summary": "Near-duplicate content: 42 similar posts from non-overlapping accounts within 6h.",
+      "confidence": 0.77,
+      "summary": "Near-duplicate content: 38 similar posts from non-overlapping accounts within 2h.",
       "detail": {
         "signal": "near_duplicate",
-        "count": 27,
-        "window_hours": 3
+        "count": 67,
+        "window_hours": 6
       }
     },
     {
-      "id": "evt_61f6d1eec99d",
-      "type": "arousal_escalation",
-      "timestamp": "2026-03-15T04:00:00+00:00",
-      "claim_id": "clm_d35b9e500a5c",
+      "id": "evt_b432bb688197",
+      "type": "momentum_spike",
+      "timestamp": "2026-03-15T01:00:00+00:00",
+      "claim_id": "clm_4fa4567ac879",
       "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.87,
-      "summary": "'OpenAI compensation vs safety staffing' arousal shifted low to high over 48h, semantic content stable.",
+      "severity": "high",
+      "confidence": 0.81,
+      "summary": "'Devin AI was supposed to be the first AI software engineer. Turns out it can barely handle a junior-level task without hallucinating. The hype machine is real.' accelerated from 20th to 72nd percentile in 12h. Source diversity: low.",
       "detail": {
-        "arousal_from": "low",
-        "arousal_to": "high",
-        "hours": 48
-      }
-    },
-    {
-      "id": "evt_0baf38c7071c",
-      "type": "arousal_escalation",
-      "timestamp": "2026-03-15T00:00:00+00:00",
-      "claim_id": "clm_34842b890f89",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.75,
-      "summary": "'corporate AI investment and layoffs correlation' arousal shifted low to high over 48h, semantic content stable.",
-      "detail": {
-        "arousal_from": "low",
-        "arousal_to": "high",
-        "hours": 48
-      }
-    },
-    {
-      "id": "evt_d192ba308149",
-      "type": "vocabulary_rotation",
-      "timestamp": "2026-03-14T22:00:00+00:00",
-      "claim_id": "clm_4780ba717d09",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.66,
-      "summary": "Vocabulary rotation detected in 'Klarna AI workforce reduction': emerging terminology overlaps with adjacent narratives.",
-      "detail": {
-        "rotation_shift": 0.42,
-        "hours": 24
+        "percentile_from": 20,
+        "percentile_to": 72,
+        "hours": 12
       }
     },
     {
       "id": "evt_7c7159f2782f",
       "type": "arousal_escalation",
-      "timestamp": "2026-03-14T13:00:00+00:00",
+      "timestamp": "2026-03-15T18:00:00+00:00",
       "claim_id": "clm_4780ba717d09",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.85,
+      "confidence": 0.82,
       "summary": "'Klarna AI workforce reduction' arousal shifted low to high over 48h, semantic content stable.",
       "detail": {
         "arousal_from": "low",
@@ -107,11 +63,11 @@
     {
       "id": "evt_abcc21cffbce",
       "type": "arousal_escalation",
-      "timestamp": "2026-03-14T04:00:00+00:00",
+      "timestamp": "2026-03-15T00:00:00+00:00",
       "claim_id": "clm_4aa880265adc",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.75,
+      "confidence": 0.78,
       "summary": "'AI art training data ethics' arousal shifted low to high over 48h, semantic content stable.",
       "detail": {
         "arousal_from": "low",
@@ -120,13 +76,27 @@
       }
     },
     {
+      "id": "evt_d192ba308149",
+      "type": "vocabulary_rotation",
+      "timestamp": "2026-03-14T11:00:00+00:00",
+      "claim_id": "clm_4780ba717d09",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.79,
+      "summary": "Vocabulary rotation detected in 'Klarna AI workforce reduction': emerging terminology overlaps with adjacent narratives.",
+      "detail": {
+        "rotation_shift": 0.42,
+        "hours": 24
+      }
+    },
+    {
       "id": "evt_e6b691dd5316",
       "type": "divergence_shift",
-      "timestamp": "2026-03-13T00:00:00+00:00",
+      "timestamp": "2026-03-14T05:00:00+00:00",
       "claim_id": null,
       "slice_id": "x_platform",
       "severity": "medium",
-      "confidence": 0.81,
+      "confidence": 0.72,
       "summary": "X vs Reddit divergence increased 23% over 48h. Mode: information asymmetry.",
       "detail": {
         "jsd_change": 0.23,
@@ -135,35 +105,65 @@
       }
     },
     {
+      "id": "evt_61f6d1eec99d",
+      "type": "arousal_escalation",
+      "timestamp": "2026-03-14T05:00:00+00:00",
+      "claim_id": "clm_d35b9e500a5c",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.88,
+      "summary": "'OpenAI compensation vs safety staffing' arousal shifted low to high over 48h, semantic content stable.",
+      "detail": {
+        "arousal_from": "low",
+        "arousal_to": "high",
+        "hours": 48
+      }
+    },
+    {
+      "id": "evt_0baf38c7071c",
+      "type": "arousal_escalation",
+      "timestamp": "2026-03-14T03:00:00+00:00",
+      "claim_id": "clm_34842b890f89",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.74,
+      "summary": "'corporate AI investment and layoffs correlation' arousal shifted low to high over 48h, semantic content stable.",
+      "detail": {
+        "arousal_from": "low",
+        "arousal_to": "high",
+        "hours": 48
+      }
+    },
+    {
       "id": "evt_4cbad0846f04",
       "type": "coordination_flag",
-      "timestamp": "2026-03-14T07:00:00+00:00",
+      "timestamp": "2026-03-14T03:00:00+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "low",
-      "confidence": 0.79,
-      "summary": "Counter-narrative response lag of 16h between 'Klarna AI workforce reduction' and 'GitHub Copilot adoption rates' clusters \u2014 consistent with organic counter-mobilization.",
+      "confidence": 0.59,
+      "summary": "Counter-narrative response lag of 17h between 'Klarna AI workforce reduction' and 'GitHub Copilot adoption rates' clusters \u2014 consistent with organic counter-mobilization.",
       "detail": {
         "signal": "adversarial_response_lag",
         "cluster_a": "job-displacement",
         "cluster_b": "ai-augmentation",
-        "lag_hours": 16
+        "lag_hours": 17
       }
     },
     {
       "id": "evt_ddad9039e8ba",
       "type": "lead_lag",
-      "timestamp": "2026-03-11T20:00:00+00:00",
+      "timestamp": "2026-03-12T13:00:00+00:00",
       "claim_id": "clm_4780ba717d09",
       "slice_id": null,
       "severity": "low",
-      "confidence": 0.74,
-      "summary": "'Klarna's CEO just said their AI does the work of 700 employees \u2014 and they're not...' first detected on X, appeared on X 35h later. Fidelity: 82%.",
+      "confidence": 0.56,
+      "summary": "'Klarna's CEO just said their AI does the work of 700 employees \u2014 and they're not...' first detected on X, appeared on X 35h later. Fidelity: 81%.",
       "detail": {
-        "source_platform": "reddit",
-        "target_platform": "reddit",
-        "lag_hours": 8,
-        "fidelity": 0.85
+        "source_platform": "x",
+        "target_platform": "x",
+        "lag_hours": 21,
+        "fidelity": 0.91
       }
     }
   ],

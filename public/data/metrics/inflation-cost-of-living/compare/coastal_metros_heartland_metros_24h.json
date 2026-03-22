@@ -3,37 +3,37 @@
     "id": "coastal_metros",
     "type": "geography",
     "label": "Coastal Metros",
-    "active_volume": 4949,
+    "active_volume": 1649,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.7,
+    "base_rate_weight": 0.32,
     "is_influencer_framing": false
   },
   "slice_b": {
     "id": "heartland_metros",
     "type": "geography",
     "label": "Heartland",
-    "active_volume": 1032,
+    "active_volume": 4548,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.64,
+    "base_rate_weight": 0.31,
     "is_influencer_framing": false
   },
   "divergence": {
-    "jsd": 0.0126,
-    "jsd_sqrt": 0.1121,
+    "jsd": 0.0654,
+    "jsd_sqrt": 0.2558,
     "trend": [
-      0.0891,
-      0.0908,
-      0.1264,
-      0.1283,
-      0.1037,
-      0.159,
-      0.1106,
-      0.049
+      0.2438,
+      0.2831,
+      0.2296,
+      0.2629,
+      0.2662,
+      0.1844,
+      0.3106,
+      0.2457
     ],
     "typology": {
-      "information_asymmetry": 0.51,
-      "interpretive": 0.45,
-      "paradigmatic": 0.04,
+      "information_asymmetry": 0.65,
+      "interpretive": 0.33,
+      "paradigmatic": 0.01,
       "dominant_mode": "Information Asymmetry",
       "paradigmatic_caveat": false
     }
@@ -42,106 +42,106 @@
     {
       "cluster_id": "clu_58d36a2aa974",
       "label": "Consumer Squeeze",
-      "salience_a": 0.6286,
-      "salience_b": 0.94,
-      "arousal_a": 0.11,
-      "arousal_b": 0.37,
+      "salience_a": 0.445,
+      "salience_b": 0.6789,
+      "arousal_a": 0.41,
+      "arousal_b": 0.89,
+      "mutation_a": "stable",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_b19ae17628c2",
+      "label": "Measurement Distrust",
+      "salience_a": 0.2685,
+      "salience_b": 0.4441,
+      "arousal_a": 0.18,
+      "arousal_b": 0.54,
+      "mutation_a": "radicalizing",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_295113071b2d",
+      "label": "Greedflation",
+      "salience_a": 0.5684,
+      "salience_b": 0.8081,
+      "arousal_a": 0.51,
+      "arousal_b": 0.3,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_5f85e0791f3c",
+      "label": "Fed Policy",
+      "salience_a": 0.0959,
+      "salience_b": 0.7738,
+      "arousal_a": 0.49,
+      "arousal_b": 0.72,
+      "mutation_a": "radicalizing",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_55b433d61295",
+      "label": "Political Blame",
+      "salience_a": 0.4609,
+      "salience_b": 0.7943,
+      "arousal_a": 0.74,
+      "arousal_b": 0.77,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_525cfc7e4147",
       "label": "Wage Gap",
-      "salience_a": 0.3256,
-      "salience_b": 0.3886,
-      "arousal_a": 0.3,
-      "arousal_b": 0.72,
-      "mutation_a": "mainstreaming",
-      "mutation_b": "mainstreaming"
-    },
-    {
-      "cluster_id": "clu_55b433d61295",
-      "label": "Political Blame",
-      "salience_a": 0.3238,
-      "salience_b": 0.768,
-      "arousal_a": 0.56,
-      "arousal_b": 0.35,
-      "mutation_a": "radicalizing",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_5f85e0791f3c",
-      "label": "Fed Policy",
-      "salience_a": 0.8519,
-      "salience_b": 0.8218,
-      "arousal_a": 0.71,
-      "arousal_b": 0.42,
-      "mutation_a": "radicalizing",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_b19ae17628c2",
-      "label": "Measurement Distrust",
-      "salience_a": 0.341,
-      "salience_b": 0.5817,
-      "arousal_a": 0.16,
-      "arousal_b": 0.85,
-      "mutation_a": "radicalizing",
-      "mutation_b": "mainstreaming"
-    },
-    {
-      "cluster_id": "clu_295113071b2d",
-      "label": "Greedflation",
-      "salience_a": 0.0954,
-      "salience_b": 0.2094,
-      "arousal_a": 0.21,
-      "arousal_b": 0.44,
-      "mutation_a": "radicalizing",
-      "mutation_b": "stable"
+      "salience_a": 0.9153,
+      "salience_b": 0.3957,
+      "arousal_a": 0.83,
+      "arousal_b": 0.32,
+      "mutation_a": "stable",
+      "mutation_b": "radicalizing"
     }
   ],
   "arousal_comparison": {
     "slice_a_avg": 0.51,
-    "slice_b_avg": 0.59
+    "slice_b_avg": 0.56
   },
   "exposure_comparison": {
     "slice_a": {
-      "value": 0.5686,
+      "value": 0.6463,
       "confidence_interval": [
-        0.5186,
-        0.6186
+        0.5963,
+        0.6963
       ],
       "baseline": "global",
       "time_window": "24h",
       "sparkline": [
-        0.0891,
-        0.0908,
-        0.1264,
-        0.1283,
-        0.1037,
-        0.159,
-        0.1106,
-        0.049
+        0.2438,
+        0.2831,
+        0.2296,
+        0.2629,
+        0.2662,
+        0.1844,
+        0.3106,
+        0.2457
       ],
       "source_distribution": "production"
     },
     "slice_b": {
-      "value": 0.6524,
+      "value": 0.613,
       "confidence_interval": [
-        0.6024,
-        0.7024
+        0.563,
+        0.663
       ],
       "baseline": "global",
       "time_window": "24h",
       "sparkline": [
-        0.0891,
-        0.0908,
-        0.1264,
-        0.1283,
-        0.1037,
-        0.159,
-        0.1106,
-        0.049
+        0.2438,
+        0.2831,
+        0.2296,
+        0.2629,
+        0.2662,
+        0.1844,
+        0.3106,
+        0.2457
       ],
       "source_distribution": "production"
     }

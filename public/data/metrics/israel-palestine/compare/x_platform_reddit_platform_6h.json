@@ -3,145 +3,145 @@
     "id": "x_platform",
     "type": "platform",
     "label": "X Platform",
-    "active_volume": 4819,
+    "active_volume": 1999,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.59,
+    "base_rate_weight": 0.69,
     "is_influencer_framing": false
   },
   "slice_b": {
     "id": "reddit_platform",
     "type": "platform",
     "label": "Reddit Platform",
-    "active_volume": 3524,
+    "active_volume": 4417,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.66,
+    "base_rate_weight": 0.3,
     "is_influencer_framing": false
   },
   "divergence": {
-    "jsd": 0.1212,
-    "jsd_sqrt": 0.3481,
+    "jsd": 0.0408,
+    "jsd_sqrt": 0.2019,
     "trend": [
-      0.2682,
-      0.3658,
-      0.382,
-      0.3617,
-      0.3517,
-      0.3421,
-      0.3556,
-      0.3271
+      0.2478,
+      0.1977,
+      0.2278,
+      0.1876,
+      0.2087,
+      0.1329,
+      0.1805,
+      0.2435
     ],
     "typology": {
-      "information_asymmetry": 0.43,
-      "interpretive": 0.44,
-      "paradigmatic": 0.13,
-      "dominant_mode": "Interpretive",
+      "information_asymmetry": 0.56,
+      "interpretive": 0.43,
+      "paradigmatic": 0.01,
+      "dominant_mode": "Information Asymmetry",
       "paradigmatic_caveat": false
     }
   },
   "per_cluster": [
     {
-      "cluster_id": "clu_aac037e81401",
-      "label": "Ceasefire Diplomacy",
-      "salience_a": 0.2946,
-      "salience_b": 0.4841,
-      "arousal_a": 0.59,
-      "arousal_b": 0.85,
-      "mutation_a": "stable",
-      "mutation_b": "radicalizing"
-    },
-    {
       "cluster_id": "clu_54bdefed5ccd",
       "label": "Media Framing",
-      "salience_a": 0.086,
-      "salience_b": 0.6321,
-      "arousal_a": 0.33,
-      "arousal_b": 0.7,
+      "salience_a": 0.6911,
+      "salience_b": 0.6332,
+      "arousal_a": 0.8,
+      "arousal_b": 0.77,
       "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_e4ccbd641f0b",
-      "label": "Accountability",
-      "salience_a": 0.4872,
-      "salience_b": 0.9009,
-      "arousal_a": 0.16,
-      "arousal_b": 0.44,
-      "mutation_a": "mainstreaming",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_5dd6aad8b467",
-      "label": "Self Defense",
-      "salience_a": 0.3921,
-      "salience_b": 0.3589,
-      "arousal_a": 0.81,
-      "arousal_b": 0.55,
-      "mutation_a": "radicalizing",
       "mutation_b": "mainstreaming"
-    },
-    {
-      "cluster_id": "clu_706a04c37c10",
-      "label": "Humanitarian Crisis",
-      "salience_a": 0.8843,
-      "salience_b": 0.1363,
-      "arousal_a": 0.69,
-      "arousal_b": 0.68,
-      "mutation_a": "stable",
-      "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_a128faf3fa40",
       "label": "Campus Protests",
-      "salience_a": 0.302,
-      "salience_b": 0.2152,
-      "arousal_a": 0.1,
-      "arousal_b": 0.38,
-      "mutation_a": "stable",
+      "salience_a": 0.1314,
+      "salience_b": 0.7168,
+      "arousal_a": 0.39,
+      "arousal_b": 0.79,
+      "mutation_a": "mainstreaming",
       "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_5dd6aad8b467",
+      "label": "Self Defense",
+      "salience_a": 0.7065,
+      "salience_b": 0.7238,
+      "arousal_a": 0.89,
+      "arousal_b": 0.6,
+      "mutation_a": "stable",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_aac037e81401",
+      "label": "Ceasefire Diplomacy",
+      "salience_a": 0.3784,
+      "salience_b": 0.1941,
+      "arousal_a": 0.84,
+      "arousal_b": 0.81,
+      "mutation_a": "stable",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_706a04c37c10",
+      "label": "Humanitarian Crisis",
+      "salience_a": 0.5727,
+      "salience_b": 0.5397,
+      "arousal_a": 0.45,
+      "arousal_b": 0.48,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_e4ccbd641f0b",
+      "label": "Accountability",
+      "salience_a": 0.3745,
+      "salience_b": 0.5151,
+      "arousal_a": 0.57,
+      "arousal_b": 0.72,
+      "mutation_a": "radicalizing",
+      "mutation_b": "mainstreaming"
     }
   ],
   "arousal_comparison": {
-    "slice_a_avg": 0.69,
-    "slice_b_avg": 0.56
+    "slice_a_avg": 0.56,
+    "slice_b_avg": 0.53
   },
   "exposure_comparison": {
     "slice_a": {
-      "value": 0.7748,
+      "value": 0.4084,
       "confidence_interval": [
-        0.7248,
-        0.8248
+        0.3584,
+        0.4584
       ],
       "baseline": "global",
       "time_window": "6h",
       "sparkline": [
-        0.2682,
-        0.3658,
-        0.382,
-        0.3617,
-        0.3517,
-        0.3421,
-        0.3556,
-        0.3271
+        0.2478,
+        0.1977,
+        0.2278,
+        0.1876,
+        0.2087,
+        0.1329,
+        0.1805,
+        0.2435
       ],
       "source_distribution": "production"
     },
     "slice_b": {
-      "value": 0.5136,
+      "value": 0.6477,
       "confidence_interval": [
-        0.4636,
-        0.5636
+        0.5977,
+        0.6977
       ],
       "baseline": "global",
       "time_window": "6h",
       "sparkline": [
-        0.2682,
-        0.3658,
-        0.382,
-        0.3617,
-        0.3517,
-        0.3421,
-        0.3556,
-        0.3271
+        0.2478,
+        0.1977,
+        0.2278,
+        0.1876,
+        0.2087,
+        0.1329,
+        0.1805,
+        0.2435
       ],
       "source_distribution": "production"
     }
