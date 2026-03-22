@@ -165,8 +165,34 @@ export function Header({
         position: 'relative',
       }}
     >
-      {/* Search bar — only shown in Level 1+, moved to map overlay in Level 0 */}
-      {selectedTopicId && (
+      {/* Mobile Level 1: Back button instead of search + tabs */}
+      {selectedTopicId && isMobile && (
+        <button
+          onClick={onGoToOverview}
+          className="cursor-pointer"
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '6px',
+            background: 'none',
+            border: 'none',
+            padding: '6px 10px',
+            borderRadius: '6px',
+            fontSize: '12px',
+            color: '#F1F5F9',
+            whiteSpace: 'nowrap',
+            overflow: 'hidden',
+            textOverflow: 'ellipsis',
+            maxWidth: '200px',
+          }}
+        >
+          <span style={{ color: '#06B6D4', fontSize: '14px', flexShrink: 0 }}>&larr;</span>
+          <span style={{ overflow: 'hidden', textOverflow: 'ellipsis' }}>Topics</span>
+        </button>
+      )}
+
+      {/* Search bar — only shown in Level 1+ on desktop */}
+      {selectedTopicId && !isMobile && (
         <div className="relative" style={{ width: 300, flexShrink: 0 }}>
           <input
             type="text"
@@ -196,14 +222,14 @@ export function Header({
         </div>
       )}
 
-      {/* Topic tabs (shown in Level 1+) */}
-      {selectedTopicId && (
+      {/* Topic tabs (shown in Level 1+ on desktop only) */}
+      {selectedTopicId && !isMobile && (
         <nav style={{ display: 'flex', alignItems: 'center', gap: '4px', overflowX: 'auto' }}>
           <button
             onClick={onGoToOverview}
             className="cursor-pointer transition-colors"
             style={{
-              padding: isMobile ? '8px 12px' : '4px 12px',
+              padding: '4px 12px',
               borderRadius: '6px',
               fontSize: '12px',
               whiteSpace: 'nowrap',
@@ -222,7 +248,7 @@ export function Header({
               onClick={() => onSelectTopic(topic.id)}
               className="cursor-pointer transition-colors"
               style={{
-                padding: isMobile ? '8px 12px' : '4px 12px',
+                padding: '4px 12px',
                 borderRadius: '6px',
                 fontSize: '12px',
                 whiteSpace: 'nowrap',

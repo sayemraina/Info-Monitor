@@ -233,26 +233,33 @@ export function LensBar({ activePair, onSelectPair }: LensBarProps) {
           </span>
         </button>
 
-        {/* ⓘ — hover tooltip via InfoButton */}
-        <InfoButton
-          term="Population Partitioning"
-          content={GLOSSARY.PopulationPartitioning}
-          wrapperClassName="relative inline-flex items-center shrink-0"
-        />
+        {/* ⓘ — hover tooltip via InfoButton (hidden on mobile) */}
+        {!isMobile && (
+          <InfoButton
+            term="Population Partitioning"
+            content={GLOSSARY.PopulationPartitioning}
+            wrapperClassName="relative inline-flex items-center shrink-0"
+          />
+        )}
 
-        {/* Separator */}
-        <span className="text-[11px] shrink-0 select-none" style={{ color: '#334155' }}>·</span>
-
-        {/* Active pair — read-only status */}
-        <span className="text-[11px] font-data shrink-0" style={{ color: '#CBD5E1' }}>
-          {activePair.label}
-        </span>
+        {/* Separator + active pair label (hidden on mobile — redundant with toggles) */}
+        {!isMobile && (
+          <>
+            <span className="text-[11px] shrink-0 select-none" style={{ color: '#334155' }}>·</span>
+            <span className="text-[11px] font-data shrink-0" style={{ color: '#CBD5E1' }}>
+              {activePair.label}
+            </span>
+          </>
+        )}
 
         <div className="flex-1" />
 
         {/* Inline pair toggles */}
         {findActiveLens(activePair)?.pairs && (
-          <div className="flex items-center gap-3 shrink-0" style={{ flexWrap: isMobile ? 'wrap' : undefined }}>
+          <div
+            className={`flex items-center gap-3 shrink-0 ${isMobile ? 'mobile-scroll-fade' : ''}`}
+            style={isMobile ? { overflowX: 'auto', WebkitOverflowScrolling: 'touch', scrollbarWidth: 'none' } : undefined}
+          >
             {findActiveLens(activePair)!.pairs!.map((pair) => {
               const isActive = pair.a === activePair.a && pair.b === activePair.b
               return (

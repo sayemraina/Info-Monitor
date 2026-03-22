@@ -160,7 +160,7 @@ export function TopicVitalsStrip({ topic, landscape, cascadeClasses, onTagClick 
           style={{
             height: isMobile ? '28px' : '24px',
             paddingBottom: '4px',
-            ...(isMobile ? { overflowX: 'auto', WebkitOverflowScrolling: 'touch', scrollbarWidth: 'none', msOverflowStyle: 'none' } : {}),
+            ...(isMobile ? { overflowX: 'auto', WebkitOverflowScrolling: 'touch', scrollbarWidth: 'none', msOverflowStyle: 'none', flexWrap: 'nowrap' as const } : {}),
           }}
         >
           {tags.map(tag => (

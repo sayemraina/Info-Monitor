@@ -292,9 +292,17 @@ export function NarrativeMap({ activeTopic, topics, onSelectTopic, onLockTopic, 
       const projectHotspotLabels = () => {
         const raw = hotspotRawRef.current
         if (raw.length === 0) return
+        const cw = containerRef.current?.clientWidth ?? window.innerWidth
+        const ch = containerRef.current?.clientHeight ?? 400
         const labels = raw.map(r => {
           const pt = map.project([r.lng, r.lat])
-          return { x: pt.x, y: pt.y - 20, label: r.label, color: r.color }
+          // Labels use transform: translate(-50%, -100%), so pad generously to prevent text clipping
+          return {
+            x: Math.max(90, Math.min(cw - 70, pt.x)),
+            y: Math.max(30, Math.min(ch - 50, pt.y - 20)),
+            label: r.label,
+            color: r.color,
+          }
         })
         setHotspotLabels(labels)
       }
@@ -423,9 +431,16 @@ export function NarrativeMap({ activeTopic, topics, onSelectTopic, onLockTopic, 
       // Store raw coordinates so the map 'move' handler can reproject
       const raw = top3.map(r => ({ lng: r.lng, lat: r.lat, label: r.label, color: getMomentumColor(r.momentum) }))
       hotspotRawRef.current = raw
+      const cw = containerRef.current?.clientWidth ?? window.innerWidth
+      const ch = containerRef.current?.clientHeight ?? 400
       const labels = raw.map(r => {
         const pt = map.project([r.lng, r.lat])
-        return { x: pt.x, y: pt.y - 20, label: r.label, color: r.color }
+        return {
+          x: Math.max(90, Math.min(cw - 70, pt.x)),
+          y: Math.max(30, Math.min(ch - 50, pt.y - 20)),
+          label: r.label,
+          color: r.color,
+        }
       })
       setHotspotLabels(labels)
     } else {
@@ -508,7 +523,43 @@ export function NarrativeMap({ activeTopic, topics, onSelectTopic, onLockTopic, 
         </div>
       ))}
 
-      {/* Legend — bottom-right, explains what the hotspots mean (hidden on mobile) */}
+      {/* Mobile legend — compact horizontal strip at bottom-right */}
+      {mapReady && isMobile && (
+        <div
+          className="font-data"
+          style={{
+            position: 'absolute',
+            bottom: '62px',
+            right: '8px',
+            zIndex: 10,
+            background: 'rgba(3,5,8,0.82)',
+            backdropFilter: 'blur(8px)',
+            border: '1px solid rgba(148,163,184,0.12)',
+            borderRadius: '4px',
+            padding: '4px 8px',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '6px',
+            fontSize: '7px',
+            color: 'rgba(148,163,184,0.6)',
+          }}
+        >
+          {[
+            { color: '#EF4444', label: 'Accel' },
+            { color: '#F59E0B', label: 'Gaining' },
+            { color: '#94A3B8', label: 'Stable' },
+            { color: '#14B8A6', label: 'Decel' },
+            { color: '#3B82F6', label: 'Fading' },
+          ].map(({ color, label }) => (
+            <div key={label} style={{ display: 'flex', alignItems: 'center', gap: '3px' }}>
+              <span style={{ width: 5, height: 5, borderRadius: '50%', background: color, flexShrink: 0 }} />
+              <span>{label}</span>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {/* Legend — bottom-right, explains what the hotspots mean (desktop only) */}
       {mapReady && !isMobile && (
         <div
           className="font-data"

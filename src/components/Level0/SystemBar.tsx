@@ -138,6 +138,7 @@ export function SystemBar({ systemConfidence }: SystemBarProps) {
               lineHeight: '1.5',
               color: '#CBD5E1',
               width: '280px',
+              maxWidth: 'calc(100vw - 32px)',
               zIndex: 9999,
               backdropFilter: 'blur(12px)',
               boxShadow: '0 8px 32px rgba(0,0,0,0.5)',

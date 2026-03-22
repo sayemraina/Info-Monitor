@@ -218,21 +218,23 @@ export function TopicView({
           )}
 
           {/* Claim Landscape */}
-          <ZonePanel
-            className={cascade.state.zones.landscape ?? ''}
-            title={compareMode
-              ? `Comparing ${compare?.slice_a.label ?? sliceA} vs ${compare?.slice_b.label ?? sliceB}`
-              : 'Claim-Cluster Landscape'}
-            titleInfo={!compareMode ? <span style={{ marginLeft: 8, display: 'inline-flex', alignItems: 'center' }}><InfoButton term="Claim-Cluster Landscape" content={GLOSSARY.ClaimLandscape} wrapperClassName="relative inline-flex items-center [&>div]:w-3.5 [&>div]:h-3.5 [&>div]:text-[9px]" /></span> : undefined}
-            noPadding
-          >
-            <div style={{ height: '50vh' }}>
-              {landscapeContent}
-            </div>
-          </ZonePanel>
+          <div style={isMobile ? { flexShrink: 0 } : undefined}>
+            <ZonePanel
+              className={cascade.state.zones.landscape ?? ''}
+              title={compareMode
+                ? `Comparing ${compare?.slice_a.label ?? sliceA} vs ${compare?.slice_b.label ?? sliceB}`
+                : 'Claim-Cluster Landscape'}
+              titleInfo={!compareMode ? <span style={{ marginLeft: 8, display: 'inline-flex', alignItems: 'center' }}><InfoButton term="Claim-Cluster Landscape" content={GLOSSARY.ClaimLandscape} wrapperClassName="relative inline-flex items-center [&>div]:w-3.5 [&>div]:h-3.5 [&>div]:text-[9px]" /></span> : undefined}
+              noPadding
+            >
+              <div style={{ height: isMobile ? '340px' : '50vh', minHeight: isMobile ? '340px' : undefined }}>
+                {landscapeContent}
+              </div>
+            </ZonePanel>
+          </div>
 
           {/* Divergence + IFI — stacked vertically on mobile, side-by-side on desktop */}
-          <div className={isMobile ? "flex flex-col gap-2" : "flex gap-2"} style={{ minHeight: isMobile ? undefined : '220px' }}>
+          <div className={isMobile ? "flex flex-col gap-2" : "flex gap-2"} style={{ minHeight: isMobile ? undefined : '220px', flexShrink: isMobile ? 0 : undefined }}>
             <div className={`flex-1 min-w-0 rounded-lg p-3 overflow-hidden ${cascade.state.zones.divergence ?? ''}`} style={{ backgroundColor: 'var(--color-bg-panel)', border: '1px solid var(--color-border)' }}>
               <DivergenceCard
                 topicId={topicId}
@@ -244,7 +246,7 @@ export function TopicView({
                 landscape={landscape}
               />
             </div>
-            <div className={`flex-1 min-w-0 rounded-lg p-3 overflow-hidden flex flex-col items-center justify-center ${cascade.state.zones.ifiCard ?? ''}`} style={{ backgroundColor: 'var(--color-bg-panel)', border: '1px solid var(--color-border)' }}>
+            <div className={`flex-1 min-w-0 rounded-lg p-3 overflow-hidden flex flex-col items-center justify-center ${cascade.state.zones.ifiCard ?? ''}`} style={{ backgroundColor: 'var(--color-bg-panel)', border: '1px solid var(--color-border)', maxHeight: isMobile ? '280px' : undefined }}>
               {landscape?.topic_metrics.ifi ? (
                 <div className="w-full h-full">
                   <IFICard ifi={landscape.topic_metrics.ifi} onOpenRadar={() => setShowIFIRadar(true)} radarValues={radarValues} />
@@ -290,7 +292,7 @@ export function TopicView({
                 bottom: 0,
                 left: 0,
                 right: 0,
-                height: '75vh',
+                height: '60vh',
                 backgroundColor: 'var(--color-bg-panel)',
                 borderTop: '1px solid var(--color-border)',
                 borderRadius: '12px 12px 0 0',

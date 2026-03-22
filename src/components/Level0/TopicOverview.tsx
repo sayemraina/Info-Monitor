@@ -68,7 +68,7 @@ export function TopicOverview({ topics, searchQuery, totalCount, onSelectTopic }
       {/* Row 2: Geographic Narrative Map — ~50% viewport */}
       <div
         className="relative flex-shrink-0"
-        style={{ height: '50vh' }}
+        style={{ height: isMobile ? '42vh' : '50vh' }}
         onMouseEnter={syncActions.pauseRotation}
         onMouseLeave={syncActions.resumeRotation}
       >
