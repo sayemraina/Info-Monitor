@@ -227,3 +227,23 @@ input.search-input:focus {
   animation: claimDetailIn 600ms ease-out both;
 }
 
+/* ═══ Mobile Responsiveness (≤768px) ═══ */
+@media (max-width: 768px) {
+  html, body, #root {
+    overflow: auto;
+    height: auto;
+    min-height: 100%;
+  }
+
+  /* Minimum tap targets */
+  button, [role="button"] {
+    min-height: 32px;
+    min-width: 32px;
+  }
+
+  /* Prevent horizontal overflow */
+  body {
+    overflow-x: hidden;
+  }
+}
+

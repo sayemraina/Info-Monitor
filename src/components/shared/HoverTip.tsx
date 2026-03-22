@@ -1,5 +1,6 @@
 import { useState, useRef, useCallback } from 'react'
 import { createPortal } from 'react-dom'
+import { useIsMobile } from '../../hooks/useIsMobile'
 
 interface HoverTipProps {
   text: string
@@ -14,6 +15,7 @@ const TIP_MAX_W = 220
 const EDGE_PAD = 8
 
 export function HoverTip({ text, children, block, instant }: HoverTipProps) {
+  const isMobile = useIsMobile()
   const [show, setShow] = useState(false)
   const [, setHinting] = useState(false)
   const [pos, setPos] = useState({ top: 0, left: 0, flipBelow: false })
@@ -55,8 +57,22 @@ export function HoverTip({ text, children, block, instant }: HoverTipProps) {
   return (
     <span
       ref={wrapRef}
-      onMouseEnter={handleEnter}
-      onMouseLeave={handleLeave}
+      onMouseEnter={isMobile ? undefined : handleEnter}
+      onMouseLeave={isMobile ? undefined : handleLeave}
+      onClick={isMobile ? () => {
+        if (show) { setShow(false); return }
+        if (wrapRef.current) {
+          const rect = wrapRef.current.getBoundingClientRect()
+          const flipBelow = rect.top < 60
+          let left = rect.left + rect.width / 2 - TIP_MAX_W / 2
+          if (left < EDGE_PAD) left = EDGE_PAD
+          if (left + TIP_MAX_W > window.innerWidth - EDGE_PAD) {
+            left = window.innerWidth - EDGE_PAD - TIP_MAX_W
+          }
+          setPos({ top: flipBelow ? rect.bottom + 8 : rect.top - 8, left, flipBelow })
+        }
+        setShow(true)
+      } : undefined}
       style={block
         ? { display: 'block', width: '100%', overflow: 'hidden', cursor: 'help' }
         : { display: 'inline-flex', cursor: 'help' }

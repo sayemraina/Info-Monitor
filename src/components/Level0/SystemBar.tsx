@@ -1,11 +1,13 @@
 import { useState, useEffect, useRef } from 'react'
 import { createPortal } from 'react-dom'
+import { useIsMobile } from '../../hooks/useIsMobile'
 
 interface SystemBarProps {
   systemConfidence?: number
 }
 
 export function SystemBar({ systemConfidence }: SystemBarProps) {
+  const isMobile = useIsMobile()
   const [time, setTime] = useState(new Date())
   const [showInfo, setShowInfo] = useState(false)
   const [popupPos, setPopupPos] = useState({ top: 0, left: 0 })
@@ -54,21 +56,21 @@ export function SystemBar({ systemConfidence }: SystemBarProps) {
         position: 'relative',
       }}
     >
-      {/* Platform status — left */}
+      {/* Platform status — left (dots only on mobile) */}
       <div className="flex items-center gap-4">
         <span>
-          <span style={{ color: '#22C55E' }}>●</span> X: LIVE
+          <span style={{ color: '#22C55E' }}>●</span>{!isMobile && ' X: LIVE'}
         </span>
         <span>
-          <span style={{ color: '#22C55E' }}>●</span> REDDIT: LIVE
+          <span style={{ color: '#22C55E' }}>●</span>{!isMobile && ' REDDIT: LIVE'}
         </span>
         <span>
-          <span style={{ color: '#F59E0B' }}>●</span> YT: CACHED
+          <span style={{ color: '#F59E0B' }}>●</span>{!isMobile && ' YT: CACHED'}
         </span>
       </div>
 
-      {/* System confidence — center */}
-      <div
+      {/* System confidence — center (hidden on mobile) */}
+      {!isMobile && <div
         style={{
           position: 'absolute',
           left: '50%',
@@ -174,7 +176,7 @@ export function SystemBar({ systemConfidence }: SystemBarProps) {
           </div>,
           document.body
         )}
-      </div>
+      </div>}
 
       {/* ET clock — right */}
       <span style={{ color: 'rgba(241,245,249,0.7)' }}>

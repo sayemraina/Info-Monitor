@@ -3,6 +3,7 @@ import { useYouTubeData } from '../../hooks/useYouTubeData'
 import { InfoButton } from '../shared/InfoButton'
 import { VideoCard } from './VideoCard'
 import type { VideoMetadata } from '../../types'
+import { useIsMobile } from '../../hooks/useIsMobile'
 
 const YOUTUBE_METHODOLOGY = {
   what: 'Videos ranked by Narrative Framing Score — voices most likely to shape public thinking on this topic.',
@@ -17,6 +18,7 @@ interface YouTubeStripProps {
 }
 
 export function YouTubeStrip({ activeTopic, topicName, onNavigateToLevel1 }: YouTubeStripProps) {
+  const isMobile = useIsMobile()
   const { videos } = useYouTubeData(activeTopic)
   const [playingVideo, setPlayingVideo] = useState<VideoMetadata | null>(null)
   const [endCapHovered, setEndCapHovered] = useState(false)
@@ -27,7 +29,7 @@ export function YouTubeStrip({ activeTopic, topicName, onNavigateToLevel1 }: You
       <div
         className="flex items-center justify-between"
         style={{
-          padding: '5px 24px',
+          padding: isMobile ? '5px 12px' : '5px 24px',
           background: 'rgba(12,18,28,0.6)',
           borderTop: '1px solid rgba(148,163,184,0.08)',
         }}
@@ -68,8 +70,8 @@ export function YouTubeStrip({ activeTopic, topicName, onNavigateToLevel1 }: You
         <div
           className="flex items-center gap-3 overflow-x-auto"
           style={{
-            padding: '8px 24px',
-            paddingRight: videos.length > 0 ? '190px' : '24px',
+            padding: isMobile ? '8px 12px' : '8px 24px',
+            paddingRight: isMobile ? '12px' : (videos.length > 0 ? '190px' : '24px'),
             height: '100%',
           }}
         >
@@ -85,8 +87,8 @@ export function YouTubeStrip({ activeTopic, topicName, onNavigateToLevel1 }: You
           )}
         </div>
 
-        {/* End-cap CTA — absolute right, solid bg to prevent overlap */}
-        {videos.length > 0 && (
+        {/* End-cap CTA — absolute right, solid bg to prevent overlap (hidden on mobile) */}
+        {videos.length > 0 && !isMobile && (
           <div
             className="flex flex-col items-center justify-center cursor-pointer"
             style={{

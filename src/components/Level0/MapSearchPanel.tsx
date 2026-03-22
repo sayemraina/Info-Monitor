@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useIsMobile } from '../../hooks/useIsMobile'
 import type { TopicSummary } from '../../types'
 
 interface MapSearchPanelProps {
@@ -10,7 +11,9 @@ interface MapSearchPanelProps {
 }
 
 export function MapSearchPanel({ topics, activeTopic, searchQuery, onLockTopic, onNavigateToLevel1 }: MapSearchPanelProps) {
+  const isMobile = useIsMobile()
   const [localSearch, setLocalSearch] = useState(searchQuery)
+  const [mobileOpen, setMobileOpen] = useState(false)
 
   const filtered = localSearch
     ? topics.filter(t => t.name.toLowerCase().includes(localSearch.toLowerCase()))
@@ -19,17 +22,8 @@ export function MapSearchPanel({ topics, activeTopic, searchQuery, onLockTopic, 
   // Preserve original order from topics.json
   const sorted = filtered
 
-  return (
-    <div
-      className="absolute top-4 left-4 z-20 rounded-lg"
-      style={{
-        width: '210px',
-        background: 'rgba(15,25,35,0.88)',
-        backdropFilter: 'blur(12px)',
-        border: '1px solid rgba(148,163,184,0.1)',
-        padding: '10px',
-      }}
-    >
+  const panelContent = (
+    <>
       {/* Search input */}
       <input
         type="text"
@@ -65,7 +59,7 @@ export function MapSearchPanel({ topics, activeTopic, searchQuery, onLockTopic, 
                 backgroundColor: isActive ? 'rgba(233,69,96,0.1)' : 'transparent',
                 marginBottom: '1px',
               }}
-              onClick={() => onLockTopic(topic.id)}
+              onClick={() => { onLockTopic(topic.id); if (isMobile) setMobileOpen(false) }}
               onDoubleClick={() => onNavigateToLevel1(topic.id)}
             >
               {/* Activity dot */}
@@ -109,6 +103,83 @@ export function MapSearchPanel({ topics, activeTopic, searchQuery, onLockTopic, 
           )
         })}
       </div>
+    </>
+  )
+
+  if (isMobile) {
+    return (
+      <>
+        {/* Floating search icon */}
+        {!mobileOpen && (
+          <button
+            onClick={() => setMobileOpen(true)}
+            className="absolute top-3 left-3 z-20 cursor-pointer"
+            style={{
+              width: '36px',
+              height: '36px',
+              borderRadius: '50%',
+              background: 'rgba(15,25,35,0.88)',
+              backdropFilter: 'blur(12px)',
+              border: '1px solid rgba(148,163,184,0.15)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: 0,
+            }}
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(148,163,184,0.7)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+          </button>
+        )}
+
+        {/* Full-width overlay panel */}
+        {mobileOpen && (
+          <div
+            className="absolute top-0 left-0 right-0 z-20 rounded-b-lg"
+            style={{
+              background: 'rgba(15,25,35,0.95)',
+              backdropFilter: 'blur(12px)',
+              border: '1px solid rgba(148,163,184,0.1)',
+              padding: '10px',
+            }}
+          >
+            <div className="flex items-center justify-between" style={{ marginBottom: '6px' }}>
+              <span style={{ fontSize: '9px', color: 'rgba(148,163,184,0.5)', letterSpacing: '0.5px', textTransform: 'uppercase' }}>Topics</span>
+              <button
+                onClick={() => setMobileOpen(false)}
+                className="cursor-pointer"
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  color: 'rgba(148,163,184,0.5)',
+                  fontSize: '14px',
+                  padding: '0 4px',
+                }}
+              >
+                ×
+              </button>
+            </div>
+            {panelContent}
+          </div>
+        )}
+      </>
+    )
+  }
+
+  return (
+    <div
+      className="absolute top-4 left-4 z-20 rounded-lg"
+      style={{
+        width: '210px',
+        background: 'rgba(15,25,35,0.88)',
+        backdropFilter: 'blur(12px)',
+        border: '1px solid rgba(148,163,184,0.1)',
+        padding: '10px',
+      }}
+    >
+      {panelContent}
     </div>
   )
 }

@@ -4,6 +4,7 @@ import type { LandscapeData, Claim, Cluster, ClaimPosition, AdversarialPair } fr
 import { getMomentumColor, getArousalGlowFilter, getMutationColor } from '../../utils/colors'
 import { ClaimTooltip } from './ClaimTooltip'
 import { Legend } from './Legend'
+import { useIsMobile } from '../../hooks/useIsMobile'
 
 interface ClaimLandscapeProps {
   landscape: LandscapeData
@@ -44,6 +45,7 @@ export function ClaimLandscape({
   compareSalience,
   compareLabel,
 }: ClaimLandscapeProps) {
+  const isMobile = useIsMobile()
   const containerRef = useRef<HTMLDivElement>(null)
   const svgRef = useRef<SVGSVGElement>(null)
   const gRef = useRef<SVGGElement>(null)
@@ -98,7 +100,7 @@ export function ClaimLandscape({
     const yMin = Math.min(...ys), yMax = Math.max(...ys)
     const xRange = xMax - xMin || 1
     const yRange = yMax - yMin || 1
-    const pad = 40
+    const pad = isMobile ? 20 : 40
 
     return dedupedClaims.map(claim => {
       const pos = landscape.positions.find(p => p.claim_id === claim.id)!
@@ -367,6 +369,7 @@ export function ClaimLandscape({
         width={dimensions.width}
         height={dimensions.height}
         className="w-full h-full cursor-grab active:cursor-grabbing"
+        style={{ touchAction: isMobile ? 'none' : undefined }}
         onClick={handleBackgroundClick}
       >
         <g ref={gRef}>

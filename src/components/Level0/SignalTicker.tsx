@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { useIsMobile } from '../../hooks/useIsMobile'
 import type { NarrativeEvent } from '../../types'
 
 interface SignalTickerProps {
@@ -18,6 +19,7 @@ const EVENT_ICONS: Record<string, string> = {
 }
 
 export function SignalTicker({ activeTopic }: SignalTickerProps) {
+  const isMobile = useIsMobile()
   const scrollRef = useRef<HTMLDivElement>(null)
   const animRef = useRef<number>(0)
   const [events, setEvents] = useState<NarrativeEvent[]>([])
@@ -86,7 +88,7 @@ export function SignalTicker({ activeTopic }: SignalTickerProps) {
         style={{
           overflow: 'hidden',
           whiteSpace: 'nowrap',
-          padding: '0 24px',
+          padding: isMobile ? '0 12px' : '0 24px',
         }}
       >
         {displayEvents.map((event, i) => {

@@ -1,4 +1,5 @@
 import { useMemo } from 'react'
+import { useIsMobile } from '../../hooks/useIsMobile'
 import type { TopicSummary, EntryHint } from '../../types'
 import { useTopicSync } from '../../hooks/useTopicSync'
 import { TopicCard } from './TopicCard'
@@ -23,6 +24,7 @@ interface TopicOverviewProps {
 }
 
 export function TopicOverview({ topics, searchQuery, totalCount, onSelectTopic }: TopicOverviewProps) {
+  const isMobile = useIsMobile()
   const [syncState, syncActions] = useTopicSync(topics)
 
   // Show per-topic confidence when a topic is active, otherwise global average
@@ -103,7 +105,7 @@ export function TopicOverview({ topics, searchQuery, totalCount, onSelectTopic }
         <div
           className="flex items-center justify-between"
           style={{
-            padding: '5px 24px',
+            padding: isMobile ? '5px 12px' : '5px 24px',
             background: 'rgba(12,18,28,0.6)',
             borderTop: '1px solid rgba(148,163,184,0.08)',
           }}
@@ -151,9 +153,9 @@ export function TopicOverview({ topics, searchQuery, totalCount, onSelectTopic }
         <div
           className="grid gap-2"
           style={{
-            gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))',
+            gridTemplateColumns: isMobile ? 'repeat(auto-fill, minmax(160px, 1fr))' : 'repeat(auto-fill, minmax(220px, 1fr))',
             maxWidth: '100%',
-            padding: '12px 24px 16px',
+            padding: isMobile ? '12px 12px 16px' : '12px 24px 16px',
           }}
         >
           {filteredTopics.map((topic) => (

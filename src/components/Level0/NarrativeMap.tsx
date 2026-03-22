@@ -3,6 +3,7 @@ import maplibregl from 'maplibre-gl'
 import 'maplibre-gl/dist/maplibre-gl.css'
 import type { TopicSummary, GeoCluster, EntryHint } from '../../types'
 import { useGeoData } from '../../hooks/useGeoData'
+import { useIsMobile } from '../../hooks/useIsMobile'
 import { getMomentumColor } from '../../utils/colors'
 import { MapSearchPanel } from './MapSearchPanel'
 
@@ -166,6 +167,7 @@ function clustersToGeoJSON(clusters: GeoCluster[]) {
 }
 
 export function NarrativeMap({ activeTopic, topics, onSelectTopic, onLockTopic, searchQuery }: NarrativeMapProps) {
+  const isMobile = useIsMobile()
   const { geoData } = useGeoData(activeTopic)
   const containerRef = useRef<HTMLDivElement>(null)
   const mapRef = useRef<maplibregl.Map | null>(null)
@@ -215,7 +217,7 @@ export function NarrativeMap({ activeTopic, topics, onSelectTopic, onLockTopic, 
     // This auto-centers regardless of viewport size.
     map.fitBounds(
       [[-125, 24], [-66, 50]], // SW corner (SoCal/Texas) to NE corner (Maine)
-      { padding: { left: 230, top: 10, right: 10, bottom: 10 }, duration: 0 }
+      { padding: { left: isMobile ? 16 : 230, top: 10, right: 10, bottom: 10 }, duration: 0 }
     )
 
     map.on('load', () => {
@@ -471,7 +473,7 @@ export function NarrativeMap({ activeTopic, topics, onSelectTopic, onLockTopic, 
           padding: '8px 12px',
           fontSize: '10px',
           color: '#F1F5F9',
-          maxWidth: '280px',
+          maxWidth: isMobile ? 'calc(100vw - 32px)' : '280px',
           zIndex: 50,
           whiteSpace: 'normal',
           cursor: 'pointer',
@@ -500,8 +502,8 @@ export function NarrativeMap({ activeTopic, topics, onSelectTopic, onLockTopic, 
         </div>
       ))}
 
-      {/* Legend — bottom-right, explains what the hotspots mean */}
-      {mapReady && (
+      {/* Legend — bottom-right, explains what the hotspots mean (hidden on mobile) */}
+      {mapReady && !isMobile && (
         <div
           className="font-data"
           style={{
@@ -563,6 +565,7 @@ export function NarrativeMap({ activeTopic, topics, onSelectTopic, onLockTopic, 
             bottom: '12px',
             left: '16px',
             width: '210px',
+            maxWidth: isMobile ? '50vw' : undefined,
             zIndex: 10,
             background: ctaHovered ? 'rgba(6,182,212,0.08)' : 'rgba(3,5,8,0.78)',
             backdropFilter: 'blur(8px)',

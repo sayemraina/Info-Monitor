@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { useDiscourseData } from '../../hooks/useDiscourseData'
+import { useIsMobile } from '../../hooks/useIsMobile'
 import type { DiscoursePost } from '../../types'
 
 interface DiscourseFeedProps {
@@ -13,7 +14,7 @@ const TIME_LABELS = [
   '8 min ago', '12 min ago', '15 min ago', '20 min ago', '25 min ago',
 ]
 
-function DiscourseCard({ post, index }: { post: DiscoursePost; index: number }) {
+function DiscourseCard({ post, index, isMobile }: { post: DiscoursePost; index: number; isMobile: boolean }) {
   const platformIcon = post.platform === 'x' ? '𝕏' : '💬'
   const timeLabel = TIME_LABELS[index % TIME_LABELS.length]
 
@@ -28,7 +29,7 @@ function DiscourseCard({ post, index }: { post: DiscoursePost; index: number }) 
     <div
       className="flex-shrink-0 rounded-md"
       style={{
-        width: '290px',
+        width: isMobile ? '250px' : '290px',
         padding: '8px 10px',
         background: 'rgba(255,255,255,0.015)',
         borderLeft: `2px solid ${borderColor}`,
@@ -82,6 +83,7 @@ function DiscourseCard({ post, index }: { post: DiscoursePost; index: number }) 
 }
 
 export function DiscourseFeed({ activeTopic, onNavigateToLevel1 }: DiscourseFeedProps) {
+  const isMobile = useIsMobile()
   const { posts } = useDiscourseData(activeTopic)
   const scrollRef = useRef<HTMLDivElement>(null)
   const animRef = useRef<number>(0)
@@ -129,14 +131,14 @@ export function DiscourseFeed({ activeTopic, onNavigateToLevel1 }: DiscourseFeed
         key={fadeKey}
         className="flex items-center gap-3 h-full animate-fade-in"
         style={{
-          padding: '0 24px',
+          padding: isMobile ? '0 12px' : '0 24px',
           overflow: 'hidden',
           whiteSpace: 'nowrap',
         }}
       >
         {displayPosts.map((post, i) => (
           <div key={`${post.username}-${i}`} onClick={() => onNavigateToLevel1(activeTopic)}>
-            <DiscourseCard post={post} index={i} />
+            <DiscourseCard post={post} index={i} isMobile={isMobile} />
           </div>
         ))}
       </div>

@@ -4,6 +4,8 @@ import { Card } from '../shared/Card';
 import { ExpandedCardOverlay } from '../shared/ExpandedCardOverlay';
 import { DivergencePanel } from '../ZoneC/DivergencePanel';
 import { HoverTip } from '../shared/HoverTip';
+import { InfoButton } from '../shared/InfoButton';
+import { useIsMobile } from '../../hooks/useIsMobile';
 
 interface DivergenceCardProps {
   topicId: string;
@@ -16,6 +18,7 @@ interface DivergenceCardProps {
 }
 
 export const DivergenceCard: React.FC<DivergenceCardProps> = (props) => {
+  const isMobile = useIsMobile();
   const [isExpanded, setIsExpanded] = useState(false);
 
   if (isExpanded) {
@@ -106,13 +109,14 @@ export const DivergenceCard: React.FC<DivergenceCardProps> = (props) => {
       expandable={true}
       onExpand={() => setIsExpanded(true)}
       className="h-full"
+      titleInfo={<span style={{ marginLeft: 8, display: 'inline-flex', alignItems: 'center' }}><InfoButton term="Divergence" content={{ what: "How differently two populations discuss the same topic.", soWhat: "High → they live in separate information realities. Low → broad narrative agreement.", how: "Jensen-Shannon Divergence between claim distributions across population slices." }} wrapperClassName="relative inline-flex items-center [&>div]:w-3.5 [&>div]:h-3.5 [&>div]:text-[9px]" /></span>}
       headerRight={compareToggle}
     >
       <div className="flex-1 relative -mx-3 -mt-3" style={{ overflow: 'hidden' }}>
-        <div style={{ transform: 'scale(0.85)', transformOrigin: 'top left', width: '117%' }}>
-          <DivergencePanel {...props} />
+        <div style={{ transform: isMobile ? 'none' : 'scale(0.85)', transformOrigin: 'top left', width: isMobile ? '100%' : '117%' }}>
+          <DivergencePanel {...props} onExpand={() => setIsExpanded(true)} />
         </div>
-        <div className="absolute inset-x-0 bottom-0 h-10 bg-gradient-to-t from-slate-900 to-transparent pointer-events-none" />
+        <div className="absolute inset-x-0 bottom-0 h-12 bg-gradient-to-t from-[#0A1220] to-transparent pointer-events-none" />
       </div>
     </Card>
   );

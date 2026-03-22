@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from 'react'
 import { GLOSSARY } from '../../constants/glossary'
 import { InfoButton } from '../shared/InfoButton'
+import { useIsMobile } from '../../hooks/useIsMobile'
 
 // ---------------------------------------------------------------------------
 // Tier configuration — the full analytical framework
@@ -48,7 +49,7 @@ const LENS_TIERS: TierConfig[] = [
         available: true,
         description: 'How claims cluster by region — same event, different salience by locale',
         pairs: [
-          { label: 'Coastal vs Heartland', a: 'coastal_metros', b: 'heartland_metros' },
+          { label: 'Eg: Coastal vs Heartland', a: 'coastal_metros', b: 'heartland_metros' },
         ],
       },
       {
@@ -142,6 +143,7 @@ function findActiveLens(activePair: LensPair) {
 }
 
 export function LensBar({ activePair, onSelectPair }: LensBarProps) {
+  const isMobile = useIsMobile()
   const [dropdownOpen, setDropdownOpen] = useState(false)
   const barRef = useRef<HTMLDivElement>(null)
   const dropdownRef = useRef<HTMLDivElement>(null)
@@ -224,7 +226,7 @@ export function LensBar({ activePair, onSelectPair }: LensBarProps) {
           }}
         >
           <span className="text-[10px] font-semibold uppercase tracking-[0.08em]">
-            {findActiveLens(activePair)?.label ?? 'Platform'}
+            Analytical Lens
           </span>
           <span className="text-[7px]" style={{ opacity: 0.5 }}>
             {dropdownOpen ? '▲' : '▼'}
@@ -250,7 +252,7 @@ export function LensBar({ activePair, onSelectPair }: LensBarProps) {
 
         {/* Inline pair toggles */}
         {findActiveLens(activePair)?.pairs && (
-          <div className="flex items-center gap-3 shrink-0">
+          <div className="flex items-center gap-3 shrink-0" style={{ flexWrap: isMobile ? 'wrap' : undefined }}>
             {findActiveLens(activePair)!.pairs!.map((pair) => {
               const isActive = pair.a === activePair.a && pair.b === activePair.b
               return (
@@ -290,6 +292,7 @@ export function LensBar({ activePair, onSelectPair }: LensBarProps) {
           style={{
             top: '32px',
             maxHeight: 'calc(100vh - 120px)',
+            width: isMobile ? '100%' : undefined,
             backgroundColor: '#0F1923',
             border: '1px solid rgba(30,48,68,0.6)',
             borderTop: 'none',
@@ -302,11 +305,8 @@ export function LensBar({ activePair, onSelectPair }: LensBarProps) {
               className="text-[11px] font-bold uppercase tracking-[0.14em]"
               style={{ color: '#F1F5F9' }}
             >
-              Choose Analytical Lens
+              Analytical Lenses
             </h3>
-            <p className="text-[11px] mt-1" style={{ color: '#64748B' }}>
-              How do you want to slice this topic's population?
-            </p>
           </div>
 
           {/* Tiers */}
@@ -351,6 +351,7 @@ export function LensBar({ activePair, onSelectPair }: LensBarProps) {
                         style={{ color: lens.available ? '#F1F5F9' : '#64748B' }}
                       >
                         {lens.label}
+                        {!lens.available && <span className="text-[9px] uppercase tracking-[0.1em] font-semibold" style={{ color: '#F1F5F9', marginLeft: 12 }}>(Coming Soon)</span>}
                       </span>
                       <p
                         className="text-[11px] leading-relaxed mt-0.5"

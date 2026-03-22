@@ -1,4 +1,5 @@
 import { useEffect, useCallback } from 'react'
+import { useIsMobile } from '../../hooks/useIsMobile'
 
 interface BlurOverlayProps {
   children: React.ReactNode
@@ -9,6 +10,7 @@ interface BlurOverlayProps {
  * Full-screen blur backdrop for centered overlays (IFI radar, etc.)
  */
 export function BlurOverlay({ children, onClose }: BlurOverlayProps) {
+  const isMobile = useIsMobile();
   const handleKeyDown = useCallback((e: KeyboardEvent) => {
     if (e.key === 'Escape') onClose()
   }, [onClose])
@@ -20,7 +22,7 @@ export function BlurOverlay({ children, onClose }: BlurOverlayProps) {
 
   return (
     <div
-      className="fixed inset-0 z-[60] flex items-center justify-center"
+      className={`fixed inset-0 z-[60] flex items-center justify-center ${isMobile ? 'flex-col' : ''}`}
       onClick={(e) => { if (e.target === e.currentTarget) onClose() }}
     >
       {/* Blur backdrop */}
@@ -33,14 +35,14 @@ export function BlurOverlay({ children, onClose }: BlurOverlayProps) {
       />
 
       {/* Content */}
-      <div className="relative z-10">
+      <div className={`relative z-10 ${isMobile ? 'w-full h-full flex items-center justify-center' : ''}`}>
         {children}
       </div>
 
       {/* Back button */}
       <button
         onClick={onClose}
-        className="absolute top-6 left-6 z-10 text-[11px] font-mono cursor-pointer hover:text-slate-300 transition-colors"
+        className={`absolute top-6 left-6 z-10 font-mono cursor-pointer hover:text-slate-300 transition-colors ${isMobile ? 'text-[13px] min-h-[36px] min-w-[36px] flex items-center' : 'text-[11px]'}`}
         style={{ color: '#64748B', background: 'none', border: 'none' }}
       >
         ← back

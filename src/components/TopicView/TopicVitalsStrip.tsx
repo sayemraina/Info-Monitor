@@ -2,6 +2,7 @@ import type { TopicSummary, LandscapeData, EntryHint } from '../../types'
 import { MiniSparkline } from '../Level0/MiniSparkline'
 import { getContestationColor } from '../../utils/colors'
 import { HoverTip } from '../shared/HoverTip'
+import { useIsMobile } from '../../hooks/useIsMobile'
 
 interface TopicVitalsStripProps {
   topic: TopicSummary
@@ -58,6 +59,7 @@ function buildTags(topic: TopicSummary, landscape?: LandscapeData | null): TagDe
 }
 
 export function TopicVitalsStrip({ topic, landscape, cascadeClasses, onTagClick }: TopicVitalsStripProps) {
+  const isMobile = useIsMobile()
   const ifiValue = topic.ifi?.value ?? 0
   const ifiColor = ifiValue > 30 ? '#EF4444' : ifiValue > 15 ? '#F59E0B' : '#22C55E'
   const ifiTrend = topic.ifi?.trend === 'increasing' ? '↑' : topic.ifi?.trend === 'decreasing' ? '↓' : '→'
@@ -71,10 +73,22 @@ export function TopicVitalsStrip({ topic, landscape, cascadeClasses, onTagClick 
       backgroundColor: 'var(--color-surface-1)',
       borderBottom: '1px solid var(--color-border)',
     }}>
+      {/* Mobile: topic name on its own full-width row */}
+      {isMobile && (
+        <div className="px-3 pt-1" style={{ lineHeight: '20px' }}>
+          <span
+            className="font-data"
+            style={{ fontSize: '9px', color: 'var(--color-text-muted)', letterSpacing: '0.5px' }}
+          >
+            {topic.name.toUpperCase()}
+          </span>
+        </div>
+      )}
+
       {/* Vitals row */}
       <div
         className="flex items-center gap-4 px-3"
-        style={{ height: '28px' }}
+        style={{ height: isMobile ? undefined : '28px', minHeight: '28px', flexWrap: isMobile ? 'wrap' : undefined }}
       >
         {/* IFI */}
         {topic.ifi && (
@@ -128,13 +142,15 @@ export function TopicVitalsStrip({ topic, landscape, cascadeClasses, onTagClick 
           </span>
         </HoverTip>
 
-        {/* Topic name — right side */}
-        <span
-          className="ml-auto font-data"
-          style={{ fontSize: '9px', color: 'var(--color-text-muted)', letterSpacing: '0.5px' }}
-        >
-          {topic.name.toUpperCase()}
-        </span>
+        {/* Topic name — right side (desktop only) */}
+        {!isMobile && (
+          <span
+            className="ml-auto font-data"
+            style={{ fontSize: '9px', color: 'var(--color-text-muted)', letterSpacing: '0.5px' }}
+          >
+            {topic.name.toUpperCase()}
+          </span>
+        )}
       </div>
 
       {/* Narrative tags row */}

@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { useInfoButtonContext } from './InfoButtonContext';
+import { useIsMobile } from '../../hooks/useIsMobile';
 
 interface InfoButtonProps {
   content: {
@@ -15,6 +16,7 @@ interface InfoButtonProps {
 
 export const InfoButton: React.FC<InfoButtonProps> = ({ content, term, wrapperClassName }) => {
   const { hasInteracted, markInteracted } = useInfoButtonContext();
+  const isMobile = useIsMobile();
   const [isHovered, setIsHovered] = useState(false);
   const [showTooltip, setShowTooltip] = useState(false);
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -94,6 +96,10 @@ export const InfoButton: React.FC<InfoButtonProps> = ({ content, term, wrapperCl
         onClick={(e) => {
           e.stopPropagation();
           markInteracted();
+          if (isMobile) {
+            updatePosition();
+            setShowTooltip(prev => !prev);
+          }
         }}
       >
         i

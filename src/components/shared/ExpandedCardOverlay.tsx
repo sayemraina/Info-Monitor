@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import type { ReactNode } from 'react';
+import { useIsMobile } from '../../hooks/useIsMobile';
 
 interface ExpandedCardOverlayProps {
   title: string;
@@ -8,7 +9,8 @@ interface ExpandedCardOverlayProps {
 }
 
 export const ExpandedCardOverlay: React.FC<ExpandedCardOverlayProps> = ({ title, onClose, children }) => {
-  
+  const isMobile = useIsMobile();
+
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') onClose();
@@ -31,16 +33,19 @@ export const ExpandedCardOverlay: React.FC<ExpandedCardOverlayProps> = ({ title,
       />
       
       {/* Modal Container */}
-      <div className="relative z-10 w-full max-w-[640px] max-h-[85vh] flex flex-col rounded-lg shadow-2xl" style={{ backgroundColor: 'var(--color-bg-panel)', border: '1px solid var(--color-border)' }}>
+      <div
+        className={`relative z-10 flex flex-col shadow-2xl ${isMobile ? 'w-full h-full' : 'w-full max-w-[640px] max-h-[85vh] rounded-lg'}`}
+        style={{ backgroundColor: 'var(--color-bg-panel)', border: isMobile ? 'none' : '1px solid var(--color-border)' }}
+      >
 
         {/* Header */}
         <div className="flex items-center justify-between px-4 py-3" style={{ borderBottom: '1px solid var(--color-border)' }}>
           <h2 className="text-[13px] font-semibold text-slate-300 uppercase tracking-widest">
             {title}
           </h2>
-          <button 
+          <button
             onClick={onClose}
-            className="w-6 h-6 flex items-center justify-center text-slate-500 hover:text-white rounded transition-colors"
+            className={`${isMobile ? 'w-9 h-9' : 'w-6 h-6'} flex items-center justify-center text-slate-500 hover:text-white rounded transition-colors`}
           >
             ✕
           </button>
