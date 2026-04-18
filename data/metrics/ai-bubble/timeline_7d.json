@@ -1,0 +1,605 @@
+{
+  "events": [
+    {
+      "id": "evt_66b3203ce13f",
+      "type": "contestation_emergence",
+      "timestamp": "2026-04-13T00:59:44.784380+00:00",
+      "claim_id": "ai-bubble_bluesky_727fd5f7_1",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.81,
+      "summary": "Active contestation in \"AI Bubble Unsustainable\" — 7 pro vs 5 anti",
+      "detail": {
+        "cluster_id": "clu_ai-bubble_000",
+        "pro_count": 7,
+        "anti_count": 5,
+        "balance": 0.71
+      }
+    },
+    {
+      "id": "evt_d4c90232e60a",
+      "type": "contestation_emergence",
+      "timestamp": "2026-04-13T00:59:44.784380+00:00",
+      "claim_id": "ai-bubble_bluesky_29ed2afb_1",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.84,
+      "summary": "Active contestation in \"Video Game Industry\" — 5 pro vs 4 anti",
+      "detail": {
+        "cluster_id": "clu_ai-bubble_007",
+        "pro_count": 5,
+        "anti_count": 4,
+        "balance": 0.8
+      }
+    },
+    {
+      "id": "evt_ad1835339b64",
+      "type": "phase_transition",
+      "timestamp": "2026-04-13T00:59:44.784380+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.78,
+      "summary": "Mutation trajectory: radicalizing in \"AI Bubble Unsustainable\"",
+      "detail": {
+        "cluster_id": "clu_ai-bubble_000",
+        "direction": "radicalizing",
+        "magnitude": 0.6086
+      }
+    },
+    {
+      "id": "evt_5c04ed32eba8",
+      "type": "phase_transition",
+      "timestamp": "2026-04-13T00:59:44.784380+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.81,
+      "summary": "Mutation trajectory: radicalizing in \"Data Centers\"",
+      "detail": {
+        "cluster_id": "clu_ai-bubble_001",
+        "direction": "radicalizing",
+        "magnitude": 0.6971
+      }
+    },
+    {
+      "id": "evt_a0986577bc30",
+      "type": "phase_transition",
+      "timestamp": "2026-04-13T00:59:44.784380+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.79,
+      "summary": "Mutation trajectory: radicalizing in \"Oracle\"",
+      "detail": {
+        "cluster_id": "clu_ai-bubble_010",
+        "direction": "radicalizing",
+        "magnitude": 0.6188
+      }
+    },
+    {
+      "id": "evt_c99497cd6db7",
+      "type": "divergence_shift",
+      "timestamp": "2026-04-13T00:59:44.784380+00:00",
+      "claim_id": null,
+      "slice_id": "bluesky_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Narrative divergence between Bluesky and fortune (JSD=0.806)",
+      "detail": {
+        "jsd": 0.8062,
+        "platforms": [
+          "bluesky",
+          "fortune"
+        ],
+        "window_hours": 168
+      }
+    },
+    {
+      "id": "evt_7810f55e443f",
+      "type": "divergence_shift",
+      "timestamp": "2026-04-13T00:59:44.784380+00:00",
+      "claim_id": null,
+      "slice_id": "fortune_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Narrative divergence between fortune and X Platform (JSD=0.713)",
+      "detail": {
+        "jsd": 0.7133,
+        "platforms": [
+          "fortune",
+          "x"
+        ],
+        "window_hours": 168
+      }
+    },
+    {
+      "id": "evt_b76ca0e0fee7",
+      "type": "divergence_shift",
+      "timestamp": "2026-04-13T00:59:44.784380+00:00",
+      "claim_id": null,
+      "slice_id": "fortune_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Narrative divergence between fortune and YouTube (Influencer Framing) (JSD=0.679)",
+      "detail": {
+        "jsd": 0.6789,
+        "platforms": [
+          "fortune",
+          "youtube"
+        ],
+        "window_hours": 168
+      }
+    },
+    {
+      "id": "poly_544093",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:21:23.582361+00:00",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Will Harvey Weinstein be sentenced to less than 5 years in prison? — 14.6% Yes",
+      "detail": "Polymarket gives 14.6% odds. Volume: $54,616",
+      "source": "polymarket"
+    },
+    {
+      "id": "poly_540881",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:21:23.582350+00:00",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "GTA VI released before June 2026? — 1.5% Yes",
+      "detail": "Polymarket gives 1.5% odds. Volume: $13,090,290",
+      "source": "polymarket"
+    },
+    {
+      "id": "evt_6a603956ed50",
+      "type": "lead_lag",
+      "timestamp": "2025-12-21T19:59:44.784380+00:00",
+      "claim_id": "ai-bubble_bluesky_727fd5f7_1",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.9,
+      "summary": "YouTube (Influencer Framing) leads X Platform by ~2777h in \"AI Bubble Unsustainable\"",
+      "detail": {
+        "source_platform": "youtube",
+        "target_platform": "x",
+        "lag_hours": 2777.4,
+        "cluster_id": "clu_ai-bubble_000"
+      }
+    },
+    {
+      "id": "evt_12c960687a16",
+      "type": "lead_lag",
+      "timestamp": "2025-12-29T05:59:44.784380+00:00",
+      "claim_id": "ai-bubble_bluesky_92e6413c_1",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.9,
+      "summary": "YouTube (Influencer Framing) leads X Platform by ~2599h in \"Stock Market\"",
+      "detail": {
+        "source_platform": "youtube",
+        "target_platform": "x",
+        "lag_hours": 2599.0,
+        "cluster_id": "clu_ai-bubble_003"
+      }
+    },
+    {
+      "id": "evt_05031fe9356e",
+      "type": "lead_lag",
+      "timestamp": "2026-02-08T01:59:44.784380+00:00",
+      "claim_id": "ai-bubble_bluesky_15c24d11_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.9,
+      "summary": "YouTube (Influencer Framing) leads X Platform by ~1619h in \"Financial Sector\"",
+      "detail": {
+        "source_platform": "youtube",
+        "target_platform": "x",
+        "lag_hours": 1619.3,
+        "cluster_id": "clu_ai-bubble_002"
+      }
+    },
+    {
+      "id": "evt_40552594350b",
+      "type": "lead_lag",
+      "timestamp": "2026-03-12T14:59:44.784380+00:00",
+      "claim_id": "ai-bubble_renewable_energy_world_64d7966d_1",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.86,
+      "summary": "YouTube (Influencer Framing) leads X Platform by ~838h in \"Data Centers\"",
+      "detail": {
+        "source_platform": "youtube",
+        "target_platform": "x",
+        "lag_hours": 838.0,
+        "cluster_id": "clu_ai-bubble_001"
+      }
+    },
+    {
+      "id": "evt_a8784e5a2d4b",
+      "type": "contestation_emergence",
+      "timestamp": "2026-04-13T00:59:44.784380+00:00",
+      "claim_id": "ai-bubble_bluesky_15c24d11_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.79,
+      "summary": "Active contestation in \"Financial Sector\" — 7 pro vs 11 anti",
+      "detail": {
+        "cluster_id": "clu_ai-bubble_002",
+        "pro_count": 7,
+        "anti_count": 11,
+        "balance": 0.64
+      }
+    },
+    {
+      "id": "evt_f19d8397ced1",
+      "type": "contestation_emergence",
+      "timestamp": "2026-04-13T00:59:44.784380+00:00",
+      "claim_id": "ai-bubble_bluesky_92e6413c_1",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.73,
+      "summary": "Active contestation in \"Stock Market\" — 20 pro vs 45 anti",
+      "detail": {
+        "cluster_id": "clu_ai-bubble_003",
+        "pro_count": 20,
+        "anti_count": 45,
+        "balance": 0.44
+      }
+    },
+    {
+      "id": "evt_a7d6256cee41",
+      "type": "divergence_shift",
+      "timestamp": "2026-04-13T00:59:44.784380+00:00",
+      "claim_id": null,
+      "slice_id": "x_platform",
+      "severity": "medium",
+      "confidence": 0.61,
+      "summary": "Narrative divergence between X Platform and YouTube (Influencer Framing) (JSD=0.111)",
+      "detail": {
+        "jsd": 0.1112,
+        "platforms": [
+          "x",
+          "youtube"
+        ],
+        "window_hours": 168
+      }
+    },
+    {
+      "id": "evt_3dee6a41712d",
+      "type": "momentum_spike",
+      "timestamp": "2026-04-13T11:59:44.784380+00:00",
+      "claim_id": "ai-bubble_bluesky_accf7a29_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.5,
+      "summary": "Momentum surge in \"Low-End Smartphones\" cluster (17 claims)",
+      "detail": {
+        "cluster_id": "clu_ai-bubble_011",
+        "avg_momentum": 0.56,
+        "member_count": 17
+      }
+    },
+    {
+      "id": "price_AMD_20260403",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:21:40.189759+00:00",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "AMD: $217.50 (up 3.5%)",
+      "detail": "AMD closed at $217.50, up 3.5% from previous close of $210.21",
+      "source": "yahoo_finance"
+    },
+    {
+      "id": "poly_544092",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:21:23.582355+00:00",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "Will Harvey Weinstein be sentenced to no prison time? — 34.0% Yes",
+      "detail": "Polymarket gives 34.0% odds. Volume: $300,300",
+      "source": "polymarket"
+    },
+    {
+      "id": "price_META_20260330",
+      "type": "external_signal",
+      "timestamp": "2026-03-30T07:24:04.916292+00:00",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "META: $525.72 (down 4.0%)",
+      "detail": "META closed at $525.72, down 4.0% from previous close of $547.54",
+      "source": "yahoo_finance"
+    },
+    {
+      "id": "price_GOOGL_20260330",
+      "type": "external_signal",
+      "timestamp": "2026-03-30T07:24:04.847960+00:00",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "GOOGL: $274.34 (down 2.3%)",
+      "detail": "GOOGL closed at $274.34, down 2.3% from previous close of $280.92",
+      "source": "yahoo_finance"
+    },
+    {
+      "id": "price_MSFT_20260330",
+      "type": "external_signal",
+      "timestamp": "2026-03-30T07:24:04.773528+00:00",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "MSFT: $356.77 (down 2.5%)",
+      "detail": "MSFT closed at $356.77, down 2.5% from previous close of $365.97",
+      "source": "yahoo_finance"
+    },
+    {
+      "id": "price_NVDA_20260330",
+      "type": "external_signal",
+      "timestamp": "2026-03-30T07:24:04.684390+00:00",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "NVDA: $167.52 (down 2.2%)",
+      "detail": "NVDA closed at $167.52, down 2.2% from previous close of $171.24",
+      "source": "yahoo_finance"
+    },
+    {
+      "id": "fedreg_2025-20907",
+      "type": "external_signal",
+      "timestamp": "2025-11-25T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "[Rule] Medicare Program: Hospital Outpatient Prospective Payment and Ambulatory Surgical Center Payment Systems; Quality Reporting Programs; Overall Hospital",
+      "detail": "This final rule with comment period revises the Medicare Hospital Outpatient Prospective Payment System (OPPS) and the Medicare Ambulatory Surgical Center (ASC) payment system for calendar year 2026 based on our continuing experience with these systems. We also describe the changes to the amounts an",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2025-19787",
+      "type": "external_signal",
+      "timestamp": "2025-11-05T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "[Rule] Medicare and Medicaid Programs; CY 2026 Payment Policies Under the Physician Fee Schedule and Other Changes to Part B Payment and Coverage Policies; M",
+      "detail": "This major final rule addresses: changes to the physician fee schedule (PFS); other changes to Medicare Part B payment policies to ensure that payment systems are updated to reflect changes in medical practice, relative value of services, and changes in the statute; codification of establishment of ",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2025-13271",
+      "type": "external_signal",
+      "timestamp": "2025-07-16T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "[Proposed Rule] Medicare and Medicaid Programs; CY 2026 Payment Policies Under the Physician Fee Schedule and Other Changes to Part B Payment and Coverage Policies; M",
+      "detail": "This major proposed rule addresses: changes to the physician fee schedule (PFS); other changes to Medicare Part B payment policies to ensure that payment systems are updated to reflect changes in medical practice, relative value of services, and changes in the statute; codification of establishment ",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2024-25382",
+      "type": "external_signal",
+      "timestamp": "2024-12-09T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "[Rule] Medicare and Medicaid Programs; CY 2025 Payment Policies Under the Physician Fee Schedule and Other Changes to Part B Payment and Coverage Policies; M",
+      "detail": "This final rule addresses: changes to the physician fee schedule (PFS); other changes to Medicare Part B payment policies to ensure that payment systems are updated to reflect changes in medical practice, relative value of services, and changes in the statute; codification of establishment of new po",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2024-28270",
+      "type": "external_signal",
+      "timestamp": "2024-12-05T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "[Rule] Foreign-Produced Direct Product Rule Additions, and Refinements to Controls for Advanced Computing and Semiconductor Manufacturing Items",
+      "detail": "In this interim final rule (IFR), the Bureau of Industry and Security (BIS) makes changes to the Export Administration Regulations (EAR) controls for certain advanced computing items, supercomputers, and semiconductor manufacturing equipment, which includes adding new controls for certain semiconduc",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2024-14828",
+      "type": "external_signal",
+      "timestamp": "2024-07-31T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "[Proposed Rule] Medicare and Medicaid Programs; CY 2025 Payment Policies Under the Physician Fee Schedule and Other Changes to Part B Payment and Coverage Policies; M",
+      "detail": "This major proposed rule addresses: changes to the physician fee schedule (PFS); other changes to Medicare Part B payment policies to ensure that payment systems are updated to reflect changes in medical practice, relative value of services, and changes in the statute; codification of, and proposing",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2024-12864",
+      "type": "external_signal",
+      "timestamp": "2024-06-24T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "[Rule] Corporate Average Fuel Economy Standards for Passenger Cars and Light Trucks for Model Years 2027 and Beyond and Fuel Efficiency Standards for Heavy-D",
+      "detail": "NHTSA, on behalf of the Department of Transportation (DOT), is finalizing Corporate Average Fuel Economy (CAFE) standards for passenger cars and light trucks that increase at a rate of 2 percent per year for passenger cars in model years (MYs) 2027-31, 0 percent per year for light trucks in model ye",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2024-06809",
+      "type": "external_signal",
+      "timestamp": "2024-04-22T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "[Rule] Greenhouse Gas Emissions Standards for Heavy-Duty Vehicles-Phase 3",
+      "detail": "The Environmental Protection Agency (EPA) is promulgating new greenhouse gas (GHG) emissions standards for model year (MY) 2032 and later heavy-duty highway vehicles that phase in starting as early MY 2027 for certain vehicle categories. The phase in revises certain MY 2027 GHG standards that were e",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2024-07274",
+      "type": "external_signal",
+      "timestamp": "2024-04-15T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "[Rule] Patient Protection and Affordable Care Act, HHS Notice of Benefit and Payment Parameters for 2025; Updating Section 1332 Waiver Public Notice Procedur",
+      "detail": "This final rule includes payment parameters and provisions related to the HHS-operated risk adjustment program, as well as 2025 user fee rates for issuers offering qualified health plans (QHPs) through federally facilitated Exchanges (FFEs) and State-based Exchanges on the Federal platform (SBE-FPs)",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2023-25576",
+      "type": "external_signal",
+      "timestamp": "2023-11-24T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "[Proposed Rule] Patient Protection and Affordable Care Act, HHS Notice of Benefit and Payment Parameters for 2025; Updating Section 1332 Waiver Public Notice Procedur",
+      "detail": "This proposed rule includes payment parameters and provisions related to the HHS-operated risk adjustment program, as well as 2025 user fee rates for issuers offering qualified health plans (QHPs) through Federally-facilitated Exchanges (FFEs) and State-based Exchanges on the Federal platform (SBE-F",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2023-24184",
+      "type": "external_signal",
+      "timestamp": "2023-11-16T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "[Rule] Medicare and Medicaid Programs; CY 2024 Payment Policies Under the Physician Fee Schedule and Other Changes to Part B Payment and Coverage Policies; M",
+      "detail": "This major final rule addresses: changes to the physician fee schedule (PFS); other changes to Medicare Part B payment policies to ensure that payment systems are updated to reflect changes in medical practice, relative value of services, and changes in the statute; payment for dental services inext",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2023-16252",
+      "type": "external_signal",
+      "timestamp": "2023-08-28T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "[Rule] Medicare Program; Hospital Inpatient Prospective Payment Systems for Acute Care Hospitals and the Long-Term Care Hospital Prospective Payment System a",
+      "detail": "This final rule will: revise the Medicare hospital inpatient prospective payment systems (IPPS) for operating and capital-related costs of acute care hospitals; make changes relating to Medicare graduate medical education (GME) for teaching hospitals; update the payment policies and the annual payme",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2023-07389",
+      "type": "external_signal",
+      "timestamp": "2023-05-01T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "[Proposed Rule] Medicare Program; Proposed Hospital Inpatient Prospective Payment Systems for Acute Care Hospitals and the Long-Term Care Hospital Prospective Payment",
+      "detail": "This proposed rule would: revise the Medicare hospital inpatient prospective payment systems (IPPS) for operating and capital- related costs of acute care hospitals; make changes relating to Medicare graduate medical education (GME) for teaching hospitals; update the payment policies and the annual ",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2022-23873",
+      "type": "external_signal",
+      "timestamp": "2022-11-18T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "[Rule] Medicare and Medicaid Programs; CY 2023 Payment Policies Under the Physician Fee Schedule and Other Changes to Part B Payment and Coverage Policies; M",
+      "detail": "This major final rule addresses: changes to the physician fee schedule (PFS); other changes to Medicare Part B payment policies to ensure that payment systems are updated to reflect changes in medical practice, relative value of services, and changes in the statute; Medicare Shared Savings Program r",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2021-23972",
+      "type": "external_signal",
+      "timestamp": "2021-11-19T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "[Rule] Medicare Program; CY 2022 Payment Policies Under the Physician Fee Schedule and Other Changes to Part B Payment Policies; Medicare Shared Savings Prog",
+      "detail": "This major final rule addresses: Changes to the physician fee schedule (PFS); other changes to Medicare Part B payment policies to ensure that payment systems are updated to reflect changes in medical practice, relative value of services, and changes in the statute; Medicare Shared Savings Program r",
+      "source": "fed_register"
+    },
+    {
+      "id": "price_META_20260403",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:21:39.949512+00:00",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "META: $574.46 (down 0.8%)",
+      "detail": "META closed at $574.46, down 0.8% from previous close of $579.23",
+      "source": "yahoo_finance"
+    },
+    {
+      "id": "price_GOOGL_20260403",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:21:39.711833+00:00",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "GOOGL: $295.77 (down 0.5%)",
+      "detail": "GOOGL closed at $295.77, down 0.5% from previous close of $297.39",
+      "source": "yahoo_finance"
+    },
+    {
+      "id": "price_MSFT_20260403",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:21:39.405101+00:00",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "MSFT: $373.46 (up 1.1%)",
+      "detail": "MSFT closed at $373.46, up 1.1% from previous close of $369.37",
+      "source": "yahoo_finance"
+    },
+    {
+      "id": "price_NVDA_20260403",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:21:39.103579+00:00",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "NVDA: $177.39 (up 0.9%)",
+      "detail": "NVDA closed at $177.39, up 0.9% from previous close of $175.75",
+      "source": "yahoo_finance"
+    },
+    {
+      "id": "poly_540844",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:21:23.582345+00:00",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Will bitcoin hit $1m before GTA VI? — 48.9% Yes",
+      "detail": "Polymarket gives 48.9% odds. Volume: $3,848,533",
+      "source": "polymarket"
+    },
+    {
+      "id": "poly_540843",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:21:23.582339+00:00",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Will China invades Taiwan before GTA VI? — 52.0% Yes",
+      "detail": "Polymarket gives 52.0% odds. Volume: $1,524,917",
+      "source": "polymarket"
+    },
+    {
+      "id": "poly_540820",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:21:23.582333+00:00",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Trump out as President before GTA VI? — 53.0% Yes",
+      "detail": "Polymarket gives 53.0% odds. Volume: $572,401",
+      "source": "polymarket"
+    },
+    {
+      "id": "poly_540819",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:21:23.582327+00:00",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Will Jesus Christ return before GTA VI? — 49.0% Yes",
+      "detail": "Polymarket gives 49.0% odds. Volume: $10,396,796",
+      "source": "polymarket"
+    },
+    {
+      "id": "poly_540818",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:21:23.582321+00:00",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "New Playboi Carti Album before GTA VI? — 62.0% Yes",
+      "detail": "Polymarket gives 62.0% odds. Volume: $713,860",
+      "source": "polymarket"
+    },
+    {
+      "id": "poly_540817",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:21:23.582314+00:00",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "New Rihanna Album before GTA VI? — 60.0% Yes",
+      "detail": "Polymarket gives 60.0% odds. Volume: $679,525",
+      "source": "polymarket"
+    },
+    {
+      "id": "poly_540816",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:21:23.582287+00:00",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Russia-Ukraine Ceasefire before GTA VI? — 54.0% Yes",
+      "detail": "Polymarket gives 54.0% odds. Volume: $1,412,740",
+      "source": "polymarket"
+    }
+  ],
+  "total_count": 83
+}

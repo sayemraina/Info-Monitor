@@ -1,0 +1,149 @@
+{
+  "slice_a": {
+    "id": "coastal_metros",
+    "type": "geography",
+    "label": "Coastal Metros",
+    "active_volume": 874,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.44,
+    "is_influencer_framing": false
+  },
+  "slice_b": {
+    "id": "heartland_metros",
+    "type": "geography",
+    "label": "Heartland",
+    "active_volume": 1226,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.31,
+    "is_influencer_framing": false
+  },
+  "divergence": {
+    "jsd": 0.0328,
+    "jsd_sqrt": 0.1812,
+    "trend": [
+      0.2176,
+      0.1715,
+      0.1933,
+      0.1653,
+      0.202,
+      0.1751,
+      0.1171,
+      0.1818
+    ],
+    "typology": {
+      "information_asymmetry": 0.29,
+      "interpretive": 0.5,
+      "paradigmatic": 0.2,
+      "dominant_mode": "Interpretive",
+      "paradigmatic_caveat": false
+    }
+  },
+  "per_cluster": [
+    {
+      "cluster_id": "clu_58d36a2aa974",
+      "label": "Consumer Squeeze",
+      "salience_a": 0.0911,
+      "salience_b": 0.2222,
+      "arousal_a": 0.7,
+      "arousal_b": 0.3,
+      "mutation_a": "radicalizing",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_b19ae17628c2",
+      "label": "Measurement Distrust",
+      "salience_a": 0.7569,
+      "salience_b": 0.9245,
+      "arousal_a": 0.51,
+      "arousal_b": 0.51,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_295113071b2d",
+      "label": "Greedflation",
+      "salience_a": 0.7561,
+      "salience_b": 0.9157,
+      "arousal_a": 0.53,
+      "arousal_b": 0.78,
+      "mutation_a": "stable",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_5f85e0791f3c",
+      "label": "Fed Policy",
+      "salience_a": 0.3529,
+      "salience_b": 0.255,
+      "arousal_a": 0.17,
+      "arousal_b": 0.5,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_55b433d61295",
+      "label": "Political Blame",
+      "salience_a": 0.0942,
+      "salience_b": 0.4577,
+      "arousal_a": 0.42,
+      "arousal_b": 0.57,
+      "mutation_a": "radicalizing",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_525cfc7e4147",
+      "label": "Wage Gap",
+      "salience_a": 0.8565,
+      "salience_b": 0.5493,
+      "arousal_a": 0.32,
+      "arousal_b": 0.47,
+      "mutation_a": "stable",
+      "mutation_b": "radicalizing"
+    }
+  ],
+  "arousal_comparison": {
+    "slice_a_avg": 0.63,
+    "slice_b_avg": 0.6
+  },
+  "exposure_comparison": {
+    "slice_a": {
+      "value": 0.4278,
+      "confidence_interval": [
+        0.3778,
+        0.4778
+      ],
+      "baseline": "global",
+      "time_window": "6h",
+      "sparkline": [
+        0.2176,
+        0.1715,
+        0.1933,
+        0.1653,
+        0.202,
+        0.1751,
+        0.1171,
+        0.1818
+      ],
+      "source_distribution": "production"
+    },
+    "slice_b": {
+      "value": 0.4163,
+      "confidence_interval": [
+        0.3663,
+        0.4663
+      ],
+      "baseline": "global",
+      "time_window": "6h",
+      "sparkline": [
+        0.2176,
+        0.1715,
+        0.1933,
+        0.1653,
+        0.202,
+        0.1751,
+        0.1171,
+        0.1818
+      ],
+      "source_distribution": "production"
+    }
+  }
+}

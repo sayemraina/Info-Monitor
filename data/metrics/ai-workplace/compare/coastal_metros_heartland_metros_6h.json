@@ -1,0 +1,159 @@
+{
+  "slice_a": {
+    "id": "coastal_metros",
+    "type": "geography",
+    "label": "Coastal Metros",
+    "active_volume": 699,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.69,
+    "is_influencer_framing": false
+  },
+  "slice_b": {
+    "id": "heartland_metros",
+    "type": "geography",
+    "label": "Heartland",
+    "active_volume": 4299,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.61,
+    "is_influencer_framing": false
+  },
+  "divergence": {
+    "jsd": 0.0555,
+    "jsd_sqrt": 0.2356,
+    "trend": [
+      0.2422,
+      0.2525,
+      0.2542,
+      0.2277,
+      0.2251,
+      0.2102,
+      0.2388,
+      0.2184
+    ],
+    "typology": {
+      "information_asymmetry": 0.57,
+      "interpretive": 0.42,
+      "paradigmatic": 0.01,
+      "dominant_mode": "Information Asymmetry",
+      "paradigmatic_caveat": false
+    }
+  },
+  "per_cluster": [
+    {
+      "cluster_id": "clu_dc42d18abdfa",
+      "label": "Productivity Gains",
+      "salience_a": 0.5933,
+      "salience_b": 0.7606,
+      "arousal_a": 0.61,
+      "arousal_b": 0.59,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_df45fe3b46cd",
+      "label": "Creative Threat",
+      "salience_a": 0.9231,
+      "salience_b": 0.8195,
+      "arousal_a": 0.17,
+      "arousal_b": 0.79,
+      "mutation_a": "radicalizing",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_ac4164d3d878",
+      "label": "Historical Parallel",
+      "salience_a": 0.5824,
+      "salience_b": 0.8033,
+      "arousal_a": 0.32,
+      "arousal_b": 0.68,
+      "mutation_a": "stable",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_42605ef6c255",
+      "label": "Job Displacement",
+      "salience_a": 0.273,
+      "salience_b": 0.4408,
+      "arousal_a": 0.28,
+      "arousal_b": 0.84,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_664c519fc265",
+      "label": "Retraining Policy",
+      "salience_a": 0.8584,
+      "salience_b": 0.426,
+      "arousal_a": 0.14,
+      "arousal_b": 0.89,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_b71a2467b80f",
+      "label": "AI Augmentation",
+      "salience_a": 0.0803,
+      "salience_b": 0.528,
+      "arousal_a": 0.48,
+      "arousal_b": 0.74,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_374843c2887a",
+      "label": "Corporate Hypocrisy",
+      "salience_a": 0.4958,
+      "salience_b": 0.1248,
+      "arousal_a": 0.7,
+      "arousal_b": 0.65,
+      "mutation_a": "radicalizing",
+      "mutation_b": "mainstreaming"
+    }
+  ],
+  "arousal_comparison": {
+    "slice_a_avg": 0.65,
+    "slice_b_avg": 0.46
+  },
+  "exposure_comparison": {
+    "slice_a": {
+      "value": 0.6949,
+      "confidence_interval": [
+        0.6449,
+        0.7449
+      ],
+      "baseline": "global",
+      "time_window": "6h",
+      "sparkline": [
+        0.2422,
+        0.2525,
+        0.2542,
+        0.2277,
+        0.2251,
+        0.2102,
+        0.2388,
+        0.2184
+      ],
+      "source_distribution": "production"
+    },
+    "slice_b": {
+      "value": 0.4852,
+      "confidence_interval": [
+        0.4352,
+        0.5352
+      ],
+      "baseline": "global",
+      "time_window": "6h",
+      "sparkline": [
+        0.2422,
+        0.2525,
+        0.2542,
+        0.2277,
+        0.2251,
+        0.2102,
+        0.2388,
+        0.2184
+      ],
+      "source_distribution": "production"
+    }
+  }
+}

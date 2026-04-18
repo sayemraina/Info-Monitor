@@ -1,0 +1,615 @@
+{
+  "events": [
+    {
+      "id": "evt_5ff46e67c54e",
+      "type": "contestation_emergence",
+      "timestamp": "2026-04-13T00:59:39.170541+00:00",
+      "claim_id": "immigration_bluesky_c677e52a_0",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.82,
+      "summary": "Active contestation in \"Border Security\" — 43 pro vs 31 anti",
+      "detail": {
+        "cluster_id": "clu_immigration_001",
+        "pro_count": 43,
+        "anti_count": 31,
+        "balance": 0.72
+      }
+    },
+    {
+      "id": "evt_24579817ce4c",
+      "type": "phase_transition",
+      "timestamp": "2026-04-13T00:59:39.170541+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.81,
+      "summary": "Mutation trajectory: radicalizing in \"Birthright Citizenship\"",
+      "detail": {
+        "cluster_id": "clu_immigration_000",
+        "direction": "radicalizing",
+        "magnitude": 0.6914
+      }
+    },
+    {
+      "id": "evt_8fa6b8cd02a4",
+      "type": "phase_transition",
+      "timestamp": "2026-04-13T00:59:39.170541+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.79,
+      "summary": "Mutation trajectory: radicalizing in \"Border Security\"",
+      "detail": {
+        "cluster_id": "clu_immigration_001",
+        "direction": "radicalizing",
+        "magnitude": 0.6439
+      }
+    },
+    {
+      "id": "evt_f52f102500a9",
+      "type": "phase_transition",
+      "timestamp": "2026-04-13T00:59:39.170541+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.85,
+      "summary": "Mutation trajectory: radicalizing in \"Donald Trump\"",
+      "detail": {
+        "cluster_id": "clu_immigration_005",
+        "direction": "radicalizing",
+        "magnitude": 0.8366
+      }
+    },
+    {
+      "id": "evt_27ab17d70906",
+      "type": "phase_transition",
+      "timestamp": "2026-04-13T00:59:39.170541+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.82,
+      "summary": "Mutation trajectory: radicalizing in \"ICE\"",
+      "detail": {
+        "cluster_id": "clu_immigration_007",
+        "direction": "radicalizing",
+        "magnitude": 0.7405
+      }
+    },
+    {
+      "id": "evt_e83f826da454",
+      "type": "divergence_shift",
+      "timestamp": "2026-04-13T00:59:39.170541+00:00",
+      "claim_id": null,
+      "slice_id": "bluesky_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Narrative divergence between Bluesky and fox_news (JSD=0.641)",
+      "detail": {
+        "jsd": 0.6408,
+        "platforms": [
+          "bluesky",
+          "fox_news"
+        ],
+        "window_hours": 168
+      }
+    },
+    {
+      "id": "evt_22c12bba5e7e",
+      "type": "divergence_shift",
+      "timestamp": "2026-04-13T00:59:39.170541+00:00",
+      "claim_id": null,
+      "slice_id": "bluesky_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Narrative divergence between Bluesky and fox_politics (JSD=0.563)",
+      "detail": {
+        "jsd": 0.5633,
+        "platforms": [
+          "bluesky",
+          "fox_politics"
+        ],
+        "window_hours": 168
+      }
+    },
+    {
+      "id": "evt_efc36bce84f6",
+      "type": "divergence_shift",
+      "timestamp": "2026-04-13T00:59:39.170541+00:00",
+      "claim_id": null,
+      "slice_id": "bluesky_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Narrative divergence between Bluesky and salon (JSD=0.575)",
+      "detail": {
+        "jsd": 0.5747,
+        "platforms": [
+          "bluesky",
+          "salon"
+        ],
+        "window_hours": 168
+      }
+    },
+    {
+      "id": "evt_83c1a0f9b9c9",
+      "type": "divergence_shift",
+      "timestamp": "2026-04-13T00:59:39.170541+00:00",
+      "claim_id": null,
+      "slice_id": "bluesky_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Narrative divergence between Bluesky and the_atlantic (JSD=0.678)",
+      "detail": {
+        "jsd": 0.6777,
+        "platforms": [
+          "bluesky",
+          "the_atlantic"
+        ],
+        "window_hours": 168
+      }
+    },
+    {
+      "id": "poly_544093",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T14:55:59.829632+00:00",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Will Harvey Weinstein be sentenced to less than 5 years in prison? — 18.1% Yes",
+      "detail": "Polymarket gives 18.1% odds. Volume: $54,593",
+      "source": "polymarket"
+    },
+    {
+      "id": "poly_540881",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T14:55:59.829621+00:00",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "GTA VI released before June 2026? — 1.5% Yes",
+      "detail": "Polymarket gives 1.5% odds. Volume: $13,088,113",
+      "source": "polymarket"
+    },
+    {
+      "id": "fedreg_2026-06601",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T00:00:00Z",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Ensuring Citizenship Verification and Integrity in Federal Elections",
+      "detail": "Presidential Document by Executive Office of the President",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2026-05497",
+      "type": "external_signal",
+      "timestamp": "2026-03-19T00:00:00Z",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Establishing the Task Force To Eliminate Fraud",
+      "detail": "Presidential Document by Executive Office of the President",
+      "source": "fed_register"
+    },
+    {
+      "id": "evt_4f54d109dea7",
+      "type": "lead_lag",
+      "timestamp": "2024-08-27T13:59:39.170541+00:00",
+      "claim_id": "immigration_bluesky_3e598945_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.9,
+      "summary": "salon leads breitbart by ~14327h in \"American Identity\"",
+      "detail": {
+        "source_platform": "salon",
+        "target_platform": "breitbart",
+        "lag_hours": 14327.2,
+        "cluster_id": "clu_immigration_002"
+      }
+    },
+    {
+      "id": "evt_f7e6a56a1446",
+      "type": "lead_lag",
+      "timestamp": "2025-11-16T22:59:39.170541+00:00",
+      "claim_id": "immigration_daily_wire_70bc025a_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.9,
+      "summary": "salon leads daily_wire by ~3614h in \"Birthright Citizenship\"",
+      "detail": {
+        "source_platform": "salon",
+        "target_platform": "daily_wire",
+        "lag_hours": 3614.2,
+        "cluster_id": "clu_immigration_000"
+      }
+    },
+    {
+      "id": "evt_631e0bd5f3f2",
+      "type": "lead_lag",
+      "timestamp": "2026-02-21T06:59:39.170541+00:00",
+      "claim_id": "immigration_bluesky_c677e52a_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.9,
+      "summary": "YouTube (Influencer Framing) leads weis by ~1302h in \"Border Security\"",
+      "detail": {
+        "source_platform": "youtube",
+        "target_platform": "weis",
+        "lag_hours": 1302.7,
+        "cluster_id": "clu_immigration_001"
+      }
+    },
+    {
+      "id": "evt_9b9aae4c5476",
+      "type": "lead_lag",
+      "timestamp": "2026-02-27T18:59:39.170541+00:00",
+      "claim_id": "immigration_bluesky_3ba5a3bf_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.9,
+      "summary": "YouTube (Influencer Framing) leads dc_news_now_|_washington,_dc by ~1146h in \"Democratic Party\"",
+      "detail": {
+        "source_platform": "youtube",
+        "target_platform": "dc_news_now_|_washington,_dc",
+        "lag_hours": 1146.8,
+        "cluster_id": "clu_immigration_003"
+      }
+    },
+    {
+      "id": "evt_b23e743f7316",
+      "type": "contestation_emergence",
+      "timestamp": "2026-04-13T00:59:39.170541+00:00",
+      "claim_id": "immigration_bluesky_3e598945_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.72,
+      "summary": "Active contestation in \"American Identity\" — 7 pro vs 17 anti",
+      "detail": {
+        "cluster_id": "clu_immigration_002",
+        "pro_count": 7,
+        "anti_count": 17,
+        "balance": 0.41
+      }
+    },
+    {
+      "id": "evt_a631c9aeb136",
+      "type": "contestation_emergence",
+      "timestamp": "2026-04-13T00:59:39.170541+00:00",
+      "claim_id": "immigration_bluesky_c1f6a560_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.78,
+      "summary": "Active contestation in \"AI Adoption\" — 8 pro vs 13 anti",
+      "detail": {
+        "cluster_id": "clu_immigration_006",
+        "pro_count": 8,
+        "anti_count": 13,
+        "balance": 0.62
+      }
+    },
+    {
+      "id": "evt_01ad48013c7a",
+      "type": "contestation_emergence",
+      "timestamp": "2026-04-13T00:59:39.170541+00:00",
+      "claim_id": "immigration_bluesky_29421e5e_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.81,
+      "summary": "Active contestation in \"Sanctuary Cities\" — 13 pro vs 19 anti",
+      "detail": {
+        "cluster_id": "clu_immigration_008",
+        "pro_count": 13,
+        "anti_count": 19,
+        "balance": 0.68
+      }
+    },
+    {
+      "id": "evt_7c64a3ffca84",
+      "type": "momentum_spike",
+      "timestamp": "2026-04-13T15:59:39.170541+00:00",
+      "claim_id": "immigration_bluesky_8a1926d5_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.53,
+      "summary": "Momentum surge in \"ICE\" cluster (18 claims)",
+      "detail": {
+        "cluster_id": "clu_immigration_007",
+        "avg_momentum": 0.588,
+        "member_count": 18
+      }
+    },
+    {
+      "id": "evt_739ce4c1d2f7",
+      "type": "momentum_spike",
+      "timestamp": "2026-04-13T17:59:39.170541+00:00",
+      "claim_id": "immigration_bluesky_66284159_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.54,
+      "summary": "Momentum surge in \"Regime Change\" cluster (31 claims)",
+      "detail": {
+        "cluster_id": "clu_immigration_016",
+        "avg_momentum": 0.6,
+        "member_count": 31
+      }
+    },
+    {
+      "id": "poly_544092",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T14:55:59.829626+00:00",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "Will Harvey Weinstein be sentenced to no prison time? — 33.9% Yes",
+      "detail": "Polymarket gives 33.9% odds. Volume: $300,280",
+      "source": "polymarket"
+    },
+    {
+      "id": "poly_540818",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T14:55:59.829593+00:00",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "New Playboi Carti Album before GTA VI? — 68.0% Yes",
+      "detail": "Polymarket gives 68.0% odds. Volume: $713,669",
+      "source": "polymarket"
+    },
+    {
+      "id": "fedreg_2026-06537",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "National Environmental Policy Act",
+      "detail": "The U.S. Department of Agriculture (USDA) is adopting the interim final rule (IFR) published on July 3, 2025, with minor changes, as final. The IFR revised departmental regulations implementing the National Environmental Policy Act (NEPA) and removed various USDA agency regulations for implementing ",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2026-06239",
+      "type": "external_signal",
+      "timestamp": "2026-03-31T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "Review of the Commission's Rules Governing the 896-901/935-940 MHz Band",
+      "detail": "In this document, the Federal Communications Commission (Commission or FCC) continues its efforts to expand broadband access in the 896-901/935-940 MHz band. This Report and Order now makes broadband available across all ten megahertz of this band. This Report and Order creates three options for 900",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2026-06027",
+      "type": "external_signal",
+      "timestamp": "2026-03-27T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "Reducing Bureaucracy and Burden for Refugee Resettlement Programs",
+      "detail": "The Department of Health and Human Services, Administration for Children and Families rescinds obsolete provisions of the State Legalization Impact Assistance Grants regulations (45 CFR part 402). The Administration for Children and Families has undertaken a sweeping review aimed at eliminating outd",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2026-04978",
+      "type": "external_signal",
+      "timestamp": "2026-03-13T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "William D. Ford Federal Direct Loan (Direct Loan) Program; Correction",
+      "detail": "The Department of Education (Department) is correcting a final rule that appeared in the Federal Register on October 31, 2025 (90 FR 19729). The final rule established regulations governing the Public Service Loan Forgiveness (PSLF) program in the William D. Ford Federal Direct Loan (Direct Loan) pr",
+      "source": "fed_register"
+    },
+    {
+      "id": "gdelt_61f0587b1369",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Kapetan Srđan Janković :  Kako smo prošli kroz Ormuski moreuz  ",
+      "detail": "Reported by nin.rs. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_93c9b2ef5795",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Konstantin Kosachev :  La multipolaridad no puede quedarse en un plano discursivo  ",
+      "detail": "Reported by laestrella.com.pa. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_eb7a8ab4043d",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "ঢাকা - ওয়াশিংটন সম্পর্ক এখন যে কোনো সময়ের চেয়ে গুরুত্বপূর্ণ : পল কাপুর",
+      "detail": "Reported by jugantor.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_70481ff58c80",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Quién es  Cabeça Branca , el narco brasileño que apareció en la causa por el asesinato de Érika Álvarez",
+      "detail": "Reported by contextotucuman.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_ef31e4389117",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Israel threatens to destroy more Lebanon bridges as crisis mounts - Grenada Chronicle – Daily Grenada And Caribbean News",
+      "detail": "Reported by grenadachronicle.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_bd19639b8e24",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Dem lawmaker busted on camera slipping into bash with reality TV stars as Americans feel shutdown pain",
+      "detail": "Reported by wfmd.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_76ec2c82bb60",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "সীমান্তে নতুন আতঙ্কের ছায়া , নদীখালে সাপ কুমির ছাড়ার ভাবনায় বিএসএফ",
+      "detail": "Reported by jugantor.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_d6e104d42265",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": " ¿ Quién es Roberto Velasco Álvarez , nuevo secretario de Relaciones Exteriores ? ",
+      "detail": "Reported by razon.com.mx. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_e9bfaa328da5",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Tăng cường thế trận an ninh vùng biên giới",
+      "detail": "Reported by antv.gov.vn. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_0b4a3a662837",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Польша задействует армию для патрулирования границ с Литвой и Германией",
+      "detail": "Reported by eurointegration.com.ua. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_40d54ee708c8",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "4 / 3 / 26 National Security and Korean News and Commentary",
+      "detail": "Reported by smallwarsjournal.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_4f706e8e3066",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Trump Approval Rating Sets New Record | Newsradio 600 KOGO",
+      "detail": "Reported by kogo.iheart.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_ba47fb249303",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Trump Approval Rating Sets New Record | The Patriot KEIB AM 1150",
+      "detail": "Reported by patriotla.iheart.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_d022023c6b55",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Trump Approval Rating Sets New Record | News Radio 98 . 3 WMAN",
+      "detail": "Reported by wmanfm.iheart.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_dce9869545f6",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Latest Articles",
+      "detail": "Reported by freerepublic.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_9f8cbf2af817",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Польща залучить армію для патрулювання кордонів з Литвою та Німеччиною",
+      "detail": "Reported by eurointegration.com.ua. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_dfbba71ca7ac",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Trump Approval Rating Sets New Record",
+      "detail": "Reported by woc1420.iheart.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_8f891e8cb941",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Ya es hora de poner fin a la guerra : Guterres a EE . UU . e Israel",
+      "detail": "Reported by laopinion.co. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_95df84ecd477",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Trump Approval Rating Sets New Record | NEWSRADIO 1040 WHO",
+      "detail": "Reported by whoradio.iheart.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_33ed9740f001",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Feds charge illegal immigrant in Loyola student killing as attorney says prosecutors lack  faith  in state",
+      "detail": "Reported by wfmd.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_38d0312635bc",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "EDITORIAL : Courtroom interpretation rights",
+      "detail": "Reported by taipeitimes.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_945c501431a6",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": " [ Webinar ] EB - 5 : What Ahead in 2026 - April 22nd , 11 : 00 am PT | American Lending Center",
+      "detail": "Reported by jdsupra.com. Tone: +0.0.",
+      "source": "gdelt"
+    }
+  ],
+  "total_count": 121
+}

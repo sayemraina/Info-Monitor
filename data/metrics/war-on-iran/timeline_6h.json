@@ -1,0 +1,625 @@
+{
+  "events": [
+    {
+      "id": "evt_9b7779160acf",
+      "type": "contestation_emergence",
+      "timestamp": "2026-04-16T09:59:35.992193+00:00",
+      "claim_id": "war-on-iran_bluesky_e67ec26f_0",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.84,
+      "summary": "Active contestation in \"Iranian Government\" — 44 pro vs 56 anti",
+      "detail": {
+        "cluster_id": "clu_war-on-iran_012",
+        "pro_count": 44,
+        "anti_count": 56,
+        "balance": 0.79
+      }
+    },
+    {
+      "id": "evt_7b5a3f6a5ff7",
+      "type": "contestation_emergence",
+      "timestamp": "2026-04-16T09:59:35.992193+00:00",
+      "claim_id": "war-on-iran_bluesky_db053138_0",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.82,
+      "summary": "Active contestation in \"U.S. and Israel\" — 4 pro vs 3 anti",
+      "detail": {
+        "cluster_id": "clu_war-on-iran_015",
+        "pro_count": 4,
+        "anti_count": 3,
+        "balance": 0.75
+      }
+    },
+    {
+      "id": "evt_478fd2069f86",
+      "type": "phase_transition",
+      "timestamp": "2026-04-16T09:59:35.992193+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.79,
+      "summary": "Mutation trajectory: radicalizing in \"Strait of Hormuz\"",
+      "detail": {
+        "cluster_id": "clu_war-on-iran_000",
+        "direction": "radicalizing",
+        "magnitude": 0.6215
+      }
+    },
+    {
+      "id": "evt_5e602ac39bec",
+      "type": "phase_transition",
+      "timestamp": "2026-04-16T09:59:35.992193+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.8,
+      "summary": "Mutation trajectory: radicalizing in \"Us-Iran Conflict\"",
+      "detail": {
+        "cluster_id": "clu_war-on-iran_001",
+        "direction": "radicalizing",
+        "magnitude": 0.6656
+      }
+    },
+    {
+      "id": "evt_f5c1c828a6dc",
+      "type": "phase_transition",
+      "timestamp": "2026-04-16T09:59:35.992193+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.79,
+      "summary": "Mutation trajectory: radicalizing in \"US Foreign Policy\"",
+      "detail": {
+        "cluster_id": "clu_war-on-iran_002",
+        "direction": "radicalizing",
+        "magnitude": 0.6389
+      }
+    },
+    {
+      "id": "evt_1bbbc8a9691f",
+      "type": "phase_transition",
+      "timestamp": "2026-04-16T09:59:35.992193+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.85,
+      "summary": "Mutation trajectory: radicalizing in \"Democratic Party\"",
+      "detail": {
+        "cluster_id": "clu_war-on-iran_003",
+        "direction": "radicalizing",
+        "magnitude": 0.8432
+      }
+    },
+    {
+      "id": "evt_ae4899dec137",
+      "type": "divergence_shift",
+      "timestamp": "2026-04-16T09:59:35.992193+00:00",
+      "claim_id": null,
+      "slice_id": "bluesky_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Narrative divergence between Bluesky and business_insider (JSD=0.765)",
+      "detail": {
+        "jsd": 0.7651,
+        "platforms": [
+          "bluesky",
+          "business_insider"
+        ],
+        "window_hours": 6
+      }
+    },
+    {
+      "id": "evt_9e1d3a73a6dd",
+      "type": "divergence_shift",
+      "timestamp": "2026-04-16T09:59:35.992193+00:00",
+      "claim_id": null,
+      "slice_id": "bluesky_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Narrative divergence between Bluesky and cato (JSD=0.787)",
+      "detail": {
+        "jsd": 0.7867,
+        "platforms": [
+          "bluesky",
+          "cato"
+        ],
+        "window_hours": 6
+      }
+    },
+    {
+      "id": "evt_8b96f32dba89",
+      "type": "divergence_shift",
+      "timestamp": "2026-04-16T09:59:35.992193+00:00",
+      "claim_id": null,
+      "slice_id": "bluesky_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Narrative divergence between Bluesky and cnbc_top (JSD=0.852)",
+      "detail": {
+        "jsd": 0.8519,
+        "platforms": [
+          "bluesky",
+          "cnbc_top"
+        ],
+        "window_hours": 6
+      }
+    },
+    {
+      "id": "evt_e4dfa6fca5ef",
+      "type": "divergence_shift",
+      "timestamp": "2026-04-16T09:59:35.992193+00:00",
+      "claim_id": null,
+      "slice_id": "bluesky_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Narrative divergence between Bluesky and common_dreams (JSD=0.665)",
+      "detail": {
+        "jsd": 0.6654,
+        "platforms": [
+          "bluesky",
+          "common_dreams"
+        ],
+        "window_hours": 6
+      }
+    },
+    {
+      "id": "price_CL=F_20260403",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:12:07.396092+00:00",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "CL Futures: $111.54 (up 11.4%)",
+      "detail": "CL=F closed at $111.54, up 11.4% from previous close of $100.12",
+      "source": "yahoo_finance"
+    },
+    {
+      "id": "poly_544093",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:12:02.611450+00:00",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Will Harvey Weinstein be sentenced to less than 5 years in prison? — 14.6% Yes",
+      "detail": "Polymarket gives 14.6% odds. Volume: $54,616",
+      "source": "polymarket"
+    },
+    {
+      "id": "poly_540881",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:12:02.611439+00:00",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "GTA VI released before June 2026? — 1.5% Yes",
+      "detail": "Polymarket gives 1.5% odds. Volume: $13,090,290",
+      "source": "polymarket"
+    },
+    {
+      "id": "radar_1531",
+      "type": "external_signal",
+      "timestamp": "2026-02-28T07:00:00Z",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Internet outage: Iran",
+      "detail": "Iran Internet shutdown amid military actions",
+      "source": "cloudflare_radar"
+    },
+    {
+      "id": "fedreg_2025-23570",
+      "type": "external_signal",
+      "timestamp": "2025-12-19T00:00:00Z",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Restricting and Limiting the Entry of Foreign Nationals To Protect the Security of the United States",
+      "detail": "Presidential Document by Executive Office of the President",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2025-12506",
+      "type": "external_signal",
+      "timestamp": "2025-07-03T00:00:00Z",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Providing for the Revocation of Syria Sanctions",
+      "detail": "Presidential Document by Executive Office of the President",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2025-02630",
+      "type": "external_signal",
+      "timestamp": "2025-02-12T00:00:00Z",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Addressing Egregious Actions of the Republic of South Africa",
+      "detail": "Presidential Document by Executive Office of the President",
+      "source": "fed_register"
+    },
+    {
+      "id": "evt_763141a5f3ab",
+      "type": "lead_lag",
+      "timestamp": "2026-04-14T22:59:35.992193+00:00",
+      "claim_id": "war-on-iran_bluesky_4201fbe8_2",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.9,
+      "summary": "YouTube (Influencer Framing) leads Bluesky by ~38h in \"Strait of Hormuz\"",
+      "detail": {
+        "source_platform": "youtube",
+        "target_platform": "bluesky",
+        "lag_hours": 38.6,
+        "cluster_id": "clu_war-on-iran_000"
+      }
+    },
+    {
+      "id": "evt_36810fde6a32",
+      "type": "contestation_emergence",
+      "timestamp": "2026-04-16T09:59:35.992193+00:00",
+      "claim_id": "war-on-iran_bluesky_88eb136f_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.73,
+      "summary": "Active contestation in \"US Foreign Policy\" — 8 pro vs 19 anti",
+      "detail": {
+        "cluster_id": "clu_war-on-iran_002",
+        "pro_count": 8,
+        "anti_count": 19,
+        "balance": 0.42
+      }
+    },
+    {
+      "id": "evt_8e7ef3f94d23",
+      "type": "contestation_emergence",
+      "timestamp": "2026-04-16T09:59:35.992193+00:00",
+      "claim_id": "war-on-iran_bluesky_43abefef_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.73,
+      "summary": "Active contestation in \"Nuclear Weapons Use by US\" — 8 pro vs 18 anti",
+      "detail": {
+        "cluster_id": "clu_war-on-iran_017",
+        "pro_count": 8,
+        "anti_count": 18,
+        "balance": 0.44
+      }
+    },
+    {
+      "id": "evt_ef5654b263af",
+      "type": "momentum_spike",
+      "timestamp": "2026-04-16T10:59:35.992193+00:00",
+      "claim_id": "war-on-iran_bluesky_f03f3840_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.58,
+      "summary": "Momentum surge in \"Israeli Government\" cluster (48 claims)",
+      "detail": {
+        "cluster_id": "clu_war-on-iran_018",
+        "avg_momentum": 0.645,
+        "member_count": 48
+      }
+    },
+    {
+      "id": "evt_27c8faebfa2b",
+      "type": "momentum_spike",
+      "timestamp": "2026-04-16T10:59:35.992193+00:00",
+      "claim_id": "war-on-iran_bluesky_dd87cd6d_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.5,
+      "summary": "Momentum surge in \"Us-Iran Conflict\" cluster (30 claims)",
+      "detail": {
+        "cluster_id": "clu_war-on-iran_001",
+        "avg_momentum": 0.558,
+        "member_count": 30
+      }
+    },
+    {
+      "id": "evt_f9cb9f729983",
+      "type": "momentum_spike",
+      "timestamp": "2026-04-16T10:59:35.992193+00:00",
+      "claim_id": "war-on-iran_bluesky_e7dcdab1_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.5,
+      "summary": "Momentum surge in \"Iranian Regime\" cluster (19 claims)",
+      "detail": {
+        "cluster_id": "clu_war-on-iran_016",
+        "avg_momentum": 0.556,
+        "member_count": 19
+      }
+    },
+    {
+      "id": "evt_134220c9b111",
+      "type": "momentum_spike",
+      "timestamp": "2026-04-16T10:59:35.992193+00:00",
+      "claim_id": "war-on-iran_bluesky_f5352b9a_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.5,
+      "summary": "Momentum surge in \"Western Powers\" cluster (19 claims)",
+      "detail": {
+        "cluster_id": "clu_war-on-iran_011",
+        "avg_momentum": 0.555,
+        "member_count": 19
+      }
+    },
+    {
+      "id": "evt_2843d5d28110",
+      "type": "arousal_escalation",
+      "timestamp": "2026-04-16T10:59:35.992193+00:00",
+      "claim_id": "war-on-iran_bluesky_dd87cd6d_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.76,
+      "summary": "Arousal escalation in \"Us-Iran Conflict\" — 43% high-arousal claims",
+      "detail": {
+        "cluster_id": "clu_war-on-iran_001",
+        "high_arousal_count": 13,
+        "total": 30,
+        "ratio": 0.43
+      }
+    },
+    {
+      "id": "evt_fa54d020617f",
+      "type": "arousal_escalation",
+      "timestamp": "2026-04-16T10:59:35.992193+00:00",
+      "claim_id": "war-on-iran_bluesky_e7dcdab1_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.78,
+      "summary": "Arousal escalation in \"Iranian Regime\" — 52% high-arousal claims",
+      "detail": {
+        "cluster_id": "clu_war-on-iran_016",
+        "high_arousal_count": 10,
+        "total": 19,
+        "ratio": 0.53
+      }
+    },
+    {
+      "id": "evt_d3c6b6d834eb",
+      "type": "arousal_escalation",
+      "timestamp": "2026-04-16T10:59:35.992193+00:00",
+      "claim_id": "war-on-iran_bluesky_43abefef_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.78,
+      "summary": "Arousal escalation in \"Nuclear Weapons Use by US\" — 50% high-arousal claims",
+      "detail": {
+        "cluster_id": "clu_war-on-iran_017",
+        "high_arousal_count": 16,
+        "total": 32,
+        "ratio": 0.5
+      }
+    },
+    {
+      "id": "poly_544092",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:12:02.611444+00:00",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "Will Harvey Weinstein be sentenced to no prison time? — 34.0% Yes",
+      "detail": "Polymarket gives 34.0% odds. Volume: $300,300",
+      "source": "polymarket"
+    },
+    {
+      "id": "fedreg_2026-00789",
+      "type": "external_signal",
+      "timestamp": "2026-01-15T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "Revision to License Review Policy for Advanced Computing Commodities",
+      "detail": "The Bureau of Industry and Security (BIS) is revising its license review policy for exports of certain semiconductors to China and Macau--changing it from a presumption of denial to a case-by-case review. The semiconductors covered by this rule are the Nvidia H200 and its equivalents, as well as les",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2025-19571",
+      "type": "external_signal",
+      "timestamp": "2025-10-16T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "Imposition of Special Measure Regarding Huione Group, as a Foreign Financial Institution of Primary Money Laundering Concern",
+      "detail": "FinCEN is issuing this final rule to prohibit covered U.S. financial institutions from opening or maintaining a correspondent account for, or on behalf of Huione Group, a foreign financial institution based in Cambodia found to be of primary money laundering concern pursuant to section 311 of the US",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2025-19123",
+      "type": "external_signal",
+      "timestamp": "2025-10-01T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "Publication of an Iran-Related Determination.",
+      "detail": "The Department of the Treasury's Office of Foreign Assets Control (OFAC) is publishing a sector determination pursuant to a January 10, 2020 Executive Order. The determination was previously issued on OFAC's website.",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2025-18992",
+      "type": "external_signal",
+      "timestamp": "2025-09-30T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "Revision of Firearms License Requirements",
+      "detail": "On April 30, 2024, the Bureau of Industry and Security (BIS) published an interim final rule (Firearms IFR) that imposed new export license requirements for firearms and related ammunition and components. American firearms manufacturers estimated that these regulatory restrictions would cost them hu",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2025-18618",
+      "type": "external_signal",
+      "timestamp": "2025-09-25T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "Amendment to the Syria-Related Sanctions Regulations",
+      "detail": "The Department of the Treasury's Office of Foreign Assets Control (OFAC) is changing the heading of the Syria-Related Sanctions Regulations to the Promoting Accountability for Assad and Regional Stabilization Sanctions Regulations and amending the renamed regulations to implement a January 15, 2025 ",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2025-16324",
+      "type": "external_signal",
+      "timestamp": "2025-08-26T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "Syrian Sanctions Regulations",
+      "detail": "The Department of the Treasury's Office of Foreign Assets Control (OFAC) is removing from the Code of Federal Regulations the Syrian Sanctions Regulations as a result of the termination of the national emergency on which the regulations were based and further changes to the policy of the United Stat",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2025-05426",
+      "type": "external_signal",
+      "timestamp": "2025-03-28T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "Additions and Modifications to the Entity List",
+      "detail": "In this final rule, the Bureau of Industry and Security (BIS) amends the Export Administration Regulations (EAR) by adding 70 entities to the Entity List, under the destinations of China, People's Republic of (China) (42); Iran (2); Pakistan (19); South Africa (3); and the United Arab Emirates (UAE)",
+      "source": "fed_register"
+    },
+    {
+      "id": "gdelt_c156bcb8d251",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "حرب أمريكا وإسرائيل والاعتداءات الإيرانية على الخليج .. مسمار آخر فى نعش نظام دولى يتهالك - عمرو حمزاوي",
+      "detail": "Reported by shorouknews.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_364273a3c2be",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "US pilot ejected from their aircraft over southwestern Iran , an affiliate of Iranian state TV claims | Politics and Government",
+      "detail": "Reported by reviewjournal.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_51f54bc4b810",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "1 US pilot rescued after fighter jet downed in Iran , search continues for second pilot",
+      "detail": "Reported by wsbt.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_992fd0b529af",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "US launches rescue operation after report claims fighter jet downed – AP source",
+      "detail": "Reported by thewestonmercury.co.uk. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_76d2f629c616",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "US launches rescue operation after report claims fighter jet downed – AP source",
+      "detail": "Reported by warringtonguardian.co.uk. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_a8b0d322e057",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "US launches rescue operation after report claims fighter jet downed – AP source",
+      "detail": "Reported by southwalesargus.co.uk. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_0391b77ab9c6",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "France , S Korea to work together on Strait of Hormuz",
+      "detail": "Reported by taipeitimes.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_3ec53380f449",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "US Official Says Search For Crew On After Fighter Jet Shot Down Over Iran",
+      "detail": "Reported by rferl.org. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_7c17b1de6c8c",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Oboren američki borbeni avion iznad Irana , pronađen jedna član posade",
+      "detail": "Reported by naslovi.net. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_112bf46e7e09",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "1 US pilot rescued after fighter jet downed in Iran , search continues for second pilot",
+      "detail": "Reported by katu.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_28969258b073",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Makron poziva srednje sile u savez protiv Amerike i Kine , Evropa traži novu ulogu u svetu",
+      "detail": "Reported by nin.rs. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_5e9e3d5caf36",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Oboren američki borbeni avion iznad Irana , pronađen jedna član posade",
+      "detail": "Reported by danas.rs. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_bca89cc78ea2",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Savaş ne zaman bitecek ? Trump  ın İran planı : 5 adımda zafer",
+      "detail": "Reported by hurriyet.com.tr. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_651b0b24c156",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Trumps just for fun strikes on Iran could be war crime experts",
+      "detail": "Reported by iranherald.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_3030fa92ceec",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Iranian media report claims US pilot ejected over south - western Iran",
+      "detail": "Reported by theargus.co.uk. Tone: +0.0.",
+      "source": "gdelt"
+    }
+  ],
+  "total_count": 93
+}

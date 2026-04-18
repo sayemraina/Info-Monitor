@@ -1,0 +1,228 @@
+{
+  "slice_a": {
+    "id": "youtube_influencer",
+    "type": "platform",
+    "label": "YouTube (Influencer Framing)",
+    "active_volume": 91,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.1936,
+    "is_influencer_framing": true
+  },
+  "slice_b": {
+    "id": "population_all",
+    "type": "source_type",
+    "label": "Population Discourse",
+    "active_volume": 319,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.6787,
+    "is_influencer_framing": false
+  },
+  "divergence": {
+    "jsd": 0.0779,
+    "jsd_sqrt": 0.2791,
+    "trend": [
+      0.2791
+    ],
+    "typology": {
+      "information_asymmetry": 0.326,
+      "interpretive": 0.3479,
+      "paradigmatic": 0.326,
+      "dominant_mode": "Interpretive",
+      "paradigmatic_caveat": false
+    }
+  },
+  "per_cluster": [
+    {
+      "cluster_id": "clu_ai-bubble_000",
+      "label": "AI Bubble Unsustainable",
+      "salience_a": 0.022,
+      "salience_b": 0.0502,
+      "arousal_a": 0.5,
+      "arousal_b": 0.3906,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ai-bubble_001",
+      "label": "Data Centers",
+      "salience_a": 0.033,
+      "salience_b": 0.0157,
+      "arousal_a": 0.6167,
+      "arousal_b": 0.5,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ai-bubble_002",
+      "label": "Financial Sector",
+      "salience_a": 0.0659,
+      "salience_b": 0.0721,
+      "arousal_a": 0.5,
+      "arousal_b": 0.3935,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-bubble_003",
+      "label": "Stock Market",
+      "salience_a": 0.2967,
+      "salience_b": 0.2194,
+      "arousal_a": 0.4611,
+      "arousal_b": 0.34,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-bubble_004",
+      "label": "Economic Instability",
+      "salience_a": 0.044,
+      "salience_b": 0.0282,
+      "arousal_a": 0.15,
+      "arousal_b": 0.4222,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-bubble_005",
+      "label": "Large Language Models",
+      "salience_a": 0.1319,
+      "salience_b": 0.094,
+      "arousal_a": 0.3542,
+      "arousal_b": 0.465,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-bubble_006",
+      "label": "Elon Musk",
+      "salience_a": 0.0659,
+      "salience_b": 0.0627,
+      "arousal_a": 0.325,
+      "arousal_b": 0.4825,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-bubble_007",
+      "label": "Video Game Industry",
+      "salience_a": 0.0,
+      "salience_b": 0.0251,
+      "arousal_a": 0,
+      "arousal_b": 0.5437,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-bubble_008",
+      "label": "Openai",
+      "salience_a": 0.022,
+      "salience_b": 0.0313,
+      "arousal_a": 0.325,
+      "arousal_b": 0.5,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-bubble_009",
+      "label": "Artificial General",
+      "salience_a": 0.0549,
+      "salience_b": 0.0564,
+      "arousal_a": 0.43,
+      "arousal_b": 0.4417,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-bubble_010",
+      "label": "Oracle",
+      "salience_a": 0.044,
+      "salience_b": 0.0251,
+      "arousal_a": 0.325,
+      "arousal_b": 0.325,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ai-bubble_011",
+      "label": "Low-End Smartphones",
+      "salience_a": 0.011,
+      "salience_b": 0.0345,
+      "arousal_a": 0.15,
+      "arousal_b": 0.4682,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-bubble_012",
+      "label": "Ai-Generated Content",
+      "salience_a": 0.033,
+      "salience_b": 0.116,
+      "arousal_a": 0.3833,
+      "arousal_b": 0.3865,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-bubble_013",
+      "label": "Economic Disruption",
+      "salience_a": 0.044,
+      "salience_b": 0.0282,
+      "arousal_a": 0.325,
+      "arousal_b": 0.3833,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-bubble_014",
+      "label": "AI and Magnificent Seven",
+      "salience_a": 0.0,
+      "salience_b": 0.0345,
+      "arousal_a": 0,
+      "arousal_b": 0.3409,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-bubble_015",
+      "label": "Innovation Vs Safety",
+      "salience_a": 0.022,
+      "salience_b": 0.0313,
+      "arousal_a": 0.15,
+      "arousal_b": 0.36,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    }
+  ],
+  "arousal_comparison": {
+    "slice_a_avg": 0.3962,
+    "slice_b_avg": 0.398
+  },
+  "exposure_comparison": {
+    "slice_a": {
+      "value": 0.3374,
+      "confidence_interval": [
+        0.2127,
+        0.4621
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [
+        0.3374
+      ],
+      "source_distribution": "production"
+    },
+    "slice_b": {
+      "value": 1,
+      "confidence_interval": [
+        0.925,
+        1
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [
+        1
+      ],
+      "source_distribution": "production"
+    }
+  }
+}

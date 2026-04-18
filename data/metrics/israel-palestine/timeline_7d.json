@@ -1,0 +1,625 @@
+{
+  "events": [
+    {
+      "id": "evt_fc9e02f1b36f",
+      "type": "phase_transition",
+      "timestamp": "2026-04-13T00:59:41.456879+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.81,
+      "summary": "Mutation trajectory: radicalizing in \"Palestinians\"",
+      "detail": {
+        "cluster_id": "clu_israel-palestine_000",
+        "direction": "radicalizing",
+        "magnitude": 0.6976
+      }
+    },
+    {
+      "id": "evt_86455f32d69e",
+      "type": "phase_transition",
+      "timestamp": "2026-04-13T00:59:41.456879+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.85,
+      "summary": "Mutation trajectory: radicalizing in \"Ai-Driven Warfare\"",
+      "detail": {
+        "cluster_id": "clu_israel-palestine_001",
+        "direction": "radicalizing",
+        "magnitude": 0.8222
+      }
+    },
+    {
+      "id": "evt_3469bd415464",
+      "type": "phase_transition",
+      "timestamp": "2026-04-13T00:59:41.456879+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.8,
+      "summary": "Mutation trajectory: radicalizing in \"Israeli-Palestinian Conflict\"",
+      "detail": {
+        "cluster_id": "clu_israel-palestine_002",
+        "direction": "radicalizing",
+        "magnitude": 0.6702
+      }
+    },
+    {
+      "id": "evt_a312d905ab08",
+      "type": "phase_transition",
+      "timestamp": "2026-04-13T00:59:41.456879+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.82,
+      "summary": "Mutation trajectory: radicalizing in \"Benjamin Netanyahu\"",
+      "detail": {
+        "cluster_id": "clu_israel-palestine_008",
+        "direction": "radicalizing",
+        "magnitude": 0.7415
+      }
+    },
+    {
+      "id": "evt_f7a6f2e3b3bb",
+      "type": "divergence_shift",
+      "timestamp": "2026-04-13T00:59:41.456879+00:00",
+      "claim_id": null,
+      "slice_id": "bluesky_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Narrative divergence between Bluesky and brigitte_gabriel (JSD=0.767)",
+      "detail": {
+        "jsd": 0.7666,
+        "platforms": [
+          "bluesky",
+          "brigitte_gabriel"
+        ],
+        "window_hours": 168
+      }
+    },
+    {
+      "id": "evt_402348b1cb52",
+      "type": "divergence_shift",
+      "timestamp": "2026-04-13T00:59:41.456879+00:00",
+      "claim_id": null,
+      "slice_id": "bluesky_platform",
+      "severity": "high",
+      "confidence": 0.94,
+      "summary": "Narrative divergence between Bluesky and jacobin (JSD=0.438)",
+      "detail": {
+        "jsd": 0.4381,
+        "platforms": [
+          "bluesky",
+          "jacobin"
+        ],
+        "window_hours": 168
+      }
+    },
+    {
+      "id": "evt_19004488462f",
+      "type": "divergence_shift",
+      "timestamp": "2026-04-13T00:59:41.456879+00:00",
+      "claim_id": null,
+      "slice_id": "bluesky_platform",
+      "severity": "high",
+      "confidence": 0.94,
+      "summary": "Narrative divergence between Bluesky and the_intercept (JSD=0.443)",
+      "detail": {
+        "jsd": 0.4427,
+        "platforms": [
+          "bluesky",
+          "the_intercept"
+        ],
+        "window_hours": 168
+      }
+    },
+    {
+      "id": "evt_55c411781dd2",
+      "type": "divergence_shift",
+      "timestamp": "2026-04-13T00:59:41.456879+00:00",
+      "claim_id": null,
+      "slice_id": "bluesky_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Narrative divergence between Bluesky and the_times_of_israel (JSD=0.685)",
+      "detail": {
+        "jsd": 0.685,
+        "platforms": [
+          "bluesky",
+          "the_times_of_israel"
+        ],
+        "window_hours": 168
+      }
+    },
+    {
+      "id": "evt_a33c15d5e87d",
+      "type": "arousal_escalation",
+      "timestamp": "2026-04-14T04:59:41.456879+00:00",
+      "claim_id": "israel-palestine_bluesky_e249274f_0",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.84,
+      "summary": "Arousal escalation in \"US Congress\" — 75% high-arousal claims",
+      "detail": {
+        "cluster_id": "clu_israel-palestine_003",
+        "high_arousal_count": 31,
+        "total": 41,
+        "ratio": 0.76
+      }
+    },
+    {
+      "id": "evt_eacd8113fa2d",
+      "type": "arousal_escalation",
+      "timestamp": "2026-04-14T04:59:41.456879+00:00",
+      "claim_id": "israel-palestine_bluesky_e4080a2c_1",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.82,
+      "summary": "Arousal escalation in \"Israelis\" — 66% high-arousal claims",
+      "detail": {
+        "cluster_id": "clu_israel-palestine_004",
+        "high_arousal_count": 8,
+        "total": 12,
+        "ratio": 0.67
+      }
+    },
+    {
+      "id": "evt_cf95be239927",
+      "type": "arousal_escalation",
+      "timestamp": "2026-04-14T04:59:41.456879+00:00",
+      "claim_id": "israel-palestine_bluesky_02212b51_1",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.89,
+      "summary": "Arousal escalation in \"Israel Subject\" — 94% high-arousal claims",
+      "detail": {
+        "cluster_id": "clu_israel-palestine_005",
+        "high_arousal_count": 18,
+        "total": 19,
+        "ratio": 0.95
+      }
+    },
+    {
+      "id": "evt_db04713d8b24",
+      "type": "arousal_escalation",
+      "timestamp": "2026-04-14T04:59:41.456879+00:00",
+      "claim_id": "israel-palestine_bluesky_4f6244f7_0",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.88,
+      "summary": "Arousal escalation in \"Gaza War and Xinjiang\" — 92% high-arousal claims",
+      "detail": {
+        "cluster_id": "clu_israel-palestine_006",
+        "high_arousal_count": 12,
+        "total": 13,
+        "ratio": 0.92
+      }
+    },
+    {
+      "id": "poly_544093",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:16:25.758888+00:00",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Will Harvey Weinstein be sentenced to less than 5 years in prison? — 14.6% Yes",
+      "detail": "Polymarket gives 14.6% odds. Volume: $54,616",
+      "source": "polymarket"
+    },
+    {
+      "id": "poly_540881",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:16:25.758877+00:00",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "GTA VI released before June 2026? — 1.5% Yes",
+      "detail": "Polymarket gives 1.5% odds. Volume: $13,090,290",
+      "source": "polymarket"
+    },
+    {
+      "id": "fedreg_2025-23570",
+      "type": "external_signal",
+      "timestamp": "2025-12-19T00:00:00Z",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Restricting and Limiting the Entry of Foreign Nationals To Protect the Security of the United States",
+      "detail": "Presidential Document by Executive Office of the President",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2025-02504",
+      "type": "external_signal",
+      "timestamp": "2025-02-10T00:00:00Z",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Withdrawing the United States From and Ending Funding to Certain United Nations Organizations and Reviewing United States Support to All International Organizations",
+      "detail": "Presidential Document by Executive Office of the President",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2024-25106",
+      "type": "external_signal",
+      "timestamp": "2024-10-28T00:00:00Z",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "United Nations Day, 2024",
+      "detail": "Presidential Document by Executive Office of the President",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2024-07173",
+      "type": "external_signal",
+      "timestamp": "2024-04-03T00:00:00Z",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Arab American Heritage Month, 2024",
+      "detail": "Presidential Document by Executive Office of the President",
+      "source": "fed_register"
+    },
+    {
+      "id": "evt_c579c82c117b",
+      "type": "contestation_emergence",
+      "timestamp": "2026-04-13T00:59:41.456879+00:00",
+      "claim_id": "israel-palestine_bluesky_ca1bcff0_1",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.8,
+      "summary": "Active contestation in \"Ai-Driven Warfare\" — 4 pro vs 6 anti",
+      "detail": {
+        "cluster_id": "clu_israel-palestine_001",
+        "pro_count": 4,
+        "anti_count": 6,
+        "balance": 0.67
+      }
+    },
+    {
+      "id": "evt_f97728b613d1",
+      "type": "contestation_emergence",
+      "timestamp": "2026-04-13T00:59:41.456879+00:00",
+      "claim_id": "israel-palestine_bluesky_7941d3b6_1",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.75,
+      "summary": "Active contestation in \"Iran\" — 16 pro vs 33 anti",
+      "detail": {
+        "cluster_id": "clu_israel-palestine_007",
+        "pro_count": 16,
+        "anti_count": 33,
+        "balance": 0.48
+      }
+    },
+    {
+      "id": "evt_6db5a3c26db2",
+      "type": "contestation_emergence",
+      "timestamp": "2026-04-13T00:59:41.456879+00:00",
+      "claim_id": "israel-palestine_bluesky_b63074c1_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.76,
+      "summary": "Active contestation in \"Hamas\" — 27 pro vs 52 anti",
+      "detail": {
+        "cluster_id": "clu_israel-palestine_012",
+        "pro_count": 27,
+        "anti_count": 52,
+        "balance": 0.52
+      }
+    },
+    {
+      "id": "evt_e4418c224ad5",
+      "type": "contestation_emergence",
+      "timestamp": "2026-04-13T00:59:41.456879+00:00",
+      "claim_id": "israel-palestine_bluesky_ad7dc833_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.8,
+      "summary": "Active contestation in \"Scottish Green Party\" — 4 pro vs 6 anti",
+      "detail": {
+        "cluster_id": "clu_israel-palestine_014",
+        "pro_count": 4,
+        "anti_count": 6,
+        "balance": 0.67
+      }
+    },
+    {
+      "id": "evt_3fdcce3efd02",
+      "type": "momentum_spike",
+      "timestamp": "2026-04-13T17:59:41.456879+00:00",
+      "claim_id": "israel-palestine_bluesky_e249274f_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.54,
+      "summary": "Momentum surge in \"US Congress\" cluster (41 claims)",
+      "detail": {
+        "cluster_id": "clu_israel-palestine_003",
+        "avg_momentum": 0.6,
+        "member_count": 41
+      }
+    },
+    {
+      "id": "evt_287f99335d9e",
+      "type": "momentum_spike",
+      "timestamp": "2026-04-13T19:59:41.456879+00:00",
+      "claim_id": "israel-palestine_bluesky_6c1f8326_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.55,
+      "summary": "Momentum surge in \"Jewish People\" cluster (31 claims)",
+      "detail": {
+        "cluster_id": "clu_israel-palestine_010",
+        "avg_momentum": 0.61,
+        "member_count": 31
+      }
+    },
+    {
+      "id": "evt_6f5c1ca5534a",
+      "type": "momentum_spike",
+      "timestamp": "2026-04-13T20:59:41.456879+00:00",
+      "claim_id": "israel-palestine_bluesky_4f6244f7_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.55,
+      "summary": "Momentum surge in \"Gaza War and Xinjiang\" cluster (13 claims)",
+      "detail": {
+        "cluster_id": "clu_israel-palestine_006",
+        "avg_momentum": 0.614,
+        "member_count": 13
+      }
+    },
+    {
+      "id": "evt_0212fd9e385e",
+      "type": "momentum_spike",
+      "timestamp": "2026-04-13T21:59:41.456879+00:00",
+      "claim_id": "israel-palestine_bluesky_02212b51_1",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.56,
+      "summary": "Momentum surge in \"Israel Subject\" cluster (19 claims)",
+      "detail": {
+        "cluster_id": "clu_israel-palestine_005",
+        "avg_momentum": 0.623,
+        "member_count": 19
+      }
+    },
+    {
+      "id": "poly_544092",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:16:25.758882+00:00",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "Will Harvey Weinstein be sentenced to no prison time? — 34.0% Yes",
+      "detail": "Polymarket gives 34.0% odds. Volume: $300,300",
+      "source": "polymarket"
+    },
+    {
+      "id": "fedreg_2025-19702",
+      "type": "external_signal",
+      "timestamp": "2025-10-30T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "Removal of the Automatic Extension of Employment Authorization Documents",
+      "detail": "This IFR amends DHS regulations to end the practice of automatically extending the validity of employment authorization documents (Forms I-766 or EADs) for aliens who have timely filed an application to renew their EAD in certain employment authorization categories. The purpose of this change is to ",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2024-31188",
+      "type": "external_signal",
+      "timestamp": "2024-12-30T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "Extension of the Prohibition Against Certain Flights in Specified Areas of the Sanaa Flight Information Region (FIR) (OYSC)",
+      "detail": "This action extends the prohibition against certain flight operations in specified areas of the Sanaa Flight Information Region (FIR) (OYSC) by all: U.S. air carriers; U.S. commercial operators; persons exercising the privileges of an airman certificate issued by the FAA, except when such persons ar",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2024-23785",
+      "type": "external_signal",
+      "timestamp": "2024-10-16T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "Extension of the Prohibition Against Certain Flights in the Baghdad Flight Information Region (FIR) (ORBB)",
+      "detail": "This action extends the prohibition against certain flight operations in the Baghdad Flight Information Region (FIR) (ORBB) at altitudes below Flight Level (FL) 320 by all: U.S. air carriers; U.S. commercial operators; persons exercising the privileges of an airman certificate issued by the FAA, exc",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2024-22731",
+      "type": "external_signal",
+      "timestamp": "2024-10-03T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "Extension of the Prohibition Against Certain Flights in the Tehran Flight Information Region (FIR) (OIIX)",
+      "detail": "This action extends the prohibition against certain flight operations in the Tehran Flight Information Region (FIR) (OIIX) by all: U.S. air carriers; U.S. commercial operators; persons exercising the privileges of an airman certificate issued by the FAA, except when such persons are operating U.S.-r",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2024-09483",
+      "type": "external_signal",
+      "timestamp": "2024-05-07T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "Reciprocal Switching for Inadequate Service",
+      "detail": "The Board adopts new regulations that provide for the prescription of reciprocal switching agreements as a means to promote adequate rail service through access to an additional line haul carrier. Under the new regulations, eligibility for prescription of a reciprocal switching agreement will be det",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2023-14656",
+      "type": "external_signal",
+      "timestamp": "2023-09-29T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "Implementation of the Final Acts of the 2019 World Radiocommunication Conference",
+      "detail": "In this document, the Federal Communications Commission (Commission) makes non-substantive, editorial revisions to the Commission's Table of Frequency Allocations (Allocation Table), primarily to reflect decisions from the Final Acts of the World Radiocommunication Conference 2019 (WRC-19 Final Acts",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2023-11972",
+      "type": "external_signal",
+      "timestamp": "2023-06-07T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "Table of Frequency Allocations and Radio Regulations",
+      "detail": "In this document, the Federal Communications Commission's (Commission) Office of Engineering and Technology (OET) makes non- substantive editorial revisions to conform certain of the Commission's rules to the formatting requirements of the Code of Federal Regulations (CFR). The purpose of this admin",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2020-20152",
+      "type": "external_signal",
+      "timestamp": "2020-09-23T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "Direct Grant Programs, State-Administered Formula Grant Programs, Non Discrimination on the Basis of Sex in Education Programs or Activities Receiving Federal Financial Assistance, Developing Hispanic",
+      "detail": "In response to Executive Order 13864 (Improving Free Inquiry, Transparency, and Accountability at Colleges and Universities), the Department of Education revises its current regulations to encourage institutions of higher education to foster environments that promote open, intellectually engaging, a",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2020-04203",
+      "type": "external_signal",
+      "timestamp": "2020-06-26T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "WRC-15 Order",
+      "detail": "This document makes non-substantive, editorial revisions to the Table of Frequency Allocations (Allocation Table) and to various other Commission rules. The purpose of this action is to update the International Table of Frequency Allocations (International Table) to reflect the decisions made at an ",
+      "source": "fed_register"
+    },
+    {
+      "id": "gdelt_94208ac434c6",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "How the US and Israel are waging war on Iran medicines , vaccines - Grenada Chronicle – Daily Grenada And Caribbean News",
+      "detail": "Reported by grenadachronicle.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_e7c46cf3c975",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Via Crucis stasera al Colosseo : Papa Leone XIV porta la croce in tutte le stazioni ( per la prima volta da Paolo VI ) ",
+      "detail": "Reported by ilmattino.it. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_85599f5be78b",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Bauk velike krize kruži svetom : Pojedini ekonomisti tvrde da nas čeka gora kriza nego 2008",
+      "detail": "Reported by nin.rs. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_6aabd8a98e8d",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "مارك رافالو يروج لـ فلسطين 36 : فيلم يعيد سرد التاريخ الفلسطيني من الداخل",
+      "detail": "Reported by shorouknews.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_65dc3fec3fa2",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:63:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Oğlunun idam edilmesinden endişe eden Filistinli anne dünyaya seslendi",
+      "detail": "Reported by risalehaber.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_95880df7d61c",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:63:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Via Crucis stasera al Colosseo : Papa Leone XIV porta la croce in tutte le stazioni ( per la prima volta da Paolo VI ) ",
+      "detail": "Reported by ilmessaggero.it. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_8494aa96b7be",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:63:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "İsrail hapishanelerindeki 23 yılın ardından Mısıra sürgün edilen Filistinli Riyad el - Amur , hayatını kaybetti",
+      "detail": "Reported by haberler.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_e750b2d725e7",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:63:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Ignite Utah Action hosts CD1 discussion panel at SLCC",
+      "detail": "Reported by dailyutahchronicle.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_2552cce5a881",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:63:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Yemende on binlerce kişi ABD ve İsrailin İrana saldırılarını protesto etti",
+      "detail": "Reported by haberler.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_fb5a2c002fd2",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:63:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "الجامعة العربية و « الناتو »... عاشا أم ماتا ؟ ",
+      "detail": "Reported by arabstoday.net. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_558c26ceadb5",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:63:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "  Пироћанци - праведници међу народима , сведочанство о људима који су спашавали комшије Јевреје",
+      "detail": "Reported by rts.rs. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_8ba622327595",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:63:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Gazzede salgın alarmı - Radikal",
+      "detail": "Reported by radikal.com.tr. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_674cbddd129e",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:63:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Morality and the class struggle",
+      "detail": "Reported by marxist.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_0e14e9b39661",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:61:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Descoperire arheologică incredibilă în Țara Sfântă . Mesaj sumbru din vremea lui Iisus : „ Este pentru prima dată când găsim așa ceva  ",
+      "detail": "Reported by romaniatv.net. Tone: +0.0.",
+      "source": "gdelt"
+    }
+  ],
+  "total_count": 80
+}

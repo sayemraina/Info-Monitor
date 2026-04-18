@@ -1,0 +1,605 @@
+{
+  "events": [
+    {
+      "id": "evt_e2f732d6bdfe",
+      "type": "contestation_emergence",
+      "timestamp": "2026-04-13T00:59:43.338614+00:00",
+      "claim_id": "inflation-cost-of-living_bluesky_0e6cf32d_0",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.89,
+      "summary": "Active contestation in \"Pay Raise\" — 28 pro vs 27 anti",
+      "detail": {
+        "cluster_id": "clu_inflation-cost-of-living_007",
+        "pro_count": 28,
+        "anti_count": 27,
+        "balance": 0.96
+      }
+    },
+    {
+      "id": "evt_6c201a5519e9",
+      "type": "phase_transition",
+      "timestamp": "2026-04-13T00:59:43.338614+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.8,
+      "summary": "Mutation trajectory: radicalizing in \"Hezbollah\"",
+      "detail": {
+        "cluster_id": "clu_inflation-cost-of-living_000",
+        "direction": "radicalizing",
+        "magnitude": 0.6805
+      }
+    },
+    {
+      "id": "evt_7f3bc5fa98e1",
+      "type": "phase_transition",
+      "timestamp": "2026-04-13T00:59:43.338614+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.79,
+      "summary": "Mutation trajectory: radicalizing in \"Donald Trump\"",
+      "detail": {
+        "cluster_id": "clu_inflation-cost-of-living_001",
+        "direction": "radicalizing",
+        "magnitude": 0.6228
+      }
+    },
+    {
+      "id": "evt_caa756eb519a",
+      "type": "phase_transition",
+      "timestamp": "2026-04-13T00:59:43.338614+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.78,
+      "summary": "Mutation trajectory: radicalizing in \"Grocery Prices\"",
+      "detail": {
+        "cluster_id": "clu_inflation-cost-of-living_002",
+        "direction": "radicalizing",
+        "magnitude": 0.6088
+      }
+    },
+    {
+      "id": "evt_427f68f24a65",
+      "type": "phase_transition",
+      "timestamp": "2026-04-13T00:59:43.338614+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.78,
+      "summary": "Mutation trajectory: radicalizing in \"Politicians\"",
+      "detail": {
+        "cluster_id": "clu_inflation-cost-of-living_008",
+        "direction": "radicalizing",
+        "magnitude": 0.6132
+      }
+    },
+    {
+      "id": "evt_b0954f038455",
+      "type": "divergence_shift",
+      "timestamp": "2026-04-13T00:59:43.338614+00:00",
+      "claim_id": null,
+      "slice_id": "bluesky_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Narrative divergence between Bluesky and cato (JSD=0.857)",
+      "detail": {
+        "jsd": 0.8572,
+        "platforms": [
+          "bluesky",
+          "cato"
+        ],
+        "window_hours": 168
+      }
+    },
+    {
+      "id": "evt_7cbda609caa6",
+      "type": "divergence_shift",
+      "timestamp": "2026-04-13T00:59:43.338614+00:00",
+      "claim_id": null,
+      "slice_id": "bluesky_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Narrative divergence between Bluesky and common_dreams (JSD=0.691)",
+      "detail": {
+        "jsd": 0.6907,
+        "platforms": [
+          "bluesky",
+          "common_dreams"
+        ],
+        "window_hours": 168
+      }
+    },
+    {
+      "id": "evt_c2db47f072a4",
+      "type": "divergence_shift",
+      "timestamp": "2026-04-13T00:59:43.338614+00:00",
+      "claim_id": null,
+      "slice_id": "bluesky_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Narrative divergence between Bluesky and jacobin (JSD=0.779)",
+      "detail": {
+        "jsd": 0.7794,
+        "platforms": [
+          "bluesky",
+          "jacobin"
+        ],
+        "window_hours": 168
+      }
+    },
+    {
+      "id": "evt_d1e8d5f6ba61",
+      "type": "divergence_shift",
+      "timestamp": "2026-04-13T00:59:43.338614+00:00",
+      "claim_id": null,
+      "slice_id": "bluesky_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Narrative divergence between Bluesky and reason (JSD=0.552)",
+      "detail": {
+        "jsd": 0.5525,
+        "platforms": [
+          "bluesky",
+          "reason"
+        ],
+        "window_hours": 168
+      }
+    },
+    {
+      "id": "poly_544093",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:19:07.679278+00:00",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Will Harvey Weinstein be sentenced to less than 5 years in prison? — 14.6% Yes",
+      "detail": "Polymarket gives 14.6% odds. Volume: $54,616",
+      "source": "polymarket"
+    },
+    {
+      "id": "poly_540881",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:19:07.679268+00:00",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "GTA VI released before June 2026? — 1.5% Yes",
+      "detail": "Polymarket gives 1.5% odds. Volume: $13,090,290",
+      "source": "polymarket"
+    },
+    {
+      "id": "evt_6924240b0f25",
+      "type": "lead_lag",
+      "timestamp": "2025-10-06T02:59:43.338614+00:00",
+      "claim_id": "inflation-cost-of-living_bluesky_68cb3c0e_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.9,
+      "summary": "YouTube (Influencer Framing) leads X Platform by ~4618h in \"Grocery Prices\"",
+      "detail": {
+        "source_platform": "youtube",
+        "target_platform": "x",
+        "lag_hours": 4618.8,
+        "cluster_id": "clu_inflation-cost-of-living_002"
+      }
+    },
+    {
+      "id": "evt_0e8e4a4f199e",
+      "type": "lead_lag",
+      "timestamp": "2025-11-02T07:59:43.338614+00:00",
+      "claim_id": "inflation-cost-of-living_bluesky_98317fbd_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.9,
+      "summary": "YouTube (Influencer Framing) leads X Platform by ~3965h in \"Donald Trump\"",
+      "detail": {
+        "source_platform": "youtube",
+        "target_platform": "x",
+        "lag_hours": 3965.8,
+        "cluster_id": "clu_inflation-cost-of-living_001"
+      }
+    },
+    {
+      "id": "evt_098e91ca72c5",
+      "type": "lead_lag",
+      "timestamp": "2026-03-19T05:59:43.338614+00:00",
+      "claim_id": "inflation-cost-of-living_bluesky_01c37309_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.9,
+      "summary": "YouTube (Influencer Framing) leads X Platform by ~679h in \"Fuel Prices\"",
+      "detail": {
+        "source_platform": "youtube",
+        "target_platform": "x",
+        "lag_hours": 679.0,
+        "cluster_id": "clu_inflation-cost-of-living_003"
+      }
+    },
+    {
+      "id": "evt_471fd9935d44",
+      "type": "lead_lag",
+      "timestamp": "2026-03-29T22:59:43.338614+00:00",
+      "claim_id": "inflation-cost-of-living_bluesky_0a4e8fbf_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.9,
+      "summary": "cato leads X Platform by ~422h in \"Hezbollah\"",
+      "detail": {
+        "source_platform": "cato",
+        "target_platform": "x",
+        "lag_hours": 423.0,
+        "cluster_id": "clu_inflation-cost-of-living_000"
+      }
+    },
+    {
+      "id": "evt_88c48c9be897",
+      "type": "contestation_emergence",
+      "timestamp": "2026-04-13T00:59:43.338614+00:00",
+      "claim_id": "inflation-cost-of-living_bluesky_68cb3c0e_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.81,
+      "summary": "Active contestation in \"Grocery Prices\" — 13 pro vs 9 anti",
+      "detail": {
+        "cluster_id": "clu_inflation-cost-of-living_002",
+        "pro_count": 13,
+        "anti_count": 9,
+        "balance": 0.69
+      }
+    },
+    {
+      "id": "evt_f2acd638707f",
+      "type": "contestation_emergence",
+      "timestamp": "2026-04-13T00:59:43.338614+00:00",
+      "claim_id": "inflation-cost-of-living_bluesky_59f85720_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.72,
+      "summary": "Active contestation in \"European Central Bank\" — 5 pro vs 12 anti",
+      "detail": {
+        "cluster_id": "clu_inflation-cost-of-living_005",
+        "pro_count": 5,
+        "anti_count": 12,
+        "balance": 0.42
+      }
+    },
+    {
+      "id": "evt_526a331a2440",
+      "type": "contestation_emergence",
+      "timestamp": "2026-04-13T00:59:43.338614+00:00",
+      "claim_id": "inflation-cost-of-living_bluesky_6cd2c0ef_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.77,
+      "summary": "Active contestation in \"Government Spending\" — 4 pro vs 7 anti",
+      "detail": {
+        "cluster_id": "clu_inflation-cost-of-living_009",
+        "pro_count": 4,
+        "anti_count": 7,
+        "balance": 0.57
+      }
+    },
+    {
+      "id": "poly_544092",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:19:07.679273+00:00",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "Will Harvey Weinstein be sentenced to no prison time? — 34.0% Yes",
+      "detail": "Polymarket gives 34.0% odds. Volume: $300,300",
+      "source": "polymarket"
+    },
+    {
+      "id": "fedreg_2026-06557",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "Rescission of Obsolete Regulations Addressing Drug Addiction and Alcoholism Under Titles II and XVI of the Social Security Act",
+      "detail": "This rule rescinds obsolete drug addiction and alcoholism (DAA) regulations.",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2026-06537",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "National Environmental Policy Act",
+      "detail": "The U.S. Department of Agriculture (USDA) is adopting the interim final rule (IFR) published on July 3, 2025, with minor changes, as final. The IFR revised departmental regulations implementing the National Environmental Policy Act (NEPA) and removed various USDA agency regulations for implementing ",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2026-06523",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "Designation of P2P Methyl Glycidic Acid as a List I Chemical",
+      "detail": "The Drug Enforcement Administration is finalizing the control of 2-methyl-3-phenyloxirane-2-carboxylic acid (also known as P2P methyl glycidic acid and BMK glycidic acid) and its esters, its optical and geometric isomers, its salts, salts of its optical and geometric isomers and its esters, and any ",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2026-06304",
+      "type": "external_signal",
+      "timestamp": "2026-04-01T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "National Emission Standards for Hazardous Air Pollutants: Chemical Manufacturing Area Sources Technology Review",
+      "detail": "The Environmental Protection Agency (EPA) is finalizing amendments to the National Emission Standards for Hazardous Air Pollutants (NESHAP) for the Chemical Manufacturing Area Source (CMAS) categories pursuant to a technology review under Clean Air Act (CAA) section 112(d)(6). Specifically, the EPA ",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2026-06281",
+      "type": "external_signal",
+      "timestamp": "2026-04-01T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "Rescission of OCC Guidelines Establishing Standards for Recovery Planning by Certain Large Insured National Banks, Insured Federal Savings Associations, and Insured Federal Branches",
+      "detail": "The OCC is amending its regulations by rescinding \"OCC Guidelines Establishing Standards for Recovery Planning by Certain Large Insured National Banks, Insured Federal Savings Associations, and Insured Federal Branches.\"",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2026-06275",
+      "type": "external_signal",
+      "timestamp": "2026-04-01T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "Renewable Fuel Standard (RFS) Program: Standards for 2026 and 2027, Partial Waiver of 2025 Cellulosic Biofuel Volume Requirement, and Other Changes",
+      "detail": "Under the Clean Air Act (CAA), the U.S. Environmental Protection Agency (EPA) is required to determine the applicable volume requirements for the Renewable Fuel Standard (RFS) for years after those specified in the statute. The EPA is establishing the applicable volumes and percentage standards for ",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2026-06027",
+      "type": "external_signal",
+      "timestamp": "2026-03-27T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "Reducing Bureaucracy and Burden for Refugee Resettlement Programs",
+      "detail": "The Department of Health and Human Services, Administration for Children and Families rescinds obsolete provisions of the State Legalization Impact Assistance Grants regulations (45 CFR part 402). The Administration for Children and Families has undertaken a sweeping review aimed at eliminating outd",
+      "source": "fed_register"
+    },
+    {
+      "id": "fred_UNRATE_2026-03-01",
+      "type": "external_signal",
+      "timestamp": "2026-03-01T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "Unemployment Rate: 4.30 (down 2.3%)",
+      "detail": "Unemployment Rate (UNRATE) at 4.30 as of 2026-03-01. Previous: 4.40 (down 2.3%).",
+      "source": "fred"
+    },
+    {
+      "id": "gdelt_1b235b60c20a",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:70:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Leavitt says egg prices are down 80 %, social media users point to gas prices",
+      "detail": "Reported by bakersfieldnow.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_120d99f00d7c",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Amazon to slap 3 . 5 % surcharge on third - party sellers",
+      "detail": "Reported by koco.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_50296507cbe6",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Amazon to slap 3 . 5 % surcharge on third - party sellers",
+      "detail": "Reported by wgal.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_cda09063685d",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:63:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "EMEP ve DİSK Gıda - İş  ten ortak 1 Mayıs ve NATO mesajı :  Yoksulluğa ve savaşa karşı alanlardayız  - Evrensel",
+      "detail": "Reported by evrensel.net. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_d7a59b1742b6",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:63:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "When will we see US gas prices decrease ? ",
+      "detail": "Reported by kcci.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_49ff67bb22db",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:63:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Amazon to slap 3 . 5 % surcharge on third - party sellers",
+      "detail": "Reported by kcci.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_3d29003cd4e6",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:63:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "FinancialContent - The Flavor Giant : McCormick $65 Billion Merger with Unilever Foods Reshapes Global Pantry",
+      "detail": "Reported by markets.financialcontent.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_11763ee1ba3f",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:60:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Car site Edmunds tests a $25K Chinese hybrid SUV and issues warning to US automakers",
+      "detail": "Reported by nypost.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_3dc803d893ed",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:44:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "When will we see US gas prices decrease ? ",
+      "detail": "Reported by wxii12.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_45dcb01cac83",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:40:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Arrival of discount grocers No Frills , FreshCo will bring modest discounts to shoppers , says food expert",
+      "detail": "Reported by saltwire.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_1d6ddf82209a",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:40:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "৫ - ৬ টি কোম্পানির প্রভাবশালী সিন্ডিকেট নিয়ন্ত্রণ করছে সয়াবিনের বাজার",
+      "detail": "Reported by jugantor.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_6b164d5e711e",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:40:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "The Economic Costs of the Iran War",
+      "detail": "Reported by aei.org. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_632c822af81c",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:34:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "6 Ways Seniors Can Save on Home Insurance",
+      "detail": "Reported by kiplinger.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_19b70ae46665",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:34:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Families Teach Kids More About Money Than Schools Ever Can",
+      "detail": "Reported by kiplinger.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_9a4188c29aac",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:20:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "US Army new grenade uses shock waves to kill",
+      "detail": "Reported by wgal.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_c3aac641dcaa",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:20:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "When will we see US gas prices decrease ? ",
+      "detail": "Reported by koco.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_e8b4d23f5298",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:20:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "US Army new grenade uses shock waves to kill",
+      "detail": "Reported by wpbf.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_2e7c95bc592f",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:20:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "The 5 Safest Dividend Aristocrats Are Perfect For Retirees Needing Growth & Income",
+      "detail": "Reported by finance.yahoo.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_f5f12504f930",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:13:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Discount is the new name of the game . What does that mean for conventional stores ? ",
+      "detail": "Reported by stcatharinesstandard.ca. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_f81b4b0d5b48",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:11:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Shocked by gas at $4 in America ? Try $16 in this Asian city",
+      "detail": "Reported by us.cnn.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "price_DX-Y.NYB_20260403",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:19:11.695922+00:00",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "DX-Y.NYB: $100.18 (up 0.1%)",
+      "detail": "DX-Y.NYB closed at $100.18, up 0.1% from previous close of $100.03",
+      "source": "yahoo_finance"
+    },
+    {
+      "id": "poly_540844",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:19:07.679263+00:00",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Will bitcoin hit $1m before GTA VI? — 48.9% Yes",
+      "detail": "Polymarket gives 48.9% odds. Volume: $3,848,533",
+      "source": "polymarket"
+    },
+    {
+      "id": "poly_540843",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:19:07.679258+00:00",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Will China invades Taiwan before GTA VI? — 52.0% Yes",
+      "detail": "Polymarket gives 52.0% odds. Volume: $1,524,917",
+      "source": "polymarket"
+    }
+  ],
+  "total_count": 79
+}

@@ -1,0 +1,573 @@
+{
+  "events": [
+    {
+      "id": "evt_231718cfb909",
+      "type": "contestation_emergence",
+      "timestamp": "2026-04-13T00:59:43.951796+00:00",
+      "claim_id": "dei-rollbacks_bluesky_01333e59_0",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.82,
+      "summary": "Active contestation in \"ABA Council\" — 21 pro vs 28 anti",
+      "detail": {
+        "cluster_id": "clu_dei-rollbacks_003",
+        "pro_count": 21,
+        "anti_count": 28,
+        "balance": 0.75
+      }
+    },
+    {
+      "id": "evt_864be3e347cb",
+      "type": "divergence_shift",
+      "timestamp": "2026-04-13T00:59:43.951796+00:00",
+      "claim_id": null,
+      "slice_id": "bluesky_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Narrative divergence between Bluesky and cato (JSD=0.543)",
+      "detail": {
+        "jsd": 0.5433,
+        "platforms": [
+          "bluesky",
+          "cato"
+        ],
+        "window_hours": 168
+      }
+    },
+    {
+      "id": "evt_c83a0f7f4472",
+      "type": "divergence_shift",
+      "timestamp": "2026-04-13T00:59:43.951796+00:00",
+      "claim_id": null,
+      "slice_id": "bluesky_platform",
+      "severity": "high",
+      "confidence": 0.88,
+      "summary": "Narrative divergence between Bluesky and thegrio (JSD=0.382)",
+      "detail": {
+        "jsd": 0.3821,
+        "platforms": [
+          "bluesky",
+          "thegrio"
+        ],
+        "window_hours": 168
+      }
+    },
+    {
+      "id": "evt_0b596a7dc0bf",
+      "type": "divergence_shift",
+      "timestamp": "2026-04-13T00:59:43.951796+00:00",
+      "claim_id": null,
+      "slice_id": "bluesky_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Narrative divergence between Bluesky and X Platform (JSD=0.515)",
+      "detail": {
+        "jsd": 0.5147,
+        "platforms": [
+          "bluesky",
+          "x"
+        ],
+        "window_hours": 168
+      }
+    },
+    {
+      "id": "poly_544093",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:20:17.114179+00:00",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Will Harvey Weinstein be sentenced to less than 5 years in prison? — 14.6% Yes",
+      "detail": "Polymarket gives 14.6% odds. Volume: $54,616",
+      "source": "polymarket"
+    },
+    {
+      "id": "poly_540881",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:20:17.114162+00:00",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "GTA VI released before June 2026? — 1.5% Yes",
+      "detail": "Polymarket gives 1.5% odds. Volume: $13,090,290",
+      "source": "polymarket"
+    },
+    {
+      "id": "fedreg_2026-06286",
+      "type": "external_signal",
+      "timestamp": "2026-03-31T00:00:00Z",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Addressing DEI Discrimination by Federal Contractors",
+      "detail": "Presidential Document by Executive Office of the President",
+      "source": "fed_register"
+    },
+    {
+      "id": "evt_637670322a58",
+      "type": "lead_lag",
+      "timestamp": "2025-09-22T01:59:43.951796+00:00",
+      "claim_id": "dei-rollbacks_bluesky_a5a3cd2b_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.9,
+      "summary": "YouTube (Influencer Framing) leads boulder_daily_camera by ~4955h in \"Affirmative Action\"",
+      "detail": {
+        "source_platform": "youtube",
+        "target_platform": "boulder_daily_camera",
+        "lag_hours": 4955.9,
+        "cluster_id": "clu_dei-rollbacks_000"
+      }
+    },
+    {
+      "id": "evt_f716e6ecf28b",
+      "type": "lead_lag",
+      "timestamp": "2025-09-27T10:59:43.951796+00:00",
+      "claim_id": "dei-rollbacks_bluesky_5fc53a0d_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.9,
+      "summary": "YouTube (Influencer Framing) leads chicago_reader by ~4826h in \"Target\"",
+      "detail": {
+        "source_platform": "youtube",
+        "target_platform": "chicago_reader",
+        "lag_hours": 4826.8,
+        "cluster_id": "clu_dei-rollbacks_004"
+      }
+    },
+    {
+      "id": "evt_dbc4038bd651",
+      "type": "lead_lag",
+      "timestamp": "2025-12-16T09:59:43.951796+00:00",
+      "claim_id": "dei-rollbacks_bluesky_01333e59_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.9,
+      "summary": "YouTube (Influencer Framing) leads free_press_journal by ~2907h in \"ABA Council\"",
+      "detail": {
+        "source_platform": "youtube",
+        "target_platform": "free_press_journal",
+        "lag_hours": 2908.0,
+        "cluster_id": "clu_dei-rollbacks_003"
+      }
+    },
+    {
+      "id": "evt_883812916f2d",
+      "type": "lead_lag",
+      "timestamp": "2025-12-28T15:59:43.951796+00:00",
+      "claim_id": "dei-rollbacks_bluesky_d6a3f016_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.9,
+      "summary": "YouTube (Influencer Framing) leads news_one by ~2613h in \"Pete Hegseth\"",
+      "detail": {
+        "source_platform": "youtube",
+        "target_platform": "news_one",
+        "lag_hours": 2613.1,
+        "cluster_id": "clu_dei-rollbacks_001"
+      }
+    },
+    {
+      "id": "evt_e961fc8ca76b",
+      "type": "contestation_emergence",
+      "timestamp": "2026-04-13T00:59:43.951796+00:00",
+      "claim_id": "dei-rollbacks_bluesky_a5a3cd2b_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.8,
+      "summary": "Active contestation in \"Affirmative Action\" — 25 pro vs 38 anti",
+      "detail": {
+        "cluster_id": "clu_dei-rollbacks_000",
+        "pro_count": 25,
+        "anti_count": 38,
+        "balance": 0.66
+      }
+    },
+    {
+      "id": "evt_827070b18259",
+      "type": "divergence_shift",
+      "timestamp": "2026-04-13T00:59:43.951796+00:00",
+      "claim_id": null,
+      "slice_id": "bluesky_platform",
+      "severity": "medium",
+      "confidence": 0.72,
+      "summary": "Narrative divergence between Bluesky and jacobin (JSD=0.221)",
+      "detail": {
+        "jsd": 0.2214,
+        "platforms": [
+          "bluesky",
+          "jacobin"
+        ],
+        "window_hours": 168
+      }
+    },
+    {
+      "id": "poly_544092",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:20:17.114170+00:00",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "Will Harvey Weinstein be sentenced to no prison time? — 34.0% Yes",
+      "detail": "Polymarket gives 34.0% odds. Volume: $300,300",
+      "source": "polymarket"
+    },
+    {
+      "id": "fedreg_2026-06537",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "National Environmental Policy Act",
+      "detail": "The U.S. Department of Agriculture (USDA) is adopting the interim final rule (IFR) published on July 3, 2025, with minor changes, as final. The IFR revised departmental regulations implementing the National Environmental Policy Act (NEPA) and removed various USDA agency regulations for implementing ",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2026-06534",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "Airworthiness Directives; DG Aviation GmbH (Type Certificate Previously Held by DG Flugzeugbau GmbH) Gliders",
+      "detail": "The FAA is adopting a new airworthiness directive (AD) for all DG Aviation GmbH (Type Certificate Previously Held by DG Flugzeugbau GmbH) Model DG-1000M gliders. This AD was prompted by reports of engine mount cracking near the propeller head. This AD requires updating the maintenance manual, inspec",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2026-04737",
+      "type": "external_signal",
+      "timestamp": "2026-03-11T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "Visas: Enhancing Vetting and Combatting Fraud in the Diversity Immigrant Visa Program",
+      "detail": "The Department of State (\"Department\") is amending regulations governing the Diversity Immigrant Visa Program (\"DV Program\") to improve the integrity of, and combat fraud in, the program. These amendments require a petitioner to the DV Program to provide valid, unexpired passport information and to ",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2026-04256",
+      "type": "external_signal",
+      "timestamp": "2026-03-04T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "Atlantic Highly Migratory Species; Spatial Fisheries Management; Amendment 15 to the 2006 Consolidated Atlantic Highly Migratory Species Fishery Management Plan",
+      "detail": "This final rule implements Amendment 15 to the 2006 Consolidated Atlantic Highly Migratory Species Fishery Management Plan (HMS FMP) (Amendment 15). This final action modifies the timing of the Mid-Atlantic shark closed area, modifies the boundaries of the Charleston Bump and East Florida Coast clos",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2026-03953",
+      "type": "external_signal",
+      "timestamp": "2026-02-27T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "Regulatory Guidance Relating to the Criteria and Process for Initial Recognition of an Accrediting Agency",
+      "detail": "This interpretive rule sets forth the Department's interpretation of certain regulations at the Criteria for Recognition, and the Recognition Process, governing an accrediting agency's submission of a written application seeking initial recognition. In general, the provisions in this interpretive ru",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2026-03314",
+      "type": "external_signal",
+      "timestamp": "2026-02-19T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "General Provisions",
+      "detail": "The Farm Credit Administration (FCA, we, us or our) is issuing a final rule amending FCA's business planning requirements to comply with Executive Order 14219.",
+      "source": "fed_register"
+    },
+    {
+      "id": "gdelt_5354bcf821bc",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:70:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "炸了 ！ 巨亏885亿 ！ 万科",
+      "detail": "Reported by 163.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_e9e1949dc4c2",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Risk # 4 : Five Guidelines for ESG Disclosures in 2026 : Choose Your Words Carefully | Proskauer - The Capital Commitment",
+      "detail": "Reported by jdsupra.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_ee8f09c25bbe",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Early Edition : April 3 , 2026",
+      "detail": "Reported by justsecurity.org. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_5ffb447590b0",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Weekly Update for Government Contractors and Commercial Businesses – April 2026 | PilieroMazza PLLC",
+      "detail": "Reported by jdsupra.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_7f4c1cc063e2",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Hegseth Ousts Army Chief of Staff in Leadership Shakeup",
+      "detail": "Reported by theamericanconservative.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_3e51c8e02f48",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:63:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": " * ST金灵迎新局 ！ 汪建国当选董事长 ， 核心高管团队获留任",
+      "detail": "Reported by stcn.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_0a6122a9c563",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:63:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Μπράιαν Κοξ : Ντεπ και Νόρτον , ατάλαντοι και υπερεκτιμημένοι",
+      "detail": "Reported by athensvoice.gr. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_9e1899b13a57",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:60:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "我国历史上首次 ， 制造业用钢超过建筑业用钢",
+      "detail": "Reported by baijiahao.baidu.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_3083e1314db7",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:54:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "State Dept . announces  reform to foreign service test and inclusion of  America First  curriculum for orientation",
+      "detail": "Reported by us.cnn.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_265369f1beb5",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:41:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "金地集团2025年营收358 . 58亿元 开启均衡发展新格局",
+      "detail": "Reported by stcn.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_a08b3ddac6f9",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:40:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "现金流改善叠加旅游强国战略 ， 华侨城A的拐点信号来了 - 经济观察网 － 专业财经新闻网站",
+      "detail": "Reported by eeo.com.cn. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_fc0b25be5be4",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:31:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "State Dept . announces  reform to foreign service test and inclusion of  America First  curriculum for orientation | Politics",
+      "detail": "Reported by kten.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_093ec18d102c",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:21:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "万科投资恒大地产血本无归",
+      "detail": "Reported by 163.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_c8549f9d477b",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:20:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Pope Leo appoints 5 U . S . Catholics to Vatican groups",
+      "detail": "Reported by aleteia.org. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_ac5caaba4455",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:20:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "世昌股份 （ 920022 ） 披露2025年年度报告业绩说明会情况 ， 4月3日股价下跌2 . 82 %_ 股市要闻 _ 市场 _ 中金在线",
+      "detail": "Reported by sc.stock.cnfol.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_cba1bbddb340",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:13:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "微专业为何受大学生青睐",
+      "detail": "Reported by news.cau.edu.cn. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_a53f0f2dc2e6",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:13:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Trump accused of running  misogynistic administration  after Bondi dismissal | Trump administration",
+      "detail": "Reported by theguardian.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_31d0a9d6582a",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:10:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "北京银行与中国节能携手 共同推动绿色低碳高质量发展 _ 产业经济 _ 财经 _ 中金在线",
+      "detail": "Reported by news.cnfol.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_abe6ab8f9188",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:10:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "When it comes to DEI , colorblindness wont enforce itself",
+      "detail": "Reported by newsitem.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_501683e39ba4",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:10:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "科技大佬的  AI基建  分歧 ： 卖石油 ， 还是铺水电 - DoNews专栏",
+      "detail": "Reported by donews.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "poly_540844",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:20:17.114153+00:00",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Will bitcoin hit $1m before GTA VI? — 48.9% Yes",
+      "detail": "Polymarket gives 48.9% odds. Volume: $3,848,533",
+      "source": "polymarket"
+    },
+    {
+      "id": "poly_540843",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:20:17.114144+00:00",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Will China invades Taiwan before GTA VI? — 52.0% Yes",
+      "detail": "Polymarket gives 52.0% odds. Volume: $1,524,917",
+      "source": "polymarket"
+    },
+    {
+      "id": "poly_540820",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:20:17.114135+00:00",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Trump out as President before GTA VI? — 53.0% Yes",
+      "detail": "Polymarket gives 53.0% odds. Volume: $572,401",
+      "source": "polymarket"
+    },
+    {
+      "id": "poly_540819",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:20:17.114126+00:00",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Will Jesus Christ return before GTA VI? — 49.0% Yes",
+      "detail": "Polymarket gives 49.0% odds. Volume: $10,396,796",
+      "source": "polymarket"
+    },
+    {
+      "id": "poly_540818",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:20:17.114115+00:00",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "New Playboi Carti Album before GTA VI? — 62.0% Yes",
+      "detail": "Polymarket gives 62.0% odds. Volume: $713,860",
+      "source": "polymarket"
+    },
+    {
+      "id": "poly_540817",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:20:17.114104+00:00",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "New Rihanna Album before GTA VI? — 60.0% Yes",
+      "detail": "Polymarket gives 60.0% odds. Volume: $679,525",
+      "source": "polymarket"
+    },
+    {
+      "id": "poly_540816",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:20:17.114066+00:00",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Russia-Ukraine Ceasefire before GTA VI? — 54.0% Yes",
+      "detail": "Polymarket gives 54.0% odds. Volume: $1,412,740",
+      "source": "polymarket"
+    },
+    {
+      "id": "fedreg_2026-06541",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T00:00:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Notice of Public Meetings of the Montana Advisory Committee to the U.S. Commission on Civil Rights",
+      "detail": "Notice is hereby given, pursuant to the provisions of the rules and regulations of the U.S. Commission on Civil Rights (Commission) and the Federal Advisory Committee Act, that the Montana Advisory Committee (Committee) to the U.S. Commission on Civil Rights will hold public business meetings on Apr",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2026-05960",
+      "type": "external_signal",
+      "timestamp": "2026-03-27T00:00:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Regulatory Capital Rules: Regulatory Capital and Standardized Approach for Risk-Weighted Assets",
+      "detail": "The Office of the Comptroller of the Currency, the Board of Governors of the Federal Reserve System, and the Federal Deposit Insurance Corporation are proposing to modify certain aspects of the regulatory capital rule (the proposal). The proposal would revise the risk-based capital treatment of cert",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2026-05959",
+      "type": "external_signal",
+      "timestamp": "2026-03-27T00:00:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Regulatory Capital Rule: Category I and II Banking Organizations, Banking Organizations With Significant Trading Activity, and Optional Adoption for Other Banking Organizations",
+      "detail": "The Office of the Comptroller of the Currency, the Board of Governors of the Federal Reserve System, and the Federal Deposit Insurance Corporation are proposing to modernize the capital requirements applicable to Category I and II depository institution holding companies and depository institutions,",
+      "source": "fed_register"
+    }
+  ],
+  "total_count": 77
+}

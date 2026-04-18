@@ -32,13 +32,9 @@ __pycache__/
 # Environment
 .env
 
-# Regenerated data outputs — these are rebuilt by pipeline scripts
-# and create thousands of dirty files in git status, eating Claude's context window.
-# The source-of-truth is the pipeline code, not these outputs.
-data/metrics/
-data/discourse/
-data/geo/
-data/signals/
+# Regenerated data outputs — now committed for Vercel deployment.
+# Previously gitignored to avoid context window bloat, but Vercel needs these files.
+# Update: all metric/geo/discourse/signals data now tracked in git.
 
 # Synthetic data backup — preserved for reference/demo mode
 data_synthetic/

@@ -1,0 +1,222 @@
+{
+  "claim": {
+    "text": "Home sales in California increased in February due to improved mortgage rates.",
+    "subject": "California housing market",
+    "assertion": "is improving",
+    "framing": "market conditions",
+    "stance": "neutral",
+    "confidence": 0.9,
+    "arousal": "low",
+    "register": "journalistic",
+    "id": "housing-crisis_x_4c91aeb3_0",
+    "cluster_id": "clu_housing-crisis_010",
+    "concept_id": "concept_housing-crisis_010",
+    "first_seen_platform": "x",
+    "first_seen_timestamp": "2026-04-03T17:09:19.000Z",
+    "source_document_id": "x_2040114434840928275",
+    "source_platform": "x",
+    "source_timestamp": "2026-04-03T17:09:19.000Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.435,
+    "confidence_interval": [
+      0.335,
+      0.535
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.435
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0,
+    "friction_quadrant": "dead"
+  },
+  "salience": {
+    "value": 0.2773,
+    "confidence_interval": [
+      0.1481,
+      0.4065
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.2773
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0,
+    "confidence_interval": [
+      0,
+      0.15
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.15,
+    "confidence_interval": [
+      0.0112,
+      0.2888
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.15
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 0.8,
+    "confidence_interval": [
+      0.71,
+      0.89
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.8
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "YouTube (Influencer Framing)",
+    "first_timestamp": "2026-04-03T17:09:19.000Z",
+    "lead_lag": [
+      {
+        "platform": "X Platform",
+        "lag_hours": 7057.8
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_housing-crisis_010",
+    "hops": [
+      {
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2025-06-13T14:25:07+00:00",
+        "claim_id": "housing-crisis_x_4c91aeb3_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-03T16:11:58+00:00",
+        "claim_id": "housing-crisis_x_4c91aeb3_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "housing-crisis_x_e778adb8_0",
+      "similarity": 1.0,
+      "text": "Home sales in California increased in February due to improved mortgage rates."
+    },
+    {
+      "claim_id": "housing-crisis_x_ef04d751_0",
+      "similarity": 1.0,
+      "text": "California home sales increased in February due to improved mortgage rates."
+    },
+    {
+      "claim_id": "housing-crisis_x_e9cb57f0_0",
+      "similarity": 0.8618,
+      "text": "California home sales increased in February due to lower mortgage rates."
+    },
+    {
+      "claim_id": "housing-crisis_youtube_25d39715_0",
+      "similarity": 0.7639,
+      "text": "California housing is overpriced."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "California home sales increased in February due to lower mortgage rates.",
+      "platform": "X Platform",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Home sales in California increased in February due to improved mortgage rates.",
+      "platform": "X Platform",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "California home sales increased in February due to improved mortgage rates.",
+      "platform": "X Platform",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

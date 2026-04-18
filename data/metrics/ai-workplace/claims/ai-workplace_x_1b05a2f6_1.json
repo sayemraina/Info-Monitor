@@ -1,0 +1,206 @@
+{
+  "claim": {
+    "text": "Many trade workers will retire by 2031.",
+    "subject": "trade workers",
+    "assertion": "will retire in large numbers",
+    "framing": "labor shortage",
+    "stance": "neutral",
+    "confidence": 0.9,
+    "arousal": "low",
+    "register": "vernacular",
+    "id": "ai-workplace_x_1b05a2f6_1",
+    "cluster_id": "clu_ai-workplace_009",
+    "concept_id": "concept_ai-workplace_005",
+    "first_seen_platform": "x",
+    "first_seen_timestamp": "2026-04-16T16:18:14.000Z",
+    "source_document_id": "x_2044812623234134061",
+    "source_platform": "x",
+    "source_timestamp": "2026-04-16T16:18:14.000Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.435,
+    "confidence_interval": [
+      0.335,
+      0.535
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.435
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0.3333,
+    "friction_quadrant": "dead"
+  },
+  "salience": {
+    "value": 0.3061,
+    "confidence_interval": [
+      0.1791,
+      0.4331
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3061
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.3333,
+    "confidence_interval": [
+      0.2083,
+      0.4583
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3333
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.15,
+    "confidence_interval": [
+      0.0112,
+      0.2888
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.15
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-04-16T16:18:14.000Z",
+    "lead_lag": [
+      {
+        "platform": "X Platform",
+        "lag_hours": 0.8
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_ai-workplace_005",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-16T11:07:12.098000+00:00",
+        "claim_id": "ai-workplace_x_1b05a2f6_1",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-16T11:55:05+00:00",
+        "claim_id": "ai-workplace_x_1b05a2f6_1",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "ai-workplace_x_4fc7333f_1",
+      "similarity": 0.3971,
+      "text": "Religious politics may cause IT companies to leave India."
+    },
+    {
+      "claim_id": "ai-workplace_bluesky_67197871_1",
+      "similarity": 0.1649,
+      "text": "Billionaires are influencing policy to favor the development and deployment of AI."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Billionaires are influencing policy to favor the development and deployment of AI.",
+      "platform": "Bluesky",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Religious politics may cause IT companies to leave India.",
+      "platform": "X Platform",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    }
+  ]
+}

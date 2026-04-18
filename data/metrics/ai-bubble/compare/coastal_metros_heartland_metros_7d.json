@@ -1,0 +1,149 @@
+{
+  "slice_a": {
+    "id": "coastal_metros",
+    "type": "geography",
+    "label": "Coastal Metros",
+    "active_volume": 1795,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.55,
+    "is_influencer_framing": false
+  },
+  "slice_b": {
+    "id": "heartland_metros",
+    "type": "geography",
+    "label": "Heartland",
+    "active_volume": 3859,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.52,
+    "is_influencer_framing": false
+  },
+  "divergence": {
+    "jsd": 0.0378,
+    "jsd_sqrt": 0.1944,
+    "trend": [
+      0.215,
+      0.1461,
+      0.2154,
+      0.2087,
+      0.225,
+      0.1892,
+      0.2164,
+      0.2095
+    ],
+    "typology": {
+      "information_asymmetry": 0.53,
+      "interpretive": 0.38,
+      "paradigmatic": 0.09,
+      "dominant_mode": "Information Asymmetry",
+      "paradigmatic_caveat": false
+    }
+  },
+  "per_cluster": [
+    {
+      "cluster_id": "clu_1dc7188c8291",
+      "label": "Real Revenue",
+      "salience_a": 0.7506,
+      "salience_b": 0.608,
+      "arousal_a": 0.31,
+      "arousal_b": 0.38,
+      "mutation_a": "stable",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_9c6f3d37f235",
+      "label": "Bubble Warnings",
+      "salience_a": 0.5192,
+      "salience_b": 0.9075,
+      "arousal_a": 0.13,
+      "arousal_b": 0.41,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_452c0c94e648",
+      "label": "DeepSeek Disruption",
+      "salience_a": 0.2596,
+      "salience_b": 0.0619,
+      "arousal_a": 0.62,
+      "arousal_b": 0.67,
+      "mutation_a": "radicalizing",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_e7c2f993f70e",
+      "label": "Concentration Risk",
+      "salience_a": 0.8697,
+      "salience_b": 0.5592,
+      "arousal_a": 0.2,
+      "arousal_b": 0.84,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_a4367e6c53e4",
+      "label": "Infrastructure Spending",
+      "salience_a": 0.3899,
+      "salience_b": 0.3123,
+      "arousal_a": 0.74,
+      "arousal_b": 0.24,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_81b923dc9e46",
+      "label": "Adoption Reality",
+      "salience_a": 0.6493,
+      "salience_b": 0.22,
+      "arousal_a": 0.69,
+      "arousal_b": 0.41,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    }
+  ],
+  "arousal_comparison": {
+    "slice_a_avg": 0.43,
+    "slice_b_avg": 0.67
+  },
+  "exposure_comparison": {
+    "slice_a": {
+      "value": 0.3547,
+      "confidence_interval": [
+        0.3047,
+        0.4047
+      ],
+      "baseline": "global",
+      "time_window": "7d",
+      "sparkline": [
+        0.215,
+        0.1461,
+        0.2154,
+        0.2087,
+        0.225,
+        0.1892,
+        0.2164,
+        0.2095
+      ],
+      "source_distribution": "production"
+    },
+    "slice_b": {
+      "value": 0.5063,
+      "confidence_interval": [
+        0.4563,
+        0.5563
+      ],
+      "baseline": "global",
+      "time_window": "7d",
+      "sparkline": [
+        0.215,
+        0.1461,
+        0.2154,
+        0.2087,
+        0.225,
+        0.1892,
+        0.2164,
+        0.2095
+      ],
+      "source_distribution": "production"
+    }
+  }
+}

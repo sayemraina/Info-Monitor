@@ -1,0 +1,199 @@
+{
+  "slice_a": {
+    "id": "youtube_influencer",
+    "type": "platform",
+    "label": "YouTube (Influencer Framing)",
+    "active_volume": 47,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.1734,
+    "is_influencer_framing": true
+  },
+  "slice_b": {
+    "id": "population_all",
+    "type": "source_type",
+    "label": "Population Discourse",
+    "active_volume": 158,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.583,
+    "is_influencer_framing": false
+  },
+  "divergence": {
+    "jsd": 0.1593,
+    "jsd_sqrt": 0.3992,
+    "trend": [
+      0.2527,
+      0.2484,
+      0.2793,
+      0.2747,
+      0.2915,
+      0.3027,
+      0.3554,
+      0.3992
+    ],
+    "typology": {
+      "information_asymmetry": 0.3052,
+      "interpretive": 0.3896,
+      "paradigmatic": 0.3052,
+      "dominant_mode": "Interpretive",
+      "paradigmatic_caveat": false
+    }
+  },
+  "per_cluster": [
+    {
+      "cluster_id": "clu_dei-rollbacks_000",
+      "label": "Conservatives: excessively",
+      "salience_a": 0.2553,
+      "salience_b": 0.2595,
+      "arousal_a": 0.3833,
+      "arousal_b": 0.4402,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_001",
+      "label": "Mining in Sijimali hills",
+      "salience_a": 0.0213,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_002",
+      "label": "DEI: be blamed for problems",
+      "salience_a": 0.2128,
+      "salience_b": 0.2215,
+      "arousal_a": 0.465,
+      "arousal_b": 0.44,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_003",
+      "label": "Pete Buttigieg: be charged",
+      "salience_a": 0.0,
+      "salience_b": 0.0696,
+      "arousal_a": 0,
+      "arousal_b": 0.7227,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_004",
+      "label": "DEI rollbacks: offer advanta",
+      "salience_a": 0.0,
+      "salience_b": 0.0633,
+      "arousal_a": 0,
+      "arousal_b": 0.465,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_005",
+      "label": "DEI rollbacks in the",
+      "salience_a": 0.0,
+      "salience_b": 0.0506,
+      "arousal_a": 0,
+      "arousal_b": 0.4563,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_006",
+      "label": "armed forces: purged of",
+      "salience_a": 0.0638,
+      "salience_b": 0.0506,
+      "arousal_a": 0.3833,
+      "arousal_b": 0.4125,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_007",
+      "label": "NASA's Artemis mission",
+      "salience_a": 0.0638,
+      "salience_b": 0.0506,
+      "arousal_a": 0.5,
+      "arousal_b": 0.4125,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_008",
+      "label": "DEI rollbacks: targeting",
+      "salience_a": 0.0851,
+      "salience_b": 0.0063,
+      "arousal_a": 0.85,
+      "arousal_b": 0.85,
+      "mutation_a": "fragmenting",
+      "mutation_b": "fragmenting"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_009",
+      "label": "DEI rollbacks: based on",
+      "salience_a": 0.0426,
+      "salience_b": 0.1013,
+      "arousal_a": 0.5,
+      "arousal_b": 0.4562,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_010",
+      "label": "DEI rollbacks: motivated",
+      "salience_a": 0.0638,
+      "salience_b": 0.0823,
+      "arousal_a": 0.5,
+      "arousal_b": 0.5,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    }
+  ],
+  "arousal_comparison": {
+    "slice_a_avg": 0.4628,
+    "slice_b_avg": 0.4734
+  },
+  "exposure_comparison": {
+    "slice_a": {
+      "value": 0.3178,
+      "confidence_interval": [
+        0.1916,
+        0.444
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [
+        0.0675,
+        0.0938,
+        0.1019,
+        0.1743,
+        0.1973,
+        0.2133,
+        0.2364,
+        0.3178
+      ],
+      "source_distribution": "production"
+    },
+    "slice_b": {
+      "value": 0.3138,
+      "confidence_interval": [
+        0.1873,
+        0.4403
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [
+        0.1468,
+        0.1845,
+        0.2327,
+        0.2391,
+        0.2769,
+        0.2889,
+        0.3133,
+        0.3138
+      ],
+      "source_distribution": "production"
+    }
+  }
+}

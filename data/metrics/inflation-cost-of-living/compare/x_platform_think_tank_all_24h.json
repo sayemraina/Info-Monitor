@@ -1,0 +1,178 @@
+{
+  "slice_a": {
+    "id": "x_platform",
+    "type": "platform",
+    "label": "X Platform",
+    "active_volume": 122,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.2664,
+    "is_influencer_framing": false
+  },
+  "slice_b": {
+    "id": "think_tank_all",
+    "type": "source_type",
+    "label": "Think Tanks",
+    "active_volume": 7,
+    "meets_minimum_threshold": false,
+    "base_rate_weight": 0.0153,
+    "is_influencer_framing": false
+  },
+  "divergence": {
+    "jsd": 0.9066,
+    "jsd_sqrt": 0.9522,
+    "trend": [
+      0.9522
+    ],
+    "typology": {
+      "information_asymmetry": 0.3582,
+      "interpretive": 0.2837,
+      "paradigmatic": 0.3582,
+      "dominant_mode": "Information Asymmetry",
+      "paradigmatic_caveat": false
+    }
+  },
+  "per_cluster": [
+    {
+      "cluster_id": "clu_inflation-cost-of-living_000",
+      "label": "Hezbollah",
+      "salience_a": 0.0082,
+      "salience_b": 0.4286,
+      "arousal_a": 0.5,
+      "arousal_b": 0.5,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_inflation-cost-of-living_001",
+      "label": "Donald Trump",
+      "salience_a": 0.0164,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_inflation-cost-of-living_002",
+      "label": "Grocery Prices",
+      "salience_a": 0.0082,
+      "salience_b": 0.0,
+      "arousal_a": 0.85,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_inflation-cost-of-living_003",
+      "label": "Fuel Prices",
+      "salience_a": 0.1557,
+      "salience_b": 0.0,
+      "arousal_a": 0.3711,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_inflation-cost-of-living_004",
+      "label": "Progressive Tax Systems",
+      "salience_a": 0.041,
+      "salience_b": 0.0,
+      "arousal_a": 0.64,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_inflation-cost-of-living_005",
+      "label": "European Central Bank",
+      "salience_a": 0.0246,
+      "salience_b": 0.0,
+      "arousal_a": 0.2667,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_inflation-cost-of-living_006",
+      "label": "US Economy",
+      "salience_a": 0.0246,
+      "salience_b": 0.0,
+      "arousal_a": 0.7333,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_inflation-cost-of-living_007",
+      "label": "Pay Raise",
+      "salience_a": 0.377,
+      "salience_b": 0.0,
+      "arousal_a": 0.4543,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_inflation-cost-of-living_008",
+      "label": "Politicians",
+      "salience_a": 0.123,
+      "salience_b": 0.0,
+      "arousal_a": 0.5467,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_inflation-cost-of-living_009",
+      "label": "Government Spending",
+      "salience_a": 0.0164,
+      "salience_b": 0.2857,
+      "arousal_a": 0.325,
+      "arousal_b": 0.5,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_inflation-cost-of-living_010",
+      "label": "Keir Starmer",
+      "salience_a": 0.041,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    }
+  ],
+  "arousal_comparison": {
+    "slice_a_avg": 0.477,
+    "slice_b_avg": 0.4
+  },
+  "exposure_comparison": {
+    "slice_a": {
+      "value": 0.4734,
+      "confidence_interval": [
+        0.3589,
+        0.5879
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [
+        0.4734
+      ],
+      "source_distribution": "production"
+    },
+    "slice_b": {
+      "value": 0.0266,
+      "confidence_interval": [
+        0,
+        0.1746
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [
+        0.0266
+      ],
+      "source_distribution": "production"
+    }
+  }
+}

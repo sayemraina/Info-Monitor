@@ -1,0 +1,222 @@
+{
+  "claim": {
+    "text": "Academic freedom is under threat in universities due to political interference and funding pressures.",
+    "subject": "academic freedom",
+    "assertion": "is eroding",
+    "framing": "political interference",
+    "stance": "anti",
+    "confidence": 0.9,
+    "arousal": "medium",
+    "register": "academic",
+    "id": "inflation-cost-of-living_salon_bea1485d_0",
+    "cluster_id": "clu_inflation-cost-of-living_002",
+    "concept_id": "concept_inflation-cost-of-living_002",
+    "first_seen_platform": "salon",
+    "first_seen_timestamp": "2026-04-02T13:00:29Z",
+    "source_document_id": "da2753106a261789",
+    "source_platform": "salon",
+    "source_timestamp": "2026-04-02T13:00:29Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "elite_media"
+  },
+  "momentum": {
+    "value": 0.54,
+    "confidence_interval": [
+      0.44,
+      0.64
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.54
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0.6,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.2718,
+    "confidence_interval": [
+      0.1422,
+      0.4014
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.2718
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.6,
+    "confidence_interval": [
+      0.495,
+      0.705
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.6
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Salon",
+    "first_timestamp": "2026-04-02T13:00:29Z",
+    "lead_lag": [
+      {
+        "platform": "Newser",
+        "lag_hours": 27.6
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_inflation-cost-of-living_002",
+    "hops": [
+      {
+        "platform": "Salon",
+        "timestamp": "2026-04-02T13:00:29+00:00",
+        "claim_id": "inflation-cost-of-living_salon_bea1485d_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Newser",
+        "timestamp": "2026-04-03T16:37:14+00:00",
+        "claim_id": "inflation-cost-of-living_salon_bea1485d_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "inflation-cost-of-living_salon_bea1485d_1",
+      "similarity": 0.7559,
+      "text": "Universities are making changes that undermine academic freedom to maintain funding."
+    },
+    {
+      "claim_id": "inflation-cost-of-living_salon_bea1485d_2",
+      "similarity": 0.5805,
+      "text": "Students are increasingly afraid to pursue research on controversial topics due to potential career repercussions."
+    },
+    {
+      "claim_id": "inflation-cost-of-living_newser_29798520_0",
+      "similarity": 0.3937,
+      "text": "Harvard University is considering a proposal to limit the number of 'A' grades awarded in each course."
+    },
+    {
+      "claim_id": "inflation-cost-of-living_newser_29798520_1",
+      "similarity": 0.3455,
+      "text": "Harvard University is considering a new internal ranking system based on raw scores instead of GPA."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Harvard University is considering a proposal to limit the number of 'A' grades awarded in each course.",
+      "platform": "Newser",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Harvard University is considering a new internal ranking system based on raw scores instead of GPA.",
+      "platform": "Newser",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Universities are making changes that undermine academic freedom to maintain funding.",
+      "platform": "Salon",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    }
+  ]
+}

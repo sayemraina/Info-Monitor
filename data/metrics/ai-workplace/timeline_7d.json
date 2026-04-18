@@ -1,0 +1,602 @@
+{
+  "events": [
+    {
+      "id": "evt_0df9724db56e",
+      "type": "phase_transition",
+      "timestamp": "2026-04-13T18:06:24.736484+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.8,
+      "summary": "Mutation trajectory: radicalizing in \"Oracle\"",
+      "detail": {
+        "cluster_id": "clu_ai-workplace_001",
+        "direction": "radicalizing",
+        "magnitude": 0.6551
+      }
+    },
+    {
+      "id": "evt_087191331981",
+      "type": "phase_transition",
+      "timestamp": "2026-04-13T18:06:24.736484+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.8,
+      "summary": "Mutation trajectory: radicalizing in \"AI Adoption in the Workplace\"",
+      "detail": {
+        "cluster_id": "clu_ai-workplace_002",
+        "direction": "radicalizing",
+        "magnitude": 0.6681
+      }
+    },
+    {
+      "id": "evt_d38fe9fdd18d",
+      "type": "phase_transition",
+      "timestamp": "2026-04-13T18:06:24.736484+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.83,
+      "summary": "Mutation trajectory: radicalizing in \"India's Foreign Policy\"",
+      "detail": {
+        "cluster_id": "clu_ai-workplace_009",
+        "direction": "radicalizing",
+        "magnitude": 0.7787
+      }
+    },
+    {
+      "id": "evt_ef8b950e0aea",
+      "type": "phase_transition",
+      "timestamp": "2026-04-13T18:06:24.736484+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.79,
+      "summary": "Mutation trajectory: radicalizing in \"Employers\"",
+      "detail": {
+        "cluster_id": "clu_ai-workplace_010",
+        "direction": "radicalizing",
+        "magnitude": 0.6283
+      }
+    },
+    {
+      "id": "evt_6ccd1da9cd10",
+      "type": "divergence_shift",
+      "timestamp": "2026-04-13T18:06:24.736484+00:00",
+      "claim_id": null,
+      "slice_id": "bluesky_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Narrative divergence between Bluesky and digit (JSD=0.929)",
+      "detail": {
+        "jsd": 0.9294,
+        "platforms": [
+          "bluesky",
+          "digit"
+        ],
+        "window_hours": 168
+      }
+    },
+    {
+      "id": "evt_631960d968c4",
+      "type": "divergence_shift",
+      "timestamp": "2026-04-13T18:06:24.736484+00:00",
+      "claim_id": null,
+      "slice_id": "digit_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Narrative divergence between digit and X Platform (JSD=0.882)",
+      "detail": {
+        "jsd": 0.8824,
+        "platforms": [
+          "digit",
+          "x"
+        ],
+        "window_hours": 168
+      }
+    },
+    {
+      "id": "poly_544093",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:10:34.614121+00:00",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Will Harvey Weinstein be sentenced to less than 5 years in prison? — 14.6% Yes",
+      "detail": "Polymarket gives 14.6% odds. Volume: $54,616",
+      "source": "polymarket"
+    },
+    {
+      "id": "poly_540881",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:10:34.614110+00:00",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "GTA VI released before June 2026? — 1.5% Yes",
+      "detail": "Polymarket gives 1.5% odds. Volume: $13,090,290",
+      "source": "polymarket"
+    },
+    {
+      "id": "evt_110edd683c8c",
+      "type": "contestation_emergence",
+      "timestamp": "2026-04-13T18:06:24.736484+00:00",
+      "claim_id": "ai-workplace_bluesky_9b27e5c7_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.73,
+      "summary": "Active contestation in \"AI and Jobs\" — 4 pro vs 9 anti",
+      "detail": {
+        "cluster_id": "clu_ai-workplace_004",
+        "pro_count": 4,
+        "anti_count": 9,
+        "balance": 0.44
+      }
+    },
+    {
+      "id": "evt_8e205c36e0e2",
+      "type": "contestation_emergence",
+      "timestamp": "2026-04-13T18:06:24.736484+00:00",
+      "claim_id": "ai-workplace_bluesky_be5b2cc1_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.77,
+      "summary": "Active contestation in \"AI and Employment\" — 4 pro vs 7 anti",
+      "detail": {
+        "cluster_id": "clu_ai-workplace_007",
+        "pro_count": 4,
+        "anti_count": 7,
+        "balance": 0.57
+      }
+    },
+    {
+      "id": "evt_cd9e5772e03f",
+      "type": "contestation_emergence",
+      "timestamp": "2026-04-13T18:06:24.736484+00:00",
+      "claim_id": "ai-workplace_bluesky_13afa1f5_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.78,
+      "summary": "Active contestation in \"AI and Big Tech Industries\" — 3 pro vs 5 anti",
+      "detail": {
+        "cluster_id": "clu_ai-workplace_008",
+        "pro_count": 3,
+        "anti_count": 5,
+        "balance": 0.6
+      }
+    },
+    {
+      "id": "evt_db8647b2137a",
+      "type": "contestation_emergence",
+      "timestamp": "2026-04-13T18:06:24.736484+00:00",
+      "claim_id": "ai-workplace_bluesky_41194e69_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.79,
+      "summary": "Active contestation in \"Universal Basic Income\" — 5 pro vs 8 anti",
+      "detail": {
+        "cluster_id": "clu_ai-workplace_014",
+        "pro_count": 5,
+        "anti_count": 8,
+        "balance": 0.62
+      }
+    },
+    {
+      "id": "evt_050b243be16d",
+      "type": "divergence_shift",
+      "timestamp": "2026-04-13T18:06:24.736484+00:00",
+      "claim_id": null,
+      "slice_id": "bluesky_platform",
+      "severity": "medium",
+      "confidence": 0.72,
+      "summary": "Narrative divergence between Bluesky and X Platform (JSD=0.222)",
+      "detail": {
+        "jsd": 0.2218,
+        "platforms": [
+          "bluesky",
+          "x"
+        ],
+        "window_hours": 168
+      }
+    },
+    {
+      "id": "evt_beab4a0865ca",
+      "type": "momentum_spike",
+      "timestamp": "2026-04-14T19:06:24.736484+00:00",
+      "claim_id": "ai-workplace_bluesky_3fe63bf5_1",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.58,
+      "summary": "Momentum surge in \"Oracle\" cluster (1 claims)",
+      "detail": {
+        "cluster_id": "clu_ai-workplace_001",
+        "avg_momentum": 0.645,
+        "member_count": 1
+      }
+    },
+    {
+      "id": "evt_e168bf8ef55e",
+      "type": "lead_lag",
+      "timestamp": "2026-04-15T13:06:24.736484+00:00",
+      "claim_id": "ai-workplace_bluesky_488aeb46_1",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.82,
+      "summary": "Bluesky leads X Platform by ~41h in \"Apple\"",
+      "detail": {
+        "source_platform": "bluesky",
+        "target_platform": "x",
+        "lag_hours": 41.9,
+        "cluster_id": "clu_ai-workplace_006"
+      }
+    },
+    {
+      "id": "evt_9bd63dbee1db",
+      "type": "lead_lag",
+      "timestamp": "2026-04-16T01:06:24.736484+00:00",
+      "claim_id": "ai-workplace_bluesky_9b27e5c7_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.88,
+      "summary": "Bluesky leads X Platform by ~29h in \"AI and Jobs\"",
+      "detail": {
+        "source_platform": "bluesky",
+        "target_platform": "x",
+        "lag_hours": 29.5,
+        "cluster_id": "clu_ai-workplace_004"
+      }
+    },
+    {
+      "id": "poly_544092",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:10:34.614115+00:00",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "Will Harvey Weinstein be sentenced to no prison time? — 34.0% Yes",
+      "detail": "Polymarket gives 34.0% odds. Volume: $300,300",
+      "source": "polymarket"
+    },
+    {
+      "id": "fedreg_2026-06048",
+      "type": "external_signal",
+      "timestamp": "2026-03-30T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "Risk-Informed, Technology-Inclusive Regulatory Framework for Advanced Reactors",
+      "detail": "The U.S. Nuclear Regulatory Commission (NRC) is amending its regulations by adding a risk-informed, performance-based, and technology-inclusive regulatory framework for commercial nuclear plants in response to the Nuclear Energy Innovation and Modernization Act (NEIMA). The current application and l",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2026-05676",
+      "type": "external_signal",
+      "timestamp": "2026-03-24T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "Administrative Simplification; Adoption of Standards for Health Care Claims Attachments Transactions and Electronic Signatures",
+      "detail": "This final rule implements requirements of the Administrative Simplification subtitle of the Health Insurance Portability and Accountability Act of 1996 (HIPAA), and the Patient Protection and Affordable Care Act, as amended by the Health Care and Education Reconciliation Act of 2010, enacted on Mar",
+      "source": "fed_register"
+    },
+    {
+      "id": "fred_UNRATE_2026-03-01",
+      "type": "external_signal",
+      "timestamp": "2026-03-01T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "Unemployment Rate: 4.30 (down 2.3%)",
+      "detail": "Unemployment Rate (UNRATE) at 4.30 as of 2026-03-01. Previous: 4.40 (down 2.3%).",
+      "source": "fred"
+    },
+    {
+      "id": "fedreg_2025-24061",
+      "type": "external_signal",
+      "timestamp": "2025-12-31T00:00:00Z",
+      "severity": "medium",
+      "confidence": 0.95,
+      "summary": "Reproductive Health Services",
+      "detail": "The Department of Veterans Affairs (VA) adopts as final, without changes, a proposed rule to reinstate the exclusions on abortions and abortion counseling from the medical benefits package, which were removed in 2022. Before 2022, these exclusions had been firmly in place since the medical benefits ",
+      "source": "fed_register"
+    },
+    {
+      "id": "evt_c713c5a8cb3b",
+      "type": "lead_lag",
+      "timestamp": "2026-04-16T14:06:24.736484+00:00",
+      "claim_id": "ai-workplace_bluesky_d6c37f83_0",
+      "slice_id": null,
+      "severity": "low",
+      "confidence": 0.9,
+      "summary": "Bluesky leads X Platform by ~16h in \"Ai-Related Layoffs\"",
+      "detail": {
+        "source_platform": "bluesky",
+        "target_platform": "x",
+        "lag_hours": 16.4,
+        "cluster_id": "clu_ai-workplace_000"
+      }
+    },
+    {
+      "id": "evt_94cc87684d14",
+      "type": "lead_lag",
+      "timestamp": "2026-04-16T14:06:24.736484+00:00",
+      "claim_id": "ai-workplace_bluesky_285d62ca_1",
+      "slice_id": null,
+      "severity": "low",
+      "confidence": 0.64,
+      "summary": "Bluesky leads X Platform by ~16h in \"India's Foreign Policy\"",
+      "detail": {
+        "source_platform": "bluesky",
+        "target_platform": "x",
+        "lag_hours": 16.0,
+        "cluster_id": "clu_ai-workplace_009"
+      }
+    },
+    {
+      "id": "gdelt_40941dbd0cba",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "FY2027 Budget Request Slashes Billions in Science Funding",
+      "detail": "Reported by eos.org. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_bdc61f4abddc",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "U . S . employers added a surprisingly strong 178 , 000 jobs last month",
+      "detail": "Reported by nydailynews.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_30b64765b352",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "US employers added a surprisingly strong 178 , 000 jobs last month , rebounding from a weak February",
+      "detail": "Reported by telegraphherald.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_c89ef1ae11fb",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "34 . дан рата на Блиском истоку : Израел гађао мост који повезује Техеран са западним регионима , нападнута америчка база у Јордану",
+      "detail": "Reported by nspm.rs. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_dc784c83dbae",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:63:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "March Jobs Report : Labor Market See - Saws As the Fed Waits For Clarity",
+      "detail": "Reported by forbes.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_cd85bfda2e5f",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:63:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "AI - aligned super PACs are pouring millions into Texas congressional races",
+      "detail": "Reported by hppr.org. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_62f3bebef5e6",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:63:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Estados Unidos suma inesperadamente 178 . 000 puestos de trabajo en marzo",
+      "detail": "Reported by elpais.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_0946441ba206",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:63:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "U . S . economy added 178k jobs in March , rebounding from February slump - National",
+      "detail": "Reported by globalnews.ca. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_18fe353e1d9d",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:54:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Hidden charges : K Narayanan talks to author Sven Beckert about the surprising history of capitalism",
+      "detail": "Reported by hindustantimes.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_a0d5cd2f9598",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:53:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "U . S . employers added a surprisingly strong 178 , 000 jobs last month",
+      "detail": "Reported by lowellsun.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_f747285c7289",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:53:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "US hiring likely improved last month , but Iran war and oil prices could take a toll later in 2026",
+      "detail": "Reported by cbs8.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_6059bf35165c",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:44:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "U . S . employers added a surprisingly strong 178 , 000 jobs last month",
+      "detail": "Reported by capitalgazette.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_22a7213d08af",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:41:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Suomi haluaa intialaisia osaajia – mutta riittkö heille paikka onnellisuustilaston kärjessä ja pitkä tie kansalaisuuteen ? ",
+      "detail": "Reported by kymensanomat.fi. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_19a2123e829d",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:41:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Will AI destroy jobs ? Here are the questions no one is asking",
+      "detail": "Reported by thenewsminute.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_cb7b014b2cc0",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:40:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Eva Longoria : Role model women meant  I always knew Id be successful  ",
+      "detail": "Reported by anglocelt.ie. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_74d6879f77c6",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:31:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "U . S . employers added a surprisingly strong 178 , 000 jobs last month",
+      "detail": "Reported by dailydemocrat.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_842c8031c6e9",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:21:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Penalties stack up as AI spreads through the legal system",
+      "detail": "Reported by wfdd.org. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_47fc00d588b8",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:21:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Penalties stack up as AI spreads through the legal system",
+      "detail": "Reported by kacu.org. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_390c317edc29",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:21:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "AP Business SummaryBrief at 7 : 14 a . m . EDT",
+      "detail": "Reported by mankatofreepress.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_d4d9d5f0d11b",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:20:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Hepsiburada - Kagider iş birliğinde ara dönem sonuçları",
+      "detail": "Reported by ensonhaber.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "price_META_20260403",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:10:50.898544+00:00",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "META: $574.46 (down 0.8%)",
+      "detail": "META closed at $574.46, down 0.8% from previous close of $579.23",
+      "source": "yahoo_finance"
+    },
+    {
+      "id": "price_GOOGL_20260403",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:10:50.657056+00:00",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "GOOGL: $295.77 (down 0.5%)",
+      "detail": "GOOGL closed at $295.77, down 0.5% from previous close of $297.39",
+      "source": "yahoo_finance"
+    },
+    {
+      "id": "price_MSFT_20260403",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:10:50.415149+00:00",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "MSFT: $373.46 (up 1.1%)",
+      "detail": "MSFT closed at $373.46, up 1.1% from previous close of $369.37",
+      "source": "yahoo_finance"
+    },
+    {
+      "id": "price_NVDA_20260403",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:10:50.148023+00:00",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "NVDA: $177.39 (up 0.9%)",
+      "detail": "NVDA closed at $177.39, up 0.9% from previous close of $175.75",
+      "source": "yahoo_finance"
+    },
+    {
+      "id": "poly_540844",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:10:34.614101+00:00",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Will bitcoin hit $1m before GTA VI? — 48.9% Yes",
+      "detail": "Polymarket gives 48.9% odds. Volume: $3,848,533",
+      "source": "polymarket"
+    },
+    {
+      "id": "poly_540843",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:10:34.614096+00:00",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Will China invades Taiwan before GTA VI? — 52.0% Yes",
+      "detail": "Polymarket gives 52.0% odds. Volume: $1,524,917",
+      "source": "polymarket"
+    },
+    {
+      "id": "poly_540820",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:10:34.614091+00:00",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Trump out as President before GTA VI? — 53.0% Yes",
+      "detail": "Polymarket gives 53.0% odds. Volume: $572,401",
+      "source": "polymarket"
+    }
+  ],
+  "total_count": 92
+}
