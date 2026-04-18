@@ -27,15 +27,16 @@ SCRIPTS_DIR = Path(__file__).parent.parent / "scripts"
 _jobs: Dict[str, dict] = {}
 
 PipelineStatus = Literal["pending", "running", "complete", "failed"]
-PipelineStep = Literal["ingest", "youtube", "extract", "embed", "cluster", "metrics", "done"]
+PipelineStep = Literal["ingest", "youtube", "extract", "embed", "cluster", "metrics", "feeds", "done"]
 
 REAL_STEPS: List[Tuple[str, int, List[str]]] = [
-    ("ingest",  15, ["python3", str(SCRIPTS_DIR / "ingest.py"),            "--topic", "{topic_id}"]),
-    ("youtube", 22, ["python3", str(SCRIPTS_DIR / "youtube_discover.py"),  "--topic", "{topic_id}"]),
-    ("extract", 38, ["python3", str(SCRIPTS_DIR / "extract.py"),           "--topic", "{topic_id}"]),
-    ("embed",   58, ["python3", str(SCRIPTS_DIR / "embed.py"),             "--topic", "{topic_id}"]),
-    ("cluster", 78, ["python3", str(SCRIPTS_DIR / "cluster.py"),           "--topic", "{topic_id}"]),
-    ("metrics", 95, ["python3", str(SCRIPTS_DIR / "compute_metrics.py"),   "--topic", "{topic_id}"]),
+    ("ingest",  12, ["python3", str(SCRIPTS_DIR / "ingest_all.py"),          "--topic", "{topic_id}"]),
+    ("youtube", 20, ["python3", str(SCRIPTS_DIR / "youtube_discover.py"),    "--topic", "{topic_id}"]),
+    ("extract", 36, ["python3", str(SCRIPTS_DIR / "extract.py"),             "--topic", "{topic_id}"]),
+    ("embed",   54, ["python3", str(SCRIPTS_DIR / "embed.py"),               "--topic", "{topic_id}"]),
+    ("cluster", 72, ["python3", str(SCRIPTS_DIR / "cluster.py"),             "--topic", "{topic_id}"]),
+    ("metrics", 88, ["python3", str(SCRIPTS_DIR / "compute_metrics.py"),     "--topic", "{topic_id}"]),
+    ("feeds",   98, ["python3", str(SCRIPTS_DIR / "generate_real_feeds.py"), "--topic", "{topic_id}"]),
 ]
 
 SYNTHETIC_STEPS: List[Tuple[str, int, List[str]]] = [
@@ -52,11 +53,17 @@ def _has_api_keys() -> bool:
     env_file = DATA_DIR.parent / ".env"
     if env_file.exists():
         content = env_file.read_text()
-        has_anthropic = "ANTHROPIC_API_KEY=" in content and "ANTHROPIC_API_KEY=\n" not in content
+        has_llm = (
+            ("OPENROUTER_API_KEY=" in content and "OPENROUTER_API_KEY=\n" not in content)
+            or ("ANTHROPIC_API_KEY=" in content and "ANTHROPIC_API_KEY=\n" not in content)
+        )
         has_openai = "OPENAI_API_KEY=" in content and "OPENAI_API_KEY=\n" not in content
-        if has_anthropic and has_openai:
+        if has_llm and has_openai:
             return True
-    return bool(os.getenv("ANTHROPIC_API_KEY") and os.getenv("OPENAI_API_KEY"))
+    return bool(
+        (os.getenv("OPENROUTER_API_KEY") or os.getenv("ANTHROPIC_API_KEY"))
+        and os.getenv("OPENAI_API_KEY")
+    )
 
 
 def create_job(topic_id: str) -> str:
@@ -81,24 +88,33 @@ def _update_job(job_id: str, **kwargs: object) -> None:
         _jobs[job_id].update(kwargs)
 
 
-async def run_pipeline(job_id: str, topic_id: str, use_synthetic: bool = False) -> None:
+async def run_pipeline(job_id: str, topic_id: str, use_synthetic: bool = False, exclude_ingesters: Optional[List[str]] = None) -> None:
     """Run the full pipeline for a topic in the background."""
+    from .timing import track
+
     _update_job(job_id, status="running", progress_pct=2)
 
-    # Decide real vs synthetic path
-    if use_synthetic or not _has_api_keys():
-        await _run_synthetic(job_id, topic_id)
-    else:
-        await _run_real_pipeline(job_id, topic_id)
+    mode = "synthetic" if (use_synthetic or not _has_api_keys()) else "real"
+    with track("pipeline_run", job_id=job_id, topic_id=topic_id, mode=mode) as rec:
+        # Decide real vs synthetic path
+        if mode == "synthetic":
+            await _run_synthetic(job_id, topic_id)
+        else:
+            await _run_real_pipeline(job_id, topic_id, exclude_ingesters=exclude_ingesters)
+        rec["final_status"] = _jobs.get(job_id, {}).get("status", "unknown")
 
 
-OPTIONAL_STEPS = {"youtube"}  # Non-blocking: failure won't halt the pipeline
+OPTIONAL_STEPS = {"youtube", "feeds"}  # Non-blocking: failure won't halt the pipeline
 
-async def _run_real_pipeline(job_id: str, topic_id: str) -> None:
+async def _run_real_pipeline(job_id: str, topic_id: str, exclude_ingesters: Optional[List[str]] = None) -> None:
     for step_name, progress_after, cmd_template in REAL_STEPS:
         _update_job(job_id, step=step_name)
         cmd = [c.replace("{topic_id}", topic_id) for c in cmd_template]
-        success = await _exec(job_id, cmd, topic_id)
+        # Append --exclude flags to the ingest step
+        if step_name == "ingest" and exclude_ingesters:
+            for ing in exclude_ingesters:
+                cmd.extend(["--exclude", ing])
+        success = await _exec(job_id, cmd, topic_id, step_name=step_name)
         if not success:
             if step_name in OPTIONAL_STEPS:
                 logger.warning("Optional step '%s' failed for %s — continuing", step_name, topic_id)
@@ -129,24 +145,28 @@ async def _run_synthetic(job_id: str, topic_id: str) -> None:
     await _finalize(job_id, topic_id)
 
 
-async def _exec(job_id: str, cmd: List[str], topic_id: str) -> bool:
+async def _exec(job_id: str, cmd: List[str], topic_id: str, step_name: str = "unknown") -> bool:
     """Execute a subprocess command. Returns True on success, False on failure."""
     if not cmd:
         return True
 
+    from .timing import track
+
     try:
-        proc = await asyncio.create_subprocess_exec(
-            *cmd,
-            stdout=asyncio.subprocess.PIPE,
-            stderr=asyncio.subprocess.PIPE,
-            cwd=str(DATA_DIR.parent),
-        )
-        _stdout, stderr = await proc.communicate()
-        if proc.returncode != 0:
-            error_msg = stderr.decode("utf-8", errors="replace")[-1000:]  # last 1000 chars
-            _update_job(job_id, status="failed", error=error_msg or f"Step failed with exit code {proc.returncode}")
-            return False
-        return True
+        with track("pipeline_step", job_id=job_id, topic_id=topic_id, step=step_name) as rec:
+            proc = await asyncio.create_subprocess_exec(
+                *cmd,
+                stdout=asyncio.subprocess.PIPE,
+                stderr=asyncio.subprocess.PIPE,
+                cwd=str(DATA_DIR.parent),
+            )
+            _stdout, stderr = await proc.communicate()
+            rec["exit_code"] = proc.returncode
+            if proc.returncode != 0:
+                error_msg = stderr.decode("utf-8", errors="replace")[-1000:]  # last 1000 chars
+                _update_job(job_id, status="failed", error=error_msg or f"Step failed with exit code {proc.returncode}")
+                return False
+            return True
     except Exception as exc:
         _update_job(job_id, status="failed", error=str(exc))
         return False
@@ -266,6 +286,10 @@ async def _run_batch() -> None:
     topics = json.loads(topics_path.read_text())
     topic_ids = [t["id"] for t in topics if isinstance(t, dict) and "id" in t]
 
+    # Read excluded ingesters from env (e.g. SCHEDULER_EXCLUDE_INGESTERS=x,reddit)
+    exclude_raw = os.getenv("SCHEDULER_EXCLUDE_INGESTERS", "")
+    exclude_ingesters = [s.strip() for s in exclude_raw.split(",") if s.strip()] or None
+
     _scheduler_state["running"] = True
     _scheduler_state["last_run"] = datetime.now(timezone.utc).isoformat()
 
@@ -273,7 +297,7 @@ async def _run_batch() -> None:
         job_id = create_job(topic_id)
         logger.info("Scheduler: running pipeline for %s (job %s)", topic_id, job_id)
         try:
-            await run_pipeline(job_id, topic_id)
+            await run_pipeline(job_id, topic_id, exclude_ingesters=exclude_ingesters)
         except Exception:
             logger.exception("Scheduler: pipeline failed for %s", topic_id)
 

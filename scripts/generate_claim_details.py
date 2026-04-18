@@ -11,8 +11,12 @@ import random
 import math
 from pathlib import Path
 
-TOPICS = ["ai-regulation", "climate-policy", "immigration-policy", "israel-palestine"]
-DATA_DIR = Path("data/metrics")
+TOPICS = [
+    "ai-workplace", "war-on-iran", "ozempic-glp1", "immigration",
+    "housing-crisis", "israel-palestine", "crypto-digital-money",
+    "inflation-cost-of-living", "dei-rollbacks", "ai-bubble",
+]
+DATA_DIR = Path(__file__).parent.parent / "data" / "metrics"
 WINDOWS = 8  # sparkline length
 
 def seed_for(claim_id: str) -> int:

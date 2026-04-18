@@ -43,15 +43,15 @@ export const ClaimProvenanceCard: React.FC<ClaimProvenanceCardProps> = ({ detail
         <div className="space-y-1.5">
           {supply_chain.hops.map((hop, i) => (
             <div key={i} className="flex items-center gap-2 text-[10px] bg-[#1A2A3C]/30 p-1.5 rounded">
-              <span className="font-mono text-slate-300 w-16">{hop.platform}</span>
+              <span className="font-mono text-slate-300 w-24 truncate shrink-0" title={hop.platform}>{hop.platform}</span>
               <div className="flex-1 h-1 bg-slate-700 rounded-full overflow-hidden">
                 <div 
                   className="h-full bg-cyan-500" 
-                  style={{ width: `${Math.max(0, hop.fidelity_to_origin * 100)}%` }} 
+                  style={{ width: `${Math.max(0, (hop.fidelity_to_origin ?? 0) * 100)}%` }}
                 />
               </div>
               <span className="text-slate-400 w-12 text-right">
-                {(hop.fidelity_to_origin * 100).toFixed(0)}%
+                {((hop.fidelity_to_origin ?? 0) * 100).toFixed(0)}%
               </span>
             </div>
           ))}
@@ -67,12 +67,12 @@ export const ClaimProvenanceCard: React.FC<ClaimProvenanceCardProps> = ({ detail
         
         {example_content.length > 0 && (
           <div className="mt-6 pt-4 border-t border-[#1E3044]">
-            <h4 className="text-[11px] font-medium uppercase tracking-wide mb-3 text-slate-500">Example Content Flow</h4>
+            <h4 className="text-[11px] font-medium uppercase tracking-wide mb-3 text-slate-500">Source Posts</h4>
             <div className="space-y-3">
               {example_content.slice(0, 3).map((ex, i) => (
                 <div key={i} className="rounded p-3 bg-[#1A2A3C]/50 border border-[#1E3044] relative">
                   <div className="absolute top-0 right-0 p-1">
-                    <span className="text-[9px] font-mono text-slate-500">conf {ex.confidence.toFixed(2)}</span>
+                    <span className="text-[9px] font-mono text-slate-500">conf {(ex.confidence ?? 0).toFixed(2)}</span>
                   </div>
                   <div className="flex items-center gap-2 mb-2">
                     <span className="text-[10px] font-medium uppercase tracking-wide text-cyan-400">

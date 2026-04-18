@@ -8,6 +8,8 @@ interface ClaimTooltipProps {
   claim: Claim
   cluster: Cluster | undefined
   momentum: number
+  friction: number
+  persistence: number
   x: number
   y: number
   onMouseEnter?: () => void
@@ -27,7 +29,7 @@ const AROUSAL_TREND_COLOR: Record<string, string> = {
   stable: '#94A3B8',
 }
 
-export function ClaimTooltip({ claim, cluster, momentum, x, y, onMouseEnter, onMouseLeave, onClick }: ClaimTooltipProps) {
+export function ClaimTooltip({ claim, cluster, momentum, friction, persistence, x, y, onMouseEnter, onMouseLeave, onClick }: ClaimTooltipProps) {
   const isMobile = useIsMobile()
   const momentumColor = getMomentumColor(momentum)
 
@@ -121,7 +123,33 @@ export function ClaimTooltip({ claim, cluster, momentum, x, y, onMouseEnter, onM
           )}
         </div>
 
-        {/* Friction — mutation as proxy */}
+        {/* Friction */}
+        <div>
+          <span style={{ color: '#64748B' }} className="flex items-center gap-1">
+            Friction <InfoButton term="Friction" content={GLOSSARY.Friction} />
+          </span>
+          <div className="font-data font-medium mt-0.5" style={{
+            color: friction >= 0.6 ? '#EF4444' : friction >= 0.3 ? '#F59E0B' : '#94A3B8',
+          }}>
+            {friction.toFixed(2)}
+            {friction >= 0.6 && <span className="text-[9px] ml-1">contested</span>}
+          </div>
+        </div>
+
+        {/* Persistence */}
+        <div>
+          <span style={{ color: '#64748B' }} className="flex items-center gap-1">
+            Persistence <InfoButton term="Persistence" content={GLOSSARY.Persistence} />
+          </span>
+          <div className="font-data font-medium mt-0.5" style={{
+            color: persistence >= 8 ? '#22C55E' : persistence >= 3 ? '#F1F5F9' : '#94A3B8',
+          }}>
+            {persistence}w
+            {persistence >= 8 && <span className="text-[9px] ml-1">entrenched</span>}
+          </div>
+        </div>
+
+        {/* Mutation */}
         <div>
           <span style={{ color: '#64748B' }} className="flex items-center gap-1">
             Mutation <InfoButton term="Mutation Direction" content={GLOSSARY.Mutation} />

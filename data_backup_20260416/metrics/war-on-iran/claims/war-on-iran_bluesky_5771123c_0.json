@@ -1,0 +1,233 @@
+{
+  "claim": {
+    "text": "Russia is actively working to destabilize Europe.",
+    "subject": "Russia",
+    "assertion": "is destabilizing Europe",
+    "framing": "national security",
+    "stance": "pro",
+    "confidence": 0.9,
+    "arousal": "medium",
+    "register": "vernacular",
+    "id": "war-on-iran_bluesky_5771123c_0",
+    "cluster_id": "clu_war-on-iran_032",
+    "concept_id": "concept_war-on-iran_031",
+    "first_seen_platform": "bluesky",
+    "first_seen_timestamp": "2026-04-03T13:50:55.921Z",
+    "source_document_id": "5771123cbaabb2fe",
+    "source_platform": "bluesky",
+    "source_timestamp": "2026-04-03T13:50:55.921Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.54,
+    "confidence_interval": [
+      0.44,
+      0.64
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.54
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.75,
+    "bridge_ratio": 0.75,
+    "persistence_windows": 1,
+    "friction": 0.4,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.2763,
+    "confidence_interval": [
+      0.147,
+      0.4056
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.2763
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.4,
+    "confidence_interval": [
+      0.28,
+      0.52
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.4
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-04-03T13:50:55.921Z",
+    "lead_lag": [
+      {
+        "platform": "X Platform",
+        "lag_hours": 0.5
+      },
+      {
+        "platform": "France24",
+        "lag_hours": 2.2
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_war-on-iran_031",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-03T13:50:55.921000+00:00",
+        "claim_id": "war-on-iran_bluesky_5771123c_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-03T14:23:20+00:00",
+        "claim_id": "war-on-iran_bluesky_5771123c_0",
+        "fidelity_to_origin": 0.8292,
+        "fidelity_to_previous": 0.8292
+      },
+      {
+        "platform": "France24",
+        "timestamp": "2026-04-03T16:03:45+00:00",
+        "claim_id": "war-on-iran_bluesky_5771123c_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3618
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "war-on-iran_france24_16846527_1",
+      "similarity": 0.5113,
+      "text": "Ukraine is attempting to stop Russia from profiting from oil disruptions in the Middle East."
+    },
+    {
+      "claim_id": "war-on-iran_france24_16846527_0",
+      "similarity": 0.5045,
+      "text": "Ukraine is intensifying drone attacks on Russian ports and refineries in the Leningrad region."
+    },
+    {
+      "claim_id": "war-on-iran_x_914f3bb8_1",
+      "similarity": 0.4869,
+      "text": "Some entities are wrongly blaming Ukraine for actions that Russia initiated."
+    },
+    {
+      "claim_id": "war-on-iran_bluesky_ee9d562d_0",
+      "similarity": 0.4368,
+      "text": "Involving Ukraine in a wider conflict is a mistake."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Involving Ukraine in a wider conflict is a mistake.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Ukraine is intensifying drone attacks on Russian ports and refineries in the Leningrad region.",
+      "platform": "France24",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Ukraine is attempting to stop Russia from profiting from oil disruptions in the Middle East.",
+      "platform": "France24",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

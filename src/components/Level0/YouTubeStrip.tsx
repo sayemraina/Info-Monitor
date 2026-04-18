@@ -6,10 +6,9 @@ import type { VideoMetadata } from '../../types'
 import { useIsMobile } from '../../hooks/useIsMobile'
 
 const YOUTUBE_METHODOLOGY = {
-  what: 'Videos ranked by Narrative Framing Score — voices most likely to shape public thinking on this topic.',
-  soWhat: 'Prioritizes audience impact over channel size. Diversified across institutional, commentator, and contrarian tiers.',
-  how: 'Narratives are shaped at 6 points in their lifecycle: origin (who framed it first), amplification (who gave it scale), gatekeeping (who others had to respond to), opposition (who challenged the dominant take), ground truth (first-person witness with outsized engagement), and cross-platform spread (who carried it beyond YouTube). We identify the video filling each role per topic by searching the specific triggering events that drove the narrative cycle.',
-  caveat: 'Currently based on curated selections due to data pipeline constraints — automated discovery coming in a future version.',
+  what: 'Six videos selected to represent the full narrative lifecycle on this topic — not the most popular, but the most structurally significant voices.',
+  soWhat: 'Each slot has a specific job: who framed it first, which institution amplified it, who is the dominant analyst, who is pushing back, who witnessed it firsthand, and what is gaining velocity right now.',
+  how: 'Candidates are sourced via 5 layered searches per topic (event-driven, analysis, counter-narrative, viral, personal witness) then scored on view velocity, reach, framing language, engagement ratio, recency, and debate provocation. Six roles are filled in order: frame setter (earliest editorial coverage after a triggering event), institutional (top major outlet by score), primary commentator (top mid-tier analyst), counter-voice (best result from opposing queries), authentic witness (first-person account), velocity outlier (fastest-growing video in the past 14 days).',
 }
 
 interface YouTubeStripProps {

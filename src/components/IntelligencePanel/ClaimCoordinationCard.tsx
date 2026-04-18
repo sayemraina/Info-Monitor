@@ -13,7 +13,9 @@ interface ClaimCoordinationCardProps {
 
 export const ClaimCoordinationCard: React.FC<ClaimCoordinationCardProps> = ({ detail, landscape }) => {
   const [isExpanded, setIsExpanded] = useState(false);
-  const { coordination, adversarial_pairs, semantic_neighbors } = detail;
+  const coordination = detail.coordination;
+  const adversarial_pairs = detail.adversarial_pairs;
+  const semantic_neighbors = detail.semantic_neighbors ?? [];
 
   const content = (
     <div className="flex flex-col gap-4">
@@ -28,7 +30,10 @@ export const ClaimCoordinationCard: React.FC<ClaimCoordinationCardProps> = ({ de
             { key: 'cross_platform_sync', label: 'Cross Platform Sync', glossaryKey: 'CrossPlatformSync' },
             { key: 'source_diversity_anomaly', label: 'Source Diversity Anomaly', glossaryKey: 'SourceDiversityAnomaly' },
           ] as const).map(({ key, label, glossaryKey }) => {
-            const signal = coordination[key];
+            const signal = coordination?.[key];
+            const score = signal?.score ?? null;
+            const baseline = signal?.organic_baseline ?? null;
+            const severity = signal?.severity ?? null;
             return (
               <div key={key} className="flex items-center justify-between text-[11px] bg-[#1A2A3C]/30 p-1.5 rounded">
                 <span className="text-slate-300 flex items-center gap-0.5">
@@ -36,10 +41,23 @@ export const ClaimCoordinationCard: React.FC<ClaimCoordinationCardProps> = ({ de
                   <InfoButton term={label} content={GLOSSARY[glossaryKey]} />
                 </span>
                 <div className="flex items-center gap-2 font-mono">
-                  <span style={{ color: getSeverityColor(signal.severity) }}>
-                    {signal.score.toFixed(2)}
-                  </span>
-                  <span className="text-slate-500">/ {signal.organic_baseline.toFixed(2)}</span>
+                  {score !== null ? (
+                    <>
+                      <span style={{ color: getSeverityColor(severity ?? 'low') }}>
+                        {score.toFixed(2)}
+                      </span>
+                      <span className="text-slate-500">/ {(baseline ?? 0).toFixed(2)}</span>
+                    </>
+                  ) : (
+                    <span className="text-slate-600 text-[10px] flex items-center gap-0.5">
+                      No data
+                      <InfoButton term={`${label} — No Data`} content={{
+                        what: GLOSSARY[glossaryKey]?.what ?? '',
+                        soWhat: 'Insufficient signal to compute this metric. The claim may be too new, too low-volume, or from a single platform.',
+                        how: GLOSSARY[glossaryKey]?.how ?? '',
+                      }} />
+                    </span>
+                  )}
                 </div>
               </div>
             );
@@ -61,7 +79,7 @@ export const ClaimCoordinationCard: React.FC<ClaimCoordinationCardProps> = ({ de
                   {pair.cluster_id_a === detail.claim.cluster_id ? pair.label_b : pair.label_a}
                 </div>
                 <div className="mt-1 text-[10px] text-slate-500 font-mono">
-                  Corr: {pair.momentum_correlation.toFixed(2)} | Lag: {pair.response_lag.median_hours}h
+                  Corr: {(pair.momentum_correlation ?? 0).toFixed(2)} | Lag: {pair.response_lag?.median_hours ?? '—'}h
                 </div>
               </div>
             ))}
@@ -82,7 +100,7 @@ export const ClaimCoordinationCard: React.FC<ClaimCoordinationCardProps> = ({ de
             <div className="space-y-2">
               {semantic_neighbors.slice(0, 5).map((n, i) => {
                 const neighborClaim = landscape?.claims.find(c => c.id === n.claim_id);
-                const text = neighborClaim?.text || `Claim ${n.claim_id.substring(0, 8)}...`;
+                const text = n.text || neighborClaim?.text || `Claim ${n.claim_id.substring(0, 8)}...`;
                 return (
                   <div key={i} className="flex items-start gap-3 bg-[#1A2A3C]/50 p-2 rounded">
                     <div className="bg-cyan-900/50 text-cyan-400 font-mono text-[10px] px-1.5 py-0.5 rounded border border-cyan-800">

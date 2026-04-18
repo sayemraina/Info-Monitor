@@ -94,6 +94,28 @@ Session-persistent notes, bugs, decisions, and spec compliance tracker.
 
 ---
 
+### Session 7 — Cluster Label Fixes + Dynamic Label Positioning
+**Root cause chain:** UMAP puts same-topic claims close → blobs bunched. Labels tautological ("Artificial Intelligence" on AI topic). `.lstrip("a ")` bug caused tautological detection to fail.
+
+**Fixes applied:**
+1. `.lstrip()` bug → `re.sub(r'^(the |a |an )', ...)` for article stripping
+2. Added `_topic_id_words` (from topic slug) + `_synonym_phrases` ("artificial intelligence"→"ai") for broader detection
+3. `_is_tautological_subject()` now checks: full-subject freq, first-word, any-word match, synonym phrases, possessives
+4. Topic word stripping: front AND back, synonym phrase words included, possessives handled
+5. `_meta_labels` filter rejects stance values ("neutral", "pro") as standalone labels — applied to all paths
+6. Bare assertion-only labels (single word with no subject) now skipped entirely
+7. Dynamic label positioning: `concept-label-g` class + D3 tick SLOW PATH updates label x/y from live node centroids
+8. Regenerated all 10 topics' clusters + metrics
+
+**Files changed:** `scripts/cluster.py`, `src/components/ZoneA/ClaimLandscape.tsx`
+
+**Known remaining label issues (data quality, not logic):**
+- crypto has 3 off-topic HDBSCAN concepts (Birthright Citizenship, Military Interventions, Taylor Sheridan)
+- "Orforglipron (Foundayo)" — garbled extraction
+- "Cirbtc (Aims)" — garbled entity
+
+---
+
 ## Priority Gap List (ranked — do these next)
 
 | # | Priority | Gap | Effort | Location |
@@ -321,6 +343,8 @@ All metric labels use dotted underline + 300ms hover delay pattern (via `useTool
 - 🔷 Watchlist / monitoring / notifications
 - 🔷 Export (snapshot, JSON, PDF)
 - 🔷 Light theme
+- 🔷 Raw Source Feed — Level 0 live sources heartbeat, 7 category cards (see PLAN_RAW_SOURCE_FEED.md)
+- 🔷 AI Guide — contextual reactive AI navigation + dwell detection (see PLAN_AI_GUIDE.md)
 
 ---
 

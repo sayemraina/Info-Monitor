@@ -49,10 +49,20 @@ export const api = {
     fetch(`${BASE}/data/geo/${topicId}.json`),
 
   getYouTubeData: (topicId: string): Promise<Response> =>
-    fetch(`${BASE}/data/youtube/${topicId}.json`),
+    // Try live (real-time pipeline output) first.
+    // Check Content-Type, not just res.ok — Vite's SPA fallback returns HTTP 200
+    // with text/html for missing files, which would fool a plain res.ok check.
+    fetch(`${BASE}/data/youtube/live/${topicId}.json`).then(res =>
+      res.ok && res.headers.get('content-type')?.includes('application/json')
+        ? res
+        : fetch(`${BASE}/data/youtube/${topicId}.json`)
+    ),
 
   getDiscourseData: (topicId: string): Promise<Response> =>
     fetch(`${BASE}/data/discourse/${topicId}.json`),
+
+  getSignals: (topicId: string): Promise<Response> =>
+    fetch(`${BASE}/data/signals/${topicId}.json`),
 
   // Server-mode only endpoints (Live Topic Input)
   postIngest: (body: IngestRequest): Promise<Response> =>

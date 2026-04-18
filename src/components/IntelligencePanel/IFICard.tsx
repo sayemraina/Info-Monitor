@@ -109,7 +109,12 @@ function SweepCanvas({ active }: { active: boolean }) {
         angleRef.current = (angleRef.current + 1.5) % 360
       }
 
-      animRef.current = requestAnimationFrame(draw)
+      // Only continue loop if active or still visibly fading out
+      if (active || alpha > 0.005) {
+        animRef.current = requestAnimationFrame(draw)
+      } else {
+        sweepAlphaRef.current = 0
+      }
     }
 
     animRef.current = requestAnimationFrame(draw)

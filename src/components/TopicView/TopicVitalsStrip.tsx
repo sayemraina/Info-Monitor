@@ -34,7 +34,7 @@ function buildTags(topic: TopicSummary, landscape?: LandscapeData | null): TagDe
   }
 
   // Coordination check: look for coordination flags in situations
-  const hasCoordination = landscape?.topic_metrics.situations.some(
+  const hasCoordination = landscape?.topic_metrics?.situations?.some(
     s => s.metric_basis.includes('coordination') || s.metric_basis.includes('sync')
   )
   if (hasCoordination) {
@@ -42,7 +42,7 @@ function buildTags(topic: TopicSummary, landscape?: LandscapeData | null): TagDe
   }
 
   // Arousal check
-  const hasArousal = landscape?.topic_metrics.situations.some(
+  const hasArousal = landscape?.topic_metrics?.situations?.some(
     s => s.metric_basis.includes('arousal')
   )
   if (hasArousal) {
@@ -50,7 +50,7 @@ function buildTags(topic: TopicSummary, landscape?: LandscapeData | null): TagDe
   }
 
   // Influencer shaping
-  const impact = topic.influencer_impact ?? landscape?.topic_metrics.influencer_impact
+  const impact = topic.influencer_impact ?? landscape?.topic_metrics?.influencer_impact
   if (impact && impact.seeded_cluster_count > 0) {
     tags.push({ label: '▶ SHAPER-DRIVEN', color: '#14B8A6', hint: 'youtube_cta' })
   }

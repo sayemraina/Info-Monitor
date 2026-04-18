@@ -32,4 +32,21 @@ __pycache__/
 # Environment
 .env
 
+# Regenerated data outputs — these are rebuilt by pipeline scripts
+# and create thousands of dirty files in git status, eating Claude's context window.
+# The source-of-truth is the pipeline code, not these outputs.
+data/metrics/
+data/discourse/
+data/geo/
+data/signals/
+
+# Synthetic data backup — preserved for reference/demo mode
+data_synthetic/
+
+# Real-time YouTube discovery output — never commit; static mocks in data/youtube/ are committed separately
+data/youtube/live/
+
+# Pipeline timing logs (JSONL, append-only)
+data/.timings/
+
 # public/data now contains real files (was a symlink before)

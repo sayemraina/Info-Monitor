@@ -43,7 +43,7 @@ export const ClaimBehaviorCard: React.FC<ClaimBehaviorCardProps> = ({ detail }) 
       >
         <span
           className="inline-block w-1.5 h-1.5 rounded-full shrink-0"
-          title={`Source diversity: ${momentum.source_diversity.toFixed(2)}`}
+          title={`Source diversity: ${(momentum.source_diversity ?? 0).toFixed(2)}`}
           style={{ backgroundColor: getSourceDiversityColor(momentum.source_diversity) }}
         />
       </MetricRow>
@@ -54,7 +54,7 @@ export const ClaimBehaviorCard: React.FC<ClaimBehaviorCardProps> = ({ detail }) 
           <span className="text-xs font-medium text-amber-500 flex items-center gap-1">
             Friction <InfoButton term="Friction" content={GLOSSARY.Friction} />
           </span>
-          <span className="font-data text-sm text-white">{friction.value.toFixed(2)}</span>
+          <span className="font-data text-sm text-white">{(friction.value ?? 0).toFixed(2)}</span>
         </div>
         <div className="flex items-center justify-between mt-1">
           <span className="text-[10px] text-slate-400">
@@ -105,19 +105,19 @@ export const ClaimBehaviorCard: React.FC<ClaimBehaviorCardProps> = ({ detail }) 
             </h4>
             <div className="flex h-4 rounded overflow-hidden mt-1 gap-px">
               <div
-                title={`Production: ${detail.exposure.production.value.toFixed(2)}`}
+                title={`Production: ${(detail.exposure?.production?.value ?? 0).toFixed(2)}`}
                 className="bg-blue-500"
-                style={{ flex: Math.max(0.1, detail.exposure.production.value) }}
+                style={{ flex: Math.max(0.1, detail.exposure?.production?.value ?? 0) }}
               />
               <div
-                title={`Amplification: ${detail.exposure.amplification.value.toFixed(2)}`}
+                title={`Amplification: ${(detail.exposure?.amplification?.value ?? 0).toFixed(2)}`}
                 className="bg-purple-500"
-                style={{ flex: Math.max(0.1, detail.exposure.amplification.value) }}
+                style={{ flex: Math.max(0.1, detail.exposure?.amplification?.value ?? 0) }}
               />
               <div
-                title={`Est. Exposure: ${detail.exposure.estimated_exposure.value.toFixed(2)}`}
+                title={`Est. Exposure: ${(detail.exposure?.estimated_exposure?.value ?? 0).toFixed(2)}`}
                 className="bg-cyan-500 opacity-60"
-                style={{ flex: Math.max(0.1, detail.exposure.estimated_exposure.value) }}
+                style={{ flex: Math.max(0.1, detail.exposure?.estimated_exposure?.value ?? 0) }}
               />
             </div>
             <div className="flex justify-between text-[10px] mt-1 text-slate-400">

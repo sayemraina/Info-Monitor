@@ -63,7 +63,6 @@ export function TopicView({
   useEffect(() => {
     if (!entryClusterId || !landscape) return
     const clusterClaims = landscape.claims.filter(c => c.cluster_id === entryClusterId)
-    console.log('[cascade] entryClusterId:', entryClusterId, 'matched:', clusterClaims.length, 'claims. Available clusters:', [...new Set(landscape.claims.map(c => c.cluster_id))])
     if (clusterClaims.length === 0) return
     // Find highest-momentum claim in the cluster
     const topClaim = clusterClaims.reduce((best, claim) => {
@@ -119,19 +118,31 @@ export function TopicView({
     }
   }, [landscape])
 
-  const [activeLensPair, setActiveLensPair] = useState({
-    label: 'X vs Reddit', a: 'x_platform', b: 'reddit_platform',
-  })
+  // Build default lens pair from available data
+  const availableSlices = landscape?.available_slices as Array<{ id: string; type: string; label: string }> | undefined
+  const availablePairs = landscape?.available_pairs as Array<[string, string]> | undefined
+  const defaultPair = availablePairs?.[0]
+  const defaultLensPair = defaultPair
+    ? { label: `${defaultPair[0].replace(/_platform$|_all$/g, '')} vs ${defaultPair[1].replace(/_platform$|_all$/g, '')}`, a: defaultPair[0], b: defaultPair[1] }
+    : { label: 'X vs YouTube', a: 'x_platform', b: 'youtube_influencer' }
 
-  const handleLensChange = (pair: { label: string; a: string; b: string }) => {
+  const [activeLensPair, setActiveLensPair] = useState(defaultLensPair)
+
+  const handleLensChange = useCallback((pair: { label: string; a: string; b: string }) => {
     setActiveLensPair(pair)
     onSetSelectedSlices([pair.a, pair.b])
-  }
+  }, [onSetSelectedSlices])
 
   // Use selected slices from App state, falling back to active lens pair
-  const sliceA = selectedSlices?.[0] ?? activeLensPair.a
-  const sliceB = selectedSlices?.[1] ?? activeLensPair.b
-  const { compare } = useCompare(topicId, sliceA, sliceB, timeWindow)
+  const effectiveSliceA = selectedSlices?.[0] ?? activeLensPair.a
+  const effectiveSliceB = selectedSlices?.[1] ?? activeLensPair.b
+  // Pass null when compare mode is off to avoid unnecessary fetches
+  const { compare } = useCompare(
+    topicId,
+    compareMode ? effectiveSliceA : null,
+    compareMode ? effectiveSliceB : null,
+    timeWindow,
+  )
 
   // Build salience maps keyed by cluster_id for compare mode
   const salienceMapA = useMemo(() => {
@@ -171,7 +182,7 @@ export function TopicView({
             onSelectClaim={onSelectClaim}
             onDeselectClaim={onDeselectClaim}
             compareSalience={salienceMapA}
-            compareLabel={compare?.slice_a.label ?? sliceA}
+            compareLabel={compare?.slice_a.label ?? effectiveSliceA}
           />
         </div>
         <div className="flex-1 h-full">
@@ -181,7 +192,7 @@ export function TopicView({
             onSelectClaim={onSelectClaim}
             onDeselectClaim={onDeselectClaim}
             compareSalience={salienceMapB}
-            compareLabel={compare?.slice_b.label ?? sliceB}
+            compareLabel={compare?.slice_b.label ?? effectiveSliceB}
           />
         </div>
       </div>
@@ -202,7 +213,7 @@ export function TopicView({
 
   return (
     <div ref={containerRef} className={isMobile ? 'flex flex-col relative' : 'h-full flex flex-col relative'} style={isMobile ? { height: '100vh', overflow: 'hidden' } : undefined}>
-      <LensBar activePair={activeLensPair} onSelectPair={handleLensChange} />
+      <LensBar activePair={activeLensPair} onSelectPair={handleLensChange} availableSlices={availableSlices} />
 
       {isMobile ? (
         /* ═══ MOBILE: Single-column vertical scroll ═══ */
@@ -222,7 +233,7 @@ export function TopicView({
             <ZonePanel
               className={cascade.state.zones.landscape ?? ''}
               title={compareMode
-                ? `Comparing ${compare?.slice_a.label ?? sliceA} vs ${compare?.slice_b.label ?? sliceB}`
+                ? `Comparing ${compare?.slice_a.label ?? effectiveSliceA} vs ${compare?.slice_b.label ?? effectiveSliceB}`
                 : 'Claim-Cluster Landscape'}
               titleInfo={!compareMode ? <span style={{ marginLeft: 8, display: 'inline-flex', alignItems: 'center' }}><InfoButton term="Claim-Cluster Landscape" content={GLOSSARY.ClaimLandscape} wrapperClassName="relative inline-flex items-center [&>div]:w-3.5 [&>div]:h-3.5 [&>div]:text-[9px]" /></span> : undefined}
               noPadding
@@ -239,8 +250,8 @@ export function TopicView({
               <DivergenceCard
                 topicId={topicId}
                 timeWindow={timeWindow}
-                sliceA={sliceA}
-                sliceB={sliceB}
+                sliceA={effectiveSliceA}
+                sliceB={effectiveSliceB}
                 compareMode={compareMode}
                 onSetCompareMode={onSetCompareMode}
                 landscape={landscape}
@@ -364,7 +375,7 @@ export function TopicView({
         <ZonePanel
           className={`col-span-2 row-start-2 ${cascade.state.zones.landscape ?? ''}`}
           title={compareMode
-            ? `Comparing ${compare?.slice_a.label ?? sliceA} vs ${compare?.slice_b.label ?? sliceB}`
+            ? `Comparing ${compare?.slice_a.label ?? effectiveSliceA} vs ${compare?.slice_b.label ?? effectiveSliceB}`
             : 'Claim-Cluster Landscape'}
           titleInfo={!compareMode ? <span style={{ marginLeft: 8, display: 'inline-flex', alignItems: 'center' }}><InfoButton term="Claim-Cluster Landscape" content={GLOSSARY.ClaimLandscape} wrapperClassName="relative inline-flex items-center [&>div]:w-3.5 [&>div]:h-3.5 [&>div]:text-[9px]" /></span> : undefined}
           noPadding
@@ -394,8 +405,8 @@ export function TopicView({
           <DivergenceCard
             topicId={topicId}
             timeWindow={timeWindow}
-            sliceA={sliceA}
-            sliceB={sliceB}
+            sliceA={effectiveSliceA}
+            sliceB={effectiveSliceB}
             compareMode={compareMode}
             onSetCompareMode={onSetCompareMode}
             landscape={landscape}

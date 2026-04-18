@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, useRef } from 'react'
+import { useState, useEffect, useCallback, useRef, useMemo } from 'react'
 import type { TopicSummary } from '../types'
 
 const ROTATION_INTERVAL = 18000 // 18 seconds
@@ -20,10 +20,7 @@ export interface TopicSyncActions {
 
 export function useTopicSync(topics: TopicSummary[]): [TopicSyncState, TopicSyncActions] {
   // Preserve original topic order from topics.json — stable chronology
-  const sortedIds = useRef<string[]>([])
-  if (topics.length > 0 && sortedIds.current.length !== topics.length) {
-    sortedIds.current = topics.map(t => t.id)
-  }
+  const sortedIds = useMemo(() => topics.map(t => t.id), [topics])
 
   const [activeTopic, setActiveTopic] = useState<string>('')
   const [isLocked, setIsLocked] = useState(false)
@@ -33,8 +30,8 @@ export function useTopicSync(topics: TopicSummary[]): [TopicSyncState, TopicSync
 
   // Initialize with highest IFI topic
   useEffect(() => {
-    if (sortedIds.current.length > 0 && !activeTopic) {
-      setActiveTopic(sortedIds.current[0])
+    if (sortedIds.length > 0 && !activeTopic) {
+      setActiveTopic(sortedIds[0])
     }
   }, [topics, activeTopic])
 
@@ -51,7 +48,7 @@ export function useTopicSync(topics: TopicSummary[]): [TopicSyncState, TopicSync
     rotationRef.current = setInterval(() => {
       if (isPaused.current) return
       setActiveTopic(prev => {
-        const ids = sortedIds.current
+        const ids = sortedIds
         if (ids.length === 0) return prev
         const idx = ids.indexOf(prev)
         const next = (idx + 1) % ids.length
@@ -103,12 +100,21 @@ export function useTopicSync(topics: TopicSummary[]): [TopicSyncState, TopicSync
     [activeTopic]
   )
 
+  // Pause rotation when tab is hidden (Page Visibility API)
+  useEffect(() => {
+    const handleVisibility = () => {
+      isPaused.current = document.hidden
+    }
+    document.addEventListener('visibilitychange', handleVisibility)
+    return () => document.removeEventListener('visibilitychange', handleVisibility)
+  }, [])
+
   const pauseRotation = useCallback(() => {
     isPaused.current = true
   }, [])
 
   const resumeRotation = useCallback(() => {
-    isPaused.current = false
+    isPaused.current = document.hidden ? true : false
   }, [])
 
   return [

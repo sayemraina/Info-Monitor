@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { useIsMobile } from '../../hooks/useIsMobile'
+import { useSignals } from '../../hooks/useSignals'
 import type { NarrativeEvent } from '../../types'
 
 interface SignalTickerProps {
@@ -7,6 +8,7 @@ interface SignalTickerProps {
 }
 
 const EVENT_ICONS: Record<string, string> = {
+  // NarrativeEvent types
   momentum_spike: '📈',
   divergence_shift: '🔄',
   coordination_flag: '⚠️',
@@ -16,22 +18,57 @@ const EVENT_ICONS: Record<string, string> = {
   phase_transition: '⚡',
   lead_lag: '🔗',
   vocabulary_rotation: '🔤',
+  // EventSignal types
+  news_event: '📰',
+  economic_indicator: '📊',
+  bill_introduced: '🏛️',
+  bill_passed: '✅',
+  price_movement: '💹',
+  regulatory_filing: '📋',
+  prediction_market: '🎯',
+}
+
+interface TickerItem {
+  id: string
+  type: string
+  severity?: 'high' | 'medium' | 'low'
+  summary: string
 }
 
 export function SignalTicker({ activeTopic }: SignalTickerProps) {
   const isMobile = useIsMobile()
   const scrollRef = useRef<HTMLDivElement>(null)
   const animRef = useRef<number>(0)
-  const [events, setEvents] = useState<NarrativeEvent[]>([])
+  const [narrativeItems, setNarrativeItems] = useState<TickerItem[]>([])
+  const { signals } = useSignals(activeTopic)
 
-  // Fetch timeline data for active topic
+  // Fetch timeline (claim-derived) events
   useEffect(() => {
     if (!activeTopic) return
     fetch(`/data/metrics/${activeTopic}/timeline_24h.json`)
       .then(r => r.ok ? r.json() : { events: [] })
-      .then(data => setEvents(data.events ?? []))
-      .catch(() => setEvents([]))
+      .then((data: { events?: NarrativeEvent[] }) => {
+        setNarrativeItems(
+          (data.events ?? []).map(e => ({
+            id: e.id,
+            type: e.type,
+            severity: e.severity,
+            summary: e.summary,
+          }))
+        )
+      })
+      .catch(() => setNarrativeItems([]))
   }, [activeTopic])
+
+  // Merge narrative events + external signals into one list
+  const signalItems: TickerItem[] = signals.map(s => ({
+    id: s.id,
+    type: s.type,
+    severity: s.severity,
+    summary: s.title,
+  }))
+
+  const allItems: TickerItem[] = [...narrativeItems, ...signalItems]
 
   // Continuous scroll R→L
   useEffect(() => {
@@ -50,12 +87,12 @@ export function SignalTicker({ activeTopic }: SignalTickerProps) {
 
     animRef.current = requestAnimationFrame(tick)
     return () => cancelAnimationFrame(animRef.current)
-  }, [events])
+  }, [allItems])
 
-  // Duplicate events for seamless loop
-  const displayEvents = [...events, ...events]
+  // Duplicate for seamless loop
+  const displayItems = [...allItems, ...allItems]
 
-  if (events.length === 0) {
+  if (allItems.length === 0) {
     return (
       <div
         className="flex-shrink-0 flex items-center px-6 font-data"
@@ -91,19 +128,19 @@ export function SignalTicker({ activeTopic }: SignalTickerProps) {
           padding: isMobile ? '0 12px' : '0 24px',
         }}
       >
-        {displayEvents.map((event, i) => {
-          const icon = EVENT_ICONS[event.type] ?? '•'
-          const severityColor = event.severity === 'high' ? '#EF4444'
-            : event.severity === 'medium' ? '#F59E0B'
+        {displayItems.map((item, i) => {
+          const icon = EVENT_ICONS[item.type] ?? '•'
+          const severityColor = item.severity === 'high' ? '#EF4444'
+            : item.severity === 'medium' ? '#F59E0B'
             : '#64748B'
 
           return (
             <span
-              key={`${event.id}-${i}`}
+              key={`${item.id}-${i}`}
               className="font-data flex-shrink-0"
               style={{ fontSize: '8.5px', color: severityColor }}
             >
-              {icon} {event.summary}
+              {icon} {item.summary}
             </span>
           )
         })}

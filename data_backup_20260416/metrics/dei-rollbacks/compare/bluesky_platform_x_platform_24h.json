@@ -1,0 +1,118 @@
+{
+  "slice_a": {
+    "id": "bluesky_platform",
+    "type": "platform",
+    "label": "Bluesky",
+    "active_volume": 158,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.5704,
+    "is_influencer_framing": false
+  },
+  "slice_b": {
+    "id": "x_platform",
+    "type": "platform",
+    "label": "X Platform",
+    "active_volume": 6,
+    "meets_minimum_threshold": false,
+    "base_rate_weight": 0.0217,
+    "is_influencer_framing": false
+  },
+  "divergence": {
+    "jsd": 0.5147,
+    "jsd_sqrt": 0.7174,
+    "trend": [
+      0.7174
+    ],
+    "typology": {
+      "information_asymmetry": 0.4538,
+      "interpretive": 0.0923,
+      "paradigmatic": 0.4538,
+      "dominant_mode": "Information Asymmetry",
+      "paradigmatic_caveat": true
+    }
+  },
+  "per_cluster": [
+    {
+      "cluster_id": "clu_dei-rollbacks_000",
+      "label": "Affirmative Action",
+      "salience_a": 0.2532,
+      "salience_b": 0.0,
+      "arousal_a": 0.4388,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_001",
+      "label": "Pete Hegseth",
+      "salience_a": 0.1772,
+      "salience_b": 0.0,
+      "arousal_a": 0.5625,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_002",
+      "label": "DEI Rollbacks",
+      "salience_a": 0.0633,
+      "salience_b": 0.0,
+      "arousal_a": 0.465,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_003",
+      "label": "ABA Council",
+      "salience_a": 0.2215,
+      "salience_b": 0.0,
+      "arousal_a": 0.44,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_004",
+      "label": "Target",
+      "salience_a": 0.2785,
+      "salience_b": 1.0,
+      "arousal_a": 0.4761,
+      "arousal_b": 0.325,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "mainstreaming"
+    }
+  ],
+  "arousal_comparison": {
+    "slice_a_avg": 0.4734,
+    "slice_b_avg": 0.325
+  },
+  "exposure_comparison": {
+    "slice_a": {
+      "value": 1,
+      "confidence_interval": [
+        0.925,
+        1
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [
+        1
+      ],
+      "source_distribution": "production"
+    },
+    "slice_b": {
+      "value": 0.039,
+      "confidence_interval": [
+        0,
+        0.1861
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [
+        0.039
+      ],
+      "source_distribution": "production"
+    }
+  }
+}

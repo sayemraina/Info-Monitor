@@ -29,6 +29,16 @@ except ImportError:
 BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = BASE_DIR / "data"
 
+# Timing instrumentation — best-effort import; falls back to a no-op.
+sys.path.insert(0, str(BASE_DIR))
+try:
+    from server.timing import track  # type: ignore
+except Exception:
+    from contextlib import contextmanager
+    @contextmanager
+    def track(event: str, **fields):  # type: ignore
+        yield {}
+
 MODEL = "text-embedding-3-small"
 BATCH_SIZE = 100
 
@@ -81,15 +91,20 @@ def embed_topic(topic_id: str) -> None:
     all_embeddings: list[list[float]] = []
     for i in range(0, len(texts), BATCH_SIZE):
         batch = texts[i:i + BATCH_SIZE]
-        try:
-            response = client.embeddings.create(model=MODEL, input=batch)
-            batch_embs = [item.embedding for item in response.data]
-            all_embeddings.extend(batch_embs)
-            print(f"    Embedded batch {i // BATCH_SIZE + 1}/{(len(texts) - 1) // BATCH_SIZE + 1}")
-        except Exception as e:
-            print(f"    Error embedding batch starting at {i}: {e}")
-            # Fill with zeros as fallback
-            all_embeddings.extend([[0.0] * 1536] * len(batch))
+        with track("embed_batch", topic_id=topic_id, model=MODEL, batch_size=len(batch)) as rec:
+            try:
+                response = client.embeddings.create(model=MODEL, input=batch)
+                batch_embs = [item.embedding for item in response.data]
+                all_embeddings.extend(batch_embs)
+                usage = getattr(response, "usage", None)
+                if usage:
+                    rec["tokens_total"] = getattr(usage, "total_tokens", None)
+                print(f"    Embedded batch {i // BATCH_SIZE + 1}/{(len(texts) - 1) // BATCH_SIZE + 1}")
+            except Exception as e:
+                rec["error"] = str(e)[:120]
+                print(f"    Error embedding batch starting at {i}: {e}")
+                # Fill with zeros as fallback
+                all_embeddings.extend([[0.0] * 1536] * len(batch))
 
     # L2-normalize
     for emb in all_embeddings:
@@ -125,7 +140,8 @@ def main() -> None:
     parser.add_argument("--all", action="store_true", help="Embed all topics")
     args = parser.parse_args()
 
-    topics = ["ai-regulation", "immigration-policy", "israel-palestine", "climate-policy"]
+    _tk_path = Path(__file__).parent / "topic_keywords.json"
+    topics = list(json.loads(_tk_path.read_text()).keys()) if _tk_path.exists() else []
 
     if args.all:
         for tid in topics:

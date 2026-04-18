@@ -396,6 +396,8 @@ def generate_2d_positions(
             "y": round(cy + random.gauss(0, 35), 2),
             "momentum": noisy_momentum,
             "salience": salience,
+            "friction": round(random.uniform(0.05, 0.85), 4),
+            "persistence": random.randint(0, 12),
         })
     return positions
 

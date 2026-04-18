@@ -1,10 +1,19 @@
 import { useRef, useEffect, useState, useCallback, useMemo } from 'react'
 import * as d3 from 'd3'
-import type { LandscapeData, Claim, Cluster, ClaimPosition, AdversarialPair } from '../../types'
+import type { LandscapeData, Claim, Cluster, AdversarialPair } from '../../types'
 import { getMomentumColor, getArousalGlowFilter, getMutationColor } from '../../utils/colors'
 import { ClaimTooltip } from './ClaimTooltip'
 import { Legend } from './Legend'
 import { useIsMobile } from '../../hooks/useIsMobile'
+import { useForceSimulation } from '../../hooks/useForceSimulation'
+import type { SimNode } from '../../hooks/useForceSimulation'
+import {
+  computeCentroid,
+  expandHull,
+  CONTOUR_PADS,
+  CONTOUR_OPACITIES,
+  CONTOUR_STROKE_OPACITIES,
+} from '../../utils/landscapeGeometry'
 
 interface ClaimLandscapeProps {
   landscape: LandscapeData
@@ -15,17 +24,6 @@ interface ClaimLandscapeProps {
   compareSalience?: Map<string, number>
   /** Label shown in corner during compare mode */
   compareLabel?: string
-}
-
-interface SimNode extends d3.SimulationNodeDatum {
-  id: string
-  claim: Claim
-  cluster: Cluster | undefined
-  position: ClaimPosition
-  radius: number
-  momentum: number
-  arousalValue: number
-  color: string
 }
 
 // Map arousal level to numeric value
@@ -50,11 +48,11 @@ export function ClaimLandscape({
   const svgRef = useRef<SVGSVGElement>(null)
   const gRef = useRef<SVGGElement>(null)
   const [dimensions, setDimensions] = useState({ width: 800, height: 500 })
-  const [tooltip, setTooltip] = useState<{ claim: Claim; cluster: Cluster | undefined; momentum: number; x: number; y: number } | null>(null)
-  const [clusterTip, setClusterTip] = useState<{ cluster: Cluster; x: number; y: number } | null>(null)
-  const simulationRef = useRef<d3.Simulation<SimNode, undefined> | null>(null)
+  const [tooltip, setTooltip] = useState<{ claim: Claim; cluster: Cluster | undefined; momentum: number; friction: number; persistence: number; x: number; y: number } | null>(null)
   const hoverTimeoutRef = useRef<number | null>(null)
-  const clusterTipTimer = useRef<number | null>(null)
+  // Incremented when D3 simulation settles — forces useMemo recomputation
+  // with D3-mutated node positions so React renders correct hull paths
+  const [simVersion, setSimVersion] = useState(0)
 
   // Observe container size
   useEffect(() => {
@@ -102,6 +100,27 @@ export function ClaimLandscape({
     const yRange = yMax - yMin || 1
     const pad = isMobile ? 20 : 40
 
+    // Aspect-ratio-aware scaling: uniform scale + centering
+    const dataAspect = xRange / yRange
+    const viewW = width - pad * 2
+    const viewH = height - pad * 2
+    const viewAspect = viewW / viewH
+
+    let effectiveW: number, effectiveH: number, offsetX: number, offsetY: number
+    if (viewAspect > dataAspect) {
+      // Viewport wider than data — fit height, center horizontally
+      effectiveH = viewH
+      effectiveW = effectiveH * dataAspect
+      offsetX = pad + (viewW - effectiveW) / 2
+      offsetY = pad
+    } else {
+      // Viewport taller than data — fit width, center vertically
+      effectiveW = viewW
+      effectiveH = effectiveW / dataAspect
+      offsetX = pad
+      offsetY = pad + (viewH - effectiveH) / 2
+    }
+
     return dedupedClaims.map(claim => {
       const pos = landscape.positions.find(p => p.claim_id === claim.id)!
       const cluster = landscape.clusters.find(c => c.id === claim.cluster_id)
@@ -115,9 +134,9 @@ export function ClaimLandscape({
       const salienceScale = compareSalience ? (compareSalience.get(claim.cluster_id) ?? 0.15) : 1
       const radius = baseRadius * Math.max(0.2, salienceScale)
 
-      // Scale to viewport
-      const scaledX = pad + ((pos.x - xMin) / xRange) * (width - pad * 2)
-      const scaledY = pad + ((pos.y - yMin) / yRange) * (height - pad * 2)
+      // Scale to viewport with uniform aspect ratio
+      const scaledX = offsetX + ((pos.x - xMin) / xRange) * effectiveW
+      const scaledY = offsetY + ((pos.y - yMin) / yRange) * effectiveH
 
       return {
         id: claim.id,
@@ -128,13 +147,28 @@ export function ClaimLandscape({
         y: scaledY,
         radius,
         momentum,
+        friction: pos.friction ?? 0,
+        persistence: pos.persistence ?? 0,
         arousalValue: arousalVal,
         color: getMomentumColor(momentum),
       }
     })
   }, [dedupedClaims, landscape.positions, landscape.clusters, dimensions, momentumMap, compareSalience])
 
-  // Cache cluster→nodes grouping (stable across ticks — only positions change, not assignments)
+  // Cache concept→nodes grouping (stable across ticks — only positions change, not assignments)
+  // Group by concept_id for visual rendering (hulls, labels, forces)
+  const conceptGroupMap = useMemo(() => {
+    const map = new Map<string, SimNode[]>()
+    for (const node of nodes) {
+      const key = node.claim.concept_id || node.claim.cluster_id
+      const arr = map.get(key)
+      if (arr) arr.push(node)
+      else map.set(key, [node])
+    }
+    return map
+  }, [nodes])
+
+  // Also keep cluster-level grouping for adversarial links (which reference cluster_ids)
   const clusterGroupMap = useMemo(() => {
     const map = new Map<string, SimNode[]>()
     for (const node of nodes) {
@@ -146,30 +180,30 @@ export function ClaimLandscape({
     return map
   }, [nodes])
 
-  // Build cluster hull data (initial — will be updated by D3 tick handler via refs)
-  const clusterHulls = useMemo(() => {
-    const hulls: Array<{ path: string; cluster: Cluster | undefined; clusterId: string }> = []
-    clusterGroupMap.forEach((clusterNodes, clusterId) => {
-      const points: [number, number][] = clusterNodes.map(n => [n.x!, n.y!])
+  // Build concept hull data (initial — will be updated by D3 tick handler via refs)
+  const conceptHulls = useMemo(() => {
+    const concepts = landscape.concepts ?? []
+    const hulls: Array<{ paths: string[]; conceptId: string; mutation_direction: string; cx: number; cy: number }> = []
+    conceptGroupMap.forEach((conceptNodes, conceptId) => {
+      const points: [number, number][] = conceptNodes.map(n => [n.x!, n.y!])
       if (points.length < 3) return
       const hull = d3.polygonHull(points)
       if (!hull) return
 
       const centroid = d3.polygonCentroid(hull)
-      const expanded = hull.map(([px, py]) => {
-        const dx = px - centroid[0]
-        const dy = py - centroid[1]
-        const dist = Math.sqrt(dx * dx + dy * dy)
-        const scale = (dist + 20) / dist
-        return [centroid[0] + dx * scale, centroid[1] + dy * scale] as [number, number]
+      const line = d3.line().curve(d3.curveCatmullRomClosed.alpha(0.5))
+
+      const paths = CONTOUR_PADS.map(pad => {
+        const expanded = expandHull(hull, centroid, pad)
+        return line(expanded) ?? ''
       })
 
-      const line = d3.line().curve(d3.curveCatmullRomClosed.alpha(0.5))
-      const path = line(expanded)
-      if (path) hulls.push({ path, cluster: clusterNodes[0]?.cluster, clusterId })
+      const concept = concepts.find(c => c.id === conceptId)
+      const mutation = concept?.mutation_direction ?? conceptNodes[0]?.cluster?.mutation_direction ?? 'stable'
+      hulls.push({ paths, conceptId, mutation_direction: mutation, cx: centroid[0], cy: centroid[1] })
     })
     return hulls
-  }, [clusterGroupMap])
+  }, [conceptGroupMap, landscape.concepts, simVersion])
 
   // Adversarial links between opposed cluster centroids
   const adversarialLinks = useMemo(() => {
@@ -178,120 +212,23 @@ export function ClaimLandscape({
       const nodesA = clusterGroupMap.get(pair.cluster_id_a)
       const nodesB = clusterGroupMap.get(pair.cluster_id_b)
       if (!nodesA?.length || !nodesB?.length) return null
-      const cx1 = nodesA.reduce((s, n) => s + (n.x ?? 0), 0) / nodesA.length
-      const cy1 = nodesA.reduce((s, n) => s + (n.y ?? 0), 0) / nodesA.length
-      const cx2 = nodesB.reduce((s, n) => s + (n.x ?? 0), 0) / nodesB.length
-      const cy2 = nodesB.reduce((s, n) => s + (n.y ?? 0), 0) / nodesB.length
+      const [cx1, cy1] = computeCentroid(nodesA)
+      const [cx2, cy2] = computeCentroid(nodesB)
       return { pair, x1: cx1, y1: cy1, x2: cx2, y2: cy2 }
     }).filter((l): l is NonNullable<typeof l> => l !== null)
-  }, [landscape.adversarial_pairs, clusterGroupMap])
+  }, [landscape.adversarial_pairs, clusterGroupMap, simVersion])
 
-  // D3 force simulation
-  useEffect(() => {
-    if (!nodes.length) return
-
-    // Stop any existing simulation
-    simulationRef.current?.stop()
-
-    const { width, height } = dimensions
-
-    // Build cluster centroids from initial node positions (already scaled to viewport)
-    const scaledCentroids = new Map<string, { x: number; y: number }>()
-    clusterGroupMap.forEach((clusterNodes, key) => {
-      const cx = clusterNodes.reduce((s, n) => s + (n.x ?? 0), 0) / clusterNodes.length
-      const cy = clusterNodes.reduce((s, n) => s + (n.y ?? 0), 0) / clusterNodes.length
-      scaledCentroids.set(key, { x: cx, y: cy })
-    })
-
-    // Tick counter for throttling expensive geometry updates
-    let tickCount = 0
-    const GEOMETRY_INTERVAL = 5
-
-    const sim = d3.forceSimulation<SimNode>(nodes)
-      .force('charge', d3.forceManyBody<SimNode>().strength(-20).distanceMax(240))
-      .force('collide', d3.forceCollide<SimNode>().radius(d => d.radius + 1).strength(0.95).iterations(3))
-      .force('center', d3.forceCenter(width / 2, height / 2).strength(0.01))
-      // Attract nodes toward their cluster centroid
-      .force('clusterX', d3.forceX<SimNode>(d => {
-        const c = scaledCentroids.get(d.claim.cluster_id)
-        return c?.x ?? width / 2
-      }).strength(0.10))
-      .force('clusterY', d3.forceY<SimNode>(d => {
-        const c = scaledCentroids.get(d.claim.cluster_id)
-        return c?.y ?? height / 2
-      }).strength(0.10))
-      .alphaDecay(0.012)
-      .velocityDecay(0.4)
-      .on('tick', () => {
-        tickCount++
-
-        // FAST PATH — every tick: boundary clamp + node position update
-        const margin = 14
-        for (const node of nodes) {
-          const minX = margin + node.radius, maxX = width - margin - node.radius
-          const minY = margin + node.radius, maxY = height - margin - node.radius
-          if (node.x! < minX) { node.x = minX; if ((node.vx ?? 0) < 0) node.vx = 0 }
-          if (node.x! > maxX) { node.x = maxX; if ((node.vx ?? 0) > 0) node.vx = 0 }
-          if (node.y! < minY) { node.y = minY; if ((node.vy ?? 0) < 0) node.vy = 0 }
-          if (node.y! > maxY) { node.y = maxY; if ((node.vy ?? 0) > 0) node.vy = 0 }
-        }
-
-        const svg = d3.select(svgRef.current)
-        svg.selectAll<SVGCircleElement, SimNode>('.claim-node')
-          .attr('cx', d => d.x!)
-          .attr('cy', d => d.y!)
-
-        // SLOW PATH — every Nth tick: hull, centroid, adversarial link geometry
-        if (tickCount % GEOMETRY_INTERVAL === 0 || sim.alpha() < 0.05) {
-          // Update hulls
-          svg.selectAll<SVGPathElement, string>('.cluster-hull')
-            .attr('d', function() {
-              const clusterId = this.getAttribute('data-cluster-id')
-              if (!clusterId) return ''
-              const clusterNodes = clusterGroupMap.get(clusterId)
-              if (!clusterNodes || clusterNodes.length < 3) return ''
-              const pts: [number, number][] = clusterNodes.map(n => [n.x!, n.y!])
-              const hull = d3.polygonHull(pts)
-              if (!hull) return ''
-              const centroid = d3.polygonCentroid(hull)
-              const expanded = hull.map(([px, py]) => {
-                const dx = px - centroid[0]
-                const dy = py - centroid[1]
-                const dist = Math.sqrt(dx * dx + dy * dy)
-                const scale = (dist + 20) / dist
-                return [centroid[0] + dx * scale, centroid[1] + dy * scale] as [number, number]
-              })
-              return d3.line().curve(d3.curveCatmullRomClosed.alpha(0.5))(expanded) ?? ''
-            })
-
-          // Update adversarial link positions
-          const advPairs = landscape.adversarial_pairs ?? []
-          svg.selectAll<SVGGElement, unknown>('.adversarial-link').each(function() {
-            const idx = parseInt(this.getAttribute('data-pair-idx') ?? '-1', 10)
-            if (idx < 0 || idx >= advPairs.length) return
-            const pair = advPairs[idx]
-            const na = clusterGroupMap.get(pair.cluster_id_a)
-            const nb = clusterGroupMap.get(pair.cluster_id_b)
-            if (!na?.length || !nb?.length) return
-            const x1 = na.reduce((s, n) => s + (n.x ?? 0), 0) / na.length
-            const y1 = na.reduce((s, n) => s + (n.y ?? 0), 0) / na.length
-            const x2 = nb.reduce((s, n) => s + (n.x ?? 0), 0) / nb.length
-            const y2 = nb.reduce((s, n) => s + (n.y ?? 0), 0) / nb.length
-            const g = d3.select(this)
-            g.select('line').attr('x1', x1).attr('y1', y1).attr('x2', x2).attr('y2', y2)
-            g.select('text').attr('x', (x1 + x2) / 2).attr('y', (y1 + y2) / 2 - 4)
-          })
-        }
-      })
-
-    simulationRef.current = sim
-
-    // Pre-tick to settle before first render
-    for (let i = 0; i < 200; i++) sim.tick()
-    sim.alpha(0.15).restart()
-
-    return () => { sim.stop() }
-  }, [nodes.length, dimensions.width, dimensions.height]) // eslint-disable-line react-hooks/exhaustive-deps
+  // D3 force simulation — extracted to dedicated hook
+  useForceSimulation({
+    svgRef,
+    nodes,
+    dimensions,
+    conceptGroupMap,
+    clusterGroupMap,
+    adversarialPairs: landscape.adversarial_pairs ?? [],
+    isMobile,
+    onSettled: () => setSimVersion(v => v + 1),
+  })
 
   // D3 Zoom Behavior
   useEffect(() => {
@@ -309,31 +246,35 @@ export function ClaimLandscape({
     svg.call(zoom).on('dblclick.zoom', null)
   }, [])
 
-  // Mutation arrows for cluster centroids
+  // Mutation arrows for concept centroids
   const mutationArrows = useMemo(() => {
+    const concepts = landscape.concepts ?? []
     const arrows: Array<{ x: number; y: number; direction: string; label: string }> = []
-    for (const cluster of landscape.clusters) {
-      if (cluster.mutation_direction === 'stable') continue
-      const clusterNodes = clusterGroupMap.get(cluster.id)
-      if (!clusterNodes?.length) continue
-      const cx = clusterNodes.reduce((s, n) => s + (n.x ?? 0), 0) / clusterNodes.length
-      const cy = clusterNodes.reduce((s, n) => s + (n.y ?? 0), 0) / clusterNodes.length
-      arrows.push({ x: cx, y: cy, direction: cluster.mutation_direction, label: cluster.label })
+    for (const concept of concepts) {
+      if (concept.mutation_direction === 'stable') continue
+      const conceptNodes = conceptGroupMap.get(concept.id)
+      if (!conceptNodes?.length) continue
+      const [cx, cy] = computeCentroid(conceptNodes)
+      arrows.push({ x: cx, y: cy, direction: concept.mutation_direction, label: concept.label })
     }
     return arrows
-  }, [landscape.clusters, clusterGroupMap])
+  }, [landscape.concepts, conceptGroupMap, simVersion])
 
-  // Cluster label positions — sorted by cluster_id for stable numbering (must match DivergenceHeatmap order)
-  const clusterLabels = useMemo(() => {
-    const sorted = [...landscape.clusters].sort((a, b) => a.id.localeCompare(b.id))
-    return sorted.flatMap((cluster, i) => {
-      const cn = clusterGroupMap.get(cluster.id)
+  // Concept label positions
+  const MAX_VISIBLE_LABELS = 8
+
+  const conceptLabels = useMemo(() => {
+    const concepts = landscape.concepts ?? []
+    // Sort by member_count descending — show all concept labels
+    const sorted = [...concepts].sort((a, b) => b.member_count - a.member_count)
+    return sorted.flatMap((concept) => {
+      const cn = conceptGroupMap.get(concept.id)
       if (!cn?.length) return []
-      const cx = cn.reduce((s, n) => s + (n.x ?? 0), 0) / cn.length
+      const [centX] = computeCentroid(cn)
       const cy = Math.max(...cn.map(n => (n.y ?? 0) + (n.radius ?? 8))) + 16
-      return [{ cluster, cx, cy, index: i + 1 }]
-    })
-  }, [landscape.clusters, clusterGroupMap])
+      return [{ concept, cx: centX, cy, visible: true }]
+    }).slice(0, MAX_VISIBLE_LABELS)
+  }, [landscape.concepts, conceptGroupMap, simVersion])
 
   const handleNodeClick = useCallback((claimId: string) => {
     onSelectClaim(claimId)
@@ -353,7 +294,7 @@ export function ClaimLandscape({
     if (node && event) {
       const x = event.clientX, y = event.clientY
       hoverTimeoutRef.current = window.setTimeout(() => {
-        setTooltip({ claim: node.claim, cluster: node.cluster, momentum: node.momentum, x, y })
+        setTooltip({ claim: node.claim, cluster: node.cluster, momentum: node.momentum, friction: node.friction, persistence: node.persistence, x, y })
       }, 300)
     } else {
       hoverTimeoutRef.current = window.setTimeout(() => {
@@ -373,20 +314,77 @@ export function ClaimLandscape({
         onClick={handleBackgroundClick}
       >
         <g ref={gRef}>
-          {/* Cluster hulls */}
-          {clusterHulls.map(hull => (
-          <path
-            key={hull.clusterId}
-            className="cluster-hull"
-            data-cluster-id={hull.clusterId}
-            d={hull.path}
-            fill={getMutationColor(hull.cluster?.mutation_direction ?? 'stable')}
-            fillOpacity={0.04}
-            stroke={getMutationColor(hull.cluster?.mutation_direction ?? 'stable')}
-            strokeOpacity={0.12}
-            strokeWidth={1}
-          />
-        ))}
+          {/* Density glow — radial gradient per concept */}
+          {conceptHulls.map(hull => {
+            const color = getMutationColor(hull.mutation_direction as 'mainstreaming' | 'radicalizing' | 'fragmenting' | 'stable')
+            const cNodes = conceptGroupMap.get(hull.conceptId)
+            const glowR = cNodes ? Math.max(40, cNodes.length * 3 + 30) : 60
+            return (
+              <circle
+                key={`glow-${hull.conceptId}`}
+                className="density-glow"
+                data-concept-id={hull.conceptId}
+                cx={hull.cx}
+                cy={hull.cy}
+                r={glowR}
+                fill={color}
+                fillOpacity={0.04}
+                style={{ filter: `blur(${Math.round(glowR * 0.6)}px)` }}
+                pointerEvents="none"
+              />
+            )
+          })}
+
+          {/* Contour rings — multiple concentric hulls per concept */}
+          {conceptHulls.map(hull => {
+            const color = getMutationColor(hull.mutation_direction as 'mainstreaming' | 'radicalizing' | 'fragmenting' | 'stable')
+            return hull.paths.map((path, ringIdx) => (
+              <path
+                key={`${hull.conceptId}-ring-${ringIdx}`}
+                className="cluster-hull"
+                data-concept-id={hull.conceptId}
+                data-ring-idx={ringIdx}
+                d={path}
+                fill={ringIdx === 0 ? color : 'none'}
+                fillOpacity={CONTOUR_OPACITIES[ringIdx]}
+                stroke={color}
+                strokeOpacity={CONTOUR_STROKE_OPACITIES[ringIdx]}
+                strokeWidth={ringIdx === 0 ? 1 : 0.5}
+                pointerEvents="none"
+              />
+            ))
+          })}
+
+          {/* Inter-node connection lines within clusters */}
+          {Array.from(conceptGroupMap.entries()).map(([conceptId, cNodes]) => {
+            if (cNodes.length < 2) return null
+            // For performance: nearest pairs only (max 5 connections per node)
+            const lines: Array<{ x1: number; y1: number; x2: number; y2: number }> = []
+            const maxConns = cNodes.length > 20 ? 3 : 5
+            for (let i = 0; i < cNodes.length; i++) {
+              const dists = cNodes.map((n, j) => ({
+                j,
+                d: j === i ? Infinity : Math.hypot((n.x ?? 0) - (cNodes[i].x ?? 0), (n.y ?? 0) - (cNodes[i].y ?? 0)),
+              })).sort((a, b) => a.d - b.d)
+              for (let k = 0; k < Math.min(maxConns, dists.length); k++) {
+                const j = dists[k].j
+                if (j > i) { // avoid duplicate lines
+                  lines.push({
+                    x1: cNodes[i].x ?? 0, y1: cNodes[i].y ?? 0,
+                    x2: cNodes[j].x ?? 0, y2: cNodes[j].y ?? 0,
+                  })
+                }
+              }
+            }
+            return (
+              <g key={`conn-${conceptId}`} className="cluster-connections" data-concept-id={conceptId}>
+                {lines.map((l, i) => (
+                  <line key={i} x1={l.x1} y1={l.y1} x2={l.x2} y2={l.y2}
+                    stroke="rgba(148,163,184,0.04)" strokeWidth={0.5} pointerEvents="none" />
+                ))}
+              </g>
+            )
+          })}
 
         {/* Adversarial links between opposed clusters */}
         {adversarialLinks.map((link, i) => {
@@ -473,7 +471,7 @@ export function ClaimLandscape({
               style={{
                 filter: glowFilter !== 'none' ? glowFilter : undefined,
                 cursor: 'pointer',
-                transition: 'fill-opacity 200ms ease, r 200ms ease, cx 200ms ease, cy 200ms ease',
+                transition: 'fill-opacity 200ms ease, r 200ms ease',
               }}
               onClick={e => {
                 e.stopPropagation()
@@ -485,21 +483,17 @@ export function ClaimLandscape({
           )
         })}
 
-        {/* Cluster labels — actual cluster names, hoverable */}
-        {clusterLabels.map(({ cluster, cx, cy }) => {
-          const label = cluster.label
-          const badgeW = Math.max(60, label.length * 7 + 16)
+        {/* Concept labels */}
+        {conceptLabels.filter(l => l.visible).map(({ concept, cx, cy }) => {
+          const rawLabel = concept.label
+          const label = rawLabel.length > 28 ? rawLabel.slice(0, 28).trimEnd() + '...' : rawLabel
+          const badgeW = Math.max(60, Math.min(220, label.length * 7 + 16))
           return (
             <g
-              key={`clbl-${cluster.id}`}
+              key={`clbl-${concept.id}`}
+              className="concept-label-g"
+              data-concept-id={concept.id}
               style={{ cursor: 'default' }}
-              onMouseEnter={(e) => {
-                if (clusterTipTimer.current) window.clearTimeout(clusterTipTimer.current)
-                setClusterTip({ cluster, x: e.clientX, y: e.clientY })
-              }}
-              onMouseLeave={() => {
-                clusterTipTimer.current = window.setTimeout(() => setClusterTip(null), 200)
-              }}
             >
               <rect
                 x={cx - badgeW / 2}
@@ -510,16 +504,18 @@ export function ClaimLandscape({
                 fill="rgba(19,31,48,0.85)"
                 stroke="rgba(71,85,105,0.6)"
                 strokeWidth={0.8}
+                style={{ transition: 'x 150ms ease, y 150ms ease' }}
               />
               <text
                 x={cx}
                 y={cy + 9}
                 textAnchor="middle"
-                fill="#94A3B8"
+                fill="rgba(148,163,184,0.5)"
                 fontSize={9}
                 fontWeight={600}
-                fontFamily="var(--font-sans, Inter, sans-serif)"
+                fontFamily="var(--font-data, JetBrains Mono, monospace)"
                 letterSpacing="0.4"
+                style={{ transition: 'x 150ms ease, y 150ms ease' }}
               >
                 {label}
               </text>
@@ -543,6 +539,23 @@ export function ClaimLandscape({
         </div>
       )}
 
+      {/* Persistent spatial annotation — always visible, low opacity */}
+      <div
+        className="absolute bottom-3 left-0 right-0 flex justify-center pointer-events-none"
+        style={{ opacity: 0.22 }}
+      >
+        <span
+          style={{
+            fontSize: '9px',
+            color: '#94A3B8',
+            fontFamily: 'var(--font-data, "JetBrains Mono", monospace)',
+            letterSpacing: '0.6px',
+          }}
+        >
+          · proximity = semantic similarity ·
+        </span>
+      </div>
+
       {/* Topology Legend */}
       <Legend />
 
@@ -552,6 +565,8 @@ export function ClaimLandscape({
           claim={tooltip.claim}
           cluster={tooltip.cluster}
           momentum={tooltip.momentum}
+          friction={tooltip.friction}
+          persistence={tooltip.persistence}
           x={tooltip.x}
           y={tooltip.y}
           onMouseEnter={() => {
@@ -573,46 +588,6 @@ export function ClaimLandscape({
         />
       )}
 
-      {/* Cluster badge tooltip */}
-      {clusterTip && (() => {
-        const c = clusterTip.cluster
-        const mutColor = c.mutation_direction === 'radicalizing' ? '#EF4444'
-          : c.mutation_direction === 'mainstreaming' ? '#22C55E'
-          : c.mutation_direction === 'fragmenting' ? '#F59E0B' : '#94A3B8'
-        const arousalColor = c.arousal_trend === 'warming' ? '#EF4444'
-          : c.arousal_trend === 'cooling' ? '#3B82F6' : '#94A3B8'
-        const leftPos = Math.min(Math.max(clusterTip.x + 12, 8), window.innerWidth - 220)
-        const topPos = Math.min(Math.max(clusterTip.y - 8, 8), window.innerHeight - 120)
-        return (
-          <div
-            className="fixed z-50 rounded-lg border text-xs pointer-events-auto"
-            style={{
-              left: leftPos, top: topPos, width: 200,
-              backgroundColor: '#0F1923', borderColor: '#1E3044',
-              boxShadow: '0 8px 24px rgba(0,0,0,0.6)',
-            }}
-            onMouseEnter={() => { if (clusterTipTimer.current) window.clearTimeout(clusterTipTimer.current) }}
-            onMouseLeave={() => { clusterTipTimer.current = window.setTimeout(() => setClusterTip(null), 200) }}
-          >
-            <div className="px-3 py-2 border-b" style={{ borderColor: '#152540' }}>
-              <div className="font-semibold text-[11px]" style={{ color: '#06B6D4' }}>{c.label}</div>
-              <div className="text-[10px] mt-0.5" style={{ color: '#64748B' }}>Narrative cluster · {c.member_count} claims</div>
-            </div>
-            <div className="px-3 py-2 grid grid-cols-2 gap-x-3 gap-y-1">
-              <div>
-                <div className="text-[9px]" style={{ color: '#64748B' }}>Mutation</div>
-                <div className="font-data text-[10px]" style={{ color: mutColor }}>{c.mutation_direction}</div>
-              </div>
-              <div>
-                <div className="text-[9px]" style={{ color: '#64748B' }}>Arousal</div>
-                <div className="font-data text-[10px]" style={{ color: arousalColor }}>
-                  {c.arousal_trend === 'warming' ? '↑' : c.arousal_trend === 'cooling' ? '↓' : '→'} {c.arousal_trend}
-                </div>
-              </div>
-            </div>
-          </div>
-        )
-      })()}
     </div>
   )
 }

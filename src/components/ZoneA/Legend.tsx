@@ -82,6 +82,18 @@ function LegendContent() {
         <div className="flex flex-col gap-2">
           <Row
             icon={
+              <svg width="16" height="8">
+                <circle cx="2" cy="4" r="1.5" fill="rgba(148,163,184,0.6)" />
+                <line x1="4" y1="4" x2="12" y2="4" stroke="rgba(148,163,184,0.3)" strokeWidth="0.8" strokeDasharray="2,1.5" />
+                <circle cx="14" cy="4" r="1.5" fill="rgba(148,163,184,0.6)" />
+              </svg>
+            }
+            label="Position = Similarity"
+            infoTerm="Semantic Layout"
+            infoContent={GLOSSARY.SemanticLayout}
+          />
+          <Row
+            icon={
               <svg width="12" height="12">
                 <path
                   d="M1,6 Q4,1 9,3 T11,9 Q7,12 2,9 Z"
@@ -117,17 +129,6 @@ function LegendContent() {
             label="Mutation"
             infoTerm="Mutation Direction"
             infoContent={GLOSSARY.Mutation}
-          />
-          <Row
-            icon={
-              <div
-                className="w-3 border-t border-dashed opacity-80"
-                style={{ borderColor: '#EF4444' }}
-              />
-            }
-            label="Adversary Pair"
-            infoTerm="Counter-Narrative"
-            infoContent={GLOSSARY.CounterNarrative}
           />
         </div>
       </div>
@@ -262,6 +263,18 @@ export const Legend: React.FC = () => {
               <div className="flex flex-col gap-2">
                 <Row
                   icon={
+                    <svg width="16" height="8">
+                      <circle cx="2" cy="4" r="1.5" fill="rgba(148,163,184,0.6)" />
+                      <line x1="4" y1="4" x2="12" y2="4" stroke="rgba(148,163,184,0.3)" strokeWidth="0.8" strokeDasharray="2,1.5" />
+                      <circle cx="14" cy="4" r="1.5" fill="rgba(148,163,184,0.6)" />
+                    </svg>
+                  }
+                  label="Position = Similarity"
+                  infoTerm="Semantic Layout"
+                  infoContent={GLOSSARY.SemanticLayout}
+                />
+                <Row
+                  icon={
                     <svg width="12" height="12">
                       <path
                         d="M1,6 Q4,1 9,3 T11,9 Q7,12 2,9 Z"
@@ -297,17 +310,6 @@ export const Legend: React.FC = () => {
                   label="Mutation"
                   infoTerm="Mutation Direction"
                   infoContent={GLOSSARY.Mutation}
-                />
-                <Row
-                  icon={
-                    <div
-                      className="w-3 border-t border-dashed opacity-80"
-                      style={{ borderColor: '#EF4444' }}
-                    />
-                  }
-                  label="Adversary Pair"
-                  infoTerm="Counter-Narrative"
-                  infoContent={GLOSSARY.CounterNarrative}
                 />
               </div>
             </div>

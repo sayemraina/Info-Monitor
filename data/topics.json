@@ -1,577 +1,588 @@
 [
   {
-    "id": "ai-workplace",
-    "name": "AI & Your Job",
-    "cluster_count": 7,
-    "contestation_level": "high",
-    "contestation_emergence": {
-      "emerged_hours_ago": 52,
-      "source_diversity": 0.54
-    },
-    "headline_divergence": {
-      "jsd": 0.45,
-      "dominant_typology": "Paradigmatic",
-      "trend": "stable"
-    },
-    "top_accelerating_claim": {
-      "text": "Klarna's CEO just said their AI does the work of 700 employees \u2014 and they're not rehiring. This is the template for every company now.",
-      "momentum": 0.73,
-      "source_diversity": 0.46
-    },
-    "most_persistent_claim": {
-      "text": "Every previous automation wave \u2014 ATMs, spreadsheets, assembly robots \u2014 created more jobs than it destroyed. AI will be the same.",
-      "persistence_windows": 13
-    },
-    "key_signal": {
-      "type": "momentum_spike",
-      "summary": "'Klarna's CEO just said their AI does the work of 700 employees \u2014 and they're not rehiring. This is the template for every company now.' accelerated from 20th to 72nd percentile in 12h. Source diversity: low."
-    },
-    "activity_sparkline": [
-      0.69,
-      0.63,
-      0.68,
-      0.5,
-      0.67,
-      0.89,
-      0.88,
-      0.27,
-      0.44,
-      0.8,
-      0.48,
-      0.31
-    ],
-    "ifi": {
-      "value": 15.9,
-      "trend": "increasing"
-    },
-    "top_situation": {
-      "summary": "'Retraining Policy' escalating \u2014 gaining speed, emotionally charged, actively fought over",
-      "severity": "high"
-    },
-    "influencer_impact": {
-      "seeded_cluster_count": 4,
-      "total_clusters": 7,
-      "influencer_salience_share": 0.22,
-      "direction": "top_down",
-      "avg_propagation_x": 4.5,
-      "avg_propagation_reddit": 10.0
-    },
-    "system_confidence": 0.81
-  },
-  {
     "id": "war-on-iran",
     "name": "The War on Iran",
-    "cluster_count": 6,
+    "cluster_count": 23,
     "contestation_level": "high",
     "contestation_emergence": {
-      "emerged_hours_ago": 28,
-      "source_diversity": 0.76
+      "emerged_hours_ago": 48,
+      "source_diversity": 1.0
     },
     "headline_divergence": {
-      "jsd": 0.66,
-      "dominant_typology": "Paradigmatic",
-      "trend": "decreasing"
-    },
-    "top_accelerating_claim": {
-      "text": "Iran is months away from a nuclear weapon. If we don't strike their enrichment facilities now, we'll be dealing with a nuclear-armed regime that funds Hezbollah and Hamas.",
-      "momentum": 0.68,
-      "source_diversity": 0.39
-    },
-    "most_persistent_claim": {
-      "text": "The Houthis, Hezbollah, Hamas, Iraqi militias \u2014 Iran's proxy network is the real target. You can't achieve regional stability without dismantling it.",
-      "persistence_windows": 11
-    },
-    "key_signal": {
-      "type": "momentum_spike",
-      "summary": "'Oil surged past $80 when the Houthis disrupted Red Sea shipping. An actual war with Iran would send it past $150. Your gas prices would double overnight.' accelerated from 20th to 72nd percentile in 12h. Source diversity: low."
-    },
-    "activity_sparkline": [
-      0.24,
-      0.49,
-      0.44,
-      0.47,
-      0.43,
-      0.89,
-      0.76,
-      0.74,
-      0.66,
-      0.33,
-      0.28,
-      0.6
-    ],
-    "ifi": {
-      "value": 12.7,
+      "jsd": 1.0,
+      "dominant_typology": "Information Asymmetry",
       "trend": "increasing"
     },
+    "top_accelerating_claim": {
+      "text": "A military operation called \"Midnight Hammer\" involving B-2 bombers is planned to destroy Iran.",
+      "momentum": 0.925,
+      "source_diversity": 0.75
+    },
+    "most_persistent_claim": {
+      "text": "Israel is likely to use nuclear weapons against Iran.",
+      "persistence_windows": 15
+    },
+    "key_signal": {
+      "type": "contestation_emergence",
+      "summary": "Active contestation in \"Iranian Government\" — 44 pro vs 56 anti"
+    },
+    "activity_sparkline": [
+      1.0,
+      0.0,
+      0.0,
+      0.0848,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5782,
+      0.6661
+    ],
+    "system_confidence": 0.75,
+    "ifi": {
+      "value": 29.7,
+      "trend": "stable",
+      "flux_character": "consolidating",
+      "flags": [
+        "Active across 35 platforms"
+      ],
+      "confidence_interval": [
+        25.2,
+        34.2
+      ]
+    },
     "top_situation": {
-      "summary": "'Pro Strikes' radicalizing \u2014 moving toward extreme framing",
+      "summary": "Narrative radicalizing: \"Donald Trump\"",
       "severity": "high"
-    },
-    "influencer_impact": {
-      "seeded_cluster_count": 1,
-      "total_clusters": 6,
-      "influencer_salience_share": 0.08,
-      "direction": "bottom_up",
-      "avg_propagation_x": 2.1,
-      "avg_propagation_reddit": 9.6
-    },
-    "system_confidence": 0.75
+    }
   },
   {
     "id": "ozempic-glp1",
     "name": "Ozempic & the GLP-1 Revolution",
-    "cluster_count": 6,
+    "cluster_count": 18,
     "contestation_level": "high",
     "contestation_emergence": {
-      "emerged_hours_ago": 56,
-      "source_diversity": 0.51
+      "emerged_hours_ago": 48,
+      "source_diversity": 1.0
     },
     "headline_divergence": {
-      "jsd": 0.52,
-      "dominant_typology": "Paradigmatic",
-      "trend": "stable"
+      "jsd": 0.0,
+      "dominant_typology": "Information Asymmetry",
+      "trend": "decreasing"
     },
     "top_accelerating_claim": {
-      "text": "$1,300 a month for Ozempic and my insurance denied coverage three times. If you're not rich, you don't get to be thin. That's the system.",
-      "momentum": 0.5,
-      "source_diversity": 0.39
+      "text": "Ozempic has dangerous side effects.",
+      "momentum": 0.925,
+      "source_diversity": 1.0
     },
     "most_persistent_claim": {
-      "text": "Ozempic literally saved my life \u2014 lost 80 lbs, A1C normal, off blood pressure meds, knees don't hurt anymore. I don't care what anyone says about these drugs.",
-      "persistence_windows": 14
+      "text": "Ozempic is being used for weight loss.",
+      "persistence_windows": 15
     },
     "key_signal": {
-      "type": "momentum_spike",
-      "summary": "'Oprah using Ozempic while hosting a special about weight loss shame is peak irony. Rich celebrities get the drug, lecture the rest of us about our relationship with food.' accelerated from 20th to 72nd percentile in 12h. Source diversity: low."
+      "type": "contestation_emergence",
+      "summary": "Active contestation in \"Ozempic/Wegovy\" — 41 pro vs 57 anti"
     },
     "activity_sparkline": [
-      0.59,
-      0.66,
-      0.26,
-      0.44,
-      0.25,
-      0.42,
-      0.49,
-      0.43,
-      0.9,
-      0.44,
-      0.3,
-      0.46
+      0.5594,
+      0.539,
+      0.6161,
+      0.0,
+      0.2802,
+      0.3304,
+      0.0,
+      0.3691,
+      1.0,
+      0.8264,
+      0.5566,
+      0.8506
     ],
+    "system_confidence": 0.71,
     "ifi": {
-      "value": 15.0,
-      "trend": "stable"
+      "value": 28.6,
+      "trend": "stable",
+      "flux_character": "reshuffling",
+      "flags": [
+        "Active across 23 platforms"
+      ],
+      "confidence_interval": [
+        24.3,
+        32.9
+      ]
     },
     "top_situation": {
-      "summary": "'Pharma Profits' escalating \u2014 gaining speed, emotionally charged, actively fought over",
+      "summary": "Narrative radicalizing: \"Ozempic/Wegovy\"",
       "severity": "high"
-    },
-    "influencer_impact": {
-      "seeded_cluster_count": 3,
-      "total_clusters": 6,
-      "influencer_salience_share": 0.26,
-      "direction": "mixed",
-      "avg_propagation_x": 2.9,
-      "avg_propagation_reddit": 9.2
-    },
-    "system_confidence": 0.62
+    }
   },
   {
     "id": "immigration",
     "name": "Immigration & American Identity",
-    "cluster_count": 6,
+    "cluster_count": 19,
     "contestation_level": "high",
-    "contestation_emergence": null,
+    "contestation_emergence": {
+      "emerged_hours_ago": 48,
+      "source_diversity": 1.0
+    },
     "headline_divergence": {
-      "jsd": 0.7,
-      "dominant_typology": "Paradigmatic",
-      "trend": "decreasing"
+      "jsd": 1.0,
+      "dominant_typology": "Information Asymmetry",
+      "trend": "increasing"
     },
     "top_accelerating_claim": {
-      "text": "2.4 million border encounters in FY2023 \u2014 the highest ever recorded. At some point 'compassion' without enforcement isn't a policy, it's an open border.",
-      "momentum": 0.51,
-      "source_diversity": 0.43
+      "text": "Anti-immigration sentiment and activism are growing in Japan.",
+      "momentum": 0.925,
+      "source_diversity": 1.0
     },
     "most_persistent_claim": {
-      "text": "Immigrants start businesses at twice the rate of native-born Americans. They're not taking jobs \u2014 they're creating them. The economic data has been clear for 30 years.",
-      "persistence_windows": 13
+      "text": "Current immigration policies are creating disorder and instability.",
+      "persistence_windows": 15
     },
     "key_signal": {
-      "type": "momentum_spike",
-      "summary": "'They're eating the dogs, they're eating the cats \u2014 the Springfield Ohio hoax showed how fast disinformation can go from a Facebook group to a presidential debate stage.' accelerated from 20th to 72nd percentile in 12h. Source diversity: low."
+      "type": "contestation_emergence",
+      "summary": "Active contestation in \"Border Security\" — 43 pro vs 31 anti"
     },
     "activity_sparkline": [
-      0.28,
-      0.76,
-      0.81,
-      0.33,
-      0.31,
-      0.57,
-      0.87,
-      0.4,
-      0.4,
-      0.61,
-      0.57,
-      0.82
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.075,
+      0.2566,
+      0.3614,
+      0.5589,
+      0.7813,
+      0.8296,
+      0.7161,
+      1.0
     ],
+    "system_confidence": 0.76,
     "ifi": {
-      "value": 21.3,
-      "trend": "stable"
+      "value": 38.3,
+      "trend": "increasing",
+      "flux_character": "consolidating",
+      "flags": [
+        "Active across 48 platforms"
+      ],
+      "confidence_interval": [
+        32.6,
+        44.1
+      ]
     },
     "top_situation": {
-      "summary": "'Enforcement' polarizing \u2014 high friction (0.81)",
+      "summary": "Narrative radicalizing: \"Border Security\"",
       "severity": "high"
-    },
-    "influencer_impact": {
-      "seeded_cluster_count": 1,
-      "total_clusters": 6,
-      "influencer_salience_share": 0.08,
-      "direction": "bottom_up",
-      "avg_propagation_x": 7.0,
-      "avg_propagation_reddit": 7.4
-    },
-    "system_confidence": 0.84
+    }
   },
   {
     "id": "housing-crisis",
     "name": "The Housing Crisis",
-    "cluster_count": 6,
+    "cluster_count": 23,
     "contestation_level": "high",
-    "contestation_emergence": null,
+    "contestation_emergence": {
+      "emerged_hours_ago": 48,
+      "source_diversity": 1.0
+    },
     "headline_divergence": {
-      "jsd": 0.78,
-      "dominant_typology": "Interpretive",
-      "trend": "decreasing"
-    },
-    "top_accelerating_claim": {
-      "text": "The Fed is keeping rates at 5.5% and acting surprised that nobody can afford a house. Powell keeps saying 'we need to bring down inflation' while making housing MORE expensive.",
-      "momentum": 0.51,
-      "source_diversity": 0.36
-    },
-    "most_persistent_claim": {
-      "text": "Median home price hit $427K nationally. Median household income is $80K. You need to make $115K to afford the median home. The math doesn't work for most Americans.",
-      "persistence_windows": 8
-    },
-    "key_signal": {
-      "type": "momentum_spike",
-      "summary": "'The Fed is keeping rates at 5.5% and acting surprised that nobody can afford a house. Powell keeps saying 'we need to bring down inflation' while making housing MORE expensive.' accelerated from 20th to 72nd percentile in 12h. Source diversity: low."
-    },
-    "activity_sparkline": [
-      0.71,
-      0.36,
-      0.44,
-      0.59,
-      0.23,
-      0.23,
-      0.65,
-      0.29,
-      0.75,
-      0.87,
-      0.3,
-      0.27
-    ],
-    "ifi": {
-      "value": 12.3,
+      "jsd": 1.0,
+      "dominant_typology": "Information Asymmetry",
       "trend": "increasing"
     },
+    "top_accelerating_claim": {
+      "text": "Some individuals are harassing Indian Americans.",
+      "momentum": 0.925,
+      "source_diversity": 0.25
+    },
+    "most_persistent_claim": {
+      "text": "Restrictive development policies and incentives for hoarding contribute to housing crises in growing",
+      "persistence_windows": 15
+    },
+    "key_signal": {
+      "type": "contestation_emergence",
+      "summary": "Active contestation in \"Mortgage Rates\" — 5 pro vs 6 anti"
+    },
+    "activity_sparkline": [
+      0.5175,
+      0.0919,
+      0.792,
+      0.0,
+      0.3313,
+      0.5084,
+      0.4527,
+      0.0,
+      0.6704,
+      0.7273,
+      0.2566,
+      1.0
+    ],
+    "system_confidence": 0.73,
+    "ifi": {
+      "value": 44.6,
+      "trend": "increasing",
+      "flux_character": "reshuffling",
+      "flags": [
+        "Active across 22 platforms",
+        "Significant narrative disruption detected"
+      ],
+      "confidence_interval": [
+        37.9,
+        51.2
+      ]
+    },
     "top_situation": {
-      "summary": "'NIMBY YIMBY' radicalizing \u2014 moving toward extreme framing",
+      "summary": "Narrative radicalizing: \"Mortgage Rates\"",
       "severity": "high"
-    },
-    "influencer_impact": {
-      "seeded_cluster_count": 2,
-      "total_clusters": 6,
-      "influencer_salience_share": 0.12,
-      "direction": "mixed",
-      "avg_propagation_x": 4.4,
-      "avg_propagation_reddit": 12.4
-    },
-    "system_confidence": 0.78
+    }
   },
   {
     "id": "israel-palestine",
     "name": "Israel, Palestine & the Gaza War",
-    "cluster_count": 6,
-    "contestation_level": "high",
+    "cluster_count": 21,
+    "contestation_level": "medium",
     "contestation_emergence": null,
     "headline_divergence": {
-      "jsd": 0.36,
+      "jsd": 1.0,
       "dominant_typology": "Information Asymmetry",
-      "trend": "decreasing"
+      "trend": "increasing"
     },
     "top_accelerating_claim": {
-      "text": "Columbia students got arrested for setting up protest tents. Meanwhile the university's endowment invests in weapons manufacturers supplying bombs dropped on Gaza. But sure, the students are the problem.",
-      "momentum": 0.52,
-      "source_diversity": 0.79
+      "text": "Israel intends to occupy southern Lebanon, destroy homes, and prevent residents from returning, mirr",
+      "momentum": 0.925,
+      "source_diversity": 1.0
     },
     "most_persistent_claim": {
-      "text": "Over 35,000 confirmed dead in Gaza by May 2024 \u2014 a majority women and children. The Rafah offensive happened while the ICJ was literally ordering Israel to stop. This isn't self-defense, it's collective punishment.",
-      "persistence_windows": 8
+      "text": "Israel has kept the Al-Aqsa mosque shut for 34 days.",
+      "persistence_windows": 15
     },
     "key_signal": {
-      "type": "coordination_flag",
-      "summary": "Near-duplicate content: 39 similar posts from non-overlapping accounts within 6h."
+      "type": "phase_transition",
+      "summary": "Mutation trajectory: radicalizing in \"Palestinians\""
     },
     "activity_sparkline": [
-      0.57,
-      0.86,
-      0.55,
-      0.25,
-      0.9,
-      0.87,
-      0.64,
-      0.7,
-      0.32,
-      0.64,
-      0.74,
-      0.35
+      0.3652,
+      1.0,
+      0.0,
+      0.0,
+      0.2161,
+      0.6517,
+      0.0,
+      0.0,
+      0.0,
+      0.1659,
+      0.2463,
+      0.5195
     ],
+    "system_confidence": 0.76,
     "ifi": {
-      "value": 15.9,
-      "trend": "stable"
+      "value": 27.1,
+      "trend": "stable",
+      "flux_character": "reshuffling",
+      "flags": [
+        "High arousal in 48% of recent claims",
+        "Active across 5 platforms"
+      ],
+      "confidence_interval": [
+        23.1,
+        31.2
+      ]
     },
     "top_situation": {
-      "summary": "'Media Framing' radicalizing \u2014 moving toward extreme framing",
+      "summary": "Emotional escalation in \"Jewish People\" (arousal 0.82)",
       "severity": "high"
-    },
-    "influencer_impact": {
-      "seeded_cluster_count": 2,
-      "total_clusters": 6,
-      "influencer_salience_share": 0.12,
-      "direction": "mixed",
-      "avg_propagation_x": 4.3,
-      "avg_propagation_reddit": 7.9
-    },
-    "system_confidence": 0.81
+    }
   },
   {
     "id": "crypto-digital-money",
     "name": "Crypto & the Future of Money",
-    "cluster_count": 6,
+    "cluster_count": 13,
     "contestation_level": "high",
-    "contestation_emergence": null,
+    "contestation_emergence": {
+      "emerged_hours_ago": 48,
+      "source_diversity": 1.0
+    },
     "headline_divergence": {
-      "jsd": 0.8,
-      "dominant_typology": "Interpretive",
-      "trend": "stable"
+      "jsd": 0.0,
+      "dominant_typology": "Information Asymmetry",
+      "trend": "decreasing"
     },
     "top_accelerating_claim": {
-      "text": "Bitcoin spot ETF just got approved. BlackRock, Fidelity, the biggest names in finance are in. This isn't your cousin's crypto anymore \u2014 it's institutional now.",
-      "momentum": 0.51,
-      "source_diversity": 0.51
+      "text": "Cryptocurrency wallets are vulnerable to scams that can result in the loss of all funds.",
+      "momentum": 0.925,
+      "source_diversity": 1.0
     },
     "most_persistent_claim": {
-      "text": "MicroStrategy now holds over 400,000 BTC. Saylor is either the greatest visionary or he's building the biggest single point of failure in crypto history.",
-      "persistence_windows": 8
+      "text": "Bitcoin traders' current actions provide insights into the cryptocurrency market's future.",
+      "persistence_windows": 15
     },
     "key_signal": {
-      "type": "momentum_spike",
-      "summary": "'Bitcoin spot ETF just got approved. BlackRock, Fidelity, the biggest names in finance are in. This isn't your cousin's crypto anymore \u2014 it's institutional now.' accelerated from 20th to 72nd percentile in 12h. Source diversity: low."
+      "type": "contestation_emergence",
+      "summary": "Active contestation in \"CLARITY Act\" — 10 pro vs 13 anti"
     },
     "activity_sparkline": [
-      0.7,
-      0.31,
-      0.44,
-      0.83,
-      0.29,
-      0.87,
-      0.66,
-      0.58,
-      0.44,
-      0.29,
-      0.85,
-      0.35
+      0.0948,
+      0.0,
+      0.2153,
+      0.2097,
+      0.0746,
+      0.2036,
+      0.0,
+      0.1117,
+      0.0,
+      0.1927,
+      1.0,
+      0.249
     ],
+    "system_confidence": 0.72,
     "ifi": {
-      "value": 7.4,
-      "trend": "stable"
+      "value": 63.8,
+      "trend": "increasing",
+      "flux_character": "consolidating",
+      "flags": [
+        "Active across 22 platforms",
+        "Significant narrative disruption detected"
+      ],
+      "confidence_interval": [
+        54.2,
+        73.3
+      ]
     },
     "top_situation": {
-      "summary": "'BTC Mainstream' escalating \u2014 gaining speed, emotionally charged, actively fought over",
+      "summary": "Narrative radicalizing: \"Ethereum\"",
       "severity": "high"
-    },
-    "influencer_impact": {
-      "seeded_cluster_count": 0,
-      "total_clusters": 6,
-      "influencer_salience_share": 0.0,
-      "direction": "bottom_up",
-      "avg_propagation_x": 0,
-      "avg_propagation_reddit": 0
-    },
-    "system_confidence": 0.55
+    }
   },
   {
     "id": "inflation-cost-of-living",
     "name": "Inflation & Cost of Living: Who's to Blame?",
-    "cluster_count": 6,
+    "cluster_count": 11,
     "contestation_level": "high",
-    "contestation_emergence": null,
+    "contestation_emergence": {
+      "emerged_hours_ago": 48,
+      "source_diversity": 1.0
+    },
     "headline_divergence": {
-      "jsd": 0.46,
+      "jsd": 1.0,
       "dominant_typology": "Information Asymmetry",
       "trend": "increasing"
     },
     "top_accelerating_claim": {
-      "text": "The September rate cut was the right call. CPI is trending down, labor market is cooling, and Powell finally read the room. Soft landing is real.",
-      "momentum": 0.53,
-      "source_diversity": 0.72
+      "text": "The cost of groceries will become unaffordable for many people by 2025.",
+      "momentum": 0.925,
+      "source_diversity": 1.0
     },
     "most_persistent_claim": {
-      "text": "Grocery prices are down 2% but nobody believes it because their actual grocery bill went up 15%",
-      "persistence_windows": 9
+      "text": "The cost of the California High-Speed Rail project has increased due to high construction costs infl",
+      "persistence_windows": 15
     },
     "key_signal": {
-      "type": "momentum_spike",
-      "summary": "'The September rate cut was the right call. CPI is trending down, labor market is cooling, and Powell finally read the room. Soft landing is real.' accelerated from 20th to 72nd percentile in 12h. Source diversity: low."
+      "type": "contestation_emergence",
+      "summary": "Active contestation in \"Pay Raise\" — 28 pro vs 27 anti"
     },
     "activity_sparkline": [
-      0.42,
-      0.77,
-      0.61,
-      0.52,
-      0.71,
-      0.78,
-      0.38,
-      0.64,
-      0.64,
-      0.6,
-      0.57,
-      0.56
+      0.4599,
+      0.2954,
+      0.487,
+      0.4777,
+      0.2169,
+      0.2251,
+      1.0,
+      0.283,
+      0.0,
+      0.3406,
+      0.0066,
+      0.4982
     ],
+    "system_confidence": 0.7,
     "ifi": {
-      "value": 12.2,
-      "trend": "increasing"
+      "value": 37.1,
+      "trend": "increasing",
+      "flux_character": "reshuffling",
+      "flags": [
+        "Active across 27 platforms"
+      ],
+      "confidence_interval": [
+        31.5,
+        42.7
+      ]
     },
     "top_situation": {
-      "summary": "'Consumer Squeeze' polarizing \u2014 high friction (0.82)",
+      "summary": "Narrative radicalizing: \"Donald Trump\"",
       "severity": "high"
-    },
-    "influencer_impact": {
-      "seeded_cluster_count": 1,
-      "total_clusters": 6,
-      "influencer_salience_share": 0.03,
-      "direction": "bottom_up",
-      "avg_propagation_x": 6.6,
-      "avg_propagation_reddit": 11.0
-    },
-    "system_confidence": 0.86
+    }
   },
   {
     "id": "dei-rollbacks",
     "name": "DEI Rollbacks",
-    "cluster_count": 6,
+    "cluster_count": 5,
     "contestation_level": "high",
     "contestation_emergence": {
-      "emerged_hours_ago": 57,
-      "source_diversity": 0.77
+      "emerged_hours_ago": 48,
+      "source_diversity": 1.0
     },
     "headline_divergence": {
-      "jsd": 0.41,
+      "jsd": 0.5433,
       "dominant_typology": "Information Asymmetry",
-      "trend": "stable"
+      "trend": "increasing"
     },
     "top_accelerating_claim": {
-      "text": "Robby Starbuck got another company to fold. John Deere dropped DEI, now Tractor Supply, Harley-Davidson. The playbook is working and corporate America is terrified.",
-      "momentum": 0.76,
-      "source_diversity": 0.39
+      "text": "Philadelphia's rollback of DEI policies is a direct attack on Black economic power and equity.",
+      "momentum": 0.9102,
+      "source_diversity": 1.0
     },
     "most_persistent_claim": {
-      "text": "Everyone calling DEI programs 'identity politics' should know that the GI Bill was the original DEI program \u2014 and it only worked for white veterans. Preferences have always existed.",
-      "persistence_windows": 8
+      "text": "Conservatives are excessively focused on gender issues and are responsible for injecting gender into",
+      "persistence_windows": 15
     },
     "key_signal": {
-      "type": "coordination_flag",
-      "summary": "Near-duplicate content: 28 similar posts from non-overlapping accounts within 3h."
+      "type": "contestation_emergence",
+      "summary": "Active contestation in \"ABA Council\" — 21 pro vs 28 anti"
     },
     "activity_sparkline": [
-      0.36,
-      0.44,
-      0.76,
-      0.37,
-      0.7,
-      0.83,
-      0.39,
-      0.79,
-      0.25,
-      0.29,
-      0.62,
-      0.73
+      0.1677,
+      0.2695,
+      0.6175,
+      0.1819,
+      0.1843,
+      0.0,
+      0.155,
+      0.5484,
+      0.0,
+      0.0,
+      1.0,
+      0.8406
     ],
+    "system_confidence": 0.63,
     "ifi": {
-      "value": 10.5,
-      "trend": "stable"
-    },
-    "top_situation": {
-      "summary": "'Rebranding' radicalizing \u2014 moving toward extreme framing",
-      "severity": "high"
-    },
-    "influencer_impact": {
-      "seeded_cluster_count": 2,
-      "total_clusters": 6,
-      "influencer_salience_share": 0.13,
-      "direction": "mixed",
-      "avg_propagation_x": 6.8,
-      "avg_propagation_reddit": 11.7
-    },
-    "system_confidence": 0.57
+      "value": 13.9,
+      "trend": "stable",
+      "flux_character": "reshuffling",
+      "flags": [
+        "Active across 16 platforms"
+      ],
+      "confidence_interval": [
+        11.8,
+        15.9
+      ]
+    }
   },
   {
     "id": "ai-bubble",
     "name": "The AI Bubble",
-    "cluster_count": 6,
+    "cluster_count": 16,
     "contestation_level": "high",
     "contestation_emergence": {
-      "emerged_hours_ago": 44,
-      "source_diversity": 0.44
+      "emerged_hours_ago": 48,
+      "source_diversity": 1.0
     },
     "headline_divergence": {
-      "jsd": 0.53,
+      "jsd": 1.0,
       "dominant_typology": "Information Asymmetry",
       "trend": "increasing"
     },
     "top_accelerating_claim": {
-      "text": "Goldman Sachs just released a report titled 'Too Much Spend, Too Little Benefit.' Wall Street is starting to turn on AI. This doesn't end well.",
-      "momentum": 0.68,
-      "source_diversity": 0.54
+      "text": "Data centers are a financial risk and could trigger a financial crisis.",
+      "momentum": 0.925,
+      "source_diversity": 1.0
     },
     "most_persistent_claim": {
-      "text": "Remember when everyone said quantum computing would change everything? Same energy with AI right now",
-      "persistence_windows": 14
+      "text": "The AI industry's growth may be threatened by geopolitical tensions and controversies.",
+      "persistence_windows": 15
     },
     "key_signal": {
-      "type": "momentum_spike",
-      "summary": "'Goldman Sachs just released a report titled 'Too Much Spend, Too Little Benefit.' Wall Street is starting to turn on AI. This doesn't end well.' accelerated from 20th to 72nd percentile in 12h. Source diversity: low."
+      "type": "contestation_emergence",
+      "summary": "Active contestation in \"AI Bubble Unsustainable\" — 7 pro vs 5 anti"
     },
     "activity_sparkline": [
-      0.26,
-      0.87,
-      0.57,
-      0.49,
-      0.4,
-      0.51,
-      0.2,
-      0.2,
-      0.32,
-      0.78,
-      0.27,
-      0.59
+      0.1858,
+      0.152,
+      0.7844,
+      0.8067,
+      0.5096,
+      0.0,
+      0.0,
+      0.2076,
+      0.6261,
+      1.0,
+      0.2599,
+      0.5391
     ],
+    "system_confidence": 0.67,
     "ifi": {
-      "value": 30.0,
-      "trend": "increasing"
+      "value": 29.9,
+      "trend": "stable",
+      "flux_character": "reshuffling",
+      "flags": [
+        "Active across 17 platforms"
+      ],
+      "confidence_interval": [
+        25.4,
+        34.4
+      ]
     },
     "top_situation": {
-      "summary": "'Infrastructure Spending' radicalizing \u2014 moving toward extreme framing",
+      "summary": "Narrative radicalizing: \"AI Bubble Unsustainable\"",
       "severity": "high"
+    }
+  },
+  {
+    "id": "ai-workplace",
+    "name": "AI & Your Job",
+    "cluster_count": 28,
+    "contestation_level": "high",
+    "contestation_emergence": {
+      "emerged_hours_ago": 48,
+      "source_diversity": 0.5
     },
-    "influencer_impact": {
-      "seeded_cluster_count": 4,
-      "total_clusters": 6,
-      "influencer_salience_share": 0.31,
-      "direction": "top_down",
-      "avg_propagation_x": 5.1,
-      "avg_propagation_reddit": 8.5
+    "headline_divergence": {
+      "jsd": 0.9546,
+      "dominant_typology": "Information Asymmetry",
+      "trend": "increasing"
     },
-    "system_confidence": 0.74
+    "top_accelerating_claim": {
+      "text": "Air traffic controller is a high-paying job that does not require a college degree.",
+      "momentum": 0.715,
+      "source_diversity": 0.5
+    },
+    "most_persistent_claim": {
+      "text": "Using AI will not prevent job displacement caused by AI.",
+      "persistence_windows": 9
+    },
+    "key_signal": {
+      "type": "contestation_emergence",
+      "summary": "Active contestation in \"AI and Employment\" — 3 pro vs 4 anti"
+    },
+    "activity_sparkline": [
+      0.0575,
+      0.0383,
+      0.1703,
+      0.3528,
+      0.2454,
+      1.0,
+      0.115,
+      0.2628,
+      0.1649,
+      0.0542,
+      0.0742,
+      0.0542
+    ],
+    "system_confidence": 0.72,
+    "ifi": {
+      "value": 39.0,
+      "trend": "increasing",
+      "flux_character": "reshuffling",
+      "flags": [
+        "Active across 4 platforms"
+      ],
+      "confidence_interval": [
+        33.1,
+        44.8
+      ]
+    },
+    "top_situation": {
+      "summary": "Narrative radicalizing: \"India's Foreign Policy\"",
+      "severity": "high"
+    }
   }
 ]

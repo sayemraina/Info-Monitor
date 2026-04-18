@@ -14,7 +14,7 @@ function directionLabel(dir: string): { text: string; color: string } {
 
 export function NarrativeShapingCard({ impact }: NarrativeShapingCardProps) {
   const dir = directionLabel(impact.direction)
-  const pct = Math.round(impact.influencer_salience_share * 100)
+  const pct = Math.round((impact.influencer_salience_share ?? 0) * 100)
 
   if (impact.seeded_cluster_count === 0) {
     return (
@@ -74,7 +74,7 @@ export function NarrativeShapingCard({ impact }: NarrativeShapingCardProps) {
             Avg propagation
           </span>
           <span className="font-data text-[10px]" style={{ color: 'var(--color-text-secondary)' }}>
-            {impact.avg_propagation_x}h → X · {impact.avg_propagation_reddit}h → Reddit
+            {impact.avg_propagation_x ?? '—'}h → X · {impact.avg_propagation_reddit ?? '—'}h → Reddit
           </span>
         </div>
 

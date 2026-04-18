@@ -1,150 +1,338 @@
 [
   {
-    "id": "clu_dc42d18abdfa",
-    "concept_id": "measurable-gains",
-    "label": "Productivity Gains",
-    "member_count": 7,
+    "id": "clu_ai-workplace_000",
+    "concept_id": "concept_ai-workplace_000",
+    "concept_label": "Employment",
+    "label": "Ai-Related Layoffs",
+    "member_count": 72,
     "mutation_direction": "stable",
-    "mutation_magnitude": 0.69,
-    "arousal_trend": "warming",
-    "arousal_value": 0.15,
-    "adversarial_pairs": [
-      "clu_df45fe3b46cd"
-    ],
-    "influencer_seeding": {
-      "influencer_seeded": true,
-      "influencer_origin_count": 3,
-      "influencer_salience_contribution": 0.49,
-      "avg_propagation_hours": {
-        "x": 7.0,
-        "reddit": 15.0
-      }
-    }
+    "mutation_magnitude": 0.4574,
+    "arousal_trend": "cooling",
+    "arousal_value": 0.4222,
+    "adversarial_pairs": []
   },
   {
-    "id": "clu_df45fe3b46cd",
-    "concept_id": "labor-protection",
-    "label": "Creative Threat",
+    "id": "clu_ai-workplace_001",
+    "concept_id": "concept_ai-workplace_001",
+    "concept_label": "Job Displacement (Losses)",
+    "label": "Oracle",
+    "member_count": 24,
+    "mutation_direction": "radicalizing",
+    "mutation_magnitude": 0.6551,
+    "arousal_trend": "cooling",
+    "arousal_value": 0.4271,
+    "adversarial_pairs": []
+  },
+  {
+    "id": "clu_ai-workplace_002",
+    "concept_id": "concept_ai-workplace_002",
+    "concept_label": "Adoption (Widespread)",
+    "label": "AI Adoption in the Workplace",
+    "member_count": 12,
+    "mutation_direction": "radicalizing",
+    "mutation_magnitude": 0.6681,
+    "arousal_trend": "cooling",
+    "arousal_value": 0.2667,
+    "adversarial_pairs": []
+  },
+  {
+    "id": "clu_ai-workplace_003",
+    "concept_id": "concept_ai-workplace_003",
+    "concept_label": "Automation",
+    "label": "Microsoft",
+    "member_count": 16,
+    "mutation_direction": "stable",
+    "mutation_magnitude": 0.5785,
+    "arousal_trend": "cooling",
+    "arousal_value": 0.3031,
+    "adversarial_pairs": []
+  },
+  {
+    "id": "clu_ai-workplace_004",
+    "concept_id": "concept_ai-workplace_004",
+    "concept_label": "Jobs",
+    "label": "AI and Jobs",
+    "member_count": 29,
+    "mutation_direction": "stable",
+    "mutation_magnitude": 0.4425,
+    "arousal_trend": "stable",
+    "arousal_value": 0.5241,
+    "adversarial_pairs": []
+  },
+  {
+    "id": "clu_ai-workplace_005",
+    "concept_id": "concept_ai-workplace_000",
+    "concept_label": "Employment",
+    "label": "Lottomatica Layoffs",
+    "member_count": 10,
+    "mutation_direction": "stable",
+    "mutation_magnitude": 0.5474,
+    "arousal_trend": "cooling",
+    "arousal_value": 0.325,
+    "adversarial_pairs": []
+  },
+  {
+    "id": "clu_ai-workplace_006",
+    "concept_id": "concept_ai-workplace_000",
+    "concept_label": "Employment",
+    "label": "Apple",
+    "member_count": 65,
+    "mutation_direction": "stable",
+    "mutation_magnitude": 0.5091,
+    "arousal_trend": "cooling",
+    "arousal_value": 0.36,
+    "adversarial_pairs": []
+  },
+  {
+    "id": "clu_ai-workplace_007",
+    "concept_id": "concept_ai-workplace_004",
+    "concept_label": "Jobs",
+    "label": "AI and Employment",
+    "member_count": 25,
+    "mutation_direction": "stable",
+    "mutation_magnitude": 0.434,
+    "arousal_trend": "cooling",
+    "arousal_value": 0.472,
+    "adversarial_pairs": []
+  },
+  {
+    "id": "clu_ai-workplace_008",
+    "concept_id": "concept_ai-workplace_004",
+    "concept_label": "Jobs",
+    "label": "AI and Big Tech Industries",
+    "member_count": 17,
+    "mutation_direction": "stable",
+    "mutation_magnitude": 0.4536,
+    "arousal_trend": "cooling",
+    "arousal_value": 0.4382,
+    "adversarial_pairs": []
+  },
+  {
+    "id": "clu_ai-workplace_009",
+    "concept_id": "concept_ai-workplace_005",
+    "concept_label": "India's Foreign Policy",
+    "label": "India's Foreign Policy",
+    "member_count": 21,
+    "mutation_direction": "radicalizing",
+    "mutation_magnitude": 0.7787,
+    "arousal_trend": "cooling",
+    "arousal_value": 0.3833,
+    "adversarial_pairs": []
+  },
+  {
+    "id": "clu_ai-workplace_010",
+    "concept_id": "concept_ai-workplace_006",
+    "concept_label": "Employers",
+    "label": "Employers",
+    "member_count": 18,
+    "mutation_direction": "radicalizing",
+    "mutation_magnitude": 0.6283,
+    "arousal_trend": "stable",
+    "arousal_value": 0.5583,
+    "adversarial_pairs": []
+  },
+  {
+    "id": "clu_ai-workplace_011",
+    "concept_id": "concept_ai-workplace_007",
+    "concept_label": "Regulation",
+    "label": "Online Platforms",
+    "member_count": 12,
+    "mutation_direction": "radicalizing",
+    "mutation_magnitude": 0.6726,
+    "arousal_trend": "cooling",
+    "arousal_value": 0.325,
+    "adversarial_pairs": []
+  },
+  {
+    "id": "clu_ai-workplace_012",
+    "concept_id": "concept_ai-workplace_003",
+    "concept_label": "Automation",
+    "label": "Meta",
     "member_count": 14,
     "mutation_direction": "stable",
-    "mutation_magnitude": 0.5,
-    "arousal_trend": "warming",
-    "arousal_value": 0.67,
-    "adversarial_pairs": [
-      "clu_dc42d18abdfa"
-    ],
-    "influencer_seeding": {
-      "influencer_seeded": false,
-      "influencer_origin_count": 0,
-      "influencer_salience_contribution": 0.0,
-      "avg_propagation_hours": {
-        "x": 0,
-        "reddit": 0
-      }
-    }
-  },
-  {
-    "id": "clu_ac4164d3d878",
-    "concept_id": "creative-destruction-cycle",
-    "label": "Historical Parallel",
-    "member_count": 6,
-    "mutation_direction": "stable",
-    "mutation_magnitude": 0.37,
+    "mutation_magnitude": 0.4336,
     "arousal_trend": "cooling",
-    "arousal_value": 0.15,
-    "adversarial_pairs": [],
-    "influencer_seeding": {
-      "influencer_seeded": true,
-      "influencer_origin_count": 3,
-      "influencer_salience_contribution": 0.27,
-      "avg_propagation_hours": {
-        "x": 3.2,
-        "reddit": 7.9
-      }
-    }
+    "arousal_value": 0.375,
+    "adversarial_pairs": []
   },
   {
-    "id": "clu_42605ef6c255",
-    "concept_id": "corporate-replacement",
-    "label": "Job Displacement",
+    "id": "clu_ai-workplace_013",
+    "concept_id": "concept_ai-workplace_003",
+    "concept_label": "Automation",
+    "label": "NHS England",
+    "member_count": 58,
+    "mutation_direction": "stable",
+    "mutation_magnitude": 0.402,
+    "arousal_trend": "cooling",
+    "arousal_value": 0.2767,
+    "adversarial_pairs": []
+  },
+  {
+    "id": "clu_ai-workplace_014",
+    "concept_id": "concept_ai-workplace_004",
+    "concept_label": "Jobs",
+    "label": "Universal Basic Income",
+    "member_count": 28,
+    "mutation_direction": "stable",
+    "mutation_magnitude": 0.4052,
+    "arousal_trend": "cooling",
+    "arousal_value": 0.35,
+    "adversarial_pairs": []
+  },
+  {
+    "id": "clu_ai-workplace_015",
+    "concept_id": "concept_ai-workplace_004",
+    "concept_label": "Jobs",
+    "label": "Skilled Tech Workers in India",
+    "member_count": 64,
+    "mutation_direction": "mainstreaming",
+    "mutation_magnitude": 0.3607,
+    "arousal_trend": "cooling",
+    "arousal_value": 0.232,
+    "adversarial_pairs": []
+  },
+  {
+    "id": "clu_ai-workplace_016",
+    "concept_id": "concept_ai-workplace_004",
+    "concept_label": "Jobs",
+    "label": "AI Implementation Poses",
     "member_count": 22,
-    "mutation_direction": "stable",
-    "mutation_magnitude": 0.42,
-    "arousal_trend": "stable",
-    "arousal_value": 0.63,
-    "adversarial_pairs": [
-      "clu_b71a2467b80f"
-    ],
-    "influencer_seeding": {
-      "influencer_seeded": true,
-      "influencer_origin_count": 8,
-      "influencer_salience_contribution": 0.3,
-      "avg_propagation_hours": {
-        "x": 2.0,
-        "reddit": 4.2
-      }
-    }
-  },
-  {
-    "id": "clu_664c519fc265",
-    "concept_id": "automation-tax",
-    "label": "Retraining Policy",
-    "member_count": 7,
-    "mutation_direction": "fragmenting",
-    "mutation_magnitude": 0.67,
-    "arousal_trend": "warming",
-    "arousal_value": 0.5,
-    "adversarial_pairs": [],
-    "influencer_seeding": {
-      "influencer_seeded": true,
-      "influencer_origin_count": 2,
-      "influencer_salience_contribution": 0.51,
-      "avg_propagation_hours": {
-        "x": 5.7,
-        "reddit": 13.1
-      }
-    }
-  },
-  {
-    "id": "clu_b71a2467b80f",
-    "concept_id": "developer-productivity",
-    "label": "AI Augmentation",
-    "member_count": 20,
     "mutation_direction": "mainstreaming",
-    "mutation_magnitude": 0.24,
+    "mutation_magnitude": 0.3892,
     "arousal_trend": "cooling",
-    "arousal_value": 0.4,
-    "adversarial_pairs": [
-      "clu_42605ef6c255"
-    ],
-    "influencer_seeding": {
-      "influencer_seeded": false,
-      "influencer_origin_count": 0,
-      "influencer_salience_contribution": 0.0,
-      "avg_propagation_hours": {
-        "x": 0,
-        "reddit": 0
-      }
-    }
+    "arousal_value": 0.4364,
+    "adversarial_pairs": []
   },
   {
-    "id": "clu_374843c2887a",
-    "concept_id": "safety-deprioritization",
-    "label": "Corporate Hypocrisy",
-    "member_count": 19,
+    "id": "clu_ai-workplace_017",
+    "concept_id": "concept_ai-workplace_004",
+    "concept_label": "Jobs",
+    "label": "AI and Automation Displace",
+    "member_count": 12,
+    "mutation_direction": "stable",
+    "mutation_magnitude": 0.4349,
+    "arousal_trend": "stable",
+    "arousal_value": 0.5292,
+    "adversarial_pairs": []
+  },
+  {
+    "id": "clu_ai-workplace_018",
+    "concept_id": "concept_ai-workplace_004",
+    "concept_label": "Jobs",
+    "label": "Skilled Animators",
+    "member_count": 51,
     "mutation_direction": "mainstreaming",
-    "mutation_magnitude": 0.23,
-    "arousal_trend": "warming",
-    "arousal_value": 0.85,
-    "adversarial_pairs": [],
-    "influencer_seeding": {
-      "influencer_seeded": false,
-      "influencer_origin_count": 0,
-      "influencer_salience_contribution": 0.0,
-      "avg_propagation_hours": {
-        "x": 0,
-        "reddit": 0
-      }
-    }
+    "mutation_magnitude": 0.3538,
+    "arousal_trend": "cooling",
+    "arousal_value": 0.3627,
+    "adversarial_pairs": []
+  },
+  {
+    "id": "clu_ai-workplace_019",
+    "concept_id": "concept_ai-workplace_003",
+    "concept_label": "Automation",
+    "label": "Hermes Agent",
+    "member_count": 26,
+    "mutation_direction": "radicalizing",
+    "mutation_magnitude": 0.658,
+    "arousal_trend": "cooling",
+    "arousal_value": 0.2442,
+    "adversarial_pairs": []
+  },
+  {
+    "id": "clu_ai-workplace_020",
+    "concept_id": "concept_ai-workplace_000",
+    "concept_label": "Employment",
+    "label": "Corporate Greed",
+    "member_count": 17,
+    "mutation_direction": "stable",
+    "mutation_magnitude": 0.4975,
+    "arousal_trend": "cooling",
+    "arousal_value": 0.5,
+    "adversarial_pairs": []
+  },
+  {
+    "id": "clu_ai-workplace_021",
+    "concept_id": "concept_ai-workplace_000",
+    "concept_label": "Employment",
+    "label": "Members of Congress",
+    "member_count": 14,
+    "mutation_direction": "stable",
+    "mutation_magnitude": 0.4236,
+    "arousal_trend": "cooling",
+    "arousal_value": 0.425,
+    "adversarial_pairs": []
+  },
+  {
+    "id": "clu_ai-workplace_022",
+    "concept_id": "concept_ai-workplace_003",
+    "concept_label": "Automation",
+    "label": "Google Gemini",
+    "member_count": 11,
+    "mutation_direction": "radicalizing",
+    "mutation_magnitude": 0.6982,
+    "arousal_trend": "cooling",
+    "arousal_value": 0.1818,
+    "adversarial_pairs": []
+  },
+  {
+    "id": "clu_ai-workplace_023",
+    "concept_id": "concept_ai-workplace_004",
+    "concept_label": "Jobs",
+    "label": "Cybersecurity Jobs",
+    "member_count": 17,
+    "mutation_direction": "mainstreaming",
+    "mutation_magnitude": 0.3976,
+    "arousal_trend": "stable",
+    "arousal_value": 0.4588,
+    "adversarial_pairs": []
+  },
+  {
+    "id": "clu_ai-workplace_024",
+    "concept_id": "concept_ai-workplace_003",
+    "concept_label": "Automation",
+    "label": "Businesses",
+    "member_count": 47,
+    "mutation_direction": "stable",
+    "mutation_magnitude": 0.5875,
+    "arousal_trend": "cooling",
+    "arousal_value": 0.217,
+    "adversarial_pairs": []
+  },
+  {
+    "id": "clu_ai-workplace_025",
+    "concept_id": "concept_ai-workplace_003",
+    "concept_label": "Automation",
+    "label": "Claude Code Automation",
+    "member_count": 34,
+    "mutation_direction": "stable",
+    "mutation_magnitude": 0.4782,
+    "arousal_trend": "cooling",
+    "arousal_value": 0.2324,
+    "adversarial_pairs": []
+  },
+  {
+    "id": "clu_ai-workplace_026",
+    "concept_id": "concept_ai-workplace_003",
+    "concept_label": "Automation",
+    "label": "AI in Radiation Oncology",
+    "member_count": 17,
+    "mutation_direction": "stable",
+    "mutation_magnitude": 0.4567,
+    "arousal_trend": "cooling",
+    "arousal_value": 0.1912,
+    "adversarial_pairs": []
+  },
+  {
+    "id": "clu_ai-workplace_027",
+    "concept_id": "concept_ai-workplace_003",
+    "concept_label": "Automation",
+    "label": "AI in Chemical Plants Improve",
+    "member_count": 12,
+    "mutation_direction": "stable",
+    "mutation_magnitude": 0.5571,
+    "arousal_trend": "cooling",
+    "arousal_value": 0.2083,
+    "adversarial_pairs": []
   }
 ]

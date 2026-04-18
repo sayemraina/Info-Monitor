@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from 'react'
 import { createPortal } from 'react-dom'
 import type { TopicSummary } from '../types'
 import { AddTopicButton } from './shared/AddTopicButton'
-import { APP_VERSION, GITHUB_URL, GITHUB_HANDLE } from '../constants/version'
+import { APP_VERSION, X_URL, X_HANDLE } from '../constants/version'
 import { useIsMobile } from '../hooks/useIsMobile'
 
 function TitleWithTooltip() {
@@ -165,6 +165,36 @@ export function Header({
         position: 'relative',
       }}
     >
+      {/* Saba branding — Level 0 only, desktop only, left side */}
+      {!selectedTopicId && !isMobile && (
+        <a
+          href="https://sabaconnect.io"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-data saba-pulse"
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '6px',
+            textDecoration: 'none',
+            fontSize: '10px',
+            fontWeight: 500,
+            letterSpacing: '0.06em',
+            color: 'rgba(241,245,249,0.7)',
+            border: '1px solid rgba(148,163,184,0.3)',
+            borderRadius: '4px',
+            padding: '5px 8px',
+            lineHeight: 1,
+          }}
+          onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.color = '#F1F5F9'; (e.currentTarget as HTMLAnchorElement).style.borderColor = 'rgba(148,163,184,0.5)' }}
+          onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.color = 'rgba(241,245,249,0.7)'; (e.currentTarget as HTMLAnchorElement).style.borderColor = 'rgba(148,163,184,0.3)' }}
+        >
+          <span>From the Creator of</span>
+          <span>Saba</span>
+          <span style={{ fontSize: '10px', lineHeight: 1, opacity: 0.9, display: 'inline-block', transform: 'scale(1.5)', transformOrigin: 'center center', position: 'relative', top: '-2px' }}>↗</span>
+        </a>
+      )}
+
       {/* Mobile Level 1: Back button instead of search + tabs */}
       {selectedTopicId && isMobile && (
         <button
@@ -277,37 +307,8 @@ export function Header({
       {/* Right side — version + github + add topic */}
       <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: '20px' }}>
 
-        {/* Meta block: demo badge + version badge + github handle */}
+        {/* Meta block: version badge + github handle */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '14px', paddingTop: '3px' }}>
-          {/* Demo data indicator with live pulse dot */}
-          <span
-            className="font-data"
-            style={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: isMobile ? '3px' : '5px',
-              fontSize: isMobile ? '8px' : '10px',
-              fontWeight: 500,
-              letterSpacing: '0.08em',
-              color: 'rgba(241,245,249,0.5)',
-              border: '1px solid rgba(148,163,184,0.2)',
-              borderRadius: '4px',
-              padding: isMobile ? '2px 4px' : '2px 6px',
-              lineHeight: 1,
-            }}
-          >
-            <span
-              style={{
-                width: '6px',
-                height: '6px',
-                borderRadius: '50%',
-                backgroundColor: '#22C55E',
-                boxShadow: '0 0 4px rgba(34,197,94,0.6)',
-                animation: 'pulse-dot 2s ease-in-out infinite',
-              }}
-            />
-            {isMobile ? 'MODELED' : 'USING MODELED DATA'}
-          </span>
           <style>{`
             @keyframes pulse-dot {
               0%, 100% { opacity: 1; }
@@ -315,11 +316,14 @@ export function Header({
             }
           `}</style>
 
-          {/* Version badge — hidden on mobile */}
+          {/* Version badge with live pulse dot */}
           {!isMobile && (
             <span
               className="font-data"
               style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '5px',
                 fontSize: '10px',
                 fontWeight: 500,
                 letterSpacing: '0.08em',
@@ -330,14 +334,25 @@ export function Header({
                 lineHeight: 1,
               }}
             >
+              <span
+                style={{
+                  width: '6px',
+                  height: '6px',
+                  borderRadius: '50%',
+                  backgroundColor: '#22C55E',
+                  boxShadow: '0 0 4px rgba(34,197,94,0.6)',
+                  animation: 'pulse-dot 2s ease-in-out infinite',
+                  flexShrink: 0,
+                }}
+              />
               {APP_VERSION}
             </span>
           )}
 
-          {/* GitHub handle — hidden on mobile */}
+          {/* X handle */}
           {!isMobile && (
             <a
-              href={GITHUB_URL}
+              href={X_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="font-data transition-colors duration-200"
@@ -353,10 +368,10 @@ export function Header({
               onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.color = '#F1F5F9' }}
               onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.color = 'rgba(241,245,249,0.7)' }}
             >
-              <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor">
-                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/>
+              <svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
               </svg>
-              {GITHUB_HANDLE}
+              {X_HANDLE}
             </a>
           )}
 

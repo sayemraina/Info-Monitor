@@ -1,4 +1,9 @@
 export const GLOSSARY = {
+  SemanticLayout: {
+    what: "Clusters are positioned by semantic similarity — how closely related their claims are in meaning.",
+    soWhat: "Clusters near each other share overlapping narrative territory. Clusters far apart are semantically distinct. Only relative distance matters — the axes have no inherent meaning.",
+    how: "Claim embeddings are mapped to 2D using UMAP, which preserves distances from high-dimensional semantic space. Claims with similar language, framing, and subjects land near each other.",
+  },
   ClaimLandscape: {
     what: "Claims making similar arguments cluster into narrative threads.",
     soWhat: "Dot size = salience, color = momentum, glow = arousal. Hulls group claims into named clusters.",

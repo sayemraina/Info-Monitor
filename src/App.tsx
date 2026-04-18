@@ -1,13 +1,19 @@
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useEffect } from 'react'
 import type { AppState, TimeWindow, EventType, EntryHint } from './types'
 import { useTopics } from './hooks/useTopics'
 import { Header } from './components/Header'
 import { TopicOverview } from './components/Level0/TopicOverview'
 import { TopicView } from './components/TopicView/TopicView'
 import { InfoButtonProvider } from './components/shared/InfoButtonContext'
+import { DebugOverlay } from './components/DebugOverlay'
+import { mark, isDebug } from './utils/perf'
 
 function App() {
   const { topics, refetch: refetchTopics } = useTopics()
+
+  useEffect(() => {
+    if (topics.length > 0) mark('topics_loaded', { count: topics.length })
+  }, [topics.length])
 
   const [state, setState] = useState<AppState>({
     level: 0,
@@ -15,7 +21,7 @@ function App() {
     selectedClaimId: null,
     timeWindow: '24h',
     compareMode: false,
-    selectedSlices: ['x_platform', 'reddit_platform'],
+    selectedSlices: null,
     eventTypeFilter: 'all',
     searchQuery: '',
   })
@@ -132,6 +138,7 @@ function App() {
           </div>
         ) : null}
       </main>
+      {isDebug() && <DebugOverlay />}
     </div>
     </InfoButtonProvider>
   )

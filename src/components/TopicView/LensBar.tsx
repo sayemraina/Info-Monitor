@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect, useMemo } from 'react'
 import { GLOSSARY } from '../../constants/glossary'
 import { InfoButton } from '../shared/InfoButton'
 import { useIsMobile } from '../../hooks/useIsMobile'
@@ -27,7 +27,54 @@ interface TierConfig {
   lenses: LensEntry[]
 }
 
-const LENS_TIERS: TierConfig[] = [
+// Human-readable labels for known slice IDs
+const SLICE_LABELS: Record<string, string> = {
+  x_platform: 'X',
+  reddit_platform: 'Reddit',
+  youtube_influencer: 'YouTube',
+  bluesky_platform: 'Bluesky',
+  population_all: 'Population',
+  elite_media_all: 'Elite Media',
+  think_tank_all: 'Think Tanks',
+  government_all: 'Government',
+  coastal_metros: 'Coastal',
+  heartland_metros: 'Heartland',
+}
+
+function sliceLabel(id: string): string {
+  return SLICE_LABELS[id] ?? id.replace(/_platform$|_all$|_influencer$/g, '').replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase())
+}
+
+function buildPairsFromSlices(sliceIds: string[]): LensPair[] {
+  const pairs: LensPair[] = []
+  for (let i = 0; i < sliceIds.length; i++) {
+    for (let j = i + 1; j < sliceIds.length; j++) {
+      pairs.push({
+        label: `${sliceLabel(sliceIds[i])} vs ${sliceLabel(sliceIds[j])}`,
+        a: sliceIds[i],
+        b: sliceIds[j],
+      })
+    }
+  }
+  return pairs.slice(0, 10) // cap at 10
+}
+
+function buildTiers(availableSlices?: Array<{ id: string; type: string }>): TierConfig[] {
+  // Build platform pairs from available data
+  const platformSlices = availableSlices?.filter(s => s.type === 'platform').map(s => s.id) ?? []
+  const sourceTypeSlices = availableSlices?.filter(s => s.type === 'source_type').map(s => s.id) ?? []
+
+  const platformPairs = platformSlices.length >= 2
+    ? buildPairsFromSlices(platformSlices)
+    : [
+        { label: 'X vs YouTube', a: 'x_platform', b: 'youtube_influencer' },
+      ]
+
+  const topologyPairs = sourceTypeSlices.length >= 2
+    ? buildPairsFromSlices(sourceTypeSlices)
+    : []
+
+  return [
   {
     name: 'Hard Anchors',
     confidence: 'directly observable · highest confidence',
@@ -35,18 +82,21 @@ const LENS_TIERS: TierConfig[] = [
       {
         id: 'platform',
         label: 'Platform',
-        available: true,
+        available: platformPairs.length > 0,
         description: "What each platform's structure allows to be said",
-        pairs: [
-          { label: 'X vs Reddit', a: 'x_platform', b: 'reddit_platform' },
-          { label: 'X vs YouTube', a: 'x_platform', b: 'youtube_influencer' },
-          { label: 'Reddit vs YouTube', a: 'reddit_platform', b: 'youtube_influencer' },
-        ],
+        pairs: platformPairs,
       },
+      ...(topologyPairs.length > 0 ? [{
+        id: 'topology',
+        label: 'Topology',
+        available: true,
+        description: 'Population discourse vs elite/institutional framing — dual topology analysis',
+        pairs: topologyPairs,
+      }] : []),
       {
         id: 'geography',
         label: 'Geography',
-        available: true,
+        available: !!(availableSlices?.some(s => s.id === 'coastal_metros')),
         description: 'How claims cluster by region — same event, different salience by locale',
         pairs: [
           { label: 'Eg: Coastal vs Heartland', a: 'coastal_metros', b: 'heartland_metros' },
@@ -113,8 +163,9 @@ const LENS_TIERS: TierConfig[] = [
         description: 'e.g., #AIRegulation community vs #OpenSource community — labeled by the behavior that defines them, never by inferred demographic',
       },
     ],
-  },
-]
+  }
+  ]
+}
 
 // ---------------------------------------------------------------------------
 // LensBar
@@ -123,26 +174,26 @@ const LENS_TIERS: TierConfig[] = [
 interface LensBarProps {
   activePair: LensPair
   onSelectPair: (pair: LensPair) => void
+  availableSlices?: Array<{ id: string; type: string }>
 }
 
-// Abbreviated labels for inline pair toggles
-const PAIR_ABBREV: Record<string, string> = {
-  'X vs Reddit': 'X / Red',
-  'X vs YouTube': 'X / YT',
-  'Reddit vs YouTube': 'Red / YT',
-  'Coastal vs Heartland': 'Coast / Heart',
+function pairAbbrev(label: string): string {
+  // Generate abbreviated label: "X vs Reddit" → "X / Red"
+  const parts = label.split(' vs ')
+  if (parts.length !== 2) return label
+  const abbr = (s: string) => s.length > 4 ? s.slice(0, 3) : s
+  return `${abbr(parts[0])} / ${abbr(parts[1])}`
 }
 
-// All available lenses with pairs
-const ALL_AVAILABLE_LENSES = LENS_TIERS.flatMap(t => t.lenses).filter(l => l.available && l.pairs)
-
-function findActiveLens(activePair: LensPair) {
-  return ALL_AVAILABLE_LENSES.find(lens =>
+function findActiveLens(tiers: TierConfig[], activePair: LensPair) {
+  const all = tiers.flatMap(t => t.lenses).filter(l => l.available && l.pairs)
+  return all.find(lens =>
     lens.pairs?.some(p => p.a === activePair.a && p.b === activePair.b)
-  ) ?? ALL_AVAILABLE_LENSES[0]
+  ) ?? all[0]
 }
 
-export function LensBar({ activePair, onSelectPair }: LensBarProps) {
+export function LensBar({ activePair, onSelectPair, availableSlices }: LensBarProps) {
+  const tiers = useMemo(() => buildTiers(availableSlices), [availableSlices])
   const isMobile = useIsMobile()
   const [dropdownOpen, setDropdownOpen] = useState(false)
   const barRef = useRef<HTMLDivElement>(null)
@@ -255,12 +306,12 @@ export function LensBar({ activePair, onSelectPair }: LensBarProps) {
         <div className="flex-1" />
 
         {/* Inline pair toggles */}
-        {findActiveLens(activePair)?.pairs && (
+        {findActiveLens(tiers, activePair)?.pairs && (
           <div
             className={`flex items-center gap-3 shrink-0 ${isMobile ? 'mobile-scroll-fade' : ''}`}
             style={isMobile ? { overflowX: 'auto', WebkitOverflowScrolling: 'touch', scrollbarWidth: 'none' } : undefined}
           >
-            {findActiveLens(activePair)!.pairs!.map((pair) => {
+            {findActiveLens(tiers, activePair)!.pairs!.map((pair) => {
               const isActive = pair.a === activePair.a && pair.b === activePair.b
               return (
                 <button
@@ -275,7 +326,7 @@ export function LensBar({ activePair, onSelectPair }: LensBarProps) {
                     padding: '2px 0',
                   }}
                 >
-                  {PAIR_ABBREV[pair.label] ?? pair.label}
+                  {pairAbbrev(pair.label)}
                   {/* Active indicator — subtle bottom accent */}
                   {isActive && (
                     <div
@@ -317,7 +368,7 @@ export function LensBar({ activePair, onSelectPair }: LensBarProps) {
           </div>
 
           {/* Tiers */}
-          {LENS_TIERS.map((tier, tierIdx) => (
+          {tiers.map((tier, tierIdx) => (
             <div key={tier.name} className={tierIdx > 0 ? 'mt-1' : ''}>
               {/* Tier header */}
               <div className="px-5 pt-3 pb-1.5">

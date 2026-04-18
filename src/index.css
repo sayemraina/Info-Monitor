@@ -227,6 +227,14 @@ input.search-input:focus {
   animation: claimDetailIn 600ms ease-out both;
 }
 
+@keyframes sabaPulse {
+  0%, 100% { background-color: rgba(255,255,255,0.02); }
+  50%       { background-color: rgba(255,255,255,0.35); }
+}
+.saba-pulse {
+  animation: sabaPulse 2.5s ease-in-out 4;
+}
+
 /* ═══ Mobile Responsiveness (≤768px) ═══ */
 @media (max-width: 768px) {
   html, body, #root {

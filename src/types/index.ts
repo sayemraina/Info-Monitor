@@ -7,6 +7,8 @@
 
 // --- Core Domain Types ---
 
+export type SourceType = 'population' | 'elite_media' | 'think_tank' | 'government' | 'prediction_market' | 'event_signal'
+
 export interface Claim {
   id: string
   text: string
@@ -21,12 +23,33 @@ export interface Claim {
   concept_id: string
   first_seen_platform: string
   first_seen_timestamp: string // ISO8601
+  source_type?: SourceType // Topology tag: population (Topology A) vs elite_media/think_tank (Topology B)
   platform_presence?: Record<string, number> // distributional share per platform, e.g. { x_platform: 0.82, reddit_platform: 0.45 }
+}
+
+// --- Event Signal Types (bypass extraction pipeline — served as-is) ---
+
+export interface EventSignal {
+  id: string
+  source: string                    // "gdelt", "fred", "congress", "yahoo_finance", etc.
+  source_type: SourceType
+  type: string                      // "news_event", "economic_indicator", "bill_introduced", "price_movement", etc.
+  title: string
+  summary: string
+  timestamp: string                 // ISO8601
+  location?: { lat: number; lng: number; label: string }
+  severity?: 'high' | 'medium' | 'low'
+  value?: number                    // for numeric signals (prices, odds, CPI)
+  change?: number                   // delta from previous
+  url?: string
+  topic_relevance: string[]         // which topic IDs this relates to
+  metadata: Record<string, unknown>
 }
 
 export interface Cluster {
   id: string
   concept_id: string
+  concept_label?: string
   label: string
   member_count: number
   mutation_direction: 'mainstreaming' | 'radicalizing' | 'fragmenting' | 'stable'
@@ -35,6 +58,17 @@ export interface Cluster {
   arousal_value: number // 0–1
   adversarial_pairs: string[] // cluster IDs of detected opponents (stretch)
   influencer_seeding?: InfluencerSeeding
+}
+
+export interface Concept {
+  id: string
+  label: string
+  cluster_ids: string[]
+  member_count: number
+  arousal_trend: 'warming' | 'cooling' | 'stable'
+  arousal_value: number
+  mutation_direction: 'mainstreaming' | 'radicalizing' | 'fragmenting' | 'stable'
+  mutation_magnitude: number
 }
 
 // --- Metric Types ---
@@ -199,6 +233,8 @@ export interface ClaimPosition {
   y: number
   momentum?: number // -1 to +1, emitted by data pipeline
   salience?: number
+  friction?: number // 0–1, oppositional / total engagement
+  persistence?: number // consecutive windows above threshold
 }
 
 export interface TopicMetrics {
@@ -217,9 +253,12 @@ export interface TopicMetrics {
 export interface LandscapeData {
   claims: Claim[]
   clusters: Cluster[]
+  concepts?: Concept[]
   positions: ClaimPosition[]
   topic_metrics: TopicMetrics
   adversarial_pairs?: AdversarialPair[]
+  available_slices?: Array<{ id: string; type: string; label: string }>
+  available_pairs?: Array<[string, string]>
 }
 
 export interface ClaimDetail {
@@ -245,8 +284,8 @@ export interface ClaimDetail {
     lead_lag: Array<{ platform: string; lag_hours: number }>
   }
   supply_chain: SupplyChain
-  coordination: CoordinationCheck
-  semantic_neighbors: Array<{ claim_id: string; similarity: number }>
+  coordination?: CoordinationCheck
+  semantic_neighbors: Array<{ claim_id: string; similarity: number; text?: string }>
   adversarial_pairs?: AdversarialPair[]
   example_content: Array<{
     text: string
@@ -338,6 +377,15 @@ export interface TopicGeoData {
   geo_clusters: GeoCluster[]
 }
 
+export type ShaperRole =
+  | 'frame_setter'
+  | 'institutional'
+  | 'primary_commentator'
+  | 'counter_voice'
+  | 'authentic_witness'
+  | 'velocity_outlier'
+  | 'supplementary'
+
 export interface VideoMetadata {
   video_id: string
   title: string
@@ -348,10 +396,11 @@ export interface VideoMetadata {
   tier?: 1 | 2 | 3
   composite_score?: number
   channel_subscribers?: number
+  role?: ShaperRole // Narrative shaper role assigned by 6-slot selection
 }
 
 export interface DiscoursePost {
-  platform: 'x' | 'reddit'
+  platform: 'x' | 'reddit' | 'bluesky' | 'youtube'
   username: string
   text: string
   cluster_id: string

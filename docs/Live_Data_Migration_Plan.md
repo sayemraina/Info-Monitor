@@ -1,3 +1,6 @@
+# ⚠️ DEPRECATED — Superseded by InfoMonitor_Data_Sources_Spec.md (34 sources)
+# All Xpoz references in this doc are obsolete. Use X Official API (developer.x.com) instead.
+
 # PLAN: Move to Live Real-Time Data — Full Production Migration
 
 ## Context

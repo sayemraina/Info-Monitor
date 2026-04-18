@@ -30,6 +30,9 @@ export function AddTopicButton({ onTopicAdded, refetchTopics }: AddTopicButtonPr
   const [submitting, setSubmitting] = useState(false)
   const pollRef = useRef<ReturnType<typeof setInterval> | null>(null)
 
+  // Cleanup on unmount — must be before any conditional returns (Rules of Hooks)
+  useEffect(() => () => { if (pollRef.current) clearInterval(pollRef.current) }, [])
+
   // Only render in server mode
   if (!serverMode) return null
 
@@ -95,9 +98,6 @@ export function AddTopicButton({ onTopicAdded, refetchTopics }: AddTopicButtonPr
       setSubmitting(false)
     }
   }
-
-  // Cleanup on unmount
-  useEffect(() => () => { if (pollRef.current) clearInterval(pollRef.current) }, [])
 
   const currentStepIdx = jobStatus ? (STEP_ORDER[jobStatus.step] ?? 0) : -1
   const isRunning = submitting && jobStatus?.status !== 'failed'

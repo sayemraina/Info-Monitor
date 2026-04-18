@@ -234,15 +234,28 @@ export function computeCompareData(
     typology,
   }
 
-  // Stub exposure comparison — requires engagement data not in landscape
-  const stubMetric = {
-    value: 0,
-    confidence_interval: [0, 0] as [number, number],
+  // Exposure proxy: volume share × average confidence per slice
+  const exposureProxy = (key: string): number => {
+    let weightedConf = 0
+    let totalWeight = 0
+    for (const c of claims) {
+      const w = c.platform_presence?.[key] ?? 0
+      weightedConf += c.confidence * w
+      totalWeight += w
+    }
+    const avgConf = totalWeight > 0 ? weightedConf / totalWeight : 0.5
+    const volShare = totalVol > 0 ? (key === sliceAKey ? volumeA : volumeB) / totalVol : 0.5
+    return parseFloat(Math.min(1, volShare * avgConf * 2).toFixed(4))
+  }
+
+  const makeExposureMetric = (val: number) => ({
+    value: val,
+    confidence_interval: [Math.max(0, val - 0.15), Math.min(1, val + 0.15)] as [number, number],
     baseline: 'global' as const,
     time_window: '24h' as const,
-    sparkline: [],
-    source_distribution: 'production' as const,
-  }
+    sparkline: [val],
+    source_distribution: 'estimated_exposure' as const,
+  })
 
   return {
     slice_a: makeSlice(sliceAKey, volumeA),
@@ -254,8 +267,8 @@ export function computeCompareData(
       slice_b_avg: arousalAvg(sliceBKey),
     },
     exposure_comparison: {
-      slice_a: stubMetric,
-      slice_b: stubMetric,
+      slice_a: makeExposureMetric(exposureProxy(sliceAKey)),
+      slice_b: makeExposureMetric(exposureProxy(sliceBKey)),
     },
   }
 }

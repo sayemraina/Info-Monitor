@@ -3,6 +3,13 @@
 ## What This Is
 Real-time narrative topology system. Extracts claims from social media, maps them into semantic space, measures divergence across populations. Single-page dark-themed intelligence instrument. Demo runs entirely on pre-computed cached data.
 
+## Context Efficiency Rules
+- **Do NOT read SCRATCHPAD.md upfront.** It is 400+ lines. Only read it when you need the spec compliance checklist or session history. For current state, read HANDOFF.md instead (much shorter).
+- **Do NOT read `data/` JSON files** unless debugging data issues. They are generated outputs.
+- **Do NOT read `docs/` spec files upfront.** Read on demand (see below).
+- **Read HANDOFF.md first** when starting a new session — it has the latest state, remaining work, and visual verification results.
+- **Read the specific source file** you're about to modify. Don't read files you aren't changing.
+
 ## Reference Docs (read on demand, not upfront)
 - `docs/concept-note-v6.md` — WHAT we measure and WHY. Metric definitions, analytical frameworks, epistemic constraints. Read before implementing any metric.
 - `docs/End_State_Definition_v3_Final.md` — Original product spec and zone layout reference.

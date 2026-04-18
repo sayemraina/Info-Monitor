@@ -83,7 +83,7 @@ export function DivergencePanel({ topicId, timeWindow, sliceA, sliceB, landscape
     )
   }
 
-  const { divergence, per_cluster, arousal_comparison } = compare
+  const { divergence, per_cluster, arousal_comparison, exposure_comparison } = compare
   const typo = divergence.typology
   const semantic = jsdSemanticLabel(divergence.jsd)
   const labelA = cleanSliceLabel(compare.slice_a.label)
@@ -200,6 +200,55 @@ export function DivergencePanel({ topicId, timeWindow, sliceA, sliceB, landscape
             </p>
           </div>
         );
+      })()}
+
+      {/* Exposure Comparison */}
+      {exposure_comparison && (() => {
+        const valA = exposure_comparison.slice_a?.value
+        const valB = exposure_comparison.slice_b?.value
+        if (valA == null || valB == null) return null
+
+        const diff = Math.abs(valA - valB)
+        if (diff < 0.05) {
+          return (
+            <div
+              className="rounded-lg p-2"
+              style={{ backgroundColor: 'rgba(148,163,184,0.05)', border: '1px solid rgba(148,163,184,0.1)' }}
+            >
+              <div className="flex items-center gap-1.5 mb-1">
+                <span className="text-[9px] font-bold uppercase tracking-wider" style={{ color: '#94A3B8' }}>Estimated Exposure</span>
+                <InfoButton term="Exposure" content={{ what: "Estimated reach of claims within each population slice.", soWhat: "Similar exposure means both groups are encountering these narratives at comparable rates.", how: "Weighted combination of production volume, amplification signals, and platform-specific reach estimates." }} />
+              </div>
+              <p className="text-[11px] leading-snug" style={{ color: '#64748B' }}>
+                Similar estimated exposure across both populations
+              </p>
+            </div>
+          )
+        }
+
+        const higherSlice = valA > valB ? labelA : labelB
+        const lowerSlice = valA > valB ? labelB : labelA
+        const higherVal = Math.max(valA, valB).toFixed(2)
+        const lowerVal = Math.min(valA, valB).toFixed(2)
+        const ratio = Math.max(valA, valB) / Math.max(Math.min(valA, valB), 0.01)
+        const intensity = ratio >= 3 ? 'dramatically higher' : ratio >= 1.5 ? 'significantly higher' : 'moderately higher'
+
+        return (
+          <div
+            className="rounded-lg p-2"
+            style={{ backgroundColor: 'rgba(6,182,212,0.07)', border: '1px solid rgba(6,182,212,0.15)' }}
+          >
+            <div className="flex items-center gap-1.5 mb-1">
+              <span className="text-[9px] font-bold uppercase tracking-wider" style={{ color: '#06B6D4' }}>Estimated Exposure</span>
+              <InfoButton term="Exposure" content={{ what: "Estimated reach of claims within each population slice.", soWhat: "Unequal exposure suggests one group encounters these narratives far more frequently — a potential information asymmetry driver.", how: "Weighted combination of production volume, amplification signals, and platform-specific reach estimates." }} />
+            </div>
+            <p className="text-[11px] leading-snug" style={{ color: '#CBD5E1' }}>
+              <span className="font-semibold" style={{ color: '#F1F5F9' }}>{higherSlice}</span> has{' '}
+              <span className="font-semibold" style={{ color: '#06B6D4' }}>{intensity}</span>{' '}
+              exposure ({higherVal}) compared to {lowerSlice} ({lowerVal})
+            </p>
+          </div>
+        )
       })()}
 
       {/* ═══ ACT 3: DETAIL + ACTION — "Where exactly?" ═══ */}

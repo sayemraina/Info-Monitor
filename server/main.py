@@ -6,7 +6,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
-from .routers import topics, landscape, claims, compare, timeline, ingest
+from .routers import topics, landscape, claims, compare, timeline, ingest, timings
 from .pipeline import start_scheduler, stop_scheduler, get_schedule_status, update_schedule
 
 DATA_DIR = Path(__file__).parent.parent / "data"
@@ -39,6 +39,7 @@ app.include_router(claims.router, prefix="/api")
 app.include_router(compare.router, prefix="/api")
 app.include_router(timeline.router, prefix="/api")
 app.include_router(ingest.router, prefix="/api")
+app.include_router(timings.router, prefix="/api")
 
 # Serve the data directory at /data so frontend URL paths are identical
 # whether hitting Vite static files or this server.
