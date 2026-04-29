@@ -1,0 +1,193 @@
+{
+  "claim": {
+    "text": "Democrats have created systemic conditions that facilitate illegal immigration.",
+    "subject": "Democratic Party",
+    "assertion": "facilitates illegal immigration",
+    "framing": "political",
+    "stance": "anti",
+    "confidence": 0.8,
+    "arousal": "medium",
+    "register": "journalistic",
+    "id": "immigration_aol_9d0e1dfc_1",
+    "cluster_id": "clu_immigration_008",
+    "concept_id": "concept_immigration_006",
+    "first_seen_platform": "aol",
+    "first_seen_timestamp": "2026-04-29T17:21:54Z",
+    "source_document_id": "50c2bb3ef8db0d9a",
+    "source_platform": "aol",
+    "source_timestamp": "2026-04-29T17:21:54Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "elite_media"
+  },
+  "momentum": {
+    "value": 0.51,
+    "confidence_interval": [
+      0.41,
+      0.61
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.51
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 1,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.3092,
+    "confidence_interval": [
+      0.1824,
+      0.436
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3092
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.8,
+    "factors": []
+  },
+  "provenance": {
+    "first_platform": "Aol",
+    "first_timestamp": "2026-04-29T17:21:54Z",
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 1.0
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_immigration_006",
+    "hops": [
+      {
+        "platform": "Aol",
+        "timestamp": "2026-04-29T17:21:54+00:00",
+        "claim_id": "immigration_aol_9d0e1dfc_1",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-29T18:21:04.490000+00:00",
+        "claim_id": "immigration_aol_9d0e1dfc_1",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "immigration_bluesky_e73f124f_1",
+      "similarity": 0.3047,
+      "text": "Members of some minority groups cannot be trusted due to their support for strict immigration enforcement policies."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Members of some minority groups cannot be trusted due to their support for strict immigration enforcement policies.",
+      "platform": "Bluesky",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "claim": {
+    "text": "Netanyahu's actions are creating hostility towards Jews.",
+    "subject": "Netanyahu",
+    "assertion": "are creating hostility towards Jews",
+    "framing": "neutral",
+    "stance": "anti",
+    "confidence": 0.9,
+    "arousal": "medium",
+    "register": "journalistic",
+    "id": "israel-palestine_the_atlantic_659c8b7c_1",
+    "cluster_id": "clu_israel-palestine_022",
+    "concept_id": "concept_israel-palestine_007",
+    "first_seen_platform": "the_atlantic",
+    "first_seen_timestamp": "2026-04-26T11:00:00Z",
+    "source_document_id": "c0cbc19d5a975502",
+    "source_platform": "the_atlantic",
+    "source_timestamp": "2026-04-26T11:00:00Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "elite_media"
+  },
+  "momentum": {
+    "value": 0.54,
+    "confidence_interval": [
+      0.44,
+      0.64
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.54
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0.6,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.3044,
+    "confidence_interval": [
+      0.1772,
+      0.4316
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3044
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.6,
+    "confidence_interval": [
+      0.495,
+      0.705
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.6
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "The Atlantic",
+    "first_timestamp": "2026-04-26T11:00:00Z",
+    "lead_lag": [
+      {
+        "platform": "Dnyuz",
+        "lag_hours": 0.4
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_israel-palestine_007",
+    "hops": [
+      {
+        "platform": "The Atlantic",
+        "timestamp": "2026-04-26T11:00:00+00:00",
+        "claim_id": "israel-palestine_the_atlantic_659c8b7c_1",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Dnyuz",
+        "timestamp": "2026-04-26T11:25:41+00:00",
+        "claim_id": "israel-palestine_the_atlantic_659c8b7c_1",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "israel-palestine_dnyuz_23451029_2",
+      "similarity": 0.6669,
+      "text": "Hostility towards Israel is contributing to increased antisemitism."
+    },
+    {
+      "claim_id": "israel-palestine_the_atlantic_2b8a0b53_2",
+      "similarity": 0.5339,
+      "text": "American Jews are facing increased hostility from liberal and progressive activists due to anti-Zionism and anti-Israel sentiment."
+    },
+    {
+      "claim_id": "israel-palestine_the_atlantic_659c8b7c_2",
+      "similarity": 0.486,
+      "text": "American Jews are facing increased attacks from liberal and progressive activists due to anti-Zionism and anti-Israel sentiment."
+    },
+    {
+      "claim_id": "israel-palestine_dnyuz_23451029_1",
+      "similarity": 0.4638,
+      "text": "Netanyahu's actions have placed American Jews in a difficult position, caught between supporting Israel and maintaining relationships with their liberal allies."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Netanyahu's actions have placed American Jews in a difficult position, caught between supporting Israel and maintaining relationships with their liberal allies.",
+      "platform": "Dnyuz",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Hostility towards Israel is contributing to increased antisemitism.",
+      "platform": "Dnyuz",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "American Jews are facing increased hostility from liberal and progressive activists due to anti-Zionism and anti-Israel sentiment.",
+      "platform": "The Atlantic",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "claim": {
+    "text": "The Trump administration is denying green cards and visas to individuals who criticize Israel or participate in pro-Palestinian protests.",
+    "subject": "Immigration policy",
+    "assertion": "is being used to suppress criticism of Israel and support for Palestine",
+    "framing": "political repression",
+    "stance": "anti",
+    "confidence": 0.9,
+    "arousal": "high",
+    "register": "vernacular",
+    "id": "immigration_x_c10c9cd7_0",
+    "cluster_id": "clu_immigration_019",
+    "concept_id": "concept_immigration_002",
+    "first_seen_platform": "x",
+    "first_seen_timestamp": "2026-04-29T09:15:48.000Z",
+    "source_document_id": "x_2049417354291855858",
+    "source_platform": "x",
+    "source_timestamp": "2026-04-29T09:15:48.000Z",
+    "source_engagement": {
+      "likes": 33,
+      "replies": 1,
+      "shares": 18
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.5814,
+    "confidence_interval": [
+      0.4814,
+      0.6814
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5814
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 1,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.3039,
+    "confidence_interval": [
+      0.1767,
+      0.4311
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3039
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.85,
+    "confidence_interval": [
+      0.7638,
+      0.9362
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.85
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 0.988,
+    "confidence_interval": [
+      0.9121,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.988
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "X Platform",
+    "first_timestamp": "2026-04-29T09:15:48.000Z",
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 9.2
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_immigration_002",
+    "hops": [
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-29T09:15:48+00:00",
+        "claim_id": "immigration_x_c10c9cd7_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-29T18:27:11.729000+00:00",
+        "claim_id": "immigration_x_c10c9cd7_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "immigration_x_c10c9cd7_1",
+      "similarity": 0.6925,
+      "text": "Zionist lobbying groups exert excessive control over US immigration policy."
+    },
+    {
+      "claim_id": "immigration_bluesky_b558cb5d_0",
+      "similarity": 0.4211,
+      "text": "Some Trump supporters exhibit hypocrisy by advocating for mass deportation while simultaneously profiting from employing Hispanic workers."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Some Trump supporters exhibit hypocrisy by advocating for mass deportation while simultaneously profiting from employing Hispanic workers.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Zionist lobbying groups exert excessive control over US immigration policy.",
+      "platform": "X Platform",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

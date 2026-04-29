@@ -3,30 +3,37 @@
     "id": "x_platform",
     "type": "platform",
     "label": "X Platform",
-    "active_volume": 6,
+    "active_volume": 0,
     "meets_minimum_threshold": false,
-    "base_rate_weight": 0.0217,
+    "base_rate_weight": 0.0,
     "is_influencer_framing": false
   },
   "slice_b": {
     "id": "think_tank_all",
     "type": "source_type",
     "label": "Think Tanks",
-    "active_volume": 5,
+    "active_volume": 0,
     "meets_minimum_threshold": false,
-    "base_rate_weight": 0.0181,
+    "base_rate_weight": 0.0,
     "is_influencer_framing": false
   },
   "divergence": {
-    "jsd": 1.0,
-    "jsd_sqrt": 1.0,
+    "jsd": 0.0,
+    "jsd_sqrt": 0.0,
     "trend": [
-      1.0
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
     ],
     "typology": {
-      "information_asymmetry": 0.381,
-      "interpretive": 0.2381,
-      "paradigmatic": 0.381,
+      "information_asymmetry": 0.0,
+      "interpretive": 0.0,
+      "paradigmatic": 0.0,
       "dominant_mode": "Information Asymmetry",
       "paradigmatic_caveat": false
     }
@@ -34,27 +41,27 @@
   "per_cluster": [
     {
       "cluster_id": "clu_dei-rollbacks_000",
-      "label": "Affirmative Action",
-      "salience_a": 0.0,
-      "salience_b": 1.0,
-      "arousal_a": 0,
-      "arousal_b": 0.36,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_dei-rollbacks_001",
-      "label": "Pete Hegseth",
+      "label": "Openai",
       "salience_a": 0.0,
       "salience_b": 0.0,
       "arousal_a": 0,
       "arousal_b": 0,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_001",
+      "label": "Deutsche Telekom and T-Mobile",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_dei-rollbacks_002",
-      "label": "DEI Rollbacks",
+      "label": "Climate Regulations",
       "salience_a": 0.0,
       "salience_b": 0.0,
       "arousal_a": 0,
@@ -64,7 +71,47 @@
     },
     {
       "cluster_id": "clu_dei-rollbacks_003",
-      "label": "ABA Council",
+      "label": "Republican Farm Bill",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_004",
+      "label": "Target",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_005",
+      "label": "Recent College Graduates",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_006",
+      "label": "Immigration",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_007",
+      "label": "American Roots Music",
       "salience_a": 0.0,
       "salience_b": 0.0,
       "arousal_a": 0,
@@ -73,44 +120,174 @@
       "mutation_b": "stable"
     },
     {
-      "cluster_id": "clu_dei-rollbacks_004",
-      "label": "Target",
-      "salience_a": 1.0,
+      "cluster_id": "clu_dei-rollbacks_008",
+      "label": "Dollar General",
+      "salience_a": 0.0,
       "salience_b": 0.0,
-      "arousal_a": 0.325,
+      "arousal_a": 0,
       "arousal_b": 0,
-      "mutation_a": "mainstreaming",
-      "mutation_b": "mainstreaming"
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_009",
+      "label": "Military Promotions",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_010",
+      "label": "Pete Hegseth",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_011",
+      "label": "Women's Cycling Prize Money",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_013",
+      "label": "Government Officials",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_014",
+      "label": "Government Policies",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_015",
+      "label": "Laura Rutledge",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_016",
+      "label": "Supreme Court",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_017",
+      "label": "ICE",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_018",
+      "label": "DEI",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_019",
+      "label": "Conservatives",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_020",
+      "label": "Affirmative Action",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_021",
+      "label": "EEOC",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_022",
+      "label": "Hamas",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     }
   ],
   "arousal_comparison": {
-    "slice_a_avg": 0.325,
-    "slice_b_avg": 0.36
+    "slice_a_avg": 0,
+    "slice_b_avg": 0
   },
   "exposure_comparison": {
     "slice_a": {
-      "value": 0.039,
+      "value": 0,
       "confidence_interval": [
         0,
-        0.1861
+        0.15
       ],
       "baseline": "global",
       "time_window": "6h",
       "sparkline": [
-        0.039
+        0
       ],
       "source_distribution": "production"
     },
     "slice_b": {
-      "value": 0.0325,
+      "value": 0,
       "confidence_interval": [
         0,
-        0.1801
+        0.15
       ],
       "baseline": "global",
       "time_window": "6h",
       "sparkline": [
-        0.0325
+        0
       ],
       "source_distribution": "production"
     }

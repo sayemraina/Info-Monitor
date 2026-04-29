@@ -3,147 +3,111 @@
     {
       "id": "evt_360f4e980306",
       "type": "contestation_emergence",
-      "timestamp": "2026-04-16T00:59:39.848816+00:00",
-      "claim_id": "housing-crisis_bluesky_fb0237cf_1",
+      "timestamp": "2026-04-29T07:50:23.283413+00:00",
+      "claim_id": "housing-crisis_x_03af7957_0",
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.85,
-      "summary": "Active contestation in \"Mortgage Rates\" — 5 pro vs 6 anti",
+      "confidence": 0.9,
+      "summary": "Active contestation in \"Immigration\" — 7 pro vs 7 anti",
       "detail": {
         "cluster_id": "clu_housing-crisis_000",
-        "pro_count": 5,
-        "anti_count": 6,
-        "balance": 0.83
+        "pro_count": 7,
+        "anti_count": 7,
+        "balance": 1.0
       }
     },
     {
-      "id": "evt_bedf751bb116",
-      "type": "contestation_emergence",
-      "timestamp": "2026-04-16T00:59:39.848816+00:00",
-      "claim_id": "housing-crisis_bluesky_2dbcd508_0",
+      "id": "evt_790fe5e392ab",
+      "type": "phase_transition",
+      "timestamp": "2026-04-29T07:50:23.283413+00:00",
+      "claim_id": null,
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.86,
-      "summary": "Active contestation in \"Doug Ford\" — 7 pro vs 6 anti",
+      "confidence": 0.79,
+      "summary": "\"Airbnb\" cluster is shifting toward more extreme language",
       "detail": {
-        "cluster_id": "clu_housing-crisis_004",
-        "pro_count": 7,
-        "anti_count": 6,
-        "balance": 0.86
+        "cluster_id": "clu_housing-crisis_002",
+        "direction": "radicalizing",
+        "magnitude": 0.6232
       }
     },
     {
-      "id": "evt_9363250e385c",
+      "id": "evt_442b5fbb720c",
       "type": "phase_transition",
-      "timestamp": "2026-04-16T00:59:39.848816+00:00",
+      "timestamp": "2026-04-29T07:50:23.283413+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.79,
+      "summary": "\"Mortgage Rates\" cluster is shifting toward more extreme language",
+      "detail": {
+        "cluster_id": "clu_housing-crisis_003",
+        "direction": "radicalizing",
+        "magnitude": 0.6275
+      }
+    },
+    {
+      "id": "evt_3ad5f8ab2c9c",
+      "type": "phase_transition",
+      "timestamp": "2026-04-29T07:50:23.283413+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
       "confidence": 0.81,
-      "summary": "Mutation trajectory: radicalizing in \"Mortgage Rates\"",
-      "detail": {
-        "cluster_id": "clu_housing-crisis_000",
-        "direction": "radicalizing",
-        "magnitude": 0.7045
-      }
-    },
-    {
-      "id": "evt_c36e77003e5d",
-      "type": "phase_transition",
-      "timestamp": "2026-04-16T00:59:39.848816+00:00",
-      "claim_id": null,
-      "slice_id": null,
-      "severity": "high",
-      "confidence": 0.79,
-      "summary": "Mutation trajectory: radicalizing in \"Landlords\"",
-      "detail": {
-        "cluster_id": "clu_housing-crisis_001",
-        "direction": "radicalizing",
-        "magnitude": 0.6441
-      }
-    },
-    {
-      "id": "evt_8aa023b80636",
-      "type": "phase_transition",
-      "timestamp": "2026-04-16T00:59:39.848816+00:00",
-      "claim_id": null,
-      "slice_id": null,
-      "severity": "high",
-      "confidence": 0.79,
-      "summary": "Mutation trajectory: radicalizing in \"Rent Control\"",
-      "detail": {
-        "cluster_id": "clu_housing-crisis_003",
-        "direction": "radicalizing",
-        "magnitude": 0.6175
-      }
-    },
-    {
-      "id": "evt_ae32eeca5ed3",
-      "type": "phase_transition",
-      "timestamp": "2026-04-16T00:59:39.848816+00:00",
-      "claim_id": null,
-      "slice_id": null,
-      "severity": "high",
-      "confidence": 0.79,
-      "summary": "Mutation trajectory: radicalizing in \"Doug Ford\"",
+      "summary": "\"Tech Companies\" cluster is shifting toward more extreme language",
       "detail": {
         "cluster_id": "clu_housing-crisis_004",
         "direction": "radicalizing",
-        "magnitude": 0.6351
+        "magnitude": 0.7061
       }
     },
     {
-      "id": "evt_5dace237dc0e",
+      "id": "evt_c9632a3767db",
+      "type": "phase_transition",
+      "timestamp": "2026-04-29T07:50:23.283413+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.8,
+      "summary": "\"Government Spending\" cluster is shifting toward more extreme language",
+      "detail": {
+        "cluster_id": "clu_housing-crisis_006",
+        "direction": "radicalizing",
+        "magnitude": 0.665
+      }
+    },
+    {
+      "id": "evt_301bee63327b",
       "type": "divergence_shift",
-      "timestamp": "2026-04-16T00:59:39.848816+00:00",
+      "timestamp": "2026-04-29T07:50:23.283413+00:00",
       "claim_id": null,
       "slice_id": "bluesky_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Narrative divergence between Bluesky and scoop (JSD=0.500)",
+      "summary": "Significant narrative divergence between Bluesky and X Platform",
       "detail": {
-        "jsd": 0.5,
+        "jsd": 0.457,
         "platforms": [
           "bluesky",
-          "scoop"
-        ],
-        "window_hours": 24
-      }
-    },
-    {
-      "id": "evt_a3b393611390",
-      "type": "divergence_shift",
-      "timestamp": "2026-04-16T00:59:39.848816+00:00",
-      "claim_id": null,
-      "slice_id": "bluesky_platform",
-      "severity": "high",
-      "confidence": 0.89,
-      "summary": "Narrative divergence between Bluesky and YouTube (Influencer Framing) (JSD=0.394)",
-      "detail": {
-        "jsd": 0.3935,
-        "platforms": [
-          "bluesky",
-          "youtube"
-        ],
-        "window_hours": 24
-      }
-    },
-    {
-      "id": "evt_3225af8093a4",
-      "type": "divergence_shift",
-      "timestamp": "2026-04-16T00:59:39.848816+00:00",
-      "claim_id": null,
-      "slice_id": "scoop_platform",
-      "severity": "high",
-      "confidence": 0.95,
-      "summary": "Narrative divergence between scoop and X Platform (JSD=0.500)",
-      "detail": {
-        "jsd": 0.5,
-        "platforms": [
-          "scoop",
           "x"
         ],
         "window_hours": 24
+      }
+    },
+    {
+      "id": "evt_8498f68b8281",
+      "type": "arousal_escalation",
+      "timestamp": "2026-04-29T11:50:23.283413+00:00",
+      "claim_id": "housing-crisis_bluesky_982aa1e6_0",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.9,
+      "summary": "Heated language rising in \"Vacant Homes Tax\" — 100% emotionally charged claims",
+      "detail": {
+        "cluster_id": "clu_housing-crisis_016",
+        "high_arousal_count": 3,
+        "total": 3,
+        "ratio": 1.0
       }
     },
     {
@@ -197,146 +161,96 @@
       "source": "fred"
     },
     {
-      "id": "evt_8f30f07618b1",
-      "type": "lead_lag",
-      "timestamp": "2026-01-11T16:59:39.848816+00:00",
-      "claim_id": "housing-crisis_bluesky_f419fee0_0",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.8,
-      "summary": "YouTube (Influencer Framing) leads the_boston_globe by ~2276h in \"Rent Control\"",
-      "detail": {
-        "source_platform": "youtube",
-        "target_platform": "the_boston_globe",
-        "lag_hours": 2276.8,
-        "cluster_id": "clu_housing-crisis_003"
-      }
-    },
-    {
-      "id": "evt_5f7fadb1e645",
-      "type": "lead_lag",
-      "timestamp": "2026-03-20T00:59:39.848816+00:00",
-      "claim_id": "housing-crisis_bluesky_fb0237cf_1",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.9,
-      "summary": "YouTube (Influencer Framing) leads X Platform by ~660h in \"Mortgage Rates\"",
-      "detail": {
-        "source_platform": "youtube",
-        "target_platform": "x",
-        "lag_hours": 660.7,
-        "cluster_id": "clu_housing-crisis_000"
-      }
-    },
-    {
-      "id": "evt_44fbbb19b852",
-      "type": "lead_lag",
-      "timestamp": "2026-04-04T16:59:39.848816+00:00",
-      "claim_id": "housing-crisis_bluesky_2dbcd508_0",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.8,
-      "summary": "YouTube (Influencer Framing) leads yahoo by ~284h in \"Doug Ford\"",
-      "detail": {
-        "source_platform": "youtube",
-        "target_platform": "yahoo",
-        "lag_hours": 284.2,
-        "cluster_id": "clu_housing-crisis_004"
-      }
-    },
-    {
       "id": "evt_f8e6a4476d2c",
       "type": "contestation_emergence",
-      "timestamp": "2026-04-16T00:59:39.848816+00:00",
-      "claim_id": "housing-crisis_bluesky_f419fee0_0",
+      "timestamp": "2026-04-29T07:50:23.283413+00:00",
+      "claim_id": "housing-crisis_bluesky_d25ed298_0",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.73,
-      "summary": "Active contestation in \"Rent Control\" — 4 pro vs 9 anti",
-      "detail": {
-        "cluster_id": "clu_housing-crisis_003",
-        "pro_count": 4,
-        "anti_count": 9,
-        "balance": 0.44
-      }
-    },
-    {
-      "id": "evt_ba2762a00bf2",
-      "type": "contestation_emergence",
-      "timestamp": "2026-04-16T00:59:39.848816+00:00",
-      "claim_id": "housing-crisis_bluesky_0144557d_0",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.73,
-      "summary": "Active contestation in \"Cost of Living\" — 7 pro vs 3 anti",
-      "detail": {
-        "cluster_id": "clu_housing-crisis_007",
-        "pro_count": 7,
-        "anti_count": 3,
-        "balance": 0.43
-      }
-    },
-    {
-      "id": "evt_08b24b75a5d6",
-      "type": "divergence_shift",
-      "timestamp": "2026-04-16T00:59:39.848816+00:00",
-      "claim_id": null,
-      "slice_id": "bluesky_platform",
-      "severity": "medium",
-      "confidence": 0.61,
-      "summary": "Narrative divergence between Bluesky and X Platform (JSD=0.109)",
-      "detail": {
-        "jsd": 0.109,
-        "platforms": [
-          "bluesky",
-          "x"
-        ],
-        "window_hours": 24
-      }
-    },
-    {
-      "id": "evt_9f23ec7ab43a",
-      "type": "momentum_spike",
-      "timestamp": "2026-04-16T03:59:39.848816+00:00",
-      "claim_id": "housing-crisis_bluesky_90f4c6fe_0",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.55,
-      "summary": "Momentum surge in \"Institutional Investors\" cluster (12 claims)",
+      "confidence": 0.77,
+      "summary": "Active contestation in \"Government Spending\" — 4 pro vs 7 anti",
       "detail": {
         "cluster_id": "clu_housing-crisis_006",
-        "avg_momentum": 0.606,
-        "member_count": 12
+        "pro_count": 4,
+        "anti_count": 7,
+        "balance": 0.57
+      }
+    },
+    {
+      "id": "evt_bedf751bb116",
+      "type": "contestation_emergence",
+      "timestamp": "2026-04-29T07:50:23.283413+00:00",
+      "claim_id": "housing-crisis_bluesky_77ffd787_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.76,
+      "summary": "Active contestation in \"U.S. Forest Service\" — 8 pro vs 15 anti",
+      "detail": {
+        "cluster_id": "clu_housing-crisis_043",
+        "pro_count": 8,
+        "anti_count": 15,
+        "balance": 0.53
       }
     },
     {
       "id": "evt_3edc9972c70c",
       "type": "momentum_spike",
-      "timestamp": "2026-04-16T03:59:39.848816+00:00",
-      "claim_id": "housing-crisis_bluesky_7cebd400_0",
+      "timestamp": "2026-04-29T09:50:23.283413+00:00",
+      "claim_id": "housing-crisis_bluesky_982aa1e6_0",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.54,
-      "summary": "Momentum surge in \"AI Boom in San Francisco\" cluster (12 claims)",
+      "confidence": 0.51,
+      "summary": "Rapid attention surge in \"Vacant Homes Tax\" (3 claims)",
       "detail": {
-        "cluster_id": "clu_housing-crisis_008",
-        "avg_momentum": 0.598,
-        "member_count": 12
+        "cluster_id": "clu_housing-crisis_016",
+        "avg_momentum": 0.568,
+        "member_count": 3
+      }
+    },
+    {
+      "id": "evt_9f23ec7ab43a",
+      "type": "momentum_spike",
+      "timestamp": "2026-04-29T10:50:23.283413+00:00",
+      "claim_id": "housing-crisis_x_6c996457_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.55,
+      "summary": "Rapid attention surge in \"Economic Productivity\" (4 claims)",
+      "detail": {
+        "cluster_id": "clu_housing-crisis_037",
+        "avg_momentum": 0.61,
+        "member_count": 4
       }
     },
     {
       "id": "evt_f88208602443",
       "type": "momentum_spike",
-      "timestamp": "2026-04-16T04:59:39.848816+00:00",
-      "claim_id": "housing-crisis_bluesky_b50bc813_0",
+      "timestamp": "2026-04-29T11:50:23.283413+00:00",
+      "claim_id": "housing-crisis_bluesky_c01b7699_0",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.59,
-      "summary": "Momentum surge in \"India's Property Markets\" cluster (24 claims)",
+      "confidence": 0.58,
+      "summary": "Rapid attention surge in \"Homelessness\" (4 claims)",
       "detail": {
-        "cluster_id": "clu_housing-crisis_013",
-        "avg_momentum": 0.659,
-        "member_count": 24
+        "cluster_id": "clu_housing-crisis_029",
+        "avg_momentum": 0.642,
+        "member_count": 4
+      }
+    },
+    {
+      "id": "evt_4af460015a75",
+      "type": "arousal_escalation",
+      "timestamp": "2026-04-29T11:50:23.283413+00:00",
+      "claim_id": "housing-crisis_x_03af7957_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.75,
+      "summary": "Heated language rising in \"Immigration\" — 41% emotionally charged claims",
+      "detail": {
+        "cluster_id": "clu_housing-crisis_000",
+        "high_arousal_count": 7,
+        "total": 17,
+        "ratio": 0.41
       }
     },
     {
@@ -460,19 +374,67 @@
       "source": "fred"
     },
     {
-      "id": "evt_71071999d0a3",
+      "id": "evt_8f30f07618b1",
       "type": "lead_lag",
-      "timestamp": "2026-04-15T21:59:39.848816+00:00",
-      "claim_id": "housing-crisis_bluesky_2177bced_1",
+      "timestamp": "2026-04-28T23:50:23.283413+00:00",
+      "claim_id": "housing-crisis_bluesky_d25ed298_0",
       "slice_id": null,
       "severity": "low",
-      "confidence": 0.78,
-      "summary": "Bluesky leads chicago_tribune by ~15h in \"Landlords\"",
+      "confidence": 0.74,
+      "summary": "northern_ontario_business leads X Platform by ~20h in \"Government Spending\"",
+      "detail": {
+        "source_platform": "northern_ontario_business",
+        "target_platform": "x",
+        "lag_hours": 20.7,
+        "cluster_id": "clu_housing-crisis_006"
+      }
+    },
+    {
+      "id": "evt_71071999d0a3",
+      "type": "lead_lag",
+      "timestamp": "2026-04-29T00:50:23.283413+00:00",
+      "claim_id": "housing-crisis_bluesky_7bd5160a_0",
+      "slice_id": null,
+      "severity": "low",
+      "confidence": 0.6,
+      "summary": "euro_weekly_news_spain leads inspain.news by ~19h in \"Airbnb\"",
+      "detail": {
+        "source_platform": "euro_weekly_news_spain",
+        "target_platform": "inspain.news",
+        "lag_hours": 20.0,
+        "cluster_id": "clu_housing-crisis_002"
+      }
+    },
+    {
+      "id": "evt_8c2c08c6cb78",
+      "type": "lead_lag",
+      "timestamp": "2026-04-29T07:50:23.283413+00:00",
+      "claim_id": "housing-crisis_bluesky_7f345d92_1",
+      "slice_id": null,
+      "severity": "low",
+      "confidence": 0.62,
+      "summary": "Bluesky leads the_independent by ~12h in \"Hmos in Birmingham\"",
       "detail": {
         "source_platform": "bluesky",
-        "target_platform": "chicago_tribune",
-        "lag_hours": 15.9,
-        "cluster_id": "clu_housing-crisis_001"
+        "target_platform": "the_independent",
+        "lag_hours": 12.8,
+        "cluster_id": "clu_housing-crisis_014"
+      }
+    },
+    {
+      "id": "evt_44fbbb19b852",
+      "type": "lead_lag",
+      "timestamp": "2026-04-29T13:50:23.283413+00:00",
+      "claim_id": "housing-crisis_bluesky_803cb2e3_0",
+      "slice_id": null,
+      "severity": "low",
+      "confidence": 0.7,
+      "summary": "Bluesky leads X Platform by ~6h in \"Interest Rates\"",
+      "detail": {
+        "source_platform": "bluesky",
+        "target_platform": "x",
+        "lag_hours": 6.0,
+        "cluster_id": "clu_housing-crisis_008"
       }
     },
     {
@@ -614,7 +576,27 @@
       "summary": "Bondi struggled to prosecute Trump foes . But will a new attorney general make a difference ? ",
       "detail": "Reported by smdailyjournal.com. Tone: +0.0.",
       "source": "gdelt"
+    },
+    {
+      "id": "gdelt_7f15b1d7201d",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:63:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "  À la Sambrienne , la mauvaise gestion nest pas lexception , cest la règle : la ministre Neven dresse un constat accablant et contacte le parquet",
+      "detail": "Reported by dhnet.be. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_4e704fdef430",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:63:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Kansas energy program left in limbo when Trump administration pulled grant",
+      "detail": "Reported by hppr.org. Tone: +0.0.",
+      "source": "gdelt"
     }
   ],
-  "total_count": 115
+  "total_count": 113
 }

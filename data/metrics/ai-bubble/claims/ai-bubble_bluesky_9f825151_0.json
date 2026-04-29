@@ -1,0 +1,204 @@
+{
+  "claim": {
+    "text": "The hype around artificial intelligence is unsustainable and likely to decline.",
+    "subject": "AI industry",
+    "assertion": "is overhyped and will decline",
+    "framing": "neutral",
+    "stance": "neutral",
+    "confidence": 0.8,
+    "arousal": "low",
+    "register": "vernacular",
+    "id": "ai-bubble_bluesky_9f825151_0",
+    "cluster_id": "clu_ai-bubble_010",
+    "concept_id": "concept_ai-bubble_002",
+    "first_seen_platform": "bluesky",
+    "first_seen_timestamp": "2026-04-29T14:05:22.031Z",
+    "source_document_id": "9f82515176fbefa9",
+    "source_platform": "bluesky",
+    "source_timestamp": "2026-04-29T14:05:22.031Z",
+    "source_engagement": {
+      "likes": 1,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.2858,
+    "confidence_interval": [
+      0.1858,
+      0.3858
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.2858
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0.6667,
+    "friction_quadrant": "successful_suppression"
+  },
+  "salience": {
+    "value": 0.318,
+    "confidence_interval": [
+      0.1919,
+      0.4441
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.318
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.6667,
+    "confidence_interval": [
+      0.5667,
+      0.7667
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.6667
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.15,
+    "confidence_interval": [
+      0.0112,
+      0.2888
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.15
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.8,
+    "factors": []
+  },
+  "provenance": {
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-04-29T14:05:22.031Z",
+    "lead_lag": [
+      {
+        "platform": "Cms Wire",
+        "lag_hours": 4.1
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_ai-bubble_002",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-29T14:05:22.031000+00:00",
+        "claim_id": "ai-bubble_bluesky_9f825151_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Cms Wire",
+        "timestamp": "2026-04-29T18:09:00+00:00",
+        "claim_id": "ai-bubble_bluesky_9f825151_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "ai-bubble_cms_wire_570ed96d_1",
+      "similarity": 0.3226,
+      "text": "Customer experience critiques often wrongly focus on superficial issues like friction and weak messaging."
+    },
+    {
+      "claim_id": "ai-bubble_cms_wire_570ed96d_0",
+      "similarity": 0.2933,
+      "text": "Over-reliance on personalization and automation in marketing can dilute the core message and brand identity."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Over-reliance on personalization and automation in marketing can dilute the core message and brand identity.",
+      "platform": "Cms Wire",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Customer experience critiques often wrongly focus on superficial issues like friction and weak messaging.",
+      "platform": "Cms Wire",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    }
+  ]
+}

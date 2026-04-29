@@ -1,183 +1,151 @@
 {
   "events": [
     {
-      "id": "evt_89c77c757740",
+      "id": "evt_e6617e53c9de",
       "type": "contestation_emergence",
-      "timestamp": "2026-04-13T00:59:42.447691+00:00",
-      "claim_id": "crypto-digital-money_bluesky_c23c2470_0",
+      "timestamp": "2026-04-26T07:52:31.643167+00:00",
+      "claim_id": "crypto-digital-money_bluesky_a84e8ac1_1",
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.83,
-      "summary": "Active contestation in \"CLARITY Act\" — 10 pro vs 13 anti",
+      "confidence": 0.9,
+      "summary": "Active contestation in \"Artificial Intelligence\" — 17 pro vs 17 anti",
       "detail": {
-        "cluster_id": "clu_crypto-digital-money_006",
-        "pro_count": 10,
-        "anti_count": 13,
-        "balance": 0.77
+        "cluster_id": "clu_crypto-digital-money_024",
+        "pro_count": 17,
+        "anti_count": 17,
+        "balance": 1.0
       }
     },
     {
-      "id": "evt_3602bb9b5fb6",
+      "id": "evt_af083434c6e8",
       "type": "phase_transition",
-      "timestamp": "2026-04-13T00:59:42.447691+00:00",
+      "timestamp": "2026-04-26T07:52:31.643167+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
       "confidence": 0.82,
-      "summary": "Mutation trajectory: radicalizing in \"Gold Trading Signals\"",
-      "detail": {
-        "cluster_id": "clu_crypto-digital-money_000",
-        "direction": "radicalizing",
-        "magnitude": 0.7439
-      }
-    },
-    {
-      "id": "evt_9cc903cd387d",
-      "type": "phase_transition",
-      "timestamp": "2026-04-13T00:59:42.447691+00:00",
-      "claim_id": null,
-      "slice_id": null,
-      "severity": "high",
-      "confidence": 0.85,
-      "summary": "Mutation trajectory: radicalizing in \"AI Automated Trading\"",
+      "summary": "\"Bitcoin\" cluster is shifting toward more extreme language",
       "detail": {
         "cluster_id": "clu_crypto-digital-money_001",
         "direction": "radicalizing",
-        "magnitude": 0.8193
+        "magnitude": 0.7322
       }
     },
     {
-      "id": "evt_d428ebd367f3",
+      "id": "evt_c76b13355935",
       "type": "phase_transition",
-      "timestamp": "2026-04-13T00:59:42.447691+00:00",
+      "timestamp": "2026-04-26T07:52:31.643167+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.83,
-      "summary": "Mutation trajectory: radicalizing in \"XRP\"",
+      "confidence": 0.84,
+      "summary": "\"AI Automated Trading\" cluster is shifting toward more extreme language",
       "detail": {
         "cluster_id": "clu_crypto-digital-money_002",
         "direction": "radicalizing",
-        "magnitude": 0.7543
+        "magnitude": 0.8081
       }
     },
     {
-      "id": "evt_7e4893aa13c3",
+      "id": "evt_935d227541c9",
       "type": "phase_transition",
-      "timestamp": "2026-04-13T00:59:42.447691+00:00",
+      "timestamp": "2026-04-26T07:52:31.643167+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.79,
-      "summary": "Mutation trajectory: radicalizing in \"Ethereum\"",
+      "confidence": 0.82,
+      "summary": "\"XRP\" cluster is shifting toward more extreme language",
       "detail": {
         "cluster_id": "clu_crypto-digital-money_003",
         "direction": "radicalizing",
-        "magnitude": 0.6281
+        "magnitude": 0.7461
       }
     },
     {
-      "id": "evt_45f8edafafa6",
-      "type": "divergence_shift",
-      "timestamp": "2026-04-13T00:59:42.447691+00:00",
+      "id": "evt_9508e51ae96f",
+      "type": "phase_transition",
+      "timestamp": "2026-04-26T07:52:31.643167+00:00",
       "claim_id": null,
-      "slice_id": "bitcoin_sistemi_platform",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.82,
+      "summary": "\"Gold Trading\" cluster is shifting toward more extreme language",
+      "detail": {
+        "cluster_id": "clu_crypto-digital-money_005",
+        "direction": "radicalizing",
+        "magnitude": 0.7293
+      }
+    },
+    {
+      "id": "evt_1baad1220b0e",
+      "type": "divergence_shift",
+      "timestamp": "2026-04-26T07:52:31.643167+00:00",
+      "claim_id": null,
+      "slice_id": "ars_technica_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Narrative divergence between bitcoin_sistemi and blockonomi (JSD=0.610)",
+      "summary": "Strong narrative split between ars_technica and benzinga",
       "detail": {
-        "jsd": 0.61,
+        "jsd": 1.0,
         "platforms": [
-          "bitcoin_sistemi",
+          "ars_technica",
+          "benzinga"
+        ],
+        "window_hours": 168
+      }
+    },
+    {
+      "id": "evt_d0e14a13e141",
+      "type": "divergence_shift",
+      "timestamp": "2026-04-26T07:52:31.643167+00:00",
+      "claim_id": null,
+      "slice_id": "ars_technica_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Strong narrative split between ars_technica and blockonomi",
+      "detail": {
+        "jsd": 1.0,
+        "platforms": [
+          "ars_technica",
           "blockonomi"
         ],
         "window_hours": 168
       }
     },
     {
-      "id": "evt_158892cf9071",
+      "id": "evt_8901af64880e",
       "type": "divergence_shift",
-      "timestamp": "2026-04-13T00:59:42.447691+00:00",
+      "timestamp": "2026-04-26T07:52:31.643167+00:00",
       "claim_id": null,
-      "slice_id": "bitcoin_sistemi_platform",
+      "slice_id": "ars_technica_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Narrative divergence between bitcoin_sistemi and Bluesky (JSD=0.616)",
+      "summary": "Strong narrative split between ars_technica and Bluesky",
       "detail": {
-        "jsd": 0.6158,
+        "jsd": 0.9502,
         "platforms": [
-          "bitcoin_sistemi",
+          "ars_technica",
           "bluesky"
         ],
         "window_hours": 168
       }
     },
     {
-      "id": "evt_b69346abe18c",
+      "id": "evt_5b33a8d09eaf",
       "type": "divergence_shift",
-      "timestamp": "2026-04-13T00:59:42.447691+00:00",
+      "timestamp": "2026-04-26T07:52:31.643167+00:00",
       "claim_id": null,
-      "slice_id": "bitcoin_sistemi_platform",
+      "slice_id": "ars_technica_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Narrative divergence between bitcoin_sistemi and cato (JSD=1.000)",
+      "summary": "Strong narrative split between ars_technica and business_insider",
       "detail": {
-        "jsd": 1.0,
+        "jsd": 0.6125,
         "platforms": [
-          "bitcoin_sistemi",
-          "cato"
+          "ars_technica",
+          "business_insider"
         ],
         "window_hours": 168
-      }
-    },
-    {
-      "id": "evt_e00ad1c6720b",
-      "type": "divergence_shift",
-      "timestamp": "2026-04-13T00:59:42.447691+00:00",
-      "claim_id": null,
-      "slice_id": "bitcoin_sistemi_platform",
-      "severity": "high",
-      "confidence": 0.95,
-      "summary": "Narrative divergence between bitcoin_sistemi and fox_tech (JSD=1.000)",
-      "detail": {
-        "jsd": 1.0,
-        "platforms": [
-          "bitcoin_sistemi",
-          "fox_tech"
-        ],
-        "window_hours": 168
-      }
-    },
-    {
-      "id": "evt_db4d44966b9d",
-      "type": "arousal_escalation",
-      "timestamp": "2026-04-14T04:59:42.447691+00:00",
-      "claim_id": "crypto-digital-money_x_4a37f403_0",
-      "slice_id": null,
-      "severity": "high",
-      "confidence": 0.88,
-      "summary": "Arousal escalation in \"Gold Trading Signals\" — 90% high-arousal claims",
-      "detail": {
-        "cluster_id": "clu_crypto-digital-money_000",
-        "high_arousal_count": 19,
-        "total": 21,
-        "ratio": 0.9
-      }
-    },
-    {
-      "id": "evt_b462220db9e5",
-      "type": "arousal_escalation",
-      "timestamp": "2026-04-14T04:59:42.447691+00:00",
-      "claim_id": "crypto-digital-money_nft_plazas_dfc6501d_0",
-      "slice_id": null,
-      "severity": "high",
-      "confidence": 0.87,
-      "summary": "Arousal escalation in \"AI Automated Trading\" — 88% high-arousal claims",
-      "detail": {
-        "cluster_id": "clu_crypto-digital-money_001",
-        "high_arousal_count": 16,
-        "total": 18,
-        "ratio": 0.89
       }
     },
     {
@@ -201,113 +169,115 @@
       "source": "polymarket"
     },
     {
-      "id": "evt_ea5b3d1788eb",
-      "type": "lead_lag",
-      "timestamp": "2025-10-28T17:59:42.447691+00:00",
-      "claim_id": "crypto-digital-money_bluesky_d8a2d41f_0",
+      "id": "evt_9ce32dc382a9",
+      "type": "contestation_emergence",
+      "timestamp": "2026-04-26T07:52:31.643167+00:00",
+      "claim_id": "crypto-digital-money_bluesky_2d22afd6_0",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.7,
-      "summary": "YouTube (Influencer Framing) leads X Platform by ~4075h in \"Stablecoins\"",
+      "confidence": 0.77,
+      "summary": "Active contestation in \"Prediction Markets\" — 4 pro vs 7 anti",
       "detail": {
-        "source_platform": "youtube",
+        "cluster_id": "clu_crypto-digital-money_013",
+        "pro_count": 4,
+        "anti_count": 7,
+        "balance": 0.57
+      }
+    },
+    {
+      "id": "evt_bd42f6e89ac4",
+      "type": "contestation_emergence",
+      "timestamp": "2026-04-26T07:52:31.643167+00:00",
+      "claim_id": "crypto-digital-money_nasdaq_stock_market_08bc3f91_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.75,
+      "summary": "Active contestation in \"Dogecoin\" — 6 pro vs 3 anti",
+      "detail": {
+        "cluster_id": "clu_crypto-digital-money_016",
+        "pro_count": 6,
+        "anti_count": 3,
+        "balance": 0.5
+      }
+    },
+    {
+      "id": "evt_89c77c757740",
+      "type": "contestation_emergence",
+      "timestamp": "2026-04-26T07:52:31.643167+00:00",
+      "claim_id": "crypto-digital-money_bluesky_77d4f776_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.77,
+      "summary": "Active contestation in \"Dunamu-Naver Merger\" — 18 pro vs 10 anti",
+      "detail": {
+        "cluster_id": "clu_crypto-digital-money_022",
+        "pro_count": 18,
+        "anti_count": 10,
+        "balance": 0.56
+      }
+    },
+    {
+      "id": "evt_109cc094e46b",
+      "type": "lead_lag",
+      "timestamp": "2026-04-26T10:52:31.643167+00:00",
+      "claim_id": "crypto-digital-money_bluesky_ea3e3ad0_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.78,
+      "summary": "Bluesky leads X Platform by ~81h in \"Tokenized Stocks and Etfs\"",
+      "detail": {
+        "source_platform": "bluesky",
         "target_platform": "x",
-        "lag_hours": 4075.1,
-        "cluster_id": "clu_crypto-digital-money_004"
+        "lag_hours": 81.9,
+        "cluster_id": "clu_crypto-digital-money_007"
       }
     },
     {
-      "id": "evt_a7bab54031c9",
+      "id": "evt_9d76b4b3a131",
       "type": "lead_lag",
-      "timestamp": "2026-03-10T17:59:42.447691+00:00",
-      "claim_id": "crypto-digital-money_bluesky_4d93529d_0",
+      "timestamp": "2026-04-26T10:52:31.643167+00:00",
+      "claim_id": "crypto-digital-money_techbullion_c72aa70c_0",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.9,
-      "summary": "YouTube (Influencer Framing) leads cointurk_news by ~883h in \"XRP\"",
+      "confidence": 0.64,
+      "summary": "techbullion leads X Platform by ~81h in \"Pepeto\"",
       "detail": {
-        "source_platform": "youtube",
-        "target_platform": "cointurk_news",
-        "lag_hours": 883.5,
-        "cluster_id": "clu_crypto-digital-money_002"
-      }
-    },
-    {
-      "id": "evt_6baec431a9b5",
-      "type": "lead_lag",
-      "timestamp": "2026-03-12T04:59:42.447691+00:00",
-      "claim_id": "crypto-digital-money_bluesky_8c3aa479_0",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.76,
-      "summary": "YouTube (Influencer Framing) leads X Platform by ~848h in \"Donald Trump\"",
-      "detail": {
-        "source_platform": "youtube",
+        "source_platform": "techbullion",
         "target_platform": "x",
-        "lag_hours": 848.1,
-        "cluster_id": "clu_crypto-digital-money_005"
+        "lag_hours": 81.7,
+        "cluster_id": "clu_crypto-digital-money_008"
       }
     },
     {
-      "id": "evt_9e36b78b7924",
+      "id": "evt_1e55a7d9ba2b",
       "type": "lead_lag",
-      "timestamp": "2026-03-14T23:59:42.447691+00:00",
-      "claim_id": "crypto-digital-money_bluesky_208d6648_0",
+      "timestamp": "2026-04-26T11:52:31.643167+00:00",
+      "claim_id": "crypto-digital-money_bluesky_5e329e08_0",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.9,
-      "summary": "YouTube (Influencer Framing) leads cryptorank by ~781h in \"Ethereum\"",
+      "confidence": 0.6,
+      "summary": "finbold leads 24/7_wall_st. by ~80h in \"XRP\"",
       "detail": {
-        "source_platform": "youtube",
-        "target_platform": "cryptorank",
-        "lag_hours": 782.0,
+        "source_platform": "finbold",
+        "target_platform": "24/7_wall_st.",
+        "lag_hours": 80.1,
         "cluster_id": "clu_crypto-digital-money_003"
       }
     },
     {
-      "id": "evt_e6617e53c9de",
-      "type": "contestation_emergence",
-      "timestamp": "2026-04-13T00:59:42.447691+00:00",
-      "claim_id": "crypto-digital-money_bluesky_890971d3_0",
+      "id": "evt_cc8ce15329c1",
+      "type": "lead_lag",
+      "timestamp": "2026-04-27T05:52:31.643167+00:00",
+      "claim_id": "crypto-digital-money_bluesky_74f7bc2e_0",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.73,
-      "summary": "Active contestation in \"Electric Air Taxis\" — 16 pro vs 7 anti",
+      "confidence": 0.9,
+      "summary": "Bluesky leads X Platform by ~62h in \"Bitcoin\"",
       "detail": {
-        "cluster_id": "clu_crypto-digital-money_011",
-        "pro_count": 16,
-        "anti_count": 7,
-        "balance": 0.44
-      }
-    },
-    {
-      "id": "evt_0ba6bc38adcf",
-      "type": "momentum_spike",
-      "timestamp": "2026-04-13T21:59:42.447691+00:00",
-      "claim_id": "crypto-digital-money_nft_plazas_dfc6501d_0",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.56,
-      "summary": "Momentum surge in \"AI Automated Trading\" cluster (18 claims)",
-      "detail": {
-        "cluster_id": "clu_crypto-digital-money_001",
-        "avg_momentum": 0.622,
-        "member_count": 18
-      }
-    },
-    {
-      "id": "evt_0bba3dcc6936",
-      "type": "momentum_spike",
-      "timestamp": "2026-04-13T21:59:42.447691+00:00",
-      "claim_id": "crypto-digital-money_x_4a37f403_0",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.56,
-      "summary": "Momentum surge in \"Gold Trading Signals\" cluster (21 claims)",
-      "detail": {
-        "cluster_id": "clu_crypto-digital-money_000",
-        "avg_momentum": 0.619,
-        "member_count": 21
+        "source_platform": "bluesky",
+        "target_platform": "x",
+        "lag_hours": 62.7,
+        "cluster_id": "clu_crypto-digital-money_001"
       }
     },
     {
@@ -609,7 +579,27 @@
       "summary": "New Playboi Carti Album before GTA VI? — 62.0% Yes",
       "detail": "Polymarket gives 62.0% odds. Volume: $713,860",
       "source": "polymarket"
+    },
+    {
+      "id": "poly_540817",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:17:29.393855+00:00",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "New Rihanna Album before GTA VI? — 60.0% Yes",
+      "detail": "Polymarket gives 60.0% odds. Volume: $679,525",
+      "source": "polymarket"
+    },
+    {
+      "id": "poly_540816",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:17:29.393829+00:00",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Russia-Ukraine Ceasefire before GTA VI? — 54.0% Yes",
+      "detail": "Polymarket gives 54.0% odds. Volume: $1,412,740",
+      "source": "polymarket"
     }
   ],
-  "total_count": 95
+  "total_count": 93
 }

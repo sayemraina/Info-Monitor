@@ -3,30 +3,37 @@
     "id": "youtube_influencer",
     "type": "platform",
     "label": "YouTube (Influencer Framing)",
-    "active_volume": 47,
-    "meets_minimum_threshold": true,
-    "base_rate_weight": 0.1697,
+    "active_volume": 0,
+    "meets_minimum_threshold": false,
+    "base_rate_weight": 0.0,
     "is_influencer_framing": true
   },
   "slice_b": {
     "id": "elite_media_all",
     "type": "source_type",
     "label": "Elite Media",
-    "active_volume": 108,
+    "active_volume": 173,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.3899,
+    "base_rate_weight": 0.4272,
     "is_influencer_framing": false
   },
   "divergence": {
-    "jsd": 0.0662,
-    "jsd_sqrt": 0.2574,
+    "jsd": 0.0,
+    "jsd_sqrt": 0.0,
     "trend": [
-      0.2574
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
     ],
     "typology": {
-      "information_asymmetry": 0.3739,
-      "interpretive": 0.2522,
-      "paradigmatic": 0.3739,
+      "information_asymmetry": 0.0,
+      "interpretive": 0.0,
+      "paradigmatic": 0.0,
       "dominant_mode": "Information Asymmetry",
       "paradigmatic_caveat": false
     }
@@ -34,27 +41,87 @@
   "per_cluster": [
     {
       "cluster_id": "clu_dei-rollbacks_000",
-      "label": "Affirmative Action",
-      "salience_a": 0.2553,
-      "salience_b": 0.3333,
-      "arousal_a": 0.3833,
-      "arousal_b": 0.4514,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
+      "label": "Openai",
+      "salience_a": 0.0,
+      "salience_b": 0.1098,
+      "arousal_a": 0,
+      "arousal_b": 0.3711,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_dei-rollbacks_001",
-      "label": "Pete Hegseth",
-      "salience_a": 0.0638,
-      "salience_b": 0.2222,
-      "arousal_a": 0.3833,
-      "arousal_b": 0.5583,
+      "label": "Deutsche Telekom and T-Mobile",
+      "salience_a": 0.0,
+      "salience_b": 0.0751,
+      "arousal_a": 0,
+      "arousal_b": 0.3115,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_002",
+      "label": "Climate Regulations",
+      "salience_a": 0.0,
+      "salience_b": 0.0231,
+      "arousal_a": 0,
+      "arousal_b": 0.4125,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
-      "cluster_id": "clu_dei-rollbacks_002",
-      "label": "DEI Rollbacks",
+      "cluster_id": "clu_dei-rollbacks_003",
+      "label": "Republican Farm Bill",
+      "salience_a": 0.0,
+      "salience_b": 0.052,
+      "arousal_a": 0,
+      "arousal_b": 0.4611,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_004",
+      "label": "Target",
+      "salience_a": 0.0,
+      "salience_b": 0.0116,
+      "arousal_a": 0,
+      "arousal_b": 0.15,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_005",
+      "label": "Recent College Graduates",
+      "salience_a": 0.0,
+      "salience_b": 0.0116,
+      "arousal_a": 0,
+      "arousal_b": 0.5,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_006",
+      "label": "Immigration",
+      "salience_a": 0.0,
+      "salience_b": 0.0289,
+      "arousal_a": 0,
+      "arousal_b": 0.5,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_007",
+      "label": "American Roots Music",
+      "salience_a": 0.0,
+      "salience_b": 0.0116,
+      "arousal_a": 0,
+      "arousal_b": 0.5,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_008",
+      "label": "Dollar General",
       "salience_a": 0.0,
       "salience_b": 0.0,
       "arousal_a": 0,
@@ -63,54 +130,164 @@
       "mutation_b": "stable"
     },
     {
-      "cluster_id": "clu_dei-rollbacks_003",
-      "label": "ABA Council",
-      "salience_a": 0.234,
-      "salience_b": 0.2037,
-      "arousal_a": 0.4682,
-      "arousal_b": 0.5159,
+      "cluster_id": "clu_dei-rollbacks_009",
+      "label": "Military Promotions",
+      "salience_a": 0.0,
+      "salience_b": 0.0116,
+      "arousal_a": 0,
+      "arousal_b": 0.5,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_010",
+      "label": "Pete Hegseth",
+      "salience_a": 0.0,
+      "salience_b": 0.0636,
+      "arousal_a": 0,
+      "arousal_b": 0.5,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_011",
+      "label": "Women's Cycling Prize Money",
+      "salience_a": 0.0,
+      "salience_b": 0.0809,
+      "arousal_a": 0,
+      "arousal_b": 0.225,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_013",
+      "label": "Government Officials",
+      "salience_a": 0.0,
+      "salience_b": 0.0116,
+      "arousal_a": 0,
+      "arousal_b": 0.325,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_014",
+      "label": "Government Policies",
+      "salience_a": 0.0,
+      "salience_b": 0.0173,
+      "arousal_a": 0,
+      "arousal_b": 0.5,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
-      "cluster_id": "clu_dei-rollbacks_004",
-      "label": "Target",
-      "salience_a": 0.4468,
-      "salience_b": 0.2222,
-      "arousal_a": 0.5167,
-      "arousal_b": 0.4854,
-      "mutation_a": "mainstreaming",
-      "mutation_b": "mainstreaming"
+      "cluster_id": "clu_dei-rollbacks_015",
+      "label": "Laura Rutledge",
+      "salience_a": 0.0,
+      "salience_b": 0.0173,
+      "arousal_a": 0,
+      "arousal_b": 0.5,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_016",
+      "label": "Supreme Court",
+      "salience_a": 0.0,
+      "salience_b": 0.0289,
+      "arousal_a": 0,
+      "arousal_b": 0.43,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_017",
+      "label": "ICE",
+      "salience_a": 0.0,
+      "salience_b": 0.0462,
+      "arousal_a": 0,
+      "arousal_b": 0.4562,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_018",
+      "label": "DEI",
+      "salience_a": 0.0,
+      "salience_b": 0.0405,
+      "arousal_a": 0,
+      "arousal_b": 0.35,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_019",
+      "label": "Conservatives",
+      "salience_a": 0.0,
+      "salience_b": 0.0173,
+      "arousal_a": 0,
+      "arousal_b": 0.3833,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_020",
+      "label": "Affirmative Action",
+      "salience_a": 0.0,
+      "salience_b": 0.0231,
+      "arousal_a": 0,
+      "arousal_b": 0.4125,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_021",
+      "label": "EEOC",
+      "salience_a": 0.0,
+      "salience_b": 0.0231,
+      "arousal_a": 0,
+      "arousal_b": 0.4125,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_022",
+      "label": "Hamas",
+      "salience_a": 0.0,
+      "salience_b": 0.0462,
+      "arousal_a": 0,
+      "arousal_b": 0.5437,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     }
   ],
   "arousal_comparison": {
-    "slice_a_avg": 0.4628,
-    "slice_b_avg": 0.4968
+    "slice_a_avg": 0,
+    "slice_b_avg": 0.4029
   },
   "exposure_comparison": {
     "slice_a": {
-      "value": 0.2982,
+      "value": 0,
       "confidence_interval": [
-        0.1706,
-        0.4258
+        0,
+        0.15
       ],
       "baseline": "global",
       "time_window": "7d",
       "sparkline": [
-        0.2982
+        0
       ],
       "source_distribution": "production"
     },
     "slice_b": {
-      "value": 0.6765,
+      "value": 0.7469,
       "confidence_interval": [
-        0.5772,
-        0.7758
+        0.6529,
+        0.8409
       ],
       "baseline": "global",
       "time_window": "7d",
       "sparkline": [
-        0.6765
+        0.7469
       ],
       "source_distribution": "production"
     }

@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "ai-workplace_bluesky_ff786b08_0",
-    "cluster_id": "clu_ai-workplace_000",
-    "concept_id": "concept_ai-workplace_000",
+    "cluster_id": "clu_ai-workplace_009",
+    "concept_id": "concept_ai-workplace_003",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-02T01:17:53.920Z",
     "source_document_id": "04dde0e637ce7c82",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.54,
+    "value": null,
     "confidence_interval": [
-      0.44,
-      0.64
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.54
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.75,
-    "bridge_ratio": 0.75,
-    "persistence_windows": 8,
-    "friction": 0.32,
-    "friction_quadrant": "unopposed_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.2594,
+    "value": null,
     "confidence_interval": [
-      0.1289,
-      0.3899
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.2594
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.32,
+    "value": null,
     "confidence_interval": [
-      0.194,
-      0.446
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.32
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.4,
+    "value": 0,
     "confidence_interval": [
-      0.28,
-      0.52
+      0,
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.4
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,119 +133,21 @@
     ]
   },
   "provenance": {
-    "first_platform": "Serbian Monitor",
-    "first_timestamp": "2026-04-02T01:17:53.920Z",
-    "lead_lag": [
-      {
-        "platform": "Bluesky",
-        "lag_hours": 391.9
-      },
-      {
-        "platform": "X Platform",
-        "lag_hours": 393.3
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_ai-workplace_000",
-    "hops": [
-      {
-        "platform": "Serbian Monitor",
-        "timestamp": "2026-03-16T08:35:16+00:00",
-        "claim_id": "ai-workplace_bluesky_ff786b08_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-01T16:27:45.287000+00:00",
-        "claim_id": "ai-workplace_bluesky_ff786b08_0",
-        "fidelity_to_origin": 0.3026,
-        "fidelity_to_previous": 0.3026
-      },
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-01T17:54:06+00:00",
-        "claim_id": "ai-workplace_bluesky_ff786b08_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9914
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
-  "semantic_neighbors": [
-    {
-      "claim_id": "ai-workplace_bluesky_d760cb7b_0",
-      "similarity": 0.9824,
-      "text": "Oracle is laying off employees while investing heavily in artificial intelligence."
-    },
-    {
-      "claim_id": "ai-workplace_bluesky_1d88706e_0",
-      "similarity": 0.8608,
-      "text": "Oracle is laying off employees as it invests in artificial intelligence."
-    },
-    {
-      "claim_id": "ai-workplace_bluesky_5289eceb_0",
-      "similarity": 0.8565,
-      "text": "Oracle is prioritizing AI development after laying off a significant portion of its workforce."
-    },
-    {
-      "claim_id": "ai-workplace_bluesky_3366e791_0",
-      "similarity": 0.6907,
-      "text": "Layoffs at Oracle were primarily due to the company owners' financial overextension rather than the impact of AI."
-    },
-    {
-      "claim_id": "ai-workplace_bluesky_d760cb7b_1",
-      "similarity": 0.6683,
-      "text": "Larry Ellison, a technology advisor to Donald Trump, is responsible for the layoffs at Oracle."
-    }
-  ],
-  "example_content": [
-    {
-      "text": "Oracle is laying off employees while investing heavily in artificial intelligence.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Larry Ellison, a technology advisor to Donald Trump, is responsible for the layoffs at Oracle.",
-      "platform": "Bluesky",
-      "confidence": 0.8,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Oracle is laying off employees as it invests in artificial intelligence.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    }
-  ]
+  "semantic_neighbors": [],
+  "example_content": []
 }

@@ -1,0 +1,210 @@
+{
+  "claim": {
+    "text": "US immigration policy has undergone significant changes since 9/11.",
+    "subject": "US immigration policy",
+    "assertion": "has changed",
+    "framing": "national security",
+    "stance": "neutral",
+    "confidence": 0.9,
+    "arousal": "low",
+    "register": "journalistic",
+    "id": "immigration_bluesky_b02fcf04_0",
+    "cluster_id": "clu_immigration_037",
+    "concept_id": "concept_immigration_005",
+    "first_seen_platform": "bluesky",
+    "first_seen_timestamp": "2026-04-27T18:30:21+00:00",
+    "source_document_id": "305bda547d689ac9",
+    "source_platform": "bluesky",
+    "source_timestamp": "2026-04-27T18:30:21+00:00",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.435,
+    "confidence_interval": [
+      0.335,
+      0.535
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.435
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.25,
+    "bridge_ratio": 0.25,
+    "persistence_windows": 1,
+    "friction": 0.4,
+    "friction_quadrant": "successful_suppression"
+  },
+  "salience": {
+    "value": 0.3243,
+    "confidence_interval": [
+      0.1986,
+      0.45
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3243
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.4,
+    "confidence_interval": [
+      0.28,
+      0.52
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.4
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.15,
+    "confidence_interval": [
+      0.0112,
+      0.2888
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.15
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-04-27T18:30:21+00:00",
+    "lead_lag": []
+  },
+  "supply_chain": {
+    "concept_id": "concept_immigration_005",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-27T09:30:52.929000+00:00",
+        "claim_id": "immigration_bluesky_b02fcf04_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      }
+    ],
+    "observation_boundary": "No public antecedent detected"
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "immigration_bluesky_fcd03556_0",
+      "similarity": 0.6865,
+      "text": "Centrist liberals are responsible for the rightward shift in immigration policy."
+    },
+    {
+      "claim_id": "immigration_bluesky_86aae0a9_0",
+      "similarity": 0.6533,
+      "text": "Donald Trump's immigration policies are following a similar path to the early policies of Nazi Germany."
+    },
+    {
+      "claim_id": "immigration_bluesky_1a6ff645_0",
+      "similarity": 0.6528,
+      "text": "The Conservative Party of Canada is shifting towards right-wing positions on immigration, climate, and foreign policy."
+    },
+    {
+      "claim_id": "immigration_bluesky_2cc97581_1",
+      "similarity": 0.6518,
+      "text": "Many countries are implementing anti-immigrant policies."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "The Conservative Party of Canada is shifting towards right-wing positions on immigration, climate, and foreign policy.",
+      "platform": "Bluesky",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Many countries are implementing anti-immigrant policies.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Centrist liberals are responsible for the rightward shift in immigration policy.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

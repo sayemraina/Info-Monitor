@@ -1,149 +1,181 @@
 {
   "events": [
     {
-      "id": "evt_4697b1add918",
+      "id": "evt_7d6185c65cb6",
       "type": "contestation_emergence",
-      "timestamp": "2026-04-13T00:59:38.022690+00:00",
-      "claim_id": "ozempic-glp1_bluesky_09627869_0",
+      "timestamp": "2026-04-26T07:27:09.250248+00:00",
+      "claim_id": "ozempic-glp1_bluesky_59ce0295_0",
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.82,
-      "summary": "Active contestation in \"Ozempic/Wegovy\" — 41 pro vs 57 anti",
+      "confidence": 0.88,
+      "summary": "Active contestation in \"Celebrities\" — 11 pro vs 12 anti",
       "detail": {
-        "cluster_id": "clu_ozempic-glp1_000",
-        "pro_count": 41,
-        "anti_count": 57,
-        "balance": 0.72
+        "cluster_id": "clu_ozempic-glp1_009",
+        "pro_count": 11,
+        "anti_count": 12,
+        "balance": 0.92
+      }
+    },
+    {
+      "id": "evt_68a4e09875af",
+      "type": "contestation_emergence",
+      "timestamp": "2026-04-26T07:27:09.250248+00:00",
+      "claim_id": "ozempic-glp1_bluesky_902037b1_1",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.84,
+      "summary": "Active contestation in \"Obesity\" — 5 pro vs 4 anti",
+      "detail": {
+        "cluster_id": "clu_ozempic-glp1_015",
+        "pro_count": 5,
+        "anti_count": 4,
+        "balance": 0.8
+      }
+    },
+    {
+      "id": "evt_2645d6f1f1a5",
+      "type": "contestation_emergence",
+      "timestamp": "2026-04-26T07:27:09.250248+00:00",
+      "claim_id": "ozempic-glp1_bluesky_09d2a8e6_0",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.9,
+      "summary": "Active contestation in \"Insurance Companies\" — 4 pro vs 4 anti",
+      "detail": {
+        "cluster_id": "clu_ozempic-glp1_030",
+        "pro_count": 4,
+        "anti_count": 4,
+        "balance": 1.0
       }
     },
     {
       "id": "evt_d378cdc4cc52",
       "type": "phase_transition",
-      "timestamp": "2026-04-13T00:59:38.022690+00:00",
+      "timestamp": "2026-04-26T07:27:09.250248+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.81,
-      "summary": "Mutation trajectory: radicalizing in \"Ozempic/Wegovy\"",
+      "confidence": 0.8,
+      "summary": "\"Generic Drugs\" cluster is shifting toward more extreme language",
       "detail": {
         "cluster_id": "clu_ozempic-glp1_000",
         "direction": "radicalizing",
-        "magnitude": 0.6844
+        "magnitude": 0.651
       }
     },
     {
       "id": "evt_18f2e5998cb9",
       "type": "phase_transition",
-      "timestamp": "2026-04-13T00:59:38.022690+00:00",
+      "timestamp": "2026-04-26T07:27:09.250248+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.85,
-      "summary": "Mutation trajectory: radicalizing in \"Oral Wegovy\"",
+      "confidence": 0.8,
+      "summary": "\"Petrelintide\" cluster is shifting toward more extreme language",
       "detail": {
         "cluster_id": "clu_ozempic-glp1_001",
         "direction": "radicalizing",
-        "magnitude": 0.8384
+        "magnitude": 0.6642
       }
     },
     {
       "id": "evt_ce6536d3ee68",
       "type": "phase_transition",
-      "timestamp": "2026-04-13T00:59:38.022690+00:00",
+      "timestamp": "2026-04-26T07:27:09.250248+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.79,
-      "summary": "Mutation trajectory: radicalizing in \"Generic Semaglutide Drugs\"",
+      "confidence": 0.85,
+      "summary": "\"Oral Wegovy\" cluster is shifting toward more extreme language",
       "detail": {
-        "cluster_id": "clu_ozempic-glp1_002",
+        "cluster_id": "clu_ozempic-glp1_003",
         "direction": "radicalizing",
-        "magnitude": 0.6474
+        "magnitude": 0.8471
       }
     },
     {
       "id": "evt_7198b8c0a933",
       "type": "phase_transition",
-      "timestamp": "2026-04-13T00:59:38.022690+00:00",
+      "timestamp": "2026-04-26T07:27:09.250248+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
       "confidence": 0.79,
-      "summary": "Mutation trajectory: radicalizing in \"Orforglipron\"",
+      "summary": "\"Orforglipron\" cluster is shifting toward more extreme language",
       "detail": {
-        "cluster_id": "clu_ozempic-glp1_003",
+        "cluster_id": "clu_ozempic-glp1_004",
         "direction": "radicalizing",
-        "magnitude": 0.6305
+        "magnitude": 0.6265
       }
     },
     {
-      "id": "evt_16a05a37eec2",
+      "id": "evt_07a956034cbb",
       "type": "divergence_shift",
-      "timestamp": "2026-04-13T00:59:38.022690+00:00",
+      "timestamp": "2026-04-26T07:27:09.250248+00:00",
       "claim_id": null,
       "slice_id": "bluesky_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Narrative divergence between Bluesky and cnbc_business (JSD=0.718)",
+      "summary": "Strong narrative split between Bluesky and drugs.com",
       "detail": {
-        "jsd": 0.7178,
+        "jsd": 0.5736,
         "platforms": [
           "bluesky",
-          "cnbc_business"
+          "drugs.com"
         ],
         "window_hours": 168
       }
     },
     {
-      "id": "evt_87e3ef0aa1e1",
+      "id": "evt_6c518aaf4b49",
       "type": "divergence_shift",
-      "timestamp": "2026-04-13T00:59:38.022690+00:00",
+      "timestamp": "2026-04-26T07:27:09.250248+00:00",
       "claim_id": null,
       "slice_id": "bluesky_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Narrative divergence between Bluesky and stat_news (JSD=0.727)",
+      "summary": "Strong narrative split between Bluesky and medpage_today",
       "detail": {
-        "jsd": 0.7267,
+        "jsd": 0.7141,
         "platforms": [
           "bluesky",
-          "stat_news"
+          "medpage_today"
         ],
         "window_hours": 168
       }
     },
     {
-      "id": "evt_d638abacdd1c",
+      "id": "evt_4d817a282b64",
       "type": "divergence_shift",
-      "timestamp": "2026-04-13T00:59:38.022690+00:00",
+      "timestamp": "2026-04-26T07:27:09.250248+00:00",
       "claim_id": null,
       "slice_id": "bluesky_platform",
       "severity": "high",
-      "confidence": 0.82,
-      "summary": "Narrative divergence between Bluesky and YouTube (Influencer Framing) (JSD=0.319)",
+      "confidence": 0.95,
+      "summary": "Strong narrative split between Bluesky and news_directory_3",
       "detail": {
-        "jsd": 0.3194,
+        "jsd": 0.7616,
         "platforms": [
           "bluesky",
-          "youtube"
+          "news_directory_3"
         ],
         "window_hours": 168
       }
     },
     {
-      "id": "evt_7a40f343eb28",
+      "id": "evt_d1f62b533046",
       "type": "divergence_shift",
-      "timestamp": "2026-04-13T00:59:38.022690+00:00",
+      "timestamp": "2026-04-26T07:27:09.250248+00:00",
       "claim_id": null,
-      "slice_id": "cnbc_business_platform",
+      "slice_id": "bluesky_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Narrative divergence between cnbc_business and stat_news (JSD=1.000)",
+      "summary": "Strong narrative split between Bluesky and sciencedaily",
       "detail": {
-        "jsd": 1.0,
+        "jsd": 0.8635,
         "platforms": [
-          "cnbc_business",
-          "stat_news"
+          "bluesky",
+          "sciencedaily"
         ],
         "window_hours": 168
       }
@@ -169,115 +201,99 @@
       "source": "polymarket"
     },
     {
-      "id": "evt_39ae8cd42ca4",
+      "id": "evt_4697b1add918",
+      "type": "contestation_emergence",
+      "timestamp": "2026-04-26T07:27:09.250248+00:00",
+      "claim_id": "ozempic-glp1_bluesky_32ffa1b5_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.77,
+      "summary": "Active contestation in \"Oral Wegovy\" — 4 pro vs 7 anti",
+      "detail": {
+        "cluster_id": "clu_ozempic-glp1_003",
+        "pro_count": 4,
+        "anti_count": 7,
+        "balance": 0.57
+      }
+    },
+    {
+      "id": "evt_86d44a131aa1",
       "type": "lead_lag",
-      "timestamp": "2025-12-12T11:59:38.022690+00:00",
-      "claim_id": "ozempic-glp1_bluesky_09627869_0",
+      "timestamp": "2026-04-26T08:27:09.250248+00:00",
+      "claim_id": "ozempic-glp1_bluesky_a1de8b39_1",
       "slice_id": null,
       "severity": "medium",
       "confidence": 0.9,
-      "summary": "YouTube (Influencer Framing) leads fox_wilmington by ~3001h in \"Ozempic/Wegovy\"",
+      "summary": "thehealthsite.com leads simcoe.com by ~83h in \"Generic Drugs\"",
       "detail": {
-        "source_platform": "youtube",
-        "target_platform": "fox_wilmington",
-        "lag_hours": 3001.3,
+        "source_platform": "thehealthsite.com",
+        "target_platform": "simcoe.com",
+        "lag_hours": 83.6,
         "cluster_id": "clu_ozempic-glp1_000"
       }
     },
     {
-      "id": "evt_10dc90882966",
+      "id": "evt_989c193a43a8",
       "type": "lead_lag",
-      "timestamp": "2026-02-25T20:59:38.022690+00:00",
-      "claim_id": "ozempic-glp1_bluesky_9d62efb6_0",
+      "timestamp": "2026-04-26T08:27:09.250248+00:00",
+      "claim_id": "ozempic-glp1_the_jerusalem_post_6008de04_0",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.78,
-      "summary": "YouTube (Influencer Framing) leads Bluesky by ~1192h in \"Generic Semaglutide Drugs\"",
+      "confidence": 0.68,
+      "summary": "eurasia_review leads Bluesky by ~83h in \"Peptides\"",
       "detail": {
-        "source_platform": "youtube",
+        "source_platform": "eurasia_review",
         "target_platform": "bluesky",
-        "lag_hours": 1192.2,
+        "lag_hours": 83.6,
+        "cluster_id": "clu_ozempic-glp1_005"
+      }
+    },
+    {
+      "id": "evt_648307f35cdf",
+      "type": "arousal_escalation",
+      "timestamp": "2026-04-27T11:27:09.250248+00:00",
+      "claim_id": "ozempic-glp1_bluesky_7d363950_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.76,
+      "summary": "Heated language rising in \"Rocque Perez\" — 45% emotionally charged claims",
+      "detail": {
+        "cluster_id": "clu_ozempic-glp1_008",
+        "high_arousal_count": 16,
+        "total": 35,
+        "ratio": 0.46
+      }
+    },
+    {
+      "id": "evt_6601d87d82df",
+      "type": "lead_lag",
+      "timestamp": "2026-04-27T15:27:09.250248+00:00",
+      "claim_id": "ozempic-glp1_bluesky_b5bfee67_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.68,
+      "summary": "aboutlawsuits.com leads X Platform by ~52h in \"Ozempic/Wegovy\"",
+      "detail": {
+        "source_platform": "aboutlawsuits.com",
+        "target_platform": "x",
+        "lag_hours": 52.5,
         "cluster_id": "clu_ozempic-glp1_002"
       }
     },
     {
-      "id": "evt_7d6185c65cb6",
-      "type": "contestation_emergence",
-      "timestamp": "2026-04-13T00:59:38.022690+00:00",
-      "claim_id": "ozempic-glp1_bluesky_6142966a_0",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.78,
-      "summary": "Active contestation in \"Oral Wegovy\" — 10 pro vs 6 anti",
-      "detail": {
-        "cluster_id": "clu_ozempic-glp1_001",
-        "pro_count": 10,
-        "anti_count": 6,
-        "balance": 0.6
-      }
-    },
-    {
-      "id": "evt_68a4e09875af",
-      "type": "contestation_emergence",
-      "timestamp": "2026-04-13T00:59:38.022690+00:00",
-      "claim_id": "ozempic-glp1_bluesky_9d62efb6_0",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.75,
-      "summary": "Active contestation in \"Generic Semaglutide Drugs\" — 6 pro vs 3 anti",
-      "detail": {
-        "cluster_id": "clu_ozempic-glp1_002",
-        "pro_count": 6,
-        "anti_count": 3,
-        "balance": 0.5
-      }
-    },
-    {
-      "id": "evt_2645d6f1f1a5",
-      "type": "contestation_emergence",
-      "timestamp": "2026-04-13T00:59:38.022690+00:00",
-      "claim_id": "ozempic-glp1_bluesky_136a0b0d_0",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.8,
-      "summary": "Active contestation in \"Indian Weddings\" — 9 pro vs 6 anti",
-      "detail": {
-        "cluster_id": "clu_ozempic-glp1_008",
-        "pro_count": 9,
-        "anti_count": 6,
-        "balance": 0.67
-      }
-    },
-    {
-      "id": "evt_607d3f7a402d",
+      "id": "evt_044eb08279a6",
       "type": "lead_lag",
-      "timestamp": "2026-04-14T01:59:38.022690+00:00",
-      "claim_id": "ozempic-glp1_bluesky_6142966a_0",
+      "timestamp": "2026-04-28T08:27:09.250248+00:00",
+      "claim_id": "ozempic-glp1_bluesky_9fefe30d_0",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.9,
-      "summary": "cnbc_business leads Bluesky by ~59h in \"Oral Wegovy\"",
+      "confidence": 0.6,
+      "summary": "Bluesky leads scitechdaily by ~35h in \"Orforglipron\"",
       "detail": {
-        "source_platform": "cnbc_business",
-        "target_platform": "bluesky",
-        "lag_hours": 59.3,
-        "cluster_id": "clu_ozempic-glp1_001"
-      }
-    },
-    {
-      "id": "evt_5c45a5fddd55",
-      "type": "lead_lag",
-      "timestamp": "2026-04-15T11:59:38.022690+00:00",
-      "claim_id": "ozempic-glp1_bluesky_9f2d5570_0",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.88,
-      "summary": "stat_news leads barchart.com by ~25h in \"Orforglipron\"",
-      "detail": {
-        "source_platform": "stat_news",
-        "target_platform": "barchart.com",
-        "lag_hours": 25.0,
-        "cluster_id": "clu_ozempic-glp1_003"
+        "source_platform": "bluesky",
+        "target_platform": "scitechdaily",
+        "lag_hours": 35.3,
+        "cluster_id": "clu_ozempic-glp1_004"
       }
     },
     {
@@ -589,17 +605,7 @@
       "summary": "Trump out as President before GTA VI? — 53.0% Yes",
       "detail": "Polymarket gives 53.0% odds. Volume: $572,401",
       "source": "polymarket"
-    },
-    {
-      "id": "poly_540819",
-      "type": "external_signal",
-      "timestamp": "2026-04-03T17:13:06.567073+00:00",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Will Jesus Christ return before GTA VI? — 49.0% Yes",
-      "detail": "Polymarket gives 49.0% odds. Volume: $10,396,796",
-      "source": "polymarket"
     }
   ],
-  "total_count": 86
+  "total_count": 87
 }

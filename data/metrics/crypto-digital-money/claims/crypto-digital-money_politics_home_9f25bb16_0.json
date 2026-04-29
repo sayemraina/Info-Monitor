@@ -1,0 +1,217 @@
+{
+  "claim": {
+    "text": "The UK should implement a cap on domestic political donations to limit the influence of wealthy individuals.",
+    "subject": "Political donations",
+    "assertion": "should be capped",
+    "framing": "undue influence",
+    "stance": "pro",
+    "confidence": 0.9,
+    "arousal": "medium",
+    "register": "journalistic",
+    "id": "crypto-digital-money_politics_home_9f25bb16_0",
+    "cluster_id": "clu_crypto-digital-money_030",
+    "concept_id": "concept_crypto-digital-money_004",
+    "first_seen_platform": "politics_home",
+    "first_seen_timestamp": "2026-04-27T17:39:58Z",
+    "source_document_id": "211104c58d084c6c",
+    "source_platform": "politics_home",
+    "source_timestamp": "2026-04-27T17:39:58Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "elite_media"
+  },
+  "momentum": {
+    "value": 0.54,
+    "confidence_interval": [
+      0.44,
+      0.64
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.54
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0.75,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.3183,
+    "confidence_interval": [
+      0.1922,
+      0.4444
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3183
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.75,
+    "confidence_interval": [
+      0.6562,
+      0.8438
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.75
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Politics Home",
+    "first_timestamp": "2026-04-27T17:39:58Z",
+    "lead_lag": [
+      {
+        "platform": "Common Dreams",
+        "lag_hours": 1.0
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_crypto-digital-money_004",
+    "hops": [
+      {
+        "platform": "Politics Home",
+        "timestamp": "2026-04-27T17:39:58+00:00",
+        "claim_id": "crypto-digital-money_politics_home_9f25bb16_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Common Dreams",
+        "timestamp": "2026-04-27T18:40:10+00:00",
+        "claim_id": "crypto-digital-money_politics_home_9f25bb16_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "crypto-digital-money_politics_home_9f25bb16_2",
+      "similarity": 0.7192,
+      "text": "Current regulations on political donations are insufficient to prevent foreign interference."
+    },
+    {
+      "claim_id": "crypto-digital-money_common_dreams_d47604e0_0",
+      "similarity": 0.5842,
+      "text": "Unlimited outside spending distorts elections and drowns out the voices of working people."
+    },
+    {
+      "claim_id": "crypto-digital-money_common_dreams_d47604e0_1",
+      "similarity": 0.5227,
+      "text": "Corporate-funded Super PACs are shaping the 2026 elections."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Current regulations on political donations are insufficient to prevent foreign interference.",
+      "platform": "Politics Home",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Unlimited outside spending distorts elections and drowns out the voices of working people.",
+      "platform": "Common Dreams",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Corporate-funded Super PACs are shaping the 2026 elections.",
+      "platform": "Common Dreams",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "claim": {
+    "text": "Egypt accuses Israel of committing genocide and deliberately starving the residents of Gaza.",
+    "subject": "Israel's actions in Gaza",
+    "assertion": "constitute genocide and deliberate starvation",
+    "framing": "humanitarian crisis",
+    "stance": "anti",
+    "confidence": 0.9,
+    "arousal": "high",
+    "register": "journalistic",
+    "id": "israel-palestine_the_national_261057cf_1",
+    "cluster_id": "clu_israel-palestine_008",
+    "concept_id": "concept_israel-palestine_002",
+    "first_seen_platform": "the_national",
+    "first_seen_timestamp": "2026-04-29T18:09:08Z",
+    "source_document_id": "c3e027d12bfa1a58",
+    "source_platform": "the_national",
+    "source_timestamp": "2026-04-29T18:09:08Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "elite_media"
+  },
+  "momentum": {
+    "value": 0.645,
+    "confidence_interval": [
+      0.545,
+      0.745
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.645
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0.6667,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.3138,
+    "confidence_interval": [
+      0.1873,
+      0.4403
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3138
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.6667,
+    "confidence_interval": [
+      0.5667,
+      0.7667
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.6667
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.85,
+    "confidence_interval": [
+      0.7638,
+      0.9362
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.85
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 0.9437,
+    "confidence_interval": [
+      0.8645,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.9437
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "The National",
+    "first_timestamp": "2026-04-29T18:09:08Z",
+    "lead_lag": [
+      {
+        "platform": "Middle East Eye",
+        "lag_hours": 1.8
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_israel-palestine_002",
+    "hops": [
+      {
+        "platform": "The National",
+        "timestamp": "2026-04-29T10:05:53+00:00",
+        "claim_id": "israel-palestine_the_national_261057cf_1",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Middle East Eye",
+        "timestamp": "2026-04-29T11:56:25+00:00",
+        "claim_id": "israel-palestine_the_national_261057cf_1",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "israel-palestine_middle_east_eye_3d3cf31f_2",
+      "similarity": 0.7314,
+      "text": "Israel is committing genocide against Palestinians in Gaza."
+    },
+    {
+      "claim_id": "israel-palestine_the_national_a3d7b72c_0",
+      "similarity": 0.4971,
+      "text": "The UK Labour government is complicit in genocide in Gaza by arming Israel and training Israeli soldiers."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Israel is committing genocide against Palestinians in Gaza.",
+      "platform": "Middle East Eye",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The UK Labour government is complicit in genocide in Gaza by arming Israel and training Israeli soldiers.",
+      "platform": "The National",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

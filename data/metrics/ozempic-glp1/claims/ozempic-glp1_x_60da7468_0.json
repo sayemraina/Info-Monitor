@@ -1,0 +1,220 @@
+{
+  "claim": {
+    "text": "The dosage of Ozempic prescribed to the individual is insufficient.",
+    "subject": "Ozempic",
+    "assertion": "is under-prescribed",
+    "framing": "neutral",
+    "stance": "neutral",
+    "confidence": 0.7,
+    "arousal": "low",
+    "register": "vernacular",
+    "id": "ozempic-glp1_x_60da7468_0",
+    "cluster_id": "clu_ozempic-glp1_024",
+    "concept_id": "concept_ozempic-glp1_001",
+    "first_seen_platform": "x",
+    "first_seen_timestamp": "2026-04-29T17:34:13.000Z",
+    "source_document_id": "x_2049542785997381973",
+    "source_platform": "x",
+    "source_timestamp": "2026-04-29T17:34:13.000Z",
+    "source_engagement": {
+      "likes": 11,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.2638,
+    "confidence_interval": [
+      0.1638,
+      0.3638
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.2638
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0.6,
+    "friction_quadrant": "successful_suppression"
+  },
+  "salience": {
+    "value": 0.3066,
+    "confidence_interval": [
+      0.1796,
+      0.4336
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3066
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.6,
+    "confidence_interval": [
+      0.495,
+      0.705
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.6
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.15,
+    "confidence_interval": [
+      0.0112,
+      0.2888
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.15
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 0.9528,
+    "confidence_interval": [
+      0.8743,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.9528
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.7,
+    "factors": []
+  },
+  "provenance": {
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-04-29T17:34:13.000Z",
+    "lead_lag": [
+      {
+        "platform": "X Platform",
+        "lag_hours": 2.4
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_ozempic-glp1_001",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-29T15:05:34.499000+00:00",
+        "claim_id": "ozempic-glp1_x_60da7468_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-29T17:28:01+00:00",
+        "claim_id": "ozempic-glp1_x_60da7468_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "ozempic-glp1_bluesky_107dc405_0",
+      "similarity": 0.953,
+      "text": "Doctors are too quick to prescribe Ozempic even when patients are successfully losing weight through diet and exercise."
+    },
+    {
+      "claim_id": "ozempic-glp1_x_0c0dbdc4_0",
+      "similarity": 0.8953,
+      "text": "Ozempic is being prescribed inappropriately."
+    },
+    {
+      "claim_id": "ozempic-glp1_x_37f60125_0",
+      "similarity": 0.8038,
+      "text": "The focus on Ozempic's potential problems distracts from the history of promoting starvation as a weight loss method."
+    },
+    {
+      "claim_id": "ozempic-glp1_bluesky_1998e74c_0",
+      "similarity": 0.7683,
+      "text": "Influencers are promoting Ozempic inappropriately."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Influencers are promoting Ozempic inappropriately.",
+      "platform": "Bluesky",
+      "confidence": 0.7,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Doctors are too quick to prescribe Ozempic even when patients are successfully losing weight through diet and exercise.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The focus on Ozempic's potential problems distracts from the history of promoting starvation as a weight loss method.",
+      "platform": "X Platform",
+      "confidence": 0.7,
+      "is_influencer_framing": false
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "claim": {
+    "text": "People are relocating to states with more jobs and affordable suburban areas.",
+    "subject": "moving trends",
+    "assertion": "are shifting towards affordable areas with job opportunities",
+    "framing": "economic opportunity",
+    "stance": "neutral",
+    "confidence": 0.9,
+    "arousal": "low",
+    "register": "journalistic",
+    "id": "housing-crisis_cnhi_news_d32f9bb0_1",
+    "cluster_id": "clu_housing-crisis_014",
+    "concept_id": "concept_housing-crisis_002",
+    "first_seen_platform": "cnhi_news",
+    "first_seen_timestamp": "2026-04-27T18:00:08Z",
+    "source_document_id": "09feb39b7c60e44f",
+    "source_platform": "cnhi_news",
+    "source_timestamp": "2026-04-27T18:00:08Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "elite_media"
+  },
+  "momentum": {
+    "value": 0.435,
+    "confidence_interval": [
+      0.335,
+      0.535
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.435
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0,
+    "friction_quadrant": "dead"
+  },
+  "salience": {
+    "value": 0.3049,
+    "confidence_interval": [
+      0.1778,
+      0.432
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3049
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0,
+    "confidence_interval": [
+      0,
+      0.15
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.15,
+    "confidence_interval": [
+      0.0112,
+      0.2888
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.15
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 0.9512,
+    "confidence_interval": [
+      0.8725,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.9512
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-04-27T18:00:08Z",
+    "lead_lag": [
+      {
+        "platform": "Cnhi News",
+        "lag_hours": 1.3
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_housing-crisis_002",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-27T16:44:01.876000+00:00",
+        "claim_id": "housing-crisis_cnhi_news_d32f9bb0_1",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Cnhi News",
+        "timestamp": "2026-04-27T18:00:08+00:00",
+        "claim_id": "housing-crisis_cnhi_news_d32f9bb0_1",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "housing-crisis_cnhi_news_d32f9bb0_2",
+      "similarity": 0.6059,
+      "text": "People are leaving dense Northeastern states at high rates."
+    },
+    {
+      "claim_id": "housing-crisis_cnhi_news_d32f9bb0_0",
+      "similarity": 0.5522,
+      "text": "Mortgage rates and affordability concerns are preventing many people from moving."
+    },
+    {
+      "claim_id": "housing-crisis_bluesky_aa739fd5_0",
+      "similarity": 0.5411,
+      "text": "Recent reforms are beginning to improve housing affordability."
+    },
+    {
+      "claim_id": "housing-crisis_bluesky_d0bbe78b_2",
+      "similarity": 0.4449,
+      "text": "Decreasing housing prices cause developers to reduce construction, exacerbating supply issues."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Recent reforms are beginning to improve housing affordability.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Decreasing housing prices cause developers to reduce construction, exacerbating supply issues.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Mortgage rates and affordability concerns are preventing many people from moving.",
+      "platform": "Cnhi News",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

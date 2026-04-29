@@ -1,0 +1,195 @@
+{
+  "claim": {
+    "text": "U.S. immigration policy should prioritize American workers.",
+    "subject": "Immigration policy",
+    "assertion": "should prioritize American workers",
+    "framing": "neutral",
+    "stance": "anti",
+    "confidence": 0.9,
+    "arousal": "medium",
+    "register": "formal",
+    "id": "immigration_x_07fcef44_1",
+    "cluster_id": "clu_immigration_038",
+    "concept_id": "concept_immigration_002",
+    "first_seen_platform": "x",
+    "first_seen_timestamp": "2026-04-29T16:31:08.000Z",
+    "source_document_id": "x_2049526911060316265",
+    "source_platform": "x",
+    "source_timestamp": "2026-04-29T16:31:08.000Z",
+    "source_engagement": {
+      "likes": 2,
+      "replies": 1,
+      "shares": 0
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.4228,
+    "confidence_interval": [
+      0.3228,
+      0.5228
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.4228
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0.5,
+    "friction_quadrant": "successful_suppression"
+  },
+  "salience": {
+    "value": 0.3092,
+    "confidence_interval": [
+      0.1824,
+      0.436
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3092
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 0.988,
+    "confidence_interval": [
+      0.9121,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.988
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "The Independent",
+    "first_timestamp": "2026-04-29T16:31:08.000Z",
+    "lead_lag": [
+      {
+        "platform": "X Platform",
+        "lag_hours": 0.0
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_immigration_002",
+    "hops": [
+      {
+        "platform": "The Independent",
+        "timestamp": "2026-04-29T16:30:34+00:00",
+        "claim_id": "immigration_x_07fcef44_1",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-29T16:31:08+00:00",
+        "claim_id": "immigration_x_07fcef44_1",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "immigration_the_independent_d0f70bd0_1",
+      "similarity": 0.7891,
+      "text": "South Africa should prioritize its own citizens and enforce immigration laws to ensure foreigners are legally present."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "South Africa should prioritize its own citizens and enforce immigration laws to ensure foreigners are legally present.",
+      "platform": "The Independent",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

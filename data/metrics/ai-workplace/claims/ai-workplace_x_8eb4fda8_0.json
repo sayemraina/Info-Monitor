@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.54,
+    "value": null,
     "confidence_interval": [
-      0.44,
-      0.64
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.54
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 9,
-    "friction": 0.3333,
-    "friction_quadrant": "unopposed_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.3333,
+    "value": null,
     "confidence_interval": [
-      0.2083,
-      0.4583
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3333
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.45,
+    "value": 0,
     "confidence_interval": [
-      0.3338,
-      0.5662
+      0,
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.45
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,107 +133,65 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
-    "first_timestamp": "2026-04-16T10:52:41.000Z",
-    "lead_lag": [
-      {
-        "platform": "X Platform",
-        "lag_hours": 0.1
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_ai-workplace_000",
-    "hops": [
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-16T06:48:19.057000+00:00",
-        "claim_id": "ai-workplace_x_8eb4fda8_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-16T06:52:30+00:00",
-        "claim_id": "ai-workplace_x_8eb4fda8_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-workplace_bluesky_c1fc6d68_0",
-      "similarity": 0.9732,
-      "text": "Layoffs at the company may have been caused by the adoption of AI technologies."
+      "claim_id": "ai-workplace_bluesky_c8addf5b_0",
+      "similarity": 1.0,
+      "text": "AI is directly causing job displacement across multiple major tech companies."
     },
     {
-      "claim_id": "ai-workplace_bluesky_af299614_0",
-      "similarity": 0.9444,
-      "text": "Take-Two Interactive eliminated its AI team as part of a restructuring, contributing to job losses in the gaming sector."
+      "claim_id": "ai-workplace_bluesky_126764d0_0",
+      "similarity": 0.891,
+      "text": "AI and automation are causing job displacement."
     },
     {
-      "claim_id": "ai-workplace_bluesky_eab3b756_0",
-      "similarity": 0.8991,
-      "text": "AI is not the primary cause of job displacement; ineffective business systems are a more significant factor."
+      "claim_id": "ai-workplace_bluesky_230bb79a_0",
+      "similarity": 0.8846,
+      "text": "Recent tech layoffs are attributable to increased investment in artificial intelligence."
     },
     {
-      "claim_id": "ai-workplace_bluesky_349433f3_0",
-      "similarity": 0.8928,
-      "text": "AI was not a factor in the recent layoffs mentioned in the linked article."
+      "claim_id": "ai-workplace_bluesky_ce45c3f8_0",
+      "similarity": 0.8457,
+      "text": "Tech workers who promote AI-driven job displacement are hypocritical because their own jobs are also at risk of automation."
     },
     {
-      "claim_id": "ai-workplace_bluesky_d6c37f83_0",
-      "similarity": 0.8915,
-      "text": "Using AI will not prevent job displacement caused by AI."
+      "claim_id": "ai-workplace_bluesky_d509139c_0",
+      "similarity": 0.839,
+      "text": "Layoffs in tech companies are primarily due to financial losses from AI investments, not direct job replacement by AI."
     }
   ],
   "example_content": [
     {
-      "text": "Using AI will not prevent job displacement caused by AI.",
+      "text": "AI is directly causing job displacement across multiple major tech companies.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Corporations are primarily responsible for job displacement, not AI.",
+      "text": "Tech workers who promote AI-driven job displacement are hypocritical because their own jobs are also at risk of automation.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The narrative that AI is a threat to jobs is propaganda.",
+      "text": "Replacing employees with AI is unethical and infuriating.",
       "platform": "Bluesky",
-      "confidence": 0.8,
+      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

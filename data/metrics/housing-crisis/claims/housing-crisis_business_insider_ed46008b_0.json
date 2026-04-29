@@ -1,0 +1,238 @@
+{
+  "claim": {
+    "text": "The cost of living in Miami has increased significantly in recent years.",
+    "subject": "Cost of living in Miami",
+    "assertion": "has increased significantly",
+    "framing": "market forces",
+    "stance": "pro",
+    "confidence": 0.9,
+    "arousal": "medium",
+    "register": "vernacular",
+    "id": "housing-crisis_business_insider_ed46008b_0",
+    "cluster_id": "clu_housing-crisis_017",
+    "concept_id": "concept_housing-crisis_002",
+    "first_seen_platform": "business_insider",
+    "first_seen_timestamp": "2026-04-27T09:05:01Z",
+    "source_document_id": "0307fff4d34b70ae",
+    "source_platform": "business_insider",
+    "source_timestamp": "2026-04-27T09:05:01Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "elite_media"
+  },
+  "momentum": {
+    "value": 0.54,
+    "confidence_interval": [
+      0.44,
+      0.64
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.54
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.75,
+    "bridge_ratio": 0.75,
+    "persistence_windows": 2,
+    "friction": 0,
+    "friction_quadrant": "unopposed_advance"
+  },
+  "salience": {
+    "value": 0.3243,
+    "confidence_interval": [
+      0.1986,
+      0.45
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3243
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0,
+    "confidence_interval": [
+      0,
+      0.15
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.1,
+    "confidence_interval": [
+      0,
+      0.2425
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.1
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 0.9512,
+    "confidence_interval": [
+      0.8725,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.9512
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-04-27T09:05:01Z",
+    "lead_lag": [
+      {
+        "platform": "Business Insider",
+        "lag_hours": 12.2
+      },
+      {
+        "platform": "Dnyuz",
+        "lag_hours": 12.2
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_housing-crisis_002",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-26T20:55:28.727000+00:00",
+        "claim_id": "housing-crisis_business_insider_ed46008b_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Business Insider",
+        "timestamp": "2026-04-27T09:05:01+00:00",
+        "claim_id": "housing-crisis_business_insider_ed46008b_0",
+        "fidelity_to_origin": 0.3043,
+        "fidelity_to_previous": 0.3043
+      },
+      {
+        "platform": "Dnyuz",
+        "timestamp": "2026-04-27T09:09:29+00:00",
+        "claim_id": "housing-crisis_business_insider_ed46008b_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.9859
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "housing-crisis_dnyuz_d7a08cd9_0",
+      "similarity": 0.9866,
+      "text": "The cost of living in Miami has increased significantly in recent years."
+    },
+    {
+      "claim_id": "housing-crisis_dnyuz_d7a08cd9_2",
+      "similarity": 0.407,
+      "text": "Salaries for some professions are higher in New York City than in Miami."
+    },
+    {
+      "claim_id": "housing-crisis_bluesky_b200bbef_0",
+      "similarity": 0.4066,
+      "text": "For most households, price increases have not outpaced wage increases."
+    },
+    {
+      "claim_id": "housing-crisis_business_insider_ed46008b_1",
+      "similarity": 0.3549,
+      "text": "New York City offers more affordable childcare options compared to Miami."
+    },
+    {
+      "claim_id": "housing-crisis_dnyuz_d7a08cd9_1",
+      "similarity": 0.3105,
+      "text": "New York City offers more affordable and accessible day care options compared to Miami."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "For most households, price increases have not outpaced wage increases.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Rent growth is outpacing wage growth in both San Diego and Miami.",
+      "platform": "Bluesky",
+      "confidence": 1.0,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "New York City offers more affordable childcare options compared to Miami.",
+      "platform": "Business Insider",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

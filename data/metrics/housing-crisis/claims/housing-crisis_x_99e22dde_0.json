@@ -1,0 +1,217 @@
+{
+  "claim": {
+    "text": "The housing crisis is causing widespread suffering.",
+    "subject": "The Housing Crisis",
+    "assertion": "is causing widespread suffering",
+    "framing": "neutral",
+    "stance": "pro",
+    "confidence": 0.9,
+    "arousal": "high",
+    "register": "vernacular",
+    "id": "housing-crisis_x_99e22dde_0",
+    "cluster_id": "clu_housing-crisis_035",
+    "concept_id": "concept_housing-crisis_000",
+    "first_seen_platform": "x",
+    "first_seen_timestamp": "2026-04-29T19:26:27.000Z",
+    "source_document_id": "x_2049571031367774271",
+    "source_platform": "x",
+    "source_timestamp": "2026-04-29T19:26:27.000Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.645,
+    "confidence_interval": [
+      0.545,
+      0.745
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.645
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0,
+    "friction_quadrant": "unopposed_advance"
+  },
+  "salience": {
+    "value": 0.3023,
+    "confidence_interval": [
+      0.175,
+      0.4296
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3023
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0,
+    "confidence_interval": [
+      0,
+      0.15
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.85,
+    "confidence_interval": [
+      0.7638,
+      0.9362
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.85
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 0.9925,
+    "confidence_interval": [
+      0.9169,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.9925
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-04-29T19:26:27.000Z",
+    "lead_lag": [
+      {
+        "platform": "X Platform",
+        "lag_hours": 0.0
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_housing-crisis_000",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-29T13:39:55.027000+00:00",
+        "claim_id": "housing-crisis_x_99e22dde_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-29T13:41:14+00:00",
+        "claim_id": "housing-crisis_x_99e22dde_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "housing-crisis_bluesky_8be18dbb_0",
+      "similarity": 0.8513,
+      "text": "Unaffordable housing and financial instability are forcing individuals to sell their assets."
+    },
+    {
+      "claim_id": "housing-crisis_x_a281b021_0",
+      "similarity": 0.789,
+      "text": "The housing crisis is a widespread problem affecting many people."
+    },
+    {
+      "claim_id": "housing-crisis_x_02b61fbf_0",
+      "similarity": 0.7084,
+      "text": "The current economic conditions have made it difficult for artists to afford housing."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Unaffordable housing and financial instability are forcing individuals to sell their assets.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The housing crisis is a widespread problem affecting many people.",
+      "platform": "X Platform",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The current economic conditions have made it difficult for artists to afford housing.",
+      "platform": "X Platform",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

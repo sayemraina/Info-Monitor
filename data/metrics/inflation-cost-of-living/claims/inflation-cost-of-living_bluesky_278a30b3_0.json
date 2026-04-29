@@ -1,0 +1,207 @@
+{
+  "claim": {
+    "text": "Immigration does not pose a threat to the United States.",
+    "subject": "Immigration",
+    "assertion": "does not pose a threat",
+    "framing": "national security",
+    "stance": "anti",
+    "confidence": 0.9,
+    "arousal": "high",
+    "register": "sarcastic",
+    "id": "inflation-cost-of-living_bluesky_278a30b3_0",
+    "cluster_id": "clu_inflation-cost-of-living_001",
+    "concept_id": "concept_inflation-cost-of-living_001",
+    "first_seen_platform": "bluesky",
+    "first_seen_timestamp": "2026-04-29T12:38:17.691Z",
+    "source_document_id": "d14b3f0c639fac58",
+    "source_platform": "bluesky",
+    "source_timestamp": "2026-04-29T12:38:17.691Z",
+    "source_engagement": {
+      "likes": 2,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.5266,
+    "confidence_interval": [
+      0.4266,
+      0.6266
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5266
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0.3333,
+    "friction_quadrant": "unopposed_advance"
+  },
+  "salience": {
+    "value": 0.2992,
+    "confidence_interval": [
+      0.1716,
+      0.4268
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.2992
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.3333,
+    "confidence_interval": [
+      0.2083,
+      0.4583
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3333
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.85,
+    "confidence_interval": [
+      0.7638,
+      0.9362
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.85
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "sarcasm detected",
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-04-29T12:38:17.691Z",
+    "lead_lag": [
+      {
+        "platform": "X Platform",
+        "lag_hours": 6.3
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_inflation-cost-of-living_001",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-29T12:38:17.691000+00:00",
+        "claim_id": "inflation-cost-of-living_bluesky_278a30b3_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-29T18:57:31+00:00",
+        "claim_id": "inflation-cost-of-living_bluesky_278a30b3_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "inflation-cost-of-living_bluesky_fbe632ea_0",
+      "similarity": 0.575,
+      "text": "It is easy to reside in a certain location without a visa for up to a year."
+    },
+    {
+      "claim_id": "inflation-cost-of-living_x_8bdeb15a_1",
+      "similarity": 0.5542,
+      "text": "Illegal immigration should be stopped."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "It is easy to reside in a certain location without a visa for up to a year.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Illegal immigration should be stopped.",
+      "platform": "X Platform",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "claim": {
+    "text": "Military actions against Iranian nuclear facilities are unconstitutional.",
+    "subject": "military actions against Iranian nuclear facilities",
+    "assertion": "are unconstitutional",
+    "framing": "legal oversight",
+    "stance": "anti",
+    "confidence": 0.9,
+    "arousal": "low",
+    "register": "journalistic",
+    "id": "war-on-iran_the_national_aab571f9_2",
+    "cluster_id": "clu_war-on-iran_047",
+    "concept_id": "concept_war-on-iran_000",
+    "first_seen_platform": "the_national",
+    "first_seen_timestamp": "2026-04-29T18:44:37Z",
+    "source_document_id": "13e52917a56ac26c",
+    "source_platform": "the_national",
+    "source_timestamp": "2026-04-29T18:44:37Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "elite_media"
+  },
+  "momentum": {
+    "value": 0.435,
+    "confidence_interval": [
+      0.335,
+      0.535
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.435
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0.6667,
+    "friction_quadrant": "successful_suppression"
+  },
+  "salience": {
+    "value": 0.3072,
+    "confidence_interval": [
+      0.1802,
+      0.4342
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3072
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.6667,
+    "confidence_interval": [
+      0.5667,
+      0.7667
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.6667
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.15,
+    "confidence_interval": [
+      0.0112,
+      0.2888
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.15
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 0.9844,
+    "confidence_interval": [
+      0.9082,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.9844
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Reason",
+    "first_timestamp": "2026-04-29T18:44:37Z",
+    "lead_lag": [
+      {
+        "platform": "The National",
+        "lag_hours": 22.2
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_war-on-iran_000",
+    "hops": [
+      {
+        "platform": "Reason",
+        "timestamp": "2026-04-28T20:31:05+00:00",
+        "claim_id": "war-on-iran_the_national_aab571f9_2",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "The National",
+        "timestamp": "2026-04-29T18:44:37+00:00",
+        "claim_id": "war-on-iran_the_national_aab571f9_2",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "war-on-iran_the_national_aab571f9_0",
+      "similarity": 0.6229,
+      "text": "The US military conflict against Iran may be deemed illegal due to the War Powers Resolution."
+    },
+    {
+      "claim_id": "war-on-iran_reason_b5e5c386_0",
+      "similarity": 0.3405,
+      "text": "The city of Los Angeles unconstitutionally landmarked Marilyn Monroe's former home."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "The US military conflict against Iran may be deemed illegal due to the War Powers Resolution.",
+      "platform": "The National",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The city of Los Angeles unconstitutionally landmarked Marilyn Monroe's former home.",
+      "platform": "Reason",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

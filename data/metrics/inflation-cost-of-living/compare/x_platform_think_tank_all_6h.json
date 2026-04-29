@@ -3,30 +3,37 @@
     "id": "x_platform",
     "type": "platform",
     "label": "X Platform",
-    "active_volume": 122,
+    "active_volume": 111,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.2664,
+    "base_rate_weight": 0.3049,
     "is_influencer_framing": false
   },
   "slice_b": {
     "id": "think_tank_all",
     "type": "source_type",
     "label": "Think Tanks",
-    "active_volume": 7,
+    "active_volume": 0,
     "meets_minimum_threshold": false,
-    "base_rate_weight": 0.0153,
+    "base_rate_weight": 0.0,
     "is_influencer_framing": false
   },
   "divergence": {
-    "jsd": 0.9066,
-    "jsd_sqrt": 0.9522,
+    "jsd": 0.0,
+    "jsd_sqrt": 0.0,
     "trend": [
-      0.9522
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
     ],
     "typology": {
-      "information_asymmetry": 0.3582,
-      "interpretive": 0.2837,
-      "paradigmatic": 0.3582,
+      "information_asymmetry": 0.0,
+      "interpretive": 0.0,
+      "paradigmatic": 0.0,
       "dominant_mode": "Information Asymmetry",
       "paradigmatic_caveat": false
     }
@@ -34,18 +41,18 @@
   "per_cluster": [
     {
       "cluster_id": "clu_inflation-cost-of-living_000",
-      "label": "Hezbollah",
-      "salience_a": 0.0082,
-      "salience_b": 0.4286,
+      "label": "Nigeria's Economy",
+      "salience_a": 0.036,
+      "salience_b": 0.0,
       "arousal_a": 0.5,
-      "arousal_b": 0.5,
+      "arousal_b": 0,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_inflation-cost-of-living_001",
-      "label": "Donald Trump",
-      "salience_a": 0.0164,
+      "label": "Immigration",
+      "salience_a": 0.009,
       "salience_b": 0.0,
       "arousal_a": 0.5,
       "arousal_b": 0,
@@ -54,123 +61,433 @@
     },
     {
       "cluster_id": "clu_inflation-cost-of-living_002",
-      "label": "Grocery Prices",
-      "salience_a": 0.0082,
+      "label": "SNAP",
+      "salience_a": 0.0,
       "salience_b": 0.0,
-      "arousal_a": 0.85,
+      "arousal_a": 0,
       "arousal_b": 0,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_inflation-cost-of-living_003",
-      "label": "Fuel Prices",
-      "salience_a": 0.1557,
+      "label": "Grocery Prices",
+      "salience_a": 0.0,
       "salience_b": 0.0,
-      "arousal_a": 0.3711,
+      "arousal_a": 0,
       "arousal_b": 0,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_inflation-cost-of-living_004",
-      "label": "Progressive Tax Systems",
-      "salience_a": 0.041,
+      "label": "Grocery Stores",
+      "salience_a": 0.0,
       "salience_b": 0.0,
-      "arousal_a": 0.64,
+      "arousal_a": 0,
       "arousal_b": 0,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_inflation-cost-of-living_005",
-      "label": "European Central Bank",
-      "salience_a": 0.0246,
+      "label": "Pakistan",
+      "salience_a": 0.0,
       "salience_b": 0.0,
-      "arousal_a": 0.2667,
+      "arousal_a": 0,
       "arousal_b": 0,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_inflation-cost-of-living_006",
-      "label": "US Economy",
-      "salience_a": 0.0246,
+      "label": "Bitcoin",
+      "salience_a": 0.0,
       "salience_b": 0.0,
-      "arousal_a": 0.7333,
+      "arousal_a": 0,
       "arousal_b": 0,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_inflation-cost-of-living_007",
-      "label": "Pay Raise",
-      "salience_a": 0.377,
+      "label": "Federal Reserve",
+      "salience_a": 0.0,
       "salience_b": 0.0,
-      "arousal_a": 0.4543,
+      "arousal_a": 0,
       "arousal_b": 0,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_inflation-cost-of-living_008",
-      "label": "Politicians",
-      "salience_a": 0.123,
+      "label": "Donald Trump",
+      "salience_a": 0.0991,
       "salience_b": 0.0,
-      "arousal_a": 0.5467,
+      "arousal_a": 0.5318,
       "arousal_b": 0,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_inflation-cost-of-living_009",
-      "label": "Government Spending",
-      "salience_a": 0.0164,
-      "salience_b": 0.2857,
-      "arousal_a": 0.325,
-      "arousal_b": 0.5,
+      "label": "Tariffs",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_inflation-cost-of-living_010",
-      "label": "Keir Starmer",
-      "salience_a": 0.041,
+      "label": "Republican Policies",
+      "salience_a": 0.009,
       "salience_b": 0.0,
       "arousal_a": 0.5,
       "arousal_b": 0,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_inflation-cost-of-living_012",
+      "label": "United States",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_inflation-cost-of-living_013",
+      "label": "Corporations",
+      "salience_a": 0.009,
+      "salience_b": 0.0,
+      "arousal_a": 0.85,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_inflation-cost-of-living_014",
+      "label": "Democratic Party",
+      "salience_a": 0.045,
+      "salience_b": 0.0,
+      "arousal_a": 0.43,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_inflation-cost-of-living_015",
+      "label": "Current Administration's",
+      "salience_a": 0.009,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_inflation-cost-of-living_016",
+      "label": "Politicians",
+      "salience_a": 0.045,
+      "salience_b": 0.0,
+      "arousal_a": 0.64,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_inflation-cost-of-living_017",
+      "label": "NYC Public School System",
+      "salience_a": 0.018,
+      "salience_b": 0.0,
+      "arousal_a": 0.325,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_inflation-cost-of-living_019",
+      "label": "Members of Parliament",
+      "salience_a": 0.0541,
+      "salience_b": 0.0,
+      "arousal_a": 0.6167,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_inflation-cost-of-living_020",
+      "label": "Fuel Prices",
+      "salience_a": 0.009,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_inflation-cost-of-living_021",
+      "label": "Interest Rates",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_inflation-cost-of-living_022",
+      "label": "Inflation",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_inflation-cost-of-living_023",
+      "label": "Energy Prices",
+      "salience_a": 0.009,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_inflation-cost-of-living_024",
+      "label": "Fossil Fuel Companies",
+      "salience_a": 0.009,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_inflation-cost-of-living_025",
+      "label": "Government Spending",
+      "salience_a": 0.009,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_inflation-cost-of-living_026",
+      "label": "Unemployment Rate",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_inflation-cost-of-living_027",
+      "label": "Investment Returns",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_inflation-cost-of-living_028",
+      "label": "Investment Options",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_inflation-cost-of-living_029",
+      "label": "Taxation",
+      "salience_a": 0.009,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_inflation-cost-of-living_030",
+      "label": "Economic Policies",
+      "salience_a": 0.045,
+      "salience_b": 0.0,
+      "arousal_a": 0.43,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_inflation-cost-of-living_031",
+      "label": "California High-Speed Rail",
+      "salience_a": 0.045,
+      "salience_b": 0.0,
+      "arousal_a": 0.36,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_inflation-cost-of-living_032",
+      "label": "Minimum Wage",
+      "salience_a": 0.018,
+      "salience_b": 0.0,
+      "arousal_a": 0.325,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_inflation-cost-of-living_033",
+      "label": "Us-Iran Relations",
+      "salience_a": 0.009,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_inflation-cost-of-living_034",
+      "label": "Rent Control",
+      "salience_a": 0.036,
+      "salience_b": 0.0,
+      "arousal_a": 0.4125,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_inflation-cost-of-living_035",
+      "label": "US Job Market",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_inflation-cost-of-living_036",
+      "label": "US Economy",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_inflation-cost-of-living_037",
+      "label": "US National Debt",
+      "salience_a": 0.027,
+      "salience_b": 0.0,
+      "arousal_a": 0.6167,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_inflation-cost-of-living_038",
+      "label": "Medical Specialist Fees",
+      "salience_a": 0.0811,
+      "salience_b": 0.0,
+      "arousal_a": 0.5389,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_inflation-cost-of-living_039",
+      "label": "Middle East Conflict",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_inflation-cost-of-living_040",
+      "label": "Iran War",
+      "salience_a": 0.009,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_inflation-cost-of-living_041",
+      "label": "Cost of Living Varies",
+      "salience_a": 0.018,
+      "salience_b": 0.0,
+      "arousal_a": 0.675,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_inflation-cost-of-living_042",
+      "label": "Climate Change",
+      "salience_a": 0.0541,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_inflation-cost-of-living_043",
+      "label": "Dining Out",
+      "salience_a": 0.009,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
     }
   ],
   "arousal_comparison": {
-    "slice_a_avg": 0.477,
-    "slice_b_avg": 0.4
+    "slice_a_avg": 0.4968,
+    "slice_b_avg": 0
   },
   "exposure_comparison": {
     "slice_a": {
-      "value": 0.4734,
+      "value": 0.5396,
       "confidence_interval": [
-        0.3589,
-        0.5879
+        0.4301,
+        0.6491
       ],
       "baseline": "global",
       "time_window": "6h",
       "sparkline": [
-        0.4734
+        0.5396
       ],
       "source_distribution": "production"
     },
     "slice_b": {
-      "value": 0.0266,
+      "value": 0,
       "confidence_interval": [
         0,
-        0.1746
+        0.15
       ],
       "baseline": "global",
       "time_window": "6h",
       "sparkline": [
-        0.0266
+        0
       ],
       "source_distribution": "production"
     }

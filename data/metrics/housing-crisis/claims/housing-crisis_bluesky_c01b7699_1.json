@@ -1,0 +1,217 @@
+{
+  "claim": {
+    "text": "Providing adequate housing is a viable solution to the homelessness crisis.",
+    "subject": "homelessness",
+    "assertion": "can be solved by providing adequate housing",
+    "framing": "social responsibility",
+    "stance": "pro",
+    "confidence": 0.9,
+    "arousal": "medium",
+    "register": "vernacular",
+    "id": "housing-crisis_bluesky_c01b7699_1",
+    "cluster_id": "clu_housing-crisis_029",
+    "concept_id": "concept_housing-crisis_001",
+    "first_seen_platform": "bluesky",
+    "first_seen_timestamp": "2026-04-29T12:29:14.051Z",
+    "source_document_id": "b37d6087844e8d1c",
+    "source_platform": "bluesky",
+    "source_timestamp": "2026-04-29T12:29:14.051Z",
+    "source_engagement": {
+      "likes": 197,
+      "replies": 14,
+      "shares": 126
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.796,
+    "confidence_interval": [
+      0.696,
+      0.896
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.796
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0.25,
+    "friction_quadrant": "unopposed_advance"
+  },
+  "salience": {
+    "value": 0.3023,
+    "confidence_interval": [
+      0.175,
+      0.4296
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3023
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.25,
+    "confidence_interval": [
+      0.1187,
+      0.3813
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.25
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Koaa",
+    "first_timestamp": "2026-04-29T12:29:14.051Z",
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 8.7
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_housing-crisis_001",
+    "hops": [
+      {
+        "platform": "Koaa",
+        "timestamp": "2026-04-29T03:48:25+00:00",
+        "claim_id": "housing-crisis_bluesky_c01b7699_1",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-29T12:29:14.051000+00:00",
+        "claim_id": "housing-crisis_bluesky_c01b7699_1",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "housing-crisis_bluesky_c01b7699_0",
+      "similarity": 0.6682,
+      "text": "Government policies are responsible for perpetuating homelessness."
+    },
+    {
+      "claim_id": "housing-crisis_koaa_2531a26b_0",
+      "similarity": 0.5511,
+      "text": "Providing stable housing is crucial for the successful reintegration of formerly incarcerated individuals into society."
+    },
+    {
+      "claim_id": "housing-crisis_koaa_2531a26b_1",
+      "similarity": 0.3941,
+      "text": "Many formerly incarcerated individuals are successfully rehabilitated and deserve opportunities for reintegration."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Government policies are responsible for perpetuating homelessness.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Providing stable housing is crucial for the successful reintegration of formerly incarcerated individuals into society.",
+      "platform": "Koaa",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Many formerly incarcerated individuals are successfully rehabilitated and deserve opportunities for reintegration.",
+      "platform": "Koaa",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "claim": {
+    "text": "The 2025 immigration policy creates unsafe environments for young children of immigrants.",
+    "subject": "Immigration policy",
+    "assertion": "creates unsafe environments for children",
+    "framing": "child safety",
+    "stance": "anti",
+    "confidence": 0.9,
+    "arousal": "high",
+    "register": "journalistic",
+    "id": "immigration_x_7adf86ea_0",
+    "cluster_id": "clu_immigration_043",
+    "concept_id": "concept_immigration_007",
+    "first_seen_platform": "x",
+    "first_seen_timestamp": "2026-04-29T16:00:01.000Z",
+    "source_document_id": "x_2049519079640199556",
+    "source_platform": "x",
+    "source_timestamp": "2026-04-29T16:00:01.000Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.645,
+    "confidence_interval": [
+      0.545,
+      0.745
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.645
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 1,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.3033,
+    "confidence_interval": [
+      0.176,
+      0.4306
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3033
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.85,
+    "confidence_interval": [
+      0.7638,
+      0.9362
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.85
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 0.9674,
+    "confidence_interval": [
+      0.89,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.9674
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "X Platform",
+    "first_timestamp": "2026-04-29T16:00:01.000Z",
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 6.0
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_immigration_007",
+    "hops": [
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-29T11:49:25+00:00",
+        "claim_id": "immigration_x_7adf86ea_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-29T17:50:48.408000+00:00",
+        "claim_id": "immigration_x_7adf86ea_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "immigration_bluesky_82a84b50_0",
+      "similarity": 0.6709,
+      "text": "Replacing Title 42 with the 'Rocket Docket' is detrimental."
+    },
+    {
+      "claim_id": "immigration_x_a7e060d8_0",
+      "similarity": 0.5774,
+      "text": "Mass immigration is detrimental to the UK."
+    },
+    {
+      "claim_id": "immigration_x_4b75c65a_0",
+      "similarity": 0.5003,
+      "text": "Current American foreign policy, immigration policy, and domestic policy are detrimental."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Replacing Title 42 with the 'Rocket Docket' is detrimental.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Current American foreign policy, immigration policy, and domestic policy are detrimental.",
+      "platform": "X Platform",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Mass immigration is detrimental to the UK.",
+      "platform": "X Platform",
+      "confidence": 0.95,
+      "is_influencer_framing": false
+    }
+  ]
+}

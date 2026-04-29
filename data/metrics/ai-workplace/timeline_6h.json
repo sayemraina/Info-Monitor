@@ -1,94 +1,76 @@
 {
   "events": [
     {
-      "id": "evt_37ee87db0c50",
+      "id": "evt_88f69eedd181",
       "type": "phase_transition",
-      "timestamp": "2026-04-17T03:06:24.559615+00:00",
+      "timestamp": "2026-04-29T16:21:54.584846+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
       "confidence": 0.8,
-      "summary": "Mutation trajectory: radicalizing in \"Oracle\"",
+      "summary": "\"AI Adoption in the Workplace\" cluster is shifting toward more extreme language",
       "detail": {
         "cluster_id": "clu_ai-workplace_001",
         "direction": "radicalizing",
-        "magnitude": 0.6551
-      }
-    },
-    {
-      "id": "evt_88f69eedd181",
-      "type": "phase_transition",
-      "timestamp": "2026-04-17T03:06:24.559615+00:00",
-      "claim_id": null,
-      "slice_id": null,
-      "severity": "high",
-      "confidence": 0.8,
-      "summary": "Mutation trajectory: radicalizing in \"AI Adoption in the Workplace\"",
-      "detail": {
-        "cluster_id": "clu_ai-workplace_002",
-        "direction": "radicalizing",
-        "magnitude": 0.6681
+        "magnitude": 0.6727
       }
     },
     {
       "id": "evt_01f9d9d4581a",
       "type": "phase_transition",
-      "timestamp": "2026-04-17T03:06:24.559615+00:00",
+      "timestamp": "2026-04-29T16:21:54.584846+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.83,
-      "summary": "Mutation trajectory: radicalizing in \"India's Foreign Policy\"",
+      "confidence": 0.8,
+      "summary": "\"Oracle\" cluster is shifting toward more extreme language",
       "detail": {
-        "cluster_id": "clu_ai-workplace_009",
+        "cluster_id": "clu_ai-workplace_003",
         "direction": "radicalizing",
-        "magnitude": 0.7787
+        "magnitude": 0.6674
       }
     },
     {
       "id": "evt_4b1974594530",
       "type": "phase_transition",
-      "timestamp": "2026-04-17T03:06:24.559615+00:00",
+      "timestamp": "2026-04-29T16:21:54.584846+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.79,
-      "summary": "Mutation trajectory: radicalizing in \"Employers\"",
+      "confidence": 0.81,
+      "summary": "\"Generative AI Unsafe\" cluster is shifting toward more extreme language",
       "detail": {
-        "cluster_id": "clu_ai-workplace_010",
+        "cluster_id": "clu_ai-workplace_005",
         "direction": "radicalizing",
-        "magnitude": 0.6283
+        "magnitude": 0.7144
       }
     },
     {
-      "id": "evt_cb7ab169e55e",
+      "id": "evt_9fa90854a39d",
+      "type": "phase_transition",
+      "timestamp": "2026-04-29T16:21:54.584846+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.83,
+      "summary": "\"Online Platforms\" cluster is shifting toward more extreme language",
+      "detail": {
+        "cluster_id": "clu_ai-workplace_008",
+        "direction": "radicalizing",
+        "magnitude": 0.7764
+      }
+    },
+    {
+      "id": "evt_caa0fc410527",
       "type": "divergence_shift",
-      "timestamp": "2026-04-17T03:06:24.559615+00:00",
+      "timestamp": "2026-04-29T16:21:54.584846+00:00",
       "claim_id": null,
       "slice_id": "bluesky_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Narrative divergence between Bluesky and digit (JSD=1.000)",
+      "summary": "Strong narrative split between Bluesky and X Platform",
       "detail": {
-        "jsd": 1.0,
-        "platforms": [
-          "bluesky",
-          "digit"
-        ],
-        "window_hours": 6
-      }
-    },
-    {
-      "id": "evt_0686fc2ef3eb",
-      "type": "divergence_shift",
-      "timestamp": "2026-04-17T03:06:24.559615+00:00",
-      "claim_id": null,
-      "slice_id": "bluesky_platform",
-      "severity": "high",
-      "confidence": 0.95,
-      "summary": "Narrative divergence between Bluesky and X Platform (JSD=0.568)",
-      "detail": {
-        "jsd": 0.5676,
+        "jsd": 0.6011,
         "platforms": [
           "bluesky",
           "x"
@@ -97,21 +79,19 @@
       }
     },
     {
-      "id": "evt_f973f94e98db",
-      "type": "divergence_shift",
-      "timestamp": "2026-04-17T03:06:24.559615+00:00",
-      "claim_id": null,
-      "slice_id": "digit_platform",
+      "id": "evt_09210a300f29",
+      "type": "arousal_escalation",
+      "timestamp": "2026-04-29T17:21:54.584846+00:00",
+      "claim_id": "ai-workplace_bluesky_71581398_0",
+      "slice_id": null,
       "severity": "high",
-      "confidence": 0.95,
-      "summary": "Narrative divergence between digit and X Platform (JSD=1.000)",
+      "confidence": 0.84,
+      "summary": "Heated language rising in \"Tech Companies\" — 75% emotionally charged claims",
       "detail": {
-        "jsd": 1.0,
-        "platforms": [
-          "digit",
-          "x"
-        ],
-        "window_hours": 6
+        "cluster_id": "clu_ai-workplace_025",
+        "high_arousal_count": 3,
+        "total": 4,
+        "ratio": 0.75
       }
     },
     {
@@ -543,7 +523,17 @@
       "summary": "Unknown —  filing (2026-03-30)",
       "detail": "Unknown filed  mentioning 'artificial intelligence'. Filing date: 2026-03-30.",
       "source": "sec_edgar"
+    },
+    {
+      "id": "fedreg_2026-06017",
+      "type": "external_signal",
+      "timestamp": "2026-03-27T00:00:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Improving Wage Protections for the Temporary and Permanent Employment of Certain Foreign Nationals in the United States",
+      "detail": "The Department of Labor (DOL or the Department) is issuing this Notice of Proposed Rulemaking (NPRM) to solicit comments and public input regarding its proposal to revise Employment and Training Administration (ETA) regulations governing the prevailing wages for employment opportunities that United ",
+      "source": "fed_register"
     }
   ],
-  "total_count": 83
+  "total_count": 82
 }

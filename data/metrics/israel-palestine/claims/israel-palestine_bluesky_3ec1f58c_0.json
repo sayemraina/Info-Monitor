@@ -1,0 +1,206 @@
+{
+  "claim": {
+    "text": "Israel is conducting strikes against Hezbollah targets in Southern Lebanon in response to ceasefire violations.",
+    "subject": "Israel-Hezbollah conflict",
+    "assertion": "is escalating military actions",
+    "framing": "retaliation",
+    "stance": "neutral",
+    "confidence": 0.9,
+    "arousal": "medium",
+    "register": "journalistic",
+    "id": "israel-palestine_bluesky_3ec1f58c_0",
+    "cluster_id": "clu_israel-palestine_007",
+    "concept_id": "concept_israel-palestine_000",
+    "first_seen_platform": "bluesky",
+    "first_seen_timestamp": "2026-04-26T10:46:17.000Z",
+    "source_document_id": "03b7873b7c09917d",
+    "source_platform": "bluesky",
+    "source_timestamp": "2026-04-26T10:46:17.000Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.54,
+    "confidence_interval": [
+      0.44,
+      0.64
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.54
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0.3333,
+    "friction_quadrant": "unopposed_advance"
+  },
+  "salience": {
+    "value": 0.3029,
+    "confidence_interval": [
+      0.1756,
+      0.4302
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3029
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.3333,
+    "confidence_interval": [
+      0.2083,
+      0.4583
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3333
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 0.95,
+    "confidence_interval": [
+      0.8712,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.95
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Times Online Sri Lanka",
+    "first_timestamp": "2026-04-26T10:46:17.000Z",
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 10.1
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_israel-palestine_000",
+    "hops": [
+      {
+        "platform": "Times Online Sri Lanka",
+        "timestamp": "2026-04-25T21:32:04+00:00",
+        "claim_id": "israel-palestine_bluesky_3ec1f58c_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-26T07:36:19.962000+00:00",
+        "claim_id": "israel-palestine_bluesky_3ec1f58c_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "israel-palestine_bluesky_1481a420_1",
+      "similarity": 0.6994,
+      "text": "The Israeli-Palestinian conflict will escalate beyond the Middle East."
+    },
+    {
+      "claim_id": "israel-palestine_times_online_sri_lanka_f84dfd1b_0",
+      "similarity": 0.4536,
+      "text": "Military conflicts in West Asia involving the US, Israel, Palestine, Iran, and Lebanon have indirectly encouraged North Korea to expand its nuclear arsenal."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "The Israeli-Palestinian conflict will escalate beyond the Middle East.",
+      "platform": "Bluesky",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Military conflicts in West Asia involving the US, Israel, Palestine, Iran, and Lebanon have indirectly encouraged North Korea to expand its nuclear arsenal.",
+      "platform": "Times Online Sri Lanka",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

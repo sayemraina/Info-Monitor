@@ -1,0 +1,215 @@
+{
+  "claim": {
+    "text": "The United States and Israel are engaged in a war against Iran.",
+    "subject": "War on Iran",
+    "assertion": "is occurring",
+    "framing": "neutral",
+    "stance": "pro",
+    "confidence": 0.9,
+    "arousal": "high",
+    "register": "journalistic",
+    "id": "war-on-iran_bluesky_cce33ea7_0",
+    "cluster_id": "clu_war-on-iran_042",
+    "concept_id": "concept_war-on-iran_003",
+    "first_seen_platform": "bluesky",
+    "first_seen_timestamp": "2026-04-29T12:30:26+00:00",
+    "source_document_id": "96bc1341645c485b",
+    "source_platform": "bluesky",
+    "source_timestamp": "2026-04-29T12:30:26+00:00",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.645,
+    "confidence_interval": [
+      0.545,
+      0.745
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.645
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.25,
+    "bridge_ratio": 0.25,
+    "persistence_windows": 2,
+    "friction": 0,
+    "friction_quadrant": "unopposed_advance"
+  },
+  "salience": {
+    "value": 0.3289,
+    "confidence_interval": [
+      0.2036,
+      0.4542
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3289
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0,
+    "confidence_interval": [
+      0,
+      0.15
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.1,
+    "confidence_interval": [
+      0,
+      0.2425
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.1
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.85,
+    "confidence_interval": [
+      0.7638,
+      0.9362
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.85
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-04-29T12:30:26+00:00",
+    "lead_lag": []
+  },
+  "supply_chain": {
+    "concept_id": "concept_war-on-iran_003",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-29T12:30:14+00:00",
+        "claim_id": "war-on-iran_bluesky_cce33ea7_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      }
+    ],
+    "observation_boundary": "No public antecedent detected"
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "war-on-iran_bluesky_a0c149f7_0",
+      "similarity": 1.0,
+      "text": "Israel is engaged in a war with Iran."
+    },
+    {
+      "claim_id": "war-on-iran_bluesky_6f8a1659_0",
+      "similarity": 1.0,
+      "text": "A war is occurring involving Iran."
+    },
+    {
+      "claim_id": "war-on-iran_bluesky_67330329_0",
+      "similarity": 1.0,
+      "text": "The United States and Israel are engaged in a military conflict against Iran."
+    },
+    {
+      "claim_id": "war-on-iran_bluesky_de255d03_0",
+      "similarity": 0.8227,
+      "text": "Military conflict with Iran is ongoing."
+    },
+    {
+      "claim_id": "war-on-iran_bluesky_7713025a_0",
+      "similarity": 0.644,
+      "text": "The conflict in Ukraine may conclude before a potential conflict with Iran."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Israel is engaged in a war with Iran.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Military conflict with Iran is ongoing.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The conflict in Ukraine may conclude before a potential conflict with Iran.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

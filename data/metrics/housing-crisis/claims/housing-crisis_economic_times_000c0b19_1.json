@@ -1,0 +1,206 @@
+{
+  "claim": {
+    "text": "Security deposits for rental properties in Bengaluru are excessively high.",
+    "subject": "Rental security deposits in Bengaluru",
+    "assertion": "are excessively high",
+    "framing": "neutral",
+    "stance": "pro",
+    "confidence": 0.9,
+    "arousal": "medium",
+    "register": "vernacular",
+    "id": "housing-crisis_economic_times_000c0b19_1",
+    "cluster_id": "clu_housing-crisis_019",
+    "concept_id": "concept_housing-crisis_002",
+    "first_seen_platform": "economic_times",
+    "first_seen_timestamp": "2026-04-27T10:00:00Z",
+    "source_document_id": "c96f3655a32e01c5",
+    "source_platform": "economic_times",
+    "source_timestamp": "2026-04-27T10:00:00Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "elite_media"
+  },
+  "momentum": {
+    "value": 0.54,
+    "confidence_interval": [
+      0.44,
+      0.64
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.54
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0.3333,
+    "friction_quadrant": "unopposed_advance"
+  },
+  "salience": {
+    "value": 0.3031,
+    "confidence_interval": [
+      0.1758,
+      0.4304
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3031
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.3333,
+    "confidence_interval": [
+      0.2083,
+      0.4583
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3333
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 0.9512,
+    "confidence_interval": [
+      0.8725,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.9512
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-04-27T10:00:00Z",
+    "lead_lag": [
+      {
+        "platform": "Economic Times",
+        "lag_hours": 2.0
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_housing-crisis_002",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-27T07:59:42.528000+00:00",
+        "claim_id": "housing-crisis_economic_times_000c0b19_1",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Economic Times",
+        "timestamp": "2026-04-27T10:00:00+00:00",
+        "claim_id": "housing-crisis_economic_times_000c0b19_1",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "housing-crisis_economic_times_000c0b19_0",
+      "similarity": 0.7541,
+      "text": "Rental prices in the HSR Layout area of Bengaluru are unaffordable for many residents."
+    },
+    {
+      "claim_id": "housing-crisis_bluesky_d10c472e_0",
+      "similarity": 0.2765,
+      "text": "Privatization is responsible for high energy prices in the UK."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Privatization is responsible for high energy prices in the UK.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Rental prices in the HSR Layout area of Bengaluru are unaffordable for many residents.",
+      "platform": "Economic Times",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

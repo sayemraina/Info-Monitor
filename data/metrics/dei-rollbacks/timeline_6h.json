@@ -1,71 +1,131 @@
 {
   "events": [
     {
-      "id": "evt_231718cfb909",
+      "id": "evt_6187a748aff1",
       "type": "contestation_emergence",
-      "timestamp": "2026-04-16T09:59:43.614050+00:00",
-      "claim_id": "dei-rollbacks_bluesky_01333e59_0",
+      "timestamp": "2026-04-29T16:54:02.970879+00:00",
+      "claim_id": "dei-rollbacks_bluesky_8bb946fc_0",
       "slice_id": null,
       "severity": "high",
       "confidence": 0.82,
-      "summary": "Active contestation in \"ABA Council\" — 21 pro vs 28 anti",
+      "summary": "Active contestation in \"ICE\" — 6 pro vs 8 anti",
       "detail": {
-        "cluster_id": "clu_dei-rollbacks_003",
-        "pro_count": 21,
-        "anti_count": 28,
+        "cluster_id": "clu_dei-rollbacks_017",
+        "pro_count": 6,
+        "anti_count": 8,
         "balance": 0.75
       }
     },
     {
-      "id": "evt_864be3e347cb",
+      "id": "evt_8dd8722c3dd7",
+      "type": "phase_transition",
+      "timestamp": "2026-04-29T16:54:02.970879+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.83,
+      "summary": "\"Openai\" cluster is shifting toward more extreme language",
+      "detail": {
+        "cluster_id": "clu_dei-rollbacks_000",
+        "direction": "radicalizing",
+        "magnitude": 0.761
+      }
+    },
+    {
+      "id": "evt_aa7cfefea7ae",
+      "type": "phase_transition",
+      "timestamp": "2026-04-29T16:54:02.970879+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.81,
+      "summary": "\"Deutsche Telekom and T-Mobile\" cluster is shifting toward more extreme language",
+      "detail": {
+        "cluster_id": "clu_dei-rollbacks_001",
+        "direction": "radicalizing",
+        "magnitude": 0.6871
+      }
+    },
+    {
+      "id": "evt_7168d94b79ec",
+      "type": "phase_transition",
+      "timestamp": "2026-04-29T16:54:02.970879+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.84,
+      "summary": "\"Republican Farm Bill\" cluster is shifting toward more extreme language",
+      "detail": {
+        "cluster_id": "clu_dei-rollbacks_003",
+        "direction": "radicalizing",
+        "magnitude": 0.7944
+      }
+    },
+    {
+      "id": "evt_2794f6b368a8",
+      "type": "phase_transition",
+      "timestamp": "2026-04-29T16:54:02.970879+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.79,
+      "summary": "\"Target\" cluster is shifting toward more extreme language",
+      "detail": {
+        "cluster_id": "clu_dei-rollbacks_004",
+        "direction": "radicalizing",
+        "magnitude": 0.6344
+      }
+    },
+    {
+      "id": "evt_16438bc35ea7",
       "type": "divergence_shift",
-      "timestamp": "2026-04-16T09:59:43.614050+00:00",
+      "timestamp": "2026-04-29T16:54:02.970879+00:00",
       "claim_id": null,
       "slice_id": "bluesky_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Narrative divergence between Bluesky and cato (JSD=0.543)",
+      "summary": "Strong narrative split between Bluesky and business_insider",
       "detail": {
-        "jsd": 0.5433,
+        "jsd": 0.8897,
         "platforms": [
           "bluesky",
-          "cato"
+          "business_insider"
         ],
         "window_hours": 6
       }
     },
     {
-      "id": "evt_c83a0f7f4472",
+      "id": "evt_33cfb64f50a8",
       "type": "divergence_shift",
-      "timestamp": "2026-04-16T09:59:43.614050+00:00",
+      "timestamp": "2026-04-29T16:54:02.970879+00:00",
       "claim_id": null,
       "slice_id": "bluesky_platform",
       "severity": "high",
-      "confidence": 0.88,
-      "summary": "Narrative divergence between Bluesky and thegrio (JSD=0.382)",
+      "confidence": 0.95,
+      "summary": "Strong narrative split between Bluesky and maltatoday.com.mt",
       "detail": {
-        "jsd": 0.3821,
+        "jsd": 1.0,
         "platforms": [
           "bluesky",
-          "thegrio"
+          "maltatoday.com.mt"
         ],
         "window_hours": 6
       }
     },
     {
-      "id": "evt_0b596a7dc0bf",
+      "id": "evt_c9e96781aea9",
       "type": "divergence_shift",
-      "timestamp": "2026-04-16T09:59:43.614050+00:00",
+      "timestamp": "2026-04-29T16:54:02.970879+00:00",
       "claim_id": null,
-      "slice_id": "bluesky_platform",
+      "slice_id": "business_insider_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Narrative divergence between Bluesky and X Platform (JSD=0.515)",
+      "summary": "Strong narrative split between business_insider and maltatoday.com.mt",
       "detail": {
-        "jsd": 0.5147,
+        "jsd": 1.0,
         "platforms": [
-          "bluesky",
-          "x"
+          "business_insider",
+          "maltatoday.com.mt"
         ],
         "window_hours": 6
       }
@@ -101,101 +161,48 @@
       "source": "fed_register"
     },
     {
-      "id": "evt_637670322a58",
-      "type": "lead_lag",
-      "timestamp": "2025-09-22T01:59:43.614050+00:00",
-      "claim_id": "dei-rollbacks_bluesky_a5a3cd2b_0",
+      "id": "evt_c409a394ec37",
+      "type": "momentum_spike",
+      "timestamp": "2026-04-29T17:54:02.970879+00:00",
+      "claim_id": "dei-rollbacks_bluesky_1c5844a9_2",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.9,
-      "summary": "YouTube (Influencer Framing) leads boulder_daily_camera by ~4955h in \"Affirmative Action\"",
+      "confidence": 0.52,
+      "summary": "Rapid attention surge in \"Laura Rutledge\" (2 claims)",
       "detail": {
-        "source_platform": "youtube",
-        "target_platform": "boulder_daily_camera",
-        "lag_hours": 4955.9,
-        "cluster_id": "clu_dei-rollbacks_000"
+        "cluster_id": "clu_dei-rollbacks_015",
+        "avg_momentum": 0.578,
+        "member_count": 2
       }
     },
     {
-      "id": "evt_f716e6ecf28b",
-      "type": "lead_lag",
-      "timestamp": "2025-09-27T10:59:43.614050+00:00",
-      "claim_id": "dei-rollbacks_bluesky_5fc53a0d_0",
+      "id": "evt_6579ff50e76d",
+      "type": "momentum_spike",
+      "timestamp": "2026-04-29T17:54:02.970879+00:00",
+      "claim_id": "dei-rollbacks_bluesky_dd77db80_1",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.9,
-      "summary": "YouTube (Influencer Framing) leads chicago_reader by ~4826h in \"Target\"",
+      "confidence": 0.5,
+      "summary": "Rapid attention surge in \"Hamas\" (5 claims)",
       "detail": {
-        "source_platform": "youtube",
-        "target_platform": "chicago_reader",
-        "lag_hours": 4826.8,
-        "cluster_id": "clu_dei-rollbacks_004"
+        "cluster_id": "clu_dei-rollbacks_022",
+        "avg_momentum": 0.559,
+        "member_count": 5
       }
     },
     {
-      "id": "evt_dbc4038bd651",
-      "type": "lead_lag",
-      "timestamp": "2025-12-16T09:59:43.614050+00:00",
-      "claim_id": "dei-rollbacks_bluesky_01333e59_0",
+      "id": "evt_da4a1420e630",
+      "type": "momentum_spike",
+      "timestamp": "2026-04-29T17:54:02.970879+00:00",
+      "claim_id": "dei-rollbacks_bluesky_9207a417_1",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.9,
-      "summary": "YouTube (Influencer Framing) leads free_press_journal by ~2907h in \"ABA Council\"",
+      "confidence": 0.5,
+      "summary": "Rapid attention surge in \"Supreme Court\" (5 claims)",
       "detail": {
-        "source_platform": "youtube",
-        "target_platform": "free_press_journal",
-        "lag_hours": 2908.0,
-        "cluster_id": "clu_dei-rollbacks_003"
-      }
-    },
-    {
-      "id": "evt_883812916f2d",
-      "type": "lead_lag",
-      "timestamp": "2025-12-28T15:59:43.614050+00:00",
-      "claim_id": "dei-rollbacks_bluesky_d6a3f016_0",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.9,
-      "summary": "YouTube (Influencer Framing) leads news_one by ~2613h in \"Pete Hegseth\"",
-      "detail": {
-        "source_platform": "youtube",
-        "target_platform": "news_one",
-        "lag_hours": 2613.1,
-        "cluster_id": "clu_dei-rollbacks_001"
-      }
-    },
-    {
-      "id": "evt_e961fc8ca76b",
-      "type": "contestation_emergence",
-      "timestamp": "2026-04-16T09:59:43.614050+00:00",
-      "claim_id": "dei-rollbacks_bluesky_a5a3cd2b_0",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.8,
-      "summary": "Active contestation in \"Affirmative Action\" — 25 pro vs 38 anti",
-      "detail": {
-        "cluster_id": "clu_dei-rollbacks_000",
-        "pro_count": 25,
-        "anti_count": 38,
-        "balance": 0.66
-      }
-    },
-    {
-      "id": "evt_827070b18259",
-      "type": "divergence_shift",
-      "timestamp": "2026-04-16T09:59:43.614050+00:00",
-      "claim_id": null,
-      "slice_id": "bluesky_platform",
-      "severity": "medium",
-      "confidence": 0.72,
-      "summary": "Narrative divergence between Bluesky and jacobin (JSD=0.221)",
-      "detail": {
-        "jsd": 0.2214,
-        "platforms": [
-          "bluesky",
-          "jacobin"
-        ],
-        "window_hours": 6
+        "cluster_id": "clu_dei-rollbacks_016",
+        "avg_momentum": 0.559,
+        "member_count": 5
       }
     },
     {
@@ -557,17 +564,7 @@
       "summary": "Regulatory Capital Rules: Regulatory Capital and Standardized Approach for Risk-Weighted Assets",
       "detail": "The Office of the Comptroller of the Currency, the Board of Governors of the Federal Reserve System, and the Federal Deposit Insurance Corporation are proposing to modify certain aspects of the regulatory capital rule (the proposal). The proposal would revise the risk-based capital treatment of cert",
       "source": "fed_register"
-    },
-    {
-      "id": "fedreg_2026-05959",
-      "type": "external_signal",
-      "timestamp": "2026-03-27T00:00:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Regulatory Capital Rule: Category I and II Banking Organizations, Banking Organizations With Significant Trading Activity, and Optional Adoption for Other Banking Organizations",
-      "detail": "The Office of the Comptroller of the Currency, the Board of Governors of the Federal Reserve System, and the Federal Deposit Insurance Corporation are proposing to modernize the capital requirements applicable to Category I and II depository institution holding companies and depository institutions,",
-      "source": "fed_register"
     }
   ],
-  "total_count": 77
+  "total_count": 78
 }

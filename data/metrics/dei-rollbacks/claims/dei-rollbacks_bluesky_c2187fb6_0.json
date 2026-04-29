@@ -1,0 +1,227 @@
+{
+  "claim": {
+    "text": "Vanderbilt University is currently under investigation by the Department of Education for its DEI practices.",
+    "subject": "DEI",
+    "assertion": "is being investigated",
+    "framing": "neutral",
+    "stance": "neutral",
+    "confidence": 0.9,
+    "arousal": "low",
+    "register": "journalistic",
+    "id": "dei-rollbacks_bluesky_c2187fb6_0",
+    "cluster_id": "clu_dei-rollbacks_010",
+    "concept_id": "concept_dei-rollbacks_006",
+    "first_seen_platform": "bluesky",
+    "first_seen_timestamp": "2026-04-27T12:05:51.788Z",
+    "source_document_id": "c2187fb677b89f50",
+    "source_platform": "bluesky",
+    "source_timestamp": "2026-04-27T12:05:51.788Z",
+    "source_engagement": {
+      "likes": 12,
+      "replies": 0,
+      "shares": 8
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.3374,
+    "confidence_interval": [
+      0.2374,
+      0.4374
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3374
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 2,
+    "friction": 0.7143,
+    "friction_quadrant": "successful_suppression"
+  },
+  "salience": {
+    "value": 0.3136,
+    "confidence_interval": [
+      0.1871,
+      0.4401
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3136
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.7143,
+    "confidence_interval": [
+      0.6179,
+      0.8107
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.7143
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.1,
+    "confidence_interval": [
+      0,
+      0.2425
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.1
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.15,
+    "confidence_interval": [
+      0.0112,
+      0.2888
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.15
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-04-27T12:05:51.788Z",
+    "lead_lag": [
+      {
+        "platform": "Conservative News Today",
+        "lag_hours": 5.7
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_dei-rollbacks_006",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-27T12:05:51.788000+00:00",
+        "claim_id": "dei-rollbacks_bluesky_c2187fb6_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Conservative News Today",
+        "timestamp": "2026-04-27T17:49:30+00:00",
+        "claim_id": "dei-rollbacks_bluesky_c2187fb6_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "dei-rollbacks_bluesky_e8c8501f_0",
+      "similarity": 0.7415,
+      "text": "Government officials are scrutinizing law firms' diversity, equity, and inclusion (DEI) practices."
+    },
+    {
+      "claim_id": "dei-rollbacks_bluesky_5e23482b_0",
+      "similarity": 0.7027,
+      "text": "Efforts to promote diversity, equity, and inclusion are being unfairly criticized and labeled with negative terms."
+    },
+    {
+      "claim_id": "dei-rollbacks_conservative_news_today_e7ad2e74_1",
+      "similarity": 0.6562,
+      "text": "DEI initiatives are ineffective in practice."
+    },
+    {
+      "claim_id": "dei-rollbacks_bluesky_125139c0_0",
+      "similarity": 0.6458,
+      "text": "Diversity, equity, and inclusion initiatives have led to negative outcomes."
+    },
+    {
+      "claim_id": "dei-rollbacks_bluesky_90981fce_0",
+      "similarity": 0.6243,
+      "text": "Target's financial difficulties are a result of their support for DEI and LGBTQ+ initiatives."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Efforts to promote diversity, equity, and inclusion are being unfairly criticized and labeled with negative terms.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Conservative opposition to DEI and related initiatives stems from a cynical worldview where they believe everyone is equally flawed and resist demands for self-improvement.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Target's financial difficulties are a result of their support for DEI and LGBTQ+ initiatives.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

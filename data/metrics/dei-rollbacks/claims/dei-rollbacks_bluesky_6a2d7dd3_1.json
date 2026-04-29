@@ -1,0 +1,206 @@
+{
+  "claim": {
+    "text": "The company supports Immigration and Customs Enforcement (ICE).",
+    "subject": "Immigration and Customs Enforcement (ICE)",
+    "assertion": "is supported by the company",
+    "framing": "neutral",
+    "stance": "pro",
+    "confidence": 0.9,
+    "arousal": "medium",
+    "register": "vernacular",
+    "id": "dei-rollbacks_bluesky_6a2d7dd3_1",
+    "cluster_id": "clu_dei-rollbacks_006",
+    "concept_id": "concept_dei-rollbacks_004",
+    "first_seen_platform": "bluesky",
+    "first_seen_timestamp": "2026-04-29T17:59:39.954Z",
+    "source_document_id": "6a2d7dd333f46fc3",
+    "source_platform": "bluesky",
+    "source_timestamp": "2026-04-29T17:59:39.954Z",
+    "source_engagement": {
+      "likes": 3,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.4224,
+    "confidence_interval": [
+      0.3224,
+      0.5224
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.4224
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0.3333,
+    "friction_quadrant": "dead"
+  },
+  "salience": {
+    "value": 0.3046,
+    "confidence_interval": [
+      0.1774,
+      0.4318
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3046
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.3333,
+    "confidence_interval": [
+      0.2083,
+      0.4583
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3333
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Fox Politics",
+    "first_timestamp": "2026-04-29T17:59:39.954Z",
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 6.0
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_dei-rollbacks_004",
+    "hops": [
+      {
+        "platform": "Fox Politics",
+        "timestamp": "2026-04-29T12:00:14+00:00",
+        "claim_id": "dei-rollbacks_bluesky_6a2d7dd3_1",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-29T17:59:39.954000+00:00",
+        "claim_id": "dei-rollbacks_bluesky_6a2d7dd3_1",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "dei-rollbacks_fox_politics_46e99e5f_0",
+      "similarity": 0.4941,
+      "text": "Rick Jackson may have hired undocumented immigrants for landscaping work."
+    },
+    {
+      "claim_id": "dei-rollbacks_fox_politics_46e99e5f_1",
+      "similarity": 0.4351,
+      "text": "Rick Jackson claims he will prioritize the deportation of undocumented immigrants with criminal records if elected governor of Georgia."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Rick Jackson may have hired undocumented immigrants for landscaping work.",
+      "platform": "Fox Politics",
+      "confidence": 0.7,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Rick Jackson claims he will prioritize the deportation of undocumented immigrants with criminal records if elected governor of Georgia.",
+      "platform": "Fox Politics",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

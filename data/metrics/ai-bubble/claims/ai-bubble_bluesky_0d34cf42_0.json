@@ -1,0 +1,217 @@
+{
+  "claim": {
+    "text": "Google Cloud is investing heavily in its agentic AI ecosystem.",
+    "subject": "Google Cloud",
+    "assertion": "is investing $750 million in its agentic AI ecosystem",
+    "framing": "neutral",
+    "stance": "neutral",
+    "confidence": 0.9,
+    "arousal": "low",
+    "register": "journalistic",
+    "id": "ai-bubble_bluesky_0d34cf42_0",
+    "cluster_id": "clu_ai-bubble_007",
+    "concept_id": "concept_ai-bubble_004",
+    "first_seen_platform": "bluesky",
+    "first_seen_timestamp": "2026-04-29T18:30:20+00:00",
+    "source_document_id": "34b48303a1c539c7",
+    "source_platform": "bluesky",
+    "source_timestamp": "2026-04-29T18:30:20+00:00",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.435,
+    "confidence_interval": [
+      0.335,
+      0.535
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.435
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0,
+    "friction_quadrant": "dead"
+  },
+  "salience": {
+    "value": 0.3012,
+    "confidence_interval": [
+      0.1738,
+      0.4286
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3012
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0,
+    "confidence_interval": [
+      0,
+      0.15
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.15,
+    "confidence_interval": [
+      0.0112,
+      0.2888
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.15
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-04-29T18:30:20+00:00",
+    "lead_lag": [
+      {
+        "platform": "Trade Brains",
+        "lag_hours": 10.0
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_ai-bubble_004",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-29T06:27:04.867992+00:00",
+        "claim_id": "ai-bubble_bluesky_0d34cf42_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Trade Brains",
+        "timestamp": "2026-04-29T16:30:00+00:00",
+        "claim_id": "ai-bubble_bluesky_0d34cf42_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "ai-bubble_bluesky_8e8f756b_0",
+      "similarity": 0.6365,
+      "text": "Google is investing heavily in AI infrastructure in India."
+    },
+    {
+      "claim_id": "ai-bubble_trade_brains_1e998767_0",
+      "similarity": 0.6034,
+      "text": "Google's investment in AI infrastructure in India will significantly boost the country's digital capabilities."
+    },
+    {
+      "claim_id": "ai-bubble_trade_brains_1e998767_1",
+      "similarity": 0.5634,
+      "text": "Bharti Airtel and Adani Group are likely to benefit from Google's AI infrastructure investment in India."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Google is investing heavily in AI infrastructure in India.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Google's investment in AI infrastructure in India will significantly boost the country's digital capabilities.",
+      "platform": "Trade Brains",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Bharti Airtel and Adani Group are likely to benefit from Google's AI infrastructure investment in India.",
+      "platform": "Trade Brains",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    }
+  ]
+}

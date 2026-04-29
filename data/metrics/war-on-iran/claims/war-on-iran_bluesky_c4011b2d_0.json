@@ -1,0 +1,205 @@
+{
+  "claim": {
+    "text": "An individual made boastful claims about winning a potential war with Iran.",
+    "subject": "War on Iran",
+    "assertion": "An individual claimed they would win the war.",
+    "framing": "neutral",
+    "stance": "anti",
+    "confidence": 0.9,
+    "arousal": "low",
+    "register": "vernacular",
+    "id": "war-on-iran_bluesky_c4011b2d_0",
+    "cluster_id": "clu_war-on-iran_020",
+    "concept_id": "concept_war-on-iran_004",
+    "first_seen_platform": "bluesky",
+    "first_seen_timestamp": "2026-04-26T11:28:50.370Z",
+    "source_document_id": "c4011b2dc875475e",
+    "source_platform": "bluesky",
+    "source_timestamp": "2026-04-26T11:28:50.370Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.435,
+    "confidence_interval": [
+      0.335,
+      0.535
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.435
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.25,
+    "bridge_ratio": 0.25,
+    "persistence_windows": 1,
+    "friction": 0.5,
+    "friction_quadrant": "successful_suppression"
+  },
+  "salience": {
+    "value": 0.2995,
+    "confidence_interval": [
+      0.172,
+      0.427
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.2995
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.15,
+    "confidence_interval": [
+      0.0112,
+      0.2888
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.15
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-04-26T11:28:50.370Z",
+    "lead_lag": []
+  },
+  "supply_chain": {
+    "concept_id": "concept_war-on-iran_004",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-25T21:01:39.380000+00:00",
+        "claim_id": "war-on-iran_bluesky_c4011b2d_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      }
+    ],
+    "observation_boundary": "No public antecedent detected"
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "war-on-iran_bluesky_2fd5aeec_0",
+      "similarity": 0.5865,
+      "text": "The United States' efforts to initiate a war with Iran have been unsuccessful."
+    },
+    {
+      "claim_id": "war-on-iran_bluesky_541af138_0",
+      "similarity": 0.4644,
+      "text": "Military action against Iran was intended to increase political support for a leader, but it failed."
+    },
+    {
+      "claim_id": "war-on-iran_bluesky_7689a5bf_0",
+      "similarity": 0.362,
+      "text": "Iran maintains its navy for specific strategic purposes."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "The United States' efforts to initiate a war with Iran have been unsuccessful.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Military action against Iran was intended to increase political support for a leader, but it failed.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Iran maintains its navy for specific strategic purposes.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

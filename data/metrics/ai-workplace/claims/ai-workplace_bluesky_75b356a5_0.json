@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "ai-workplace_bluesky_75b356a5_0",
-    "cluster_id": "clu_ai-workplace_010",
-    "concept_id": "concept_ai-workplace_006",
+    "cluster_id": "clu_ai-workplace_018",
+    "concept_id": "concept_ai-workplace_007",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-16T22:03:30.060Z",
     "source_document_id": "1a0f6e3bc80df442",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.5262,
+    "value": null,
     "confidence_interval": [
-      0.4262,
-      0.6262
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5262
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 2,
-    "friction": 0.6667,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.3246,
+    "value": null,
     "confidence_interval": [
-      0.1989,
-      0.4503
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3246
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.6667,
+    "value": null,
     "confidence_interval": [
-      0.5667,
-      0.7667
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.6667
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.1,
+    "value": 0,
     "confidence_interval": [
       0,
-      0.2425
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.85,
+    "value": null,
     "confidence_interval": [
-      0.7638,
-      0.9362
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.85
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,107 +133,33 @@
     ]
   },
   "provenance": {
-    "first_platform": "X Platform",
-    "first_timestamp": "2026-04-16T22:03:30.060Z",
-    "lead_lag": [
-      {
-        "platform": "Bluesky",
-        "lag_hours": 10.7
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_ai-workplace_006",
-    "hops": [
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-16T11:23:19+00:00",
-        "claim_id": "ai-workplace_bluesky_75b356a5_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-16T22:03:30.060000+00:00",
-        "claim_id": "ai-workplace_bluesky_75b356a5_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-workplace_bluesky_fdad7998_1",
-      "similarity": 0.5193,
-      "text": "Companies prioritize stockholder interests over employee well-being."
-    },
-    {
-      "claim_id": "ai-workplace_x_82c54c97_0",
-      "similarity": 0.4436,
-      "text": "The AI race with China may be a manufactured crisis used to justify worker exploitation by private companies."
-    },
-    {
-      "claim_id": "ai-workplace_x_82c54c97_1",
-      "similarity": 0.2877,
-      "text": "The purported AI race with China is not clearly linked to specific goals like white-collar job replacement or unemployment reduction."
-    },
-    {
-      "claim_id": "ai-workplace_bluesky_fdad7998_2",
-      "similarity": 0.2811,
-      "text": "Backdoors are being secretly implemented in various systems."
-    },
-    {
-      "claim_id": "ai-workplace_x_d808b305_1",
-      "similarity": 0.2385,
-      "text": "Human economic systems can still satisfy and surpass our needs."
+      "claim_id": "ai-workplace_bluesky_8caba062_2",
+      "similarity": 0.3356,
+      "text": "Companies are hiring junior employees to save money."
     }
   ],
   "example_content": [
     {
-      "text": "Companies prioritize stockholder interests over employee well-being.",
+      "text": "Companies are hiring junior employees to save money.",
       "platform": "Bluesky",
       "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Backdoors are being secretly implemented in various systems.",
-      "platform": "Bluesky",
-      "confidence": 0.6,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "The AI race with China may be a manufactured crisis used to justify worker exploitation by private companies.",
-      "platform": "X Platform",
-      "confidence": 0.8,
       "is_influencer_framing": false
     }
   ]

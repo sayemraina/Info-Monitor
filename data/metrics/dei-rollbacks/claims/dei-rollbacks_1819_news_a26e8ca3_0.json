@@ -1,0 +1,195 @@
+{
+  "claim": {
+    "text": "Government funding continues to be allocated to progressive non-profit organizations despite efforts to reduce it.",
+    "subject": "Government funding",
+    "assertion": "is being allocated to progressive non-profits despite efforts to reduce it",
+    "framing": "neutral",
+    "stance": "neutral",
+    "confidence": 0.9,
+    "arousal": "low",
+    "register": "journalistic",
+    "id": "dei-rollbacks_1819_news_a26e8ca3_0",
+    "cluster_id": "clu_dei-rollbacks_009",
+    "concept_id": "concept_dei-rollbacks_007",
+    "first_seen_platform": "1819_news",
+    "first_seen_timestamp": "2026-04-27T19:21:10Z",
+    "source_document_id": "be8ce157eedcb9e2",
+    "source_platform": "1819_news",
+    "source_timestamp": "2026-04-27T19:21:10Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "elite_media"
+  },
+  "momentum": {
+    "value": 0.435,
+    "confidence_interval": [
+      0.335,
+      0.535
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.435
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0.5,
+    "friction_quadrant": "successful_suppression"
+  },
+  "salience": {
+    "value": 0.3079,
+    "confidence_interval": [
+      0.181,
+      0.4348
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3079
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.15,
+    "confidence_interval": [
+      0.0112,
+      0.2888
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.15
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "1819 News",
+    "first_timestamp": "2026-04-27T19:21:10Z",
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 0.5
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_dei-rollbacks_007",
+    "hops": [
+      {
+        "platform": "1819 News",
+        "timestamp": "2026-04-27T19:21:10+00:00",
+        "claim_id": "dei-rollbacks_1819_news_a26e8ca3_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-27T19:53:08.281000+00:00",
+        "claim_id": "dei-rollbacks_1819_news_a26e8ca3_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "dei-rollbacks_bluesky_515c8263_1",
+      "similarity": 0.3589,
+      "text": "The Lula government has not provided sufficient support to improve the situation of federal universities."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "The Lula government has not provided sufficient support to improve the situation of federal universities.",
+      "platform": "Bluesky",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    }
+  ]
+}

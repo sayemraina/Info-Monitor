@@ -3,30 +3,37 @@
     "id": "x_platform",
     "type": "platform",
     "label": "X Platform",
-    "active_volume": 292,
+    "active_volume": 77,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.5114,
+    "base_rate_weight": 0.3169,
     "is_influencer_framing": false
   },
   "slice_b": {
     "id": "youtube_influencer",
     "type": "platform",
     "label": "YouTube (Influencer Framing)",
-    "active_volume": 71,
-    "meets_minimum_threshold": true,
-    "base_rate_weight": 0.1243,
+    "active_volume": 0,
+    "meets_minimum_threshold": false,
+    "base_rate_weight": 0.0,
     "is_influencer_framing": true
   },
   "divergence": {
-    "jsd": 0.2436,
-    "jsd_sqrt": 0.4936,
+    "jsd": 0.0,
+    "jsd_sqrt": 0.0,
     "trend": [
-      0.4936
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
     ],
     "typology": {
-      "information_asymmetry": 0.3579,
-      "interpretive": 0.2842,
-      "paradigmatic": 0.3579,
+      "information_asymmetry": 0.0,
+      "interpretive": 0.0,
+      "paradigmatic": 0.0,
       "dominant_mode": "Information Asymmetry",
       "paradigmatic_caveat": false
     }
@@ -34,78 +41,78 @@
   "per_cluster": [
     {
       "cluster_id": "clu_ozempic-glp1_000",
-      "label": "Ozempic/Wegovy",
-      "salience_a": 0.3082,
-      "salience_b": 0.4366,
-      "arousal_a": 0.3289,
-      "arousal_b": 0.4323,
+      "label": "Generic Drugs",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_ozempic-glp1_001",
-      "label": "Oral Wegovy",
-      "salience_a": 0.0719,
+      "label": "Petrelintide",
+      "salience_a": 0.0,
       "salience_b": 0.0,
-      "arousal_a": 0.3,
+      "arousal_a": 0,
       "arousal_b": 0,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_ozempic-glp1_002",
-      "label": "Generic Semaglutide Drugs",
-      "salience_a": 0.0274,
-      "salience_b": 0.0423,
-      "arousal_a": 0.2812,
-      "arousal_b": 0.2667,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
+      "label": "Ozempic/Wegovy",
+      "salience_a": 0.013,
+      "salience_b": 0.0,
+      "arousal_a": 0.15,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_ozempic-glp1_003",
-      "label": "Orforglipron",
-      "salience_a": 0.024,
+      "label": "Oral Wegovy",
+      "salience_a": 0.0,
       "salience_b": 0.0,
-      "arousal_a": 0.2,
+      "arousal_a": 0,
       "arousal_b": 0,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_ozempic-glp1_004",
-      "label": "Obesity",
-      "salience_a": 0.024,
-      "salience_b": 0.1268,
-      "arousal_a": 0.45,
-      "arousal_b": 0.3444,
+      "label": "Orforglipron",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_ozempic-glp1_005",
-      "label": "Tariffs",
-      "salience_a": 0.0137,
+      "label": "Peptides",
+      "salience_a": 0.0,
       "salience_b": 0.0,
-      "arousal_a": 0.4125,
+      "arousal_a": 0,
       "arousal_b": 0,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_ozempic-glp1_006",
-      "label": "Novo Nordisk",
-      "salience_a": 0.0377,
+      "label": "Ozempic Cause",
+      "salience_a": 0.0649,
       "salience_b": 0.0,
-      "arousal_a": 0.2455,
+      "arousal_a": 0.29,
       "arousal_b": 0,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_ozempic-glp1_007",
-      "label": "Weight-Loss Drugs",
-      "salience_a": 0.0342,
+      "label": "Ozempic Reduced",
+      "salience_a": 0.0649,
       "salience_b": 0.0,
       "arousal_a": 0.22,
       "arousal_b": 0,
@@ -114,68 +121,218 @@
     },
     {
       "cluster_id": "clu_ozempic-glp1_008",
-      "label": "Indian Weddings",
-      "salience_a": 0.0274,
-      "salience_b": 0.0141,
-      "arousal_a": 0.4125,
-      "arousal_b": 0.5,
+      "label": "Rocque Perez",
+      "salience_a": 0.2208,
+      "salience_b": 0.0,
+      "arousal_a": 0.6235,
+      "arousal_b": 0,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_ozempic-glp1_009",
-      "label": "Pharmaceutical Companies",
-      "salience_a": 0.0651,
-      "salience_b": 0.0282,
-      "arousal_a": 0.3158,
-      "arousal_b": 0.15,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_ozempic-glp1_010",
-      "label": "GLP-1 Medications Available",
-      "salience_a": 0.0205,
+      "label": "Celebrities",
+      "salience_a": 0.2597,
       "salience_b": 0.0,
-      "arousal_a": 0.15,
+      "arousal_a": 0.3425,
       "arousal_b": 0,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
-      "cluster_id": "clu_ozempic-glp1_011",
-      "label": "GLP-1 Drugs",
-      "salience_a": 0.0377,
+      "cluster_id": "clu_ozempic-glp1_010",
+      "label": "Ozempic Effective",
+      "salience_a": 0.026,
       "salience_b": 0.0,
-      "arousal_a": 0.1818,
+      "arousal_a": 0.15,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ozempic-glp1_011",
+      "label": "Vitamin K for Newborns",
+      "salience_a": 0.013,
+      "salience_b": 0.0,
+      "arousal_a": 0.15,
       "arousal_b": 0,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_ozempic-glp1_012",
-      "label": "Claude Code",
-      "salience_a": 0.0274,
+      "label": "Trumprx",
+      "salience_a": 0.0,
       "salience_b": 0.0,
-      "arousal_a": 0.5437,
+      "arousal_a": 0,
       "arousal_b": 0,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_ozempic-glp1_013",
-      "label": "GLP-1 Agonists",
-      "salience_a": 0.0205,
-      "salience_b": 0.0,
-      "arousal_a": 0.2667,
-      "arousal_b": 0,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_ozempic-glp1_014",
-      "label": "Single-Product Food Chains",
-      "salience_a": 0.0171,
+      "label": "Akkermansia Muciniphila",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ozempic-glp1_015",
+      "label": "Obesity",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ozempic-glp1_016",
+      "label": "Weight Loss Maintenance",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ozempic-glp1_019",
+      "label": "Novo Nordisk",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ozempic-glp1_020",
+      "label": "Pharmaceutical Advertising",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ozempic-glp1_021",
+      "label": "GLP-1 Medications Available",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ozempic-glp1_022",
+      "label": "Ozempic Available",
+      "salience_a": 0.0649,
+      "salience_b": 0.0,
+      "arousal_a": 0.29,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ozempic-glp1_023",
+      "label": "White House",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ozempic-glp1_024",
+      "label": "Ozempic Misused",
+      "salience_a": 0.039,
+      "salience_b": 0.0,
+      "arousal_a": 0.3833,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ozempic-glp1_025",
+      "label": "Elise Stefanik",
+      "salience_a": 0.0649,
+      "salience_b": 0.0,
+      "arousal_a": 0.22,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ozempic-glp1_027",
+      "label": "GLP-1 Drugs",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ozempic-glp1_028",
+      "label": "Pharmaceutical Companies",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ozempic-glp1_029",
+      "label": "Luka Dončić",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ozempic-glp1_030",
+      "label": "Insurance Companies",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ozempic-glp1_031",
+      "label": "Cigarettes",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ozempic-glp1_032",
+      "label": "GLP-1 Receptor Agonists Used",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ozempic-glp1_033",
+      "label": "GLP-1 Medication Cause",
+      "salience_a": 0.013,
       "salience_b": 0.0,
       "arousal_a": 0.15,
       "arousal_b": 0,
@@ -183,64 +340,104 @@
       "mutation_b": "stable"
     },
     {
-      "cluster_id": "clu_ozempic-glp1_015",
-      "label": "Patient Safety",
-      "salience_a": 0.0479,
-      "salience_b": 0.1127,
-      "arousal_a": 0.475,
-      "arousal_b": 0.3688,
+      "cluster_id": "clu_ozempic-glp1_034",
+      "label": "GLP-1 Therapy Result",
+      "salience_a": 0.013,
+      "salience_b": 0.0,
+      "arousal_a": 0.15,
+      "arousal_b": 0,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
-      "cluster_id": "clu_ozempic-glp1_016",
-      "label": "Metabolic Bariatric Surgery",
-      "salience_a": 0.0274,
-      "salience_b": 0.0563,
-      "arousal_a": 0.1937,
-      "arousal_b": 0.4125,
+      "cluster_id": "clu_ozempic-glp1_035",
+      "label": "Duodenal Mucosal Resurfacing",
+      "salience_a": 0.013,
+      "salience_b": 0.0,
+      "arousal_a": 0.15,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ozempic-glp1_036",
+      "label": "Food Manufacturers",
+      "salience_a": 0.026,
+      "salience_b": 0.0,
+      "arousal_a": 0.15,
+      "arousal_b": 0,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
-      "cluster_id": "clu_ozempic-glp1_017",
-      "label": "Incretin Signaling",
-      "salience_a": 0.0342,
-      "salience_b": 0.0423,
-      "arousal_a": 0.22,
-      "arousal_b": 0.15,
+      "cluster_id": "clu_ozempic-glp1_037",
+      "label": "Single-Product Food Chains",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ozempic-glp1_038",
+      "label": "Oral GLP-1 Solutions Effective",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ozempic-glp1_039",
+      "label": "Scientific Research",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ozempic-glp1_040",
+      "label": "Incretin and PPAR Agonist",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
       "mutation_a": "stable",
       "mutation_b": "stable"
     }
   ],
   "arousal_comparison": {
-    "slice_a_avg": 0.3058,
-    "slice_b_avg": 0.3768
+    "slice_a_avg": 0.35,
+    "slice_b_avg": 0
   },
   "exposure_comparison": {
     "slice_a": {
-      "value": 0.8844,
+      "value": 0.5267,
       "confidence_interval": [
-        0.8007,
-        0.9681
+        0.4162,
+        0.6372
       ],
       "baseline": "global",
       "time_window": "24h",
       "sparkline": [
-        0.8844
+        0.5267
       ],
       "source_distribution": "production"
     },
     "slice_b": {
-      "value": 0.2196,
+      "value": 0,
       "confidence_interval": [
-        0.0861,
-        0.3531
+        0,
+        0.15
       ],
       "baseline": "global",
       "time_window": "24h",
       "sparkline": [
-        0.2196
+        0
       ],
       "source_distribution": "production"
     }

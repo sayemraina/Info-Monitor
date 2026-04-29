@@ -9,7 +9,7 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "ai-workplace_x_7783cd09_0",
-    "cluster_id": "clu_ai-workplace_001",
+    "cluster_id": "clu_ai-workplace_020",
     "concept_id": "concept_ai-workplace_001",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-03T03:00:06.000Z",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.54,
+    "value": null,
     "confidence_interval": [
-      0.44,
-      0.64
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.54
-    ],
-    "source_distribution": "production",
-    "source_diversity": 1.0,
-    "bridge_ratio": 1.0,
-    "persistence_windows": 15,
-    "friction": 0.2128,
-    "friction_quadrant": "unopposed_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.4877,
+    "value": null,
     "confidence_interval": [
-      0.3743,
-      0.6011
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.4877
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.2128,
+    "value": null,
     "confidence_interval": [
-      0.0788,
-      0.3468
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.2128
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.75,
+    "value": 0,
     "confidence_interval": [
-      0.6562,
-      0.8438
+      0,
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.75
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.8723,
+    "value": null,
     "confidence_interval": [
-      0.7877,
-      0.9569
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.8723
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,141 +133,21 @@
     ]
   },
   "provenance": {
-    "first_platform": "The Christian Science Monitor",
-    "first_timestamp": "2026-04-03T03:00:06.000Z",
-    "lead_lag": [
-      {
-        "platform": "Hr Grapevine",
-        "lag_hours": 134.7
-      },
-      {
-        "platform": "Bw Businessworld",
-        "lag_hours": 172.1
-      },
-      {
-        "platform": "Bluesky",
-        "lag_hours": 184.3
-      },
-      {
-        "platform": "X Platform",
-        "lag_hours": 335.3
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_ai-workplace_001",
-    "hops": [
-      {
-        "platform": "The Christian Science Monitor",
-        "timestamp": "2026-03-18T19:27:03+00:00",
-        "claim_id": "ai-workplace_x_7783cd09_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Hr Grapevine",
-        "timestamp": "2026-03-24T10:08:58+00:00",
-        "claim_id": "ai-workplace_x_7783cd09_0",
-        "fidelity_to_origin": 0.7188,
-        "fidelity_to_previous": 0.7188
-      },
-      {
-        "platform": "Bw Businessworld",
-        "timestamp": "2026-03-25T23:35:49+00:00",
-        "claim_id": "ai-workplace_x_7783cd09_0",
-        "fidelity_to_origin": 0.6406,
-        "fidelity_to_previous": 0.8912
-      },
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-03-26T11:46:24.474000+00:00",
-        "claim_id": "ai-workplace_x_7783cd09_0",
-        "fidelity_to_origin": 0.6152,
-        "fidelity_to_previous": 0.9603
-      },
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-01T18:43:22+00:00",
-        "claim_id": "ai-workplace_x_7783cd09_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.4876
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
-  "semantic_neighbors": [
-    {
-      "claim_id": "ai-workplace_bluesky_96e1498a_0",
-      "similarity": 0.8786,
-      "text": "Artificial intelligence poses a threat to jobs."
-    },
-    {
-      "claim_id": "ai-workplace_bluesky_5bb8ff58_1",
-      "similarity": 0.7509,
-      "text": "Artificial intelligence is causing job losses in the tech industry."
-    },
-    {
-      "claim_id": "ai-workplace_bluesky_f855907a_0",
-      "similarity": 0.7419,
-      "text": "Artificial intelligence will create a large number of jobs."
-    },
-    {
-      "claim_id": "ai-workplace_bluesky_82c9bc36_0",
-      "similarity": 0.7419,
-      "text": "Artificial intelligence will likely lead to job losses."
-    },
-    {
-      "claim_id": "ai-workplace_bluesky_5bb8ff58_0",
-      "similarity": 0.6603,
-      "text": "The economic costs of artificial intelligence outweigh its benefits."
-    }
-  ],
-  "example_content": [
-    {
-      "text": "Artificial intelligence will create a large number of jobs.",
-      "platform": "Bluesky",
-      "confidence": 0.7,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Artificial intelligence poses a threat to jobs.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "The economic costs of artificial intelligence outweigh its benefits.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    }
-  ]
+  "semantic_neighbors": [],
+  "example_content": []
 }

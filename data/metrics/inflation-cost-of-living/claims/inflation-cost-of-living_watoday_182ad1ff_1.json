@@ -1,0 +1,195 @@
+{
+  "claim": {
+    "text": "There is a severe shortage of nursing home beds, posing a challenge for the care of the aging Baby Boomer generation.",
+    "subject": "Nursing home beds",
+    "assertion": "are in severe shortage",
+    "framing": "demographic change",
+    "stance": "neutral",
+    "confidence": 0.9,
+    "arousal": "medium",
+    "register": "journalistic",
+    "id": "inflation-cost-of-living_watoday_182ad1ff_1",
+    "cluster_id": "clu_inflation-cost-of-living_025",
+    "concept_id": "concept_inflation-cost-of-living_006",
+    "first_seen_platform": "watoday",
+    "first_seen_timestamp": "2026-04-29T18:45:00Z",
+    "source_document_id": "17e40cdaef3beee6",
+    "source_platform": "watoday",
+    "source_timestamp": "2026-04-29T18:45:00Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "elite_media"
+  },
+  "momentum": {
+    "value": 0.54,
+    "confidence_interval": [
+      0.44,
+      0.64
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.54
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0.5,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.3085,
+    "confidence_interval": [
+      0.1816,
+      0.4354
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3085
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-04-29T18:45:00Z",
+    "lead_lag": [
+      {
+        "platform": "Watoday",
+        "lag_hours": 4.0
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_inflation-cost-of-living_006",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-29T14:43:10.145000+00:00",
+        "claim_id": "inflation-cost-of-living_watoday_182ad1ff_1",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Watoday",
+        "timestamp": "2026-04-29T18:45:00+00:00",
+        "claim_id": "inflation-cost-of-living_watoday_182ad1ff_1",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "inflation-cost-of-living_bluesky_33958796_0",
+      "similarity": 0.3421,
+      "text": "Government policies have negatively impacted healthcare affordability."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Government policies have negatively impacted healthcare affordability.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

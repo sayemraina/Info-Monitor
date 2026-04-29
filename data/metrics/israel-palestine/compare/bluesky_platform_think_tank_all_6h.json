@@ -3,49 +3,256 @@
     "id": "bluesky_platform",
     "type": "platform",
     "label": "Bluesky",
-    "active_volume": 179,
+    "active_volume": 161,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.2215,
+    "base_rate_weight": 0.7419,
     "is_influencer_framing": false
   },
   "slice_b": {
     "id": "think_tank_all",
     "type": "source_type",
     "label": "Think Tanks",
-    "active_volume": 3,
+    "active_volume": 0,
     "meets_minimum_threshold": false,
-    "base_rate_weight": 0.0037,
+    "base_rate_weight": 0.0,
     "is_influencer_framing": false
   },
   "divergence": {
-    "jsd": 0.7666,
-    "jsd_sqrt": 0.8756,
+    "jsd": 0.0,
+    "jsd_sqrt": 0.0,
     "trend": [
-      0.8756
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
     ],
     "typology": {
-      "information_asymmetry": 0.4205,
-      "interpretive": 0.1589,
-      "paradigmatic": 0.4205,
+      "information_asymmetry": 0.0,
+      "interpretive": 0.0,
+      "paradigmatic": 0.0,
       "dominant_mode": "Information Asymmetry",
-      "paradigmatic_caveat": true
+      "paradigmatic_caveat": false
     }
   },
   "per_cluster": [
     {
       "cluster_id": "clu_israel-palestine_000",
-      "label": "Palestinians",
-      "salience_a": 0.0223,
+      "label": "Palestinian Elections",
+      "salience_a": 0.0,
       "salience_b": 0.0,
-      "arousal_a": 0.2375,
+      "arousal_a": 0,
       "arousal_b": 0,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_israel-palestine_001",
+      "label": "India's Foreign Policy",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_002",
+      "label": "'Palestine 36' (Film)",
+      "salience_a": 0.0124,
+      "salience_b": 0.0,
+      "arousal_a": 0.675,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_003",
+      "label": "Western Sahara",
+      "salience_a": 0.0186,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_004",
+      "label": "Israel",
+      "salience_a": 0.0373,
+      "salience_b": 0.0,
+      "arousal_a": 0.7917,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_005",
       "label": "Ai-Driven Warfare",
-      "salience_a": 0.0335,
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_006",
+      "label": "Political Maneuvering",
+      "salience_a": 0.0062,
+      "salience_b": 0.0,
+      "arousal_a": 0.85,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_007",
+      "label": "Gaza War",
+      "salience_a": 0.0062,
+      "salience_b": 0.0,
+      "arousal_a": 0.85,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_008",
+      "label": "Biden Administration",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_009",
+      "label": "Christian Population",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_010",
+      "label": "Hamas",
+      "salience_a": 0.0124,
+      "salience_b": 0.0,
+      "arousal_a": 0.325,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_011",
+      "label": "Gaza Reconstruction",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_012",
+      "label": "Benjamin Netanyahu",
+      "salience_a": 0.0062,
+      "salience_b": 0.0,
+      "arousal_a": 0.85,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_013",
+      "label": "Political Violence",
+      "salience_a": 0.0124,
+      "salience_b": 0.0,
+      "arousal_a": 0.325,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_016",
+      "label": "Javier Milei",
+      "salience_a": 0.0435,
+      "salience_b": 0.0,
+      "arousal_a": 0.75,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_017",
+      "label": "Immigration Policy",
+      "salience_a": 0.0248,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_018",
+      "label": "United States",
+      "salience_a": 0.0311,
+      "salience_b": 0.0,
+      "arousal_a": 0.85,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_019",
+      "label": "Trump's Ceasefire Deal",
+      "salience_a": 0.0062,
+      "salience_b": 0.0,
+      "arousal_a": 0.15,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_020",
+      "label": "BBC",
+      "salience_a": 0.0497,
+      "salience_b": 0.0,
+      "arousal_a": 0.5437,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_021",
+      "label": "War Crimes",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_023",
+      "label": "Palestinians from Gaza",
+      "salience_a": 0.0062,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_024",
+      "label": "Iran",
+      "salience_a": 0.0186,
       "salience_b": 0.0,
       "arousal_a": 0.2667,
       "arousal_b": 0,
@@ -53,19 +260,9 @@
       "mutation_b": "radicalizing"
     },
     {
-      "cluster_id": "clu_israel-palestine_002",
-      "label": "Israeli-Palestinian Conflict",
-      "salience_a": 0.0782,
-      "salience_b": 0.0,
-      "arousal_a": 0.225,
-      "arousal_b": 0,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_israel-palestine_003",
-      "label": "US Congress",
-      "salience_a": 0.0335,
+      "cluster_id": "clu_israel-palestine_025",
+      "label": "Checkpoints in the West Bank",
+      "salience_a": 0.0248,
       "salience_b": 0.0,
       "arousal_a": 0.675,
       "arousal_b": 0,
@@ -73,79 +270,29 @@
       "mutation_b": "stable"
     },
     {
-      "cluster_id": "clu_israel-palestine_004",
-      "label": "Israelis",
-      "salience_a": 0.0223,
+      "cluster_id": "clu_israel-palestine_026",
+      "label": "Hezbollah",
+      "salience_a": 0.0062,
       "salience_b": 0.0,
-      "arousal_a": 0.675,
-      "arousal_b": 0,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_israel-palestine_005",
-      "label": "Israel Subject",
-      "salience_a": 0.0056,
-      "salience_b": 0.0,
-      "arousal_a": 0.85,
-      "arousal_b": 0,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_israel-palestine_006",
-      "label": "Gaza War and Xinjiang",
-      "salience_a": 0.0223,
-      "salience_b": 0.0,
-      "arousal_a": 0.7625,
-      "arousal_b": 0,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_israel-palestine_007",
-      "label": "Iran",
-      "salience_a": 0.0782,
-      "salience_b": 1.0,
-      "arousal_a": 0.375,
-      "arousal_b": 0.3833,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_israel-palestine_008",
-      "label": "Benjamin Netanyahu",
-      "salience_a": 0.0168,
-      "salience_b": 0.0,
-      "arousal_a": 0.7333,
+      "arousal_a": 0.5,
       "arousal_b": 0,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
-      "cluster_id": "clu_israel-palestine_009",
-      "label": "UAE",
-      "salience_a": 0.0056,
+      "cluster_id": "clu_israel-palestine_027",
+      "label": "Ukraine",
+      "salience_a": 0.0745,
       "salience_b": 0.0,
-      "arousal_a": 0.85,
+      "arousal_a": 0.1792,
       "arousal_b": 0,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     },
     {
-      "cluster_id": "clu_israel-palestine_010",
+      "cluster_id": "clu_israel-palestine_028",
       "label": "Jewish People",
-      "salience_a": 0.0447,
-      "salience_b": 0.0,
-      "arousal_a": 0.8062,
-      "arousal_b": 0,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_israel-palestine_011",
-      "label": "BBC",
-      "salience_a": 0.0615,
+      "salience_a": 0.0062,
       "salience_b": 0.0,
       "arousal_a": 0.5,
       "arousal_b": 0,
@@ -153,19 +300,59 @@
       "mutation_b": "stable"
     },
     {
-      "cluster_id": "clu_israel-palestine_012",
-      "label": "Hamas",
-      "salience_a": 0.1341,
+      "cluster_id": "clu_israel-palestine_029",
+      "label": "West Asia Conflict",
+      "salience_a": 0.0,
       "salience_b": 0.0,
-      "arousal_a": 0.4125,
+      "arousal_a": 0,
       "arousal_b": 0,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
-      "cluster_id": "clu_israel-palestine_013",
-      "label": "Hezbollah",
-      "salience_a": 0.0056,
+      "cluster_id": "clu_israel-palestine_030",
+      "label": "US Military Actions",
+      "salience_a": 0.0311,
+      "salience_b": 0.0,
+      "arousal_a": 0.71,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_031",
+      "label": "Antisemitism",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_032",
+      "label": "Syria",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_033",
+      "label": "October Ceasefire",
+      "salience_a": 0.0062,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_034",
+      "label": "Palestinian Authority",
+      "salience_a": 0.0124,
       "salience_b": 0.0,
       "arousal_a": 0.85,
       "arousal_b": 0,
@@ -173,9 +360,249 @@
       "mutation_b": "stable"
     },
     {
-      "cluster_id": "clu_israel-palestine_014",
-      "label": "Scottish Green Party",
-      "salience_a": 0.0223,
+      "cluster_id": "clu_israel-palestine_035",
+      "label": "Dr. Hussam Abu Safiya",
+      "salience_a": 0.0186,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_036",
+      "label": "Education",
+      "salience_a": 0.0435,
+      "salience_b": 0.0,
+      "arousal_a": 0.55,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_037",
+      "label": "Netanyahu Intends",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_038",
+      "label": "China",
+      "salience_a": 0.0124,
+      "salience_b": 0.0,
+      "arousal_a": 0.675,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_039",
+      "label": "Military Conflict",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_040",
+      "label": "Cost Estimates of the War",
+      "salience_a": 0.0124,
+      "salience_b": 0.0,
+      "arousal_a": 0.325,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_041",
+      "label": "Putin",
+      "salience_a": 0.0186,
+      "salience_b": 0.0,
+      "arousal_a": 0.2667,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_042",
+      "label": "International Atomic Energy",
+      "salience_a": 0.0062,
+      "salience_b": 0.0,
+      "arousal_a": 0.15,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_043",
+      "label": "Islam",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_044",
+      "label": "National Security",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_045",
+      "label": "Two-State Solution",
+      "salience_a": 0.0062,
+      "salience_b": 0.0,
+      "arousal_a": 0.15,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_046",
+      "label": "Requires an Immediate",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_047",
+      "label": "Egyptian Military Exercises",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_048",
+      "label": "Occupation",
+      "salience_a": 0.0062,
+      "salience_b": 0.0,
+      "arousal_a": 0.85,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_049",
+      "label": "US Senate",
+      "salience_a": 0.0311,
+      "salience_b": 0.0,
+      "arousal_a": 0.57,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_050",
+      "label": "Shroud of Turin",
+      "salience_a": 0.0062,
+      "salience_b": 0.0,
+      "arousal_a": 0.15,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_051",
+      "label": "UAE",
+      "salience_a": 0.0248,
+      "salience_b": 0.0,
+      "arousal_a": 0.2375,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_052",
+      "label": "Historical Injustice",
+      "salience_a": 0.0124,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_053",
+      "label": "Regional Stability in West",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_054",
+      "label": "Middle East Crisis",
+      "salience_a": 0.0062,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_055",
+      "label": "Gazans",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_056",
+      "label": "Gaza Ceasefire",
+      "salience_a": 0.0186,
+      "salience_b": 0.0,
+      "arousal_a": 0.15,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_057",
+      "label": "Political Strategy",
+      "salience_a": 0.0435,
+      "salience_b": 0.0,
+      "arousal_a": 0.4,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_058",
+      "label": "Corporate Influence",
+      "salience_a": 0.0124,
+      "salience_b": 0.0,
+      "arousal_a": 0.15,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_059",
+      "label": "UK Involvement in the Gaza",
+      "salience_a": 0.0248,
       "salience_b": 0.0,
       "arousal_a": 0.5875,
       "arousal_b": 0,
@@ -183,94 +610,64 @@
       "mutation_b": "stable"
     },
     {
-      "cluster_id": "clu_israel-palestine_015",
-      "label": "Geopolitics",
-      "salience_a": 0.0279,
+      "cluster_id": "clu_israel-palestine_060",
+      "label": "Gaza Conflict and Children",
+      "salience_a": 0.0124,
       "salience_b": 0.0,
-      "arousal_a": 0.43,
+      "arousal_a": 0.325,
       "arousal_b": 0,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     },
     {
-      "cluster_id": "clu_israel-palestine_016",
-      "label": "Palestinian Land Rights",
-      "salience_a": 0.0447,
-      "salience_b": 0.0,
-      "arousal_a": 0.6313,
-      "arousal_b": 0,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_israel-palestine_017",
-      "label": "Christian Population",
-      "salience_a": 0.0279,
+      "cluster_id": "clu_israel-palestine_061",
+      "label": "USAID",
+      "salience_a": 0.0062,
       "salience_b": 0.0,
       "arousal_a": 0.5,
       "arousal_b": 0,
-      "mutation_a": "mainstreaming",
-      "mutation_b": "mainstreaming"
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     },
     {
-      "cluster_id": "clu_israel-palestine_018",
-      "label": "India-Israel Relations",
-      "salience_a": 0.0391,
+      "cluster_id": "clu_israel-palestine_062",
+      "label": "Gaza Strip",
+      "salience_a": 0.0,
       "salience_b": 0.0,
-      "arousal_a": 0.3,
-      "arousal_b": 0,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_israel-palestine_019",
-      "label": "Israel and the United States",
-      "salience_a": 0.067,
-      "salience_b": 0.0,
-      "arousal_a": 0.7625,
-      "arousal_b": 0,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_israel-palestine_020",
-      "label": "US Foreign Policy",
-      "salience_a": 0.0279,
-      "salience_b": 0.0,
-      "arousal_a": 0.78,
+      "arousal_a": 0,
       "arousal_b": 0,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     }
   ],
   "arousal_comparison": {
-    "slice_a_avg": 0.5137,
-    "slice_b_avg": 0.3833
+    "slice_a_avg": 0.4913,
+    "slice_b_avg": 0
   },
   "exposure_comparison": {
     "slice_a": {
-      "value": 0.392,
+      "value": 1,
       "confidence_interval": [
-        0.2714,
-        0.5126
+        0.925,
+        1
       ],
       "baseline": "global",
       "time_window": "6h",
       "sparkline": [
-        0.392
+        1
       ],
       "source_distribution": "production"
     },
     "slice_b": {
-      "value": 0.0067,
+      "value": 0,
       "confidence_interval": [
         0,
-        0.1562
+        0.15
       ],
       "baseline": "global",
       "time_window": "6h",
       "sparkline": [
-        0.0067
+        0
       ],
       "source_distribution": "production"
     }

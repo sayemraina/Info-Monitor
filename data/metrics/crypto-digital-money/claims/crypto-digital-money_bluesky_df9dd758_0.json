@@ -1,0 +1,206 @@
+{
+  "claim": {
+    "text": "Bitcoin traders are increasing their bearish positions despite recent price gains.",
+    "subject": "Bitcoin",
+    "assertion": "is likely to decrease in price",
+    "framing": "market sentiment",
+    "stance": "anti",
+    "confidence": 0.9,
+    "arousal": "low",
+    "register": "journalistic",
+    "id": "crypto-digital-money_bluesky_df9dd758_0",
+    "cluster_id": "clu_crypto-digital-money_014",
+    "concept_id": "concept_crypto-digital-money_001",
+    "first_seen_platform": "bluesky",
+    "first_seen_timestamp": "2026-04-26T09:01:57.08Z",
+    "source_document_id": "679a68e394fad100",
+    "source_platform": "bluesky",
+    "source_timestamp": "2026-04-26T09:01:57.08Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.435,
+    "confidence_interval": [
+      0.335,
+      0.535
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.435
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0.6667,
+    "friction_quadrant": "successful_suppression"
+  },
+  "salience": {
+    "value": 0.3071,
+    "confidence_interval": [
+      0.1801,
+      0.4341
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3071
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.6667,
+    "confidence_interval": [
+      0.5667,
+      0.7667
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.6667
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.15,
+    "confidence_interval": [
+      0.0112,
+      0.2888
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.15
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-04-26T09:01:57.08Z",
+    "lead_lag": [
+      {
+        "platform": "Cryptorank",
+        "lag_hours": 2.4
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_crypto-digital-money_001",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-26T09:01:57.080000+00:00",
+        "claim_id": "crypto-digital-money_bluesky_df9dd758_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Cryptorank",
+        "timestamp": "2026-04-26T11:26:17+00:00",
+        "claim_id": "crypto-digital-money_bluesky_df9dd758_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "crypto-digital-money_bluesky_73ff648a_0",
+      "similarity": 0.6893,
+      "text": "Decreasing trading volume despite a price increase in Bitcoin suggests a potential market downturn."
+    },
+    {
+      "claim_id": "crypto-digital-money_cryptorank_6160e063_1",
+      "similarity": 0.4669,
+      "text": "Derivatives markets show bearish positioning on Bitcoin, creating a potential short squeeze risk."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Decreasing trading volume despite a price increase in Bitcoin suggests a potential market downturn.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Derivatives markets show bearish positioning on Bitcoin, creating a potential short squeeze risk.",
+      "platform": "Cryptorank",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    }
+  ]
+}

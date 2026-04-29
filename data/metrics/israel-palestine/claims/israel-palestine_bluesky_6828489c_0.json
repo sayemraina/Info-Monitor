@@ -1,0 +1,195 @@
+{
+  "claim": {
+    "text": "Israel has deployed an Iron Dome battery to the United Arab Emirates.",
+    "subject": "Israel",
+    "assertion": "has deployed an Iron Dome battery to the United Arab Emirates",
+    "framing": "neutral",
+    "stance": "neutral",
+    "confidence": 0.9,
+    "arousal": "low",
+    "register": "journalistic",
+    "id": "israel-palestine_bluesky_6828489c_0",
+    "cluster_id": "clu_israel-palestine_003",
+    "concept_id": "concept_israel-palestine_003",
+    "first_seen_platform": "bluesky",
+    "first_seen_timestamp": "2026-04-27T18:58:02.646Z",
+    "source_document_id": "15df77386a2dcfa0",
+    "source_platform": "bluesky",
+    "source_timestamp": "2026-04-27T18:58:02.646Z",
+    "source_engagement": {
+      "likes": 2,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.3166,
+    "confidence_interval": [
+      0.2166,
+      0.4166
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3166
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0,
+    "friction_quadrant": "dead"
+  },
+  "salience": {
+    "value": 0.3124,
+    "confidence_interval": [
+      0.1858,
+      0.439
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3124
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0,
+    "confidence_interval": [
+      0,
+      0.15
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.15,
+    "confidence_interval": [
+      0.0112,
+      0.2888
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.15
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "News Directory 3",
+    "first_timestamp": "2026-04-27T18:58:02.646Z",
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 0.1
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_israel-palestine_003",
+    "hops": [
+      {
+        "platform": "News Directory 3",
+        "timestamp": "2026-04-27T18:53:53+00:00",
+        "claim_id": "israel-palestine_bluesky_6828489c_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-27T18:58:02.646000+00:00",
+        "claim_id": "israel-palestine_bluesky_6828489c_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "israel-palestine_news_directory_3_6cbd9885_1",
+      "similarity": 0.1426,
+      "text": "AI-powered tools are prone to unintended bias and censorship."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "AI-powered tools are prone to unintended bias and censorship.",
+      "platform": "News Directory 3",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    }
+  ]
+}

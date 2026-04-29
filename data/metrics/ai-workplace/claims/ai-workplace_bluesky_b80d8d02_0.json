@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "ai-workplace_bluesky_b80d8d02_0",
-    "cluster_id": "clu_ai-workplace_006",
-    "concept_id": "concept_ai-workplace_000",
+    "cluster_id": "clu_ai-workplace_020",
+    "concept_id": "concept_ai-workplace_001",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-17T04:07:54.855Z",
     "source_document_id": "a680b6d4ac701c55",
@@ -24,197 +24,128 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.48,
+    "value": null,
     "confidence_interval": [
-      0.38,
-      0.58
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.48
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 1,
-    "friction": 0.6,
-    "friction_quadrant": "successful_suppression"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.3134,
+    "value": null,
     "confidence_interval": [
-      0.1869,
-      0.4399
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3134
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.6,
+    "value": null,
     "confidence_interval": [
-      0.495,
-      0.705
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.6
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0,
     "confidence_interval": [
       0,
-      0.1962
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.7,
     "factors": []
   },
   "provenance": {
-    "first_platform": "X Platform",
-    "first_timestamp": "2026-04-17T04:07:54.855Z",
-    "lead_lag": [
-      {
-        "platform": "Bluesky",
-        "lag_hours": 5.8
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_ai-workplace_000",
-    "hops": [
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-16T16:16:26+00:00",
-        "claim_id": "ai-workplace_bluesky_b80d8d02_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-16T22:03:30.060000+00:00",
-        "claim_id": "ai-workplace_bluesky_b80d8d02_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
-  "semantic_neighbors": [
-    {
-      "claim_id": "ai-workplace_x_a521df97_0",
-      "similarity": 0.3085,
-      "text": "Capitalism has created unnecessary or artificial jobs."
-    },
-    {
-      "claim_id": "ai-workplace_x_6fefd632_0",
-      "similarity": 0.2939,
-      "text": "Artificial intelligence will lead to job displacement."
-    },
-    {
-      "claim_id": "ai-workplace_x_a521df97_1",
-      "similarity": 0.2851,
-      "text": "Artificial intelligence is eliminating jobs."
-    },
-    {
-      "claim_id": "ai-workplace_bluesky_75b356a5_1",
-      "similarity": 0.1887,
-      "text": "Jeff Bezos intends to automate many jobs using artificial intelligence."
-    }
-  ],
-  "example_content": [
-    {
-      "text": "Jeff Bezos intends to automate many jobs using artificial intelligence.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Capitalism has created unnecessary or artificial jobs.",
-      "platform": "X Platform",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Artificial intelligence is eliminating jobs.",
-      "platform": "X Platform",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    }
-  ]
+  "semantic_neighbors": [],
+  "example_content": []
 }

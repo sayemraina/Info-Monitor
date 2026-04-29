@@ -3,30 +3,37 @@
     "id": "youtube_influencer",
     "type": "platform",
     "label": "YouTube (Influencer Framing)",
-    "active_volume": 89,
-    "meets_minimum_threshold": true,
-    "base_rate_weight": 0.1419,
+    "active_volume": 0,
+    "meets_minimum_threshold": false,
+    "base_rate_weight": 0.0,
     "is_influencer_framing": true
   },
   "slice_b": {
     "id": "elite_media_all",
     "type": "source_type",
     "label": "Elite Media",
-    "active_volume": 176,
+    "active_volume": 253,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.2807,
+    "base_rate_weight": 0.307,
     "is_influencer_framing": false
   },
   "divergence": {
-    "jsd": 0.1435,
-    "jsd_sqrt": 0.3788,
+    "jsd": 0.0,
+    "jsd_sqrt": 0.0,
     "trend": [
-      0.3788
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
     ],
     "typology": {
-      "information_asymmetry": 0.3855,
-      "interpretive": 0.229,
-      "paradigmatic": 0.3855,
+      "information_asymmetry": 0.0,
+      "interpretive": 0.0,
+      "paradigmatic": 0.0,
       "dominant_mode": "Information Asymmetry",
       "paradigmatic_caveat": false
     }
@@ -34,157 +41,327 @@
   "per_cluster": [
     {
       "cluster_id": "clu_housing-crisis_000",
-      "label": "Mortgage Rates",
-      "salience_a": 0.0337,
-      "salience_b": 0.0227,
-      "arousal_a": 0.5,
-      "arousal_b": 0.5,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
+      "label": "Immigration",
+      "salience_a": 0.0,
+      "salience_b": 0.0277,
+      "arousal_a": 0,
+      "arousal_b": 0.45,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_housing-crisis_001",
-      "label": "Landlords",
+      "label": "Mortgages",
       "salience_a": 0.0,
-      "salience_b": 0.0511,
+      "salience_b": 0.0,
       "arousal_a": 0,
-      "arousal_b": 0.5389,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_housing-crisis_002",
+      "label": "Airbnb",
+      "salience_a": 0.0,
+      "salience_b": 0.0474,
+      "arousal_a": 0,
+      "arousal_b": 0.5,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_housing-crisis_003",
-      "label": "Rent Control",
-      "salience_a": 0.0225,
-      "salience_b": 0.0625,
-      "arousal_a": 0.5,
-      "arousal_b": 0.4364,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_housing-crisis_004",
-      "label": "Doug Ford",
-      "salience_a": 0.0337,
-      "salience_b": 0.0398,
-      "arousal_a": 0.3833,
-      "arousal_b": 0.45,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_housing-crisis_005",
-      "label": "Donald Trump",
-      "salience_a": 0.0112,
-      "salience_b": 0.0114,
-      "arousal_a": 0.5,
+      "label": "Mortgage Rates",
+      "salience_a": 0.0,
+      "salience_b": 0.0079,
+      "arousal_a": 0,
       "arousal_b": 0.325,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
-      "cluster_id": "clu_housing-crisis_006",
-      "label": "Institutional Investors",
-      "salience_a": 0.0899,
-      "salience_b": 0.0455,
-      "arousal_a": 0.4125,
+      "cluster_id": "clu_housing-crisis_004",
+      "label": "Tech Companies",
+      "salience_a": 0.0,
+      "salience_b": 0.0158,
+      "arousal_a": 0,
       "arousal_b": 0.4125,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_housing-crisis_006",
+      "label": "Government Spending",
+      "salience_a": 0.0,
+      "salience_b": 0.0316,
+      "arousal_a": 0,
+      "arousal_b": 0.325,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_housing-crisis_007",
-      "label": "Cost of Living",
+      "label": "Wealthy",
       "salience_a": 0.0,
-      "salience_b": 0.0,
+      "salience_b": 0.0119,
       "arousal_a": 0,
-      "arousal_b": 0,
+      "arousal_b": 0.15,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_housing-crisis_008",
-      "label": "AI Boom in San Francisco",
-      "salience_a": 0.0562,
-      "salience_b": 0.0341,
-      "arousal_a": 0.5,
-      "arousal_b": 0.4417,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
+      "label": "Interest Rates",
+      "salience_a": 0.0,
+      "salience_b": 0.004,
+      "arousal_a": 0,
+      "arousal_b": 0.15,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_housing-crisis_009",
-      "label": "Homeownership",
-      "salience_a": 0.0562,
-      "salience_b": 0.0341,
-      "arousal_a": 0.57,
-      "arousal_b": 0.5583,
+      "label": "Ghana's Government",
+      "salience_a": 0.0,
+      "salience_b": 0.0474,
+      "arousal_a": 0,
+      "arousal_b": 0.5,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_housing-crisis_010",
-      "label": "UK Mortgage Market",
-      "salience_a": 0.0225,
-      "salience_b": 0.0227,
-      "arousal_a": 0.5,
+      "label": "Squatting",
+      "salience_a": 0.0,
+      "salience_b": 0.0079,
+      "arousal_a": 0,
       "arousal_b": 0.5,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_housing-crisis_011",
-      "label": "Rent in India",
-      "salience_a": 0.0225,
-      "salience_b": 0.017,
-      "arousal_a": 0.5,
-      "arousal_b": 0.3833,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
+      "label": "Economic Investment",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_housing-crisis_012",
-      "label": "Rent Prices",
-      "salience_a": 0.0225,
-      "salience_b": 0.0739,
-      "arousal_a": 0.325,
-      "arousal_b": 0.2577,
+      "label": "Mortgage Closing Times",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_housing-crisis_013",
-      "label": "India's Property Markets",
-      "salience_a": 0.236,
-      "salience_b": 0.1193,
-      "arousal_a": 0.3833,
+      "label": "Economic Conditions",
+      "salience_a": 0.0,
+      "salience_b": 0.0119,
+      "arousal_a": 0,
       "arousal_b": 0.3833,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_housing-crisis_014",
-      "label": "New Home Construction",
-      "salience_a": 0.0225,
-      "salience_b": 0.0284,
-      "arousal_a": 0.325,
-      "arousal_b": 0.29,
+      "label": "Hmos in Birmingham",
+      "salience_a": 0.0,
+      "salience_b": 0.0277,
+      "arousal_a": 0,
+      "arousal_b": 0.4,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_housing-crisis_015",
-      "label": "Mortgages",
-      "salience_a": 0.0112,
-      "salience_b": 0.0057,
-      "arousal_a": 0.5,
-      "arousal_b": 0.5,
+      "label": "Democratic Policies",
+      "salience_a": 0.0,
+      "salience_b": 0.004,
+      "arousal_a": 0,
+      "arousal_b": 0.15,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_housing-crisis_016",
-      "label": "Flat-Pack Houses",
+      "label": "Vacant Homes Tax",
+      "salience_a": 0.0,
+      "salience_b": 0.0158,
+      "arousal_a": 0,
+      "arousal_b": 0.325,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_housing-crisis_017",
+      "label": "Gas Prices",
+      "salience_a": 0.0,
+      "salience_b": 0.004,
+      "arousal_a": 0,
+      "arousal_b": 0.5,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_housing-crisis_018",
+      "label": "First Home Buyers in Australia",
+      "salience_a": 0.0,
+      "salience_b": 0.0237,
+      "arousal_a": 0,
+      "arousal_b": 0.5,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_housing-crisis_019",
+      "label": "Rent Control",
+      "salience_a": 0.0,
+      "salience_b": 0.0198,
+      "arousal_a": 0,
+      "arousal_b": 0.43,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_housing-crisis_020",
+      "label": "Landlords",
+      "salience_a": 0.0,
+      "salience_b": 0.0316,
+      "arousal_a": 0,
+      "arousal_b": 0.4563,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_housing-crisis_022",
+      "label": "Perth Property Market",
+      "salience_a": 0.0,
+      "salience_b": 0.0158,
+      "arousal_a": 0,
+      "arousal_b": 0.325,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_housing-crisis_023",
+      "label": "Real Estate Market",
+      "salience_a": 0.0,
+      "salience_b": 0.0198,
+      "arousal_a": 0,
+      "arousal_b": 0.22,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_housing-crisis_024",
+      "label": "Homeownership",
+      "salience_a": 0.0,
+      "salience_b": 0.0119,
+      "arousal_a": 0,
+      "arousal_b": 0.3833,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_housing-crisis_025",
+      "label": "Home Affordability",
+      "salience_a": 0.0,
+      "salience_b": 0.0119,
+      "arousal_a": 0,
+      "arousal_b": 0.2667,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_housing-crisis_026",
+      "label": "Institutional Investors",
+      "salience_a": 0.0,
+      "salience_b": 0.0079,
+      "arousal_a": 0,
+      "arousal_b": 0.15,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_housing-crisis_027",
+      "label": "Cost of Living",
+      "salience_a": 0.0,
+      "salience_b": 0.0356,
+      "arousal_a": 0,
+      "arousal_b": 0.4222,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_housing-crisis_028",
+      "label": "Property Taxes",
+      "salience_a": 0.0,
+      "salience_b": 0.0158,
+      "arousal_a": 0,
+      "arousal_b": 0.5,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_housing-crisis_029",
+      "label": "Homelessness",
+      "salience_a": 0.0,
+      "salience_b": 0.0158,
+      "arousal_a": 0,
+      "arousal_b": 0.325,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_housing-crisis_030",
+      "label": "Rental Prices",
+      "salience_a": 0.0,
+      "salience_b": 0.0791,
+      "arousal_a": 0,
+      "arousal_b": 0.2375,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_housing-crisis_031",
+      "label": "California Economy",
+      "salience_a": 0.0,
+      "salience_b": 0.0198,
+      "arousal_a": 0,
+      "arousal_b": 0.5,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_housing-crisis_032",
+      "label": "Rent Prices",
+      "salience_a": 0.0,
+      "salience_b": 0.004,
+      "arousal_a": 0,
+      "arousal_b": 0.5,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_housing-crisis_033",
+      "label": "Rent Rates",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_housing-crisis_034",
+      "label": "Housing Crisis Real",
       "salience_a": 0.0,
       "salience_b": 0.0,
       "arousal_a": 0,
@@ -193,104 +370,154 @@
       "mutation_b": "stable"
     },
     {
-      "cluster_id": "clu_housing-crisis_017",
+      "cluster_id": "clu_housing-crisis_035",
+      "label": "Economic Hardship",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_housing-crisis_036",
+      "label": "Market Conditions",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_housing-crisis_037",
+      "label": "Economic Productivity",
+      "salience_a": 0.0,
+      "salience_b": 0.004,
+      "arousal_a": 0,
+      "arousal_b": 0.5,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_housing-crisis_038",
+      "label": "Economic Inequality",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_housing-crisis_039",
+      "label": "Economic Cost",
+      "salience_a": 0.0,
+      "salience_b": 0.0079,
+      "arousal_a": 0,
+      "arousal_b": 0.675,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_housing-crisis_040",
+      "label": "Land Division",
+      "salience_a": 0.0,
+      "salience_b": 0.0277,
+      "arousal_a": 0,
+      "arousal_b": 0.2,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_housing-crisis_041",
+      "label": "Municipal Investment Projects",
+      "salience_a": 0.0,
+      "salience_b": 0.0079,
+      "arousal_a": 0,
+      "arousal_b": 0.325,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_housing-crisis_042",
+      "label": "Social Justice",
+      "salience_a": 0.0,
+      "salience_b": 0.0158,
+      "arousal_a": 0,
+      "arousal_b": 0.4125,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_housing-crisis_043",
       "label": "U.S. Forest Service",
       "salience_a": 0.0,
-      "salience_b": 0.0568,
+      "salience_b": 0.0198,
       "arousal_a": 0,
       "arousal_b": 0.43,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
-      "cluster_id": "clu_housing-crisis_018",
-      "label": "Economic Models",
-      "salience_a": 0.0112,
-      "salience_b": 0.0057,
-      "arousal_a": 0.15,
+      "cluster_id": "clu_housing-crisis_044",
+      "label": "Housing, Energy, Healthcare,",
+      "salience_a": 0.0,
+      "salience_b": 0.0079,
+      "arousal_a": 0,
       "arousal_b": 0.15,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
-      "cluster_id": "clu_housing-crisis_019",
-      "label": "Childbearing",
-      "salience_a": 0.0449,
-      "salience_b": 0.0284,
-      "arousal_a": 0.4125,
-      "arousal_b": 0.36,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_housing-crisis_020",
-      "label": "Oregon Government",
+      "cluster_id": "clu_housing-crisis_045",
+      "label": "Garden Homes",
       "salience_a": 0.0,
-      "salience_b": 0.0,
+      "salience_b": 0.0119,
       "arousal_a": 0,
-      "arousal_b": 0,
+      "arousal_b": 0.3833,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
-      "cluster_id": "clu_housing-crisis_021",
-      "label": "Housing Crisis",
-      "salience_a": 0.0112,
-      "salience_b": 0.0057,
-      "arousal_a": 0.5,
-      "arousal_b": 0.5,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_housing-crisis_022",
-      "label": "Market Forces",
+      "cluster_id": "clu_housing-crisis_046",
+      "label": "Zoning Laws",
       "salience_a": 0.0,
-      "salience_b": 0.0,
+      "salience_b": 0.0119,
       "arousal_a": 0,
-      "arousal_b": 0,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_housing-crisis_023",
-      "label": "Resource Availability",
-      "salience_a": 0.0,
-      "salience_b": 0.0,
-      "arousal_a": 0,
-      "arousal_b": 0,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
+      "arousal_b": 0.15,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     }
   ],
   "arousal_comparison": {
-    "slice_a_avg": 0.4174,
-    "slice_b_avg": 0.3906
+    "slice_a_avg": 0,
+    "slice_b_avg": 0.3575
   },
   "exposure_comparison": {
     "slice_a": {
-      "value": 0.2494,
+      "value": 0,
       "confidence_interval": [
-        0.1181,
-        0.3807
+        0,
+        0.15
       ],
       "baseline": "global",
       "time_window": "7d",
       "sparkline": [
-        0.2494
+        0
       ],
       "source_distribution": "production"
     },
     "slice_b": {
-      "value": 0.4912,
+      "value": 0.5383,
       "confidence_interval": [
-        0.378,
-        0.6044
+        0.4287,
+        0.6479
       ],
       "baseline": "global",
       "time_window": "7d",
       "sparkline": [
-        0.4912
+        0.5383
       ],
       "source_distribution": "production"
     }

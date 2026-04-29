@@ -1,0 +1,206 @@
+{
+  "claim": {
+    "text": "Hamas members and affiliated charity officials are exploiting vulnerable women in Gaza by demanding sexual favors in exchange for aid.",
+    "subject": "Hamas",
+    "assertion": "is exploiting women for sexual favors in exchange for aid",
+    "framing": "corporate greed",
+    "stance": "anti",
+    "confidence": 0.9,
+    "arousal": "high",
+    "register": "journalistic",
+    "id": "israel-palestine_daily_wire_29033199_1",
+    "cluster_id": "clu_israel-palestine_008",
+    "concept_id": "concept_israel-palestine_000",
+    "first_seen_platform": "daily_wire",
+    "first_seen_timestamp": "2026-04-27T13:17:44Z",
+    "source_document_id": "d16b78581653d21b",
+    "source_platform": "daily_wire",
+    "source_timestamp": "2026-04-27T13:17:44Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "elite_media"
+  },
+  "momentum": {
+    "value": 0.645,
+    "confidence_interval": [
+      0.545,
+      0.745
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.645
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0.6667,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.3112,
+    "confidence_interval": [
+      0.1845,
+      0.4379
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3112
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.6667,
+    "confidence_interval": [
+      0.5667,
+      0.7667
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.6667
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.85,
+    "confidence_interval": [
+      0.7638,
+      0.9362
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.85
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Daily Wire",
+    "first_timestamp": "2026-04-27T13:17:44Z",
+    "lead_lag": [
+      {
+        "platform": "Nbc News",
+        "lag_hours": 3.2
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_israel-palestine_000",
+    "hops": [
+      {
+        "platform": "Daily Wire",
+        "timestamp": "2026-04-27T13:17:44+00:00",
+        "claim_id": "israel-palestine_daily_wire_29033199_1",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Nbc News",
+        "timestamp": "2026-04-27T16:27:10+00:00",
+        "claim_id": "israel-palestine_daily_wire_29033199_1",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "israel-palestine_daily_wire_29033199_0",
+      "similarity": 0.7766,
+      "text": "Hamas is systematically using sexual violence and coercion, including the rape of young boys and exploitation of vulnerable women, as a tool for political control and recruitment in Gaza."
+    },
+    {
+      "claim_id": "israel-palestine_nbc_news_5f41543f_0",
+      "similarity": 0.6175,
+      "text": "Hamas utilizes underground tunnels."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Hamas utilizes underground tunnels.",
+      "platform": "Nbc News",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Hamas is systematically using sexual violence and coercion, including the rape of young boys and exploitation of vulnerable women, as a tool for political control and recruitment in Gaza.",
+      "platform": "Daily Wire",
+      "confidence": 0.95,
+      "is_influencer_framing": false
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "claim": {
+    "text": "Scotland benefits from immigration.",
+    "subject": "immigration in Scotland",
+    "assertion": "is beneficial",
+    "framing": "economic benefit and community building",
+    "stance": "pro",
+    "confidence": 0.9,
+    "arousal": "medium",
+    "register": "vernacular",
+    "id": "immigration_bluesky_2dd278c4_1",
+    "cluster_id": "clu_immigration_009",
+    "concept_id": "concept_immigration_001",
+    "first_seen_platform": "bluesky",
+    "first_seen_timestamp": "2026-04-26T09:44:47.201Z",
+    "source_document_id": "b9bad7a7a1512a07",
+    "source_platform": "bluesky",
+    "source_timestamp": "2026-04-26T09:44:47.201Z",
+    "source_engagement": {
+      "likes": 4,
+      "replies": 0,
+      "shares": 3
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.428,
+    "confidence_interval": [
+      0.328,
+      0.528
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.428
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0.5,
+    "friction_quadrant": "successful_suppression"
+  },
+  "salience": {
+    "value": 0.3042,
+    "confidence_interval": [
+      0.177,
+      0.4314
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3042
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 0.973,
+    "confidence_interval": [
+      0.896,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.973
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Express.Co.Uk",
+    "first_timestamp": "2026-04-26T09:44:47.201Z",
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 0.3
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_immigration_001",
+    "hops": [
+      {
+        "platform": "Express.Co.Uk",
+        "timestamp": "2026-04-26T09:28:37+00:00",
+        "claim_id": "immigration_bluesky_2dd278c4_1",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-26T09:44:47.201000+00:00",
+        "claim_id": "immigration_bluesky_2dd278c4_1",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "immigration_express.co.uk_5553df30_0",
+      "similarity": 0.6011,
+      "text": "The SNP's immigration policies are causing a housing crisis in Glasgow."
+    },
+    {
+      "claim_id": "immigration_express.co.uk_5553df30_1",
+      "similarity": 0.4571,
+      "text": "Suspending the local connection rule for social housing applications has led to an influx of immigrants into Glasgow."
+    },
+    {
+      "claim_id": "immigration_bluesky_d0c1c93f_0",
+      "similarity": 0.3342,
+      "text": "British identity and policy have suffered due to a failure to address the legacy of colonialism."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "British identity and policy have suffered due to a failure to address the legacy of colonialism.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The SNP's immigration policies are causing a housing crisis in Glasgow.",
+      "platform": "Express.Co.Uk",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Suspending the local connection rule for social housing applications has led to an influx of immigrants into Glasgow.",
+      "platform": "Express.Co.Uk",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

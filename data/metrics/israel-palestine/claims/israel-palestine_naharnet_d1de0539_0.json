@@ -1,0 +1,238 @@
+{
+  "claim": {
+    "text": "Israeli soldiers have been looting civilian property in southern Lebanon.",
+    "subject": "Israeli soldiers",
+    "assertion": "have been looting civilian property",
+    "framing": "neutral",
+    "stance": "neutral",
+    "confidence": 0.9,
+    "arousal": "medium",
+    "register": "journalistic",
+    "id": "israel-palestine_naharnet_d1de0539_0",
+    "cluster_id": "clu_israel-palestine_011",
+    "concept_id": "concept_israel-palestine_005",
+    "first_seen_platform": "naharnet",
+    "first_seen_timestamp": "2026-04-27T18:30:24Z",
+    "source_document_id": "987f8229ec752c56",
+    "source_platform": "naharnet",
+    "source_timestamp": "2026-04-27T18:30:24Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "elite_media"
+  },
+  "momentum": {
+    "value": 0.54,
+    "confidence_interval": [
+      0.44,
+      0.64
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.54
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.75,
+    "bridge_ratio": 0.75,
+    "persistence_windows": 3,
+    "friction": 0,
+    "friction_quadrant": "unopposed_advance"
+  },
+  "salience": {
+    "value": 0.4343,
+    "confidence_interval": [
+      0.3169,
+      0.5517
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.4343
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0,
+    "confidence_interval": [
+      0,
+      0.15
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.15,
+    "confidence_interval": [
+      0.0112,
+      0.2888
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.15
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 0.5556,
+    "confidence_interval": [
+      0.4473,
+      0.6639
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5556
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Naharnet",
+    "first_timestamp": "2026-04-27T18:30:24Z",
+    "lead_lag": [
+      {
+        "platform": "Arab News",
+        "lag_hours": 0.1
+      },
+      {
+        "platform": "The Frontier Post",
+        "lag_hours": 0.9
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_israel-palestine_005",
+    "hops": [
+      {
+        "platform": "Naharnet",
+        "timestamp": "2026-04-27T18:30:24+00:00",
+        "claim_id": "israel-palestine_naharnet_d1de0539_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Arab News",
+        "timestamp": "2026-04-27T18:34:46+00:00",
+        "claim_id": "israel-palestine_naharnet_d1de0539_0",
+        "fidelity_to_origin": 0.9423,
+        "fidelity_to_previous": 0.9423
+      },
+      {
+        "platform": "The Frontier Post",
+        "timestamp": "2026-04-27T19:23:24+00:00",
+        "claim_id": "israel-palestine_naharnet_d1de0539_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3184
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "israel-palestine_arab_news_ec59cb6a_0",
+      "similarity": 1.0,
+      "text": "Israeli soldiers have been looting civilian property in southern Lebanon."
+    },
+    {
+      "claim_id": "israel-palestine_the_frontier_post_2c99ba8f_0",
+      "similarity": 0.9996,
+      "text": "Israeli soldiers have been looting civilian property in southern Lebanon."
+    },
+    {
+      "claim_id": "israel-palestine_arab_news_ec59cb6a_2",
+      "similarity": 0.8142,
+      "text": "Looting and other misconduct by Israeli soldiers have become common since the start of the Gaza war in 2023."
+    },
+    {
+      "claim_id": "israel-palestine_the_frontier_post_2c99ba8f_2",
+      "similarity": 0.8104,
+      "text": "Looting and similar behaviors by Israeli soldiers have become common since the ground invasion during the Gaza war."
+    },
+    {
+      "claim_id": "israel-palestine_naharnet_d1de0539_2",
+      "similarity": 0.8104,
+      "text": "Looting and similar behaviors by Israeli soldiers have become common since the Gaza war."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Israeli soldiers have been looting civilian property in southern Lebanon.",
+      "platform": "The Frontier Post",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The Israeli military prohibits harm to civilian property and looting.",
+      "platform": "The Frontier Post",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Looting and similar behaviors by Israeli soldiers have become common since the ground invasion during the Gaza war.",
+      "platform": "The Frontier Post",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    }
+  ]
+}

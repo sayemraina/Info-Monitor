@@ -1,0 +1,220 @@
+{
+  "claim": {
+    "text": "Current immigration policies are excessively restrictive.",
+    "subject": "immigration policy",
+    "assertion": "is excessively restrictive",
+    "framing": "neutral",
+    "stance": "anti",
+    "confidence": 0.8,
+    "arousal": "medium",
+    "register": "vernacular",
+    "id": "immigration_bluesky_41b9d1d4_0",
+    "cluster_id": "clu_immigration_024",
+    "concept_id": "concept_immigration_006",
+    "first_seen_platform": "bluesky",
+    "first_seen_timestamp": "2026-04-26T08:58:59.686Z",
+    "source_document_id": "41b9d1d49f82048e",
+    "source_platform": "bluesky",
+    "source_timestamp": "2026-04-26T08:58:59.686Z",
+    "source_engagement": {
+      "likes": 2,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.3916,
+    "confidence_interval": [
+      0.2916,
+      0.4916
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3916
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0.4,
+    "friction_quadrant": "successful_suppression"
+  },
+  "salience": {
+    "value": 0.3087,
+    "confidence_interval": [
+      0.1819,
+      0.4355
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3087
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.4,
+    "confidence_interval": [
+      0.28,
+      0.52
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.4
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.8,
+    "factors": []
+  },
+  "provenance": {
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-04-26T08:58:59.686Z",
+    "lead_lag": [
+      {
+        "platform": "Gulf News",
+        "lag_hours": 18.1
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_immigration_006",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-25T15:01:07.608000+00:00",
+        "claim_id": "immigration_bluesky_41b9d1d4_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Gulf News",
+        "timestamp": "2026-04-26T09:09:19+00:00",
+        "claim_id": "immigration_bluesky_41b9d1d4_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "immigration_bluesky_966b94ac_0",
+      "similarity": 0.8458,
+      "text": "Certain individuals should be denied entry into the United States."
+    },
+    {
+      "claim_id": "immigration_bluesky_2c6d66f7_0",
+      "similarity": 0.5916,
+      "text": "A photograph will likely be used as justification for implementing stricter immigration deportation policies."
+    },
+    {
+      "claim_id": "immigration_gulf_news_f222e248_0",
+      "similarity": 0.5501,
+      "text": "Saudi Arabia is actively enforcing immigration laws and deporting individuals found in violation of residency, labor, and border regulations."
+    },
+    {
+      "claim_id": "immigration_bluesky_13fa26d3_0",
+      "similarity": 0.3891,
+      "text": "The U.S. government will likely restrict the import of Chinese-made vehicles, citing national security concerns."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "A photograph will likely be used as justification for implementing stricter immigration deportation policies.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Certain individuals should be denied entry into the United States.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The U.S. government will likely restrict the import of Chinese-made vehicles, citing national security concerns.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

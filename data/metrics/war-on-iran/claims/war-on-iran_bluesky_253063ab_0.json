@@ -1,0 +1,217 @@
+{
+  "claim": {
+    "text": "The Trump administration violated the Iran nuclear deal and initiated an unauthorized conflict with Iran.",
+    "subject": "Iran nuclear deal",
+    "assertion": "was violated by the Trump administration, which then initiated an unauthorized conflict with Iran",
+    "framing": "neutral",
+    "stance": "anti",
+    "confidence": 0.9,
+    "arousal": "high",
+    "register": "vernacular",
+    "id": "war-on-iran_bluesky_253063ab_0",
+    "cluster_id": "clu_war-on-iran_008",
+    "concept_id": "concept_war-on-iran_004",
+    "first_seen_platform": "bluesky",
+    "first_seen_timestamp": "2026-04-29T18:14:53.967Z",
+    "source_document_id": "6b497ed86356abb3",
+    "source_platform": "bluesky",
+    "source_timestamp": "2026-04-29T18:14:53.967Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 1,
+      "shares": 0
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.5262,
+    "confidence_interval": [
+      0.4262,
+      0.6262
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5262
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0.75,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.2974,
+    "confidence_interval": [
+      0.1697,
+      0.4251
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.2974
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.75,
+    "confidence_interval": [
+      0.6562,
+      0.8438
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.75
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.85,
+    "confidence_interval": [
+      0.7638,
+      0.9362
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.85
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 0.9701,
+    "confidence_interval": [
+      0.8929,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.9701
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-04-29T18:14:53.967Z",
+    "lead_lag": [
+      {
+        "platform": "X Platform",
+        "lag_hours": 1.1
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_war-on-iran_004",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-29T18:14:53.967000+00:00",
+        "claim_id": "war-on-iran_bluesky_253063ab_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-29T19:17:54+00:00",
+        "claim_id": "war-on-iran_bluesky_253063ab_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "war-on-iran_bluesky_c15ea3f8_0",
+      "similarity": 0.6938,
+      "text": "Donald Trump threatened Iran regarding its nuclear deal."
+    },
+    {
+      "claim_id": "war-on-iran_x_16f4488f_2",
+      "similarity": 0.6622,
+      "text": "Donald Trump falsely revoked the Iran nuclear deal."
+    },
+    {
+      "claim_id": "war-on-iran_bluesky_2d3fe540_1",
+      "similarity": 0.5745,
+      "text": "Trump ended the Iran nuclear deal out of personal spite."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Donald Trump threatened Iran regarding its nuclear deal.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Trump ended the Iran nuclear deal out of personal spite.",
+      "platform": "Bluesky",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Donald Trump falsely revoked the Iran nuclear deal.",
+      "platform": "X Platform",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "claim": {
+    "text": "Cigarettes are highly addictive.",
+    "subject": "cigarettes",
+    "assertion": "are highly addictive",
+    "framing": "health consequences",
+    "stance": "anti",
+    "confidence": 0.9,
+    "arousal": "medium",
+    "register": "vernacular",
+    "id": "ozempic-glp1_bluesky_9122530e_1",
+    "cluster_id": "clu_ozempic-glp1_031",
+    "concept_id": "concept_ozempic-glp1_006",
+    "first_seen_platform": "bluesky",
+    "first_seen_timestamp": "2026-04-29T18:17:26.428Z",
+    "source_document_id": "fa752127d8a9800f",
+    "source_platform": "bluesky",
+    "source_timestamp": "2026-04-29T18:17:26.428Z",
+    "source_engagement": {
+      "likes": 4,
+      "replies": 1,
+      "shares": 0
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.4244,
+    "confidence_interval": [
+      0.3244,
+      0.5244
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.4244
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.75,
+    "bridge_ratio": 0.75,
+    "persistence_windows": 2,
+    "friction": 0.1667,
+    "friction_quadrant": "dead"
+  },
+  "salience": {
+    "value": 0.3148,
+    "confidence_interval": [
+      0.1884,
+      0.4412
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3148
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.1667,
+    "confidence_interval": [
+      0.0292,
+      0.3042
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.1667
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.1,
+    "confidence_interval": [
+      0,
+      0.2425
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.1
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Medpage Today",
+    "first_timestamp": "2026-04-29T18:17:26.428Z",
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 3.6
+      },
+      {
+        "platform": "The Week",
+        "lag_hours": 5.4
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_ozempic-glp1_006",
+    "hops": [
+      {
+        "platform": "Medpage Today",
+        "timestamp": "2026-04-29T11:38:30+00:00",
+        "claim_id": "ozempic-glp1_bluesky_9122530e_1",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-29T15:11:51.417000+00:00",
+        "claim_id": "ozempic-glp1_bluesky_9122530e_1",
+        "fidelity_to_origin": 0.5432,
+        "fidelity_to_previous": 0.5432
+      },
+      {
+        "platform": "The Week",
+        "timestamp": "2026-04-29T17:05:28+00:00",
+        "claim_id": "ozempic-glp1_bluesky_9122530e_1",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.5523
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "ozempic-glp1_bluesky_9122530e_0",
+      "similarity": 0.6422,
+      "text": "Cigarettes were historically used as a stimulant and appetite suppressant before the availability of ADHD medications and Ozempic."
+    },
+    {
+      "claim_id": "ozempic-glp1_the_week_53688473_1",
+      "similarity": 0.3912,
+      "text": "GLP-1 drugs may help combat drug and alcohol addiction."
+    },
+    {
+      "claim_id": "ozempic-glp1_medpage_today_2c838c08_1",
+      "similarity": 0.2537,
+      "text": "GLP-1 drugs do not seem to harm motivation."
+    },
+    {
+      "claim_id": "ozempic-glp1_bluesky_b2d7553e_1",
+      "similarity": 0.2488,
+      "text": "GLP-1 drugs affect dopamine levels."
+    },
+    {
+      "claim_id": "ozempic-glp1_bluesky_8e812b2a_0",
+      "similarity": 0.1835,
+      "text": "GLP-1 drugs may have benefits beyond weight loss, such as reducing the buildup of Alzheimer's proteins."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Cigarettes were historically used as a stimulant and appetite suppressant before the availability of ADHD medications and Ozempic.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "GLP-1 drugs may have benefits beyond weight loss, such as reducing the buildup of Alzheimer's proteins.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "GLP-1 drugs affect dopamine levels.",
+      "platform": "Bluesky",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    }
+  ]
+}

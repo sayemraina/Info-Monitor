@@ -39,10 +39,13 @@ __pycache__/
 # Synthetic data backup — preserved for reference/demo mode
 data_synthetic/
 
-# Real-time YouTube discovery output — never commit; static mocks in data/youtube/ are committed separately
-data/youtube/live/
+# Real-time YouTube discovery output — now committed so infomonitor.app shows fresh narrative shapers
+# data/youtube/live/  ← un-gitignored
 
 # Pipeline timing logs (JSONL, append-only)
 data/.timings/
+
+# AI Guide audit logs (JSONL, interaction history)
+data/.ai_guide/
 
 # public/data now contains real files (was a symlink before)

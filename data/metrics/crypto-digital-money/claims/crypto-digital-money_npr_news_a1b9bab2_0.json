@@ -1,0 +1,206 @@
+{
+  "claim": {
+    "text": "Geofence warrants may violate Fourth Amendment protections against unreasonable search.",
+    "subject": "geofence warrants",
+    "assertion": "may be unconstitutional",
+    "framing": "digital privacy",
+    "stance": "neutral",
+    "confidence": 0.9,
+    "arousal": "low",
+    "register": "journalistic",
+    "id": "crypto-digital-money_npr_news_a1b9bab2_0",
+    "cluster_id": "clu_crypto-digital-money_035",
+    "concept_id": "concept_crypto-digital-money_004",
+    "first_seen_platform": "npr_news",
+    "first_seen_timestamp": "2026-04-26T09:00:00Z",
+    "source_document_id": "4b9780103b15fcb1",
+    "source_platform": "npr_news",
+    "source_timestamp": "2026-04-26T09:00:00Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "elite_media"
+  },
+  "momentum": {
+    "value": 0.435,
+    "confidence_interval": [
+      0.335,
+      0.535
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.435
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0.6667,
+    "friction_quadrant": "successful_suppression"
+  },
+  "salience": {
+    "value": 0.3071,
+    "confidence_interval": [
+      0.1801,
+      0.4341
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3071
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.6667,
+    "confidence_interval": [
+      0.5667,
+      0.7667
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.6667
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.15,
+    "confidence_interval": [
+      0.0112,
+      0.2888
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.15
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Salon",
+    "first_timestamp": "2026-04-26T09:00:00Z",
+    "lead_lag": [
+      {
+        "platform": "Npr News",
+        "lag_hours": 15.7
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_crypto-digital-money_004",
+    "hops": [
+      {
+        "platform": "Salon",
+        "timestamp": "2026-04-25T17:15:42+00:00",
+        "claim_id": "crypto-digital-money_npr_news_a1b9bab2_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Npr News",
+        "timestamp": "2026-04-26T09:00:00+00:00",
+        "claim_id": "crypto-digital-money_npr_news_a1b9bab2_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "crypto-digital-money_salon_3a398ad8_0",
+      "similarity": 0.3562,
+      "text": "The Trump administration's attempts to restrict asylum access at the southern border are legally invalid."
+    },
+    {
+      "claim_id": "crypto-digital-money_salon_3a398ad8_1",
+      "similarity": 0.3115,
+      "text": "Executive actions to limit asylum eligibility conflict with existing federal law and congressional authority."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "The Trump administration's attempts to restrict asylum access at the southern border are legally invalid.",
+      "platform": "Salon",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Executive actions to limit asylum eligibility conflict with existing federal law and congressional authority.",
+      "platform": "Salon",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

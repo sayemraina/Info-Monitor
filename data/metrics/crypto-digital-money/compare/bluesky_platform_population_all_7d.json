@@ -3,194 +3,564 @@
     "id": "bluesky_platform",
     "type": "platform",
     "label": "Bluesky",
-    "active_volume": 149,
+    "active_volume": 239,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.286,
+    "base_rate_weight": 0.3021,
     "is_influencer_framing": false
   },
   "slice_b": {
     "id": "population_all",
     "type": "source_type",
     "label": "Population Discourse",
-    "active_volume": 303,
+    "active_volume": 342,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.5816,
+    "base_rate_weight": 0.4324,
     "is_influencer_framing": false
   },
   "divergence": {
-    "jsd": 0.1101,
-    "jsd_sqrt": 0.3319,
+    "jsd": 0.0954,
+    "jsd_sqrt": 0.3089,
     "trend": [
-      0.3319
+      0.3089
     ],
     "typology": {
-      "information_asymmetry": 0.3299,
-      "interpretive": 0.3402,
-      "paradigmatic": 0.3299,
-      "dominant_mode": "Interpretive",
-      "paradigmatic_caveat": false
+      "information_asymmetry": 0.4197,
+      "interpretive": 0.1607,
+      "paradigmatic": 0.4197,
+      "dominant_mode": "Information Asymmetry",
+      "paradigmatic_caveat": true
     }
   },
   "per_cluster": [
     {
-      "cluster_id": "clu_crypto-digital-money_000",
-      "label": "Gold Trading Signals",
-      "salience_a": 0.0,
-      "salience_b": 0.066,
-      "arousal_a": 0,
-      "arousal_b": 0.815,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
       "cluster_id": "clu_crypto-digital-money_001",
-      "label": "AI Automated Trading",
-      "salience_a": 0.0,
-      "salience_b": 0.0528,
-      "arousal_a": 0,
-      "arousal_b": 0.85,
+      "label": "Bitcoin",
+      "salience_a": 0.0167,
+      "salience_b": 0.0643,
+      "arousal_a": 0.4125,
+      "arousal_b": 0.1977,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_crypto-digital-money_002",
-      "label": "XRP",
-      "salience_a": 0.047,
-      "salience_b": 0.0297,
-      "arousal_a": 0.3,
-      "arousal_b": 0.2667,
+      "label": "AI Automated Trading",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_crypto-digital-money_003",
-      "label": "Ethereum",
-      "salience_a": 0.1745,
-      "salience_b": 0.2805,
-      "arousal_a": 0.2173,
-      "arousal_b": 0.3024,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_crypto-digital-money_004",
-      "label": "Stablecoins",
-      "salience_a": 0.047,
-      "salience_b": 0.0264,
-      "arousal_a": 0.25,
-      "arousal_b": 0.2375,
+      "label": "XRP",
+      "salience_a": 0.0084,
+      "salience_b": 0.0058,
+      "arousal_a": 0.15,
+      "arousal_b": 0.15,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_crypto-digital-money_005",
-      "label": "Donald Trump",
-      "salience_a": 0.047,
-      "salience_b": 0.0297,
-      "arousal_a": 0.45,
-      "arousal_b": 0.3833,
+      "label": "Gold Trading",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_crypto-digital-money_006",
-      "label": "CLARITY Act",
-      "salience_a": 0.0134,
-      "salience_b": 0.0066,
-      "arousal_a": 0.325,
-      "arousal_b": 0.325,
+      "label": "Can Generate High Profits",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_crypto-digital-money_007",
+      "label": "Tokenized Stocks and Etfs",
+      "salience_a": 0.0167,
+      "salience_b": 0.0146,
+      "arousal_a": 0.15,
+      "arousal_b": 0.15,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_crypto-digital-money_008",
+      "label": "Pepeto",
+      "salience_a": 0.0,
+      "salience_b": 0.0029,
+      "arousal_a": 0,
+      "arousal_b": 0.15,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_crypto-digital-money_009",
-      "label": "AI Data Centers",
-      "salience_a": 0.0067,
-      "salience_b": 0.0033,
+      "label": "Cryptocurrency Tax in India",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_crypto-digital-money_010",
+      "label": "CLARITY Act",
+      "salience_a": 0.0167,
+      "salience_b": 0.0117,
+      "arousal_a": 0.2375,
+      "arousal_b": 0.2375,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_crypto-digital-money_011",
+      "label": "Silicon Valley",
+      "salience_a": 0.0042,
+      "salience_b": 0.0029,
       "arousal_a": 0.5,
       "arousal_b": 0.5,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
-      "cluster_id": "clu_crypto-digital-money_010",
-      "label": "Trivy",
-      "salience_a": 0.0671,
-      "salience_b": 0.0396,
-      "arousal_a": 0.43,
-      "arousal_b": 0.4417,
+      "cluster_id": "clu_crypto-digital-money_012",
+      "label": "Blockchain Technology",
+      "salience_a": 0.0,
+      "salience_b": 0.076,
+      "arousal_a": 0,
+      "arousal_b": 0.2308,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
-      "cluster_id": "clu_crypto-digital-money_011",
-      "label": "Electric Air Taxis",
-      "salience_a": 0.2819,
-      "salience_b": 0.1419,
-      "arousal_a": 0.2583,
-      "arousal_b": 0.2558,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
+      "cluster_id": "clu_crypto-digital-money_013",
+      "label": "Prediction Markets",
+      "salience_a": 0.0084,
+      "salience_b": 0.0058,
+      "arousal_a": 0.5,
+      "arousal_b": 0.5,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     },
     {
-      "cluster_id": "clu_crypto-digital-money_012",
-      "label": "Atproto Protocol",
-      "salience_a": 0.0403,
-      "salience_b": 0.0429,
-      "arousal_a": 0.3833,
-      "arousal_b": 0.3385,
+      "cluster_id": "clu_crypto-digital-money_014",
+      "label": "Ethereum",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_crypto-digital-money_015",
-      "label": "Hero Loan",
-      "salience_a": 0.0268,
-      "salience_b": 0.0495,
-      "arousal_a": 0.15,
-      "arousal_b": 0.3367,
+      "label": "Stablecoins",
+      "salience_a": 0.0335,
+      "salience_b": 0.0234,
+      "arousal_a": 0.1937,
+      "arousal_b": 0.1937,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_crypto-digital-money_016",
-      "label": "Meme Coins",
-      "salience_a": 0.1409,
-      "salience_b": 0.1122,
-      "arousal_a": 0.25,
-      "arousal_b": 0.2735,
+      "label": "Dogecoin",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_crypto-digital-money_017",
+      "label": "Market Opportunity",
+      "salience_a": 0.0167,
+      "salience_b": 0.0117,
+      "arousal_a": 0.15,
+      "arousal_b": 0.15,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_crypto-digital-money_018",
+      "label": "AI Regulation",
+      "salience_a": 0.0084,
+      "salience_b": 0.0058,
+      "arousal_a": 0.325,
+      "arousal_b": 0.325,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_crypto-digital-money_019",
+      "label": "Trivy",
+      "salience_a": 0.0126,
+      "salience_b": 0.0088,
+      "arousal_a": 0.5,
+      "arousal_b": 0.5,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_crypto-digital-money_020",
+      "label": "Alphaswap",
+      "salience_a": 0.0335,
+      "salience_b": 0.0322,
+      "arousal_a": 0.3688,
+      "arousal_b": 0.3091,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_crypto-digital-money_021",
+      "label": "Tokenization of Real-World",
+      "salience_a": 0.0209,
+      "salience_b": 0.0146,
+      "arousal_a": 0.22,
+      "arousal_b": 0.22,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_crypto-digital-money_022",
+      "label": "Dunamu-Naver Merger",
+      "salience_a": 0.2008,
+      "salience_b": 0.1433,
+      "arousal_a": 0.2594,
+      "arousal_b": 0.2571,
       "mutation_a": "stable",
       "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_crypto-digital-money_024",
+      "label": "Artificial Intelligence",
+      "salience_a": 0.0084,
+      "salience_b": 0.038,
+      "arousal_a": 0.325,
+      "arousal_b": 0.1769,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_crypto-digital-money_025",
+      "label": "Cybercrime Gangs",
+      "salience_a": 0.0335,
+      "salience_b": 0.0234,
+      "arousal_a": 0.5,
+      "arousal_b": 0.5,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_crypto-digital-money_026",
+      "label": "Scams and Fraud",
+      "salience_a": 0.0418,
+      "salience_b": 0.0439,
+      "arousal_a": 0.43,
+      "arousal_b": 0.43,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_crypto-digital-money_027",
+      "label": "Crypto-Backed Credit Lines",
+      "salience_a": 0.0084,
+      "salience_b": 0.0058,
+      "arousal_a": 0.15,
+      "arousal_b": 0.15,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_crypto-digital-money_028",
+      "label": "Traditional Financial Systems",
+      "salience_a": 0.0251,
+      "salience_b": 0.0234,
+      "arousal_a": 0.4417,
+      "arousal_b": 0.5,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_crypto-digital-money_029",
+      "label": "Altcoins",
+      "salience_a": 0.0042,
+      "salience_b": 0.0058,
+      "arousal_a": 0.15,
+      "arousal_b": 0.15,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_crypto-digital-money_030",
+      "label": "Market Analysis",
+      "salience_a": 0.0084,
+      "salience_b": 0.0058,
+      "arousal_a": 0.15,
+      "arousal_b": 0.15,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_crypto-digital-money_031",
+      "label": "Cardano",
+      "salience_a": 0.0293,
+      "salience_b": 0.0234,
+      "arousal_a": 0.3,
+      "arousal_b": 0.325,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_crypto-digital-money_033",
+      "label": "Zohran Mamdani",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_crypto-digital-money_034",
+      "label": "Geopolitical Risk",
+      "salience_a": 0.0209,
+      "salience_b": 0.0146,
+      "arousal_a": 0.15,
+      "arousal_b": 0.15,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_crypto-digital-money_035",
+      "label": "Political Donations",
+      "salience_a": 0.0251,
+      "salience_b": 0.0175,
+      "arousal_a": 0.5583,
+      "arousal_b": 0.5583,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_crypto-digital-money_036",
+      "label": "Nigel Farage",
+      "salience_a": 0.0377,
+      "salience_b": 0.0263,
+      "arousal_a": 0.5,
+      "arousal_b": 0.5,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_crypto-digital-money_037",
+      "label": "Cryptocurrencies Falling",
+      "salience_a": 0.0126,
+      "salience_b": 0.0088,
+      "arousal_a": 0.2667,
+      "arousal_b": 0.2667,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_crypto-digital-money_038",
+      "label": "Market Conditions",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_crypto-digital-money_039",
+      "label": "Cash App",
+      "salience_a": 0.0209,
+      "salience_b": 0.0146,
+      "arousal_a": 0.29,
+      "arousal_b": 0.29,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_crypto-digital-money_040",
+      "label": "Economic Stability",
+      "salience_a": 0.0042,
+      "salience_b": 0.0029,
+      "arousal_a": 0.5,
+      "arousal_b": 0.5,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_crypto-digital-money_041",
+      "label": "Shoplifting",
+      "salience_a": 0.0377,
+      "salience_b": 0.0263,
+      "arousal_a": 0.5,
+      "arousal_b": 0.5,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_crypto-digital-money_042",
+      "label": "Donald Trump",
+      "salience_a": 0.046,
+      "salience_b": 0.0351,
+      "arousal_a": 0.5955,
+      "arousal_b": 0.5875,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_crypto-digital-money_043",
+      "label": "Trading Competitions",
+      "salience_a": 0.0042,
+      "salience_b": 0.0234,
+      "arousal_a": 0.85,
+      "arousal_b": 0.5437,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_crypto-digital-money_044",
+      "label": "Strategy Stock",
+      "salience_a": 0.0042,
+      "salience_b": 0.0058,
+      "arousal_a": 0.15,
+      "arousal_b": 0.15,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_crypto-digital-money_045",
+      "label": "Delta Exchange",
+      "salience_a": 0.0084,
+      "salience_b": 0.0058,
+      "arousal_a": 0.15,
+      "arousal_b": 0.15,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_crypto-digital-money_046",
+      "label": "Charles Schwab",
+      "salience_a": 0.0377,
+      "salience_b": 0.0556,
+      "arousal_a": 0.2278,
+      "arousal_b": 0.2421,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_crypto-digital-money_047",
+      "label": "Gen Z",
+      "salience_a": 0.0251,
+      "salience_b": 0.0234,
+      "arousal_a": 0.2667,
+      "arousal_b": 0.2812,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_crypto-digital-money_048",
+      "label": "XVS/USDT Trading",
+      "salience_a": 0.0084,
+      "salience_b": 0.0351,
+      "arousal_a": 0.325,
+      "arousal_b": 0.4417,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_crypto-digital-money_049",
+      "label": "Pete Hegseth",
+      "salience_a": 0.0,
+      "salience_b": 0.0029,
+      "arousal_a": 0,
+      "arousal_b": 0.85,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_crypto-digital-money_051",
+      "label": "Batman Part II",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_crypto-digital-money_054",
+      "label": "Executive Power",
+      "salience_a": 0.0042,
+      "salience_b": 0.0029,
+      "arousal_a": 0.5,
+      "arousal_b": 0.5,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_crypto-digital-money_055",
+      "label": "ICE",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_crypto-digital-money_057",
+      "label": "Department of Homeland",
+      "salience_a": 0.0042,
+      "salience_b": 0.0029,
+      "arousal_a": 0.5,
+      "arousal_b": 0.5,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     }
   ],
   "arousal_comparison": {
-    "slice_a_avg": 0.2886,
-    "slice_b_avg": 0.3764
+    "slice_a_avg": 0.3374,
+    "slice_b_avg": 0.3189
   },
   "exposure_comparison": {
     "slice_a": {
-      "value": 0.4962,
+      "value": 0.5254,
       "confidence_interval": [
-        0.3834,
-        0.609
+        0.4148,
+        0.636
       ],
       "baseline": "global",
       "time_window": "7d",
       "sparkline": [
-        0.4962
+        0.5254
       ],
       "source_distribution": "production"
     },
     "slice_b": {
-      "value": 1,
+      "value": 0.7537,
       "confidence_interval": [
-        0.925,
-        1
+        0.6602,
+        0.8472
       ],
       "baseline": "global",
       "time_window": "7d",
       "sparkline": [
-        1
+        0.7537
       ],
       "source_distribution": "production"
     }

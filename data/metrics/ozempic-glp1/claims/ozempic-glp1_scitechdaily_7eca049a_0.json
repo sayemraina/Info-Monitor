@@ -1,0 +1,195 @@
+{
+  "claim": {
+    "text": "Orforglipron, a new oral GLP-1 drug, is more effective than oral semaglutide in controlling blood sugar and promoting weight loss.",
+    "subject": "Orforglipron",
+    "assertion": "is more effective than oral semaglutide",
+    "framing": "neutral",
+    "stance": "pro",
+    "confidence": 0.9,
+    "arousal": "low",
+    "register": "journalistic",
+    "id": "ozempic-glp1_scitechdaily_7eca049a_0",
+    "cluster_id": "clu_ozempic-glp1_004",
+    "concept_id": "concept_ozempic-glp1_000",
+    "first_seen_platform": "scitechdaily",
+    "first_seen_timestamp": "2026-04-29T14:50:40Z",
+    "source_document_id": "a9ac54965c7e35a3",
+    "source_platform": "scitechdaily",
+    "source_timestamp": "2026-04-29T14:50:40Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "elite_media"
+  },
+  "momentum": {
+    "value": 0.435,
+    "confidence_interval": [
+      0.335,
+      0.535
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.435
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0,
+    "friction_quadrant": "dead"
+  },
+  "salience": {
+    "value": 0.3091,
+    "confidence_interval": [
+      0.1823,
+      0.4359
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3091
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0,
+    "confidence_interval": [
+      0,
+      0.15
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.15,
+    "confidence_interval": [
+      0.0112,
+      0.2888
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.15
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 0.9608,
+    "confidence_interval": [
+      0.8829,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.9608
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-04-29T14:50:40Z",
+    "lead_lag": [
+      {
+        "platform": "Scitechdaily",
+        "lag_hours": 5.5
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_ozempic-glp1_000",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-29T09:19:08.996000+00:00",
+        "claim_id": "ozempic-glp1_scitechdaily_7eca049a_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Scitechdaily",
+        "timestamp": "2026-04-29T14:50:40+00:00",
+        "claim_id": "ozempic-glp1_scitechdaily_7eca049a_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "ozempic-glp1_bluesky_ef8f3672_0",
+      "similarity": 0.5314,
+      "text": "Safiglipron, an oral GLP-1 receptor agonist, demonstrates potential for weight loss and HbA1c reduction with favorable tolerability."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Safiglipron, an oral GLP-1 receptor agonist, demonstrates potential for weight loss and HbA1c reduction with favorable tolerability.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

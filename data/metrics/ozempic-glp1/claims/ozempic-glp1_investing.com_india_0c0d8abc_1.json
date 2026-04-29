@@ -1,0 +1,204 @@
+{
+  "claim": {
+    "text": "Zealand Pharma's stock is currently undervalued.",
+    "subject": "Zealand Pharma stock",
+    "assertion": "is undervalued",
+    "framing": "market analysis",
+    "stance": "pro",
+    "confidence": 0.8,
+    "arousal": "low",
+    "register": "journalistic",
+    "id": "ozempic-glp1_investing.com_india_0c0d8abc_1",
+    "cluster_id": "clu_ozempic-glp1_011",
+    "concept_id": "concept_ozempic-glp1_000",
+    "first_seen_platform": "investing.com_india",
+    "first_seen_timestamp": "2026-04-29T17:06:10Z",
+    "source_document_id": "f65fcc2e117ef3a8",
+    "source_platform": "investing.com_india",
+    "source_timestamp": "2026-04-29T17:06:10Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "elite_media"
+  },
+  "momentum": {
+    "value": 0.405,
+    "confidence_interval": [
+      0.305,
+      0.505
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.405
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0,
+    "friction_quadrant": "dead"
+  },
+  "salience": {
+    "value": 0.3098,
+    "confidence_interval": [
+      0.183,
+      0.4366
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3098
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0,
+    "confidence_interval": [
+      0,
+      0.15
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.15,
+    "confidence_interval": [
+      0.0112,
+      0.2888
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.15
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 0.9615,
+    "confidence_interval": [
+      0.8836,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.9615
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.8,
+    "factors": []
+  },
+  "provenance": {
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-04-29T17:06:10Z",
+    "lead_lag": [
+      {
+        "platform": "Investing.Com India",
+        "lag_hours": 11.4
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_ozempic-glp1_000",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-29T05:40:38+00:00",
+        "claim_id": "ozempic-glp1_investing.com_india_0c0d8abc_1",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Investing.Com India",
+        "timestamp": "2026-04-29T17:06:10+00:00",
+        "claim_id": "ozempic-glp1_investing.com_india_0c0d8abc_1",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "ozempic-glp1_bluesky_95245298_0",
+      "similarity": 0.4569,
+      "text": "Novo Nordisk is a leading company in the GLP-1 drug market."
+    },
+    {
+      "claim_id": "ozempic-glp1_bluesky_64956fa1_0",
+      "similarity": 0.4483,
+      "text": "Novo Nordisk's future is uncertain due to competing factors."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Novo Nordisk's future is uncertain due to competing factors.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Novo Nordisk is a leading company in the GLP-1 drug market.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

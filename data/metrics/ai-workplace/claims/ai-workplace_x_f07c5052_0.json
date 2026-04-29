@@ -9,7 +9,7 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "ai-workplace_x_f07c5052_0",
-    "cluster_id": "clu_ai-workplace_007",
+    "cluster_id": "clu_ai-workplace_002",
     "concept_id": "concept_ai-workplace_002",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-01T22:36:05.000Z",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.5258,
+    "value": null,
     "confidence_interval": [
-      0.4258,
-      0.6258
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5258
-    ],
-    "source_distribution": "production",
-    "source_diversity": 1.0,
-    "bridge_ratio": 1.0,
-    "persistence_windows": 5,
-    "friction": 0.2667,
-    "friction_quadrant": "unopposed_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.2001,
+    "value": null,
     "confidence_interval": [
-      0.0651,
-      0.3351
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.2001
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.2667,
+    "value": null,
     "confidence_interval": [
-      0.1367,
-      0.3967
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.2667
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.25,
+    "value": 0,
     "confidence_interval": [
-      0.1187,
-      0.3813
+      0,
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.25
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.85,
+    "value": null,
     "confidence_interval": [
-      0.7638,
-      0.9362
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.85
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9612,
+    "value": null,
     "confidence_interval": [
-      0.8833,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.9612
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,127 +133,42 @@
     ]
   },
   "provenance": {
-    "first_platform": "Golocalprov",
-    "first_timestamp": "2026-04-01T22:36:05.000Z",
-    "lead_lag": [
-      {
-        "platform": "Bluesky",
-        "lag_hours": 127.9
-      },
-      {
-        "platform": "The Times Of India",
-        "lag_hours": 152.3
-      },
-      {
-        "platform": "X Platform",
-        "lag_hours": 272.6
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_ai-workplace_002",
-    "hops": [
-      {
-        "platform": "Golocalprov",
-        "timestamp": "2026-03-21T11:02:56+00:00",
-        "claim_id": "ai-workplace_x_f07c5052_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-03-26T18:54:38+00:00",
-        "claim_id": "ai-workplace_x_f07c5052_0",
-        "fidelity_to_origin": 0.6716,
-        "fidelity_to_previous": 0.6716
-      },
-      {
-        "platform": "The Times Of India",
-        "timestamp": "2026-03-27T19:20:00+00:00",
-        "claim_id": "ai-workplace_x_f07c5052_0",
-        "fidelity_to_origin": 0.6089,
-        "fidelity_to_previous": 0.9066
-      },
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-01T19:36:30+00:00",
-        "claim_id": "ai-workplace_x_f07c5052_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.4927
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-workplace_x_1c054286_0",
+      "claim_id": "ai-workplace_bluesky_07579283_0",
       "similarity": 1.0,
-      "text": "Artificial intelligence will significantly displace human workers."
+      "text": "Increased investment in AI is leading to job displacement."
     },
     {
-      "claim_id": "ai-workplace_bluesky_2fddf3cb_0",
-      "similarity": 0.9296,
-      "text": "AI's impact on employment is uncertain and may lead to job losses in the future."
-    },
-    {
-      "claim_id": "ai-workplace_bluesky_4af896c4_0",
-      "similarity": 0.9172,
-      "text": "Artificial intelligence and robotics will cause widespread job displacement."
-    },
-    {
-      "claim_id": "ai-workplace_bluesky_31778ba5_0",
-      "similarity": 0.881,
-      "text": "Artificial intelligence will likely lead to job losses."
-    },
-    {
-      "claim_id": "ai-workplace_bluesky_d05b90c0_1",
-      "similarity": 0.881,
-      "text": "AI will cause significant white-collar job losses."
+      "claim_id": "ai-workplace_bluesky_7a93a281_0",
+      "similarity": 0.9149,
+      "text": "AI will eliminate jobs and this is undesirable."
     }
   ],
   "example_content": [
     {
-      "text": "Artificial intelligence will likely lead to job losses.",
+      "text": "AI will eliminate jobs and this is undesirable.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "AI will cause significant white-collar job losses.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Artificial intelligence and robotics will cause widespread job displacement.",
+      "text": "Increased investment in AI is leading to job displacement.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

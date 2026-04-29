@@ -1,0 +1,215 @@
+{
+  "claim": {
+    "text": "OpenAI is considering an initial public offering.",
+    "subject": "OpenAI",
+    "assertion": "may pursue an IPO",
+    "framing": "neutral",
+    "stance": "neutral",
+    "confidence": 0.8,
+    "arousal": "low",
+    "register": "journalistic",
+    "id": "ai-bubble_morningstar_a982c4bc_1",
+    "cluster_id": "clu_ai-bubble_008",
+    "concept_id": "concept_ai-bubble_005",
+    "first_seen_platform": "morningstar",
+    "first_seen_timestamp": "2026-04-27T16:05:07Z",
+    "source_document_id": "e97138a854ff3dff",
+    "source_platform": "morningstar",
+    "source_timestamp": "2026-04-27T16:05:07Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "elite_media"
+  },
+  "momentum": {
+    "value": 0.405,
+    "confidence_interval": [
+      0.305,
+      0.505
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.405
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0.25,
+    "friction_quadrant": "dead"
+  },
+  "salience": {
+    "value": 0.3084,
+    "confidence_interval": [
+      0.1815,
+      0.4353
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3084
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.25,
+    "confidence_interval": [
+      0.1187,
+      0.3813
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.25
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.15,
+    "confidence_interval": [
+      0.0112,
+      0.2888
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.15
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 0.9853,
+    "confidence_interval": [
+      0.9092,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.9853
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.8,
+    "factors": []
+  },
+  "provenance": {
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-04-27T16:05:07Z",
+    "lead_lag": [
+      {
+        "platform": "Morningstar",
+        "lag_hours": 4.6
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_ai-bubble_005",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-27T11:30:17+00:00",
+        "claim_id": "ai-bubble_morningstar_a982c4bc_1",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Morningstar",
+        "timestamp": "2026-04-27T16:05:07+00:00",
+        "claim_id": "ai-bubble_morningstar_a982c4bc_1",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "ai-bubble_bluesky_6f6d74dc_0",
+      "similarity": 0.6651,
+      "text": "OpenAI abandoned its original altruistic mission in favor of pursuing profit."
+    },
+    {
+      "claim_id": "ai-bubble_bluesky_72723fd3_0",
+      "similarity": 0.5895,
+      "text": "The lawsuit between Elon Musk and OpenAI is raising concerns about Microsoft's partnership with OpenAI and the governance of AI development."
+    },
+    {
+      "claim_id": "ai-bubble_bluesky_48da3dcf_0",
+      "similarity": 0.5833,
+      "text": "OpenAI needs to emulate Tesla's strategies to sustain the artificial intelligence bubble."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "OpenAI needs to emulate Tesla's strategies to sustain the artificial intelligence bubble.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "OpenAI abandoned its original altruistic mission in favor of pursuing profit.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The lawsuit between Elon Musk and OpenAI is raising concerns about Microsoft's partnership with OpenAI and the governance of AI development.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

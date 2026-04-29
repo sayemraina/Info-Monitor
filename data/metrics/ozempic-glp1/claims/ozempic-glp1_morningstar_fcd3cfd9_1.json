@@ -1,0 +1,206 @@
+{
+  "claim": {
+    "text": "Lower Medicare ratings are negatively impacting Humana's profits.",
+    "subject": "Medicare ratings",
+    "assertion": "are hurting Humana's bonuses and profits",
+    "framing": "neutral",
+    "stance": "neutral",
+    "confidence": 1.0,
+    "arousal": "low",
+    "register": "journalistic",
+    "id": "ozempic-glp1_morningstar_fcd3cfd9_1",
+    "cluster_id": "clu_ozempic-glp1_020",
+    "concept_id": "concept_ozempic-glp1_000",
+    "first_seen_platform": "morningstar",
+    "first_seen_timestamp": "2026-04-29T17:33:08Z",
+    "source_document_id": "b159d49c7080a115",
+    "source_platform": "morningstar",
+    "source_timestamp": "2026-04-29T17:33:08Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "elite_media"
+  },
+  "momentum": {
+    "value": 0.465,
+    "confidence_interval": [
+      0.365,
+      0.565
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.465
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0,
+    "friction_quadrant": "dead"
+  },
+  "salience": {
+    "value": 0.3037,
+    "confidence_interval": [
+      0.1765,
+      0.4309
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3037
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0,
+    "confidence_interval": [
+      0,
+      0.15
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.15,
+    "confidence_interval": [
+      0.0112,
+      0.2888
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.15
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 0.9608,
+    "confidence_interval": [
+      0.8829,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.9608
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 1.0,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "It News Online",
+    "first_timestamp": "2026-04-29T17:33:08Z",
+    "lead_lag": [
+      {
+        "platform": "Morningstar",
+        "lag_hours": 0.3
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_ozempic-glp1_000",
+    "hops": [
+      {
+        "platform": "It News Online",
+        "timestamp": "2026-04-29T17:16:14+00:00",
+        "claim_id": "ozempic-glp1_morningstar_fcd3cfd9_1",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Morningstar",
+        "timestamp": "2026-04-29T17:33:08+00:00",
+        "claim_id": "ozempic-glp1_morningstar_fcd3cfd9_1",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "ozempic-glp1_it_news_online_67df8f3e_1",
+      "similarity": 0.3801,
+      "text": "Temperature excursions in the healthcare supply chain contribute to significant annual losses for the pharmaceutical industry."
+    },
+    {
+      "claim_id": "ozempic-glp1_it_news_online_67df8f3e_0",
+      "similarity": 0.3096,
+      "text": "The healthcare supply chain system is under pressure due to climate disruption and growing demand for temperature-sensitive medicines."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "The healthcare supply chain system is under pressure due to climate disruption and growing demand for temperature-sensitive medicines.",
+      "platform": "It News Online",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Temperature excursions in the healthcare supply chain contribute to significant annual losses for the pharmaceutical industry.",
+      "platform": "It News Online",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "claim": {
+    "text": "The US President initiated a war against Iran.",
+    "subject": "US foreign policy",
+    "assertion": "initiated a war against Iran",
+    "framing": "neutral",
+    "stance": "neutral",
+    "confidence": 0.9,
+    "arousal": "medium",
+    "register": "journalistic",
+    "id": "war-on-iran_france24_79061492_0",
+    "cluster_id": "clu_war-on-iran_009",
+    "concept_id": "concept_war-on-iran_003",
+    "first_seen_platform": "france24",
+    "first_seen_timestamp": "2026-04-29T15:20:26Z",
+    "source_document_id": "da213d45243623bc",
+    "source_platform": "france24",
+    "source_timestamp": "2026-04-29T15:20:26Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "elite_media"
+  },
+  "momentum": {
+    "value": 0.54,
+    "confidence_interval": [
+      0.44,
+      0.64
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.54
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.75,
+    "bridge_ratio": 0.75,
+    "persistence_windows": 1,
+    "friction": 0.25,
+    "friction_quadrant": "unopposed_advance"
+  },
+  "salience": {
+    "value": 0.3092,
+    "confidence_interval": [
+      0.1824,
+      0.436
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3092
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.25,
+    "confidence_interval": [
+      0.1187,
+      0.3813
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.25
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "France24",
+    "first_timestamp": "2026-04-29T15:20:26Z",
+    "lead_lag": [
+      {
+        "platform": "China National News",
+        "lag_hours": 2.9
+      },
+      {
+        "platform": "Bluesky",
+        "lag_hours": 3.4
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_war-on-iran_003",
+    "hops": [
+      {
+        "platform": "France24",
+        "timestamp": "2026-04-29T15:20:26+00:00",
+        "claim_id": "war-on-iran_france24_79061492_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "China National News",
+        "timestamp": "2026-04-29T18:13:19+00:00",
+        "claim_id": "war-on-iran_france24_79061492_0",
+        "fidelity_to_origin": 0.4029,
+        "fidelity_to_previous": 0.4029
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-29T18:43:07.593000+00:00",
+        "claim_id": "war-on-iran_france24_79061492_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.7446
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "war-on-iran_bluesky_67eac1b2_0",
+      "similarity": 0.665,
+      "text": "The US military intervention in Iran has failed to prevent Iran from acquiring nuclear weapons."
+    },
+    {
+      "claim_id": "war-on-iran_china_national_news_97de9531_1",
+      "similarity": 0.6512,
+      "text": "The US's stated goals in Iran are to destroy its military capabilities and prevent it from acquiring nuclear weapons."
+    },
+    {
+      "claim_id": "war-on-iran_china_national_news_97de9531_2",
+      "similarity": 0.6338,
+      "text": "Israel initiated attacks on Iran, potentially dragging the US into the conflict."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "The US military intervention in Iran has failed to prevent Iran from acquiring nuclear weapons.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The US's stated goals in Iran are to destroy its military capabilities and prevent it from acquiring nuclear weapons.",
+      "platform": "China National News",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Israel initiated attacks on Iran, potentially dragging the US into the conflict.",
+      "platform": "China National News",
+      "confidence": 0.7,
+      "is_influencer_framing": false
+    }
+  ]
+}
