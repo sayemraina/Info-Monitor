@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "immigration_bluesky_10bdc8fb_0",
-    "cluster_id": "clu_immigration_028",
-    "concept_id": "concept_immigration_007",
+    "cluster_id": "clu_immigration_048",
+    "concept_id": "concept_immigration_006",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-29T16:15:14.942Z",
     "source_document_id": "22b90619658090cb",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.925,
+    "value": null,
     "confidence_interval": [
-      0.825,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.925
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.25,
-    "bridge_ratio": 0.25,
-    "persistence_windows": 2,
-    "friction": 1,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.3157,
+    "value": null,
     "confidence_interval": [
-      0.1894,
-      0.442
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3157
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.1,
+    "value": 0,
     "confidence_interval": [
       0,
-      0.2425
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.85,
+    "value": null,
     "confidence_interval": [
-      0.7638,
-      0.9362
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.85
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9674,
+    "value": null,
     "confidence_interval": [
-      0.89,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.9674
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,95 +133,65 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
-    "first_timestamp": "2026-04-29T16:15:14.942Z",
+    "first_platform": "unknown",
+    "first_timestamp": "",
     "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_immigration_007",
-    "hops": [
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T11:42:41.425000+00:00",
-        "claim_id": "immigration_bluesky_10bdc8fb_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      }
-    ],
-    "observation_boundary": "No public antecedent detected"
+    "concept_id": "",
+    "hops": [],
+    "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "immigration_bluesky_8b7cc5ad_1",
-      "similarity": 0.5043,
-      "text": "Republican anti-immigration policies are perceived as evil."
+      "claim_id": "immigration_bluesky_7d981594_0",
+      "similarity": 0.5843,
+      "text": "The U.S. government is unfairly targeting immigrants by imposing large fines for overstaying visas."
     },
     {
-      "claim_id": "immigration_bluesky_3d52cd4b_0",
-      "similarity": 0.4994,
-      "text": "Ending Temporary Protected Status for Haitian and Syrian migrants is cruel."
+      "claim_id": "immigration_bluesky_784b4390_0",
+      "similarity": 0.574,
+      "text": "Federal officials are targeting a Bolivian immigrant for deportation to the Congo."
     },
     {
-      "claim_id": "immigration_bluesky_4b804653_0",
-      "similarity": 0.4704,
-      "text": "Immigration enforcement actions are motivated by cruelty and brutality rather than legitimate policy concerns."
+      "claim_id": "immigration_bluesky_ed10efd3_0",
+      "similarity": 0.5624,
+      "text": "ACT's immigration policy is similar to the discriminatory poll tax imposed on Chinese immigrants in New Zealand from 1881."
     },
     {
-      "claim_id": "immigration_bluesky_49adaa42_0",
-      "similarity": 0.45,
-      "text": "Government immigration enforcement actions are intentionally cruel."
+      "claim_id": "immigration_bluesky_2db61d96_0",
+      "similarity": 0.5437,
+      "text": "Current immigration policies may be discriminatory due to certain restrictions."
     },
     {
-      "claim_id": "immigration_bluesky_71c9a354_0",
-      "similarity": 0.3954,
-      "text": "The Department of Homeland Security is promoting the idea of reducing the US population through extreme measures against immigrants."
+      "claim_id": "immigration_bluesky_7ac4cc1e_0",
+      "similarity": 0.5249,
+      "text": "Current immigration policies are motivated by white supremacist ideology."
     }
   ],
   "example_content": [
     {
-      "text": "Republican anti-immigration policies are perceived as evil.",
+      "text": "ACT's immigration policy is similar to the discriminatory poll tax imposed on Chinese immigrants in New Zealand from 1881.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Ending Temporary Protected Status for Haitian and Syrian migrants is cruel.",
+      "text": "Lynn and Dutton are racist individuals who promoted the Reverse Flynn Effect theory to support anti-immigration policies.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Immigration enforcement actions are motivated by cruelty and brutality rather than legitimate policy concerns.",
+      "text": "The investigation of VA employees for attending vigils and speaking to the press raises concerns about the suppression of free speech.",
       "platform": "Bluesky",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "is_influencer_framing": false
     }
   ]

@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "ai-workplace_bluesky_7cb162af_0",
-    "cluster_id": "clu_ai-workplace_027",
-    "concept_id": "concept_ai-workplace_004",
+    "cluster_id": "clu_ai-workplace_049",
+    "concept_id": "concept_ai-workplace_007",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-29T17:14:58.798Z",
     "source_document_id": "cea0ec1bc8f7d72e",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.54,
+    "value": null,
     "confidence_interval": [
-      0.44,
-      0.64
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.54
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 1,
-    "friction": 0.4,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.3725,
+    "value": null,
     "confidence_interval": [
-      0.2504,
-      0.4946
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3725
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.4,
+    "value": null,
     "confidence_interval": [
-      0.28,
-      0.52
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.4
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0,
     "confidence_interval": [
       0,
-      0.1962
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9048,
+    "value": null,
     "confidence_interval": [
-      0.8227,
-      0.9869
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.9048
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,101 +133,32 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
-    "first_timestamp": "2026-04-29T17:14:58.798Z",
-    "lead_lag": [
-      {
-        "platform": "X Platform",
-        "lag_hours": 16.7
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_ai-workplace_004",
-    "hops": [
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-28T22:55:56.315000+00:00",
-        "claim_id": "ai-workplace_bluesky_7cb162af_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-29T15:36:38+00:00",
-        "claim_id": "ai-workplace_bluesky_7cb162af_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-workplace_bluesky_b1f394f2_0",
-      "similarity": 0.3909,
-      "text": "Workers are forming a union due to concerns about potential layoffs."
-    },
-    {
-      "claim_id": "ai-workplace_x_c2350570_0",
-      "similarity": 0.3462,
-      "text": "Incentivizing job creation is more effective for increasing employment than incentivizing work itself."
-    },
-    {
-      "claim_id": "ai-workplace_bluesky_b6a904e5_0",
-      "similarity": 0.308,
-      "text": "Investment in AI companies and products will lead to mass layoffs when the market bubble bursts."
-    },
-    {
-      "claim_id": "ai-workplace_bluesky_bf9ee5e5_0",
-      "similarity": 0.1808,
-      "text": "Corporations prioritize profit over employee well-being."
+      "claim_id": "ai-workplace_x_e05530c4_2",
+      "similarity": 0.4878,
+      "text": "People must stay competitive or be written off."
     }
   ],
   "example_content": [
     {
-      "text": "Corporations prioritize profit over employee well-being.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Investment in AI companies and products will lead to mass layoffs when the market bubble bursts.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Workers are forming a union due to concerns about potential layoffs.",
-      "platform": "Bluesky",
+      "text": "People must stay competitive or be written off.",
+      "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "inflation-cost-of-living_bluesky_33500a76_0",
-    "cluster_id": "clu_inflation-cost-of-living_008",
-    "concept_id": "concept_inflation-cost-of-living_004",
+    "cluster_id": "clu_inflation-cost-of-living_042",
+    "concept_id": "concept_inflation-cost-of-living_001",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-29T17:39:12.378Z",
     "source_document_id": "53cfddd853d5e18e",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.645,
+    "value": null,
     "confidence_interval": [
-      0.545,
-      0.745
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.645
-    ],
-    "source_distribution": "production",
-    "source_diversity": 1.0,
-    "bridge_ratio": 1.0,
-    "persistence_windows": 11,
-    "friction": 0.8571,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.8571,
+    "value": null,
     "confidence_interval": [
-      0.7714,
-      0.9428
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.8571
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.55,
+    "value": 0,
     "confidence_interval": [
-      0.4413,
-      0.6587
+      0,
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.55
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.85,
+    "value": null,
     "confidence_interval": [
-      0.7638,
-      0.9362
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.85
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9897,
+    "value": null,
     "confidence_interval": [
-      0.9139,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.9897
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,127 +133,63 @@
     ]
   },
   "provenance": {
-    "first_platform": "The Atlantic",
-    "first_timestamp": "2026-04-29T17:39:12.378Z",
-    "lead_lag": [
-      {
-        "platform": "Bluesky",
-        "lag_hours": 3.1
-      },
-      {
-        "platform": "X Platform",
-        "lag_hours": 8.0
-      },
-      {
-        "platform": "Legit.Ng   Nigeria News.",
-        "lag_hours": 8.8
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_inflation-cost-of-living_004",
-    "hops": [
-      {
-        "platform": "The Atlantic",
-        "timestamp": "2026-04-29T10:00:00+00:00",
-        "claim_id": "inflation-cost-of-living_bluesky_33500a76_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T13:06:35.803000+00:00",
-        "claim_id": "inflation-cost-of-living_bluesky_33500a76_0",
-        "fidelity_to_origin": 0.7534,
-        "fidelity_to_previous": 0.7534
-      },
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-29T17:57:54+00:00",
-        "claim_id": "inflation-cost-of-living_bluesky_33500a76_0",
-        "fidelity_to_origin": 0.3685,
-        "fidelity_to_previous": 0.4891
-      },
-      {
-        "platform": "Legit.Ng   Nigeria News.",
-        "timestamp": "2026-04-29T18:49:42+00:00",
-        "claim_id": "inflation-cost-of-living_bluesky_33500a76_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.8141
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "inflation-cost-of-living_bluesky_e9c55104_0",
-      "similarity": 0.6614,
-      "text": "Trump's economic policies are significantly increasing the cost of living for average taxpayers."
+      "claim_id": "inflation-cost-of-living_bluesky_ccb0c416_0",
+      "similarity": 0.7414,
+      "text": "Donald Trump's policies as president did not lower the cost of living for people."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_13c3d720_0",
-      "similarity": 0.6586,
-      "text": "Donald Trump is responsible for the current cost of living crisis."
+      "claim_id": "inflation-cost-of-living_bluesky_5043bf49_0",
+      "similarity": 0.7311,
+      "text": "Donald Trump's policies are responsible for the rising cost of living in California."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_5e954e34_0",
-      "similarity": 0.6427,
-      "text": "Donald Trump's handling of inflation was worse than any other president in recent history."
+      "claim_id": "inflation-cost-of-living_bluesky_4dbbe388_0",
+      "similarity": 0.6732,
+      "text": "President Trump's policies are responsible for the current inflation and economic pessimism."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_06df57b0_0",
-      "similarity": 0.618,
-      "text": "Donald Trump's inflation statistics are the worst of any president in recent history."
+      "claim_id": "inflation-cost-of-living_bluesky_92bbf875_0",
+      "similarity": 0.6563,
+      "text": "Donald Trump is responsible for the high cost of living."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_16892b34_0",
-      "similarity": 0.6146,
-      "text": "Trump's policies are responsible for high fuel prices and the increased cost of living in America."
+      "claim_id": "inflation-cost-of-living_bluesky_65c1f741_1",
+      "similarity": 0.6486,
+      "text": "Donald Trump's policies, including tariffs, taxes, and healthcare policies, have negatively impacted Americans by increasing inflation and prices."
     }
   ],
   "example_content": [
     {
-      "text": "Trump's policies are responsible for high fuel prices and the increased cost of living in America.",
+      "text": "Donald Trump's policies and demands are contributing to increased cost of living for Americans.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Donald Trump's inflation record is the worst of any president.",
+      "text": "Donald Trump is responsible for the high cost of living.",
       "platform": "Bluesky",
-      "confidence": 0.9,
+      "confidence": 0.6,
       "is_influencer_framing": false
     },
     {
-      "text": "Trump's economic policies are significantly increasing the cost of living for average taxpayers.",
+      "text": "The Jones Act and reliance on diesel freighters and air freight contribute to a higher cost of living in affected areas.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

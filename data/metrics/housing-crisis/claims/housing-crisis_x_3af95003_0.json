@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "housing-crisis_x_3af95003_0",
-    "cluster_id": "clu_housing-crisis_031",
-    "concept_id": "concept_housing-crisis_007",
+    "cluster_id": "clu_housing-crisis_027",
+    "concept_id": "concept_housing-crisis_000",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-29T18:19:06.000Z",
     "source_document_id": "x_2049554079861616837",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.54,
+    "value": null,
     "confidence_interval": [
-      0.44,
-      0.64
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.54
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 2,
-    "friction": 0.6667,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.3135,
+    "value": null,
     "confidence_interval": [
-      0.187,
-      0.44
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3135
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.6667,
+    "value": null,
     "confidence_interval": [
-      0.5667,
-      0.7667
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.6667
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.1,
+    "value": 0,
     "confidence_interval": [
       0,
-      0.2425
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,106 +133,64 @@
     ]
   },
   "provenance": {
-    "first_platform": "X Platform",
-    "first_timestamp": "2026-04-29T18:19:06.000Z",
-    "lead_lag": [
-      {
-        "platform": "Crypto Briefing",
-        "lag_hours": 2.5
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_housing-crisis_007",
-    "hops": [
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-29T15:11:17+00:00",
-        "claim_id": "housing-crisis_x_3af95003_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Crypto Briefing",
-        "timestamp": "2026-04-29T17:43:24+00:00",
-        "claim_id": "housing-crisis_x_3af95003_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "housing-crisis_x_f5561e9a_0",
-      "similarity": 0.5581,
-      "text": "Investing in the University of California is crucial to address the housing crisis and secure federal research funding."
+      "claim_id": "housing-crisis_bluesky_428e4ac2_1",
+      "similarity": 0.5604,
+      "text": "Farmland in the central San Joaquin Valley is increasingly becoming fallow, with limited potential for housing development due to its distance from employment centers."
     },
     {
-      "claim_id": "housing-crisis_x_73caca0d_0",
-      "similarity": 0.5569,
-      "text": "Specific measures can effectively address the housing affordability crisis in the Bay Area."
+      "claim_id": "housing-crisis_reason_5f0c166d_0",
+      "similarity": 0.498,
+      "text": "California's Environmental Quality Act (CEQA) is a major impediment to development and construction projects."
     },
     {
-      "claim_id": "housing-crisis_crypto_briefing_af4b1b3f_0",
-      "similarity": 0.5241,
-      "text": "California's economic situation is dire despite its large economy."
+      "claim_id": "housing-crisis_reason_5f0c166d_1",
+      "similarity": 0.4549,
+      "text": "Reforming CEQA by creating binding timelines for reviews and lawsuits will expedite essential projects like housing and infrastructure."
     },
     {
-      "claim_id": "housing-crisis_crypto_briefing_af4b1b3f_1",
-      "similarity": 0.4853,
-      "text": "California's tax structure disproportionately affects low-income workers."
+      "claim_id": "housing-crisis_the_orange_county_register_bd946796_1",
+      "similarity": 0.3947,
+      "text": "Cuts to public education, healthcare, housing, homelessness prevention, and public safety are unacceptable when balancing the budget."
     },
     {
-      "claim_id": "housing-crisis_crypto_briefing_af4b1b3f_2",
-      "similarity": 0.4102,
-      "text": "High taxes in California are driving wealth and investment out of the state."
+      "claim_id": "housing-crisis_the_orange_county_register_bd946796_0",
+      "similarity": 0.3889,
+      "text": "California should address budget deficits through a combination of spending cuts and increased revenue."
     }
   ],
   "example_content": [
     {
-      "text": "California's economic situation is dire despite its large economy.",
-      "platform": "Crypto Briefing",
+      "text": "California's wine grape industry faces a crisis due to the lack of alternative crops for farmers.",
+      "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "California's tax structure disproportionately affects low-income workers.",
-      "platform": "Crypto Briefing",
+      "text": "Farmland in the central San Joaquin Valley is increasingly becoming fallow, with limited potential for housing development due to its distance from employment centers.",
+      "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "High taxes in California are driving wealth and investment out of the state.",
-      "platform": "Crypto Briefing",
+      "text": "California should address budget deficits through a combination of spending cuts and increased revenue.",
+      "platform": "The Orange County Register",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

@@ -9,8 +9,8 @@
     "arousal": "low",
     "register": "vernacular",
     "id": "ozempic-glp1_x_601f6728_0",
-    "cluster_id": "clu_ozempic-glp1_025",
-    "concept_id": "concept_ozempic-glp1_001",
+    "cluster_id": "clu_ozempic-glp1_034",
+    "concept_id": "concept_ozempic-glp1_002",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-29T17:38:06.000Z",
     "source_document_id": "x_2049543761634463916",
@@ -24,37 +24,39 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.435,
+    "value": null,
     "confidence_interval": [
-      0.335,
-      0.535
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.435
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 2,
-    "friction": 0,
-    "friction_quadrant": "dead"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.3276,
+    "value": null,
     "confidence_interval": [
-      0.2022,
-      0.453
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3276
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
+    "value": null,
+    "confidence_interval": [
+      0,
+      0
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [],
+    "source_distribution": "production"
+  },
+  "persistence": {
     "value": 0,
     "confidence_interval": [
       0,
@@ -67,51 +69,62 @@
     ],
     "source_distribution": "production"
   },
-  "persistence": {
-    "value": 0.1,
+  "arousal": {
+    "value": null,
     "confidence_interval": [
       0,
-      0.2425
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.1
-    ],
-    "source_distribution": "production"
-  },
-  "arousal": {
-    "value": 0.15,
-    "confidence_interval": [
-      0.0112,
-      0.2888
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [
-      0.15
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9528,
+    "value": null,
     "confidence_interval": [
-      0.8743,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.9528
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,107 +133,65 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
-    "first_timestamp": "2026-04-29T17:38:06.000Z",
-    "lead_lag": [
-      {
-        "platform": "X Platform",
-        "lag_hours": 2.5
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_ozempic-glp1_001",
-    "hops": [
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T15:06:47.736000+00:00",
-        "claim_id": "ozempic-glp1_x_601f6728_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-29T17:36:38+00:00",
-        "claim_id": "ozempic-glp1_x_601f6728_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ozempic-glp1_x_1c1b5c25_0",
-      "similarity": 0.6974,
-      "text": "Ozempic is very commonly used in California."
+      "claim_id": "ozempic-glp1_bluesky_87038601_0",
+      "similarity": 0.7646,
+      "text": "There is excessive discussion about Ozempic."
     },
     {
-      "claim_id": "ozempic-glp1_x_145dea88_0",
-      "similarity": 0.6588,
-      "text": "Ozempic is being used on athletes."
+      "claim_id": "ozempic-glp1_x_e3f8d2dc_0",
+      "similarity": 0.707,
+      "text": "Ozempic is being overused."
     },
     {
-      "claim_id": "ozempic-glp1_x_77bee223_0",
-      "similarity": 0.6502,
-      "text": "Wealthy individuals are using Ozempic."
+      "claim_id": "ozempic-glp1_x_41d04eb2_0",
+      "similarity": 0.707,
+      "text": "Ozempic is being overused by people in positions of power."
     },
     {
-      "claim_id": "ozempic-glp1_bluesky_e2479564_0",
-      "similarity": 0.6354,
-      "text": "Societal trends, including the use of drugs like Ozempic for weight loss, are influenced by and connected to political factors."
+      "claim_id": "ozempic-glp1_x_61d2766b_0",
+      "similarity": 0.6912,
+      "text": "The promotion of Ozempic is becoming overly pervasive."
     },
     {
-      "claim_id": "ozempic-glp1_x_ac7b2253_0",
-      "similarity": 0.6079,
-      "text": "Emma Stone has not used Ozempic."
+      "claim_id": "ozempic-glp1_x_dc33c823_0",
+      "similarity": 0.6868,
+      "text": "Ozempic is being prescribed too readily."
     }
   ],
   "example_content": [
     {
-      "text": "Elise Stefanik does not use Ozempic.",
+      "text": "Advertisements for Ozempic are portraying users of the drug as a marginalized group.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Societal trends, including the use of drugs like Ozempic for weight loss, are influenced by and connected to political factors.",
+      "text": "There is excessive discussion about Ozempic.",
       "platform": "Bluesky",
-      "confidence": 0.8,
+      "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Wealthy individuals are using Ozempic.",
+      "text": "Ozempic is being overused.",
       "platform": "X Platform",
-      "confidence": 0.7,
+      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

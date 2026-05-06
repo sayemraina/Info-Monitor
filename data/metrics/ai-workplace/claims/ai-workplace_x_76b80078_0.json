@@ -9,7 +9,7 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "ai-workplace_x_76b80078_0",
-    "cluster_id": "clu_ai-workplace_003",
+    "cluster_id": "clu_ai-workplace_029",
     "concept_id": "concept_ai-workplace_002",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-02T16:45:39.000Z",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.645,
+    "value": null,
     "confidence_interval": [
-      0.545,
-      0.745
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.645
-    ],
-    "source_distribution": "production",
-    "source_diversity": 1.0,
-    "bridge_ratio": 1.0,
-    "persistence_windows": 10,
-    "friction": 0.3,
-    "friction_quadrant": "unopposed_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.3113,
+    "value": null,
     "confidence_interval": [
-      0.1846,
-      0.438
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3113
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.3,
+    "value": null,
     "confidence_interval": [
-      0.1725,
-      0.4275
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.5,
+    "value": 0,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.5
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.85,
+    "value": null,
     "confidence_interval": [
-      0.7638,
-      0.9362
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.85
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9612,
+    "value": null,
     "confidence_interval": [
-      0.8833,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.9612
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,153 +133,58 @@
     ]
   },
   "provenance": {
-    "first_platform": "Hindustan Times",
-    "first_timestamp": "2026-04-02T16:45:39.000Z",
-    "lead_lag": [
-      {
-        "platform": "American Enterprise Institute ",
-        "lag_hours": 132.0
-      },
-      {
-        "platform": "Yahoo",
-        "lag_hours": 155.6
-      },
-      {
-        "platform": "Indy Week",
-        "lag_hours": 157.1
-      },
-      {
-        "platform": "Bluesky",
-        "lag_hours": 310.0
-      },
-      {
-        "platform": "X Platform",
-        "lag_hours": 452.4
-      },
-      {
-        "platform": "Inman",
-        "lag_hours": 479.6
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_ai-workplace_002",
-    "hops": [
-      {
-        "platform": "Hindustan Times",
-        "timestamp": "2026-03-14T08:03:22+00:00",
-        "claim_id": "ai-workplace_x_76b80078_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "American Enterprise Institute ",
-        "timestamp": "2026-03-19T20:03:25+00:00",
-        "claim_id": "ai-workplace_x_76b80078_0",
-        "fidelity_to_origin": 0.8073,
-        "fidelity_to_previous": 0.8073
-      },
-      {
-        "platform": "Yahoo",
-        "timestamp": "2026-03-20T19:39:09+00:00",
-        "claim_id": "ai-workplace_x_76b80078_0",
-        "fidelity_to_origin": 0.7729,
-        "fidelity_to_previous": 0.9574
-      },
-      {
-        "platform": "Indy Week",
-        "timestamp": "2026-03-20T21:10:25+00:00",
-        "claim_id": "ai-workplace_x_76b80078_0",
-        "fidelity_to_origin": 0.7707,
-        "fidelity_to_previous": 0.9972
-      },
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-03-27T06:01:25.567000+00:00",
-        "claim_id": "ai-workplace_x_76b80078_0",
-        "fidelity_to_origin": 0.5476,
-        "fidelity_to_previous": 0.7105
-      },
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-02T04:29:18+00:00",
-        "claim_id": "ai-workplace_x_76b80078_0",
-        "fidelity_to_origin": 0.3397,
-        "fidelity_to_previous": 0.6203
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-workplace_bluesky_6c97317c_1",
-      "similarity": 0.8616,
-      "text": "Companies are citing AI as a justification for workforce reductions."
+      "claim_id": "ai-workplace_bluesky_cf14a7b6_0",
+      "similarity": 1.0,
+      "text": "AI technologies are causing job losses across various industries."
     },
     {
-      "claim_id": "ai-workplace_bluesky_5832f8fc_0",
-      "similarity": 0.8488,
-      "text": "AI is not the primary cause of tech workforce reductions."
+      "claim_id": "ai-workplace_bluesky_7c933fa3_0",
+      "similarity": 1.0,
+      "text": "Increased investment in AI infrastructure is causing tech companies to lay off employees."
     },
     {
-      "claim_id": "ai-workplace_bluesky_d05b90c0_0",
-      "similarity": 0.7583,
-      "text": "Oracle's investments in AI infrastructure are responsible for recent layoffs."
+      "claim_id": "ai-workplace_bluesky_e949714d_0",
+      "similarity": 0.919,
+      "text": "AI is not currently causing net job losses in white-collar sectors."
     },
     {
-      "claim_id": "ai-workplace_bluesky_031002c2_0",
-      "similarity": 0.7504,
-      "text": "Layoffs in the AI and big tech industries are widespread and will negatively impact the economy."
-    },
-    {
-      "claim_id": "ai-workplace_bluesky_7049e621_0",
-      "similarity": 0.7059,
-      "text": "Companies investing heavily in AI are likely to experience financial instability and workforce reductions."
+      "claim_id": "ai-workplace_x_9cb0cf85_1",
+      "similarity": 0.7904,
+      "text": "The increasing productivity from AI is not translating into a higher standard of living for workers."
     }
   ],
   "example_content": [
     {
-      "text": "Layoffs in the AI and big tech industries are widespread and will negatively impact the economy.",
+      "text": "AI technologies are causing job losses across various industries.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Oracle's investments in AI infrastructure are responsible for recent layoffs.",
+      "text": "Increased investment in AI infrastructure is causing tech companies to lay off employees.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The Republican Party has a plan to fundamentally change America.",
+      "text": "AI is not currently causing net job losses in white-collar sectors.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "inflation-cost-of-living_bluesky_9f2e3212_0",
-    "cluster_id": "clu_inflation-cost-of-living_004",
-    "concept_id": "concept_inflation-cost-of-living_002",
+    "cluster_id": "clu_inflation-cost-of-living_005",
+    "concept_id": "concept_inflation-cost-of-living_003",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-29T13:37:49.298Z",
     "source_document_id": "b6d412aa24b72cd2",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.5258,
+    "value": null,
     "confidence_interval": [
-      0.4258,
-      0.6258
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5258
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.25,
-    "bridge_ratio": 0.25,
-    "persistence_windows": 3,
-    "friction": 0.4,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.3432,
+    "value": null,
     "confidence_interval": [
-      0.2189,
-      0.4675
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3432
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.4,
+    "value": null,
     "confidence_interval": [
-      0.28,
-      0.52
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.4
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.15,
+    "value": 0,
     "confidence_interval": [
-      0.0112,
-      0.2888
+      0,
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.15
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.85,
+    "value": null,
     "confidence_interval": [
-      0.7638,
-      0.9362
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.85
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,93 +133,63 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
-    "first_timestamp": "2026-04-29T13:37:49.298Z",
+    "first_platform": "unknown",
+    "first_timestamp": "",
     "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_inflation-cost-of-living_002",
-    "hops": [
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T10:26:09.016000+00:00",
-        "claim_id": "inflation-cost-of-living_bluesky_9f2e3212_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      }
-    ],
-    "observation_boundary": "No public antecedent detected"
+    "concept_id": "",
+    "hops": [],
+    "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "inflation-cost-of-living_bluesky_23d577b8_0",
-      "similarity": 0.5557,
-      "text": "Surveillance pricing, which uses personal data to set prices, is being banned in Maryland grocery stores."
+      "claim_id": "inflation-cost-of-living_bluesky_8169a0cd_0",
+      "similarity": 0.4305,
+      "text": "Grocery stores with clearly marked prices are more likely to succeed due to consumer preference for price transparency."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_23d577b8_1",
-      "similarity": 0.4115,
-      "text": "The Federal Trade Commission has found examples of surveillance pricing in various retail sectors."
+      "claim_id": "inflation-cost-of-living_bluesky_b68e8545_2",
+      "similarity": 0.4009,
+      "text": "Healthcare and grocery prices are too high and need to be reduced."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_8e96756c_0",
-      "similarity": 0.4096,
-      "text": "Supermarkets are engaging in profiteering practices."
+      "claim_id": "inflation-cost-of-living_bluesky_1dc6742b_0",
+      "similarity": 0.3342,
+      "text": "Rising fuel costs will lead to increased grocery prices due to transportation costs."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_295d27ca_0",
-      "similarity": 0.3606,
-      "text": "Conservative politicians, including Pierre Poilievre, are acting in bad faith regarding addressing high grocery prices."
+      "claim_id": "inflation-cost-of-living_bluesky_63ced755_1",
+      "similarity": 0.3145,
+      "text": "Eating small bites ice cream can lead to increased consumption and expense."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_4be8c14a_1",
-      "similarity": 0.3543,
-      "text": "Grocery and gas prices are excessively high."
+      "claim_id": "inflation-cost-of-living_bluesky_65e4178d_0",
+      "similarity": 0.3023,
+      "text": "Grocery prices have increased significantly, and the availability of products has decreased."
     }
   ],
   "example_content": [
     {
-      "text": "Supermarkets are engaging in profiteering practices.",
+      "text": "Small bites ice cream is an example of shrinkflation.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Conservative politicians, including Pierre Poilievre, are acting in bad faith regarding addressing high grocery prices.",
+      "text": "Eating small bites ice cream can lead to increased consumption and expense.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Grocery prices in Canada have stopped increasing, but remain unaffordable for many.",
+      "text": "Grocery prices have increased significantly, and the availability of products has decreased.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

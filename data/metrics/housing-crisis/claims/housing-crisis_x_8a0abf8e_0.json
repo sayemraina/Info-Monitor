@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "housing-crisis_x_8a0abf8e_0",
-    "cluster_id": "clu_housing-crisis_015",
-    "concept_id": "concept_housing-crisis_000",
+    "cluster_id": "clu_housing-crisis_031",
+    "concept_id": "concept_housing-crisis_002",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-29T15:26:54.000Z",
     "source_document_id": "x_2049510746984173640",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.4444,
+    "value": null,
     "confidence_interval": [
-      0.3444,
-      0.5444
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.4444
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.25,
-    "bridge_ratio": 0.25,
-    "persistence_windows": 4,
-    "friction": 0.1667,
-    "friction_quadrant": "dead"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.4538,
+    "value": null,
     "confidence_interval": [
-      0.3378,
-      0.5698
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.4538
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.1667,
+    "value": null,
     "confidence_interval": [
-      0.0292,
-      0.3042
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.1667
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.2,
+    "value": 0,
     "confidence_interval": [
-      0.065,
-      0.335
+      0,
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9925,
+    "value": null,
     "confidence_interval": [
-      0.9169,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.9925
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,94 +133,64 @@
     ]
   },
   "provenance": {
-    "first_platform": "X Platform",
-    "first_timestamp": "2026-04-29T15:26:54.000Z",
+    "first_platform": "unknown",
+    "first_timestamp": "",
     "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_housing-crisis_000",
-    "hops": [
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-29T11:20:31+00:00",
-        "claim_id": "housing-crisis_x_8a0abf8e_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      }
-    ],
-    "observation_boundary": "No public antecedent detected"
+    "concept_id": "",
+    "hops": [],
+    "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "housing-crisis_x_4fee9733_0",
-      "similarity": 0.769,
-      "text": "The Federal Reserve's accumulation of mortgage-backed securities since 2009 has caused the housing crisis."
+      "claim_id": "housing-crisis_x_ee28a1a2_0",
+      "similarity": 0.7974,
+      "text": "The housing crisis is primarily caused by insufficient housing supply relative to demand."
     },
     {
-      "claim_id": "housing-crisis_x_36d8ea46_0",
-      "similarity": 0.748,
-      "text": "The housing crisis is caused by a lack of affordability, not a shortage of housing."
+      "claim_id": "housing-crisis_bluesky_6d9372bd_0",
+      "similarity": 0.7263,
+      "text": "Many full-time workers in America are unable to afford stable housing."
     },
     {
-      "claim_id": "housing-crisis_x_8a0abf8e_1",
-      "similarity": 0.7148,
-      "text": "The claim that a shortage of houses is the cause of the housing crisis is false."
+      "claim_id": "housing-crisis_x_81b78bbf_0",
+      "similarity": 0.7231,
+      "text": "The housing affordability crisis is primarily caused by state governments and legislatures, not corporations."
     },
     {
-      "claim_id": "housing-crisis_x_8d56edd4_0",
-      "similarity": 0.7135,
-      "text": "The housing affordability crisis is exacerbated by a sense of entitlement."
+      "claim_id": "housing-crisis_bluesky_f16865ef_0",
+      "similarity": 0.7186,
+      "text": "The housing crisis is caused by a lack of housing supply."
     },
     {
-      "claim_id": "housing-crisis_x_36d8d293_0",
-      "similarity": 0.6783,
-      "text": "Union power, litigation, and climate regulations are the primary causes of the housing crisis in California."
+      "claim_id": "housing-crisis_x_81b78bbf_1",
+      "similarity": 0.7112,
+      "text": "Cities also contributed to the housing crisis."
     }
   ],
   "example_content": [
     {
-      "text": "The London housing crisis is caused by a lack of affordability, not a shortage of housing.",
-      "platform": "X Platform",
+      "text": "The housing affordability crisis is primarily caused by a lack of housing supply.",
+      "platform": "Bluesky",
+      "confidence": 1.0,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The housing crisis is caused by a lack of housing supply.",
+      "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The Democratic Alliance (DA) is responsible for the housing crisis in Cape Town due to their governance over the past 20 years.",
-      "platform": "X Platform",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "The housing crisis is caused by a lack of affordability, not a shortage of housing.",
-      "platform": "X Platform",
+      "text": "Many full-time workers in America are unable to afford stable housing.",
+      "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "israel-palestine_bluesky_1676b9bf_0",
-    "cluster_id": "clu_israel-palestine_027",
-    "concept_id": "concept_israel-palestine_001",
+    "cluster_id": "clu_israel-palestine_004",
+    "concept_id": "concept_israel-palestine_003",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-29T18:57:29.115Z",
     "source_document_id": "67aa2d82f2a99f9a",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.54,
+    "value": null,
     "confidence_interval": [
-      0.44,
-      0.64
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.54
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 4,
-    "friction": 0.1538,
-    "friction_quadrant": "unopposed_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.6885,
+    "value": null,
     "confidence_interval": [
-      0.5901,
-      0.7869
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.6885
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.1538,
+    "value": null,
     "confidence_interval": [
-      0.0153,
-      0.2923
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.1538
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.2,
+    "value": 0,
     "confidence_interval": [
-      0.065,
-      0.335
+      0,
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,105 +133,63 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
-    "first_timestamp": "2026-04-29T18:57:29.115Z",
-    "lead_lag": [
-      {
-        "platform": "France24",
-        "lag_hours": 0.3
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_israel-palestine_001",
-    "hops": [
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T18:14:11.507000+00:00",
-        "claim_id": "israel-palestine_bluesky_1676b9bf_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "France24",
-        "timestamp": "2026-04-29T18:30:23+00:00",
-        "claim_id": "israel-palestine_bluesky_1676b9bf_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "israel-palestine_bluesky_288e1e7e_0",
-      "similarity": 0.5918,
-      "text": "Russia's proposal for a ceasefire is motivated by its military and economic struggles."
+      "claim_id": "israel-palestine_bluesky_106b873a_0",
+      "similarity": 0.5712,
+      "text": "Russia should not be granted a ceasefire in Ukraine because it did not honor a previous ceasefire."
     },
     {
-      "claim_id": "israel-palestine_bluesky_51805c5a_0",
-      "similarity": 0.4869,
-      "text": "Vladimir Putin likely wants a ceasefire in the Israel-Palestine conflict to distract from Ukraine's attacks on Russian oil production."
+      "claim_id": "israel-palestine_bluesky_764026e4_0",
+      "similarity": 0.5286,
+      "text": "Strikes on Crimea by Ukraine have nullified a planned truce for May 9th."
     },
     {
-      "claim_id": "israel-palestine_bluesky_96f27817_1",
-      "similarity": 0.4664,
-      "text": "Donald Trump will likely blame Ukraine if they reject a ceasefire, regardless of the actual circumstances."
+      "claim_id": "israel-palestine_bluesky_9314206d_0",
+      "similarity": 0.5233,
+      "text": "Russia violated a ceasefire declared by Ukraine by striking an industrial facility in the Zaporizhzhia region."
     },
     {
-      "claim_id": "israel-palestine_bluesky_288e1e7e_1",
-      "similarity": 0.4631,
-      "text": "Ukraine should decide whether or not to accept a ceasefire."
+      "claim_id": "israel-palestine_bluesky_a5229916_0",
+      "similarity": 0.5222,
+      "text": "Ceasefires with Russia are ineffective due to Russia's history of violating them."
     },
     {
-      "claim_id": "israel-palestine_bluesky_aa6e135d_0",
-      "similarity": 0.4547,
-      "text": "Donald Trump suggested a ceasefire in the Russia-Ukraine war to Vladimir Putin."
+      "claim_id": "israel-palestine_bluesky_d6d1d5b5_1",
+      "similarity": 0.5148,
+      "text": "Russia's calls for a ceasefire on May 9 are not genuine diplomatic efforts."
     }
   ],
   "example_content": [
     {
-      "text": "Donald Trump suggested to Vladimir Putin that he implement a small ceasefire.",
+      "text": "Russia violated a ceasefire declared by Ukraine by launching drone and missile attacks.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The conflict in Ukraine should be referred to as an incursion rather than a war.",
+      "text": "Russia violated a ceasefire initiated by Ukraine.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Vladimir Putin likely wants a ceasefire in the Israel-Palestine conflict to distract from Ukraine's attacks on Russian oil production.",
+      "text": "Russia's calls for a ceasefire on May 9 are not genuine diplomatic efforts.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

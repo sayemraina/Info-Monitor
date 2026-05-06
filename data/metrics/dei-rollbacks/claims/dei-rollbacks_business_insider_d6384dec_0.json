@@ -24,37 +24,39 @@
     "source_type": "elite_media"
   },
   "momentum": {
-    "value": 0.54,
+    "value": null,
     "confidence_interval": [
-      0.44,
-      0.64
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.54
-    ],
-    "source_distribution": "production",
-    "source_diversity": 1.0,
-    "bridge_ratio": 1.0,
-    "persistence_windows": 2,
-    "friction": 0,
-    "friction_quadrant": "unopposed_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.3185,
+    "value": null,
     "confidence_interval": [
-      0.1924,
-      0.4446
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3185
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
+    "value": null,
+    "confidence_interval": [
+      0,
+      0
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [],
+    "source_distribution": "production"
+  },
+  "persistence": {
     "value": 0,
     "confidence_interval": [
       0,
@@ -67,51 +69,62 @@
     ],
     "source_distribution": "production"
   },
-  "persistence": {
-    "value": 0.1,
+  "arousal": {
+    "value": null,
     "confidence_interval": [
       0,
-      0.2425
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.1
-    ],
-    "source_distribution": "production"
-  },
-  "arousal": {
-    "value": 0.5,
-    "confidence_interval": [
-      0.3875,
-      0.6125
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,139 +133,64 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
-    "first_timestamp": "2026-04-29T18:07:34Z",
-    "lead_lag": [
-      {
-        "platform": "Black Enterprise",
-        "lag_hours": 2.6
-      },
-      {
-        "platform": "Le·Gal In·Sur·Rec·Tion",
-        "lag_hours": 2.6
-      },
-      {
-        "platform": "Law360.Com",
-        "lag_hours": 3.0
-      },
-      {
-        "platform": "Business Insider",
-        "lag_hours": 3.7
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_dei-rollbacks_001",
-    "hops": [
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T14:23:55.211000+00:00",
-        "claim_id": "dei-rollbacks_business_insider_d6384dec_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Black Enterprise",
-        "timestamp": "2026-04-29T17:00:00+00:00",
-        "claim_id": "dei-rollbacks_business_insider_d6384dec_0",
-        "fidelity_to_origin": 0.5115,
-        "fidelity_to_previous": 0.5115
-      },
-      {
-        "platform": "Le·Gal In·Sur·Rec·Tion",
-        "timestamp": "2026-04-29T17:00:40+00:00",
-        "claim_id": "dei-rollbacks_business_insider_d6384dec_0",
-        "fidelity_to_origin": 0.5094,
-        "fidelity_to_previous": 0.9959
-      },
-      {
-        "platform": "Law360.Com",
-        "timestamp": "2026-04-29T17:24:27+00:00",
-        "claim_id": "dei-rollbacks_business_insider_d6384dec_0",
-        "fidelity_to_origin": 0.435,
-        "fidelity_to_previous": 0.8539
-      },
-      {
-        "platform": "Business Insider",
-        "timestamp": "2026-04-29T18:07:34+00:00",
-        "claim_id": "dei-rollbacks_business_insider_d6384dec_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.6897
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "dei-rollbacks_le·gal_in·sur·rec·tion_77dbd669_0",
-      "similarity": 0.8155,
-      "text": "DEI policies in public projects are controversial and subject to national debate."
+      "claim_id": "dei-rollbacks_bluesky_17bcab05_0",
+      "similarity": 0.7148,
+      "text": "Diversity, equity, and inclusion (DEI) initiatives are ineffective and misguided."
     },
     {
-      "claim_id": "dei-rollbacks_black_enterprise_c8003b65_2",
-      "similarity": 0.7469,
-      "text": "DEI policies that consider race or sex in employment decisions may be illegal."
+      "claim_id": "dei-rollbacks_bluesky_d835b745_0",
+      "similarity": 0.6947,
+      "text": "DEI initiatives may lead to accusations of non-compliance with federal regulations."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_cb0564f7_1",
-      "similarity": 0.735,
-      "text": "Companies' repeal of DEI policies is a reason to boycott them."
+      "claim_id": "dei-rollbacks_bluesky_c6c0e49d_0",
+      "similarity": 0.6639,
+      "text": "South Carolina State University students objected to a speaker due to her opposition to DEI, her pro-life stance, and her association with Trump conservatism."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_fb810bb8_0",
-      "similarity": 0.7197,
-      "text": "The FCC is investigating ABC's diversity, equity, and inclusion policies for potential violations of anti-discrimination rules."
+      "claim_id": "dei-rollbacks_bluesky_f8de1751_0",
+      "similarity": 0.6513,
+      "text": "The organization has released a statement affirming its commitment to equity, diversity, inclusion, belonging, and justice."
     },
     {
-      "claim_id": "dei-rollbacks_law360.com_e64b6bed_1",
-      "similarity": 0.6246,
-      "text": "Contractors face compliance and litigation risks related to DEI practices and should understand the legal constraints of the False Claims Act."
+      "claim_id": "dei-rollbacks_bluesky_62e3ce4b_0",
+      "similarity": 0.6259,
+      "text": "Costco's commitment to DEI gives them a competitive advantage."
     }
   ],
   "example_content": [
     {
-      "text": "Companies' repeal of DEI policies is a reason to boycott them.",
+      "text": "Diversity, equity, and inclusion (DEI) initiatives are ineffective and misguided.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The FCC is investigating ABC's diversity, equity, and inclusion policies for potential violations of anti-discrimination rules.",
+      "text": "Costco's commitment to DEI is a positive factor influencing consumer purchasing decisions.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Contractors face compliance and litigation risks related to DEI practices and should understand the legal constraints of the False Claims Act.",
-      "platform": "Law360.Com",
+      "text": "South Carolina State University students objected to a speaker due to her opposition to DEI, her pro-life stance, and her association with Trump conservatism.",
+      "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

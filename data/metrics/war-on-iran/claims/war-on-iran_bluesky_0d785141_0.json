@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "war-on-iran_bluesky_0d785141_0",
-    "cluster_id": "clu_war-on-iran_024",
-    "concept_id": "concept_war-on-iran_003",
+    "cluster_id": "clu_war-on-iran_044",
+    "concept_id": "concept_war-on-iran_000",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-29T18:33:14.869Z",
     "source_document_id": "b61673f4e7f34e59",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.645,
+    "value": null,
     "confidence_interval": [
-      0.545,
-      0.745
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.645
-    ],
-    "source_distribution": "production",
-    "source_diversity": 1.0,
-    "bridge_ratio": 1.0,
-    "persistence_windows": 3,
-    "friction": 0.4444,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.339,
+    "value": null,
     "confidence_interval": [
-      0.2144,
-      0.4636
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.339
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.4444,
+    "value": null,
     "confidence_interval": [
-      0.3277,
-      0.5611
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.4444
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.15,
+    "value": 0,
     "confidence_interval": [
-      0.0112,
-      0.2888
+      0,
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.15
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.85,
+    "value": null,
     "confidence_interval": [
-      0.7638,
-      0.9362
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.85
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9762,
+    "value": null,
     "confidence_interval": [
-      0.8994,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.9762
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,139 +133,64 @@
     ]
   },
   "provenance": {
-    "first_platform": "The Atlantic",
-    "first_timestamp": "2026-04-29T18:33:14.869Z",
-    "lead_lag": [
-      {
-        "platform": "Bluesky",
-        "lag_hours": 8.2
-      },
-      {
-        "platform": "Https://Www.Firstalert4.Com",
-        "lag_hours": 8.3
-      },
-      {
-        "platform": "Dpa International",
-        "lag_hours": 8.7
-      },
-      {
-        "platform": "The National",
-        "lag_hours": 8.7
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_war-on-iran_003",
-    "hops": [
-      {
-        "platform": "The Atlantic",
-        "timestamp": "2026-04-29T10:00:00+00:00",
-        "claim_id": "war-on-iran_bluesky_0d785141_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T18:14:53.967000+00:00",
-        "claim_id": "war-on-iran_bluesky_0d785141_0",
-        "fidelity_to_origin": 0.3397,
-        "fidelity_to_previous": 0.3397
-      },
-      {
-        "platform": "Https://Www.Firstalert4.Com",
-        "timestamp": "2026-04-29T18:18:35+00:00",
-        "claim_id": "war-on-iran_bluesky_0d785141_0",
-        "fidelity_to_origin": 0.3347,
-        "fidelity_to_previous": 0.9853
-      },
-      {
-        "platform": "Dpa International",
-        "timestamp": "2026-04-29T18:42:18+00:00",
-        "claim_id": "war-on-iran_bluesky_0d785141_0",
-        "fidelity_to_origin": 0.3031,
-        "fidelity_to_previous": 0.9056
-      },
-      {
-        "platform": "The National",
-        "timestamp": "2026-04-29T18:44:37+00:00",
-        "claim_id": "war-on-iran_bluesky_0d785141_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9898
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "war-on-iran_the_atlantic_bcc4c8ff_0",
-      "similarity": 0.5674,
-      "text": "Donald Trump believes he is one of the most powerful people in history."
+      "claim_id": "war-on-iran_bluesky_b4df7998_0",
+      "similarity": 0.6444,
+      "text": "Donald Trump is mentally unstable."
     },
     {
-      "claim_id": "war-on-iran_the_atlantic_bcc4c8ff_1",
-      "similarity": 0.5103,
-      "text": "Donald Trump's actions as president are driven by a desire to be remembered as a historically great leader."
+      "claim_id": "war-on-iran_x_14ed951f_0",
+      "similarity": 0.5698,
+      "text": "Donald Trump is attempting to intimidate people, including the Pope."
     },
     {
-      "claim_id": "war-on-iran_bluesky_253063ab_1",
-      "similarity": 0.4836,
-      "text": "The actions of Trump and his associates are motivated by greed and a lust for power."
+      "claim_id": "war-on-iran_bluesky_3a429c59_0",
+      "similarity": 0.5435,
+      "text": "Trump's behavior is benefiting the Democratic party in elections."
     },
     {
-      "claim_id": "war-on-iran_https://www.firstalert4.com_45cd0eb7_2",
-      "similarity": 0.457,
-      "text": "The Trump administration's strategy involves excessive violence, threats, and coercion to impose its will on the world."
+      "claim_id": "war-on-iran_bluesky_f3d1987a_1",
+      "similarity": 0.4231,
+      "text": "Vladimir Putin and Donald Trump are aligned in a harmful way."
     },
     {
-      "claim_id": "war-on-iran_the_atlantic_bcc4c8ff_2",
-      "similarity": 0.4398,
-      "text": "Donald Trump's administration believes his actions are guided by what is truly right, not by political interests."
+      "claim_id": "war-on-iran_dw_news_7cd7eef1_0",
+      "similarity": 0.3891,
+      "text": "US President Trump's \"Project Freedom\" may escalate hostilities in the Strait of Hormuz."
     }
   ],
   "example_content": [
     {
-      "text": "The actions of Trump and his associates are motivated by greed and a lust for power.",
-      "platform": "Bluesky",
-      "confidence": 0.8,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "The current administration has initiated military conflicts in Gaza, against Iran, and against American citizens.",
+      "text": "Trump's behavior is benefiting the Democratic party in elections.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The Trump administration's strategy involves excessive violence, threats, and coercion to impose its will on the world.",
-      "platform": "Https://Www.Firstalert4.Com",
+      "text": "Donald Trump is mentally unstable.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Vladimir Putin and Donald Trump are aligned in a harmful way.",
+      "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

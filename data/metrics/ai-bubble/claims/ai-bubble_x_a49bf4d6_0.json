@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "ai-bubble_x_a49bf4d6_0",
-    "cluster_id": "clu_ai-bubble_001",
-    "concept_id": "concept_ai-bubble_001",
+    "cluster_id": "clu_ai-bubble_002",
+    "concept_id": "concept_ai-bubble_000",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-29T17:51:14.000Z",
     "source_document_id": "x_2049547069879124206",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.54,
+    "value": null,
     "confidence_interval": [
-      0.44,
-      0.64
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.54
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.75,
-    "bridge_ratio": 0.75,
-    "persistence_windows": 6,
-    "friction": 0.3333,
-    "friction_quadrant": "unopposed_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.733,
+    "value": null,
     "confidence_interval": [
-      0.638,
-      0.828
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.733
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.3333,
+    "value": null,
     "confidence_interval": [
-      0.2083,
-      0.4583
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3333
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.3,
+    "value": 0,
     "confidence_interval": [
-      0.1725,
-      0.4275
+      0,
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,116 +133,63 @@
     ]
   },
   "provenance": {
-    "first_platform": "El Balad.Com",
-    "first_timestamp": "2026-04-29T17:51:14.000Z",
-    "lead_lag": [
-      {
-        "platform": "The Verge",
-        "lag_hours": 8.5
-      },
-      {
-        "platform": "X Platform",
-        "lag_hours": 10.3
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_ai-bubble_001",
-    "hops": [
-      {
-        "platform": "El Balad.Com",
-        "timestamp": "2026-04-29T05:25:30+00:00",
-        "claim_id": "ai-bubble_x_a49bf4d6_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "The Verge",
-        "timestamp": "2026-04-29T13:57:16+00:00",
-        "claim_id": "ai-bubble_x_a49bf4d6_0",
-        "fidelity_to_origin": 0.4191,
-        "fidelity_to_previous": 0.4191
-      },
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-29T15:42:09+00:00",
-        "claim_id": "ai-bubble_x_a49bf4d6_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.7158
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-bubble_x_eda7423b_0",
+      "claim_id": "ai-bubble_x_c0613393_0",
       "similarity": 0.7866,
-      "text": "The AI market is currently experiencing a bubble due to high market concentration, similar to the Dot-com bubble."
+      "text": "The rapid increase in semiconductor stocks, driven by AI hype, suggests a potential overextension and risk of a market correction."
     },
     {
-      "claim_id": "ai-bubble_x_300e9050_0",
+      "claim_id": "ai-bubble_x_788370cc_0",
       "similarity": 0.7866,
-      "text": "The current concentration in the AI market is similar to that seen before the dot-com bubble burst, suggesting a potential AI bubble."
+      "text": "AI software companies are declining while AI hardware companies are increasing in value, indicating a market bubble."
     },
     {
-      "claim_id": "ai-bubble_x_a74dafcf_0",
-      "similarity": 0.7866,
-      "text": "The current AI market is experiencing a bubble similar to the dot-com bubble."
+      "claim_id": "ai-bubble_x_59b1baef_0",
+      "similarity": 0.7804,
+      "text": "The AI, semiconductor, and memestock markets are currently in a bubble that is likely to burst around 2028."
     },
     {
-      "claim_id": "ai-bubble_x_bd75b015_0",
-      "similarity": 0.7599,
-      "text": "The current AI market is a bubble and is about to burst, similar to previous major market bubbles."
-    },
-    {
-      "claim_id": "ai-bubble_el-balad.com_8426d17c_0",
+      "claim_id": "ai-bubble_x_5000ea21_0",
       "similarity": 0.7542,
-      "text": "The failure of Sora suggests that the generative AI market may be overvalued and built on unsustainable hype."
+      "text": "The current AI market is overvalued to a greater extent than the dot-com bubble was."
+    },
+    {
+      "claim_id": "ai-bubble_x_6b401e8b_0",
+      "similarity": 0.7152,
+      "text": "The impending correction in the AI market will be larger than the dot-com bubble."
     }
   ],
   "example_content": [
     {
-      "text": "The failure of Sora suggests that the generative AI market may be overvalued and built on unsustainable hype.",
-      "platform": "El Balad.Com",
+      "text": "The continued growth of AI is not guaranteed and may be unsustainable.",
+      "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Oracle's stock performance serves as an indicator of the overall health of the AI market.",
-      "platform": "The Verge",
-      "confidence": 0.8,
+      "text": "The current AI market is overvalued to a greater extent than the dot-com bubble was.",
+      "platform": "X Platform",
+      "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The current stock market surge is an artificial bubble driven by hype around artificial intelligence.",
+      "text": "The rapid increase in semiconductor stocks, driven by AI hype, suggests a potential overextension and risk of a market correction.",
       "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false

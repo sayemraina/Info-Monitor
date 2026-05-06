@@ -1,25 +1,25 @@
 {
   "events": [
     {
-      "id": "evt_231718cfb909",
+      "id": "evt_6187a748aff1",
       "type": "contestation_emergence",
-      "timestamp": "2026-04-26T07:54:03.140607+00:00",
-      "claim_id": "dei-rollbacks_bluesky_97d4de55_1",
+      "timestamp": "2026-05-02T21:17:19.601742+00:00",
+      "claim_id": "dei-rollbacks_bluesky_68afe210_0",
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.85,
-      "summary": "Active contestation in \"ICE\" — 20 pro vs 24 anti",
+      "confidence": 0.81,
+      "summary": "Active contestation in \"Affirmative Action\" — 5 pro vs 7 anti",
       "detail": {
-        "cluster_id": "clu_dei-rollbacks_017",
-        "pro_count": 20,
-        "anti_count": 24,
-        "balance": 0.83
+        "cluster_id": "clu_dei-rollbacks_014",
+        "pro_count": 5,
+        "anti_count": 7,
+        "balance": 0.71
       }
     },
     {
-      "id": "evt_8dd8722c3dd7",
+      "id": "evt_6258a9179ea0",
       "type": "phase_transition",
-      "timestamp": "2026-04-26T07:54:03.140607+00:00",
+      "timestamp": "2026-05-02T21:17:19.601742+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
@@ -28,65 +28,65 @@
       "detail": {
         "cluster_id": "clu_dei-rollbacks_000",
         "direction": "radicalizing",
-        "magnitude": 0.761
+        "magnitude": 0.7604
       }
     },
     {
-      "id": "evt_aa7cfefea7ae",
+      "id": "evt_07b47d791147",
       "type": "phase_transition",
-      "timestamp": "2026-04-26T07:54:03.140607+00:00",
-      "claim_id": null,
-      "slice_id": null,
-      "severity": "high",
-      "confidence": 0.81,
-      "summary": "\"Deutsche Telekom and T-Mobile\" cluster is shifting toward more extreme language",
-      "detail": {
-        "cluster_id": "clu_dei-rollbacks_001",
-        "direction": "radicalizing",
-        "magnitude": 0.6871
-      }
-    },
-    {
-      "id": "evt_7168d94b79ec",
-      "type": "phase_transition",
-      "timestamp": "2026-04-26T07:54:03.140607+00:00",
-      "claim_id": null,
-      "slice_id": null,
-      "severity": "high",
-      "confidence": 0.84,
-      "summary": "\"Republican Farm Bill\" cluster is shifting toward more extreme language",
-      "detail": {
-        "cluster_id": "clu_dei-rollbacks_003",
-        "direction": "radicalizing",
-        "magnitude": 0.7944
-      }
-    },
-    {
-      "id": "evt_2794f6b368a8",
-      "type": "phase_transition",
-      "timestamp": "2026-04-26T07:54:03.140607+00:00",
+      "timestamp": "2026-05-02T21:17:19.601742+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
       "confidence": 0.79,
       "summary": "\"Target\" cluster is shifting toward more extreme language",
       "detail": {
-        "cluster_id": "clu_dei-rollbacks_004",
+        "cluster_id": "clu_dei-rollbacks_002",
         "direction": "radicalizing",
-        "magnitude": 0.6344
+        "magnitude": 0.6227
       }
     },
     {
-      "id": "evt_16438bc35ea7",
+      "id": "evt_d1d1861403e7",
+      "type": "phase_transition",
+      "timestamp": "2026-05-02T21:17:19.601742+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.83,
+      "summary": "\"Republican Farm Bill\" cluster is shifting toward more extreme language",
+      "detail": {
+        "cluster_id": "clu_dei-rollbacks_003",
+        "direction": "radicalizing",
+        "magnitude": 0.7664
+      }
+    },
+    {
+      "id": "evt_fb688f874cbd",
+      "type": "phase_transition",
+      "timestamp": "2026-05-02T21:17:19.601742+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.81,
+      "summary": "\"Immigration\" cluster is shifting toward more extreme language",
+      "detail": {
+        "cluster_id": "clu_dei-rollbacks_004",
+        "direction": "radicalizing",
+        "magnitude": 0.6957
+      }
+    },
+    {
+      "id": "evt_8fb345c35e6a",
       "type": "divergence_shift",
-      "timestamp": "2026-04-26T07:54:03.140607+00:00",
+      "timestamp": "2026-05-02T21:17:19.601742+00:00",
       "claim_id": null,
       "slice_id": "bluesky_platform",
       "severity": "high",
       "confidence": 0.95,
       "summary": "Strong narrative split between Bluesky and business_insider",
       "detail": {
-        "jsd": 0.8556,
+        "jsd": 0.8079,
         "platforms": [
           "bluesky",
           "business_insider"
@@ -95,57 +95,73 @@
       }
     },
     {
-      "id": "evt_33cfb64f50a8",
+      "id": "evt_1954ca55c68b",
       "type": "divergence_shift",
-      "timestamp": "2026-04-26T07:54:03.140607+00:00",
-      "claim_id": null,
-      "slice_id": "bluesky_platform",
-      "severity": "high",
-      "confidence": 0.95,
-      "summary": "Strong narrative split between Bluesky and fortune",
-      "detail": {
-        "jsd": 0.9306,
-        "platforms": [
-          "bluesky",
-          "fortune"
-        ],
-        "window_hours": 168
-      }
-    },
-    {
-      "id": "evt_c9e96781aea9",
-      "type": "divergence_shift",
-      "timestamp": "2026-04-26T07:54:03.140607+00:00",
-      "claim_id": null,
-      "slice_id": "bluesky_platform",
-      "severity": "high",
-      "confidence": 0.95,
-      "summary": "Strong narrative split between Bluesky and fox_news",
-      "detail": {
-        "jsd": 1.0,
-        "platforms": [
-          "bluesky",
-          "fox_news"
-        ],
-        "window_hours": 168
-      }
-    },
-    {
-      "id": "evt_bae323eba24b",
-      "type": "divergence_shift",
-      "timestamp": "2026-04-26T07:54:03.140607+00:00",
+      "timestamp": "2026-05-02T21:17:19.601742+00:00",
       "claim_id": null,
       "slice_id": "bluesky_platform",
       "severity": "high",
       "confidence": 0.95,
       "summary": "Strong narrative split between Bluesky and fox_politics",
       "detail": {
-        "jsd": 0.8185,
+        "jsd": 0.9716,
         "platforms": [
           "bluesky",
           "fox_politics"
         ],
         "window_hours": 168
+      }
+    },
+    {
+      "id": "evt_ad4086f21f98",
+      "type": "divergence_shift",
+      "timestamp": "2026-05-02T21:17:19.601742+00:00",
+      "claim_id": null,
+      "slice_id": "bluesky_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Significant narrative divergence between Bluesky and maltatoday.com.mt",
+      "detail": {
+        "jsd": 0.5,
+        "platforms": [
+          "bluesky",
+          "maltatoday.com.mt"
+        ],
+        "window_hours": 168
+      }
+    },
+    {
+      "id": "evt_0a60e2289d0c",
+      "type": "divergence_shift",
+      "timestamp": "2026-05-02T21:17:19.601742+00:00",
+      "claim_id": null,
+      "slice_id": "business_insider_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Strong narrative split between business_insider and fox_politics",
+      "detail": {
+        "jsd": 1.0,
+        "platforms": [
+          "business_insider",
+          "fox_politics"
+        ],
+        "window_hours": 168
+      }
+    },
+    {
+      "id": "evt_a42ea41ebbe7",
+      "type": "arousal_escalation",
+      "timestamp": "2026-05-04T01:17:19.601742+00:00",
+      "claim_id": "dei-rollbacks_bluesky_53449cd2_0",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.81,
+      "summary": "Heated language rising in \"Dollar General\" — 62% emotionally charged claims",
+      "detail": {
+        "cluster_id": "clu_dei-rollbacks_007",
+        "high_arousal_count": 10,
+        "total": 16,
+        "ratio": 0.62
       }
     },
     {
@@ -179,99 +195,131 @@
       "source": "fed_register"
     },
     {
-      "id": "evt_0e142439e365",
+      "id": "evt_a656f1ceed13",
       "type": "lead_lag",
-      "timestamp": "2026-04-24T22:54:03.140607+00:00",
-      "claim_id": "dei-rollbacks_webpronews_ff6f9529_0",
+      "timestamp": "2026-04-29T14:17:19.601742+00:00",
+      "claim_id": "dei-rollbacks_business_insider_985a8a90_0",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.82,
-      "summary": "webpronews leads democratic_underground by ~117h in \"Deutsche Telekom and T-Mobile\"",
+      "confidence": 0.72,
+      "summary": "mother_jones leads the_observer by ~163h in \"Openai\"",
       "detail": {
-        "source_platform": "webpronews",
-        "target_platform": "democratic_underground",
-        "lag_hours": 117.2,
+        "source_platform": "mother_jones",
+        "target_platform": "the_observer",
+        "lag_hours": 163.9,
+        "cluster_id": "clu_dei-rollbacks_000"
+      }
+    },
+    {
+      "id": "evt_ed699030e84b",
+      "type": "lead_lag",
+      "timestamp": "2026-05-02T02:17:19.601742+00:00",
+      "claim_id": "dei-rollbacks_bluesky_1c5844a9_2",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.58,
+      "summary": "black_enterprise leads Bluesky by ~103h in \"Laura Rutledge\"",
+      "detail": {
+        "source_platform": "black_enterprise",
+        "target_platform": "bluesky",
+        "lag_hours": 103.2,
+        "cluster_id": "clu_dei-rollbacks_005"
+      }
+    },
+    {
+      "id": "evt_609a46e2c3a4",
+      "type": "lead_lag",
+      "timestamp": "2026-05-02T17:17:19.601742+00:00",
+      "claim_id": "dei-rollbacks_bluesky_d4cd40e8_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.66,
+      "summary": "rolling_out leads Bluesky by ~88h in \"Disadvantaged Business\"",
+      "detail": {
+        "source_platform": "rolling_out",
+        "target_platform": "bluesky",
+        "lag_hours": 88.8,
         "cluster_id": "clu_dei-rollbacks_001"
+      }
+    },
+    {
+      "id": "evt_2eabf3c2164a",
+      "type": "lead_lag",
+      "timestamp": "2026-05-02T19:17:19.601742+00:00",
+      "claim_id": "dei-rollbacks_bluesky_8d5d22d5_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.9,
+      "summary": "Bluesky leads X Platform by ~86h in \"Target\"",
+      "detail": {
+        "source_platform": "bluesky",
+        "target_platform": "x",
+        "lag_hours": 86.8,
+        "cluster_id": "clu_dei-rollbacks_002"
       }
     },
     {
       "id": "evt_e961fc8ca76b",
       "type": "contestation_emergence",
-      "timestamp": "2026-04-26T07:54:03.140607+00:00",
-      "claim_id": "dei-rollbacks_bluesky_e763e7fb_0",
+      "timestamp": "2026-05-02T21:17:19.601742+00:00",
+      "claim_id": "dei-rollbacks_business_insider_985a8a90_0",
       "slice_id": null,
       "severity": "medium",
       "confidence": 0.78,
-      "summary": "Active contestation in \"Openai\" — 10 pro vs 6 anti",
+      "summary": "Active contestation in \"Openai\" — 3 pro vs 5 anti",
       "detail": {
         "cluster_id": "clu_dei-rollbacks_000",
-        "pro_count": 10,
-        "anti_count": 6,
+        "pro_count": 3,
+        "anti_count": 5,
         "balance": 0.6
+      }
+    },
+    {
+      "id": "evt_231718cfb909",
+      "type": "contestation_emergence",
+      "timestamp": "2026-05-02T21:17:19.601742+00:00",
+      "claim_id": "dei-rollbacks_bluesky_09d64609_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.75,
+      "summary": "Active contestation in \"EEOC\" — 6 pro vs 3 anti",
+      "detail": {
+        "cluster_id": "clu_dei-rollbacks_011",
+        "pro_count": 6,
+        "anti_count": 3,
+        "balance": 0.5
       }
     },
     {
       "id": "evt_ed5c8ab89ad8",
       "type": "contestation_emergence",
-      "timestamp": "2026-04-26T07:54:03.140607+00:00",
-      "claim_id": "dei-rollbacks_bluesky_5f51be6f_0",
+      "timestamp": "2026-05-02T21:17:19.601742+00:00",
+      "claim_id": "dei-rollbacks_bluesky_99577440_0",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.8,
-      "summary": "Active contestation in \"EEOC\" — 6 pro vs 4 anti",
+      "confidence": 0.75,
+      "summary": "Active contestation in \"Donald Trump\" — 3 pro vs 6 anti",
       "detail": {
-        "cluster_id": "clu_dei-rollbacks_021",
-        "pro_count": 6,
-        "anti_count": 4,
-        "balance": 0.67
+        "cluster_id": "clu_dei-rollbacks_013",
+        "pro_count": 3,
+        "anti_count": 6,
+        "balance": 0.5
       }
     },
     {
-      "id": "evt_6187a748aff1",
-      "type": "contestation_emergence",
-      "timestamp": "2026-04-26T07:54:03.140607+00:00",
-      "claim_id": "dei-rollbacks_bluesky_3e5ce369_1",
+      "id": "evt_b03e39cb2921",
+      "type": "arousal_escalation",
+      "timestamp": "2026-05-04T01:17:19.601742+00:00",
+      "claim_id": "dei-rollbacks_bluesky_99577440_0",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.79,
-      "summary": "Active contestation in \"Hamas\" — 5 pro vs 8 anti",
+      "confidence": 0.76,
+      "summary": "Heated language rising in \"Donald Trump\" — 44% emotionally charged claims",
       "detail": {
-        "cluster_id": "clu_dei-rollbacks_022",
-        "pro_count": 5,
-        "anti_count": 8,
-        "balance": 0.62
-      }
-    },
-    {
-      "id": "evt_8253d8d023ce",
-      "type": "lead_lag",
-      "timestamp": "2026-04-26T13:54:03.140607+00:00",
-      "claim_id": "dei-rollbacks_bluesky_e763e7fb_0",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.9,
-      "summary": "Bluesky leads business_insider by ~78h in \"Openai\"",
-      "detail": {
-        "source_platform": "bluesky",
-        "target_platform": "business_insider",
-        "lag_hours": 78.3,
-        "cluster_id": "clu_dei-rollbacks_000"
-      }
-    },
-    {
-      "id": "evt_1e5dbcd27907",
-      "type": "lead_lag",
-      "timestamp": "2026-04-26T13:54:03.140607+00:00",
-      "claim_id": "dei-rollbacks_bluesky_fbf46280_0",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.66,
-      "summary": "castanet leads the_week by ~78h in \"Climate Regulations\"",
-      "detail": {
-        "source_platform": "castanet",
-        "target_platform": "the_week",
-        "lag_hours": 78.9,
-        "cluster_id": "clu_dei-rollbacks_002"
+        "cluster_id": "clu_dei-rollbacks_013",
+        "high_arousal_count": 4,
+        "total": 9,
+        "ratio": 0.44
       }
     },
     {
@@ -343,22 +391,6 @@
       "summary": "General Provisions",
       "detail": "The Farm Credit Administration (FCA, we, us or our) is issuing a final rule amending FCA's business planning requirements to comply with Executive Order 14219.",
       "source": "fed_register"
-    },
-    {
-      "id": "evt_e3d8d8b2dafb",
-      "type": "lead_lag",
-      "timestamp": "2026-04-29T12:54:03.140607+00:00",
-      "claim_id": "dei-rollbacks_fox_news_411634e8_0",
-      "slice_id": null,
-      "severity": "low",
-      "confidence": 0.68,
-      "summary": "fox_politics leads fox_news by ~7h in \"Republican Farm Bill\"",
-      "detail": {
-        "source_platform": "fox_politics",
-        "target_platform": "fox_news",
-        "lag_hours": 7.1,
-        "cluster_id": "clu_dei-rollbacks_003"
-      }
     },
     {
       "id": "gdelt_5354bcf821bc",
@@ -579,27 +611,7 @@
       "summary": "Will China invades Taiwan before GTA VI? — 52.0% Yes",
       "detail": "Polymarket gives 52.0% odds. Volume: $1,524,917",
       "source": "polymarket"
-    },
-    {
-      "id": "poly_540820",
-      "type": "external_signal",
-      "timestamp": "2026-04-03T17:20:17.114135+00:00",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Trump out as President before GTA VI? — 53.0% Yes",
-      "detail": "Polymarket gives 53.0% odds. Volume: $572,401",
-      "source": "polymarket"
-    },
-    {
-      "id": "poly_540819",
-      "type": "external_signal",
-      "timestamp": "2026-04-03T17:20:17.114126+00:00",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Will Jesus Christ return before GTA VI? — 49.0% Yes",
-      "detail": "Polymarket gives 49.0% odds. Volume: $10,396,796",
-      "source": "polymarket"
     }
   ],
-  "total_count": 83
+  "total_count": 85
 }

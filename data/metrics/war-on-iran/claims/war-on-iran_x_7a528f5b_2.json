@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "war-on-iran_x_7a528f5b_2",
-    "cluster_id": "clu_war-on-iran_011",
-    "concept_id": "concept_war-on-iran_004",
+    "cluster_id": "clu_war-on-iran_035",
+    "concept_id": "concept_war-on-iran_002",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-29T19:15:13.000Z",
     "source_document_id": "x_2049568205325160477",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.645,
+    "value": null,
     "confidence_interval": [
-      0.545,
-      0.745
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.645
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 4,
-    "friction": 0.4167,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.41,
+    "value": null,
     "confidence_interval": [
-      0.2908,
-      0.5292
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.41
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.4167,
+    "value": null,
     "confidence_interval": [
-      0.298,
-      0.5354
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.4167
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.2,
+    "value": 0,
     "confidence_interval": [
-      0.065,
-      0.335
+      0,
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.85,
+    "value": null,
     "confidence_interval": [
-      0.7638,
-      0.9362
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.85
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9701,
+    "value": null,
     "confidence_interval": [
-      0.8929,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.9701
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,107 +133,65 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
-    "first_timestamp": "2026-04-29T19:15:13.000Z",
-    "lead_lag": [
-      {
-        "platform": "X Platform",
-        "lag_hours": 0.9
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_war-on-iran_004",
-    "hops": [
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T18:03:03.459000+00:00",
-        "claim_id": "war-on-iran_x_7a528f5b_2",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-29T18:59:06+00:00",
-        "claim_id": "war-on-iran_x_7a528f5b_2",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "war-on-iran_bluesky_0d391473_0",
-      "similarity": 0.8643,
-      "text": "Iran will develop nuclear weapons."
+      "claim_id": "war-on-iran_bluesky_e76a0a0e_0",
+      "similarity": 0.8445,
+      "text": "Iran is close to developing nuclear weapons."
     },
     {
-      "claim_id": "war-on-iran_bluesky_a644e971_0",
-      "similarity": 0.8249,
-      "text": "Iran is capable of developing nuclear weapons despite sanctions and isolation."
+      "claim_id": "war-on-iran_x_086192ac_0",
+      "similarity": 0.8445,
+      "text": "Iran is close to developing nuclear weapons."
     },
     {
-      "claim_id": "war-on-iran_bluesky_dbd9aa8b_0",
-      "similarity": 0.7769,
-      "text": "Iran possesses sufficient enriched uranium to produce a substantial number of nuclear weapons."
+      "claim_id": "war-on-iran_x_8fee9cca_1",
+      "similarity": 0.8445,
+      "text": "Iran is close to developing nuclear weapons."
     },
     {
-      "claim_id": "war-on-iran_bluesky_5789ffa5_0",
-      "similarity": 0.7614,
-      "text": "Iran requires nuclear weapons to deter aggression from the United States."
+      "claim_id": "war-on-iran_bluesky_cd481e08_1",
+      "similarity": 0.8149,
+      "text": "Iran continues to possess nuclear materials."
     },
     {
-      "claim_id": "war-on-iran_bluesky_5c37545f_0",
-      "similarity": 0.7386,
-      "text": "Iran possessing nuclear weapons poses a significant global threat."
+      "claim_id": "war-on-iran_bluesky_8be69728_0",
+      "similarity": 0.8044,
+      "text": "Iran was close to developing a nuclear weapon."
     }
   ],
   "example_content": [
     {
-      "text": "Iran is capable of developing nuclear weapons despite sanctions and isolation.",
+      "text": "Iran continues to possess nuclear materials.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Iran possessing nuclear weapons poses a significant global threat.",
+      "text": "Iran is close to developing nuclear weapons.",
       "platform": "Bluesky",
-      "confidence": 0.95,
+      "confidence": 0.6,
       "is_influencer_framing": false
     },
     {
-      "text": "Iran possesses a limited capacity for missile production.",
+      "text": "Russia or North Korea could potentially assist Iran in developing nuclear weapons.",
       "platform": "Bluesky",
-      "confidence": 0.9,
+      "confidence": 0.7,
       "is_influencer_framing": false
     }
   ]

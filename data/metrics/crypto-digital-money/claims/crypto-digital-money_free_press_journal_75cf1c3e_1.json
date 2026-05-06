@@ -9,7 +9,7 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "crypto-digital-money_free_press_journal_75cf1c3e_1",
-    "cluster_id": "clu_crypto-digital-money_025",
+    "cluster_id": "clu_crypto-digital-money_033",
     "concept_id": "concept_crypto-digital-money_002",
     "first_seen_platform": "free_press_journal",
     "first_seen_timestamp": "2026-04-29T18:30:00Z",
@@ -24,94 +24,107 @@
     "source_type": "elite_media"
   },
   "momentum": {
-    "value": 0.54,
+    "value": null,
     "confidence_interval": [
-      0.44,
-      0.64
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.54
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.75,
-    "bridge_ratio": 0.75,
-    "persistence_windows": 3,
-    "friction": 0.4,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.4,
+    "value": null,
     "confidence_interval": [
-      0.28,
-      0.52
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.4
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.15,
+    "value": 0,
     "confidence_interval": [
-      0.0112,
-      0.2888
+      0,
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.15
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,116 +133,63 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
-    "first_timestamp": "2026-04-29T18:30:00Z",
-    "lead_lag": [
-      {
-        "platform": "Irish Examiner",
-        "lag_hours": 4.6
-      },
-      {
-        "platform": "Free Press Journal",
-        "lag_hours": 4.6
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_crypto-digital-money_002",
-    "hops": [
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T13:55:45.216000+00:00",
-        "claim_id": "crypto-digital-money_free_press_journal_75cf1c3e_1",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Irish Examiner",
-        "timestamp": "2026-04-29T18:29:21+00:00",
-        "claim_id": "crypto-digital-money_free_press_journal_75cf1c3e_1",
-        "fidelity_to_origin": 0.3017,
-        "fidelity_to_previous": 0.3017
-      },
-      {
-        "platform": "Free Press Journal",
-        "timestamp": "2026-04-29T18:30:00+00:00",
-        "claim_id": "crypto-digital-money_free_press_journal_75cf1c3e_1",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9944
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "crypto-digital-money_bluesky_c9ff9372_1",
-      "similarity": 0.6581,
-      "text": "Cryptocurrency is primarily used for illicit activities."
+      "claim_id": "crypto-digital-money_bluesky_86a45762_0",
+      "similarity": 0.628,
+      "text": "Cryptocurrencies facilitate sanctions evasion and money laundering for criminal entities."
     },
     {
-      "claim_id": "crypto-digital-money_bluesky_548aa2ee_0",
-      "similarity": 0.6507,
-      "text": "Cryptocurrency facilitates money laundering."
+      "claim_id": "crypto-digital-money_bluesky_28401102_0",
+      "similarity": 0.623,
+      "text": "The promotion of cryptocurrency-related content may be connected to illicit activities."
     },
     {
-      "claim_id": "crypto-digital-money_bluesky_24746cc4_0",
-      "similarity": 0.6017,
-      "text": "Cryptocurrencies are being used to incentivize and facilitate cybercrime."
+      "claim_id": "crypto-digital-money_bluesky_9050bc20_0",
+      "similarity": 0.6018,
+      "text": "Cryptocurrency is associated with illegal activities on the darknet."
     },
     {
-      "claim_id": "crypto-digital-money_free_press_journal_75cf1c3e_0",
-      "similarity": 0.6002,
-      "text": "The dark web and encrypted messaging platforms are major channels for the supply of synthetic drugs."
+      "claim_id": "crypto-digital-money_bluesky_48706f46_0",
+      "similarity": 0.5145,
+      "text": "Cryptocurrencies are susceptible to corruption."
     },
     {
-      "claim_id": "crypto-digital-money_bluesky_c9ff9372_0",
-      "similarity": 0.54,
-      "text": "Cryptocurrencies are designed to be untraceable."
+      "claim_id": "crypto-digital-money_bluesky_a346a3e3_0",
+      "similarity": 0.5078,
+      "text": "Progress is being made in the investigation of the Malone Lam cryptocurrency heist in Singapore."
     }
   ],
   "example_content": [
     {
-      "text": "Cryptocurrency regulations are likely to be manipulated to benefit specific individuals or groups.",
-      "platform": "Bluesky",
-      "confidence": 0.7,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Cryptocurrencies are designed to be untraceable.",
+      "text": "Cryptocurrencies facilitate sanctions evasion and money laundering for criminal entities.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Cryptocurrency is primarily used for illicit activities.",
+      "text": "The promotion of cryptocurrency-related content may be connected to illicit activities.",
+      "platform": "Bluesky",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Cryptocurrency is associated with illegal activities on the darknet.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

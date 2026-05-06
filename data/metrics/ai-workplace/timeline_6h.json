@@ -1,97 +1,183 @@
 {
   "events": [
     {
-      "id": "evt_88f69eedd181",
-      "type": "phase_transition",
-      "timestamp": "2026-04-29T16:21:54.584846+00:00",
-      "claim_id": null,
+      "id": "evt_945f8e249f91",
+      "type": "contestation_emergence",
+      "timestamp": "2026-05-06T05:22:21.479336+00:00",
+      "claim_id": "ai-workplace_x_1c054286_0",
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.8,
-      "summary": "\"AI Adoption in the Workplace\" cluster is shifting toward more extreme language",
+      "confidence": 0.86,
+      "summary": "Active contestation in \"AI and Jobs\" — 14 pro vs 12 anti",
+      "detail": {
+        "cluster_id": "clu_ai-workplace_000",
+        "pro_count": 14,
+        "anti_count": 12,
+        "balance": 0.86
+      }
+    },
+    {
+      "id": "evt_110edd683c8c",
+      "type": "contestation_emergence",
+      "timestamp": "2026-05-06T05:22:21.479336+00:00",
+      "claim_id": "ai-workplace_bluesky_f855907a_0",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.84,
+      "summary": "Active contestation in \"Industrial Revolution\" — 28 pro vs 22 anti",
       "detail": {
         "cluster_id": "clu_ai-workplace_001",
-        "direction": "radicalizing",
-        "magnitude": 0.6727
+        "pro_count": 28,
+        "anti_count": 22,
+        "balance": 0.79
       }
     },
     {
-      "id": "evt_01f9d9d4581a",
+      "id": "evt_cd9e5772e03f",
+      "type": "contestation_emergence",
+      "timestamp": "2026-05-06T05:22:21.479336+00:00",
+      "claim_id": "ai-workplace_bluesky_5567739c_0",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.9,
+      "summary": "Active contestation in \"Corporate Greed\" — 4 pro vs 4 anti",
+      "detail": {
+        "cluster_id": "clu_ai-workplace_008",
+        "pro_count": 4,
+        "anti_count": 4,
+        "balance": 1.0
+      }
+    },
+    {
+      "id": "evt_b1c257f6df0e",
       "type": "phase_transition",
-      "timestamp": "2026-04-29T16:21:54.584846+00:00",
+      "timestamp": "2026-05-06T05:22:21.479336+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.8,
+      "confidence": 0.84,
       "summary": "\"Oracle\" cluster is shifting toward more extreme language",
       "detail": {
-        "cluster_id": "clu_ai-workplace_003",
+        "cluster_id": "clu_ai-workplace_002",
         "direction": "radicalizing",
-        "magnitude": 0.6674
+        "magnitude": 0.7871
       }
     },
     {
-      "id": "evt_4b1974594530",
+      "id": "evt_04707763790c",
       "type": "phase_transition",
-      "timestamp": "2026-04-29T16:21:54.584846+00:00",
+      "timestamp": "2026-05-06T05:22:21.479336+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
       "confidence": 0.81,
       "summary": "\"Generative AI Unsafe\" cluster is shifting toward more extreme language",
       "detail": {
-        "cluster_id": "clu_ai-workplace_005",
+        "cluster_id": "clu_ai-workplace_004",
         "direction": "radicalizing",
-        "magnitude": 0.7144
+        "magnitude": 0.7027
       }
     },
     {
-      "id": "evt_9fa90854a39d",
+      "id": "evt_58e7d849dc65",
       "type": "phase_transition",
-      "timestamp": "2026-04-29T16:21:54.584846+00:00",
+      "timestamp": "2026-05-06T05:22:21.479336+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.8,
+      "summary": "\"AI Adoption in the Workplace\" cluster is shifting toward more extreme language",
+      "detail": {
+        "cluster_id": "clu_ai-workplace_015",
+        "direction": "radicalizing",
+        "magnitude": 0.6661
+      }
+    },
+    {
+      "id": "evt_f3e9ba00d836",
+      "type": "phase_transition",
+      "timestamp": "2026-05-06T05:22:21.479336+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
       "confidence": 0.83,
-      "summary": "\"Online Platforms\" cluster is shifting toward more extreme language",
+      "summary": "\"Elites\" cluster is shifting toward more extreme language",
       "detail": {
-        "cluster_id": "clu_ai-workplace_008",
+        "cluster_id": "clu_ai-workplace_019",
         "direction": "radicalizing",
-        "magnitude": 0.7764
+        "magnitude": 0.7577
       }
     },
     {
-      "id": "evt_caa0fc410527",
+      "id": "evt_24d6a8fdf457",
       "type": "divergence_shift",
-      "timestamp": "2026-04-29T16:21:54.584846+00:00",
+      "timestamp": "2026-05-06T05:22:21.479336+00:00",
       "claim_id": null,
       "slice_id": "bluesky_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Strong narrative split between Bluesky and X Platform",
+      "summary": "Strong narrative split between Bluesky and bw_businessworld",
       "detail": {
-        "jsd": 0.6011,
+        "jsd": 0.7559,
         "platforms": [
           "bluesky",
-          "x"
+          "bw_businessworld"
         ],
         "window_hours": 6
       }
     },
     {
-      "id": "evt_09210a300f29",
-      "type": "arousal_escalation",
-      "timestamp": "2026-04-29T17:21:54.584846+00:00",
-      "claim_id": "ai-workplace_bluesky_71581398_0",
-      "slice_id": null,
+      "id": "evt_2a38fcaa686c",
+      "type": "divergence_shift",
+      "timestamp": "2026-05-06T05:22:21.479336+00:00",
+      "claim_id": null,
+      "slice_id": "bluesky_platform",
       "severity": "high",
-      "confidence": 0.84,
-      "summary": "Heated language rising in \"Tech Companies\" — 75% emotionally charged claims",
+      "confidence": 0.95,
+      "summary": "Strong narrative split between Bluesky and digit",
       "detail": {
-        "cluster_id": "clu_ai-workplace_025",
-        "high_arousal_count": 3,
-        "total": 4,
-        "ratio": 0.75
+        "jsd": 0.9171,
+        "platforms": [
+          "bluesky",
+          "digit"
+        ],
+        "window_hours": 6
+      }
+    },
+    {
+      "id": "evt_328e7fcd69d6",
+      "type": "divergence_shift",
+      "timestamp": "2026-05-06T05:22:21.479336+00:00",
+      "claim_id": null,
+      "slice_id": "bluesky_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Strong narrative split between Bluesky and economic_times",
+      "detail": {
+        "jsd": 0.8019,
+        "platforms": [
+          "bluesky",
+          "economic_times"
+        ],
+        "window_hours": 6
+      }
+    },
+    {
+      "id": "evt_946d9185d864",
+      "type": "divergence_shift",
+      "timestamp": "2026-05-06T05:22:21.479336+00:00",
+      "claim_id": null,
+      "slice_id": "bluesky_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Strong narrative split between Bluesky and hr_executive",
+      "detail": {
+        "jsd": 0.9177,
+        "platforms": [
+          "bluesky",
+          "hr_executive"
+        ],
+        "window_hours": 6
       }
     },
     {
@@ -113,6 +199,70 @@
       "summary": "GTA VI released before June 2026? — 1.5% Yes",
       "detail": "Polymarket gives 1.5% odds. Volume: $13,090,290",
       "source": "polymarket"
+    },
+    {
+      "id": "evt_4840fae168f8",
+      "type": "lead_lag",
+      "timestamp": "2025-06-23T05:22:21.479336+00:00",
+      "claim_id": "ai-workplace_bluesky_f855907a_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.9,
+      "summary": "YouTube (Influencer Framing) leads yourtango by ~7611h in \"Industrial Revolution\"",
+      "detail": {
+        "source_platform": "youtube",
+        "target_platform": "yourtango",
+        "lag_hours": 7611.1,
+        "cluster_id": "clu_ai-workplace_001"
+      }
+    },
+    {
+      "id": "evt_dff6e110d722",
+      "type": "lead_lag",
+      "timestamp": "2026-01-11T17:22:21.479336+00:00",
+      "claim_id": "ai-workplace_x_1c054286_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.9,
+      "summary": "YouTube (Influencer Framing) leads Bluesky by ~2751h in \"AI and Jobs\"",
+      "detail": {
+        "source_platform": "youtube",
+        "target_platform": "bluesky",
+        "lag_hours": 2751.2,
+        "cluster_id": "clu_ai-workplace_000"
+      }
+    },
+    {
+      "id": "evt_2770e08213a6",
+      "type": "lead_lag",
+      "timestamp": "2026-04-08T21:22:21.479336+00:00",
+      "claim_id": "ai-workplace_bluesky_d760cb7b_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.8,
+      "summary": "X Platform leads silicon_republic by ~659h in \"Oracle\"",
+      "detail": {
+        "source_platform": "x",
+        "target_platform": "silicon_republic",
+        "lag_hours": 659.9,
+        "cluster_id": "clu_ai-workplace_002"
+      }
+    },
+    {
+      "id": "evt_8e205c36e0e2",
+      "type": "contestation_emergence",
+      "timestamp": "2026-05-06T05:22:21.479336+00:00",
+      "claim_id": "ai-workplace_bluesky_b4bca840_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.76,
+      "summary": "Active contestation in \"Economic Policy\" — 20 pro vs 38 anti",
+      "detail": {
+        "cluster_id": "clu_ai-workplace_006",
+        "pro_count": 20,
+        "anti_count": 38,
+        "balance": 0.53
+      }
     },
     {
       "id": "poly_544092",
@@ -163,6 +313,22 @@
       "summary": "Reproductive Health Services",
       "detail": "The Department of Veterans Affairs (VA) adopts as final, without changes, a proposed rule to reinstate the exclusions on abortions and abortion counseling from the medical benefits package, which were removed in 2022. Before 2022, these exclusions had been firmly in place since the medical benefits ",
       "source": "fed_register"
+    },
+    {
+      "id": "evt_27446d75b13e",
+      "type": "lead_lag",
+      "timestamp": "2026-05-05T12:22:21.479336+00:00",
+      "claim_id": "ai-workplace_bluesky_810166f6_0",
+      "slice_id": null,
+      "severity": "low",
+      "confidence": 0.7,
+      "summary": "Bluesky leads X Platform by ~20h in \"AI and Employment\"",
+      "detail": {
+        "source_platform": "bluesky",
+        "target_platform": "x",
+        "lag_hours": 20.1,
+        "cluster_id": "clu_ai-workplace_003"
+      }
     },
     {
       "id": "gdelt_40941dbd0cba",
@@ -433,107 +599,7 @@
       "summary": "Trump out as President before GTA VI? — 53.0% Yes",
       "detail": "Polymarket gives 53.0% odds. Volume: $572,401",
       "source": "polymarket"
-    },
-    {
-      "id": "poly_540819",
-      "type": "external_signal",
-      "timestamp": "2026-04-03T17:10:34.614086+00:00",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Will Jesus Christ return before GTA VI? — 49.0% Yes",
-      "detail": "Polymarket gives 49.0% odds. Volume: $10,396,796",
-      "source": "polymarket"
-    },
-    {
-      "id": "poly_540818",
-      "type": "external_signal",
-      "timestamp": "2026-04-03T17:10:34.614079+00:00",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "New Playboi Carti Album before GTA VI? — 62.0% Yes",
-      "detail": "Polymarket gives 62.0% odds. Volume: $713,860",
-      "source": "polymarket"
-    },
-    {
-      "id": "poly_540817",
-      "type": "external_signal",
-      "timestamp": "2026-04-03T17:10:34.614073+00:00",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "New Rihanna Album before GTA VI? — 60.0% Yes",
-      "detail": "Polymarket gives 60.0% odds. Volume: $679,525",
-      "source": "polymarket"
-    },
-    {
-      "id": "poly_540816",
-      "type": "external_signal",
-      "timestamp": "2026-04-03T17:10:34.614053+00:00",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Russia-Ukraine Ceasefire before GTA VI? — 54.0% Yes",
-      "detail": "Polymarket gives 54.0% odds. Volume: $1,412,740",
-      "source": "polymarket"
-    },
-    {
-      "id": "fedreg_2026-06549",
-      "type": "external_signal",
-      "timestamp": "2026-04-03T00:00:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Statement of Organization, Functions, and Delegations of Authority",
-      "detail": "The Department of Health and Human Services (HHS) is issuing this notice to revise its Statement of Organization, Functions, and Delegations of Authority for the Office of the Secretary (OS). This reorganization removes the Office of the Chief Information Officer (OCIO) from the organizational descr",
-      "source": "fed_register"
-    },
-    {
-      "id": "fedreg_2026-06271",
-      "type": "external_signal",
-      "timestamp": "2026-04-01T00:00:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Whistleblower Incentives and Protections",
-      "detail": "FinCEN is proposing a rule to establish a whistleblower program that offers incentives and protections to encourage individuals who have information about potential violations of the Bank Secrecy Act (BSA), International Emergency Economic Powers Act (IEEPA), Trading With the Enemy Act of 1917 (TWEA",
-      "source": "fed_register"
-    },
-    {
-      "id": "sec_7344843bb793",
-      "type": "external_signal",
-      "timestamp": "2026-04-01T00:00:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Unknown —  filing (2026-04-01)",
-      "detail": "Unknown filed  mentioning 'artificial intelligence'. Filing date: 2026-04-01.",
-      "source": "sec_edgar"
-    },
-    {
-      "id": "sec_7d01295b67b1",
-      "type": "external_signal",
-      "timestamp": "2026-03-31T00:00:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Unknown —  filing (2026-03-31)",
-      "detail": "Unknown filed  mentioning 'artificial intelligence'. Filing date: 2026-03-31.",
-      "source": "sec_edgar"
-    },
-    {
-      "id": "sec_9d3668aa76f7",
-      "type": "external_signal",
-      "timestamp": "2026-03-30T00:00:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Unknown —  filing (2026-03-30)",
-      "detail": "Unknown filed  mentioning 'artificial intelligence'. Filing date: 2026-03-30.",
-      "source": "sec_edgar"
-    },
-    {
-      "id": "fedreg_2026-06017",
-      "type": "external_signal",
-      "timestamp": "2026-03-27T00:00:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Improving Wage Protections for the Temporary and Permanent Employment of Certain Foreign Nationals in the United States",
-      "detail": "The Department of Labor (DOL or the Department) is issuing this Notice of Proposed Rulemaking (NPRM) to solicit comments and public input regarding its proposal to revise Employment and Training Administration (ETA) regulations governing the prevailing wages for employment opportunities that United ",
-      "source": "fed_register"
     }
   ],
-  "total_count": 82
+  "total_count": 92
 }

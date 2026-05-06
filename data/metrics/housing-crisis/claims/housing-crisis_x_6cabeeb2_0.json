@@ -1,0 +1,183 @@
+{
+  "claim": {
+    "text": "The cost of housing is excessively high.",
+    "subject": "housing",
+    "assertion": "is excessively high",
+    "framing": "neutral",
+    "stance": "anti",
+    "confidence": 0.9,
+    "arousal": "high",
+    "register": "vernacular",
+    "id": "housing-crisis_x_6cabeeb2_0",
+    "cluster_id": "clu_housing-crisis_032",
+    "concept_id": "concept_housing-crisis_001",
+    "first_seen_platform": "x",
+    "first_seen_timestamp": "2026-05-05T23:53:17.000Z",
+    "source_document_id": "x_2051812508558573755",
+    "source_platform": "x",
+    "source_timestamp": "2026-05-05T23:53:17.000Z",
+    "source_engagement": {
+      "likes": 4,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.5282,
+    "confidence_interval": [
+      0.4282,
+      0.6282
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5282
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.25,
+    "bridge_ratio": 0.25,
+    "persistence_windows": 1,
+    "friction": 0.5,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.3124,
+    "confidence_interval": [
+      0.1858,
+      0.439
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3124
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.85,
+    "confidence_interval": [
+      0.7638,
+      0.9362
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.85
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 0.9756,
+    "confidence_interval": [
+      0.8988,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.9756
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "X Platform",
+    "first_timestamp": "2026-05-05T23:53:17.000Z",
+    "lead_lag": []
+  },
+  "supply_chain": {
+    "concept_id": "concept_housing-crisis_001",
+    "hops": [
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-05-05T23:53:17+00:00",
+        "claim_id": "housing-crisis_x_6cabeeb2_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      }
+    ],
+    "observation_boundary": "No public antecedent detected"
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "housing-crisis_x_eaf6bd65_0",
+      "similarity": 0.6154,
+      "text": "Rising housing costs are contributing to a public health crisis."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Rising housing costs are contributing to a public health crisis.",
+      "platform": "X Platform",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

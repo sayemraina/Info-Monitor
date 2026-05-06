@@ -1,0 +1,195 @@
+{
+  "claim": {
+    "text": "The conflict with Iran was initiated based on false pretenses.",
+    "subject": "Iran War",
+    "assertion": "started based on a lie",
+    "framing": "neutral",
+    "stance": "anti",
+    "confidence": 0.9,
+    "arousal": "medium",
+    "register": "vernacular",
+    "id": "war-on-iran_youtube_695ed53f_0",
+    "cluster_id": "clu_war-on-iran_045",
+    "concept_id": "concept_war-on-iran_003",
+    "first_seen_platform": "youtube",
+    "first_seen_timestamp": "2026-05-06T06:06:08Z",
+    "source_document_id": "yt_1kklVCsLVi4",
+    "source_platform": "youtube",
+    "source_timestamp": "2026-05-06T06:06:08Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 19,
+      "shares": 0
+    },
+    "source_type": "elite_media"
+  },
+  "momentum": {
+    "value": 0.4428,
+    "confidence_interval": [
+      0.3428,
+      0.5428
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.4428
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 1,
+    "friction_quadrant": "successful_suppression"
+  },
+  "salience": {
+    "value": 0.3099,
+    "confidence_interval": [
+      0.1831,
+      0.4367
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3099
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 0.9619,
+    "confidence_interval": [
+      0.884,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.9619
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "YouTube (Influencer Framing)",
+    "first_timestamp": "2026-05-06T06:06:08Z",
+    "lead_lag": [
+      {
+        "platform": "X Platform",
+        "lag_hours": 1.2
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_war-on-iran_003",
+    "hops": [
+      {
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-05-06T06:06:08+00:00",
+        "claim_id": "war-on-iran_youtube_695ed53f_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-05-06T07:19:09+00:00",
+        "claim_id": "war-on-iran_youtube_695ed53f_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "war-on-iran_x_dde82327_0",
+      "similarity": 0.6337,
+      "text": "The justification for potential military action against Iran is based on unsubstantiated claims, similar to the lead-up to the Iraq War."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "The justification for potential military action against Iran is based on unsubstantiated claims, similar to the lead-up to the Iraq War.",
+      "platform": "X Platform",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

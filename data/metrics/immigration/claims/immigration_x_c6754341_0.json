@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "immigration_x_c6754341_0",
-    "cluster_id": "clu_immigration_044",
-    "concept_id": "concept_immigration_007",
+    "cluster_id": "clu_immigration_025",
+    "concept_id": "concept_immigration_006",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-29T13:34:27.000Z",
     "source_document_id": "x_2049482447985762745",
@@ -24,222 +24,171 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.51,
+    "value": null,
     "confidence_interval": [
-      0.41,
-      0.61
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.51
-    ],
-    "source_distribution": "production",
-    "source_diversity": 1.0,
-    "bridge_ratio": 1.0,
-    "persistence_windows": 2,
-    "friction": 1,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.3157,
+    "value": null,
     "confidence_interval": [
-      0.1894,
-      0.442
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3157
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.1,
+    "value": 0,
     "confidence_interval": [
       0,
-      0.2425
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9674,
+    "value": null,
     "confidence_interval": [
-      0.89,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.9674
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.8,
     "factors": []
   },
   "provenance": {
-    "first_platform": "Bluesky",
-    "first_timestamp": "2026-04-29T13:34:27.000Z",
-    "lead_lag": [
-      {
-        "platform": "X Platform",
-        "lag_hours": 3.0
-      },
-      {
-        "platform": "Houston Public Media",
-        "lag_hours": 3.7
-      },
-      {
-        "platform": "The Hill",
-        "lag_hours": 6.4
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_immigration_007",
-    "hops": [
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T10:08:29.902000+00:00",
-        "claim_id": "immigration_x_c6754341_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-29T13:08:02+00:00",
-        "claim_id": "immigration_x_c6754341_0",
-        "fidelity_to_origin": 0.6706,
-        "fidelity_to_previous": 0.6706
-      },
-      {
-        "platform": "Houston Public Media",
-        "timestamp": "2026-04-29T13:49:04+00:00",
-        "claim_id": "immigration_x_c6754341_0",
-        "fidelity_to_origin": 0.5953,
-        "fidelity_to_previous": 0.8877
-      },
-      {
-        "platform": "The Hill",
-        "timestamp": "2026-04-29T16:30:00+00:00",
-        "claim_id": "immigration_x_c6754341_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.5039
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "immigration_the_hill_c1510b4b_1",
-      "similarity": 0.8116,
-      "text": "Denying education to children, regardless of immigration status, will create a permanent underclass and negatively impact society."
+      "claim_id": "immigration_bluesky_1a86035d_0",
+      "similarity": 0.9161,
+      "text": "Racist immigration policies have negative consequences."
     },
     {
-      "claim_id": "immigration_bluesky_73ccbb37_0",
-      "similarity": 0.7654,
-      "text": "Restrictive immigration policies will negatively impact the economy and supply chains."
+      "claim_id": "immigration_x_95ec3f1f_0",
+      "similarity": 0.9161,
+      "text": "Mass immigration policies are harmful and have negative consequences."
     },
     {
-      "claim_id": "immigration_x_3d4f3ad4_0",
-      "similarity": 0.6913,
-      "text": "Current immigration policies are negatively impacting healthcare systems in Western countries."
+      "claim_id": "immigration_x_2315868f_0",
+      "similarity": 0.8419,
+      "text": "Mass deportation policies, even if refined, will still have a significant negative human impact."
     },
     {
-      "claim_id": "immigration_bluesky_242b9f87_0",
-      "similarity": 0.5903,
-      "text": "Immigration is falsely blamed for economic problems in some communities."
+      "claim_id": "immigration_x_4f3ced92_0",
+      "similarity": 0.7018,
+      "text": "Federal immigration policy is a significant factor contributing to the state's population decline."
     },
     {
-      "claim_id": "immigration_houston_public_media_fef34c2f_1",
-      "similarity": 0.4856,
-      "text": "Recent policy changes, including cuts to social service programs and restrictions on healthcare access for legal immigrants, are likely to worsen existing health disparities."
+      "claim_id": "immigration_x_ed37940e_0",
+      "similarity": 0.6576,
+      "text": "The United States is experiencing more negative effects from immigration than Europe."
     }
   ],
   "example_content": [
     {
-      "text": "Immigration is falsely blamed for economic problems in some communities.",
+      "text": "Racist immigration policies have negative consequences.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Restrictive immigration policies will negatively impact the economy and supply chains.",
+      "text": "Deporting care workers leads to more women becoming unpaid full-time caregivers.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Denying education to children, regardless of immigration status, will create a permanent underclass and negatively impact society.",
-      "platform": "The Hill",
+      "text": "One Nation is advocating for negative net migration.",
+      "platform": "Independent Australia",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "dei-rollbacks_wyff4_2ab41035_0",
-    "cluster_id": "clu_dei-rollbacks_019",
-    "concept_id": "concept_dei-rollbacks_007",
+    "cluster_id": "clu_dei-rollbacks_014",
+    "concept_id": "concept_dei-rollbacks_005",
     "first_seen_platform": "wyff4",
     "first_seen_timestamp": "2026-04-29T17:08:00Z",
     "source_document_id": "faf98facfa86afd2",
@@ -24,37 +24,39 @@
     "source_type": "elite_media"
   },
   "momentum": {
-    "value": 0.54,
+    "value": null,
     "confidence_interval": [
-      0.44,
-      0.64
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.54
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 1,
-    "friction": 0,
-    "friction_quadrant": "unopposed_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.3046,
+    "value": null,
     "confidence_interval": [
-      0.1774,
-      0.4318
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3046
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
+    "value": null,
+    "confidence_interval": [
+      0,
+      0
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [],
+    "source_distribution": "production"
+  },
+  "persistence": {
     "value": 0,
     "confidence_interval": [
       0,
@@ -67,51 +69,62 @@
     ],
     "source_distribution": "production"
   },
-  "persistence": {
-    "value": 0.05,
+  "arousal": {
+    "value": null,
     "confidence_interval": [
       0,
-      0.1962
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.05
-    ],
-    "source_distribution": "production"
-  },
-  "arousal": {
-    "value": 0.5,
-    "confidence_interval": [
-      0.3875,
-      0.6125
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,86 +133,55 @@
     ]
   },
   "provenance": {
-    "first_platform": "Wyff4",
-    "first_timestamp": "2026-04-29T17:08:00Z",
-    "lead_lag": [
-      {
-        "platform": "Cbs17.Com",
-        "lag_hours": 1.2
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_dei-rollbacks_007",
-    "hops": [
-      {
-        "platform": "Wyff4",
-        "timestamp": "2026-04-29T17:08:00+00:00",
-        "claim_id": "dei-rollbacks_wyff4_2ab41035_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Cbs17.Com",
-        "timestamp": "2026-04-29T18:20:14+00:00",
-        "claim_id": "dei-rollbacks_wyff4_2ab41035_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "dei-rollbacks_cbs17.com_4d403958_0",
-      "similarity": 1.0,
-      "text": "Conservative policies and politicians, particularly those associated with President Trump, have significantly benefited Historically Black Colleges and Universities (HBCUs)."
+      "claim_id": "dei-rollbacks_washington_free_beacon_e62ffeda_1",
+      "similarity": 0.3771,
+      "text": "Penn State Law School's commitment to antiracist principles may lead to demographic discrimination."
     },
     {
-      "claim_id": "dei-rollbacks_wyff4_2ab41035_2",
-      "similarity": 0.3596,
-      "text": "Open dialogue and exposure to opposing viewpoints are essential for higher education."
+      "claim_id": "dei-rollbacks_bluesky_d0983ca4_1",
+      "similarity": 0.3621,
+      "text": "Scapegoating minorities is a strategy used by extractivist industries to promote GOP-led fascism."
+    },
+    {
+      "claim_id": "dei-rollbacks_washington_free_beacon_e62ffeda_0",
+      "similarity": 0.3354,
+      "text": "Penn State Law School's antiracism strategic plan may be illegal due to its emphasis on race in decision-making."
     }
   ],
   "example_content": [
     {
-      "text": "Conservative policies and politicians, particularly those associated with President Trump, have significantly benefited Historically Black Colleges and Universities (HBCUs).",
-      "platform": "Cbs17.Com",
+      "text": "Scapegoating minorities is a strategy used by extractivist industries to promote GOP-led fascism.",
+      "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Open dialogue and exposure to opposing viewpoints are essential for higher education.",
-      "platform": "Wyff4",
+      "text": "Penn State Law School's antiracism strategic plan may be illegal due to its emphasis on race in decision-making.",
+      "platform": "Washington Free Beacon",
       "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Penn State Law School's commitment to antiracist principles may lead to demographic discrimination.",
+      "platform": "Washington Free Beacon",
+      "confidence": 0.8,
       "is_influencer_framing": false
     }
   ]

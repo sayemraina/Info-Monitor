@@ -9,7 +9,7 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "ai-workplace_bluesky_ce45c3f8_0",
-    "cluster_id": "clu_ai-workplace_000",
+    "cluster_id": "clu_ai-workplace_006",
     "concept_id": "concept_ai-workplace_000",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-25T14:38:54.889Z",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.4252,
+    "value": null,
     "confidence_interval": [
-      0.3252,
-      0.5252
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.4252
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.25,
-    "bridge_ratio": 0.25,
-    "persistence_windows": 3,
-    "friction": 0.2727,
-    "friction_quadrant": "dead"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.7849,
+    "value": null,
     "confidence_interval": [
-      0.6938,
-      0.876
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.7849
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.2727,
+    "value": null,
     "confidence_interval": [
-      0.1432,
-      0.4022
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.2727
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.15,
+    "value": 0,
     "confidence_interval": [
-      0.0112,
-      0.2888
+      0,
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.15
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.963,
+    "value": null,
     "confidence_interval": [
-      0.8852,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.963
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,93 +133,63 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
-    "first_timestamp": "2026-04-25T14:38:54.889Z",
+    "first_platform": "unknown",
+    "first_timestamp": "",
     "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_ai-workplace_000",
-    "hops": [
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-25T12:30:09.666058+00:00",
-        "claim_id": "ai-workplace_bluesky_ce45c3f8_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      }
-    ],
-    "observation_boundary": "No public antecedent detected"
+    "concept_id": "",
+    "hops": [],
+    "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-workplace_bluesky_c8addf5b_0",
-      "similarity": 0.8457,
-      "text": "AI is directly causing job displacement across multiple major tech companies."
+      "claim_id": "ai-workplace_bluesky_59b9e889_0",
+      "similarity": 0.8877,
+      "text": "AI is being unfairly blamed for job losses that would have occurred regardless."
     },
     {
-      "claim_id": "ai-workplace_bluesky_410d5c50_0",
-      "similarity": 0.8457,
-      "text": "AI is causing job displacement."
+      "claim_id": "ai-workplace_bluesky_ca6505c6_0",
+      "similarity": 0.8653,
+      "text": "Companies claiming AI will replace jobs are simultaneously struggling to match existing talent to existing roles."
     },
     {
-      "claim_id": "ai-workplace_bluesky_644e396e_0",
-      "similarity": 0.778,
-      "text": "The rise of AI and resulting layoffs are causing STEM and mechanical engineering professionals to feel they have little to lose."
+      "claim_id": "ai-workplace_bluesky_ca5a1868_0",
+      "similarity": 0.8444,
+      "text": "AI technologies like ChatGPT are causing job displacement."
     },
     {
-      "claim_id": "ai-workplace_bluesky_36f1959f_0",
-      "similarity": 0.7729,
-      "text": "Replacing employees with AI is unethical and infuriating."
+      "claim_id": "ai-workplace_bluesky_86756efc_0",
+      "similarity": 0.8248,
+      "text": "Artificial intelligence will disproportionately cause job displacement in India and the Philippines."
     },
     {
-      "claim_id": "ai-workplace_bluesky_126764d0_0",
-      "similarity": 0.7723,
-      "text": "AI and automation are causing job displacement."
+      "claim_id": "ai-workplace_x_932f6159_0",
+      "similarity": 0.8085,
+      "text": "AI should replace most jobs, with the profits distributed to the population."
     }
   ],
   "example_content": [
     {
-      "text": "AI is directly causing job displacement across multiple major tech companies.",
+      "text": "The current boom in data centers is driven by the expectation that AI will displace human jobs.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Replacing employees with AI is unethical and infuriating.",
+      "text": "Companies claiming AI will replace jobs are simultaneously struggling to match existing talent to existing roles.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "AI and automation are causing job displacement.",
+      "text": "The widespread replacement of workers with AI will lead to a decrease in consumer purchasing power.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

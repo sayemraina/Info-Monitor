@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "ai-bubble_bluesky_8f1b8407_0",
-    "cluster_id": "clu_ai-bubble_027",
-    "concept_id": "concept_ai-bubble_001",
+    "cluster_id": "clu_ai-bubble_021",
+    "concept_id": "concept_ai-bubble_003",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-29T18:40:04.394Z",
     "source_document_id": "49da72acf16c795d",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.54,
+    "value": null,
     "confidence_interval": [
-      0.44,
-      0.64
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.54
-    ],
-    "source_distribution": "production",
-    "source_diversity": 1.0,
-    "bridge_ratio": 1.0,
-    "persistence_windows": 9,
-    "friction": 0.3793,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.3793,
+    "value": null,
     "confidence_interval": [
-      0.2577,
-      0.5009
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3793
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.45,
+    "value": 0,
     "confidence_interval": [
-      0.3338,
-      0.5662
+      0,
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.45
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,129 +133,65 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
-    "first_timestamp": "2026-04-29T18:40:04.394Z",
-    "lead_lag": [
-      {
-        "platform": "Moneyweb",
-        "lag_hours": 7.2
-      },
-      {
-        "platform": "X Platform",
-        "lag_hours": 7.5
-      },
-      {
-        "platform": "Benzinga",
-        "lag_hours": 10.3
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_ai-bubble_001",
-    "hops": [
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T07:30:14+00:00",
-        "claim_id": "ai-bubble_bluesky_8f1b8407_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Moneyweb",
-        "timestamp": "2026-04-29T14:40:15+00:00",
-        "claim_id": "ai-bubble_bluesky_8f1b8407_0",
-        "fidelity_to_origin": 0.5127,
-        "fidelity_to_previous": 0.5127
-      },
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-29T15:00:13+00:00",
-        "claim_id": "ai-bubble_bluesky_8f1b8407_0",
-        "fidelity_to_origin": 0.4901,
-        "fidelity_to_previous": 0.9559
-      },
-      {
-        "platform": "Benzinga",
-        "timestamp": "2026-04-29T17:47:58+00:00",
-        "claim_id": "ai-bubble_bluesky_8f1b8407_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.6121
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-bubble_moneyweb_a3128e0b_0",
-      "similarity": 0.7316,
-      "text": "Investment in artificial intelligence is significantly contributing to economic growth."
+      "claim_id": "ai-bubble_bluesky_e5a7e326_0",
+      "similarity": 0.7216,
+      "text": "The Bank of England will be held accountable when the AI investment bubble bursts."
     },
     {
-      "claim_id": "ai-bubble_bluesky_5a211472_0",
-      "similarity": 0.7287,
-      "text": "AI investment is leading to workforce reductions at major companies."
+      "claim_id": "ai-bubble_bluesky_57f9d71b_0",
+      "similarity": 0.7097,
+      "text": "The current AI investment boom resembles past speculative bubbles where unscrupulous individuals exploit inexperienced investors."
     },
     {
-      "claim_id": "ai-bubble_bluesky_5818e850_0",
-      "similarity": 0.6823,
-      "text": "Investments in AI are not yielding returns and are being wasted."
+      "claim_id": "ai-bubble_bluesky_655f81aa_0",
+      "similarity": 0.7003,
+      "text": "Venture capital investment in AI and other deep tech startups is expanding in Europe."
     },
     {
-      "claim_id": "ai-bubble_bluesky_32d68133_0",
-      "similarity": 0.6292,
-      "text": "Investments in AI are unlikely to generate returns within an acceptable timeframe."
+      "claim_id": "ai-bubble_bluesky_43e03eff_0",
+      "similarity": 0.6487,
+      "text": "Investments in artificial intelligence are justified."
     },
     {
-      "claim_id": "ai-bubble_benzinga_895633f4_0",
-      "similarity": 0.6257,
-      "text": "Big Tech companies must demonstrate revenue generation from AI investments to justify current spending levels."
+      "claim_id": "ai-bubble_bluesky_19740e4c_0",
+      "similarity": 0.6278,
+      "text": "The current surge in AI trading activity is unsustainable and will inevitably lead to a significant market correction."
     }
   ],
   "example_content": [
     {
-      "text": "The current state of AI development mirrors previous economic disasters.",
+      "text": "The Bank of England will be held accountable when the AI investment bubble bursts.",
+      "platform": "Bluesky",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Investments in artificial intelligence are justified.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Over-reliance on AI software will lead to a loss of essential skills in the workforce.",
+      "text": "AI technologies are causing job losses in the writing industry.",
       "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Venture capital funding for AI is derived from exploitation.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
+      "confidence": 0.95,
       "is_influencer_framing": false
     }
   ]

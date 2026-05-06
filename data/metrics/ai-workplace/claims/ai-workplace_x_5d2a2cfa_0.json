@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "ai-workplace_x_5d2a2cfa_0",
-    "cluster_id": "clu_ai-workplace_025",
-    "concept_id": "concept_ai-workplace_004",
+    "cluster_id": "clu_ai-workplace_039",
+    "concept_id": "concept_ai-workplace_001",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-29T15:25:35.000Z",
     "source_document_id": "x_2049510412995940512",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.645,
+    "value": null,
     "confidence_interval": [
-      0.545,
-      0.745
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.645
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 2,
-    "friction": 0.375,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.5137,
+    "value": null,
     "confidence_interval": [
-      0.4022,
-      0.6252
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5137
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.375,
+    "value": null,
     "confidence_interval": [
-      0.2531,
-      0.4969
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.375
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.1,
+    "value": 0,
     "confidence_interval": [
       0,
-      0.2425
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.85,
+    "value": null,
     "confidence_interval": [
-      0.7638,
-      0.9362
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.85
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9048,
+    "value": null,
     "confidence_interval": [
-      0.8227,
-      0.9869
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.9048
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,105 +133,42 @@
     ]
   },
   "provenance": {
-    "first_platform": "X Platform",
-    "first_timestamp": "2026-04-29T15:25:35.000Z",
-    "lead_lag": [
-      {
-        "platform": "Bluesky",
-        "lag_hours": 7.2
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_ai-workplace_004",
-    "hops": [
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-28T23:21:48+00:00",
-        "claim_id": "ai-workplace_x_5d2a2cfa_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T06:31:01.307000+00:00",
-        "claim_id": "ai-workplace_x_5d2a2cfa_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-workplace_x_4d3a963c_0",
-      "similarity": 0.7806,
-      "text": "AI will eliminate the need for software development companies."
+      "claim_id": "ai-workplace_x_15f66a66_0",
+      "similarity": 0.4353,
+      "text": "Fast food companies are replacing human workers with AI systems."
     },
     {
-      "claim_id": "ai-workplace_bluesky_62c407a1_0",
-      "similarity": 0.5432,
-      "text": "Tech companies are replacing American tech workers with AI."
-    },
-    {
-      "claim_id": "ai-workplace_x_78508b80_1",
-      "similarity": 0.5276,
-      "text": "Computer programming jobs are highly exposed to replacement by AI."
-    },
-    {
-      "claim_id": "ai-workplace_bluesky_71581398_0",
-      "similarity": 0.4708,
-      "text": "Big Tech companies are replacing human jobs with AI."
-    },
-    {
-      "claim_id": "ai-workplace_x_765837a0_0",
-      "similarity": 0.4456,
-      "text": "Big Tech companies are replacing human jobs with AI."
+      "claim_id": "ai-workplace_bluesky_53953cc1_1",
+      "similarity": 0.4197,
+      "text": "CEOs and CFOs are replaceable because their jobs primarily involve decision-making and leisure activities."
     }
   ],
   "example_content": [
     {
-      "text": "Big Tech companies are replacing human jobs with AI.",
+      "text": "CEOs and CFOs are replaceable because their jobs primarily involve decision-making and leisure activities.",
       "platform": "Bluesky",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "is_influencer_framing": false
     },
     {
-      "text": "Tech companies are replacing American tech workers with AI.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Big Tech companies are replacing human jobs with AI.",
+      "text": "Fast food companies are replacing human workers with AI systems.",
       "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false

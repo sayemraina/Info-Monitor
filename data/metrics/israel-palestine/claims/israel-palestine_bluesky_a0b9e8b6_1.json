@@ -1,0 +1,206 @@
+{
+  "claim": {
+    "text": "Benjamin Netanyahu, with the support of Donald Trump, was responsible for the destruction in Gaza and displacement of people in Lebanon and Iraq.",
+    "subject": "Benjamin Netanyahu and Donald Trump",
+    "assertion": "pulverized Gaza and displaced millions",
+    "framing": "political culpability",
+    "stance": "anti",
+    "confidence": 0.9,
+    "arousal": "high",
+    "register": "vernacular",
+    "id": "israel-palestine_bluesky_a0b9e8b6_1",
+    "cluster_id": "clu_israel-palestine_036",
+    "concept_id": "concept_israel-palestine_000",
+    "first_seen_platform": "bluesky",
+    "first_seen_timestamp": "2026-05-06T02:29:34.340Z",
+    "source_document_id": "1c911ff8941be2ff",
+    "source_platform": "bluesky",
+    "source_timestamp": "2026-05-06T02:29:34.340Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.645,
+    "confidence_interval": [
+      0.545,
+      0.745
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.645
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0.6667,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.3081,
+    "confidence_interval": [
+      0.1812,
+      0.435
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3081
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.6667,
+    "confidence_interval": [
+      0.5667,
+      0.7667
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.6667
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.85,
+    "confidence_interval": [
+      0.7638,
+      0.9362
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.85
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 0.9394,
+    "confidence_interval": [
+      0.8599,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.9394
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-05-06T02:29:34.340Z",
+    "lead_lag": [
+      {
+        "platform": "X Platform",
+        "lag_hours": 5.5
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_israel-palestine_000",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-05-06T02:29:34.340000+00:00",
+        "claim_id": "israel-palestine_bluesky_a0b9e8b6_1",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-05-06T08:00:56+00:00",
+        "claim_id": "israel-palestine_bluesky_a0b9e8b6_1",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "israel-palestine_bluesky_dc5d0a73_1",
+      "similarity": 0.639,
+      "text": "Donald Trump and Benjamin Netanyahu are war criminals."
+    },
+    {
+      "claim_id": "israel-palestine_x_dc7cc7e0_0",
+      "similarity": 0.5744,
+      "text": "Netanyahu may use renewed conflict in Gaza to improve his political standing."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Donald Trump and Benjamin Netanyahu are war criminals.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Netanyahu may use renewed conflict in Gaza to improve his political standing.",
+      "platform": "X Platform",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

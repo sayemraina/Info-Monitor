@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "inflation-cost-of-living_bluesky_0b1c5f67_0",
-    "cluster_id": "clu_inflation-cost-of-living_016",
-    "concept_id": "concept_inflation-cost-of-living_004",
+    "cluster_id": "",
+    "concept_id": "",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-29T18:42:59.918Z",
     "source_document_id": "0b1c5f67194eb500",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.5266,
+    "value": null,
     "confidence_interval": [
-      0.4266,
-      0.6266
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5266
-    ],
-    "source_distribution": "production",
-    "source_diversity": 1.0,
-    "bridge_ratio": 1.0,
-    "persistence_windows": 6,
-    "friction": 0.95,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.7063,
+    "value": null,
     "confidence_interval": [
-      0.6093,
-      0.8033
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.7063
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.95,
+    "value": null,
     "confidence_interval": [
-      0.8712,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.95
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.3,
+    "value": 0,
     "confidence_interval": [
-      0.1725,
-      0.4275
+      0,
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.85,
+    "value": null,
     "confidence_interval": [
-      0.7638,
-      0.9362
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.85
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9897,
+    "value": null,
     "confidence_interval": [
-      0.9139,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.9897
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,127 +133,63 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
-    "first_timestamp": "2026-04-29T18:42:59.918Z",
-    "lead_lag": [
-      {
-        "platform": "X Platform",
-        "lag_hours": 7.4
-      },
-      {
-        "platform": "The Independent",
-        "lag_hours": 7.9
-      },
-      {
-        "platform": "Aol.Com",
-        "lag_hours": 8.4
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_inflation-cost-of-living_004",
-    "hops": [
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T10:25:55.981000+00:00",
-        "claim_id": "inflation-cost-of-living_bluesky_0b1c5f67_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-29T17:48:52+00:00",
-        "claim_id": "inflation-cost-of-living_bluesky_0b1c5f67_0",
-        "fidelity_to_origin": 0.3879,
-        "fidelity_to_previous": 0.3879
-      },
-      {
-        "platform": "The Independent",
-        "timestamp": "2026-04-29T18:21:51+00:00",
-        "claim_id": "inflation-cost-of-living_bluesky_0b1c5f67_0",
-        "fidelity_to_origin": 0.3424,
-        "fidelity_to_previous": 0.8827
-      },
-      {
-        "platform": "Aol.Com",
-        "timestamp": "2026-04-29T18:52:30+00:00",
-        "claim_id": "inflation-cost-of-living_bluesky_0b1c5f67_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.8762
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "inflation-cost-of-living_bluesky_fd147bbe_0",
-      "similarity": 0.8819,
-      "text": "The politician is neglecting the rising cost of living due to focusing on attacking political opponents."
+      "claim_id": "inflation-cost-of-living_bluesky_27979aca_0",
+      "similarity": 0.7127,
+      "text": "Politicians are making false promises about lowering the cost of living."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_efe9de22_1",
-      "similarity": 0.4348,
-      "text": "The current administration is intentionally exacerbating societal problems to punish political opponents and secure electoral victory."
+      "claim_id": "inflation-cost-of-living_bluesky_251525ac_0",
+      "similarity": 0.6971,
+      "text": "The current administration is indifferent to the rising cost of living."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_982aa1e6_0",
-      "similarity": 0.4115,
-      "text": "Public officials should not flaunt their wealth during times of economic hardship."
+      "claim_id": "inflation-cost-of-living_bluesky_cdf2c17d_0",
+      "similarity": 0.5338,
+      "text": "The cost of living should be improved."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_8d5c187b_0",
-      "similarity": 0.2892,
-      "text": "Right-wing media falsely claimed that voting for Donald Trump would lower grocery prices."
+      "claim_id": "inflation-cost-of-living_bluesky_27b55307_0",
+      "similarity": 0.4432,
+      "text": "The Labour Party is actively addressing the economy, healthcare backlogs, and cost of living in their public messaging."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_097a4362_0",
-      "similarity": 0.2825,
-      "text": "The previous administration's policies led to a high cost of living and questionable foreign policy decisions."
+      "claim_id": "inflation-cost-of-living_bluesky_a72b5dea_0",
+      "similarity": 0.4203,
+      "text": "Economic hardship makes people susceptible to populist rhetoric."
     }
   ],
   "example_content": [
     {
-      "text": "The current administration is intentionally exacerbating societal problems to punish political opponents and secure electoral victory.",
-      "platform": "Bluesky",
-      "confidence": 0.8,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "The politician is neglecting the rising cost of living due to focusing on attacking political opponents.",
+      "text": "Economic hardship makes people susceptible to populist rhetoric.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The Associated Press exhibits bias in its reporting.",
+      "text": "Politicians are making false promises about lowering the cost of living.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The Labour Party is actively addressing the economy, healthcare backlogs, and cost of living in their public messaging.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

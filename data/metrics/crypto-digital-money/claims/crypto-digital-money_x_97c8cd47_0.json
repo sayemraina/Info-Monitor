@@ -9,7 +9,7 @@
     "arousal": "low",
     "register": "vernacular",
     "id": "crypto-digital-money_x_97c8cd47_0",
-    "cluster_id": "clu_crypto-digital-money_012",
+    "cluster_id": "clu_crypto-digital-money_017",
     "concept_id": "concept_crypto-digital-money_001",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-29T19:47:55.000Z",
@@ -24,37 +24,39 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.435,
+    "value": null,
     "confidence_interval": [
-      0.335,
-      0.535
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.435
-    ],
-    "source_distribution": "production",
-    "source_diversity": 1.0,
-    "bridge_ratio": 1.0,
-    "persistence_windows": 9,
-    "friction": 0,
-    "friction_quadrant": "dead"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
+    "value": null,
+    "confidence_interval": [
+      0,
+      0
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [],
+    "source_distribution": "production"
+  },
+  "persistence": {
     "value": 0,
     "confidence_interval": [
       0,
@@ -67,51 +69,62 @@
     ],
     "source_distribution": "production"
   },
-  "persistence": {
-    "value": 0.45,
-    "confidence_interval": [
-      0.3338,
-      0.5662
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [
-      0.45
-    ],
-    "source_distribution": "production"
-  },
   "arousal": {
-    "value": 0.15,
+    "value": null,
     "confidence_interval": [
-      0.0112,
-      0.2888
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.15
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.925,
+    "value": null,
     "confidence_interval": [
-      0.8444,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.925
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,129 +133,65 @@
     ]
   },
   "provenance": {
-    "first_platform": "Crypto Economy",
-    "first_timestamp": "2026-04-29T19:47:55.000Z",
-    "lead_lag": [
-      {
-        "platform": "Investing.Com",
-        "lag_hours": 0.1
-      },
-      {
-        "platform": "Investing.Com Uk",
-        "lag_hours": 0.2
-      },
-      {
-        "platform": "X Platform",
-        "lag_hours": 1.1
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_crypto-digital-money_001",
-    "hops": [
-      {
-        "platform": "Crypto Economy",
-        "timestamp": "2026-04-29T18:26:05+00:00",
-        "claim_id": "crypto-digital-money_x_97c8cd47_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Investing.Com",
-        "timestamp": "2026-04-29T18:31:59+00:00",
-        "claim_id": "crypto-digital-money_x_97c8cd47_0",
-        "fidelity_to_origin": 0.9364,
-        "fidelity_to_previous": 0.9364
-      },
-      {
-        "platform": "Investing.Com Uk",
-        "timestamp": "2026-04-29T18:36:12+00:00",
-        "claim_id": "crypto-digital-money_x_97c8cd47_0",
-        "fidelity_to_origin": 0.8909,
-        "fidelity_to_previous": 0.9514
-      },
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-29T19:30:59+00:00",
-        "claim_id": "crypto-digital-money_x_97c8cd47_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3367
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "crypto-digital-money_x_6d0a1443_0",
-      "similarity": 0.8795,
+      "claim_id": "crypto-digital-money_x_b00af1d2_0",
+      "similarity": 1.0,
       "text": "Blockchain technology is significantly increasing efficiency across various sectors."
     },
     {
-      "claim_id": "crypto-digital-money_x_62f668b8_0",
-      "similarity": 0.6702,
-      "text": "Blockchain technology is transforming various sectors, including finance and transportation."
+      "claim_id": "crypto-digital-money_the_motley_fool_163855a2_1",
+      "similarity": 0.5057,
+      "text": "The economic activity on blockchains does not reliably benefit the holders of the native tokens."
     },
     {
-      "claim_id": "crypto-digital-money_x_62f668b8_1",
-      "similarity": 0.6619,
-      "text": "Global investment is driving the rapid expansion of blockchain technology."
+      "claim_id": "crypto-digital-money_coinpedia_-_fintech_&_cryptocu_740ab108_0",
+      "similarity": 0.4815,
+      "text": "Consortium blockchains fail to provide meaningful advantages over centralized systems."
     },
     {
-      "claim_id": "crypto-digital-money_x_7385d3aa_0",
-      "similarity": 0.5801,
-      "text": "Blockchain technology is transforming various sectors, including finance and transportation."
+      "claim_id": "crypto-digital-money_nasdaq_stock_market_b306905d_1",
+      "similarity": 0.4513,
+      "text": "The economic activity on blockchains does not reliably benefit the holders of the native coins."
     },
     {
-      "claim_id": "crypto-digital-money_x_7385d3aa_1",
-      "similarity": 0.5761,
-      "text": "Global investment is driving the expansion of blockchain technology."
+      "claim_id": "crypto-digital-money_coinpedia_-_fintech_&_cryptocu_740ab108_1",
+      "similarity": 0.4439,
+      "text": "Enhancing centralized servers with cryptographic tools offers a more practical solution than rebuilding systems from scratch with blockchain."
     }
   ],
   "example_content": [
     {
-      "text": "MoonPay's acquisition of Sodot will enhance the security of its digital asset custody and transaction processes.",
-      "platform": "Crypto Economy",
+      "text": "The economic activity on blockchains does not reliably benefit the holders of the native coins.",
+      "platform": "Nasdaq Stock Market",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Hard disk drives remain essential for cloud storage demand.",
-      "platform": "Investing.Com Uk",
+      "text": "Consortium blockchains fail to provide meaningful advantages over centralized systems.",
+      "platform": "Coinpedia   Fintech & Cryptocu",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Hard disk drives continue to be essential for cloud storage demand.",
-      "platform": "Investing.Com",
-      "confidence": 0.9,
+      "text": "Enhancing centralized servers with cryptographic tools offers a more practical solution than rebuilding systems from scratch with blockchain.",
+      "platform": "Coinpedia   Fintech & Cryptocu",
+      "confidence": 0.8,
       "is_influencer_framing": false
     }
   ]

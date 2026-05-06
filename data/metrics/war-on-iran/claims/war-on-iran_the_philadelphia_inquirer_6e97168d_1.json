@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "journalistic",
     "id": "war-on-iran_the_philadelphia_inquirer_6e97168d_1",
-    "cluster_id": "clu_war-on-iran_023",
-    "concept_id": "concept_war-on-iran_004",
+    "cluster_id": "clu_war-on-iran_043",
+    "concept_id": "concept_war-on-iran_000",
     "first_seen_platform": "the_philadelphia_inquirer",
     "first_seen_timestamp": "2026-04-29T18:29:35Z",
     "source_document_id": "4b6430c8745542d5",
@@ -24,94 +24,107 @@
     "source_type": "elite_media"
   },
   "momentum": {
-    "value": 0.645,
+    "value": null,
     "confidence_interval": [
-      0.545,
-      0.745
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.645
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.75,
-    "bridge_ratio": 0.75,
-    "persistence_windows": 1,
-    "friction": 0.8,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.298,
+    "value": null,
     "confidence_interval": [
-      0.1704,
-      0.4256
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.298
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.8,
+    "value": null,
     "confidence_interval": [
-      0.71,
-      0.89
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.8
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0,
     "confidence_interval": [
       0,
-      0.1962
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.85,
+    "value": null,
     "confidence_interval": [
-      0.7638,
-      0.9362
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.85
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9701,
+    "value": null,
     "confidence_interval": [
-      0.8929,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.9701
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,113 +133,65 @@
     ]
   },
   "provenance": {
-    "first_platform": "Nbc News",
-    "first_timestamp": "2026-04-29T18:29:35Z",
-    "lead_lag": [
-      {
-        "platform": "Bluesky",
-        "lag_hours": 11.8
-      },
-      {
-        "platform": "The Philadelphia Inquirer",
-        "lag_hours": 16.0
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_war-on-iran_004",
-    "hops": [
-      {
-        "platform": "Nbc News",
-        "timestamp": "2026-04-29T02:31:35+00:00",
-        "claim_id": "war-on-iran_the_philadelphia_inquirer_6e97168d_1",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T14:19:13.126000+00:00",
-        "claim_id": "war-on-iran_the_philadelphia_inquirer_6e97168d_1",
-        "fidelity_to_origin": 0.4829,
-        "fidelity_to_previous": 0.4829
-      },
-      {
-        "platform": "The Philadelphia Inquirer",
-        "timestamp": "2026-04-29T18:29:35+00:00",
-        "claim_id": "war-on-iran_the_philadelphia_inquirer_6e97168d_1",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.6212
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "war-on-iran_bluesky_dc17ddd6_0",
-      "similarity": 0.5979,
-      "text": "Donald Trump's actions led to the current conflict with Iran without a clear strategy."
+      "claim_id": "war-on-iran_bluesky_cc2488a6_0",
+      "similarity": 0.7512,
+      "text": "The Trump Administration is misleading the public regarding its intentions to end military conflict with Iran."
     },
     {
-      "claim_id": "war-on-iran_nbc_news_384458a5_0",
-      "similarity": 0.5602,
-      "text": "Donald Trump discussed the possibility of war with Iran while at a formal event honoring King Charles."
+      "claim_id": "war-on-iran_bluesky_4678f663_0",
+      "similarity": 0.586,
+      "text": "Donald Trump is responsible for the trade tariffs and potential military conflict with Iran."
     },
     {
-      "claim_id": "war-on-iran_bluesky_0c748aea_0",
-      "similarity": 0.5476,
-      "text": "Donald Trump is colluding with oil executives to instigate conflict with Iran in order to raise gas prices."
+      "claim_id": "war-on-iran_bluesky_80df0632_0",
+      "similarity": 0.585,
+      "text": "Donald Trump threatened to commit war crimes against Iran."
     },
     {
-      "claim_id": "war-on-iran_bluesky_0ad88c3d_0",
-      "similarity": 0.5456,
-      "text": "Donald Trump is using the war with Iran to receive illegal kickbacks."
+      "claim_id": "war-on-iran_bluesky_398da4fb_0",
+      "similarity": 0.5674,
+      "text": "Trump's actions have inadvertently empowered Iran by making the Strait of Hormuz a strategic asset."
+    },
+    {
+      "claim_id": "war-on-iran_bluesky_116f5de1_0",
+      "similarity": 0.5517,
+      "text": "Donald Trump falsely claims Iran is led by a dangerous leader with nuclear weapons."
     }
   ],
   "example_content": [
     {
-      "text": "Donald Trump is colluding with oil executives to instigate conflict with Iran in order to raise gas prices.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Donald Trump is using the war with Iran to receive illegal kickbacks.",
+      "text": "Trump's actions have inadvertently empowered Iran by making the Strait of Hormuz a strategic asset.",
       "platform": "Bluesky",
       "confidence": 0.8,
       "is_influencer_framing": false
     },
     {
-      "text": "Donald Trump's actions led to the current conflict with Iran without a clear strategy.",
+      "text": "Donald Trump threatened to commit war crimes against Iran.",
       "platform": "Bluesky",
       "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Donald Trump's administration is responsible for the deaths of millions of people.",
+      "platform": "Bluesky",
+      "confidence": 0.8,
       "is_influencer_framing": false
     }
   ]

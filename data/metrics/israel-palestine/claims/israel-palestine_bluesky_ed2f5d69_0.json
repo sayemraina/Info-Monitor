@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "israel-palestine_bluesky_ed2f5d69_0",
-    "cluster_id": "clu_israel-palestine_038",
-    "concept_id": "concept_israel-palestine_002",
+    "cluster_id": "clu_israel-palestine_051",
+    "concept_id": "concept_israel-palestine_000",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-29T16:50:18.659Z",
     "source_document_id": "72833bc38324d165",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.645,
+    "value": null,
     "confidence_interval": [
-      0.545,
-      0.745
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.645
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.75,
-    "bridge_ratio": 0.75,
-    "persistence_windows": 1,
-    "friction": 1,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.3208,
+    "value": null,
     "confidence_interval": [
-      0.1949,
-      0.4467
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3208
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0,
     "confidence_interval": [
       0,
-      0.1962
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.85,
+    "value": null,
     "confidence_interval": [
-      0.7638,
-      0.9362
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.85
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9437,
+    "value": null,
     "confidence_interval": [
-      0.8645,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.9437
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,107 +133,64 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
-    "first_timestamp": "2026-04-29T16:50:18.659Z",
-    "lead_lag": [
-      {
-        "platform": "Middle East Monitor",
-        "lag_hours": 0.7
-      },
-      {
-        "platform": "The National",
-        "lag_hours": 1.3
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_israel-palestine_002",
-    "hops": [
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T16:50:18.659000+00:00",
-        "claim_id": "israel-palestine_bluesky_ed2f5d69_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Middle East Monitor",
-        "timestamp": "2026-04-29T17:31:47+00:00",
-        "claim_id": "israel-palestine_bluesky_ed2f5d69_0",
-        "fidelity_to_origin": 0.6317,
-        "fidelity_to_previous": 0.6317
-      },
-      {
-        "platform": "The National",
-        "timestamp": "2026-04-29T18:09:08+00:00",
-        "claim_id": "israel-palestine_bluesky_ed2f5d69_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.4749
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "israel-palestine_bluesky_026e62d2_0",
-      "similarity": 0.6396,
-      "text": "Israel's declining popularity is a result of the Gaza conflict and tensions with Iran, exacerbated by long-term trends."
+      "claim_id": "israel-palestine_bluesky_b7e7b853_2",
+      "similarity": 0.7263,
+      "text": "Israel is threatening violence against activists."
     },
     {
-      "claim_id": "israel-palestine_the_national_261057cf_2",
-      "similarity": 0.5684,
-      "text": "Some right-wing Israeli media outlets claim that Egypt poses an imminent security threat to Israel."
+      "claim_id": "israel-palestine_bluesky_b7e7b853_1",
+      "similarity": 0.6998,
+      "text": "Israel is escalating conflicts in the Middle East, including actions against Lebanon and Gaza."
     },
     {
-      "claim_id": "israel-palestine_middle_east_monitor_a622211b_0",
-      "similarity": 0.505,
-      "text": "Israel's recognition of Somaliland's independence is a provocative act that challenges Somalia's sovereignty."
+      "claim_id": "israel-palestine_x_06155ea9_0",
+      "similarity": 0.6747,
+      "text": "Israel is preparing to escalate its military actions in Gaza."
+    },
+    {
+      "claim_id": "israel-palestine_bluesky_83009c11_1",
+      "similarity": 0.6674,
+      "text": "Israel's conflicts with its neighbors are a consequence of its own actions."
+    },
+    {
+      "claim_id": "israel-palestine_bluesky_449a159b_0",
+      "similarity": 0.6476,
+      "text": "Israel's military actions in Lebanon, similar to those in Gaza, are excessive and unacceptable."
     }
   ],
   "example_content": [
     {
-      "text": "Israel's declining popularity is a result of the Gaza conflict and tensions with Iran, exacerbated by long-term trends.",
+      "text": "Israel is escalating conflicts in the Middle East, including actions against Lebanon and Gaza.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Some right-wing Israeli media outlets claim that Egypt poses an imminent security threat to Israel.",
-      "platform": "The National",
-      "confidence": 0.8,
+      "text": "Israel is threatening violence against activists.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Israel's recognition of Somaliland's independence is a provocative act that challenges Somalia's sovereignty.",
-      "platform": "Middle East Monitor",
+      "text": "Israel's military actions in Lebanon, similar to those in Gaza, are excessive and unacceptable.",
+      "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "housing-crisis_x_c61d9c1c_0",
-    "cluster_id": "clu_housing-crisis_000",
-    "concept_id": "concept_housing-crisis_000",
+    "cluster_id": "clu_housing-crisis_001",
+    "concept_id": "concept_housing-crisis_001",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-29T16:52:23.000Z",
     "source_document_id": "x_2049532256897708420",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.54,
+    "value": null,
     "confidence_interval": [
-      0.44,
-      0.64
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.54
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.25,
-    "bridge_ratio": 0.25,
-    "persistence_windows": 5,
-    "friction": 0.4118,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.6932,
+    "value": null,
     "confidence_interval": [
-      0.5952,
-      0.7912
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.6932
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.4118,
+    "value": null,
     "confidence_interval": [
-      0.2927,
-      0.5309
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.4118
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.25,
+    "value": 0,
     "confidence_interval": [
-      0.1187,
-      0.3813
+      0,
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.25
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9925,
+    "value": null,
     "confidence_interval": [
-      0.9169,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.9925
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,93 +133,63 @@
     ]
   },
   "provenance": {
-    "first_platform": "X Platform",
-    "first_timestamp": "2026-04-29T16:52:23.000Z",
+    "first_platform": "unknown",
+    "first_timestamp": "",
     "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_housing-crisis_000",
-    "hops": [
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-29T12:03:49+00:00",
-        "claim_id": "housing-crisis_x_c61d9c1c_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      }
-    ],
-    "observation_boundary": "No public antecedent detected"
+    "concept_id": "",
+    "hops": [],
+    "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "housing-crisis_x_ae123df0_1",
+      "claim_id": "housing-crisis_x_b4f19a31_1",
+      "similarity": 0.8621,
+      "text": "Reversing mass immigration through remigration is the real solution to the housing crisis."
+    },
+    {
+      "claim_id": "housing-crisis_x_b4f19a31_0",
+      "similarity": 0.8132,
+      "text": "Ending mass immigration is a more effective solution to the housing crisis than building more homes."
+    },
+    {
+      "claim_id": "housing-crisis_x_28b36dad_1",
+      "similarity": 0.7482,
+      "text": "Immigration is a cause of the housing crisis and cost of living crisis."
+    },
+    {
+      "claim_id": "housing-crisis_x_dfcedcbb_1",
       "similarity": 0.7038,
-      "text": "Immigration is not a viable solution to maintain high housing prices."
+      "text": "Skilled migration is a valid solution to the housing crisis."
     },
     {
-      "claim_id": "housing-crisis_x_73871e67_1",
-      "similarity": 0.6734,
-      "text": "Immigration is a significant factor in the housing crisis and is being ignored in discussions."
-    },
-    {
-      "claim_id": "housing-crisis_x_1079b0c8_0",
-      "similarity": 0.6587,
-      "text": "Mass immigration is causing a housing crisis in the United States."
-    },
-    {
-      "claim_id": "housing-crisis_x_da38fce0_0",
-      "similarity": 0.6492,
-      "text": "The housing crisis was caused by lax immigration enforcement."
-    },
-    {
-      "claim_id": "housing-crisis_x_a4b92009_0",
-      "similarity": 0.6259,
-      "text": "Migrant influx is a causal factor in the Irish housing crisis."
+      "claim_id": "housing-crisis_x_28b36dad_0",
+      "similarity": 0.6166,
+      "text": "Government policies prioritize resources for immigrants over the needs of citizens."
     }
   ],
   "example_content": [
     {
-      "text": "Providing temporary accommodation to illegal immigrants is a waste of taxpayer money.",
+      "text": "The housing crisis is causing valuable members of the community to leave Fairfax.",
       "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Migrant influx is a causal factor in the Irish housing crisis.",
+      "text": "Skilled migration is a valid solution to the housing crisis.",
       "platform": "X Platform",
-      "confidence": 0.9,
+      "confidence": 0.7,
       "is_influencer_framing": false
     },
     {
-      "text": "Immigration is a crisis.",
+      "text": "Government policies prioritize resources for immigrants over the needs of citizens.",
       "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false

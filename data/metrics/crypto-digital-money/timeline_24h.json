@@ -1,9 +1,9 @@
 {
   "events": [
     {
-      "id": "evt_16fc8de216ec",
+      "id": "evt_118381b6c1e5",
       "type": "phase_transition",
-      "timestamp": "2026-04-29T07:52:31.442102+00:00",
+      "timestamp": "2026-05-05T21:06:33.147338+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
@@ -12,68 +12,104 @@
       "detail": {
         "cluster_id": "clu_crypto-digital-money_001",
         "direction": "radicalizing",
-        "magnitude": 0.7322
+        "magnitude": 0.7402
       }
     },
     {
-      "id": "evt_3602bb9b5fb6",
+      "id": "evt_af7997773a1a",
       "type": "phase_transition",
-      "timestamp": "2026-04-29T07:52:31.442102+00:00",
+      "timestamp": "2026-05-05T21:06:33.147338+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.84,
-      "summary": "\"AI Automated Trading\" cluster is shifting toward more extreme language",
+      "confidence": 0.83,
+      "summary": "\"XRP\" cluster is shifting toward more extreme language",
       "detail": {
         "cluster_id": "clu_crypto-digital-money_002",
         "direction": "radicalizing",
-        "magnitude": 0.8081
+        "magnitude": 0.7664
       }
     },
     {
-      "id": "evt_9cc903cd387d",
+      "id": "evt_f595eb4cc5d8",
       "type": "phase_transition",
-      "timestamp": "2026-04-29T07:52:31.442102+00:00",
+      "timestamp": "2026-05-05T21:06:33.147338+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.82,
-      "summary": "\"XRP\" cluster is shifting toward more extreme language",
+      "confidence": 0.85,
+      "summary": "\"AI Automated Trading\" cluster is shifting toward more extreme language",
       "detail": {
         "cluster_id": "clu_crypto-digital-money_003",
         "direction": "radicalizing",
-        "magnitude": 0.7461
+        "magnitude": 0.8205
       }
     },
     {
-      "id": "evt_d428ebd367f3",
+      "id": "evt_16fc8de216ec",
       "type": "phase_transition",
-      "timestamp": "2026-04-29T07:52:31.442102+00:00",
+      "timestamp": "2026-05-05T21:06:33.147338+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
       "confidence": 0.82,
       "summary": "\"Gold Trading\" cluster is shifting toward more extreme language",
       "detail": {
-        "cluster_id": "clu_crypto-digital-money_005",
+        "cluster_id": "clu_crypto-digital-money_004",
         "direction": "radicalizing",
-        "magnitude": 0.7293
+        "magnitude": 0.7404
+      }
+    },
+    {
+      "id": "evt_177ced8358d4",
+      "type": "divergence_shift",
+      "timestamp": "2026-05-05T21:06:33.147338+00:00",
+      "claim_id": null,
+      "slice_id": "bluesky_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Strong narrative split between Bluesky and coinpedia_-_fintech_&_cryptocu",
+      "detail": {
+        "jsd": 0.9426,
+        "platforms": [
+          "bluesky",
+          "coinpedia_-_fintech_&_cryptocu"
+        ],
+        "window_hours": 24
+      }
+    },
+    {
+      "id": "evt_698ab96d943f",
+      "type": "divergence_shift",
+      "timestamp": "2026-05-05T21:06:33.147338+00:00",
+      "claim_id": null,
+      "slice_id": "bluesky_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Strong narrative split between Bluesky and crypto.news",
+      "detail": {
+        "jsd": 0.8638,
+        "platforms": [
+          "bluesky",
+          "crypto.news"
+        ],
+        "window_hours": 24
       }
     },
     {
       "id": "evt_5f3516f13496",
       "type": "divergence_shift",
-      "timestamp": "2026-04-29T07:52:31.442102+00:00",
+      "timestamp": "2026-05-05T21:06:33.147338+00:00",
       "claim_id": null,
-      "slice_id": "benzinga_platform",
+      "slice_id": "bluesky_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Strong narrative split between benzinga and Bluesky",
+      "summary": "Strong narrative split between Bluesky and daily_wire",
       "detail": {
-        "jsd": 1.0,
+        "jsd": 0.9657,
         "platforms": [
-          "benzinga",
-          "bluesky"
+          "bluesky",
+          "daily_wire"
         ],
         "window_hours": 24
       }
@@ -81,52 +117,16 @@
     {
       "id": "evt_aaf9f4f35206",
       "type": "divergence_shift",
-      "timestamp": "2026-04-29T07:52:31.442102+00:00",
+      "timestamp": "2026-05-05T21:06:33.147338+00:00",
       "claim_id": null,
-      "slice_id": "benzinga_platform",
+      "slice_id": "bluesky_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Strong narrative split between benzinga and daily_wire",
+      "summary": "Strong narrative split between Bluesky and reason",
       "detail": {
         "jsd": 1.0,
         "platforms": [
-          "benzinga",
-          "daily_wire"
-        ],
-        "window_hours": 24
-      }
-    },
-    {
-      "id": "evt_29310ec6445f",
-      "type": "divergence_shift",
-      "timestamp": "2026-04-29T07:52:31.442102+00:00",
-      "claim_id": null,
-      "slice_id": "benzinga_platform",
-      "severity": "high",
-      "confidence": 0.95,
-      "summary": "Strong narrative split between benzinga and fox_news",
-      "detail": {
-        "jsd": 1.0,
-        "platforms": [
-          "benzinga",
-          "fox_news"
-        ],
-        "window_hours": 24
-      }
-    },
-    {
-      "id": "evt_3a5426c1186a",
-      "type": "divergence_shift",
-      "timestamp": "2026-04-29T07:52:31.442102+00:00",
-      "claim_id": null,
-      "slice_id": "benzinga_platform",
-      "severity": "high",
-      "confidence": 0.95,
-      "summary": "Strong narrative split between benzinga and reason",
-      "detail": {
-        "jsd": 1.0,
-        "platforms": [
-          "benzinga",
+          "bluesky",
           "reason"
         ],
         "window_hours": 24
@@ -153,81 +153,34 @@
       "source": "polymarket"
     },
     {
-      "id": "evt_89c77c757740",
-      "type": "contestation_emergence",
-      "timestamp": "2026-04-29T07:52:31.442102+00:00",
-      "claim_id": "crypto-digital-money_bluesky_c397d754_0",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.73,
-      "summary": "Active contestation in \"Artificial Intelligence\" — 16 pro vs 7 anti",
-      "detail": {
-        "cluster_id": "clu_crypto-digital-money_024",
-        "pro_count": 16,
-        "anti_count": 7,
-        "balance": 0.44
-      }
-    },
-    {
-      "id": "evt_0bba3dcc6936",
-      "type": "momentum_spike",
-      "timestamp": "2026-04-29T09:52:31.442102+00:00",
-      "claim_id": "crypto-digital-money_fox_news_ee94f0b4_2",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.53,
-      "summary": "Rapid attention surge in \"Batman Part II\" (9 claims)",
-      "detail": {
-        "cluster_id": "clu_crypto-digital-money_051",
-        "avg_momentum": 0.583,
-        "member_count": 9
-      }
-    },
-    {
       "id": "evt_0ba6bc38adcf",
       "type": "momentum_spike",
-      "timestamp": "2026-04-29T10:52:31.442102+00:00",
-      "claim_id": "crypto-digital-money_fox_news_9e5b3dad_0",
+      "timestamp": "2026-05-06T00:06:33.147338+00:00",
+      "claim_id": "crypto-digital-money_bluesky_c625df53_0",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.53,
-      "summary": "Rapid attention surge in \"Department of Homeland\" (5 claims)",
+      "confidence": 0.54,
+      "summary": "Rapid attention surge in \"Donald Trump\" (3 claims)",
       "detail": {
-        "cluster_id": "clu_crypto-digital-money_057",
-        "avg_momentum": 0.591,
-        "member_count": 5
+        "cluster_id": "clu_crypto-digital-money_043",
+        "avg_momentum": 0.599,
+        "member_count": 3
       }
     },
     {
-      "id": "evt_8dd329b1bcd5",
+      "id": "evt_a9b4bc0050a5",
       "type": "arousal_escalation",
-      "timestamp": "2026-04-29T11:52:31.442102+00:00",
-      "claim_id": "crypto-digital-money_fox_news_ee94f0b4_2",
+      "timestamp": "2026-05-06T01:06:33.147338+00:00",
+      "claim_id": "crypto-digital-money_bluesky_b62633bf_0",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.76,
-      "summary": "Heated language rising in \"Batman Part II\" — 44% emotionally charged claims",
+      "confidence": 0.78,
+      "summary": "Heated language rising in \"Khabib Nurmagomedov\" — 50% emotionally charged claims",
       "detail": {
-        "cluster_id": "clu_crypto-digital-money_051",
-        "high_arousal_count": 4,
-        "total": 9,
-        "ratio": 0.44
-      }
-    },
-    {
-      "id": "evt_db4d44966b9d",
-      "type": "arousal_escalation",
-      "timestamp": "2026-04-29T11:52:31.442102+00:00",
-      "claim_id": "crypto-digital-money_fox_news_9e5b3dad_0",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.8,
-      "summary": "Heated language rising in \"Department of Homeland\" — 60% emotionally charged claims",
-      "detail": {
-        "cluster_id": "clu_crypto-digital-money_057",
-        "high_arousal_count": 3,
-        "total": 5,
-        "ratio": 0.6
+        "cluster_id": "clu_crypto-digital-money_034",
+        "high_arousal_count": 6,
+        "total": 12,
+        "ratio": 0.5
       }
     },
     {
@@ -261,67 +214,67 @@
       "source": "fed_register"
     },
     {
-      "id": "evt_964c3102350c",
+      "id": "evt_703186b69f09",
       "type": "lead_lag",
-      "timestamp": "2026-04-29T06:52:31.442102+00:00",
-      "claim_id": "crypto-digital-money_reason_56d10282_0",
+      "timestamp": "2026-05-05T20:06:33.147338+00:00",
+      "claim_id": "crypto-digital-money_bluesky_cc0da861_0",
+      "slice_id": null,
+      "severity": "low",
+      "confidence": 0.66,
+      "summary": "YouTube (Influencer Framing) leads crypto.news by ~13h in \"Risk Assets\"",
+      "detail": {
+        "source_platform": "youtube",
+        "target_platform": "crypto.news",
+        "lag_hours": 13.3,
+        "cluster_id": "clu_crypto-digital-money_014"
+      }
+    },
+    {
+      "id": "evt_ec5fbe45ccfb",
+      "type": "lead_lag",
+      "timestamp": "2026-05-06T01:06:33.147338+00:00",
+      "claim_id": "crypto-digital-money_bluesky_63aa5393_0",
       "slice_id": null,
       "severity": "low",
       "confidence": 0.58,
-      "summary": "stat_news leads reason by ~13h in \"AI Regulation\"",
-      "detail": {
-        "source_platform": "stat_news",
-        "target_platform": "reason",
-        "lag_hours": 13.4,
-        "cluster_id": "clu_crypto-digital-money_018"
-      }
-    },
-    {
-      "id": "evt_9e36b78b7924",
-      "type": "lead_lag",
-      "timestamp": "2026-04-29T07:52:31.442102+00:00",
-      "claim_id": "crypto-digital-money_bluesky_c397d754_0",
-      "slice_id": null,
-      "severity": "low",
-      "confidence": 0.9,
-      "summary": "fortune leads X Platform by ~12h in \"Artificial Intelligence\"",
-      "detail": {
-        "source_platform": "fortune",
-        "target_platform": "x",
-        "lag_hours": 12.6,
-        "cluster_id": "clu_crypto-digital-money_024"
-      }
-    },
-    {
-      "id": "evt_a7bab54031c9",
-      "type": "lead_lag",
-      "timestamp": "2026-04-29T10:52:31.442102+00:00",
-      "claim_id": "crypto-digital-money_bluesky_c9ff9372_2",
-      "slice_id": null,
-      "severity": "low",
-      "confidence": 0.72,
-      "summary": "Bluesky leads X Platform by ~9h in \"Dunamu-Naver Merger\"",
+      "summary": "Bluesky leads X Platform by ~8h in \"XRP\"",
       "detail": {
         "source_platform": "bluesky",
         "target_platform": "x",
-        "lag_hours": 9.4,
-        "cluster_id": "clu_crypto-digital-money_022"
+        "lag_hours": 8.6,
+        "cluster_id": "clu_crypto-digital-money_002"
       }
     },
     {
-      "id": "evt_ea5b3d1788eb",
+      "id": "evt_aa35cd8469cd",
       "type": "lead_lag",
-      "timestamp": "2026-04-29T13:52:31.442102+00:00",
-      "claim_id": "crypto-digital-money_bluesky_fb6c731d_0",
+      "timestamp": "2026-05-06T01:06:33.147338+00:00",
+      "claim_id": "crypto-digital-money_bluesky_282cf68b_0",
       "slice_id": null,
       "severity": "low",
-      "confidence": 0.76,
-      "summary": "Bluesky leads X Platform by ~6h in \"Charles Schwab\"",
+      "confidence": 0.64,
+      "summary": "cnbc_top leads X Platform by ~8h in \"Market Conditions\"",
+      "detail": {
+        "source_platform": "cnbc_top",
+        "target_platform": "x",
+        "lag_hours": 8.5,
+        "cluster_id": "clu_crypto-digital-money_015"
+      }
+    },
+    {
+      "id": "evt_ac9d1787c235",
+      "type": "lead_lag",
+      "timestamp": "2026-05-06T03:06:33.147338+00:00",
+      "claim_id": "crypto-digital-money_bluesky_175f4aff_0",
+      "slice_id": null,
+      "severity": "low",
+      "confidence": 0.78,
+      "summary": "Bluesky leads crypto.news by ~6h in \"Dollarization in Venezuela\"",
       "detail": {
         "source_platform": "bluesky",
-        "target_platform": "x",
-        "lag_hours": 6.7,
-        "cluster_id": "clu_crypto-digital-money_046"
+        "target_platform": "crypto.news",
+        "lag_hours": 6.5,
+        "cluster_id": "clu_crypto-digital-money_006"
       }
     },
     {
@@ -603,7 +556,37 @@
       "summary": "New Rihanna Album before GTA VI? — 60.0% Yes",
       "detail": "Polymarket gives 60.0% odds. Volume: $679,525",
       "source": "polymarket"
+    },
+    {
+      "id": "poly_540816",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:17:29.393829+00:00",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Russia-Ukraine Ceasefire before GTA VI? — 54.0% Yes",
+      "detail": "Polymarket gives 54.0% odds. Volume: $1,412,740",
+      "source": "polymarket"
+    },
+    {
+      "id": "fedreg_2026-06475",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T00:00:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Self-Regulatory Organizations; Cboe Exchange, Inc.; Notice of Filing of Amendment No. 1 and Order Granting Accelerated Approval of a Proposed Rule Change, as Modified by Amendment No. 1, To Amend Cboe",
+      "detail": "Notice by Securities and Exchange Commission",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2026-06469",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T00:00:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Self-Regulatory Organizations; BOX Exchange LLC; Notice of Filing of Proposed Rule Change To Amend BOX Rules 5055 (FLEX Equity Options) and 3120 (Position Limits)",
+      "detail": "Notice by Securities and Exchange Commission",
+      "source": "fed_register"
     }
   ],
-  "total_count": 94
+  "total_count": 91
 }

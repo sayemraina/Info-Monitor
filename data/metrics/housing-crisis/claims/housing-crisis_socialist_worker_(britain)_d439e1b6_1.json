@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "housing-crisis_socialist_worker_(britain)_d439e1b6_1",
-    "cluster_id": "clu_housing-crisis_019",
-    "concept_id": "concept_housing-crisis_003",
+    "cluster_id": "clu_housing-crisis_018",
+    "concept_id": "concept_housing-crisis_001",
     "first_seen_platform": "socialist_worker_(britain)",
     "first_seen_timestamp": "2026-04-29T16:56:12Z",
     "source_document_id": "e7737f5831465345",
@@ -24,203 +24,128 @@
     "source_type": "elite_media"
   },
   "momentum": {
-    "value": 0.51,
+    "value": null,
     "confidence_interval": [
-      0.41,
-      0.61
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.51
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.75,
-    "bridge_ratio": 0.75,
-    "persistence_windows": 1,
-    "friction": 0.75,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.3023,
+    "value": null,
     "confidence_interval": [
-      0.175,
-      0.4296
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3023
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.75,
+    "value": null,
     "confidence_interval": [
-      0.6562,
-      0.8438
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.75
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0,
     "confidence_interval": [
       0,
-      0.1962
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9512,
+    "value": null,
     "confidence_interval": [
-      0.8725,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.9512
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.8,
     "factors": []
   },
   "provenance": {
-    "first_platform": "Bluesky",
-    "first_timestamp": "2026-04-29T16:56:12Z",
-    "lead_lag": [
-      {
-        "platform": "X Platform",
-        "lag_hours": 16.7
-      },
-      {
-        "platform": "Socialist Worker (Britain)",
-        "lag_hours": 17.6
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_housing-crisis_003",
-    "hops": [
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-28T23:18:14.093000+00:00",
-        "claim_id": "housing-crisis_socialist_worker_(britain)_d439e1b6_1",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-29T16:00:01+00:00",
-        "claim_id": "housing-crisis_socialist_worker_(britain)_d439e1b6_1",
-        "fidelity_to_origin": 0.3372,
-        "fidelity_to_previous": 0.3372
-      },
-      {
-        "platform": "Socialist Worker (Britain)",
-        "timestamp": "2026-04-29T16:56:12+00:00",
-        "claim_id": "housing-crisis_socialist_worker_(britain)_d439e1b6_1",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.8897
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
-  "semantic_neighbors": [
-    {
-      "claim_id": "housing-crisis_x_efd555fd_0",
-      "similarity": 0.6009,
-      "text": "Rent control policies exacerbate housing shortages."
-    },
-    {
-      "claim_id": "housing-crisis_x_5e8fa7ee_1",
-      "similarity": 0.5659,
-      "text": "Rent control policies would negatively impact efforts to increase the housing supply and lower housing costs."
-    },
-    {
-      "claim_id": "housing-crisis_bluesky_0d2089fe_0",
-      "similarity": 0.3825,
-      "text": "Missouri should implement a law to prevent rent increases above 11%."
-    }
-  ],
-  "example_content": [
-    {
-      "text": "Missouri should implement a law to prevent rent increases above 11%.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Rent control policies exacerbate housing shortages.",
-      "platform": "X Platform",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Rent control policies would negatively impact efforts to increase the housing supply and lower housing costs.",
-      "platform": "X Platform",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    }
-  ]
+  "semantic_neighbors": [],
+  "example_content": []
 }

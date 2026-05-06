@@ -10,7 +10,7 @@
     "register": "vernacular",
     "id": "housing-crisis_bluesky_ac01c2a9_0",
     "cluster_id": "clu_housing-crisis_006",
-    "concept_id": "concept_housing-crisis_003",
+    "concept_id": "concept_housing-crisis_000",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-29T15:04:31.787Z",
     "source_document_id": "951c3329979fd94e",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.54,
+    "value": null,
     "confidence_interval": [
-      0.44,
-      0.64
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.54
-    ],
-    "source_distribution": "production",
-    "source_diversity": 1.0,
-    "bridge_ratio": 1.0,
-    "persistence_windows": 4,
-    "friction": 0.5833,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.4538,
+    "value": null,
     "confidence_interval": [
-      0.3378,
-      0.5698
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.4538
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.5833,
+    "value": null,
     "confidence_interval": [
-      0.477,
-      0.6896
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5833
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.2,
+    "value": 0,
     "confidence_interval": [
-      0.065,
-      0.335
+      0,
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9512,
+    "value": null,
     "confidence_interval": [
-      0.8725,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.9512
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,127 +133,58 @@
     ]
   },
   "provenance": {
-    "first_platform": "Northern Ontario Business",
-    "first_timestamp": "2026-04-29T15:04:31.787Z",
-    "lead_lag": [
-      {
-        "platform": "Bluesky",
-        "lag_hours": 1.5
-      },
-      {
-        "platform": "Yahoo",
-        "lag_hours": 19.1
-      },
-      {
-        "platform": "X Platform",
-        "lag_hours": 19.5
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_housing-crisis_003",
-    "hops": [
-      {
-        "platform": "Northern Ontario Business",
-        "timestamp": "2026-04-28T20:07:00+00:00",
-        "claim_id": "housing-crisis_bluesky_ac01c2a9_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-28T21:39:40.081000+00:00",
-        "claim_id": "housing-crisis_bluesky_ac01c2a9_0",
-        "fidelity_to_origin": 0.9446,
-        "fidelity_to_previous": 0.9446
-      },
-      {
-        "platform": "Yahoo",
-        "timestamp": "2026-04-29T15:13:58+00:00",
-        "claim_id": "housing-crisis_bluesky_ac01c2a9_0",
-        "fidelity_to_origin": 0.314,
-        "fidelity_to_previous": 0.3324
-      },
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-29T15:37:18+00:00",
-        "claim_id": "housing-crisis_bluesky_ac01c2a9_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9554
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "housing-crisis_bluesky_d25ed298_0",
-      "similarity": 0.444,
-      "text": "Privatization of public services exacerbates the cost of living crisis."
+      "claim_id": "housing-crisis_bluesky_31bd8b25_0",
+      "similarity": 0.9736,
+      "text": "Government spending is being misallocated away from addressing the needs of struggling families."
     },
     {
-      "claim_id": "housing-crisis_yahoo_03632229_1",
-      "similarity": 0.372,
-      "text": "Current EU proposals to simplify regulation may slow down urgently needed projects."
+      "claim_id": "housing-crisis_bluesky_8ff522c1_0",
+      "similarity": 0.9736,
+      "text": "Government spending is being misallocated, prioritizing unnecessary projects over essential social services and economic relief for citizens."
     },
     {
-      "claim_id": "housing-crisis_yahoo_03632229_2",
-      "similarity": 0.3672,
-      "text": "Poor alignment of EU laws, rather than overregulation, is the core issue hindering project approvals."
+      "claim_id": "housing-crisis_bluesky_2bcfa014_0",
+      "similarity": 0.9456,
+      "text": "Government spending is misallocated, prioritizing defense over infrastructure and housing."
     },
     {
-      "claim_id": "housing-crisis_bluesky_33168da4_1",
-      "similarity": 0.352,
-      "text": "The government should establish crown corporations for food production, processing, and distribution."
-    },
-    {
-      "claim_id": "housing-crisis_bluesky_a5bee8d3_0",
-      "similarity": 0.3146,
-      "text": "Protecting democracy is more important than addressing economic issues like housing and grocery prices."
+      "claim_id": "housing-crisis_x_6693ba2e_0",
+      "similarity": 0.4133,
+      "text": "Canada's financial aid to Ukraine has negatively impacted its domestic issues."
     }
   ],
   "example_content": [
     {
-      "text": "Privatization of public services exacerbates the cost of living crisis.",
+      "text": "Government spending is misallocated, prioritizing defense over infrastructure and housing.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Protecting democracy is more important than addressing economic issues like housing and grocery prices.",
+      "text": "Government spending is being misallocated away from addressing the needs of struggling families.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The Republican party prioritizes superficial displays of wealth over addressing the needs of average Americans.",
+      "text": "Government spending is being misallocated, prioritizing unnecessary projects over essential social services and economic relief for citizens.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

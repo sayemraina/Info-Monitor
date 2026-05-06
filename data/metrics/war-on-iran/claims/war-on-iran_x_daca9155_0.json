@@ -1,0 +1,206 @@
+{
+  "claim": {
+    "text": "Netanyahu repeatedly and falsely claimed that Iran was close to developing nuclear weapons.",
+    "subject": "Iran",
+    "assertion": "was falsely accused of being close to developing nuclear weapons",
+    "framing": "political manipulation",
+    "stance": "anti",
+    "confidence": 0.9,
+    "arousal": "medium",
+    "register": "vernacular",
+    "id": "war-on-iran_x_daca9155_0",
+    "cluster_id": "clu_war-on-iran_027",
+    "concept_id": "concept_war-on-iran_002",
+    "first_seen_platform": "x",
+    "first_seen_timestamp": "2026-05-06T07:56:04.000Z",
+    "source_document_id": "x_2051934005625319589",
+    "source_platform": "x",
+    "source_timestamp": "2026-05-06T07:56:04.000Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.54,
+    "confidence_interval": [
+      0.44,
+      0.64
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.54
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0.6667,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.3056,
+    "confidence_interval": [
+      0.1785,
+      0.4327
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3056
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.6667,
+    "confidence_interval": [
+      0.5667,
+      0.7667
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.6667
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 0.9014,
+    "confidence_interval": [
+      0.819,
+      0.9838
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.9014
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-05-06T07:56:04.000Z",
+    "lead_lag": [
+      {
+        "platform": "X Platform",
+        "lag_hours": 8.4
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_war-on-iran_002",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-05-05T23:34:56.674000+00:00",
+        "claim_id": "war-on-iran_x_daca9155_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-05-06T07:56:04+00:00",
+        "claim_id": "war-on-iran_x_daca9155_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "war-on-iran_bluesky_3360931d_1",
+      "similarity": 0.7619,
+      "text": "Iran was falsely blamed for an attack involving Tomahawk missiles."
+    },
+    {
+      "claim_id": "war-on-iran_bluesky_b798b626_0",
+      "similarity": 0.5428,
+      "text": "The Israeli government is terrorizing children by falsely claiming Iran wants to kill them."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "The Israeli government is terrorizing children by falsely claiming Iran wants to kill them.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Iran was falsely blamed for an attack involving Tomahawk missiles.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

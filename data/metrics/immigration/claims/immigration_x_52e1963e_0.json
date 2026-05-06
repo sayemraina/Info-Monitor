@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "immigration_x_52e1963e_0",
-    "cluster_id": "clu_immigration_035",
-    "concept_id": "concept_immigration_007",
+    "cluster_id": "clu_immigration_044",
+    "concept_id": "concept_immigration_006",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-29T15:39:14.000Z",
     "source_document_id": "x_2049513849896698157",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.54,
+    "value": null,
     "confidence_interval": [
-      0.44,
-      0.64
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.54
-    ],
-    "source_distribution": "production",
-    "source_diversity": 1.0,
-    "bridge_ratio": 1.0,
-    "persistence_windows": 2,
-    "friction": 0.8571,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.3288,
+    "value": null,
     "confidence_interval": [
-      0.2035,
-      0.4541
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3288
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.8571,
+    "value": null,
     "confidence_interval": [
-      0.7714,
-      0.9428
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.8571
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.1,
+    "value": 0,
     "confidence_interval": [
       0,
-      0.2425
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9674,
+    "value": null,
     "confidence_interval": [
-      0.89,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.9674
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,139 +133,59 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
-    "first_timestamp": "2026-04-29T15:39:14.000Z",
-    "lead_lag": [
-      {
-        "platform": "Cnhi News",
-        "lag_hours": 3.6
-      },
-      {
-        "platform": "X Platform",
-        "lag_hours": 3.8
-      },
-      {
-        "platform": "Fox Politics",
-        "lag_hours": 7.2
-      },
-      {
-        "platform": "Fox Wilmington",
-        "lag_hours": 9.3
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_immigration_007",
-    "hops": [
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T07:56:51.509000+00:00",
-        "claim_id": "immigration_x_52e1963e_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Cnhi News",
-        "timestamp": "2026-04-29T11:30:00+00:00",
-        "claim_id": "immigration_x_52e1963e_0",
-        "fidelity_to_origin": 0.7334,
-        "fidelity_to_previous": 0.7334
-      },
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-29T11:45:00+00:00",
-        "claim_id": "immigration_x_52e1963e_0",
-        "fidelity_to_origin": 0.7147,
-        "fidelity_to_previous": 0.9745
-      },
-      {
-        "platform": "Fox Politics",
-        "timestamp": "2026-04-29T15:10:02+00:00",
-        "claim_id": "immigration_x_52e1963e_0",
-        "fidelity_to_origin": 0.4582,
-        "fidelity_to_previous": 0.6411
-      },
-      {
-        "platform": "Fox Wilmington",
-        "timestamp": "2026-04-29T17:16:34+00:00",
-        "claim_id": "immigration_x_52e1963e_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.6547
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "immigration_x_7adfa4c8_0",
-      "similarity": 0.805,
-      "text": "Current immigration policies are excessively harsh and violent."
+      "claim_id": "immigration_x_af919150_0",
+      "similarity": 0.6805,
+      "text": "European Union immigration policy is dangerously permissive."
     },
     {
-      "claim_id": "immigration_x_30b3140c_0",
-      "similarity": 0.7432,
-      "text": "Current immigration policy is excessively permissive."
+      "claim_id": "immigration_x_592ac133_1",
+      "similarity": 0.6291,
+      "text": "Current immigration levels in Canada are too high."
     },
     {
-      "claim_id": "immigration_cnhi_news_6a7b83e6_0",
-      "similarity": 0.6937,
-      "text": "Governor Hochul's proposal to restrict ICE activities in New York State is an overreaching anti-federal immigration policy."
+      "claim_id": "immigration_fox_politics_a5944b4e_2",
+      "similarity": 0.6031,
+      "text": "The Obama administration's immigration policies allowed dangerous criminals into the country."
     },
     {
-      "claim_id": "immigration_fox_politics_e458d7c1_1",
-      "similarity": 0.6584,
-      "text": "Democratic policies have created conditions that facilitate illegal immigration."
-    },
-    {
-      "claim_id": "immigration_fox_wilmington_3da693d1_1",
-      "similarity": 0.5418,
-      "text": "Democratic policies have created systemic conditions that facilitate illegal immigration."
+      "claim_id": "immigration_x_63969851_0",
+      "similarity": 0.5916,
+      "text": "Plaid Cymru's immigration policy involves open borders and devolved control."
     }
   ],
   "example_content": [
     {
-      "text": "The current stock of three million temporary entrants needs to be reduced to alleviate pressure on the permanent immigration program.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Democratic policies have created systemic conditions that facilitate illegal immigration.",
-      "platform": "Fox Wilmington",
+      "text": "The Obama administration's immigration policies allowed dangerous criminals into the country.",
+      "platform": "Fox Politics",
       "confidence": 0.8,
       "is_influencer_framing": false
     },
     {
-      "text": "Governor Hochul's proposal to restrict ICE activities in New York State is an overreaching anti-federal immigration policy.",
-      "platform": "Cnhi News",
+      "text": "European Union immigration policy is dangerously permissive.",
+      "platform": "X Platform",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Current immigration levels in Canada are too high.",
+      "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

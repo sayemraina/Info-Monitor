@@ -1,0 +1,204 @@
+{
+  "claim": {
+    "text": "The narrative of a housing crisis is a manufactured scheme for financial gain.",
+    "subject": "The Housing Crisis",
+    "assertion": "is a fabricated scheme",
+    "framing": "corporate greed",
+    "stance": "anti",
+    "confidence": 0.8,
+    "arousal": "medium",
+    "register": "vernacular",
+    "id": "housing-crisis_x_54e1b0ed_0",
+    "cluster_id": "clu_housing-crisis_040",
+    "concept_id": "concept_housing-crisis_002",
+    "first_seen_platform": "x",
+    "first_seen_timestamp": "2026-05-05T22:03:15.000Z",
+    "source_document_id": "x_2051784817855877567",
+    "source_platform": "x",
+    "source_timestamp": "2026-05-05T22:03:15.000Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.51,
+    "confidence_interval": [
+      0.41,
+      0.61
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.51
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0.3333,
+    "friction_quadrant": "unopposed_advance"
+  },
+  "salience": {
+    "value": 0.3111,
+    "confidence_interval": [
+      0.1844,
+      0.4378
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3111
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.3333,
+    "confidence_interval": [
+      0.2083,
+      0.4583
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3333
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 0.9898,
+    "confidence_interval": [
+      0.914,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.9898
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.8,
+    "factors": []
+  },
+  "provenance": {
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-05-05T22:03:15.000Z",
+    "lead_lag": [
+      {
+        "platform": "X Platform",
+        "lag_hours": 3.2
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_housing-crisis_002",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-05-05T18:48:54.849000+00:00",
+        "claim_id": "housing-crisis_x_54e1b0ed_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-05-05T22:03:15+00:00",
+        "claim_id": "housing-crisis_x_54e1b0ed_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "housing-crisis_bluesky_cfe8fbcf_0",
+      "similarity": 0.746,
+      "text": "The dominant narrative around the housing crisis focuses too much on affordability and neglects the issue of housing quality."
+    },
+    {
+      "claim_id": "housing-crisis_x_f870c83b_2",
+      "similarity": 0.6215,
+      "text": "Traditional metrics are inadequate for assessing the current housing market."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "The dominant narrative around the housing crisis focuses too much on affordability and neglects the issue of housing quality.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Traditional metrics are inadequate for assessing the current housing market.",
+      "platform": "X Platform",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    }
+  ]
+}

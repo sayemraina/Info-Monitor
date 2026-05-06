@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "ai-workplace_bluesky_e36ffd28_1",
-    "cluster_id": "clu_ai-workplace_036",
-    "concept_id": "concept_ai-workplace_002",
+    "cluster_id": "clu_ai-workplace_006",
+    "concept_id": "concept_ai-workplace_000",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-29T00:48:55.067Z",
     "source_document_id": "87ca434005f1db39",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.4252,
+    "value": null,
     "confidence_interval": [
-      0.3252,
-      0.5252
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.4252
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 2,
-    "friction": 0.4286,
-    "friction_quadrant": "successful_suppression"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.4569,
+    "value": null,
     "confidence_interval": [
-      0.3412,
-      0.5726
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.4569
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.4286,
+    "value": null,
     "confidence_interval": [
-      0.3107,
-      0.5465
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.4286
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.1,
+    "value": 0,
     "confidence_interval": [
       0,
-      0.2425
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,106 +133,64 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
-    "first_timestamp": "2026-04-29T00:48:55.067Z",
-    "lead_lag": [
-      {
-        "platform": "X Platform",
-        "lag_hours": 0.7
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_ai-workplace_002",
-    "hops": [
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-28T20:15:52.806000+00:00",
-        "claim_id": "ai-workplace_bluesky_e36ffd28_1",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-28T21:00:04+00:00",
-        "claim_id": "ai-workplace_bluesky_e36ffd28_1",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-workplace_x_ff8ee0ce_0",
-      "similarity": 0.8953,
-      "text": "AI is currently displacing highly-paid, white-collar jobs, particularly affecting programmers and customer service roles."
+      "claim_id": "ai-workplace_bluesky_86756efc_0",
+      "similarity": 0.8892,
+      "text": "Artificial intelligence will disproportionately cause job displacement in India and the Philippines."
     },
     {
-      "claim_id": "ai-workplace_x_4f369f2b_0",
-      "similarity": 0.8867,
-      "text": "AI is not currently eliminating jobs due to its inadequate implementation as background services."
+      "claim_id": "ai-workplace_x_932f6159_0",
+      "similarity": 0.8828,
+      "text": "AI should replace most jobs, with the profits distributed to the population."
     },
     {
-      "claim_id": "ai-workplace_x_d469ae37_0",
-      "similarity": 0.8812,
-      "text": "AI is not eliminating jobs; it is revealing which jobs are already vulnerable to automation or redundancy."
+      "claim_id": "ai-workplace_bluesky_ca5a1868_0",
+      "similarity": 0.8744,
+      "text": "AI technologies like ChatGPT are causing job displacement."
     },
     {
-      "claim_id": "ai-workplace_bluesky_25826252_0",
-      "similarity": 0.8714,
-      "text": "Corporations are embracing AI primarily to reduce labor costs rather than to improve productivity."
+      "claim_id": "ai-workplace_bluesky_714e1358_0",
+      "similarity": 0.8736,
+      "text": "The current boom in data centers is driven by the expectation that AI will displace human jobs."
     },
     {
-      "claim_id": "ai-workplace_x_df1a82e7_0",
-      "similarity": 0.8712,
-      "text": "AI is primarily replacing low-quality work rather than skilled professionals."
+      "claim_id": "ai-workplace_bluesky_80e01cce_0",
+      "similarity": 0.8502,
+      "text": "The widespread replacement of workers with AI will lead to a decrease in consumer purchasing power."
     }
   ],
   "example_content": [
     {
-      "text": "Corporations are embracing AI primarily to reduce labor costs rather than to improve productivity.",
+      "text": "The current boom in data centers is driven by the expectation that AI will displace human jobs.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Attributing future tech industry layoffs to AI is a superficial explanation for deeper issues.",
+      "text": "Companies claiming AI will replace jobs are simultaneously struggling to match existing talent to existing roles.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "AI is not currently eliminating jobs due to its inadequate implementation as background services.",
-      "platform": "X Platform",
+      "text": "The widespread replacement of workers with AI will lead to a decrease in consumer purchasing power.",
+      "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

@@ -9,7 +9,7 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "dei-rollbacks_bluesky_68afe210_1",
-    "cluster_id": "clu_dei-rollbacks_017",
+    "cluster_id": "clu_dei-rollbacks_018",
     "concept_id": "concept_dei-rollbacks_001",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-29T18:33:42.071Z",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.4208,
+    "value": null,
     "confidence_interval": [
-      0.3208,
-      0.5208
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.4208
-    ],
-    "source_distribution": "production",
-    "source_diversity": 1.0,
-    "bridge_ratio": 1.0,
-    "persistence_windows": 4,
-    "friction": 0.5714,
-    "friction_quadrant": "successful_suppression"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.5635,
+    "value": null,
     "confidence_interval": [
-      0.4558,
-      0.6712
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5635
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.5714,
+    "value": null,
     "confidence_interval": [
-      0.4643,
-      0.6785
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5714
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.2,
+    "value": 0,
     "confidence_interval": [
-      0.065,
-      0.335
+      0,
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,127 +133,63 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
-    "first_timestamp": "2026-04-29T18:33:42.071Z",
-    "lead_lag": [
-      {
-        "platform": "Wboc Tv 16",
-        "lag_hours": 1.2
-      },
-      {
-        "platform": "Wyff4",
-        "lag_hours": 2.7
-      },
-      {
-        "platform": "Cbs17.Com",
-        "lag_hours": 3.9
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_dei-rollbacks_001",
-    "hops": [
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T14:24:19.887000+00:00",
-        "claim_id": "dei-rollbacks_bluesky_68afe210_1",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Wboc Tv 16",
-        "timestamp": "2026-04-29T15:35:07+00:00",
-        "claim_id": "dei-rollbacks_bluesky_68afe210_1",
-        "fidelity_to_origin": 0.79,
-        "fidelity_to_previous": 0.79
-      },
-      {
-        "platform": "Wyff4",
-        "timestamp": "2026-04-29T17:08:00+00:00",
-        "claim_id": "dei-rollbacks_bluesky_68afe210_1",
-        "fidelity_to_origin": 0.5143,
-        "fidelity_to_previous": 0.651
-      },
-      {
-        "platform": "Cbs17.Com",
-        "timestamp": "2026-04-29T18:20:14+00:00",
-        "claim_id": "dei-rollbacks_bluesky_68afe210_1",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.5833
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "dei-rollbacks_bluesky_8bb946fc_0",
-      "similarity": 0.6818,
-      "text": "Diversity, Equity, and Inclusion (DEI) initiatives are associated with incompetence."
+      "claim_id": "dei-rollbacks_bluesky_17bcab05_0",
+      "similarity": 0.6698,
+      "text": "Diversity, equity, and inclusion (DEI) initiatives are ineffective and misguided."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_6a2d7dd3_0",
-      "similarity": 0.6051,
-      "text": "The company opposes diversity, equity, and inclusion initiatives."
-    },
-    {
-      "claim_id": "dei-rollbacks_bluesky_72b35f8b_0",
+      "claim_id": "dei-rollbacks_bluesky_8794be40_0",
       "similarity": 0.5971,
-      "text": "Diversity, Equity, and Inclusion (DEI) initiatives are necessary to create a level playing field for white people."
+      "text": "DEI initiatives are necessary to counter the advantages enjoyed by mediocre white men."
     },
     {
-      "claim_id": "dei-rollbacks_wboc_tv-16_35c59387_0",
-      "similarity": 0.5875,
-      "text": "Embedding inclusion and human-centered leadership into organizational practices leads to improved performance and a thriving work environment."
+      "claim_id": "dei-rollbacks_bluesky_d835b745_0",
+      "similarity": 0.5778,
+      "text": "DEI initiatives may lead to accusations of non-compliance with federal regulations."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_2562454b_0",
-      "similarity": 0.5845,
-      "text": "The negative consequences of eliminating DEI initiatives demonstrate the value and necessity of DEI."
+      "claim_id": "dei-rollbacks_bluesky_6be3e46e_0",
+      "similarity": 0.5679,
+      "text": "Costco's commitment to DEI is a positive factor influencing consumer purchasing decisions."
+    },
+    {
+      "claim_id": "dei-rollbacks_bluesky_c6c0e49d_0",
+      "similarity": 0.5465,
+      "text": "South Carolina State University students objected to a speaker due to her opposition to DEI, her pro-life stance, and her association with Trump conservatism."
     }
   ],
   "example_content": [
     {
-      "text": "Diversity, Equity, and Inclusion (DEI) initiatives are associated with incompetence.",
+      "text": "Diversity, equity, and inclusion (DEI) initiatives are ineffective and misguided.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Immigration and Customs Enforcement (ICE) should cooperate more.",
+      "text": "Costco's commitment to DEI is a positive factor influencing consumer purchasing decisions.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The organization's collaboration with ICE is objectionable.",
+      "text": "South Carolina State University students objected to a speaker due to her opposition to DEI, her pro-life stance, and her association with Trump conservatism.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

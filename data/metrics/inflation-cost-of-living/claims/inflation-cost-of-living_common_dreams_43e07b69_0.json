@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "inflation-cost-of-living_common_dreams_43e07b69_0",
-    "cluster_id": "clu_inflation-cost-of-living_013",
-    "concept_id": "concept_inflation-cost-of-living_002",
+    "cluster_id": "clu_inflation-cost-of-living_012",
+    "concept_id": "concept_inflation-cost-of-living_003",
     "first_seen_platform": "common_dreams",
     "first_seen_timestamp": "2026-04-29T18:05:31Z",
     "source_document_id": "5aa1cffac410de0c",
@@ -24,94 +24,107 @@
     "source_type": "elite_media"
   },
   "momentum": {
-    "value": 0.645,
+    "value": null,
     "confidence_interval": [
-      0.545,
-      0.745
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.645
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.75,
-    "bridge_ratio": 0.75,
-    "persistence_windows": 2,
-    "friction": 0.8333,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.2969,
+    "value": null,
     "confidence_interval": [
-      0.1692,
-      0.4246
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.2969
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.8333,
+    "value": null,
     "confidence_interval": [
-      0.7458,
-      0.9208
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.8333
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.1,
+    "value": 0,
     "confidence_interval": [
       0,
-      0.2425
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.85,
+    "value": null,
     "confidence_interval": [
-      0.7638,
-      0.9362
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.85
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,118 +133,60 @@
     ]
   },
   "provenance": {
-    "first_platform": "Common Dreams",
-    "first_timestamp": "2026-04-29T18:05:31Z",
-    "lead_lag": [
-      {
-        "platform": "Bluesky",
-        "lag_hours": 0.7
-      },
-      {
-        "platform": "X Platform",
-        "lag_hours": 0.9
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_inflation-cost-of-living_002",
-    "hops": [
-      {
-        "platform": "Common Dreams",
-        "timestamp": "2026-04-29T18:05:31+00:00",
-        "claim_id": "inflation-cost-of-living_common_dreams_43e07b69_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T18:49:28.401000+00:00",
-        "claim_id": "inflation-cost-of-living_common_dreams_43e07b69_0",
-        "fidelity_to_origin": 0.4126,
-        "fidelity_to_previous": 0.4126
-      },
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-29T18:57:54+00:00",
-        "claim_id": "inflation-cost-of-living_common_dreams_43e07b69_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.7271
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "inflation-cost-of-living_bluesky_2231fd90_0",
-      "similarity": 0.6621,
-      "text": "Billionaires and corporations are responsible for inflation through price gouging."
+      "claim_id": "inflation-cost-of-living_x_2942f016_0",
+      "similarity": 0.6489,
+      "text": "Some businesses are profiting from the increased cost of living."
     },
     {
-      "claim_id": "inflation-cost-of-living_x_c060921c_0",
-      "similarity": 0.5364,
-      "text": "Corporations are betraying their customers for profit, harming American values."
+      "claim_id": "inflation-cost-of-living_bluesky_353d67bd_0",
+      "similarity": 0.5031,
+      "text": "Corporations are more responsible for inflation than workers."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_bf741b9e_0",
-      "similarity": 0.5306,
-      "text": "Capitalists are intentionally causing inflation to harm the general public."
+      "claim_id": "inflation-cost-of-living_bluesky_2eabc88d_0",
+      "similarity": 0.4942,
+      "text": "High food prices are the result of inflation and price gouging."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_0bf0c5e8_0",
-      "similarity": 0.5,
-      "text": "Billionaires and corporations are responsible for inflation by price gouging."
-    },
-    {
-      "claim_id": "inflation-cost-of-living_bluesky_1f956311_0",
-      "similarity": 0.435,
-      "text": "Multiple supply shocks have contributed to the current difficult economic situation."
+      "claim_id": "inflation-cost-of-living_x_46655a05_0",
+      "similarity": 0.3278,
+      "text": "Increased government spending and mass migration are driving inflation."
     }
   ],
   "example_content": [
     {
-      "text": "Multiple supply shocks have contributed to the current difficult economic situation.",
+      "text": "Corporations are more responsible for inflation than workers.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Billionaires and corporations are responsible for inflation through price gouging.",
+      "text": "High food prices are the result of inflation and price gouging.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Billionaires and corporations are responsible for inflation by price gouging.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
+      "text": "Some businesses are profiting from the increased cost of living.",
+      "platform": "X Platform",
+      "confidence": 0.8,
       "is_influencer_framing": false
     }
   ]

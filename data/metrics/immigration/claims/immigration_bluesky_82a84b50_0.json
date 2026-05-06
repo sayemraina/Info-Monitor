@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "immigration_bluesky_82a84b50_0",
-    "cluster_id": "clu_immigration_043",
-    "concept_id": "concept_immigration_007",
+    "cluster_id": "clu_immigration_017",
+    "concept_id": "concept_immigration_006",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-29T17:50:48.408Z",
     "source_document_id": "0cb8119841cd73af",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.54,
+    "value": null,
     "confidence_interval": [
-      0.44,
-      0.64
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.54
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 1,
-    "friction": 1,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.3033,
+    "value": null,
     "confidence_interval": [
-      0.176,
-      0.4306
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3033
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0,
     "confidence_interval": [
       0,
-      0.1962
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9674,
+    "value": null,
     "confidence_interval": [
-      0.89,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.9674
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,97 +133,65 @@
     ]
   },
   "provenance": {
-    "first_platform": "X Platform",
-    "first_timestamp": "2026-04-29T17:50:48.408Z",
-    "lead_lag": [
-      {
-        "platform": "Bluesky",
-        "lag_hours": 6.0
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_immigration_007",
-    "hops": [
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-29T11:49:25+00:00",
-        "claim_id": "immigration_bluesky_82a84b50_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T17:50:48.408000+00:00",
-        "claim_id": "immigration_bluesky_82a84b50_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "immigration_x_a7e060d8_0",
-      "similarity": 0.9047,
-      "text": "Mass immigration is detrimental to the UK."
+      "claim_id": "immigration_x_14f328bd_0",
+      "similarity": 0.8176,
+      "text": "Tony Burke admitted responsibility for disastrous immigration policy."
     },
     {
-      "claim_id": "immigration_x_4b75c65a_0",
-      "similarity": 0.7837,
-      "text": "Current American foreign policy, immigration policy, and domestic policy are detrimental."
+      "claim_id": "immigration_bluesky_44eeeef3_1",
+      "similarity": 0.7651,
+      "text": "Deportation policies disproportionately affect immigrant workers who contribute to American society."
     },
     {
-      "claim_id": "immigration_x_7adf86ea_0",
-      "similarity": 0.6709,
-      "text": "The 2025 immigration policy creates unsafe environments for young children of immigrants."
+      "claim_id": "immigration_x_a9d526a7_0",
+      "similarity": 0.6519,
+      "text": "Left-leaning immigration policies have made California unsafe."
+    },
+    {
+      "claim_id": "immigration_fortune_19add3b6_0",
+      "similarity": 0.6396,
+      "text": "Increased immigration enforcement negatively impacts the overall labor market."
+    },
+    {
+      "claim_id": "immigration_bluesky_d6f85b3c_0",
+      "similarity": 0.6101,
+      "text": "Current federal immigration policies are causing family separations and increased fear among immigrant families."
     }
   ],
   "example_content": [
     {
-      "text": "Current American foreign policy, immigration policy, and domestic policy are detrimental.",
-      "platform": "X Platform",
+      "text": "Current federal immigration policies are causing family separations and increased fear among immigrant families.",
+      "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The 2025 immigration policy creates unsafe environments for young children of immigrants.",
-      "platform": "X Platform",
-      "confidence": 0.9,
+      "text": "Deportation policies disproportionately affect immigrant workers who contribute to American society.",
+      "platform": "Bluesky",
+      "confidence": 0.8,
       "is_influencer_framing": false
     },
     {
-      "text": "Mass immigration is detrimental to the UK.",
-      "platform": "X Platform",
-      "confidence": 0.95,
+      "text": "The individual is untrustworthy and would betray California.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

@@ -1,0 +1,206 @@
+{
+  "claim": {
+    "text": "Government policies have increased the cost of living.",
+    "subject": "cost of living",
+    "assertion": "has been increased by government policies",
+    "framing": "government policy",
+    "stance": "anti",
+    "confidence": 0.9,
+    "arousal": "high",
+    "register": "vernacular",
+    "id": "inflation-cost-of-living_x_5bf86bda_0",
+    "cluster_id": "clu_inflation-cost-of-living_049",
+    "concept_id": "concept_inflation-cost-of-living_000",
+    "first_seen_platform": "x",
+    "first_seen_timestamp": "2026-05-06T07:21:56.000Z",
+    "source_document_id": "x_2051925416756027486",
+    "source_platform": "x",
+    "source_timestamp": "2026-05-06T07:21:56.000Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.645,
+    "confidence_interval": [
+      0.545,
+      0.745
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.645
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0.3333,
+    "friction_quadrant": "unopposed_advance"
+  },
+  "salience": {
+    "value": 0.3019,
+    "confidence_interval": [
+      0.1745,
+      0.4293
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3019
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.3333,
+    "confidence_interval": [
+      0.2083,
+      0.4583
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3333
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.85,
+    "confidence_interval": [
+      0.7638,
+      0.9362
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.85
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 0.9773,
+    "confidence_interval": [
+      0.9006,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.9773
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-05-06T07:21:56.000Z",
+    "lead_lag": [
+      {
+        "platform": "X Platform",
+        "lag_hours": 4.8
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_inflation-cost-of-living_000",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-05-06T02:31:29.214000+00:00",
+        "claim_id": "inflation-cost-of-living_x_5bf86bda_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-05-06T07:21:56+00:00",
+        "claim_id": "inflation-cost-of-living_x_5bf86bda_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "inflation-cost-of-living_bluesky_7997193e_0",
+      "similarity": 0.6737,
+      "text": "Chedrick Greene will work to reduce the cost of living for Michigan residents."
+    },
+    {
+      "claim_id": "inflation-cost-of-living_x_46655a05_1",
+      "similarity": 0.6599,
+      "text": "Reducing government spending and stopping mass migration will improve affordability."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Chedrick Greene will work to reduce the cost of living for Michigan residents.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Reducing government spending and stopping mass migration will improve affordability.",
+      "platform": "X Platform",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

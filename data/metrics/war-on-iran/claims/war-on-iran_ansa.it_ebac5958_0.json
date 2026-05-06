@@ -1,0 +1,217 @@
+{
+  "claim": {
+    "text": "The Catholic Church has consistently opposed nuclear weapons.",
+    "subject": "nuclear weapons",
+    "assertion": "should be opposed",
+    "framing": "neutral",
+    "stance": "pro",
+    "confidence": 1.0,
+    "arousal": "low",
+    "register": "journalistic",
+    "id": "war-on-iran_ansa.it_ebac5958_0",
+    "cluster_id": "clu_war-on-iran_039",
+    "concept_id": "concept_war-on-iran_006",
+    "first_seen_platform": "ansa.it",
+    "first_seen_timestamp": "2026-05-06T07:53:06Z",
+    "source_document_id": "71623797aa682c20",
+    "source_platform": "ansa.it",
+    "source_timestamp": "2026-05-06T07:53:06Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "elite_media"
+  },
+  "momentum": {
+    "value": 0.465,
+    "confidence_interval": [
+      0.365,
+      0.565
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.465
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.75,
+    "bridge_ratio": 0.75,
+    "persistence_windows": 1,
+    "friction": 0,
+    "friction_quadrant": "dead"
+  },
+  "salience": {
+    "value": 0.3056,
+    "confidence_interval": [
+      0.1785,
+      0.4327
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3056
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0,
+    "confidence_interval": [
+      0,
+      0.15
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.15,
+    "confidence_interval": [
+      0.0112,
+      0.2888
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.15
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 1.0,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Yakima Herald Republic",
+    "first_timestamp": "2026-05-06T07:53:06Z",
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 1.1
+      },
+      {
+        "platform": "Ansa.It",
+        "lag_hours": 5.1
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_war-on-iran_006",
+    "hops": [
+      {
+        "platform": "Yakima Herald Republic",
+        "timestamp": "2026-05-06T02:47:57+00:00",
+        "claim_id": "war-on-iran_ansa.it_ebac5958_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-05-06T03:53:57.513000+00:00",
+        "claim_id": "war-on-iran_ansa.it_ebac5958_0",
+        "fidelity_to_origin": 0.8486,
+        "fidelity_to_previous": 0.8486
+      },
+      {
+        "platform": "Ansa.It",
+        "timestamp": "2026-05-06T07:53:06+00:00",
+        "claim_id": "war-on-iran_ansa.it_ebac5958_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3535
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "war-on-iran_bluesky_9605f8f3_1",
+      "similarity": 0.6819,
+      "text": "Global nuclear disarmament efforts should be prioritized over preventing Iran from developing nuclear weapons."
+    },
+    {
+      "claim_id": "war-on-iran_yakima_herald-republic_3f5c6f42_1",
+      "similarity": 0.6599,
+      "text": "The Catholic Church opposes all nuclear weapons."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Global nuclear disarmament efforts should be prioritized over preventing Iran from developing nuclear weapons.",
+      "platform": "Bluesky",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The Catholic Church opposes all nuclear weapons.",
+      "platform": "Yakima Herald Republic",
+      "confidence": 1.0,
+      "is_influencer_framing": false
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "claim": {
+    "text": "Israel initiated the conflict with Hamas.",
+    "subject": "Israel",
+    "assertion": "initiated the conflict with Hamas",
+    "framing": "neutral",
+    "stance": "anti",
+    "confidence": 0.9,
+    "arousal": "high",
+    "register": "vernacular",
+    "id": "israel-palestine_x_4bc1960d_0",
+    "cluster_id": "clu_israel-palestine_011",
+    "concept_id": "concept_israel-palestine_001",
+    "first_seen_platform": "x",
+    "first_seen_timestamp": "2026-05-06T05:11:25.000Z",
+    "source_document_id": "x_2051892567935959432",
+    "source_platform": "x",
+    "source_timestamp": "2026-05-06T05:11:25.000Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.645,
+    "confidence_interval": [
+      0.545,
+      0.745
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.645
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.25,
+    "bridge_ratio": 0.25,
+    "persistence_windows": 1,
+    "friction": 0.3333,
+    "friction_quadrant": "unopposed_advance"
+  },
+  "salience": {
+    "value": 0.3081,
+    "confidence_interval": [
+      0.1812,
+      0.435
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3081
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.3333,
+    "confidence_interval": [
+      0.2083,
+      0.4583
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3333
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.85,
+    "confidence_interval": [
+      0.7638,
+      0.9362
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.85
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 0.9892,
+    "confidence_interval": [
+      0.9134,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.9892
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "X Platform",
+    "first_timestamp": "2026-05-06T05:11:25.000Z",
+    "lead_lag": []
+  },
+  "supply_chain": {
+    "concept_id": "concept_israel-palestine_001",
+    "hops": [
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-05-06T05:11:25+00:00",
+        "claim_id": "israel-palestine_x_4bc1960d_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      }
+    ],
+    "observation_boundary": "No public antecedent detected"
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "israel-palestine_x_2cafeac7_0",
+      "similarity": 0.742,
+      "text": "Israel declared a state of war and initiated retaliatory airstrikes on the Gaza Strip in response to a Hamas attack."
+    },
+    {
+      "claim_id": "israel-palestine_x_6847ff2f_0",
+      "similarity": 0.6491,
+      "text": "Israel is expected to continue attacks in Gaza."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Israel is expected to continue attacks in Gaza.",
+      "platform": "X Platform",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Israel declared a state of war and initiated retaliatory airstrikes on the Gaza Strip in response to a Hamas attack.",
+      "platform": "X Platform",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

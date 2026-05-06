@@ -1,0 +1,217 @@
+{
+  "claim": {
+    "text": "Congress has ceded its constitutional authority to declare war to the executive branch.",
+    "subject": "congressional authority",
+    "assertion": "has been ceded to the executive branch",
+    "framing": "constitutional authority",
+    "stance": "anti",
+    "confidence": 0.9,
+    "arousal": "medium",
+    "register": "journalistic",
+    "id": "war-on-iran_reason_1ba74b45_1",
+    "cluster_id": "clu_war-on-iran_037",
+    "concept_id": "concept_war-on-iran_000",
+    "first_seen_platform": "reason",
+    "first_seen_timestamp": "2026-05-05T10:00:16Z",
+    "source_document_id": "628211570d882875",
+    "source_platform": "reason",
+    "source_timestamp": "2026-05-05T10:00:16Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "elite_media"
+  },
+  "momentum": {
+    "value": 0.54,
+    "confidence_interval": [
+      0.44,
+      0.64
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.54
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 1,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.3063,
+    "confidence_interval": [
+      0.1793,
+      0.4333
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3063
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Reason",
+    "first_timestamp": "2026-05-05T10:00:16Z",
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 20.8
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_war-on-iran_000",
+    "hops": [
+      {
+        "platform": "Reason",
+        "timestamp": "2026-05-05T10:00:16+00:00",
+        "claim_id": "war-on-iran_reason_1ba74b45_1",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-05-06T06:47:47.984000+00:00",
+        "claim_id": "war-on-iran_reason_1ba74b45_1",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "war-on-iran_bluesky_794f916a_0",
+      "similarity": 0.5205,
+      "text": "The US president can bypass democratic oversight and continue military action indefinitely by renaming the operation every 60 days."
+    },
+    {
+      "claim_id": "war-on-iran_reason_1ba74b45_2",
+      "similarity": 0.4431,
+      "text": "AUMFs grant the president overly broad discretion in deploying military force."
+    },
+    {
+      "claim_id": "war-on-iran_reason_1ba74b45_0",
+      "similarity": 0.4411,
+      "text": "The Trump administration initiated military actions against Iran without congressional authorization."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "The US president can bypass democratic oversight and continue military action indefinitely by renaming the operation every 60 days.",
+      "platform": "Bluesky",
+      "confidence": 0.7,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The Trump administration initiated military actions against Iran without congressional authorization.",
+      "platform": "Reason",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "AUMFs grant the president overly broad discretion in deploying military force.",
+      "platform": "Reason",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    }
+  ]
+}

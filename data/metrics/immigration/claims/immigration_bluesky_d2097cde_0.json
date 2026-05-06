@@ -9,7 +9,7 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "immigration_bluesky_d2097cde_0",
-    "cluster_id": "clu_immigration_030",
+    "cluster_id": "clu_immigration_044",
     "concept_id": "concept_immigration_006",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-29T16:33:41.089Z",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.645,
+    "value": null,
     "confidence_interval": [
-      0.545,
-      0.745
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.645
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.75,
-    "bridge_ratio": 0.75,
-    "persistence_windows": 1,
-    "friction": 1,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.3074,
+    "value": null,
     "confidence_interval": [
-      0.1805,
-      0.4343
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3074
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0,
     "confidence_interval": [
       0,
-      0.1962
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.85,
+    "value": null,
     "confidence_interval": [
-      0.7638,
-      0.9362
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.85
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,97 +133,60 @@
     ]
   },
   "provenance": {
-    "first_platform": "Fox Politics",
-    "first_timestamp": "2026-04-29T16:33:41.089Z",
-    "lead_lag": [
-      {
-        "platform": "Bluesky",
-        "lag_hours": 1.4
-      },
-      {
-        "platform": "Fox Wilmington",
-        "lag_hours": 2.1
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_immigration_006",
-    "hops": [
-      {
-        "platform": "Fox Politics",
-        "timestamp": "2026-04-29T15:10:02+00:00",
-        "claim_id": "immigration_bluesky_d2097cde_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T16:33:41.089000+00:00",
-        "claim_id": "immigration_bluesky_d2097cde_0",
-        "fidelity_to_origin": 0.5372,
-        "fidelity_to_previous": 0.5372
-      },
-      {
-        "platform": "Fox Wilmington",
-        "timestamp": "2026-04-29T17:16:34+00:00",
-        "claim_id": "immigration_bluesky_d2097cde_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.5585
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "immigration_fox_politics_e458d7c1_1",
-      "similarity": 0.6732,
-      "text": "Democratic policies have created conditions that facilitate illegal immigration."
+      "claim_id": "immigration_x_63969851_0",
+      "similarity": 0.581,
+      "text": "Plaid Cymru's immigration policy involves open borders and devolved control."
     },
     {
-      "claim_id": "immigration_fox_wilmington_3da693d1_1",
-      "similarity": 0.5528,
-      "text": "Democratic policies have created systemic conditions that facilitate illegal immigration."
+      "claim_id": "immigration_x_af919150_0",
+      "similarity": 0.5806,
+      "text": "European Union immigration policy is dangerously permissive."
+    },
+    {
+      "claim_id": "immigration_fox_politics_a5944b4e_2",
+      "similarity": 0.5759,
+      "text": "The Obama administration's immigration policies allowed dangerous criminals into the country."
+    },
+    {
+      "claim_id": "immigration_x_592ac133_1",
+      "similarity": 0.5448,
+      "text": "Current immigration levels in Canada are too high."
     }
   ],
   "example_content": [
     {
-      "text": "Democratic policies have created systemic conditions that facilitate illegal immigration.",
-      "platform": "Fox Wilmington",
+      "text": "The Obama administration's immigration policies allowed dangerous criminals into the country.",
+      "platform": "Fox Politics",
       "confidence": 0.8,
       "is_influencer_framing": false
     },
     {
-      "text": "Democratic policies have created conditions that facilitate illegal immigration.",
-      "platform": "Fox Politics",
+      "text": "European Union immigration policy is dangerously permissive.",
+      "platform": "X Platform",
       "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Current immigration levels in Canada are too high.",
+      "platform": "X Platform",
+      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

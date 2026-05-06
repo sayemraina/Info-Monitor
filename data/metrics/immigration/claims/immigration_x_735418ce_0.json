@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "immigration_x_735418ce_0",
-    "cluster_id": "clu_immigration_029",
-    "concept_id": "concept_immigration_002",
+    "cluster_id": "clu_immigration_047",
+    "concept_id": "concept_immigration_001",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-29T11:14:29.000Z",
     "source_document_id": "x_2049447224094974393",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.645,
+    "value": null,
     "confidence_interval": [
-      0.545,
-      0.745
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.645
-    ],
-    "source_distribution": "production",
-    "source_diversity": 1.0,
-    "bridge_ratio": 1.0,
-    "persistence_windows": 3,
-    "friction": 0.7273,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.4269,
+    "value": null,
     "confidence_interval": [
-      0.3089,
-      0.5449
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.4269
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.7273,
+    "value": null,
     "confidence_interval": [
-      0.6318,
-      0.8228
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.7273
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.15,
+    "value": 0,
     "confidence_interval": [
-      0.0112,
-      0.2888
+      0,
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.15
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.85,
+    "value": null,
     "confidence_interval": [
-      0.7638,
-      0.9362
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.85
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.988,
+    "value": null,
     "confidence_interval": [
-      0.9121,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.988
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,139 +133,54 @@
     ]
   },
   "provenance": {
-    "first_platform": "Reason",
-    "first_timestamp": "2026-04-29T11:14:29.000Z",
-    "lead_lag": [
-      {
-        "platform": "Bluesky",
-        "lag_hours": 9.3
-      },
-      {
-        "platform": "X Platform",
-        "lag_hours": 12.7
-      },
-      {
-        "platform": "International Business Times U",
-        "lag_hours": 18.9
-      },
-      {
-        "platform": "Triblive",
-        "lag_hours": 19.4
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_immigration_002",
-    "hops": [
-      {
-        "platform": "Reason",
-        "timestamp": "2026-04-28T21:56:58+00:00",
-        "claim_id": "immigration_x_735418ce_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T07:17:02+00:00",
-        "claim_id": "immigration_x_735418ce_0",
-        "fidelity_to_origin": 0.6635,
-        "fidelity_to_previous": 0.6635
-      },
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-29T10:36:52+00:00",
-        "claim_id": "immigration_x_735418ce_0",
-        "fidelity_to_origin": 0.5434,
-        "fidelity_to_previous": 0.819
-      },
-      {
-        "platform": "International Business Times U",
-        "timestamp": "2026-04-29T16:49:35+00:00",
-        "claim_id": "immigration_x_735418ce_0",
-        "fidelity_to_origin": 0.3195,
-        "fidelity_to_previous": 0.588
-      },
-      {
-        "platform": "Triblive",
-        "timestamp": "2026-04-29T17:22:04+00:00",
-        "claim_id": "immigration_x_735418ce_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.939
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "immigration_bluesky_f3447cfa_0",
-      "similarity": 0.6816,
-      "text": "The US appeals court has ruled against Trump's immigration detention policy."
+      "claim_id": "immigration_x_11b26606_0",
+      "similarity": 0.5838,
+      "text": "The Trump administration's July 2025 immigration policy mandated detention for individuals not lawfully admitted into the U.S."
     },
     {
-      "claim_id": "immigration_bluesky_be11b888_0",
-      "similarity": 0.6216,
-      "text": "Trump's immigration detention policy violates legal standards."
+      "claim_id": "immigration_bluesky_2bc1c5cb_0",
+      "similarity": 0.4956,
+      "text": "The detention of individuals awaiting deportation to generate profit for private prisons is a problematic practice."
     },
     {
-      "claim_id": "immigration_international_business_times_u_be964f28_0",
-      "similarity": 0.6152,
-      "text": "The Trump administration's policy of mandatory detention for immigrants is illegal."
-    },
-    {
-      "claim_id": "immigration_bluesky_a7e5cc85_1",
-      "similarity": 0.6148,
-      "text": "Restrictions on immigration law limit access to legal precedents and can lead to indefinite detention."
-    },
-    {
-      "claim_id": "immigration_triblive_cca0d8fc_0",
-      "similarity": 0.5867,
-      "text": "ICE is inappropriately detaining and attempting to deport an individual who was granted Special Immigrant Juvenile status and has no significant criminal record."
+      "claim_id": "immigration_bluesky_a330899a_0",
+      "similarity": 0.4447,
+      "text": "The Rhode Island Senate should close the Donald W. Wyatt Detention Facility."
     }
   ],
   "example_content": [
     {
-      "text": "Trump's immigration detention policy violates legal standards.",
+      "text": "The Rhode Island Senate should close the Donald W. Wyatt Detention Facility.",
+      "platform": "Bluesky",
+      "confidence": 1.0,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The detention of individuals awaiting deportation to generate profit for private prisons is a problematic practice.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The mandatory detention policy has resulted in the detention of individuals eligible for legal status, including those with pending immigration applications.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "The US appeals court has ruled against Trump's immigration detention policy.",
-      "platform": "Bluesky",
+      "text": "The Trump administration's July 2025 immigration policy mandated detention for individuals not lawfully admitted into the U.S.",
+      "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

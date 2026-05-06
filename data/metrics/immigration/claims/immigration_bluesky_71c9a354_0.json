@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "immigration_bluesky_71c9a354_0",
-    "cluster_id": "clu_immigration_028",
-    "concept_id": "concept_immigration_007",
+    "cluster_id": "clu_immigration_046",
+    "concept_id": "concept_immigration_006",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-29T15:52:48.796Z",
     "source_document_id": "068ddaaded0bb159",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.5258,
+    "value": null,
     "confidence_interval": [
-      0.4258,
-      0.6258
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5258
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.25,
-    "bridge_ratio": 0.25,
-    "persistence_windows": 2,
-    "friction": 1,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.3157,
+    "value": null,
     "confidence_interval": [
-      0.1894,
-      0.442
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3157
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.1,
+    "value": 0,
     "confidence_interval": [
       0,
-      0.2425
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.85,
+    "value": null,
     "confidence_interval": [
-      0.7638,
-      0.9362
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.85
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9674,
+    "value": null,
     "confidence_interval": [
-      0.89,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.9674
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,93 +133,58 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
-    "first_timestamp": "2026-04-29T15:52:48.796Z",
+    "first_platform": "unknown",
+    "first_timestamp": "",
     "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_immigration_007",
-    "hops": [
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T11:42:41.425000+00:00",
-        "claim_id": "immigration_bluesky_71c9a354_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      }
-    ],
-    "observation_boundary": "No public antecedent detected"
+    "concept_id": "",
+    "hops": [],
+    "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "immigration_bluesky_3d52cd4b_0",
-      "similarity": 0.724,
-      "text": "Ending Temporary Protected Status for Haitian and Syrian migrants is cruel."
+      "claim_id": "immigration_bluesky_b1002675_0",
+      "similarity": 0.7667,
+      "text": "Current immigration policies are cruel and inhumane."
     },
     {
-      "claim_id": "immigration_bluesky_4b804653_0",
-      "similarity": 0.7091,
-      "text": "Immigration enforcement actions are motivated by cruelty and brutality rather than legitimate policy concerns."
+      "claim_id": "immigration_bluesky_c5afc527_0",
+      "similarity": 0.76,
+      "text": "The current immigration policy is harmful and inhumane."
     },
     {
-      "claim_id": "immigration_bluesky_49adaa42_0",
-      "similarity": 0.6932,
-      "text": "Government immigration enforcement actions are intentionally cruel."
+      "claim_id": "immigration_bluesky_4b7a2cb0_0",
+      "similarity": 0.6488,
+      "text": "US immigration policy is a human rights atrocity."
     },
     {
-      "claim_id": "immigration_bluesky_8b7cc5ad_1",
-      "similarity": 0.5639,
-      "text": "Republican anti-immigration policies are perceived as evil."
-    },
-    {
-      "claim_id": "immigration_bluesky_10bdc8fb_0",
-      "similarity": 0.3954,
-      "text": "Justice Alito is biased against non-white immigrants."
+      "claim_id": "immigration_bluesky_85f6dbbf_0",
+      "similarity": 0.5946,
+      "text": "Reform UK's immigration policy is vindictive and divisive."
     }
   ],
   "example_content": [
     {
-      "text": "Republican anti-immigration policies are perceived as evil.",
+      "text": "Current immigration policies are cruel and inhumane.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Ending Temporary Protected Status for Haitian and Syrian migrants is cruel.",
+      "text": "The current immigration policy is harmful and inhumane.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Immigration enforcement actions are motivated by cruelty and brutality rather than legitimate policy concerns.",
+      "text": "Reform UK's immigration policy is vindictive and divisive.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

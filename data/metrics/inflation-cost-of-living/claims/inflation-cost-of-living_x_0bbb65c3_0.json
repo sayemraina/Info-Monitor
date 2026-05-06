@@ -9,7 +9,7 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "inflation-cost-of-living_x_0bbb65c3_0",
-    "cluster_id": "clu_inflation-cost-of-living_038",
+    "cluster_id": "clu_inflation-cost-of-living_006",
     "concept_id": "concept_inflation-cost-of-living_000",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-29T18:52:53.000Z",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.54,
+    "value": null,
     "confidence_interval": [
-      0.44,
-      0.64
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.54
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.75,
-    "bridge_ratio": 0.75,
-    "persistence_windows": 5,
-    "friction": 0.3333,
-    "friction_quadrant": "unopposed_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.4806,
+    "value": null,
     "confidence_interval": [
-      0.3666,
-      0.5946
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.4806
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.3333,
+    "value": null,
     "confidence_interval": [
-      0.2083,
-      0.4583
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3333
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.25,
+    "value": 0,
     "confidence_interval": [
-      0.1187,
-      0.3813
+      0,
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.25
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,116 +133,63 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
-    "first_timestamp": "2026-04-29T18:52:53.000Z",
-    "lead_lag": [
-      {
-        "platform": "X Platform",
-        "lag_hours": 0.9
-      },
-      {
-        "platform": "Watoday",
-        "lag_hours": 1.8
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_inflation-cost-of-living_000",
-    "hops": [
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T16:55:56.032000+00:00",
-        "claim_id": "inflation-cost-of-living_x_0bbb65c3_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-29T17:48:52+00:00",
-        "claim_id": "inflation-cost-of-living_x_0bbb65c3_0",
-        "fidelity_to_origin": 0.6603,
-        "fidelity_to_previous": 0.6603
-      },
-      {
-        "platform": "Watoday",
-        "timestamp": "2026-04-29T18:45:00+00:00",
-        "claim_id": "inflation-cost-of-living_x_0bbb65c3_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.4543
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "inflation-cost-of-living_bluesky_2b5633d1_0",
-      "similarity": 0.8013,
-      "text": "The rising cost of living is negatively impacting people."
+      "claim_id": "inflation-cost-of-living_x_ac233cd2_0",
+      "similarity": 0.7378,
+      "text": "The cost of living is excessively high."
     },
     {
-      "claim_id": "inflation-cost-of-living_x_7782e058_0",
-      "similarity": 0.737,
-      "text": "The current cost of living is unacceptably high."
+      "claim_id": "inflation-cost-of-living_bluesky_056ade0a_1",
+      "similarity": 0.7326,
+      "text": "The cost of living is so high that many people can only afford to eat beans."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_109aa02e_0",
-      "similarity": 0.6308,
-      "text": "A majority of Americans believe the country is on the wrong track regarding the cost of living."
+      "claim_id": "inflation-cost-of-living_bluesky_61e3f2dc_1",
+      "similarity": 0.6839,
+      "text": "Healthcare, gas, and grocery prices are currently high."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_610e78ed_0",
-      "similarity": 0.6173,
-      "text": "Florida's insurance rates, property taxes, medical costs, and gas and grocery prices are excessively high."
+      "claim_id": "inflation-cost-of-living_bluesky_49a068e5_0",
+      "similarity": 0.6273,
+      "text": "The rising cost of goods is underestimated by some people."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_fbe632ea_1",
-      "similarity": 0.5605,
-      "text": "The cost of living is very low in a certain location."
+      "claim_id": "inflation-cost-of-living_x_91437d6f_0",
+      "similarity": 0.4822,
+      "text": "The cost of living has been intentionally raised to distract from allegations of pedophilia."
     }
   ],
   "example_content": [
     {
-      "text": "The rising cost of living is negatively impacting people.",
+      "text": "Some Southern states offer a better cost of living than Florida.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The cost of living is very low in a certain location.",
+      "text": "The cost of living in Nepal is significantly lower than in America.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The cost of living in Portugal is among the lowest in the European Union.",
+      "text": "The cost of living is so high that many people can only afford to eat beans.",
       "platform": "Bluesky",
       "confidence": 0.8,
       "is_influencer_framing": false

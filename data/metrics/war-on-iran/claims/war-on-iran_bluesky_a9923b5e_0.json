@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "war-on-iran_bluesky_a9923b5e_0",
-    "cluster_id": "clu_war-on-iran_025",
-    "concept_id": "concept_war-on-iran_004",
+    "cluster_id": "clu_war-on-iran_066",
+    "concept_id": "concept_war-on-iran_002",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-29T18:20:52.847Z",
     "source_document_id": "f5523f82f7c957e5",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.645,
+    "value": null,
     "confidence_interval": [
-      0.545,
-      0.745
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.645
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 6,
-    "friction": 0.3333,
-    "friction_quadrant": "unopposed_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.6559,
+    "value": null,
     "confidence_interval": [
-      0.5551,
-      0.7567
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.6559
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.3333,
+    "value": null,
     "confidence_interval": [
-      0.2083,
-      0.4583
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3333
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.3,
+    "value": 0,
     "confidence_interval": [
-      0.1725,
-      0.4275
+      0,
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.85,
+    "value": null,
     "confidence_interval": [
-      0.7638,
-      0.9362
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.85
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9701,
+    "value": null,
     "confidence_interval": [
-      0.8929,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.9701
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,106 +133,64 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
-    "first_timestamp": "2026-04-29T18:20:52.847Z",
-    "lead_lag": [
-      {
-        "platform": "X Platform",
-        "lag_hours": 7.1
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_war-on-iran_004",
-    "hops": [
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T12:02:04.756000+00:00",
-        "claim_id": "war-on-iran_bluesky_a9923b5e_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-29T19:10:56+00:00",
-        "claim_id": "war-on-iran_bluesky_a9923b5e_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "war-on-iran_bluesky_447283ef_2",
-      "similarity": 0.6634,
-      "text": "Donald Trump's decision to withdraw from the Iran nuclear agreement was motivated by racism."
+      "claim_id": "war-on-iran_x_a1feb195_1",
+      "similarity": 0.6665,
+      "text": "In 2026, there will be no sanctions relief or major nuclear deal for Iran."
     },
     {
-      "claim_id": "war-on-iran_bluesky_3f0b1bc9_1",
-      "similarity": 0.6603,
-      "text": "A nuclear weapons deal with Iran is not in place."
+      "claim_id": "war-on-iran_x_82380f21_2",
+      "similarity": 0.6173,
+      "text": "Donald Trump's actions caused problems in the Middle East by canceling the nuclear agreement with Iran."
     },
     {
-      "claim_id": "war-on-iran_bluesky_2d3fe540_0",
-      "similarity": 0.6482,
-      "text": "The Iran nuclear deal was effective and beneficial."
+      "claim_id": "war-on-iran_x_e81a058b_0",
+      "similarity": 0.6035,
+      "text": "The success or failure of the Iran Nuclear Deal is a contested topic."
     },
     {
-      "claim_id": "war-on-iran_bluesky_13ca4de8_0",
-      "similarity": 0.6466,
-      "text": "Canceling the Iran Nuclear Agreement was a mistake."
+      "claim_id": "war-on-iran_x_1feff8fb_0",
+      "similarity": 0.586,
+      "text": "The US government is considering re-entering the Iran nuclear deal."
     },
     {
-      "claim_id": "war-on-iran_bluesky_c90fedb9_0",
-      "similarity": 0.6393,
-      "text": "The United States' withdrawal from the Iran nuclear deal in 2018 was a strategic error."
+      "claim_id": "war-on-iran_bluesky_4bcc3d80_1",
+      "similarity": 0.5427,
+      "text": "Donald Trump claims to have negotiated a better nuclear deal with Iran than Barack Obama did."
     }
   ],
   "example_content": [
     {
-      "text": "Iran must agree to not develop nuclear weapons in order to reach a deal with the United States.",
+      "text": "Donald Trump claims to have negotiated a better nuclear deal with Iran than Barack Obama did.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "A nuclear weapons deal with Iran is not in place.",
-      "platform": "Bluesky",
+      "text": "The US government is considering re-entering the Iran nuclear deal.",
+      "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The Iran nuclear deal was effective and beneficial.",
-      "platform": "Bluesky",
+      "text": "In 2026, there will be no sanctions relief or major nuclear deal for Iran.",
+      "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

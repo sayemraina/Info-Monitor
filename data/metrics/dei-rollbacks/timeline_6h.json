@@ -1,25 +1,9 @@
 {
   "events": [
     {
-      "id": "evt_6187a748aff1",
-      "type": "contestation_emergence",
-      "timestamp": "2026-04-29T16:54:02.970879+00:00",
-      "claim_id": "dei-rollbacks_bluesky_8bb946fc_0",
-      "slice_id": null,
-      "severity": "high",
-      "confidence": 0.82,
-      "summary": "Active contestation in \"ICE\" — 6 pro vs 8 anti",
-      "detail": {
-        "cluster_id": "clu_dei-rollbacks_017",
-        "pro_count": 6,
-        "anti_count": 8,
-        "balance": 0.75
-      }
-    },
-    {
-      "id": "evt_8dd8722c3dd7",
+      "id": "evt_1e0309e0fac8",
       "type": "phase_transition",
-      "timestamp": "2026-04-29T16:54:02.970879+00:00",
+      "timestamp": "2026-05-06T06:17:19.509539+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
@@ -28,106 +12,52 @@
       "detail": {
         "cluster_id": "clu_dei-rollbacks_000",
         "direction": "radicalizing",
-        "magnitude": 0.761
+        "magnitude": 0.7604
       }
     },
     {
-      "id": "evt_aa7cfefea7ae",
+      "id": "evt_e36efb40409b",
       "type": "phase_transition",
-      "timestamp": "2026-04-29T16:54:02.970879+00:00",
-      "claim_id": null,
-      "slice_id": null,
-      "severity": "high",
-      "confidence": 0.81,
-      "summary": "\"Deutsche Telekom and T-Mobile\" cluster is shifting toward more extreme language",
-      "detail": {
-        "cluster_id": "clu_dei-rollbacks_001",
-        "direction": "radicalizing",
-        "magnitude": 0.6871
-      }
-    },
-    {
-      "id": "evt_7168d94b79ec",
-      "type": "phase_transition",
-      "timestamp": "2026-04-29T16:54:02.970879+00:00",
-      "claim_id": null,
-      "slice_id": null,
-      "severity": "high",
-      "confidence": 0.84,
-      "summary": "\"Republican Farm Bill\" cluster is shifting toward more extreme language",
-      "detail": {
-        "cluster_id": "clu_dei-rollbacks_003",
-        "direction": "radicalizing",
-        "magnitude": 0.7944
-      }
-    },
-    {
-      "id": "evt_2794f6b368a8",
-      "type": "phase_transition",
-      "timestamp": "2026-04-29T16:54:02.970879+00:00",
+      "timestamp": "2026-05-06T06:17:19.509539+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
       "confidence": 0.79,
       "summary": "\"Target\" cluster is shifting toward more extreme language",
       "detail": {
+        "cluster_id": "clu_dei-rollbacks_002",
+        "direction": "radicalizing",
+        "magnitude": 0.6227
+      }
+    },
+    {
+      "id": "evt_f077b240a02c",
+      "type": "phase_transition",
+      "timestamp": "2026-05-06T06:17:19.509539+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.83,
+      "summary": "\"Republican Farm Bill\" cluster is shifting toward more extreme language",
+      "detail": {
+        "cluster_id": "clu_dei-rollbacks_003",
+        "direction": "radicalizing",
+        "magnitude": 0.7664
+      }
+    },
+    {
+      "id": "evt_8dd8722c3dd7",
+      "type": "phase_transition",
+      "timestamp": "2026-05-06T06:17:19.509539+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.81,
+      "summary": "\"Immigration\" cluster is shifting toward more extreme language",
+      "detail": {
         "cluster_id": "clu_dei-rollbacks_004",
         "direction": "radicalizing",
-        "magnitude": 0.6344
-      }
-    },
-    {
-      "id": "evt_16438bc35ea7",
-      "type": "divergence_shift",
-      "timestamp": "2026-04-29T16:54:02.970879+00:00",
-      "claim_id": null,
-      "slice_id": "bluesky_platform",
-      "severity": "high",
-      "confidence": 0.95,
-      "summary": "Strong narrative split between Bluesky and business_insider",
-      "detail": {
-        "jsd": 0.8897,
-        "platforms": [
-          "bluesky",
-          "business_insider"
-        ],
-        "window_hours": 6
-      }
-    },
-    {
-      "id": "evt_33cfb64f50a8",
-      "type": "divergence_shift",
-      "timestamp": "2026-04-29T16:54:02.970879+00:00",
-      "claim_id": null,
-      "slice_id": "bluesky_platform",
-      "severity": "high",
-      "confidence": 0.95,
-      "summary": "Strong narrative split between Bluesky and maltatoday.com.mt",
-      "detail": {
-        "jsd": 1.0,
-        "platforms": [
-          "bluesky",
-          "maltatoday.com.mt"
-        ],
-        "window_hours": 6
-      }
-    },
-    {
-      "id": "evt_c9e96781aea9",
-      "type": "divergence_shift",
-      "timestamp": "2026-04-29T16:54:02.970879+00:00",
-      "claim_id": null,
-      "slice_id": "business_insider_platform",
-      "severity": "high",
-      "confidence": 0.95,
-      "summary": "Strong narrative split between business_insider and maltatoday.com.mt",
-      "detail": {
-        "jsd": 1.0,
-        "platforms": [
-          "business_insider",
-          "maltatoday.com.mt"
-        ],
-        "window_hours": 6
+        "magnitude": 0.6957
       }
     },
     {
@@ -163,46 +93,16 @@
     {
       "id": "evt_c409a394ec37",
       "type": "momentum_spike",
-      "timestamp": "2026-04-29T17:54:02.970879+00:00",
-      "claim_id": "dei-rollbacks_bluesky_1c5844a9_2",
+      "timestamp": "2026-05-06T07:17:19.509539+00:00",
+      "claim_id": "dei-rollbacks_bluesky_ce361d90_0",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.52,
-      "summary": "Rapid attention surge in \"Laura Rutledge\" (2 claims)",
+      "confidence": 0.58,
+      "summary": "Rapid attention surge in \"Voting Rights Act\" (1 claims)",
       "detail": {
         "cluster_id": "clu_dei-rollbacks_015",
-        "avg_momentum": 0.578,
-        "member_count": 2
-      }
-    },
-    {
-      "id": "evt_6579ff50e76d",
-      "type": "momentum_spike",
-      "timestamp": "2026-04-29T17:54:02.970879+00:00",
-      "claim_id": "dei-rollbacks_bluesky_dd77db80_1",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.5,
-      "summary": "Rapid attention surge in \"Hamas\" (5 claims)",
-      "detail": {
-        "cluster_id": "clu_dei-rollbacks_022",
-        "avg_momentum": 0.559,
-        "member_count": 5
-      }
-    },
-    {
-      "id": "evt_da4a1420e630",
-      "type": "momentum_spike",
-      "timestamp": "2026-04-29T17:54:02.970879+00:00",
-      "claim_id": "dei-rollbacks_bluesky_9207a417_1",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.5,
-      "summary": "Rapid attention surge in \"Supreme Court\" (5 claims)",
-      "detail": {
-        "cluster_id": "clu_dei-rollbacks_016",
-        "avg_momentum": 0.559,
-        "member_count": 5
+        "avg_momentum": 0.645,
+        "member_count": 1
       }
     },
     {
@@ -564,7 +464,67 @@
       "summary": "Regulatory Capital Rules: Regulatory Capital and Standardized Approach for Risk-Weighted Assets",
       "detail": "The Office of the Comptroller of the Currency, the Board of Governors of the Federal Reserve System, and the Federal Deposit Insurance Corporation are proposing to modify certain aspects of the regulatory capital rule (the proposal). The proposal would revise the risk-based capital treatment of cert",
       "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2026-05959",
+      "type": "external_signal",
+      "timestamp": "2026-03-27T00:00:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Regulatory Capital Rule: Category I and II Banking Organizations, Banking Organizations With Significant Trading Activity, and Optional Adoption for Other Banking Organizations",
+      "detail": "The Office of the Comptroller of the Currency, the Board of Governors of the Federal Reserve System, and the Federal Deposit Insurance Corporation are proposing to modernize the capital requirements applicable to Category I and II depository institution holding companies and depository institutions,",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2026-05475",
+      "type": "external_signal",
+      "timestamp": "2026-03-20T00:00:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Self-Regulatory Organizations; The Nasdaq Stock Market LLC; Notice of Filing of Proposed Rule Change To List and Trade Shares of the VanEck JitoSOL ETF Under Nasdaq Rule 5711(d) (Commodity-Based Trust",
+      "detail": "Notice by Securities and Exchange Commission",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2026-05350",
+      "type": "external_signal",
+      "timestamp": "2026-03-19T00:00:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Joint Industry Plan; Order Approving an Amendment to the National Market System Plan Governing the Consolidated Audit Trail, as Modified by the Commission, Regarding Implementation of a Revised Fundin",
+      "detail": "Notice by Securities and Exchange Commission",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2026-05289",
+      "type": "external_signal",
+      "timestamp": "2026-03-18T00:00:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Notice of Intent To Prepare an Environmental Impact Statement for the Fulton Park Redevelopment Project in Brooklyn, New York",
+      "detail": "New York City, through the New York City Department of Housing Preservation and Development (HPD) and the New York Department of City Planning (DCP), intend to prepare an Environmental Impact Statement (EIS) for the proposed Fulton Park Redevelopment project in Brooklyn, New York. This Notice of Int",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2026-04687",
+      "type": "external_signal",
+      "timestamp": "2026-03-10T00:00:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Notification of Petition for Rulemaking; America First Legal Foundation",
+      "detail": "This document announces receipt of a petition for rulemaking received by the Department of Energy (DOE) on January 7, 2026, from the America First Legal Foundation (AFL) requesting that DOE update its regulations concerning procedures requiring that management and operating contractors (M&Os) who en",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2026-04685",
+      "type": "external_signal",
+      "timestamp": "2026-03-10T00:00:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Agency Information Collection Activities; Proposed Collection; Comment Request; Social Impact Partnerships To Pay for Results Act (SIPPRA) Program Review",
+      "detail": "The Department of the Treasury, as part of its continuing effort to reduce paperwork and respondent burden, invites the general public and other federal agencies to comment on the proposed information collections listed below, in accordance with the Paperwork Reduction Act of 1995. Treasury has comp",
+      "source": "fed_register"
     }
   ],
-  "total_count": 78
+  "total_count": 72
 }

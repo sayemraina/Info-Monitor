@@ -1,0 +1,193 @@
+{
+  "claim": {
+    "text": "DEI initiatives lead to unqualified individuals being hired.",
+    "subject": "DEI",
+    "assertion": "results in unqualified hires",
+    "framing": "neutral",
+    "stance": "anti",
+    "confidence": 0.7,
+    "arousal": "low",
+    "register": "vernacular",
+    "id": "dei-rollbacks_bluesky_bb440de0_0",
+    "cluster_id": "clu_dei-rollbacks_006",
+    "concept_id": "concept_dei-rollbacks_001",
+    "first_seen_platform": "bluesky",
+    "first_seen_timestamp": "2026-05-06T00:36:14.616Z",
+    "source_document_id": "bb440de016609276",
+    "source_platform": "bluesky",
+    "source_timestamp": "2026-05-06T00:36:14.616Z",
+    "source_engagement": {
+      "likes": 1,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.2558,
+    "confidence_interval": [
+      0.1558,
+      0.3558
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.2558
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0.5,
+    "friction_quadrant": "successful_suppression"
+  },
+  "salience": {
+    "value": 0.3169,
+    "confidence_interval": [
+      0.1907,
+      0.4431
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3169
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.15,
+    "confidence_interval": [
+      0.0112,
+      0.2888
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.15
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.7,
+    "factors": []
+  },
+  "provenance": {
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-05-06T00:36:14.616Z",
+    "lead_lag": [
+      {
+        "platform": "The Spectator Australia",
+        "lag_hours": 5.1
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_dei-rollbacks_001",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-05-06T00:36:14.616000+00:00",
+        "claim_id": "dei-rollbacks_bluesky_bb440de0_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "The Spectator Australia",
+        "timestamp": "2026-05-06T05:45:00+00:00",
+        "claim_id": "dei-rollbacks_bluesky_bb440de0_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "dei-rollbacks_the_spectator_australia_7c64d66f_1",
+      "similarity": 0.6206,
+      "text": "Resistance to DEI may lead companies to scale back inclusive hiring practices."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Resistance to DEI may lead companies to scale back inclusive hiring practices.",
+      "platform": "The Spectator Australia",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    }
+  ]
+}

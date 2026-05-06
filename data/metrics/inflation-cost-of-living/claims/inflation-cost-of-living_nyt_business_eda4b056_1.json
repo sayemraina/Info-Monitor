@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "inflation-cost-of-living_nyt_business_eda4b056_1",
-    "cluster_id": "clu_inflation-cost-of-living_027",
-    "concept_id": "concept_inflation-cost-of-living_007",
+    "cluster_id": "clu_inflation-cost-of-living_022",
+    "concept_id": "concept_inflation-cost-of-living_006",
     "first_seen_platform": "nyt_business",
     "first_seen_timestamp": "2026-04-29T16:33:37Z",
     "source_document_id": "18f9bf3d80a16a30",
@@ -24,94 +24,107 @@
     "source_type": "elite_media"
   },
   "momentum": {
-    "value": 0.54,
+    "value": null,
     "confidence_interval": [
-      0.44,
-      0.64
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.54
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.75,
-    "bridge_ratio": 0.75,
-    "persistence_windows": 1,
-    "friction": 0.6,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.3028,
+    "value": null,
     "confidence_interval": [
-      0.1755,
-      0.4301
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3028
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.6,
+    "value": null,
     "confidence_interval": [
-      0.495,
-      0.705
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.6
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0,
     "confidence_interval": [
       0,
-      0.1962
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,112 +133,64 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
-    "first_timestamp": "2026-04-29T16:33:37Z",
-    "lead_lag": [
-      {
-        "platform": "Nyt Business",
-        "lag_hours": 3.0
-      },
-      {
-        "platform": "Al Jazeera Online",
-        "lag_hours": 5.5
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_inflation-cost-of-living_007",
-    "hops": [
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T13:36:16.030000+00:00",
-        "claim_id": "inflation-cost-of-living_nyt_business_eda4b056_1",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Nyt Business",
-        "timestamp": "2026-04-29T16:33:37+00:00",
-        "claim_id": "inflation-cost-of-living_nyt_business_eda4b056_1",
-        "fidelity_to_origin": 0.6214,
-        "fidelity_to_previous": 0.6214
-      },
-      {
-        "platform": "Al Jazeera Online",
-        "timestamp": "2026-04-29T19:04:12+00:00",
-        "claim_id": "inflation-cost-of-living_nyt_business_eda4b056_1",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.4828
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "inflation-cost-of-living_al_jazeera_online_d626d996_0",
-      "similarity": 0.5902,
-      "text": "The United States' naval blockade of Iran is economically crippling the country."
+      "claim_id": "inflation-cost-of-living_bluesky_7ccbfd4f_0",
+      "similarity": 0.6253,
+      "text": "A potential war with Iran is expected to increase food prices in the UK."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_ea3410eb_1",
-      "similarity": 0.5239,
-      "text": "Poor diplomatic decisions have intensified the suffering of Iranian people."
+      "claim_id": "inflation-cost-of-living_bluesky_d9bfcada_1",
+      "similarity": 0.5794,
+      "text": "Geopolitical tensions in Iran are contributing to inflationary pressures."
     },
     {
-      "claim_id": "inflation-cost-of-living_al_jazeera_online_d626d996_1",
-      "similarity": 0.396,
-      "text": "The United States is deliberately trying to destabilize Iran through economic pressure and internal division."
+      "claim_id": "inflation-cost-of-living_bluesky_1af63bef_0",
+      "similarity": 0.574,
+      "text": "The current economic situation in Iran is dire due to factors such as stagflation, stagnant minimum wage, high post-pandemic inflation, and a large national debt."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_f6143818_0",
-      "similarity": 0.3838,
-      "text": "The United States should withdraw from Iran and prioritize domestic issues."
+      "claim_id": "inflation-cost-of-living_bluesky_4015e956_0",
+      "similarity": 0.5535,
+      "text": "The conflict in Iran is contributing to higher oil prices, which in turn is increasing inflation in Thailand."
+    },
+    {
+      "claim_id": "inflation-cost-of-living_bluesky_f5793a1f_0",
+      "similarity": 0.4759,
+      "text": "A potential war with Iran is expected to increase food prices in the UK."
     }
   ],
   "example_content": [
     {
-      "text": "The United States should withdraw from Iran and prioritize domestic issues.",
+      "text": "A potential war with Iran is expected to increase food prices in the UK.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Poor diplomatic decisions have intensified the suffering of Iranian people.",
+      "text": "A potential war with Iran is expected to increase food prices in the UK.",
       "platform": "Bluesky",
-      "confidence": 0.8,
+      "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The United States' naval blockade of Iran is economically crippling the country.",
-      "platform": "Al Jazeera Online",
+      "text": "A potential war with Iran is expected to increase food prices in the UK.",
+      "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

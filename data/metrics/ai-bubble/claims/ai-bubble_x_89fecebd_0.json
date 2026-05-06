@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "ai-bubble_x_89fecebd_0",
-    "cluster_id": "clu_ai-bubble_025",
-    "concept_id": "concept_ai-bubble_000",
+    "cluster_id": "clu_ai-bubble_022",
+    "concept_id": "concept_ai-bubble_005",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-29T17:25:26.000Z",
     "source_document_id": "x_2049540577121694201",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.54,
+    "value": null,
     "confidence_interval": [
-      0.44,
-      0.64
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.54
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.75,
-    "bridge_ratio": 0.75,
-    "persistence_windows": 4,
-    "friction": 0.3571,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.5233,
+    "value": null,
     "confidence_interval": [
-      0.4125,
-      0.6341
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5233
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.3571,
+    "value": null,
     "confidence_interval": [
-      0.2339,
-      0.4803
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3571
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.2,
+    "value": 0,
     "confidence_interval": [
-      0.065,
-      0.335
+      0,
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9804,
+    "value": null,
     "confidence_interval": [
-      0.9039,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.9804
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,118 +133,65 @@
     ]
   },
   "provenance": {
-    "first_platform": "Nasdaq Stock Market",
-    "first_timestamp": "2026-04-29T17:25:26.000Z",
-    "lead_lag": [
-      {
-        "platform": "The Motley Fool",
-        "lag_hours": 0.0
-      },
-      {
-        "platform": "X Platform",
-        "lag_hours": 6.2
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_ai-bubble_000",
-    "hops": [
-      {
-        "platform": "Nasdaq Stock Market",
-        "timestamp": "2026-04-29T08:30:00+00:00",
-        "claim_id": "ai-bubble_x_89fecebd_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "The Motley Fool",
-        "timestamp": "2026-04-29T08:30:00+00:00",
-        "claim_id": "ai-bubble_x_89fecebd_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-29T14:41:40+00:00",
-        "claim_id": "ai-bubble_x_89fecebd_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-bubble_x_db348488_0",
-      "similarity": 1.0,
-      "text": "The concentration of AI stocks within the S&P 500 has reached levels comparable to the dot-com bubble peak."
-    },
-    {
-      "claim_id": "ai-bubble_x_4e3690d6_0",
+      "claim_id": "ai-bubble_bluesky_aa900d11_0",
       "similarity": 0.9105,
-      "text": "The concentration of AI stocks in the S&P 500 is at a level indicative of a market bubble."
+      "text": "There is a bubble forming in the AI stock market."
     },
     {
-      "claim_id": "ai-bubble_x_8d4d05aa_0",
-      "similarity": 0.8192,
-      "text": "Retail investors are being harmed by hype surrounding AI-related stocks."
+      "claim_id": "ai-bubble_bluesky_01637a6d_0",
+      "similarity": 0.813,
+      "text": "The US economy's apparent growth is primarily due to a speculative bubble in AI stocks."
     },
     {
-      "claim_id": "ai-bubble_x_f4f236e6_0",
-      "similarity": 0.8017,
-      "text": "Retail investors are being harmed by speculative investments in AI-related stocks."
+      "claim_id": "ai-bubble_bluesky_aa900d11_1",
+      "similarity": 0.6835,
+      "text": "There is a significant investment position against AI stocks."
     },
     {
-      "claim_id": "ai-bubble_the_motley_fool_47369c87_1",
-      "similarity": 0.7597,
-      "text": "AI stocks are likely to increase in value during and after the current earnings season."
+      "claim_id": "ai-bubble_cna_05742e43_1",
+      "similarity": 0.6053,
+      "text": "South Korea's stock market is undervalued relative to its earnings per share."
+    },
+    {
+      "claim_id": "ai-bubble_the_star__54ff7a00_1",
+      "similarity": 0.5919,
+      "text": "South Korea's stock market is undervalued based on earnings per share."
     }
   ],
   "example_content": [
     {
-      "text": "Institutional investors are buying big tech stocks, indicating confidence in their future.",
-      "platform": "Nasdaq Stock Market",
-      "confidence": 0.8,
+      "text": "The US economy's apparent growth is primarily due to a speculative bubble in AI stocks.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "AI stocks are likely to increase in value during and after the current earnings season.",
-      "platform": "The Motley Fool",
-      "confidence": 0.8,
+      "text": "There is a bubble forming in the AI stock market.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "AI stocks are likely to increase in value during and after this earnings season.",
-      "platform": "Nasdaq Stock Market",
-      "confidence": 0.8,
+      "text": "There is a significant investment position against AI stocks.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

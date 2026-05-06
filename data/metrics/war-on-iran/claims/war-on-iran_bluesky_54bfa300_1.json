@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "war-on-iran_bluesky_54bfa300_1",
-    "cluster_id": "clu_war-on-iran_009",
-    "concept_id": "concept_war-on-iran_003",
+    "cluster_id": "clu_war-on-iran_005",
+    "concept_id": "concept_war-on-iran_002",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-29T18:33:39.610Z",
     "source_document_id": "9b6b4a0c4d6cdfcc",
@@ -24,201 +24,171 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.615,
+    "value": null,
     "confidence_interval": [
-      0.515,
-      0.715
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.615
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.75,
-    "bridge_ratio": 0.75,
-    "persistence_windows": 1,
-    "friction": 0.75,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.2974,
+    "value": null,
     "confidence_interval": [
-      0.1697,
-      0.4251
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.2974
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.75,
+    "value": null,
     "confidence_interval": [
-      0.6562,
-      0.8438
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.75
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0,
     "confidence_interval": [
       0,
-      0.1962
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.85,
+    "value": null,
     "confidence_interval": [
-      0.7638,
-      0.9362
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.85
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9762,
+    "value": null,
     "confidence_interval": [
-      0.8994,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.9762
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.8,
     "factors": []
   },
   "provenance": {
-    "first_platform": "Wapo Politics",
-    "first_timestamp": "2026-04-29T18:33:39.610Z",
-    "lead_lag": [
-      {
-        "platform": "Bluesky",
-        "lag_hours": 0.8
-      },
-      {
-        "platform": "Democratic Underground",
-        "lag_hours": 0.9
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_war-on-iran_003",
-    "hops": [
-      {
-        "platform": "Wapo Politics",
-        "timestamp": "2026-04-29T17:47:13+00:00",
-        "claim_id": "war-on-iran_bluesky_54bfa300_1",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T18:33:39.610000+00:00",
-        "claim_id": "war-on-iran_bluesky_54bfa300_1",
-        "fidelity_to_origin": 0.3887,
-        "fidelity_to_previous": 0.3887
-      },
-      {
-        "platform": "Democratic Underground",
-        "timestamp": "2026-04-29T18:40:24+00:00",
-        "claim_id": "war-on-iran_bluesky_54bfa300_1",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.7718
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "war-on-iran_democratic_underground_9c72b0ca_0",
-      "similarity": 0.405,
-      "text": "The food provided to U.S. Navy sailors on warships in the Middle East is of poor quality and insufficient to keep them nourished."
+      "claim_id": "war-on-iran_bluesky_46ee7633_0",
+      "similarity": 0.6197,
+      "text": "The United States military attacked civilian vessels in the Strait of Hormuz."
     },
     {
-      "claim_id": "war-on-iran_democratic_underground_9c72b0ca_1",
-      "similarity": 0.3603,
-      "text": "The Pentagon is denying reports of inadequate food supplies on U.S. Navy ships."
+      "claim_id": "war-on-iran_oman_observer_6100de49_1",
+      "similarity": 0.4874,
+      "text": "The US military is guiding ships through the Strait of Hormuz to restore freedom of navigation."
     },
     {
-      "claim_id": "war-on-iran_wapo_politics_bca2b877_0",
-      "similarity": 0.2807,
-      "text": "The departure of the USS Gerald R. Ford from the Middle East reduces U.S. military power in the region."
+      "claim_id": "war-on-iran_bluesky_2cee8892_0",
+      "similarity": 0.35,
+      "text": "Iran is disrupting freedom of navigation in the Strait of Hormuz."
+    },
+    {
+      "claim_id": "war-on-iran_bluesky_20f346bd_0",
+      "similarity": 0.3075,
+      "text": "Iran is circumventing the U.S. naval blockade by developing land routes with neighboring countries, particularly Pakistan."
+    },
+    {
+      "claim_id": "war-on-iran_bluesky_db87a9b3_0",
+      "similarity": 0.2771,
+      "text": "The UN is considering sanctions against Iran for restricting freedom of navigation."
     }
   ],
   "example_content": [
     {
-      "text": "The food provided to U.S. Navy sailors on warships in the Middle East is of poor quality and insufficient to keep them nourished.",
-      "platform": "Democratic Underground",
+      "text": "African ports are not significantly benefiting from the rerouting of ships due to the conflict involving Iran.",
+      "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The Pentagon is denying reports of inadequate food supplies on U.S. Navy ships.",
-      "platform": "Democratic Underground",
+      "text": "The United States military attacked civilian vessels in the Strait of Hormuz.",
+      "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The departure of the USS Gerald R. Ford from the Middle East reduces U.S. military power in the region.",
-      "platform": "Wapo Politics",
+      "text": "Iran is circumventing the U.S. naval blockade by developing land routes with neighboring countries, particularly Pakistan.",
+      "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

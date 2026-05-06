@@ -9,7 +9,7 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "dei-rollbacks_bluesky_a24c8943_0",
-    "cluster_id": "clu_dei-rollbacks_007",
+    "cluster_id": "clu_dei-rollbacks_008",
     "concept_id": "concept_dei-rollbacks_002",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-29T17:27:36.418Z",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.5522,
+    "value": null,
     "confidence_interval": [
-      0.4522,
-      0.6522
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5522
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.25,
-    "bridge_ratio": 0.25,
-    "persistence_windows": 1,
-    "friction": 1,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.3045,
+    "value": null,
     "confidence_interval": [
-      0.1773,
-      0.4317
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3045
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0,
     "confidence_interval": [
       0,
-      0.1962
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.85,
+    "value": null,
     "confidence_interval": [
-      0.7638,
-      0.9362
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.85
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,83 +133,53 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
-    "first_timestamp": "2026-04-29T17:27:36.418Z",
+    "first_platform": "unknown",
+    "first_timestamp": "",
     "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_dei-rollbacks_002",
-    "hops": [
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T16:25:22.754000+00:00",
-        "claim_id": "dei-rollbacks_bluesky_a24c8943_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      }
-    ],
-    "observation_boundary": "No public antecedent detected"
+    "concept_id": "",
+    "hops": [],
+    "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "dei-rollbacks_bluesky_9e8c7680_0",
-      "similarity": 0.8226,
-      "text": "The Trump administration is discriminating in favor of white men by eliminating diversity, equity, and inclusion programs."
+      "claim_id": "dei-rollbacks_bluesky_5d2ad35a_0",
+      "similarity": 0.8918,
+      "text": "DEI rollbacks under the Trump administration negatively impacted Black employment and Black-owned businesses."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_c7712b40_0",
-      "similarity": 0.8054,
-      "text": "Conservatives believe diversity, equity, and inclusion initiatives should prioritize white people."
+      "claim_id": "dei-rollbacks_bluesky_4581eb49_0",
+      "similarity": 0.8759,
+      "text": "Criticism of DEI initiatives is often used to disparage qualified Black women."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_dd77db80_0",
-      "similarity": 0.7958,
-      "text": "Rollbacks of DEI and affirmative action disproportionately harm white women."
+      "claim_id": "dei-rollbacks_bluesky_0843478d_0",
+      "similarity": 0.8591,
+      "text": "The Trump administration's policies demonstrate that dismantling DEI and meritocracy is necessary to favor underqualified white individuals in employment."
     }
   ],
   "example_content": [
     {
-      "text": "Rollbacks of DEI and affirmative action disproportionately harm white women.",
+      "text": "The Trump administration's policies demonstrate that dismantling DEI and meritocracy is necessary to favor underqualified white individuals in employment.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The Trump administration is discriminating in favor of white men by eliminating diversity, equity, and inclusion programs.",
+      "text": "Criticism of DEI initiatives is often used to disparage qualified Black women.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Conservatives believe diversity, equity, and inclusion initiatives should prioritize white people.",
+      "text": "DEI rollbacks under the Trump administration negatively impacted Black employment and Black-owned businesses.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

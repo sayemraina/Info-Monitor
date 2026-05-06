@@ -1,0 +1,206 @@
+{
+  "claim": {
+    "text": "A Nigerian Senator should be held responsible for the actions of undocumented Nigerian immigrants in South Africa.",
+    "subject": "Nigerian Senator",
+    "assertion": "should be held responsible for the actions of undocumented Nigerian immigrants",
+    "framing": "neutral",
+    "stance": "pro",
+    "confidence": 0.9,
+    "arousal": "high",
+    "register": "vernacular",
+    "id": "inflation-cost-of-living_x_82427eea_0",
+    "cluster_id": "clu_inflation-cost-of-living_001",
+    "concept_id": "concept_inflation-cost-of-living_001",
+    "first_seen_platform": "x",
+    "first_seen_timestamp": "2026-05-06T08:00:42.000Z",
+    "source_document_id": "x_2051935172333895891",
+    "source_platform": "x",
+    "source_timestamp": "2026-05-06T08:00:42.000Z",
+    "source_engagement": {
+      "likes": 3,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.5274,
+    "confidence_interval": [
+      0.4274,
+      0.6274
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5274
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0.6667,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.3019,
+    "confidence_interval": [
+      0.1745,
+      0.4293
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3019
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.6667,
+    "confidence_interval": [
+      0.5667,
+      0.7667
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.6667
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.85,
+    "confidence_interval": [
+      0.7638,
+      0.9362
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.85
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-05-06T08:00:42.000Z",
+    "lead_lag": [
+      {
+        "platform": "X Platform",
+        "lag_hours": 5.0
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_inflation-cost-of-living_001",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-05-06T03:02:14.543000+00:00",
+        "claim_id": "inflation-cost-of-living_x_82427eea_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-05-06T08:00:42+00:00",
+        "claim_id": "inflation-cost-of-living_x_82427eea_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "inflation-cost-of-living_bluesky_2ca5c394_1",
+      "similarity": 0.4281,
+      "text": "Current immigration enforcement policies are unjust."
+    },
+    {
+      "claim_id": "inflation-cost-of-living_x_75b942e9_1",
+      "similarity": 0.385,
+      "text": "Immigration policy is negatively impacting the lives of pensioners."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Current immigration enforcement policies are unjust.",
+      "platform": "Bluesky",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Immigration policy is negatively impacting the lives of pensioners.",
+      "platform": "X Platform",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

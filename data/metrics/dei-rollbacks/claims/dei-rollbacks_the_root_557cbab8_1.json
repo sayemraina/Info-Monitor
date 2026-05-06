@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "dei-rollbacks_the_root_557cbab8_1",
-    "cluster_id": "clu_dei-rollbacks_022",
-    "concept_id": "concept_dei-rollbacks_004",
+    "cluster_id": "clu_dei-rollbacks_015",
+    "concept_id": "concept_dei-rollbacks_005",
     "first_seen_platform": "the_root",
     "first_seen_timestamp": "2026-04-29T17:59:00Z",
     "source_document_id": "3fcea427d0be3df5",
@@ -24,94 +24,107 @@
     "source_type": "elite_media"
   },
   "momentum": {
-    "value": 0.54,
+    "value": null,
     "confidence_interval": [
-      0.44,
-      0.64
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.54
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.75,
-    "bridge_ratio": 0.75,
-    "persistence_windows": 1,
-    "friction": 0.8,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.3091,
+    "value": null,
     "confidence_interval": [
-      0.1823,
-      0.4359
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3091
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.8,
+    "value": null,
     "confidence_interval": [
-      0.71,
-      0.89
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.8
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0,
     "confidence_interval": [
       0,
-      0.1962
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,112 +133,32 @@
     ]
   },
   "provenance": {
-    "first_platform": "Baller Alert",
-    "first_timestamp": "2026-04-29T17:59:00Z",
-    "lead_lag": [
-      {
-        "platform": "The Root",
-        "lag_hours": 0.2
-      },
-      {
-        "platform": "Bluesky",
-        "lag_hours": 0.3
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_dei-rollbacks_004",
-    "hops": [
-      {
-        "platform": "Baller Alert",
-        "timestamp": "2026-04-29T17:47:13+00:00",
-        "claim_id": "dei-rollbacks_the_root_557cbab8_1",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "The Root",
-        "timestamp": "2026-04-29T17:59:00+00:00",
-        "claim_id": "dei-rollbacks_the_root_557cbab8_1",
-        "fidelity_to_origin": 0.5774,
-        "fidelity_to_previous": 0.5774
-      },
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T18:06:44.137000+00:00",
-        "claim_id": "dei-rollbacks_the_root_557cbab8_1",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.5196
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "dei-rollbacks_the_root_557cbab8_0",
-      "similarity": 0.665,
-      "text": "The Supreme Court's decision on Louisiana's congressional district undermines the Voting Rights Act and harms Black voters."
-    },
-    {
-      "claim_id": "dei-rollbacks_baller_alert_3c6c5f3a_1",
-      "similarity": 0.6229,
-      "text": "The Supreme Court's decision regarding Section 2 of the Voting Rights Act will make it more difficult for minority groups to elect their preferred representatives."
-    },
-    {
-      "claim_id": "dei-rollbacks_baller_alert_3c6c5f3a_0",
-      "similarity": 0.5488,
-      "text": "Recent legal and policy changes are eroding civil rights protections in areas like voting, policing, abortion access, and economic policy."
-    },
-    {
-      "claim_id": "dei-rollbacks_bluesky_dd77db80_1",
-      "similarity": 0.5376,
-      "text": "Voting is essential to protect fundamental rights."
+      "claim_id": "dei-rollbacks_bluesky_ce361d90_0",
+      "similarity": 0.5386,
+      "text": "The UAW was deceived to gain votes, resulting in the loss of the Voting Rights Act."
     }
   ],
   "example_content": [
     {
-      "text": "Voting is essential to protect fundamental rights.",
+      "text": "The UAW was deceived to gain votes, resulting in the loss of the Voting Rights Act.",
       "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Recent legal and policy changes are eroding civil rights protections in areas like voting, policing, abortion access, and economic policy.",
-      "platform": "Baller Alert",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "The Supreme Court's decision regarding Section 2 of the Voting Rights Act will make it more difficult for minority groups to elect their preferred representatives.",
-      "platform": "Baller Alert",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

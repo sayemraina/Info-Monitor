@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "immigration_triblive_cca0d8fc_1",
-    "cluster_id": "clu_immigration_029",
-    "concept_id": "concept_immigration_002",
+    "cluster_id": "clu_immigration_012",
+    "concept_id": "concept_immigration_001",
     "first_seen_platform": "triblive",
     "first_seen_timestamp": "2026-04-29T17:22:04Z",
     "source_document_id": "4f157fba2caedf4a",
@@ -24,233 +24,171 @@
     "source_type": "elite_media"
   },
   "momentum": {
-    "value": 0.51,
+    "value": null,
     "confidence_interval": [
-      0.41,
-      0.61
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.51
-    ],
-    "source_distribution": "production",
-    "source_diversity": 1.0,
-    "bridge_ratio": 1.0,
-    "persistence_windows": 3,
-    "friction": 0.7273,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.4269,
+    "value": null,
     "confidence_interval": [
-      0.3089,
-      0.5449
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.4269
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.7273,
+    "value": null,
     "confidence_interval": [
-      0.6318,
-      0.8228
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.7273
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.15,
+    "value": 0,
     "confidence_interval": [
-      0.0112,
-      0.2888
+      0,
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.15
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.988,
+    "value": null,
     "confidence_interval": [
-      0.9121,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.988
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.8,
     "factors": []
   },
   "provenance": {
-    "first_platform": "Reason",
-    "first_timestamp": "2026-04-29T17:22:04Z",
-    "lead_lag": [
-      {
-        "platform": "Bluesky",
-        "lag_hours": 9.3
-      },
-      {
-        "platform": "X Platform",
-        "lag_hours": 12.7
-      },
-      {
-        "platform": "International Business Times U",
-        "lag_hours": 18.9
-      },
-      {
-        "platform": "Triblive",
-        "lag_hours": 19.4
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_immigration_002",
-    "hops": [
-      {
-        "platform": "Reason",
-        "timestamp": "2026-04-28T21:56:58+00:00",
-        "claim_id": "immigration_triblive_cca0d8fc_1",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T07:17:02+00:00",
-        "claim_id": "immigration_triblive_cca0d8fc_1",
-        "fidelity_to_origin": 0.6635,
-        "fidelity_to_previous": 0.6635
-      },
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-29T10:36:52+00:00",
-        "claim_id": "immigration_triblive_cca0d8fc_1",
-        "fidelity_to_origin": 0.5434,
-        "fidelity_to_previous": 0.819
-      },
-      {
-        "platform": "International Business Times U",
-        "timestamp": "2026-04-29T16:49:35+00:00",
-        "claim_id": "immigration_triblive_cca0d8fc_1",
-        "fidelity_to_origin": 0.3195,
-        "fidelity_to_previous": 0.588
-      },
-      {
-        "platform": "Triblive",
-        "timestamp": "2026-04-29T17:22:04+00:00",
-        "claim_id": "immigration_triblive_cca0d8fc_1",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.939
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "immigration_triblive_cca0d8fc_0",
-      "similarity": 0.5863,
-      "text": "ICE is inappropriately detaining and attempting to deport an individual who was granted Special Immigrant Juvenile status and has no significant criminal record."
+      "claim_id": "immigration_x_eed70c03_0",
+      "similarity": 0.6267,
+      "text": "Donald Trump's immigration policies are failing."
     },
     {
-      "claim_id": "immigration_bluesky_be11b888_0",
-      "similarity": 0.549,
-      "text": "Trump's immigration detention policy violates legal standards."
+      "claim_id": "immigration_x_16e6d18c_0",
+      "similarity": 0.6057,
+      "text": "The current administration's immigration policies are failing."
     },
     {
-      "claim_id": "immigration_international_business_times_u_be964f28_0",
-      "similarity": 0.548,
-      "text": "The Trump administration's policy of mandatory detention for immigrants is illegal."
+      "claim_id": "immigration_x_4899bf6e_0",
+      "similarity": 0.6056,
+      "text": "The Labour Party's immigration policies are failing."
     },
     {
-      "claim_id": "immigration_bluesky_1fe0428e_0",
-      "similarity": 0.5211,
-      "text": "The mandatory detention policy has resulted in the detention of individuals eligible for legal status, including those with pending immigration applications."
+      "claim_id": "immigration_x_c012f429_0",
+      "similarity": 0.6056,
+      "text": "Current immigration policies are failing."
     },
     {
-      "claim_id": "immigration_bluesky_a7e5cc85_1",
-      "similarity": 0.5055,
-      "text": "Restrictions on immigration law limit access to legal precedents and can lead to indefinite detention."
+      "claim_id": "immigration_x_d29eb344_0",
+      "similarity": 0.6056,
+      "text": "Current immigration policies are failing."
     }
   ],
   "example_content": [
     {
-      "text": "Trump's immigration detention policy violates legal standards.",
-      "platform": "Bluesky",
+      "text": "The Labour Party's immigration policies are failing.",
+      "platform": "X Platform",
+      "confidence": 0.7,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Current immigration policies are performing poorly.",
+      "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The mandatory detention policy has resulted in the detention of individuals eligible for legal status, including those with pending immigration applications.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "The US appeals court has ruled against Trump's immigration detention policy.",
-      "platform": "Bluesky",
+      "text": "Trump's immigration policies have been a failure.",
+      "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

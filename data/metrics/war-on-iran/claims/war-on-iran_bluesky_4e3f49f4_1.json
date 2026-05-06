@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "journalistic",
     "id": "war-on-iran_bluesky_4e3f49f4_1",
-    "cluster_id": "clu_war-on-iran_031",
-    "concept_id": "concept_war-on-iran_004",
+    "cluster_id": "clu_war-on-iran_061",
+    "concept_id": "concept_war-on-iran_002",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-29T18:35:02.594290+00:00",
     "source_document_id": "8f1a9955a11dda42",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.645,
+    "value": null,
     "confidence_interval": [
-      0.545,
-      0.745
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.645
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 1,
-    "friction": 0.2,
-    "friction_quadrant": "unopposed_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.298,
+    "value": null,
     "confidence_interval": [
-      0.1704,
-      0.4256
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.298
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.2,
+    "value": null,
     "confidence_interval": [
-      0.065,
-      0.335
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.2
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0,
     "confidence_interval": [
       0,
-      0.1962
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.85,
+    "value": null,
     "confidence_interval": [
-      0.7638,
-      0.9362
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.85
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9701,
+    "value": null,
     "confidence_interval": [
-      0.8929,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.9701
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,101 +133,64 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
-    "first_timestamp": "2026-04-29T18:35:02.594290+00:00",
-    "lead_lag": [
-      {
-        "platform": "X Platform",
-        "lag_hours": 0.9
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_war-on-iran_004",
-    "hops": [
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T18:16:32.370000+00:00",
-        "claim_id": "war-on-iran_bluesky_4e3f49f4_1",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-29T19:09:29+00:00",
-        "claim_id": "war-on-iran_bluesky_4e3f49f4_1",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "war-on-iran_bluesky_f9d006d6_0",
-      "similarity": 0.7356,
-      "text": "Efforts to prevent Iran from acquiring nuclear weapons have failed."
+      "claim_id": "war-on-iran_bluesky_d6a4c52e_1",
+      "similarity": 0.776,
+      "text": "The nuclear issue is a key factor in the relationship between the US and Iran."
     },
     {
-      "claim_id": "war-on-iran_x_7b608646_0",
-      "similarity": 0.723,
-      "text": "Iran is enriching uranium at its Isfahan complex."
+      "claim_id": "war-on-iran_x_50ec5040_0",
+      "similarity": 0.725,
+      "text": "Iran has the right to use nuclear energy for peaceful purposes."
     },
     {
-      "claim_id": "war-on-iran_x_7229660d_0",
-      "similarity": 0.723,
-      "text": "Iran is enriching uranium at its Isfahan complex."
+      "claim_id": "war-on-iran_bluesky_e62e02d2_0",
+      "similarity": 0.7224,
+      "text": "Iran should not develop nuclear weapons."
     },
     {
-      "claim_id": "war-on-iran_x_ae038bc9_0",
-      "similarity": 0.7017,
-      "text": "Iran possesses highly enriched uranium at its Isfahan complex."
+      "claim_id": "war-on-iran_bluesky_3ccddfd2_0",
+      "similarity": 0.6936,
+      "text": "Claims that Iran is close to developing nuclear weapons are likely exaggerated or unfounded."
+    },
+    {
+      "claim_id": "war-on-iran_bluesky_5e6f072f_0",
+      "similarity": 0.6816,
+      "text": "Military actions against Iran have not effectively curbed its nuclear capabilities."
     }
   ],
   "example_content": [
     {
-      "text": "Efforts to prevent Iran from acquiring nuclear weapons have failed.",
+      "text": "The nuclear issue is a key factor in the relationship between the US and Iran.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Iran is enriching uranium at its Isfahan complex.",
-      "platform": "X Platform",
+      "text": "Military actions against Iran have not effectively curbed its nuclear capabilities.",
+      "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Iran possesses highly enriched uranium at its Isfahan complex.",
-      "platform": "X Platform",
+      "text": "Iran's nuclear weapons program should be dismantled and monitored.",
+      "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

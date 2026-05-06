@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "journalistic",
     "id": "war-on-iran_dw_news_385ae6fa_0",
-    "cluster_id": "clu_war-on-iran_013",
-    "concept_id": "concept_war-on-iran_006",
+    "cluster_id": "clu_war-on-iran_042",
+    "concept_id": "concept_war-on-iran_003",
     "first_seen_platform": "dw_news",
     "first_seen_timestamp": "2026-04-29T18:47:26.441947+00:00",
     "source_document_id": "d9559fcd92bde51f",
@@ -24,94 +24,107 @@
     "source_type": "elite_media"
   },
   "momentum": {
-    "value": 0.645,
+    "value": null,
     "confidence_interval": [
-      0.545,
-      0.745
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.645
-    ],
-    "source_distribution": "production",
-    "source_diversity": 1.0,
-    "bridge_ratio": 1.0,
-    "persistence_windows": 2,
-    "friction": 0.5,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.323,
+    "value": null,
     "confidence_interval": [
-      0.1972,
-      0.4488
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.323
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.1,
+    "value": 0,
     "confidence_interval": [
       0,
-      0.2425
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.85,
+    "value": null,
     "confidence_interval": [
-      0.7638,
-      0.9362
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.85
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9895,
+    "value": null,
     "confidence_interval": [
-      0.9137,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.9895
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,129 +133,65 @@
     ]
   },
   "provenance": {
-    "first_platform": "البوابة",
-    "first_timestamp": "2026-04-29T18:47:26.441947+00:00",
-    "lead_lag": [
-      {
-        "platform": "Bluesky",
-        "lag_hours": 13.1
-      },
-      {
-        "platform": "Dw News",
-        "lag_hours": 18.8
-      },
-      {
-        "platform": "X Platform",
-        "lag_hours": 19.0
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_war-on-iran_006",
-    "hops": [
-      {
-        "platform": "البوابة",
-        "timestamp": "2026-04-29T00:00:00+00:00",
-        "claim_id": "war-on-iran_dw_news_385ae6fa_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T13:08:04.421000+00:00",
-        "claim_id": "war-on-iran_dw_news_385ae6fa_0",
-        "fidelity_to_origin": 0.5159,
-        "fidelity_to_previous": 0.5159
-      },
-      {
-        "platform": "Dw News",
-        "timestamp": "2026-04-29T18:47:26.441947+00:00",
-        "claim_id": "war-on-iran_dw_news_385ae6fa_0",
-        "fidelity_to_origin": 0.3074,
-        "fidelity_to_previous": 0.5959
-      },
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-29T18:59:32+00:00",
-        "claim_id": "war-on-iran_dw_news_385ae6fa_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9759
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "war-on-iran_bluesky_1d204cc8_0",
-      "similarity": 0.6717,
-      "text": "The Iranian regime maintains power through fear, pressure, and repression."
+      "claim_id": "war-on-iran_bluesky_42975295_0",
+      "similarity": 0.6179,
+      "text": "Military conflict with Iran is imminent or ongoing."
     },
     {
-      "claim_id": "war-on-iran_x_36328278_0",
-      "similarity": 0.6698,
-      "text": "Iran is experiencing internal instability."
+      "claim_id": "war-on-iran_bluesky_941d5b2f_0",
+      "similarity": 0.5923,
+      "text": "Military conflict with Iran is likely or imminent."
     },
     {
-      "claim_id": "war-on-iran_bluesky_30953bce_0",
-      "similarity": 0.5756,
-      "text": "Donald Trump believes Iran is incompetent."
+      "claim_id": "war-on-iran_bluesky_3783d4c6_0",
+      "similarity": 0.5701,
+      "text": "Iran should hold a democratic election with all parties on the ballot."
     },
     {
-      "claim_id": "war-on-iran_x_74c82a29_1",
-      "similarity": 0.5754,
-      "text": "The current president is effectively addressing the threat posed by Iran."
+      "claim_id": "war-on-iran_bluesky_1a51b559_1",
+      "similarity": 0.5629,
+      "text": "Iran's nuclear ambitions and control of the Strait of Hormuz pose a threat."
     },
     {
-      "claim_id": "war-on-iran_bluesky_e91059eb_0",
-      "similarity": 0.5501,
-      "text": "Sanctions and aggressive posturing towards Iran are creating instability."
+      "claim_id": "war-on-iran_bluesky_da1a21ab_0",
+      "similarity": 0.5585,
+      "text": "Military conflict with Iran is imminent or likely."
     }
   ],
   "example_content": [
     {
-      "text": "Donald Trump believes Iran is incompetent.",
+      "text": "Trump's statements on Iran increase concerns about potential military conflict.",
+      "platform": "Bluesky",
+      "confidence": 0.7,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The United States lacks a sufficient understanding of Iran.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Limiting presidential power to act in Iran is desirable.",
+      "text": "Military conflict with Iran is likely or imminent.",
       "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Sanctions and aggressive posturing towards Iran are creating instability.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
+      "confidence": 0.7,
       "is_influencer_framing": false
     }
   ]

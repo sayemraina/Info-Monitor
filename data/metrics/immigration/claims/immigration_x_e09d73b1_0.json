@@ -1,0 +1,215 @@
+{
+  "claim": {
+    "text": "Current immigration policies are performing poorly.",
+    "subject": "immigration policy",
+    "assertion": "is performing poorly",
+    "framing": "neutral",
+    "stance": "anti",
+    "confidence": 0.9,
+    "arousal": "low",
+    "register": "vernacular",
+    "id": "immigration_x_e09d73b1_0",
+    "cluster_id": "clu_immigration_012",
+    "concept_id": "concept_immigration_001",
+    "first_seen_platform": "x",
+    "first_seen_timestamp": "2026-05-06T03:44:36.000Z",
+    "source_document_id": "x_2051870719282393316",
+    "source_platform": "x",
+    "source_timestamp": "2026-05-06T03:44:36.000Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.435,
+    "confidence_interval": [
+      0.335,
+      0.535
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.435
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.25,
+    "bridge_ratio": 0.25,
+    "persistence_windows": 3,
+    "friction": 1,
+    "friction_quadrant": "successful_suppression"
+  },
+  "salience": {
+    "value": 0.3986,
+    "confidence_interval": [
+      0.2785,
+      0.5187
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3986
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.15,
+    "confidence_interval": [
+      0.0112,
+      0.2888
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.15
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.15,
+    "confidence_interval": [
+      0.0112,
+      0.2888
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.15
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 0.9762,
+    "confidence_interval": [
+      0.8994,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.9762
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "X Platform",
+    "first_timestamp": "2026-05-06T03:44:36.000Z",
+    "lead_lag": []
+  },
+  "supply_chain": {
+    "concept_id": "concept_immigration_001",
+    "hops": [
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-05-05T21:44:15+00:00",
+        "claim_id": "immigration_x_e09d73b1_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      }
+    ],
+    "observation_boundary": "No public antecedent detected"
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "immigration_x_16e6d18c_0",
+      "similarity": 0.854,
+      "text": "The current administration's immigration policies are failing."
+    },
+    {
+      "claim_id": "immigration_x_4899bf6e_0",
+      "similarity": 0.8539,
+      "text": "The Labour Party's immigration policies are failing."
+    },
+    {
+      "claim_id": "immigration_x_c012f429_0",
+      "similarity": 0.8539,
+      "text": "Current immigration policies are failing."
+    },
+    {
+      "claim_id": "immigration_x_d29eb344_0",
+      "similarity": 0.8539,
+      "text": "Current immigration policies are failing."
+    },
+    {
+      "claim_id": "immigration_x_eed70c03_0",
+      "similarity": 0.8309,
+      "text": "Donald Trump's immigration policies are failing."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "The Labour Party's immigration policies are failing.",
+      "platform": "X Platform",
+      "confidence": 0.7,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Trump's immigration policies have been a failure.",
+      "platform": "X Platform",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Vivek's lack of control over legal immigration policy is a significant shortcoming as governor.",
+      "platform": "X Platform",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

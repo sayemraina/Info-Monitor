@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "ozempic-glp1_bluesky_568b2e35_0",
-    "cluster_id": "clu_ozempic-glp1_033",
-    "concept_id": "concept_ozempic-glp1_006",
+    "cluster_id": "clu_ozempic-glp1_041",
+    "concept_id": "concept_ozempic-glp1_005",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-29T11:53:35.324Z",
     "source_document_id": "f31d3c5cd14238ce",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.54,
+    "value": null,
     "confidence_interval": [
-      0.44,
-      0.64
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.54
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 2,
-    "friction": 0.1667,
-    "friction_quadrant": "unopposed_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.3148,
+    "value": null,
     "confidence_interval": [
-      0.1884,
-      0.4412
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3148
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.1667,
+    "value": null,
     "confidence_interval": [
-      0.0292,
-      0.3042
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.1667
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.1,
+    "value": 0,
     "confidence_interval": [
       0,
-      0.2425
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,105 +133,63 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
-    "first_timestamp": "2026-04-29T11:53:35.324Z",
-    "lead_lag": [
-      {
-        "platform": "X Platform",
-        "lag_hours": 13.6
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_ozempic-glp1_006",
-    "hops": [
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T05:33:59+00:00",
-        "claim_id": "ozempic-glp1_bluesky_568b2e35_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-29T19:07:32+00:00",
-        "claim_id": "ozempic-glp1_bluesky_568b2e35_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ozempic-glp1_bluesky_554bd99b_0",
-      "similarity": 0.7143,
-      "text": "GLP-1 drugs can cause a loss of appetite or aversion to food."
+      "claim_id": "ozempic-glp1_bluesky_66bd8414_0",
+      "similarity": 0.7036,
+      "text": "GLP-1 weight loss drugs like Ozempic have negative side effects that are not widely discussed."
     },
     {
-      "claim_id": "ozempic-glp1_bluesky_260a20f6_0",
-      "similarity": 0.6811,
-      "text": "GLP-1 receptor agonists can cause unpleasant side effects related to food."
+      "claim_id": "ozempic-glp1_bluesky_68d7da83_0",
+      "similarity": 0.6973,
+      "text": "GLP-1 medications like Wegovy can cause unpleasant side effects."
     },
     {
-      "claim_id": "ozempic-glp1_x_1bd24704_0",
-      "similarity": 0.679,
-      "text": "GLP-1 agonists like Ozempic can cause facial aging or a gaunt appearance due to rapid weight loss."
+      "claim_id": "ozempic-glp1_bluesky_c343712b_0",
+      "similarity": 0.6945,
+      "text": "GLP-1 medications are undesirable for weight loss."
     },
     {
-      "claim_id": "ozempic-glp1_bluesky_564d875d_0",
-      "similarity": 0.6589,
-      "text": "GLP-1 injectables like Ozempic can cause facial fat loss due to rapid weight loss."
+      "claim_id": "ozempic-glp1_x_07eb4e43_1",
+      "similarity": 0.6699,
+      "text": "GLP-1 medications like Ozempic and Wegovy have real side effects."
     },
     {
-      "claim_id": "ozempic-glp1_bluesky_7f1c11ae_0",
-      "similarity": 0.639,
-      "text": "GLP-1 injectables can cause significant gastrointestinal side effects, including flatulence."
+      "claim_id": "ozempic-glp1_bluesky_6dc1753d_0",
+      "similarity": 0.6306,
+      "text": "GLP-1 medications may cause breathing difficulties."
     }
   ],
   "example_content": [
     {
-      "text": "GLP-1 receptor agonists can cause unpleasant side effects related to food.",
+      "text": "GLP-1 medications may cause breathing difficulties.",
+      "platform": "Bluesky",
+      "confidence": 0.6,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "GLP-1 medications are undesirable for weight loss.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "GLP-1 drugs can cause a loss of appetite or aversion to food.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "GLP-1 injectables can cause significant gastrointestinal side effects, including flatulence.",
+      "text": "GLP-1 weight loss drugs like Ozempic have negative side effects that are not widely discussed.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

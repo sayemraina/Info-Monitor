@@ -1,0 +1,206 @@
+{
+  "claim": {
+    "text": "NVIDIA is expanding its AI applications into various sectors, including quantum computing, nuclear power, and healthcare robotics.",
+    "subject": "NVIDIA",
+    "assertion": "is expanding its AI applications",
+    "framing": "neutral",
+    "stance": "neutral",
+    "confidence": 0.9,
+    "arousal": "low",
+    "register": "journalistic",
+    "id": "ai-bubble_bluesky_fa9f1a8c_0",
+    "cluster_id": "clu_ai-bubble_011",
+    "concept_id": "concept_ai-bubble_001",
+    "first_seen_platform": "bluesky",
+    "first_seen_timestamp": "2026-05-06T02:20:15+00:00",
+    "source_document_id": "ea8fb8126f42d22e",
+    "source_platform": "bluesky",
+    "source_timestamp": "2026-05-06T02:20:15+00:00",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.435,
+    "confidence_interval": [
+      0.335,
+      0.535
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.435
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0.6667,
+    "friction_quadrant": "successful_suppression"
+  },
+  "salience": {
+    "value": 0.305,
+    "confidence_interval": [
+      0.1779,
+      0.4321
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.305
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.6667,
+    "confidence_interval": [
+      0.5667,
+      0.7667
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.6667
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.15,
+    "confidence_interval": [
+      0.0112,
+      0.2888
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.15
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 0.95,
+    "confidence_interval": [
+      0.8712,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.95
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-05-06T02:20:15+00:00",
+    "lead_lag": [
+      {
+        "platform": "X Platform",
+        "lag_hours": 6.2
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_ai-bubble_001",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-05-05T21:13:48.403000+00:00",
+        "claim_id": "ai-bubble_bluesky_fa9f1a8c_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-05-06T03:23:00+00:00",
+        "claim_id": "ai-bubble_bluesky_fa9f1a8c_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "ai-bubble_x_625f2f44_0",
+      "similarity": 0.5516,
+      "text": "Nvidia's stock price is inflated due to an AI bubble."
+    },
+    {
+      "claim_id": "ai-bubble_bluesky_3e91d0d0_0",
+      "similarity": 0.4948,
+      "text": "The current enthusiasm for AI and Nvidia stock is unsustainable and will inevitably collapse."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "The current enthusiasm for AI and Nvidia stock is unsustainable and will inevitably collapse.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Nvidia's stock price is inflated due to an AI bubble.",
+      "platform": "X Platform",
+      "confidence": 0.7,
+      "is_influencer_framing": false
+    }
+  ]
+}

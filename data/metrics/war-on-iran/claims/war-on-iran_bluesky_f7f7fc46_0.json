@@ -1,0 +1,195 @@
+{
+  "claim": {
+    "text": "Trump's policies towards Iran have led to increased gas prices in the US.",
+    "subject": "Iran war",
+    "assertion": "is causing economic hardship for Americans",
+    "framing": "economic consequences",
+    "stance": "anti",
+    "confidence": 0.9,
+    "arousal": "medium",
+    "register": "vernacular",
+    "id": "war-on-iran_bluesky_f7f7fc46_0",
+    "cluster_id": "clu_war-on-iran_056",
+    "concept_id": "concept_war-on-iran_002",
+    "first_seen_platform": "bluesky",
+    "first_seen_timestamp": "2026-05-06T06:45:08.052Z",
+    "source_document_id": "93f81ce6882f2969",
+    "source_platform": "bluesky",
+    "source_timestamp": "2026-05-06T06:45:08.052Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.54,
+    "confidence_interval": [
+      0.44,
+      0.64
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.54
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0.5,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.3099,
+    "confidence_interval": [
+      0.1831,
+      0.4367
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3099
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 0.9014,
+    "confidence_interval": [
+      0.819,
+      0.9838
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.9014
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Cnbc Top",
+    "first_timestamp": "2026-05-06T06:45:08.052Z",
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 10.6
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_war-on-iran_002",
+    "hops": [
+      {
+        "platform": "Cnbc Top",
+        "timestamp": "2026-05-05T20:10:54+00:00",
+        "claim_id": "war-on-iran_bluesky_f7f7fc46_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-05-06T06:45:08.052000+00:00",
+        "claim_id": "war-on-iran_bluesky_f7f7fc46_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "war-on-iran_cnbc_top_9584cf36_0",
+      "similarity": 0.6341,
+      "text": "An armed conflict with Iran could negatively impact the job market."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "An armed conflict with Iran could negatively impact the job market.",
+      "platform": "Cnbc Top",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

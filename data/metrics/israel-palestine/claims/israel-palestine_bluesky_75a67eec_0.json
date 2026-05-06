@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "israel-palestine_bluesky_75a67eec_0",
-    "cluster_id": "clu_israel-palestine_030",
-    "concept_id": "concept_israel-palestine_002",
+    "cluster_id": "clu_israel-palestine_068",
+    "concept_id": "concept_israel-palestine_000",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-29T18:04:11.114Z",
     "source_document_id": "37934d4c7aeed97b",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.645,
+    "value": null,
     "confidence_interval": [
-      0.545,
-      0.745
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.645
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.25,
-    "bridge_ratio": 0.25,
-    "persistence_windows": 1,
-    "friction": 0.8,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.3346,
+    "value": null,
     "confidence_interval": [
-      0.2097,
-      0.4595
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3346
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.8,
+    "value": null,
     "confidence_interval": [
-      0.71,
-      0.89
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.8
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0,
     "confidence_interval": [
       0,
-      0.1962
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.85,
+    "value": null,
     "confidence_interval": [
-      0.7638,
-      0.9362
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.85
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9437,
+    "value": null,
     "confidence_interval": [
-      0.8645,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.9437
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,89 +133,59 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
-    "first_timestamp": "2026-04-29T18:04:11.114Z",
+    "first_platform": "unknown",
+    "first_timestamp": "",
     "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_israel-palestine_002",
-    "hops": [
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T17:23:09.815000+00:00",
-        "claim_id": "israel-palestine_bluesky_75a67eec_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      }
-    ],
-    "observation_boundary": "No public antecedent detected"
+    "concept_id": "",
+    "hops": [],
+    "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "israel-palestine_bluesky_0cc4fbab_0",
-      "similarity": 0.7719,
-      "text": "Israel is responsible for the deaths of Palestinian civilians in Gaza."
+      "claim_id": "israel-palestine_x_be0c5910_0",
+      "similarity": 0.7403,
+      "text": "Israel is intentionally killing rescue workers in Lebanon and Gaza."
     },
     {
-      "claim_id": "israel-palestine_bluesky_7f5f8943_0",
-      "similarity": 0.7415,
-      "text": "Israel intentionally targets non-military targets."
+      "claim_id": "israel-palestine_bluesky_8ddf6d86_1",
+      "similarity": 0.7401,
+      "text": "Israel is an apartheid state that is actively killing innocent people in Gaza."
     },
     {
-      "claim_id": "israel-palestine_bluesky_cb0b0128_0",
-      "similarity": 0.5763,
-      "text": "Itamar Ben Gvir supports the killing of Palestinian children."
+      "claim_id": "israel-palestine_bluesky_b49cd548_0",
+      "similarity": 0.694,
+      "text": "Israel is indiscriminately bombing parts of Lebanon, causing civilian casualties."
     },
     {
-      "claim_id": "israel-palestine_bluesky_7f5f8943_1",
-      "similarity": 0.2997,
-      "text": "The term 'martyr' in Arabic does not necessarily imply killing or dying."
+      "claim_id": "israel-palestine_x_c21b7beb_1",
+      "similarity": 0.5821,
+      "text": "The Netanyahu government deliberately seeks the death of Palestinian children."
     }
   ],
   "example_content": [
     {
-      "text": "Israel intentionally targets non-military targets.",
+      "text": "Israel is an apartheid state that is actively killing innocent people in Gaza.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The term 'martyr' in Arabic does not necessarily imply killing or dying.",
+      "text": "Israel is indiscriminately bombing parts of Lebanon, causing civilian casualties.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Itamar Ben Gvir supports the killing of Palestinian children.",
-      "platform": "Bluesky",
+      "text": "Israel is intentionally killing rescue workers in Lebanon and Gaza.",
+      "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

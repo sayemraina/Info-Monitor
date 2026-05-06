@@ -1,0 +1,204 @@
+{
+  "claim": {
+    "text": "Ozempic is becoming increasingly popular and widely used.",
+    "subject": "Ozempic",
+    "assertion": "is becoming increasingly popular",
+    "framing": "neutral",
+    "stance": "neutral",
+    "confidence": 0.6,
+    "arousal": "low",
+    "register": "vernacular",
+    "id": "ozempic-glp1_x_c66d2e50_0",
+    "cluster_id": "clu_ozempic-glp1_021",
+    "concept_id": "concept_ozempic-glp1_002",
+    "first_seen_platform": "x",
+    "first_seen_timestamp": "2026-05-06T04:20:11.000Z",
+    "source_document_id": "x_2051879676021440768",
+    "source_platform": "x",
+    "source_timestamp": "2026-05-06T04:20:11.000Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.345,
+    "confidence_interval": [
+      0.245,
+      0.445
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.345
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0,
+    "friction_quadrant": "dead"
+  },
+  "salience": {
+    "value": 0.3086,
+    "confidence_interval": [
+      0.1817,
+      0.4355
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3086
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0,
+    "confidence_interval": [
+      0,
+      0.15
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.15,
+    "confidence_interval": [
+      0.0112,
+      0.2888
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.15
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 0.9737,
+    "confidence_interval": [
+      0.8967,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.9737
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.6,
+    "factors": []
+  },
+  "provenance": {
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-05-06T04:20:11.000Z",
+    "lead_lag": [
+      {
+        "platform": "X Platform",
+        "lag_hours": 9.3
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_ozempic-glp1_002",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-05-05T19:00:59.203000+00:00",
+        "claim_id": "ozempic-glp1_x_c66d2e50_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-05-06T04:20:11+00:00",
+        "claim_id": "ozempic-glp1_x_c66d2e50_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "ozempic-glp1_bluesky_682e8f26_0",
+      "similarity": 0.881,
+      "text": "Ozempic and teeth whitening have become mainstream trends."
+    },
+    {
+      "claim_id": "ozempic-glp1_x_fec68c76_0",
+      "similarity": 0.7632,
+      "text": "Ozempic sales are declining more than anticipated."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Ozempic and teeth whitening have become mainstream trends.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Ozempic sales are declining more than anticipated.",
+      "platform": "X Platform",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "ozempic-glp1_x_e9a17646_0",
-    "cluster_id": "clu_ozempic-glp1_008",
-    "concept_id": "concept_ozempic-glp1_001",
+    "cluster_id": "clu_ozempic-glp1_015",
+    "concept_id": "concept_ozempic-glp1_002",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-29T18:43:17.000Z",
     "source_document_id": "x_2049560168992543159",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.5354,
+    "value": null,
     "confidence_interval": [
-      0.4354,
-      0.6354
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5354
-    ],
-    "source_distribution": "production",
-    "source_diversity": 1.0,
-    "bridge_ratio": 1.0,
-    "persistence_windows": 8,
-    "friction": 0.875,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.875,
+    "value": null,
     "confidence_interval": [
-      0.7906,
-      0.9594
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.875
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.4,
+    "value": 0,
     "confidence_interval": [
-      0.28,
-      0.52
+      0,
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.4
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.85,
+    "value": null,
     "confidence_interval": [
-      0.7638,
-      0.9362
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.85
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9528,
+    "value": null,
     "confidence_interval": [
-      0.8743,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.9528
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,139 +133,59 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
-    "first_timestamp": "2026-04-29T18:43:17.000Z",
-    "lead_lag": [
-      {
-        "platform": "Medpage Today",
-        "lag_hours": 2.1
-      },
-      {
-        "platform": "Sgt Report",
-        "lag_hours": 7.3
-      },
-      {
-        "platform": "X Platform",
-        "lag_hours": 10.4
-      },
-      {
-        "platform": "Drugs.Com",
-        "lag_hours": 10.4
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_ozempic-glp1_001",
-    "hops": [
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T07:23:51.262000+00:00",
-        "claim_id": "ozempic-glp1_x_e9a17646_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Medpage Today",
-        "timestamp": "2026-04-29T09:30:44+00:00",
-        "claim_id": "ozempic-glp1_x_e9a17646_0",
-        "fidelity_to_origin": 0.858,
-        "fidelity_to_previous": 0.858
-      },
-      {
-        "platform": "Sgt Report",
-        "timestamp": "2026-04-29T14:40:38+00:00",
-        "claim_id": "ozempic-glp1_x_e9a17646_0",
-        "fidelity_to_origin": 0.511,
-        "fidelity_to_previous": 0.5956
-      },
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-29T17:48:39+00:00",
-        "claim_id": "ozempic-glp1_x_e9a17646_0",
-        "fidelity_to_origin": 0.3005,
-        "fidelity_to_previous": 0.5881
-      },
-      {
-        "platform": "Drugs.Com",
-        "timestamp": "2026-04-29T17:49:07+00:00",
-        "claim_id": "ozempic-glp1_x_e9a17646_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9983
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ozempic-glp1_x_3faf3c0f_0",
-      "similarity": 0.8161,
-      "text": "Ozempic has harmful side effects on users' health and appearance."
+      "claim_id": "ozempic-glp1_x_4d026c57_0",
+      "similarity": 0.8283,
+      "text": "Ozempic is a dangerous or harmful drug."
     },
     {
-      "claim_id": "ozempic-glp1_bluesky_887e7824_0",
-      "similarity": 0.7466,
-      "text": "Ozempic has significant negative side effects for some users."
+      "claim_id": "ozempic-glp1_x_8644f411_0",
+      "similarity": 0.8283,
+      "text": "Ozempic is a dangerous or harmful drug."
     },
     {
-      "claim_id": "ozempic-glp1_bluesky_88094d00_1",
-      "similarity": 0.74,
-      "text": "Ozempic caused adverse side effects for the user."
+      "claim_id": "ozempic-glp1_x_0d288a87_0",
+      "similarity": 0.7754,
+      "text": "Ozempic should not be used for weight loss."
     },
     {
-      "claim_id": "ozempic-glp1_sgt_report_64f068ec_0",
-      "similarity": 0.6985,
-      "text": "Drugs like Ozempic that alter genetic expression can cause adverse effects, including personality changes and emotional flattening."
-    },
-    {
-      "claim_id": "ozempic-glp1_bluesky_df745330_0",
-      "similarity": 0.6882,
-      "text": "Using Ozempic is not a substitute for having a personality."
+      "claim_id": "ozempic-glp1_x_69a9e85c_0",
+      "similarity": 0.7553,
+      "text": "People should discontinue using Ozempic."
     }
   ],
   "example_content": [
     {
-      "text": "Ozempic has significant negative side effects for some users.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
+      "text": "People should discontinue using Ozempic.",
+      "platform": "X Platform",
+      "confidence": 0.6,
       "is_influencer_framing": false
     },
     {
-      "text": "Ozempic caused adverse side effects for the user.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
+      "text": "Ozempic is a dangerous or harmful drug.",
+      "platform": "X Platform",
+      "confidence": 0.7,
       "is_influencer_framing": false
     },
     {
-      "text": "Drugs like Ozempic and GLP-1 drugs, which alter genetic expression, can cause severe adverse effects, including personality changes, emotional flattening, and loss of joy, due to their impact on consc",
-      "platform": "Bluesky",
+      "text": "Ozempic should not be used for weight loss.",
+      "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

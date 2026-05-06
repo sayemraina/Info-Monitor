@@ -9,7 +9,7 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "war-on-iran_guardian_us_337f138c_1",
-    "cluster_id": "clu_war-on-iran_034",
+    "cluster_id": "clu_war-on-iran_042",
     "concept_id": "concept_war-on-iran_003",
     "first_seen_platform": "guardian_us",
     "first_seen_timestamp": "2026-04-29T16:47:55Z",
@@ -24,234 +24,172 @@
     "source_type": "elite_media"
   },
   "momentum": {
-    "value": 0.51,
+    "value": null,
     "confidence_interval": [
-      0.41,
-      0.61
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.51
-    ],
-    "source_distribution": "production",
-    "source_diversity": 1.0,
-    "bridge_ratio": 1.0,
-    "persistence_windows": 2,
-    "friction": 0.5,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.3289,
+    "value": null,
     "confidence_interval": [
-      0.2036,
-      0.4542
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3289
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.1,
+    "value": 0,
     "confidence_interval": [
       0,
-      0.2425
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.8,
     "factors": []
   },
   "provenance": {
-    "first_platform": "Guardian Us",
-    "first_timestamp": "2026-04-29T16:47:55Z",
-    "lead_lag": [
-      {
-        "platform": "The Hindu",
-        "lag_hours": 0.9
-      },
-      {
-        "platform": "Wapo Politics",
-        "lag_hours": 1.0
-      },
-      {
-        "platform": "China National News",
-        "lag_hours": 1.4
-      },
-      {
-        "platform": "Bluesky",
-        "lag_hours": 1.9
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_war-on-iran_003",
-    "hops": [
-      {
-        "platform": "Guardian Us",
-        "timestamp": "2026-04-29T16:47:55+00:00",
-        "claim_id": "war-on-iran_guardian_us_337f138c_1",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "The Hindu",
-        "timestamp": "2026-04-29T17:44:35+00:00",
-        "claim_id": "war-on-iran_guardian_us_337f138c_1",
-        "fidelity_to_origin": 0.6522,
-        "fidelity_to_previous": 0.6522
-      },
-      {
-        "platform": "Wapo Politics",
-        "timestamp": "2026-04-29T17:47:13+00:00",
-        "claim_id": "war-on-iran_guardian_us_337f138c_1",
-        "fidelity_to_origin": 0.6361,
-        "fidelity_to_previous": 0.9753
-      },
-      {
-        "platform": "China National News",
-        "timestamp": "2026-04-29T18:13:19+00:00",
-        "claim_id": "war-on-iran_guardian_us_337f138c_1",
-        "fidelity_to_origin": 0.4759,
-        "fidelity_to_previous": 0.7482
-      },
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T18:41:58.262000+00:00",
-        "claim_id": "war-on-iran_guardian_us_337f138c_1",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.6304
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "war-on-iran_china_national_news_97de9531_0",
-      "similarity": 0.5433,
-      "text": "The US and Israel initiated a war on Iran."
+      "claim_id": "war-on-iran_bluesky_1a51b559_1",
+      "similarity": 0.7009,
+      "text": "Iran's nuclear ambitions and control of the Strait of Hormuz pose a threat."
     },
     {
-      "claim_id": "war-on-iran_bluesky_a4c93126_0",
-      "similarity": 0.4884,
-      "text": "The Secretary of Defense is historically ignorant regarding the United States' relationship with Iran."
+      "claim_id": "war-on-iran_bluesky_b6a6f72c_0",
+      "similarity": 0.5854,
+      "text": "Trump's statements on Iran increase concerns about potential military conflict."
     },
     {
-      "claim_id": "war-on-iran_bluesky_91321697_0",
-      "similarity": 0.4833,
-      "text": "Russia is assisting Iran in targeting U.S. service members."
+      "claim_id": "war-on-iran_bluesky_941d5b2f_0",
+      "similarity": 0.569,
+      "text": "Military conflict with Iran is likely or imminent."
     },
     {
-      "claim_id": "war-on-iran_wapo_politics_bca2b877_1",
-      "similarity": 0.4753,
-      "text": "The U.S. is pressuring Iran to negotiate a peaceful resolution."
+      "claim_id": "war-on-iran_bluesky_42975295_0",
+      "similarity": 0.5462,
+      "text": "Military conflict with Iran is imminent or ongoing."
     },
     {
-      "claim_id": "war-on-iran_the_hindu_846dfc66_0",
-      "similarity": 0.2942,
-      "text": "Pakistan's diplomatic influence has increased due to its role in mediating negotiations between the United States and Iran."
+      "claim_id": "war-on-iran_bluesky_da1a21ab_0",
+      "similarity": 0.5385,
+      "text": "Military conflict with Iran is imminent or likely."
     }
   ],
   "example_content": [
     {
-      "text": "Russia is assisting Iran in targeting U.S. service members.",
+      "text": "Trump's statements on Iran increase concerns about potential military conflict.",
+      "platform": "Bluesky",
+      "confidence": 0.7,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The United States lacks a sufficient understanding of Iran.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The Secretary of Defense is historically ignorant regarding the United States' relationship with Iran.",
+      "text": "Military conflict with Iran is likely or imminent.",
       "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "The US and Israel initiated a war on Iran.",
-      "platform": "China National News",
-      "confidence": 0.9,
+      "confidence": 0.7,
       "is_influencer_framing": false
     }
   ]

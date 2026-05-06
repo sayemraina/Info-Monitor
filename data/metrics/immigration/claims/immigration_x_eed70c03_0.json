@@ -1,0 +1,215 @@
+{
+  "claim": {
+    "text": "Donald Trump's immigration policies are failing.",
+    "subject": "Immigration policy",
+    "assertion": "is failing",
+    "framing": "neutral",
+    "stance": "anti",
+    "confidence": 0.9,
+    "arousal": "medium",
+    "register": "vernacular",
+    "id": "immigration_x_eed70c03_0",
+    "cluster_id": "clu_immigration_012",
+    "concept_id": "concept_immigration_001",
+    "first_seen_platform": "x",
+    "first_seen_timestamp": "2026-05-06T03:15:10.000Z",
+    "source_document_id": "x_2051863313504465043",
+    "source_platform": "x",
+    "source_timestamp": "2026-05-06T03:15:10.000Z",
+    "source_engagement": {
+      "likes": 3,
+      "replies": 1,
+      "shares": 0
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.4236,
+    "confidence_interval": [
+      0.3236,
+      0.5236
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.4236
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.25,
+    "bridge_ratio": 0.25,
+    "persistence_windows": 3,
+    "friction": 1,
+    "friction_quadrant": "successful_suppression"
+  },
+  "salience": {
+    "value": 0.3986,
+    "confidence_interval": [
+      0.2785,
+      0.5187
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3986
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.15,
+    "confidence_interval": [
+      0.0112,
+      0.2888
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.15
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 0.9762,
+    "confidence_interval": [
+      0.8994,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.9762
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "X Platform",
+    "first_timestamp": "2026-05-06T03:15:10.000Z",
+    "lead_lag": []
+  },
+  "supply_chain": {
+    "concept_id": "concept_immigration_001",
+    "hops": [
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-05-05T21:44:15+00:00",
+        "claim_id": "immigration_x_eed70c03_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      }
+    ],
+    "observation_boundary": "No public antecedent detected"
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "immigration_x_42afa2a8_0",
+      "similarity": 1.0,
+      "text": "Donald Trump's immigration policies are failing."
+    },
+    {
+      "claim_id": "immigration_x_4899bf6e_0",
+      "similarity": 0.9773,
+      "text": "The Labour Party's immigration policies are failing."
+    },
+    {
+      "claim_id": "immigration_x_c012f429_0",
+      "similarity": 0.9773,
+      "text": "Current immigration policies are failing."
+    },
+    {
+      "claim_id": "immigration_x_d29eb344_0",
+      "similarity": 0.9773,
+      "text": "Current immigration policies are failing."
+    },
+    {
+      "claim_id": "immigration_x_16e6d18c_0",
+      "similarity": 0.9773,
+      "text": "The current administration's immigration policies are failing."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "The Labour Party's immigration policies are failing.",
+      "platform": "X Platform",
+      "confidence": 0.7,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Current immigration policies are performing poorly.",
+      "platform": "X Platform",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Trump's immigration policies have been a failure.",
+      "platform": "X Platform",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

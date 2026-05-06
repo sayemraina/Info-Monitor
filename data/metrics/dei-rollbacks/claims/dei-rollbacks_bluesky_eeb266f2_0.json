@@ -9,7 +9,7 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "dei-rollbacks_bluesky_eeb266f2_0",
-    "cluster_id": "clu_dei-rollbacks_008",
+    "cluster_id": "clu_dei-rollbacks_007",
     "concept_id": "concept_dei-rollbacks_002",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-29T18:15:53.540Z",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.645,
+    "value": null,
     "confidence_interval": [
-      0.545,
-      0.745
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.645
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.25,
-    "bridge_ratio": 0.25,
-    "persistence_windows": 4,
-    "friction": 0.75,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.4739,
+    "value": null,
     "confidence_interval": [
-      0.3594,
-      0.5884
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.4739
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.75,
+    "value": null,
     "confidence_interval": [
-      0.6562,
-      0.8438
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.75
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.2,
+    "value": 0,
     "confidence_interval": [
-      0.065,
-      0.335
+      0,
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.85,
+    "value": null,
     "confidence_interval": [
-      0.7638,
-      0.9362
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.85
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,93 +133,63 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
-    "first_timestamp": "2026-04-29T18:15:53.540Z",
+    "first_platform": "unknown",
+    "first_timestamp": "",
     "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_dei-rollbacks_002",
-    "hops": [
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T12:02:20.985000+00:00",
-        "claim_id": "dei-rollbacks_bluesky_eeb266f2_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      }
-    ],
-    "observation_boundary": "No public antecedent detected"
+    "concept_id": "",
+    "hops": [],
+    "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "dei-rollbacks_bluesky_f55f410d_0",
-      "similarity": 0.8117,
-      "text": "Target's DEI policy rollbacks are a result of the company's overzealous implementation of DEI policies."
+      "claim_id": "dei-rollbacks_bluesky_1c95bdd2_0",
+      "similarity": 0.896,
+      "text": "DEI initiatives are not the reason for the presence of Black people in football."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_d81fd751_0",
-      "similarity": 0.8116,
-      "text": "Target does not genuinely value diversity, equity, and inclusion."
+      "claim_id": "dei-rollbacks_bluesky_895281ab_0",
+      "similarity": 0.8159,
+      "text": "Southern states are gerrymandering congressional maps to disenfranchise African American voters and undermine diversity, equity, and inclusion initiatives in government."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_53449cd2_0",
-      "similarity": 0.8054,
-      "text": "Target Corporation has abandoned its commitment to diversity, equity, and inclusion in response to political pressure."
+      "claim_id": "dei-rollbacks_bluesky_c0bf28a7_0",
+      "similarity": 0.8124,
+      "text": "DEI initiatives are being unfairly demonized by racists and opportunists to manipulate white voters."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_1c5844a9_0",
-      "similarity": 0.7182,
-      "text": "Thomas is complicit in the rollback of DEI initiatives due to his conservative views."
+      "claim_id": "dei-rollbacks_bluesky_249c29dc_0",
+      "similarity": 0.7339,
+      "text": "Racism, not DEI initiatives, is the cause of some individuals' failures."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_62073fed_0",
-      "similarity": 0.7113,
-      "text": "DEI initiatives have led to the appointment of unqualified individuals to important positions."
+      "claim_id": "dei-rollbacks_bluesky_754bdcec_0",
+      "similarity": 0.6917,
+      "text": "Abandoning Equity, Diversity, and Inclusion (DEI) initiatives has led to a rise in antisemitism."
     }
   ],
   "example_content": [
     {
-      "text": "Target Corporation has abandoned its commitment to diversity, equity, and inclusion in response to political pressure.",
+      "text": "DEI initiatives are not the reason for the presence of Black people in football.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Target Corporation engages in union-busting activities.",
+      "text": "Racism, not DEI initiatives, is the cause of some individuals' failures.",
       "platform": "Bluesky",
-      "confidence": 0.8,
+      "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Companies have reduced their support for the LGBTQIA+ community due to conservative pressure.",
+      "text": "DEI initiatives are being unfairly demonized by racists and opportunists to manipulate white voters.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "ai-bubble_bluesky_126b1a09_0",
-    "cluster_id": "clu_ai-bubble_040",
-    "concept_id": "concept_ai-bubble_000",
+    "cluster_id": "clu_ai-bubble_025",
+    "concept_id": "concept_ai-bubble_006",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-29T16:55:02.902Z",
     "source_document_id": "afa2a7cafda6a74e",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.529,
+    "value": null,
     "confidence_interval": [
-      0.429,
-      0.629
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.529
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 1,
-    "friction": 0.4,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.304,
+    "value": null,
     "confidence_interval": [
-      0.1768,
-      0.4312
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.304
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.4,
+    "value": null,
     "confidence_interval": [
-      0.28,
-      0.52
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.4
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0,
     "confidence_interval": [
       0,
-      0.1962
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.85,
+    "value": null,
     "confidence_interval": [
-      0.7638,
-      0.9362
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.85
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9804,
+    "value": null,
     "confidence_interval": [
-      0.9039,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.9804
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,102 +133,55 @@
     ]
   },
   "provenance": {
-    "first_platform": "El Balad.Com",
-    "first_timestamp": "2026-04-29T16:55:02.902Z",
-    "lead_lag": [
-      {
-        "platform": "Bluesky",
-        "lag_hours": 11.0
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_ai-bubble_000",
-    "hops": [
-      {
-        "platform": "El Balad.Com",
-        "timestamp": "2026-04-29T05:08:33+00:00",
-        "claim_id": "ai-bubble_bluesky_126b1a09_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T16:10:11.043000+00:00",
-        "claim_id": "ai-bubble_bluesky_126b1a09_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-bubble_el-balad.com_fd2ffaf7_0",
-      "similarity": 0.7623,
-      "text": "AI-generated content creation is unsustainable due to its high resource consumption."
+      "claim_id": "ai-bubble_x_950ebe14_0",
+      "similarity": 0.9455,
+      "text": "AI-generated content is of poor quality and unappealing."
     },
     {
-      "claim_id": "ai-bubble_el-balad.com_fd2ffaf7_2",
-      "similarity": 0.6137,
-      "text": "Users are actively seeking and exploiting loopholes in AI content generation platforms."
+      "claim_id": "ai-bubble_bluesky_48271a9b_0",
+      "similarity": 0.5673,
+      "text": "AI-generated art poses a threat to human artists because tech companies are artificially inflating the market with low-quality AI art through unsustainable investment practices."
     },
     {
-      "claim_id": "ai-bubble_bluesky_3d73b520_0",
-      "similarity": 0.6104,
-      "text": "AI-generated images are creating a dangerous fantasy world."
-    },
-    {
-      "claim_id": "ai-bubble_el-balad.com_fd2ffaf7_1",
-      "similarity": 0.4798,
-      "text": "AI platforms have limitations in preventing the generation of content that infringes on intellectual property."
+      "claim_id": "ai-bubble_bluesky_970df231_0",
+      "similarity": 0.4649,
+      "text": "Jon Oringer's new AI platform is exploiting comic and graphic novel creators."
     }
   ],
   "example_content": [
     {
-      "text": "AI-generated images are creating a dangerous fantasy world.",
+      "text": "AI-generated art poses a threat to human artists because tech companies are artificially inflating the market with low-quality AI art through unsustainable investment practices.",
       "platform": "Bluesky",
-      "confidence": 0.8,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "AI-generated content creation is unsustainable due to its high resource consumption.",
-      "platform": "El Balad.Com",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "AI platforms have limitations in preventing the generation of content that infringes on intellectual property.",
-      "platform": "El Balad.Com",
-      "confidence": 0.8,
+      "text": "Jon Oringer's new AI platform is exploiting comic and graphic novel creators.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "AI-generated content is of poor quality and unappealing.",
+      "platform": "X Platform",
+      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

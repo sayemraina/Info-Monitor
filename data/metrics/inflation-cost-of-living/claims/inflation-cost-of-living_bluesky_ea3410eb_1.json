@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "inflation-cost-of-living_bluesky_ea3410eb_1",
-    "cluster_id": "clu_inflation-cost-of-living_033",
-    "concept_id": "concept_inflation-cost-of-living_007",
+    "cluster_id": "clu_inflation-cost-of-living_022",
+    "concept_id": "concept_inflation-cost-of-living_006",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-29T13:36:16.030Z",
     "source_document_id": "da64af01b25112b4",
@@ -24,234 +24,172 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.5058,
+    "value": null,
     "confidence_interval": [
-      0.4058,
-      0.6058
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5058
-    ],
-    "source_distribution": "production",
-    "source_diversity": 1.0,
-    "bridge_ratio": 1.0,
-    "persistence_windows": 3,
-    "friction": 0.4444,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.3264,
+    "value": null,
     "confidence_interval": [
-      0.2009,
-      0.4519
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3264
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.4444,
+    "value": null,
     "confidence_interval": [
-      0.3277,
-      0.5611
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.4444
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.15,
+    "value": 0,
     "confidence_interval": [
-      0.0112,
-      0.2888
+      0,
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.15
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.85,
+    "value": null,
     "confidence_interval": [
-      0.7638,
-      0.9362
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.85
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.8,
     "factors": []
   },
   "provenance": {
-    "first_platform": "Bluesky",
-    "first_timestamp": "2026-04-29T13:36:16.030Z",
-    "lead_lag": [
-      {
-        "platform": "Mother Jones",
-        "lag_hours": 2.9
-      },
-      {
-        "platform": "X Platform",
-        "lag_hours": 4.8
-      },
-      {
-        "platform": "Redstate",
-        "lag_hours": 5.4
-      },
-      {
-        "platform": "Al Jazeera Online",
-        "lag_hours": 5.5
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_inflation-cost-of-living_007",
-    "hops": [
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T13:36:16.030000+00:00",
-        "claim_id": "inflation-cost-of-living_bluesky_ea3410eb_1",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Mother Jones",
-        "timestamp": "2026-04-29T16:33:03+00:00",
-        "claim_id": "inflation-cost-of-living_bluesky_ea3410eb_1",
-        "fidelity_to_origin": 0.6226,
-        "fidelity_to_previous": 0.6226
-      },
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-29T18:23:36+00:00",
-        "claim_id": "inflation-cost-of-living_bluesky_ea3410eb_1",
-        "fidelity_to_origin": 0.3867,
-        "fidelity_to_previous": 0.6211
-      },
-      {
-        "platform": "Redstate",
-        "timestamp": "2026-04-29T19:00:22+00:00",
-        "claim_id": "inflation-cost-of-living_bluesky_ea3410eb_1",
-        "fidelity_to_origin": 0.3082,
-        "fidelity_to_previous": 0.797
-      },
-      {
-        "platform": "Al Jazeera Online",
-        "timestamp": "2026-04-29T19:04:12+00:00",
-        "claim_id": "inflation-cost-of-living_bluesky_ea3410eb_1",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9734
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "inflation-cost-of-living_al_jazeera_online_d626d996_0",
-      "similarity": 0.6647,
-      "text": "The United States' naval blockade of Iran is economically crippling the country."
+      "claim_id": "inflation-cost-of-living_bluesky_d9bfcada_1",
+      "similarity": 0.6125,
+      "text": "Geopolitical tensions in Iran are contributing to inflationary pressures."
     },
     {
-      "claim_id": "inflation-cost-of-living_x_af83ffd6_0",
-      "similarity": 0.5705,
-      "text": "Iran's economy is in severe decline, characterized by job losses, rising cost of living, business closures, and high inflation."
+      "claim_id": "inflation-cost-of-living_bluesky_4015e956_0",
+      "similarity": 0.5481,
+      "text": "The conflict in Iran is contributing to higher oil prices, which in turn is increasing inflation in Thailand."
     },
     {
-      "claim_id": "inflation-cost-of-living_al_jazeera_online_d626d996_1",
-      "similarity": 0.5508,
-      "text": "The United States is deliberately trying to destabilize Iran through economic pressure and internal division."
+      "claim_id": "inflation-cost-of-living_bluesky_1af63bef_0",
+      "similarity": 0.5311,
+      "text": "The current economic situation in Iran is dire due to factors such as stagflation, stagnant minimum wage, high post-pandemic inflation, and a large national debt."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_f6143818_0",
-      "similarity": 0.5417,
-      "text": "The United States should withdraw from Iran and prioritize domestic issues."
+      "claim_id": "inflation-cost-of-living_bluesky_7ccbfd4f_0",
+      "similarity": 0.5006,
+      "text": "A potential war with Iran is expected to increase food prices in the UK."
     },
     {
-      "claim_id": "inflation-cost-of-living_al_jazeera_online_d626d996_2",
-      "similarity": 0.5271,
-      "text": "The United States has significantly weakened Iran's military capabilities."
+      "claim_id": "inflation-cost-of-living_bluesky_f5793a1f_0",
+      "similarity": 0.489,
+      "text": "A potential war with Iran is expected to increase food prices in the UK."
     }
   ],
   "example_content": [
     {
-      "text": "The United States should withdraw from Iran and prioritize domestic issues.",
+      "text": "A potential war with Iran is expected to increase food prices in the UK.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Economic pressure on Iran is causing significant hardship for ordinary Iranians.",
-      "platform": "Redstate",
+      "text": "A potential war with Iran is expected to increase food prices in the UK.",
+      "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The economic crisis in Iran is likely to lead to increased political mobilization against the regime.",
-      "platform": "Redstate",
-      "confidence": 0.7,
+      "text": "A potential war with Iran is expected to increase food prices in the UK.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

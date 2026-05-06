@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "israel-palestine_bluesky_7edf23b5_0",
-    "cluster_id": "clu_israel-palestine_062",
-    "concept_id": "concept_israel-palestine_004",
+    "cluster_id": "clu_israel-palestine_074",
+    "concept_id": "concept_israel-palestine_001",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-29T13:47:34.399Z",
     "source_document_id": "ac6fd98719205807",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.645,
+    "value": null,
     "confidence_interval": [
-      0.545,
-      0.745
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.645
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.25,
-    "bridge_ratio": 0.25,
-    "persistence_windows": 1,
-    "friction": 0.5,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.3135,
+    "value": null,
     "confidence_interval": [
-      0.187,
-      0.44
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3135
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0,
     "confidence_interval": [
       0,
-      0.1962
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.85,
+    "value": null,
     "confidence_interval": [
-      0.7638,
-      0.9362
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.85
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.96,
+    "value": null,
     "confidence_interval": [
-      0.882,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.96
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,61 +133,63 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
-    "first_timestamp": "2026-04-29T13:47:34.399Z",
+    "first_platform": "unknown",
+    "first_timestamp": "",
     "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_israel-palestine_004",
-    "hops": [
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T13:47:34.399000+00:00",
-        "claim_id": "israel-palestine_bluesky_7edf23b5_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      }
-    ],
-    "observation_boundary": "No public antecedent detected"
+    "concept_id": "",
+    "hops": [],
+    "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "israel-palestine_bluesky_5ac4ef3f_0",
-      "similarity": 0.6511,
-      "text": "Donations can alleviate some of the practical hardships faced by people in Gaza during the war."
+      "claim_id": "israel-palestine_x_829a7e92_0",
+      "similarity": 0.7105,
+      "text": "The humanitarian crisis in Gaza is ongoing and worsening."
+    },
+    {
+      "claim_id": "israel-palestine_bluesky_332d5249_0",
+      "similarity": 0.6914,
+      "text": "The Gaza war has severely damaged agricultural land in Gaza, exacerbating food security issues."
+    },
+    {
+      "claim_id": "israel-palestine_bluesky_6ed1f102_0",
+      "similarity": 0.6802,
+      "text": "The ongoing conflict has made basic necessities, such as weddings, unaffordable for people in Gaza."
+    },
+    {
+      "claim_id": "israel-palestine_x_b86477fc_0",
+      "similarity": 0.5777,
+      "text": "Civilians in Gaza require humanitarian assistance to ensure their basic needs are met."
+    },
+    {
+      "claim_id": "israel-palestine_phnompenhpost.com_4d61b998_1",
+      "similarity": 0.5545,
+      "text": "The situation in Palestine is a humanitarian crisis."
     }
   ],
   "example_content": [
     {
-      "text": "Donations can alleviate some of the practical hardships faced by people in Gaza during the war.",
+      "text": "Gazans still require financial assistance.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The ongoing conflict has made basic necessities, such as weddings, unaffordable for people in Gaza.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The Gaza war has severely damaged agricultural land in Gaza, exacerbating food security issues.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

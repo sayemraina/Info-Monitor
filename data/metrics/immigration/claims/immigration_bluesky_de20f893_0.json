@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "immigration_bluesky_de20f893_0",
-    "cluster_id": "clu_immigration_025",
-    "concept_id": "concept_immigration_002",
+    "cluster_id": "clu_immigration_042",
+    "concept_id": "concept_immigration_001",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-29T16:24:32.933Z",
     "source_document_id": "fba000e2fbf447e6",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.5258,
+    "value": null,
     "confidence_interval": [
-      0.4258,
-      0.6258
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5258
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.25,
-    "bridge_ratio": 0.25,
-    "persistence_windows": 2,
-    "friction": 0.5,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.3465,
+    "value": null,
     "confidence_interval": [
-      0.2225,
-      0.4705
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3465
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.1,
+    "value": 0,
     "confidence_interval": [
       0,
-      0.2425
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.85,
+    "value": null,
     "confidence_interval": [
-      0.7638,
-      0.9362
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.85
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.988,
+    "value": null,
     "confidence_interval": [
-      0.9121,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.988
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,93 +133,63 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
-    "first_timestamp": "2026-04-29T16:24:32.933Z",
+    "first_platform": "unknown",
+    "first_timestamp": "",
     "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_immigration_002",
-    "hops": [
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T15:43:19.298000+00:00",
-        "claim_id": "immigration_bluesky_de20f893_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      }
-    ],
-    "observation_boundary": "No public antecedent detected"
+    "concept_id": "",
+    "hops": [],
+    "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "immigration_bluesky_7cb78e00_0",
-      "similarity": 0.6701,
-      "text": "Deportation policies are unethical and resemble kidnapping and exile."
+      "claim_id": "immigration_bluesky_015016cb_0",
+      "similarity": 0.6267,
+      "text": "The current administration is using legal mechanisms to target and deport immigrants in a manner resembling ethnic cleansing."
     },
     {
-      "claim_id": "immigration_bluesky_e2fcb429_0",
-      "similarity": 0.6501,
-      "text": "Deportation protections are under threat due to legal challenges."
+      "claim_id": "immigration_bluesky_7493252b_0",
+      "similarity": 0.5969,
+      "text": "The Republican party is planning to increase funding for ICE and mass deportation efforts."
     },
     {
-      "claim_id": "immigration_bluesky_2cd0bef0_0",
-      "similarity": 0.6417,
-      "text": "Advocating for mass deportation is comparable to Nazism."
+      "claim_id": "immigration_bluesky_4b73afdf_0",
+      "similarity": 0.5905,
+      "text": "The individual in question supports mass deportation policies."
     },
     {
-      "claim_id": "immigration_bluesky_fea9b8a4_0",
-      "similarity": 0.6358,
-      "text": "Deportation policies are a cause of distress and hardship for affected individuals."
+      "claim_id": "immigration_bluesky_2c050c35_1",
+      "similarity": 0.5647,
+      "text": "Mass deportation policies are being considered despite their impracticality or absurdity."
     },
     {
-      "claim_id": "immigration_bluesky_f2ba96b4_0",
-      "similarity": 0.587,
-      "text": "Deportation policies are causing personal distress and feelings of guilt in those who want to help."
+      "claim_id": "immigration_bluesky_625e9f26_0",
+      "similarity": 0.5522,
+      "text": "ICE is conducting deportation flights."
     }
   ],
   "example_content": [
     {
-      "text": "Deportation policies are unethical and resemble kidnapping and exile.",
+      "text": "ICE is conducting deportation flights.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Deportation judges are a topic of interest in American media.",
+      "text": "The current administration is using legal mechanisms to target and deport immigrants in a manner resembling ethnic cleansing.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Deportation policies are causing personal distress and feelings of guilt in those who want to help.",
+      "text": "The director of ICE is ignorant about the countries to which the agency deports people.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

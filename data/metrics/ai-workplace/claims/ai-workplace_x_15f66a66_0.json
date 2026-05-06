@@ -1,0 +1,195 @@
+{
+  "claim": {
+    "text": "Fast food companies are replacing human workers with AI systems.",
+    "subject": "fast food companies",
+    "assertion": "are replacing human workers with AI systems",
+    "framing": "neutral",
+    "stance": "neutral",
+    "confidence": 0.9,
+    "arousal": "low",
+    "register": "vernacular",
+    "id": "ai-workplace_x_15f66a66_0",
+    "cluster_id": "clu_ai-workplace_039",
+    "concept_id": "concept_ai-workplace_001",
+    "first_seen_platform": "x",
+    "first_seen_timestamp": "2026-05-05T16:34:28.000Z",
+    "source_document_id": "x_2051702077877797319",
+    "source_platform": "x",
+    "source_timestamp": "2026-05-05T16:34:28.000Z",
+    "source_engagement": {
+      "likes": 3,
+      "replies": 1,
+      "shares": 1
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.3202,
+    "confidence_interval": [
+      0.2202,
+      0.4202
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3202
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0.5,
+    "friction_quadrant": "successful_suppression"
+  },
+  "salience": {
+    "value": 0.3184,
+    "confidence_interval": [
+      0.1923,
+      0.4445
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3184
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.15,
+    "confidence_interval": [
+      0.0112,
+      0.2888
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.15
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 0.9688,
+    "confidence_interval": [
+      0.8915,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.9688
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "X Platform",
+    "first_timestamp": "2026-05-05T16:34:28.000Z",
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 2.7
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_ai-workplace_001",
+    "hops": [
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-05-05T16:34:28+00:00",
+        "claim_id": "ai-workplace_x_15f66a66_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-05-05T19:17:45.875000+00:00",
+        "claim_id": "ai-workplace_x_15f66a66_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "ai-workplace_bluesky_53953cc1_1",
+      "similarity": 0.3981,
+      "text": "CEOs and CFOs are replaceable because their jobs primarily involve decision-making and leisure activities."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "CEOs and CFOs are replaceable because their jobs primarily involve decision-making and leisure activities.",
+      "platform": "Bluesky",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    }
+  ]
+}

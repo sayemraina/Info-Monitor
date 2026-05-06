@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "dei-rollbacks_bluesky_ed8e356d_1",
-    "cluster_id": "clu_dei-rollbacks_010",
-    "concept_id": "concept_dei-rollbacks_004",
+    "cluster_id": "clu_dei-rollbacks_013",
+    "concept_id": "concept_dei-rollbacks_005",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-29T17:41:01.674Z",
     "source_document_id": "b78d83bb31594c42",
@@ -24,207 +24,151 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.4966,
+    "value": null,
     "confidence_interval": [
-      0.3966,
-      0.5966
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.4966
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.75,
-    "bridge_ratio": 0.75,
-    "persistence_windows": 1,
-    "friction": 1,
-    "friction_quadrant": "successful_suppression"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.3091,
+    "value": null,
     "confidence_interval": [
-      0.1823,
-      0.4359
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3091
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0,
     "confidence_interval": [
       0,
-      0.1962
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.85,
+    "value": null,
     "confidence_interval": [
-      0.7638,
-      0.9362
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.85
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.8,
     "factors": []
   },
   "provenance": {
-    "first_platform": "Fox Politics",
-    "first_timestamp": "2026-04-29T17:41:01.674Z",
-    "lead_lag": [
-      {
-        "platform": "Bluesky",
-        "lag_hours": 1.1
-      },
-      {
-        "platform": "Crooks And Liars",
-        "lag_hours": 2.2
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_dei-rollbacks_004",
-    "hops": [
-      {
-        "platform": "Fox Politics",
-        "timestamp": "2026-04-29T16:33:04+00:00",
-        "claim_id": "dei-rollbacks_bluesky_ed8e356d_1",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T17:41:01.674000+00:00",
-        "claim_id": "dei-rollbacks_bluesky_ed8e356d_1",
-        "fidelity_to_origin": 0.639,
-        "fidelity_to_previous": 0.639
-      },
-      {
-        "platform": "Crooks And Liars",
-        "timestamp": "2026-04-29T18:44:50+00:00",
-        "claim_id": "dei-rollbacks_bluesky_ed8e356d_1",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.4695
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "dei-rollbacks_crooks_and_liars_cd0da973_0",
-      "similarity": 0.4289,
-      "text": "Bernie Sanders is a threat to national security due to his alleged communist sympathies."
+      "claim_id": "dei-rollbacks_bluesky_d0983ca4_2",
+      "similarity": 0.5522,
+      "text": "Democrats should emphasize the moral argument that the country and planet belong to everyone."
     },
     {
-      "claim_id": "dei-rollbacks_crooks_and_liars_cd0da973_1",
-      "similarity": 0.4104,
-      "text": "Republicans consider a wide range of entities and activities, including diversity programs and tariff critics, to be national security threats."
-    },
-    {
-      "claim_id": "dei-rollbacks_fox_politics_336079cd_1",
-      "similarity": 0.235,
-      "text": "Governor Walz is falsely taking credit for federal efforts to combat fraud."
-    },
-    {
-      "claim_id": "dei-rollbacks_fox_politics_336079cd_0",
-      "similarity": 0.2057,
-      "text": "Governor Walz is avoiding accountability for the massive fraud scandal in Minnesota."
+      "claim_id": "dei-rollbacks_bluesky_07f8daa1_0",
+      "similarity": 0.3021,
+      "text": "Jared Kushner and Steven Witkoff are facilitating corrupt financial dealings for Donald Trump."
     }
   ],
   "example_content": [
     {
-      "text": "Governor Walz is avoiding accountability for the massive fraud scandal in Minnesota.",
-      "platform": "Fox Politics",
+      "text": "Jared Kushner and Steven Witkoff are facilitating corrupt financial dealings for Donald Trump.",
+      "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Governor Walz is falsely taking credit for federal efforts to combat fraud.",
-      "platform": "Fox Politics",
+      "text": "Democrats should emphasize the moral argument that the country and planet belong to everyone.",
+      "platform": "Bluesky",
       "confidence": 0.8,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Bernie Sanders is a threat to national security due to his alleged communist sympathies.",
-      "platform": "Crooks And Liars",
-      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

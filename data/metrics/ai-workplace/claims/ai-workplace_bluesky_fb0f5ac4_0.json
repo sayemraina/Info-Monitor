@@ -9,7 +9,7 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "ai-workplace_bluesky_fb0f5ac4_0",
-    "cluster_id": "clu_ai-workplace_030",
+    "cluster_id": "clu_ai-workplace_028",
     "concept_id": "concept_ai-workplace_002",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-29T10:09:40.134Z",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.4212,
+    "value": null,
     "confidence_interval": [
-      0.3212,
-      0.5212
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.4212
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.25,
-    "bridge_ratio": 0.25,
-    "persistence_windows": 1,
-    "friction": 0.6667,
-    "friction_quadrant": "successful_suppression"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.3275,
+    "value": null,
     "confidence_interval": [
-      0.2021,
-      0.4529
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3275
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.6667,
+    "value": null,
     "confidence_interval": [
-      0.5667,
-      0.7667
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.6667
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0,
     "confidence_interval": [
       0,
-      0.1962
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,72 +133,63 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
-    "first_timestamp": "2026-04-29T10:09:40.134Z",
+    "first_platform": "unknown",
+    "first_timestamp": "",
     "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_ai-workplace_002",
-    "hops": [
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-28T19:25:53.113364+00:00",
-        "claim_id": "ai-workplace_bluesky_fb0f5ac4_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      }
-    ],
-    "observation_boundary": "No public antecedent detected"
+    "concept_id": "",
+    "hops": [],
+    "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-workplace_bluesky_2cf3d45e_0",
-      "similarity": 0.8271,
-      "text": "Meta is reducing its AI training operations, potentially leading to layoffs for hundreds of workers."
+      "claim_id": "ai-workplace_bluesky_361918fe_0",
+      "similarity": 0.8495,
+      "text": "Artificial intelligence is contributing to job displacement."
     },
     {
-      "claim_id": "ai-workplace_bluesky_c0fbd6ec_1",
-      "similarity": 0.7739,
-      "text": "AI implementation is decreasing wages and increasing job competition."
+      "claim_id": "ai-workplace_x_3c0f423b_0",
+      "similarity": 0.7879,
+      "text": "Artificial intelligence is accelerating job displacement in the cryptocurrency industry."
+    },
+    {
+      "claim_id": "ai-workplace_bluesky_97cc62af_0",
+      "similarity": 0.7842,
+      "text": "Companies are laying off employees to increase profits through the implementation of AI and automation."
+    },
+    {
+      "claim_id": "ai-workplace_bluesky_51a8f5d0_0",
+      "similarity": 0.7353,
+      "text": "Companies are using AI to automate tasks, resulting in job losses and increased profits for the wealthy at the expense of workers."
+    },
+    {
+      "claim_id": "ai-workplace_x_15f66a66_2",
+      "similarity": 0.689,
+      "text": "The use of AI in fast food is leading to job losses."
     }
   ],
   "example_content": [
     {
-      "text": "AI implementation is decreasing wages and increasing job competition.",
+      "text": "Companies are laying off employees to increase profits through the implementation of AI and automation.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Meta is reducing its AI training operations, potentially leading to layoffs for hundreds of workers.",
+      "text": "Companies are using AI to automate tasks, resulting in job losses and increased profits for the wealthy at the expense of workers.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Artificial intelligence is contributing to job displacement.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

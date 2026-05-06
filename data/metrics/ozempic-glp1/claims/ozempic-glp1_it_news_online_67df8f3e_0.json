@@ -9,7 +9,7 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "ozempic-glp1_it_news_online_67df8f3e_0",
-    "cluster_id": "clu_ozempic-glp1_020",
+    "cluster_id": "clu_ozempic-glp1_030",
     "concept_id": "concept_ozempic-glp1_000",
     "first_seen_platform": "it_news_online",
     "first_seen_timestamp": "2026-04-29T17:16:14Z",
@@ -24,37 +24,39 @@
     "source_type": "elite_media"
   },
   "momentum": {
-    "value": 0.54,
+    "value": null,
     "confidence_interval": [
-      0.44,
-      0.64
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.54
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 1,
-    "friction": 0,
-    "friction_quadrant": "unopposed_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.3037,
+    "value": null,
     "confidence_interval": [
-      0.1765,
-      0.4309
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3037
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
+    "value": null,
+    "confidence_interval": [
+      0,
+      0
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [],
+    "source_distribution": "production"
+  },
+  "persistence": {
     "value": 0,
     "confidence_interval": [
       0,
@@ -67,51 +69,62 @@
     ],
     "source_distribution": "production"
   },
-  "persistence": {
-    "value": 0.05,
+  "arousal": {
+    "value": null,
     "confidence_interval": [
       0,
-      0.1962
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.05
-    ],
-    "source_distribution": "production"
-  },
-  "arousal": {
-    "value": 0.5,
-    "confidence_interval": [
-      0.3875,
-      0.6125
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9608,
+    "value": null,
     "confidence_interval": [
-      0.8829,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.9608
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,85 +133,64 @@
     ]
   },
   "provenance": {
-    "first_platform": "It News Online",
-    "first_timestamp": "2026-04-29T17:16:14Z",
-    "lead_lag": [
-      {
-        "platform": "Morningstar",
-        "lag_hours": 0.3
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_ozempic-glp1_000",
-    "hops": [
-      {
-        "platform": "It News Online",
-        "timestamp": "2026-04-29T17:16:14+00:00",
-        "claim_id": "ozempic-glp1_it_news_online_67df8f3e_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Morningstar",
-        "timestamp": "2026-04-29T17:33:08+00:00",
-        "claim_id": "ozempic-glp1_it_news_online_67df8f3e_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ozempic-glp1_it_news_online_67df8f3e_1",
-      "similarity": 0.6612,
-      "text": "Temperature excursions in the healthcare supply chain contribute to significant annual losses for the pharmaceutical industry."
+      "claim_id": "ozempic-glp1_x_60786f0f_1",
+      "similarity": 0.4413,
+      "text": "The integration of artificial intelligence into the pharmaceutical industry will have significant consequences for healthcare."
     },
     {
-      "claim_id": "ozempic-glp1_morningstar_fcd3cfd9_1",
-      "similarity": 0.3096,
-      "text": "Lower Medicare ratings are negatively impacting Humana's profits."
+      "claim_id": "ozempic-glp1_business_day_bf7cdcd4_1",
+      "similarity": 0.3448,
+      "text": "South African consumers are becoming more disciplined and value-driven in their spending habits."
+    },
+    {
+      "claim_id": "ozempic-glp1_business_day_bf7cdcd4_0",
+      "similarity": 0.342,
+      "text": "South African consumers are increasingly using digital payment methods over cash."
+    },
+    {
+      "claim_id": "ozempic-glp1_x_60786f0f_0",
+      "similarity": 0.3097,
+      "text": "Pharmaceutical companies are increasingly investing in artificial intelligence."
+    },
+    {
+      "claim_id": "ozempic-glp1_daily_wire_e10f428e_1",
+      "similarity": 0.2848,
+      "text": "Amazon's labor practices are exploitative, forcing workers to urinate in bottles due to lack of breaks."
     }
   ],
   "example_content": [
     {
-      "text": "Lower Medicare ratings are negatively impacting Humana's profits.",
-      "platform": "Morningstar",
-      "confidence": 1.0,
+      "text": "South African consumers are increasingly using digital payment methods over cash.",
+      "platform": "Business Day",
+      "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Temperature excursions in the healthcare supply chain contribute to significant annual losses for the pharmaceutical industry.",
-      "platform": "It News Online",
+      "text": "South African consumers are becoming more disciplined and value-driven in their spending habits.",
+      "platform": "Business Day",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Amazon's labor practices are exploitative, forcing workers to urinate in bottles due to lack of breaks.",
+      "platform": "Daily Wire",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

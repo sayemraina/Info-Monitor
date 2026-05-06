@@ -9,7 +9,7 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "war-on-iran_bluesky_02b4620a_0",
-    "cluster_id": "clu_war-on-iran_006",
+    "cluster_id": "clu_war-on-iran_031",
     "concept_id": "concept_war-on-iran_005",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-29T18:16:57.861Z",
@@ -24,37 +24,39 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.54,
+    "value": null,
     "confidence_interval": [
-      0.44,
-      0.64
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.54
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.25,
-    "bridge_ratio": 0.25,
-    "persistence_windows": 1,
-    "friction": 0,
-    "friction_quadrant": "unopposed_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.2974,
+    "value": null,
     "confidence_interval": [
-      0.1697,
-      0.4251
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.2974
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
+    "value": null,
+    "confidence_interval": [
+      0,
+      0
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [],
+    "source_distribution": "production"
+  },
+  "persistence": {
     "value": 0,
     "confidence_interval": [
       0,
@@ -67,51 +69,62 @@
     ],
     "source_distribution": "production"
   },
-  "persistence": {
-    "value": 0.05,
+  "arousal": {
+    "value": null,
     "confidence_interval": [
       0,
-      0.1962
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.05
-    ],
-    "source_distribution": "production"
-  },
-  "arousal": {
-    "value": 0.5,
-    "confidence_interval": [
-      0.3875,
-      0.6125
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,86 +133,21 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
-    "first_timestamp": "2026-04-29T18:16:57.861Z",
+    "first_platform": "unknown",
+    "first_timestamp": "",
     "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_war-on-iran_005",
-    "hops": [
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T18:16:57.861000+00:00",
-        "claim_id": "war-on-iran_bluesky_02b4620a_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      }
-    ],
-    "observation_boundary": "No public antecedent detected"
+    "concept_id": "",
+    "hops": [],
+    "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
-  "semantic_neighbors": [
-    {
-      "claim_id": "war-on-iran_bluesky_2429cae2_0",
-      "similarity": 0.4485,
-      "text": "The OpenAI trial is a complex issue with no clear right or wrong side."
-    },
-    {
-      "claim_id": "war-on-iran_bluesky_9c5a2da2_0",
-      "similarity": 0.3462,
-      "text": "Iran is effectively using AI in propaganda efforts."
-    },
-    {
-      "claim_id": "war-on-iran_bluesky_ee9136f6_0",
-      "similarity": 0.2793,
-      "text": "Iran has successfully used AI-generated memes for propaganda or influence campaigns."
-    }
-  ],
-  "example_content": [
-    {
-      "text": "Iran is effectively using AI in propaganda efforts.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Iran has successfully used AI-generated memes for propaganda or influence campaigns.",
-      "platform": "Bluesky",
-      "confidence": 0.7,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "The OpenAI trial is a complex issue with no clear right or wrong side.",
-      "platform": "Bluesky",
-      "confidence": 0.8,
-      "is_influencer_framing": false
-    }
-  ]
+  "semantic_neighbors": [],
+  "example_content": []
 }

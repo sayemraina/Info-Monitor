@@ -3,55 +3,38 @@
     "id": "youtube_influencer",
     "type": "platform",
     "label": "YouTube (Influencer Framing)",
-    "active_volume": 0,
-    "meets_minimum_threshold": false,
-    "base_rate_weight": 0.0,
+    "active_volume": 10,
+    "meets_minimum_threshold": true,
+    "base_rate_weight": 0.0302,
     "is_influencer_framing": true
   },
   "slice_b": {
     "id": "elite_media_all",
     "type": "source_type",
     "label": "Elite Media",
-    "active_volume": 99,
+    "active_volume": 96,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.2955,
+    "base_rate_weight": 0.29,
     "is_influencer_framing": false
   },
   "divergence": {
-    "jsd": 0.0,
-    "jsd_sqrt": 0.0,
+    "jsd": 0.52,
+    "jsd_sqrt": 0.7211,
     "trend": [
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0
+      0.7211
     ],
     "typology": {
-      "information_asymmetry": 0.0,
-      "interpretive": 0.0,
-      "paradigmatic": 0.0,
+      "information_asymmetry": 0.4058,
+      "interpretive": 0.1883,
+      "paradigmatic": 0.4058,
       "dominant_mode": "Information Asymmetry",
-      "paradigmatic_caveat": false
+      "paradigmatic_caveat": true
     }
   },
   "per_cluster": [
     {
       "cluster_id": "clu_war-on-iran_000",
-      "label": "Us-Iran Conflict",
-      "salience_a": 0.0,
-      "salience_b": 0.0,
-      "arousal_a": 0,
-      "arousal_b": 0,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_war-on-iran_001",
-      "label": "Strait of Hormuz",
+      "label": "UK-US Relations",
       "salience_a": 0.0,
       "salience_b": 0.0,
       "arousal_a": 0,
@@ -61,16 +44,46 @@
     },
     {
       "cluster_id": "clu_war-on-iran_002",
-      "label": "UK-US Relations",
+      "label": "Israel",
       "salience_a": 0.0,
-      "salience_b": 0.0909,
+      "salience_b": 0.0104,
       "arousal_a": 0,
-      "arousal_b": 0.1889,
+      "arousal_b": 0.5,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_war-on-iran_003",
+      "label": "Us-Iran Conflict",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_war-on-iran_004",
+      "label": "Defense Startups",
+      "salience_a": 0.0,
+      "salience_b": 0.0104,
+      "arousal_a": 0,
+      "arousal_b": 0.5,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_war-on-iran_005",
+      "label": "Iranian Foreign Policy",
+      "salience_a": 0.2,
+      "salience_b": 0.0625,
+      "arousal_a": 0.675,
+      "arousal_b": 0.3833,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_war-on-iran_006",
       "label": "NATO",
       "salience_a": 0.0,
       "salience_b": 0.0,
@@ -80,38 +93,18 @@
       "mutation_b": "radicalizing"
     },
     {
-      "cluster_id": "clu_war-on-iran_005",
-      "label": "Ukraine",
+      "cluster_id": "clu_war-on-iran_007",
+      "label": "Strait of Hormuz",
       "salience_a": 0.0,
-      "salience_b": 0.0404,
+      "salience_b": 0.0104,
       "arousal_a": 0,
       "arousal_b": 0.15,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_war-on-iran_006",
-      "label": "Iranian Government",
-      "salience_a": 0.0,
-      "salience_b": 0.0,
-      "arousal_a": 0,
-      "arousal_b": 0,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_war-on-iran_007",
-      "label": "Elections",
-      "salience_a": 0.0,
-      "salience_b": 0.0,
-      "arousal_a": 0,
-      "arousal_b": 0,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_war-on-iran_008",
-      "label": "Trump Administration",
+      "label": "German Economy",
       "salience_a": 0.0,
       "salience_b": 0.0,
       "arousal_a": 0,
@@ -121,27 +114,7 @@
     },
     {
       "cluster_id": "clu_war-on-iran_009",
-      "label": "Strategic Petroleum Reserve",
-      "salience_a": 0.0,
-      "salience_b": 0.0303,
-      "arousal_a": 0,
-      "arousal_b": 0.5,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_war-on-iran_010",
-      "label": "US Foreign Policy",
-      "salience_a": 0.0,
-      "salience_b": 0.0202,
-      "arousal_a": 0,
-      "arousal_b": 0.5,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_war-on-iran_011",
-      "label": "Israel",
+      "label": "Healthcare Spending",
       "salience_a": 0.0,
       "salience_b": 0.0,
       "arousal_a": 0,
@@ -150,38 +123,38 @@
       "mutation_b": "stable"
     },
     {
-      "cluster_id": "clu_war-on-iran_012",
-      "label": "Middle Eastern Countries",
+      "cluster_id": "clu_war-on-iran_010",
+      "label": "Saudi Arabia",
       "salience_a": 0.0,
-      "salience_b": 0.0303,
+      "salience_b": 0.0208,
       "arousal_a": 0,
-      "arousal_b": 0.3833,
+      "arousal_b": 0.5,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_war-on-iran_012",
+      "label": "Chinese Diplomats",
+      "salience_a": 0.0,
+      "salience_b": 0.0312,
+      "arousal_a": 0,
+      "arousal_b": 0.15,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_war-on-iran_013",
-      "label": "Iranian Leadership",
+      "label": "Iran Possess",
       "salience_a": 0.0,
-      "salience_b": 0.0101,
+      "salience_b": 0.0,
       "arousal_a": 0,
-      "arousal_b": 0.85,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_war-on-iran_014",
-      "label": "Iranians",
-      "salience_a": 0.0,
-      "salience_b": 0.0202,
-      "arousal_a": 0,
-      "arousal_b": 0.5,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_war-on-iran_015",
-      "label": "Iran Building",
+      "label": "Iran Nuclear",
       "salience_a": 0.0,
       "salience_b": 0.0,
       "arousal_a": 0,
@@ -191,106 +164,46 @@
     },
     {
       "cluster_id": "clu_war-on-iran_016",
-      "label": "Nuclear Weapons",
-      "salience_a": 0.0,
-      "salience_b": 0.0,
-      "arousal_a": 0,
-      "arousal_b": 0,
+      "label": "French-Owned Container Ship",
+      "salience_a": 0.1,
+      "salience_b": 0.0208,
+      "arousal_a": 0.5,
+      "arousal_b": 0.5,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_war-on-iran_017",
-      "label": "Tulsi Gabbard",
+      "label": "Middle East Conflict",
       "salience_a": 0.0,
-      "salience_b": 0.0,
+      "salience_b": 0.0417,
       "arousal_a": 0,
-      "arousal_b": 0,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
+      "arousal_b": 0.325,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_war-on-iran_018",
-      "label": "Middle East Conflict",
-      "salience_a": 0.0,
-      "salience_b": 0.0,
-      "arousal_a": 0,
-      "arousal_b": 0,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
+      "label": "U.S.-Iran Relations",
+      "salience_a": 0.1,
+      "salience_b": 0.1146,
+      "arousal_a": 0.5,
+      "arousal_b": 0.2455,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_war-on-iran_019",
-      "label": "Bushehr Nuclear Plant",
-      "salience_a": 0.0,
-      "salience_b": 0.0,
-      "arousal_a": 0,
-      "arousal_b": 0,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
+      "label": "Strategic Petroleum Reserve",
+      "salience_a": 0.1,
+      "salience_b": 0.0417,
+      "arousal_a": 0.15,
+      "arousal_b": 0.325,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_war-on-iran_020",
-      "label": "US Government",
-      "salience_a": 0.0,
-      "salience_b": 0.0,
-      "arousal_a": 0,
-      "arousal_b": 0,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_war-on-iran_021",
-      "label": "Democratic Party",
-      "salience_a": 0.0,
-      "salience_b": 0.0909,
-      "arousal_a": 0,
-      "arousal_b": 0.5389,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_war-on-iran_022",
-      "label": "Russia",
-      "salience_a": 0.0,
-      "salience_b": 0.0,
-      "arousal_a": 0,
-      "arousal_b": 0,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_war-on-iran_023",
-      "label": "Donald Trump",
-      "salience_a": 0.0,
-      "salience_b": 0.0101,
-      "arousal_a": 0,
-      "arousal_b": 0.85,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_war-on-iran_024",
-      "label": "President Trump",
-      "salience_a": 0.0,
-      "salience_b": 0.0303,
-      "arousal_a": 0,
-      "arousal_b": 0.3833,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_war-on-iran_025",
-      "label": "JCPOA",
-      "salience_a": 0.0,
-      "salience_b": 0.0,
-      "arousal_a": 0,
-      "arousal_b": 0,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_war-on-iran_026",
       "label": "Netanyahu",
       "salience_a": 0.0,
       "salience_b": 0.0,
@@ -300,48 +213,18 @@
       "mutation_b": "radicalizing"
     },
     {
-      "cluster_id": "clu_war-on-iran_027",
-      "label": "U.S.-Iran Relations",
+      "cluster_id": "clu_war-on-iran_021",
+      "label": "Gold Prices",
       "salience_a": 0.0,
-      "salience_b": 0.0303,
+      "salience_b": 0.0,
       "arousal_a": 0,
-      "arousal_b": 0.3833,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     },
     {
-      "cluster_id": "clu_war-on-iran_028",
-      "label": "Healthcare Spending",
-      "salience_a": 0.0,
-      "salience_b": 0.1111,
-      "arousal_a": 0,
-      "arousal_b": 0.2136,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_war-on-iran_029",
-      "label": "Gaza Conflict",
-      "salience_a": 0.0,
-      "salience_b": 0.0303,
-      "arousal_a": 0,
-      "arousal_b": 0.6167,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_war-on-iran_030",
-      "label": "Iranian Nuclear Program",
-      "salience_a": 0.0,
-      "salience_b": 0.0202,
-      "arousal_a": 0,
-      "arousal_b": 0.325,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_war-on-iran_031",
-      "label": "Nuclear Enrichment",
+      "cluster_id": "clu_war-on-iran_022",
+      "label": "US Sanctions",
       "salience_a": 0.0,
       "salience_b": 0.0,
       "arousal_a": 0,
@@ -350,10 +233,100 @@
       "mutation_b": "stable"
     },
     {
-      "cluster_id": "clu_war-on-iran_032",
-      "label": "Military Intervention in Iran",
+      "cluster_id": "clu_war-on-iran_023",
+      "label": "Ukraine",
       "salience_a": 0.0,
-      "salience_b": 0.0202,
+      "salience_b": 0.0208,
+      "arousal_a": 0,
+      "arousal_b": 0.5,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_war-on-iran_024",
+      "label": "Obama Administration",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_war-on-iran_025",
+      "label": "Sanctions Against Russia",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_war-on-iran_026",
+      "label": "Iran Attacked",
+      "salience_a": 0.1,
+      "salience_b": 0.0104,
+      "arousal_a": 0.5,
+      "arousal_b": 0.5,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_war-on-iran_027",
+      "label": "Elections",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_war-on-iran_028",
+      "label": "Iranian Economy",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_war-on-iran_029",
+      "label": "Russia and China",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_war-on-iran_030",
+      "label": "War in Iran Negatively",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_war-on-iran_031",
+      "label": "Iranian Government",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_war-on-iran_032",
+      "label": "Iran Destabilizing",
+      "salience_a": 0.0,
+      "salience_b": 0.0104,
       "arousal_a": 0,
       "arousal_b": 0.85,
       "mutation_a": "stable",
@@ -361,17 +334,7 @@
     },
     {
       "cluster_id": "clu_war-on-iran_033",
-      "label": "Sanctions",
-      "salience_a": 0.0,
-      "salience_b": 0.0202,
-      "arousal_a": 0,
-      "arousal_b": 0.5,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_war-on-iran_034",
-      "label": "West Asia",
+      "label": "Binance",
       "salience_a": 0.0,
       "salience_b": 0.0,
       "arousal_a": 0,
@@ -380,10 +343,20 @@
       "mutation_b": "radicalizing"
     },
     {
-      "cluster_id": "clu_war-on-iran_035",
-      "label": "Iran War Initiated",
+      "cluster_id": "clu_war-on-iran_034",
+      "label": "Iranian Oil Sanctions",
       "salience_a": 0.0,
-      "salience_b": 0.0101,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_war-on-iran_035",
+      "label": "Anduril",
+      "salience_a": 0.0,
+      "salience_b": 0.0104,
       "arousal_a": 0,
       "arousal_b": 0.15,
       "mutation_a": "stable",
@@ -391,16 +364,26 @@
     },
     {
       "cluster_id": "clu_war-on-iran_036",
-      "label": "Gold Prices",
+      "label": "Iran Pose",
       "salience_a": 0.0,
-      "salience_b": 0.0909,
+      "salience_b": 0.0,
       "arousal_a": 0,
-      "arousal_b": 0.2667,
+      "arousal_b": 0,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_war-on-iran_037",
+      "label": "US Congress",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_war-on-iran_038",
       "label": "National Security",
       "salience_a": 0.0,
       "salience_b": 0.0,
@@ -410,38 +393,28 @@
       "mutation_b": "stable"
     },
     {
-      "cluster_id": "clu_war-on-iran_038",
-      "label": "Military Strategy",
-      "salience_a": 0.0,
-      "salience_b": 0.0303,
-      "arousal_a": 0,
-      "arousal_b": 0.5,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
       "cluster_id": "clu_war-on-iran_039",
-      "label": "Saudi Arabia",
+      "label": "Nuclear Weapons",
       "salience_a": 0.0,
-      "salience_b": 0.0404,
+      "salience_b": 0.0208,
       "arousal_a": 0,
-      "arousal_b": 0.325,
+      "arousal_b": 0.15,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_war-on-iran_040",
-      "label": "Offshore Wind Energy",
+      "label": "Iran Allowed",
       "salience_a": 0.0,
-      "salience_b": 0.0,
+      "salience_b": 0.0312,
       "arousal_a": 0,
-      "arousal_b": 0,
+      "arousal_b": 0.3833,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_war-on-iran_041",
-      "label": "United States Military Action",
+      "label": "Iran's Military Capabilities",
       "salience_a": 0.0,
       "salience_b": 0.0,
       "arousal_a": 0,
@@ -451,9 +424,9 @@
     },
     {
       "cluster_id": "clu_war-on-iran_042",
-      "label": "Violations of International",
+      "label": "Iranian Regime",
       "salience_a": 0.0,
-      "salience_b": 0.0303,
+      "salience_b": 0.0312,
       "arousal_a": 0,
       "arousal_b": 0.2667,
       "mutation_a": "stable",
@@ -461,17 +434,47 @@
     },
     {
       "cluster_id": "clu_war-on-iran_043",
-      "label": "German Economy",
+      "label": "Donald Trump",
       "salience_a": 0.0,
-      "salience_b": 0.0202,
+      "salience_b": 0.0208,
       "arousal_a": 0,
-      "arousal_b": 0.15,
+      "arousal_b": 0.5,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
+      "cluster_id": "clu_war-on-iran_044",
+      "label": "Trump Administration",
+      "salience_a": 0.0,
+      "salience_b": 0.0104,
+      "arousal_a": 0,
+      "arousal_b": 0.5,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
       "cluster_id": "clu_war-on-iran_045",
-      "label": "Energy Prices",
+      "label": "Political Manipulation",
+      "salience_a": 0.1,
+      "salience_b": 0.0104,
+      "arousal_a": 0.5,
+      "arousal_b": 0.5,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_war-on-iran_046",
+      "label": "Bushehr Nuclear Plant",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_war-on-iran_047",
+      "label": "Corporate Greed",
       "salience_a": 0.0,
       "salience_b": 0.0,
       "arousal_a": 0,
@@ -480,44 +483,264 @@
       "mutation_b": "stable"
     },
     {
-      "cluster_id": "clu_war-on-iran_046",
-      "label": "Economic Impact",
+      "cluster_id": "clu_war-on-iran_048",
+      "label": "Treason",
+      "salience_a": 0.1,
+      "salience_b": 0.0104,
+      "arousal_a": 0.5,
+      "arousal_b": 0.5,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_war-on-iran_049",
+      "label": "Hillary Clinton",
       "salience_a": 0.0,
-      "salience_b": 0.0101,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_war-on-iran_050",
+      "label": "Conflict Disproportionately",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_war-on-iran_052",
+      "label": "United States Nuclear Policy",
+      "salience_a": 0.0,
+      "salience_b": 0.0208,
+      "arousal_a": 0,
+      "arousal_b": 0.325,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_war-on-iran_054",
+      "label": "Offshore Wind Energy",
+      "salience_a": 0.0,
+      "salience_b": 0.0208,
+      "arousal_a": 0,
+      "arousal_b": 0.325,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_war-on-iran_055",
+      "label": "U.S. Economy Largely",
+      "salience_a": 0.0,
+      "salience_b": 0.0104,
       "arousal_a": 0,
       "arousal_b": 0.15,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_war-on-iran_056",
+      "label": "Economic Impact",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_war-on-iran_057",
+      "label": "EU Subsidies",
+      "salience_a": 0.0,
+      "salience_b": 0.0208,
+      "arousal_a": 0,
+      "arousal_b": 0.5,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_war-on-iran_058",
+      "label": "US Government",
+      "salience_a": 0.0,
+      "salience_b": 0.0312,
+      "arousal_a": 0,
+      "arousal_b": 0.5,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_war-on-iran_059",
+      "label": "Government Spending",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_war-on-iran_060",
+      "label": "Iran Enriched",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_war-on-iran_061",
+      "label": "Iranian Nuclear Program",
+      "salience_a": 0.0,
+      "salience_b": 0.0104,
+      "arousal_a": 0,
+      "arousal_b": 0.5,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_war-on-iran_062",
+      "label": "Violations of International",
+      "salience_a": 0.0,
+      "salience_b": 0.0104,
+      "arousal_a": 0,
+      "arousal_b": 0.5,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_war-on-iran_064",
+      "label": "Spirit Airlines",
+      "salience_a": 0.0,
+      "salience_b": 0.0625,
+      "arousal_a": 0,
+      "arousal_b": 0.2667,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_war-on-iran_065",
+      "label": "Nuclear Non-Proliferation",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_war-on-iran_066",
+      "label": "JCPOA",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_war-on-iran_067",
+      "label": "Military Intervention",
+      "salience_a": 0.0,
+      "salience_b": 0.0104,
+      "arousal_a": 0,
+      "arousal_b": 0.5,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_war-on-iran_068",
+      "label": "US Hegemony",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_war-on-iran_069",
+      "label": "Retaliation",
+      "salience_a": 0.1,
+      "salience_b": 0.0104,
+      "arousal_a": 0.85,
+      "arousal_b": 0.85,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_war-on-iran_070",
+      "label": "Iran Policy Made",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_war-on-iran_071",
+      "label": "Amazon",
+      "salience_a": 0.0,
+      "salience_b": 0.0208,
+      "arousal_a": 0,
+      "arousal_b": 0.15,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_war-on-iran_072",
+      "label": "Energy Prices",
+      "salience_a": 0.0,
+      "salience_b": 0.0312,
+      "arousal_a": 0,
+      "arousal_b": 0.3833,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_war-on-iran_073",
+      "label": "Renewable Energy",
+      "salience_a": 0.0,
+      "salience_b": 0.0208,
+      "arousal_a": 0,
+      "arousal_b": 0.5,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     }
   ],
   "arousal_comparison": {
-    "slice_a_avg": 0,
-    "slice_b_avg": 0.3586
+    "slice_a_avg": 0.535,
+    "slice_b_avg": 0.3615
   },
   "exposure_comparison": {
     "slice_a": {
-      "value": 0,
+      "value": 0.0502,
       "confidence_interval": [
         0,
-        0.15
+        0.1964
       ],
       "baseline": "global",
       "time_window": "6h",
       "sparkline": [
-        0
+        0.0502
       ],
       "source_distribution": "production"
     },
     "slice_b": {
-      "value": 0.5248,
+      "value": 0.5063,
       "confidence_interval": [
-        0.4142,
-        0.6354
+        0.3943,
+        0.6183
       ],
       "baseline": "global",
       "time_window": "6h",
       "sparkline": [
-        0.5248
+        0.5063
       ],
       "source_distribution": "production"
     }

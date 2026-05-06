@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "housing-crisis_x_ae123df0_0",
-    "cluster_id": "clu_housing-crisis_023",
-    "concept_id": "concept_housing-crisis_001",
+    "cluster_id": "clu_housing-crisis_031",
+    "concept_id": "concept_housing-crisis_002",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-29T17:22:34.000Z",
     "source_document_id": "x_2049539852606005465",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.4232,
+    "value": null,
     "confidence_interval": [
-      0.3232,
-      0.5232
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.4232
-    ],
-    "source_distribution": "production",
-    "source_diversity": 1.0,
-    "bridge_ratio": 1.0,
-    "persistence_windows": 2,
-    "friction": 0.1429,
-    "friction_quadrant": "dead"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.3257,
+    "value": null,
     "confidence_interval": [
-      0.2001,
-      0.4513
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3257
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.1429,
+    "value": null,
     "confidence_interval": [
-      0.0036,
-      0.2822
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.1429
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.1,
+    "value": 0,
     "confidence_interval": [
       0,
-      0.2425
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,139 +133,64 @@
     ]
   },
   "provenance": {
-    "first_platform": "Ksn Tv",
-    "first_timestamp": "2026-04-29T17:22:34.000Z",
-    "lead_lag": [
-      {
-        "platform": "Governing.Com",
-        "lag_hours": 4.4
-      },
-      {
-        "platform": "X Platform",
-        "lag_hours": 14.9
-      },
-      {
-        "platform": "Bluesky",
-        "lag_hours": 15.0
-      },
-      {
-        "platform": "Seeking Alpha",
-        "lag_hours": 17.4
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_housing-crisis_001",
-    "hops": [
-      {
-        "platform": "Ksn Tv",
-        "timestamp": "2026-04-28T23:52:17+00:00",
-        "claim_id": "housing-crisis_x_ae123df0_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Governing.Com",
-        "timestamp": "2026-04-29T04:17:50+00:00",
-        "claim_id": "housing-crisis_x_ae123df0_0",
-        "fidelity_to_origin": 0.8216,
-        "fidelity_to_previous": 0.8216
-      },
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-29T14:48:35+00:00",
-        "claim_id": "housing-crisis_x_ae123df0_0",
-        "fidelity_to_origin": 0.3978,
-        "fidelity_to_previous": 0.4842
-      },
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T14:50:07.392000+00:00",
-        "claim_id": "housing-crisis_x_ae123df0_0",
-        "fidelity_to_origin": 0.3967,
-        "fidelity_to_previous": 0.9972
-      },
-      {
-        "platform": "Seeking Alpha",
-        "timestamp": "2026-04-29T17:14:04+00:00",
-        "claim_id": "housing-crisis_x_ae123df0_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.7562
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "housing-crisis_x_dfddac78_1",
-      "similarity": 0.4429,
-      "text": "There will be a second housing crisis."
+      "claim_id": "housing-crisis_x_b44e9242_0",
+      "similarity": 0.3851,
+      "text": "Simon Harris is responsible for the housing crisis in Ireland."
     },
     {
-      "claim_id": "housing-crisis_bluesky_d64e7b9b_0",
-      "similarity": 0.4061,
-      "text": "Bank foreclosures are increasing significantly, reminiscent of the 2008 financial crisis."
+      "claim_id": "housing-crisis_x_ee28a1a2_0",
+      "similarity": 0.3836,
+      "text": "The housing crisis is primarily caused by insufficient housing supply relative to demand."
     },
     {
-      "claim_id": "housing-crisis_x_5f5d1725_0",
-      "similarity": 0.3957,
-      "text": "Bank foreclosures are increasing significantly."
+      "claim_id": "housing-crisis_bluesky_f16865ef_0",
+      "similarity": 0.3587,
+      "text": "The housing crisis is caused by a lack of housing supply."
     },
     {
-      "claim_id": "housing-crisis_seeking_alpha_756b6983_2",
-      "similarity": 0.3547,
-      "text": "The U.S. is currently experiencing a housing shortage."
+      "claim_id": "housing-crisis_x_81b78bbf_0",
+      "similarity": 0.3582,
+      "text": "The housing affordability crisis is primarily caused by state governments and legislatures, not corporations."
     },
     {
-      "claim_id": "housing-crisis_ksn-tv_fbcde6d4_0",
-      "similarity": 0.1988,
-      "text": "There is a growing demand for affordable senior housing in south-central Kansas."
+      "claim_id": "housing-crisis_x_81b78bbf_1",
+      "similarity": 0.3575,
+      "text": "Cities also contributed to the housing crisis."
     }
   ],
   "example_content": [
     {
-      "text": "Bank foreclosures are increasing significantly, reminiscent of the 2008 financial crisis.",
+      "text": "The housing affordability crisis is primarily caused by a lack of housing supply.",
+      "platform": "Bluesky",
+      "confidence": 1.0,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The housing crisis is caused by a lack of housing supply.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The U.S. is currently experiencing a housing shortage.",
-      "platform": "Seeking Alpha",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Washington's growing population has strained the state's housing supply and affordability.",
-      "platform": "Governing.Com",
+      "text": "Many full-time workers in America are unable to afford stable housing.",
+      "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

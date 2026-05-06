@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "housing-crisis_x_ec6b7211_1",
-    "cluster_id": "clu_housing-crisis_043",
-    "concept_id": "concept_housing-crisis_000",
+    "cluster_id": "clu_housing-crisis_057",
+    "concept_id": "concept_housing-crisis_002",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-29T15:23:31.000Z",
     "source_document_id": "x_2049509895683113086",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.645,
+    "value": null,
     "confidence_interval": [
-      0.545,
-      0.745
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.645
-    ],
-    "source_distribution": "production",
-    "source_diversity": 1.0,
-    "bridge_ratio": 1.0,
-    "persistence_windows": 12,
-    "friction": 0.3947,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.3947,
+    "value": null,
     "confidence_interval": [
-      0.2743,
-      0.5151
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3947
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.6,
+    "value": 0,
     "confidence_interval": [
-      0.495,
-      0.705
+      0,
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.6
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.85,
+    "value": null,
     "confidence_interval": [
-      0.7638,
-      0.9362
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.85
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9925,
+    "value": null,
     "confidence_interval": [
-      0.9169,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.9925
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,139 +133,64 @@
     ]
   },
   "provenance": {
-    "first_platform": "Euro Weekly News Spain",
-    "first_timestamp": "2026-04-29T15:23:31.000Z",
-    "lead_lag": [
-      {
-        "platform": "Bluesky",
-        "lag_hours": 1.7
-      },
-      {
-        "platform": "X Platform",
-        "lag_hours": 14.7
-      },
-      {
-        "platform": "Caerphilly Observer",
-        "lag_hours": 17.6
-      },
-      {
-        "platform": "The Hollywood Reporter",
-        "lag_hours": 19.4
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_housing-crisis_000",
-    "hops": [
-      {
-        "platform": "Euro Weekly News Spain",
-        "timestamp": "2026-04-28T20:33:09+00:00",
-        "claim_id": "housing-crisis_x_ec6b7211_1",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-28T22:16:16.708000+00:00",
-        "claim_id": "housing-crisis_x_ec6b7211_1",
-        "fidelity_to_origin": 0.9381,
-        "fidelity_to_previous": 0.9381
-      },
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-29T11:17:24+00:00",
-        "claim_id": "housing-crisis_x_ec6b7211_1",
-        "fidelity_to_origin": 0.4695,
-        "fidelity_to_previous": 0.5005
-      },
-      {
-        "platform": "Caerphilly Observer",
-        "timestamp": "2026-04-29T14:07:00+00:00",
-        "claim_id": "housing-crisis_x_ec6b7211_1",
-        "fidelity_to_origin": 0.3678,
-        "fidelity_to_previous": 0.7834
-      },
-      {
-        "platform": "The Hollywood Reporter",
-        "timestamp": "2026-04-29T16:00:00+00:00",
-        "claim_id": "housing-crisis_x_ec6b7211_1",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.8157
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "housing-crisis_bluesky_5dc04b83_0",
-      "similarity": 0.7865,
-      "text": "Discussions about the housing crisis are often overly emotional and fail to address the real issues."
+      "claim_id": "housing-crisis_x_e74f6850_0",
+      "similarity": 0.8226,
+      "text": "Current efforts to address the housing crisis are inadequate."
     },
     {
-      "claim_id": "housing-crisis_bluesky_93a7e1ac_0",
-      "similarity": 0.7029,
-      "text": "Public discussion and debate are ineffective solutions to the housing crisis."
+      "claim_id": "housing-crisis_x_4e225039_1",
+      "similarity": 0.7638,
+      "text": "There is a lack of meaningful action being taken to address the housing crisis in Australia."
     },
     {
-      "claim_id": "housing-crisis_bluesky_77ffd787_0",
-      "similarity": 0.6278,
-      "text": "There is a housing crisis."
+      "claim_id": "housing-crisis_bluesky_60261b89_0",
+      "similarity": 0.7366,
+      "text": "The Affordable Care Act (ACA) does not adequately address the housing crisis."
     },
     {
-      "claim_id": "housing-crisis_bluesky_1057b822_0",
-      "similarity": 0.6154,
-      "text": "Local politicians exploit the housing crisis for political gain but do not take meaningful action to solve it."
+      "claim_id": "housing-crisis_x_d4630824_0",
+      "similarity": 0.7311,
+      "text": "Dambisa Moyo is not qualified to advise on the British housing crisis."
     },
     {
-      "claim_id": "housing-crisis_bluesky_8957a0c1_0",
-      "similarity": 0.5974,
-      "text": "The housing crisis in the United States is the most severe among developed nations."
+      "claim_id": "housing-crisis_x_cbeaea7c_0",
+      "similarity": 0.713,
+      "text": "Dambisa Moyo is not a credible authority on the British housing crisis."
     }
   ],
   "example_content": [
     {
-      "text": "There is a housing crisis.",
-      "platform": "Bluesky",
-      "confidence": 1.0,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Deregulation and tax breaks for housing developers have not been effective solutions to the housing crisis.",
+      "text": "The Affordable Care Act (ACA) does not adequately address the housing crisis.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The housing crisis in the United States is the most severe among developed nations.",
+      "text": "The 'builder's remedy' policy in Massachusetts has not fully resolved the state's housing crisis despite being in place for over 50 years.",
       "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "There is a lack of meaningful action being taken to address the housing crisis in Australia.",
+      "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

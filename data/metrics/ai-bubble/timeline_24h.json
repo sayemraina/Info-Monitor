@@ -1,129 +1,95 @@
 {
   "events": [
     {
-      "id": "evt_7be0f622648c",
+      "id": "evt_a8784e5a2d4b",
       "type": "contestation_emergence",
-      "timestamp": "2026-04-29T07:54:54.689055+00:00",
-      "claim_id": "ai-bubble_bluesky_8613bdb9_0",
+      "timestamp": "2026-05-05T21:24:32.120470+00:00",
+      "claim_id": "ai-bubble_bluesky_906f55cd_1",
       "slice_id": null,
       "severity": "high",
       "confidence": 0.9,
-      "summary": "Active contestation in \"UK Economy\" — 5 pro vs 5 anti",
+      "summary": "Active contestation in \"LLM AI Speculative\" — 3 pro vs 3 anti",
       "detail": {
-        "cluster_id": "clu_ai-bubble_003",
-        "pro_count": 5,
-        "anti_count": 5,
-        "balance": 1.0
-      }
-    },
-    {
-      "id": "evt_a8784e5a2d4b",
-      "type": "contestation_emergence",
-      "timestamp": "2026-04-29T07:54:54.689055+00:00",
-      "claim_id": "ai-bubble_bluesky_70b005cc_0",
-      "slice_id": null,
-      "severity": "high",
-      "confidence": 0.82,
-      "summary": "Active contestation in \"Internet Protocols\" — 3 pro vs 4 anti",
-      "detail": {
-        "cluster_id": "clu_ai-bubble_038",
+        "cluster_id": "clu_ai-bubble_005",
         "pro_count": 3,
-        "anti_count": 4,
-        "balance": 0.75
-      }
-    },
-    {
-      "id": "evt_3cb2f7736c6f",
-      "type": "phase_transition",
-      "timestamp": "2026-04-29T07:54:54.689055+00:00",
-      "claim_id": null,
-      "slice_id": null,
-      "severity": "high",
-      "confidence": 0.78,
-      "summary": "\"AI Bubble Bursting\" cluster is shifting toward more extreme language",
-      "detail": {
-        "cluster_id": "clu_ai-bubble_000",
-        "direction": "radicalizing",
-        "magnitude": 0.6082
-      }
-    },
-    {
-      "id": "evt_532e2b4a5091",
-      "type": "phase_transition",
-      "timestamp": "2026-04-29T07:54:54.689055+00:00",
-      "claim_id": null,
-      "slice_id": null,
-      "severity": "high",
-      "confidence": 0.78,
-      "summary": "\"AI Sector Speculative\" cluster is shifting toward more extreme language",
-      "detail": {
-        "cluster_id": "clu_ai-bubble_002",
-        "direction": "radicalizing",
-        "magnitude": 0.6088
+        "anti_count": 3,
+        "balance": 1.0
       }
     },
     {
       "id": "evt_2364903c4413",
       "type": "phase_transition",
-      "timestamp": "2026-04-29T07:54:54.689055+00:00",
+      "timestamp": "2026-05-05T21:24:32.120470+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
       "confidence": 0.81,
       "summary": "\"Data Centers\" cluster is shifting toward more extreme language",
       "detail": {
-        "cluster_id": "clu_ai-bubble_004",
+        "cluster_id": "clu_ai-bubble_003",
         "direction": "radicalizing",
-        "magnitude": 0.7144
+        "magnitude": 0.7025
       }
     },
     {
       "id": "evt_64b293b6b5fb",
       "type": "phase_transition",
-      "timestamp": "2026-04-29T07:54:54.689055+00:00",
+      "timestamp": "2026-05-05T21:24:32.120470+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.78,
-      "summary": "\"Artificial Intelligence\" cluster is shifting toward more extreme language",
+      "confidence": 0.82,
+      "summary": "\"Chatgpt\" cluster is shifting toward more extreme language",
       "detail": {
-        "cluster_id": "clu_ai-bubble_005",
+        "cluster_id": "clu_ai-bubble_004",
         "direction": "radicalizing",
-        "magnitude": 0.6057
+        "magnitude": 0.7337
       }
     },
     {
-      "id": "evt_f8cf5b6b0c7d",
-      "type": "divergence_shift",
-      "timestamp": "2026-04-29T07:54:54.689055+00:00",
+      "id": "evt_ad1835339b64",
+      "type": "phase_transition",
+      "timestamp": "2026-05-05T21:24:32.120470+00:00",
       "claim_id": null,
-      "slice_id": "bluesky_platform",
+      "slice_id": null,
       "severity": "high",
-      "confidence": 0.95,
-      "summary": "Strong narrative split between Bluesky and el-balad.com",
+      "confidence": 0.79,
+      "summary": "\"Market Speculation\" cluster is shifting toward more extreme language",
       "detail": {
-        "jsd": 0.9354,
-        "platforms": [
-          "bluesky",
-          "el-balad.com"
-        ],
-        "window_hours": 24
+        "cluster_id": "clu_ai-bubble_006",
+        "direction": "radicalizing",
+        "magnitude": 0.6168
+      }
+    },
+    {
+      "id": "evt_5c04ed32eba8",
+      "type": "phase_transition",
+      "timestamp": "2026-05-05T21:24:32.120470+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.81,
+      "summary": "\"Nvidia\" cluster is shifting toward more extreme language",
+      "detail": {
+        "cluster_id": "clu_ai-bubble_011",
+        "direction": "radicalizing",
+        "magnitude": 0.6979
       }
     },
     {
       "id": "evt_a0ad43fbb294",
       "type": "divergence_shift",
-      "timestamp": "2026-04-29T07:54:54.689055+00:00",
+      "timestamp": "2026-05-05T21:24:32.120470+00:00",
       "claim_id": null,
       "slice_id": "bluesky_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Strong narrative split between Bluesky and nasdaq_stock_market",
+      "summary": "Strong narrative split between Bluesky and business_insider",
       "detail": {
-        "jsd": 0.7751,
+        "jsd": 0.8986,
         "platforms": [
           "bluesky",
-          "nasdaq_stock_market"
+          "business_insider"
         ],
         "window_hours": 24
       }
@@ -131,17 +97,17 @@
     {
       "id": "evt_bb944507fd2e",
       "type": "divergence_shift",
-      "timestamp": "2026-04-29T07:54:54.689055+00:00",
+      "timestamp": "2026-05-05T21:24:32.120470+00:00",
       "claim_id": null,
       "slice_id": "bluesky_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Strong narrative split between Bluesky and the_motley_fool",
+      "summary": "Strong narrative split between Bluesky and weekly_voice",
       "detail": {
-        "jsd": 0.6784,
+        "jsd": 0.8143,
         "platforms": [
           "bluesky",
-          "the_motley_fool"
+          "weekly_voice"
         ],
         "window_hours": 24
       }
@@ -149,17 +115,35 @@
     {
       "id": "evt_66c04ec2261f",
       "type": "divergence_shift",
-      "timestamp": "2026-04-29T07:54:54.689055+00:00",
+      "timestamp": "2026-05-05T21:24:32.120470+00:00",
       "claim_id": null,
       "slice_id": "bluesky_platform",
       "severity": "high",
-      "confidence": 0.95,
+      "confidence": 0.83,
       "summary": "Significant narrative divergence between Bluesky and X Platform",
       "detail": {
-        "jsd": 0.4621,
+        "jsd": 0.3254,
         "platforms": [
           "bluesky",
           "x"
+        ],
+        "window_hours": 24
+      }
+    },
+    {
+      "id": "evt_9683d57872c0",
+      "type": "divergence_shift",
+      "timestamp": "2026-05-05T21:24:32.120470+00:00",
+      "claim_id": null,
+      "slice_id": "business_insider_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Strong narrative split between business_insider and weekly_voice",
+      "detail": {
+        "jsd": 0.554,
+        "platforms": [
+          "business_insider",
+          "weekly_voice"
         ],
         "window_hours": 24
       }
@@ -185,19 +169,65 @@
       "source": "polymarket"
     },
     {
-      "id": "evt_66b3203ce13f",
+      "id": "evt_f19d8397ced1",
       "type": "contestation_emergence",
-      "timestamp": "2026-04-29T07:54:54.689055+00:00",
-      "claim_id": "ai-bubble_nasdaq_stock_market_04be9be7_1",
+      "timestamp": "2026-05-05T21:24:32.120470+00:00",
+      "claim_id": "ai-bubble_bluesky_e5a7e326_0",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.78,
-      "summary": "Active contestation in \"Tech Stocks\" — 3 pro vs 5 anti",
+      "confidence": 0.76,
+      "summary": "Active contestation in \"Llms\" — 11 pro vs 6 anti",
+      "detail": {
+        "cluster_id": "clu_ai-bubble_021",
+        "pro_count": 11,
+        "anti_count": 6,
+        "balance": 0.55
+      }
+    },
+    {
+      "id": "evt_d4c90232e60a",
+      "type": "contestation_emergence",
+      "timestamp": "2026-05-05T21:24:32.120470+00:00",
+      "claim_id": "ai-bubble_bluesky_832e2039_2",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.73,
+      "summary": "Active contestation in \"Government Organizations\" — 7 pro vs 3 anti",
+      "detail": {
+        "cluster_id": "clu_ai-bubble_030",
+        "pro_count": 7,
+        "anti_count": 3,
+        "balance": 0.43
+      }
+    },
+    {
+      "id": "evt_3dee6a41712d",
+      "type": "momentum_spike",
+      "timestamp": "2026-05-06T00:24:32.120470+00:00",
+      "claim_id": "ai-bubble_bluesky_ac875794_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.54,
+      "summary": "Rapid attention surge in \"Iran War\" (3 claims)",
+      "detail": {
+        "cluster_id": "clu_ai-bubble_020",
+        "avg_momentum": 0.6,
+        "member_count": 3
+      }
+    },
+    {
+      "id": "evt_fac457071672",
+      "type": "momentum_spike",
+      "timestamp": "2026-05-06T00:24:32.120470+00:00",
+      "claim_id": "ai-bubble_bluesky_48271a9b_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.53,
+      "summary": "Rapid attention surge in \"Ai-Generated Content\" (3 claims)",
       "detail": {
         "cluster_id": "clu_ai-bubble_025",
-        "pro_count": 3,
-        "anti_count": 5,
-        "balance": 0.6
+        "avg_momentum": 0.593,
+        "member_count": 3
       }
     },
     {
@@ -411,67 +441,67 @@
       "source": "fed_register"
     },
     {
-      "id": "evt_4b424ba953b4",
+      "id": "evt_b9ae9aa7d0e2",
       "type": "lead_lag",
-      "timestamp": "2026-04-29T01:54:54.689055+00:00",
-      "claim_id": "ai-bubble_bluesky_8613bdb9_0",
+      "timestamp": "2026-05-05T16:24:32.120470+00:00",
+      "claim_id": "ai-bubble_bluesky_60f2559d_0",
       "slice_id": null,
       "severity": "low",
-      "confidence": 0.8,
-      "summary": "brigitte_gabriel leads bbc by ~18h in \"UK Economy\"",
+      "confidence": 0.66,
+      "summary": "washington_monthly leads X Platform by ~17h in \"Corporate Greed\"",
       "detail": {
-        "source_platform": "brigitte_gabriel",
-        "target_platform": "bbc",
-        "lag_hours": 18.1,
-        "cluster_id": "clu_ai-bubble_003"
-      }
-    },
-    {
-      "id": "evt_fee807b1af74",
-      "type": "lead_lag",
-      "timestamp": "2026-04-29T04:54:54.689055+00:00",
-      "claim_id": "ai-bubble_bluesky_61fc8dc8_0",
-      "slice_id": null,
-      "severity": "low",
-      "confidence": 0.58,
-      "summary": "australian_financial_review leads Bluesky by ~15h in \"AI Sector Speculative\"",
-      "detail": {
-        "source_platform": "australian_financial_review",
-        "target_platform": "bluesky",
-        "lag_hours": 15.9,
-        "cluster_id": "clu_ai-bubble_002"
-      }
-    },
-    {
-      "id": "evt_982c0309d7d8",
-      "type": "lead_lag",
-      "timestamp": "2026-04-29T07:54:54.689055+00:00",
-      "claim_id": "ai-bubble_el-balad.com_8426d17c_0",
-      "slice_id": null,
-      "severity": "low",
-      "confidence": 0.86,
-      "summary": "el-balad.com leads X Platform by ~12h in \"AI Market Experiencing\"",
-      "detail": {
-        "source_platform": "el-balad.com",
+        "source_platform": "washington_monthly",
         "target_platform": "x",
-        "lag_hours": 12.4,
-        "cluster_id": "clu_ai-bubble_001"
+        "lag_hours": 17.6,
+        "cluster_id": "clu_ai-bubble_010"
       }
     },
     {
       "id": "evt_9e8cd6a9775e",
       "type": "lead_lag",
-      "timestamp": "2026-04-29T11:54:54.689055+00:00",
-      "claim_id": "ai-bubble_nasdaq_stock_market_04be9be7_0",
+      "timestamp": "2026-05-05T18:24:32.120470+00:00",
+      "claim_id": "ai-bubble_bluesky_3075ff44_1",
       "slice_id": null,
       "severity": "low",
-      "confidence": 0.8,
-      "summary": "the_motley_fool leads X Platform by ~8h in \"AI Bubble Bursting\"",
+      "confidence": 0.7,
+      "summary": "bloomberg_business leads the_star_ by ~15h in \"Intel\"",
       "detail": {
-        "source_platform": "the_motley_fool",
+        "source_platform": "bloomberg_business",
+        "target_platform": "the_star_",
+        "lag_hours": 15.4,
+        "cluster_id": "clu_ai-bubble_012"
+      }
+    },
+    {
+      "id": "evt_8255d144d862",
+      "type": "lead_lag",
+      "timestamp": "2026-05-06T02:24:32.120470+00:00",
+      "claim_id": "ai-bubble_bluesky_c9c99872_0",
+      "slice_id": null,
+      "severity": "low",
+      "confidence": 0.58,
+      "summary": "business_insider leads X Platform by ~7h in \"Chatgpt\"",
+      "detail": {
+        "source_platform": "business_insider",
         "target_platform": "x",
-        "lag_hours": 8.6,
-        "cluster_id": "clu_ai-bubble_000"
+        "lag_hours": 8.0,
+        "cluster_id": "clu_ai-bubble_004"
+      }
+    },
+    {
+      "id": "evt_978c3f9df94f",
+      "type": "lead_lag",
+      "timestamp": "2026-05-06T02:24:32.120470+00:00",
+      "claim_id": "ai-bubble_bluesky_906f55cd_1",
+      "slice_id": null,
+      "severity": "low",
+      "confidence": 0.66,
+      "summary": "stockhead leads X Platform by ~7h in \"LLM AI Speculative\"",
+      "detail": {
+        "source_platform": "stockhead",
+        "target_platform": "x",
+        "lag_hours": 7.4,
+        "cluster_id": "clu_ai-bubble_005"
       }
     },
     {
@@ -573,27 +603,7 @@
       "summary": "New Rihanna Album before GTA VI? — 60.0% Yes",
       "detail": "Polymarket gives 60.0% odds. Volume: $679,525",
       "source": "polymarket"
-    },
-    {
-      "id": "poly_540816",
-      "type": "external_signal",
-      "timestamp": "2026-04-03T17:21:23.582287+00:00",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Russia-Ukraine Ceasefire before GTA VI? — 54.0% Yes",
-      "detail": "Polymarket gives 54.0% odds. Volume: $1,412,740",
-      "source": "polymarket"
-    },
-    {
-      "id": "sec_84eeff26c2e1",
-      "type": "external_signal",
-      "timestamp": "2026-04-02T00:00:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Unknown —  filing (2026-04-02)",
-      "detail": "Unknown filed  mentioning 'generative AI'. Filing date: 2026-04-02.",
-      "source": "sec_edgar"
     }
   ],
-  "total_count": 82
+  "total_count": 84
 }

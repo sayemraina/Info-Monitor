@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "immigration_united_news_of_india_881b0222_0",
-    "cluster_id": "clu_immigration_032",
-    "concept_id": "concept_immigration_002",
+    "cluster_id": "clu_immigration_014",
+    "concept_id": "concept_immigration_001",
     "first_seen_platform": "united_news_of_india",
     "first_seen_timestamp": "2026-04-29T12:55:38Z",
     "source_document_id": "782770da2e81f30a",
@@ -24,94 +24,107 @@
     "source_type": "elite_media"
   },
   "momentum": {
-    "value": 0.54,
+    "value": null,
     "confidence_interval": [
-      0.44,
-      0.64
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.54
-    ],
-    "source_distribution": "production",
-    "source_diversity": 1.0,
-    "bridge_ratio": 1.0,
-    "persistence_windows": 1,
-    "friction": 1,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.3072,
+    "value": null,
     "confidence_interval": [
-      0.1802,
-      0.4342
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3072
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0,
     "confidence_interval": [
       0,
-      0.1962
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.988,
+    "value": null,
     "confidence_interval": [
-      0.9121,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.988
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,124 +133,55 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
-    "first_timestamp": "2026-04-29T12:55:38Z",
-    "lead_lag": [
-      {
-        "platform": "Fox Politics",
-        "lag_hours": 14.5
-      },
-      {
-        "platform": "United News Of India",
-        "lag_hours": 15.5
-      },
-      {
-        "platform": "Wral",
-        "lag_hours": 19.1
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_immigration_002",
-    "hops": [
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-28T21:27:17.898000+00:00",
-        "claim_id": "immigration_united_news_of_india_881b0222_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Fox Politics",
-        "timestamp": "2026-04-29T12:00:14+00:00",
-        "claim_id": "immigration_united_news_of_india_881b0222_0",
-        "fidelity_to_origin": 0.4667,
-        "fidelity_to_previous": 0.4667
-      },
-      {
-        "platform": "United News Of India",
-        "timestamp": "2026-04-29T12:55:38+00:00",
-        "claim_id": "immigration_united_news_of_india_881b0222_0",
-        "fidelity_to_origin": 0.4329,
-        "fidelity_to_previous": 0.9276
-      },
-      {
-        "platform": "Wral",
-        "timestamp": "2026-04-29T16:33:12+00:00",
-        "claim_id": "immigration_united_news_of_india_881b0222_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.693
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "immigration_bluesky_be1b2ec8_0",
-      "similarity": 0.609,
-      "text": "The Republican Party is using taxpayer money to traffic humans under the guise of border security."
+      "claim_id": "immigration_daily_wire_c3d46cc4_0",
+      "similarity": 0.57,
+      "text": "Illegal immigration is associated with increased crime rates."
     },
     {
-      "claim_id": "immigration_wral_380d04a7_0",
-      "similarity": 0.5528,
-      "text": "Illegal immigration is causing negative consequences for South Africa."
+      "claim_id": "immigration_x_2d1d3b89_0",
+      "similarity": 0.5372,
+      "text": "New Zealand's migrant labor system is designed to exploit workers."
     },
     {
-      "claim_id": "immigration_fox_politics_46e99e5f_0",
-      "similarity": 0.5525,
-      "text": "Rick Jackson may have hired undocumented immigrants for landscaping work."
-    },
-    {
-      "claim_id": "immigration_fox_politics_5093ad93_0",
-      "similarity": 0.5079,
-      "text": "George Soros-backed prosecutors are lenient on criminals, including illegal immigrants, who then commit further crimes."
+      "claim_id": "immigration_bluesky_38c7bf04_0",
+      "similarity": 0.3794,
+      "text": "Claims of human trafficking and pedophilia against certain individuals are unsubstantiated."
     }
   ],
   "example_content": [
     {
-      "text": "The Republican Party is using taxpayer money to traffic humans under the guise of border security.",
+      "text": "Claims of human trafficking and pedophilia against certain individuals are unsubstantiated.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Illegal immigration is causing negative consequences for South Africa.",
-      "platform": "Wral",
-      "confidence": 0.9,
+      "text": "Illegal immigration is associated with increased crime rates.",
+      "platform": "Daily Wire",
+      "confidence": 0.8,
       "is_influencer_framing": false
     },
     {
-      "text": "Rick Jackson may have hired undocumented immigrants for landscaping work.",
-      "platform": "Fox Politics",
-      "confidence": 0.7,
+      "text": "New Zealand's migrant labor system is designed to exploit workers.",
+      "platform": "X Platform",
+      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

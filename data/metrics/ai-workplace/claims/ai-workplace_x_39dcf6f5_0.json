@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "ai-workplace_x_39dcf6f5_0",
-    "cluster_id": "clu_ai-workplace_008",
-    "concept_id": "concept_ai-workplace_007",
+    "cluster_id": "clu_ai-workplace_035",
+    "concept_id": "concept_ai-workplace_002",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-03T10:04:11.000Z",
     "source_document_id": "x_2040007447763423539",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.54,
+    "value": null,
     "confidence_interval": [
-      0.44,
-      0.64
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.54
-    ],
-    "source_distribution": "production",
-    "source_diversity": 1.0,
-    "bridge_ratio": 1.0,
-    "persistence_windows": 3,
-    "friction": 0.5,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.2607,
+    "value": null,
     "confidence_interval": [
-      0.1303,
-      0.3911
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.2607
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.15,
+    "value": 0,
     "confidence_interval": [
-      0.0112,
-      0.2888
+      0,
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.15
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,129 +133,44 @@
     ]
   },
   "provenance": {
-    "first_platform": "Indy Week",
-    "first_timestamp": "2026-04-03T10:04:11.000Z",
-    "lead_lag": [
-      {
-        "platform": "Bluesky",
-        "lag_hours": 152.9
-      },
-      {
-        "platform": "X Platform",
-        "lag_hours": 295.3
-      },
-      {
-        "platform": "Inman",
-        "lag_hours": 322.5
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_ai-workplace_007",
-    "hops": [
-      {
-        "platform": "Indy Week",
-        "timestamp": "2026-03-20T21:10:25+00:00",
-        "claim_id": "ai-workplace_x_39dcf6f5_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-03-27T06:01:25.567000+00:00",
-        "claim_id": "ai-workplace_x_39dcf6f5_0",
-        "fidelity_to_origin": 0.6682,
-        "fidelity_to_previous": 0.6682
-      },
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-02T04:29:18+00:00",
-        "claim_id": "ai-workplace_x_39dcf6f5_0",
-        "fidelity_to_origin": 0.359,
-        "fidelity_to_previous": 0.5373
-      },
-      {
-        "platform": "Inman",
-        "timestamp": "2026-04-03T07:40:15+00:00",
-        "claim_id": "ai-workplace_x_39dcf6f5_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.8357
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-workplace_bluesky_d05b90c0_0",
-      "similarity": 0.8195,
-      "text": "Oracle's investments in AI infrastructure are responsible for recent layoffs."
+      "claim_id": "ai-workplace_bluesky_e0625b64_0",
+      "similarity": 0.7903,
+      "text": "AI development poses a significant threat to the financial system and job market."
     },
     {
-      "claim_id": "ai-workplace_bluesky_7049e621_0",
-      "similarity": 0.7272,
-      "text": "Companies investing heavily in AI are likely to experience financial instability and workforce reductions."
-    },
-    {
-      "claim_id": "ai-workplace_x_725571ed_0",
-      "similarity": 0.6301,
-      "text": "Job losses in the tech sector are occurring."
-    },
-    {
-      "claim_id": "ai-workplace_inman_8d9c2bf4_2",
-      "similarity": 0.5183,
-      "text": "The transportation and healthcare sectors are experiencing record high job cuts in the first quarter of the year."
-    },
-    {
-      "claim_id": "ai-workplace_indy_week_e7b08793_1",
-      "similarity": 0.4758,
-      "text": "Federal funding cuts under the Trump administration led to job losses in the Research Triangle Park area."
+      "claim_id": "ai-workplace_x_4aeae041_0",
+      "similarity": 0.6598,
+      "text": "AI development will negatively impact the lives of most people."
     }
   ],
   "example_content": [
     {
-      "text": "Oracle's investments in AI infrastructure are responsible for recent layoffs.",
+      "text": "AI development poses a significant threat to the financial system and job market.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The Republican Party has a plan to fundamentally change America.",
-      "platform": "Bluesky",
+      "text": "AI development will negatively impact the lives of most people.",
+      "platform": "X Platform",
       "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Companies investing heavily in AI are likely to experience financial instability and workforce reductions.",
-      "platform": "Bluesky",
-      "confidence": 0.8,
       "is_influencer_framing": false
     }
   ]

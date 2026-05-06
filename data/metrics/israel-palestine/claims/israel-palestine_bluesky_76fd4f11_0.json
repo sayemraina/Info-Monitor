@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "israel-palestine_bluesky_76fd4f11_0",
-    "cluster_id": "clu_israel-palestine_020",
-    "concept_id": "concept_israel-palestine_004",
+    "cluster_id": "clu_israel-palestine_043",
+    "concept_id": "concept_israel-palestine_002",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-29T15:35:49.099Z",
     "source_document_id": "d370ac7257df0e62",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.4228,
+    "value": null,
     "confidence_interval": [
-      0.3228,
-      0.5228
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.4228
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 3,
-    "friction": 1,
-    "friction_quadrant": "successful_suppression"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.5594,
+    "value": null,
     "confidence_interval": [
-      0.4514,
-      0.6674
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5594
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.15,
+    "value": 0,
     "confidence_interval": [
-      0.0112,
-      0.2888
+      0,
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.15
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.96,
+    "value": null,
     "confidence_interval": [
-      0.882,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.96
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,107 +133,65 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
-    "first_timestamp": "2026-04-29T15:35:49.099Z",
-    "lead_lag": [
-      {
-        "platform": "The Jerusalem Post",
-        "lag_hours": 2.0
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_israel-palestine_004",
-    "hops": [
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T14:40:23.828000+00:00",
-        "claim_id": "israel-palestine_bluesky_76fd4f11_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "The Jerusalem Post",
-        "timestamp": "2026-04-29T16:40:22+00:00",
-        "claim_id": "israel-palestine_bluesky_76fd4f11_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "israel-palestine_bluesky_933c016c_0",
-      "similarity": 0.4997,
-      "text": "Social media platforms are unfairly censoring pro-Palestine voices during the Gaza conflict."
+      "claim_id": "israel-palestine_arutz_sheva_israel_news_f1880de0_0",
+      "similarity": 0.6231,
+      "text": "Pro-Palestinian student protesters at Cornell University harassed and intimidated the university president in an attempt to silence speech."
     },
     {
-      "claim_id": "israel-palestine_bluesky_75a67eec_1",
-      "similarity": 0.4485,
-      "text": "Blaming anti-Zionists is part of an Israeli propaganda playbook."
+      "claim_id": "israel-palestine_bluesky_5523d3ad_0",
+      "similarity": 0.5161,
+      "text": "A Royal Commission may marginalize the pro-Palestine movement and criminalize anti-Israel protests."
     },
     {
-      "claim_id": "israel-palestine_bluesky_3142c00b_0",
-      "similarity": 0.4343,
-      "text": "Israel is restricting media access to Palestine to conceal information."
+      "claim_id": "israel-palestine_bluesky_d3f8b8bc_0",
+      "similarity": 0.4873,
+      "text": "Pro-Israel groups are attempting to obstruct amendments designed to safeguard pro-Palestine speech within California schools."
     },
     {
-      "claim_id": "israel-palestine_bluesky_3cccc335_1",
-      "similarity": 0.396,
-      "text": "Left-leaning individuals are biased towards viewing Palestinians as victims."
+      "claim_id": "israel-palestine_wpix_4c86f67c_0",
+      "similarity": 0.3921,
+      "text": "Cornell University President Michael Kotlikoff endangered protesters by backing his car into them."
     },
     {
-      "claim_id": "israel-palestine_bluesky_5015ee57_0",
-      "similarity": 0.392,
-      "text": "The media disproportionately covers events in Israel and Palestine compared to other conflicts."
+      "claim_id": "israel-palestine_arutz_sheva_israel_news_f1880de0_1",
+      "similarity": 0.3499,
+      "text": "Cornell University President struck a student protester with his car."
     }
   ],
   "example_content": [
     {
-      "text": "Social media platforms are unfairly censoring pro-Palestine voices during the Gaza conflict.",
+      "text": "Pro-Israel groups are attempting to obstruct amendments designed to safeguard pro-Palestine speech within California schools.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Left-leaning individuals are biased towards viewing Palestinians as victims.",
+      "text": "A Royal Commission may marginalize the pro-Palestine movement and criminalize anti-Israel protests.",
       "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "University leaders should not criticize faculty members for expressing views on public issues.",
+      "platform": "Che",
       "confidence": 0.8,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "The BBC podcast on the history of Israel and Palestine lacks diverse representation of experts.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

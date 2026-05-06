@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "israel-palestine_bluesky_3d5a98df_1",
-    "cluster_id": "clu_israel-palestine_007",
-    "concept_id": "concept_israel-palestine_004",
+    "cluster_id": "clu_israel-palestine_016",
+    "concept_id": "concept_israel-palestine_001",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-29T13:20:45.766Z",
     "source_document_id": "e146d68baffd238f",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.5278,
+    "value": null,
     "confidence_interval": [
-      0.4278,
-      0.6278
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5278
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.25,
-    "bridge_ratio": 0.25,
-    "persistence_windows": 1,
-    "friction": 1,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.3138,
+    "value": null,
     "confidence_interval": [
-      0.1873,
-      0.4403
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3138
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0,
     "confidence_interval": [
       0,
-      0.1962
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.85,
+    "value": null,
     "confidence_interval": [
-      0.7638,
-      0.9362
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.85
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.96,
+    "value": null,
     "confidence_interval": [
-      0.882,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.96
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,74 +133,65 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
-    "first_timestamp": "2026-04-29T13:20:45.766Z",
+    "first_platform": "unknown",
+    "first_timestamp": "",
     "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_israel-palestine_004",
-    "hops": [
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T12:50:23.529000+00:00",
-        "claim_id": "israel-palestine_bluesky_3d5a98df_1",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      }
-    ],
-    "observation_boundary": "No public antecedent detected"
+    "concept_id": "",
+    "hops": [],
+    "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "israel-palestine_bluesky_fb189c39_1",
+      "claim_id": "israel-palestine_bluesky_5204d7c2_1",
       "similarity": 1.0,
-      "text": "The conflict in Gaza constitutes a genocide."
+      "text": "Both Kamala Harris and Joe Biden are complicit in the alleged genocide in Gaza due to their support for Israel."
     },
     {
-      "claim_id": "israel-palestine_bluesky_3f447780_1",
-      "similarity": 0.6996,
-      "text": "Biden's policies have enabled a genocide in Gaza."
+      "claim_id": "israel-palestine_x_4ce7429c_0",
+      "similarity": 0.8786,
+      "text": "The UK and US are complicit in the Gaza conflict."
+    },
+    {
+      "claim_id": "israel-palestine_bluesky_e14e85c5_1",
+      "similarity": 0.8733,
+      "text": "Genocide is occurring in Gaza."
+    },
+    {
+      "claim_id": "israel-palestine_x_fd02460d_1",
+      "similarity": 0.8161,
+      "text": "Germany supports the alleged genocide in Gaza and an illegal war against Iran perpetrated by Israel and the United States."
+    },
+    {
+      "claim_id": "israel-palestine_x_3fab3cc4_1",
+      "similarity": 0.7084,
+      "text": "Pakistan does not have the ability to prevent what is described as a genocide in Gaza."
     }
   ],
   "example_content": [
     {
-      "text": "The conflict in Gaza constitutes a genocide.",
+      "text": "Genocide is occurring in Gaza.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Biden's policies have enabled a genocide in Gaza.",
+      "text": "Masha Gessen compared the situation in Gaza to ghettos during the Second World War.",
       "platform": "Bluesky",
-      "confidence": 0.9,
+      "confidence": 1.0,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Both Kamala Harris and Joe Biden are complicit in the alleged genocide in Gaza due to their support for Israel.",
+      "platform": "Bluesky",
+      "confidence": 0.8,
       "is_influencer_framing": false
     }
   ]

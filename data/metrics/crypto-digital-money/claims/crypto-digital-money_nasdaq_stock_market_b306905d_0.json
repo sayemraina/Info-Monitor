@@ -1,0 +1,206 @@
+{
+  "claim": {
+    "text": "Cryptocurrencies, with the exception of Solana, have underperformed the stock market over the past five years.",
+    "subject": "cryptocurrencies",
+    "assertion": "have underperformed the stock market",
+    "framing": "investment returns",
+    "stance": "anti",
+    "confidence": 0.9,
+    "arousal": "medium",
+    "register": "journalistic",
+    "id": "crypto-digital-money_nasdaq_stock_market_b306905d_0",
+    "cluster_id": "clu_crypto-digital-money_051",
+    "concept_id": "concept_crypto-digital-money_002",
+    "first_seen_platform": "nasdaq_stock_market",
+    "first_seen_timestamp": "2026-05-06T08:20:00Z",
+    "source_document_id": "642b927e0a236319",
+    "source_platform": "nasdaq_stock_market",
+    "source_timestamp": "2026-05-06T08:20:00Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "elite_media"
+  },
+  "momentum": {
+    "value": 0.54,
+    "confidence_interval": [
+      0.44,
+      0.64
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.54
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 1,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.303,
+    "confidence_interval": [
+      0.1757,
+      0.4303
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.303
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 0.9748,
+    "confidence_interval": [
+      0.8979,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.9748
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "The Motley Fool",
+    "first_timestamp": "2026-05-06T08:20:00Z",
+    "lead_lag": [
+      {
+        "platform": "Nasdaq Stock Market",
+        "lag_hours": 0.3
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_crypto-digital-money_002",
+    "hops": [
+      {
+        "platform": "The Motley Fool",
+        "timestamp": "2026-05-06T08:00:00+00:00",
+        "claim_id": "crypto-digital-money_nasdaq_stock_market_b306905d_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Nasdaq Stock Market",
+        "timestamp": "2026-05-06T08:20:00+00:00",
+        "claim_id": "crypto-digital-money_nasdaq_stock_market_b306905d_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "crypto-digital-money_the_motley_fool_163855a2_0",
+      "similarity": 0.9237,
+      "text": "Cryptocurrencies, as an asset class, have underperformed compared to traditional investments like the S&P 500."
+    },
+    {
+      "claim_id": "crypto-digital-money_nasdaq_stock_market_b306905d_2",
+      "similarity": 0.7601,
+      "text": "Many cryptocurrencies posted negative returns despite improvements in their on-chain fundamentals."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Many cryptocurrencies posted negative returns despite improvements in their on-chain fundamentals.",
+      "platform": "Nasdaq Stock Market",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Cryptocurrencies, as an asset class, have underperformed compared to traditional investments like the S&P 500.",
+      "platform": "The Motley Fool",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

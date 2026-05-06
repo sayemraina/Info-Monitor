@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "immigration_x_8b8f18bf_1",
-    "cluster_id": "clu_immigration_026",
-    "concept_id": "concept_immigration_007",
+    "cluster_id": "clu_immigration_037",
+    "concept_id": "concept_immigration_006",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-29T12:24:31.000Z",
     "source_document_id": "x_2049464849416008103",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.645,
+    "value": null,
     "confidence_interval": [
-      0.545,
-      0.745
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.645
-    ],
-    "source_distribution": "production",
-    "source_diversity": 1.0,
-    "bridge_ratio": 1.0,
-    "persistence_windows": 5,
-    "friction": 0.4,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.5983,
+    "value": null,
     "confidence_interval": [
-      0.4932,
-      0.7034
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5983
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.4,
+    "value": null,
     "confidence_interval": [
-      0.28,
-      0.52
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.4
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.25,
+    "value": 0,
     "confidence_interval": [
-      0.1187,
-      0.3813
+      0,
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.25
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.85,
+    "value": null,
     "confidence_interval": [
-      0.7638,
-      0.9362
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.85
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9674,
+    "value": null,
     "confidence_interval": [
-      0.89,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.9674
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,151 +133,60 @@
     ]
   },
   "provenance": {
-    "first_platform": "X Platform",
-    "first_timestamp": "2026-04-29T12:24:31.000Z",
-    "lead_lag": [
-      {
-        "platform": "Mail Online",
-        "lag_hours": 7.9
-      },
-      {
-        "platform": "Fox Politics",
-        "lag_hours": 8.5
-      },
-      {
-        "platform": "Fox Wilmington",
-        "lag_hours": 10.6
-      },
-      {
-        "platform": "Aol",
-        "lag_hours": 10.7
-      },
-      {
-        "platform": "Thewillnews.Com",
-        "lag_hours": 11.9
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_immigration_007",
-    "hops": [
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-29T06:39:51+00:00",
-        "claim_id": "immigration_x_8b8f18bf_1",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Mail Online",
-        "timestamp": "2026-04-29T14:31:37+00:00",
-        "claim_id": "immigration_x_8b8f18bf_1",
-        "fidelity_to_origin": 0.5374,
-        "fidelity_to_previous": 0.5374
-      },
-      {
-        "platform": "Fox Politics",
-        "timestamp": "2026-04-29T15:10:02+00:00",
-        "claim_id": "immigration_x_8b8f18bf_1",
-        "fidelity_to_origin": 0.4997,
-        "fidelity_to_previous": 0.9298
-      },
-      {
-        "platform": "Fox Wilmington",
-        "timestamp": "2026-04-29T17:16:34+00:00",
-        "claim_id": "immigration_x_8b8f18bf_1",
-        "fidelity_to_origin": 0.3756,
-        "fidelity_to_previous": 0.7517
-      },
-      {
-        "platform": "Aol",
-        "timestamp": "2026-04-29T17:21:54+00:00",
-        "claim_id": "immigration_x_8b8f18bf_1",
-        "fidelity_to_origin": 0.3704,
-        "fidelity_to_previous": 0.9862
-      },
-      {
-        "platform": "Thewillnews.Com",
-        "timestamp": "2026-04-29T18:33:41+00:00",
-        "claim_id": "immigration_x_8b8f18bf_1",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.8099
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "immigration_x_8b8f18bf_0",
-      "similarity": 0.4682,
-      "text": "Immigration policies should prohibit Muslims from entering the UK."
+      "claim_id": "immigration_x_d60f6e9a_0",
+      "similarity": 0.4186,
+      "text": "Current immigration policies are not effectively restricting immigration, particularly for Muslims."
     },
     {
-      "claim_id": "immigration_thewillnews.com_96a001f5_0",
-      "similarity": 0.2966,
-      "text": "The South African government should deport all undocumented foreign nationals."
+      "claim_id": "immigration_x_f5cf1acb_1",
+      "similarity": 0.289,
+      "text": "America should adopt a strict immigration policy."
     },
     {
-      "claim_id": "immigration_aol_9d0e1dfc_0",
-      "similarity": 0.2251,
-      "text": "The complexity of immigration law and the fragmented immigration bureaucracy create opportunities for fraud."
+      "claim_id": "immigration_x_ed37940e_1",
+      "similarity": 0.2393,
+      "text": "Immigrants should be repatriated from the United States and Europe."
     },
     {
-      "claim_id": "immigration_fox_wilmington_3da693d1_2",
-      "similarity": 0.1766,
-      "text": "Congress should simplify immigration law and consolidate immigration agencies to prevent fraud."
-    },
-    {
-      "claim_id": "immigration_mail_online_c433eaa7_2",
-      "similarity": 0.1618,
-      "text": "People living in the UK illegally should be offered assistance to leave voluntarily."
+      "claim_id": "immigration_bluesky_e737b1aa_0",
+      "similarity": 0.1831,
+      "text": "The Fifth Amendment's due process protections extend to non-citizens in deportation proceedings."
     }
   ],
   "example_content": [
     {
-      "text": "The complexity of immigration law and the fragmented immigration bureaucracy create opportunities for fraud.",
-      "platform": "Aol",
+      "text": "The Fifth Amendment's due process protections extend to non-citizens in deportation proceedings.",
+      "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Congress should simplify immigration law and consolidate immigration agencies to prevent fraud.",
-      "platform": "Aol",
+      "text": "America should adopt a strict immigration policy.",
+      "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Congress should simplify immigration law and consolidate immigration agencies to prevent fraud.",
-      "platform": "Fox Wilmington",
-      "confidence": 0.9,
+      "text": "Current immigration policies are not effectively restricting immigration, particularly for Muslims.",
+      "platform": "X Platform",
+      "confidence": 0.8,
       "is_influencer_framing": false
     }
   ]

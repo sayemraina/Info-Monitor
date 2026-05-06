@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "israel-palestine_bluesky_c8f3eb9e_0",
-    "cluster_id": "clu_israel-palestine_016",
-    "concept_id": "concept_israel-palestine_002",
+    "cluster_id": "clu_israel-palestine_020",
+    "concept_id": "concept_israel-palestine_000",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-29T17:18:17.002Z",
     "source_document_id": "755470fda44e63fb",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.645,
+    "value": null,
     "confidence_interval": [
-      0.545,
-      0.745
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.645
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.25,
-    "bridge_ratio": 0.25,
-    "persistence_windows": 2,
-    "friction": 1,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.3825,
+    "value": null,
     "confidence_interval": [
-      0.2612,
-      0.5038
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3825
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.1,
+    "value": 0,
     "confidence_interval": [
       0,
-      0.2425
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.85,
+    "value": null,
     "confidence_interval": [
-      0.7638,
-      0.9362
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.85
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9437,
+    "value": null,
     "confidence_interval": [
-      0.8645,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.9437
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,94 +133,43 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
-    "first_timestamp": "2026-04-29T17:18:17.002Z",
+    "first_platform": "unknown",
+    "first_timestamp": "",
     "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_israel-palestine_002",
-    "hops": [
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T13:54:58.755000+00:00",
-        "claim_id": "israel-palestine_bluesky_c8f3eb9e_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      }
-    ],
-    "observation_boundary": "No public antecedent detected"
+    "concept_id": "",
+    "hops": [],
+    "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "israel-palestine_bluesky_4ed8609c_1",
-      "similarity": 0.9613,
-      "text": "Israel's actions in Gaza constitute war crimes."
+      "claim_id": "israel-palestine_x_7d6f8a34_0",
+      "similarity": 1.0,
+      "text": "Israel has committed war crimes against Palestinians in Gaza."
     },
     {
-      "claim_id": "israel-palestine_bluesky_ac62a3e6_0",
-      "similarity": 0.9613,
-      "text": "Israel is committing war crimes against Palestinians in Gaza."
-    },
-    {
-      "claim_id": "israel-palestine_bluesky_d64a448a_0",
-      "similarity": 0.7692,
-      "text": "Keir Starmer is suppressing evidence of Israeli war crimes."
-    },
-    {
-      "claim_id": "israel-palestine_bluesky_aa2b5c0a_0",
-      "similarity": 0.7453,
-      "text": "The killing of children gathering firewood in Gaza constitutes a war crime."
-    },
-    {
-      "claim_id": "israel-palestine_bluesky_e46fc1e0_0",
-      "similarity": 0.7253,
-      "text": "The Starmer government is complicit in Israeli war crimes against Palestinians and Lebanese."
+      "claim_id": "israel-palestine_x_aabada79_0",
+      "similarity": 0.8162,
+      "text": "Israel's actions against the Gaza flotilla constitute an act of war."
     }
   ],
   "example_content": [
     {
-      "text": "The Starmer government is complicit in Israeli war crimes against Palestinians and Lebanese.",
-      "platform": "Bluesky",
+      "text": "Israel's actions against the Gaza flotilla constitute an act of war.",
+      "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The killing of children gathering firewood in Gaza constitutes a war crime.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Israel's actions in Gaza constitute war crimes.",
-      "platform": "Bluesky",
+      "text": "Israel has committed war crimes against Palestinians in Gaza.",
+      "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

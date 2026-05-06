@@ -9,7 +9,7 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "crypto-digital-money_bluesky_c7c2165b_0",
-    "cluster_id": "clu_crypto-digital-money_022",
+    "cluster_id": "clu_crypto-digital-money_017",
     "concept_id": "concept_crypto-digital-money_001",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-29T13:36:55.539Z",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.54,
+    "value": null,
     "confidence_interval": [
-      0.44,
-      0.64
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.54
-    ],
-    "source_distribution": "production",
-    "source_diversity": 1.0,
-    "bridge_ratio": 1.0,
-    "persistence_windows": 3,
-    "friction": 0.2727,
-    "friction_quadrant": "unopposed_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.4511,
+    "value": null,
     "confidence_interval": [
-      0.3349,
-      0.5673
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.4511
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.2727,
+    "value": null,
     "confidence_interval": [
-      0.1432,
-      0.4022
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.2727
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.15,
+    "value": 0,
     "confidence_interval": [
-      0.0112,
-      0.2888
+      0,
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.15
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.925,
+    "value": null,
     "confidence_interval": [
-      0.8444,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.925
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,129 +133,65 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
-    "first_timestamp": "2026-04-29T13:36:55.539Z",
-    "lead_lag": [
-      {
-        "platform": "Crypto.News",
-        "lag_hours": 18.7
-      },
-      {
-        "platform": "Decrypt",
-        "lag_hours": 18.8
-      },
-      {
-        "platform": "X Platform",
-        "lag_hours": 20.0
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_crypto-digital-money_001",
-    "hops": [
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-28T23:29:23.587000+00:00",
-        "claim_id": "crypto-digital-money_bluesky_c7c2165b_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Crypto.News",
-        "timestamp": "2026-04-29T18:11:55+00:00",
-        "claim_id": "crypto-digital-money_bluesky_c7c2165b_0",
-        "fidelity_to_origin": 0.3455,
-        "fidelity_to_previous": 0.3455
-      },
-      {
-        "platform": "Decrypt",
-        "timestamp": "2026-04-29T18:14:42+00:00",
-        "claim_id": "crypto-digital-money_bluesky_c7c2165b_0",
-        "fidelity_to_origin": 0.3438,
-        "fidelity_to_previous": 0.9951
-      },
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-29T19:29:54+00:00",
-        "claim_id": "crypto-digital-money_bluesky_c7c2165b_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.8726
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "crypto-digital-money_bluesky_0c707f95_0",
-      "similarity": 0.4998,
-      "text": "Cryptocurrency should be eliminated through policy changes."
+      "claim_id": "crypto-digital-money_cointribune_94287c81_1",
+      "similarity": 0.5167,
+      "text": "Many young people with Web3 skills remain invisible to serious recruiters."
     },
     {
-      "claim_id": "crypto-digital-money_bluesky_c9ff9372_2",
-      "similarity": 0.4618,
-      "text": "Cryptocurrency should not be legal."
+      "claim_id": "crypto-digital-money_cointribune_94287c81_0",
+      "similarity": 0.4621,
+      "text": "Bitget's 'Boxed for Opportunity' campaign aims to connect young Web3 talent with companies by printing resumes on pizza boxes."
     },
     {
-      "claim_id": "crypto-digital-money_bluesky_d0f7463b_0",
-      "similarity": 0.3918,
-      "text": "Minnesota has passed a bill to ban cryptocurrency kiosks statewide."
+      "claim_id": "crypto-digital-money_coinpedia_-_fintech_&_cryptocu_740ab108_0",
+      "similarity": 0.4408,
+      "text": "Consortium blockchains fail to provide meaningful advantages over centralized systems."
     },
     {
-      "claim_id": "crypto-digital-money_bluesky_138f3ced_0",
-      "similarity": 0.3458,
-      "text": "Dubai is becoming a leading hub for cryptocurrency regulation."
+      "claim_id": "crypto-digital-money_nasdaq_stock_market_b306905d_1",
+      "similarity": 0.4097,
+      "text": "The economic activity on blockchains does not reliably benefit the holders of the native coins."
     },
     {
-      "claim_id": "crypto-digital-money_bluesky_6d1d0354_0",
-      "similarity": 0.3438,
-      "text": "Stricter cryptocurrency regulations in the U.S. will reveal vulnerabilities in poorly secured digital wallets."
+      "claim_id": "crypto-digital-money_the_motley_fool_163855a2_1",
+      "similarity": 0.3994,
+      "text": "The economic activity on blockchains does not reliably benefit the holders of the native tokens."
     }
   ],
   "example_content": [
     {
-      "text": "Cryptocurrency should not be legal.",
-      "platform": "Bluesky",
+      "text": "The economic activity on blockchains does not reliably benefit the holders of the native coins.",
+      "platform": "Nasdaq Stock Market",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Cryptocurrency should be eliminated through policy changes.",
-      "platform": "Bluesky",
-      "confidence": 0.95,
+      "text": "Consortium blockchains fail to provide meaningful advantages over centralized systems.",
+      "platform": "Coinpedia   Fintech & Cryptocu",
+      "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Minnesota has passed a bill to ban cryptocurrency kiosks statewide.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
+      "text": "Enhancing centralized servers with cryptographic tools offers a more practical solution than rebuilding systems from scratch with blockchain.",
+      "platform": "Coinpedia   Fintech & Cryptocu",
+      "confidence": 0.8,
       "is_influencer_framing": false
     }
   ]

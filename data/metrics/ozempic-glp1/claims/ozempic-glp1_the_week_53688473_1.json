@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "ozempic-glp1_the_week_53688473_1",
-    "cluster_id": "clu_ozempic-glp1_031",
-    "concept_id": "concept_ozempic-glp1_006",
+    "cluster_id": "clu_ozempic-glp1_018",
+    "concept_id": "concept_ozempic-glp1_005",
     "first_seen_platform": "the_week",
     "first_seen_timestamp": "2026-04-29T17:05:28Z",
     "source_document_id": "3c42b8ac27ab7fd6",
@@ -24,213 +24,128 @@
     "source_type": "elite_media"
   },
   "momentum": {
-    "value": 0.48,
+    "value": null,
     "confidence_interval": [
-      0.38,
-      0.58
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.48
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.75,
-    "bridge_ratio": 0.75,
-    "persistence_windows": 2,
-    "friction": 0.1667,
-    "friction_quadrant": "dead"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.3148,
+    "value": null,
     "confidence_interval": [
-      0.1884,
-      0.4412
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3148
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.1667,
+    "value": null,
     "confidence_interval": [
-      0.0292,
-      0.3042
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.1667
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.1,
+    "value": 0,
     "confidence_interval": [
       0,
-      0.2425
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.7,
     "factors": []
   },
   "provenance": {
-    "first_platform": "Medpage Today",
-    "first_timestamp": "2026-04-29T17:05:28Z",
-    "lead_lag": [
-      {
-        "platform": "Bluesky",
-        "lag_hours": 3.6
-      },
-      {
-        "platform": "The Week",
-        "lag_hours": 5.4
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_ozempic-glp1_006",
-    "hops": [
-      {
-        "platform": "Medpage Today",
-        "timestamp": "2026-04-29T11:38:30+00:00",
-        "claim_id": "ozempic-glp1_the_week_53688473_1",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T15:11:51.417000+00:00",
-        "claim_id": "ozempic-glp1_the_week_53688473_1",
-        "fidelity_to_origin": 0.5432,
-        "fidelity_to_previous": 0.5432
-      },
-      {
-        "platform": "The Week",
-        "timestamp": "2026-04-29T17:05:28+00:00",
-        "claim_id": "ozempic-glp1_the_week_53688473_1",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.5523
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
-  "semantic_neighbors": [
-    {
-      "claim_id": "ozempic-glp1_bluesky_b2d7553e_1",
-      "similarity": 0.7026,
-      "text": "GLP-1 drugs affect dopamine levels."
-    },
-    {
-      "claim_id": "ozempic-glp1_medpage_today_2c838c08_1",
-      "similarity": 0.6704,
-      "text": "GLP-1 drugs do not seem to harm motivation."
-    },
-    {
-      "claim_id": "ozempic-glp1_bluesky_8e812b2a_0",
-      "similarity": 0.6577,
-      "text": "GLP-1 drugs may have benefits beyond weight loss, such as reducing the buildup of Alzheimer's proteins."
-    },
-    {
-      "claim_id": "ozempic-glp1_bluesky_9122530e_1",
-      "similarity": 0.3912,
-      "text": "Cigarettes are highly addictive."
-    },
-    {
-      "claim_id": "ozempic-glp1_bluesky_9122530e_0",
-      "similarity": 0.3795,
-      "text": "Cigarettes were historically used as a stimulant and appetite suppressant before the availability of ADHD medications and Ozempic."
-    }
-  ],
-  "example_content": [
-    {
-      "text": "Cigarettes were historically used as a stimulant and appetite suppressant before the availability of ADHD medications and Ozempic.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Cigarettes are highly addictive.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "GLP-1 drugs may have benefits beyond weight loss, such as reducing the buildup of Alzheimer's proteins.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    }
-  ]
+  "semantic_neighbors": [],
+  "example_content": []
 }
