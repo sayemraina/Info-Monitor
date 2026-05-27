@@ -1,149 +1,95 @@
 {
   "events": [
     {
-      "id": "evt_a8784e5a2d4b",
+      "id": "evt_66b3203ce13f",
       "type": "contestation_emergence",
-      "timestamp": "2026-05-05T21:24:32.120470+00:00",
-      "claim_id": "ai-bubble_bluesky_906f55cd_1",
+      "timestamp": "2026-05-26T21:03:21.380370+00:00",
+      "claim_id": "ai-bubble_bluesky_0a031a59_0",
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.9,
-      "summary": "Active contestation in \"LLM AI Speculative\" — 3 pro vs 3 anti",
+      "confidence": 0.82,
+      "summary": "Active contestation in \"Etfs\" — 4 pro vs 3 anti",
       "detail": {
-        "cluster_id": "clu_ai-bubble_005",
-        "pro_count": 3,
+        "cluster_id": "clu_ai-bubble_043",
+        "pro_count": 4,
         "anti_count": 3,
-        "balance": 1.0
+        "balance": 0.75
       }
     },
     {
-      "id": "evt_2364903c4413",
+      "id": "evt_ce5b14de8481",
       "type": "phase_transition",
-      "timestamp": "2026-05-05T21:24:32.120470+00:00",
+      "timestamp": "2026-05-26T21:03:21.380370+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
       "confidence": 0.81,
       "summary": "\"Data Centers\" cluster is shifting toward more extreme language",
       "detail": {
-        "cluster_id": "clu_ai-bubble_003",
+        "cluster_id": "clu_ai-bubble_000",
         "direction": "radicalizing",
-        "magnitude": 0.7025
+        "magnitude": 0.7017
       }
     },
     {
-      "id": "evt_64b293b6b5fb",
+      "id": "evt_3cb2f7736c6f",
       "type": "phase_transition",
-      "timestamp": "2026-05-05T21:24:32.120470+00:00",
-      "claim_id": null,
-      "slice_id": null,
-      "severity": "high",
-      "confidence": 0.82,
-      "summary": "\"Chatgpt\" cluster is shifting toward more extreme language",
-      "detail": {
-        "cluster_id": "clu_ai-bubble_004",
-        "direction": "radicalizing",
-        "magnitude": 0.7337
-      }
-    },
-    {
-      "id": "evt_ad1835339b64",
-      "type": "phase_transition",
-      "timestamp": "2026-05-05T21:24:32.120470+00:00",
+      "timestamp": "2026-05-26T21:03:21.380370+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
       "confidence": 0.79,
-      "summary": "\"Market Speculation\" cluster is shifting toward more extreme language",
+      "summary": "\"AI Bubble Bursting\" cluster is shifting toward more extreme language",
       "detail": {
-        "cluster_id": "clu_ai-bubble_006",
+        "cluster_id": "clu_ai-bubble_002",
         "direction": "radicalizing",
-        "magnitude": 0.6168
+        "magnitude": 0.6173
       }
     },
     {
-      "id": "evt_5c04ed32eba8",
+      "id": "evt_532e2b4a5091",
       "type": "phase_transition",
-      "timestamp": "2026-05-05T21:24:32.120470+00:00",
+      "timestamp": "2026-05-26T21:03:21.380370+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.81,
-      "summary": "\"Nvidia\" cluster is shifting toward more extreme language",
+      "confidence": 0.79,
+      "summary": "\"AI Sector Speculative\" cluster is shifting toward more extreme language",
       "detail": {
-        "cluster_id": "clu_ai-bubble_011",
+        "cluster_id": "clu_ai-bubble_005",
         "direction": "radicalizing",
-        "magnitude": 0.6979
+        "magnitude": 0.6233
       }
     },
     {
-      "id": "evt_a0ad43fbb294",
+      "id": "evt_2364903c4413",
+      "type": "phase_transition",
+      "timestamp": "2026-05-26T21:03:21.380370+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.79,
+      "summary": "\"AWS Cloud Infrastructure\" cluster is shifting toward more extreme language",
+      "detail": {
+        "cluster_id": "clu_ai-bubble_006",
+        "direction": "radicalizing",
+        "magnitude": 0.6173
+      }
+    },
+    {
+      "id": "evt_823a50474779",
       "type": "divergence_shift",
-      "timestamp": "2026-05-05T21:24:32.120470+00:00",
+      "timestamp": "2026-05-26T21:03:21.380370+00:00",
       "claim_id": null,
       "slice_id": "bluesky_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Strong narrative split between Bluesky and business_insider",
+      "summary": "Strong narrative split between Bluesky and economic_times",
       "detail": {
-        "jsd": 0.8986,
+        "jsd": 0.7583,
         "platforms": [
           "bluesky",
-          "business_insider"
-        ],
-        "window_hours": 24
-      }
-    },
-    {
-      "id": "evt_bb944507fd2e",
-      "type": "divergence_shift",
-      "timestamp": "2026-05-05T21:24:32.120470+00:00",
-      "claim_id": null,
-      "slice_id": "bluesky_platform",
-      "severity": "high",
-      "confidence": 0.95,
-      "summary": "Strong narrative split between Bluesky and weekly_voice",
-      "detail": {
-        "jsd": 0.8143,
-        "platforms": [
-          "bluesky",
-          "weekly_voice"
-        ],
-        "window_hours": 24
-      }
-    },
-    {
-      "id": "evt_66c04ec2261f",
-      "type": "divergence_shift",
-      "timestamp": "2026-05-05T21:24:32.120470+00:00",
-      "claim_id": null,
-      "slice_id": "bluesky_platform",
-      "severity": "high",
-      "confidence": 0.83,
-      "summary": "Significant narrative divergence between Bluesky and X Platform",
-      "detail": {
-        "jsd": 0.3254,
-        "platforms": [
-          "bluesky",
-          "x"
-        ],
-        "window_hours": 24
-      }
-    },
-    {
-      "id": "evt_9683d57872c0",
-      "type": "divergence_shift",
-      "timestamp": "2026-05-05T21:24:32.120470+00:00",
-      "claim_id": null,
-      "slice_id": "business_insider_platform",
-      "severity": "high",
-      "confidence": 0.95,
-      "summary": "Strong narrative split between business_insider and weekly_voice",
-      "detail": {
-        "jsd": 0.554,
-        "platforms": [
-          "business_insider",
-          "weekly_voice"
+          "economic_times"
         ],
         "window_hours": 24
       }
@@ -169,65 +115,18 @@
       "source": "polymarket"
     },
     {
-      "id": "evt_f19d8397ced1",
-      "type": "contestation_emergence",
-      "timestamp": "2026-05-05T21:24:32.120470+00:00",
-      "claim_id": "ai-bubble_bluesky_e5a7e326_0",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.76,
-      "summary": "Active contestation in \"Llms\" — 11 pro vs 6 anti",
-      "detail": {
-        "cluster_id": "clu_ai-bubble_021",
-        "pro_count": 11,
-        "anti_count": 6,
-        "balance": 0.55
-      }
-    },
-    {
-      "id": "evt_d4c90232e60a",
-      "type": "contestation_emergence",
-      "timestamp": "2026-05-05T21:24:32.120470+00:00",
-      "claim_id": "ai-bubble_bluesky_832e2039_2",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.73,
-      "summary": "Active contestation in \"Government Organizations\" — 7 pro vs 3 anti",
-      "detail": {
-        "cluster_id": "clu_ai-bubble_030",
-        "pro_count": 7,
-        "anti_count": 3,
-        "balance": 0.43
-      }
-    },
-    {
       "id": "evt_3dee6a41712d",
       "type": "momentum_spike",
-      "timestamp": "2026-05-06T00:24:32.120470+00:00",
-      "claim_id": "ai-bubble_bluesky_ac875794_0",
+      "timestamp": "2026-05-27T01:03:21.380370+00:00",
+      "claim_id": "ai-bubble_bluesky_c0e90daf_0",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.54,
-      "summary": "Rapid attention surge in \"Iran War\" (3 claims)",
+      "confidence": 0.58,
+      "summary": "Rapid attention surge in \"Peter Thiel and Mark\" (1 claims)",
       "detail": {
-        "cluster_id": "clu_ai-bubble_020",
-        "avg_momentum": 0.6,
-        "member_count": 3
-      }
-    },
-    {
-      "id": "evt_fac457071672",
-      "type": "momentum_spike",
-      "timestamp": "2026-05-06T00:24:32.120470+00:00",
-      "claim_id": "ai-bubble_bluesky_48271a9b_0",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.53,
-      "summary": "Rapid attention surge in \"Ai-Generated Content\" (3 claims)",
-      "detail": {
-        "cluster_id": "clu_ai-bubble_025",
-        "avg_momentum": 0.593,
-        "member_count": 3
+        "cluster_id": "clu_ai-bubble_045",
+        "avg_momentum": 0.645,
+        "member_count": 1
       }
     },
     {
@@ -441,67 +340,67 @@
       "source": "fed_register"
     },
     {
-      "id": "evt_b9ae9aa7d0e2",
+      "id": "evt_d7f056cfcca9",
       "type": "lead_lag",
-      "timestamp": "2026-05-05T16:24:32.120470+00:00",
-      "claim_id": "ai-bubble_bluesky_60f2559d_0",
+      "timestamp": "2026-05-27T01:03:21.380370+00:00",
+      "claim_id": "ai-bubble_bluesky_bd9f384f_0",
       "slice_id": null,
       "severity": "low",
-      "confidence": 0.66,
-      "summary": "washington_monthly leads X Platform by ~17h in \"Corporate Greed\"",
+      "confidence": 0.64,
+      "summary": "Bluesky leads financial_times_news by ~8h in \"Spacex\"",
       "detail": {
-        "source_platform": "washington_monthly",
-        "target_platform": "x",
-        "lag_hours": 17.6,
-        "cluster_id": "clu_ai-bubble_010"
+        "source_platform": "bluesky",
+        "target_platform": "financial_times_news",
+        "lag_hours": 8.8,
+        "cluster_id": "clu_ai-bubble_008"
       }
     },
     {
-      "id": "evt_9e8cd6a9775e",
+      "id": "evt_d03f01209850",
       "type": "lead_lag",
-      "timestamp": "2026-05-05T18:24:32.120470+00:00",
-      "claim_id": "ai-bubble_bluesky_3075ff44_1",
+      "timestamp": "2026-05-27T01:03:21.380370+00:00",
+      "claim_id": "ai-bubble_bluesky_bd21f257_2",
       "slice_id": null,
       "severity": "low",
-      "confidence": 0.7,
-      "summary": "bloomberg_business leads the_star_ by ~15h in \"Intel\"",
+      "confidence": 0.72,
+      "summary": "foreign_policy leads economic_times by ~8h in \"Iran War\"",
       "detail": {
-        "source_platform": "bloomberg_business",
-        "target_platform": "the_star_",
-        "lag_hours": 15.4,
-        "cluster_id": "clu_ai-bubble_012"
+        "source_platform": "foreign_policy",
+        "target_platform": "economic_times",
+        "lag_hours": 8.5,
+        "cluster_id": "clu_ai-bubble_017"
       }
     },
     {
-      "id": "evt_8255d144d862",
+      "id": "evt_62ee18d0a276",
       "type": "lead_lag",
-      "timestamp": "2026-05-06T02:24:32.120470+00:00",
-      "claim_id": "ai-bubble_bluesky_c9c99872_0",
+      "timestamp": "2026-05-27T03:03:21.380370+00:00",
+      "claim_id": "ai-bubble_bluesky_2e997cfb_0",
       "slice_id": null,
       "severity": "low",
-      "confidence": 0.58,
-      "summary": "business_insider leads X Platform by ~7h in \"Chatgpt\"",
+      "confidence": 0.6,
+      "summary": "Bluesky leads cnbctv18.com by ~6h in \"Data Centers\"",
       "detail": {
-        "source_platform": "business_insider",
-        "target_platform": "x",
-        "lag_hours": 8.0,
-        "cluster_id": "clu_ai-bubble_004"
+        "source_platform": "bluesky",
+        "target_platform": "cnbctv18.com",
+        "lag_hours": 6.9,
+        "cluster_id": "clu_ai-bubble_000"
       }
     },
     {
-      "id": "evt_978c3f9df94f",
+      "id": "evt_feb536c0b4a0",
       "type": "lead_lag",
-      "timestamp": "2026-05-06T02:24:32.120470+00:00",
-      "claim_id": "ai-bubble_bluesky_906f55cd_1",
+      "timestamp": "2026-05-27T03:03:21.380370+00:00",
+      "claim_id": "ai-bubble_bluesky_5db9b118_0",
       "slice_id": null,
       "severity": "low",
-      "confidence": 0.66,
-      "summary": "stockhead leads X Platform by ~7h in \"LLM AI Speculative\"",
+      "confidence": 0.68,
+      "summary": "north_bay_bohemian leads Bluesky by ~6h in \"Video Game Industry\"",
       "detail": {
-        "source_platform": "stockhead",
-        "target_platform": "x",
-        "lag_hours": 7.4,
-        "cluster_id": "clu_ai-bubble_005"
+        "source_platform": "north_bay_bohemian",
+        "target_platform": "bluesky",
+        "lag_hours": 6.4,
+        "cluster_id": "clu_ai-bubble_022"
       }
     },
     {
@@ -603,7 +502,67 @@
       "summary": "New Rihanna Album before GTA VI? — 60.0% Yes",
       "detail": "Polymarket gives 60.0% odds. Volume: $679,525",
       "source": "polymarket"
+    },
+    {
+      "id": "poly_540816",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:21:23.582287+00:00",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Russia-Ukraine Ceasefire before GTA VI? — 54.0% Yes",
+      "detail": "Polymarket gives 54.0% odds. Volume: $1,412,740",
+      "source": "polymarket"
+    },
+    {
+      "id": "sec_84eeff26c2e1",
+      "type": "external_signal",
+      "timestamp": "2026-04-02T00:00:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Unknown —  filing (2026-04-02)",
+      "detail": "Unknown filed  mentioning 'generative AI'. Filing date: 2026-04-02.",
+      "source": "sec_edgar"
+    },
+    {
+      "id": "sec_7344843bb793",
+      "type": "external_signal",
+      "timestamp": "2026-04-01T00:00:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Unknown —  filing (2026-04-01)",
+      "detail": "Unknown filed  mentioning 'artificial intelligence'. Filing date: 2026-04-01.",
+      "source": "sec_edgar"
+    },
+    {
+      "id": "sec_7d01295b67b1",
+      "type": "external_signal",
+      "timestamp": "2026-03-31T00:00:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Unknown —  filing (2026-03-31)",
+      "detail": "Unknown filed  mentioning 'artificial intelligence'. Filing date: 2026-03-31.",
+      "source": "sec_edgar"
+    },
+    {
+      "id": "price_AMD_20260330",
+      "type": "external_signal",
+      "timestamp": "2026-03-30T07:24:04.984452+00:00",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "AMD: $201.99 (down 0.9%)",
+      "detail": "AMD closed at $201.99, down 0.9% from previous close of $203.77",
+      "source": "yahoo_finance"
+    },
+    {
+      "id": "sec_9d3668aa76f7",
+      "type": "external_signal",
+      "timestamp": "2026-03-30T00:00:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Unknown —  filing (2026-03-30)",
+      "detail": "Unknown filed  mentioning 'artificial intelligence'. Filing date: 2026-03-30.",
+      "source": "sec_edgar"
     }
   ],
-  "total_count": 84
+  "total_count": 78
 }

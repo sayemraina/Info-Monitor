@@ -1,0 +1,233 @@
+{
+  "claim": {
+    "text": "Israel's military actions are escalating tensions with Hezbollah in Lebanon, potentially violating a ceasefire.",
+    "subject": "Israel-Hezbollah conflict",
+    "assertion": "is escalating tensions and violating a ceasefire",
+    "framing": "national security",
+    "stance": "anti",
+    "confidence": 0.9,
+    "arousal": "high",
+    "register": "journalistic",
+    "id": "israel-palestine_guardian_world_8ef9e342_0",
+    "cluster_id": "clu_israel-palestine_073",
+    "concept_id": "concept_israel-palestine_002",
+    "first_seen_platform": "guardian_world",
+    "first_seen_timestamp": "2026-05-27T08:26:59Z",
+    "source_document_id": "50b662c3ffe1a448",
+    "source_platform": "guardian_world",
+    "source_timestamp": "2026-05-27T08:26:59Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "elite_media"
+  },
+  "momentum": {
+    "value": 0.645,
+    "confidence_interval": [
+      0.545,
+      0.745
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.645
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.75,
+    "bridge_ratio": 0.75,
+    "persistence_windows": 1,
+    "friction": 0.4,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.3424,
+    "confidence_interval": [
+      0.2181,
+      0.4667
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3424
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.4,
+    "confidence_interval": [
+      0.28,
+      0.52
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.4
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.85,
+    "confidence_interval": [
+      0.7638,
+      0.9362
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.85
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 0.931,
+    "confidence_interval": [
+      0.8508,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.931
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-05-27T08:26:59Z",
+    "lead_lag": [
+      {
+        "platform": "The Sen Times",
+        "lag_hours": 0.5
+      },
+      {
+        "platform": "Guardian World",
+        "lag_hours": 1.3
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_israel-palestine_002",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-05-27T07:06:36.130000+00:00",
+        "claim_id": "israel-palestine_guardian_world_8ef9e342_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "The Sen Times",
+        "timestamp": "2026-05-27T07:34:15+00:00",
+        "claim_id": "israel-palestine_guardian_world_8ef9e342_0",
+        "fidelity_to_origin": 0.7592,
+        "fidelity_to_previous": 0.7592
+      },
+      {
+        "platform": "Guardian World",
+        "timestamp": "2026-05-27T08:26:59+00:00",
+        "claim_id": "israel-palestine_guardian_world_8ef9e342_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3952
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "israel-palestine_bluesky_6fb86b3a_0",
+      "similarity": 0.863,
+      "text": "Israeli bombing raids have violated a previously established ceasefire agreement."
+    },
+    {
+      "claim_id": "israel-palestine_the_sen_times_e082eac0_1",
+      "similarity": 0.7318,
+      "text": "Israel has expanded ground operations in Lebanon."
+    },
+    {
+      "claim_id": "israel-palestine_bluesky_04b0781c_0",
+      "similarity": 0.666,
+      "text": "There is no ceasefire in Lebanon."
+    },
+    {
+      "claim_id": "israel-palestine_bluesky_90415a4e_0",
+      "similarity": 0.6578,
+      "text": "The ceasefire between Israel and Lebanon is breaking down."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "The ceasefire between Israel and Lebanon is breaking down.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "There is no ceasefire in Lebanon.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Israeli bombing raids have violated a previously established ceasefire agreement.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

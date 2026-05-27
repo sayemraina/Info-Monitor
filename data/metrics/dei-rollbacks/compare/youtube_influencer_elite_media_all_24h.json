@@ -12,9 +12,9 @@
     "id": "elite_media_all",
     "type": "source_type",
     "label": "Elite Media",
-    "active_volume": 22,
+    "active_volume": 35,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.3099,
+    "base_rate_weight": 0.3977,
     "is_influencer_framing": false
   },
   "divergence": {
@@ -41,17 +41,37 @@
   "per_cluster": [
     {
       "cluster_id": "clu_dei-rollbacks_000",
-      "label": "Openai",
+      "label": "AI and Employment",
       "salience_a": 0.0,
-      "salience_b": 0.1818,
+      "salience_b": 0.2,
       "arousal_a": 0,
-      "arousal_b": 0.325,
+      "arousal_b": 0.4,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_dei-rollbacks_001",
-      "label": "Disadvantaged Business",
+      "label": "Immigration",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_002",
+      "label": "Target",
+      "salience_a": 0.0,
+      "salience_b": 0.0286,
+      "arousal_a": 0,
+      "arousal_b": 0.15,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_003",
+      "label": "American Roots Music",
       "salience_a": 0.0,
       "salience_b": 0.0,
       "arousal_a": 0,
@@ -60,28 +80,8 @@
       "mutation_b": "stable"
     },
     {
-      "cluster_id": "clu_dei-rollbacks_002",
-      "label": "Target",
-      "salience_a": 0.0,
-      "salience_b": 0.0,
-      "arousal_a": 0,
-      "arousal_b": 0,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_dei-rollbacks_003",
-      "label": "Republican Farm Bill",
-      "salience_a": 0.0,
-      "salience_b": 0.0,
-      "arousal_a": 0,
-      "arousal_b": 0,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
       "cluster_id": "clu_dei-rollbacks_004",
-      "label": "Immigration",
+      "label": "Costco",
       "salience_a": 0.0,
       "salience_b": 0.0,
       "arousal_a": 0,
@@ -101,27 +101,37 @@
     },
     {
       "cluster_id": "clu_dei-rollbacks_006",
-      "label": "Employers",
+      "label": "Tech Companies",
       "salience_a": 0.0,
-      "salience_b": 0.0455,
+      "salience_b": 0.0,
       "arousal_a": 0,
-      "arousal_b": 0.15,
+      "arousal_b": 0,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_dei-rollbacks_007",
-      "label": "Dollar General",
+      "label": "Deutsche Telekom and T-Mobile",
       "salience_a": 0.0,
       "salience_b": 0.0,
       "arousal_a": 0,
       "arousal_b": 0,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_dei-rollbacks_008",
-      "label": "American Roots Music",
+      "label": "Employers",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_009",
+      "label": "Inclusive Hiring Practices",
       "salience_a": 0.0,
       "salience_b": 0.0,
       "arousal_a": 0,
@@ -130,38 +140,28 @@
       "mutation_b": "stable"
     },
     {
-      "cluster_id": "clu_dei-rollbacks_009",
-      "label": "Government Officials",
-      "salience_a": 0.0,
-      "salience_b": 0.0455,
-      "arousal_a": 0,
-      "arousal_b": 0.5,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
       "cluster_id": "clu_dei-rollbacks_010",
-      "label": "Climate Regulations",
+      "label": "DEI Rollbacks Motivated",
       "salience_a": 0.0,
       "salience_b": 0.0,
       "arousal_a": 0,
       "arousal_b": 0,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
+      "mutation_a": "stable",
+      "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_dei-rollbacks_011",
-      "label": "EEOC",
+      "label": "Disadvantaged Business",
       "salience_a": 0.0,
       "salience_b": 0.0,
       "arousal_a": 0,
       "arousal_b": 0,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
+      "mutation_a": "stable",
+      "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_dei-rollbacks_012",
-      "label": "Pete Hegseth",
+      "label": "Republican Farm Bill",
       "salience_a": 0.0,
       "salience_b": 0.0,
       "arousal_a": 0,
@@ -171,7 +171,7 @@
     },
     {
       "cluster_id": "clu_dei-rollbacks_013",
-      "label": "Donald Trump",
+      "label": "Housing Regulations",
       "salience_a": 0.0,
       "salience_b": 0.0,
       "arousal_a": 0,
@@ -181,17 +181,27 @@
     },
     {
       "cluster_id": "clu_dei-rollbacks_014",
-      "label": "Affirmative Action",
+      "label": "Climate Regulations",
       "salience_a": 0.0,
-      "salience_b": 0.0909,
+      "salience_b": 0.0,
       "arousal_a": 0,
-      "arousal_b": 0.5,
+      "arousal_b": 0,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_dei-rollbacks_015",
-      "label": "Voting Rights Act",
+      "label": "Federal Funding",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_016",
+      "label": "Equity, Diversity,",
       "salience_a": 0.0,
       "salience_b": 0.0,
       "arousal_a": 0,
@@ -201,58 +211,118 @@
     },
     {
       "cluster_id": "clu_dei-rollbacks_017",
-      "label": "Deutsche Telekom and T-Mobile",
+      "label": "ABA Council",
       "salience_a": 0.0,
-      "salience_b": 0.0455,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_018",
+      "label": "Healthcare",
+      "salience_a": 0.0,
+      "salience_b": 0.0286,
       "arousal_a": 0,
       "arousal_b": 0.5,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
-      "cluster_id": "clu_dei-rollbacks_018",
-      "label": "Huawei SPN",
+      "cluster_id": "clu_dei-rollbacks_019",
+      "label": "Welcome to Country Ceremonies",
       "salience_a": 0.0,
-      "salience_b": 0.2273,
+      "salience_b": 0.0,
       "arousal_a": 0,
-      "arousal_b": 0.29,
+      "arousal_b": 0,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
-      "cluster_id": "clu_dei-rollbacks_019",
-      "label": "Women, Gender, and Sexuality",
+      "cluster_id": "clu_dei-rollbacks_020",
+      "label": "DEI Beneficial",
       "salience_a": 0.0,
-      "salience_b": 0.1364,
+      "salience_b": 0.0,
       "arousal_a": 0,
-      "arousal_b": 0.3833,
+      "arousal_b": 0,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
-      "cluster_id": "clu_dei-rollbacks_020",
-      "label": "Government Policies",
+      "cluster_id": "clu_dei-rollbacks_021",
+      "label": "DEI Necessary",
       "salience_a": 0.0,
-      "salience_b": 0.0,
+      "salience_b": 0.0286,
       "arousal_a": 0,
-      "arousal_b": 0,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
+      "arousal_b": 0.5,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     },
     {
-      "cluster_id": "clu_dei-rollbacks_021",
-      "label": "Nigerian Army",
+      "cluster_id": "clu_dei-rollbacks_022",
+      "label": "Women, Gender, and Sexuality",
+      "salience_a": 0.0,
+      "salience_b": 0.0571,
+      "arousal_a": 0,
+      "arousal_b": 0.325,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_023",
+      "label": "Affirmative Action",
       "salience_a": 0.0,
       "salience_b": 0.0,
       "arousal_a": 0,
       "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_024",
+      "label": "Trump Administration",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_026",
+      "label": "Pete Hegseth",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_027",
+      "label": "Voting Rights Act",
+      "salience_a": 0.0,
+      "salience_b": 0.1143,
+      "arousal_a": 0,
+      "arousal_b": 0.325,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_dei-rollbacks_028",
+      "label": "Republican Party",
+      "salience_a": 0.0,
+      "salience_b": 0.0857,
+      "arousal_a": 0,
+      "arousal_b": 0.3833,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     }
   ],
   "arousal_comparison": {
     "slice_a_avg": 0,
-    "slice_b_avg": 0.3409
+    "slice_b_avg": 0.42
   },
   "exposure_comparison": {
     "slice_a": {
@@ -269,15 +339,15 @@
       "source_distribution": "production"
     },
     "slice_b": {
-      "value": 0.5465,
+      "value": 0.6909,
       "confidence_interval": [
-        0.4375,
-        0.6555
+        0.5927,
+        0.7891
       ],
       "baseline": "global",
       "time_window": "24h",
       "sparkline": [
-        0.5465
+        0.6909
       ],
       "source_distribution": "production"
     }

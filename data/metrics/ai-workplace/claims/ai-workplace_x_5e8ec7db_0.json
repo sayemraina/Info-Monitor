@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "ai-workplace_x_5e8ec7db_0",
-    "cluster_id": "clu_ai-workplace_005",
-    "concept_id": "concept_ai-workplace_004",
+    "cluster_id": "clu_ai-workplace_028",
+    "concept_id": "concept_ai-workplace_002",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-03T16:57:35.000Z",
     "source_document_id": "x_2040111480616698008",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.54,
+    "value": null,
     "confidence_interval": [
-      0.44,
-      0.64
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.54
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.75,
-    "bridge_ratio": 0.75,
-    "persistence_windows": 4,
-    "friction": 0.0714,
-    "friction_quadrant": "unopposed_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.2017,
+    "value": null,
     "confidence_interval": [
-      0.0668,
-      0.3366
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.2017
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.0714,
+    "value": null,
     "confidence_interval": [
       0,
-      0.216
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.0714
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.2,
+    "value": 0,
     "confidence_interval": [
-      0.065,
-      0.335
+      0,
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": null,
     "confidence_interval": [
-      0.925,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      1
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,119 +133,21 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
-    "first_timestamp": "2026-04-03T16:57:35.000Z",
-    "lead_lag": [
-      {
-        "platform": "X Platform",
-        "lag_hours": 26.9
-      },
-      {
-        "platform": "The Motley Fool",
-        "lag_hours": 27.0
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_ai-workplace_004",
-    "hops": [
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-02T07:00:35.259659+00:00",
-        "claim_id": "ai-workplace_x_5e8ec7db_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-03T09:53:45+00:00",
-        "claim_id": "ai-workplace_x_5e8ec7db_0",
-        "fidelity_to_origin": 0.3027,
-        "fidelity_to_previous": 0.3027
-      },
-      {
-        "platform": "The Motley Fool",
-        "timestamp": "2026-04-03T10:00:00+00:00",
-        "claim_id": "ai-workplace_x_5e8ec7db_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9911
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
-  "semantic_neighbors": [
-    {
-      "claim_id": "ai-workplace_x_4a73b191_0",
-      "similarity": 0.5836,
-      "text": "Microsoft is making a significant investment in Japan to develop AI infrastructure."
-    },
-    {
-      "claim_id": "ai-workplace_bluesky_48ad3661_0",
-      "similarity": 0.552,
-      "text": "Microsoft is investing heavily in AI infrastructure, cybersecurity, and workforce development in Japan."
-    },
-    {
-      "claim_id": "ai-workplace_x_46beac51_0",
-      "similarity": 0.5003,
-      "text": "Microsoft is investing $10 billion to support Japan's AI transformation by the end of 2029."
-    },
-    {
-      "claim_id": "ai-workplace_the_motley_fool_57a5b6e5_1",
-      "similarity": 0.4406,
-      "text": "SaaS companies may lose pricing power as AI can autonomously coordinate tasks across different interfaces."
-    },
-    {
-      "claim_id": "ai-workplace_x_7fd26b34_0",
-      "similarity": 0.4025,
-      "text": "A company is reducing its workforce to focus on energy and AI infrastructure."
-    }
-  ],
-  "example_content": [
-    {
-      "text": "Microsoft is investing heavily in AI infrastructure, cybersecurity, and workforce development in Japan.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Singapore's AI sector is receiving significant investment.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "SaaS companies may lose pricing power as AI can autonomously coordinate tasks across different interfaces.",
-      "platform": "The Motley Fool",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    }
-  ]
+  "semantic_neighbors": [],
+  "example_content": []
 }

@@ -12,9 +12,9 @@
     "id": "population_all",
     "type": "source_type",
     "label": "Population Discourse",
-    "active_volume": 96,
+    "active_volume": 52,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.6621,
+    "base_rate_weight": 0.52,
     "is_influencer_framing": false
   },
   "divergence": {
@@ -41,87 +41,77 @@
   "per_cluster": [
     {
       "cluster_id": "clu_ai-bubble_000",
-      "label": "AI Industry Bubble",
+      "label": "Data Centers",
       "salience_a": 0.0,
-      "salience_b": 0.0417,
+      "salience_b": 0.0,
       "arousal_a": 0,
-      "arousal_b": 0.4125,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_ai-bubble_001",
-      "label": "Economic Instability",
+      "label": "AI Market Experiencing",
       "salience_a": 0.0,
-      "salience_b": 0.0417,
+      "salience_b": 0.0192,
       "arousal_a": 0,
-      "arousal_b": 0.325,
+      "arousal_b": 0.15,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_ai-bubble_002",
-      "label": "AI Market Experiencing",
+      "label": "AI Bubble Bursting",
       "salience_a": 0.0,
-      "salience_b": 0.0312,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ai-bubble_003",
+      "label": "Ed Zitron",
+      "salience_a": 0.0,
+      "salience_b": 0.0385,
       "arousal_a": 0,
       "arousal_b": 0.5,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
-      "cluster_id": "clu_ai-bubble_003",
-      "label": "Data Centers",
+      "cluster_id": "clu_ai-bubble_004",
+      "label": "Technology Sector Valuations",
       "salience_a": 0.0,
-      "salience_b": 0.0208,
+      "salience_b": 0.0192,
       "arousal_a": 0,
-      "arousal_b": 0.325,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
+      "arousal_b": 0.15,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
     },
     {
-      "cluster_id": "clu_ai-bubble_004",
-      "label": "Chatgpt",
+      "cluster_id": "clu_ai-bubble_005",
+      "label": "AI Sector Speculative",
       "salience_a": 0.0,
-      "salience_b": 0.0104,
+      "salience_b": 0.0192,
       "arousal_a": 0,
       "arousal_b": 0.15,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
-      "cluster_id": "clu_ai-bubble_005",
-      "label": "LLM AI Speculative",
-      "salience_a": 0.0,
-      "salience_b": 0.0417,
-      "arousal_a": 0,
-      "arousal_b": 0.325,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
       "cluster_id": "clu_ai-bubble_006",
-      "label": "Market Speculation",
+      "label": "AWS Cloud Infrastructure",
       "salience_a": 0.0,
-      "salience_b": 0.0417,
+      "salience_b": 0.0,
       "arousal_a": 0,
-      "arousal_b": 0.5,
+      "arousal_b": 0,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_ai-bubble_007",
-      "label": "Technology Sector Valuations",
-      "salience_a": 0.0,
-      "salience_b": 0.0625,
-      "arousal_a": 0,
-      "arousal_b": 0.3833,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_ai-bubble_008",
-      "label": "Economic Stability",
+      "label": "AI Industry Worse",
       "salience_a": 0.0,
       "salience_b": 0.0,
       "arousal_a": 0,
@@ -130,10 +120,20 @@
       "mutation_b": "stable"
     },
     {
-      "cluster_id": "clu_ai-bubble_009",
-      "label": "Financial Risk",
+      "cluster_id": "clu_ai-bubble_008",
+      "label": "Spacex",
       "salience_a": 0.0,
-      "salience_b": 0.0312,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ai-bubble_009",
+      "label": "Market Speculation",
+      "salience_a": 0.0,
+      "salience_b": 0.0192,
       "arousal_a": 0,
       "arousal_b": 0.15,
       "mutation_a": "stable",
@@ -141,17 +141,17 @@
     },
     {
       "cluster_id": "clu_ai-bubble_010",
-      "label": "Corporate Greed",
+      "label": "AI Adoption",
       "salience_a": 0.0,
-      "salience_b": 0.0521,
+      "salience_b": 0.0192,
       "arousal_a": 0,
       "arousal_b": 0.5,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_ai-bubble_011",
-      "label": "Nvidia",
+      "label": "Chatgpt",
       "salience_a": 0.0,
       "salience_b": 0.0,
       "arousal_a": 0,
@@ -161,27 +161,27 @@
     },
     {
       "cluster_id": "clu_ai-bubble_012",
-      "label": "Intel",
+      "label": "Market Conditions",
       "salience_a": 0.0,
-      "salience_b": 0.0208,
+      "salience_b": 0.0,
       "arousal_a": 0,
-      "arousal_b": 0.15,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_ai-bubble_013",
-      "label": "Market Manipulation",
+      "label": "Economic Instability",
       "salience_a": 0.0,
-      "salience_b": 0.0521,
+      "salience_b": 0.0,
       "arousal_a": 0,
-      "arousal_b": 0.36,
+      "arousal_b": 0,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_ai-bubble_014",
-      "label": "Cloud Cost Management",
+      "label": "Alphabet",
       "salience_a": 0.0,
       "salience_b": 0.0,
       "arousal_a": 0,
@@ -191,17 +191,17 @@
     },
     {
       "cluster_id": "clu_ai-bubble_015",
-      "label": "Alphabet",
+      "label": "Market Risk",
       "salience_a": 0.0,
-      "salience_b": 0.0104,
+      "salience_b": 0.0192,
       "arousal_a": 0,
       "arousal_b": 0.15,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
+      "mutation_a": "stable",
+      "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_ai-bubble_016",
-      "label": "China's Robotics Sector",
+      "label": "AI Technology Creating",
       "salience_a": 0.0,
       "salience_b": 0.0,
       "arousal_a": 0,
@@ -211,19 +211,9 @@
     },
     {
       "cluster_id": "clu_ai-bubble_017",
-      "label": "Video Game Industry",
+      "label": "Iran War",
       "salience_a": 0.0,
-      "salience_b": 0.0312,
-      "arousal_a": 0,
-      "arousal_b": 0.15,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_ai-bubble_018",
-      "label": "African Governments",
-      "salience_a": 0.0,
-      "salience_b": 0.0104,
+      "salience_b": 0.0192,
       "arousal_a": 0,
       "arousal_b": 0.5,
       "mutation_a": "radicalizing",
@@ -231,127 +221,167 @@
     },
     {
       "cluster_id": "clu_ai-bubble_019",
-      "label": "Mongodb",
+      "label": "Stock Market",
       "salience_a": 0.0,
       "salience_b": 0.0,
       "arousal_a": 0,
       "arousal_b": 0,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_ai-bubble_020",
-      "label": "Iran War",
+      "label": "African Governments",
       "salience_a": 0.0,
-      "salience_b": 0.0208,
+      "salience_b": 0.0192,
       "arousal_a": 0,
-      "arousal_b": 0.85,
+      "arousal_b": 0.15,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_ai-bubble_021",
-      "label": "Llms",
+      "label": "China's Robotics Sector",
       "salience_a": 0.0,
-      "salience_b": 0.0833,
+      "salience_b": 0.0,
       "arousal_a": 0,
-      "arousal_b": 0.325,
+      "arousal_b": 0,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_ai-bubble_022",
-      "label": "South Korean Economy",
+      "label": "Video Game Industry",
       "salience_a": 0.0,
-      "salience_b": 0.0729,
+      "salience_b": 0.0577,
       "arousal_a": 0,
-      "arousal_b": 0.35,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
+      "arousal_b": 0.5,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_ai-bubble_023",
-      "label": "Stock Market",
+      "label": "PR Industry Consolidation",
       "salience_a": 0.0,
-      "salience_b": 0.0208,
+      "salience_b": 0.0577,
       "arousal_a": 0,
       "arousal_b": 0.5,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
+      "mutation_a": "stable",
+      "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_ai-bubble_024",
-      "label": "Large Language Models",
+      "label": "Job Market and Tech Sector",
       "salience_a": 0.0,
       "salience_b": 0.0,
       "arousal_a": 0,
       "arousal_b": 0,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
+      "mutation_a": "stable",
+      "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_ai-bubble_025",
-      "label": "Ai-Generated Content",
+      "label": "Meta's Acquisition of Manus",
       "salience_a": 0.0,
-      "salience_b": 0.0104,
+      "salience_b": 0.0385,
       "arousal_a": 0,
-      "arousal_b": 0.85,
+      "arousal_b": 0.325,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_ai-bubble_026",
-      "label": "Ai-Powered Investment",
+      "label": "Tech Stocks",
       "salience_a": 0.0,
       "salience_b": 0.0,
       "arousal_a": 0,
       "arousal_b": 0,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_ai-bubble_027",
-      "label": "Apple's UI Framework",
-      "salience_a": 0.0,
-      "salience_b": 0.0208,
-      "arousal_a": 0,
-      "arousal_b": 0.325,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_ai-bubble_028",
-      "label": "Openai",
-      "salience_a": 0.0,
-      "salience_b": 0.0,
-      "arousal_a": 0,
-      "arousal_b": 0,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_ai-bubble_029",
-      "label": "Artificial General",
-      "salience_a": 0.0,
-      "salience_b": 0.0208,
-      "arousal_a": 0,
-      "arousal_b": 0.15,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
-      "cluster_id": "clu_ai-bubble_030",
-      "label": "Government Organizations",
+      "cluster_id": "clu_ai-bubble_027",
+      "label": "IPOS",
       "salience_a": 0.0,
-      "salience_b": 0.0208,
+      "salience_b": 0.0,
       "arousal_a": 0,
-      "arousal_b": 0.15,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ai-bubble_028",
+      "label": "Tech Companies",
+      "salience_a": 0.0,
+      "salience_b": 0.0385,
+      "arousal_a": 0,
+      "arousal_b": 0.325,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ai-bubble_029",
+      "label": "AI Companies Overvalued",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-bubble_030",
+      "label": "Saas/Xaas Companies",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_ai-bubble_031",
-      "label": "Meta",
+      "label": "Ai-Powered Investment",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ai-bubble_032",
+      "label": "AI Tools Quickly",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ai-bubble_033",
+      "label": "South Korean Economy",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ai-bubble_034",
+      "label": "Nvidia",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ai-bubble_035",
+      "label": "Venture Capitalists",
       "salience_a": 0.0,
       "salience_b": 0.0,
       "arousal_a": 0,
@@ -360,50 +390,10 @@
       "mutation_b": "stable"
     },
     {
-      "cluster_id": "clu_ai-bubble_032",
-      "label": "Microsoft",
-      "salience_a": 0.0,
-      "salience_b": 0.0104,
-      "arousal_a": 0,
-      "arousal_b": 0.15,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_ai-bubble_033",
-      "label": "AI Startup Funding",
-      "salience_a": 0.0,
-      "salience_b": 0.0104,
-      "arousal_a": 0,
-      "arousal_b": 0.15,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_ai-bubble_034",
-      "label": "Elitism",
-      "salience_a": 0.0,
-      "salience_b": 0.0208,
-      "arousal_a": 0,
-      "arousal_b": 0.325,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_ai-bubble_035",
-      "label": "Saas/Xaas Companies",
-      "salience_a": 0.0,
-      "salience_b": 0.0208,
-      "arousal_a": 0,
-      "arousal_b": 0.15,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
       "cluster_id": "clu_ai-bubble_036",
-      "label": "AI Companies Overvalued",
+      "label": "Apple's UI Framework",
       "salience_a": 0.0,
-      "salience_b": 0.0104,
+      "salience_b": 0.0192,
       "arousal_a": 0,
       "arousal_b": 0.5,
       "mutation_a": "stable",
@@ -411,17 +401,17 @@
     },
     {
       "cluster_id": "clu_ai-bubble_037",
-      "label": "AI and Magnificent Seven",
+      "label": "Intel",
       "salience_a": 0.0,
-      "salience_b": 0.0104,
+      "salience_b": 0.0,
       "arousal_a": 0,
-      "arousal_b": 0.15,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_ai-bubble_038",
-      "label": "Algorithms",
+      "label": "Ai-Generated Content",
       "salience_a": 0.0,
       "salience_b": 0.0,
       "arousal_a": 0,
@@ -431,38 +421,198 @@
     },
     {
       "cluster_id": "clu_ai-bubble_039",
-      "label": "Ceos",
+      "label": "Computing Power",
       "salience_a": 0.0,
-      "salience_b": 0.0104,
+      "salience_b": 0.0,
       "arousal_a": 0,
-      "arousal_b": 0.15,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_ai-bubble_040",
-      "label": "Hiring Practices",
+      "label": "TSMC",
       "salience_a": 0.0,
-      "salience_b": 0.0208,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ai-bubble_041",
+      "label": "RAM Prices",
+      "salience_a": 0.0,
+      "salience_b": 0.0385,
+      "arousal_a": 0,
+      "arousal_b": 0.15,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ai-bubble_042",
+      "label": "AI Investments Risk",
+      "salience_a": 0.0,
+      "salience_b": 0.0385,
       "arousal_a": 0,
       "arousal_b": 0.325,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
-      "cluster_id": "clu_ai-bubble_041",
-      "label": "NY Post",
+      "cluster_id": "clu_ai-bubble_043",
+      "label": "Etfs",
       "salience_a": 0.0,
-      "salience_b": 0.0208,
+      "salience_b": 0.0769,
       "arousal_a": 0,
-      "arousal_b": 0.325,
+      "arousal_b": 0.2375,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-bubble_044",
+      "label": "Ceos",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-bubble_045",
+      "label": "Peter Thiel and Mark",
+      "salience_a": 0.0,
+      "salience_b": 0.0192,
+      "arousal_a": 0,
+      "arousal_b": 0.85,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-bubble_046",
+      "label": "Artificial General",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ai-bubble_047",
+      "label": "Large Language Models",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ai-bubble_048",
+      "label": "Internet Protocols",
+      "salience_a": 0.0,
+      "salience_b": 0.0769,
+      "arousal_a": 0,
+      "arousal_b": 0.4125,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-bubble_049",
+      "label": "Microsoft",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ai-bubble_050",
+      "label": "Infosys",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-bubble_051",
+      "label": "Openai",
+      "salience_a": 0.0,
+      "salience_b": 0.0192,
+      "arousal_a": 0,
+      "arousal_b": 0.5,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ai-bubble_052",
+      "label": "Oracle",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ai-bubble_053",
+      "label": "AI and Magnificent Seven",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-bubble_054",
+      "label": "Speculative Investment",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-bubble_055",
+      "label": "Hiring Practices",
+      "salience_a": 0.0,
+      "salience_b": 0.0385,
+      "arousal_a": 0,
+      "arousal_b": 0.5,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ai-bubble_056",
+      "label": "Corporate Greed",
+      "salience_a": 0.0,
+      "salience_b": 0.0385,
+      "arousal_a": 0,
+      "arousal_b": 0.5,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ai-bubble_057",
+      "label": "AI Misuse",
+      "salience_a": 0.0,
+      "salience_b": 0.0385,
+      "arousal_a": 0,
+      "arousal_b": 0.675,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     }
   ],
   "arousal_comparison": {
     "slice_a_avg": 0,
-    "slice_b_avg": 0.3359
+    "slice_b_avg": 0.4058
   },
   "exposure_comparison": {
     "slice_a": {
@@ -479,15 +629,15 @@
       "source_distribution": "production"
     },
     "slice_b": {
-      "value": 1,
+      "value": 0.916,
       "confidence_interval": [
-        0.925,
-        1
+        0.8347,
+        0.9973
       ],
       "baseline": "global",
       "time_window": "6h",
       "sparkline": [
-        1
+        0.916
       ],
       "source_distribution": "production"
     }

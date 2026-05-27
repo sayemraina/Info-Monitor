@@ -1,0 +1,205 @@
+{
+  "claim": {
+    "text": "The United States military is responsible for the deaths of civilians in Iran.",
+    "subject": "United States military",
+    "assertion": "killed civilians",
+    "framing": "neutral",
+    "stance": "anti",
+    "confidence": 0.9,
+    "arousal": "high",
+    "register": "vernacular",
+    "id": "inflation-cost-of-living_bluesky_3b83acc4_1",
+    "cluster_id": "clu_inflation-cost-of-living_032",
+    "concept_id": "concept_inflation-cost-of-living_000",
+    "first_seen_platform": "bluesky",
+    "first_seen_timestamp": "2026-05-27T03:36:43.391Z",
+    "source_document_id": "e4419fd62dce063f",
+    "source_platform": "bluesky",
+    "source_timestamp": "2026-05-27T03:36:43.391Z",
+    "source_engagement": {
+      "likes": 1,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.5258,
+    "confidence_interval": [
+      0.4258,
+      0.6258
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5258
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.25,
+    "bridge_ratio": 0.25,
+    "persistence_windows": 1,
+    "friction": 1,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.3252,
+    "confidence_interval": [
+      0.1996,
+      0.4508
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3252
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.85,
+    "confidence_interval": [
+      0.7638,
+      0.9362
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.85
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 0.9661,
+    "confidence_interval": [
+      0.8886,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.9661
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-05-27T03:36:43.391Z",
+    "lead_lag": []
+  },
+  "supply_chain": {
+    "concept_id": "concept_inflation-cost-of-living_000",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-05-27T00:47:02.551000+00:00",
+        "claim_id": "inflation-cost-of-living_bluesky_3b83acc4_1",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      }
+    ],
+    "observation_boundary": "No public antecedent detected"
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "inflation-cost-of-living_bluesky_5708fa22_2",
+      "similarity": 0.253,
+      "text": "A fascist leader has been elected."
+    },
+    {
+      "claim_id": "inflation-cost-of-living_bluesky_02622505_0",
+      "similarity": 0.1839,
+      "text": "Voters who supported a candidate due to racism are now experiencing negative economic consequences."
+    },
+    {
+      "claim_id": "inflation-cost-of-living_bluesky_6e453afa_0",
+      "similarity": 0.1425,
+      "text": "Government policies are responsible for the state's economic downturn, including increased cost of living and import costs."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Government policies are responsible for the state's economic downturn, including increased cost of living and import costs.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "A fascist leader has been elected.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Voters who supported a candidate due to racism are now experiencing negative economic consequences.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

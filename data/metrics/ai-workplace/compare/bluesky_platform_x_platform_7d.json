@@ -3,30 +3,37 @@
     "id": "bluesky_platform",
     "type": "platform",
     "label": "Bluesky",
-    "active_volume": 227,
+    "active_volume": 185,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.5354,
+    "base_rate_weight": 0.8043,
     "is_influencer_framing": false
   },
   "slice_b": {
     "id": "x_platform",
     "type": "platform",
     "label": "X Platform",
-    "active_volume": 165,
-    "meets_minimum_threshold": true,
-    "base_rate_weight": 0.3892,
+    "active_volume": 0,
+    "meets_minimum_threshold": false,
+    "base_rate_weight": 0.0,
     "is_influencer_framing": false
   },
   "divergence": {
-    "jsd": 0.2474,
-    "jsd_sqrt": 0.4974,
+    "jsd": 0.0,
+    "jsd_sqrt": 0.0,
     "trend": [
-      0.4974
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
     ],
     "typology": {
-      "information_asymmetry": 0.3503,
-      "interpretive": 0.2993,
-      "paradigmatic": 0.3503,
+      "information_asymmetry": 0.0,
+      "interpretive": 0.0,
+      "paradigmatic": 0.0,
       "dominant_mode": "Information Asymmetry",
       "paradigmatic_caveat": false
     }
@@ -35,25 +42,55 @@
     {
       "cluster_id": "clu_ai-workplace_000",
       "label": "AI and Jobs",
-      "salience_a": 0.0308,
-      "salience_b": 0.0485,
-      "arousal_a": 0.4,
-      "arousal_b": 0.3688,
+      "salience_a": 0.0324,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_ai-workplace_001",
-      "label": "Industrial Revolution",
-      "salience_a": 0.0396,
-      "salience_b": 0.0121,
-      "arousal_a": 0.5,
-      "arousal_b": 0.675,
+      "label": "AI and Job Market",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_ai-workplace_002",
+      "label": "AI and Employment",
+      "salience_a": 0.0378,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_003",
+      "label": "Economic Impact",
+      "salience_a": 0.0054,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_004",
+      "label": "Generative AI Unsafe",
+      "salience_a": 0.0054,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_005",
       "label": "Oracle",
       "salience_a": 0.0,
       "salience_b": 0.0,
@@ -63,199 +100,499 @@
       "mutation_b": "radicalizing"
     },
     {
-      "cluster_id": "clu_ai-workplace_003",
-      "label": "AI and Employment",
-      "salience_a": 0.0,
-      "salience_b": 0.0,
-      "arousal_a": 0,
-      "arousal_b": 0,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_ai-workplace_004",
-      "label": "Generative AI Unsafe",
-      "salience_a": 0.0,
-      "salience_b": 0.0,
-      "arousal_a": 0,
-      "arousal_b": 0,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_ai-workplace_005",
-      "label": "AI and Job Displacement",
-      "salience_a": 0.022,
-      "salience_b": 0.0242,
-      "arousal_a": 0.36,
-      "arousal_b": 0.5,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
       "cluster_id": "clu_ai-workplace_006",
-      "label": "Economic Policy",
-      "salience_a": 0.0661,
-      "salience_b": 0.1273,
-      "arousal_a": 0.43,
-      "arousal_b": 0.35,
+      "label": "AI and Data Centers",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_ai-workplace_007",
-      "label": "Universal Basic Income",
-      "salience_a": 0.0132,
+      "label": "AI and Automation Displace",
+      "salience_a": 0.0216,
       "salience_b": 0.0,
-      "arousal_a": 0.5,
+      "arousal_a": 0.4125,
       "arousal_b": 0,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
+      "mutation_a": "mainstreaming",
+      "mutation_b": "mainstreaming"
     },
     {
       "cluster_id": "clu_ai-workplace_008",
-      "label": "Corporate Greed",
-      "salience_a": 0.0132,
-      "salience_b": 0.0121,
-      "arousal_a": 0.15,
-      "arousal_b": 0.5,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
+      "label": "AI Regulation",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_ai-workplace_009",
-      "label": "Corporate Strategy",
-      "salience_a": 0.0088,
-      "salience_b": 0.0061,
+      "label": "Ai-Driven Mass Layoffs",
+      "salience_a": 0.0216,
+      "salience_b": 0.0,
       "arousal_a": 0.325,
-      "arousal_b": 0.5,
+      "arousal_b": 0,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_ai-workplace_010",
-      "label": "AI and Automation Displace",
-      "salience_a": 0.0132,
-      "salience_b": 0.0061,
-      "arousal_a": 0.7333,
-      "arousal_b": 0.85,
+      "label": "Ai-Related Layoffs Pretext",
+      "salience_a": 0.0216,
+      "salience_b": 0.0,
+      "arousal_a": 0.4125,
+      "arousal_b": 0,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_ai-workplace_011",
-      "label": "Job Market",
-      "salience_a": 0.0088,
-      "salience_b": 0.0121,
+      "label": "AI and Big Tech Industries",
+      "salience_a": 0.0108,
+      "salience_b": 0.0,
       "arousal_a": 0.5,
-      "arousal_b": 0.15,
+      "arousal_b": 0,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_ai-workplace_012",
-      "label": "Economic Impact",
-      "salience_a": 0.0132,
-      "salience_b": 0.0121,
-      "arousal_a": 0.5,
-      "arousal_b": 0.5,
+      "label": "Poster",
+      "salience_a": 0.0162,
+      "salience_b": 0.0,
+      "arousal_a": 0.7333,
+      "arousal_b": 0,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_ai-workplace_013",
-      "label": "Ai-Guided Systems",
-      "salience_a": 0.0264,
-      "salience_b": 0.0061,
-      "arousal_a": 0.325,
-      "arousal_b": 0.15,
+      "label": "Artificial General",
+      "salience_a": 0.0054,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_ai-workplace_014",
-      "label": "Corporate Efficiency",
-      "salience_a": 0.0176,
-      "salience_b": 0.0182,
-      "arousal_a": 0.4125,
-      "arousal_b": 0.3833,
+      "label": "Corporate Greed",
+      "salience_a": 0.027,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_ai-workplace_015",
-      "label": "AI Adoption in the Workplace",
-      "salience_a": 0.0132,
+      "label": "Apex Economic Development",
+      "salience_a": 0.0649,
       "salience_b": 0.0,
-      "arousal_a": 0.3833,
+      "arousal_a": 0.5,
       "arousal_b": 0,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
+      "mutation_a": "mainstreaming",
+      "mutation_b": "mainstreaming"
     },
     {
       "cluster_id": "clu_ai-workplace_016",
-      "label": "Corporate Investment",
-      "salience_a": 0.0,
-      "salience_b": 0.0121,
-      "arousal_a": 0,
-      "arousal_b": 0.325,
+      "label": "Corporate Cost-Cutting",
+      "salience_a": 0.027,
+      "salience_b": 0.0,
+      "arousal_a": 0.29,
+      "arousal_b": 0,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_ai-workplace_017",
-      "label": "Apex Economic Development",
-      "salience_a": 0.0264,
+      "label": "AI in Fast Food Leading",
+      "salience_a": 0.0054,
       "salience_b": 0.0,
-      "arousal_a": 0.4417,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_018",
+      "label": "Corporate Efficiency",
+      "salience_a": 0.0054,
+      "salience_b": 0.0,
+      "arousal_a": 0.15,
       "arousal_b": 0,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
-      "cluster_id": "clu_ai-workplace_018",
-      "label": "Online Platforms",
-      "salience_a": 0.0396,
-      "salience_b": 0.0182,
-      "arousal_a": 0.3833,
-      "arousal_b": 0.6167,
+      "cluster_id": "clu_ai-workplace_019",
+      "label": "Universal Basic Income",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
-      "cluster_id": "clu_ai-workplace_019",
-      "label": "Elites",
-      "salience_a": 0.0176,
-      "salience_b": 0.0242,
-      "arousal_a": 0.5,
-      "arousal_b": 0.675,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
       "cluster_id": "clu_ai-workplace_020",
-      "label": "AI and Creative Professions",
-      "salience_a": 0.022,
-      "salience_b": 0.0242,
-      "arousal_a": 0.43,
-      "arousal_b": 0.5,
+      "label": "Economic Inequality",
+      "salience_a": 0.0378,
+      "salience_b": 0.0,
+      "arousal_a": 0.45,
+      "arousal_b": 0,
       "mutation_a": "mainstreaming",
       "mutation_b": "mainstreaming"
     },
     {
       "cluster_id": "clu_ai-workplace_021",
-      "label": "AI Optimism Pretext",
-      "salience_a": 0.022,
+      "label": "Innovation Vs Safety",
+      "salience_a": 0.027,
       "salience_b": 0.0,
-      "arousal_a": 0.43,
+      "arousal_a": 0.36,
       "arousal_b": 0,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_ai-workplace_022",
-      "label": "AI and Big Tech Industries",
-      "salience_a": 0.0441,
+      "label": "AI Startups Exaggerating",
+      "salience_a": 0.0108,
+      "salience_b": 0.0,
+      "arousal_a": 0.15,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_023",
+      "label": "AI Adoption in the Workplace",
+      "salience_a": 0.0216,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_024",
+      "label": "Employment of College",
+      "salience_a": 0.0108,
+      "salience_b": 0.0,
+      "arousal_a": 0.325,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_025",
+      "label": "Elites",
+      "salience_a": 0.0486,
+      "salience_b": 0.0,
+      "arousal_a": 0.6167,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_026",
+      "label": "Immigration and Jobs",
+      "salience_a": 0.0054,
+      "salience_b": 0.0,
+      "arousal_a": 0.15,
+      "arousal_b": 0,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_027",
+      "label": "ARCTERMINAL",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_028",
+      "label": "Microsoft",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_029",
+      "label": "AI Implementation Successful",
+      "salience_a": 0.0054,
+      "salience_b": 0.0,
+      "arousal_a": 0.15,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_030",
+      "label": "AI and Human Collaboration",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_031",
+      "label": "AI in Recruitment Replace",
+      "salience_a": 0.0324,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_032",
+      "label": "Ai-Generated Music",
+      "salience_a": 0.0054,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_033",
+      "label": "Job Security",
+      "salience_a": 0.0108,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_034",
+      "label": "AI Infrastructure",
+      "salience_a": 0.0162,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_035",
+      "label": "Large Language Models",
+      "salience_a": 0.0324,
+      "salience_b": 0.0,
+      "arousal_a": 0.2667,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_036",
+      "label": "Capitalism",
+      "salience_a": 0.0108,
+      "salience_b": 0.0,
+      "arousal_a": 0.325,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_037",
+      "label": "AI and Creative Content Making",
+      "salience_a": 0.0054,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_038",
+      "label": "Corporate Exploitation",
+      "salience_a": 0.0054,
+      "salience_b": 0.0,
+      "arousal_a": 0.15,
+      "arousal_b": 0,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_039",
+      "label": "AI and Population Control Used",
+      "salience_a": 0.0054,
+      "salience_b": 0.0,
+      "arousal_a": 0.15,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_040",
+      "label": "Elon Musk",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_041",
+      "label": "Corporate Investment",
+      "salience_a": 0.0054,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_042",
+      "label": "Corporate Mismanagement",
+      "salience_a": 0.0054,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_043",
+      "label": "Tech Billionaires",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_044",
+      "label": "Ai-Guided Systems",
+      "salience_a": 0.027,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_045",
+      "label": "AI in Radiation Oncology",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_046",
+      "label": "AGI Timeline",
+      "salience_a": 0.0054,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_047",
+      "label": "Productivity",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_048",
+      "label": "Tech Companies",
+      "salience_a": 0.0108,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_049",
+      "label": "Job Displacement",
+      "salience_a": 0.0162,
+      "salience_b": 0.0,
+      "arousal_a": 0.6167,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_050",
+      "label": "Will Not Replace Jobs",
+      "salience_a": 0.027,
+      "salience_b": 0.0,
+      "arousal_a": 0.36,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_051",
+      "label": "Software Systems",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_052",
+      "label": "Algorithms",
+      "salience_a": 0.0108,
+      "salience_b": 0.0,
+      "arousal_a": 0.325,
+      "arousal_b": 0,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_053",
+      "label": "Hermes Agent",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_054",
+      "label": "Meta",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_055",
+      "label": "Apple",
+      "salience_a": 0.027,
       "salience_b": 0.0,
       "arousal_a": 0.43,
       "arousal_b": 0,
@@ -263,384 +600,154 @@
       "mutation_b": "stable"
     },
     {
-      "cluster_id": "clu_ai-workplace_023",
-      "label": "AI and the Workforce",
-      "salience_a": 0.0044,
-      "salience_b": 0.0061,
-      "arousal_a": 0.85,
-      "arousal_b": 0.5,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_ai-workplace_024",
-      "label": "Immigration and Jobs",
-      "salience_a": 0.0044,
-      "salience_b": 0.0,
-      "arousal_a": 0.5,
-      "arousal_b": 0,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_ai-workplace_025",
-      "label": "Leadership and Job Security",
-      "salience_a": 0.0176,
-      "salience_b": 0.0242,
-      "arousal_a": 0.325,
-      "arousal_b": 0.2375,
-      "mutation_a": "mainstreaming",
-      "mutation_b": "mainstreaming"
-    },
-    {
-      "cluster_id": "clu_ai-workplace_026",
-      "label": "Large Language Models",
-      "salience_a": 0.0132,
-      "salience_b": 0.0,
-      "arousal_a": 0.3833,
-      "arousal_b": 0,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_ai-workplace_027",
-      "label": "Ai-Generated Music",
-      "salience_a": 0.0088,
-      "salience_b": 0.0061,
-      "arousal_a": 0.5,
-      "arousal_b": 0.15,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_ai-workplace_028",
-      "label": "AI in Fast Food Leading",
-      "salience_a": 0.022,
-      "salience_b": 0.0121,
-      "arousal_a": 0.5,
-      "arousal_b": 0.5,
-      "mutation_a": "mainstreaming",
-      "mutation_b": "mainstreaming"
-    },
-    {
-      "cluster_id": "clu_ai-workplace_029",
-      "label": "Corporate Cost-Cutting",
-      "salience_a": 0.0264,
-      "salience_b": 0.0061,
-      "arousal_a": 0.3833,
-      "arousal_b": 0.5,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_ai-workplace_030",
-      "label": "AI and Human Collaboration",
-      "salience_a": 0.0044,
-      "salience_b": 0.0182,
-      "arousal_a": 0.15,
-      "arousal_b": 0.5,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_ai-workplace_031",
-      "label": "Microsoft",
-      "salience_a": 0.0044,
-      "salience_b": 0.0,
-      "arousal_a": 0.15,
-      "arousal_b": 0,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_ai-workplace_032",
-      "label": "Air Traffic Controller Career",
-      "salience_a": 0.0088,
-      "salience_b": 0.0061,
-      "arousal_a": 0.5,
-      "arousal_b": 0.15,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_ai-workplace_033",
-      "label": "Saas Companies",
-      "salience_a": 0.0,
-      "salience_b": 0.0,
-      "arousal_a": 0,
-      "arousal_b": 0,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_ai-workplace_034",
-      "label": "AI and Related Technologies",
-      "salience_a": 0.0088,
-      "salience_b": 0.0182,
-      "arousal_a": 0.325,
-      "arousal_b": 0.15,
-      "mutation_a": "mainstreaming",
-      "mutation_b": "mainstreaming"
-    },
-    {
-      "cluster_id": "clu_ai-workplace_035",
-      "label": "AI Development Promoted",
-      "salience_a": 0.0176,
-      "salience_b": 0.0061,
-      "arousal_a": 0.5,
-      "arousal_b": 0.85,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_ai-workplace_036",
-      "label": "Sam Altman",
-      "salience_a": 0.0264,
-      "salience_b": 0.0,
-      "arousal_a": 0.5,
-      "arousal_b": 0,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_ai-workplace_037",
-      "label": "Hermes Agent",
-      "salience_a": 0.0,
-      "salience_b": 0.0182,
-      "arousal_a": 0,
-      "arousal_b": 0.2667,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_ai-workplace_038",
-      "label": "Workforce Development",
-      "salience_a": 0.0044,
-      "salience_b": 0.0,
-      "arousal_a": 0.5,
-      "arousal_b": 0,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_ai-workplace_039",
-      "label": "Ceos",
-      "salience_a": 0.0176,
-      "salience_b": 0.0364,
-      "arousal_a": 0.7625,
-      "arousal_b": 0.4417,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_ai-workplace_040",
-      "label": "Job Applications",
-      "salience_a": 0.0132,
-      "salience_b": 0.0242,
-      "arousal_a": 0.5,
-      "arousal_b": 0.325,
-      "mutation_a": "mainstreaming",
-      "mutation_b": "mainstreaming"
-    },
-    {
-      "cluster_id": "clu_ai-workplace_041",
-      "label": "AGI Timeline",
-      "salience_a": 0.0176,
-      "salience_b": 0.0909,
-      "arousal_a": 0.4125,
-      "arousal_b": 0.4067,
-      "mutation_a": "mainstreaming",
-      "mutation_b": "mainstreaming"
-    },
-    {
-      "cluster_id": "clu_ai-workplace_042",
-      "label": "Skilled Tech Workers in India",
-      "salience_a": 0.0044,
-      "salience_b": 0.0061,
-      "arousal_a": 0.15,
-      "arousal_b": 0.15,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_ai-workplace_043",
-      "label": "AI and Robots Intended",
-      "salience_a": 0.0044,
-      "salience_b": 0.0182,
-      "arousal_a": 0.15,
-      "arousal_b": 0.2667,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_ai-workplace_044",
-      "label": "AI in Recruitment Replace",
-      "salience_a": 0.0088,
-      "salience_b": 0.0242,
-      "arousal_a": 0.325,
-      "arousal_b": 0.5,
-      "mutation_a": "mainstreaming",
-      "mutation_b": "mainstreaming"
-    },
-    {
-      "cluster_id": "clu_ai-workplace_045",
-      "label": "Elon Musk",
-      "salience_a": 0.0088,
-      "salience_b": 0.0121,
-      "arousal_a": 0.325,
-      "arousal_b": 0.15,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_ai-workplace_046",
-      "label": "Job Creation",
-      "salience_a": 0.0176,
-      "salience_b": 0.0545,
-      "arousal_a": 0.325,
-      "arousal_b": 0.2667,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_ai-workplace_047",
-      "label": "NHS England",
-      "salience_a": 0.0044,
-      "salience_b": 0.0182,
-      "arousal_a": 0.15,
-      "arousal_b": 0.3833,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_ai-workplace_048",
-      "label": "Capitalism",
-      "salience_a": 0.0308,
-      "salience_b": 0.0061,
-      "arousal_a": 0.5,
-      "arousal_b": 0.5,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_ai-workplace_049",
-      "label": "Employment of College",
-      "salience_a": 0.0088,
-      "salience_b": 0.0061,
-      "arousal_a": 0.5,
-      "arousal_b": 0.15,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_ai-workplace_050",
-      "label": "Tesla",
-      "salience_a": 0.0088,
-      "salience_b": 0.0242,
-      "arousal_a": 0.325,
-      "arousal_b": 0.2375,
-      "mutation_a": "mainstreaming",
-      "mutation_b": "mainstreaming"
-    },
-    {
-      "cluster_id": "clu_ai-workplace_051",
-      "label": "Tech Companies",
-      "salience_a": 0.0308,
-      "salience_b": 0.0121,
-      "arousal_a": 0.35,
-      "arousal_b": 0.5,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_ai-workplace_052",
-      "label": "Meta",
-      "salience_a": 0.0044,
-      "salience_b": 0.0061,
-      "arousal_a": 0.5,
-      "arousal_b": 0.15,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_ai-workplace_053",
-      "label": "Layoffs",
-      "salience_a": 0.0264,
-      "salience_b": 0.0061,
-      "arousal_a": 0.3833,
-      "arousal_b": 0.15,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_ai-workplace_054",
-      "label": "AI Tools",
-      "salience_a": 0.0176,
-      "salience_b": 0.0,
-      "arousal_a": 0.5,
-      "arousal_b": 0,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_ai-workplace_055",
-      "label": "Businesses",
-      "salience_a": 0.0044,
-      "salience_b": 0.0121,
-      "arousal_a": 0.15,
-      "arousal_b": 0.325,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
       "cluster_id": "clu_ai-workplace_056",
-      "label": "Autonomous Systems",
-      "salience_a": 0.0,
+      "label": "AI and Workers Expose",
+      "salience_a": 0.0108,
       "salience_b": 0.0,
-      "arousal_a": 0,
+      "arousal_a": 0.15,
       "arousal_b": 0,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_ai-workplace_057",
-      "label": "AI in Radiation Oncology",
+      "label": "AI and Cybersecurity",
+      "salience_a": 0.0108,
+      "salience_b": 0.0,
+      "arousal_a": 0.325,
+      "arousal_b": 0,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_058",
+      "label": "Businesses",
       "salience_a": 0.0,
-      "salience_b": 0.0121,
+      "salience_b": 0.0,
       "arousal_a": 0,
-      "arousal_b": 0.325,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_059",
+      "label": "Workforce Development",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
       "mutation_a": "stable",
       "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_060",
+      "label": "Job Creation",
+      "salience_a": 0.0162,
+      "salience_b": 0.0,
+      "arousal_a": 0.2667,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_061",
+      "label": "AI Skills Valuable",
+      "salience_a": 0.0216,
+      "salience_b": 0.0,
+      "arousal_a": 0.2375,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_062",
+      "label": "Autonomous Systems",
+      "salience_a": 0.0054,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_063",
+      "label": "NHS England",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_064",
+      "label": "AI and Labor",
+      "salience_a": 0.0054,
+      "salience_b": 0.0,
+      "arousal_a": 0.15,
+      "arousal_b": 0,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_065",
+      "label": "Job Applications",
+      "salience_a": 0.0216,
+      "salience_b": 0.0,
+      "arousal_a": 0.4125,
+      "arousal_b": 0,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_066",
+      "label": "Automation and Job",
+      "salience_a": 0.0162,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_ai-workplace_067",
+      "label": "Cybersecurity Jobs",
+      "salience_a": 0.0216,
+      "salience_b": 0.0,
+      "arousal_a": 0.675,
+      "arousal_b": 0,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "mainstreaming"
     }
   ],
   "arousal_comparison": {
-    "slice_a_avg": 0.4383,
-    "slice_b_avg": 0.3727
+    "slice_a_avg": 0.4281,
+    "slice_b_avg": 0
   },
   "exposure_comparison": {
     "slice_a": {
-      "value": 0.942,
+      "value": 1,
       "confidence_interval": [
-        0.8626,
+        0.925,
         1
       ],
       "baseline": "global",
       "time_window": "7d",
       "sparkline": [
-        0.942
+        1
       ],
       "source_distribution": "production"
     },
     "slice_b": {
-      "value": 0.6877,
+      "value": 0,
       "confidence_interval": [
-        0.5893,
-        0.7861
+        0,
+        0.15
       ],
       "baseline": "global",
       "time_window": "7d",
       "sparkline": [
-        0.6877
+        0
       ],
       "source_distribution": "production"
     }

@@ -1,70 +1,70 @@
 {
   "events": [
     {
-      "id": "evt_d31ae199297a",
+      "id": "evt_6278e2eff9d3",
       "type": "contestation_emergence",
-      "timestamp": "2026-05-02T21:00:23.059143+00:00",
-      "claim_id": "israel-palestine_bluesky_f7596189_1",
+      "timestamp": "2026-05-23T20:48:18.908499+00:00",
+      "claim_id": "israel-palestine_bluesky_901cf74c_0",
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.84,
-      "summary": "Active contestation in \"Muslims and Jews\" — 5 pro vs 4 anti",
+      "confidence": 0.9,
+      "summary": "Active contestation in \"Hamas and Palestinian People\" — 3 pro vs 3 anti",
       "detail": {
-        "cluster_id": "clu_israel-palestine_014",
-        "pro_count": 5,
-        "anti_count": 4,
-        "balance": 0.8
-      }
-    },
-    {
-      "id": "evt_bfb5fb9b8751",
-      "type": "phase_transition",
-      "timestamp": "2026-05-02T21:00:23.059143+00:00",
-      "claim_id": null,
-      "slice_id": null,
-      "severity": "high",
-      "confidence": 0.79,
-      "summary": "\"Israel\" cluster is shifting toward more extreme language",
-      "detail": {
-        "cluster_id": "clu_israel-palestine_000",
-        "direction": "radicalizing",
-        "magnitude": 0.6414
+        "cluster_id": "clu_israel-palestine_037",
+        "pro_count": 3,
+        "anti_count": 3,
+        "balance": 1.0
       }
     },
     {
       "id": "evt_5952fba1b5f4",
       "type": "phase_transition",
-      "timestamp": "2026-05-02T21:00:23.059143+00:00",
+      "timestamp": "2026-05-23T20:48:18.908499+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
       "confidence": 0.81,
       "summary": "\"'Palestine 36' (Film)\" cluster is shifting toward more extreme language",
       "detail": {
-        "cluster_id": "clu_israel-palestine_001",
+        "cluster_id": "clu_israel-palestine_000",
         "direction": "radicalizing",
-        "magnitude": 0.7124
+        "magnitude": 0.7114
       }
     },
     {
       "id": "evt_29f866a186f8",
       "type": "phase_transition",
-      "timestamp": "2026-05-02T21:00:23.059143+00:00",
+      "timestamp": "2026-05-23T20:48:18.908499+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
       "confidence": 0.82,
       "summary": "\"Western Sahara\" cluster is shifting toward more extreme language",
       "detail": {
-        "cluster_id": "clu_israel-palestine_002",
+        "cluster_id": "clu_israel-palestine_001",
         "direction": "radicalizing",
-        "magnitude": 0.7278
+        "magnitude": 0.7196
       }
     },
     {
       "id": "evt_ba17ab602eee",
       "type": "phase_transition",
-      "timestamp": "2026-05-02T21:00:23.059143+00:00",
+      "timestamp": "2026-05-23T20:48:18.908499+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.82,
+      "summary": "\"Israel-Hamas Conflict\" cluster is shifting toward more extreme language",
+      "detail": {
+        "cluster_id": "clu_israel-palestine_002",
+        "direction": "radicalizing",
+        "magnitude": 0.7276
+      }
+    },
+    {
+      "id": "evt_e3107401fda9",
+      "type": "phase_transition",
+      "timestamp": "2026-05-23T20:48:18.908499+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
@@ -73,127 +73,127 @@
       "detail": {
         "cluster_id": "clu_israel-palestine_003",
         "direction": "radicalizing",
-        "magnitude": 0.7314
+        "magnitude": 0.7468
       }
     },
     {
-      "id": "evt_7fe32217032d",
+      "id": "evt_bf1b7279a98a",
       "type": "divergence_shift",
-      "timestamp": "2026-05-02T21:00:23.059143+00:00",
+      "timestamp": "2026-05-23T20:48:18.908499+00:00",
       "claim_id": null,
-      "slice_id": "bbc_world_platform",
+      "slice_id": "bluesky_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Strong narrative split between bbc_world and Bluesky",
+      "summary": "Strong narrative split between Bluesky and business_insider",
       "detail": {
-        "jsd": 0.754,
+        "jsd": 1.0,
         "platforms": [
-          "bbc_world",
-          "bluesky"
+          "bluesky",
+          "business_insider"
         ],
         "window_hours": 168
       }
     },
     {
-      "id": "evt_2a801d69de52",
+      "id": "evt_5b605bc7694a",
       "type": "divergence_shift",
-      "timestamp": "2026-05-02T21:00:23.059143+00:00",
+      "timestamp": "2026-05-23T20:48:18.908499+00:00",
       "claim_id": null,
-      "slice_id": "bbc_world_platform",
+      "slice_id": "bluesky_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Strong narrative split between bbc_world and daily_wire",
+      "summary": "Strong narrative split between Bluesky and common_dreams",
       "detail": {
-        "jsd": 1.0,
+        "jsd": 0.8909,
         "platforms": [
-          "bbc_world",
+          "bluesky",
+          "common_dreams"
+        ],
+        "window_hours": 168
+      }
+    },
+    {
+      "id": "evt_bfe5a5c67852",
+      "type": "divergence_shift",
+      "timestamp": "2026-05-23T20:48:18.908499+00:00",
+      "claim_id": null,
+      "slice_id": "bluesky_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Strong narrative split between Bluesky and daily_wire",
+      "detail": {
+        "jsd": 0.9473,
+        "platforms": [
+          "bluesky",
           "daily_wire"
         ],
         "window_hours": 168
       }
     },
     {
-      "id": "evt_b7d90095976d",
+      "id": "evt_6323d990083a",
       "type": "divergence_shift",
-      "timestamp": "2026-05-02T21:00:23.059143+00:00",
+      "timestamp": "2026-05-23T20:48:18.908499+00:00",
       "claim_id": null,
-      "slice_id": "bbc_world_platform",
-      "severity": "high",
-      "confidence": 0.81,
-      "summary": "Significant narrative divergence between bbc_world and fox_news",
-      "detail": {
-        "jsd": 0.3103,
-        "platforms": [
-          "bbc_world",
-          "fox_news"
-        ],
-        "window_hours": 168
-      }
-    },
-    {
-      "id": "evt_92077e8fb117",
-      "type": "divergence_shift",
-      "timestamp": "2026-05-02T21:00:23.059143+00:00",
-      "claim_id": null,
-      "slice_id": "bbc_world_platform",
+      "slice_id": "bluesky_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Strong narrative split between bbc_world and fox_politics",
+      "summary": "Strong narrative split between Bluesky and france24",
       "detail": {
-        "jsd": 1.0,
+        "jsd": 0.8334,
         "platforms": [
-          "bbc_world",
-          "fox_politics"
+          "bluesky",
+          "france24"
         ],
         "window_hours": 168
       }
     },
     {
-      "id": "evt_cf95be239927",
+      "id": "evt_c5624ff3bb0d",
       "type": "arousal_escalation",
-      "timestamp": "2026-05-04T01:00:23.059143+00:00",
-      "claim_id": "israel-palestine_bluesky_f7596189_0",
-      "slice_id": null,
-      "severity": "high",
-      "confidence": 0.89,
-      "summary": "Heated language rising in \"Israel\" — 94% emotionally charged claims",
-      "detail": {
-        "cluster_id": "clu_israel-palestine_000",
-        "high_arousal_count": 18,
-        "total": 19,
-        "ratio": 0.95
-      }
-    },
-    {
-      "id": "evt_db04713d8b24",
-      "type": "arousal_escalation",
-      "timestamp": "2026-05-04T01:00:23.059143+00:00",
-      "claim_id": "israel-palestine_bluesky_4ed8609c_0",
+      "timestamp": "2026-05-25T00:48:18.908499+00:00",
+      "claim_id": "israel-palestine_bluesky_09162eff_0",
       "slice_id": null,
       "severity": "high",
       "confidence": 0.9,
-      "summary": "Heated language rising in \"Ethnic Cleansing\" — 100% emotionally charged claims",
+      "summary": "Heated language rising in \"Israel and Palestine\" — 100% emotionally charged claims",
       "detail": {
-        "cluster_id": "clu_israel-palestine_009",
-        "high_arousal_count": 4,
-        "total": 4,
+        "cluster_id": "clu_israel-palestine_004",
+        "high_arousal_count": 6,
+        "total": 6,
         "ratio": 1.0
       }
     },
     {
-      "id": "evt_3c4523e2ada0",
+      "id": "evt_5e42376713f4",
       "type": "arousal_escalation",
-      "timestamp": "2026-05-04T01:00:23.059143+00:00",
-      "claim_id": "israel-palestine_bluesky_fb189c39_1",
+      "timestamp": "2026-05-25T00:48:18.908499+00:00",
+      "claim_id": "israel-palestine_bluesky_3141388b_0",
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.84,
-      "summary": "Heated language rising in \"Palestinians\" — 77% emotionally charged claims",
+      "confidence": 0.9,
+      "summary": "Heated language rising in \"Israel Subject\" — 100% emotionally charged claims",
       "detail": {
-        "cluster_id": "clu_israel-palestine_016",
-        "high_arousal_count": 7,
-        "total": 9,
-        "ratio": 0.78
+        "cluster_id": "clu_israel-palestine_005",
+        "high_arousal_count": 3,
+        "total": 3,
+        "ratio": 1.0
+      }
+    },
+    {
+      "id": "evt_753d681f9b1e",
+      "type": "arousal_escalation",
+      "timestamp": "2026-05-25T00:48:18.908499+00:00",
+      "claim_id": "israel-palestine_bluesky_aacb766c_0",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.9,
+      "summary": "Heated language rising in \"Israeli-Palestinian Conflict\" — 100% emotionally charged claims",
+      "detail": {
+        "cluster_id": "clu_israel-palestine_018",
+        "high_arousal_count": 4,
+        "total": 4,
+        "ratio": 1.0
       }
     },
     {
@@ -257,127 +257,95 @@
       "source": "fed_register"
     },
     {
-      "id": "evt_e4418c224ad5",
+      "id": "evt_e46b6cc3a87b",
       "type": "contestation_emergence",
-      "timestamp": "2026-05-02T21:00:23.059143+00:00",
-      "claim_id": "israel-palestine_national_catholic_register_3c8e6ef4_0",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.75,
-      "summary": "Active contestation in \"Christian Population\" — 3 pro vs 6 anti",
-      "detail": {
-        "cluster_id": "clu_israel-palestine_010",
-        "pro_count": 3,
-        "anti_count": 6,
-        "balance": 0.5
-      }
-    },
-    {
-      "id": "evt_f2c9840404e0",
-      "type": "contestation_emergence",
-      "timestamp": "2026-05-02T21:00:23.059143+00:00",
-      "claim_id": "israel-palestine_the_national_261057cf_1",
+      "timestamp": "2026-05-23T20:48:18.908499+00:00",
+      "claim_id": "israel-palestine_bluesky_eccb9d7e_0",
       "slice_id": null,
       "severity": "medium",
       "confidence": 0.78,
-      "summary": "Active contestation in \"Military Intervention\" — 3 pro vs 5 anti",
+      "summary": "Active contestation in \"Iran War\" — 3 pro vs 5 anti",
       "detail": {
-        "cluster_id": "clu_israel-palestine_017",
+        "cluster_id": "clu_israel-palestine_014",
         "pro_count": 3,
         "anti_count": 5,
         "balance": 0.6
       }
     },
     {
-      "id": "evt_c59237f97443",
-      "type": "lead_lag",
-      "timestamp": "2026-05-03T03:00:23.059143+00:00",
-      "claim_id": "israel-palestine_bluesky_f7596189_0",
+      "id": "evt_6f5c1ca5534a",
+      "type": "momentum_spike",
+      "timestamp": "2026-05-24T21:48:18.908499+00:00",
+      "claim_id": "israel-palestine_bluesky_0061d3ef_2",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.88,
-      "summary": "Bluesky leads X Platform by ~78h in \"Israel\"",
+      "confidence": 0.58,
+      "summary": "Rapid attention surge in \"Gaza War\" (1 claims)",
       "detail": {
-        "source_platform": "bluesky",
-        "target_platform": "x",
-        "lag_hours": 78.6,
-        "cluster_id": "clu_israel-palestine_000"
+        "cluster_id": "clu_israel-palestine_017",
+        "avg_momentum": 0.645,
+        "member_count": 1
       }
     },
     {
       "id": "evt_287f99335d9e",
       "type": "momentum_spike",
-      "timestamp": "2026-05-03T17:00:23.059143+00:00",
-      "claim_id": "israel-palestine_bluesky_37cddee3_0",
+      "timestamp": "2026-05-24T21:48:18.908499+00:00",
+      "claim_id": "israel-palestine_bluesky_2bfc2100_0",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.56,
-      "summary": "Rapid attention surge in \"Dr. Hussam Abu Safiya\" (7 claims)",
+      "confidence": 0.58,
+      "summary": "Rapid attention surge in \"Sabrina Singh\" (1 claims)",
       "detail": {
-        "cluster_id": "clu_israel-palestine_012",
-        "avg_momentum": 0.617,
-        "member_count": 7
+        "cluster_id": "clu_israel-palestine_026",
+        "avg_momentum": 0.645,
+        "member_count": 1
       }
     },
     {
       "id": "evt_3fdcce3efd02",
       "type": "momentum_spike",
-      "timestamp": "2026-05-03T17:00:23.059143+00:00",
-      "claim_id": "israel-palestine_the_national_261057cf_1",
+      "timestamp": "2026-05-24T21:48:18.908499+00:00",
+      "claim_id": "israel-palestine_bluesky_72e4f976_0",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.55,
-      "summary": "Rapid attention surge in \"Military Intervention\" (8 claims)",
+      "confidence": 0.58,
+      "summary": "Rapid attention surge in \"Dr. Hussam Abu Safiya\" (1 claims)",
       "detail": {
-        "cluster_id": "clu_israel-palestine_017",
-        "avg_momentum": 0.615,
-        "member_count": 8
-      }
-    },
-    {
-      "id": "evt_6f5c1ca5534a",
-      "type": "momentum_spike",
-      "timestamp": "2026-05-04T01:00:23.059143+00:00",
-      "claim_id": "israel-palestine_bluesky_9a659e83_1",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.6,
-      "summary": "Rapid attention surge in \"Has Resulted in a High\" (3 claims)",
-      "detail": {
-        "cluster_id": "clu_israel-palestine_072",
-        "avg_momentum": 0.664,
-        "member_count": 3
-      }
-    },
-    {
-      "id": "evt_953a3bbef6c8",
-      "type": "arousal_escalation",
-      "timestamp": "2026-05-04T01:00:23.059143+00:00",
-      "claim_id": "israel-palestine_bluesky_84f59255_0",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.77,
-      "summary": "Heated language rising in \"Jewish People\" — 47% emotionally charged claims",
-      "detail": {
-        "cluster_id": "clu_israel-palestine_015",
-        "high_arousal_count": 8,
-        "total": 17,
-        "ratio": 0.47
+        "cluster_id": "clu_israel-palestine_027",
+        "avg_momentum": 0.645,
+        "member_count": 1
       }
     },
     {
       "id": "evt_0212fd9e385e",
       "type": "momentum_spike",
-      "timestamp": "2026-05-04T03:00:23.059143+00:00",
-      "claim_id": "israel-palestine_the_national_a3d7b72c_0",
+      "timestamp": "2026-05-24T22:48:18.908499+00:00",
+      "claim_id": "israel-palestine_bluesky_8bdfd5f5_2",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.61,
-      "summary": "Rapid attention surge in \"Biden Administration\" (5 claims)",
+      "confidence": 0.59,
+      "summary": "Rapid attention surge in \"Biden Administration\" (2 claims)",
       "detail": {
-        "cluster_id": "clu_israel-palestine_025",
-        "avg_momentum": 0.678,
-        "member_count": 5
+        "cluster_id": "clu_israel-palestine_034",
+        "avg_momentum": 0.653,
+        "member_count": 2
+      }
+    },
+    {
+      "id": "evt_db9f68174bc9",
+      "type": "arousal_escalation",
+      "timestamp": "2026-05-25T00:48:18.908499+00:00",
+      "claim_id": "israel-palestine_bluesky_42bbf824_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.8,
+      "summary": "Heated language rising in \"Keir Starmer\" — 60% emotionally charged claims",
+      "detail": {
+        "cluster_id": "clu_israel-palestine_016",
+        "high_arousal_count": 3,
+        "total": 5,
+        "ratio": 0.6
       }
     },
     {
@@ -479,6 +447,38 @@
       "summary": "WRC-15 Order",
       "detail": "This document makes non-substantive, editorial revisions to the Table of Frequency Allocations (Allocation Table) and to various other Commission rules. The purpose of this action is to update the International Table of Frequency Allocations (International Table) to reflect the decisions made at an ",
       "source": "fed_register"
+    },
+    {
+      "id": "evt_f71a190ceb1c",
+      "type": "lead_lag",
+      "timestamp": "2026-05-26T15:48:18.908499+00:00",
+      "claim_id": "israel-palestine_bluesky_c1c81a34_0",
+      "slice_id": null,
+      "severity": "low",
+      "confidence": 0.7,
+      "summary": "bbc_world leads dw_news by ~17h in \"US Military Actions\"",
+      "detail": {
+        "source_platform": "bbc_world",
+        "target_platform": "dw_news",
+        "lag_hours": 17.5,
+        "cluster_id": "clu_israel-palestine_007"
+      }
+    },
+    {
+      "id": "evt_58dd2e73ce6c",
+      "type": "lead_lag",
+      "timestamp": "2026-05-27T02:48:18.908499+00:00",
+      "claim_id": "israel-palestine_bluesky_5ec1cf02_0",
+      "slice_id": null,
+      "severity": "low",
+      "confidence": 0.86,
+      "summary": "قناة_العربية leads dw_news by ~6h in \"Israel-Hamas Conflict\"",
+      "detail": {
+        "source_platform": "قناة_العربية",
+        "target_platform": "dw_news",
+        "lag_hours": 6.8,
+        "cluster_id": "clu_israel-palestine_002"
+      }
     },
     {
       "id": "gdelt_94208ac434c6",

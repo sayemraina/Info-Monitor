@@ -1,0 +1,204 @@
+{
+  "claim": {
+    "text": "Nvidia's high demand and thinning market breadth suggest a potential market top.",
+    "subject": "Nvidia",
+    "assertion": "suggest a potential market top",
+    "framing": "market cycle",
+    "stance": "neutral",
+    "confidence": 0.7,
+    "arousal": "medium",
+    "register": "journalistic",
+    "id": "ai-bubble_benzinga_79739e16_2",
+    "cluster_id": "clu_ai-bubble_034",
+    "concept_id": "concept_ai-bubble_000",
+    "first_seen_platform": "benzinga",
+    "first_seen_timestamp": "2026-05-26T20:52:13Z",
+    "source_document_id": "f00c9d3333b4632b",
+    "source_platform": "benzinga",
+    "source_timestamp": "2026-05-26T20:52:13Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "elite_media"
+  },
+  "momentum": {
+    "value": 0.48,
+    "confidence_interval": [
+      0.38,
+      0.58
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.48
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0,
+    "friction_quadrant": "dead"
+  },
+  "salience": {
+    "value": 0.318,
+    "confidence_interval": [
+      0.1919,
+      0.4441
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.318
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0,
+    "confidence_interval": [
+      0,
+      0.15
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.7,
+    "factors": []
+  },
+  "provenance": {
+    "first_platform": "Benzinga",
+    "first_timestamp": "2026-05-26T20:52:13Z",
+    "lead_lag": [
+      {
+        "platform": "Economic Times",
+        "lag_hours": 9.4
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_ai-bubble_000",
+    "hops": [
+      {
+        "platform": "Benzinga",
+        "timestamp": "2026-05-26T20:52:13+00:00",
+        "claim_id": "ai-bubble_benzinga_79739e16_2",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Economic Times",
+        "timestamp": "2026-05-27T06:19:06+00:00",
+        "claim_id": "ai-bubble_benzinga_79739e16_2",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "ai-bubble_economic_times_3bac3ca2_1",
+      "similarity": 0.4341,
+      "text": "Nvidia's investment in Nokia signals Nokia's potential as a key player in AI networking infrastructure."
+    },
+    {
+      "claim_id": "ai-bubble_economic_times_3bac3ca2_0",
+      "similarity": 0.341,
+      "text": "Nokia's stock performance has significantly improved due to its involvement in AI infrastructure."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Nokia's stock performance has significantly improved due to its involvement in AI infrastructure.",
+      "platform": "Economic Times",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Nvidia's investment in Nokia signals Nokia's potential as a key player in AI networking infrastructure.",
+      "platform": "Economic Times",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

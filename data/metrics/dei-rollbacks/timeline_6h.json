@@ -1,63 +1,63 @@
 {
   "events": [
     {
-      "id": "evt_1e0309e0fac8",
+      "id": "evt_95c2ddef0b32",
       "type": "phase_transition",
-      "timestamp": "2026-05-06T06:17:19.509539+00:00",
+      "timestamp": "2026-05-27T05:59:12.071821+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
       "confidence": 0.83,
-      "summary": "\"Openai\" cluster is shifting toward more extreme language",
+      "summary": "\"AI and Employment\" cluster is shifting toward more extreme language",
       "detail": {
         "cluster_id": "clu_dei-rollbacks_000",
         "direction": "radicalizing",
-        "magnitude": 0.7604
+        "magnitude": 0.7549
       }
     },
     {
-      "id": "evt_e36efb40409b",
+      "id": "evt_1e0309e0fac8",
       "type": "phase_transition",
-      "timestamp": "2026-05-06T06:17:19.509539+00:00",
-      "claim_id": null,
-      "slice_id": null,
-      "severity": "high",
-      "confidence": 0.79,
-      "summary": "\"Target\" cluster is shifting toward more extreme language",
-      "detail": {
-        "cluster_id": "clu_dei-rollbacks_002",
-        "direction": "radicalizing",
-        "magnitude": 0.6227
-      }
-    },
-    {
-      "id": "evt_f077b240a02c",
-      "type": "phase_transition",
-      "timestamp": "2026-05-06T06:17:19.509539+00:00",
-      "claim_id": null,
-      "slice_id": null,
-      "severity": "high",
-      "confidence": 0.83,
-      "summary": "\"Republican Farm Bill\" cluster is shifting toward more extreme language",
-      "detail": {
-        "cluster_id": "clu_dei-rollbacks_003",
-        "direction": "radicalizing",
-        "magnitude": 0.7664
-      }
-    },
-    {
-      "id": "evt_8dd8722c3dd7",
-      "type": "phase_transition",
-      "timestamp": "2026-05-06T06:17:19.509539+00:00",
+      "timestamp": "2026-05-27T05:59:12.071821+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
       "confidence": 0.81,
       "summary": "\"Immigration\" cluster is shifting toward more extreme language",
       "detail": {
+        "cluster_id": "clu_dei-rollbacks_001",
+        "direction": "radicalizing",
+        "magnitude": 0.7049
+      }
+    },
+    {
+      "id": "evt_e36efb40409b",
+      "type": "phase_transition",
+      "timestamp": "2026-05-27T05:59:12.071821+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.8,
+      "summary": "\"Costco\" cluster is shifting toward more extreme language",
+      "detail": {
         "cluster_id": "clu_dei-rollbacks_004",
         "direction": "radicalizing",
-        "magnitude": 0.6957
+        "magnitude": 0.6733
+      }
+    },
+    {
+      "id": "evt_f077b240a02c",
+      "type": "phase_transition",
+      "timestamp": "2026-05-27T05:59:12.071821+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.79,
+      "summary": "\"Laura Rutledge\" cluster is shifting toward more extreme language",
+      "detail": {
+        "cluster_id": "clu_dei-rollbacks_005",
+        "direction": "radicalizing",
+        "magnitude": 0.6291
       }
     },
     {
@@ -89,21 +89,6 @@
       "summary": "Addressing DEI Discrimination by Federal Contractors",
       "detail": "Presidential Document by Executive Office of the President",
       "source": "fed_register"
-    },
-    {
-      "id": "evt_c409a394ec37",
-      "type": "momentum_spike",
-      "timestamp": "2026-05-06T07:17:19.509539+00:00",
-      "claim_id": "dei-rollbacks_bluesky_ce361d90_0",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.58,
-      "summary": "Rapid attention surge in \"Voting Rights Act\" (1 claims)",
-      "detail": {
-        "cluster_id": "clu_dei-rollbacks_015",
-        "avg_momentum": 0.645,
-        "member_count": 1
-      }
     },
     {
       "id": "poly_544092",
@@ -524,7 +509,17 @@
       "summary": "Agency Information Collection Activities; Proposed Collection; Comment Request; Social Impact Partnerships To Pay for Results Act (SIPPRA) Program Review",
       "detail": "The Department of the Treasury, as part of its continuing effort to reduce paperwork and respondent burden, invites the general public and other federal agencies to comment on the proposed information collections listed below, in accordance with the Paperwork Reduction Act of 1995. Treasury has comp",
       "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2026-04264",
+      "type": "external_signal",
+      "timestamp": "2026-03-04T00:00:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Combined Notice of Filings #1",
+      "detail": "Notice by Energy Department, Federal Energy Regulatory Commission",
+      "source": "fed_register"
     }
   ],
-  "total_count": 72
+  "total_count": 71
 }

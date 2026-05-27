@@ -3,30 +3,30 @@
     "id": "bluesky_platform",
     "type": "platform",
     "label": "Bluesky",
-    "active_volume": 140,
+    "active_volume": 144,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.5072,
+    "base_rate_weight": 0.5783,
     "is_influencer_framing": false
   },
   "slice_b": {
     "id": "elite_media_all",
     "type": "source_type",
     "label": "Elite Media",
-    "active_volume": 42,
+    "active_volume": 105,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.1522,
+    "base_rate_weight": 0.4217,
     "is_influencer_framing": false
   },
   "divergence": {
-    "jsd": 0.4394,
-    "jsd_sqrt": 0.6629,
+    "jsd": 0.3694,
+    "jsd_sqrt": 0.6078,
     "trend": [
-      0.6629
+      0.6078
     ],
     "typology": {
-      "information_asymmetry": 0.3615,
-      "interpretive": 0.2771,
-      "paradigmatic": 0.3615,
+      "information_asymmetry": 0.3697,
+      "interpretive": 0.2606,
+      "paradigmatic": 0.3697,
       "dominant_mode": "Information Asymmetry",
       "paradigmatic_caveat": false
     }
@@ -35,9 +35,9 @@
     {
       "cluster_id": "clu_immigration_001",
       "label": "Birthright Citizenship",
-      "salience_a": 0.0143,
+      "salience_a": 0.0,
       "salience_b": 0.0,
-      "arousal_a": 0.675,
+      "arousal_a": 0,
       "arousal_b": 0,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
@@ -45,9 +45,9 @@
     {
       "cluster_id": "clu_immigration_002",
       "label": "Temporary Protected Status",
-      "salience_a": 0.0071,
+      "salience_a": 0.0,
       "salience_b": 0.0,
-      "arousal_a": 0.5,
+      "arousal_a": 0,
       "arousal_b": 0,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
@@ -55,16 +55,36 @@
     {
       "cluster_id": "clu_immigration_004",
       "label": "American Identity",
-      "salience_a": 0.0571,
-      "salience_b": 0.0714,
-      "arousal_a": 0.325,
-      "arousal_b": 0.3833,
+      "salience_a": 0.0278,
+      "salience_b": 0.0,
+      "arousal_a": 0.4125,
+      "arousal_b": 0,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_immigration_005",
-      "label": "UK Labour Government",
+      "label": "ICE",
+      "salience_a": 0.0069,
+      "salience_b": 0.0095,
+      "arousal_a": 0.85,
+      "arousal_b": 0.85,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_immigration_006",
+      "label": "Labour Party",
+      "salience_a": 0.0347,
+      "salience_b": 0.0,
+      "arousal_a": 0.43,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_immigration_007",
+      "label": "Border Wall",
       "salience_a": 0.0,
       "salience_b": 0.0,
       "arousal_a": 0,
@@ -73,19 +93,109 @@
       "mutation_b": "radicalizing"
     },
     {
-      "cluster_id": "clu_immigration_006",
-      "label": "Border Wall",
-      "salience_a": 0.0071,
+      "cluster_id": "clu_immigration_008",
+      "label": "Nationalist Parties",
+      "salience_a": 0.0208,
       "salience_b": 0.0,
       "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_immigration_009",
+      "label": "Reform Party in Scotland",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
       "arousal_b": 0,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
-      "cluster_id": "clu_immigration_007",
-      "label": "ICE",
-      "salience_a": 0.0143,
+      "cluster_id": "clu_immigration_010",
+      "label": "Reform UK",
+      "salience_a": 0.0069,
+      "salience_b": 0.0,
+      "arousal_a": 0.15,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_immigration_012",
+      "label": "Infant Hepatitis B Shot",
+      "salience_a": 0.0069,
+      "salience_b": 0.0095,
+      "arousal_a": 0.15,
+      "arousal_b": 0.15,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_immigration_013",
+      "label": "Immigration Policy Comparable",
+      "salience_a": 0.0069,
+      "salience_b": 0.0,
+      "arousal_a": 0.15,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_immigration_014",
+      "label": "Immigration Deportation",
+      "salience_a": 0.0,
+      "salience_b": 0.0286,
+      "arousal_a": 0,
+      "arousal_b": 0.3833,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_immigration_015",
+      "label": "EU Migration Policy",
+      "salience_a": 0.0069,
+      "salience_b": 0.0476,
+      "arousal_a": 0.15,
+      "arousal_b": 0.43,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_immigration_016",
+      "label": "Jus Soli Policy",
+      "salience_a": 0.0278,
+      "salience_b": 0.019,
+      "arousal_a": 0.15,
+      "arousal_b": 0.5,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_immigration_017",
+      "label": "Afghan Refugees",
+      "salience_a": 0.0,
+      "salience_b": 0.0095,
+      "arousal_a": 0,
+      "arousal_b": 0.5,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_immigration_018",
+      "label": "Stephen Miller",
+      "salience_a": 0.0278,
+      "salience_b": 0.0095,
+      "arousal_a": 0.675,
+      "arousal_b": 0.5,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_immigration_019",
+      "label": "Steve Descano",
+      "salience_a": 0.0069,
       "salience_b": 0.0,
       "arousal_a": 0.85,
       "arousal_b": 0,
@@ -93,67 +203,137 @@
       "mutation_b": "radicalizing"
     },
     {
-      "cluster_id": "clu_immigration_008",
-      "label": "Reform Party",
-      "salience_a": 0.0286,
+      "cluster_id": "clu_immigration_020",
+      "label": "Democratic Party",
+      "salience_a": 0.0278,
       "salience_b": 0.0476,
+      "arousal_a": 0.675,
+      "arousal_b": 0.57,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_immigration_021",
+      "label": "California Economy",
+      "salience_a": 0.0,
+      "salience_b": 0.0286,
+      "arousal_a": 0,
+      "arousal_b": 0.5,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_immigration_022",
+      "label": "UK Deportation Policy",
+      "salience_a": 0.0486,
+      "salience_b": 0.0095,
+      "arousal_a": 0.65,
+      "arousal_b": 0.5,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_immigration_023",
+      "label": "Supreme Court",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_immigration_024",
+      "label": "Migrant Detention Camps",
+      "salience_a": 0.0069,
+      "salience_b": 0.0286,
+      "arousal_a": 0.5,
+      "arousal_b": 0.5,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_immigration_025",
+      "label": "US Refugee Policy",
+      "salience_a": 0.0139,
+      "salience_b": 0.019,
       "arousal_a": 0.675,
       "arousal_b": 0.325,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
-      "cluster_id": "clu_immigration_010",
-      "label": "Asylum Policy",
-      "salience_a": 0.0,
-      "salience_b": 0.0,
-      "arousal_a": 0,
-      "arousal_b": 0,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_immigration_011",
-      "label": "Trump Administration",
-      "salience_a": 0.0357,
-      "salience_b": 0.0238,
-      "arousal_a": 0.43,
+      "cluster_id": "clu_immigration_026",
+      "label": "Texas Congressional Map",
+      "salience_a": 0.0069,
+      "salience_b": 0.0381,
+      "arousal_a": 0.85,
       "arousal_b": 0.5,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_immigration_012",
-      "label": "Current Administration",
-      "salience_a": 0.0,
-      "salience_b": 0.0,
-      "arousal_a": 0,
-      "arousal_b": 0,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_immigration_013",
-      "label": "Afghan Refugees",
-      "salience_a": 0.0143,
-      "salience_b": 0.0,
-      "arousal_a": 0.325,
-      "arousal_b": 0,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
-      "cluster_id": "clu_immigration_014",
-      "label": "Medical Crime",
-      "salience_a": 0.0071,
-      "salience_b": 0.0238,
-      "arousal_a": 0.15,
+      "cluster_id": "clu_immigration_027",
+      "label": "Donald Trump",
+      "salience_a": 0.0694,
+      "salience_b": 0.0476,
+      "arousal_a": 0.395,
+      "arousal_b": 0.5,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_immigration_028",
+      "label": "Trump Administration",
+      "salience_a": 0.0417,
+      "salience_b": 0.0095,
+      "arousal_a": 0.5583,
+      "arousal_b": 0.15,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_immigration_029",
+      "label": "H-1B Visa Program",
+      "salience_a": 0.0,
+      "salience_b": 0.0095,
+      "arousal_a": 0,
       "arousal_b": 0.5,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
-      "cluster_id": "clu_immigration_016",
+      "cluster_id": "clu_immigration_030",
+      "label": "Keir Starmer",
+      "salience_a": 0.0069,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_immigration_031",
+      "label": "Iain Hunt Case",
+      "salience_a": 0.0,
+      "salience_b": 0.0095,
+      "arousal_a": 0,
+      "arousal_b": 0.5,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_immigration_032",
+      "label": "Minnesota Labor Market",
+      "salience_a": 0.0347,
+      "salience_b": 0.0571,
+      "arousal_a": 0.5,
+      "arousal_b": 0.3833,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_immigration_033",
       "label": "Biden Administration's Border",
       "salience_a": 0.0,
       "salience_b": 0.0,
@@ -163,239 +343,99 @@
       "mutation_b": "radicalizing"
     },
     {
-      "cluster_id": "clu_immigration_017",
-      "label": "Incarceration",
-      "salience_a": 0.0214,
-      "salience_b": 0.0238,
-      "arousal_a": 0.6167,
-      "arousal_b": 0.5,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_immigration_018",
-      "label": "Supreme Court",
-      "salience_a": 0.0071,
-      "salience_b": 0.0238,
-      "arousal_a": 0.5,
-      "arousal_b": 0.5,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_immigration_019",
-      "label": "Donald Trump",
-      "salience_a": 0.0071,
-      "salience_b": 0.0476,
-      "arousal_a": 0.85,
-      "arousal_b": 0.675,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_immigration_020",
-      "label": "Border Policy",
-      "salience_a": 0.0143,
-      "salience_b": 0.0238,
-      "arousal_a": 0.325,
-      "arousal_b": 0.5,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_immigration_021",
-      "label": "Jus Soli Policy",
-      "salience_a": 0.0143,
+      "cluster_id": "clu_immigration_034",
+      "label": "Deportation Policies",
+      "salience_a": 0.0625,
       "salience_b": 0.0,
-      "arousal_a": 0.15,
-      "arousal_b": 0,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_immigration_022",
-      "label": "EU Migration Policy",
-      "salience_a": 0.0214,
-      "salience_b": 0.0238,
       "arousal_a": 0.3833,
-      "arousal_b": 0.5,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_immigration_023",
-      "label": "Infant Hepatitis B Shot",
-      "salience_a": 0.0,
-      "salience_b": 0.0,
-      "arousal_a": 0,
-      "arousal_b": 0,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_immigration_024",
-      "label": "Marco Rubio",
-      "salience_a": 0.0,
-      "salience_b": 0.0,
-      "arousal_a": 0,
-      "arousal_b": 0,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_immigration_025",
-      "label": "Economy",
-      "salience_a": 0.0143,
-      "salience_b": 0.0714,
-      "arousal_a": 0.5,
-      "arousal_b": 0.2667,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_immigration_026",
-      "label": "H-1B Visa Program",
-      "salience_a": 0.0,
-      "salience_b": 0.0,
-      "arousal_a": 0,
-      "arousal_b": 0,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_immigration_027",
-      "label": "Iain Hunt Case",
-      "salience_a": 0.0,
-      "salience_b": 0.0476,
-      "arousal_a": 0,
-      "arousal_b": 0.5,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_immigration_028",
-      "label": "Sanctuary Cities",
-      "salience_a": 0.0786,
-      "salience_b": 0.0476,
-      "arousal_a": 0.3091,
-      "arousal_b": 0.5,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_immigration_029",
-      "label": "Democratic Party",
-      "salience_a": 0.0286,
-      "salience_b": 0.0238,
-      "arousal_a": 0.325,
-      "arousal_b": 0.5,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_immigration_030",
-      "label": "Uniform Civil Code",
-      "salience_a": 0.0,
-      "salience_b": 0.0,
-      "arousal_a": 0,
-      "arousal_b": 0,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_immigration_031",
-      "label": "War in Iran",
-      "salience_a": 0.0071,
-      "salience_b": 0.0238,
-      "arousal_a": 0.15,
-      "arousal_b": 0.5,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_immigration_032",
-      "label": "Cuban-American Voters",
-      "salience_a": 0.0071,
-      "salience_b": 0.0238,
-      "arousal_a": 0.15,
-      "arousal_b": 0.15,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_immigration_033",
-      "label": "Reading",
-      "salience_a": 0.0,
-      "salience_b": 0.0,
-      "arousal_a": 0,
       "arousal_b": 0,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_immigration_035",
-      "label": "Japanese Media",
+      "label": "Terrorist Groups",
       "salience_a": 0.0,
-      "salience_b": 0.0,
+      "salience_b": 0.0095,
       "arousal_a": 0,
-      "arousal_b": 0,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
+      "arousal_b": 0.5,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_immigration_036",
-      "label": "NHS",
-      "salience_a": 0.0143,
-      "salience_b": 0.0,
-      "arousal_a": 0.325,
-      "arousal_b": 0,
+      "label": "Undocumented Immigrants",
+      "salience_a": 0.0069,
+      "salience_b": 0.0095,
+      "arousal_a": 0.85,
+      "arousal_b": 0.85,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_immigration_037",
-      "label": "Anti-Bds Laws",
-      "salience_a": 0.0071,
-      "salience_b": 0.0,
-      "arousal_a": 0.15,
-      "arousal_b": 0,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
+      "label": "Egyptian-Israeli Relations",
+      "salience_a": 0.0208,
+      "salience_b": 0.0286,
+      "arousal_a": 0.85,
+      "arousal_b": 0.2667,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_immigration_038",
-      "label": "JD Vance",
-      "salience_a": 0.0286,
+      "label": "Democratic Policies",
+      "salience_a": 0.0069,
       "salience_b": 0.0,
-      "arousal_a": 0.5875,
+      "arousal_a": 0.5,
       "arousal_b": 0,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_immigration_039",
-      "label": "National Register of Citizens",
-      "salience_a": 0.0357,
-      "salience_b": 0.0,
+      "label": "IRS Data Collection",
+      "salience_a": 0.0069,
+      "salience_b": 0.0095,
       "arousal_a": 0.5,
-      "arousal_b": 0,
+      "arousal_b": 0.5,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_immigration_040",
-      "label": "Cuban-Americans",
-      "salience_a": 0.0071,
-      "salience_b": 0.0238,
+      "label": "Democratic Politicians",
+      "salience_a": 0.0069,
+      "salience_b": 0.0,
       "arousal_a": 0.15,
-      "arousal_b": 0.5,
+      "arousal_b": 0,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_immigration_041",
-      "label": "Undocumented Immigrants",
-      "salience_a": 0.0071,
+      "label": "Husted",
+      "salience_a": 0.0417,
+      "salience_b": 0.019,
+      "arousal_a": 0.325,
+      "arousal_b": 0.325,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_immigration_042",
+      "label": "Denaturalization",
+      "salience_a": 0.0069,
+      "salience_b": 0.0095,
+      "arousal_a": 0.5,
+      "arousal_b": 0.5,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_immigration_043",
+      "label": "Immigration Limits",
+      "salience_a": 0.0139,
       "salience_b": 0.0,
       "arousal_a": 0.5,
       "arousal_b": 0,
@@ -403,119 +443,79 @@
       "mutation_b": "stable"
     },
     {
-      "cluster_id": "clu_immigration_042",
-      "label": "Deportation",
-      "salience_a": 0.0571,
-      "salience_b": 0.0476,
-      "arousal_a": 0.4563,
-      "arousal_b": 0.15,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
-      "cluster_id": "clu_immigration_043",
-      "label": "DHS Funding",
-      "salience_a": 0.0,
-      "salience_b": 0.0476,
-      "arousal_a": 0,
+      "cluster_id": "clu_immigration_044",
+      "label": "Tunisia's Borders",
+      "salience_a": 0.0069,
+      "salience_b": 0.019,
+      "arousal_a": 0.85,
       "arousal_b": 0.15,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
     {
-      "cluster_id": "clu_immigration_044",
-      "label": "Democratic Policies",
-      "salience_a": 0.0,
-      "salience_b": 0.0238,
-      "arousal_a": 0,
-      "arousal_b": 0.5,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
-    },
-    {
       "cluster_id": "clu_immigration_045",
-      "label": "Canadian Constitution",
-      "salience_a": 0.0286,
+      "label": "NHS",
+      "salience_a": 0.0278,
       "salience_b": 0.0,
-      "arousal_a": 0.325,
+      "arousal_a": 0.4125,
       "arousal_b": 0,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_immigration_046",
-      "label": "Mike Lawler",
-      "salience_a": 0.0286,
+      "label": "Border Policy",
+      "salience_a": 0.0069,
       "salience_b": 0.0,
-      "arousal_a": 0.7625,
+      "arousal_a": 0.5,
       "arousal_b": 0,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_immigration_047",
-      "label": "Migrant Detention Camps",
-      "salience_a": 0.0143,
-      "salience_b": 0.0,
-      "arousal_a": 0.675,
-      "arousal_b": 0,
-      "mutation_a": "stable",
-      "mutation_b": "stable"
+      "label": "Border Security",
+      "salience_a": 0.0694,
+      "salience_b": 0.1143,
+      "arousal_a": 0.36,
+      "arousal_b": 0.2375,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_immigration_048",
-      "label": "Stephen Miller",
-      "salience_a": 0.0571,
+      "label": "Legislative Process",
+      "salience_a": 0.0,
       "salience_b": 0.0,
-      "arousal_a": 0.5437,
+      "arousal_a": 0,
       "arousal_b": 0,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_immigration_049",
-      "label": "Immigration Policy Ineffective",
-      "salience_a": 0.0071,
+      "label": "American Policy",
+      "salience_a": 0.0347,
       "salience_b": 0.0,
-      "arousal_a": 0.15,
+      "arousal_a": 0.85,
       "arousal_b": 0,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_immigration_050",
-      "label": "Regime Change",
-      "salience_a": 0.0214,
-      "salience_b": 0.0,
+      "label": "Immigrants and Refugees",
+      "salience_a": 0.0208,
+      "salience_b": 0.0095,
       "arousal_a": 0.15,
-      "arousal_b": 0,
+      "arousal_b": 0.5,
       "mutation_a": "stable",
       "mutation_b": "stable"
     },
     {
       "cluster_id": "clu_immigration_051",
-      "label": "Border Control",
-      "salience_a": 0.0,
-      "salience_b": 0.0238,
-      "arousal_a": 0,
-      "arousal_b": 0.15,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_immigration_052",
-      "label": "Egyptian-Israeli Relations",
-      "salience_a": 0.0,
-      "salience_b": 0.0476,
-      "arousal_a": 0,
-      "arousal_b": 0.5,
-      "mutation_a": "radicalizing",
-      "mutation_b": "radicalizing"
-    },
-    {
-      "cluster_id": "clu_immigration_053",
-      "label": "US Foreign Policy",
-      "salience_a": 0.0071,
+      "label": "DHS Funding",
+      "salience_a": 0.0069,
       "salience_b": 0.0,
       "arousal_a": 0.15,
       "arousal_b": 0,
@@ -523,44 +523,154 @@
       "mutation_b": "radicalizing"
     },
     {
-      "cluster_id": "clu_immigration_054",
-      "label": "Border Security",
-      "salience_a": 0.0571,
+      "cluster_id": "clu_immigration_052",
+      "label": "California State Budget",
+      "salience_a": 0.0,
       "salience_b": 0.0,
-      "arousal_a": 0.3688,
+      "arousal_a": 0,
       "arousal_b": 0,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_immigration_053",
+      "label": "Japanese Media",
+      "salience_a": 0.0278,
+      "salience_b": 0.0286,
+      "arousal_a": 0.15,
+      "arousal_b": 0.5,
+      "mutation_a": "mainstreaming",
+      "mutation_b": "mainstreaming"
+    },
+    {
+      "cluster_id": "clu_immigration_054",
+      "label": "Cuban-Americans",
+      "salience_a": 0.0,
+      "salience_b": 0.019,
+      "arousal_a": 0,
+      "arousal_b": 0.325,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_immigration_055",
+      "label": "Cuban-American Voters",
+      "salience_a": 0.0347,
+      "salience_b": 0.0,
+      "arousal_a": 0.22,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_immigration_056",
+      "label": "Immigration Opposed",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_immigration_057",
+      "label": "Immigration Governed",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_immigration_058",
+      "label": "Corporate Tax Policy",
+      "salience_a": 0.0,
+      "salience_b": 0.019,
+      "arousal_a": 0,
+      "arousal_b": 0.325,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_immigration_059",
+      "label": "Anti-Bds Laws",
+      "salience_a": 0.0069,
+      "salience_b": 0.0286,
+      "arousal_a": 0.5,
+      "arousal_b": 0.2667,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_immigration_060",
+      "label": "German Politics",
+      "salience_a": 0.0069,
+      "salience_b": 0.0,
+      "arousal_a": 0.15,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_immigration_061",
+      "label": "Policy Making",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_immigration_062",
+      "label": "National Register of Citizens",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_immigration_063",
+      "label": "JD Vance",
+      "salience_a": 0.0069,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "stable",
+      "mutation_b": "stable"
     }
   ],
   "arousal_comparison": {
-    "slice_a_avg": 0.435,
-    "slice_b_avg": 0.425
+    "slice_a_avg": 0.4684,
+    "slice_b_avg": 0.39
   },
   "exposure_comparison": {
     "slice_a": {
-      "value": 0.8913,
+      "value": 1,
       "confidence_interval": [
-        0.8081,
-        0.9745
+        0.925,
+        1
       ],
       "baseline": "global",
       "time_window": "24h",
       "sparkline": [
-        0.8913
+        1
       ],
       "source_distribution": "production"
     },
     "slice_b": {
-      "value": 0.2667,
+      "value": 0.7454,
       "confidence_interval": [
-        0.1367,
-        0.3967
+        0.6513,
+        0.8395
       ],
       "baseline": "global",
       "time_window": "24h",
       "sparkline": [
-        0.2667
+        0.7454
       ],
       "source_distribution": "production"
     }

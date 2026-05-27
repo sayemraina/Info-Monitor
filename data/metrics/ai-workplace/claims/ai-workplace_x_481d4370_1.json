@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "ai-workplace_x_481d4370_1",
-    "cluster_id": "clu_ai-workplace_010",
-    "concept_id": "concept_ai-workplace_006",
+    "cluster_id": "clu_ai-workplace_031",
+    "concept_id": "concept_ai-workplace_000",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-02T06:50:52.000Z",
     "source_document_id": "x_2039596407242310034",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.5262,
+    "value": null,
     "confidence_interval": [
-      0.4262,
-      0.6262
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5262
-    ],
-    "source_distribution": "production",
-    "source_diversity": 1.0,
-    "bridge_ratio": 1.0,
-    "persistence_windows": 15,
-    "friction": 0.1268,
-    "friction_quadrant": "unopposed_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.7367,
+    "value": null,
     "confidence_interval": [
-      0.642,
-      0.8314
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.7367
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.1268,
+    "value": null,
     "confidence_interval": [
       0,
-      0.2673
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.1268
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.75,
+    "value": 0,
     "confidence_interval": [
-      0.6562,
-      0.8438
+      0,
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.75
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.85,
+    "value": null,
     "confidence_interval": [
-      0.7638,
-      0.9362
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.85
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9928,
+    "value": null,
     "confidence_interval": [
-      0.9173,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.9928
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,140 +133,60 @@
     ]
   },
   "provenance": {
-    "first_platform": "X Platform",
-    "first_timestamp": "2026-04-02T06:50:52.000Z",
-    "lead_lag": [
-      {
-        "platform": "Bluesky",
-        "lag_hours": 0.1
-      },
-      {
-        "platform": "The Ct Mirror",
-        "lag_hours": 15.4
-      },
-      {
-        "platform": "The Motley Fool",
-        "lag_hours": 27.2
-      },
-      {
-        "platform": "Nasdaq Stock Market",
-        "lag_hours": 27.2
-      }
-    ]
+    "first_platform": "unknown",
+    "first_timestamp": "",
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_ai-workplace_006",
-    "hops": [
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-02T06:50:52+00:00",
-        "claim_id": "ai-workplace_x_481d4370_1",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-02T06:59:02.729000+00:00",
-        "claim_id": "ai-workplace_x_481d4370_1",
-        "fidelity_to_origin": 0.9965,
-        "fidelity_to_previous": 0.9965
-      },
-      {
-        "platform": "The Ct Mirror",
-        "timestamp": "2026-04-02T22:16:30+00:00",
-        "claim_id": "ai-workplace_x_481d4370_1",
-        "fidelity_to_origin": 0.6023,
-        "fidelity_to_previous": 0.6044
-      },
-      {
-        "platform": "The Motley Fool",
-        "timestamp": "2026-04-03T10:00:00+00:00",
-        "claim_id": "ai-workplace_x_481d4370_1",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.4981
-      },
-      {
-        "platform": "Nasdaq Stock Market",
-        "timestamp": "2026-04-03T10:00:00+00:00",
-        "claim_id": "ai-workplace_x_481d4370_1",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 1.0
-      }
-    ],
+    "concept_id": "",
+    "hops": [],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-workplace_bluesky_17fbc949_0",
-      "similarity": 0.6164,
-      "text": "AI is being falsely portrayed as capable of completely replacing human workers, similar to past exaggerations about computers."
+      "claim_id": "ai-workplace_bluesky_67e63dba_1",
+      "similarity": 0.6268,
+      "text": "AI will replace a significant portion of the human workforce."
     },
     {
-      "claim_id": "ai-workplace_bluesky_1ee0c9d1_0",
-      "similarity": 0.5909,
-      "text": "AI and automation will significantly change the tech industry, particularly for smaller companies."
+      "claim_id": "ai-workplace_bluesky_5395dbce_0",
+      "similarity": 0.6258,
+      "text": "AI will not be able to replace any human jobs."
     },
     {
-      "claim_id": "ai-workplace_bluesky_5d21c9d1_1",
-      "similarity": 0.5485,
-      "text": "Future generations entering the workforce will lack essential technical skills due to AI dependence."
+      "claim_id": "ai-workplace_bluesky_3082e7b6_0",
+      "similarity": 0.5417,
+      "text": "The increasing use of artificial intelligence will not significantly reduce employment."
     },
     {
-      "claim_id": "ai-workplace_bluesky_e693879e_0",
-      "similarity": 0.5363,
-      "text": "Over-reliance on AI can negatively impact creativity and critical thinking."
-    },
-    {
-      "claim_id": "ai-workplace_bluesky_5d21c9d1_0",
-      "similarity": 0.49,
-      "text": "Over-reliance on AI is eroding basic writing skills in the workforce."
+      "claim_id": "ai-workplace_bluesky_df1ec65d_0",
+      "similarity": 0.4951,
+      "text": "Job seekers are modifying their resumes to bypass AI filters used by employers."
     }
   ],
   "example_content": [
     {
-      "text": "AI is being falsely portrayed as capable of completely replacing human workers, similar to past exaggerations about computers.",
+      "text": "The increasing use of artificial intelligence will not significantly reduce employment.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "ClusterFlock is a tool that enables users to efficiently manage and utilize local large language models across diverse hardware configurations.",
+      "text": "AI will not be able to replace any human jobs.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Over-reliance on AI is eroding basic writing skills in the workforce.",
+      "text": "AI will replace a significant portion of the human workforce.",
       "platform": "Bluesky",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "is_influencer_framing": false
     }
   ]

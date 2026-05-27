@@ -1,0 +1,215 @@
+{
+  "claim": {
+    "text": "Some Republicans believe that the war with Iran could ultimately strengthen Iran.",
+    "subject": "War on Iran",
+    "assertion": "could strengthen Iran",
+    "framing": "national security",
+    "stance": "anti",
+    "confidence": 0.8,
+    "arousal": "medium",
+    "register": "journalistic",
+    "id": "war-on-iran_bankingnews.gr_c0282351_2",
+    "cluster_id": "clu_war-on-iran_047",
+    "concept_id": "concept_war-on-iran_003",
+    "first_seen_platform": "bankingnews.gr",
+    "first_seen_timestamp": "2026-05-27T08:21:19Z",
+    "source_document_id": "77cfe4987d5ec5e9",
+    "source_platform": "bankingnews.gr",
+    "source_timestamp": "2026-05-27T08:21:19Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "elite_media"
+  },
+  "momentum": {
+    "value": 0.51,
+    "confidence_interval": [
+      0.41,
+      0.61
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.51
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0.25,
+    "friction_quadrant": "unopposed_advance"
+  },
+  "salience": {
+    "value": 0.3264,
+    "confidence_interval": [
+      0.2009,
+      0.4519
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3264
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.25,
+    "confidence_interval": [
+      0.1187,
+      0.3813
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.25
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.8,
+    "factors": []
+  },
+  "provenance": {
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-05-27T08:21:19Z",
+    "lead_lag": [
+      {
+        "platform": "Bankingnews.Gr",
+        "lag_hours": 6.0
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_war-on-iran_003",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-05-27T02:20:16.934000+00:00",
+        "claim_id": "war-on-iran_bankingnews.gr_c0282351_2",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bankingnews.Gr",
+        "timestamp": "2026-05-27T08:21:19+00:00",
+        "claim_id": "war-on-iran_bankingnews.gr_c0282351_2",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "war-on-iran_bluesky_97148ea0_0",
+      "similarity": 0.6974,
+      "text": "A war between the U.S., Israel, and Iran is expected to occur."
+    },
+    {
+      "claim_id": "war-on-iran_bluesky_3fa45bbf_0",
+      "similarity": 0.6911,
+      "text": "The possibility of renewed war between the US and Iran is low."
+    },
+    {
+      "claim_id": "war-on-iran_bluesky_8d49d3d4_0",
+      "similarity": 0.5557,
+      "text": "The United States has conducted military strikes in southern Iran."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "The United States has conducted military strikes in southern Iran.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The possibility of renewed war between the US and Iran is low.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "A war between the U.S., Israel, and Iran is expected to occur.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

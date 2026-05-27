@@ -1,0 +1,217 @@
+{
+  "claim": {
+    "text": "AI is negatively impacting people's cognitive abilities.",
+    "subject": "AI",
+    "assertion": "is making people less intelligent",
+    "framing": "neutral",
+    "stance": "anti",
+    "confidence": 0.9,
+    "arousal": "high",
+    "register": "vernacular",
+    "id": "ai-bubble_bluesky_e8d1c297_1",
+    "cluster_id": "clu_ai-bubble_057",
+    "concept_id": "concept_ai-bubble_000",
+    "first_seen_platform": "bluesky",
+    "first_seen_timestamp": "2026-05-27T00:44:38.536Z",
+    "source_document_id": "e5b5481a8ee1fe34",
+    "source_platform": "bluesky",
+    "source_timestamp": "2026-05-27T00:44:38.536Z",
+    "source_engagement": {
+      "likes": 11,
+      "replies": 2,
+      "shares": 3
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.541,
+    "confidence_interval": [
+      0.441,
+      0.641
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.541
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0.75,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.3283,
+    "confidence_interval": [
+      0.2029,
+      0.4537
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3283
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.75,
+    "confidence_interval": [
+      0.6562,
+      0.8438
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.75
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.85,
+    "confidence_interval": [
+      0.7638,
+      0.9362
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.85
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "The Guardian",
+    "first_timestamp": "2026-05-27T00:44:38.536Z",
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 12.7
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_ai-bubble_000",
+    "hops": [
+      {
+        "platform": "The Guardian",
+        "timestamp": "2026-05-26T12:01:26+00:00",
+        "claim_id": "ai-bubble_bluesky_e8d1c297_1",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-05-27T00:44:38.536000+00:00",
+        "claim_id": "ai-bubble_bluesky_e8d1c297_1",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "ai-bubble_bluesky_5da608a3_0",
+      "similarity": 0.6962,
+      "text": "The AI hype is leading to the creation of harmful and absurd content."
+    },
+    {
+      "claim_id": "ai-bubble_the_guardian_aabc83b2_0",
+      "similarity": 0.6519,
+      "text": "Control over artificial intelligence is concentrated in the hands of a small group of people."
+    },
+    {
+      "claim_id": "ai-bubble_bluesky_9a113828_0",
+      "similarity": 0.5737,
+      "text": "The author is excessively promoting AI while ignoring the impact of climate change."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "The author is excessively promoting AI while ignoring the impact of climate change.",
+      "platform": "Bluesky",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The AI hype is leading to the creation of harmful and absurd content.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Control over artificial intelligence is concentrated in the hands of a small group of people.",
+      "platform": "The Guardian",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

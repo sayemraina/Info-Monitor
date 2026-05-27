@@ -1,95 +1,79 @@
 {
   "events": [
     {
-      "id": "evt_cd9e5772e03f",
-      "type": "contestation_emergence",
-      "timestamp": "2026-05-05T20:22:21.727493+00:00",
-      "claim_id": "ai-workplace_bluesky_714e1358_0",
+      "id": "evt_01f9d9d4581a",
+      "type": "phase_transition",
+      "timestamp": "2026-05-26T20:30:09.580467+00:00",
+      "claim_id": null,
       "slice_id": null,
       "severity": "high",
       "confidence": 0.82,
-      "summary": "Active contestation in \"Economic Policy\" — 4 pro vs 3 anti",
+      "summary": "\"Generative AI Unsafe\" cluster is shifting toward more extreme language",
       "detail": {
-        "cluster_id": "clu_ai-workplace_006",
-        "pro_count": 4,
-        "anti_count": 3,
-        "balance": 0.75
+        "cluster_id": "clu_ai-workplace_004",
+        "direction": "radicalizing",
+        "magnitude": 0.7174
       }
     },
     {
-      "id": "evt_9fa90854a39d",
+      "id": "evt_4b1974594530",
       "type": "phase_transition",
-      "timestamp": "2026-05-05T20:22:21.727493+00:00",
+      "timestamp": "2026-05-26T20:30:09.580467+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
       "confidence": 0.84,
       "summary": "\"Oracle\" cluster is shifting toward more extreme language",
       "detail": {
-        "cluster_id": "clu_ai-workplace_002",
+        "cluster_id": "clu_ai-workplace_005",
         "direction": "radicalizing",
-        "magnitude": 0.7871
+        "magnitude": 0.8006
+      }
+    },
+    {
+      "id": "evt_9fa90854a39d",
+      "type": "phase_transition",
+      "timestamp": "2026-05-26T20:30:09.580467+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.84,
+      "summary": "\"AI Regulation\" cluster is shifting toward more extreme language",
+      "detail": {
+        "cluster_id": "clu_ai-workplace_008",
+        "direction": "radicalizing",
+        "magnitude": 0.7837
       }
     },
     {
       "id": "evt_fc1d8a19886e",
       "type": "phase_transition",
-      "timestamp": "2026-05-05T20:22:21.727493+00:00",
+      "timestamp": "2026-05-26T20:30:09.580467+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.81,
-      "summary": "\"Generative AI Unsafe\" cluster is shifting toward more extreme language",
-      "detail": {
-        "cluster_id": "clu_ai-workplace_004",
-        "direction": "radicalizing",
-        "magnitude": 0.7027
-      }
-    },
-    {
-      "id": "evt_4d91a214ef3d",
-      "type": "phase_transition",
-      "timestamp": "2026-05-05T20:22:21.727493+00:00",
-      "claim_id": null,
-      "slice_id": null,
-      "severity": "high",
-      "confidence": 0.8,
+      "confidence": 0.79,
       "summary": "\"AI Adoption in the Workplace\" cluster is shifting toward more extreme language",
       "detail": {
-        "cluster_id": "clu_ai-workplace_015",
+        "cluster_id": "clu_ai-workplace_023",
         "direction": "radicalizing",
-        "magnitude": 0.6661
-      }
-    },
-    {
-      "id": "evt_d9fc872e3d1e",
-      "type": "phase_transition",
-      "timestamp": "2026-05-05T20:22:21.727493+00:00",
-      "claim_id": null,
-      "slice_id": null,
-      "severity": "high",
-      "confidence": 0.83,
-      "summary": "\"Elites\" cluster is shifting toward more extreme language",
-      "detail": {
-        "cluster_id": "clu_ai-workplace_019",
-        "direction": "radicalizing",
-        "magnitude": 0.7577
+        "magnitude": 0.6429
       }
     },
     {
       "id": "evt_f4be16bd19ab",
       "type": "divergence_shift",
-      "timestamp": "2026-05-05T20:22:21.727493+00:00",
+      "timestamp": "2026-05-26T20:30:09.580467+00:00",
       "claim_id": null,
       "slice_id": "bluesky_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Significant narrative divergence between Bluesky and X Platform",
+      "summary": "Strong narrative split between Bluesky and fortune",
       "detail": {
-        "jsd": 0.4643,
+        "jsd": 0.8184,
         "platforms": [
           "bluesky",
-          "x"
+          "fortune"
         ],
         "window_hours": 24
       }
@@ -115,48 +99,33 @@
       "source": "polymarket"
     },
     {
-      "id": "evt_80be21e62920",
-      "type": "momentum_spike",
-      "timestamp": "2026-05-05T22:22:21.727493+00:00",
-      "claim_id": "ai-workplace_bluesky_e0625b64_0",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.5,
-      "summary": "Rapid attention surge in \"AI Development Promoted\" (2 claims)",
-      "detail": {
-        "cluster_id": "clu_ai-workplace_035",
-        "avg_momentum": 0.555,
-        "member_count": 2
-      }
-    },
-    {
       "id": "evt_1a45eb0073bd",
       "type": "momentum_spike",
-      "timestamp": "2026-05-05T23:22:21.727493+00:00",
-      "claim_id": "ai-workplace_x_8da6763c_0",
+      "timestamp": "2026-05-26T22:30:09.580467+00:00",
+      "claim_id": "ai-workplace_bluesky_b9937d7f_2",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.54,
-      "summary": "Rapid attention surge in \"AI in Recruitment Replace\" (2 claims)",
+      "confidence": 0.51,
+      "summary": "Rapid attention surge in \"AI Infrastructure\" (2 claims)",
       "detail": {
-        "cluster_id": "clu_ai-workplace_044",
-        "avg_momentum": 0.605,
+        "cluster_id": "clu_ai-workplace_034",
+        "avg_momentum": 0.568,
         "member_count": 2
       }
     },
     {
       "id": "evt_beab4a0865ca",
       "type": "momentum_spike",
-      "timestamp": "2026-05-06T00:22:21.727493+00:00",
-      "claim_id": "ai-workplace_bluesky_e2f03051_0",
+      "timestamp": "2026-05-27T00:30:09.580467+00:00",
+      "claim_id": "ai-workplace_bluesky_c842d17b_0",
       "slice_id": null,
       "severity": "medium",
       "confidence": 0.58,
-      "summary": "Rapid attention surge in \"AI and the Workforce\" (1 claims)",
+      "summary": "Rapid attention surge in \"Poster\" (2 claims)",
       "detail": {
-        "cluster_id": "clu_ai-workplace_023",
+        "cluster_id": "clu_ai-workplace_012",
         "avg_momentum": 0.645,
-        "member_count": 1
+        "member_count": 2
       }
     },
     {
@@ -212,65 +181,33 @@
     {
       "id": "evt_e168bf8ef55e",
       "type": "lead_lag",
-      "timestamp": "2026-05-05T23:22:21.727493+00:00",
-      "claim_id": "ai-workplace_bluesky_e09d7f01_0",
-      "slice_id": null,
-      "severity": "low",
-      "confidence": 0.6,
-      "summary": "weekly_voice leads Bluesky by ~9h in \"Ai-Generated Music\"",
-      "detail": {
-        "source_platform": "weekly_voice",
-        "target_platform": "bluesky",
-        "lag_hours": 9.5,
-        "cluster_id": "clu_ai-workplace_027"
-      }
-    },
-    {
-      "id": "evt_94cc87684d14",
-      "type": "lead_lag",
-      "timestamp": "2026-05-05T23:22:21.727493+00:00",
-      "claim_id": "ai-workplace_bluesky_cf14a7b6_0",
+      "timestamp": "2026-05-26T19:30:09.580467+00:00",
+      "claim_id": "ai-workplace_bluesky_9a566192_0",
       "slice_id": null,
       "severity": "low",
       "confidence": 0.58,
-      "summary": "Bluesky leads X Platform by ~9h in \"Corporate Cost-Cutting\"",
+      "summary": "memeburn leads Bluesky by ~13h in \"Corporate Cost-Cutting\"",
       "detail": {
-        "source_platform": "bluesky",
-        "target_platform": "x",
-        "lag_hours": 9.1,
-        "cluster_id": "clu_ai-workplace_029"
-      }
-    },
-    {
-      "id": "evt_9b0d574f523f",
-      "type": "lead_lag",
-      "timestamp": "2026-05-05T23:22:21.727493+00:00",
-      "claim_id": "ai-workplace_bluesky_087b523b_0",
-      "slice_id": null,
-      "severity": "low",
-      "confidence": 0.62,
-      "summary": "business_insider leads X Platform by ~9h in \"Layoffs\"",
-      "detail": {
-        "source_platform": "business_insider",
-        "target_platform": "x",
-        "lag_hours": 9.6,
-        "cluster_id": "clu_ai-workplace_053"
+        "source_platform": "memeburn",
+        "target_platform": "bluesky",
+        "lag_hours": 13.4,
+        "cluster_id": "clu_ai-workplace_016"
       }
     },
     {
       "id": "evt_9bd63dbee1db",
       "type": "lead_lag",
-      "timestamp": "2026-05-06T01:22:21.727493+00:00",
-      "claim_id": "ai-workplace_bluesky_1ef0d00c_0",
+      "timestamp": "2026-05-27T01:30:09.580467+00:00",
+      "claim_id": "ai-workplace_bluesky_4d4db620_0",
       "slice_id": null,
       "severity": "low",
       "confidence": 0.6,
-      "summary": "Bluesky leads X Platform by ~7h in \"AI and Jobs\"",
+      "summary": "fortune leads Bluesky by ~7h in \"AI and Employment\"",
       "detail": {
-        "source_platform": "bluesky",
-        "target_platform": "x",
-        "lag_hours": 7.8,
-        "cluster_id": "clu_ai-workplace_000"
+        "source_platform": "fortune",
+        "target_platform": "bluesky",
+        "lag_hours": 7.2,
+        "cluster_id": "clu_ai-workplace_002"
       }
     },
     {
@@ -572,7 +509,47 @@
       "summary": "New Rihanna Album before GTA VI? — 60.0% Yes",
       "detail": "Polymarket gives 60.0% odds. Volume: $679,525",
       "source": "polymarket"
+    },
+    {
+      "id": "poly_540816",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T17:10:34.614053+00:00",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Russia-Ukraine Ceasefire before GTA VI? — 54.0% Yes",
+      "detail": "Polymarket gives 54.0% odds. Volume: $1,412,740",
+      "source": "polymarket"
+    },
+    {
+      "id": "fedreg_2026-06549",
+      "type": "external_signal",
+      "timestamp": "2026-04-03T00:00:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Statement of Organization, Functions, and Delegations of Authority",
+      "detail": "The Department of Health and Human Services (HHS) is issuing this notice to revise its Statement of Organization, Functions, and Delegations of Authority for the Office of the Secretary (OS). This reorganization removes the Office of the Chief Information Officer (OCIO) from the organizational descr",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2026-06271",
+      "type": "external_signal",
+      "timestamp": "2026-04-01T00:00:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Whistleblower Incentives and Protections",
+      "detail": "FinCEN is proposing a rule to establish a whistleblower program that offers incentives and protections to encourage individuals who have information about potential violations of the Bank Secrecy Act (BSA), International Emergency Economic Powers Act (IEEPA), Trading With the Enemy Act of 1917 (TWEA",
+      "source": "fed_register"
+    },
+    {
+      "id": "sec_7344843bb793",
+      "type": "external_signal",
+      "timestamp": "2026-04-01T00:00:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Unknown —  filing (2026-04-01)",
+      "detail": "Unknown filed  mentioning 'artificial intelligence'. Filing date: 2026-04-01.",
+      "source": "sec_edgar"
     }
   ],
-  "total_count": 89
+  "total_count": 85
 }

@@ -1,0 +1,206 @@
+{
+  "claim": {
+    "text": "Tech companies are laying off employees to reallocate capital towards AI development.",
+    "subject": "tech companies",
+    "assertion": "are laying off employees to invest in AI",
+    "framing": "corporate strategy",
+    "stance": "neutral",
+    "confidence": 0.9,
+    "arousal": "low",
+    "register": "vernacular",
+    "id": "ai-workplace_bluesky_f74bc054_0",
+    "cluster_id": "clu_ai-workplace_055",
+    "concept_id": "concept_ai-workplace_002",
+    "first_seen_platform": "bluesky",
+    "first_seen_timestamp": "2026-05-26T19:38:59.104Z",
+    "source_document_id": "fb5e9bf7d5dfe01f",
+    "source_platform": "bluesky",
+    "source_timestamp": "2026-05-26T19:38:59.104Z",
+    "source_engagement": {
+      "likes": 1,
+      "replies": 1,
+      "shares": 0
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.317,
+    "confidence_interval": [
+      0.217,
+      0.417
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.317
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0.3333,
+    "friction_quadrant": "dead"
+  },
+  "salience": {
+    "value": 0.3375,
+    "confidence_interval": [
+      0.2128,
+      0.4622
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3375
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.3333,
+    "confidence_interval": [
+      0.2083,
+      0.4583
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3333
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.15,
+    "confidence_interval": [
+      0.0112,
+      0.2888
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.15
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Memeburn",
+    "first_timestamp": "2026-05-26T19:38:59.104Z",
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 8.4
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_ai-workplace_002",
+    "hops": [
+      {
+        "platform": "Memeburn",
+        "timestamp": "2026-05-26T11:15:07+00:00",
+        "claim_id": "ai-workplace_bluesky_f74bc054_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-05-26T19:38:59.104000+00:00",
+        "claim_id": "ai-workplace_bluesky_f74bc054_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "ai-workplace_bluesky_59a12c4e_0",
+      "similarity": 0.7737,
+      "text": "Tech companies are shifting resources from human employees to AI development."
+    },
+    {
+      "claim_id": "ai-workplace_memeburn_fa99438f_1",
+      "similarity": 0.7013,
+      "text": "Tech jobs are becoming less secure due to companies prioritizing AI and cost-cutting measures."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Tech companies are shifting resources from human employees to AI development.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Tech jobs are becoming less secure due to companies prioritizing AI and cost-cutting measures.",
+      "platform": "Memeburn",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

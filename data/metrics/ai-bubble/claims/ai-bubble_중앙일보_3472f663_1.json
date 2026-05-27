@@ -1,0 +1,238 @@
+{
+  "claim": {
+    "text": "Samsung Electronics and SK Hynix are leading the gains in the Korean stock market.",
+    "subject": "Samsung Electronics and SK Hynix",
+    "assertion": "are leading gains",
+    "framing": "neutral",
+    "stance": "neutral",
+    "confidence": 0.9,
+    "arousal": "low",
+    "register": "journalistic",
+    "id": "ai-bubble_중앙일보_3472f663_1",
+    "cluster_id": "clu_ai-bubble_033",
+    "concept_id": "concept_ai-bubble_006",
+    "first_seen_platform": "중앙일보",
+    "first_seen_timestamp": "2026-05-27T07:38:22Z",
+    "source_document_id": "32a9ba0ca31e0f14",
+    "source_platform": "중앙일보",
+    "source_timestamp": "2026-05-27T07:38:22Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "elite_media"
+  },
+  "momentum": {
+    "value": 0.435,
+    "confidence_interval": [
+      0.335,
+      0.535
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.435
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.75,
+    "bridge_ratio": 0.75,
+    "persistence_windows": 2,
+    "friction": 0,
+    "friction_quadrant": "dead"
+  },
+  "salience": {
+    "value": 0.372,
+    "confidence_interval": [
+      0.2499,
+      0.4941
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.372
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0,
+    "confidence_interval": [
+      0,
+      0.15
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.1,
+    "confidence_interval": [
+      0,
+      0.2425
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.1
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.15,
+    "confidence_interval": [
+      0.0112,
+      0.2888
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.15
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 0.8333,
+    "confidence_interval": [
+      0.7458,
+      0.9208
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.8333
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Yonhap News Agency",
+    "first_timestamp": "2026-05-27T07:38:22Z",
+    "lead_lag": [
+      {
+        "platform": "The Korea Herald",
+        "lag_hours": 0.4
+      },
+      {
+        "platform": "중앙일보",
+        "lag_hours": 0.8
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_ai-bubble_006",
+    "hops": [
+      {
+        "platform": "Yonhap News Agency",
+        "timestamp": "2026-05-27T06:52:09+00:00",
+        "claim_id": "ai-bubble_중앙일보_3472f663_1",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "The Korea Herald",
+        "timestamp": "2026-05-27T07:14:12+00:00",
+        "claim_id": "ai-bubble_중앙일보_3472f663_1",
+        "fidelity_to_origin": 0.666,
+        "fidelity_to_previous": 0.666
+      },
+      {
+        "platform": "중앙일보",
+        "timestamp": "2026-05-27T07:38:22+00:00",
+        "claim_id": "ai-bubble_중앙일보_3472f663_1",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.4505
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "ai-bubble_yonhap_news_agency_168e2812_1",
+      "similarity": 0.6355,
+      "text": "The rise in South Korean stocks was primarily led by gains in the semiconductor industry."
+    },
+    {
+      "claim_id": "ai-bubble_the_korea_herald_927c0682_1",
+      "similarity": 0.6182,
+      "text": "The rise in semiconductor shares, particularly Samsung Electronics and SK hynix, is leading the stock market rally."
+    },
+    {
+      "claim_id": "ai-bubble_the_korea_herald_927c0682_0",
+      "similarity": 0.5091,
+      "text": "South Korean stocks have reached a new peak, driven by the strong performance of Samsung Electronics and SK hynix."
+    },
+    {
+      "claim_id": "ai-bubble_yonhap_news_agency_168e2812_0",
+      "similarity": 0.4983,
+      "text": "South Korean stocks have reached a new peak, driven by the strong performance of Samsung Electronics and SK hynix."
+    },
+    {
+      "claim_id": "ai-bubble_중앙일보_3472f663_0",
+      "similarity": 0.4883,
+      "text": "The Korean stock market is experiencing a rally driven by gains in semiconductor stocks."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "The Korean stock market is experiencing a rally driven by gains in semiconductor stocks.",
+      "platform": "중앙일보",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "South Korean stocks have reached a new peak, driven by the strong performance of Samsung Electronics and SK hynix.",
+      "platform": "Yonhap News Agency",
+      "confidence": 1.0,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The rise in South Korean stocks was primarily led by gains in the semiconductor industry.",
+      "platform": "Yonhap News Agency",
+      "confidence": 1.0,
+      "is_influencer_framing": false
+    }
+  ]
+}

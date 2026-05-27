@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "ai-workplace_bluesky_d288937b_0",
-    "cluster_id": "clu_ai-workplace_017",
-    "concept_id": "concept_ai-workplace_000",
+    "cluster_id": "clu_ai-workplace_035",
+    "concept_id": "concept_ai-workplace_002",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-25T15:45:27+00:00",
     "source_document_id": "2bb83839a42d9509",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.54,
+    "value": null,
     "confidence_interval": [
-      0.44,
-      0.64
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.54
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.25,
-    "bridge_ratio": 0.25,
-    "persistence_windows": 1,
-    "friction": 0.8,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.3812,
+    "value": null,
     "confidence_interval": [
-      0.2598,
-      0.5026
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3812
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.8,
+    "value": null,
     "confidence_interval": [
-      0.71,
-      0.89
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.8
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0,
     "confidence_interval": [
       0,
-      0.1962
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.963,
+    "value": null,
     "confidence_interval": [
-      0.8852,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.963
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,88 +133,63 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
-    "first_timestamp": "2026-04-25T15:45:27+00:00",
+    "first_platform": "unknown",
+    "first_timestamp": "",
     "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_ai-workplace_000",
-    "hops": [
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-25T14:00:19+00:00",
-        "claim_id": "ai-workplace_bluesky_d288937b_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      }
-    ],
-    "observation_boundary": "No public antecedent detected"
+    "concept_id": "",
+    "hops": [],
+    "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-workplace_bluesky_6d50e50c_0",
-      "similarity": 0.8877,
-      "text": "Meta is using its employees to train AI systems."
+      "claim_id": "ai-workplace_bluesky_b9937d7f_1",
+      "similarity": 0.5903,
+      "text": "AI models will continue to displace human workers, even if the AI investment bubble bursts."
     },
     {
-      "claim_id": "ai-workplace_bluesky_1b44276d_0",
-      "similarity": 0.8618,
-      "text": "Meta is using its employees to train AI models."
+      "claim_id": "ai-workplace_bluesky_268e6deb_0",
+      "similarity": 0.5796,
+      "text": "The ultimate aim of AI development is to replace human workers entirely, not just specific jobs."
     },
     {
-      "claim_id": "ai-workplace_bluesky_5f91156b_1",
-      "similarity": 0.6722,
-      "text": "Companies are exploiting employees' data to train AI systems that will replace them."
+      "claim_id": "ai-workplace_bluesky_bb1d5a27_0",
+      "similarity": 0.4753,
+      "text": "Some tech workers are being reassigned to generate content solely for AI training purposes."
     },
     {
-      "claim_id": "ai-workplace_bluesky_5f91156b_0",
-      "similarity": 0.5716,
-      "text": "AI development is causing widespread job displacement."
+      "claim_id": "ai-workplace_bluesky_2c61fd03_0",
+      "similarity": 0.4101,
+      "text": "AI-generated content is often believable but inaccurate."
+    },
+    {
+      "claim_id": "ai-workplace_bluesky_aab1e1f0_0",
+      "similarity": 0.3975,
+      "text": "Large language models will not replace most jobs in the near future."
     }
   ],
   "example_content": [
     {
-      "text": "Meta is using its employees to train AI models.",
+      "text": "AI models will continue to displace human workers, even if the AI investment bubble bursts.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "AI development is causing widespread job displacement.",
+      "text": "The ultimate aim of AI development is to replace human workers entirely, not just specific jobs.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Companies are exploiting employees' data to train AI systems that will replace them.",
+      "text": "Large language models will not replace most jobs in the near future.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

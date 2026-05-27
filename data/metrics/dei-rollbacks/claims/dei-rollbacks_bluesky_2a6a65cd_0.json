@@ -1,0 +1,195 @@
+{
+  "claim": {
+    "text": "Representative Wesley Hunt previously supported diversity, equity, and inclusion initiatives.",
+    "subject": "DEI",
+    "assertion": "was previously supported by Wesley Hunt",
+    "framing": "neutral",
+    "stance": "neutral",
+    "confidence": 0.9,
+    "arousal": "low",
+    "register": "vernacular",
+    "id": "dei-rollbacks_bluesky_2a6a65cd_0",
+    "cluster_id": "clu_dei-rollbacks_021",
+    "concept_id": "concept_dei-rollbacks_003",
+    "first_seen_platform": "bluesky",
+    "first_seen_timestamp": "2026-05-27T02:32:53.361Z",
+    "source_document_id": "19c2061e358fa5bd",
+    "source_platform": "bluesky",
+    "source_timestamp": "2026-05-27T02:32:53.361Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 1,
+      "shares": 1
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.3178,
+    "confidence_interval": [
+      0.2178,
+      0.4178
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3178
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0,
+    "friction_quadrant": "dead"
+  },
+  "salience": {
+    "value": 0.3152,
+    "confidence_interval": [
+      0.1888,
+      0.4416
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3152
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0,
+    "confidence_interval": [
+      0,
+      0.15
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.15,
+    "confidence_interval": [
+      0.0112,
+      0.2888
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.15
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-05-27T02:32:53.361Z",
+    "lead_lag": [
+      {
+        "platform": "The Texas Tribune",
+        "lag_hours": 2.7
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_dei-rollbacks_003",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-05-27T02:32:53.361000+00:00",
+        "claim_id": "dei-rollbacks_bluesky_2a6a65cd_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "The Texas Tribune",
+        "timestamp": "2026-05-27T05:13:45+00:00",
+        "claim_id": "dei-rollbacks_bluesky_2a6a65cd_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "dei-rollbacks_the_texas_tribune_ac94b888_2",
+      "similarity": 0.1666,
+      "text": "America's interests should be prioritized above all else."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "America's interests should be prioritized above all else.",
+      "platform": "The Texas Tribune",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

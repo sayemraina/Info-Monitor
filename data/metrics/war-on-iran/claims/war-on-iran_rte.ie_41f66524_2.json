@@ -1,0 +1,220 @@
+{
+  "claim": {
+    "text": "The ongoing conflict has caused extensive damage to civilian infrastructure in Lebanon, including hospitals.",
+    "subject": "the conflict between Israel and Hezbollah",
+    "assertion": "has caused extensive damage to civilian infrastructure",
+    "framing": "neutral",
+    "stance": "neutral",
+    "confidence": 0.8,
+    "arousal": "medium",
+    "register": "journalistic",
+    "id": "war-on-iran_rte.ie_41f66524_2",
+    "cluster_id": "clu_war-on-iran_082",
+    "concept_id": "concept_war-on-iran_002",
+    "first_seen_platform": "rte.ie",
+    "first_seen_timestamp": "2026-05-27T08:21:24Z",
+    "source_document_id": "623d9ea013441036",
+    "source_platform": "rte.ie",
+    "source_timestamp": "2026-05-27T08:21:24Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "elite_media"
+  },
+  "momentum": {
+    "value": 0.51,
+    "confidence_interval": [
+      0.41,
+      0.61
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.51
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0.2,
+    "friction_quadrant": "unopposed_advance"
+  },
+  "salience": {
+    "value": 0.3433,
+    "confidence_interval": [
+      0.219,
+      0.4676
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3433
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.2,
+    "confidence_interval": [
+      0.065,
+      0.335
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.2
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.8,
+    "factors": []
+  },
+  "provenance": {
+    "first_platform": "Al Jazeera",
+    "first_timestamp": "2026-05-27T08:21:24Z",
+    "lead_lag": [
+      {
+        "platform": "Rte.Ie",
+        "lag_hours": 8.4
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_war-on-iran_002",
+    "hops": [
+      {
+        "platform": "Al Jazeera",
+        "timestamp": "2026-05-27T00:00:00+00:00",
+        "claim_id": "war-on-iran_rte.ie_41f66524_2",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Rte.Ie",
+        "timestamp": "2026-05-27T08:21:24+00:00",
+        "claim_id": "war-on-iran_rte.ie_41f66524_2",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "war-on-iran_al_jazeera_8a0cc3ab_0",
+      "similarity": 0.63,
+      "text": "Israeli attacks have resulted in a high number of casualties in Lebanon."
+    },
+    {
+      "claim_id": "war-on-iran_rte.ie_41f66524_1",
+      "similarity": 0.5806,
+      "text": "Hezbollah is actively engaging Israeli forces in southern Lebanon."
+    },
+    {
+      "claim_id": "war-on-iran_rte.ie_41f66524_0",
+      "similarity": 0.5568,
+      "text": "Israeli military actions have resulted in a significant number of casualties in Lebanon."
+    },
+    {
+      "claim_id": "war-on-iran_al_jazeera_deea4ba9_0",
+      "similarity": 0.5214,
+      "text": "Israeli military actions have resulted in numerous fatalities in Lebanon."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Israeli military actions have resulted in a significant number of casualties in Lebanon.",
+      "platform": "Rte.Ie",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Hezbollah is actively engaging Israeli forces in southern Lebanon.",
+      "platform": "Rte.Ie",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Israeli military actions have resulted in numerous fatalities in Lebanon.",
+      "platform": "Al Jazeera",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

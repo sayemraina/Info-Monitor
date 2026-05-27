@@ -2,65 +2,6 @@
   {
     "id": "ai-workplace",
     "name": "AI & Your Job",
-    "cluster_count": 58,
-    "contestation_level": "high",
-    "contestation_emergence": {
-      "emerged_hours_ago": 48,
-      "source_diversity": 0.5
-    },
-    "headline_divergence": {
-      "jsd": 0.8219,
-      "dominant_typology": "Information Asymmetry",
-      "trend": "increasing"
-    },
-    "top_accelerating_claim": {
-      "text": "Artificial intelligence is causing job displacement for adult workers.",
-      "momentum": 0.6696,
-      "source_diversity": 0.25
-    },
-    "most_persistent_claim": {
-      "text": "Artificial intelligence is replacing immigrant workers in Canada.",
-      "persistence_windows": 8
-    },
-    "key_signal": {
-      "type": "contestation_emergence",
-      "summary": "Active contestation in \"Economic Policy\" — 4 pro vs 3 anti"
-    },
-    "activity_sparkline": [
-      0.0961,
-      0.068,
-      0.9478,
-      0.6483,
-      0.3531,
-      0.5521,
-      1.0,
-      0.3001,
-      0.1359,
-      0.0481,
-      0.0,
-      0.152
-    ],
-    "system_confidence": 0.73,
-    "ifi": {
-      "value": 56.4,
-      "trend": "increasing",
-      "flux_character": "reshuffling",
-      "flags": [
-        "Significant narrative disruption detected"
-      ],
-      "confidence_interval": [
-        47.9,
-        64.8
-      ]
-    },
-    "top_situation": {
-      "summary": "Narrative radicalizing: \"Businesses\"",
-      "severity": "high"
-    }
-  },
-  {
-    "id": "war-on-iran",
-    "name": "The War on Iran",
     "cluster_count": 68,
     "contestation_level": "high",
     "contestation_emergence": {
@@ -68,60 +9,116 @@
       "source_diversity": 1.0
     },
     "headline_divergence": {
+      "jsd": 0.8933,
+      "dominant_typology": "Information Asymmetry",
+      "trend": "increasing"
+    },
+    "top_accelerating_claim": {
+      "text": "AI will replace executive-level jobs more easily than other jobs.",
+      "momentum": 0.8008,
+      "source_diversity": 0.25
+    },
+    "most_persistent_claim": {
+      "text": "AI code generation is being adopted without sufficient review of the generated code.",
+      "persistence_windows": 6
+    },
+    "key_signal": {
+      "type": "phase_transition",
+      "summary": "\"Generative AI Unsafe\" cluster is shifting toward more extreme language"
+    },
+    "activity_sparkline": [
+      0.2272,
+      0.1312,
+      0.0875,
+      0.1515,
+      0.2272,
+      0.1906,
+      1.0,
+      0.1383,
+      0.1025,
+      0.1312,
+      0.0757,
+      0.0
+    ],
+    "system_confidence": 0.73,
+    "ifi": {
+      "value": 54.5,
+      "trend": "increasing",
+      "flux_character": "reshuffling",
+      "flags": [
+        "Significant narrative disruption detected"
+      ],
+      "confidence_interval": [
+        46.3,
+        62.7
+      ]
+    },
+    "top_situation": {
+      "summary": "Narrative radicalizing: \"AI Adoption in the Workplace\"",
+      "severity": "high"
+    }
+  },
+  {
+    "id": "war-on-iran",
+    "name": "The War on Iran",
+    "cluster_count": 84,
+    "contestation_level": "medium",
+    "contestation_emergence": null,
+    "headline_divergence": {
       "jsd": 1.0,
       "dominant_typology": "Information Asymmetry",
       "trend": "increasing"
     },
     "top_accelerating_claim": {
-      "text": "Iran is attacking U.S. ships and allied vessels in the Strait of Hormuz despite a ceasefire.",
-      "momentum": 0.9246,
-      "source_diversity": 1.0
+      "text": "Donald Trump is seeking to de-escalate conflict with Iran due to perceived weakness.",
+      "momentum": 0.645,
+      "source_diversity": 0.25
     },
     "most_persistent_claim": {
-      "text": "The United States is vulnerable to terrorism.",
+      "text": "Iran's nuclear program does not pose a significant threat.",
       "persistence_windows": 15
     },
     "key_signal": {
-      "type": "contestation_emergence",
-      "summary": "Active contestation in \"Iran Allowed\" — 4 pro vs 4 anti"
+      "type": "phase_transition",
+      "summary": "\"Iran Right\" cluster is shifting toward more extreme language"
     },
     "activity_sparkline": [
-      0.6192,
-      0.1444,
-      0.2347,
-      0.6758,
-      0.0,
-      0.4406,
-      0.0801,
-      0.0462,
-      0.2667,
-      0.7801,
-      0.2145,
-      1.0
+      0.2028,
+      0.5681,
+      0.1378,
+      0.1378,
+      0.3232,
+      0.0796,
+      0.1125,
+      0.0796,
+      1.0,
+      0.6414,
+      0.2698,
+      0.4806
     ],
-    "system_confidence": 0.87,
+    "system_confidence": 0.77,
     "ifi": {
-      "value": 47.4,
+      "value": 61.3,
       "trend": "increasing",
-      "flux_character": "consolidating",
+      "flux_character": "reshuffling",
       "flags": [
-        "Active across 31 platforms",
+        "Active across 33 platforms",
         "Significant narrative disruption detected"
       ],
       "confidence_interval": [
-        40.3,
-        54.5
+        52.1,
+        70.5
       ]
     },
     "top_situation": {
-      "summary": "Narrative radicalizing: \"Trump Administration\"",
+      "summary": "Narrative radicalizing: \"Strait of Hormuz\"",
       "severity": "high"
     }
   },
   {
     "id": "ozempic-glp1",
     "name": "Ozempic & the GLP-1 Revolution",
-    "cluster_count": 53,
+    "cluster_count": 49,
     "contestation_level": "high",
     "contestation_emergence": {
       "emerged_hours_ago": 48,
@@ -133,44 +130,44 @@
       "trend": "increasing"
     },
     "top_accelerating_claim": {
-      "text": "The U.S. military's spending on Ozempic and other GLP-1 weight loss medications is excessive and was",
-      "momentum": 0.645,
+      "text": "Government scientists at the VA and NIH conducted the basic research that led to GLP-1 drugs.",
+      "momentum": 0.715,
       "source_diversity": 0.25
     },
     "most_persistent_claim": {
-      "text": "Ozempic is becoming a common cosmetic intervention.",
-      "persistence_windows": 15
+      "text": "Ozempic has negative side effects on physical appearance.",
+      "persistence_windows": 11
     },
     "key_signal": {
       "type": "phase_transition",
-      "summary": "\"Petrelintide\" cluster is shifting toward more extreme language"
+      "summary": "\"Peptides\" cluster is shifting toward more extreme language"
     },
     "activity_sparkline": [
       0.0,
-      0.0,
-      0.1342,
-      0.0,
-      0.5452,
-      0.6078,
+      0.0547,
+      0.2344,
       1.0,
-      0.1898,
-      0.484,
-      0.7652,
-      0.6712,
-      0.811
+      0.158,
+      0.1224,
+      0.5888,
+      0.0547,
+      0.212,
+      0.1414,
+      0.0836,
+      0.0547
     ],
-    "system_confidence": 0.74,
+    "system_confidence": 0.73,
     "ifi": {
-      "value": 50.8,
+      "value": 53.0,
       "trend": "increasing",
-      "flux_character": "consolidating",
+      "flux_character": "reshuffling",
       "flags": [
-        "Active across 25 platforms",
+        "Active across 22 platforms",
         "Significant narrative disruption detected"
       ],
       "confidence_interval": [
-        43.2,
-        58.4
+        45.0,
+        60.9
       ]
     },
     "top_situation": {
@@ -181,25 +178,25 @@
   {
     "id": "immigration",
     "name": "Immigration & American Identity",
-    "cluster_count": 50,
+    "cluster_count": 61,
     "contestation_level": "high",
     "contestation_emergence": {
       "emerged_hours_ago": 48,
       "source_diversity": 1.0
     },
     "headline_divergence": {
-      "jsd": 0.8082,
+      "jsd": 1.0,
       "dominant_typology": "Information Asymmetry",
       "trend": "increasing"
     },
     "top_accelerating_claim": {
-      "text": "Herman Mashaba and ActionSA are being dishonest about their immigration policies to gain votes.",
-      "momentum": 0.7322,
+      "text": "Trump's immigration policy faced numerous legal challenges and adverse rulings.",
+      "momentum": 0.715,
       "source_diversity": 0.5
     },
     "most_persistent_claim": {
-      "text": "Immigration policy is creating economic uncertainty in British Columbia.",
-      "persistence_windows": 15
+      "text": "The Schengen Agreement does not mandate a common immigration policy among member states.",
+      "persistence_windows": 14
     },
     "key_signal": {
       "type": "phase_transition",
@@ -207,41 +204,158 @@
     },
     "activity_sparkline": [
       0.0,
-      0.0,
-      0.3169,
-      0.3511,
-      0.236,
-      0.3037,
+      0.4076,
+      0.0316,
+      0.5082,
+      0.1845,
+      0.2985,
       1.0,
-      0.8429,
-      0.2867,
-      0.5269,
-      0.5605,
-      0.2528
+      0.3018,
+      0.2303,
+      0.3002,
+      0.1582,
+      0.1613
     ],
     "system_confidence": 0.79,
     "ifi": {
-      "value": 46.0,
+      "value": 53.8,
       "trend": "increasing",
-      "flux_character": "reshuffling",
+      "flux_character": "consolidating",
       "flags": [
-        "Active across 12 platforms",
+        "Active across 29 platforms",
         "Significant narrative disruption detected"
       ],
       "confidence_interval": [
-        39.1,
-        52.9
+        45.8,
+        61.9
       ]
     },
     "top_situation": {
-      "summary": "Narrative radicalizing: \"American Identity\"",
+      "summary": "Narrative radicalizing: \"Border Security\"",
       "severity": "high"
     }
   },
   {
     "id": "housing-crisis",
     "name": "The Housing Crisis",
-    "cluster_count": 55,
+    "cluster_count": 58,
+    "contestation_level": "high",
+    "contestation_emergence": {
+      "emerged_hours_ago": 48,
+      "source_diversity": 1.0
+    },
+    "headline_divergence": {
+      "jsd": 0.9657,
+      "dominant_typology": "Information Asymmetry",
+      "trend": "increasing"
+    },
+    "top_accelerating_claim": {
+      "text": "New York City is implementing a comprehensive strategy to address its severe housing shortage.",
+      "momentum": 0.82,
+      "source_diversity": 0.25
+    },
+    "most_persistent_claim": {
+      "text": "Landlord accountability is the primary cause of the housing crisis.",
+      "persistence_windows": 13
+    },
+    "key_signal": {
+      "type": "contestation_emergence",
+      "summary": "Active contestation in \"HUD Policy\" — 5 pro vs 4 anti"
+    },
+    "activity_sparkline": [
+      0.4568,
+      0.0578,
+      0.3538,
+      0.4246,
+      0.5482,
+      0.22,
+      1.0,
+      0.4266,
+      0.37,
+      0.4363,
+      0.1226,
+      0.0817
+    ],
+    "system_confidence": 0.77,
+    "ifi": {
+      "value": 51.3,
+      "trend": "increasing",
+      "flux_character": "reshuffling",
+      "flags": [
+        "Active across 19 platforms",
+        "Significant narrative disruption detected"
+      ],
+      "confidence_interval": [
+        43.6,
+        59.0
+      ]
+    },
+    "top_situation": {
+      "summary": "Narrative radicalizing: \"Mortgage Rates\"",
+      "severity": "high"
+    }
+  },
+  {
+    "id": "israel-palestine",
+    "name": "Israel, Palestine & the Gaza War",
+    "cluster_count": 92,
+    "contestation_level": "medium",
+    "contestation_emergence": null,
+    "headline_divergence": {
+      "jsd": 1.0,
+      "dominant_typology": "Information Asymmetry",
+      "trend": "increasing"
+    },
+    "top_accelerating_claim": {
+      "text": "The actions of the Israeli government constitute a genocide against Palestinians.",
+      "momentum": 0.66,
+      "source_diversity": 0.25
+    },
+    "most_persistent_claim": {
+      "text": "Israel is responsible for civilian casualties and displacement in Gaza.",
+      "persistence_windows": 15
+    },
+    "key_signal": {
+      "type": "contestation_emergence",
+      "summary": "Active contestation in \"Hamas and Palestinian People\" — 3 pro vs 3 anti"
+    },
+    "activity_sparkline": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.9441,
+      0.8805,
+      0.6534,
+      1.0
+    ],
+    "system_confidence": 0.81,
+    "ifi": {
+      "value": 55.0,
+      "trend": "increasing",
+      "flux_character": "reshuffling",
+      "flags": [
+        "Active across 21 platforms",
+        "Significant narrative disruption detected"
+      ],
+      "confidence_interval": [
+        46.7,
+        63.2
+      ]
+    },
+    "top_situation": {
+      "summary": "Narrative radicalizing: \"Iran War\"",
+      "severity": "high"
+    }
+  },
+  {
+    "id": "crypto-digital-money",
+    "name": "Crypto & the Future of Money",
+    "cluster_count": 57,
     "contestation_level": "high",
     "contestation_emergence": {
       "emerged_hours_ago": 48,
@@ -253,173 +367,55 @@
       "trend": "decreasing"
     },
     "top_accelerating_claim": {
-      "text": "The housing shortage is caused by excessive immigration.",
-      "momentum": 0.925,
-      "source_diversity": 0.5
+      "text": "The Glassworm malware campaign targets software developers through compromised development tools and",
+      "momentum": 0.66,
+      "source_diversity": 0.25
     },
     "most_persistent_claim": {
-      "text": "Supporting artists through purchases can help alleviate the housing crisis.",
+      "text": "Slendercoin is associated with or designed for white people.",
       "persistence_windows": 15
     },
     "key_signal": {
       "type": "contestation_emergence",
-      "summary": "Active contestation in \"Immigration\" — 7 pro vs 9 anti"
+      "summary": "Active contestation in \"Artificial Intelligence\" — 5 pro vs 4 anti"
     },
     "activity_sparkline": [
-      0.0541,
-      0.0242,
-      0.1096,
-      0.2258,
-      0.5472,
-      0.2152,
-      0.3723,
-      1.0,
-      0.4361,
-      0.2421,
-      0.0856,
-      0.2068
-    ],
-    "system_confidence": 0.78,
-    "ifi": {
-      "value": 50.3,
-      "trend": "increasing",
-      "flux_character": "consolidating",
-      "flags": [
-        "Active across 15 platforms",
-        "Significant narrative disruption detected"
-      ],
-      "confidence_interval": [
-        42.8,
-        57.8
-      ]
-    },
-    "top_situation": {
-      "summary": "Narrative radicalizing: \"Mortgage Rates\"",
-      "severity": "high"
-    }
-  },
-  {
-    "id": "israel-palestine",
-    "name": "Israel, Palestine & the Gaza War",
-    "cluster_count": 77,
-    "contestation_level": "medium",
-    "contestation_emergence": null,
-    "headline_divergence": {
-      "jsd": 1.0,
-      "dominant_typology": "Information Asymmetry",
-      "trend": "increasing"
-    },
-    "top_accelerating_claim": {
-      "text": "The Trump administration is responsible for war crimes and should be condemned by the UN.",
-      "momentum": 0.925,
-      "source_diversity": 0.25
-    },
-    "most_persistent_claim": {
-      "text": "Most Israelis oppose ending the war with Iran.",
-      "persistence_windows": 15
-    },
-    "key_signal": {
-      "type": "phase_transition",
-      "summary": "\"Israel\" cluster is shifting toward more extreme language"
-    },
-    "activity_sparkline": [
-      0.0408,
-      0.2777,
       0.0,
+      0.14,
+      0.198,
+      0.2425,
       0.0,
-      0.0,
-      0.1079,
-      0.2727,
-      0.1723,
-      0.3746,
-      0.1928,
-      0.5035,
+      0.4851,
+      0.14,
+      0.4644,
+      0.4851,
+      0.2425,
+      0.4851,
       1.0
     ],
-    "system_confidence": 0.85,
+    "system_confidence": 0.75,
     "ifi": {
-      "value": 46.9,
+      "value": 58.8,
       "trend": "increasing",
       "flux_character": "reshuffling",
       "flags": [
-        "High arousal in 36% of recent claims",
-        "Active across 18 platforms",
+        "Active across 23 platforms",
         "Significant narrative disruption detected"
       ],
       "confidence_interval": [
-        39.9,
-        53.9
+        50.0,
+        67.6
       ]
     },
     "top_situation": {
-      "summary": "Emotional escalation in \"Israel\" (arousal 0.83)",
-      "severity": "high"
-    }
-  },
-  {
-    "id": "crypto-digital-money",
-    "name": "Crypto & the Future of Money",
-    "cluster_count": 53,
-    "contestation_level": "high",
-    "contestation_emergence": {
-      "emerged_hours_ago": 48,
-      "source_diversity": 1.0
-    },
-    "headline_divergence": {
-      "jsd": 1.0,
-      "dominant_typology": "Information Asymmetry",
-      "trend": "increasing"
-    },
-    "top_accelerating_claim": {
-      "text": "Donald Trump is potentially involved in a cryptocurrency scam.",
-      "momentum": 0.82,
-      "source_diversity": 0.5
-    },
-    "most_persistent_claim": {
-      "text": "The Moscow Exchange will launch cryptocurrency indexes for Solana, XRP, Tron, and BNB.",
-      "persistence_windows": 15
-    },
-    "key_signal": {
-      "type": "phase_transition",
-      "summary": "\"Bitcoin\" cluster is shifting toward more extreme language"
-    },
-    "activity_sparkline": [
-      0.4104,
-      0.0558,
-      0.4571,
-      0.4385,
-      0.2114,
-      0.1934,
-      0.2234,
-      0.299,
-      0.5067,
-      0.1206,
-      1.0,
-      0.7818
-    ],
-    "system_confidence": 0.82,
-    "ifi": {
-      "value": 60.9,
-      "trend": "increasing",
-      "flux_character": "consolidating",
-      "flags": [
-        "Active across 27 platforms",
-        "Significant narrative disruption detected"
-      ],
-      "confidence_interval": [
-        51.8,
-        70.1
-      ]
-    },
-    "top_situation": {
-      "summary": "Narrative radicalizing: \"Khabib Nurmagomedov\"",
+      "summary": "Narrative radicalizing: \"Artificial Intelligence\"",
       "severity": "high"
     }
   },
   {
     "id": "inflation-cost-of-living",
     "name": "Inflation & Cost of Living: Who's to Blame?",
-    "cluster_count": 51,
+    "cluster_count": 69,
     "contestation_level": "high",
     "contestation_emergence": {
       "emerged_hours_ago": 48,
@@ -431,44 +427,44 @@
       "trend": "increasing"
     },
     "top_accelerating_claim": {
-      "text": "Government spending is contributing to inflation.",
-      "momentum": 0.82,
-      "source_diversity": 1.0
+      "text": "Tony Blair is advocating for increased reliance on the oil industry.",
+      "momentum": 0.645,
+      "source_diversity": 0.25
     },
     "most_persistent_claim": {
-      "text": "Economic hardship makes people susceptible to populist rhetoric.",
+      "text": "Government efforts to address the cost of living crisis are ineffective.",
       "persistence_windows": 15
     },
     "key_signal": {
-      "type": "phase_transition",
-      "summary": "\"Nigeria's Economy\" cluster is shifting toward more extreme language"
+      "type": "contestation_emergence",
+      "summary": "Active contestation in \"Grocery Prices\" — 5 pro vs 6 anti"
     },
     "activity_sparkline": [
-      0.8312,
       0.0,
-      0.7059,
-      0.7419,
-      0.364,
-      1.0,
-      0.1758,
-      0.8506,
-      0.5242,
-      0.7478,
-      0.4488,
-      0.4902
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.6308,
+      0.7284,
+      0.8299,
+      0.982,
+      0.3499,
+      0.6186,
+      1.0
     ],
-    "system_confidence": 0.87,
+    "system_confidence": 0.78,
     "ifi": {
-      "value": 44.4,
+      "value": 73.2,
       "trend": "increasing",
       "flux_character": "reshuffling",
       "flags": [
-        "Active across 33 platforms",
+        "Active across 30 platforms",
         "Significant narrative disruption detected"
       ],
       "confidence_interval": [
-        37.7,
-        51.0
+        62.2,
+        84.2
       ]
     },
     "top_situation": {
@@ -479,11 +475,71 @@
   {
     "id": "dei-rollbacks",
     "name": "DEI Rollbacks",
-    "cluster_count": 21,
+    "cluster_count": 28,
     "contestation_level": "high",
     "contestation_emergence": {
       "emerged_hours_ago": 48,
-      "source_diversity": 0.5
+      "source_diversity": 1.0
+    },
+    "headline_divergence": {
+      "jsd": 0.8083,
+      "dominant_typology": "Information Asymmetry",
+      "trend": "increasing"
+    },
+    "top_accelerating_claim": {
+      "text": "The Department of Homeland Security and Immigration and Customs Enforcement are overtly promoting wh",
+      "momentum": 0.645,
+      "source_diversity": 0.75
+    },
+    "most_persistent_claim": {
+      "text": "Opus Dei is a cult that seeks to control the world and opposes the US Constitution.",
+      "persistence_windows": 10
+    },
+    "key_signal": {
+      "type": "phase_transition",
+      "summary": "\"AI and Employment\" cluster is shifting toward more extreme language"
+    },
+    "activity_sparkline": [
+      0.1728,
+      0.1728,
+      0.0,
+      1.0,
+      0.2993,
+      0.1222,
+      0.573,
+      0.2116,
+      0.7917,
+      0.8978,
+      0.4052,
+      0.3863
+    ],
+    "system_confidence": 0.67,
+    "ifi": {
+      "value": 50.1,
+      "trend": "increasing",
+      "flux_character": "diversifying",
+      "flags": [
+        "Active across 7 platforms",
+        "Significant narrative disruption detected"
+      ],
+      "confidence_interval": [
+        42.6,
+        57.6
+      ]
+    },
+    "top_situation": {
+      "summary": "Narrative radicalizing: \"Voting Rights Act\"",
+      "severity": "high"
+    }
+  },
+  {
+    "id": "ai-bubble",
+    "name": "The AI Bubble",
+    "cluster_count": 57,
+    "contestation_level": "high",
+    "contestation_emergence": {
+      "emerged_hours_ago": 48,
+      "source_diversity": 1.0
     },
     "headline_divergence": {
       "jsd": 1.0,
@@ -491,103 +547,44 @@
       "trend": "increasing"
     },
     "top_accelerating_claim": {
-      "text": "Jeff Bezos is connected to the rollback of Diversity, Equity, and Inclusion (DEI) initiatives.",
-      "momentum": 0.79,
-      "source_diversity": 0.5
+      "text": "The failure of AI companies could lead to the sale of dangerous materials like weapons-grade plutoni",
+      "momentum": 0.645,
+      "source_diversity": 0.25
     },
     "most_persistent_claim": {
-      "text": "Diversity, equity, and inclusion (DEI) initiatives are ineffective and misguided.",
-      "persistence_windows": 5
-    },
-    "key_signal": {
-      "type": "phase_transition",
-      "summary": "\"Openai\" cluster is shifting toward more extreme language"
-    },
-    "activity_sparkline": [
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0112,
-      0.0158,
-      0.0,
-      1.0,
-      0.137,
-      0.0316,
-      0.0158,
-      0.0194
-    ],
-    "system_confidence": 0.7,
-    "ifi": {
-      "value": 44.0,
-      "trend": "increasing",
-      "flux_character": "reshuffling",
-      "flags": [
-        "Active across 8 platforms",
-        "Significant narrative disruption detected"
-      ],
-      "confidence_interval": [
-        37.4,
-        50.6
-      ]
-    },
-    "top_situation": {
-      "summary": "Narrative radicalizing: \"Target\"",
-      "severity": "high"
-    }
-  },
-  {
-    "id": "ai-bubble",
-    "name": "The AI Bubble",
-    "cluster_count": 42,
-    "contestation_level": "high",
-    "contestation_emergence": {
-      "emerged_hours_ago": 48,
-      "source_diversity": 1.0
-    },
-    "headline_divergence": {
-      "jsd": 0.1909,
-      "dominant_typology": "Information Asymmetry",
-      "trend": "decreasing"
-    },
-    "top_accelerating_claim": {
-      "text": "Jon Oringer's new AI platform is exploiting comic and graphic novel creators.",
-      "momentum": 0.82,
-      "source_diversity": 0.5
-    },
-    "most_persistent_claim": {
-      "text": "The company listened to artist feedback regarding AI and demonstrated that artists' voices are value",
-      "persistence_windows": 10
+      "text": "There is no AI bubble.",
+      "persistence_windows": 14
     },
     "key_signal": {
       "type": "contestation_emergence",
-      "summary": "Active contestation in \"LLM AI Speculative\" — 3 pro vs 3 anti"
+      "summary": "Active contestation in \"Etfs\" — 4 pro vs 3 anti"
     },
     "activity_sparkline": [
+      0.6653,
       0.0,
       0.0,
       0.0,
-      0.0,
-      0.4545,
+      0.3136,
+      0.1568,
       1.0,
-      0.0833,
-      0.0833,
-      0.2363,
-      0.0732,
-      0.2033,
-      0.0833
+      0.8047,
+      0.4435,
+      0.6273,
+      0.6338,
+      0.614
     ],
-    "system_confidence": 0.79,
+    "system_confidence": 0.72,
     "ifi": {
-      "value": 39.4,
+      "value": 57.4,
       "trend": "increasing",
       "flux_character": "reshuffling",
       "flags": [
-        "Active across 22 platforms"
+        "Active across 19 platforms",
+        "Significant narrative disruption detected"
       ],
       "confidence_interval": [
-        33.5,
-        45.4
+        48.8,
+        66.0
       ]
     },
     "top_situation": {

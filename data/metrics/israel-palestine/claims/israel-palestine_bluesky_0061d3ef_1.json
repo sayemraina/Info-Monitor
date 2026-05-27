@@ -1,0 +1,195 @@
+{
+  "claim": {
+    "text": "Germany is supporting genocide and war crimes.",
+    "subject": "Germany",
+    "assertion": "is supporting genocide and war crimes",
+    "framing": "war crimes",
+    "stance": "anti",
+    "confidence": 0.9,
+    "arousal": "high",
+    "register": "vernacular",
+    "id": "israel-palestine_bluesky_0061d3ef_1",
+    "cluster_id": "clu_israel-palestine_038",
+    "concept_id": "concept_israel-palestine_001",
+    "first_seen_platform": "bluesky",
+    "first_seen_timestamp": "2026-05-27T06:54:58.056Z",
+    "source_document_id": "4bf03808f0f7c78c",
+    "source_platform": "bluesky",
+    "source_timestamp": "2026-05-27T06:54:58.056Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.645,
+    "confidence_interval": [
+      0.545,
+      0.745
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.645
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 1,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.3148,
+    "confidence_interval": [
+      0.1884,
+      0.4412
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3148
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.85,
+    "confidence_interval": [
+      0.7638,
+      0.9362
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.85
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 0.9833,
+    "confidence_interval": [
+      0.907,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.9833
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Operation Disclosure Official",
+    "first_timestamp": "2026-05-27T06:54:58.056Z",
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 0.4
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_israel-palestine_001",
+    "hops": [
+      {
+        "platform": "Operation Disclosure Official",
+        "timestamp": "2026-05-27T06:32:23+00:00",
+        "claim_id": "israel-palestine_bluesky_0061d3ef_1",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-05-27T06:54:58.056000+00:00",
+        "claim_id": "israel-palestine_bluesky_0061d3ef_1",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "israel-palestine_operation_disclosure_official_c4f28cdf_2",
+      "similarity": 0.313,
+      "text": "The EU and NATO are unwilling to help with Iran because they are implicated in the Uranium One scandal."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "The EU and NATO are unwilling to help with Iran because they are implicated in the Uranium One scandal.",
+      "platform": "Operation Disclosure Official",
+      "confidence": 0.7,
+      "is_influencer_framing": false
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "claim": {
+    "text": "Insurance, rent, and energy prices have significantly increased.",
+    "subject": "Insurance, rent, and energy prices",
+    "assertion": "have significantly increased",
+    "framing": "neutral",
+    "stance": "pro",
+    "confidence": 0.9,
+    "arousal": "high",
+    "register": "vernacular",
+    "id": "housing-crisis_bluesky_86e53f22_0",
+    "cluster_id": "clu_housing-crisis_038",
+    "concept_id": "concept_housing-crisis_004",
+    "first_seen_platform": "bluesky",
+    "first_seen_timestamp": "2026-05-27T02:29:04.906Z",
+    "source_document_id": "86e53f220bb03fe5",
+    "source_platform": "bluesky",
+    "source_timestamp": "2026-05-27T02:29:04.906Z",
+    "source_engagement": {
+      "likes": 0,
+      "replies": 2,
+      "shares": 0
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.5274,
+    "confidence_interval": [
+      0.4274,
+      0.6274
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5274
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.75,
+    "bridge_ratio": 0.75,
+    "persistence_windows": 1,
+    "friction": 0,
+    "friction_quadrant": "unopposed_advance"
+  },
+  "salience": {
+    "value": 0.3333,
+    "confidence_interval": [
+      0.2083,
+      0.4583
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3333
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0,
+    "confidence_interval": [
+      0,
+      0.15
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.85,
+    "confidence_interval": [
+      0.7638,
+      0.9362
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.85
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 0.971,
+    "confidence_interval": [
+      0.8938,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.971
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-05-27T02:29:04.906Z",
+    "lead_lag": [
+      {
+        "platform": "Gonzales Inquirer",
+        "lag_hours": 7.3
+      },
+      {
+        "platform": "Cnhi News",
+        "lag_hours": 7.3
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_housing-crisis_004",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-05-26T11:11:33.850000+00:00",
+        "claim_id": "housing-crisis_bluesky_86e53f22_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Gonzales Inquirer",
+        "timestamp": "2026-05-26T18:30:13+00:00",
+        "claim_id": "housing-crisis_bluesky_86e53f22_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      },
+      {
+        "platform": "Cnhi News",
+        "timestamp": "2026-05-26T18:30:13+00:00",
+        "claim_id": "housing-crisis_bluesky_86e53f22_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 1.0
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "housing-crisis_cnhi_news_43daa498_1",
+      "similarity": 0.697,
+      "text": "Limited housing supply and increased interest rates have made housing more expensive."
+    },
+    {
+      "claim_id": "housing-crisis_bluesky_bfca13c0_0",
+      "similarity": 0.6469,
+      "text": "Cost-of-living pressures are impacting consumers, including housing expenses."
+    },
+    {
+      "claim_id": "housing-crisis_gonzales_inquirer_eb73ef01_1",
+      "similarity": 0.617,
+      "text": "Rising housing costs are a primary driver of the overall increase in the cost of living."
+    },
+    {
+      "claim_id": "housing-crisis_bluesky_5cb3c3e2_0",
+      "similarity": 0.4878,
+      "text": "Increased housing costs correlate with increased housing quality."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Increased housing costs correlate with increased housing quality.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Cost-of-living pressures are impacting consumers, including housing expenses.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Rising housing costs are a primary driver of the overall increase in the cost of living.",
+      "platform": "Gonzales Inquirer",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

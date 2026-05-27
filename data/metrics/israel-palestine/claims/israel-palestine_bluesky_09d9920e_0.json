@@ -1,0 +1,222 @@
+{
+  "claim": {
+    "text": "Israeli forces violated a ceasefire and killed seven Palestinians.",
+    "subject": "Israeli forces",
+    "assertion": "violated a ceasefire and killed seven Palestinians",
+    "framing": "neutral",
+    "stance": "anti",
+    "confidence": 0.9,
+    "arousal": "high",
+    "register": "vernacular",
+    "id": "israel-palestine_bluesky_09d9920e_0",
+    "cluster_id": "clu_israel-palestine_067",
+    "concept_id": "concept_israel-palestine_002",
+    "first_seen_platform": "bluesky",
+    "first_seen_timestamp": "2026-05-27T08:09:38.841Z",
+    "source_document_id": "09d9920e95358758",
+    "source_platform": "bluesky",
+    "source_timestamp": "2026-05-27T08:09:38.841Z",
+    "source_engagement": {
+      "likes": 2,
+      "replies": 0,
+      "shares": 2
+    },
+    "source_type": "population"
+  },
+  "momentum": {
+    "value": 0.5298,
+    "confidence_interval": [
+      0.4298,
+      0.6298
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5298
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 1,
+    "friction": 0.6,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.3424,
+    "confidence_interval": [
+      0.2181,
+      0.4667
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3424
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.6,
+    "confidence_interval": [
+      0.495,
+      0.705
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.6
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.05,
+    "confidence_interval": [
+      0,
+      0.1962
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.05
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.85,
+    "confidence_interval": [
+      0.7638,
+      0.9362
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.85
+    ],
+    "source_distribution": "production"
+  },
+  "expressibility": {
+    "value": 0.931,
+    "confidence_interval": [
+      0.8508,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.931
+    ],
+    "source_distribution": "production"
+  },
+  "exposure": {
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+  },
+  "confidence_detail": {
+    "score": 0.9,
+    "factors": [
+      "clear direct assertion"
+    ]
+  },
+  "provenance": {
+    "first_platform": "France24",
+    "first_timestamp": "2026-05-27T08:09:38.841Z",
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 16.7
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_israel-palestine_002",
+    "hops": [
+      {
+        "platform": "France24",
+        "timestamp": "2026-05-26T15:30:30+00:00",
+        "claim_id": "israel-palestine_bluesky_09d9920e_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-05-27T08:09:38.841000+00:00",
+        "claim_id": "israel-palestine_bluesky_09d9920e_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
+    "observation_boundary": null
+  },
+  "coordination": {
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+  },
+  "semantic_neighbors": [
+    {
+      "claim_id": "israel-palestine_bluesky_b05c672d_0",
+      "similarity": 0.83,
+      "text": "Israeli forces have violated the ceasefire agreement by killing Palestinians in the Gaza Strip."
+    },
+    {
+      "claim_id": "israel-palestine_france24_6c4b1864_1",
+      "similarity": 0.633,
+      "text": "Israeli military actions in Lebanon are endangering the ceasefire."
+    },
+    {
+      "claim_id": "israel-palestine_bluesky_cb52d2e8_0",
+      "similarity": 0.5268,
+      "text": "Israeli forces are increasing military operations against Hezbollah in southern Lebanon."
+    },
+    {
+      "claim_id": "israel-palestine_france24_021797da_0",
+      "similarity": 0.4616,
+      "text": "Israel intends to intensify its attacks on Lebanon."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Israeli forces have violated the ceasefire agreement by killing Palestinians in the Gaza Strip.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Israeli forces are increasing military operations against Hezbollah in southern Lebanon.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Israel intends to intensify its attacks on Lebanon.",
+      "platform": "France24",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
+}

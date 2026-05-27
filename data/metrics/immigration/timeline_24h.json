@@ -1,9 +1,9 @@
 {
   "events": [
     {
-      "id": "evt_b219ea2b4536",
+      "id": "evt_f52f102500a9",
       "type": "phase_transition",
-      "timestamp": "2026-05-05T20:46:40.513565+00:00",
+      "timestamp": "2026-05-26T20:40:56.321481+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
@@ -12,13 +12,13 @@
       "detail": {
         "cluster_id": "clu_immigration_001",
         "direction": "radicalizing",
-        "magnitude": 0.7206
+        "magnitude": 0.7316
       }
     },
     {
-      "id": "evt_cf2b67bbcc46",
+      "id": "evt_27ab17d70906",
       "type": "phase_transition",
-      "timestamp": "2026-05-05T20:46:40.513565+00:00",
+      "timestamp": "2026-05-26T20:40:56.321481+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
@@ -27,13 +27,13 @@
       "detail": {
         "cluster_id": "clu_immigration_002",
         "direction": "radicalizing",
-        "magnitude": 0.7642
+        "magnitude": 0.7732
       }
     },
     {
-      "id": "evt_c9bc825529aa",
+      "id": "evt_412fd37786d7",
       "type": "phase_transition",
-      "timestamp": "2026-05-05T20:46:40.513565+00:00",
+      "timestamp": "2026-05-26T20:40:56.321481+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
@@ -42,92 +42,110 @@
       "detail": {
         "cluster_id": "clu_immigration_004",
         "direction": "radicalizing",
-        "magnitude": 0.6045
+        "magnitude": 0.6065
       }
     },
     {
-      "id": "evt_24579817ce4c",
+      "id": "evt_e549674ca186",
       "type": "phase_transition",
-      "timestamp": "2026-05-05T20:46:40.513565+00:00",
+      "timestamp": "2026-05-26T20:40:56.321481+00:00",
       "claim_id": null,
-      "slice_id": null,
-      "severity": "high",
-      "confidence": 0.81,
-      "summary": "\"UK Labour Government\" cluster is shifting toward more extreme language",
-      "detail": {
-        "cluster_id": "clu_immigration_005",
-        "direction": "radicalizing",
-        "magnitude": 0.6942
-      }
-    },
-    {
-      "id": "evt_773d828a7ec5",
-      "type": "divergence_shift",
-      "timestamp": "2026-05-05T20:46:40.513565+00:00",
-      "claim_id": null,
-      "slice_id": "bluesky_platform",
-      "severity": "high",
-      "confidence": 0.95,
-      "summary": "Strong narrative split between Bluesky and the_atlantic",
-      "detail": {
-        "jsd": 0.8082,
-        "platforms": [
-          "bluesky",
-          "the_atlantic"
-        ],
-        "window_hours": 24
-      }
-    },
-    {
-      "id": "evt_fbc0467b31e3",
-      "type": "divergence_shift",
-      "timestamp": "2026-05-05T20:46:40.513565+00:00",
-      "claim_id": null,
-      "slice_id": "bluesky_platform",
-      "severity": "high",
-      "confidence": 0.9,
-      "summary": "Significant narrative divergence between Bluesky and X Platform",
-      "detail": {
-        "jsd": 0.4029,
-        "platforms": [
-          "bluesky",
-          "x"
-        ],
-        "window_hours": 24
-      }
-    },
-    {
-      "id": "evt_2c534d32943c",
-      "type": "divergence_shift",
-      "timestamp": "2026-05-05T20:46:40.513565+00:00",
-      "claim_id": null,
-      "slice_id": "the_atlantic_platform",
-      "severity": "high",
-      "confidence": 0.95,
-      "summary": "Strong narrative split between the_atlantic and X Platform",
-      "detail": {
-        "jsd": 0.8462,
-        "platforms": [
-          "the_atlantic",
-          "x"
-        ],
-        "window_hours": 24
-      }
-    },
-    {
-      "id": "evt_3f08fc28547e",
-      "type": "arousal_escalation",
-      "timestamp": "2026-05-06T00:46:40.513565+00:00",
-      "claim_id": "immigration_bluesky_b1002675_0",
       "slice_id": null,
       "severity": "high",
       "confidence": 0.84,
-      "summary": "Heated language rising in \"Mike Lawler\" — 75% emotionally charged claims",
+      "summary": "\"ICE\" cluster is shifting toward more extreme language",
       "detail": {
-        "cluster_id": "clu_immigration_046",
-        "high_arousal_count": 3,
-        "total": 4,
-        "ratio": 0.75
+        "cluster_id": "clu_immigration_005",
+        "direction": "radicalizing",
+        "magnitude": 0.8008
+      }
+    },
+    {
+      "id": "evt_665b881ba9d7",
+      "type": "divergence_shift",
+      "timestamp": "2026-05-26T20:40:56.321481+00:00",
+      "claim_id": null,
+      "slice_id": "bluesky_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Strong narrative split between Bluesky and daily_wire",
+      "detail": {
+        "jsd": 0.871,
+        "platforms": [
+          "bluesky",
+          "daily_wire"
+        ],
+        "window_hours": 24
+      }
+    },
+    {
+      "id": "evt_6a362c6616ef",
+      "type": "divergence_shift",
+      "timestamp": "2026-05-26T20:40:56.321481+00:00",
+      "claim_id": null,
+      "slice_id": "bluesky_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Strong narrative split between Bluesky and fox_news",
+      "detail": {
+        "jsd": 0.7631,
+        "platforms": [
+          "bluesky",
+          "fox_news"
+        ],
+        "window_hours": 24
+      }
+    },
+    {
+      "id": "evt_a6194e6a8686",
+      "type": "divergence_shift",
+      "timestamp": "2026-05-26T20:40:56.321481+00:00",
+      "claim_id": null,
+      "slice_id": "bluesky_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Strong narrative split between Bluesky and fox_politics",
+      "detail": {
+        "jsd": 0.9187,
+        "platforms": [
+          "bluesky",
+          "fox_politics"
+        ],
+        "window_hours": 24
+      }
+    },
+    {
+      "id": "evt_58a0fa654492",
+      "type": "divergence_shift",
+      "timestamp": "2026-05-26T20:40:56.321481+00:00",
+      "claim_id": null,
+      "slice_id": "bluesky_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Strong narrative split between Bluesky and reason",
+      "detail": {
+        "jsd": 0.8839,
+        "platforms": [
+          "bluesky",
+          "reason"
+        ],
+        "window_hours": 24
+      }
+    },
+    {
+      "id": "evt_e03a0cb95c74",
+      "type": "arousal_escalation",
+      "timestamp": "2026-05-27T00:40:56.321481+00:00",
+      "claim_id": "immigration_bluesky_4670829b_0",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.9,
+      "summary": "Heated language rising in \"American Policy\" — 100% emotionally charged claims",
+      "detail": {
+        "cluster_id": "clu_immigration_049",
+        "high_arousal_count": 5,
+        "total": 5,
+        "ratio": 1.0
       }
     },
     {
@@ -171,64 +189,127 @@
       "source": "fed_register"
     },
     {
-      "id": "evt_b23e743f7316",
+      "id": "evt_01ad48013c7a",
       "type": "contestation_emergence",
-      "timestamp": "2026-05-05T20:46:40.513565+00:00",
-      "claim_id": "immigration_bluesky_33fbf43a_0",
+      "timestamp": "2026-05-26T20:40:56.321481+00:00",
+      "claim_id": "immigration_bluesky_12d6b35a_0",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.78,
-      "summary": "Active contestation in \"Border Security\" — 3 pro vs 5 anti",
+      "confidence": 0.73,
+      "summary": "Active contestation in \"Border Security\" — 9 pro vs 4 anti",
       "detail": {
-        "cluster_id": "clu_immigration_054",
-        "pro_count": 3,
-        "anti_count": 5,
-        "balance": 0.6
+        "cluster_id": "clu_immigration_047",
+        "pro_count": 9,
+        "anti_count": 4,
+        "balance": 0.44
       }
     },
     {
-      "id": "evt_7c64a3ffca84",
+      "id": "evt_5189a500ed65",
       "type": "momentum_spike",
-      "timestamp": "2026-05-05T22:46:40.513565+00:00",
-      "claim_id": "immigration_bluesky_38c7bf04_2",
+      "timestamp": "2026-05-26T22:40:56.321481+00:00",
+      "claim_id": "immigration_bluesky_4670829b_0",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.51,
-      "summary": "Rapid attention surge in \"Undocumented Immigrants\" (1 claims)",
+      "confidence": 0.52,
+      "summary": "Rapid attention surge in \"American Policy\" (5 claims)",
       "detail": {
-        "cluster_id": "clu_immigration_041",
-        "avg_momentum": 0.57,
-        "member_count": 1
+        "cluster_id": "clu_immigration_049",
+        "avg_momentum": 0.575,
+        "member_count": 5
       }
     },
     {
       "id": "evt_e63b6585d3eb",
       "type": "momentum_spike",
-      "timestamp": "2026-05-05T22:46:40.513565+00:00",
-      "claim_id": "immigration_bluesky_d7b03c18_0",
+      "timestamp": "2026-05-26T23:40:56.321481+00:00",
+      "claim_id": "immigration_bluesky_3425c327_0",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.5,
-      "summary": "Rapid attention surge in \"Donald Trump\" (3 claims)",
+      "confidence": 0.54,
+      "summary": "Rapid attention surge in \"Undocumented Immigrants\" (2 claims)",
       "detail": {
-        "cluster_id": "clu_immigration_019",
-        "avg_momentum": 0.56,
-        "member_count": 3
+        "cluster_id": "clu_immigration_036",
+        "avg_momentum": 0.601,
+        "member_count": 2
       }
     },
     {
       "id": "evt_739ce4c1d2f7",
       "type": "momentum_spike",
-      "timestamp": "2026-05-05T23:46:40.513565+00:00",
-      "claim_id": "immigration_bluesky_a8081eec_0",
+      "timestamp": "2026-05-27T00:40:56.321481+00:00",
+      "claim_id": "immigration_bluesky_494ba662_0",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.54,
+      "confidence": 0.58,
       "summary": "Rapid attention surge in \"ICE\" (2 claims)",
       "detail": {
-        "cluster_id": "clu_immigration_007",
-        "avg_momentum": 0.599,
+        "cluster_id": "clu_immigration_005",
+        "avg_momentum": 0.645,
         "member_count": 2
+      }
+    },
+    {
+      "id": "evt_7c64a3ffca84",
+      "type": "momentum_spike",
+      "timestamp": "2026-05-27T00:40:56.321481+00:00",
+      "claim_id": "immigration_bluesky_0170ff45_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.58,
+      "summary": "Rapid attention surge in \"Steve Descano\" (1 claims)",
+      "detail": {
+        "cluster_id": "clu_immigration_019",
+        "avg_momentum": 0.645,
+        "member_count": 1
+      }
+    },
+    {
+      "id": "evt_8770dfbbd8a3",
+      "type": "arousal_escalation",
+      "timestamp": "2026-05-27T00:40:56.321481+00:00",
+      "claim_id": "immigration_bluesky_ff7fd96a_1",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.76,
+      "summary": "Heated language rising in \"Democratic Party\" — 44% emotionally charged claims",
+      "detail": {
+        "cluster_id": "clu_immigration_020",
+        "high_arousal_count": 4,
+        "total": 9,
+        "ratio": 0.44
+      }
+    },
+    {
+      "id": "evt_8fc9b0af0e2b",
+      "type": "arousal_escalation",
+      "timestamp": "2026-05-27T00:40:56.321481+00:00",
+      "claim_id": "immigration_bluesky_97234835_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.76,
+      "summary": "Heated language rising in \"Trump Administration\" — 42% emotionally charged claims",
+      "detail": {
+        "cluster_id": "clu_immigration_028",
+        "high_arousal_count": 3,
+        "total": 7,
+        "ratio": 0.43
+      }
+    },
+    {
+      "id": "evt_aa03e82cec66",
+      "type": "arousal_escalation",
+      "timestamp": "2026-05-27T00:40:56.321481+00:00",
+      "claim_id": "immigration_bluesky_d575f3b3_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.78,
+      "summary": "Heated language rising in \"Egyptian-Israeli Relations\" — 50% emotionally charged claims",
+      "detail": {
+        "cluster_id": "clu_immigration_037",
+        "high_arousal_count": 3,
+        "total": 6,
+        "ratio": 0.5
       }
     },
     {
@@ -292,67 +373,51 @@
       "source": "fed_register"
     },
     {
-      "id": "evt_3ba9c3c9a16b",
+      "id": "evt_7242a513d042",
       "type": "lead_lag",
-      "timestamp": "2026-05-05T19:46:40.513565+00:00",
-      "claim_id": "immigration_bluesky_0953c8cb_0",
-      "slice_id": null,
-      "severity": "low",
-      "confidence": 0.8,
-      "summary": "the_atlantic leads X Platform by ~13h in \"American Identity\"",
-      "detail": {
-        "source_platform": "the_atlantic",
-        "target_platform": "x",
-        "lag_hours": 13.2,
-        "cluster_id": "clu_immigration_004"
-      }
-    },
-    {
-      "id": "evt_94251b2d6d90",
-      "type": "lead_lag",
-      "timestamp": "2026-05-06T00:46:40.513565+00:00",
-      "claim_id": "immigration_bluesky_d6f85b3c_0",
-      "slice_id": null,
-      "severity": "low",
-      "confidence": 0.68,
-      "summary": "fortune leads X Platform by ~8h in \"Incarceration\"",
-      "detail": {
-        "source_platform": "fortune",
-        "target_platform": "x",
-        "lag_hours": 8.5,
-        "cluster_id": "clu_immigration_017"
-      }
-    },
-    {
-      "id": "evt_cb3f02ef0b92",
-      "type": "lead_lag",
-      "timestamp": "2026-05-06T01:46:40.513565+00:00",
-      "claim_id": "immigration_bluesky_efd5c53c_0",
-      "slice_id": null,
-      "severity": "low",
-      "confidence": 0.7,
-      "summary": "Bluesky leads red_pepper by ~7h in \"Reform Party\"",
-      "detail": {
-        "source_platform": "bluesky",
-        "target_platform": "red_pepper",
-        "lag_hours": 7.1,
-        "cluster_id": "clu_immigration_008"
-      }
-    },
-    {
-      "id": "evt_3ef20a949b43",
-      "type": "lead_lag",
-      "timestamp": "2026-05-06T01:46:40.513565+00:00",
-      "claim_id": "immigration_bluesky_8f5df9f2_0",
+      "timestamp": "2026-05-26T21:40:56.321481+00:00",
+      "claim_id": "immigration_bluesky_52686c02_0",
       "slice_id": null,
       "severity": "low",
       "confidence": 0.62,
-      "summary": "jacobin leads Bluesky by ~7h in \"Trump Administration\"",
+      "summary": "reason leads supplychainbrain.com by ~11h in \"EU Migration Policy\"",
       "detail": {
-        "source_platform": "jacobin",
+        "source_platform": "reason",
+        "target_platform": "supplychainbrain.com",
+        "lag_hours": 11.7,
+        "cluster_id": "clu_immigration_015"
+      }
+    },
+    {
+      "id": "evt_b0fc11b8d63b",
+      "type": "lead_lag",
+      "timestamp": "2026-05-26T22:40:56.321481+00:00",
+      "claim_id": "immigration_bluesky_2f3b8818_0",
+      "slice_id": null,
+      "severity": "low",
+      "confidence": 0.6,
+      "summary": "reason leads Bluesky by ~10h in \"Stephen Miller\"",
+      "detail": {
+        "source_platform": "reason",
         "target_platform": "bluesky",
-        "lag_hours": 7.6,
-        "cluster_id": "clu_immigration_011"
+        "lag_hours": 10.7,
+        "cluster_id": "clu_immigration_018"
+      }
+    },
+    {
+      "id": "evt_8950934cb4a2",
+      "type": "lead_lag",
+      "timestamp": "2026-05-27T02:40:56.321481+00:00",
+      "claim_id": "immigration_bluesky_2e272ef6_0",
+      "slice_id": null,
+      "severity": "low",
+      "confidence": 0.62,
+      "summary": "alternet.org leads news_directory_3 by ~6h in \"Jus Soli Policy\"",
+      "detail": {
+        "source_platform": "alternet.org",
+        "target_platform": "news_directory_3",
+        "lag_hours": 6.1,
+        "cluster_id": "clu_immigration_016"
       }
     },
     {
@@ -554,47 +619,7 @@
       "summary": "Feds charge illegal immigrant in Loyola student killing as attorney says prosecutors lack  faith  in state",
       "detail": "Reported by wfmd.com. Tone: +0.0.",
       "source": "gdelt"
-    },
-    {
-      "id": "gdelt_38d0312635bc",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:64:50Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "EDITORIAL : Courtroom interpretation rights",
-      "detail": "Reported by taipeitimes.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_945c501431a6",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:64:50Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": " [ Webinar ] EB - 5 : What Ahead in 2026 - April 22nd , 11 : 00 am PT | American Lending Center",
-      "detail": "Reported by jdsupra.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_88012e78596c",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:64:50Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "It the silver lining from this terrible age of Donald Trump : he is pushing Britain closer to the EU | Gaby Hinsliff",
-      "detail": "Reported by theguardian.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_3168e1cb65d0",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:63:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Exclusive : Orbán challenger Magyar says election is a  referendum  on Hungary place in the world",
-      "detail": "Reported by clickondetroit.com. Tone: +0.0.",
-      "source": "gdelt"
     }
   ],
-  "total_count": 119
+  "total_count": 123
 }

@@ -1,181 +1,115 @@
 {
   "events": [
     {
-      "id": "evt_675a21fcf117",
-      "type": "contestation_emergence",
-      "timestamp": "2026-05-05T20:30:38.902515+00:00",
-      "claim_id": "war-on-iran_bluesky_066f9a39_1",
+      "id": "evt_24f001d6c731",
+      "type": "phase_transition",
+      "timestamp": "2026-05-26T20:34:08.200518+00:00",
+      "claim_id": null,
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.9,
-      "summary": "Active contestation in \"Iran Allowed\" — 4 pro vs 4 anti",
+      "confidence": 0.82,
+      "summary": "\"Iran Right\" cluster is shifting toward more extreme language",
       "detail": {
-        "cluster_id": "clu_war-on-iran_040",
-        "pro_count": 4,
-        "anti_count": 4,
-        "balance": 1.0
+        "cluster_id": "clu_war-on-iran_000",
+        "direction": "radicalizing",
+        "magnitude": 0.7396
       }
     },
     {
-      "id": "evt_36810fde6a32",
-      "type": "contestation_emergence",
-      "timestamp": "2026-05-05T20:30:38.902515+00:00",
-      "claim_id": "war-on-iran_bluesky_b6a6f72c_0",
+      "id": "evt_ae9a9faa17d2",
+      "type": "phase_transition",
+      "timestamp": "2026-05-26T20:34:08.200518+00:00",
+      "claim_id": null,
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.9,
-      "summary": "Active contestation in \"Iranian Regime\" — 4 pro vs 4 anti",
+      "confidence": 0.85,
+      "summary": "\"Pope Leo XIV\" cluster is shifting toward more extreme language",
       "detail": {
-        "cluster_id": "clu_war-on-iran_042",
-        "pro_count": 4,
-        "anti_count": 4,
-        "balance": 1.0
+        "cluster_id": "clu_war-on-iran_001",
+        "direction": "radicalizing",
+        "magnitude": 0.8478
       }
     },
     {
-      "id": "evt_9b7779160acf",
-      "type": "contestation_emergence",
-      "timestamp": "2026-05-05T20:30:38.902515+00:00",
-      "claim_id": "war-on-iran_bluesky_d6a4c52e_1",
+      "id": "evt_f4acf3a85735",
+      "type": "phase_transition",
+      "timestamp": "2026-05-26T20:34:08.200518+00:00",
+      "claim_id": null,
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.9,
-      "summary": "Active contestation in \"Iranian Nuclear Program\" — 3 pro vs 3 anti",
+      "confidence": 0.84,
+      "summary": "\"UK-US Relations\" cluster is shifting toward more extreme language",
       "detail": {
-        "cluster_id": "clu_war-on-iran_061",
-        "pro_count": 3,
-        "anti_count": 3,
-        "balance": 1.0
+        "cluster_id": "clu_war-on-iran_002",
+        "direction": "radicalizing",
+        "magnitude": 0.7903
       }
     },
     {
       "id": "evt_bf7ee5b59e6a",
       "type": "phase_transition",
-      "timestamp": "2026-05-05T20:30:38.902515+00:00",
-      "claim_id": null,
-      "slice_id": null,
-      "severity": "high",
-      "confidence": 0.83,
-      "summary": "\"UK-US Relations\" cluster is shifting toward more extreme language",
-      "detail": {
-        "cluster_id": "clu_war-on-iran_000",
-        "direction": "radicalizing",
-        "magnitude": 0.776
-      }
-    },
-    {
-      "id": "evt_bd0c0fd4a6e7",
-      "type": "phase_transition",
-      "timestamp": "2026-05-05T20:30:38.902515+00:00",
-      "claim_id": null,
-      "slice_id": null,
-      "severity": "high",
-      "confidence": 0.82,
-      "summary": "\"Israel\" cluster is shifting toward more extreme language",
-      "detail": {
-        "cluster_id": "clu_war-on-iran_002",
-        "direction": "radicalizing",
-        "magnitude": 0.7369
-      }
-    },
-    {
-      "id": "evt_cc8b498247c5",
-      "type": "phase_transition",
-      "timestamp": "2026-05-05T20:30:38.902515+00:00",
+      "timestamp": "2026-05-26T20:34:08.200518+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
       "confidence": 0.8,
-      "summary": "\"Us-Iran Conflict\" cluster is shifting toward more extreme language",
+      "summary": "\"Myanmar\" cluster is shifting toward more extreme language",
       "detail": {
         "cluster_id": "clu_war-on-iran_003",
         "direction": "radicalizing",
-        "magnitude": 0.6566
+        "magnitude": 0.6604
       }
     },
     {
-      "id": "evt_887742efb2bd",
-      "type": "phase_transition",
-      "timestamp": "2026-05-05T20:30:38.902515+00:00",
-      "claim_id": null,
-      "slice_id": null,
-      "severity": "high",
-      "confidence": 0.8,
-      "summary": "\"Defense Startups\" cluster is shifting toward more extreme language",
-      "detail": {
-        "cluster_id": "clu_war-on-iran_004",
-        "direction": "radicalizing",
-        "magnitude": 0.6783
-      }
-    },
-    {
-      "id": "evt_9a9a77fd78f2",
+      "id": "evt_ae0d50efc20e",
       "type": "divergence_shift",
-      "timestamp": "2026-05-05T20:30:38.902515+00:00",
+      "timestamp": "2026-05-26T20:34:08.200518+00:00",
       "claim_id": null,
       "slice_id": "bluesky_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Strong narrative split between Bluesky and dw_news",
+      "summary": "Strong narrative split between Bluesky and the_frontier_post",
       "detail": {
-        "jsd": 0.6706,
+        "jsd": 0.8466,
         "platforms": [
           "bluesky",
-          "dw_news"
+          "the_frontier_post"
         ],
         "window_hours": 24
       }
     },
     {
-      "id": "evt_0614e233ef8e",
+      "id": "evt_6e44ee0f2054",
       "type": "divergence_shift",
-      "timestamp": "2026-05-05T20:30:38.902515+00:00",
+      "timestamp": "2026-05-26T20:34:08.200518+00:00",
       "claim_id": null,
       "slice_id": "bluesky_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Strong narrative split between Bluesky and fortune",
+      "summary": "Strong narrative split between Bluesky and vox",
       "detail": {
-        "jsd": 0.7392,
+        "jsd": 0.9338,
         "platforms": [
           "bluesky",
-          "fortune"
+          "vox"
         ],
         "window_hours": 24
       }
     },
     {
-      "id": "evt_9c5337e8682a",
+      "id": "evt_f04e5ec8d6ca",
       "type": "divergence_shift",
-      "timestamp": "2026-05-05T20:30:38.902515+00:00",
+      "timestamp": "2026-05-26T20:34:08.200518+00:00",
       "claim_id": null,
-      "slice_id": "bluesky_platform",
+      "slice_id": "the_frontier_post_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Strong narrative split between Bluesky and guardian_us",
+      "summary": "Strong narrative split between the_frontier_post and vox",
       "detail": {
-        "jsd": 0.9135,
+        "jsd": 1.0,
         "platforms": [
-          "bluesky",
-          "guardian_us"
-        ],
-        "window_hours": 24
-      }
-    },
-    {
-      "id": "evt_9eb52e78fb5f",
-      "type": "divergence_shift",
-      "timestamp": "2026-05-05T20:30:38.902515+00:00",
-      "claim_id": null,
-      "slice_id": "bluesky_platform",
-      "severity": "high",
-      "confidence": 0.95,
-      "summary": "Strong narrative split between Bluesky and guardian_world",
-      "detail": {
-        "jsd": 0.8166,
-        "platforms": [
-          "bluesky",
-          "guardian_world"
+          "the_frontier_post",
+          "vox"
         ],
         "window_hours": 24
       }
@@ -253,29 +187,29 @@
     {
       "id": "evt_f9cb9f729983",
       "type": "momentum_spike",
-      "timestamp": "2026-05-05T22:30:38.902515+00:00",
-      "claim_id": "war-on-iran_timesofmalta.com_df278212_2",
+      "timestamp": "2026-05-26T22:34:08.200518+00:00",
+      "claim_id": "war-on-iran_rte.ie_41f66524_0",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.5,
-      "summary": "Rapid attention surge in \"Iran Destabilizing\" (6 claims)",
+      "confidence": 0.52,
+      "summary": "Rapid attention surge in \"Hezbollah\" (5 claims)",
       "detail": {
-        "cluster_id": "clu_war-on-iran_032",
-        "avg_momentum": 0.551,
-        "member_count": 6
+        "cluster_id": "clu_war-on-iran_082",
+        "avg_momentum": 0.576,
+        "member_count": 5
       }
     },
     {
       "id": "evt_27c8faebfa2b",
       "type": "momentum_spike",
-      "timestamp": "2026-05-05T23:30:38.902515+00:00",
-      "claim_id": "war-on-iran_bluesky_477b6560_0",
+      "timestamp": "2026-05-26T23:34:08.200518+00:00",
+      "claim_id": "war-on-iran_bluesky_a6e35e39_0",
       "slice_id": null,
       "severity": "medium",
       "confidence": 0.55,
-      "summary": "Rapid attention surge in \"Us-Iran Conflict\" (3 claims)",
+      "summary": "Rapid attention surge in \"Turkey\" (3 claims)",
       "detail": {
-        "cluster_id": "clu_war-on-iran_003",
+        "cluster_id": "clu_war-on-iran_066",
         "avg_momentum": 0.61,
         "member_count": 3
       }
@@ -283,32 +217,32 @@
     {
       "id": "evt_ef5654b263af",
       "type": "momentum_spike",
-      "timestamp": "2026-05-06T00:30:38.902515+00:00",
-      "claim_id": "war-on-iran_x_d4caf23e_0",
+      "timestamp": "2026-05-27T00:34:08.200518+00:00",
+      "claim_id": "war-on-iran_bluesky_f21f0d46_0",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.57,
-      "summary": "Rapid attention surge in \"Obama Administration\" (2 claims)",
+      "confidence": 0.58,
+      "summary": "Rapid attention surge in \"Israel\" (1 claims)",
       "detail": {
-        "cluster_id": "clu_war-on-iran_024",
-        "avg_momentum": 0.63,
-        "member_count": 2
+        "cluster_id": "clu_war-on-iran_031",
+        "avg_momentum": 0.645,
+        "member_count": 1
       }
     },
     {
-      "id": "evt_b88d9b439c45",
+      "id": "evt_b6c3cb2d6498",
       "type": "arousal_escalation",
-      "timestamp": "2026-05-06T00:30:38.902515+00:00",
-      "claim_id": "war-on-iran_timesofmalta.com_df278212_2",
+      "timestamp": "2026-05-27T00:34:08.200518+00:00",
+      "claim_id": "war-on-iran_bluesky_e7ff6335_0",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.78,
-      "summary": "Heated language rising in \"Iran Destabilizing\" — 50% emotionally charged claims",
+      "confidence": 0.8,
+      "summary": "Heated language rising in \"National Security\" — 60% emotionally charged claims",
       "detail": {
-        "cluster_id": "clu_war-on-iran_032",
+        "cluster_id": "clu_war-on-iran_041",
         "high_arousal_count": 3,
-        "total": 6,
-        "ratio": 0.5
+        "total": 5,
+        "ratio": 0.6
       }
     },
     {
@@ -392,67 +326,67 @@
       "source": "fed_register"
     },
     {
-      "id": "evt_737020d78e7b",
+      "id": "evt_5aa9926829b2",
       "type": "lead_lag",
-      "timestamp": "2026-05-05T18:30:38.902515+00:00",
-      "claim_id": "war-on-iran_bluesky_d6a4c52e_0",
+      "timestamp": "2026-05-26T21:34:08.200518+00:00",
+      "claim_id": "war-on-iran_bluesky_1423503f_0",
       "slice_id": null,
       "severity": "low",
-      "confidence": 0.9,
-      "summary": "bbc_news leads dw_news by ~14h in \"U.S.-Iran Relations\"",
+      "confidence": 0.7,
+      "summary": "Bluesky leads asiaone by ~11h in \"JCPOA\"",
       "detail": {
-        "source_platform": "bbc_news",
-        "target_platform": "dw_news",
-        "lag_hours": 14.8,
+        "source_platform": "bluesky",
+        "target_platform": "asiaone",
+        "lag_hours": 11.2,
+        "cluster_id": "clu_war-on-iran_051"
+      }
+    },
+    {
+      "id": "evt_6f24a4eb8f2c",
+      "type": "lead_lag",
+      "timestamp": "2026-05-26T22:34:08.200518+00:00",
+      "claim_id": "war-on-iran_bluesky_e59ac862_0",
+      "slice_id": null,
+      "severity": "low",
+      "confidence": 0.6,
+      "summary": "reason leads Bluesky by ~10h in \"Iran Conflict Hinders\"",
+      "detail": {
+        "source_platform": "reason",
+        "target_platform": "bluesky",
+        "lag_hours": 10.2,
+        "cluster_id": "clu_war-on-iran_036"
+      }
+    },
+    {
+      "id": "evt_ec168ed2da5b",
+      "type": "lead_lag",
+      "timestamp": "2026-05-27T02:34:08.200518+00:00",
+      "claim_id": "war-on-iran_bluesky_1a297b4a_1",
+      "slice_id": null,
+      "severity": "low",
+      "confidence": 0.68,
+      "summary": "guardian_world leads latestly by ~6h in \"US Foreign Policy\"",
+      "detail": {
+        "source_platform": "guardian_world",
+        "target_platform": "latestly",
+        "lag_hours": 6.2,
         "cluster_id": "clu_war-on-iran_018"
       }
     },
     {
-      "id": "evt_8271b861fa7b",
+      "id": "evt_58765937bde9",
       "type": "lead_lag",
-      "timestamp": "2026-05-05T20:30:38.902515+00:00",
-      "claim_id": "war-on-iran_bluesky_c91456ce_0",
+      "timestamp": "2026-05-27T02:34:08.200518+00:00",
+      "claim_id": "war-on-iran_bluesky_bae7865e_2",
       "slice_id": null,
       "severity": "low",
-      "confidence": 0.82,
-      "summary": "YouTube (Influencer Framing) leads dw_news by ~12h in \"Iranian Foreign Policy\"",
+      "confidence": 0.58,
+      "summary": "Bluesky leads nbc_news by ~6h in \"Saudi Arabia\"",
       "detail": {
-        "source_platform": "youtube",
-        "target_platform": "dw_news",
-        "lag_hours": 12.9,
-        "cluster_id": "clu_war-on-iran_005"
-      }
-    },
-    {
-      "id": "evt_5700cbc4c949",
-      "type": "lead_lag",
-      "timestamp": "2026-05-05T23:30:38.902515+00:00",
-      "claim_id": "war-on-iran_bluesky_79a61210_0",
-      "slice_id": null,
-      "severity": "low",
-      "confidence": 0.62,
-      "summary": "the_atlantic leads vanguard by ~9h in \"French-Owned Container Ship\"",
-      "detail": {
-        "source_platform": "the_atlantic",
-        "target_platform": "vanguard",
-        "lag_hours": 9.9,
-        "cluster_id": "clu_war-on-iran_016"
-      }
-    },
-    {
-      "id": "evt_f9072d25bf8d",
-      "type": "lead_lag",
-      "timestamp": "2026-05-06T02:30:38.902515+00:00",
-      "claim_id": "war-on-iran_bluesky_f490cd38_0",
-      "slice_id": null,
-      "severity": "low",
-      "confidence": 0.62,
-      "summary": "oman_observer leads opinio_juris by ~6h in \"Middle East Conflict\"",
-      "detail": {
-        "source_platform": "oman_observer",
-        "target_platform": "opinio_juris",
-        "lag_hours": 6.4,
-        "cluster_id": "clu_war-on-iran_017"
+        "source_platform": "bluesky",
+        "target_platform": "nbc_news",
+        "lag_hours": 6.8,
+        "cluster_id": "clu_war-on-iran_034"
       }
     },
     {
@@ -614,7 +548,47 @@
       "summary": "Affiliate of Iranian state TV claims a U . S . pilot ejected from their aircraft over southwestern Iran",
       "detail": "Reported by butlereagle.com. Tone: +0.0.",
       "source": "gdelt"
+    },
+    {
+      "id": "gdelt_77ade3092b19",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "The Latest : US and Israel are trying to rescue fighter jet crew in Iran , Israeli source says",
+      "detail": "Reported by goskagit.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_8c5bf33c778a",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "US launches rescue operation after Iranian state TV says fighter jet went down , AP source says",
+      "detail": "Reported by knopnews2.com. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_b7e7a8235160",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": " „ Donald Trump chciał tylko zgody na korzystanie z baz . Ambasador Tom Rose krytykuje Europę",
+      "detail": "Reported by rp.pl. Tone: +0.0.",
+      "source": "gdelt"
+    },
+    {
+      "id": "gdelt_9801ab948919",
+      "type": "external_signal",
+      "timestamp": "2026-04-03TT1:64:50Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Iranian media report claims US pilot ejected over south - western Iran",
+      "detail": "Reported by countytimes.co.uk. Tone: +0.0.",
+      "source": "gdelt"
     }
   ],
-  "total_count": 92
+  "total_count": 88
 }

@@ -9,7 +9,7 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "ai-workplace_x_9cb0cf85_0",
-    "cluster_id": "clu_ai-workplace_044",
+    "cluster_id": "clu_ai-workplace_031",
     "concept_id": "concept_ai-workplace_000",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-05-06T04:45:05.000Z",
@@ -24,94 +24,107 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": 0.54,
+    "value": null,
     "confidence_interval": [
-      0.44,
-      0.64
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.54
-    ],
-    "source_distribution": "production",
-    "source_diversity": 0.25,
-    "bridge_ratio": 0.25,
-    "persistence_windows": 1,
-    "friction": 0.5,
-    "friction_quadrant": "contested_advance"
+    "sparkline": [],
+    "source_distribution": "production"
   },
   "salience": {
-    "value": 0.3184,
+    "value": null,
     "confidence_interval": [
-      0.1923,
-      0.4445
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.3184
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0,
     "confidence_interval": [
       0,
-      0.1962
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": 0.5,
+    "value": null,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.5
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9688,
+    "value": null,
     "confidence_interval": [
-      0.8915,
-      1
+      0,
+      0
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [
-      0.9688
-    ],
+    "sparkline": [],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": null,
-    "amplification": null,
-    "estimated_exposure": null,
-    "status": "insufficient_data",
-    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
+    "production": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "amplification": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    },
+    "estimated_exposure": {
+      "value": null,
+      "confidence_interval": [
+        0,
+        0
+      ],
+      "baseline": "global",
+      "time_window": "24h",
+      "sparkline": [],
+      "source_distribution": "production"
+    }
   },
   "confidence_detail": {
     "score": 0.9,
@@ -120,63 +133,60 @@
     ]
   },
   "provenance": {
-    "first_platform": "X Platform",
-    "first_timestamp": "2026-05-06T04:45:05.000Z",
+    "first_platform": "unknown",
+    "first_timestamp": "",
     "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_ai-workplace_000",
-    "hops": [
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-05-05T22:00:43+00:00",
-        "claim_id": "ai-workplace_x_9cb0cf85_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      }
-    ],
-    "observation_boundary": "No public antecedent detected"
+    "concept_id": "",
+    "hops": [],
+    "observation_boundary": null
   },
   "coordination": {
-    "burstiness": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "near_duplicate": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "cross_platform_sync": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "source_diversity_anomaly": {
-      "score": null,
-      "organic_baseline": null,
-      "severity": null,
-      "status": "insufficient_data"
-    },
-    "status": "insufficient_data",
-    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
+    "burstiness": null,
+    "near_duplicate": null,
+    "cross_platform_sync": null,
+    "source_diversity_anomaly": null
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-workplace_x_8da6763c_0",
-      "similarity": 1.0,
-      "text": "Artificial intelligence is causing job displacement for adult workers."
+      "claim_id": "ai-workplace_bluesky_67e63dba_1",
+      "similarity": 0.9381,
+      "text": "AI will replace a significant portion of the human workforce."
+    },
+    {
+      "claim_id": "ai-workplace_bluesky_5395dbce_0",
+      "similarity": 0.8629,
+      "text": "AI will not be able to replace any human jobs."
+    },
+    {
+      "claim_id": "ai-workplace_bluesky_3082e7b6_0",
+      "similarity": 0.7889,
+      "text": "The increasing use of artificial intelligence will not significantly reduce employment."
+    },
+    {
+      "claim_id": "ai-workplace_bluesky_df1ec65d_0",
+      "similarity": 0.701,
+      "text": "Job seekers are modifying their resumes to bypass AI filters used by employers."
     }
   ],
   "example_content": [
     {
-      "text": "Artificial intelligence is causing job displacement for adult workers.",
-      "platform": "X Platform",
+      "text": "The increasing use of artificial intelligence will not significantly reduce employment.",
+      "platform": "Bluesky",
       "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "AI will not be able to replace any human jobs.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "AI will replace a significant portion of the human workforce.",
+      "platform": "Bluesky",
+      "confidence": 0.8,
       "is_influencer_framing": false
     }
   ]

@@ -1,79 +1,81 @@
 {
   "events": [
     {
-      "id": "evt_8dd8722c3dd7",
+      "id": "evt_95c2ddef0b32",
       "type": "phase_transition",
-      "timestamp": "2026-05-05T21:17:19.526068+00:00",
+      "timestamp": "2026-05-26T20:59:12.089406+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
       "confidence": 0.83,
-      "summary": "\"Openai\" cluster is shifting toward more extreme language",
+      "summary": "\"AI and Employment\" cluster is shifting toward more extreme language",
       "detail": {
         "cluster_id": "clu_dei-rollbacks_000",
         "direction": "radicalizing",
-        "magnitude": 0.7604
+        "magnitude": 0.7549
       }
     },
     {
-      "id": "evt_aa7cfefea7ae",
+      "id": "evt_1e0309e0fac8",
       "type": "phase_transition",
-      "timestamp": "2026-05-05T21:17:19.526068+00:00",
-      "claim_id": null,
-      "slice_id": null,
-      "severity": "high",
-      "confidence": 0.79,
-      "summary": "\"Target\" cluster is shifting toward more extreme language",
-      "detail": {
-        "cluster_id": "clu_dei-rollbacks_002",
-        "direction": "radicalizing",
-        "magnitude": 0.6227
-      }
-    },
-    {
-      "id": "evt_7168d94b79ec",
-      "type": "phase_transition",
-      "timestamp": "2026-05-05T21:17:19.526068+00:00",
-      "claim_id": null,
-      "slice_id": null,
-      "severity": "high",
-      "confidence": 0.83,
-      "summary": "\"Republican Farm Bill\" cluster is shifting toward more extreme language",
-      "detail": {
-        "cluster_id": "clu_dei-rollbacks_003",
-        "direction": "radicalizing",
-        "magnitude": 0.7664
-      }
-    },
-    {
-      "id": "evt_2794f6b368a8",
-      "type": "phase_transition",
-      "timestamp": "2026-05-05T21:17:19.526068+00:00",
+      "timestamp": "2026-05-26T20:59:12.089406+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
       "confidence": 0.81,
       "summary": "\"Immigration\" cluster is shifting toward more extreme language",
       "detail": {
-        "cluster_id": "clu_dei-rollbacks_004",
+        "cluster_id": "clu_dei-rollbacks_001",
         "direction": "radicalizing",
-        "magnitude": 0.6957
+        "magnitude": 0.7049
       }
     },
     {
-      "id": "evt_5d5e90131a06",
-      "type": "arousal_escalation",
-      "timestamp": "2026-05-06T01:17:19.526068+00:00",
-      "claim_id": "dei-rollbacks_bluesky_1c95bdd2_0",
+      "id": "evt_e36efb40409b",
+      "type": "phase_transition",
+      "timestamp": "2026-05-26T20:59:12.089406+00:00",
+      "claim_id": null,
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.82,
-      "summary": "Heated language rising in \"Dollar General\" — 66% emotionally charged claims",
+      "confidence": 0.8,
+      "summary": "\"Costco\" cluster is shifting toward more extreme language",
       "detail": {
-        "cluster_id": "clu_dei-rollbacks_007",
-        "high_arousal_count": 4,
-        "total": 6,
-        "ratio": 0.67
+        "cluster_id": "clu_dei-rollbacks_004",
+        "direction": "radicalizing",
+        "magnitude": 0.6733
+      }
+    },
+    {
+      "id": "evt_f077b240a02c",
+      "type": "phase_transition",
+      "timestamp": "2026-05-26T20:59:12.089406+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.79,
+      "summary": "\"Laura Rutledge\" cluster is shifting toward more extreme language",
+      "detail": {
+        "cluster_id": "clu_dei-rollbacks_005",
+        "direction": "radicalizing",
+        "magnitude": 0.6291
+      }
+    },
+    {
+      "id": "evt_33cfb64f50a8",
+      "type": "divergence_shift",
+      "timestamp": "2026-05-26T20:59:12.089406+00:00",
+      "claim_id": null,
+      "slice_id": "american_thinker_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Strong narrative split between american_thinker and Bluesky",
+      "detail": {
+        "jsd": 0.8083,
+        "platforms": [
+          "american_thinker",
+          "bluesky"
+        ],
+        "window_hours": 24
       }
     },
     {
@@ -105,52 +107,6 @@
       "summary": "Addressing DEI Discrimination by Federal Contractors",
       "detail": "Presidential Document by Executive Office of the President",
       "source": "fed_register"
-    },
-    {
-      "id": "evt_6579ff50e76d",
-      "type": "momentum_spike",
-      "timestamp": "2026-05-05T23:17:19.526068+00:00",
-      "claim_id": "dei-rollbacks_bluesky_9468948a_0",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.51,
-      "summary": "Rapid attention surge in \"Target\" (6 claims)",
-      "detail": {
-        "cluster_id": "clu_dei-rollbacks_002",
-        "avg_momentum": 0.563,
-        "member_count": 6
-      }
-    },
-    {
-      "id": "evt_c409a394ec37",
-      "type": "momentum_spike",
-      "timestamp": "2026-05-06T01:17:19.526068+00:00",
-      "claim_id": "dei-rollbacks_bluesky_ce361d90_0",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.58,
-      "summary": "Rapid attention surge in \"Voting Rights Act\" (1 claims)",
-      "detail": {
-        "cluster_id": "clu_dei-rollbacks_015",
-        "avg_momentum": 0.645,
-        "member_count": 1
-      }
-    },
-    {
-      "id": "evt_0ad49461c1f8",
-      "type": "arousal_escalation",
-      "timestamp": "2026-05-06T01:17:19.526068+00:00",
-      "claim_id": "dei-rollbacks_bluesky_9468948a_0",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.78,
-      "summary": "Heated language rising in \"Target\" — 50% emotionally charged claims",
-      "detail": {
-        "cluster_id": "clu_dei-rollbacks_002",
-        "high_arousal_count": 3,
-        "total": 6,
-        "ratio": 0.5
-      }
     },
     {
       "id": "poly_544092",
@@ -223,35 +179,35 @@
       "source": "fed_register"
     },
     {
-      "id": "evt_f716e6ecf28b",
+      "id": "evt_5259069a165f",
       "type": "lead_lag",
-      "timestamp": "2026-05-05T22:17:19.526068+00:00",
-      "claim_id": "dei-rollbacks_cnbc_top_aa31d909_0",
+      "timestamp": "2026-05-26T18:59:12.089406+00:00",
+      "claim_id": "dei-rollbacks_bluesky_31040c85_0",
       "slice_id": null,
       "severity": "low",
-      "confidence": 0.58,
-      "summary": "cnbc_top leads the_observer by ~11h in \"Openai\"",
+      "confidence": 0.64,
+      "summary": "Bluesky leads ign_africa by ~14h in \"Voting Rights Act\"",
       "detail": {
-        "source_platform": "cnbc_top",
-        "target_platform": "the_observer",
-        "lag_hours": 11.8,
-        "cluster_id": "clu_dei-rollbacks_000"
+        "source_platform": "bluesky",
+        "target_platform": "ign_africa",
+        "lag_hours": 14.9,
+        "cluster_id": "clu_dei-rollbacks_027"
       }
     },
     {
-      "id": "evt_21dfda88da67",
+      "id": "evt_deefba8c7301",
       "type": "lead_lag",
-      "timestamp": "2026-05-05T23:17:19.526068+00:00",
-      "claim_id": "dei-rollbacks_bluesky_17bcab05_0",
+      "timestamp": "2026-05-26T20:59:12.089406+00:00",
+      "claim_id": "dei-rollbacks_bluesky_6b87aead_0",
       "slice_id": null,
       "severity": "low",
-      "confidence": 0.84,
-      "summary": "Bluesky leads nine_o'_clock_-_first_exclusiv by ~10h in \"Huawei SPN\"",
+      "confidence": 0.66,
+      "summary": "reason leads Bluesky by ~12h in \"AI and Employment\"",
       "detail": {
-        "source_platform": "bluesky",
-        "target_platform": "nine_o'_clock_-_first_exclusiv",
-        "lag_hours": 10.6,
-        "cluster_id": "clu_dei-rollbacks_018"
+        "source_platform": "reason",
+        "target_platform": "bluesky",
+        "lag_hours": 12.9,
+        "cluster_id": "clu_dei-rollbacks_000"
       }
     },
     {
@@ -553,7 +509,37 @@
       "summary": "Regulatory Capital Rule: Category I and II Banking Organizations, Banking Organizations With Significant Trading Activity, and Optional Adoption for Other Banking Organizations",
       "detail": "The Office of the Comptroller of the Currency, the Board of Governors of the Federal Reserve System, and the Federal Deposit Insurance Corporation are proposing to modernize the capital requirements applicable to Category I and II depository institution holding companies and depository institutions,",
       "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2026-05475",
+      "type": "external_signal",
+      "timestamp": "2026-03-20T00:00:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Self-Regulatory Organizations; The Nasdaq Stock Market LLC; Notice of Filing of Proposed Rule Change To List and Trade Shares of the VanEck JitoSOL ETF Under Nasdaq Rule 5711(d) (Commodity-Based Trust",
+      "detail": "Notice by Securities and Exchange Commission",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2026-05350",
+      "type": "external_signal",
+      "timestamp": "2026-03-19T00:00:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Joint Industry Plan; Order Approving an Amendment to the National Market System Plan Governing the Consolidated Audit Trail, as Modified by the Commission, Regarding Implementation of a Revised Fundin",
+      "detail": "Notice by Securities and Exchange Commission",
+      "source": "fed_register"
+    },
+    {
+      "id": "fedreg_2026-05289",
+      "type": "external_signal",
+      "timestamp": "2026-03-18T00:00:00Z",
+      "severity": "low",
+      "confidence": 0.95,
+      "summary": "Notice of Intent To Prepare an Environmental Impact Statement for the Fulton Park Redevelopment Project in Brooklyn, New York",
+      "detail": "New York City, through the New York City Department of Housing Preservation and Development (HPD) and the New York Department of City Planning (DCP), intend to prepare an Environmental Impact Statement (EIS) for the proposed Fulton Park Redevelopment project in Brooklyn, New York. This Notice of Int",
+      "source": "fed_register"
     }
   ],
-  "total_count": 77
+  "total_count": 74
 }
