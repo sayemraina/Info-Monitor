@@ -1,25 +1,41 @@
 {
   "events": [
     {
-      "id": "evt_a8784e5a2d4b",
+      "id": "evt_7be0f622648c",
       "type": "contestation_emergence",
-      "timestamp": "2026-05-23T21:03:21.508114+00:00",
-      "claim_id": "ai-bubble_bluesky_0a031a59_0",
+      "timestamp": "2026-09-04T20:56:19.628714+00:00",
+      "claim_id": "ai-bubble_renewable_energy_world_64d7966d_1",
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.82,
-      "summary": "Active contestation in \"Etfs\" — 4 pro vs 3 anti",
+      "confidence": 0.86,
+      "summary": "Active contestation in \"Data Centers\" — 12 pro vs 14 anti",
       "detail": {
-        "cluster_id": "clu_ai-bubble_043",
-        "pro_count": 4,
-        "anti_count": 3,
-        "balance": 0.75
+        "cluster_id": "clu_ai-bubble_000",
+        "pro_count": 12,
+        "anti_count": 14,
+        "balance": 0.86
       }
     },
     {
-      "id": "evt_3cb2f7736c6f",
+      "id": "evt_66b3203ce13f",
+      "type": "contestation_emergence",
+      "timestamp": "2026-09-04T20:56:19.628714+00:00",
+      "claim_id": "ai-bubble_bluesky_727fd5f7_1",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.88,
+      "summary": "Active contestation in \"AI Bubble Bursting\" — 13 pro vs 14 anti",
+      "detail": {
+        "cluster_id": "clu_ai-bubble_002",
+        "pro_count": 13,
+        "anti_count": 14,
+        "balance": 0.93
+      }
+    },
+    {
+      "id": "evt_20640a1bef09",
       "type": "phase_transition",
-      "timestamp": "2026-05-23T21:03:21.508114+00:00",
+      "timestamp": "2026-09-04T20:56:19.628714+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
@@ -32,9 +48,9 @@
       }
     },
     {
-      "id": "evt_532e2b4a5091",
+      "id": "evt_0079ca1075d2",
       "type": "phase_transition",
-      "timestamp": "2026-05-23T21:03:21.508114+00:00",
+      "timestamp": "2026-09-04T20:56:19.628714+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
@@ -47,9 +63,9 @@
       }
     },
     {
-      "id": "evt_2364903c4413",
+      "id": "evt_1dfbc4cdb743",
       "type": "phase_transition",
-      "timestamp": "2026-05-23T21:03:21.508114+00:00",
+      "timestamp": "2026-09-04T20:56:19.628714+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
@@ -62,9 +78,9 @@
       }
     },
     {
-      "id": "evt_64b293b6b5fb",
+      "id": "evt_31b80a4f62df",
       "type": "phase_transition",
-      "timestamp": "2026-05-23T21:03:21.508114+00:00",
+      "timestamp": "2026-09-04T20:56:19.628714+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
@@ -77,19 +93,73 @@
       }
     },
     {
-      "id": "evt_dfe7087509fa",
+      "id": "evt_7c831eaee137",
       "type": "divergence_shift",
-      "timestamp": "2026-05-23T21:03:21.508114+00:00",
+      "timestamp": "2026-09-04T20:56:19.628714+00:00",
       "claim_id": null,
-      "slice_id": "bluesky_platform",
+      "slice_id": "bandwidth_blog_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Strong narrative split between Bluesky and economic_times",
+      "summary": "Strong narrative split between bandwidth_blog and barchart.com",
       "detail": {
-        "jsd": 0.7084,
+        "jsd": 1.0,
         "platforms": [
-          "bluesky",
-          "economic_times"
+          "bandwidth_blog",
+          "barchart.com"
+        ],
+        "window_hours": 168
+      }
+    },
+    {
+      "id": "evt_d6598da345db",
+      "type": "divergence_shift",
+      "timestamp": "2026-09-04T20:56:19.628714+00:00",
+      "claim_id": null,
+      "slice_id": "bandwidth_blog_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Strong narrative split between bandwidth_blog and benzinga",
+      "detail": {
+        "jsd": 1.0,
+        "platforms": [
+          "bandwidth_blog",
+          "benzinga"
+        ],
+        "window_hours": 168
+      }
+    },
+    {
+      "id": "evt_eb2644fc2b6a",
+      "type": "divergence_shift",
+      "timestamp": "2026-09-04T20:56:19.628714+00:00",
+      "claim_id": null,
+      "slice_id": "bandwidth_blog_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Strong narrative split between bandwidth_blog and Bluesky",
+      "detail": {
+        "jsd": 0.8742,
+        "platforms": [
+          "bandwidth_blog",
+          "bluesky"
+        ],
+        "window_hours": 168
+      }
+    },
+    {
+      "id": "evt_18963fcb55f7",
+      "type": "divergence_shift",
+      "timestamp": "2026-09-04T20:56:19.628714+00:00",
+      "claim_id": null,
+      "slice_id": "bandwidth_blog_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Strong narrative split between bandwidth_blog and business_insider",
+      "detail": {
+        "jsd": 0.8311,
+        "platforms": [
+          "bandwidth_blog",
+          "business_insider"
         ],
         "window_hours": 168
       }
@@ -115,65 +185,99 @@
       "source": "polymarket"
     },
     {
-      "id": "evt_fac457071672",
-      "type": "momentum_spike",
-      "timestamp": "2026-05-24T22:03:21.508114+00:00",
-      "claim_id": "ai-bubble_bluesky_c0e90daf_0",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.58,
-      "summary": "Rapid attention surge in \"Peter Thiel and Mark\" (1 claims)",
-      "detail": {
-        "cluster_id": "clu_ai-bubble_045",
-        "avg_momentum": 0.645,
-        "member_count": 1
-      }
-    },
-    {
-      "id": "evt_d03f01209850",
+      "id": "evt_df21921d23c4",
       "type": "lead_lag",
-      "timestamp": "2026-05-25T05:03:21.508114+00:00",
-      "claim_id": "ai-bubble_bluesky_bd9f384f_0",
+      "timestamp": "2026-05-31T01:56:19.628714+00:00",
+      "claim_id": "ai-bubble_bluesky_787cbe20_0",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.7,
-      "summary": "Bluesky leads financial_times_news by ~52h in \"Spacex\"",
+      "confidence": 0.9,
+      "summary": "YouTube (Influencer Framing) leads the_verge by ~2407h in \"AI Market Experiencing\"",
       "detail": {
-        "source_platform": "bluesky",
-        "target_platform": "financial_times_news",
-        "lag_hours": 52.2,
-        "cluster_id": "clu_ai-bubble_008"
+        "source_platform": "youtube",
+        "target_platform": "the_verge",
+        "lag_hours": 2407.5,
+        "cluster_id": "clu_ai-bubble_001"
       }
     },
     {
-      "id": "evt_3dee6a41712d",
-      "type": "momentum_spike",
-      "timestamp": "2026-05-25T07:03:21.508114+00:00",
-      "claim_id": "ai-bubble_bluesky_376d3265_0",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.63,
-      "summary": "Rapid attention surge in \"Venture Capitalists\" (1 claims)",
-      "detail": {
-        "cluster_id": "clu_ai-bubble_035",
-        "avg_momentum": 0.697,
-        "member_count": 1
-      }
-    },
-    {
-      "id": "evt_d7f056cfcca9",
+      "id": "evt_6f7fac1eb837",
       "type": "lead_lag",
-      "timestamp": "2026-05-26T07:03:21.508114+00:00",
-      "claim_id": "ai-bubble_bluesky_2e997cfb_0",
+      "timestamp": "2026-06-13T03:56:19.628714+00:00",
+      "claim_id": "ai-bubble_renewable_energy_world_64d7966d_1",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.62,
-      "summary": "Bluesky leads cnbctv18.com by ~26h in \"Data Centers\"",
+      "confidence": 0.9,
+      "summary": "YouTube (Influencer Framing) leads cnbctv18.com by ~2093h in \"Data Centers\"",
       "detail": {
-        "source_platform": "bluesky",
+        "source_platform": "youtube",
         "target_platform": "cnbctv18.com",
-        "lag_hours": 26.1,
+        "lag_hours": 2093.3,
         "cluster_id": "clu_ai-bubble_000"
+      }
+    },
+    {
+      "id": "evt_e5017eedace1",
+      "type": "lead_lag",
+      "timestamp": "2026-06-29T17:56:19.628714+00:00",
+      "claim_id": "ai-bubble_bluesky_727fd5f7_1",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.9,
+      "summary": "YouTube (Influencer Framing) leads nasdaq_stock_market by ~1695h in \"AI Bubble Bursting\"",
+      "detail": {
+        "source_platform": "youtube",
+        "target_platform": "nasdaq_stock_market",
+        "lag_hours": 1695.7,
+        "cluster_id": "clu_ai-bubble_002"
+      }
+    },
+    {
+      "id": "evt_f04126df29ce",
+      "type": "lead_lag",
+      "timestamp": "2026-08-28T15:56:19.628714+00:00",
+      "claim_id": "ai-bubble_bluesky_9c187b5c_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.9,
+      "summary": "X Platform leads Bluesky by ~257h in \"Ed Zitron\"",
+      "detail": {
+        "source_platform": "x",
+        "target_platform": "bluesky",
+        "lag_hours": 257.4,
+        "cluster_id": "clu_ai-bubble_003"
+      }
+    },
+    {
+      "id": "evt_a8784e5a2d4b",
+      "type": "contestation_emergence",
+      "timestamp": "2026-09-04T20:56:19.628714+00:00",
+      "claim_id": "ai-bubble_bluesky_3ae42789_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.76,
+      "summary": "Active contestation in \"Technology Sector Valuations\" — 13 pro vs 25 anti",
+      "detail": {
+        "cluster_id": "clu_ai-bubble_004",
+        "pro_count": 13,
+        "anti_count": 25,
+        "balance": 0.52
+      }
+    },
+    {
+      "id": "evt_f19d8397ced1",
+      "type": "contestation_emergence",
+      "timestamp": "2026-09-04T20:56:19.628714+00:00",
+      "claim_id": "ai-bubble_bluesky_f513f575_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.81,
+      "summary": "Active contestation in \"AWS Cloud Infrastructure\" — 10 pro vs 7 anti",
+      "detail": {
+        "cluster_id": "clu_ai-bubble_006",
+        "pro_count": 10,
+        "anti_count": 7,
+        "balance": 0.7
       }
     },
     {
@@ -387,38 +491,6 @@
       "source": "fed_register"
     },
     {
-      "id": "evt_feb536c0b4a0",
-      "type": "lead_lag",
-      "timestamp": "2026-05-27T01:03:21.508114+00:00",
-      "claim_id": "ai-bubble_bluesky_bd21f257_2",
-      "slice_id": null,
-      "severity": "low",
-      "confidence": 0.72,
-      "summary": "foreign_policy leads economic_times by ~8h in \"Iran War\"",
-      "detail": {
-        "source_platform": "foreign_policy",
-        "target_platform": "economic_times",
-        "lag_hours": 8.5,
-        "cluster_id": "clu_ai-bubble_017"
-      }
-    },
-    {
-      "id": "evt_a6ee727bfbfc",
-      "type": "lead_lag",
-      "timestamp": "2026-05-27T03:03:21.508114+00:00",
-      "claim_id": "ai-bubble_bluesky_5db9b118_0",
-      "slice_id": null,
-      "severity": "low",
-      "confidence": 0.7,
-      "summary": "Bluesky leads north_bay_bohemian by ~6h in \"Video Game Industry\"",
-      "detail": {
-        "source_platform": "bluesky",
-        "target_platform": "north_bay_bohemian",
-        "lag_hours": 6.9,
-        "cluster_id": "clu_ai-bubble_022"
-      }
-    },
-    {
       "id": "price_META_20260403",
       "type": "external_signal",
       "timestamp": "2026-04-03T17:21:39.949512+00:00",
@@ -527,47 +599,7 @@
       "summary": "Russia-Ukraine Ceasefire before GTA VI? — 54.0% Yes",
       "detail": "Polymarket gives 54.0% odds. Volume: $1,412,740",
       "source": "polymarket"
-    },
-    {
-      "id": "sec_84eeff26c2e1",
-      "type": "external_signal",
-      "timestamp": "2026-04-02T00:00:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Unknown —  filing (2026-04-02)",
-      "detail": "Unknown filed  mentioning 'generative AI'. Filing date: 2026-04-02.",
-      "source": "sec_edgar"
-    },
-    {
-      "id": "sec_7344843bb793",
-      "type": "external_signal",
-      "timestamp": "2026-04-01T00:00:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Unknown —  filing (2026-04-01)",
-      "detail": "Unknown filed  mentioning 'artificial intelligence'. Filing date: 2026-04-01.",
-      "source": "sec_edgar"
-    },
-    {
-      "id": "sec_7d01295b67b1",
-      "type": "external_signal",
-      "timestamp": "2026-03-31T00:00:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Unknown —  filing (2026-03-31)",
-      "detail": "Unknown filed  mentioning 'artificial intelligence'. Filing date: 2026-03-31.",
-      "source": "sec_edgar"
-    },
-    {
-      "id": "price_AMD_20260330",
-      "type": "external_signal",
-      "timestamp": "2026-03-30T07:24:04.984452+00:00",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "AMD: $201.99 (down 0.9%)",
-      "detail": "AMD closed at $201.99, down 0.9% from previous close of $203.77",
-      "source": "yahoo_finance"
     }
   ],
-  "total_count": 79
+  "total_count": 83
 }

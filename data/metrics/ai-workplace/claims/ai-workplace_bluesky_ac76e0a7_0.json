@@ -24,107 +24,94 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": null,
+    "value": 0.54,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.44,
+      0.64
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.54
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 15,
+    "friction": 0.35,
+    "friction_quadrant": "unopposed_advance"
+  },
+  "salience": {
+    "value": 0.6859,
+    "confidence_interval": [
+      0.5873,
+      0.7845
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.6859
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.35,
+    "confidence_interval": [
+      0.2263,
+      0.4737
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.35
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.75,
+    "confidence_interval": [
+      0.6562,
+      0.8438
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.75
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.5,
     "confidence_interval": [
-      0,
-      0
+      0.3875,
+      0.6125
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.5
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 0.944,
     "confidence_interval": [
-      0,
-      0
+      0.8648,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.944
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,60 +120,151 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "YouTube (Influencer Framing)",
+    "first_timestamp": "2026-04-26T09:40:00.987Z",
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 1244.9
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 1340.9
+      },
+      {
+        "platform": "Aol",
+        "lag_hours": 1802.8
+      },
+      {
+        "platform": "News18",
+        "lag_hours": 1967.2
+      },
+      {
+        "platform": "Fox Tech",
+        "lag_hours": 2624.9
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_ai-workplace_000",
+    "hops": [
+      {
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-02-05T09:58:27+00:00",
+        "claim_id": "ai-workplace_bluesky_ac76e0a7_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-03-29T06:51:10.433000+00:00",
+        "claim_id": "ai-workplace_bluesky_ac76e0a7_0",
+        "fidelity_to_origin": 0.668,
+        "fidelity_to_previous": 0.668
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-02T06:50:52+00:00",
+        "claim_id": "ai-workplace_bluesky_ac76e0a7_0",
+        "fidelity_to_origin": 0.6424,
+        "fidelity_to_previous": 0.9617
+      },
+      {
+        "platform": "Aol",
+        "timestamp": "2026-04-21T12:48:57+00:00",
+        "claim_id": "ai-workplace_bluesky_ac76e0a7_0",
+        "fidelity_to_origin": 0.5192,
+        "fidelity_to_previous": 0.8082
+      },
+      {
+        "platform": "News18",
+        "timestamp": "2026-04-28T09:08:29+00:00",
+        "claim_id": "ai-workplace_bluesky_ac76e0a7_0",
+        "fidelity_to_origin": 0.4754,
+        "fidelity_to_previous": 0.9156
+      },
+      {
+        "platform": "Fox Tech",
+        "timestamp": "2026-05-25T18:51:11+00:00",
+        "claim_id": "ai-workplace_bluesky_ac76e0a7_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.631
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-workplace_bluesky_67e63dba_1",
-      "similarity": 0.9146,
-      "text": "AI will replace a significant portion of the human workforce."
+      "claim_id": "ai-workplace_bluesky_409072a4_0",
+      "similarity": 0.9255,
+      "text": "AI is capable of replacing human workers in certain jobs."
     },
     {
-      "claim_id": "ai-workplace_bluesky_5395dbce_0",
-      "similarity": 0.8968,
-      "text": "AI will not be able to replace any human jobs."
+      "claim_id": "ai-workplace_bluesky_e2e01b8c_0",
+      "similarity": 0.9199,
+      "text": "Economists' previous predictions that AI would not replace human jobs may have been inaccurate."
     },
     {
-      "claim_id": "ai-workplace_bluesky_3082e7b6_0",
-      "similarity": 0.8222,
-      "text": "The increasing use of artificial intelligence will not significantly reduce employment."
+      "claim_id": "ai-workplace_bluesky_f4d0b5ab_1",
+      "similarity": 0.892,
+      "text": "AI is replacing human jobs."
     },
     {
-      "claim_id": "ai-workplace_bluesky_df1ec65d_0",
-      "similarity": 0.6384,
-      "text": "Job seekers are modifying their resumes to bypass AI filters used by employers."
+      "claim_id": "ai-workplace_bluesky_8265bc93_0",
+      "similarity": 0.8646,
+      "text": "AI-powered automation will not replace human workers in small businesses."
+    },
+    {
+      "claim_id": "ai-workplace_bluesky_ca5ebde4_0",
+      "similarity": 0.7955,
+      "text": "Artificial intelligence will automate and replace human recruiters."
     }
   ],
   "example_content": [
     {
-      "text": "The increasing use of artificial intelligence will not significantly reduce employment.",
+      "text": "AI is capable of replacing human workers in certain jobs.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "AI will not be able to replace any human jobs.",
+      "text": "Artificial intelligence will automate and replace human recruiters.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "AI will replace a significant portion of the human workforce.",
+      "text": "AI is a valuable tool for skilled workers but dangerous for those without sufficient expertise.",
       "platform": "Bluesky",
-      "confidence": 0.8,
+      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

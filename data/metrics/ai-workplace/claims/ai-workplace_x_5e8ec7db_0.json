@@ -24,107 +24,94 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": null,
+    "value": 0.54,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.44,
+      0.64
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.54
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 4,
+    "friction": 0.8571,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.212,
+    "confidence_interval": [
+      0.0779,
+      0.3461
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.212
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.8571,
+    "confidence_interval": [
+      0.7714,
+      0.9428
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.8571
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.2,
+    "confidence_interval": [
+      0.065,
+      0.335
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.2
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.5,
     "confidence_interval": [
-      0,
-      0
+      0.3875,
+      0.6125
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.5
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 1,
     "confidence_interval": [
-      0,
-      0
+      0.925,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      1
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,21 +120,108 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "X Platform",
+    "first_timestamp": "2026-04-03T16:57:35.000Z",
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 274.4
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_ai-workplace_002",
+    "hops": [
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-03T16:57:35+00:00",
+        "claim_id": "ai-workplace_x_5e8ec7db_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-15T03:23:28.351000+00:00",
+        "claim_id": "ai-workplace_x_5e8ec7db_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
-  "semantic_neighbors": [],
-  "example_content": []
+  "semantic_neighbors": [
+    {
+      "claim_id": "ai-workplace_bluesky_c0f7ff2a_1",
+      "similarity": 0.5572,
+      "text": "Microsoft's layoffs indicate a problematic business strategy."
+    },
+    {
+      "claim_id": "ai-workplace_bluesky_1d27de36_0",
+      "similarity": 0.3544,
+      "text": "AI companies are perceived negatively."
+    },
+    {
+      "claim_id": "ai-workplace_bluesky_1d27de36_1",
+      "similarity": 0.347,
+      "text": "Dario's press tour, warning about AI-driven mass layoffs, exacerbates the negative perception of AI companies."
+    },
+    {
+      "claim_id": "ai-workplace_bluesky_ba29aa36_0",
+      "similarity": 0.3457,
+      "text": "Sony has engaged in questionable business practices, including time exclusivity deals, using user data for AI, studio closures, layoffs, and raising console prices."
+    },
+    {
+      "claim_id": "ai-workplace_bluesky_b26c29bb_0",
+      "similarity": 0.2781,
+      "text": "AI companies are primarily focused on automating jobs, which is unethical."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Sam Altman is unfit to lead due to his hypocrisy regarding the potential impact of AI on employment and his reaction to criticism.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Some companies and intellectual properties are facing collective disapproval due to ethical concerns, lawsuits, use of AI, layoffs, and discriminatory practices.",
+      "platform": "Bluesky",
+      "confidence": 0.7,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Microsoft's layoffs indicate a problematic business strategy.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
 }

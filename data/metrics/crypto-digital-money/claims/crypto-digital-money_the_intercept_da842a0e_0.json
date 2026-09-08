@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "crypto-digital-money_the_intercept_da842a0e_0",
-    "cluster_id": "clu_crypto-digital-money_038",
-    "concept_id": "concept_crypto-digital-money_004",
+    "cluster_id": "clu_crypto-digital-money_030",
+    "concept_id": "concept_crypto-digital-money_002",
     "first_seen_platform": "the_intercept",
     "first_seen_timestamp": "2026-05-01T15:55:25Z",
     "source_document_id": "eb4b5b540bdc4808",
@@ -24,107 +24,94 @@
     "source_type": "elite_media"
   },
   "momentum": {
-    "value": null,
+    "value": 0.54,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.44,
+      0.64
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.54
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 15,
+    "friction": 0.359,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.7212,
+    "confidence_interval": [
+      0.6253,
+      0.8171
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.7212
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.359,
+    "confidence_interval": [
+      0.2359,
+      0.4821
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.359
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.75,
+    "confidence_interval": [
+      0.6562,
+      0.8438
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.75
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.5,
     "confidence_interval": [
-      0,
-      0
+      0.3875,
+      0.6125
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.5
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 0.991,
     "confidence_interval": [
-      0,
-      0
+      0.9153,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.991
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,65 +120,155 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "Salon",
+    "first_timestamp": "2026-05-01T15:55:25Z",
+    "lead_lag": [
+      {
+        "platform": "Fox Tech",
+        "lag_hours": 1345.0
+      },
+      {
+        "platform": "Vox",
+        "lag_hours": 1491.0
+      },
+      {
+        "platform": "Banking Dive",
+        "lag_hours": 1506.9
+      },
+      {
+        "platform": "The Atlantic",
+        "lag_hours": 2021.0
+      },
+      {
+        "platform": "Zero Hedge",
+        "lag_hours": 2058.0
+      },
+      {
+        "platform": "Bluesky",
+        "lag_hours": 2058.0
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_crypto-digital-money_002",
+    "hops": [
+      {
+        "platform": "Salon",
+        "timestamp": "2026-01-30T17:00:59+00:00",
+        "claim_id": "crypto-digital-money_the_intercept_da842a0e_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Fox Tech",
+        "timestamp": "2026-03-27T18:03:25+00:00",
+        "claim_id": "crypto-digital-money_the_intercept_da842a0e_0",
+        "fidelity_to_origin": 0.6637,
+        "fidelity_to_previous": 0.6637
+      },
+      {
+        "platform": "Vox",
+        "timestamp": "2026-04-02T20:00:00+00:00",
+        "claim_id": "crypto-digital-money_the_intercept_da842a0e_0",
+        "fidelity_to_origin": 0.6272,
+        "fidelity_to_previous": 0.945
+      },
+      {
+        "platform": "Banking Dive",
+        "timestamp": "2026-04-03T11:53:47+00:00",
+        "claim_id": "crypto-digital-money_the_intercept_da842a0e_0",
+        "fidelity_to_origin": 0.6232,
+        "fidelity_to_previous": 0.9936
+      },
+      {
+        "platform": "The Atlantic",
+        "timestamp": "2026-04-24T21:59:00+00:00",
+        "claim_id": "crypto-digital-money_the_intercept_da842a0e_0",
+        "fidelity_to_origin": 0.4947,
+        "fidelity_to_previous": 0.7938
+      },
+      {
+        "platform": "Zero Hedge",
+        "timestamp": "2026-04-26T11:00:00+00:00",
+        "claim_id": "crypto-digital-money_the_intercept_da842a0e_0",
+        "fidelity_to_origin": 0.4854,
+        "fidelity_to_previous": 0.9812
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "crypto-digital-money_tokenpost_53c01199_1",
-      "similarity": 0.6061,
-      "text": "Many Americans believe AI technology is advancing too quickly."
+      "claim_id": "crypto-digital-money_fox_tech_e2e71392_4",
+      "similarity": 0.4562,
+      "text": "Steve Wozniak is skeptical about the current state of AI."
     },
     {
-      "claim_id": "crypto-digital-money_the_washington_standard_8c5c7d90_0",
-      "similarity": 0.5158,
-      "text": "AI is being used to monitor and control people's finances."
+      "claim_id": "crypto-digital-money_banking_dive_f279eff3_2",
+      "similarity": 0.4496,
+      "text": "AI will be used to provide customers with financial insights and product recommendations."
     },
     {
-      "claim_id": "crypto-digital-money_bluesky_61194b81_0",
-      "similarity": 0.4522,
-      "text": "Artificial intelligence is enabling companies to reduce their workforce."
+      "claim_id": "crypto-digital-money_fox_tech_e2e71392_3",
+      "similarity": 0.3917,
+      "text": "Pausing AI data center construction would disadvantage the United States."
     },
     {
-      "claim_id": "crypto-digital-money_tokenpost_53c01199_2",
-      "similarity": 0.4108,
-      "text": "Many Americans believe AI will eliminate more jobs than it creates."
+      "claim_id": "crypto-digital-money_bluesky_a84e8ac1_1",
+      "similarity": 0.3782,
+      "text": "Criminal organizations are using artificial intelligence to enhance their fraudulent activities."
     },
     {
-      "claim_id": "crypto-digital-money_bluesky_d87470a9_3",
-      "similarity": 0.391,
-      "text": "Artificial intelligence is mostly worthless."
+      "claim_id": "crypto-digital-money_brigitte_gabriel_479197d9_2",
+      "similarity": 0.3669,
+      "text": "Klaus Schwab suggested that AI's ability to predict election outcomes could lead to the elimination of elections altogether."
     }
   ],
   "example_content": [
     {
-      "text": "Artificial intelligence is enabling companies to reduce their workforce.",
-      "platform": "Bluesky",
+      "text": "AI will be used to provide customers with financial insights and product recommendations.",
+      "platform": "Banking Dive",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Augmented reality glasses are extremely creepy.",
-      "platform": "Bluesky",
-      "confidence": 1.0,
+      "text": "Cognitive training exercises do not significantly improve general intelligence.",
+      "platform": "Vox",
+      "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Artificial intelligence is mostly worthless.",
-      "platform": "Bluesky",
-      "confidence": 1.0,
+      "text": "Pausing AI data center construction would disadvantage the United States.",
+      "platform": "Fox Tech",
+      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

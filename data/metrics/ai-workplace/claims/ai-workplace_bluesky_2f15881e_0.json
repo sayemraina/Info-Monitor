@@ -35,48 +35,48 @@
       0.645
     ],
     "source_distribution": "production",
-    "source_diversity": 0.25,
-    "bridge_ratio": 0.25,
-    "persistence_windows": 2,
-    "friction": 0.3333,
-    "friction_quadrant": "unopposed_advance"
+    "source_diversity": 0.75,
+    "bridge_ratio": 0.75,
+    "persistence_windows": 15,
+    "friction": 0.5417,
+    "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.4501,
+    "value": 0.5487,
     "confidence_interval": [
-      0.3339,
-      0.5663
+      0.4399,
+      0.6575
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.4501
+      0.5487
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.3333,
+    "value": 0.5417,
     "confidence_interval": [
-      0.2083,
-      0.4583
+      0.4323,
+      0.6511
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3333
+      0.5417
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.1,
+    "value": 0.75,
     "confidence_interval": [
-      0,
-      0.2425
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.944,
     "confidence_interval": [
-      0.925,
+      0.8648,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.944
     ],
     "source_distribution": "production"
   },
@@ -120,22 +120,45 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
+    "first_platform": "Indy Week",
     "first_timestamp": "2026-05-27T07:30:39.889Z",
-    "lead_lag": []
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 269.2
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 299.1
+      }
+    ]
   },
   "supply_chain": {
     "concept_id": "concept_ai-workplace_000",
     "hops": [
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-05-26T19:00:07.116000+00:00",
+        "platform": "Indy Week",
+        "timestamp": "2026-03-20T21:10:25+00:00",
         "claim_id": "ai-workplace_bluesky_2f15881e_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-01T02:22:02.503000+00:00",
+        "claim_id": "ai-workplace_bluesky_2f15881e_0",
+        "fidelity_to_origin": 0.3701,
+        "fidelity_to_previous": 0.3701
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-02T08:19:00+00:00",
+        "claim_id": "ai-workplace_bluesky_2f15881e_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.8106
       }
     ],
-    "observation_boundary": "No public antecedent detected"
+    "observation_boundary": null
   },
   "coordination": {
     "burstiness": {
@@ -167,48 +190,48 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-workplace_bluesky_b235b7c3_0",
-      "similarity": 0.984,
-      "text": "AI implementation by companies will cause widespread job losses."
+      "claim_id": "ai-workplace_bluesky_7f1061aa_0",
+      "similarity": 0.8753,
+      "text": "AI will negatively impact employment."
     },
     {
-      "claim_id": "ai-workplace_bluesky_02662f72_0",
-      "similarity": 0.9783,
-      "text": "A large majority of executives anticipate AI-related workforce reductions within the next two years."
+      "claim_id": "ai-workplace_x_894eee76_0",
+      "similarity": 0.8696,
+      "text": "Artificial intelligence poses a significant threat to the labor market."
     },
     {
-      "claim_id": "ai-workplace_bluesky_b0cad79c_0",
-      "similarity": 0.9108,
-      "text": "AI implementation will not cause significant job losses in companies that are already efficiently staffed."
+      "claim_id": "ai-workplace_x_d98d96d9_0",
+      "similarity": 0.8432,
+      "text": "The impact of AI on the labor market will likely be smaller than previously feared."
     },
     {
-      "claim_id": "ai-workplace_bluesky_8a9631fd_1",
-      "similarity": 0.7535,
-      "text": "Using AI to conduct layoffs will negatively impact customer service due to understaffing."
+      "claim_id": "ai-workplace_x_2c7a0f4a_0",
+      "similarity": 0.8371,
+      "text": "Artificial intelligence may cause widespread job displacement among white-collar workers."
     },
     {
-      "claim_id": "ai-workplace_bluesky_3ecf2ed3_0",
-      "similarity": 0.5759,
-      "text": "AI could destabilize the economy and societal structures."
+      "claim_id": "ai-workplace_x_b9e8b374_0",
+      "similarity": 0.8371,
+      "text": "Artificial intelligence may cause widespread job displacement among white-collar workers."
     }
   ],
   "example_content": [
     {
-      "text": "AI could destabilize the economy and societal structures.",
-      "platform": "Bluesky",
-      "confidence": 0.7,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "AI implementation by companies will cause widespread job losses.",
+      "text": "AI will negatively impact employment.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Using AI to conduct layoffs will negatively impact customer service due to understaffing.",
+      "text": "The labor market in New Jersey is showing signs of distress due to the impact of AI on the workforce.",
       "platform": "Bluesky",
-      "confidence": 0.8,
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Increased productivity due to AI adoption will lead to negative wage and employment consequences for humans.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

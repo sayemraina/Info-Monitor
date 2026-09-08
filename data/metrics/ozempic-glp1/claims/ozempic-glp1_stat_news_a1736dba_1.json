@@ -24,39 +24,37 @@
     "source_type": "elite_media"
   },
   "momentum": {
-    "value": null,
+    "value": 0.51,
     "confidence_interval": [
-      0,
-      0
+      0.41,
+      0.61
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
+    "sparkline": [
+      0.51
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 3,
+    "friction": 0,
+    "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": null,
+    "value": 0.2122,
     "confidence_interval": [
-      0,
-      0
+      0.0781,
+      0.3463
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.2122
+    ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
     "value": 0,
     "confidence_interval": [
       0,
@@ -69,82 +67,157 @@
     ],
     "source_distribution": "production"
   },
-  "arousal": {
-    "value": null,
+  "persistence": {
+    "value": 0.15,
     "confidence_interval": [
-      0,
-      0
+      0.0112,
+      0.2888
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.15
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 1,
     "confidence_interval": [
-      0,
-      0
+      0.925,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      1
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.8,
     "factors": []
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "Fiercebiotech   Free Daily Bio",
+    "first_timestamp": "2026-05-25T12:45:00Z",
+    "lead_lag": [
+      {
+        "platform": "Sciencedaily",
+        "lag_hours": 554.4
+      },
+      {
+        "platform": "Stat News",
+        "lag_hours": 576.7
+      },
+      {
+        "platform": "News Medical.Net",
+        "lag_hours": 580.4
+      },
+      {
+        "platform": "Cnbc Top",
+        "lag_hours": 582.8
+      },
+      {
+        "platform": "News18",
+        "lag_hours": 1287.8
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_ozempic-glp1_003",
+    "hops": [
+      {
+        "platform": "Fiercebiotech   Free Daily Bio",
+        "timestamp": "2026-04-03T12:40:00+00:00",
+        "claim_id": "ozempic-glp1_stat_news_a1736dba_1",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Sciencedaily",
+        "timestamp": "2026-04-26T15:05:21+00:00",
+        "claim_id": "ozempic-glp1_stat_news_a1736dba_1",
+        "fidelity_to_origin": 0.6986,
+        "fidelity_to_previous": 0.6986
+      },
+      {
+        "platform": "Stat News",
+        "timestamp": "2026-04-27T13:20:40+00:00",
+        "claim_id": "ozempic-glp1_stat_news_a1736dba_1",
+        "fidelity_to_origin": 0.6866,
+        "fidelity_to_previous": 0.9828
+      },
+      {
+        "platform": "News Medical.Net",
+        "timestamp": "2026-04-27T17:05:40+00:00",
+        "claim_id": "ozempic-glp1_stat_news_a1736dba_1",
+        "fidelity_to_origin": 0.6845,
+        "fidelity_to_previous": 0.9969
+      },
+      {
+        "platform": "Cnbc Top",
+        "timestamp": "2026-04-27T19:28:58+00:00",
+        "claim_id": "ozempic-glp1_stat_news_a1736dba_1",
+        "fidelity_to_origin": 0.6832,
+        "fidelity_to_previous": 0.9981
+      },
+      {
+        "platform": "News18",
+        "timestamp": "2026-05-27T04:30:40+00:00",
+        "claim_id": "ozempic-glp1_stat_news_a1736dba_1",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.4391
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
@@ -156,19 +229,40 @@
       "claim_id": "ozempic-glp1_stat_news_46174b35_0",
       "similarity": 0.6304,
       "text": "Eli Lilly's gene-editing therapy significantly reduced cholesterol levels in a Phase 1 clinical trial."
+    },
+    {
+      "claim_id": "ozempic-glp1_news-medical.net_09f0e039_1",
+      "similarity": 0.551,
+      "text": "Existing interventions for cardiometabolic disease in postmenopausal women may influence gene regulatory pathways affected by estrogen."
+    },
+    {
+      "claim_id": "ozempic-glp1_stat_news_75556d22_2",
+      "similarity": 0.5377,
+      "text": "Eli Lilly is partnering with Profluent to develop advanced gene editors capable of inserting entire genes."
+    },
+    {
+      "claim_id": "ozempic-glp1_stat_news_c13d92af_0",
+      "similarity": 0.5093,
+      "text": "Intellia's CRISPR therapy significantly reduces attack rates in patients with hereditary angioedema."
     }
   ],
   "example_content": [
     {
-      "text": "A one-time gene-editing therapy like VERVE-102 could revolutionize cardiovascular care by shifting from chronic management to long-term prevention.",
-      "platform": "News18",
+      "text": "In-vivo CAR-T therapies and TCEs have potential for treating autoimmune diseases.",
+      "platform": "Fiercebiotech   Free Daily Bio",
       "confidence": 0.8,
       "is_influencer_framing": false
     },
     {
-      "text": "Eli Lilly's gene-editing therapy significantly reduced cholesterol levels in a Phase 1 clinical trial.",
-      "platform": "Stat News",
+      "text": "A new cell therapy has shown promise in curing Type 1 diabetes in mice.",
+      "platform": "Sciencedaily",
       "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Existing interventions for cardiometabolic disease in postmenopausal women may influence gene regulatory pathways affected by estrogen.",
+      "platform": "News Medical.Net",
+      "confidence": 0.8,
       "is_influencer_framing": false
     }
   ]

@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "ai-bubble_bluesky_dc64cfde_0",
-    "cluster_id": "clu_ai-bubble_027",
-    "concept_id": "concept_ai-bubble_001",
+    "cluster_id": "clu_ai-bubble_043",
+    "concept_id": "concept_ai-bubble_002",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-26T04:42:26.078Z",
     "source_document_id": "dc64cfde7ac4e38e",
@@ -24,107 +24,94 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": null,
+    "value": 0.645,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.545,
+      0.745
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.645
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 15,
+    "friction": 0.3143,
+    "friction_quadrant": "unopposed_advance"
+  },
+  "salience": {
+    "value": 0.7411,
+    "confidence_interval": [
+      0.6467,
+      0.8355
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.7411
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.3143,
+    "confidence_interval": [
+      0.1879,
+      0.4407
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3143
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.75,
+    "confidence_interval": [
+      0.6562,
+      0.8438
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.75
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.85,
     "confidence_interval": [
-      0,
-      0
+      0.7638,
+      0.9362
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.85
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 0.9872,
     "confidence_interval": [
-      0,
-      0
+      0.9112,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.9872
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,63 +120,153 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "YouTube (Influencer Framing)",
+    "first_timestamp": "2026-04-26T04:42:26.078Z",
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 2796.8
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 3760.3
+      },
+      {
+        "platform": "News Directory 3",
+        "lag_hours": 4252.3
+      },
+      {
+        "platform": "Khaleej Times",
+        "lag_hours": 4274.2
+      },
+      {
+        "platform": "Network World",
+        "lag_hours": 4300.6
+      },
+      {
+        "platform": "The Star ",
+        "lag_hours": 4301.3
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_ai-bubble_002",
+    "hops": [
+      {
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2025-10-30T09:54:00+00:00",
+        "claim_id": "ai-bubble_bluesky_dc64cfde_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-02-23T22:39:38.119000+00:00",
+        "claim_id": "ai-bubble_bluesky_dc64cfde_0",
+        "fidelity_to_origin": 0.6087,
+        "fidelity_to_previous": 0.6087
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-05T02:09:10+00:00",
+        "claim_id": "ai-bubble_bluesky_dc64cfde_0",
+        "fidelity_to_origin": 0.4739,
+        "fidelity_to_previous": 0.7785
+      },
+      {
+        "platform": "News Directory 3",
+        "timestamp": "2026-04-25T14:09:34+00:00",
+        "claim_id": "ai-bubble_bluesky_dc64cfde_0",
+        "fidelity_to_origin": 0.4051,
+        "fidelity_to_previous": 0.8548
+      },
+      {
+        "platform": "Khaleej Times",
+        "timestamp": "2026-04-26T12:03:18+00:00",
+        "claim_id": "ai-bubble_bluesky_dc64cfde_0",
+        "fidelity_to_origin": 0.402,
+        "fidelity_to_previous": 0.9923
+      },
+      {
+        "platform": "Network World",
+        "timestamp": "2026-04-27T14:32:01+00:00",
+        "claim_id": "ai-bubble_bluesky_dc64cfde_0",
+        "fidelity_to_origin": 0.3983,
+        "fidelity_to_previous": 0.9908
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-bubble_bluesky_32d68133_0",
-      "similarity": 0.7672,
-      "text": "Investments in AI are unlikely to generate returns within an acceptable timeframe."
+      "claim_id": "ai-bubble_bluesky_0e908b12_0",
+      "similarity": 0.7421,
+      "text": "Many AI-powered investment education platforms are ineffective."
     },
     {
-      "claim_id": "ai-bubble_bluesky_5818e850_0",
-      "similarity": 0.7559,
-      "text": "Investments in AI are not yielding returns and are being wasted."
+      "claim_id": "ai-bubble_bluesky_68e44970_1",
+      "similarity": 0.7378,
+      "text": "Investments in AI have been wasteful and could have been used more effectively elsewhere."
     },
     {
-      "claim_id": "ai-bubble_benzinga_895633f4_0",
-      "similarity": 0.7498,
-      "text": "Big Tech companies must demonstrate revenue generation from AI investments to justify current spending levels."
+      "claim_id": "ai-bubble_bluesky_d907a91b_0",
+      "similarity": 0.7258,
+      "text": "The UK government's heavy investment in AI carries significant risk due to the potential for an AI bubble burst."
     },
     {
-      "claim_id": "ai-bubble_bluesky_5a211472_0",
-      "similarity": 0.6633,
-      "text": "AI investment is leading to workforce reductions at major companies."
+      "claim_id": "ai-bubble_bluesky_faac67ee_0",
+      "similarity": 0.7057,
+      "text": "Investments in artificial intelligence have led to tech companies accumulating significant debt without a guaranteed return on investment."
     },
     {
-      "claim_id": "ai-bubble_moneyweb_a3128e0b_0",
-      "similarity": 0.6057,
-      "text": "Investment in artificial intelligence is significantly contributing to economic growth."
+      "claim_id": "ai-bubble_bluesky_f6c21862_0",
+      "similarity": 0.6637,
+      "text": "Oracle's investment in AI, resulting in job cuts, is not economically beneficial when considering the human cost."
     }
   ],
   "example_content": [
     {
-      "text": "The current state of AI development mirrors previous economic disasters.",
+      "text": "The UK government's heavy investment in AI carries significant risk due to the potential for an AI bubble burst.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Over-reliance on AI software will lead to a loss of essential skills in the workforce.",
+      "text": "Investments in artificial intelligence have led to tech companies accumulating significant debt without a guaranteed return on investment.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Venture capital funding for AI is derived from exploitation.",
+      "text": "Equal-weight ETFs provide better diversification than market capitalization weighted S&P 500 index funds.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 3,
-    "friction": 0.7778,
+    "persistence_windows": 15,
+    "friction": 0.75,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.4856,
+    "value": 0.6401,
     "confidence_interval": [
-      0.372,
-      0.5992
+      0.5381,
+      0.7421
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.4856
+      0.6401
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.7778,
+    "value": 0.75,
     "confidence_interval": [
-      0.6861,
-      0.8695
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.7778
+      0.75
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.15,
+    "value": 0.75,
     "confidence_interval": [
-      0.0112,
-      0.2888
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.15
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9935,
     "confidence_interval": [
-      0.925,
+      0.918,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9935
     ],
     "source_distribution": "production"
   },
@@ -120,20 +120,32 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
+    "first_platform": "The Intercept",
     "first_timestamp": "2026-05-26T18:24:50Z",
     "lead_lag": [
       {
-        "platform": "Jacobin",
-        "lag_hours": 4.2
+        "platform": "Bbc News",
+        "lag_hours": 40.6
       },
       {
-        "platform": "Reason",
-        "lag_hours": 7.9
+        "platform": "X Platform",
+        "lag_hours": 42.6
       },
       {
-        "platform": "Exbulletin",
-        "lag_hours": 17.0
+        "platform": "Arab News",
+        "lag_hours": 44.3
+      },
+      {
+        "platform": "Bluesky",
+        "lag_hours": 45.5
+      },
+      {
+        "platform": "Joe.Co.Uk",
+        "lag_hours": 45.9
+      },
+      {
+        "platform": "YouTube (Influencer Framing)",
+        "lag_hours": 344.6
       }
     ]
   },
@@ -141,32 +153,46 @@
     "concept_id": "concept_war-on-iran_002",
     "hops": [
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-05-26T14:15:24+00:00",
+        "platform": "The Intercept",
+        "timestamp": "2026-04-01T18:51:44+00:00",
         "claim_id": "war-on-iran_jacobin_7b76d924_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Jacobin",
-        "timestamp": "2026-05-26T18:24:50+00:00",
+        "platform": "Bbc News",
+        "timestamp": "2026-04-03T11:28:34+00:00",
         "claim_id": "war-on-iran_jacobin_7b76d924_0",
-        "fidelity_to_origin": 0.8284,
-        "fidelity_to_previous": 0.8284
+        "fidelity_to_origin": 0.9787,
+        "fidelity_to_previous": 0.9787
       },
       {
-        "platform": "Reason",
-        "timestamp": "2026-05-26T22:08:50+00:00",
+        "platform": "X Platform",
+        "timestamp": "2026-04-03T13:29:34+00:00",
         "claim_id": "war-on-iran_jacobin_7b76d924_0",
-        "fidelity_to_origin": 0.6742,
-        "fidelity_to_previous": 0.8139
+        "fidelity_to_origin": 0.9776,
+        "fidelity_to_previous": 0.9989
       },
       {
-        "platform": "Exbulletin",
-        "timestamp": "2026-05-27T07:12:42+00:00",
+        "platform": "Arab News",
+        "timestamp": "2026-04-03T15:08:56+00:00",
         "claim_id": "war-on-iran_jacobin_7b76d924_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.445
+        "fidelity_to_origin": 0.9767,
+        "fidelity_to_previous": 0.9991
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-03T16:22:18.848000+00:00",
+        "claim_id": "war-on-iran_jacobin_7b76d924_0",
+        "fidelity_to_origin": 0.9761,
+        "fidelity_to_previous": 0.9994
+      },
+      {
+        "platform": "Joe.Co.Uk",
+        "timestamp": "2026-04-03T16:48:27+00:00",
+        "claim_id": "war-on-iran_jacobin_7b76d924_0",
+        "fidelity_to_origin": 0.9759,
+        "fidelity_to_previous": 0.9998
       }
     ],
     "observation_boundary": null
@@ -201,47 +227,47 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "war-on-iran_bluesky_bae7865e_0",
-      "similarity": 0.6467,
-      "text": "US security guarantees are unreliable, leading to nuclear proliferation."
+      "claim_id": "war-on-iran_arab_news_56a40343_1",
+      "similarity": 0.6163,
+      "text": "The UK is protecting its interests and allies by deploying resources to the Gulf region."
     },
     {
-      "claim_id": "war-on-iran_bluesky_400d4b10_0",
-      "similarity": 0.6371,
-      "text": "The United States is the primary obstacle to resolving international conflicts."
+      "claim_id": "war-on-iran_bluesky_050f6db6_0",
+      "similarity": 0.6159,
+      "text": "A U.S. president may initiate a nuclear attack on Iran."
     },
     {
-      "claim_id": "war-on-iran_bluesky_c7871f75_0",
-      "similarity": 0.625,
-      "text": "The United States removed the THAAD system from South Korea after Iran destroyed THAAD systems in the Gulf region."
+      "claim_id": "war-on-iran_joe.co.uk_b658e5f2_2",
+      "similarity": 0.514,
+      "text": "Donald Trump should not abandon the situation he created."
     },
     {
-      "claim_id": "war-on-iran_exbulletin_eb7fe43d_1",
-      "similarity": 0.5579,
-      "text": "The United States cannot be trusted to honor agreements."
+      "claim_id": "war-on-iran_joe.co.uk_b658e5f2_0",
+      "similarity": 0.4967,
+      "text": "Keir Starmer was correct in his decision not to involve the UK in military action in Iran."
     },
     {
-      "claim_id": "war-on-iran_bluesky_d4150aa3_0",
-      "similarity": 0.5389,
-      "text": "The United States is implementing a new strategy in the Middle East, exemplified by sanctions against Iraqi officials."
+      "claim_id": "war-on-iran_bluesky_dad9fa46_0",
+      "similarity": 0.4868,
+      "text": "The United States has become a rogue nation."
     }
   ],
   "example_content": [
     {
-      "text": "US security guarantees are unreliable, leading to nuclear proliferation.",
+      "text": "The United States has become a rogue nation.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The United States is the primary obstacle to resolving international conflicts.",
+      "text": "A U.S. president may initiate a nuclear attack on Iran.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The United States removed the THAAD system from South Korea after Iran destroyed THAAD systems in the Gulf region.",
-      "platform": "Bluesky",
+      "text": "Keir Starmer was correct in his decision not to involve the UK in military action in Iran.",
+      "platform": "Joe.Co.Uk",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

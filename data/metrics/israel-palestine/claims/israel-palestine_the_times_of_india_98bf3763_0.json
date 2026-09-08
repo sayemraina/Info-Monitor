@@ -9,7 +9,7 @@
     "arousal": "high",
     "register": "journalistic",
     "id": "israel-palestine_the_times_of_india_98bf3763_0",
-    "cluster_id": "clu_israel-palestine_018",
+    "cluster_id": "clu_israel-palestine_014",
     "concept_id": "concept_israel-palestine_001",
     "first_seen_platform": "the_times_of_india",
     "first_seen_timestamp": "2026-04-27T13:36:14Z",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 4,
-    "friction": 0.1667,
+    "persistence_windows": 15,
+    "friction": 0.2595,
     "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 0.5794,
+    "value": 1,
     "confidence_interval": [
-      0.4729,
-      0.6859
+      0.925,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.5794
+      1
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.1667,
+    "value": 0.2595,
     "confidence_interval": [
-      0.0292,
-      0.3042
+      0.129,
+      0.39
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1667
+      0.2595
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.2,
+    "value": 0.75,
     "confidence_interval": [
-      0.065,
-      0.335
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9412,
+    "value": 0.9731,
     "confidence_interval": [
-      0.8618,
+      0.8961,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9412
+      0.9731
     ],
     "source_distribution": "production"
   },
@@ -120,24 +120,32 @@
     ]
   },
   "provenance": {
-    "first_platform": "Daily Wire",
+    "first_platform": "YouTube (Influencer Framing)",
     "first_timestamp": "2026-04-27T13:36:14Z",
     "lead_lag": [
       {
-        "platform": "The Times Of India",
-        "lag_hours": 2.2
+        "platform": "Cato",
+        "lag_hours": 310.4
       },
       {
-        "platform": "Pbs Newshour",
-        "lag_hours": 3.9
+        "platform": "The Intercept",
+        "lag_hours": 385.7
       },
       {
-        "platform": "Sgt Report",
-        "lag_hours": 5.9
+        "platform": "La Times",
+        "lag_hours": 457.9
       },
       {
-        "platform": "Bluesky",
-        "lag_hours": 6.9
+        "platform": "Vox",
+        "lag_hours": 514.3
+      },
+      {
+        "platform": "Jacobin",
+        "lag_hours": 525.3
+      },
+      {
+        "platform": "Salon",
+        "lag_hours": 546.7
       }
     ]
   },
@@ -145,39 +153,46 @@
     "concept_id": "concept_israel-palestine_001",
     "hops": [
       {
-        "platform": "Daily Wire",
-        "timestamp": "2026-04-27T11:25:22+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-03-11T15:50:08+00:00",
         "claim_id": "israel-palestine_the_times_of_india_98bf3763_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "The Times Of India",
-        "timestamp": "2026-04-27T13:36:14+00:00",
+        "platform": "Cato",
+        "timestamp": "2026-03-24T14:12:49+00:00",
         "claim_id": "israel-palestine_the_times_of_india_98bf3763_0",
-        "fidelity_to_origin": 0.78,
-        "fidelity_to_previous": 0.78
+        "fidelity_to_origin": 0.8818,
+        "fidelity_to_previous": 0.8818
       },
       {
-        "platform": "Pbs Newshour",
-        "timestamp": "2026-04-27T15:19:35+00:00",
+        "platform": "The Intercept",
+        "timestamp": "2026-03-27T17:33:53+00:00",
         "claim_id": "israel-palestine_the_times_of_india_98bf3763_0",
-        "fidelity_to_origin": 0.6063,
-        "fidelity_to_previous": 0.7773
+        "fidelity_to_origin": 0.8532,
+        "fidelity_to_previous": 0.9676
       },
       {
-        "platform": "Sgt Report",
-        "timestamp": "2026-04-27T17:20:03+00:00",
+        "platform": "La Times",
+        "timestamp": "2026-03-30T17:42:56+00:00",
         "claim_id": "israel-palestine_the_times_of_india_98bf3763_0",
-        "fidelity_to_origin": 0.4037,
-        "fidelity_to_previous": 0.6658
+        "fidelity_to_origin": 0.8257,
+        "fidelity_to_previous": 0.9678
       },
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-27T18:21:45.269000+00:00",
+        "platform": "Vox",
+        "timestamp": "2026-04-02T02:10:09+00:00",
         "claim_id": "israel-palestine_the_times_of_india_98bf3763_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.7431
+        "fidelity_to_origin": 0.8042,
+        "fidelity_to_previous": 0.974
+      },
+      {
+        "platform": "Jacobin",
+        "timestamp": "2026-04-02T13:10:03+00:00",
+        "claim_id": "israel-palestine_the_times_of_india_98bf3763_0",
+        "fidelity_to_origin": 0.8,
+        "fidelity_to_previous": 0.9948
       }
     ],
     "observation_boundary": null
@@ -212,46 +227,46 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "israel-palestine_the_times_of_india_98bf3763_2",
-      "similarity": 0.7951,
-      "text": "Iran retaliated against the US and Israel by targeting their assets across the Gulf countries."
+      "claim_id": "israel-palestine_bluesky_80a5a799_0",
+      "similarity": 0.6306,
+      "text": "Iran is contributing to the escalation of the conflict by not allowing Trump to claim a victory."
     },
     {
-      "claim_id": "israel-palestine_the_times_of_india_98bf3763_1",
-      "similarity": 0.6683,
-      "text": "The attack on Iran was intended to cause the collapse of the Islamic Republic, but it failed."
+      "claim_id": "israel-palestine_bluesky_3a2b498e_0",
+      "similarity": 0.6014,
+      "text": "Iran strategically positions itself within the pro-Palestine movement."
     },
     {
-      "claim_id": "israel-palestine_bluesky_6828489c_1",
-      "similarity": 0.6514,
-      "text": "Iran has threatened to retaliate against infrastructure in U.S.-allied Gulf states."
+      "claim_id": "israel-palestine_bluesky_258c3876_0",
+      "similarity": 0.5218,
+      "text": "The US military conducted an airstrike that destroyed an Iranian bridge."
     },
     {
-      "claim_id": "israel-palestine_bluesky_8bed740d_0",
-      "similarity": 0.6463,
-      "text": "Iran has threatened to retaliate against any country that supports attacks on its infrastructure."
+      "claim_id": "israel-palestine_the_nation_3fdaf2fc_1",
+      "similarity": 0.4879,
+      "text": "Regime change in Iran should be driven by internal forces within Iran, not external intervention."
     },
     {
-      "claim_id": "israel-palestine_bluesky_74b670bd_0",
-      "similarity": 0.6326,
-      "text": "Negotiations between the United States and Iran have begun."
+      "claim_id": "israel-palestine_vox_5208d958_0",
+      "similarity": 0.4622,
+      "text": "The U.S. military has inflicted significant damage to Iranian military assets."
     }
   ],
   "example_content": [
     {
-      "text": "Negotiations between the United States and Iran have begun.",
+      "text": "Iran strategically positions itself within the pro-Palestine movement.",
       "platform": "Bluesky",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "is_influencer_framing": false
     },
     {
-      "text": "Iran played a crucial role in facilitating the ceasefire between Israel and Hamas.",
+      "text": "Iran is contributing to the escalation of the conflict by not allowing Trump to claim a victory.",
       "platform": "Bluesky",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "is_influencer_framing": false
     },
     {
-      "text": "The IRGC-dominated leadership believes time is on their side regarding the conflict.",
+      "text": "The US military conducted an airstrike that destroyed an Iranian bridge.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

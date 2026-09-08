@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "housing-crisis_x_cfc07abc_0",
-    "cluster_id": "clu_housing-crisis_019",
-    "concept_id": "concept_housing-crisis_007",
+    "cluster_id": "clu_housing-crisis_050",
+    "concept_id": "concept_housing-crisis_003",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-03T16:02:54.000Z",
     "source_document_id": "x_2040097721328324823",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 6,
-    "friction": 0.1667,
+    "persistence_windows": 15,
+    "friction": 0.2769,
     "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 0.24,
+    "value": 0.6096,
     "confidence_interval": [
-      0.108,
-      0.372
+      0.5053,
+      0.7139
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.24
+      0.6096
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.1667,
+    "value": 0.2769,
     "confidence_interval": [
-      0.0292,
-      0.3042
+      0.1477,
+      0.4061
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1667
+      0.2769
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.3,
+    "value": 0.75,
     "confidence_interval": [
-      0.1725,
-      0.4275
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9784,
+    "value": 0.9848,
     "confidence_interval": [
-      0.9018,
+      0.9087,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9784
+      0.9848
     ],
     "source_distribution": "production"
   },
@@ -125,24 +125,36 @@
     "lead_lag": [
       {
         "platform": "Bluesky",
-        "lag_hours": 3709.0
+        "lag_hours": 6134.5
       },
       {
         "platform": "X Platform",
-        "lag_hours": 3747.6
+        "lag_hours": 6162.8
       },
       {
         "platform": "Newsbomb.Gr",
-        "lag_hours": 3749.8
+        "lag_hours": 6175.3
+      },
+      {
+        "platform": "Variety",
+        "lag_hours": 6696.8
+      },
+      {
+        "platform": "The Hollywood Reporter",
+        "lag_hours": 6800.0
+      },
+      {
+        "platform": "Azeri   Press Informasiya Agen",
+        "lag_hours": 6958.9
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_housing-crisis_007",
+    "concept_id": "concept_housing-crisis_003",
     "hops": [
       {
         "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2025-10-29T09:30:43+00:00",
+        "timestamp": "2025-07-20T08:00:11+00:00",
         "claim_id": "housing-crisis_x_cfc07abc_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
@@ -151,22 +163,36 @@
         "platform": "Bluesky",
         "timestamp": "2026-04-01T22:32:29.162000+00:00",
         "claim_id": "housing-crisis_x_cfc07abc_0",
-        "fidelity_to_origin": 0.3076,
-        "fidelity_to_previous": 0.3076
+        "fidelity_to_origin": 0.4247,
+        "fidelity_to_previous": 0.4247
       },
       {
         "platform": "X Platform",
-        "timestamp": "2026-04-03T13:04:08+00:00",
+        "timestamp": "2026-04-03T02:46:55+00:00",
         "claim_id": "housing-crisis_x_cfc07abc_0",
-        "fidelity_to_origin": 0.3004,
-        "fidelity_to_previous": 0.9766
+        "fidelity_to_origin": 0.4221,
+        "fidelity_to_previous": 0.9939
       },
       {
         "platform": "Newsbomb.Gr",
         "timestamp": "2026-04-03T15:16:40+00:00",
         "claim_id": "housing-crisis_x_cfc07abc_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9987
+        "fidelity_to_origin": 0.4209,
+        "fidelity_to_previous": 0.9972
+      },
+      {
+        "platform": "Variety",
+        "timestamp": "2026-04-25T08:49:52+00:00",
+        "claim_id": "housing-crisis_x_cfc07abc_0",
+        "fidelity_to_origin": 0.372,
+        "fidelity_to_previous": 0.8838
+      },
+      {
+        "platform": "The Hollywood Reporter",
+        "timestamp": "2026-04-29T16:00:00+00:00",
+        "claim_id": "housing-crisis_x_cfc07abc_0",
+        "fidelity_to_origin": 0.3623,
+        "fidelity_to_previous": 0.9739
       }
     ],
     "observation_boundary": null
@@ -221,20 +247,20 @@
       "text": "Car dependency exacerbates the housing crisis."
     },
     {
-      "claim_id": "housing-crisis_bluesky_7a0c8530_0",
-      "similarity": 0.6363,
-      "text": "The housing crisis in Canada negatively impacts economic productivity."
+      "claim_id": "housing-crisis_bluesky_494b6dbe_0",
+      "similarity": 0.6348,
+      "text": "Policies addressing the housing crisis are unrealistic and will lead to negative consequences."
     }
   ],
   "example_content": [
     {
-      "text": "The housing crisis in Canada negatively impacts economic productivity.",
+      "text": "Trump's policies are exacerbating the housing crisis.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Trump's policies are exacerbating the housing crisis.",
+      "text": "HUD's proposed rule will exacerbate the housing crisis and increase homelessness.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

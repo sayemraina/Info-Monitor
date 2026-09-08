@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "crypto-digital-money_x_6824b5bd_0",
-    "cluster_id": "clu_crypto-digital-money_034",
-    "concept_id": "concept_crypto-digital-money_002",
+    "cluster_id": "clu_crypto-digital-money_048",
+    "concept_id": "concept_crypto-digital-money_003",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-05-06T08:54:11.000Z",
     "source_document_id": "x_2051948628483211629",
@@ -37,24 +37,37 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 4,
-    "friction": 0.75,
+    "persistence_windows": 15,
+    "friction": 0.6857,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.448,
+    "value": 0.6472,
     "confidence_interval": [
-      0.3316,
-      0.5644
+      0.5457,
+      0.7487
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.448
+      0.6472
     ],
     "source_distribution": "production"
   },
   "friction": {
+    "value": 0.6857,
+    "confidence_interval": [
+      0.5871,
+      0.7843
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.6857
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
     "value": 0.75,
     "confidence_interval": [
       0.6562,
@@ -64,19 +77,6 @@
     "time_window": "24h",
     "sparkline": [
       0.75
-    ],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0.2,
-    "confidence_interval": [
-      0.065,
-      0.335
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [
-      0.2
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9748,
+    "value": 0.985,
     "confidence_interval": [
-      0.8979,
+      0.9089,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9748
+      0.985
     ],
     "source_distribution": "production"
   },
@@ -124,49 +124,75 @@
     "first_timestamp": "2026-05-06T08:54:11.000Z",
     "lead_lag": [
       {
-        "platform": "Bluesky",
-        "lag_hours": 9.2
+        "platform": "Fox Tech",
+        "lag_hours": 1937.2
       },
       {
-        "platform": "Fortune",
-        "lag_hours": 11.2
+        "platform": "Bluesky",
+        "lag_hours": 1970.3
+      },
+      {
+        "platform": "Wnbf News Radio 1290",
+        "lag_hours": 2032.8
       },
       {
         "platform": "X Platform",
-        "lag_hours": 17.6
+        "lag_hours": 2033.7
+      },
+      {
+        "platform": "Fox News",
+        "lag_hours": 2611.4
+      },
+      {
+        "platform": "La Weekly",
+        "lag_hours": 2611.8
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_crypto-digital-money_002",
+    "concept_id": "concept_crypto-digital-money_003",
     "hops": [
       {
         "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2026-05-05T14:38:33+00:00",
+        "timestamp": "2026-01-08T23:13:04+00:00",
         "claim_id": "crypto-digital-money_x_6824b5bd_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-05-05T23:49:50.745000+00:00",
+        "platform": "Fox Tech",
+        "timestamp": "2026-03-30T16:22:42+00:00",
         "claim_id": "crypto-digital-money_x_6824b5bd_0",
-        "fidelity_to_origin": 0.6339,
-        "fidelity_to_previous": 0.6339
+        "fidelity_to_origin": 0.4902,
+        "fidelity_to_previous": 0.4902
       },
       {
-        "platform": "Fortune",
-        "timestamp": "2026-05-06T01:51:41+00:00",
+        "platform": "Bluesky",
+        "timestamp": "2026-04-01T01:28:20.688495+00:00",
         "claim_id": "crypto-digital-money_x_6824b5bd_0",
-        "fidelity_to_origin": 0.553,
-        "fidelity_to_previous": 0.8724
+        "fidelity_to_origin": 0.4815,
+        "fidelity_to_previous": 0.9823
+      },
+      {
+        "platform": "Wnbf News Radio 1290",
+        "timestamp": "2026-04-03T15:58:19+00:00",
+        "claim_id": "crypto-digital-money_x_6824b5bd_0",
+        "fidelity_to_origin": 0.465,
+        "fidelity_to_previous": 0.9657
       },
       {
         "platform": "X Platform",
-        "timestamp": "2026-05-06T08:12:42+00:00",
+        "timestamp": "2026-04-03T16:55:56+00:00",
         "claim_id": "crypto-digital-money_x_6824b5bd_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.5425
+        "fidelity_to_origin": 0.4648,
+        "fidelity_to_previous": 0.9996
+      },
+      {
+        "platform": "Fox News",
+        "timestamp": "2026-04-27T18:39:28+00:00",
+        "claim_id": "crypto-digital-money_x_6824b5bd_0",
+        "fidelity_to_origin": 0.3127,
+        "fidelity_to_previous": 0.6728
       }
     ],
     "observation_boundary": null
@@ -201,48 +227,48 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "crypto-digital-money_bluesky_b62633bf_0",
-      "similarity": 0.6771,
-      "text": "Cryptocurrencies facilitate fraud and casino-like capitalism."
+      "claim_id": "crypto-digital-money_bluesky_de3f6b88_0",
+      "similarity": 0.7202,
+      "text": "Cryptocurrency scams are causing significant financial losses for Nevadans."
     },
     {
-      "claim_id": "crypto-digital-money_bluesky_4ab70f85_0",
-      "similarity": 0.6219,
-      "text": "Cryptocurrency is a Ponzi scheme that has conned millions of people."
+      "claim_id": "crypto-digital-money_bluesky_ed261cbb_0",
+      "similarity": 0.699,
+      "text": "Cryptocurrencies promoted by Elon Musk are frequently scams."
     },
     {
-      "claim_id": "crypto-digital-money_bluesky_3f8902ba_0",
-      "similarity": 0.584,
-      "text": "The cryptocurrency industry is repeating historical financial scams and disasters."
+      "claim_id": "crypto-digital-money_bluesky_41023efa_0",
+      "similarity": 0.6855,
+      "text": "Cryptocurrency scams are becoming more prevalent."
     },
     {
-      "claim_id": "crypto-digital-money_bluesky_0ff73bc6_0",
-      "similarity": 0.5676,
-      "text": "Cryptocurrency proponents spent a large amount of money on negative advertising to defeat Sherrod Brown due to his questioning of cryptocurrency ethics."
+      "claim_id": "crypto-digital-money_bluesky_a4514951_0",
+      "similarity": 0.5795,
+      "text": "Cryptocurrency ATMs pose a risk of fraud and money laundering."
     },
     {
-      "claim_id": "crypto-digital-money_youtube_ecb3f131_0",
-      "similarity": 0.5447,
-      "text": "Khabib Nurmagomedov is involved in a cryptocurrency scam."
+      "claim_id": "crypto-digital-money_wnbf_news_radio_1290_3fab5cbe_0",
+      "similarity": 0.4899,
+      "text": "Scammers are impersonating law enforcement officers to defraud New Yorkers, particularly older adults, by falsely claiming outstanding warrants or fines."
     }
   ],
   "example_content": [
     {
-      "text": "Cryptocurrencies facilitate fraud and casino-like capitalism.",
+      "text": "Cryptocurrency scams are causing significant financial losses for Nevadans.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Cryptocurrency proponents spent a large amount of money on negative advertising to defeat Sherrod Brown due to his questioning of cryptocurrency ethics.",
+      "text": "The cryptocurrency and NFT-embracing app has repeatedly posted Nazi dogwhistles in its announcements.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Cryptocurrency is a Ponzi scheme that has conned millions of people.",
+      "text": "FIFA's partnership with ADIPredictstree, a cryptocurrency firm, is questionable.",
       "platform": "Bluesky",
-      "confidence": 0.9,
+      "confidence": 0.7,
       "is_influencer_framing": false
     }
   ]

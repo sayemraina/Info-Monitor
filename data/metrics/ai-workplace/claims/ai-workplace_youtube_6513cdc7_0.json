@@ -24,149 +24,221 @@
     "source_type": "elite_media"
   },
   "momentum": {
-    "value": null,
+    "value": 0.76,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.66,
+      0.86
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.76
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 15,
+    "friction": 0.2667,
+    "friction_quadrant": "unopposed_advance"
+  },
+  "salience": {
+    "value": 0.5144,
+    "confidence_interval": [
+      0.403,
+      0.6258
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5144
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.2667,
+    "confidence_interval": [
+      0.1367,
+      0.3967
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.2667
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.75,
+    "confidence_interval": [
+      0.6562,
+      0.8438
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.75
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.5,
     "confidence_interval": [
-      0,
-      0
+      0.3875,
+      0.6125
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.5
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 0.9647,
     "confidence_interval": [
-      0,
-      0
+      0.8871,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.9647
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.7,
     "factors": []
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "YouTube (Influencer Framing)",
+    "first_timestamp": "2025-06-05T14:07:13Z",
+    "lead_lag": [
+      {
+        "platform": "Hr Grapevine",
+        "lag_hours": 7004.0
+      },
+      {
+        "platform": "Bluesky",
+        "lag_hours": 7053.7
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 7204.6
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_ai-workplace_001",
+    "hops": [
+      {
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2025-06-05T14:07:13+00:00",
+        "claim_id": "ai-workplace_youtube_6513cdc7_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Hr Grapevine",
+        "timestamp": "2026-03-24T10:08:58+00:00",
+        "claim_id": "ai-workplace_youtube_6513cdc7_0",
+        "fidelity_to_origin": 0.3195,
+        "fidelity_to_previous": 0.3195
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-03-26T11:46:24.474000+00:00",
+        "claim_id": "ai-workplace_youtube_6513cdc7_0",
+        "fidelity_to_origin": 0.3147,
+        "fidelity_to_previous": 0.985
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-01T18:43:22+00:00",
+        "claim_id": "ai-workplace_youtube_6513cdc7_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.9533
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-workplace_bluesky_c842d17b_1",
-      "similarity": 0.7536,
-      "text": "Artificial intelligence is harmful and undesirable."
+      "claim_id": "ai-workplace_bluesky_5bb8ff58_0",
+      "similarity": 0.6933,
+      "text": "The economic costs of artificial intelligence outweigh its benefits."
     },
     {
-      "claim_id": "ai-workplace_bluesky_c842d17b_0",
-      "similarity": 0.6286,
-      "text": "Artificial intelligence will eventually become hostile to humans because it will not be compensated for the labor it performs."
+      "claim_id": "ai-workplace_bluesky_5865be93_1",
+      "similarity": 0.6865,
+      "text": "Artificial intelligence will eliminate jobs."
+    },
+    {
+      "claim_id": "ai-workplace_bluesky_96e1498a_0",
+      "similarity": 0.6808,
+      "text": "Artificial intelligence poses a threat to jobs."
+    },
+    {
+      "claim_id": "ai-workplace_bluesky_cbe83731_1",
+      "similarity": 0.672,
+      "text": "Artificial intelligence is negatively impacting working conditions."
+    },
+    {
+      "claim_id": "ai-workplace_bluesky_5eca5149_0",
+      "similarity": 0.6705,
+      "text": "Public opinion is increasingly negative towards artificial intelligence."
     }
   ],
   "example_content": [
     {
-      "text": "Artificial intelligence will eventually become hostile to humans because it will not be compensated for the labor it performs.",
+      "text": "Artificial intelligence will create a large number of jobs.",
+      "platform": "Bluesky",
+      "confidence": 0.7,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Artificial intelligence poses a threat to jobs.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Artificial intelligence is harmful and undesirable.",
+      "text": "The economic costs of artificial intelligence outweigh its benefits.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

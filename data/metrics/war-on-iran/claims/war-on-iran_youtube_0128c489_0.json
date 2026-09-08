@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "journalistic",
     "id": "war-on-iran_youtube_0128c489_0",
-    "cluster_id": "clu_war-on-iran_005",
-    "concept_id": "concept_war-on-iran_002",
+    "cluster_id": "clu_war-on-iran_020",
+    "concept_id": "concept_war-on-iran_000",
     "first_seen_platform": "youtube",
     "first_seen_timestamp": "2026-05-04T16:33:43Z",
     "source_document_id": "yt_2Fgy7Jw-LNw",
@@ -24,107 +24,94 @@
     "source_type": "elite_media"
   },
   "momentum": {
-    "value": null,
+    "value": 0.7998,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.6998,
+      0.8998
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.7998
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 14,
+    "friction": 0.2273,
+    "friction_quadrant": "unopposed_advance"
+  },
+  "salience": {
+    "value": 0.4694,
+    "confidence_interval": [
+      0.3546,
+      0.5842
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.4694
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.2273,
+    "confidence_interval": [
+      0.0943,
+      0.3603
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.2273
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.7,
+    "confidence_interval": [
+      0.6025,
+      0.7975
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.7
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.85,
     "confidence_interval": [
-      0,
-      0
+      0.7638,
+      0.9362
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.85
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 0.9252,
     "confidence_interval": [
-      0,
-      0
+      0.8446,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.9252
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,63 +120,153 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-05-04T16:33:43Z",
+    "lead_lag": [
+      {
+        "platform": "YouTube (Influencer Framing)",
+        "lag_hours": 242.7
+      },
+      {
+        "platform": "7 News Miami",
+        "lag_hours": 547.3
+      },
+      {
+        "platform": "The Boston Globe",
+        "lag_hours": 547.3
+      },
+      {
+        "platform": "Daily Wire",
+        "lag_hours": 571.2
+      },
+      {
+        "platform": "Anadolu Ajansı",
+        "lag_hours": 578.9
+      },
+      {
+        "platform": "The Herald Journal",
+        "lag_hours": 578.9
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_war-on-iran_000",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-03T16:15:55.868000+00:00",
+        "claim_id": "war-on-iran_youtube_0128c489_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-04-13T19:00:01+00:00",
+        "claim_id": "war-on-iran_youtube_0128c489_0",
+        "fidelity_to_origin": 0.868,
+        "fidelity_to_previous": 0.868
+      },
+      {
+        "platform": "7 News Miami",
+        "timestamp": "2026-04-26T11:31:40+00:00",
+        "claim_id": "war-on-iran_youtube_0128c489_0",
+        "fidelity_to_origin": 0.7023,
+        "fidelity_to_previous": 0.8091
+      },
+      {
+        "platform": "The Boston Globe",
+        "timestamp": "2026-04-26T11:31:43+00:00",
+        "claim_id": "war-on-iran_youtube_0128c489_0",
+        "fidelity_to_origin": 0.7023,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Daily Wire",
+        "timestamp": "2026-04-27T11:25:22+00:00",
+        "claim_id": "war-on-iran_youtube_0128c489_0",
+        "fidelity_to_origin": 0.6893,
+        "fidelity_to_previous": 0.9815
+      },
+      {
+        "platform": "Anadolu Ajansı",
+        "timestamp": "2026-04-27T19:09:52+00:00",
+        "claim_id": "war-on-iran_youtube_0128c489_0",
+        "fidelity_to_origin": 0.6851,
+        "fidelity_to_previous": 0.9939
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "war-on-iran_bluesky_db87a9b3_0",
-      "similarity": 0.5661,
-      "text": "The UN is considering sanctions against Iran for restricting freedom of navigation."
+      "claim_id": "war-on-iran_bluesky_9a01b7d8_0",
+      "similarity": 0.6324,
+      "text": "The United States is actively intercepting Iranian vessels in the Arabian Sea."
     },
     {
-      "claim_id": "war-on-iran_bluesky_2cee8892_0",
-      "similarity": 0.5649,
-      "text": "Iran is disrupting freedom of navigation in the Strait of Hormuz."
+      "claim_id": "war-on-iran_bluesky_4531a9e4_0",
+      "similarity": 0.6078,
+      "text": "The War on Iran has undermined freedom of navigation in the region."
     },
     {
-      "claim_id": "war-on-iran_bluesky_20f346bd_0",
-      "similarity": 0.5605,
-      "text": "Iran is circumventing the U.S. naval blockade by developing land routes with neighboring countries, particularly Pakistan."
+      "claim_id": "war-on-iran_youtube_ea9cfd75_1",
+      "similarity": 0.5551,
+      "text": "The US military is blockading Iranian ports to restrict the IRGC's control over Hormuz."
     },
     {
-      "claim_id": "war-on-iran_bluesky_46ee7633_0",
-      "similarity": 0.5351,
-      "text": "The United States military attacked civilian vessels in the Strait of Hormuz."
+      "claim_id": "war-on-iran_7_news_miami_4d8a76cc_0",
+      "similarity": 0.547,
+      "text": "The United States has blockaded Iranian ports."
     },
     {
-      "claim_id": "war-on-iran_oman_observer_6100de49_1",
-      "similarity": 0.5054,
-      "text": "The US military is guiding ships through the Strait of Hormuz to restore freedom of navigation."
+      "claim_id": "war-on-iran_bluesky_cf666a70_0",
+      "similarity": 0.5419,
+      "text": "The US military is actively enforcing sanctions against Iran by blockading ships."
     }
   ],
   "example_content": [
     {
-      "text": "African ports are not significantly benefiting from the rerouting of ships due to the conflict involving Iran.",
+      "text": "The War on Iran has undermined freedom of navigation in the region.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The United States military attacked civilian vessels in the Strait of Hormuz.",
+      "text": "Former President Trump initiated a conflict with Iran that has negatively impacted the global shipping industry.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Iran is circumventing the U.S. naval blockade by developing land routes with neighboring countries, particularly Pakistan.",
+      "text": "The United States is actively intercepting Iranian vessels in the Arabian Sea.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

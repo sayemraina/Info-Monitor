@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "immigration_x_95ec3f1f_0",
-    "cluster_id": "clu_immigration_025",
-    "concept_id": "concept_immigration_006",
+    "cluster_id": "clu_immigration_032",
+    "concept_id": "concept_immigration_007",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-05-06T04:59:50.000Z",
     "source_document_id": "x_2051889652798263678",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 3,
-    "friction": 0.6667,
+    "persistence_windows": 15,
+    "friction": 0.4875,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.3986,
+    "value": 0.756,
     "confidence_interval": [
-      0.2785,
-      0.5187
+      0.6627,
+      0.8493
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3986
+      0.756
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.6667,
+    "value": 0.4875,
     "confidence_interval": [
-      0.5667,
-      0.7667
+      0.3741,
+      0.6009
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.6667
+      0.4875
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.15,
+    "value": 0.75,
     "confidence_interval": [
-      0.0112,
-      0.2888
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.15
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9556,
+    "value": 0.9811,
     "confidence_interval": [
-      0.8773,
+      0.9047,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9556
+      0.9811
     ],
     "source_distribution": "production"
   },
@@ -120,64 +120,79 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
+    "first_platform": "YouTube (Influencer Framing)",
     "first_timestamp": "2026-05-06T04:59:50.000Z",
     "lead_lag": [
       {
         "platform": "X Platform",
-        "lag_hours": 7.2
+        "lag_hours": 5081.1
       },
       {
-        "platform": "YouTube (Influencer Framing)",
-        "lag_hours": 12.6
+        "platform": "Bluesky",
+        "lag_hours": 5090.0
       },
       {
-        "platform": "Zawya.Com",
-        "lag_hours": 17.3
+        "platform": "Fun 107",
+        "lag_hours": 5102.7
       },
       {
-        "platform": "Independent Australia",
-        "lag_hours": 17.4
+        "platform": "Minnpost",
+        "lag_hours": 5104.6
+      },
+      {
+        "platform": "Usa Today",
+        "lag_hours": 5107.5
+      },
+      {
+        "platform": "Money Talks News",
+        "lag_hours": 5107.7
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_immigration_006",
+    "concept_id": "concept_immigration_007",
     "hops": [
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-05-05T14:23:27.634000+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2025-09-02T17:22:55+00:00",
         "claim_id": "immigration_x_95ec3f1f_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
         "platform": "X Platform",
-        "timestamp": "2026-05-05T21:34:21+00:00",
+        "timestamp": "2026-04-02T10:28:08+00:00",
         "claim_id": "immigration_x_95ec3f1f_0",
-        "fidelity_to_origin": 0.7106,
-        "fidelity_to_previous": 0.7106
+        "fidelity_to_origin": 0.4439,
+        "fidelity_to_previous": 0.4439
       },
       {
-        "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2026-05-06T03:01:02+00:00",
+        "platform": "Bluesky",
+        "timestamp": "2026-04-02T19:22:00.978000+00:00",
         "claim_id": "immigration_x_95ec3f1f_0",
-        "fidelity_to_origin": 0.4913,
-        "fidelity_to_previous": 0.6914
+        "fidelity_to_origin": 0.4429,
+        "fidelity_to_previous": 0.9977
       },
       {
-        "platform": "Zawya.Com",
-        "timestamp": "2026-05-06T07:44:14+00:00",
+        "platform": "Fun 107",
+        "timestamp": "2026-04-03T08:04:00+00:00",
         "claim_id": "immigration_x_95ec3f1f_0",
-        "fidelity_to_origin": 0.3011,
-        "fidelity_to_previous": 0.6129
+        "fidelity_to_origin": 0.4415,
+        "fidelity_to_previous": 0.9968
       },
       {
-        "platform": "Independent Australia",
-        "timestamp": "2026-05-06T07:45:52+00:00",
+        "platform": "Minnpost",
+        "timestamp": "2026-04-03T10:00:00+00:00",
         "claim_id": "immigration_x_95ec3f1f_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9963
+        "fidelity_to_origin": 0.4413,
+        "fidelity_to_previous": 0.9995
+      },
+      {
+        "platform": "Usa Today",
+        "timestamp": "2026-04-03T12:51:41+00:00",
+        "claim_id": "immigration_x_95ec3f1f_0",
+        "fidelity_to_origin": 0.441,
+        "fidelity_to_previous": 0.9993
       }
     ],
     "observation_boundary": null
@@ -212,47 +227,47 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "immigration_bluesky_1a86035d_0",
-      "similarity": 1.0,
-      "text": "Racist immigration policies have negative consequences."
+      "claim_id": "immigration_minnpost_2cb62c1a_0",
+      "similarity": 0.7043,
+      "text": "Changes in immigration policy have negatively impacted the national economy."
     },
     {
-      "claim_id": "immigration_x_2315868f_0",
-      "similarity": 0.7645,
-      "text": "Mass deportation policies, even if refined, will still have a significant negative human impact."
+      "claim_id": "immigration_usa_today_9a68c911_2",
+      "similarity": 0.6732,
+      "text": "Changes in immigration policy have impacted both the demand for and supply of workers in the US."
     },
     {
-      "claim_id": "immigration_youtube_56f9060e_0",
-      "similarity": 0.7602,
-      "text": "Japan's immigration policies have led to negative consequences."
+      "claim_id": "immigration_money_talks_news_d60c5c82_1",
+      "similarity": 0.6649,
+      "text": "Recent changes in US immigration policy have decreased both labor supply and demand."
     },
     {
-      "claim_id": "immigration_x_4f3ced92_0",
-      "similarity": 0.7456,
-      "text": "Federal immigration policy is a significant factor contributing to the state's population decline."
+      "claim_id": "immigration_bluesky_48ad4699_0",
+      "similarity": 0.6399,
+      "text": "Trump's political movement manipulated people into blaming immigration and progressive ideals for their economic decline."
     },
     {
-      "claim_id": "immigration_x_ed37940e_0",
-      "similarity": 0.698,
-      "text": "The United States is experiencing more negative effects from immigration than Europe."
+      "claim_id": "immigration_bluesky_0a5a542e_0",
+      "similarity": 0.5957,
+      "text": "Changes to Canada's immigration policies and declining international student enrollment are causing workforce reductions at Brampton Transit."
     }
   ],
   "example_content": [
     {
-      "text": "Racist immigration policies have negative consequences.",
+      "text": "Changes to Canada's immigration policies and declining international student enrollment are causing workforce reductions at Brampton Transit.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Deporting care workers leads to more women becoming unpaid full-time caregivers.",
+      "text": "Trump's political movement manipulated people into blaming immigration and progressive ideals for their economic decline.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "One Nation is advocating for negative net migration.",
-      "platform": "Independent Australia",
+      "text": "Minnesota's labor market is weakening, with slower job growth and a rising unemployment rate.",
+      "platform": "Twin Cities",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

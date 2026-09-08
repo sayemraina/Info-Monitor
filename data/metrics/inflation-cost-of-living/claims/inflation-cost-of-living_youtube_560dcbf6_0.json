@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "inflation-cost-of-living_youtube_560dcbf6_0",
-    "cluster_id": "clu_inflation-cost-of-living_001",
-    "concept_id": "concept_inflation-cost-of-living_001",
+    "cluster_id": "clu_inflation-cost-of-living_036",
+    "concept_id": "concept_inflation-cost-of-living_003",
     "first_seen_platform": "youtube",
     "first_seen_timestamp": "2025-09-20T14:40:06Z",
     "source_document_id": "yt_HOZ8ZU3KuRM",
@@ -38,32 +38,32 @@
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
     "persistence_windows": 15,
-    "friction": 0.9149,
+    "friction": 0.8085,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.4105,
+    "value": 0.4978,
     "confidence_interval": [
-      0.2913,
-      0.5297
+      0.3851,
+      0.6105
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.4105
+      0.4978
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.9149,
+    "value": 0.8085,
     "confidence_interval": [
-      0.8335,
-      0.9963
+      0.7191,
+      0.8979
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9149
+      0.8085
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9832,
     "confidence_interval": [
-      0.925,
+      0.9069,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9832
     ],
     "source_distribution": "production"
   },
@@ -124,71 +124,75 @@
     "first_timestamp": "2025-09-20T14:40:06Z",
     "lead_lag": [
       {
-        "platform": "Bloomberg Tech",
-        "lag_hours": 6047.0
-      },
-      {
         "platform": "Reason",
-        "lag_hours": 6050.0
+        "lag_hours": 6030.0
       },
       {
         "platform": "Bluesky",
-        "lag_hours": 6061.0
+        "lag_hours": 6048.4
       },
       {
         "platform": "Cuba Headlines Digital Edition",
-        "lag_hours": 6071.1
+        "lag_hours": 6051.1
+      },
+      {
+        "platform": "Cato",
+        "lag_hours": 6336.4
+      },
+      {
+        "platform": "Wtop",
+        "lag_hours": 6629.9
       },
       {
         "platform": "X Platform",
-        "lag_hours": 6106.2
+        "lag_hours": 6677.3
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_inflation-cost-of-living_001",
+    "concept_id": "concept_inflation-cost-of-living_003",
     "hops": [
       {
         "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2025-07-24T18:01:02+00:00",
+        "timestamp": "2025-07-25T14:00:54+00:00",
         "claim_id": "inflation-cost-of-living_youtube_560dcbf6_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Bloomberg Tech",
-        "timestamp": "2026-04-02T16:58:47+00:00",
-        "claim_id": "inflation-cost-of-living_youtube_560dcbf6_0",
-        "fidelity_to_origin": 0.3068,
-        "fidelity_to_previous": 0.3068
-      },
-      {
         "platform": "Reason",
         "timestamp": "2026-04-02T20:00:40+00:00",
         "claim_id": "inflation-cost-of-living_youtube_560dcbf6_0",
-        "fidelity_to_origin": 0.3064,
-        "fidelity_to_previous": 0.9987
+        "fidelity_to_origin": 0.3679,
+        "fidelity_to_previous": 0.3679
       },
       {
         "platform": "Bluesky",
-        "timestamp": "2026-04-03T06:59:10.264000+00:00",
+        "timestamp": "2026-04-03T14:22:02.183000+00:00",
         "claim_id": "inflation-cost-of-living_youtube_560dcbf6_0",
-        "fidelity_to_origin": 0.3052,
-        "fidelity_to_previous": 0.9961
+        "fidelity_to_origin": 0.3659,
+        "fidelity_to_previous": 0.9946
       },
       {
         "platform": "Cuba Headlines Digital Edition",
         "timestamp": "2026-04-03T17:05:52+00:00",
         "claim_id": "inflation-cost-of-living_youtube_560dcbf6_0",
-        "fidelity_to_origin": 0.304,
-        "fidelity_to_previous": 0.9961
+        "fidelity_to_origin": 0.3657,
+        "fidelity_to_previous": 0.9995
       },
       {
-        "platform": "X Platform",
-        "timestamp": "2026-04-05T04:15:57+00:00",
+        "platform": "Cato",
+        "timestamp": "2026-04-15T14:24:32+00:00",
         "claim_id": "inflation-cost-of-living_youtube_560dcbf6_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9868
+        "fidelity_to_origin": 0.3357,
+        "fidelity_to_previous": 0.918
+      },
+      {
+        "platform": "Wtop",
+        "timestamp": "2026-04-27T19:53:35+00:00",
+        "claim_id": "inflation-cost-of-living_youtube_560dcbf6_0",
+        "fidelity_to_origin": 0.305,
+        "fidelity_to_previous": 0.9085
       }
     ],
     "observation_boundary": null
@@ -223,46 +227,46 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "inflation-cost-of-living_bluesky_ba046d10_0",
-      "similarity": 0.6588,
-      "text": "Donald Trump's economic policies, specifically tariffs, are responsible for inflation and increased cost of living."
+      "claim_id": "inflation-cost-of-living_bluesky_5057a845_0",
+      "similarity": 0.9377,
+      "text": "Trump's economic policies, specifically tariffs, have contributed to high grocery prices."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_98317fbd_0",
-      "similarity": 0.6265,
-      "text": "The Trump administration's policies have exacerbated inflation."
+      "claim_id": "inflation-cost-of-living_bluesky_c0ad4e46_0",
+      "similarity": 0.8721,
+      "text": "Donald Trump's policies have led to increased grocery prices, negatively impacting families' financial stability."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_94cedfa4_0",
-      "similarity": 0.6201,
-      "text": "Trump's tariffs on Canada, Mexico, and China increased core inflation."
+      "claim_id": "inflation-cost-of-living_bluesky_023f5c73_0",
+      "similarity": 0.8549,
+      "text": "The rising cost of groceries is attributable to economic policies enacted during the Trump administration."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_92050af3_1",
-      "similarity": 0.5715,
-      "text": "Donald Trump and MAGA are responsible for inflation and economic problems."
+      "claim_id": "inflation-cost-of-living_bluesky_2b16ae54_1",
+      "similarity": 0.7787,
+      "text": "Trump's tariffs are responsible for the high cost of groceries."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_62bced2e_1",
-      "similarity": 0.5052,
-      "text": "Tariffs increase costs for American consumers."
+      "claim_id": "inflation-cost-of-living_bluesky_d710fd38_1",
+      "similarity": 0.7169,
+      "text": "Donald Trump's tariffs negatively impacted the cost of groceries for American consumers."
     }
   ],
   "example_content": [
     {
-      "text": "The Trump administration's policies have exacerbated inflation.",
+      "text": "Tariffs increase costs for American consumers.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Trump's tariffs on Canada, Mexico, and China increased core inflation.",
+      "text": "Trump's tariffs contributed to high food prices.",
       "platform": "Bluesky",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "is_influencer_framing": false
     },
     {
-      "text": "Donald Trump's economic policies, specifically tariffs, are responsible for inflation and increased cost of living.",
+      "text": "Trump's economic policies, specifically tariffs, have contributed to high grocery prices.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

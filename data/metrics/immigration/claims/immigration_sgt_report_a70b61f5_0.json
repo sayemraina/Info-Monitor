@@ -9,7 +9,7 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "immigration_sgt_report_a70b61f5_0",
-    "cluster_id": "clu_immigration_010",
+    "cluster_id": "clu_immigration_047",
     "concept_id": "concept_immigration_004",
     "first_seen_platform": "sgt_report",
     "first_seen_timestamp": "2026-04-29T16:40:38Z",
@@ -37,8 +37,8 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 10,
-    "friction": 0.3125,
+    "persistence_windows": 15,
+    "friction": 0.2653,
     "friction_quadrant": "unopposed_advance"
   },
   "salience": {
@@ -55,28 +55,28 @@
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.3125,
+    "value": 0.2653,
     "confidence_interval": [
-      0.1859,
-      0.4391
+      0.1352,
+      0.3954
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3125
+      0.2653
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.5,
+    "value": 0.75,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.5
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9793,
     "confidence_interval": [
-      0.925,
+      0.9027,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9793
     ],
     "source_distribution": "production"
   },
@@ -120,32 +120,32 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
+    "first_platform": "YouTube (Influencer Framing)",
     "first_timestamp": "2026-04-29T16:40:38Z",
     "lead_lag": [
       {
+        "platform": "Bluesky",
+        "lag_hours": 1028.1
+      },
+      {
+        "platform": "Breitbart",
+        "lag_hours": 1044.3
+      },
+      {
         "platform": "X Platform",
-        "lag_hours": 14.6
+        "lag_hours": 1045.2
       },
       {
-        "platform": "Mail Online",
-        "lag_hours": 16.0
+        "platform": "Lbc",
+        "lag_hours": 1050.3
       },
       {
-        "platform": "Associated Press",
-        "lag_hours": 16.0
+        "platform": "Mysa",
+        "lag_hours": 1051.4
       },
       {
-        "platform": "Stimson Center",
-        "lag_hours": 17.4
-      },
-      {
-        "platform": "Sgt Report",
-        "lag_hours": 18.2
-      },
-      {
-        "platform": "Qazinform.Com",
-        "lag_hours": 18.2
+        "platform": "Daily Wire",
+        "lag_hours": 1558.8
       }
     ]
   },
@@ -153,46 +153,46 @@
     "concept_id": "concept_immigration_004",
     "hops": [
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-28T22:29:55.585000+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-02-18T18:02:21+00:00",
         "claim_id": "immigration_sgt_report_a70b61f5_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-02T14:10:23.218000+00:00",
+        "claim_id": "immigration_sgt_report_a70b61f5_0",
+        "fidelity_to_origin": 0.6928,
+        "fidelity_to_previous": 0.6928
+      },
+      {
+        "platform": "Breitbart",
+        "timestamp": "2026-04-03T06:22:11+00:00",
+        "claim_id": "immigration_sgt_report_a70b61f5_0",
+        "fidelity_to_origin": 0.6879,
+        "fidelity_to_previous": 0.9929
+      },
+      {
         "platform": "X Platform",
-        "timestamp": "2026-04-29T13:08:02+00:00",
+        "timestamp": "2026-04-03T07:16:43+00:00",
         "claim_id": "immigration_sgt_report_a70b61f5_0",
-        "fidelity_to_origin": 0.4789,
-        "fidelity_to_previous": 0.4789
+        "fidelity_to_origin": 0.6877,
+        "fidelity_to_previous": 0.9997
       },
       {
-        "platform": "Mail Online",
-        "timestamp": "2026-04-29T14:31:37+00:00",
+        "platform": "Lbc",
+        "timestamp": "2026-04-03T12:23:04+00:00",
         "claim_id": "immigration_sgt_report_a70b61f5_0",
-        "fidelity_to_origin": 0.4293,
-        "fidelity_to_previous": 0.8964
+        "fidelity_to_origin": 0.6861,
+        "fidelity_to_previous": 0.9977
       },
       {
-        "platform": "Associated Press",
-        "timestamp": "2026-04-29T14:32:18+00:00",
+        "platform": "Mysa",
+        "timestamp": "2026-04-03T13:25:51+00:00",
         "claim_id": "immigration_sgt_report_a70b61f5_0",
-        "fidelity_to_origin": 0.4289,
-        "fidelity_to_previous": 0.9991
-      },
-      {
-        "platform": "Stimson Center",
-        "timestamp": "2026-04-29T15:56:49+00:00",
-        "claim_id": "immigration_sgt_report_a70b61f5_0",
-        "fidelity_to_origin": 0.3787,
-        "fidelity_to_previous": 0.883
-      },
-      {
-        "platform": "Sgt Report",
-        "timestamp": "2026-04-29T16:40:38+00:00",
-        "claim_id": "immigration_sgt_report_a70b61f5_0",
-        "fidelity_to_origin": 0.3527,
-        "fidelity_to_previous": 0.9313
+        "fidelity_to_origin": 0.6858,
+        "fidelity_to_previous": 0.9996
       }
     ],
     "observation_boundary": null
@@ -227,46 +227,46 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "immigration_bluesky_6492c09e_1",
-      "similarity": 0.3894,
-      "text": "Current border control processes cannot be justified by national security concerns."
+      "claim_id": "immigration_bluesky_3428a71c_0",
+      "similarity": 0.3865,
+      "text": "Customs and Border Protection's security protocols are inadequate."
     },
     {
-      "claim_id": "immigration_bluesky_6492c09e_0",
-      "similarity": 0.367,
-      "text": "The Home Office's border control processes are unnecessarily expensive and time-consuming."
+      "claim_id": "immigration_bluesky_09789b09_0",
+      "similarity": 0.371,
+      "text": "Securing the border and critical infrastructure is a complex and ongoing challenge."
     },
     {
-      "claim_id": "immigration_bluesky_f7a4a927_0",
-      "similarity": 0.3378,
-      "text": "There is a consensus in favor of border security."
+      "claim_id": "immigration_bluesky_be062107_0",
+      "similarity": 0.3535,
+      "text": "Customs and Border Protection's security practices are inadequate."
     },
     {
-      "claim_id": "immigration_bluesky_a2b28393_0",
-      "similarity": 0.2963,
-      "text": "New border security arrangements are causing travel delays."
+      "claim_id": "immigration_bluesky_f7da2bd4_0",
+      "similarity": 0.3332,
+      "text": "Customs and Border Protection facility codes and security information have been leaked online."
     },
     {
-      "claim_id": "immigration_bluesky_4c86e431_0",
-      "similarity": 0.2682,
-      "text": "Vancouver Airport border agents are engaging in racial profiling."
+      "claim_id": "immigration_bluesky_c677e52a_0",
+      "similarity": 0.3327,
+      "text": "Increased border security is based on misinformation."
     }
   ],
   "example_content": [
     {
-      "text": "New border security arrangements are causing travel delays.",
+      "text": "Increased border security is based on misinformation.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The Department of Homeland Security needs to understand the realities of the Texas border region.",
+      "text": "Customs and Border Protection's security practices are inadequate.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The UK government preferred a sea border arrangement prior to the 2016 Brexit vote.",
+      "text": "Securing the border and critical infrastructure is a complex and ongoing challenge.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

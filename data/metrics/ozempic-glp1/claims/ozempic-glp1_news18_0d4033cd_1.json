@@ -35,22 +35,22 @@
       0.51
     ],
     "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 1,
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 3,
     "friction": 0,
     "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 0.3147,
+    "value": 0.2122,
     "confidence_interval": [
-      0.1883,
-      0.4411
+      0.0781,
+      0.3463
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3147
+      0.2122
     ],
     "source_distribution": "production"
   },
@@ -68,15 +68,15 @@
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0.15,
     "confidence_interval": [
-      0,
-      0.1962
+      0.0112,
+      0.2888
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0.15
     ],
     "source_distribution": "production"
   },
@@ -118,12 +118,28 @@
     "factors": []
   },
   "provenance": {
-    "first_platform": "Stat News",
+    "first_platform": "Fiercebiotech   Free Daily Bio",
     "first_timestamp": "2026-05-27T04:30:40Z",
     "lead_lag": [
       {
+        "platform": "Sciencedaily",
+        "lag_hours": 554.4
+      },
+      {
+        "platform": "Stat News",
+        "lag_hours": 576.7
+      },
+      {
+        "platform": "News Medical.Net",
+        "lag_hours": 580.4
+      },
+      {
+        "platform": "Cnbc Top",
+        "lag_hours": 582.8
+      },
+      {
         "platform": "News18",
-        "lag_hours": 15.0
+        "lag_hours": 1287.8
       }
     ]
   },
@@ -131,18 +147,46 @@
     "concept_id": "concept_ozempic-glp1_003",
     "hops": [
       {
-        "platform": "Stat News",
-        "timestamp": "2026-05-26T13:28:28+00:00",
+        "platform": "Fiercebiotech   Free Daily Bio",
+        "timestamp": "2026-04-03T12:40:00+00:00",
         "claim_id": "ozempic-glp1_news18_0d4033cd_1",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Sciencedaily",
+        "timestamp": "2026-04-26T15:05:21+00:00",
+        "claim_id": "ozempic-glp1_news18_0d4033cd_1",
+        "fidelity_to_origin": 0.6986,
+        "fidelity_to_previous": 0.6986
+      },
+      {
+        "platform": "Stat News",
+        "timestamp": "2026-04-27T13:20:40+00:00",
+        "claim_id": "ozempic-glp1_news18_0d4033cd_1",
+        "fidelity_to_origin": 0.6866,
+        "fidelity_to_previous": 0.9828
+      },
+      {
+        "platform": "News Medical.Net",
+        "timestamp": "2026-04-27T17:05:40+00:00",
+        "claim_id": "ozempic-glp1_news18_0d4033cd_1",
+        "fidelity_to_origin": 0.6845,
+        "fidelity_to_previous": 0.9969
+      },
+      {
+        "platform": "Cnbc Top",
+        "timestamp": "2026-04-27T19:28:58+00:00",
+        "claim_id": "ozempic-glp1_news18_0d4033cd_1",
+        "fidelity_to_origin": 0.6832,
+        "fidelity_to_previous": 0.9981
       },
       {
         "platform": "News18",
         "timestamp": "2026-05-27T04:30:40+00:00",
         "claim_id": "ozempic-glp1_news18_0d4033cd_1",
         "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
+        "fidelity_to_previous": 0.4391
       }
     ],
     "observation_boundary": null
@@ -177,16 +221,48 @@
   },
   "semantic_neighbors": [
     {
+      "claim_id": "ozempic-glp1_stat_news_a1736dba_0",
+      "similarity": 0.6603,
+      "text": "A gene-editing therapy developed by Verve Therapeutics and acquired by Eli Lilly has shown promise in reducing cholesterol levels."
+    },
+    {
       "claim_id": "ozempic-glp1_stat_news_46174b35_0",
       "similarity": 0.5832,
       "text": "Eli Lilly's gene-editing therapy significantly reduced cholesterol levels in a Phase 1 clinical trial."
+    },
+    {
+      "claim_id": "ozempic-glp1_stat_news_75556d22_2",
+      "similarity": 0.5531,
+      "text": "Eli Lilly is partnering with Profluent to develop advanced gene editors capable of inserting entire genes."
+    },
+    {
+      "claim_id": "ozempic-glp1_news-medical.net_09f0e039_1",
+      "similarity": 0.5202,
+      "text": "Existing interventions for cardiometabolic disease in postmenopausal women may influence gene regulatory pathways affected by estrogen."
+    },
+    {
+      "claim_id": "ozempic-glp1_stat_news_c13d92af_0",
+      "similarity": 0.5134,
+      "text": "Intellia's CRISPR therapy significantly reduces attack rates in patients with hereditary angioedema."
     }
   ],
   "example_content": [
     {
-      "text": "Eli Lilly's gene-editing therapy significantly reduced cholesterol levels in a Phase 1 clinical trial.",
-      "platform": "Stat News",
+      "text": "In-vivo CAR-T therapies and TCEs have potential for treating autoimmune diseases.",
+      "platform": "Fiercebiotech   Free Daily Bio",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "A new cell therapy has shown promise in curing Type 1 diabetes in mice.",
+      "platform": "Sciencedaily",
       "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Existing interventions for cardiometabolic disease in postmenopausal women may influence gene regulatory pathways affected by estrogen.",
+      "platform": "News Medical.Net",
+      "confidence": 0.8,
       "is_influencer_framing": false
     }
   ]

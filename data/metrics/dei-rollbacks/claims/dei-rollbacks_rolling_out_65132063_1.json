@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "dei-rollbacks_rolling_out_65132063_1",
-    "cluster_id": "",
-    "concept_id": "",
+    "cluster_id": "clu_dei-rollbacks_018",
+    "concept_id": "concept_dei-rollbacks_005",
     "first_seen_platform": "rolling_out",
     "first_seen_timestamp": "2026-04-29T13:45:41Z",
     "source_document_id": "8ca4ce833ad36423",
@@ -35,48 +35,48 @@
       0.54
     ],
     "source_distribution": "production",
-    "source_diversity": 0.25,
-    "bridge_ratio": 0.0,
-    "persistence_windows": 6,
-    "friction": 0.5,
-    "friction_quadrant": "contested_advance"
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 4,
+    "friction": 0,
+    "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 1,
+    "value": 0.1996,
     "confidence_interval": [
-      0.925,
-      1
+      0.0646,
+      0.3346
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.1996
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.5,
+    "value": 0,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0,
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.5
+      0
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.3,
+    "value": 0.2,
     "confidence_interval": [
-      0.1725,
-      0.4275
+      0.065,
+      0.335
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3
+      0.2
     ],
     "source_distribution": "production"
   },
@@ -120,22 +120,56 @@
     ]
   },
   "provenance": {
-    "first_platform": "Rolling Out",
+    "first_platform": "YouTube (Influencer Framing)",
     "first_timestamp": "2026-04-29T13:45:41Z",
-    "lead_lag": []
-  },
-  "supply_chain": {
-    "concept_id": "",
-    "hops": [
+    "lead_lag": [
       {
         "platform": "Rolling Out",
-        "timestamp": "2026-04-29T13:45:41Z",
+        "lag_hours": 325.7
+      },
+      {
+        "platform": "Maltatoday.Com.Mt",
+        "lag_hours": 329.1
+      },
+      {
+        "platform": "The Observer",
+        "lag_hours": 487.3
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_dei-rollbacks_005",
+    "hops": [
+      {
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-04-16T00:00:56+00:00",
         "claim_id": "dei-rollbacks_rolling_out_65132063_1",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Rolling Out",
+        "timestamp": "2026-04-29T13:45:41+00:00",
+        "claim_id": "dei-rollbacks_rolling_out_65132063_1",
+        "fidelity_to_origin": 0.5321,
+        "fidelity_to_previous": 0.5321
+      },
+      {
+        "platform": "Maltatoday.Com.Mt",
+        "timestamp": "2026-04-29T17:07:27+00:00",
+        "claim_id": "dei-rollbacks_rolling_out_65132063_1",
+        "fidelity_to_origin": 0.5273,
+        "fidelity_to_previous": 0.991
+      },
+      {
+        "platform": "The Observer",
+        "timestamp": "2026-05-06T07:21:36+00:00",
+        "claim_id": "dei-rollbacks_rolling_out_65132063_1",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.5689
       }
     ],
-    "observation_boundary": "No public antecedent detected"
+    "observation_boundary": null
   },
   "coordination": {
     "burstiness": {
@@ -167,48 +201,48 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "dei-rollbacks_bluesky_e52d1fa7_0",
-      "similarity": 0.4009,
-      "text": "Current DEI initiatives primarily benefit white individuals."
+      "claim_id": "dei-rollbacks_rolling_out_65132063_2",
+      "similarity": 0.6229,
+      "text": "Black physicians face challenges within the medical institution that affect their ability to support patients."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_d4cd40e8_0",
-      "similarity": 0.3749,
-      "text": "Pete Hegseth's success is attributable to diversity, equity, and inclusion initiatives that favor white individuals."
+      "claim_id": "dei-rollbacks_rolling_out_65132063_0",
+      "similarity": 0.6128,
+      "text": "Racial disparities in healthcare persist due to systemic and individual racism, not biological differences."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_6a2d7dd3_0",
-      "similarity": 0.2717,
-      "text": "The company opposes diversity, equity, and inclusion initiatives."
+      "claim_id": "dei-rollbacks_maltatoday.com.mt_3bd09791_2",
+      "similarity": 0.401,
+      "text": "The Nationalist Party plans to introduce a unified digital medical record system and a 'digital front door' for accessing healthcare services."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_cb0564f7_0",
-      "similarity": 0.2548,
-      "text": "Companies have reduced their support for the LGBTQIA+ community due to conservative pressure."
+      "claim_id": "dei-rollbacks_maltatoday.com.mt_3bd09791_0",
+      "similarity": 0.3352,
+      "text": "The Nationalist Party proposes establishing a 'National Healthcare Park' to promote healthier lifestyles and rehabilitation."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_ed8e356d_0",
-      "similarity": 0.2463,
-      "text": "The Democratic Party's focus on DEI and identity politics has impaired their understanding of power dynamics."
+      "claim_id": "dei-rollbacks_maltatoday.com.mt_3bd09791_1",
+      "similarity": 0.3303,
+      "text": "The Nationalist Party pledges to invest more in healthcare workers by improving their working conditions, training, and salaries."
     }
   ],
   "example_content": [
     {
-      "text": "Target Corporation engages in union-busting activities.",
-      "platform": "Bluesky",
+      "text": "Environmental regulations regarding PFAS chemicals are necessary to protect women's health and fertility.",
+      "platform": "YouTube (Influencer Framing)",
+      "confidence": 0.9,
+      "is_influencer_framing": true
+    },
+    {
+      "text": "Racial disparities in healthcare persist due to systemic and individual racism, not biological differences.",
+      "platform": "Rolling Out",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Black physicians face challenges within the medical institution that affect their ability to support patients.",
+      "platform": "Rolling Out",
       "confidence": 0.8,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Pete Hegseth's success is attributable to diversity, equity, and inclusion initiatives that favor white individuals.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "The negative consequences of eliminating DEI initiatives demonstrate the value and necessity of DEI.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

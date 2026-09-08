@@ -35,48 +35,48 @@
       0.54
     ],
     "source_distribution": "production",
-    "source_diversity": 0.75,
-    "bridge_ratio": 0.75,
-    "persistence_windows": 4,
-    "friction": 0.5,
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 11,
+    "friction": 0.6364,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.8223,
+    "value": 0.3391,
     "confidence_interval": [
-      0.734,
-      0.9106
+      0.2145,
+      0.4637
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.8223
+      0.3391
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.5,
+    "value": 0.6364,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0.5341,
+      0.7387
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.5
+      0.6364
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.2,
+    "value": 0.55,
     "confidence_interval": [
-      0.065,
-      0.335
+      0.4413,
+      0.6587
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2
+      0.55
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9667,
     "confidence_interval": [
-      0.925,
+      0.8892,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9667
     ],
     "source_distribution": "production"
   },
@@ -120,16 +120,28 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
+    "first_platform": "YouTube (Influencer Framing)",
     "first_timestamp": "2026-05-27T06:30:00Z",
     "lead_lag": [
       {
+        "platform": "Bluesky",
+        "lag_hours": 607.2
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 623.4
+      },
+      {
+        "platform": "Nymag",
+        "lag_hours": 1169.8
+      },
+      {
         "platform": "Nz Herald",
-        "lag_hours": 8.5
+        "lag_hours": 1904.8
       },
       {
         "platform": "The Korea Herald",
-        "lag_hours": 15.0
+        "lag_hours": 1911.3
       }
     ]
   },
@@ -137,25 +149,46 @@
     "concept_id": "concept_ozempic-glp1_004",
     "hops": [
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-05-26T15:30:16.909000+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-03-08T15:13:24+00:00",
         "claim_id": "ozempic-glp1_the_korea_herald_fe6e9bfe_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-02T22:27:30.849000+00:00",
+        "claim_id": "ozempic-glp1_the_korea_herald_fe6e9bfe_0",
+        "fidelity_to_origin": 0.7776,
+        "fidelity_to_previous": 0.7776
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-03T14:34:57+00:00",
+        "claim_id": "ozempic-glp1_the_korea_herald_fe6e9bfe_0",
+        "fidelity_to_origin": 0.7717,
+        "fidelity_to_previous": 0.9924
+      },
+      {
+        "platform": "Nymag",
+        "timestamp": "2026-04-26T09:00:15+00:00",
+        "claim_id": "ozempic-glp1_the_korea_herald_fe6e9bfe_0",
+        "fidelity_to_origin": 0.5716,
+        "fidelity_to_previous": 0.7407
+      },
+      {
         "platform": "Nz Herald",
         "timestamp": "2026-05-27T00:00:00+00:00",
         "claim_id": "ozempic-glp1_the_korea_herald_fe6e9bfe_0",
-        "fidelity_to_origin": 0.6034,
-        "fidelity_to_previous": 0.6034
+        "fidelity_to_origin": 0.3024,
+        "fidelity_to_previous": 0.529
       },
       {
         "platform": "The Korea Herald",
         "timestamp": "2026-05-27T06:30:00+00:00",
         "claim_id": "ozempic-glp1_the_korea_herald_fe6e9bfe_0",
         "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.4972
+        "fidelity_to_previous": 0.9921
       }
     ],
     "observation_boundary": null
@@ -190,48 +223,48 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ozempic-glp1_bluesky_0a58977f_0",
-      "similarity": 0.762,
-      "text": "Pharmaceutical companies are excessively advertising GLP-1 drugs like Ozempic."
+      "claim_id": "ozempic-glp1_bluesky_b2632cb0_0",
+      "similarity": 0.8182,
+      "text": "GLP-1 drugs are being overused to increase profits."
     },
     {
-      "claim_id": "ozempic-glp1_bluesky_ca1369a3_0",
-      "similarity": 0.7509,
-      "text": "Advertisements for GLP-1 drugs are excessively prevalent."
+      "claim_id": "ozempic-glp1_bluesky_574d0fbb_0",
+      "similarity": 0.8114,
+      "text": "Doctors are too quick to prescribe GLP-1 drugs like Ozempic."
     },
     {
-      "claim_id": "ozempic-glp1_bluesky_1b7479b3_0",
-      "similarity": 0.7249,
-      "text": "Criticizing GLP-1 drugs punishes those who need them for medical reasons."
+      "claim_id": "ozempic-glp1_bluesky_96d69481_0",
+      "similarity": 0.8102,
+      "text": "The current usage and accessibility of GLP-1 drugs are problematic due to their use by individuals without a clear medical need and their high cost."
     },
     {
-      "claim_id": "ozempic-glp1_bluesky_96d714ab_0",
-      "similarity": 0.7233,
-      "text": "Pharmaceutical companies are exploiting the popularity of GLP-1 drugs by marketing additional medications to treat their side effects."
+      "claim_id": "ozempic-glp1_x_767f4fbd_0",
+      "similarity": 0.7857,
+      "text": "Healthcare providers are overly eager to prescribe GLP-1 medications."
     },
     {
-      "claim_id": "ozempic-glp1_bluesky_6397d318_0",
-      "similarity": 0.7178,
-      "text": "Dr. Oz and RFK Jr. are perceived as being likely to exploit or criticize the GLP-1 medication trend."
+      "claim_id": "ozempic-glp1_x_68c373c9_0",
+      "similarity": 0.7548,
+      "text": "Stricter regulations on GLP-1 drugs may not effectively stop off-label use, potentially leading to a growth in the black market."
     }
   ],
   "example_content": [
     {
-      "text": "Advertising weight loss drugs like GLP-1s is harmful and unnecessary.",
+      "text": "Social media content about GLP-1 drugs often promotes nutritionally deficient diets and disordered eating behaviors.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The individual in question is using a GLP-1 medication but is misrepresenting the situation.",
+      "text": "Doctors are too quick to prescribe GLP-1 drugs like Ozempic.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Dr. Oz and RFK Jr. are perceived as being likely to exploit or criticize the GLP-1 medication trend.",
+      "text": "GLP-1 drugs are being aggressively advertised.",
       "platform": "Bluesky",
-      "confidence": 0.6,
+      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

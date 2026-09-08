@@ -24,107 +24,94 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": null,
+    "value": 0.645,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.545,
+      0.745
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.645
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 10,
+    "friction": 0.4333,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.3429,
+    "confidence_interval": [
+      0.2186,
+      0.4672
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3429
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.4333,
+    "confidence_interval": [
+      0.3158,
+      0.5508
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.4333
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.85,
     "confidence_interval": [
-      0,
-      0
+      0.7638,
+      0.9362
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.85
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 1,
     "confidence_interval": [
-      0,
-      0
+      0.925,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      1
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,43 +120,150 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "YouTube (Influencer Framing)",
+    "first_timestamp": "2026-04-15T14:01:07.976Z",
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 1195.3
+      },
+      {
+        "platform": "The Ct Mirror",
+        "lag_hours": 1204.8
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 1221.8
+      },
+      {
+        "platform": "Mossel Bay Advertiser",
+        "lag_hours": 1978.4
+      },
+      {
+        "platform": "Kotaku",
+        "lag_hours": 2300.1
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_ai-workplace_002",
+    "hops": [
+      {
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-02-11T17:30:00+00:00",
+        "claim_id": "ai-workplace_bluesky_d23c89ea_2",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-02T12:48:28.871000+00:00",
+        "claim_id": "ai-workplace_bluesky_d23c89ea_2",
+        "fidelity_to_origin": 0.6362,
+        "fidelity_to_previous": 0.6362
+      },
+      {
+        "platform": "The Ct Mirror",
+        "timestamp": "2026-04-02T22:16:30+00:00",
+        "claim_id": "ai-workplace_bluesky_d23c89ea_2",
+        "fidelity_to_origin": 0.6333,
+        "fidelity_to_previous": 0.9954
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-03T15:18:45+00:00",
+        "claim_id": "ai-workplace_bluesky_d23c89ea_2",
+        "fidelity_to_origin": 0.6282,
+        "fidelity_to_previous": 0.9919
+      },
+      {
+        "platform": "Mossel Bay Advertiser",
+        "timestamp": "2026-05-05T03:56:00+00:00",
+        "claim_id": "ai-workplace_bluesky_d23c89ea_2",
+        "fidelity_to_origin": 0.3979,
+        "fidelity_to_previous": 0.6334
+      },
+      {
+        "platform": "Kotaku",
+        "timestamp": "2026-05-18T13:35:35+00:00",
+        "claim_id": "ai-workplace_bluesky_d23c89ea_2",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.754
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-workplace_bluesky_5a71682d_0",
-      "similarity": 0.7475,
-      "text": "AI is depleting natural resources."
+      "claim_id": "ai-workplace_bluesky_3f033006_0",
+      "similarity": 0.7575,
+      "text": "A group funded by wealthy individuals is prioritizing school choice and AI initiatives, which raises concerns about potential negative consequences."
     },
     {
-      "claim_id": "ai-workplace_bluesky_5f77cd0d_0",
-      "similarity": 0.5373,
-      "text": "Tech company CEOs and politicians who support AI have a disproportionate influence on society."
+      "claim_id": "ai-workplace_the_ct_mirror_fc3a07d0_1",
+      "similarity": 0.6586,
+      "text": "AI is being used negatively and impacting constituents."
+    },
+    {
+      "claim_id": "ai-workplace_youtube_33eeef68_0",
+      "similarity": 0.6362,
+      "text": "The replacement of human workers with AI is producing disastrous and unintended negative consequences."
+    },
+    {
+      "claim_id": "ai-workplace_x_fd8b6ce5_0",
+      "similarity": 0.5707,
+      "text": "Integrating digital AI with the physical world is essential for technological advancement."
+    },
+    {
+      "claim_id": "ai-workplace_bluesky_66a45494_0",
+      "similarity": 0.5474,
+      "text": "AI may eventually replace or surpass the capabilities of its creators."
     }
   ],
   "example_content": [
     {
-      "text": "AI is depleting natural resources.",
+      "text": "A group funded by wealthy individuals is prioritizing school choice and AI initiatives, which raises concerns about potential negative consequences.",
+      "platform": "Bluesky",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The term 'AI' is now a buzzword that encompasses various technologies, none of which constitute true artificial intelligence.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Tech company CEOs and politicians who support AI have a disproportionate influence on society.",
-      "platform": "Bluesky",
+      "text": "AI is being used negatively and impacting constituents.",
+      "platform": "The Ct Mirror",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

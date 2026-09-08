@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "housing-crisis_x_5a3ada90_0",
-    "cluster_id": "",
-    "concept_id": "",
+    "cluster_id": "clu_housing-crisis_002",
+    "concept_id": "concept_housing-crisis_002",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-03T05:04:44.000Z",
     "source_document_id": "x_2039932089035005997",
@@ -35,35 +35,35 @@
       0.925
     ],
     "source_distribution": "production",
-    "source_diversity": 0.25,
-    "bridge_ratio": 0.0,
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
     "persistence_windows": 15,
-    "friction": 0.3403,
-    "friction_quadrant": "unopposed_advance"
+    "friction": 0.5079,
+    "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 1,
+    "value": 0.5908,
     "confidence_interval": [
-      0.925,
-      1
+      0.4851,
+      0.6965
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.5908
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.3403,
+    "value": 0.5079,
     "confidence_interval": [
-      0.2158,
-      0.4648
+      0.396,
+      0.6198
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3403
+      0.5079
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9686,
+    "value": 0.9803,
     "confidence_interval": [
-      0.8912,
+      0.9038,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9686
+      0.9803
     ],
     "source_distribution": "production"
   },
@@ -120,22 +120,82 @@
     ]
   },
   "provenance": {
-    "first_platform": "X Platform",
+    "first_platform": "Cato",
     "first_timestamp": "2026-04-03T05:04:44.000Z",
-    "lead_lag": []
-  },
-  "supply_chain": {
-    "concept_id": "",
-    "hops": [
+    "lead_lag": [
+      {
+        "platform": "The Manc",
+        "lag_hours": 19.5
+      },
       {
         "platform": "X Platform",
-        "timestamp": "2026-04-03T05:04:44.000Z",
+        "lag_hours": 31.1
+      },
+      {
+        "platform": "YouTube (Influencer Framing)",
+        "lag_hours": 86.7
+      },
+      {
+        "platform": "Bluesky",
+        "lag_hours": 576.2
+      },
+      {
+        "platform": "Express.Co.Uk",
+        "lag_hours": 590.7
+      },
+      {
+        "platform": "Mail Online",
+        "lag_hours": 622.8
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_housing-crisis_002",
+    "hops": [
+      {
+        "platform": "Cato",
+        "timestamp": "2026-04-01T18:48:46+00:00",
         "claim_id": "housing-crisis_x_5a3ada90_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "The Manc",
+        "timestamp": "2026-04-02T14:16:08+00:00",
+        "claim_id": "housing-crisis_x_5a3ada90_0",
+        "fidelity_to_origin": 0.9898,
+        "fidelity_to_previous": 0.9898
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-03T01:54:17+00:00",
+        "claim_id": "housing-crisis_x_5a3ada90_0",
+        "fidelity_to_origin": 0.9837,
+        "fidelity_to_previous": 0.9938
+      },
+      {
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-04-05T09:30:32+00:00",
+        "claim_id": "housing-crisis_x_5a3ada90_0",
+        "fidelity_to_origin": 0.9545,
+        "fidelity_to_previous": 0.9703
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-25T18:59:33.336000+00:00",
+        "claim_id": "housing-crisis_x_5a3ada90_0",
+        "fidelity_to_origin": 0.6976,
+        "fidelity_to_previous": 0.7309
+      },
+      {
+        "platform": "Express.Co.Uk",
+        "timestamp": "2026-04-26T09:28:37+00:00",
+        "claim_id": "housing-crisis_x_5a3ada90_0",
+        "fidelity_to_origin": 0.69,
+        "fidelity_to_previous": 0.9891
       }
     ],
-    "observation_boundary": "No public antecedent detected"
+    "observation_boundary": null
   },
   "coordination": {
     "burstiness": {
@@ -167,47 +227,47 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "housing-crisis_bluesky_49e5dc45_0",
-      "similarity": 0.253,
-      "text": "Restrictive development policies and incentives for hoarding contribute to housing crises in growing cities."
+      "claim_id": "housing-crisis_cato_745af509_1",
+      "similarity": 0.362,
+      "text": "The Trump administration's $100,000 fee for new H-1B visas has been chaotic and disruptive for employers."
     },
     {
-      "claim_id": "housing-crisis_bluesky_979afdfc_1",
-      "similarity": 0.2313,
-      "text": "Everyone who wants to live in Washington D.C. should be able to."
+      "claim_id": "housing-crisis_x_1755f614_0",
+      "similarity": 0.3118,
+      "text": "Immigration is the primary cause of the housing crisis."
     },
     {
-      "claim_id": "housing-crisis_bluesky_046e616f_0",
-      "similarity": 0.2309,
-      "text": "The type of initial housing provided to refugees significantly impacts their integration outcomes."
+      "claim_id": "housing-crisis_cato_745af509_0",
+      "similarity": 0.3097,
+      "text": "The Trump administration's $100,000 fee for new H-1B visas harms the economy."
     },
     {
-      "claim_id": "housing-crisis_bluesky_816ff04e_0",
-      "similarity": 0.2296,
-      "text": "HUD's proposed rule will exacerbate the housing crisis and increase homelessness."
+      "claim_id": "housing-crisis_x_c24db284_0",
+      "similarity": 0.2974,
+      "text": "Immigration is the primary cause of the housing crisis in Ireland."
     },
     {
-      "claim_id": "housing-crisis_bluesky_a84a9c79_0",
-      "similarity": 0.2099,
-      "text": "A city's efforts to increase housing supply are being undermined by a lack of funding for essential infrastructure."
+      "claim_id": "housing-crisis_x_231ab1b2_0",
+      "similarity": 0.2974,
+      "text": "Immigration is the primary cause of the housing crisis in Ireland."
     }
   ],
   "example_content": [
     {
-      "text": "Restrictive development policies and incentives for hoarding contribute to housing crises in growing cities.",
-      "platform": "Bluesky",
+      "text": "Unaffordable housing in other major cities is impacting the availability of affordable housing in Manchester.",
+      "platform": "The Manc",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The Trump administration's $100,000 fee for new H-1B visas harms the economy.",
+      "platform": "Cato",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The type of initial housing provided to refugees significantly impacts their integration outcomes.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "HUD's proposed rule will exacerbate the housing crisis and increase homelessness.",
-      "platform": "Bluesky",
+      "text": "The Trump administration's $100,000 fee for new H-1B visas has been chaotic and disruptive for employers.",
+      "platform": "Cato",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

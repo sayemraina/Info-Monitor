@@ -9,7 +9,7 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "immigration_bluesky_428256aa_0",
-    "cluster_id": "clu_immigration_044",
+    "cluster_id": "clu_immigration_032",
     "concept_id": "concept_immigration_007",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-25T15:28:21.364Z",
@@ -24,107 +24,94 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": null,
+    "value": 0.645,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.545,
+      0.745
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.645
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 15,
+    "friction": 0.4875,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.756,
+    "confidence_interval": [
+      0.6627,
+      0.8493
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.756
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.4875,
+    "confidence_interval": [
+      0.3741,
+      0.6009
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.4875
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.75,
+    "confidence_interval": [
+      0.6562,
+      0.8438
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.75
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.85,
     "confidence_interval": [
-      0,
-      0
+      0.7638,
+      0.9362
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.85
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 0.9811,
     "confidence_interval": [
-      0,
-      0
+      0.9047,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.9811
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,64 +120,154 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "YouTube (Influencer Framing)",
+    "first_timestamp": "2026-04-25T15:28:21.364Z",
+    "lead_lag": [
+      {
+        "platform": "X Platform",
+        "lag_hours": 5081.1
+      },
+      {
+        "platform": "Bluesky",
+        "lag_hours": 5090.0
+      },
+      {
+        "platform": "Fun 107",
+        "lag_hours": 5102.7
+      },
+      {
+        "platform": "Minnpost",
+        "lag_hours": 5104.6
+      },
+      {
+        "platform": "Usa Today",
+        "lag_hours": 5107.5
+      },
+      {
+        "platform": "Money Talks News",
+        "lag_hours": 5107.7
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_immigration_007",
+    "hops": [
+      {
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2025-09-02T17:22:55+00:00",
+        "claim_id": "immigration_bluesky_428256aa_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-02T10:28:08+00:00",
+        "claim_id": "immigration_bluesky_428256aa_0",
+        "fidelity_to_origin": 0.4439,
+        "fidelity_to_previous": 0.4439
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-02T19:22:00.978000+00:00",
+        "claim_id": "immigration_bluesky_428256aa_0",
+        "fidelity_to_origin": 0.4429,
+        "fidelity_to_previous": 0.9977
+      },
+      {
+        "platform": "Fun 107",
+        "timestamp": "2026-04-03T08:04:00+00:00",
+        "claim_id": "immigration_bluesky_428256aa_0",
+        "fidelity_to_origin": 0.4415,
+        "fidelity_to_previous": 0.9968
+      },
+      {
+        "platform": "Minnpost",
+        "timestamp": "2026-04-03T10:00:00+00:00",
+        "claim_id": "immigration_bluesky_428256aa_0",
+        "fidelity_to_origin": 0.4413,
+        "fidelity_to_previous": 0.9995
+      },
+      {
+        "platform": "Usa Today",
+        "timestamp": "2026-04-03T12:51:41+00:00",
+        "claim_id": "immigration_bluesky_428256aa_0",
+        "fidelity_to_origin": 0.441,
+        "fidelity_to_previous": 0.9993
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "immigration_the_hill_c1510b4b_1",
-      "similarity": 0.8657,
-      "text": "Denying education to children, regardless of immigration status, will create a permanent underclass and negatively impact society."
+      "claim_id": "immigration_minnpost_2cb62c1a_0",
+      "similarity": 0.6282,
+      "text": "Changes in immigration policy have negatively impacted the national economy."
     },
     {
-      "claim_id": "immigration_x_c6754341_0",
-      "similarity": 0.8068,
-      "text": "Proposed immigration policies will lead to negative consequences."
+      "claim_id": "immigration_money_talks_news_d60c5c82_1",
+      "similarity": 0.6086,
+      "text": "Recent changes in US immigration policy have decreased both labor supply and demand."
     },
     {
-      "claim_id": "immigration_x_3d4f3ad4_0",
-      "similarity": 0.6817,
-      "text": "Current immigration policies are negatively impacting healthcare systems in Western countries."
+      "claim_id": "immigration_usa_today_9a68c911_2",
+      "similarity": 0.6083,
+      "text": "Changes in immigration policy have impacted both the demand for and supply of workers in the US."
     },
     {
-      "claim_id": "immigration_bluesky_73ccbb37_0",
-      "similarity": 0.6468,
-      "text": "Restrictive immigration policies will negatively impact the economy and supply chains."
+      "claim_id": "immigration_bluesky_0a5a542e_0",
+      "similarity": 0.5859,
+      "text": "Changes to Canada's immigration policies and declining international student enrollment are causing workforce reductions at Brampton Transit."
     },
     {
-      "claim_id": "immigration_bluesky_242b9f87_0",
-      "similarity": 0.5694,
-      "text": "Immigration is falsely blamed for economic problems in some communities."
+      "claim_id": "immigration_bluesky_48ad4699_0",
+      "similarity": 0.5786,
+      "text": "Trump's political movement manipulated people into blaming immigration and progressive ideals for their economic decline."
     }
   ],
   "example_content": [
     {
-      "text": "Immigration is falsely blamed for economic problems in some communities.",
+      "text": "Changes to Canada's immigration policies and declining international student enrollment are causing workforce reductions at Brampton Transit.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Restrictive immigration policies will negatively impact the economy and supply chains.",
+      "text": "Trump's political movement manipulated people into blaming immigration and progressive ideals for their economic decline.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Denying education to children, regardless of immigration status, will create a permanent underclass and negatively impact society.",
-      "platform": "The Hill",
+      "text": "Minnesota's labor market is weakening, with slower job growth and a rising unemployment rate.",
+      "platform": "Twin Cities",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "ozempic-glp1_propublica_fa73742d_1",
-    "cluster_id": "clu_ozempic-glp1_028",
-    "concept_id": "concept_ozempic-glp1_021",
+    "cluster_id": "clu_ozempic-glp1_000",
+    "concept_id": "concept_ozempic-glp1_000",
     "first_seen_platform": "propublica",
     "first_seen_timestamp": "2026-04-03T09:00:00Z",
     "source_document_id": "7bf179d4e4f7f484",
@@ -35,48 +35,48 @@
       0.54
     ],
     "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 2,
-    "friction": 0.2857,
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 5,
+    "friction": 0.3125,
     "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 0.2696,
+    "value": 0.1982,
     "confidence_interval": [
-      0.1398,
-      0.3994
+      0.0631,
+      0.3333
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2696
+      0.1982
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.2857,
+    "value": 0.3125,
     "confidence_interval": [
-      0.1571,
-      0.4143
+      0.1859,
+      0.4391
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2857
+      0.3125
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.1,
+    "value": 0.25,
     "confidence_interval": [
-      0,
-      0.2425
+      0.1187,
+      0.3813
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1
+      0.25
     ],
     "source_distribution": "production"
   },
@@ -124,13 +124,33 @@
     "first_timestamp": "2026-04-03T09:00:00Z",
     "lead_lag": [
       {
-        "platform": "X Platform",
-        "lag_hours": 5.4
+        "platform": "Eurasia Review",
+        "lag_hours": 544.2
+      },
+      {
+        "platform": "Fox 35 Orlando",
+        "lag_hours": 546.7
+      },
+      {
+        "platform": "The Jerusalem Post",
+        "lag_hours": 553.0
+      },
+      {
+        "platform": "Medical News Bulletin |  Healt",
+        "lag_hours": 581.9
+      },
+      {
+        "platform": "Bluesky",
+        "lag_hours": 627.8
+      },
+      {
+        "platform": "The Atlantic",
+        "lag_hours": 1275.7
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_ozempic-glp1_021",
+    "concept_id": "concept_ozempic-glp1_000",
     "hops": [
       {
         "platform": "Propublica",
@@ -140,11 +160,39 @@
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "X Platform",
-        "timestamp": "2026-04-03T14:24:01+00:00",
+        "platform": "Eurasia Review",
+        "timestamp": "2026-04-26T01:14:17+00:00",
         "claim_id": "ozempic-glp1_propublica_fa73742d_1",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
+        "fidelity_to_origin": 0.7045,
+        "fidelity_to_previous": 0.7045
+      },
+      {
+        "platform": "Fox 35 Orlando",
+        "timestamp": "2026-04-26T03:40:36+00:00",
+        "claim_id": "ozempic-glp1_propublica_fa73742d_1",
+        "fidelity_to_origin": 0.7031,
+        "fidelity_to_previous": 0.998
+      },
+      {
+        "platform": "The Jerusalem Post",
+        "timestamp": "2026-04-26T10:02:35+00:00",
+        "claim_id": "ozempic-glp1_propublica_fa73742d_1",
+        "fidelity_to_origin": 0.6997,
+        "fidelity_to_previous": 0.9952
+      },
+      {
+        "platform": "Medical News Bulletin |  Healt",
+        "timestamp": "2026-04-27T14:55:37+00:00",
+        "claim_id": "ozempic-glp1_propublica_fa73742d_1",
+        "fidelity_to_origin": 0.684,
+        "fidelity_to_previous": 0.9776
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-29T12:49:02.559000+00:00",
+        "claim_id": "ozempic-glp1_propublica_fa73742d_1",
+        "fidelity_to_origin": 0.6591,
+        "fidelity_to_previous": 0.9636
       }
     ],
     "observation_boundary": null
@@ -179,6 +227,11 @@
   },
   "semantic_neighbors": [
     {
+      "claim_id": "ozempic-glp1_eurasia_review_1ad10dee_0",
+      "similarity": 0.7523,
+      "text": "Restricting the use of certain peptides by compounding pharmacies may limit public access to potentially beneficial molecules."
+    },
+    {
       "claim_id": "ozempic-glp1_propublica_fa73742d_0",
       "similarity": 0.7292,
       "text": "Robert F. Kennedy Jr. is attempting to reverse the FDA's ban on certain peptides based on a mischaracterization of the agency's safety concerns."
@@ -189,19 +242,14 @@
       "text": "The demand for unregulated peptides has increased due to social media promotion, leading to a growing gray market."
     },
     {
-      "claim_id": "ozempic-glp1_x_2e15987b_0",
-      "similarity": 0.5011,
-      "text": "Federal regulation of compounded versions of GLP-1 medications is necessary."
+      "claim_id": "ozempic-glp1_eurasia_review_1ad10dee_1",
+      "similarity": 0.6495,
+      "text": "The increasing use of unregulated synthetic peptides in the health and wellness space poses potential risks."
     },
     {
-      "claim_id": "ozempic-glp1_x_2f56cec3_0",
-      "similarity": 0.5001,
-      "text": "LC-MS/MS is a reliable method for ensuring the accuracy and compliance of GLP-1 peptide data."
-    },
-    {
-      "claim_id": "ozempic-glp1_x_5adc8253_0",
-      "similarity": 0.4456,
-      "text": "Startups using aggressive marketing tactics to sell compounded GLP-1 medications will no longer be viable due to increased regulation."
+      "claim_id": "ozempic-glp1_fox_35_orlando_0ba190f5_1",
+      "similarity": 0.6293,
+      "text": "Current FDA regulations on peptides have inadvertently fostered a dangerous, unregulated market for substandard and potentially harmful products."
     }
   ],
   "example_content": [
@@ -218,8 +266,8 @@
       "is_influencer_framing": false
     },
     {
-      "text": "Startups using aggressive marketing tactics to sell compounded GLP-1 medications will no longer be viable due to increased regulation.",
-      "platform": "X Platform",
+      "text": "Scientists have discovered a new way the body controls stored sugar by identifying that ubiquitin can attach to glycogen to regulate its breakdown.",
+      "platform": "The Jerusalem Post",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

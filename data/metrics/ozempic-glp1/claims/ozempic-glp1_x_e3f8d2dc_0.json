@@ -9,7 +9,7 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "ozempic-glp1_x_e3f8d2dc_0",
-    "cluster_id": "clu_ozempic-glp1_034",
+    "cluster_id": "clu_ozempic-glp1_020",
     "concept_id": "concept_ozempic-glp1_002",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-05-06T06:55:51.000Z",
@@ -35,48 +35,48 @@
       0.645
     ],
     "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 4,
-    "friction": 0.6154,
+    "source_diversity": 0.75,
+    "bridge_ratio": 0.75,
+    "persistence_windows": 15,
+    "friction": 0.4286,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.5921,
+    "value": 0.5035,
     "confidence_interval": [
-      0.4865,
-      0.6977
+      0.3913,
+      0.6157
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.5921
+      0.5035
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.6154,
+    "value": 0.4286,
     "confidence_interval": [
-      0.5116,
-      0.7192
+      0.3107,
+      0.5465
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.6154
+      0.4286
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.2,
+    "value": 0.75,
     "confidence_interval": [
-      0.065,
-      0.335
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9737,
+    "value": 0.9547,
     "confidence_interval": [
-      0.8967,
+      0.8763,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9737
+      0.9547
     ],
     "source_distribution": "production"
   },
@@ -120,12 +120,16 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
+    "first_platform": "YouTube (Influencer Framing)",
     "first_timestamp": "2026-05-06T06:55:51.000Z",
     "lead_lag": [
       {
         "platform": "X Platform",
-        "lag_hours": 7.4
+        "lag_hours": 8710.2
+      },
+      {
+        "platform": "Bluesky",
+        "lag_hours": 8715.5
       }
     ]
   },
@@ -133,18 +137,25 @@
     "concept_id": "concept_ozempic-glp1_002",
     "hops": [
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-05-05T18:33:31.149000+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2025-04-05T12:30:23+00:00",
         "claim_id": "ozempic-glp1_x_e3f8d2dc_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
         "platform": "X Platform",
-        "timestamp": "2026-05-06T01:57:32+00:00",
+        "timestamp": "2026-04-03T10:44:03+00:00",
+        "claim_id": "ozempic-glp1_x_e3f8d2dc_0",
+        "fidelity_to_origin": 0.3004,
+        "fidelity_to_previous": 0.3004
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-03T15:57:40.949000+00:00",
         "claim_id": "ozempic-glp1_x_e3f8d2dc_0",
         "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
+        "fidelity_to_previous": 0.9987
       }
     ],
     "observation_boundary": null
@@ -179,48 +190,48 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ozempic-glp1_x_41d04eb2_0",
-      "similarity": 1.0,
-      "text": "Ozempic is being overused by people in positions of power."
+      "claim_id": "ozempic-glp1_x_ee17791f_0",
+      "similarity": 0.9712,
+      "text": "Ozempic is being overused or misused."
     },
     {
-      "claim_id": "ozempic-glp1_x_5f4cf80a_0",
-      "similarity": 0.9188,
-      "text": "Ozempic is being used by individuals who do not have a medical need for it."
+      "claim_id": "ozempic-glp1_x_f6f1862b_0",
+      "similarity": 0.942,
+      "text": "Ozempic is being inappropriately used by individuals who do not need it."
     },
     {
-      "claim_id": "ozempic-glp1_x_dc33c823_0",
-      "similarity": 0.9135,
-      "text": "Ozempic is being prescribed too readily."
+      "claim_id": "ozempic-glp1_bluesky_7e7cf879_0",
+      "similarity": 0.9316,
+      "text": "Ozempic is being used for purposes beyond its intended medical application."
     },
     {
-      "claim_id": "ozempic-glp1_bluesky_87038601_0",
-      "similarity": 0.8798,
-      "text": "There is excessive discussion about Ozempic."
+      "claim_id": "ozempic-glp1_x_f6bae76f_0",
+      "similarity": 0.7953,
+      "text": "The prevalence of Ozempic use does not align with current obesity rates."
     },
     {
-      "claim_id": "ozempic-glp1_x_61d2766b_0",
-      "similarity": 0.8672,
-      "text": "The promotion of Ozempic is becoming overly pervasive."
+      "claim_id": "ozempic-glp1_x_92ad9285_1",
+      "similarity": 0.7396,
+      "text": "Pharmaceutical companies are excessively enthusiastic about Ozempic due to its potential for long-term patient dependence."
     }
   ],
   "example_content": [
     {
-      "text": "Advertisements for Ozempic are portraying users of the drug as a marginalized group.",
+      "text": "Ozempic is being used for purposes beyond its intended medical application.",
       "platform": "Bluesky",
-      "confidence": 0.9,
+      "confidence": 0.6,
       "is_influencer_framing": false
     },
     {
-      "text": "There is excessive discussion about Ozempic.",
+      "text": "There are deceptive practices surrounding the marketing or consumption of Ozempic.",
       "platform": "Bluesky",
-      "confidence": 0.9,
+      "confidence": 0.6,
       "is_influencer_framing": false
     },
     {
-      "text": "The promotion of Ozempic is becoming overly pervasive.",
+      "text": "Some individuals without a medical need are abusing GLP-1 drugs like Ozempic for weight loss.",
       "platform": "X Platform",
-      "confidence": 0.7,
+      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

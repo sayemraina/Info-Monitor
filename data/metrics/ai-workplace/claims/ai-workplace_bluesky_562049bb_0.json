@@ -24,107 +24,94 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": null,
+    "value": 0.645,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.545,
+      0.745
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.645
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 3,
+    "friction": 0.8182,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.2192,
+    "confidence_interval": [
+      0.0856,
+      0.3528
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.2192
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.8182,
+    "confidence_interval": [
+      0.7296,
+      0.9068
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.8182
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.15,
+    "confidence_interval": [
+      0.0112,
+      0.2888
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.15
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.85,
     "confidence_interval": [
-      0,
-      0
+      0.7638,
+      0.9362
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.85
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 0.9647,
     "confidence_interval": [
-      0,
-      0
+      0.8871,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.9647
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,21 +120,108 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "X Platform",
+    "first_timestamp": "2026-04-16T22:55:13.330Z",
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 300.8
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_ai-workplace_001",
+    "hops": [
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-02T21:11:41+00:00",
+        "claim_id": "ai-workplace_bluesky_562049bb_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-15T10:01:59.727000+00:00",
+        "claim_id": "ai-workplace_bluesky_562049bb_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
-  "semantic_neighbors": [],
-  "example_content": []
+  "semantic_neighbors": [
+    {
+      "claim_id": "ai-workplace_bluesky_a96c9540_0",
+      "similarity": 0.8549,
+      "text": "Disney will replace human employees with AI."
+    },
+    {
+      "claim_id": "ai-workplace_x_765837a0_0",
+      "similarity": 0.6865,
+      "text": "Big Tech companies are replacing human jobs with AI."
+    },
+    {
+      "claim_id": "ai-workplace_bluesky_62c407a1_0",
+      "similarity": 0.6846,
+      "text": "Tech companies are replacing American tech workers with AI."
+    },
+    {
+      "claim_id": "ai-workplace_bluesky_71581398_0",
+      "similarity": 0.656,
+      "text": "Big Tech companies are replacing human jobs with AI."
+    },
+    {
+      "claim_id": "ai-workplace_bluesky_52164096_0",
+      "similarity": 0.6491,
+      "text": "AI companies are aggressively pursuing the replacement of human labor with AI."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Bill Gates and Steven Jobs attempted to have the poster murdered.",
+      "platform": "X Platform",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Tech billionaires are intentionally trying to replace human jobs with AI.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Tech billionaires are detrimental to humanity.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
 }

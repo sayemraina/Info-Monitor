@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 5,
-    "friction": 0.6,
+    "persistence_windows": 15,
+    "friction": 0.7727,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.8363,
+    "value": 0.6237,
     "confidence_interval": [
-      0.749,
-      0.9236
+      0.5205,
+      0.7269
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.8363
+      0.6237
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.6,
+    "value": 0.7727,
     "confidence_interval": [
-      0.495,
-      0.705
+      0.6807,
+      0.8647
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.6
+      0.7727
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.25,
+    "value": 0.75,
     "confidence_interval": [
-      0.1187,
-      0.3813
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.25
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9793,
     "confidence_interval": [
-      0.925,
+      0.9027,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9793
     ],
     "source_distribution": "production"
   },
@@ -120,24 +120,32 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
+    "first_platform": "The Intercept",
     "first_timestamp": "2026-05-26T23:01:11.773Z",
     "lead_lag": [
       {
-        "platform": "Alternet.Org",
-        "lag_hours": 8.6
+        "platform": "X Platform",
+        "lag_hours": 35.0
       },
       {
-        "platform": "Daily Kos",
-        "lag_hours": 9.4
+        "platform": "Bluesky",
+        "lag_hours": 46.9
       },
       {
-        "platform": "Opb",
-        "lag_hours": 9.8
+        "platform": "The Atlantic",
+        "lag_hours": 47.7
+      },
+      {
+        "platform": "The Washington Standard",
+        "lag_hours": 64.5
+      },
+      {
+        "platform": "Mother Jones",
+        "lag_hours": 71.4
       },
       {
         "platform": "Fox News",
-        "lag_hours": 10.4
+        "lag_hours": 72.3
       }
     ]
   },
@@ -145,39 +153,46 @@
     "concept_id": "concept_immigration_004",
     "hops": [
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-05-26T14:34:25.714000+00:00",
+        "platform": "The Intercept",
+        "timestamp": "2026-03-31T15:15:12+00:00",
         "claim_id": "immigration_bluesky_9ce21c2d_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Alternet.Org",
-        "timestamp": "2026-05-26T23:11:54+00:00",
+        "platform": "X Platform",
+        "timestamp": "2026-04-02T02:13:25+00:00",
         "claim_id": "immigration_bluesky_9ce21c2d_0",
-        "fidelity_to_origin": 0.4217,
-        "fidelity_to_previous": 0.4217
+        "fidelity_to_origin": 0.9819,
+        "fidelity_to_previous": 0.9819
       },
       {
-        "platform": "Daily Kos",
-        "timestamp": "2026-05-27T00:01:00+00:00",
+        "platform": "Bluesky",
+        "timestamp": "2026-04-02T14:10:23.218000+00:00",
         "claim_id": "immigration_bluesky_9ce21c2d_0",
-        "fidelity_to_origin": 0.3669,
-        "fidelity_to_previous": 0.87
+        "fidelity_to_origin": 0.9757,
+        "fidelity_to_previous": 0.9937
       },
       {
-        "platform": "Opb",
-        "timestamp": "2026-05-27T00:25:13+00:00",
+        "platform": "The Atlantic",
+        "timestamp": "2026-04-02T15:00:00+00:00",
         "claim_id": "immigration_bluesky_9ce21c2d_0",
-        "fidelity_to_origin": 0.3398,
-        "fidelity_to_previous": 0.9261
+        "fidelity_to_origin": 0.9753,
+        "fidelity_to_previous": 0.9996
       },
       {
-        "platform": "Fox News",
-        "timestamp": "2026-05-27T01:00:50+00:00",
+        "platform": "The Washington Standard",
+        "timestamp": "2026-04-03T07:46:14+00:00",
         "claim_id": "immigration_bluesky_9ce21c2d_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.8829
+        "fidelity_to_origin": 0.9666,
+        "fidelity_to_previous": 0.9911
+      },
+      {
+        "platform": "Mother Jones",
+        "timestamp": "2026-04-03T14:40:12+00:00",
+        "claim_id": "immigration_bluesky_9ce21c2d_0",
+        "fidelity_to_origin": 0.9631,
+        "fidelity_to_previous": 0.9964
       }
     ],
     "observation_boundary": null
@@ -212,46 +227,46 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "immigration_bluesky_9be881de_1",
-      "similarity": 0.5519,
-      "text": "The Trump administration was characterized by corruption, cruelty, and incompetence."
+      "claim_id": "immigration_the_washington_standard_26bd1298_1",
+      "similarity": 0.5438,
+      "text": "Trump prioritizes loyalty over constitutional principles within his administration."
     },
     {
-      "claim_id": "immigration_bluesky_4a3f78ed_0",
-      "similarity": 0.4264,
-      "text": "Trump's foreign policy has led to increased global conflicts and instability."
+      "claim_id": "immigration_bluesky_f01af604_0",
+      "similarity": 0.4466,
+      "text": "Donald Trump should not be in power."
     },
     {
-      "claim_id": "immigration_bluesky_99b67fa9_0",
-      "similarity": 0.4106,
-      "text": "Donald Trump's policies have resulted in failure and public disapproval."
+      "claim_id": "immigration_bluesky_95d0bcc0_1",
+      "similarity": 0.4373,
+      "text": "Trump's policies have caused significant harm both domestically and internationally."
     },
     {
-      "claim_id": "immigration_bluesky_33d2097a_0",
-      "similarity": 0.4106,
-      "text": "Donald Trump has low approval ratings among Americans, including on the issue of border security."
+      "claim_id": "immigration_bluesky_18924472_0",
+      "similarity": 0.421,
+      "text": "Donald Trump's promise to pay Homeland Security employees is insincere."
     },
     {
-      "claim_id": "immigration_bluesky_cc1b2211_0",
-      "similarity": 0.403,
-      "text": "Donald Trump's net approval rating is negative on inflation, healthcare, the economy, and foreign policy."
+      "claim_id": "immigration_bluesky_15473b22_0",
+      "similarity": 0.3808,
+      "text": "Trump's foreign policy decisions have caused some of his supporters to become disillusioned."
     }
   ],
   "example_content": [
     {
-      "text": "The Trump administration was characterized by corruption, cruelty, and incompetence.",
+      "text": "Donald Trump's promise to pay Homeland Security employees is insincere.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Trump's foreign policy has led to increased global conflicts and instability.",
+      "text": "Donald Trump is preventing individuals from testifying by concealing their whereabouts.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Donald Trump's policies have resulted in failure and public disapproval.",
+      "text": "Donald Trump has a history of paying individuals to remain silent.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

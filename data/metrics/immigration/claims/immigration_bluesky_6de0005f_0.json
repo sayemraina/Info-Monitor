@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 3,
-    "friction": 0.7273,
+    "persistence_windows": 15,
+    "friction": 0.4875,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.555,
+    "value": 0.756,
     "confidence_interval": [
-      0.4466,
-      0.6634
+      0.6627,
+      0.8493
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.555
+      0.756
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.7273,
+    "value": 0.4875,
     "confidence_interval": [
-      0.6318,
-      0.8228
+      0.3741,
+      0.6009
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.7273
+      0.4875
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.15,
+    "value": 0.75,
     "confidence_interval": [
-      0.0112,
-      0.2888
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.15
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9811,
     "confidence_interval": [
-      0.925,
+      0.9047,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9811
     ],
     "source_distribution": "production"
   },
@@ -120,20 +120,32 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
+    "first_platform": "YouTube (Influencer Framing)",
     "first_timestamp": "2026-05-27T08:23:04.419Z",
     "lead_lag": [
       {
-        "platform": "Wmbf News",
-        "lag_hours": 3.9
+        "platform": "X Platform",
+        "lag_hours": 5081.1
       },
       {
-        "platform": "Star Tribune",
-        "lag_hours": 5.7
+        "platform": "Bluesky",
+        "lag_hours": 5090.0
       },
       {
-        "platform": "Inews.Co.Uk",
-        "lag_hours": 9.3
+        "platform": "Fun 107",
+        "lag_hours": 5102.7
+      },
+      {
+        "platform": "Minnpost",
+        "lag_hours": 5104.6
+      },
+      {
+        "platform": "Usa Today",
+        "lag_hours": 5107.5
+      },
+      {
+        "platform": "Money Talks News",
+        "lag_hours": 5107.7
       }
     ]
   },
@@ -141,32 +153,46 @@
     "concept_id": "concept_immigration_007",
     "hops": [
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-05-26T19:42:17.963556+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2025-09-02T17:22:55+00:00",
         "claim_id": "immigration_bluesky_6de0005f_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Wmbf News",
-        "timestamp": "2026-05-26T23:33:26+00:00",
+        "platform": "X Platform",
+        "timestamp": "2026-04-02T10:28:08+00:00",
         "claim_id": "immigration_bluesky_6de0005f_0",
-        "fidelity_to_origin": 0.7099,
-        "fidelity_to_previous": 0.7099
+        "fidelity_to_origin": 0.4439,
+        "fidelity_to_previous": 0.4439
       },
       {
-        "platform": "Star Tribune",
-        "timestamp": "2026-05-27T01:23:41+00:00",
+        "platform": "Bluesky",
+        "timestamp": "2026-04-02T19:22:00.978000+00:00",
         "claim_id": "immigration_bluesky_6de0005f_0",
-        "fidelity_to_origin": 0.5715,
-        "fidelity_to_previous": 0.805
+        "fidelity_to_origin": 0.4429,
+        "fidelity_to_previous": 0.9977
       },
       {
-        "platform": "Inews.Co.Uk",
-        "timestamp": "2026-05-27T05:00:00+00:00",
+        "platform": "Fun 107",
+        "timestamp": "2026-04-03T08:04:00+00:00",
         "claim_id": "immigration_bluesky_6de0005f_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.5249
+        "fidelity_to_origin": 0.4415,
+        "fidelity_to_previous": 0.9968
+      },
+      {
+        "platform": "Minnpost",
+        "timestamp": "2026-04-03T10:00:00+00:00",
+        "claim_id": "immigration_bluesky_6de0005f_0",
+        "fidelity_to_origin": 0.4413,
+        "fidelity_to_previous": 0.9995
+      },
+      {
+        "platform": "Usa Today",
+        "timestamp": "2026-04-03T12:51:41+00:00",
+        "claim_id": "immigration_bluesky_6de0005f_0",
+        "fidelity_to_origin": 0.441,
+        "fidelity_to_previous": 0.9993
       }
     ],
     "observation_boundary": null
@@ -201,47 +227,47 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "immigration_bluesky_8043b865_0",
-      "similarity": 0.7337,
-      "text": "Restricting immigrant visa holders from applying for green cards will create fear, family separation, and workforce instability."
+      "claim_id": "immigration_minnpost_2cb62c1a_0",
+      "similarity": 0.5636,
+      "text": "Changes in immigration policy have negatively impacted the national economy."
     },
     {
-      "claim_id": "immigration_star_tribune_834acb2c_1",
-      "similarity": 0.6007,
-      "text": "The new green card policy will negatively impact immigrants seeking to build families in the U.S."
+      "claim_id": "immigration_usa_today_9a68c911_2",
+      "similarity": 0.5625,
+      "text": "Changes in immigration policy have impacted both the demand for and supply of workers in the US."
     },
     {
-      "claim_id": "immigration_bluesky_b74197b7_0",
-      "similarity": 0.5634,
-      "text": "Immigration rates are likely to decline significantly by 2026."
+      "claim_id": "immigration_money_talks_news_d60c5c82_1",
+      "similarity": 0.5383,
+      "text": "Recent changes in US immigration policy have decreased both labor supply and demand."
     },
     {
-      "claim_id": "immigration_bluesky_90a95a85_0",
-      "similarity": 0.547,
-      "text": "Immigration policies disproportionately and negatively affect people of color."
+      "claim_id": "immigration_bluesky_48ad4699_0",
+      "similarity": 0.5162,
+      "text": "Trump's political movement manipulated people into blaming immigration and progressive ideals for their economic decline."
     },
     {
-      "claim_id": "immigration_bluesky_fc597f4f_0",
-      "similarity": 0.3885,
-      "text": "Recent UK government policies negatively impact economic growth."
+      "claim_id": "immigration_bluesky_0a5a542e_0",
+      "similarity": 0.481,
+      "text": "Changes to Canada's immigration policies and declining international student enrollment are causing workforce reductions at Brampton Transit."
     }
   ],
   "example_content": [
     {
-      "text": "Immigration rates are likely to decline significantly by 2026.",
+      "text": "Changes to Canada's immigration policies and declining international student enrollment are causing workforce reductions at Brampton Transit.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Recent UK government policies negatively impact economic growth.",
+      "text": "Trump's political movement manipulated people into blaming immigration and progressive ideals for their economic decline.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Restricting immigrant visa holders from applying for green cards will create fear, family separation, and workforce instability.",
-      "platform": "Bluesky",
+      "text": "Minnesota's labor market is weakening, with slower job growth and a rising unemployment rate.",
+      "platform": "Twin Cities",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

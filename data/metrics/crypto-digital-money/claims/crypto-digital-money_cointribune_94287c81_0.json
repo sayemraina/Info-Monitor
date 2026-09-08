@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "crypto-digital-money_cointribune_94287c81_0",
-    "cluster_id": "clu_crypto-digital-money_017",
-    "concept_id": "concept_crypto-digital-money_001",
+    "cluster_id": "clu_crypto-digital-money_018",
+    "concept_id": "concept_crypto-digital-money_000",
     "first_seen_platform": "cointribune",
     "first_seen_timestamp": "2026-05-06T08:50:50Z",
     "source_document_id": "2f40a4c030f9b839",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 5,
-    "friction": 0.1875,
+    "persistence_windows": 15,
+    "friction": 0.0816,
     "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 0.626,
+    "value": 0.4531,
     "confidence_interval": [
-      0.5229,
-      0.7291
+      0.3371,
+      0.5691
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.626
+      0.4531
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.1875,
+    "value": 0.0816,
     "confidence_interval": [
-      0.0516,
-      0.3234
+      0,
+      0.2255
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1875
+      0.0816
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.25,
+    "value": 0.75,
     "confidence_interval": [
-      0.1187,
-      0.3813
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.25
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9159,
+    "value": 0.8943,
     "confidence_interval": [
-      0.8346,
-      0.9972
+      0.8114,
+      0.9772
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9159
+      0.8943
     ],
     "source_distribution": "production"
   },
@@ -120,64 +120,79 @@
     ]
   },
   "provenance": {
-    "first_platform": "The Motley Fool",
+    "first_platform": "YouTube (Influencer Framing)",
     "first_timestamp": "2026-05-06T08:50:50Z",
     "lead_lag": [
       {
-        "platform": "Coinpedia   Fintech & Cryptocu",
-        "lag_hours": 0.1
+        "platform": "Usethebitcoin",
+        "lag_hours": 6939.9
+      },
+      {
+        "platform": "Bluesky",
+        "lag_hours": 6940.9
+      },
+      {
+        "platform": "Crypto Reporter",
+        "lag_hours": 6940.9
       },
       {
         "platform": "X Platform",
-        "lag_hours": 0.2
+        "lag_hours": 6941.2
       },
       {
-        "platform": "Nasdaq Stock Market",
-        "lag_hours": 0.3
+        "platform": "The Motley Fool",
+        "lag_hours": 7724.0
       },
       {
-        "platform": "Cointribune",
-        "lag_hours": 0.8
+        "platform": "Coinpedia   Fintech & Cryptocu",
+        "lag_hours": 7724.1
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_crypto-digital-money_001",
+    "concept_id": "concept_crypto-digital-money_000",
     "hops": [
       {
-        "platform": "The Motley Fool",
-        "timestamp": "2026-05-06T08:00:00+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2025-06-18T12:00:10+00:00",
         "claim_id": "crypto-digital-money_cointribune_94287c81_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Coinpedia   Fintech & Cryptocu",
-        "timestamp": "2026-05-06T08:05:19+00:00",
+        "platform": "Usethebitcoin",
+        "timestamp": "2026-04-03T15:54:19+00:00",
         "claim_id": "crypto-digital-money_cointribune_94287c81_0",
-        "fidelity_to_origin": 0.9268,
-        "fidelity_to_previous": 0.9268
+        "fidelity_to_origin": 0.4096,
+        "fidelity_to_previous": 0.4096
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-03T16:54:15.528000+00:00",
+        "claim_id": "crypto-digital-money_cointribune_94287c81_0",
+        "fidelity_to_origin": 0.4095,
+        "fidelity_to_previous": 0.9998
+      },
+      {
+        "platform": "Crypto Reporter",
+        "timestamp": "2026-04-03T16:56:00+00:00",
+        "claim_id": "crypto-digital-money_cointribune_94287c81_0",
+        "fidelity_to_origin": 0.4095,
+        "fidelity_to_previous": 1.0
       },
       {
         "platform": "X Platform",
-        "timestamp": "2026-05-06T08:11:40+00:00",
+        "timestamp": "2026-04-03T17:12:51+00:00",
         "claim_id": "crypto-digital-money_cointribune_94287c81_0",
-        "fidelity_to_origin": 0.8393,
-        "fidelity_to_previous": 0.9056
+        "fidelity_to_origin": 0.4095,
+        "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Nasdaq Stock Market",
-        "timestamp": "2026-05-06T08:20:00+00:00",
+        "platform": "The Motley Fool",
+        "timestamp": "2026-05-06T08:00:00+00:00",
         "claim_id": "crypto-digital-money_cointribune_94287c81_0",
-        "fidelity_to_origin": 0.7246,
-        "fidelity_to_previous": 0.8633
-      },
-      {
-        "platform": "Cointribune",
-        "timestamp": "2026-05-06T08:50:50+00:00",
-        "claim_id": "crypto-digital-money_cointribune_94287c81_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.414
+        "fidelity_to_origin": 0.3429,
+        "fidelity_to_previous": 0.8374
       }
     ],
     "observation_boundary": null
@@ -212,48 +227,48 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "crypto-digital-money_cointribune_94287c81_1",
-      "similarity": 0.8556,
-      "text": "Many young people with Web3 skills remain invisible to serious recruiters."
+      "claim_id": "crypto-digital-money_usethebitcoin_e023a789_1",
+      "similarity": 0.5289,
+      "text": "Web3 and blockchain growth has created more freelance opportunities for those with crypto-related skills."
     },
     {
-      "claim_id": "crypto-digital-money_coinpedia_-_fintech_&_cryptocu_740ab108_2",
-      "similarity": 0.3616,
-      "text": "A mix of interoperable Layer 2 systems can form a heterogeneous sharded ecosystem capable of scaling and serving diverse needs."
+      "claim_id": "crypto-digital-money_usethebitcoin_e023a789_2",
+      "similarity": 0.4653,
+      "text": "Blockchain-based freelance platforms reduce reliance on intermediaries through smart contracts and direct payments."
     },
     {
-      "claim_id": "crypto-digital-money_x_b00af1d2_0",
-      "similarity": 0.3457,
-      "text": "Blockchain technology is significantly increasing efficiency across various sectors."
+      "claim_id": "crypto-digital-money_bluesky_c7c2165b_0",
+      "similarity": 0.4621,
+      "text": "Web3 technologies are inherently undesirable."
     },
     {
-      "claim_id": "crypto-digital-money_x_e3aaf63a_1",
-      "similarity": 0.3002,
-      "text": "Blockchain technology will fundamentally alter the internet."
+      "claim_id": "crypto-digital-money_usethebitcoin_e023a789_0",
+      "similarity": 0.4233,
+      "text": "Blockchain-based freelance platforms offer faster payments, lower fees, and more transparent systems."
     },
     {
-      "claim_id": "crypto-digital-money_coinpedia_-_fintech_&_cryptocu_740ab108_0",
-      "similarity": 0.2797,
-      "text": "Consortium blockchains fail to provide meaningful advantages over centralized systems."
+      "claim_id": "crypto-digital-money_x_62f668b8_0",
+      "similarity": 0.3303,
+      "text": "Blockchain technology is transforming various sectors, including finance and transportation."
     }
   ],
   "example_content": [
     {
-      "text": "The economic activity on blockchains does not reliably benefit the holders of the native coins.",
-      "platform": "Nasdaq Stock Market",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Consortium blockchains fail to provide meaningful advantages over centralized systems.",
-      "platform": "Coinpedia   Fintech & Cryptocu",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Enhancing centralized servers with cryptographic tools offers a more practical solution than rebuilding systems from scratch with blockchain.",
-      "platform": "Coinpedia   Fintech & Cryptocu",
+      "text": "The architecture of the atproto protocol initially caused concern that it would incorporate blockchain technology.",
+      "platform": "Bluesky",
       "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Cardano's reliable technology and growing ecosystem of tools and NFT marketplaces position it as a potential cryptocurrency for future growth.",
+      "platform": "Crypto Reporter",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Blockchain-based freelance platforms offer faster payments, lower fees, and more transparent systems.",
+      "platform": "Usethebitcoin",
+      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

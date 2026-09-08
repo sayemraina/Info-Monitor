@@ -24,107 +24,94 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": null,
+    "value": 0.54,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.44,
+      0.64
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.54
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 15,
+    "friction": 0.5472,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.6059,
+    "confidence_interval": [
+      0.5013,
+      0.7105
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.6059
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.5472,
+    "confidence_interval": [
+      0.4382,
+      0.6562
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5472
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.75,
+    "confidence_interval": [
+      0.6562,
+      0.8438
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.75
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.5,
     "confidence_interval": [
-      0,
-      0
+      0.3875,
+      0.6125
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.5
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 0.9647,
     "confidence_interval": [
-      0,
-      0
+      0.8871,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.9647
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,44 +120,140 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "Golocalprov",
+    "first_timestamp": "2026-04-28T14:26:29.427Z",
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 283.4
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 619.8
+      },
+      {
+        "platform": "Liberty Nation",
+        "lag_hours": 1436.7
+      },
+      {
+        "platform": "Techlusive",
+        "lag_hours": 1590.4
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_ai-workplace_001",
+    "hops": [
+      {
+        "platform": "Golocalprov",
+        "timestamp": "2026-03-21T11:02:56+00:00",
+        "claim_id": "ai-workplace_bluesky_24baf2b9_2",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-02T06:28:03.280642+00:00",
+        "claim_id": "ai-workplace_bluesky_24baf2b9_2",
+        "fidelity_to_origin": 0.8753,
+        "fidelity_to_previous": 0.8753
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-16T06:52:30+00:00",
+        "claim_id": "ai-workplace_bluesky_24baf2b9_2",
+        "fidelity_to_origin": 0.7272,
+        "fidelity_to_previous": 0.8308
+      },
+      {
+        "platform": "Liberty Nation",
+        "timestamp": "2026-05-20T07:47:32+00:00",
+        "claim_id": "ai-workplace_bluesky_24baf2b9_2",
+        "fidelity_to_origin": 0.3676,
+        "fidelity_to_previous": 0.5055
+      },
+      {
+        "platform": "Techlusive",
+        "timestamp": "2026-05-26T17:28:25+00:00",
+        "claim_id": "ai-workplace_bluesky_24baf2b9_2",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.8161
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-workplace_bluesky_ca159757_0",
-      "similarity": 0.8859,
-      "text": "Corporations will eliminate jobs to increase profits using AI technology."
+      "claim_id": "ai-workplace_bluesky_720b87ef_0",
+      "similarity": 0.8871,
+      "text": "AI is causing job displacement in sectors previously considered stable sources of employment."
     },
     {
-      "claim_id": "ai-workplace_techlusive_a7261cc8_1",
-      "similarity": 0.8793,
-      "text": "Companies are still investing heavily in AI and automation, which raises concerns about potential job displacement."
+      "claim_id": "ai-workplace_bluesky_af299614_0",
+      "similarity": 0.8848,
+      "text": "Take-Two Interactive eliminated its AI team as part of a restructuring, contributing to job losses in the gaming sector."
+    },
+    {
+      "claim_id": "ai-workplace_bluesky_6c97317c_2",
+      "similarity": 0.8426,
+      "text": "Companies will continue to replace human workers with AI."
+    },
+    {
+      "claim_id": "ai-workplace_bluesky_b4bca840_0",
+      "similarity": 0.8346,
+      "text": "AI-driven workforce displacement will have significant societal consequences."
+    },
+    {
+      "claim_id": "ai-workplace_bluesky_09b71bf2_0",
+      "similarity": 0.8345,
+      "text": "AI will cause widespread job displacement, leading to homelessness and economic instability."
     }
   ],
   "example_content": [
     {
-      "text": "Corporations will eliminate jobs to increase profits using AI technology.",
+      "text": "AI-driven workforce displacement will have significant societal consequences.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Companies are still investing heavily in AI and automation, which raises concerns about potential job displacement.",
-      "platform": "Techlusive",
+      "text": "Companies will continue to replace human workers with AI.",
+      "platform": "Bluesky",
       "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "AI will significantly displace white-collar jobs, particularly in legal, architectural, and administrative sectors.",
+      "platform": "Golocalprov",
+      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

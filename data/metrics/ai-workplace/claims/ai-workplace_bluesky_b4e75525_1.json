@@ -24,107 +24,94 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": null,
+    "value": 0.82,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.72,
+      0.92
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.82
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 9,
+    "friction": 0.75,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.3201,
+    "confidence_interval": [
+      0.1941,
+      0.4461
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3201
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.75,
+    "confidence_interval": [
+      0.6562,
+      0.8438
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.75
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.45,
+    "confidence_interval": [
+      0.3338,
+      0.5662
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.45
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.5,
     "confidence_interval": [
-      0,
-      0
+      0.3875,
+      0.6125
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.5
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 1,
     "confidence_interval": [
-      0,
-      0
+      0.925,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      1
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,43 +120,128 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-04-14T21:56:38.369Z",
+    "lead_lag": [
+      {
+        "platform": "X Platform",
+        "lag_hours": 87.5
+      },
+      {
+        "platform": "Liberty Nation",
+        "lag_hours": 1213.2
+      },
+      {
+        "platform": "Digit",
+        "lag_hours": 1214.9
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_ai-workplace_002",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-03-30T18:36:45.681000+00:00",
+        "claim_id": "ai-workplace_bluesky_b4e75525_1",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-03T10:04:11+00:00",
+        "claim_id": "ai-workplace_bluesky_b4e75525_1",
+        "fidelity_to_origin": 0.9496,
+        "fidelity_to_previous": 0.9496
+      },
+      {
+        "platform": "Liberty Nation",
+        "timestamp": "2026-05-20T07:47:32+00:00",
+        "claim_id": "ai-workplace_bluesky_b4e75525_1",
+        "fidelity_to_origin": 0.301,
+        "fidelity_to_previous": 0.317
+      },
+      {
+        "platform": "Digit",
+        "timestamp": "2026-05-20T09:31:00+00:00",
+        "claim_id": "ai-workplace_bluesky_b4e75525_1",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.9967
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-workplace_bluesky_b9937d7f_2",
-      "similarity": 0.7102,
-      "text": "The bursting of the AI investment bubble will be worse for the general public than the current state of AI development."
+      "claim_id": "ai-workplace_bluesky_7f818920_0",
+      "similarity": 0.8511,
+      "text": "AI development is resulting in job losses in the tech sector."
     },
     {
-      "claim_id": "ai-workplace_bluesky_43a3ea39_1",
-      "similarity": 0.6486,
-      "text": "Tech worker unions aim to rein in AI development."
+      "claim_id": "ai-workplace_x_39dcf6f5_0",
+      "similarity": 0.8003,
+      "text": "AI implementation in the workplace will lead to significant workforce reductions."
+    },
+    {
+      "claim_id": "ai-workplace_bluesky_d05b90c0_0",
+      "similarity": 0.7038,
+      "text": "Oracle's investments in AI infrastructure are responsible for recent layoffs."
+    },
+    {
+      "claim_id": "ai-workplace_x_82c54c97_1",
+      "similarity": 0.6504,
+      "text": "The purported AI race with China is not clearly linked to specific goals like white-collar job replacement or unemployment reduction."
+    },
+    {
+      "claim_id": "ai-workplace_bluesky_774907d1_0",
+      "similarity": 0.642,
+      "text": "Individuals should avoid contributing to the development and training of AI systems."
     }
   ],
   "example_content": [
     {
-      "text": "The bursting of the AI investment bubble will be worse for the general public than the current state of AI development.",
+      "text": "Oracle's investments in AI infrastructure are responsible for recent layoffs.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "AI development is being promoted by individuals who are not trustworthy.",
       "platform": "Bluesky",
       "confidence": 0.8,
       "is_influencer_framing": false
     },
     {
-      "text": "Tech worker unions aim to rein in AI development.",
-      "platform": "Bluesky",
+      "text": "AI implementation in the workplace will lead to significant workforce reductions.",
+      "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

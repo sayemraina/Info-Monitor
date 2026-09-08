@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "crypto-digital-money_x_cf866619_0",
-    "cluster_id": "clu_crypto-digital-money_003",
-    "concept_id": "concept_crypto-digital-money_001",
+    "cluster_id": "clu_crypto-digital-money_053",
+    "concept_id": "concept_crypto-digital-money_000",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-03T17:12:59.000Z",
     "source_document_id": "x_2040115358401519759",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 15,
-    "friction": 0.1185,
+    "persistence_windows": 6,
+    "friction": 0.3,
     "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 1,
+    "value": 0.1849,
     "confidence_interval": [
-      0.925,
-      1
+      0.0488,
+      0.321
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.1849
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.1185,
+    "value": 0.3,
     "confidence_interval": [
-      0,
-      0.2596
+      0.1725,
+      0.4275
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1185
+      0.3
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.75,
+    "value": 0.3,
     "confidence_interval": [
-      0.6562,
-      0.8438
+      0.1725,
+      0.4275
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.75
+      0.3
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9873,
+    "value": 0.8943,
     "confidence_interval": [
-      0.9113,
-      1
+      0.8114,
+      0.9772
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9873
+      0.8943
     ],
     "source_distribution": "production"
   },
@@ -120,79 +120,79 @@
     ]
   },
   "provenance": {
-    "first_platform": "YouTube (Influencer Framing)",
+    "first_platform": "Bluesky",
     "first_timestamp": "2026-04-03T17:12:59.000Z",
     "lead_lag": [
       {
-        "platform": "Bluesky",
-        "lag_hours": 6255.9
+        "platform": "Usethebitcoin",
+        "lag_hours": 0.1
       },
       {
-        "platform": "Bloomberg Tech",
-        "lag_hours": 6299.0
+        "platform": "Ambcrypto",
+        "lag_hours": 0.6
       },
       {
-        "platform": "Bitcoinist.Com",
-        "lag_hours": 6313.8
+        "platform": "X Platform",
+        "lag_hours": 0.8
       },
       {
-        "platform": "Decrypt",
-        "lag_hours": 6320.4
+        "platform": "Cryptoticker.Io",
+        "lag_hours": 546.6
       },
       {
-        "platform": "Bitcoin Magazine",
-        "lag_hours": 6320.7
+        "platform": "Blockonomi",
+        "lag_hours": 579.2
       },
       {
         "platform": "Bitcoin Sistemi",
-        "lag_hours": 6320.9
+        "lag_hours": 579.5
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_crypto-digital-money_001",
+    "concept_id": "concept_crypto-digital-money_000",
     "hops": [
       {
-        "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2025-07-14T07:30:11+00:00",
+        "platform": "Bluesky",
+        "timestamp": "2026-04-03T16:26:41.656000+00:00",
         "claim_id": "crypto-digital-money_x_cf866619_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-03-31T23:26:01.075000+00:00",
+        "platform": "Usethebitcoin",
+        "timestamp": "2026-04-03T16:34:53+00:00",
         "claim_id": "crypto-digital-money_x_cf866619_0",
-        "fidelity_to_origin": 0.3073,
-        "fidelity_to_previous": 0.3073
+        "fidelity_to_origin": 0.9999,
+        "fidelity_to_previous": 0.9999
       },
       {
-        "platform": "Bloomberg Tech",
-        "timestamp": "2026-04-02T18:32:58+00:00",
+        "platform": "Ambcrypto",
+        "timestamp": "2026-04-03T17:00:41+00:00",
         "claim_id": "crypto-digital-money_x_cf866619_0",
-        "fidelity_to_origin": 0.3025,
-        "fidelity_to_previous": 0.9844
+        "fidelity_to_origin": 0.9997,
+        "fidelity_to_previous": 0.9998
       },
       {
-        "platform": "Bitcoinist.Com",
-        "timestamp": "2026-04-03T09:19:02+00:00",
+        "platform": "X Platform",
+        "timestamp": "2026-04-03T17:12:58+00:00",
         "claim_id": "crypto-digital-money_x_cf866619_0",
-        "fidelity_to_origin": 0.3009,
-        "fidelity_to_previous": 0.9947
+        "fidelity_to_origin": 0.9996,
+        "fidelity_to_previous": 0.9999
       },
       {
-        "platform": "Decrypt",
-        "timestamp": "2026-04-03T15:51:25+00:00",
+        "platform": "Cryptoticker.Io",
+        "timestamp": "2026-04-26T11:04:34+00:00",
         "claim_id": "crypto-digital-money_x_cf866619_0",
-        "fidelity_to_origin": 0.3001,
-        "fidelity_to_previous": 0.9973
+        "fidelity_to_origin": 0.7001,
+        "fidelity_to_previous": 0.7004
       },
       {
-        "platform": "Bitcoin Magazine",
-        "timestamp": "2026-04-03T16:14:33+00:00",
+        "platform": "Blockonomi",
+        "timestamp": "2026-04-27T19:41:09+00:00",
         "claim_id": "crypto-digital-money_x_cf866619_0",
-        "fidelity_to_origin": 0.3001,
-        "fidelity_to_previous": 1.0
+        "fidelity_to_origin": 0.6822,
+        "fidelity_to_previous": 0.9744
       }
     ],
     "observation_boundary": null
@@ -227,46 +227,46 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "crypto-digital-money_bluesky_3b5cf42c_0",
-      "similarity": 0.4866,
-      "text": "Bitcoin experienced a significant downturn in a recent quarter."
+      "claim_id": "crypto-digital-money_bluesky_b678c515_0",
+      "similarity": 0.5374,
+      "text": "Bitcoin has caused damage and should be confiscated."
     },
     {
-      "claim_id": "crypto-digital-money_bluesky_208d6648_0",
-      "similarity": 0.4822,
-      "text": "Bitcoin traders' current actions provide insights into the cryptocurrency market's future."
+      "claim_id": "crypto-digital-money_x_ba6fdaf2_0",
+      "similarity": 0.4884,
+      "text": "Bitcoin has proven its resilience through market cycles."
     },
     {
-      "claim_id": "crypto-digital-money_bluesky_5a3a8633_0",
-      "similarity": 0.454,
-      "text": "Institutional investment in Bitcoin is increasing."
+      "claim_id": "crypto-digital-money_x_b08d7e37_0",
+      "similarity": 0.4285,
+      "text": "Bitcoin's limited supply contrasts with unlimited demand, creating a unique form of scarcity."
     },
     {
-      "claim_id": "crypto-digital-money_bluesky_3f36dd50_0",
-      "similarity": 0.444,
-      "text": "Bitcoin's value is decreasing relative to gold."
+      "claim_id": "crypto-digital-money_ambcrypto_4b15651a_0",
+      "similarity": 0.4202,
+      "text": "Wrapped Bitcoin solutions have faced trust issues due to concerns about the custodianship and verification of reserves."
     },
     {
-      "claim_id": "crypto-digital-money_bluesky_da481ba3_0",
-      "similarity": 0.424,
-      "text": "W3.io is developing infrastructure to facilitate Bitcoin adoption among creators."
+      "claim_id": "crypto-digital-money_bluesky_e888aded_1",
+      "similarity": 0.4194,
+      "text": "Existing cryptocurrency solutions like Wrapped Bitcoin and cbBTC face rising concerns about centralized control."
     }
   ],
   "example_content": [
     {
-      "text": "Bitcoin traders' current actions provide insights into the cryptocurrency market's future.",
-      "platform": "Bluesky",
-      "confidence": 0.8,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "W3.io is developing infrastructure to facilitate Bitcoin adoption among creators.",
+      "text": "Circle's new cirBTC aims to be a neutral and secure global standard for cryptocurrency.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Bitcoin's value is decreasing relative to gold.",
+      "text": "Existing cryptocurrency solutions like Wrapped Bitcoin and cbBTC face rising concerns about centralized control.",
+      "platform": "Bluesky",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Bitcoin has caused damage and should be confiscated.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

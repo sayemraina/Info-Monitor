@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "ai-bubble_security_distributing_&_market_cf3d8d2a_0",
-    "cluster_id": "clu_ai-bubble_029",
-    "concept_id": "concept_ai-bubble_003",
+    "cluster_id": "clu_ai-bubble_048",
+    "concept_id": "concept_ai-bubble_002",
     "first_seen_platform": "security_distributing_&_market",
     "first_seen_timestamp": "2026-04-27T12:52:03Z",
     "source_document_id": "ed6266d22780961c",
@@ -24,107 +24,94 @@
     "source_type": "elite_media"
   },
   "momentum": {
-    "value": null,
+    "value": 0.54,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.44,
+      0.64
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.54
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 15,
+    "friction": 0.5063,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.8364,
+    "confidence_interval": [
+      0.7491,
+      0.9237
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.8364
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.5063,
+    "confidence_interval": [
+      0.3943,
+      0.6183
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5063
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.75,
+    "confidence_interval": [
+      0.6562,
+      0.8438
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.75
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.5,
     "confidence_interval": [
-      0,
-      0
+      0.3875,
+      0.6125
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.5
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 0.9872,
     "confidence_interval": [
-      0,
-      0
+      0.9112,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.9872
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,63 +120,153 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-04-27T12:52:03Z",
+    "lead_lag": [
+      {
+        "platform": "YouTube (Influencer Framing)",
+        "lag_hours": 463.0
+      },
+      {
+        "platform": "Pharmexec.Com",
+        "lag_hours": 817.8
+      },
+      {
+        "platform": "Medium",
+        "lag_hours": 821.9
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 850.1
+      },
+      {
+        "platform": "Times Square Chronicles Newspa",
+        "lag_hours": 1363.9
+      },
+      {
+        "platform": "Cape Cod Times",
+        "lag_hours": 1368.9
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_ai-bubble_002",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-02-28T08:09:05.960000+00:00",
+        "claim_id": "ai-bubble_security_distributing_&_market_cf3d8d2a_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-03-19T15:07:57+00:00",
+        "claim_id": "ai-bubble_security_distributing_&_market_cf3d8d2a_0",
+        "fidelity_to_origin": 0.8454,
+        "fidelity_to_previous": 0.8454
+      },
+      {
+        "platform": "Pharmexec.Com",
+        "timestamp": "2026-04-03T10:00:00+00:00",
+        "claim_id": "ai-bubble_security_distributing_&_market_cf3d8d2a_0",
+        "fidelity_to_origin": 0.7268,
+        "fidelity_to_previous": 0.8597
+      },
+      {
+        "platform": "Medium",
+        "timestamp": "2026-04-03T14:01:02+00:00",
+        "claim_id": "ai-bubble_security_distributing_&_market_cf3d8d2a_0",
+        "fidelity_to_origin": 0.7255,
+        "fidelity_to_previous": 0.9982
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-04T18:12:49+00:00",
+        "claim_id": "ai-bubble_security_distributing_&_market_cf3d8d2a_0",
+        "fidelity_to_origin": 0.7161,
+        "fidelity_to_previous": 0.987
+      },
+      {
+        "platform": "Times Square Chronicles Newspa",
+        "timestamp": "2026-04-26T04:00:12+00:00",
+        "claim_id": "ai-bubble_security_distributing_&_market_cf3d8d2a_0",
+        "fidelity_to_origin": 0.5445,
+        "fidelity_to_previous": 0.7604
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-bubble_bluesky_1be3df01_2",
-      "similarity": 0.5704,
-      "text": "The rapid expansion and hype surrounding AI needs to end immediately."
+      "claim_id": "ai-bubble_bluesky_ada97475_0",
+      "similarity": 0.712,
+      "text": "AI systems used for military purposes are legitimate targets for attack."
     },
     {
-      "claim_id": "ai-bubble_bluesky_8bb8ae76_0",
-      "similarity": 0.5535,
-      "text": "AI can be used as an investment advisor."
+      "claim_id": "ai-bubble_bluesky_787cbe20_1",
+      "similarity": 0.5362,
+      "text": "AI technology will persist and have lasting impact despite the market conditions."
     },
     {
-      "claim_id": "ai-bubble_gsm_arena_bde7eb11_1",
-      "similarity": 0.5257,
-      "text": "The current focus on AI is negatively impacting innovation and the economy."
+      "claim_id": "ai-bubble_bluesky_4980126a_0",
+      "similarity": 0.5346,
+      "text": "AI technology is currently overvalued."
     },
     {
-      "claim_id": "ai-bubble_bluesky_5619e530_0",
-      "similarity": 0.502,
-      "text": "Investment in AI and cell biology research is valuable and promising."
+      "claim_id": "ai-bubble_bluesky_5a377c37_0",
+      "similarity": 0.5345,
+      "text": "AI technology is overvalued and does not warrant its current level of investment or hype."
     },
     {
-      "claim_id": "ai-bubble_bluesky_2175d465_1",
-      "similarity": 0.4859,
-      "text": "Effective AI handoffs should prioritize intent, constraints, evidence, and next steps over comprehensive thought preservation."
+      "claim_id": "ai-bubble_bluesky_d2a85ae3_0",
+      "similarity": 0.5236,
+      "text": "AI technologies are currently overvalued."
     }
   ],
   "example_content": [
     {
-      "text": "Effective AI handoffs should prioritize intent, constraints, evidence, and next steps over comprehensive thought preservation.",
+      "text": "AI technology is currently overvalued.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The rapid expansion and hype surrounding AI needs to end immediately.",
+      "text": "Individuals bear some responsibility for the potential negative consequences of the AI investment bubble due to their use of AI products.",
       "platform": "Bluesky",
-      "confidence": 0.9,
+      "confidence": 0.7,
       "is_influencer_framing": false
     },
     {
-      "text": "AI will either cause mass unemployment and subsequent social unrest, or its economic bubble will burst and trigger a recession leading to social unrest.",
+      "text": "AI systems used for military purposes are legitimate targets for attack.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

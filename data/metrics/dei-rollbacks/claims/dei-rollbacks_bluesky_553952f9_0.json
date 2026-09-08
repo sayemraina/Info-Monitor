@@ -35,48 +35,48 @@
       0.5428
     ],
     "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 2,
-    "friction": 0.6667,
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 15,
+    "friction": 0.6172,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.3854,
+    "value": 1,
     "confidence_interval": [
-      0.2643,
-      0.5065
+      0.925,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3854
+      1
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.6667,
+    "value": 0.6172,
     "confidence_interval": [
-      0.5667,
-      0.7667
+      0.5135,
+      0.7209
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.6667
+      0.6172
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.1,
+    "value": 0.75,
     "confidence_interval": [
-      0,
-      0.2425
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9956,
     "confidence_interval": [
-      0.925,
+      0.9203,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9956
     ],
     "source_distribution": "production"
   },
@@ -120,12 +120,32 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
+    "first_platform": "YouTube (Influencer Framing)",
     "first_timestamp": "2026-05-06T07:09:50.608Z",
     "lead_lag": [
       {
         "platform": "X Platform",
-        "lag_hours": 14.2
+        "lag_hours": 8525.1
+      },
+      {
+        "platform": "Bluesky",
+        "lag_hours": 8543.6
+      },
+      {
+        "platform": "Chicago Reader",
+        "lag_hours": 8588.5
+      },
+      {
+        "platform": "Raw Story",
+        "lag_hours": 9120.2
+      },
+      {
+        "platform": "Dnyuz",
+        "lag_hours": 9120.5
+      },
+      {
+        "platform": "Fast Company",
+        "lag_hours": 9743.1
       }
     ]
   },
@@ -133,18 +153,46 @@
     "concept_id": "concept_dei-rollbacks_002",
     "hops": [
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-05-05T09:23:21.330000+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2025-04-10T19:26:25+00:00",
         "claim_id": "dei-rollbacks_bluesky_553952f9_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
         "platform": "X Platform",
-        "timestamp": "2026-05-05T23:37:22+00:00",
+        "timestamp": "2026-04-01T00:32:53+00:00",
         "claim_id": "dei-rollbacks_bluesky_553952f9_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
+        "fidelity_to_origin": 0.395,
+        "fidelity_to_previous": 0.395
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-01T19:04:17.760000+00:00",
+        "claim_id": "dei-rollbacks_bluesky_553952f9_0",
+        "fidelity_to_origin": 0.3937,
+        "fidelity_to_previous": 0.9967
+      },
+      {
+        "platform": "Chicago Reader",
+        "timestamp": "2026-04-03T15:56:46+00:00",
+        "claim_id": "dei-rollbacks_bluesky_553952f9_0",
+        "fidelity_to_origin": 0.3905,
+        "fidelity_to_previous": 0.9919
+      },
+      {
+        "platform": "Raw Story",
+        "timestamp": "2026-04-25T19:37:21+00:00",
+        "claim_id": "dei-rollbacks_bluesky_553952f9_0",
+        "fidelity_to_origin": 0.3528,
+        "fidelity_to_previous": 0.9035
+      },
+      {
+        "platform": "Dnyuz",
+        "timestamp": "2026-04-25T19:58:42+00:00",
+        "claim_id": "dei-rollbacks_bluesky_553952f9_0",
+        "fidelity_to_origin": 0.3528,
+        "fidelity_to_previous": 1.0
       }
     ],
     "observation_boundary": null
@@ -179,46 +227,46 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "dei-rollbacks_bluesky_9a4d692c_0",
-      "similarity": 0.8578,
-      "text": "DEI initiatives are ineffective and counterproductive."
+      "claim_id": "dei-rollbacks_bluesky_9e10967b_0",
+      "similarity": 0.8969,
+      "text": "The removal of an individual who opposes DEI initiatives is a positive development."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_9468948a_0",
-      "similarity": 0.8382,
-      "text": "DEI initiatives prioritize identity over merit, which is detrimental."
+      "claim_id": "dei-rollbacks_bluesky_b55c2a53_0",
+      "similarity": 0.8135,
+      "text": "Efforts to roll back Diversity, Equity, and Inclusion (DEI) initiatives have failed."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_650453c2_0",
-      "similarity": 0.7672,
-      "text": "TSB and other mainstream banks are embracing diversity, equity, and inclusion (DEI) initiatives."
+      "claim_id": "dei-rollbacks_bluesky_d79effe5_1",
+      "similarity": 0.7917,
+      "text": "Removing leaders from the military based on DEI is detrimental to military readiness."
     },
     {
-      "claim_id": "dei-rollbacks_x_c840ca53_0",
-      "similarity": 0.6937,
-      "text": "Jeff Bezos is connected to the rollback of Diversity, Equity, and Inclusion (DEI) initiatives."
+      "claim_id": "dei-rollbacks_bluesky_ffcd62fd_0",
+      "similarity": 0.7879,
+      "text": "NASA's Artemis II mission demonstrates the value of diversity and inclusion."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_5e670294_0",
-      "similarity": 0.467,
-      "text": "Target and Walmart are engaging in racist attacks on Diversity, Equity, and Inclusion (DEI) initiatives."
+      "claim_id": "dei-rollbacks_bluesky_29bffadb_0",
+      "similarity": 0.7754,
+      "text": "The speaker disapproves of the individual's views on race, racism, and DEI."
     }
   ],
   "example_content": [
     {
-      "text": "DEI initiatives prioritize identity over merit, which is detrimental.",
+      "text": "The speaker disapproves of the individual's views on race, racism, and DEI.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "DEI initiatives are ineffective and counterproductive.",
+      "text": "Efforts to roll back Diversity, Equity, and Inclusion (DEI) initiatives have failed.",
       "platform": "Bluesky",
-      "confidence": 0.6,
+      "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "TSB and other mainstream banks are embracing diversity, equity, and inclusion (DEI) initiatives.",
+      "text": "Eliminating DEI initiatives will lead to societal decline in the United States.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

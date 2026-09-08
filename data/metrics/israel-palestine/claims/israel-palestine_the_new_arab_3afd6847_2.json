@@ -9,7 +9,7 @@
     "arousal": "high",
     "register": "journalistic",
     "id": "israel-palestine_the_new_arab_3afd6847_2",
-    "cluster_id": "clu_israel-palestine_012",
+    "cluster_id": "clu_israel-palestine_027",
     "concept_id": "concept_israel-palestine_000",
     "first_seen_platform": "the_new_arab",
     "first_seen_timestamp": "2026-04-29T15:26:32Z",
@@ -24,107 +24,94 @@
     "source_type": "elite_media"
   },
   "momentum": {
-    "value": null,
+    "value": 0.645,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.545,
+      0.745
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.645
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 4,
+    "friction": 1,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.2208,
+    "confidence_interval": [
+      0.0874,
+      0.3542
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.2208
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.2,
+    "confidence_interval": [
+      0.065,
+      0.335
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.2
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.85,
     "confidence_interval": [
-      0,
-      0
+      0.7638,
+      0.9362
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.85
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 0.9127,
     "confidence_interval": [
-      0,
-      0
+      0.8312,
+      0.9942
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.9127
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,34 +120,130 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "YouTube (Influencer Framing)",
+    "first_timestamp": "2026-04-29T15:26:32Z",
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 862.1
+      },
+      {
+        "platform": "The New Arab",
+        "lag_hours": 1486.1
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 1647.6
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_israel-palestine_000",
+    "hops": [
+      {
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-02-26T17:18:51+00:00",
+        "claim_id": "israel-palestine_the_new_arab_3afd6847_2",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-03T15:24:50.048000+00:00",
+        "claim_id": "israel-palestine_the_new_arab_3afd6847_2",
+        "fidelity_to_origin": 0.6337,
+        "fidelity_to_previous": 0.6337
+      },
+      {
+        "platform": "The New Arab",
+        "timestamp": "2026-04-29T15:26:32+00:00",
+        "claim_id": "israel-palestine_the_new_arab_3afd6847_2",
+        "fidelity_to_origin": 0.3686,
+        "fidelity_to_previous": 0.5817
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-05-06T08:54:04+00:00",
+        "claim_id": "israel-palestine_the_new_arab_3afd6847_2",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.8139
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "israel-palestine_x_7f546fc6_0",
-      "similarity": 0.299,
-      "text": "The Israeli army is accused of concealing data regarding soldiers discharged for psychological reasons during the Gaza war."
+      "claim_id": "israel-palestine_the_new_arab_3afd6847_0",
+      "similarity": 0.87,
+      "text": "Israel is unjustly detaining Dr. Hussam Abu Safiya."
+    },
+    {
+      "claim_id": "israel-palestine_bluesky_37cddee3_0",
+      "similarity": 0.7648,
+      "text": "Israel is unjustly detaining Dr. Hussam Abu Safiya, director of Kamal Adwan Hospital in Gaza."
+    },
+    {
+      "claim_id": "israel-palestine_youtube_78bc9520_1",
+      "similarity": 0.5122,
+      "text": "Israeli forces treated two activists from a Gaza-bound flotilla with extreme brutality."
+    },
+    {
+      "claim_id": "israel-palestine_bluesky_8c70c697_0",
+      "similarity": 0.4971,
+      "text": "Israel unjustly detains individuals who advocate for Palestinian rights."
+    },
+    {
+      "claim_id": "israel-palestine_the_new_arab_3afd6847_1",
+      "similarity": 0.496,
+      "text": "The detention of healthcare workers by Israel negatively impacts the delivery of essential health services in Gaza."
     }
   ],
   "example_content": [
     {
-      "text": "The Israeli army is accused of concealing data regarding soldiers discharged for psychological reasons during the Gaza war.",
-      "platform": "X Platform",
+      "text": "Israel unjustly detains individuals who advocate for Palestinian rights.",
+      "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
+    },
+    {
+      "text": "A recently passed Israeli law unfairly targets Palestinian prisoners.",
+      "platform": "YouTube (Influencer Framing)",
+      "confidence": 0.9,
+      "is_influencer_framing": true
+    },
+    {
+      "text": "The Israeli army obstructed justice by failing to conduct a thorough internal investigation into the killing of 15 Palestinian medics and aid workers in Gaza.",
+      "platform": "YouTube (Influencer Framing)",
+      "confidence": 0.8,
+      "is_influencer_framing": true
     }
   ]
 }

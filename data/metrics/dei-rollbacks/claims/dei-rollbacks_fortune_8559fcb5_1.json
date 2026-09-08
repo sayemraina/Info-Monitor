@@ -9,7 +9,7 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "dei-rollbacks_fortune_8559fcb5_1",
-    "cluster_id": "clu_dei-rollbacks_003",
+    "cluster_id": "clu_dei-rollbacks_008",
     "concept_id": "concept_dei-rollbacks_003",
     "first_seen_platform": "fortune",
     "first_seen_timestamp": "2026-04-03T14:04:20Z",
@@ -37,37 +37,24 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 15,
-    "friction": 0.4912,
+    "persistence_windows": 5,
+    "friction": 0.75,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.4116,
+    "value": 0.1923,
     "confidence_interval": [
-      0.2925,
-      0.5307
+      0.0567,
+      0.3279
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.4116
+      0.1923
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.4912,
-    "confidence_interval": [
-      0.378,
-      0.6044
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [
-      0.4912
-    ],
-    "source_distribution": "production"
-  },
-  "persistence": {
     "value": 0.75,
     "confidence_interval": [
       0.6562,
@@ -77,6 +64,19 @@
     "time_window": "24h",
     "sparkline": [
       0.75
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.25,
+    "confidence_interval": [
+      0.1187,
+      0.3813
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.25
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9649,
+    "value": 0.9858,
     "confidence_interval": [
-      0.8873,
+      0.9097,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9649
+      0.9858
     ],
     "source_distribution": "production"
   },
@@ -120,32 +120,20 @@
     ]
   },
   "provenance": {
-    "first_platform": "YouTube (Influencer Framing)",
+    "first_platform": "Bluesky",
     "first_timestamp": "2026-04-03T14:04:20Z",
     "lead_lag": [
       {
-        "platform": "Bluesky",
-        "lag_hours": 7193.2
-      },
-      {
-        "platform": "Guardian Tech",
-        "lag_hours": 7216.7
-      },
-      {
-        "platform": "Jacobin",
-        "lag_hours": 7218.6
-      },
-      {
-        "platform": "Freedomsphoenix.Com",
-        "lag_hours": 7226.7
-      },
-      {
-        "platform": "Breitbart Feed",
-        "lag_hours": 7236.3
-      },
-      {
         "platform": "Fortune",
-        "lag_hours": 7240.8
+        "lag_hours": 17.6
+      },
+      {
+        "platform": "The Guardian",
+        "lag_hours": 564.5
+      },
+      {
+        "platform": "Sportskeeda",
+        "lag_hours": 566.1
       }
     ]
   },
@@ -153,46 +141,32 @@
     "concept_id": "concept_dei-rollbacks_003",
     "hops": [
       {
-        "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2025-06-05T21:16:58+00:00",
+        "platform": "Bluesky",
+        "timestamp": "2026-04-02T20:30:07.781000+00:00",
         "claim_id": "dei-rollbacks_fortune_8559fcb5_1",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-01T14:28:30.170000+00:00",
+        "platform": "Fortune",
+        "timestamp": "2026-04-03T14:04:20+00:00",
         "claim_id": "dei-rollbacks_fortune_8559fcb5_1",
-        "fidelity_to_origin": 0.3048,
-        "fidelity_to_previous": 0.3048
+        "fidelity_to_origin": 0.9783,
+        "fidelity_to_previous": 0.9783
       },
       {
-        "platform": "Guardian Tech",
-        "timestamp": "2026-04-02T14:00:27+00:00",
+        "platform": "The Guardian",
+        "timestamp": "2026-04-26T09:02:56+00:00",
         "claim_id": "dei-rollbacks_fortune_8559fcb5_1",
-        "fidelity_to_origin": 0.3025,
-        "fidelity_to_previous": 0.9925
+        "fidelity_to_origin": 0.3019,
+        "fidelity_to_previous": 0.3086
       },
       {
-        "platform": "Jacobin",
-        "timestamp": "2026-04-02T15:51:55+00:00",
+        "platform": "Sportskeeda",
+        "timestamp": "2026-04-26T10:36:34+00:00",
         "claim_id": "dei-rollbacks_fortune_8559fcb5_1",
-        "fidelity_to_origin": 0.3023,
-        "fidelity_to_previous": 0.9993
-      },
-      {
-        "platform": "Freedomsphoenix.Com",
-        "timestamp": "2026-04-03T00:00:00+00:00",
-        "claim_id": "dei-rollbacks_fortune_8559fcb5_1",
-        "fidelity_to_origin": 0.3015,
-        "fidelity_to_previous": 0.9974
-      },
-      {
-        "platform": "Breitbart Feed",
-        "timestamp": "2026-04-03T09:36:23+00:00",
-        "claim_id": "dei-rollbacks_fortune_8559fcb5_1",
-        "fidelity_to_origin": 0.3006,
-        "fidelity_to_previous": 0.997
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.9937
       }
     ],
     "observation_boundary": null
@@ -227,48 +201,48 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "dei-rollbacks_bluesky_b9bfc8fb_0",
-      "similarity": 0.32,
-      "text": "Companies that embrace diversity and inclusion will be more successful."
+      "claim_id": "dei-rollbacks_sportskeeda_b29b3802_1",
+      "similarity": 0.4507,
+      "text": "DEI hiring practices are prevalent in the NFL."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_c88de2af_1",
-      "similarity": 0.2676,
-      "text": "DEI initiatives prevent discrimination against marginalized groups."
+      "claim_id": "dei-rollbacks_bluesky_d3b97b2e_0",
+      "similarity": 0.4469,
+      "text": "DEI initiatives lead to unqualified individuals being placed in positions of power."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_c88de2af_0",
-      "similarity": 0.226,
-      "text": "DEI initiatives are necessary to counteract the effects of unqualified individuals in positions of power."
+      "claim_id": "dei-rollbacks_bluesky_c7638b8f_0",
+      "similarity": 0.4365,
+      "text": "Diversity, equity, and inclusion (DEI) initiatives result in the hiring of unqualified individuals."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_c4d79ba0_1",
-      "similarity": 0.2256,
-      "text": "Harvard faculty should be aware of the problems with DEI."
+      "claim_id": "dei-rollbacks_the_guardian_c4980760_0",
+      "similarity": 0.4122,
+      "text": "There is sufficient talent among women of color in the theater industry, but a lack of imagination among those who hire."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_b87cfe1b_0",
-      "similarity": 0.2169,
-      "text": "DEI standards are necessary to combat racism."
+      "claim_id": "dei-rollbacks_bluesky_3801678e_0",
+      "similarity": 0.4026,
+      "text": "Pete Hegseth was hired due to DEI initiatives despite lacking qualifications."
     }
   ],
   "example_content": [
     {
-      "text": "If problems arise, opponents of diversity, equity, and inclusion (DEI) will blame DEI initiatives.",
+      "text": "DEI initiatives in academic hiring are reasonable and not insane.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "DEI initiatives are necessary to counteract the effects of unqualified individuals in positions of power.",
+      "text": "DEI initiatives lead to unqualified individuals being placed in positions of power.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "DEI initiatives prevent discrimination against marginalized groups.",
+      "text": "The Chicago Bears' hiring of Matt Eberflus was a poor decision.",
       "platform": "Bluesky",
-      "confidence": 0.8,
+      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

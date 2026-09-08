@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "inflation-cost-of-living_x_eb863092_0",
-    "cluster_id": "clu_inflation-cost-of-living_006",
-    "concept_id": "concept_inflation-cost-of-living_000",
+    "cluster_id": "clu_inflation-cost-of-living_014",
+    "concept_id": "concept_inflation-cost-of-living_002",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-29T19:07:02.000Z",
     "source_document_id": "x_2049566143795318797",
@@ -24,107 +24,94 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": null,
+    "value": 0.645,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.545,
+      0.745
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.645
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 15,
+    "friction": 0.3284,
+    "friction_quadrant": "unopposed_advance"
+  },
+  "salience": {
+    "value": 0.7096,
+    "confidence_interval": [
+      0.6128,
+      0.8064
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.7096
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.3284,
+    "confidence_interval": [
+      0.203,
+      0.4538
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3284
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.75,
+    "confidence_interval": [
+      0.6562,
+      0.8438
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.75
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.85,
     "confidence_interval": [
-      0,
-      0
+      0.7638,
+      0.9362
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.85
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 0.9867,
     "confidence_interval": [
-      0,
-      0
+      0.9107,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.9867
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,65 +120,155 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "YouTube (Influencer Framing)",
+    "first_timestamp": "2026-04-29T19:07:02.000Z",
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 3146.1
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 3182.6
+      },
+      {
+        "platform": "The Nerd Stash",
+        "lag_hours": 3694.5
+      },
+      {
+        "platform": "Watoday",
+        "lag_hours": 3773.2
+      },
+      {
+        "platform": "The Thaiger",
+        "lag_hours": 3931.2
+      },
+      {
+        "platform": "The Virgin Islands Daily News",
+        "lag_hours": 4434.9
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_inflation-cost-of-living_002",
+    "hops": [
+      {
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2025-11-23T13:30:43+00:00",
+        "claim_id": "inflation-cost-of-living_x_eb863092_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-03T15:38:47.940000+00:00",
+        "claim_id": "inflation-cost-of-living_x_eb863092_0",
+        "fidelity_to_origin": 0.5034,
+        "fidelity_to_previous": 0.5034
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-05T04:07:26+00:00",
+        "claim_id": "inflation-cost-of-living_x_eb863092_0",
+        "fidelity_to_origin": 0.4977,
+        "fidelity_to_previous": 0.9887
+      },
+      {
+        "platform": "The Nerd Stash",
+        "timestamp": "2026-04-26T12:00:00+00:00",
+        "claim_id": "inflation-cost-of-living_x_eb863092_0",
+        "fidelity_to_origin": 0.4169,
+        "fidelity_to_previous": 0.8377
+      },
+      {
+        "platform": "Watoday",
+        "timestamp": "2026-04-29T18:45:00+00:00",
+        "claim_id": "inflation-cost-of-living_x_eb863092_0",
+        "fidelity_to_origin": 0.4044,
+        "fidelity_to_previous": 0.97
+      },
+      {
+        "platform": "The Thaiger",
+        "timestamp": "2026-05-06T08:45:32+00:00",
+        "claim_id": "inflation-cost-of-living_x_eb863092_0",
+        "fidelity_to_origin": 0.3795,
+        "fidelity_to_previous": 0.9384
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "inflation-cost-of-living_x_ac233cd2_0",
-      "similarity": 0.674,
-      "text": "The cost of living is excessively high."
+      "claim_id": "inflation-cost-of-living_x_cae679b0_0",
+      "similarity": 0.6627,
+      "text": "The cost of living is too high."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_056ade0a_1",
-      "similarity": 0.655,
-      "text": "The cost of living is so high that many people can only afford to eat beans."
+      "claim_id": "inflation-cost-of-living_bluesky_7202671c_0",
+      "similarity": 0.617,
+      "text": "The cost of living in a specific, unnamed location is very high."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_61e3f2dc_1",
-      "similarity": 0.6308,
-      "text": "Healthcare, gas, and grocery prices are currently high."
+      "claim_id": "inflation-cost-of-living_x_c2a013c4_0",
+      "similarity": 0.6135,
+      "text": "The high cost of living, particularly housing, disproportionately affects young people."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_49a068e5_0",
-      "similarity": 0.62,
-      "text": "The rising cost of goods is underestimated by some people."
+      "claim_id": "inflation-cost-of-living_bluesky_00b522c6_0",
+      "similarity": 0.5867,
+      "text": "The perception that recurring car payments are an unavoidable cost of living is misguided."
     },
     {
-      "claim_id": "inflation-cost-of-living_x_91437d6f_0",
-      "similarity": 0.6155,
-      "text": "The cost of living has been intentionally raised to distract from allegations of pedophilia."
+      "claim_id": "inflation-cost-of-living_bluesky_86bc192d_0",
+      "similarity": 0.5699,
+      "text": "The cost of living in Canada is so high that tax refunds are essential for basic survival for many Canadians."
     }
   ],
   "example_content": [
     {
-      "text": "Some Southern states offer a better cost of living than Florida.",
+      "text": "The perception that recurring car payments are an unavoidable cost of living is misguided.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The cost of living in Nepal is significantly lower than in America.",
+      "text": "The cost of living in a specific, unnamed location is very high.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The cost of living is so high that many people can only afford to eat beans.",
+      "text": "The cost of living in Canada is so high that tax refunds are essential for basic survival for many Canadians.",
       "platform": "Bluesky",
-      "confidence": 0.8,
+      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

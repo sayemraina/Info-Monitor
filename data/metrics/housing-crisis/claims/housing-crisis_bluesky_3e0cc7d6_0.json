@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "housing-crisis_bluesky_3e0cc7d6_0",
-    "cluster_id": "clu_housing-crisis_006",
-    "concept_id": "concept_housing-crisis_003",
+    "cluster_id": "clu_housing-crisis_027",
+    "concept_id": "concept_housing-crisis_002",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-28T21:39:40.081Z",
     "source_document_id": "955c4c8066775850",
@@ -35,48 +35,48 @@
       0.645
     ],
     "source_distribution": "production",
-    "source_diversity": 1.0,
-    "bridge_ratio": 1.0,
-    "persistence_windows": 4,
-    "friction": 0.5833,
+    "source_diversity": 0.75,
+    "bridge_ratio": 0.75,
+    "persistence_windows": 7,
+    "friction": 0.8095,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.4538,
+    "value": 0.1969,
     "confidence_interval": [
-      0.3378,
-      0.5698
+      0.0617,
+      0.3321
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.4538
+      0.1969
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.5833,
+    "value": 0.8095,
     "confidence_interval": [
-      0.477,
-      0.6896
+      0.7202,
+      0.8988
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.5833
+      0.8095
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.2,
+    "value": 0.35,
     "confidence_interval": [
-      0.065,
-      0.335
+      0.2263,
+      0.4737
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2
+      0.35
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9512,
+    "value": 0.9803,
     "confidence_interval": [
-      0.8725,
+      0.9038,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9512
+      0.9803
     ],
     "source_distribution": "production"
   },
@@ -120,53 +120,42 @@
     ]
   },
   "provenance": {
-    "first_platform": "Northern Ontario Business",
+    "first_platform": "Bluesky",
     "first_timestamp": "2026-04-28T21:39:40.081Z",
     "lead_lag": [
       {
-        "platform": "Bluesky",
-        "lag_hours": 1.5
-      },
-      {
-        "platform": "Yahoo",
-        "lag_hours": 19.1
-      },
-      {
         "platform": "X Platform",
-        "lag_hours": 19.5
+        "lag_hours": 1.3
+      },
+      {
+        "platform": "Jacobin",
+        "lag_hours": 1242.3
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_housing-crisis_003",
+    "concept_id": "concept_housing-crisis_002",
     "hops": [
       {
-        "platform": "Northern Ontario Business",
-        "timestamp": "2026-04-28T20:07:00+00:00",
+        "platform": "Bluesky",
+        "timestamp": "2026-04-02T21:38:37.082000+00:00",
         "claim_id": "housing-crisis_bluesky_3e0cc7d6_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-28T21:39:40.081000+00:00",
-        "claim_id": "housing-crisis_bluesky_3e0cc7d6_0",
-        "fidelity_to_origin": 0.9446,
-        "fidelity_to_previous": 0.9446
-      },
-      {
-        "platform": "Yahoo",
-        "timestamp": "2026-04-29T15:13:58+00:00",
-        "claim_id": "housing-crisis_bluesky_3e0cc7d6_0",
-        "fidelity_to_origin": 0.314,
-        "fidelity_to_previous": 0.3324
-      },
-      {
         "platform": "X Platform",
-        "timestamp": "2026-04-29T15:37:18+00:00",
+        "timestamp": "2026-04-02T22:55:50+00:00",
+        "claim_id": "housing-crisis_bluesky_3e0cc7d6_0",
+        "fidelity_to_origin": 0.9993,
+        "fidelity_to_previous": 0.9993
+      },
+      {
+        "platform": "Jacobin",
+        "timestamp": "2026-05-24T15:56:05+00:00",
         "claim_id": "housing-crisis_bluesky_3e0cc7d6_0",
         "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9554
+        "fidelity_to_previous": 0.3002
       }
     ],
     "observation_boundary": null
@@ -201,47 +190,47 @@
   },
   "semantic_neighbors": [
     {
+      "claim_id": "housing-crisis_bluesky_fa270ab7_0",
+      "similarity": 0.6277,
+      "text": "Republican policies are ineffective at addressing the housing crisis and other economic issues."
+    },
+    {
+      "claim_id": "housing-crisis_x_a5e1074e_0",
+      "similarity": 0.5179,
+      "text": "The current economic struggles of working-class individuals are a direct consequence of voting for the Republican party."
+    },
+    {
+      "claim_id": "housing-crisis_bluesky_288a5087_0",
+      "similarity": 0.5022,
+      "text": "Tax cuts for the wealthy have exacerbated economic inequality and hardship for average citizens."
+    },
+    {
       "claim_id": "housing-crisis_bluesky_a5bee8d3_0",
       "similarity": 0.4209,
       "text": "Protecting democracy is more important than addressing economic issues like housing and grocery prices."
     },
     {
-      "claim_id": "housing-crisis_bluesky_d25ed298_0",
-      "similarity": 0.3105,
-      "text": "Privatization of public services exacerbates the cost of living crisis."
-    },
-    {
-      "claim_id": "housing-crisis_bluesky_ac01c2a9_0",
-      "similarity": 0.2823,
-      "text": "Government funding is being misused by allocating it to luxury projects instead of addressing the housing and inflation crises."
-    },
-    {
-      "claim_id": "housing-crisis_yahoo_03632229_1",
-      "similarity": 0.1297,
-      "text": "Current EU proposals to simplify regulation may slow down urgently needed projects."
-    },
-    {
-      "claim_id": "housing-crisis_northern_ontario_business_537f9ae5_1",
-      "similarity": 0.1259,
-      "text": "Diversification of the forestry sector offers an opportunity for Ontario to lead in advanced wood construction."
+      "claim_id": "housing-crisis_bluesky_e4197395_1",
+      "similarity": 0.4207,
+      "text": "Republican policies have led to cuts in essential services."
     }
   ],
   "example_content": [
     {
-      "text": "Privatization of public services exacerbates the cost of living crisis.",
+      "text": "Industry lobbyists are given undue credibility compared to independent researchers.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Government funding is being misused by allocating it to luxury projects instead of addressing the housing and inflation crises.",
-      "platform": "Bluesky",
+      "text": "Pakistan's ruling elite are incompetent and prioritize personal gain over economic reform.",
+      "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Protecting democracy is more important than addressing economic issues like housing and grocery prices.",
-      "platform": "Bluesky",
+      "text": "The current economic struggles of working-class individuals are a direct consequence of voting for the Republican party.",
+      "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

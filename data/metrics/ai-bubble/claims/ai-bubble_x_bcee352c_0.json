@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "ai-bubble_x_bcee352c_0",
-    "cluster_id": "clu_ai-bubble_001",
-    "concept_id": "concept_ai-bubble_001",
+    "cluster_id": "clu_ai-bubble_000",
+    "concept_id": "concept_ai-bubble_000",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-04T23:38:42.000Z",
     "source_document_id": "x_2040574813777854673",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 6,
-    "friction": 0.5556,
-    "friction_quadrant": "contested_advance"
+    "persistence_windows": 14,
+    "friction": 0.3333,
+    "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 0.2287,
+    "value": 0.4447,
     "confidence_interval": [
-      0.0959,
-      0.3615
+      0.3281,
+      0.5613
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2287
+      0.4447
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.5556,
+    "value": 0.3333,
     "confidence_interval": [
-      0.4473,
-      0.6639
+      0.2083,
+      0.4583
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.5556
+      0.3333
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.3,
+    "value": 0.7,
     "confidence_interval": [
-      0.1725,
-      0.4275
+      0.6025,
+      0.7975
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3
+      0.7
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.8889,
+    "value": 0.9741,
     "confidence_interval": [
-      0.8056,
-      0.9722
+      0.8972,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.8889
+      0.9741
     ],
     "source_distribution": "production"
   },
@@ -138,11 +138,19 @@
       {
         "platform": "X Platform",
         "lag_hours": 1201.0
+      },
+      {
+        "platform": "Pcworld",
+        "lag_hours": 1661.0
+      },
+      {
+        "platform": "Business Insider",
+        "lag_hours": 1694.7
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_ai-bubble_001",
+    "concept_id": "concept_ai-bubble_000",
     "hops": [
       {
         "platform": "YouTube (Influencer Framing)",
@@ -155,29 +163,36 @@
         "platform": "Fortune",
         "timestamp": "2026-04-03T09:43:03+00:00",
         "claim_id": "ai-bubble_x_bcee352c_0",
-        "fidelity_to_origin": 0.32,
-        "fidelity_to_previous": 0.32
+        "fidelity_to_origin": 0.668,
+        "fidelity_to_previous": 0.668
       },
       {
         "platform": "Dnyuz",
         "timestamp": "2026-04-03T10:21:38+00:00",
         "claim_id": "ai-bubble_x_bcee352c_0",
-        "fidelity_to_origin": 0.3196,
-        "fidelity_to_previous": 0.9987
+        "fidelity_to_origin": 0.6678,
+        "fidelity_to_previous": 0.9997
       },
       {
         "platform": "Renewable Energy World",
         "timestamp": "2026-04-03T15:19:43+00:00",
         "claim_id": "ai-bubble_x_bcee352c_0",
-        "fidelity_to_origin": 0.3167,
-        "fidelity_to_previous": 0.9909
+        "fidelity_to_origin": 0.6664,
+        "fidelity_to_previous": 0.9979
       },
       {
         "platform": "X Platform",
         "timestamp": "2026-04-04T20:00:46+00:00",
         "claim_id": "ai-bubble_x_bcee352c_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9473
+        "fidelity_to_origin": 0.6582,
+        "fidelity_to_previous": 0.9877
+      },
+      {
+        "platform": "Pcworld",
+        "timestamp": "2026-04-24T00:00:00+00:00",
+        "claim_id": "ai-bubble_x_bcee352c_0",
+        "fidelity_to_origin": 0.5273,
+        "fidelity_to_previous": 0.8011
       }
     ],
     "observation_boundary": null

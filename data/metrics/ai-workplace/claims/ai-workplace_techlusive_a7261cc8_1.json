@@ -35,48 +35,48 @@
       0.51
     ],
     "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 1,
-    "friction": 0.5,
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 15,
+    "friction": 0.5472,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.3241,
+    "value": 0.6059,
     "confidence_interval": [
-      0.1984,
-      0.4498
+      0.5013,
+      0.7105
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3241
+      0.6059
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.5,
+    "value": 0.5472,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0.4382,
+      0.6562
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.5
+      0.5472
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0.75,
     "confidence_interval": [
-      0,
-      0.1962
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9737,
+    "value": 0.9647,
     "confidence_interval": [
-      0.8967,
+      0.8871,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9737
+      0.9647
     ],
     "source_distribution": "production"
   },
@@ -118,12 +118,24 @@
     "factors": []
   },
   "provenance": {
-    "first_platform": "Bluesky",
+    "first_platform": "Golocalprov",
     "first_timestamp": "2026-05-26T17:28:25Z",
     "lead_lag": [
       {
+        "platform": "Bluesky",
+        "lag_hours": 283.4
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 619.8
+      },
+      {
+        "platform": "Liberty Nation",
+        "lag_hours": 1436.7
+      },
+      {
         "platform": "Techlusive",
-        "lag_hours": 4.9
+        "lag_hours": 1590.4
       }
     ]
   },
@@ -131,18 +143,39 @@
     "concept_id": "concept_ai-workplace_001",
     "hops": [
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-05-26T12:36:13.733000+00:00",
+        "platform": "Golocalprov",
+        "timestamp": "2026-03-21T11:02:56+00:00",
         "claim_id": "ai-workplace_techlusive_a7261cc8_1",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-02T06:28:03.280642+00:00",
+        "claim_id": "ai-workplace_techlusive_a7261cc8_1",
+        "fidelity_to_origin": 0.8753,
+        "fidelity_to_previous": 0.8753
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-16T06:52:30+00:00",
+        "claim_id": "ai-workplace_techlusive_a7261cc8_1",
+        "fidelity_to_origin": 0.7272,
+        "fidelity_to_previous": 0.8308
+      },
+      {
+        "platform": "Liberty Nation",
+        "timestamp": "2026-05-20T07:47:32+00:00",
+        "claim_id": "ai-workplace_techlusive_a7261cc8_1",
+        "fidelity_to_origin": 0.3676,
+        "fidelity_to_previous": 0.5055
       },
       {
         "platform": "Techlusive",
         "timestamp": "2026-05-26T17:28:25+00:00",
         "claim_id": "ai-workplace_techlusive_a7261cc8_1",
         "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
+        "fidelity_to_previous": 0.8161
       }
     ],
     "observation_boundary": null
@@ -177,15 +210,47 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-workplace_bluesky_ca159757_0",
-      "similarity": 0.9698,
-      "text": "Corporations will eliminate jobs to increase profits using AI technology."
+      "claim_id": "ai-workplace_bluesky_720b87ef_0",
+      "similarity": 0.9721,
+      "text": "AI is causing job displacement in sectors previously considered stable sources of employment."
+    },
+    {
+      "claim_id": "ai-workplace_golocalprov_4f35c933_0",
+      "similarity": 0.9638,
+      "text": "AI will significantly displace white-collar jobs, particularly in legal, architectural, and administrative sectors."
+    },
+    {
+      "claim_id": "ai-workplace_bluesky_09b71bf2_0",
+      "similarity": 0.9551,
+      "text": "AI will cause widespread job displacement, leading to homelessness and economic instability."
+    },
+    {
+      "claim_id": "ai-workplace_bluesky_af299614_0",
+      "similarity": 0.9462,
+      "text": "Take-Two Interactive eliminated its AI team as part of a restructuring, contributing to job losses in the gaming sector."
+    },
+    {
+      "claim_id": "ai-workplace_bluesky_6c97317c_2",
+      "similarity": 0.9369,
+      "text": "Companies will continue to replace human workers with AI."
     }
   ],
   "example_content": [
     {
-      "text": "Corporations will eliminate jobs to increase profits using AI technology.",
+      "text": "AI-driven workforce displacement will have significant societal consequences.",
       "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Companies will continue to replace human workers with AI.",
+      "platform": "Bluesky",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "AI will significantly displace white-collar jobs, particularly in legal, architectural, and administrative sectors.",
+      "platform": "Golocalprov",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "academic",
     "id": "ozempic-glp1_youtube_f7699aa7_0",
-    "cluster_id": "clu_ozempic-glp1_015",
-    "concept_id": "concept_ozempic-glp1_007",
+    "cluster_id": "clu_ozempic-glp1_022",
+    "concept_id": "concept_ozempic-glp1_004",
     "first_seen_platform": "youtube",
     "first_seen_timestamp": "2026-02-14T16:00:06Z",
     "source_document_id": "yt_KNYN_pLgMJ0",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 8,
-    "friction": 0.4231,
-    "friction_quadrant": "contested_advance"
+    "persistence_windows": 9,
+    "friction": 0.2414,
+    "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 0.2884,
+    "value": 0.298,
     "confidence_interval": [
-      0.16,
-      0.4168
+      0.1704,
+      0.4256
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2884
+      0.298
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.4231,
+    "value": 0.2414,
     "confidence_interval": [
-      0.3048,
-      0.5414
+      0.1095,
+      0.3733
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.4231
+      0.2414
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.4,
+    "value": 0.45,
     "confidence_interval": [
-      0.28,
-      0.52
+      0.3338,
+      0.5662
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.4
+      0.45
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9706,
+    "value": 0.9667,
     "confidence_interval": [
-      0.8934,
+      0.8892,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9706
+      0.9667
     ],
     "source_distribution": "production"
   },
@@ -124,49 +124,75 @@
     "first_timestamp": "2026-02-14T16:00:06Z",
     "lead_lag": [
       {
-        "platform": "Economist Tech",
-        "lag_hours": 4538.2
+        "platform": "X Platform",
+        "lag_hours": 1148.3
       },
       {
         "platform": "Bluesky",
-        "lag_hours": 5018.9
+        "lag_hours": 1680.7
       },
       {
-        "platform": "X Platform",
-        "lag_hours": 5025.9
+        "platform": "News Directory 3",
+        "lag_hours": 1685.9
+      },
+      {
+        "platform": "Wbrz",
+        "lag_hours": 1724.1
+      },
+      {
+        "platform": "Aboutlawsuits.Com",
+        "lag_hours": 1725.0
+      },
+      {
+        "platform": "Gonzales Inquirer",
+        "lag_hours": 1773.0
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_ozempic-glp1_007",
+    "concept_id": "concept_ozempic-glp1_004",
     "hops": [
       {
         "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2025-09-05T15:52:45+00:00",
+        "timestamp": "2026-02-14T16:00:06+00:00",
         "claim_id": "ozempic-glp1_youtube_f7699aa7_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Economist Tech",
-        "timestamp": "2026-03-13T18:07:08+00:00",
+        "platform": "X Platform",
+        "timestamp": "2026-04-03T12:20:10+00:00",
         "claim_id": "ozempic-glp1_youtube_f7699aa7_0",
-        "fidelity_to_origin": 0.3679,
-        "fidelity_to_previous": 0.3679
+        "fidelity_to_origin": 0.6706,
+        "fidelity_to_previous": 0.6706
       },
       {
         "platform": "Bluesky",
-        "timestamp": "2026-04-02T18:46:02.299000+00:00",
+        "timestamp": "2026-04-25T16:41:37+00:00",
         "claim_id": "ozempic-glp1_youtube_f7699aa7_0",
-        "fidelity_to_origin": 0.301,
-        "fidelity_to_previous": 0.8182
+        "fidelity_to_origin": 0.5178,
+        "fidelity_to_previous": 0.7721
       },
       {
-        "platform": "X Platform",
-        "timestamp": "2026-04-03T01:47:06+00:00",
+        "platform": "News Directory 3",
+        "timestamp": "2026-04-25T21:53:03+00:00",
         "claim_id": "ozempic-glp1_youtube_f7699aa7_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9967
+        "fidelity_to_origin": 0.5164,
+        "fidelity_to_previous": 0.9973
+      },
+      {
+        "platform": "Wbrz",
+        "timestamp": "2026-04-27T12:05:12+00:00",
+        "claim_id": "ozempic-glp1_youtube_f7699aa7_0",
+        "fidelity_to_origin": 0.5054,
+        "fidelity_to_previous": 0.9787
+      },
+      {
+        "platform": "Aboutlawsuits.Com",
+        "timestamp": "2026-04-27T13:00:00+00:00",
+        "claim_id": "ozempic-glp1_youtube_f7699aa7_0",
+        "fidelity_to_origin": 0.5051,
+        "fidelity_to_previous": 0.9994
       }
     ],
     "observation_boundary": null
@@ -201,47 +227,47 @@
   },
   "semantic_neighbors": [
     {
+      "claim_id": "ozempic-glp1_youtube_f7699aa7_2",
+      "similarity": 0.7605,
+      "text": "It is possible to protect muscle mass and collagen during rapid weight loss induced by GLP-1 medications."
+    },
+    {
       "claim_id": "ozempic-glp1_x_79f03cf2_0",
       "similarity": 0.6879,
       "text": "GLP-1 drugs like Ozempic may be causing bone density loss in patients."
     },
     {
-      "claim_id": "ozempic-glp1_x_8c09ab5a_0",
-      "similarity": 0.6532,
-      "text": "GLP-1 medications can cause gastrointestinal side effects."
+      "claim_id": "ozempic-glp1_x_ecbe8ff0_0",
+      "similarity": 0.6656,
+      "text": "Many people using GLP-1 drugs are unknowingly worsening their body composition."
     },
     {
-      "claim_id": "ozempic-glp1_x_808d65d5_0",
-      "similarity": 0.6402,
-      "text": "GLP-1 medications like Ozempic may cause significant weight loss."
+      "claim_id": "ozempic-glp1_youtube_dc7abc0a_1",
+      "similarity": 0.662,
+      "text": "Rapid weight loss from GLP-1s can lead to muscle loss if not managed properly with sufficient protein intake and resistance training."
     },
     {
-      "claim_id": "ozempic-glp1_bluesky_34d696f6_0",
-      "similarity": 0.6033,
-      "text": "GLP-1 medications like Wegovy have unpleasant side effects, including reduced appetite and enjoyment of food."
-    },
-    {
-      "claim_id": "ozempic-glp1_x_9f952235_0",
-      "similarity": 0.5935,
-      "text": "GLP-1 drugs have negative side effects that are not being discussed."
+      "claim_id": "ozempic-glp1_x_a5d4583f_0",
+      "similarity": 0.6543,
+      "text": "GLP-1 drugs negatively affect stem cell regeneration."
     }
   ],
   "example_content": [
     {
-      "text": "People who are unfamiliar with GLP-1 receptor agonists often react negatively to the fact that someone is taking them.",
-      "platform": "Bluesky",
+      "text": "GLP-1 drugs like Ozempic may be causing bone density loss in patients.",
+      "platform": "X Platform",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Many people using GLP-1 drugs are unknowingly worsening their body composition.",
+      "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Researchers have discovered an appetite suppressant that works in mice without the side effects of GLP-1 drugs.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "GLP-1 medications like Wegovy have unpleasant side effects, including reduced appetite and enjoyment of food.",
-      "platform": "Bluesky",
+      "text": "GLP-1 drugs negatively affect stem cell regeneration.",
+      "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

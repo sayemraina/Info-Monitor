@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 1,
-    "friction": 0.8,
+    "persistence_windows": 6,
+    "friction": 0.7222,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.3421,
+    "value": 0.1998,
     "confidence_interval": [
-      0.2178,
-      0.4664
+      0.0648,
+      0.3348
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3421
+      0.1998
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.8,
+    "value": 0.7222,
     "confidence_interval": [
-      0.71,
-      0.89
+      0.6264,
+      0.818
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.8
+      0.7222
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0.3,
     "confidence_interval": [
-      0,
-      0.1962
+      0.1725,
+      0.4275
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0.3
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9667,
     "confidence_interval": [
-      0.925,
+      0.8892,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9667
     ],
     "source_distribution": "production"
   },
@@ -120,20 +120,32 @@
     ]
   },
   "provenance": {
-    "first_platform": "Wttw News",
+    "first_platform": "X Platform",
     "first_timestamp": "2026-05-27T00:00:00Z",
     "lead_lag": [
       {
-        "platform": "U.S. Food And Drug Administrat",
-        "lag_hours": 2.0
+        "platform": "YouTube (Influencer Framing)",
+        "lag_hours": 4.0
       },
       {
-        "platform": "Nz Herald",
-        "lag_hours": 4.1
+        "platform": "Bluesky",
+        "lag_hours": 488.5
       },
       {
-        "platform": "Stocktwits",
-        "lag_hours": 8.8
+        "platform": "The Times Of India",
+        "lag_hours": 534.2
+      },
+      {
+        "platform": "Supplysidesj.Com",
+        "lag_hours": 580.7
+      },
+      {
+        "platform": "The Looker",
+        "lag_hours": 581.4
+      },
+      {
+        "platform": "Wttw News",
+        "lag_hours": 1277.7
       }
     ]
   },
@@ -141,32 +153,46 @@
     "concept_id": "concept_ozempic-glp1_004",
     "hops": [
       {
-        "platform": "Wttw News",
-        "timestamp": "2026-05-26T19:53:00+00:00",
+        "platform": "X Platform",
+        "timestamp": "2026-04-03T14:08:22+00:00",
         "claim_id": "ozempic-glp1_nz_herald_55aa6bc1_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "U.S. Food And Drug Administrat",
-        "timestamp": "2026-05-26T21:55:43+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-04-03T18:10:07+00:00",
         "claim_id": "ozempic-glp1_nz_herald_55aa6bc1_0",
-        "fidelity_to_origin": 0.8382,
-        "fidelity_to_previous": 0.8382
+        "fidelity_to_origin": 0.9978,
+        "fidelity_to_previous": 0.9978
       },
       {
-        "platform": "Nz Herald",
-        "timestamp": "2026-05-27T00:00:00+00:00",
+        "platform": "Bluesky",
+        "timestamp": "2026-04-23T22:35:58.776000+00:00",
         "claim_id": "ozempic-glp1_nz_herald_55aa6bc1_0",
-        "fidelity_to_origin": 0.6744,
-        "fidelity_to_previous": 0.8046
+        "fidelity_to_origin": 0.7342,
+        "fidelity_to_previous": 0.7358
       },
       {
-        "platform": "Stocktwits",
-        "timestamp": "2026-05-27T04:43:58+00:00",
+        "platform": "The Times Of India",
+        "timestamp": "2026-04-25T20:19:00+00:00",
         "claim_id": "ozempic-glp1_nz_herald_55aa6bc1_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.4448
+        "fidelity_to_origin": 0.7094,
+        "fidelity_to_previous": 0.9662
+      },
+      {
+        "platform": "Supplysidesj.Com",
+        "timestamp": "2026-04-27T18:49:48+00:00",
+        "claim_id": "ozempic-glp1_nz_herald_55aa6bc1_0",
+        "fidelity_to_origin": 0.6841,
+        "fidelity_to_previous": 0.9643
+      },
+      {
+        "platform": "The Looker",
+        "timestamp": "2026-04-27T19:32:11+00:00",
+        "claim_id": "ozempic-glp1_nz_herald_55aa6bc1_0",
+        "fidelity_to_origin": 0.6837,
+        "fidelity_to_previous": 0.9994
       }
     ],
     "observation_boundary": null
@@ -201,42 +227,47 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ozempic-glp1_wttw_news_6342c10d_1",
-      "similarity": 0.7741,
-      "text": "Increased accessibility of GLP-1 medications may pose risks to vulnerable populations."
+      "claim_id": "ozempic-glp1_x_bed2d113_0",
+      "similarity": 0.8133,
+      "text": "GLP-1 drugs are dangerous despite their effectiveness."
     },
     {
-      "claim_id": "ozempic-glp1_u.s._food_and_drug_administrat_840753a3_0",
-      "similarity": 0.7693,
-      "text": "Unapproved versions of GLP-1 drugs pose risks to patients due to the lack of FDA review for safety, effectiveness, and quality."
+      "claim_id": "ozempic-glp1_bluesky_f4736da7_0",
+      "similarity": 0.7861,
+      "text": "GLP-1 drugs like Ozempic, Mounjaro, Wegovy, and Olire require careful usage due to potential risks."
     },
     {
-      "claim_id": "ozempic-glp1_stocktwits_8940b299_0",
-      "similarity": 0.628,
-      "text": "Hims' revenue growth is dependent on GLP-1 drugs, which may face pricing pressure and increased competition."
+      "claim_id": "ozempic-glp1_bluesky_f296e9b0_1",
+      "similarity": 0.7746,
+      "text": "GLP-1 medications such as Ozempic and Mounjaro carry potential risks."
     },
     {
-      "claim_id": "ozempic-glp1_u.s._food_and_drug_administrat_840753a3_1",
-      "similarity": 0.5955,
-      "text": "Compounded GLP-1 drugs may have quality issues due to inadequate temperature control during shipping."
+      "claim_id": "ozempic-glp1_bluesky_8c82665c_1",
+      "similarity": 0.7746,
+      "text": "GLP-1 medications carry potential risks."
+    },
+    {
+      "claim_id": "ozempic-glp1_bluesky_d44fa9d6_1",
+      "similarity": 0.7746,
+      "text": "GLP-1 medications carry potential risks."
     }
   ],
   "example_content": [
     {
-      "text": "Hims' revenue growth is dependent on GLP-1 drugs, which may face pricing pressure and increased competition.",
-      "platform": "Stocktwits",
+      "text": "GLP-1 drugs are dangerous despite their effectiveness.",
+      "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Increased accessibility of GLP-1 medications may pose risks to vulnerable populations.",
-      "platform": "Wttw News",
-      "confidence": 0.8,
+      "text": "Compounded GLP-1 medications pose a significant public health risk.",
+      "platform": "X Platform",
+      "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Unapproved versions of GLP-1 drugs pose risks to patients due to the lack of FDA review for safety, effectiveness, and quality.",
-      "platform": "U.S. Food And Drug Administrat",
+      "text": "Concealing GLP-1 usage from surgeons can lead to fatal outcomes during operations.",
+      "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

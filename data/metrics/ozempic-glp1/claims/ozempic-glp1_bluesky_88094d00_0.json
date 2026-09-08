@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "ozempic-glp1_bluesky_88094d00_0",
-    "cluster_id": "",
-    "concept_id": "",
+    "cluster_id": "clu_ozempic-glp1_008",
+    "concept_id": "concept_ozempic-glp1_001",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-29T15:58:04.713Z",
     "source_document_id": "30b90fec57de484c",
@@ -35,10 +35,10 @@
       0.4232
     ],
     "source_distribution": "production",
-    "source_diversity": 0.25,
-    "bridge_ratio": 0.0,
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
     "persistence_windows": 15,
-    "friction": 0.1111,
+    "friction": 0.1782,
     "friction_quadrant": "dead"
   },
   "salience": {
@@ -55,15 +55,15 @@
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.1111,
+    "value": 0.1782,
     "confidence_interval": [
-      0,
-      0.2528
+      0.0416,
+      0.3148
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1111
+      0.1782
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9556,
+    "value": 0.9837,
     "confidence_interval": [
-      0.8773,
+      0.9075,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9556
+      0.9837
     ],
     "source_distribution": "production"
   },
@@ -120,22 +120,82 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
+    "first_platform": "Cnbc Business",
     "first_timestamp": "2026-04-29T15:58:04.713Z",
-    "lead_lag": []
-  },
-  "supply_chain": {
-    "concept_id": "",
-    "hops": [
+    "lead_lag": [
       {
         "platform": "Bluesky",
-        "timestamp": "2026-04-29T15:58:04.713Z",
+        "lag_hours": 45.6
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 46.6
+      },
+      {
+        "platform": "Wallstreet:Online",
+        "lag_hours": 851.4
+      },
+      {
+        "platform": "Finanznachrichten.De",
+        "lag_hours": 851.6
+      },
+      {
+        "platform": "Taiwan News",
+        "lag_hours": 851.7
+      },
+      {
+        "platform": "The Manila Times",
+        "lag_hours": 851.7
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_ozempic-glp1_001",
+    "hops": [
+      {
+        "platform": "Cnbc Business",
+        "timestamp": "2026-03-31T18:10:14+00:00",
         "claim_id": "ozempic-glp1_bluesky_88094d00_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-02T15:46:56.816000+00:00",
+        "claim_id": "ozempic-glp1_bluesky_88094d00_0",
+        "fidelity_to_origin": 0.9765,
+        "fidelity_to_previous": 0.9765
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-02T16:47:00+00:00",
+        "claim_id": "ozempic-glp1_bluesky_88094d00_0",
+        "fidelity_to_origin": 0.976,
+        "fidelity_to_previous": 0.9995
+      },
+      {
+        "platform": "Wallstreet:Online",
+        "timestamp": "2026-05-06T05:36:01+00:00",
+        "claim_id": "ozempic-glp1_bluesky_88094d00_0",
+        "fidelity_to_origin": 0.5612,
+        "fidelity_to_previous": 0.575
+      },
+      {
+        "platform": "Finanznachrichten.De",
+        "timestamp": "2026-05-06T05:46:00+00:00",
+        "claim_id": "ozempic-glp1_bluesky_88094d00_0",
+        "fidelity_to_origin": 0.5611,
+        "fidelity_to_previous": 0.9998
+      },
+      {
+        "platform": "Taiwan News",
+        "timestamp": "2026-05-06T05:49:15+00:00",
+        "claim_id": "ozempic-glp1_bluesky_88094d00_0",
+        "fidelity_to_origin": 0.561,
+        "fidelity_to_previous": 0.9998
       }
     ],
-    "observation_boundary": "No public antecedent detected"
+    "observation_boundary": null
   },
   "coordination": {
     "burstiness": {
@@ -167,48 +227,48 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ozempic-glp1_bluesky_75ca7249_0",
-      "similarity": 0.3799,
-      "text": "Ozempic is causing unhealthy weight loss and body image issues among young women."
+      "claim_id": "ozempic-glp1_bluesky_1b2b9e4f_0",
+      "similarity": 0.5648,
+      "text": "Roche's CT-388 is a promising drug for obesity treatment."
     },
     {
-      "claim_id": "ozempic-glp1_bluesky_fdfa0f96_0",
-      "similarity": 0.3738,
-      "text": "The use of Ozempic by already thin individuals is likely driven by the intense pressure to conform to beauty standards, particularly in environments like Hollywood."
+      "claim_id": "ozempic-glp1_bluesky_6142966a_0",
+      "similarity": 0.4417,
+      "text": "Wegovy is not effectively suppressing my appetite."
     },
     {
-      "claim_id": "ozempic-glp1_bluesky_456e76e5_0",
-      "similarity": 0.3339,
-      "text": "The increasing popularity of weight loss drugs like Ozempic and the potential return of 'heroin chic' body ideals are motivating me to embrace and be content with my non-thin body."
+      "claim_id": "ozempic-glp1_bluesky_97538db3_0",
+      "similarity": 0.3547,
+      "text": "Wegovy is effective for weight management."
     },
     {
-      "claim_id": "ozempic-glp1_bluesky_cdf89aca_0",
-      "similarity": 0.3183,
-      "text": "Ozempic and similar drugs have significantly reduced food and beverage deliveries in the U.S."
+      "claim_id": "ozempic-glp1_bluesky_68eac903_0",
+      "similarity": 0.3371,
+      "text": "Novo Nordisk believes its Wegovy pill is superior to Eli Lilly's new obesity drug."
     },
     {
-      "claim_id": "ozempic-glp1_bluesky_0250536a_0",
-      "similarity": 0.2722,
-      "text": "Ozempic is not a universally suitable weight loss solution."
+      "claim_id": "ozempic-glp1_bluesky_d13fdee4_0",
+      "similarity": 0.323,
+      "text": "Wegovy is not effective for weight loss."
     }
   ],
   "example_content": [
     {
-      "text": "Ozempic and similar drugs have significantly reduced food and beverage deliveries in the U.S.",
+      "text": "Roche's CT-388 is a promising drug for obesity treatment.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The use of Ozempic by already thin individuals is likely driven by the intense pressure to conform to beauty standards, particularly in environments like Hollywood.",
+      "text": "Wegovy is not effectively suppressing my appetite.",
       "platform": "Bluesky",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "is_influencer_framing": false
     },
     {
-      "text": "Ozempic is not a universally suitable weight loss solution.",
+      "text": "Wegovy is not effective for weight loss.",
       "platform": "Bluesky",
-      "confidence": 0.7,
+      "confidence": 0.6,
       "is_influencer_framing": false
     }
   ]

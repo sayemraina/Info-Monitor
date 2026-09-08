@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "crypto-digital-money_bluesky_958c0aa6_0",
-    "cluster_id": "clu_crypto-digital-money_038",
-    "concept_id": "concept_crypto-digital-money_035",
+    "cluster_id": "clu_crypto-digital-money_055",
+    "concept_id": "concept_crypto-digital-money_003",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-03T17:11:12.712Z",
     "source_document_id": "958c0aa6ba630658",
@@ -35,48 +35,48 @@
       0.48
     ],
     "source_distribution": "production",
-    "source_diversity": 0.75,
-    "bridge_ratio": 0.75,
-    "persistence_windows": 3,
-    "friction": 0,
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 15,
+    "friction": 0.0781,
     "friction_quadrant": "dead"
   },
   "salience": {
-    "value": 0.2783,
+    "value": 0.5917,
     "confidence_interval": [
-      0.1492,
-      0.4074
+      0.4861,
+      0.6973
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2783
+      0.5917
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0,
+    "value": 0.0781,
     "confidence_interval": [
       0,
-      0.15
+      0.2222
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.0781
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.15,
+    "value": 0.75,
     "confidence_interval": [
-      0.0112,
-      0.2888
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.15
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.985,
     "confidence_interval": [
-      0.925,
+      0.9089,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.985
     ],
     "source_distribution": "production"
   },
@@ -123,37 +123,74 @@
     "lead_lag": [
       {
         "platform": "Bluesky",
-        "lag_hours": 643.1
+        "lag_hours": 6256.6
+      },
+      {
+        "platform": "News.Bloomberglaw.Com",
+        "lag_hours": 6320.9
       },
       {
         "platform": "X Platform",
-        "lag_hours": 651.2
+        "lag_hours": 6321.2
+      },
+      {
+        "platform": "Techbullion",
+        "lag_hours": 6866.7
+      },
+      {
+        "platform": "Crypto Economy",
+        "lag_hours": 6900.0
+      },
+      {
+        "platform": "Weekly Voice",
+        "lag_hours": 6946.7
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_crypto-digital-money_035",
+    "concept_id": "concept_crypto-digital-money_003",
     "hops": [
       {
         "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2026-03-07T14:00:18+00:00",
+        "timestamp": "2025-07-14T07:30:11+00:00",
         "claim_id": "crypto-digital-money_bluesky_958c0aa6_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
         "platform": "Bluesky",
-        "timestamp": "2026-04-03T09:08:32.977000+00:00",
+        "timestamp": "2026-04-01T00:07:02.296000+00:00",
         "claim_id": "crypto-digital-money_bluesky_958c0aa6_0",
-        "fidelity_to_origin": 0.3087,
-        "fidelity_to_previous": 0.3087
+        "fidelity_to_origin": 0.3695,
+        "fidelity_to_previous": 0.3695
+      },
+      {
+        "platform": "News.Bloomberglaw.Com",
+        "timestamp": "2026-04-03T16:23:15+00:00",
+        "claim_id": "crypto-digital-money_bluesky_958c0aa6_0",
+        "fidelity_to_origin": 0.3631,
+        "fidelity_to_previous": 0.9827
       },
       {
         "platform": "X Platform",
-        "timestamp": "2026-04-03T17:12:42+00:00",
+        "timestamp": "2026-04-03T16:43:09+00:00",
         "claim_id": "crypto-digital-money_bluesky_958c0aa6_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9718
+        "fidelity_to_origin": 0.363,
+        "fidelity_to_previous": 0.9997
+      },
+      {
+        "platform": "Techbullion",
+        "timestamp": "2026-04-26T10:14:14+00:00",
+        "claim_id": "crypto-digital-money_bluesky_958c0aa6_0",
+        "fidelity_to_origin": 0.3081,
+        "fidelity_to_previous": 0.8488
+      },
+      {
+        "platform": "Crypto Economy",
+        "timestamp": "2026-04-27T19:30:00+00:00",
+        "claim_id": "crypto-digital-money_bluesky_958c0aa6_0",
+        "fidelity_to_origin": 0.3047,
+        "fidelity_to_previous": 0.989
       }
     ],
     "observation_boundary": null
@@ -198,11 +235,6 @@
       "text": "Cryptocurrencies are a legitimate investment opportunity."
     },
     {
-      "claim_id": "crypto-digital-money_x_7b476da6_0",
-      "similarity": 0.7219,
-      "text": "Long-term holding and free mining are effective strategies for success in the cryptocurrency market."
-    },
-    {
       "claim_id": "crypto-digital-money_bluesky_6cbcb12c_0",
       "similarity": 0.6886,
       "text": "Binance and Solana adopted different strategies regarding memecoins due to differing views on regulation, timing, and risk."
@@ -211,6 +243,11 @@
       "claim_id": "crypto-digital-money_bluesky_630811f9_0",
       "similarity": 0.6748,
       "text": "Purchasing cryptocurrencies is a sound investment strategy."
+    },
+    {
+      "claim_id": "crypto-digital-money_bluesky_59582eb9_0",
+      "similarity": 0.6182,
+      "text": "Success in cryptocurrency investing requires patience for ideas and strategies to mature."
     }
   ],
   "example_content": [
@@ -221,15 +258,15 @@
       "is_influencer_framing": false
     },
     {
-      "text": "Long-term cryptocurrency holders are not currently selling their assets.",
+      "text": "On-chain data is more reliable than price action for understanding cryptocurrency.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Cryptocurrencies are promising investment opportunities.",
+      "text": "Long-term cryptocurrency holders are not currently selling their assets.",
       "platform": "Bluesky",
-      "confidence": 0.6,
+      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

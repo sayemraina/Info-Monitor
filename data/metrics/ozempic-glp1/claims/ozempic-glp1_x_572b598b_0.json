@@ -9,7 +9,7 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "ozempic-glp1_x_572b598b_0",
-    "cluster_id": "clu_ozempic-glp1_023",
+    "cluster_id": "clu_ozempic-glp1_011",
     "concept_id": "concept_ozempic-glp1_002",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-05-06T05:08:11.000Z",
@@ -35,48 +35,48 @@
       0.645
     ],
     "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 1,
-    "friction": 0.6,
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 15,
+    "friction": 0.6667,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.3203,
+    "value": 0.6782,
     "confidence_interval": [
-      0.1943,
-      0.4463
+      0.5791,
+      0.7773
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3203
+      0.6782
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.6,
+    "value": 0.6667,
     "confidence_interval": [
-      0.495,
-      0.705
+      0.5667,
+      0.7667
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.6
+      0.6667
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0.75,
     "confidence_interval": [
-      0,
-      0.1962
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9737,
+    "value": 0.9547,
     "confidence_interval": [
-      0.8967,
+      0.8763,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9737
+      0.9547
     ],
     "source_distribution": "production"
   },
@@ -120,12 +120,20 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
+    "first_platform": "YouTube (Influencer Framing)",
     "first_timestamp": "2026-05-06T05:08:11.000Z",
     "lead_lag": [
       {
+        "platform": "Bluesky",
+        "lag_hours": 7300.2
+      },
+      {
         "platform": "X Platform",
-        "lag_hours": 8.4
+        "lag_hours": 7313.3
+      },
+      {
+        "platform": "Sgt Report",
+        "lag_hours": 7940.7
       }
     ]
   },
@@ -133,18 +141,32 @@
     "concept_id": "concept_ozempic-glp1_002",
     "hops": [
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-05-05T17:29:43.712000+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2025-06-02T18:00:29+00:00",
         "claim_id": "ozempic-glp1_x_572b598b_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-02T22:13:11.959000+00:00",
+        "claim_id": "ozempic-glp1_x_572b598b_0",
+        "fidelity_to_origin": 0.3565,
+        "fidelity_to_previous": 0.3565
+      },
+      {
         "platform": "X Platform",
-        "timestamp": "2026-05-06T01:51:37+00:00",
+        "timestamp": "2026-04-03T11:17:20+00:00",
+        "claim_id": "ozempic-glp1_x_572b598b_0",
+        "fidelity_to_origin": 0.3553,
+        "fidelity_to_previous": 0.9966
+      },
+      {
+        "platform": "Sgt Report",
+        "timestamp": "2026-04-29T14:40:38+00:00",
         "claim_id": "ozempic-glp1_x_572b598b_0",
         "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
+        "fidelity_to_previous": 0.8444
       }
     ],
     "observation_boundary": null
@@ -179,43 +201,48 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ozempic-glp1_x_685770da_0",
-      "similarity": 0.7554,
-      "text": "The user is unwilling to use Ozempic due to concerns about potential negative effects or challenges."
+      "claim_id": "ozempic-glp1_x_8046a8ea_0",
+      "similarity": 0.8139,
+      "text": "Ozempic can cause negative psychological side effects."
     },
     {
-      "claim_id": "ozempic-glp1_bluesky_7305e681_0",
-      "similarity": 0.7359,
-      "text": "GLP-1 medications, like Ozempic, used for type 2 diabetes and weight loss, may have unforeseen negative consequences."
+      "claim_id": "ozempic-glp1_x_10a79a1a_0",
+      "similarity": 0.7729,
+      "text": "The use of Ozempic can lead to undesirable personality changes, such as laziness."
     },
     {
-      "claim_id": "ozempic-glp1_bluesky_1969f952_0",
-      "similarity": 0.7359,
-      "text": "GLP-1 medications, like Ozempic, may have unforeseen negative consequences."
+      "claim_id": "ozempic-glp1_bluesky_42682cbe_0",
+      "similarity": 0.7714,
+      "text": "Ozempic has significant negative side effects."
     },
     {
-      "claim_id": "ozempic-glp1_bluesky_ba9a1552_1",
-      "similarity": 0.7132,
-      "text": "Celebrities using Ozempic are unattractive and negatively impacting cultural events."
+      "claim_id": "ozempic-glp1_x_d09b9aeb_0",
+      "similarity": 0.7577,
+      "text": "Ozempic has significant negative consequences for individuals."
+    },
+    {
+      "claim_id": "ozempic-glp1_x_c74371a2_0",
+      "similarity": 0.7131,
+      "text": "Ozempic's side effects on physical appearance are worth the improvement in overall well-being."
     }
   ],
   "example_content": [
     {
-      "text": "GLP-1 medications, like Ozempic, used for type 2 diabetes and weight loss, may have unforeseen negative consequences.",
+      "text": "Ozempic has significant negative side effects.",
       "platform": "Bluesky",
-      "confidence": 0.8,
+      "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "GLP-1 medications, like Ozempic, may have unforeseen negative consequences.",
-      "platform": "Bluesky",
-      "confidence": 0.8,
+      "text": "Ozempic has dangerous side effects.",
+      "platform": "X Platform",
+      "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Celebrities using Ozempic are unattractive and negatively impacting cultural events.",
-      "platform": "Bluesky",
-      "confidence": 0.8,
+      "text": "Ozempic has significant negative consequences for individuals.",
+      "platform": "X Platform",
+      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

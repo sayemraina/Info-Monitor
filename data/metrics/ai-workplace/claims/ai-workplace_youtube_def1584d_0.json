@@ -24,107 +24,94 @@
     "source_type": "elite_media"
   },
   "momentum": {
-    "value": null,
+    "value": 0.82,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.72,
+      0.92
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.82
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 7,
+    "friction": 0.1818,
+    "friction_quadrant": "unopposed_advance"
+  },
+  "salience": {
+    "value": 0.2515,
+    "confidence_interval": [
+      0.1204,
+      0.3826
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.2515
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.1818,
+    "confidence_interval": [
+      0.0454,
+      0.3182
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.1818
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.35,
+    "confidence_interval": [
+      0.2263,
+      0.4737
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.35
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.5,
     "confidence_interval": [
-      0,
-      0
+      0.3875,
+      0.6125
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.5
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 1,
     "confidence_interval": [
-      0,
-      0
+      0.925,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      1
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,21 +120,156 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "YouTube (Influencer Framing)",
+    "first_timestamp": "2026-02-11T17:30:00Z",
+    "lead_lag": [
+      {
+        "platform": "Hindustan Times",
+        "lag_hours": 734.6
+      },
+      {
+        "platform": "Yahoo",
+        "lag_hours": 890.2
+      },
+      {
+        "platform": "Bluesky",
+        "lag_hours": 1026.3
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 1508.9
+      },
+      {
+        "platform": "Yourtango",
+        "lag_hours": 1583.8
+      },
+      {
+        "platform": "News18",
+        "lag_hours": 1815.6
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_ai-workplace_005",
+    "hops": [
+      {
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-02-11T17:30:00+00:00",
+        "claim_id": "ai-workplace_youtube_def1584d_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Hindustan Times",
+        "timestamp": "2026-03-14T08:03:22+00:00",
+        "claim_id": "ai-workplace_youtube_def1584d_0",
+        "fidelity_to_origin": 0.7911,
+        "fidelity_to_previous": 0.7911
+      },
+      {
+        "platform": "Yahoo",
+        "timestamp": "2026-03-20T19:39:09+00:00",
+        "claim_id": "ai-workplace_youtube_def1584d_0",
+        "fidelity_to_origin": 0.7468,
+        "fidelity_to_previous": 0.944
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-03-26T11:46:24.474000+00:00",
+        "claim_id": "ai-workplace_youtube_def1584d_0",
+        "fidelity_to_origin": 0.7081,
+        "fidelity_to_previous": 0.9482
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-15T14:25:43+00:00",
+        "claim_id": "ai-workplace_youtube_def1584d_0",
+        "fidelity_to_origin": 0.5708,
+        "fidelity_to_previous": 0.8061
+      },
+      {
+        "platform": "Yourtango",
+        "timestamp": "2026-04-18T17:15:02+00:00",
+        "claim_id": "ai-workplace_youtube_def1584d_0",
+        "fidelity_to_origin": 0.5495,
+        "fidelity_to_previous": 0.9627
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
-  "semantic_neighbors": [],
-  "example_content": []
+  "semantic_neighbors": [
+    {
+      "claim_id": "ai-workplace_bluesky_285d62ca_1",
+      "similarity": 0.5742,
+      "text": "Corporations are suppressing wages."
+    },
+    {
+      "claim_id": "ai-workplace_x_66f5b649_2",
+      "similarity": 0.5352,
+      "text": "The traditional distinction between graduate and non-graduate jobs is no longer relevant."
+    },
+    {
+      "claim_id": "ai-workplace_bluesky_327b7afa_0",
+      "similarity": 0.5184,
+      "text": "A high percentage of employed graduates are working in jobs that do not require a degree."
+    },
+    {
+      "claim_id": "ai-workplace_bluesky_327b7afa_1",
+      "similarity": 0.5084,
+      "text": "The job market for young graduates is currently poor."
+    },
+    {
+      "claim_id": "ai-workplace_hindustan_times_d8d7b23c_1",
+      "similarity": 0.3757,
+      "text": "Rising energy prices are increasing construction costs for developers."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "A high percentage of employed graduates are working in jobs that do not require a degree.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The job market for young graduates is currently poor.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "California renters are increasingly choosing to move within the state rather than leaving for other states.",
+      "platform": "Yahoo",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
 }

@@ -24,107 +24,94 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": null,
+    "value": 0.54,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.44,
+      0.64
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.54
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 13,
+    "friction": 0.4615,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.4458,
+    "confidence_interval": [
+      0.3292,
+      0.5624
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.4458
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.4615,
+    "confidence_interval": [
+      0.3461,
+      0.5769
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.4615
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.65,
+    "confidence_interval": [
+      0.5487,
+      0.7513
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.65
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.5,
     "confidence_interval": [
-      0,
-      0
+      0.3875,
+      0.6125
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.5
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 1,
     "confidence_interval": [
-      0,
-      0
+      0.925,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      1
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,63 +120,153 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-04-25T15:45:27+00:00",
+    "lead_lag": [
+      {
+        "platform": "X Platform",
+        "lag_hours": 195.4
+      },
+      {
+        "platform": "Digit",
+        "lag_hours": 519.9
+      },
+      {
+        "platform": "Mashable Me",
+        "lag_hours": 647.9
+      },
+      {
+        "platform": "International Business Times",
+        "lag_hours": 692.8
+      },
+      {
+        "platform": "Cybernews",
+        "lag_hours": 941.9
+      },
+      {
+        "platform": "Modern Ghana Media Communicati",
+        "lag_hours": 1298.8
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_ai-workplace_002",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-03-26T12:36:24.773000+00:00",
+        "claim_id": "ai-workplace_bluesky_d288937b_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-03T16:02:51+00:00",
+        "claim_id": "ai-workplace_bluesky_d288937b_0",
+        "fidelity_to_origin": 0.8968,
+        "fidelity_to_previous": 0.8968
+      },
+      {
+        "platform": "Digit",
+        "timestamp": "2026-04-17T04:31:36+00:00",
+        "claim_id": "ai-workplace_bluesky_d288937b_0",
+        "fidelity_to_origin": 0.7255,
+        "fidelity_to_previous": 0.809
+      },
+      {
+        "platform": "Mashable Me",
+        "timestamp": "2026-04-22T12:30:18+00:00",
+        "claim_id": "ai-workplace_bluesky_d288937b_0",
+        "fidelity_to_origin": 0.658,
+        "fidelity_to_previous": 0.907
+      },
+      {
+        "platform": "International Business Times",
+        "timestamp": "2026-04-24T09:25:21+00:00",
+        "claim_id": "ai-workplace_bluesky_d288937b_0",
+        "fidelity_to_origin": 0.6343,
+        "fidelity_to_previous": 0.964
+      },
+      {
+        "platform": "Cybernews",
+        "timestamp": "2026-05-04T18:29:00+00:00",
+        "claim_id": "ai-workplace_bluesky_d288937b_0",
+        "fidelity_to_origin": 0.5028,
+        "fidelity_to_previous": 0.7927
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-workplace_bluesky_b9937d7f_1",
-      "similarity": 0.5903,
-      "text": "AI models will continue to displace human workers, even if the AI investment bubble bursts."
+      "claim_id": "ai-workplace_bluesky_082e4f7b_1",
+      "similarity": 0.6266,
+      "text": "Companies are training children to use AI to replace human workers."
     },
     {
-      "claim_id": "ai-workplace_bluesky_268e6deb_0",
-      "similarity": 0.5796,
-      "text": "The ultimate aim of AI development is to replace human workers entirely, not just specific jobs."
+      "claim_id": "ai-workplace_bluesky_b1f7389c_0",
+      "similarity": 0.5598,
+      "text": "Companies are prioritizing investment in AI infrastructure over their existing workforce."
     },
     {
-      "claim_id": "ai-workplace_bluesky_bb1d5a27_0",
-      "similarity": 0.4753,
-      "text": "Some tech workers are being reassigned to generate content solely for AI training purposes."
+      "claim_id": "ai-workplace_bluesky_bfba10e6_2",
+      "similarity": 0.5046,
+      "text": "Claims made by companies regarding advancements in AI labor require careful examination."
     },
     {
-      "claim_id": "ai-workplace_bluesky_2c61fd03_0",
-      "similarity": 0.4101,
-      "text": "AI-generated content is often believable but inaccurate."
+      "claim_id": "ai-workplace_x_67b87f8a_1",
+      "similarity": 0.43,
+      "text": "The cost of AI models has significantly decreased in recent years."
     },
     {
-      "claim_id": "ai-workplace_bluesky_aab1e1f0_0",
-      "similarity": 0.3975,
-      "text": "Large language models will not replace most jobs in the near future."
+      "claim_id": "ai-workplace_bluesky_6d466b02_0",
+      "similarity": 0.4106,
+      "text": "Interacting with AI models through conversation increases the risk of inaccurate or nonsensical outputs."
     }
   ],
   "example_content": [
     {
-      "text": "AI models will continue to displace human workers, even if the AI investment bubble bursts.",
+      "text": "Claims made by companies regarding advancements in AI labor require careful examination.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The ultimate aim of AI development is to replace human workers entirely, not just specific jobs.",
+      "text": "Companies are prioritizing investment in AI infrastructure over their existing workforce.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Large language models will not replace most jobs in the near future.",
+      "text": "Interacting with AI models through conversation increases the risk of inaccurate or nonsensical outputs.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

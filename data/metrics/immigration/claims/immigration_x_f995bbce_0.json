@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "immigration_x_f995bbce_0",
-    "cluster_id": "clu_immigration_018",
-    "concept_id": "concept_immigration_006",
+    "cluster_id": "clu_immigration_053",
+    "concept_id": "concept_immigration_007",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-03T08:15:56.000Z",
     "source_document_id": "x_2039980205377216875",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 8,
-    "friction": 0.6923,
+    "persistence_windows": 15,
+    "friction": 0.537,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.229,
+    "value": 0.5103,
     "confidence_interval": [
-      0.0962,
-      0.3618
+      0.3986,
+      0.622
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.229
+      0.5103
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.6923,
+    "value": 0.537,
     "confidence_interval": [
-      0.5942,
-      0.7904
+      0.4273,
+      0.6467
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.6923
+      0.537
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.4,
+    "value": 0.75,
     "confidence_interval": [
-      0.28,
-      0.52
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.4
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9865,
+    "value": 0.9811,
     "confidence_interval": [
-      0.9105,
+      0.9047,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9865
+      0.9811
     ],
     "source_distribution": "production"
   },
@@ -120,64 +120,75 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
+    "first_platform": "YouTube (Influencer Framing)",
     "first_timestamp": "2026-04-03T08:15:56.000Z",
     "lead_lag": [
       {
         "platform": "X Platform",
-        "lag_hours": 2.0
+        "lag_hours": 1559.1
       },
       {
-        "platform": "YouTube (Influencer Framing)",
-        "lag_hours": 27.5
-      },
-      {
-        "platform": "The Financial Express",
-        "lag_hours": 33.9
+        "platform": "Bluesky",
+        "lag_hours": 1561.5
       },
       {
         "platform": "Yahoo",
-        "lag_hours": 35.2
+        "lag_hours": 2856.6
+      },
+      {
+        "platform": "Business Insider",
+        "lag_hours": 2856.6
+      },
+      {
+        "platform": "Star Tribune",
+        "lag_hours": 2860.3
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_immigration_006",
+    "concept_id": "concept_immigration_007",
     "hops": [
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-02T02:31:45.801000+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-01-27T21:04:47+00:00",
         "claim_id": "immigration_x_f995bbce_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
         "platform": "X Platform",
-        "timestamp": "2026-04-02T04:31:40+00:00",
+        "timestamp": "2026-04-02T20:12:11+00:00",
         "claim_id": "immigration_x_f995bbce_0",
-        "fidelity_to_origin": 0.9603,
-        "fidelity_to_previous": 0.9603
+        "fidelity_to_origin": 0.6184,
+        "fidelity_to_previous": 0.6184
       },
       {
-        "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2026-04-03T06:00:27+00:00",
+        "platform": "Bluesky",
+        "timestamp": "2026-04-02T22:36:48.606000+00:00",
         "claim_id": "immigration_x_f995bbce_0",
-        "fidelity_to_origin": 0.454,
-        "fidelity_to_previous": 0.4728
-      },
-      {
-        "platform": "The Financial Express",
-        "timestamp": "2026-04-03T12:24:39+00:00",
-        "claim_id": "immigration_x_f995bbce_0",
-        "fidelity_to_origin": 0.3268,
-        "fidelity_to_previous": 0.7198
+        "fidelity_to_origin": 0.6178,
+        "fidelity_to_previous": 0.999
       },
       {
         "platform": "Yahoo",
-        "timestamp": "2026-04-03T13:45:27+00:00",
+        "timestamp": "2026-05-26T21:40:06+00:00",
+        "claim_id": "immigration_x_f995bbce_0",
+        "fidelity_to_origin": 0.3009,
+        "fidelity_to_previous": 0.4871
+      },
+      {
+        "platform": "Business Insider",
+        "timestamp": "2026-05-26T21:40:06+00:00",
+        "claim_id": "immigration_x_f995bbce_0",
+        "fidelity_to_origin": 0.3009,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Star Tribune",
+        "timestamp": "2026-05-27T01:23:41+00:00",
         "claim_id": "immigration_x_f995bbce_0",
         "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.918
+        "fidelity_to_previous": 0.997
       }
     ],
     "observation_boundary": null
@@ -212,46 +223,46 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "immigration_bluesky_2e411ad6_0",
-      "similarity": 0.6645,
-      "text": "The individual opposes immigration."
+      "claim_id": "immigration_x_779fccb5_1",
+      "similarity": 0.7198,
+      "text": "The Japanese government is accepting immigrants despite claiming to not have an immigration policy."
     },
     {
-      "claim_id": "immigration_bluesky_55809f5e_0",
-      "similarity": 0.6092,
-      "text": "Donald Trump's immigration policy is unpopular."
+      "claim_id": "immigration_x_f995bbce_1",
+      "similarity": 0.6598,
+      "text": "The Japanese media is deliberately suppressing information about anti-immigration protests."
     },
     {
-      "claim_id": "immigration_bluesky_85ea6ec9_0",
-      "similarity": 0.5918,
-      "text": "A significant portion of the working class supports anti-immigrant political parties and holds anti-immigrant views."
+      "claim_id": "immigration_x_b9e267be_0",
+      "similarity": 0.5115,
+      "text": "Changes in U.S. immigration policy have created uncertainty and legal challenges for asylum seekers."
     },
     {
-      "claim_id": "immigration_bluesky_c1f6a560_1",
-      "similarity": 0.5136,
-      "text": "Geographic isolation increases perceived threats from immigration."
+      "claim_id": "immigration_bluesky_055aabf1_0",
+      "similarity": 0.5015,
+      "text": "Current immigration policies are creating disorder and instability."
     },
     {
-      "claim_id": "immigration_bluesky_3bb677c9_0",
-      "similarity": 0.4961,
-      "text": "Perceptions of immigration as orderly are influenced by political narratives rather than actual policy or language."
+      "claim_id": "immigration_x_15b24a9f_0",
+      "similarity": 0.4843,
+      "text": "Criticism of immigration policy by right-wing individuals is motivated by factors other than the actual level of immigration."
     }
   ],
   "example_content": [
     {
-      "text": "Geographic isolation increases perceived threats from immigration.",
+      "text": "Current immigration policies are creating disorder and instability.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Perceptions of immigration as orderly are influenced by political narratives rather than actual policy or language.",
+      "text": "Trump's immigration policies create uncertainty for international students in the US.",
       "platform": "Bluesky",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "is_influencer_framing": false
     },
     {
-      "text": "Donald Trump's immigration policy is unpopular.",
+      "text": "The Trump administration attempted to justify its punitive immigration policies by claiming they were consistent with the Constitution, despite lacking legal basis.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

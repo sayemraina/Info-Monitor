@@ -35,48 +35,48 @@
       0.54
     ],
     "source_distribution": "production",
-    "source_diversity": 0.25,
-    "bridge_ratio": 0.25,
-    "persistence_windows": 2,
-    "friction": 0.8333,
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 12,
+    "friction": 0.8889,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.4501,
+    "value": 0.4115,
     "confidence_interval": [
-      0.3339,
-      0.5663
+      0.2924,
+      0.5306
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.4501
+      0.4115
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.8333,
+    "value": 0.8889,
     "confidence_interval": [
-      0.7458,
-      0.9208
+      0.8056,
+      0.9722
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.8333
+      0.8889
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.1,
+    "value": 0.6,
     "confidence_interval": [
-      0,
-      0.2425
+      0.495,
+      0.705
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1
+      0.6
     ],
     "source_distribution": "production"
   },
@@ -120,22 +120,56 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
+    "first_platform": "Indy Week",
     "first_timestamp": "2026-05-26T21:18:26.788Z",
-    "lead_lag": []
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 152.9
+      },
+      {
+        "platform": "Mashable Me",
+        "lag_hours": 783.3
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 947.4
+      }
+    ]
   },
   "supply_chain": {
     "concept_id": "concept_ai-workplace_006",
     "hops": [
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-05-26T15:53:30.565000+00:00",
+        "platform": "Indy Week",
+        "timestamp": "2026-03-20T21:10:25+00:00",
         "claim_id": "ai-workplace_bluesky_256957f6_1",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-03-27T06:01:25.567000+00:00",
+        "claim_id": "ai-workplace_bluesky_256957f6_1",
+        "fidelity_to_origin": 0.8871,
+        "fidelity_to_previous": 0.8871
+      },
+      {
+        "platform": "Mashable Me",
+        "timestamp": "2026-04-22T12:30:18+00:00",
+        "claim_id": "ai-workplace_bluesky_256957f6_1",
+        "fidelity_to_origin": 0.4212,
+        "fidelity_to_previous": 0.4748
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-29T08:31:27+00:00",
+        "claim_id": "ai-workplace_bluesky_256957f6_1",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.7123
       }
     ],
-    "observation_boundary": "No public antecedent detected"
+    "observation_boundary": null
   },
   "coordination": {
     "burstiness": {
@@ -167,47 +201,47 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-workplace_bluesky_f18f1053_1",
-      "similarity": 0.4312,
-      "text": "People are not against AI, but against the misleading narratives promoted by billionaires."
+      "claim_id": "ai-workplace_bluesky_1c0b35c9_0",
+      "similarity": 0.4244,
+      "text": "Elites intentionally impoverish and under-educate the population to maintain control."
     },
     {
-      "claim_id": "ai-workplace_bluesky_c735afe3_0",
-      "similarity": 0.3316,
-      "text": "Politicians' justifications for corporate tax breaks and the adoption of AI are inconsistent and disingenuous."
+      "claim_id": "ai-workplace_bluesky_5a778a88_1",
+      "similarity": 0.3903,
+      "text": "Elites are preparing for societal collapse while simultaneously implementing policies that may cause it."
     },
     {
-      "claim_id": "ai-workplace_bluesky_8cc473a6_0",
-      "similarity": 0.1825,
-      "text": "Donald Trump's economic policies will cause job losses."
+      "claim_id": "ai-workplace_bluesky_67197871_1",
+      "similarity": 0.3531,
+      "text": "Billionaires are influencing policy to favor the development and deployment of AI."
     },
     {
-      "claim_id": "ai-workplace_bluesky_94b68fe4_1",
-      "similarity": 0.1631,
-      "text": "The president's foreign policy has destabilized the oil market."
+      "claim_id": "ai-workplace_bluesky_1912ab54_0",
+      "similarity": 0.3387,
+      "text": "A tax on AI profits to redistribute wealth lost from AI-driven job displacement is likely."
     },
     {
-      "claim_id": "ai-workplace_bluesky_27ce6f3f_1",
-      "similarity": 0.1617,
-      "text": "Trump's policies will cause a permanent recession."
+      "claim_id": "ai-workplace_bluesky_5a778a88_0",
+      "similarity": 0.3189,
+      "text": "Elites are promoting contradictory social policies regarding birth rates and automation."
     }
   ],
   "example_content": [
     {
-      "text": "Politicians' justifications for corporate tax breaks and the adoption of AI are inconsistent and disingenuous.",
+      "text": "The Republican Party has a plan to fundamentally change America.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Donald Trump's economic policies will cause job losses.",
+      "text": "A tax on AI profits to redistribute wealth lost from AI-driven job displacement is likely.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Trump's policies will cause a permanent recession.",
-      "platform": "Bluesky",
+      "text": "Federal funding cuts under the Trump administration led to job losses in the Research Triangle Park area.",
+      "platform": "Indy Week",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

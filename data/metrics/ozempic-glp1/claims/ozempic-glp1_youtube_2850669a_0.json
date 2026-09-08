@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "ozempic-glp1_youtube_2850669a_0",
-    "cluster_id": "clu_ozempic-glp1_015",
-    "concept_id": "concept_ozempic-glp1_007",
+    "cluster_id": "clu_ozempic-glp1_050",
+    "concept_id": "concept_ozempic-glp1_004",
     "first_seen_platform": "youtube",
     "first_seen_timestamp": "2025-09-05T15:52:45Z",
     "source_document_id": "yt_yDk8AzR1-5s",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 8,
-    "friction": 0.4231,
-    "friction_quadrant": "contested_advance"
+    "persistence_windows": 13,
+    "friction": 0.225,
+    "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 0.2884,
+    "value": 0.411,
     "confidence_interval": [
-      0.16,
-      0.4168
+      0.2918,
+      0.5302
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2884
+      0.411
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.4231,
+    "value": 0.225,
     "confidence_interval": [
-      0.3048,
-      0.5414
+      0.0919,
+      0.3581
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.4231
+      0.225
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.4,
+    "value": 0.65,
     "confidence_interval": [
-      0.28,
-      0.52
+      0.5487,
+      0.7513
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.4
+      0.65
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9706,
+    "value": 0.9667,
     "confidence_interval": [
-      0.8934,
+      0.8892,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9706
+      0.9667
     ],
     "source_distribution": "production"
   },
@@ -124,21 +124,33 @@
     "first_timestamp": "2025-09-05T15:52:45Z",
     "lead_lag": [
       {
-        "platform": "Economist Tech",
-        "lag_hours": 4538.2
-      },
-      {
         "platform": "Bluesky",
         "lag_hours": 5018.9
       },
       {
         "platform": "X Platform",
-        "lag_hours": 5025.9
+        "lag_hours": 5039.4
+      },
+      {
+        "platform": "U.S. Food And Drug Administrat",
+        "lag_hours": 5040.4
+      },
+      {
+        "platform": "Edmonton Sun",
+        "lag_hours": 5571.3
+      },
+      {
+        "platform": "News Directory 3",
+        "lag_hours": 5574.0
+      },
+      {
+        "platform": "Aboutlawsuits.Com",
+        "lag_hours": 5613.1
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_ozempic-glp1_007",
+    "concept_id": "concept_ozempic-glp1_004",
     "hops": [
       {
         "platform": "YouTube (Influencer Framing)",
@@ -148,25 +160,39 @@
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Economist Tech",
-        "timestamp": "2026-03-13T18:07:08+00:00",
-        "claim_id": "ozempic-glp1_youtube_2850669a_0",
-        "fidelity_to_origin": 0.3679,
-        "fidelity_to_previous": 0.3679
-      },
-      {
         "platform": "Bluesky",
         "timestamp": "2026-04-02T18:46:02.299000+00:00",
         "claim_id": "ozempic-glp1_youtube_2850669a_0",
-        "fidelity_to_origin": 0.301,
-        "fidelity_to_previous": 0.8182
+        "fidelity_to_origin": 0.4448,
+        "fidelity_to_previous": 0.4448
       },
       {
         "platform": "X Platform",
-        "timestamp": "2026-04-03T01:47:06+00:00",
+        "timestamp": "2026-04-03T15:14:26+00:00",
         "claim_id": "ozempic-glp1_youtube_2850669a_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9967
+        "fidelity_to_origin": 0.4426,
+        "fidelity_to_previous": 0.9951
+      },
+      {
+        "platform": "U.S. Food And Drug Administrat",
+        "timestamp": "2026-04-03T16:19:18+00:00",
+        "claim_id": "ozempic-glp1_youtube_2850669a_0",
+        "fidelity_to_origin": 0.4424,
+        "fidelity_to_previous": 0.9995
+      },
+      {
+        "platform": "Edmonton Sun",
+        "timestamp": "2026-04-25T19:10:44+00:00",
+        "claim_id": "ozempic-glp1_youtube_2850669a_0",
+        "fidelity_to_origin": 0.3837,
+        "fidelity_to_previous": 0.8673
+      },
+      {
+        "platform": "News Directory 3",
+        "timestamp": "2026-04-25T21:53:03+00:00",
+        "claim_id": "ozempic-glp1_youtube_2850669a_0",
+        "fidelity_to_origin": 0.3834,
+        "fidelity_to_previous": 0.9992
       }
     ],
     "observation_boundary": null
@@ -206,24 +232,24 @@
       "text": "GLP-1 medications can cause gastrointestinal side effects."
     },
     {
-      "claim_id": "ozempic-glp1_x_9f952235_0",
-      "similarity": 0.7434,
-      "text": "GLP-1 drugs have negative side effects that are not being discussed."
-    },
-    {
       "claim_id": "ozempic-glp1_bluesky_34d696f6_0",
       "similarity": 0.7331,
       "text": "GLP-1 medications like Wegovy have unpleasant side effects, including reduced appetite and enjoyment of food."
     },
     {
-      "claim_id": "ozempic-glp1_x_808d65d5_0",
-      "similarity": 0.7266,
-      "text": "GLP-1 medications like Ozempic may cause significant weight loss."
-    },
-    {
       "claim_id": "ozempic-glp1_bluesky_b7668d28_0",
       "similarity": 0.7071,
       "text": "Researchers have discovered an appetite suppressant that works in mice without the side effects of GLP-1 drugs."
+    },
+    {
+      "claim_id": "ozempic-glp1_bluesky_3e5b7590_0",
+      "similarity": 0.6844,
+      "text": "People who are unfamiliar with GLP-1 receptor agonists often react negatively to the fact that someone is taking them."
+    },
+    {
+      "claim_id": "ozempic-glp1_u.s._food_and_drug_administrat_541c8885_0",
+      "similarity": 0.6484,
+      "text": "The FDA has found no causal relationship between GLP-1 RA medications and suicidal thoughts or behaviors based on clinical trials, postmarketing data, and observational studies."
     }
   ],
   "example_content": [

@@ -1,9 +1,9 @@
 {
   "events": [
     {
-      "id": "evt_12bf0a78fec2",
+      "id": "evt_3b8e831dd207",
       "type": "phase_transition",
-      "timestamp": "2026-05-26T20:37:24.682572+00:00",
+      "timestamp": "2026-09-07T20:34:08.786769+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
@@ -16,9 +16,9 @@
       }
     },
     {
-      "id": "evt_1dcc831368c8",
+      "id": "evt_a6ae428f9314",
       "type": "phase_transition",
-      "timestamp": "2026-05-26T20:37:24.682572+00:00",
+      "timestamp": "2026-09-07T20:34:08.786769+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
@@ -31,9 +31,9 @@
       }
     },
     {
-      "id": "evt_a60b6a15c562",
+      "id": "evt_e327d378cd4c",
       "type": "phase_transition",
-      "timestamp": "2026-05-26T20:37:24.682572+00:00",
+      "timestamp": "2026-09-07T20:34:08.786769+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
@@ -46,9 +46,9 @@
       }
     },
     {
-      "id": "evt_4734c244f4be",
+      "id": "evt_f890c3cb9e8a",
       "type": "phase_transition",
-      "timestamp": "2026-05-26T20:37:24.682572+00:00",
+      "timestamp": "2026-09-07T20:34:08.786769+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
@@ -61,73 +61,73 @@
       }
     },
     {
-      "id": "evt_c5933f78a063",
+      "id": "evt_40eef0637f50",
       "type": "divergence_shift",
-      "timestamp": "2026-05-26T20:37:24.682572+00:00",
+      "timestamp": "2026-09-07T20:34:08.786769+00:00",
       "claim_id": null,
       "slice_id": "bluesky_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Strong narrative split between Bluesky and news-medical.net",
+      "summary": "Strong narrative split between Bluesky and cnbc_business",
       "detail": {
-        "jsd": 0.9372,
+        "jsd": 0.7162,
         "platforms": [
           "bluesky",
-          "news-medical.net"
+          "cnbc_business"
         ],
         "window_hours": 24
       }
     },
     {
-      "id": "evt_0375d1e43e5c",
+      "id": "evt_5e290412e9e6",
       "type": "divergence_shift",
-      "timestamp": "2026-05-26T20:37:24.682572+00:00",
+      "timestamp": "2026-09-07T20:34:08.786769+00:00",
       "claim_id": null,
       "slice_id": "bluesky_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Strong narrative split between Bluesky and news18",
+      "summary": "Strong narrative split between Bluesky and drugs.com",
       "detail": {
-        "jsd": 0.8731,
+        "jsd": 0.8364,
         "platforms": [
           "bluesky",
-          "news18"
+          "drugs.com"
         ],
         "window_hours": 24
       }
     },
     {
-      "id": "evt_07a956034cbb",
+      "id": "evt_56354a6e0c5e",
       "type": "divergence_shift",
-      "timestamp": "2026-05-26T20:37:24.682572+00:00",
+      "timestamp": "2026-09-07T20:34:08.786769+00:00",
       "claim_id": null,
       "slice_id": "bluesky_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Strong narrative split between Bluesky and nutritioninsight.com",
+      "summary": "Strong narrative split between Bluesky and foodbusinessnews",
       "detail": {
-        "jsd": 0.8003,
+        "jsd": 0.9377,
         "platforms": [
           "bluesky",
-          "nutritioninsight.com"
+          "foodbusinessnews"
         ],
         "window_hours": 24
       }
     },
     {
-      "id": "evt_6c518aaf4b49",
+      "id": "evt_b93f2eaf2e8e",
       "type": "divergence_shift",
-      "timestamp": "2026-05-26T20:37:24.682572+00:00",
+      "timestamp": "2026-09-07T20:34:08.786769+00:00",
       "claim_id": null,
-      "slice_id": "news-medical.net_platform",
+      "slice_id": "bluesky_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Strong narrative split between news-medical.net and news18",
+      "summary": "Strong narrative split between Bluesky and internewscast_journal",
       "detail": {
-        "jsd": 0.6355,
+        "jsd": 0.9536,
         "platforms": [
-          "news-medical.net",
-          "news18"
+          "bluesky",
+          "internewscast_journal"
         ],
         "window_hours": 24
       }
@@ -153,18 +153,147 @@
       "source": "polymarket"
     },
     {
-      "id": "evt_e6ecf5767482",
-      "type": "momentum_spike",
-      "timestamp": "2026-05-26T23:37:24.682572+00:00",
-      "claim_id": "ozempic-glp1_bluesky_143af326_0",
+      "id": "evt_8822a5292f33",
+      "type": "lead_lag",
+      "timestamp": "2026-03-07T02:34:08.786769+00:00",
+      "claim_id": "ozempic-glp1_youtube_12cb3aca_0",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.53,
-      "summary": "Rapid attention surge in \"Youth Football\" (1 claims)",
+      "confidence": 0.9,
+      "summary": "YouTube (Influencer Framing) leads benzinga by ~4446h in \"Retatrutide\"",
+      "detail": {
+        "source_platform": "youtube",
+        "target_platform": "benzinga",
+        "lag_hours": 4446.9,
+        "cluster_id": "clu_ozempic-glp1_002"
+      }
+    },
+    {
+      "id": "evt_4141fea675b3",
+      "type": "lead_lag",
+      "timestamp": "2026-05-28T08:34:08.786769+00:00",
+      "claim_id": "ozempic-glp1_bluesky_9d62efb6_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.9,
+      "summary": "YouTube (Influencer Framing) leads u.s._food_and_drug_administrat by ~2472h in \"Medications from India\"",
+      "detail": {
+        "source_platform": "youtube",
+        "target_platform": "u.s._food_and_drug_administrat",
+        "lag_hours": 2472.6,
+        "cluster_id": "clu_ozempic-glp1_001"
+      }
+    },
+    {
+      "id": "evt_0cd546e8b17c",
+      "type": "lead_lag",
+      "timestamp": "2026-05-31T07:34:08.786769+00:00",
+      "claim_id": "ozempic-glp1_bluesky_9973aec6_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.72,
+      "summary": "YouTube (Influencer Framing) leads the_upcoming by ~2401h in \"Ozempic Causes\"",
+      "detail": {
+        "source_platform": "youtube",
+        "target_platform": "the_upcoming",
+        "lag_hours": 2401.9,
+        "cluster_id": "clu_ozempic-glp1_003"
+      }
+    },
+    {
+      "id": "evt_840bf79f9e43",
+      "type": "lead_lag",
+      "timestamp": "2026-07-16T15:34:08.786769+00:00",
+      "claim_id": "ozempic-glp1_propublica_fa73742d_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.82,
+      "summary": "propublica leads the_indian_express by ~1289h in \"Peptides\"",
+      "detail": {
+        "source_platform": "propublica",
+        "target_platform": "the_indian_express",
+        "lag_hours": 1289.0,
+        "cluster_id": "clu_ozempic-glp1_000"
+      }
+    },
+    {
+      "id": "evt_4697b1add918",
+      "type": "contestation_emergence",
+      "timestamp": "2026-09-07T20:34:08.786769+00:00",
+      "claim_id": "ozempic-glp1_bluesky_29df8415_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.78,
+      "summary": "Active contestation in \"Ozempic/Wegovy\" — 3 pro vs 5 anti",
+      "detail": {
+        "cluster_id": "clu_ozempic-glp1_004",
+        "pro_count": 3,
+        "anti_count": 5,
+        "balance": 0.6
+      }
+    },
+    {
+      "id": "evt_7d6185c65cb6",
+      "type": "contestation_emergence",
+      "timestamp": "2026-09-07T20:34:08.786769+00:00",
+      "claim_id": "ozempic-glp1_bluesky_1b2b9e4f_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.75,
+      "summary": "Active contestation in \"Oral Wegovy\" — 36 pro vs 18 anti",
+      "detail": {
+        "cluster_id": "clu_ozempic-glp1_008",
+        "pro_count": 36,
+        "anti_count": 18,
+        "balance": 0.5
+      }
+    },
+    {
+      "id": "evt_68a4e09875af",
+      "type": "contestation_emergence",
+      "timestamp": "2026-09-07T20:34:08.786769+00:00",
+      "claim_id": "ozempic-glp1_bluesky_7eaceba6_1",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.81,
+      "summary": "Active contestation in \"Obesity\" — 10 pro vs 7 anti",
+      "detail": {
+        "cluster_id": "clu_ozempic-glp1_015",
+        "pro_count": 10,
+        "anti_count": 7,
+        "balance": 0.7
+      }
+    },
+    {
+      "id": "evt_2645d6f1f1a5",
+      "type": "contestation_emergence",
+      "timestamp": "2026-09-07T20:34:08.786769+00:00",
+      "claim_id": "ozempic-glp1_bluesky_216a3aba_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.78,
+      "summary": "Active contestation in \"Insurance Companies\" — 13 pro vs 8 anti",
+      "detail": {
+        "cluster_id": "clu_ozempic-glp1_029",
+        "pro_count": 13,
+        "anti_count": 8,
+        "balance": 0.62
+      }
+    },
+    {
+      "id": "evt_bee0c854825a",
+      "type": "arousal_escalation",
+      "timestamp": "2026-09-08T00:34:08.786769+00:00",
+      "claim_id": "ozempic-glp1_x_ed5fd87a_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.77,
+      "summary": "Heated language rising in \"Youth Football\" — 47% emotionally charged claims",
       "detail": {
         "cluster_id": "clu_ozempic-glp1_010",
-        "avg_momentum": 0.585,
-        "member_count": 1
+        "high_arousal_count": 8,
+        "total": 17,
+        "ratio": 0.47
       }
     },
     {
@@ -206,70 +335,6 @@
       "summary": "Patient Protection and Affordable Care Act, HHS Notice of Benefit and Payment Parameters for 2025; Updating Section 1332 Waiver Public Notice Procedures; Medicaid; Consumer Operated and Oriented Plan ",
       "detail": "This final rule includes payment parameters and provisions related to the HHS-operated risk adjustment program, as well as 2025 user fee rates for issuers offering qualified health plans (QHPs) through federally facilitated Exchanges (FFEs) and State-based Exchanges on the Federal platform (SBE-FPs)",
       "source": "fed_register"
-    },
-    {
-      "id": "evt_c960010d5038",
-      "type": "lead_lag",
-      "timestamp": "2026-05-26T16:37:24.682572+00:00",
-      "claim_id": "ozempic-glp1_bluesky_ead0d364_0",
-      "slice_id": null,
-      "severity": "low",
-      "confidence": 0.64,
-      "summary": "stat_news leads stocktwits by ~16h in \"Eli Lilly\"",
-      "detail": {
-        "source_platform": "stat_news",
-        "target_platform": "stocktwits",
-        "lag_hours": 16.3,
-        "cluster_id": "clu_ozempic-glp1_006"
-      }
-    },
-    {
-      "id": "evt_349bc7dd61a4",
-      "type": "lead_lag",
-      "timestamp": "2026-05-26T16:37:24.682572+00:00",
-      "claim_id": "ozempic-glp1_bluesky_0aaadce4_0",
-      "slice_id": null,
-      "severity": "low",
-      "confidence": 0.68,
-      "summary": "Bluesky leads en.philenews.com by ~16h in \"Oral Wegovy\"",
-      "detail": {
-        "source_platform": "bluesky",
-        "target_platform": "en.philenews.com",
-        "lag_hours": 16.4,
-        "cluster_id": "clu_ozempic-glp1_008"
-      }
-    },
-    {
-      "id": "evt_e5cafce1519c",
-      "type": "lead_lag",
-      "timestamp": "2026-05-26T19:37:24.682572+00:00",
-      "claim_id": "ozempic-glp1_the_indian_express_663f7355_0",
-      "slice_id": null,
-      "severity": "low",
-      "confidence": 0.58,
-      "summary": "the_atlantic leads the_indian_express by ~13h in \"Peptides\"",
-      "detail": {
-        "source_platform": "the_atlantic",
-        "target_platform": "the_indian_express",
-        "lag_hours": 13.3,
-        "cluster_id": "clu_ozempic-glp1_000"
-      }
-    },
-    {
-      "id": "evt_42349bef2018",
-      "type": "lead_lag",
-      "timestamp": "2026-05-26T20:37:24.682572+00:00",
-      "claim_id": "ozempic-glp1_bluesky_031545ae_0",
-      "slice_id": null,
-      "severity": "low",
-      "confidence": 0.6,
-      "summary": "the_atlantic leads Bluesky by ~12h in \"Medications from India\"",
-      "detail": {
-        "source_platform": "the_atlantic",
-        "target_platform": "bluesky",
-        "lag_hours": 12.0,
-        "cluster_id": "clu_ozempic-glp1_001"
-      }
     },
     {
       "id": "gdelt_5d2e0351f5f7",
@@ -540,47 +605,7 @@
       "summary": "Trump out as President before GTA VI? — 53.0% Yes",
       "detail": "Polymarket gives 53.0% odds. Volume: $572,401",
       "source": "polymarket"
-    },
-    {
-      "id": "poly_540819",
-      "type": "external_signal",
-      "timestamp": "2026-04-03T17:13:06.567073+00:00",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Will Jesus Christ return before GTA VI? — 49.0% Yes",
-      "detail": "Polymarket gives 49.0% odds. Volume: $10,396,796",
-      "source": "polymarket"
-    },
-    {
-      "id": "poly_540818",
-      "type": "external_signal",
-      "timestamp": "2026-04-03T17:13:06.567065+00:00",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "New Playboi Carti Album before GTA VI? — 62.0% Yes",
-      "detail": "Polymarket gives 62.0% odds. Volume: $713,860",
-      "source": "polymarket"
-    },
-    {
-      "id": "poly_540817",
-      "type": "external_signal",
-      "timestamp": "2026-04-03T17:13:06.567057+00:00",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "New Rihanna Album before GTA VI? — 60.0% Yes",
-      "detail": "Polymarket gives 60.0% odds. Volume: $679,525",
-      "source": "polymarket"
-    },
-    {
-      "id": "poly_540816",
-      "type": "external_signal",
-      "timestamp": "2026-04-03T17:13:06.567029+00:00",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Russia-Ukraine Ceasefire before GTA VI? — 54.0% Yes",
-      "detail": "Polymarket gives 54.0% odds. Volume: $1,412,740",
-      "source": "polymarket"
     }
   ],
-  "total_count": 83
+  "total_count": 87
 }

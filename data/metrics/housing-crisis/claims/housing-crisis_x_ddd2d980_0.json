@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "housing-crisis_x_ddd2d980_0",
-    "cluster_id": "clu_housing-crisis_005",
-    "concept_id": "concept_housing-crisis_004",
+    "cluster_id": "clu_housing-crisis_019",
+    "concept_id": "concept_housing-crisis_002",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-03T15:58:19.000Z",
     "source_document_id": "x_2040096566162190453",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 6,
-    "friction": 0.65,
+    "persistence_windows": 15,
+    "friction": 0.4681,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.2552,
+    "value": 0.4408,
     "confidence_interval": [
-      0.1243,
-      0.3861
+      0.3239,
+      0.5577
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2552
+      0.4408
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.65,
+    "value": 0.4681,
     "confidence_interval": [
-      0.5487,
-      0.7513
+      0.3532,
+      0.583
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.65
+      0.4681
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.3,
+    "value": 0.75,
     "confidence_interval": [
-      0.1725,
-      0.4275
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9803,
     "confidence_interval": [
-      0.925,
+      0.9038,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9803
     ],
     "source_distribution": "production"
   },
@@ -129,16 +129,28 @@
       },
       {
         "platform": "X Platform",
-        "lag_hours": 168.0
+        "lag_hours": 165.2
       },
       {
-        "platform": "Jacobin",
-        "lag_hours": 181.4
+        "platform": "Southwark News",
+        "lag_hours": 688.6
+      },
+      {
+        "platform": "Stl.News",
+        "lag_hours": 735.3
+      },
+      {
+        "platform": "Yahoo News Uk",
+        "lag_hours": 783.8
+      },
+      {
+        "platform": "The Spectator",
+        "lag_hours": 1473.7
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_housing-crisis_004",
+    "concept_id": "concept_housing-crisis_002",
     "hops": [
       {
         "platform": "YouTube (Influencer Framing)",
@@ -151,22 +163,36 @@
         "platform": "Bluesky",
         "timestamp": "2026-04-01T20:10:48.777000+00:00",
         "claim_id": "housing-crisis_x_ddd2d980_0",
-        "fidelity_to_origin": 0.455,
-        "fidelity_to_previous": 0.455
+        "fidelity_to_origin": 0.9329,
+        "fidelity_to_previous": 0.9329
       },
       {
         "platform": "X Platform",
-        "timestamp": "2026-04-02T22:55:50+00:00",
+        "timestamp": "2026-04-02T20:06:42+00:00",
         "claim_id": "housing-crisis_x_ddd2d980_0",
-        "fidelity_to_origin": 0.3517,
-        "fidelity_to_previous": 0.773
+        "fidelity_to_origin": 0.9215,
+        "fidelity_to_previous": 0.9878
       },
       {
-        "platform": "Jacobin",
-        "timestamp": "2026-04-03T12:19:55+00:00",
+        "platform": "Southwark News",
+        "timestamp": "2026-04-24T15:34:51+00:00",
         "claim_id": "housing-crisis_x_ddd2d980_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.853
+        "fidelity_to_origin": 0.6729,
+        "fidelity_to_previous": 0.7302
+      },
+      {
+        "platform": "Stl.News",
+        "timestamp": "2026-04-26T14:16:21+00:00",
+        "claim_id": "housing-crisis_x_ddd2d980_0",
+        "fidelity_to_origin": 0.6507,
+        "fidelity_to_previous": 0.967
+      },
+      {
+        "platform": "Yahoo News Uk",
+        "timestamp": "2026-04-28T14:46:33+00:00",
+        "claim_id": "housing-crisis_x_ddd2d980_0",
+        "fidelity_to_origin": 0.6277,
+        "fidelity_to_previous": 0.9647
       }
     ],
     "observation_boundary": null
@@ -201,6 +227,11 @@
   },
   "semantic_neighbors": [
     {
+      "claim_id": "housing-crisis_bluesky_a8beeb76_0",
+      "similarity": 0.7132,
+      "text": "The speaker believes that many people in America are struggling financially."
+    },
+    {
       "claim_id": "housing-crisis_bluesky_96108e01_0",
       "similarity": 0.6378,
       "text": "Economic sentiment has declined significantly since 2021."
@@ -219,11 +250,6 @@
       "claim_id": "housing-crisis_bluesky_045e97be_0",
       "similarity": 0.52,
       "text": "The current economic system is leading to a decline in common goods and worker exploitation."
-    },
-    {
-      "claim_id": "housing-crisis_bluesky_0181ab4f_2",
-      "similarity": 0.4821,
-      "text": "Policies associated with MAGA are causing an affordability crisis."
     }
   ],
   "example_content": [
@@ -234,15 +260,15 @@
       "is_influencer_framing": false
     },
     {
-      "text": "Policies associated with MAGA are causing an affordability crisis.",
+      "text": "The current economy already operates as a planned economy due to algorithmic control over supply chains and financial trading.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Donald Trump's trade policies were ineffective and did not improve the economic situation for Americans.",
+      "text": "Economic sentiment has declined significantly since 2021.",
       "platform": "Bluesky",
-      "confidence": 0.8,
+      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "dei-rollbacks_wonkette_2b44e86c_2",
-    "cluster_id": "clu_dei-rollbacks_001",
-    "concept_id": "concept_dei-rollbacks_001",
+    "cluster_id": "clu_dei-rollbacks_024",
+    "concept_id": "concept_dei-rollbacks_003",
     "first_seen_platform": "wonkette",
     "first_seen_timestamp": "2026-04-03T15:27:30Z",
     "source_document_id": "29449dda85a46f69",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 15,
-    "friction": 0.7692,
+    "persistence_windows": 7,
+    "friction": 0.7143,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.3755,
+    "value": 0.2061,
     "confidence_interval": [
-      0.2537,
-      0.4973
+      0.0716,
+      0.3406
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3755
+      0.2061
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.7692,
+    "value": 0.7143,
     "confidence_interval": [
-      0.6769,
-      0.8615
+      0.6179,
+      0.8107
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.7692
+      0.7143
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.75,
+    "value": 0.35,
     "confidence_interval": [
-      0.6562,
-      0.8438
+      0.2263,
+      0.4737
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.75
+      0.35
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9858,
     "confidence_interval": [
-      0.925,
+      0.9097,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9858
     ],
     "source_distribution": "production"
   },
@@ -130,25 +130,25 @@
         "lag_hours": 7469.5
       },
       {
-        "platform": "Bluesky",
-        "lag_hours": 7474.5
-      },
-      {
         "platform": "The Atlantic",
         "lag_hours": 7482.4
+      },
+      {
+        "platform": "Bluesky",
+        "lag_hours": 7490.9
       },
       {
         "platform": "Wonkette",
         "lag_hours": 7495.8
       },
       {
-        "platform": "Free Press Journal",
-        "lag_hours": 7496.3
+        "platform": "Thegrio",
+        "lag_hours": 7496.4
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_dei-rollbacks_001",
+    "concept_id": "concept_dei-rollbacks_003",
     "hops": [
       {
         "platform": "YouTube (Influencer Framing)",
@@ -161,36 +161,36 @@
         "platform": "The Intercept",
         "timestamp": "2026-04-01T18:51:44+00:00",
         "claim_id": "dei-rollbacks_wonkette_2b44e86c_2",
-        "fidelity_to_origin": 0.3043,
-        "fidelity_to_previous": 0.3043
+        "fidelity_to_origin": 0.3541,
+        "fidelity_to_previous": 0.3541
       },
       {
         "platform": "Jacobin",
         "timestamp": "2026-04-02T13:10:03+00:00",
         "claim_id": "dei-rollbacks_wonkette_2b44e86c_2",
-        "fidelity_to_origin": 0.3026,
-        "fidelity_to_previous": 0.9944
-      },
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-02T18:08:38.365000+00:00",
-        "claim_id": "dei-rollbacks_wonkette_2b44e86c_2",
-        "fidelity_to_origin": 0.3021,
-        "fidelity_to_previous": 0.9983
+        "fidelity_to_origin": 0.3526,
+        "fidelity_to_previous": 0.9958
       },
       {
         "platform": "The Atlantic",
         "timestamp": "2026-04-03T02:05:00+00:00",
         "claim_id": "dei-rollbacks_wonkette_2b44e86c_2",
-        "fidelity_to_origin": 0.3014,
-        "fidelity_to_previous": 0.9977
+        "fidelity_to_origin": 0.3514,
+        "fidelity_to_previous": 0.9966
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-03T10:36:43.716000+00:00",
+        "claim_id": "dei-rollbacks_wonkette_2b44e86c_2",
+        "fidelity_to_origin": 0.3507,
+        "fidelity_to_previous": 0.998
       },
       {
         "platform": "Wonkette",
         "timestamp": "2026-04-03T15:27:30+00:00",
         "claim_id": "dei-rollbacks_wonkette_2b44e86c_2",
-        "fidelity_to_origin": 0.3001,
-        "fidelity_to_previous": 0.9957
+        "fidelity_to_origin": 0.3503,
+        "fidelity_to_previous": 0.9989
       }
     ],
     "observation_boundary": null
@@ -225,11 +225,6 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "dei-rollbacks_bluesky_2deb1d0e_0",
-      "similarity": 0.408,
-      "text": "Military leaders are being dismissed for resisting policies that oppose diversity, equity, and inclusion."
-    },
-    {
       "claim_id": "dei-rollbacks_bluesky_2b3d1276_0",
       "similarity": 0.3708,
       "text": "Pete Hegseth believes that DEI initiatives in the military led to failures in Afghanistan and Iraq."
@@ -245,9 +240,14 @@
       "text": "The armed forces are being purged of individuals who refuse to follow unlawful directives."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_92e02929_1",
-      "similarity": 0.3148,
-      "text": "DEI is defined as purging the armed forces of individuals who refuse to follow unlawful directives."
+      "claim_id": "dei-rollbacks_thegrio_5986698c_0",
+      "similarity": 0.3315,
+      "text": "The Secretary of Defense is improperly interfering in military promotions."
+    },
+    {
+      "claim_id": "dei-rollbacks_thegrio_5986698c_2",
+      "similarity": 0.3287,
+      "text": "Opposition to diversity, equity, and inclusion (DEI) initiatives is influencing military promotion decisions."
     }
   ],
   "example_content": [
@@ -258,13 +258,13 @@
       "is_influencer_framing": false
     },
     {
-      "text": "The removal of DEI initiatives in the military is a racist effort to remove qualified minority service members.",
+      "text": "The armed forces are being purged of individuals who refuse to follow unlawful directives.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Pete Buttigieg should be charged with war crimes and dismissed from his position.",
+      "text": "DEI is defined as purging the armed forces of individuals who refuse to follow unlawful directives.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

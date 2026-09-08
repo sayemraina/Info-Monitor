@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "war-on-iran_bluesky_b4df7998_0",
-    "cluster_id": "clu_war-on-iran_044",
-    "concept_id": "concept_war-on-iran_000",
+    "cluster_id": "clu_war-on-iran_054",
+    "concept_id": "concept_war-on-iran_002",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-05-06T03:50:14.520Z",
     "source_document_id": "c0fcd6a050074025",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 2,
-    "friction": 0.5714,
+    "persistence_windows": 15,
+    "friction": 0.6582,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.3381,
+    "value": 0.8427,
     "confidence_interval": [
-      0.2135,
-      0.4627
+      0.7559,
+      0.9295
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3381
+      0.8427
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.5714,
+    "value": 0.6582,
     "confidence_interval": [
-      0.4643,
-      0.6785
+      0.5576,
+      0.7588
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.5714
+      0.6582
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.1,
+    "value": 0.75,
     "confidence_interval": [
-      0,
-      0.2425
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9935,
     "confidence_interval": [
-      0.925,
+      0.918,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9935
     ],
     "source_distribution": "production"
   },
@@ -120,53 +120,79 @@
     ]
   },
   "provenance": {
-    "first_platform": "The Hill",
+    "first_platform": "YouTube (Influencer Framing)",
     "first_timestamp": "2026-05-06T03:50:14.520Z",
     "lead_lag": [
       {
+        "platform": "La Times",
+        "lag_hours": 6847.0
+      },
+      {
+        "platform": "Salon",
+        "lag_hours": 6919.7
+      },
+      {
+        "platform": "Guardian World",
+        "lag_hours": 6950.5
+      },
+      {
+        "platform": "The Atlantic",
+        "lag_hours": 6956.8
+      },
+      {
         "platform": "Bluesky",
-        "lag_hours": 5.6
+        "lag_hours": 6966.9
       },
       {
         "platform": "X Platform",
-        "lag_hours": 9.3
-      },
-      {
-        "platform": "Dw News",
-        "lag_hours": 10.2
+        "lag_hours": 6970.7
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_war-on-iran_000",
+    "concept_id": "concept_war-on-iran_002",
     "hops": [
       {
-        "platform": "The Hill",
-        "timestamp": "2026-05-05T22:12:47+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2025-06-17T03:02:51+00:00",
         "claim_id": "war-on-iran_bluesky_b4df7998_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
+        "platform": "La Times",
+        "timestamp": "2026-03-29T10:00:00+00:00",
+        "claim_id": "war-on-iran_bluesky_b4df7998_0",
+        "fidelity_to_origin": 0.4195,
+        "fidelity_to_previous": 0.4195
+      },
+      {
+        "platform": "Salon",
+        "timestamp": "2026-04-01T10:45:10+00:00",
+        "claim_id": "war-on-iran_bluesky_b4df7998_0",
+        "fidelity_to_origin": 0.4134,
+        "fidelity_to_previous": 0.9855
+      },
+      {
+        "platform": "Guardian World",
+        "timestamp": "2026-04-02T17:34:37+00:00",
+        "claim_id": "war-on-iran_bluesky_b4df7998_0",
+        "fidelity_to_origin": 0.4108,
+        "fidelity_to_previous": 0.9937
+      },
+      {
+        "platform": "The Atlantic",
+        "timestamp": "2026-04-02T23:53:00+00:00",
+        "claim_id": "war-on-iran_bluesky_b4df7998_0",
+        "fidelity_to_origin": 0.4102,
+        "fidelity_to_previous": 0.9985
+      },
+      {
         "platform": "Bluesky",
-        "timestamp": "2026-05-06T03:50:14.520000+00:00",
+        "timestamp": "2026-04-03T09:55:54.223000+00:00",
         "claim_id": "war-on-iran_bluesky_b4df7998_0",
-        "fidelity_to_origin": 0.6137,
-        "fidelity_to_previous": 0.6137
-      },
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-05-06T07:28:16+00:00",
-        "claim_id": "war-on-iran_bluesky_b4df7998_0",
-        "fidelity_to_origin": 0.3642,
-        "fidelity_to_previous": 0.5934
-      },
-      {
-        "platform": "Dw News",
-        "timestamp": "2026-05-06T08:24:19.658367+00:00",
-        "claim_id": "war-on-iran_bluesky_b4df7998_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.8237
+        "fidelity_to_origin": 0.4094,
+        "fidelity_to_previous": 0.998
       }
     ],
     "observation_boundary": null
@@ -201,48 +227,48 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "war-on-iran_x_14ed951f_0",
-      "similarity": 0.6086,
-      "text": "Donald Trump is attempting to intimidate people, including the Pope."
+      "claim_id": "war-on-iran_guardian_world_113dde1f_0",
+      "similarity": 0.6673,
+      "text": "Donald Trump's statements on Iran and NATO are inconsistent and undermine stability."
     },
     {
-      "claim_id": "war-on-iran_bluesky_3a429c59_0",
-      "similarity": 0.4974,
-      "text": "Trump's behavior is benefiting the Democratic party in elections."
+      "claim_id": "war-on-iran_bluesky_59ee978d_0",
+      "similarity": 0.5801,
+      "text": "Donald Trump is acting traitorously by supporting Russia and Iran."
     },
     {
-      "claim_id": "war-on-iran_dw_news_7cd7eef1_0",
-      "similarity": 0.4165,
-      "text": "US President Trump's \"Project Freedom\" may escalate hostilities in the Strait of Hormuz."
+      "claim_id": "war-on-iran_bluesky_1cb3d96c_1",
+      "similarity": 0.5532,
+      "text": "Donald Trump has been a Russian asset since April 9, 1977."
     },
     {
-      "claim_id": "war-on-iran_bluesky_f3d1987a_1",
-      "similarity": 0.4017,
-      "text": "Vladimir Putin and Donald Trump are aligned in a harmful way."
+      "claim_id": "war-on-iran_bluesky_d1afc6c2_0",
+      "similarity": 0.5399,
+      "text": "Donald Trump is colluding with Russia in the contexts of the War in Iran and the War in Ukraine."
     },
     {
-      "claim_id": "war-on-iran_the_hill_53090423_0",
-      "similarity": 0.4008,
-      "text": "The Trump administration is attempting to de-escalate its rhetoric regarding Iran."
+      "claim_id": "war-on-iran_bluesky_5771123c_1",
+      "similarity": 0.5215,
+      "text": "Donald Trump is helping Russia destabilize Europe by reducing sanctions."
     }
   ],
   "example_content": [
     {
-      "text": "Trump's behavior is benefiting the Democratic party in elections.",
+      "text": "Donald Trump will create a private security force to prevent people from voting against him.",
       "platform": "Bluesky",
-      "confidence": 0.9,
+      "confidence": 0.7,
       "is_influencer_framing": false
     },
     {
-      "text": "Vladimir Putin and Donald Trump are aligned in a harmful way.",
+      "text": "Donald Trump is helping Russia destabilize Europe by reducing sanctions.",
       "platform": "Bluesky",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "is_influencer_framing": false
     },
     {
-      "text": "The Trump administration is attempting to de-escalate its rhetoric regarding Iran.",
-      "platform": "The Hill",
-      "confidence": 0.9,
+      "text": "Donald Trump has been a Russian asset since April 9, 1977.",
+      "platform": "Bluesky",
+      "confidence": 0.8,
       "is_influencer_framing": false
     }
   ]

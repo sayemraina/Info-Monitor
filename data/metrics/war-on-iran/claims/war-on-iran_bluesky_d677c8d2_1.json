@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "war-on-iran_bluesky_d677c8d2_1",
-    "cluster_id": "clu_war-on-iran_023",
-    "concept_id": "concept_war-on-iran_004",
+    "cluster_id": "clu_war-on-iran_041",
+    "concept_id": "concept_war-on-iran_000",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-26T11:32:26.228Z",
     "source_document_id": "d677c8d2b2524117",
@@ -24,107 +24,94 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": null,
+    "value": 0.645,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.545,
+      0.745
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.645
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 11,
+    "friction": 0.7879,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.352,
+    "confidence_interval": [
+      0.2284,
+      0.4756
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.352
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.7879,
+    "confidence_interval": [
+      0.697,
+      0.8788
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.7879
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.55,
+    "confidence_interval": [
+      0.4413,
+      0.6587
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.55
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.85,
     "confidence_interval": [
-      0,
-      0
+      0.7638,
+      0.9362
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.85
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 0.9252,
     "confidence_interval": [
-      0,
-      0
+      0.8446,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.9252
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,65 +120,155 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "YouTube (Influencer Framing)",
+    "first_timestamp": "2026-04-26T11:32:26.228Z",
+    "lead_lag": [
+      {
+        "platform": "The Atlantic",
+        "lag_hours": 37.5
+      },
+      {
+        "platform": "Salon",
+        "lag_hours": 44.5
+      },
+      {
+        "platform": "La Times",
+        "lag_hours": 50.0
+      },
+      {
+        "platform": "Bbc World",
+        "lag_hours": 50.9
+      },
+      {
+        "platform": "Breitbart Feed",
+        "lag_hours": 67.3
+      },
+      {
+        "platform": "Bluesky",
+        "lag_hours": 72.7
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_war-on-iran_000",
+    "hops": [
+      {
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-03-31T14:18:03+00:00",
+        "claim_id": "war-on-iran_bluesky_d677c8d2_1",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "The Atlantic",
+        "timestamp": "2026-04-02T03:46:48+00:00",
+        "claim_id": "war-on-iran_bluesky_d677c8d2_1",
+        "fidelity_to_origin": 0.9693,
+        "fidelity_to_previous": 0.9693
+      },
+      {
+        "platform": "Salon",
+        "timestamp": "2026-04-02T10:45:25+00:00",
+        "claim_id": "war-on-iran_bluesky_d677c8d2_1",
+        "fidelity_to_origin": 0.9636,
+        "fidelity_to_previous": 0.9941
+      },
+      {
+        "platform": "La Times",
+        "timestamp": "2026-04-02T16:18:14+00:00",
+        "claim_id": "war-on-iran_bluesky_d677c8d2_1",
+        "fidelity_to_origin": 0.9591,
+        "fidelity_to_previous": 0.9953
+      },
+      {
+        "platform": "Bbc World",
+        "timestamp": "2026-04-02T17:13:00+00:00",
+        "claim_id": "war-on-iran_bluesky_d677c8d2_1",
+        "fidelity_to_origin": 0.9583,
+        "fidelity_to_previous": 0.9992
+      },
+      {
+        "platform": "Breitbart Feed",
+        "timestamp": "2026-04-03T09:36:26+00:00",
+        "claim_id": "war-on-iran_bluesky_d677c8d2_1",
+        "fidelity_to_origin": 0.9449,
+        "fidelity_to_previous": 0.986
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "war-on-iran_bluesky_dc17ddd6_0",
-      "similarity": 0.7332,
-      "text": "Donald Trump's actions led to the current conflict with Iran without a clear strategy."
+      "claim_id": "war-on-iran_the_atlantic_ea049f8c_0",
+      "similarity": 0.7677,
+      "text": "Donald Trump's speech regarding the conflict with Iran was poorly delivered and uninformative."
     },
     {
-      "claim_id": "war-on-iran_the_philadelphia_inquirer_6e97168d_1",
-      "similarity": 0.7266,
-      "text": "The Trump administration has mismanaged the war with Iran and lied to the American public about the reasons for the conflict."
+      "claim_id": "war-on-iran_salon_353df297_1",
+      "similarity": 0.6827,
+      "text": "Trump is not receiving the best advice regarding the war with Iran."
     },
     {
-      "claim_id": "war-on-iran_nbc_news_384458a5_0",
-      "similarity": 0.6835,
-      "text": "Donald Trump discussed the possibility of war with Iran while at a formal event honoring King Charles."
+      "claim_id": "war-on-iran_bbc_world_7273b30c_0",
+      "similarity": 0.674,
+      "text": "Donald Trump has changed the timeline for ending military conflict with Iran."
     },
     {
-      "claim_id": "war-on-iran_bluesky_0c748aea_0",
-      "similarity": 0.6598,
-      "text": "Donald Trump is colluding with oil executives to instigate conflict with Iran in order to raise gas prices."
+      "claim_id": "war-on-iran_bluesky_2194b45c_1",
+      "similarity": 0.6431,
+      "text": "Donald Trump is seeking a pretext to use nuclear weapons against Iran."
     },
     {
-      "claim_id": "war-on-iran_bluesky_0ad88c3d_0",
-      "similarity": 0.6058,
-      "text": "Donald Trump is using the war with Iran to receive illegal kickbacks."
+      "claim_id": "war-on-iran_la_times_227be7bc_0",
+      "similarity": 0.6298,
+      "text": "Trump's speech failed to reassure allies and markets concerned about disruptions to the global oil supply due to the conflict with Iran."
     }
   ],
   "example_content": [
     {
-      "text": "Donald Trump is colluding with oil executives to instigate conflict with Iran in order to raise gas prices.",
+      "text": "Donald Trump is likely to initiate a nuclear war with Iran.",
+      "platform": "Bluesky",
+      "confidence": 0.7,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Donald Trump is seeking a pretext to use nuclear weapons against Iran.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Donald Trump is using the war with Iran to receive illegal kickbacks.",
+      "text": "Donald Trump is seeking a pretext to use nuclear weapons against Iran.",
       "platform": "Bluesky",
       "confidence": 0.8,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Donald Trump's actions led to the current conflict with Iran without a clear strategy.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

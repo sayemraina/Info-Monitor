@@ -35,48 +35,48 @@
       0.645
     ],
     "source_distribution": "production",
-    "source_diversity": 0.25,
-    "bridge_ratio": 0.25,
-    "persistence_windows": 1,
-    "friction": 1,
+    "source_diversity": 0.75,
+    "bridge_ratio": 0.75,
+    "persistence_windows": 7,
+    "friction": 0.8095,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.3333,
+    "value": 0.1969,
     "confidence_interval": [
-      0.2083,
-      0.4583
+      0.0617,
+      0.3321
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3333
+      0.1969
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 1,
+    "value": 0.8095,
     "confidence_interval": [
-      0.925,
-      1
+      0.7202,
+      0.8988
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.8095
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0.35,
     "confidence_interval": [
-      0,
-      0.1962
+      0.2263,
+      0.4737
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0.35
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9803,
     "confidence_interval": [
-      0.925,
+      0.9038,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9803
     ],
     "source_distribution": "production"
   },
@@ -122,20 +122,43 @@
   "provenance": {
     "first_platform": "Bluesky",
     "first_timestamp": "2026-05-26T22:51:18.072Z",
-    "lead_lag": []
+    "lead_lag": [
+      {
+        "platform": "X Platform",
+        "lag_hours": 1.3
+      },
+      {
+        "platform": "Jacobin",
+        "lag_hours": 1242.3
+      }
+    ]
   },
   "supply_chain": {
     "concept_id": "concept_housing-crisis_002",
     "hops": [
       {
         "platform": "Bluesky",
-        "timestamp": "2026-05-26T21:45:48.466000+00:00",
+        "timestamp": "2026-04-02T21:38:37.082000+00:00",
         "claim_id": "housing-crisis_bluesky_8543630f_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-02T22:55:50+00:00",
+        "claim_id": "housing-crisis_bluesky_8543630f_0",
+        "fidelity_to_origin": 0.9993,
+        "fidelity_to_previous": 0.9993
+      },
+      {
+        "platform": "Jacobin",
+        "timestamp": "2026-05-24T15:56:05+00:00",
+        "claim_id": "housing-crisis_bluesky_8543630f_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3002
       }
     ],
-    "observation_boundary": "No public antecedent detected"
+    "observation_boundary": null
   },
   "coordination": {
     "burstiness": {
@@ -167,42 +190,47 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "housing-crisis_bluesky_99e74aa5_0",
-      "similarity": 0.7102,
-      "text": "Economic policies disproportionately benefit wealthy individuals."
+      "claim_id": "housing-crisis_bluesky_288a5087_0",
+      "similarity": 0.5508,
+      "text": "Tax cuts for the wealthy have exacerbated economic inequality and hardship for average citizens."
     },
     {
-      "claim_id": "housing-crisis_bluesky_d87bf7af_1",
-      "similarity": 0.5238,
-      "text": "Republican policies are causing increased costs of living for ordinary people."
+      "claim_id": "housing-crisis_x_a5e1074e_0",
+      "similarity": 0.4446,
+      "text": "The current economic struggles of working-class individuals are a direct consequence of voting for the Republican party."
     },
     {
-      "claim_id": "housing-crisis_bluesky_8543630f_1",
-      "similarity": 0.5193,
-      "text": "Politicians are beholden to the wealthy."
+      "claim_id": "housing-crisis_bluesky_a5bee8d3_0",
+      "similarity": 0.399,
+      "text": "Protecting democracy is more important than addressing economic issues like housing and grocery prices."
     },
     {
-      "claim_id": "housing-crisis_bluesky_d87bf7af_0",
-      "similarity": 0.2697,
-      "text": "Republican policies in Texas and Florida are detrimental to democratic principles."
+      "claim_id": "housing-crisis_bluesky_e4197395_1",
+      "similarity": 0.3649,
+      "text": "Republican policies have led to cuts in essential services."
+    },
+    {
+      "claim_id": "housing-crisis_bluesky_b2f51f4b_0",
+      "similarity": 0.3488,
+      "text": "Industry lobbyists are given undue credibility compared to independent researchers."
     }
   ],
   "example_content": [
     {
-      "text": "Economic policies disproportionately benefit wealthy individuals.",
+      "text": "Industry lobbyists are given undue credibility compared to independent researchers.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Politicians are beholden to the wealthy.",
-      "platform": "Bluesky",
+      "text": "Pakistan's ruling elite are incompetent and prioritize personal gain over economic reform.",
+      "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Republican policies in Texas and Florida are detrimental to democratic principles.",
-      "platform": "Bluesky",
+      "text": "The current economic struggles of working-class individuals are a direct consequence of voting for the Republican party.",
+      "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

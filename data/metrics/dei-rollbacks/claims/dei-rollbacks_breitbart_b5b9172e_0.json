@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "dei-rollbacks_breitbart_b5b9172e_0",
-    "cluster_id": "",
-    "concept_id": "",
+    "cluster_id": "clu_dei-rollbacks_011",
+    "concept_id": "concept_dei-rollbacks_003",
     "first_seen_platform": "breitbart",
     "first_seen_timestamp": "2026-04-27T18:04:17Z",
     "source_document_id": "58ec478ea94dbf95",
@@ -35,48 +35,48 @@
       0.555
     ],
     "source_distribution": "production",
-    "source_diversity": 0.25,
-    "bridge_ratio": 0.0,
-    "persistence_windows": 6,
-    "friction": 0.4737,
-    "friction_quadrant": "contested_advance"
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 15,
+    "friction": 0.3125,
+    "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 0.7305,
+    "value": 0.4711,
     "confidence_interval": [
-      0.6353,
-      0.8257
+      0.3564,
+      0.5858
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.7305
+      0.4711
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.4737,
+    "value": 0.3125,
     "confidence_interval": [
-      0.3592,
-      0.5882
+      0.1859,
+      0.4391
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.4737
+      0.3125
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.3,
+    "value": 0.75,
     "confidence_interval": [
-      0.1725,
-      0.4275
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9474,
+    "value": 0.9858,
     "confidence_interval": [
-      0.8685,
+      0.9097,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9474
+      0.9858
     ],
     "source_distribution": "production"
   },
@@ -120,22 +120,82 @@
     ]
   },
   "provenance": {
-    "first_platform": "Breitbart",
+    "first_platform": "YouTube (Influencer Framing)",
     "first_timestamp": "2026-04-27T18:04:17Z",
-    "lead_lag": []
-  },
-  "supply_chain": {
-    "concept_id": "",
-    "hops": [
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 8291.5
+      },
+      {
+        "platform": "Breitbart Feed",
+        "lag_hours": 8333.6
+      },
+      {
+        "platform": "Reuters",
+        "lag_hours": 8773.5
+      },
       {
         "platform": "Breitbart",
-        "timestamp": "2026-04-27T18:04:17Z",
+        "lag_hours": 8918.1
+      },
+      {
+        "platform": "Https://Www.Wctv.Tv",
+        "lag_hours": 8920.3
+      },
+      {
+        "platform": "Black Enterprise",
+        "lag_hours": 8965.0
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_dei-rollbacks_003",
+    "hops": [
+      {
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2025-04-21T04:00:34+00:00",
         "claim_id": "dei-rollbacks_breitbart_b5b9172e_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-01T15:31:47.382000+00:00",
+        "claim_id": "dei-rollbacks_breitbart_b5b9172e_0",
+        "fidelity_to_origin": 0.3865,
+        "fidelity_to_previous": 0.3865
+      },
+      {
+        "platform": "Breitbart Feed",
+        "timestamp": "2026-04-03T09:36:23+00:00",
+        "claim_id": "dei-rollbacks_breitbart_b5b9172e_0",
+        "fidelity_to_origin": 0.3834,
+        "fidelity_to_previous": 0.992
+      },
+      {
+        "platform": "Reuters",
+        "timestamp": "2026-04-21T17:28:40+00:00",
+        "claim_id": "dei-rollbacks_breitbart_b5b9172e_0",
+        "fidelity_to_origin": 0.3509,
+        "fidelity_to_previous": 0.9152
+      },
+      {
+        "platform": "Breitbart",
+        "timestamp": "2026-04-27T18:04:17+00:00",
+        "claim_id": "dei-rollbacks_breitbart_b5b9172e_0",
+        "fidelity_to_origin": 0.3402,
+        "fidelity_to_previous": 0.9695
+      },
+      {
+        "platform": "Https://Www.Wctv.Tv",
+        "timestamp": "2026-04-27T20:19:26+00:00",
+        "claim_id": "dei-rollbacks_breitbart_b5b9172e_0",
+        "fidelity_to_origin": 0.34,
+        "fidelity_to_previous": 0.9994
       }
     ],
-    "observation_boundary": "No public antecedent detected"
+    "observation_boundary": null
   },
   "coordination": {
     "burstiness": {
@@ -167,48 +227,48 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "dei-rollbacks_bluesky_e5c8947a_0",
-      "similarity": 0.4742,
-      "text": "DEI programs are being portrayed as discriminatory against white people."
+      "claim_id": "dei-rollbacks_youtube_cb976abe_1",
+      "similarity": 0.5301,
+      "text": "The removal of race and gender as factors for federal contracts in the construction industry favors large corporations over small firms."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_006f4686_0",
-      "similarity": 0.3303,
-      "text": "Government entities are not reliable custodians of personal data."
+      "claim_id": "dei-rollbacks_youtube_cb976abe_0",
+      "similarity": 0.4874,
+      "text": "The Department of Transportation's overhaul of the Disadvantaged Business Enterprise program will negatively impact minority-owned firms."
     },
     {
-      "claim_id": "dei-rollbacks_witf_63b4f83c_0",
-      "similarity": 0.3185,
-      "text": "The Pennsylvania Human Relations Commission is currently operating without a quorum due to recent resignations."
+      "claim_id": "dei-rollbacks_bluesky_c88de2af_1",
+      "similarity": 0.4474,
+      "text": "DEI initiatives prevent discrimination against marginalized groups."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_c8214d04_1",
-      "similarity": 0.2856,
-      "text": "The Republican Party is attacking diversity, equity, and inclusion (DEI) initiatives."
+      "claim_id": "dei-rollbacks_bluesky_fca3d503_0",
+      "similarity": 0.3742,
+      "text": "The Justice Department has reversed policies that promoted diversity, equity, and inclusion."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_fec60cca_0",
-      "similarity": 0.279,
-      "text": "DEI initiatives negatively impact education by promoting specific ideologies."
+      "claim_id": "dei-rollbacks_bluesky_128efe3b_0",
+      "similarity": 0.3225,
+      "text": "Coca-Cola is facing a lawsuit related to workplace diversity, equity, and inclusion (DEI) policies."
     }
   ],
   "example_content": [
     {
-      "text": "Government entities are not reliable custodians of personal data.",
+      "text": "DEI initiatives prevent discrimination against marginalized groups.",
+      "platform": "Bluesky",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "DEI initiatives are already illegal.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "DEI initiatives have led to the dismissal of qualified security personnel, potentially causing security vulnerabilities.",
+      "text": "White Americans benefit from diversity, equity, and inclusion initiatives more than any other group.",
       "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "DEI initiatives negatively impact education by promoting specific ideologies.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
+      "confidence": 0.7,
       "is_influencer_framing": false
     }
   ]

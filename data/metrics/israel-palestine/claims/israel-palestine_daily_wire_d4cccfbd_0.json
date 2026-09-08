@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "journalistic",
     "id": "israel-palestine_daily_wire_d4cccfbd_0",
-    "cluster_id": "clu_israel-palestine_014",
-    "concept_id": "concept_israel-palestine_006",
+    "cluster_id": "clu_israel-palestine_036",
+    "concept_id": "concept_israel-palestine_001",
     "first_seen_platform": "daily_wire",
     "first_seen_timestamp": "2026-04-25T19:54:00Z",
     "source_document_id": "a4ccfc60113f3ad1",
@@ -35,48 +35,48 @@
       0.645
     ],
     "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 4,
-    "friction": 0.7143,
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 15,
+    "friction": 0.66,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.5266,
+    "value": 0.6074,
     "confidence_interval": [
-      0.4161,
-      0.6371
+      0.503,
+      0.7118
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.5266
+      0.6074
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.7143,
+    "value": 0.66,
     "confidence_interval": [
-      0.6179,
-      0.8107
+      0.5595,
+      0.7605
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.7143
+      0.66
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.2,
+    "value": 0.75,
     "confidence_interval": [
-      0.065,
-      0.335
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9731,
     "confidence_interval": [
-      0.925,
+      0.8961,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9731
     ],
     "source_distribution": "production"
   },
@@ -120,31 +120,79 @@
     ]
   },
   "provenance": {
-    "first_platform": "Daily Wire",
+    "first_platform": "YouTube (Influencer Framing)",
     "first_timestamp": "2026-04-25T19:54:00Z",
     "lead_lag": [
       {
+        "platform": "Scheerpost.Com",
+        "lag_hours": 47.4
+      },
+      {
         "platform": "Bluesky",
-        "lag_hours": 6.2
+        "lag_hours": 51.5
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 51.9
+      },
+      {
+        "platform": "The Intercept",
+        "lag_hours": 383.9
+      },
+      {
+        "platform": "Cato",
+        "lag_hours": 459.9
+      },
+      {
+        "platform": "Daily Wire",
+        "lag_hours": 585.8
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_israel-palestine_006",
+    "concept_id": "concept_israel-palestine_001",
     "hops": [
       {
-        "platform": "Daily Wire",
-        "timestamp": "2026-04-25T19:54:00+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-04-01T10:05:03+00:00",
         "claim_id": "israel-palestine_daily_wire_d4cccfbd_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-26T02:08:20.802000+00:00",
+        "platform": "Scheerpost.Com",
+        "timestamp": "2026-04-03T09:32:00+00:00",
         "claim_id": "israel-palestine_daily_wire_d4cccfbd_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
+        "fidelity_to_origin": 0.9751,
+        "fidelity_to_previous": 0.9751
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-03T13:35:15.420000+00:00",
+        "claim_id": "israel-palestine_daily_wire_d4cccfbd_0",
+        "fidelity_to_origin": 0.973,
+        "fidelity_to_previous": 0.9978
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-03T13:56:12+00:00",
+        "claim_id": "israel-palestine_daily_wire_d4cccfbd_0",
+        "fidelity_to_origin": 0.9728,
+        "fidelity_to_previous": 0.9998
+      },
+      {
+        "platform": "The Intercept",
+        "timestamp": "2026-04-17T10:00:00+00:00",
+        "claim_id": "israel-palestine_daily_wire_d4cccfbd_0",
+        "fidelity_to_origin": 0.7984,
+        "fidelity_to_previous": 0.8207
+      },
+      {
+        "platform": "Cato",
+        "timestamp": "2026-04-20T13:59:40+00:00",
+        "claim_id": "israel-palestine_daily_wire_d4cccfbd_0",
+        "fidelity_to_origin": 0.7585,
+        "fidelity_to_previous": 0.95
       }
     ],
     "observation_boundary": null
@@ -179,46 +227,46 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "israel-palestine_bluesky_69b9adee_0",
-      "similarity": 0.364,
-      "text": "Multiple U.S. government agencies should be held accountable for war crimes due to the Pentagon's actions in Gaza and Iran, as well as providing military equipment to Israel."
+      "claim_id": "israel-palestine_youtube_88b580ed_0",
+      "similarity": 0.4551,
+      "text": "Trump's policies towards Iran have reached an unproductive conclusion."
     },
     {
-      "claim_id": "israel-palestine_bluesky_b541f14c_1",
-      "similarity": 0.3562,
-      "text": "The United States is engaging in unwarranted aggression in the Middle East."
+      "claim_id": "israel-palestine_scheerpost.com_4f9b855d_0",
+      "similarity": 0.4389,
+      "text": "The U.S. has a history of supporting violent actors and groups for political ends, similar to the actions it accuses Iran of."
     },
     {
-      "claim_id": "israel-palestine_bluesky_532770f1_1",
-      "similarity": 0.3387,
-      "text": "The United States is engaging in aggression in the Middle East."
+      "claim_id": "israel-palestine_youtube_90bc47c8_1",
+      "similarity": 0.4187,
+      "text": "Open border policies combined with the war on terrorism create a dangerous situation."
     },
     {
-      "claim_id": "israel-palestine_bluesky_532770f1_2",
-      "similarity": 0.3366,
-      "text": "The United States is warmongering."
+      "claim_id": "israel-palestine_bluesky_df035087_0",
+      "similarity": 0.3557,
+      "text": "US financial aid to Palestine and Israel is misdirected and should be used to support the American people instead."
     },
     {
-      "claim_id": "israel-palestine_bluesky_9ad16c92_0",
-      "similarity": 0.2477,
-      "text": "Donald Trump's foreign policy approach involves supporting multiple sides in conflicts, as seen in Gaza and Iran."
+      "claim_id": "israel-palestine_x_63dbe0f5_0",
+      "similarity": 0.3348,
+      "text": "Multiple U.S. presidents have initiated or escalated harmful military conflicts."
     }
   ],
   "example_content": [
     {
-      "text": "Donald Trump is intentionally creating drama and conflict.",
+      "text": "US financial aid to Palestine and Israel is misdirected and should be used to support the American people instead.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The United States is engaging in aggression in the Middle East.",
+      "text": "The United States government disregards international law and uses its military power arbitrarily.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The United States is warmongering.",
+      "text": "The United States is pursuing regime change in Iran and Venezuela to control oil and gas resources.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

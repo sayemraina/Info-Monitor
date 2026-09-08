@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "housing-crisis_youtube_b3e848b2_0",
-    "cluster_id": "clu_housing-crisis_003",
-    "concept_id": "concept_housing-crisis_003",
+    "cluster_id": "clu_housing-crisis_034",
+    "concept_id": "concept_housing-crisis_004",
     "first_seen_platform": "youtube",
     "first_seen_timestamp": "2025-10-20T15:45:01Z",
     "source_document_id": "yt_7KbGulTc4TY",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 5,
-    "friction": 0.6,
+    "persistence_windows": 11,
+    "friction": 0.4242,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.2269,
+    "value": 0.3095,
     "confidence_interval": [
-      0.0939,
-      0.3599
+      0.1827,
+      0.4363
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2269
+      0.3095
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.6,
+    "value": 0.4242,
     "confidence_interval": [
-      0.495,
-      0.705
+      0.306,
+      0.5424
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.6
+      0.4242
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.25,
+    "value": 0.55,
     "confidence_interval": [
-      0.1187,
-      0.3813
+      0.4413,
+      0.6587
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.25
+      0.55
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9766,
     "confidence_interval": [
-      0.925,
+      0.8998,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9766
     ],
     "source_distribution": "production"
   },
@@ -124,10 +124,6 @@
     "first_timestamp": "2025-10-20T15:45:01Z",
     "lead_lag": [
       {
-        "platform": "Bluesky",
-        "lag_hours": 3918.0
-      },
-      {
         "platform": "News 12   New Jersey",
         "lag_hours": 3923.2
       },
@@ -141,16 +137,20 @@
       },
       {
         "platform": "X Platform",
-        "lag_hours": 3939.8
+        "lag_hours": 3941.8
       },
       {
         "platform": "The Boston Globe",
         "lag_hours": 3946.1
+      },
+      {
+        "platform": "Cato",
+        "lag_hours": 4390.2
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_housing-crisis_003",
+    "concept_id": "concept_housing-crisis_004",
     "hops": [
       {
         "platform": "YouTube (Influencer Framing)",
@@ -160,39 +160,39 @@
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-01T21:45:37.865000+00:00",
-        "claim_id": "housing-crisis_youtube_b3e848b2_0",
-        "fidelity_to_origin": 0.305,
-        "fidelity_to_previous": 0.305
-      },
-      {
         "platform": "News 12   New Jersey",
         "timestamp": "2026-04-02T02:59:22+00:00",
         "claim_id": "housing-crisis_youtube_b3e848b2_0",
-        "fidelity_to_origin": 0.3041,
-        "fidelity_to_previous": 0.997
+        "fidelity_to_origin": 0.4764,
+        "fidelity_to_previous": 0.4764
       },
       {
         "platform": "Wjar",
         "timestamp": "2026-04-02T12:34:13+00:00",
         "claim_id": "housing-crisis_youtube_b3e848b2_0",
-        "fidelity_to_origin": 0.3024,
-        "fidelity_to_previous": 0.9944
+        "fidelity_to_origin": 0.4752,
+        "fidelity_to_previous": 0.9975
       },
       {
         "platform": "Wpri.Com",
         "timestamp": "2026-04-02T16:39:52+00:00",
         "claim_id": "housing-crisis_youtube_b3e848b2_0",
-        "fidelity_to_origin": 0.3016,
-        "fidelity_to_previous": 0.9974
+        "fidelity_to_origin": 0.4746,
+        "fidelity_to_previous": 0.9987
       },
       {
         "platform": "X Platform",
-        "timestamp": "2026-04-02T19:31:09+00:00",
+        "timestamp": "2026-04-02T21:35:52+00:00",
         "claim_id": "housing-crisis_youtube_b3e848b2_0",
-        "fidelity_to_origin": 0.3011,
-        "fidelity_to_previous": 0.9983
+        "fidelity_to_origin": 0.474,
+        "fidelity_to_previous": 0.9987
+      },
+      {
+        "platform": "The Boston Globe",
+        "timestamp": "2026-04-03T01:51:06+00:00",
+        "claim_id": "housing-crisis_youtube_b3e848b2_0",
+        "fidelity_to_origin": 0.4734,
+        "fidelity_to_previous": 0.9987
       }
     ],
     "observation_boundary": null
@@ -232,6 +232,11 @@
       "text": "Rent control will not help renters and may worsen the housing crisis."
     },
     {
+      "claim_id": "housing-crisis_news_12_-_new_jersey_12b0beba_2",
+      "similarity": 0.6716,
+      "text": "Rent-setting algorithms negatively impact the working class."
+    },
+    {
       "claim_id": "housing-crisis_the_boston_globe_a4d0a650_1",
       "similarity": 0.6662,
       "text": "Rent control policies are ineffective and lead to negative consequences such as poorly maintained properties and reduced housing development."
@@ -245,20 +250,9 @@
       "claim_id": "housing-crisis_wpri.com_30fca292_0",
       "similarity": 0.6025,
       "text": "Rent control is necessary in Providence to protect renters from rapidly increasing prices."
-    },
-    {
-      "claim_id": "housing-crisis_wpri.com_30fca292_2",
-      "similarity": 0.5937,
-      "text": "The vote on rent control should be delayed to allow for further study and public engagement."
     }
   ],
   "example_content": [
-    {
-      "text": "Real estate companies are conspiring to illegally raise rent prices globally.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
     {
       "text": "Rent stabilization policies can help mitigate the negative impacts of rapidly increasing rent prices.",
       "platform": "Wjar",
@@ -267,6 +261,12 @@
     },
     {
       "text": "Rent control is necessary in Providence to protect renters from rapidly increasing prices.",
+      "platform": "Wpri.Com",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Rent control will not help renters and may worsen the housing crisis.",
       "platform": "Wpri.Com",
       "confidence": 0.9,
       "is_influencer_framing": false

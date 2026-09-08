@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "inflation-cost-of-living_bluesky_e91d8e7d_1",
-    "cluster_id": "clu_inflation-cost-of-living_044",
-    "concept_id": "concept_inflation-cost-of-living_001",
+    "cluster_id": "clu_inflation-cost-of-living_045",
+    "concept_id": "concept_inflation-cost-of-living_000",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-05-05T22:27:30.157Z",
     "source_document_id": "4ed19cbca0684407",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 6,
-    "friction": 0.8947,
+    "persistence_windows": 15,
+    "friction": 0.8354,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.7632,
+    "value": 0.8367,
     "confidence_interval": [
-      0.6704,
-      0.856
+      0.7495,
+      0.9239
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.7632
+      0.8367
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.8947,
+    "value": 0.8354,
     "confidence_interval": [
-      0.8118,
-      0.9776
+      0.7481,
+      0.9227
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.8947
+      0.8354
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.3,
+    "value": 0.75,
     "confidence_interval": [
-      0.1725,
-      0.4275
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9842,
     "confidence_interval": [
-      0.925,
+      0.908,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9842
     ],
     "source_distribution": "production"
   },
@@ -120,79 +120,79 @@
     ]
   },
   "provenance": {
-    "first_platform": "The Intercept",
+    "first_platform": "Bluesky",
     "first_timestamp": "2026-05-05T22:27:30.157Z",
     "lead_lag": [
       {
-        "platform": "Bluesky",
-        "lag_hours": 2.0
-      },
-      {
-        "platform": "Fox Politics",
-        "lag_hours": 5.2
-      },
-      {
         "platform": "X Platform",
-        "lag_hours": 15.0
+        "lag_hours": 47.1
       },
       {
-        "platform": "Yahoo",
-        "lag_hours": 16.2
+        "platform": "Daily Wire",
+        "lag_hours": 536.8
       },
       {
-        "platform": "Shetland News",
-        "lag_hours": 16.3
+        "platform": "Thejournal.Ie",
+        "lag_hours": 589.2
+      },
+      {
+        "platform": "The Star",
+        "lag_hours": 589.2
+      },
+      {
+        "platform": "The Atlantic",
+        "lag_hours": 605.8
       },
       {
         "platform": "Aol.Com",
-        "lag_hours": 16.7
+        "lag_hours": 636.7
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_inflation-cost-of-living_001",
+    "concept_id": "concept_inflation-cost-of-living_000",
     "hops": [
       {
-        "platform": "The Intercept",
-        "timestamp": "2026-05-05T16:16:18+00:00",
+        "platform": "Bluesky",
+        "timestamp": "2026-04-03T06:10:15.684000+00:00",
         "claim_id": "inflation-cost-of-living_bluesky_e91d8e7d_1",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-05-05T18:16:14.066000+00:00",
-        "claim_id": "inflation-cost-of-living_bluesky_e91d8e7d_1",
-        "fidelity_to_origin": 0.9164,
-        "fidelity_to_previous": 0.9164
-      },
-      {
-        "platform": "Fox Politics",
-        "timestamp": "2026-05-05T21:30:24+00:00",
-        "claim_id": "inflation-cost-of-living_bluesky_e91d8e7d_1",
-        "fidelity_to_origin": 0.7812,
-        "fidelity_to_previous": 0.8525
-      },
-      {
         "platform": "X Platform",
-        "timestamp": "2026-05-06T07:18:46+00:00",
+        "timestamp": "2026-04-05T05:17:31+00:00",
         "claim_id": "inflation-cost-of-living_bluesky_e91d8e7d_1",
-        "fidelity_to_origin": 0.3713,
-        "fidelity_to_previous": 0.4753
+        "fidelity_to_origin": 0.9585,
+        "fidelity_to_previous": 0.9585
       },
       {
-        "platform": "Yahoo",
-        "timestamp": "2026-05-06T08:30:00+00:00",
+        "platform": "Daily Wire",
+        "timestamp": "2026-04-25T15:00:12+00:00",
         "claim_id": "inflation-cost-of-living_bluesky_e91d8e7d_1",
-        "fidelity_to_origin": 0.3217,
-        "fidelity_to_previous": 0.8664
+        "fidelity_to_origin": 0.527,
+        "fidelity_to_previous": 0.5498
       },
       {
-        "platform": "Shetland News",
-        "timestamp": "2026-05-06T08:36:36+00:00",
+        "platform": "Thejournal.Ie",
+        "timestamp": "2026-04-27T19:21:43+00:00",
         "claim_id": "inflation-cost-of-living_bluesky_e91d8e7d_1",
-        "fidelity_to_origin": 0.3171,
-        "fidelity_to_previous": 0.9857
+        "fidelity_to_origin": 0.4808,
+        "fidelity_to_previous": 0.9123
+      },
+      {
+        "platform": "The Star",
+        "timestamp": "2026-04-27T19:23:34+00:00",
+        "claim_id": "inflation-cost-of-living_bluesky_e91d8e7d_1",
+        "fidelity_to_origin": 0.4808,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "The Atlantic",
+        "timestamp": "2026-04-28T12:00:00+00:00",
+        "claim_id": "inflation-cost-of-living_bluesky_e91d8e7d_1",
+        "fidelity_to_origin": 0.4662,
+        "fidelity_to_previous": 0.9696
       }
     ],
     "observation_boundary": null
@@ -227,46 +227,46 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "inflation-cost-of-living_bluesky_e91d8e7d_0",
-      "similarity": 0.5839,
-      "text": "Billionaires are indifferent to the struggles of average Americans regarding healthcare, wages, and the cost of essential goods and housing."
+      "claim_id": "inflation-cost-of-living_bluesky_2fa12380_0",
+      "similarity": 0.4889,
+      "text": "Politicians are out of touch with the economic struggles of ordinary citizens."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_b68e8545_0",
-      "similarity": 0.5494,
-      "text": "Republican politicians are corrupt and dishonest."
+      "claim_id": "inflation-cost-of-living_bluesky_b94991e9_0",
+      "similarity": 0.4769,
+      "text": "Politicians are out of touch with the economic struggles of ordinary citizens."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_3eb083e6_0",
-      "similarity": 0.4576,
-      "text": "Politicians are out of touch with the financial struggles of ordinary people."
+      "claim_id": "inflation-cost-of-living_x_ee9ec9e3_0",
+      "similarity": 0.4202,
+      "text": "Members of Congress are corrupt and enrich themselves through illegal means."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_57738329_1",
-      "similarity": 0.3979,
-      "text": "Political parties that are too far left or right are unlikely to win elections in this country."
+      "claim_id": "inflation-cost-of-living_x_ee9ec9e3_1",
+      "similarity": 0.3488,
+      "text": "Members of Congress receive excessive benefits, such as free healthcare and fuel."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_d558901e_2",
-      "similarity": 0.3162,
-      "text": "A politician is morally reprehensible."
+      "claim_id": "inflation-cost-of-living_x_664833b4_1",
+      "similarity": 0.3388,
+      "text": "Current politicians are not adequately addressing the serious issues facing the country."
     }
   ],
   "example_content": [
     {
-      "text": "Political parties that are too far left or right are unlikely to win elections in this country.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "The UK government failed in its duty to prevent genocide.",
+      "text": "Politicians are out of touch with the economic struggles of ordinary citizens.",
       "platform": "Bluesky",
       "confidence": 0.8,
       "is_influencer_framing": false
     },
     {
-      "text": "A politician is morally reprehensible.",
+      "text": "Current government leadership is incompetent and detached from the needs of ordinary citizens.",
+      "platform": "Bluesky",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Politicians are out of touch with the economic struggles of ordinary citizens.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

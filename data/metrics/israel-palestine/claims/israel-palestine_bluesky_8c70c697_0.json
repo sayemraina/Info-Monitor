@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "israel-palestine_bluesky_8c70c697_0",
-    "cluster_id": "clu_israel-palestine_022",
-    "concept_id": "concept_israel-palestine_019",
+    "cluster_id": "clu_israel-palestine_027",
+    "concept_id": "concept_israel-palestine_000",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-03T15:24:50.048Z",
     "source_document_id": "8c70c697928212b2",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 13,
-    "friction": 0.5641,
+    "persistence_windows": 4,
+    "friction": 1,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.7562,
+    "value": 0.2208,
     "confidence_interval": [
-      0.6629,
-      0.8495
+      0.0874,
+      0.3542
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.7562
+      0.2208
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.5641,
+    "value": 1,
     "confidence_interval": [
-      0.4564,
-      0.6718
+      0.925,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.5641
+      1
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.65,
+    "value": 0.2,
     "confidence_interval": [
-      0.5487,
-      0.7513
+      0.065,
+      0.335
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.65
+      0.2
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9127,
     "confidence_interval": [
-      0.925,
-      1
+      0.8312,
+      0.9942
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9127
     ],
     "source_distribution": "production"
   },
@@ -120,79 +120,53 @@
     ]
   },
   "provenance": {
-    "first_platform": "Salon",
+    "first_platform": "YouTube (Influencer Framing)",
     "first_timestamp": "2026-04-03T15:24:50.048Z",
     "lead_lag": [
       {
-        "platform": "YouTube (Influencer Framing)",
-        "lag_hours": 6025.1
-      },
-      {
-        "platform": "Reason",
-        "lag_hours": 7917.9
-      },
-      {
-        "platform": "The Times Of Israel",
-        "lag_hours": 7939.7
-      },
-      {
         "platform": "Bluesky",
-        "lag_hours": 7940.0
+        "lag_hours": 862.1
+      },
+      {
+        "platform": "The New Arab",
+        "lag_hours": 1486.1
       },
       {
         "platform": "X Platform",
-        "lag_hours": 7940.5
-      },
-      {
-        "platform": "The Forward",
-        "lag_hours": 7941.5
+        "lag_hours": 1647.6
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_israel-palestine_019",
+    "concept_id": "concept_israel-palestine_000",
     "hops": [
       {
-        "platform": "Salon",
-        "timestamp": "2025-05-07T17:30:06+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-02-26T17:18:51+00:00",
         "claim_id": "israel-palestine_bluesky_8c70c697_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2026-01-13T18:33:56+00:00",
-        "claim_id": "israel-palestine_bluesky_8c70c697_0",
-        "fidelity_to_origin": 0.469,
-        "fidelity_to_previous": 0.469
-      },
-      {
-        "platform": "Reason",
-        "timestamp": "2026-04-02T15:25:47+00:00",
-        "claim_id": "israel-palestine_bluesky_8c70c697_0",
-        "fidelity_to_origin": 0.3021,
-        "fidelity_to_previous": 0.6441
-      },
-      {
-        "platform": "The Times Of Israel",
-        "timestamp": "2026-04-03T13:09:29+00:00",
-        "claim_id": "israel-palestine_bluesky_8c70c697_0",
-        "fidelity_to_origin": 0.3002,
-        "fidelity_to_previous": 0.9937
-      },
-      {
         "platform": "Bluesky",
-        "timestamp": "2026-04-03T13:32:39.337000+00:00",
+        "timestamp": "2026-04-03T15:24:50.048000+00:00",
         "claim_id": "israel-palestine_bluesky_8c70c697_0",
-        "fidelity_to_origin": 0.3002,
-        "fidelity_to_previous": 1.0
+        "fidelity_to_origin": 0.6337,
+        "fidelity_to_previous": 0.6337
+      },
+      {
+        "platform": "The New Arab",
+        "timestamp": "2026-04-29T15:26:32+00:00",
+        "claim_id": "israel-palestine_bluesky_8c70c697_0",
+        "fidelity_to_origin": 0.3686,
+        "fidelity_to_previous": 0.5817
       },
       {
         "platform": "X Platform",
-        "timestamp": "2026-04-03T13:58:20+00:00",
+        "timestamp": "2026-05-06T08:54:04+00:00",
         "claim_id": "israel-palestine_bluesky_8c70c697_0",
-        "fidelity_to_origin": 0.3001,
-        "fidelity_to_previous": 0.9997
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.8139
       }
     ],
     "observation_boundary": null
@@ -227,46 +201,46 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "israel-palestine_bluesky_94e64389_0",
-      "similarity": 0.6307,
-      "text": "Criticism of pro-Palestine online activity is hypocritical because inauthentic accounts originate from diverse locations, not just those perceived as adversarial."
+      "claim_id": "israel-palestine_bluesky_37cddee3_0",
+      "similarity": 0.7476,
+      "text": "Israel is unjustly detaining Dr. Hussam Abu Safiya, director of Kamal Adwan Hospital in Gaza."
     },
     {
-      "claim_id": "israel-palestine_bluesky_cce059b4_0",
-      "similarity": 0.6134,
-      "text": "Proponents of Israel falsely accuse critics of radicalism to suppress truths about the Israeli occupation."
+      "claim_id": "israel-palestine_youtube_f497e3f7_0",
+      "similarity": 0.7114,
+      "text": "A recently passed Israeli law unfairly targets Palestinian prisoners."
     },
     {
-      "claim_id": "israel-palestine_bluesky_40cce67c_0",
-      "similarity": 0.5613,
-      "text": "President Biden and Vice President Kamala Harris are publicly calling for a ceasefire in Gaza while simultaneously obstructing ceasefire efforts through policy and arms provisions."
+      "claim_id": "israel-palestine_youtube_78bc9520_1",
+      "similarity": 0.6336,
+      "text": "Israeli forces treated two activists from a Gaza-bound flotilla with extreme brutality."
     },
     {
-      "claim_id": "israel-palestine_bluesky_af3feb8e_0",
-      "similarity": 0.4886,
-      "text": "Some pro-Palestine protesters are knowingly promoting antisemitic messages."
+      "claim_id": "israel-palestine_youtube_7eebdbaa_2",
+      "similarity": 0.6319,
+      "text": "The Israeli army obstructed justice by failing to conduct a thorough internal investigation into the killing of 15 Palestinian medics and aid workers in Gaza."
     },
     {
-      "claim_id": "israel-palestine_bluesky_9186a738_0",
-      "similarity": 0.4161,
-      "text": "Western mainstream media outlets are failing to adequately report on the actions of Benjamin Netanyahu."
+      "claim_id": "israel-palestine_the_new_arab_3afd6847_0",
+      "similarity": 0.5768,
+      "text": "Israel is unjustly detaining Dr. Hussam Abu Safiya."
     }
   ],
   "example_content": [
     {
-      "text": "Some pro-Palestine protesters are knowingly promoting antisemitic messages.",
-      "platform": "Bluesky",
+      "text": "A recently passed Israeli law unfairly targets Palestinian prisoners.",
+      "platform": "YouTube (Influencer Framing)",
       "confidence": 0.9,
-      "is_influencer_framing": false
+      "is_influencer_framing": true
     },
     {
-      "text": "Alexandria Ocasio-Cortez's views on the Israeli-Palestinian conflict should not be automatically accepted.",
-      "platform": "Bluesky",
+      "text": "The Israeli army obstructed justice by failing to conduct a thorough internal investigation into the killing of 15 Palestinian medics and aid workers in Gaza.",
+      "platform": "YouTube (Influencer Framing)",
       "confidence": 0.8,
-      "is_influencer_framing": false
+      "is_influencer_framing": true
     },
     {
-      "text": "Proponents of Israel falsely accuse critics of radicalism to suppress truths about the Israeli occupation.",
+      "text": "Israel is unjustly detaining Dr. Hussam Abu Safiya, director of Kamal Adwan Hospital in Gaza.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

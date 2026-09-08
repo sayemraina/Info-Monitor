@@ -1,9 +1,57 @@
 {
   "events": [
     {
-      "id": "evt_b219ea2b4536",
+      "id": "evt_a631c9aeb136",
+      "type": "contestation_emergence",
+      "timestamp": "2026-09-08T05:37:04.077532+00:00",
+      "claim_id": "immigration_daily_wire_70bc025a_0",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.88,
+      "summary": "Active contestation in \"Birthright Citizenship\" — 15 pro vs 16 anti",
+      "detail": {
+        "cluster_id": "clu_immigration_001",
+        "pro_count": 15,
+        "anti_count": 16,
+        "balance": 0.94
+      }
+    },
+    {
+      "id": "evt_01ad48013c7a",
+      "type": "contestation_emergence",
+      "timestamp": "2026-09-08T05:37:04.077532+00:00",
+      "claim_id": "immigration_daily_news_b9c93570_0",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.82,
+      "summary": "Active contestation in \"Temporary Protected Status\" — 4 pro vs 3 anti",
+      "detail": {
+        "cluster_id": "clu_immigration_002",
+        "pro_count": 4,
+        "anti_count": 3,
+        "balance": 0.75
+      }
+    },
+    {
+      "id": "evt_0680fe9161cf",
+      "type": "contestation_emergence",
+      "timestamp": "2026-09-08T05:37:04.077532+00:00",
+      "claim_id": "immigration_bluesky_fdc37b7c_0",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.82,
+      "summary": "Active contestation in \"Reform Party in Scotland\" — 4 pro vs 3 anti",
+      "detail": {
+        "cluster_id": "clu_immigration_009",
+        "pro_count": 4,
+        "anti_count": 3,
+        "balance": 0.75
+      }
+    },
+    {
+      "id": "evt_05589a54823c",
       "type": "phase_transition",
-      "timestamp": "2026-05-27T05:40:56.300719+00:00",
+      "timestamp": "2026-09-08T05:37:04.077532+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
@@ -16,9 +64,9 @@
       }
     },
     {
-      "id": "evt_cf2b67bbcc46",
+      "id": "evt_7214b51b9985",
       "type": "phase_transition",
-      "timestamp": "2026-05-27T05:40:56.300719+00:00",
+      "timestamp": "2026-09-08T05:37:04.077532+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
@@ -31,9 +79,9 @@
       }
     },
     {
-      "id": "evt_c9bc825529aa",
+      "id": "evt_b7a86954e98d",
       "type": "phase_transition",
-      "timestamp": "2026-05-27T05:40:56.300719+00:00",
+      "timestamp": "2026-09-08T05:37:04.077532+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
@@ -46,9 +94,9 @@
       }
     },
     {
-      "id": "evt_24579817ce4c",
+      "id": "evt_27a1e655d9da",
       "type": "phase_transition",
-      "timestamp": "2026-05-27T05:40:56.300719+00:00",
+      "timestamp": "2026-09-08T05:37:04.077532+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
@@ -58,6 +106,94 @@
         "cluster_id": "clu_immigration_005",
         "direction": "radicalizing",
         "magnitude": 0.8008
+      }
+    },
+    {
+      "id": "evt_c8810bc61aa3",
+      "type": "divergence_shift",
+      "timestamp": "2026-09-08T05:37:04.077532+00:00",
+      "claim_id": null,
+      "slice_id": "arutz_sheva_israel_news_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Strong narrative split between arutz_sheva_israel_news and blitz",
+      "detail": {
+        "jsd": 0.7245,
+        "platforms": [
+          "arutz_sheva_israel_news",
+          "blitz"
+        ],
+        "window_hours": 6
+      }
+    },
+    {
+      "id": "evt_01cf4ab17373",
+      "type": "divergence_shift",
+      "timestamp": "2026-09-08T05:37:04.077532+00:00",
+      "claim_id": null,
+      "slice_id": "arutz_sheva_israel_news_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Strong narrative split between arutz_sheva_israel_news and Bluesky",
+      "detail": {
+        "jsd": 0.8469,
+        "platforms": [
+          "arutz_sheva_israel_news",
+          "bluesky"
+        ],
+        "window_hours": 6
+      }
+    },
+    {
+      "id": "evt_fc22e1743c17",
+      "type": "divergence_shift",
+      "timestamp": "2026-09-08T05:37:04.077532+00:00",
+      "claim_id": null,
+      "slice_id": "arutz_sheva_israel_news_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Strong narrative split between arutz_sheva_israel_news and breitbart",
+      "detail": {
+        "jsd": 1.0,
+        "platforms": [
+          "arutz_sheva_israel_news",
+          "breitbart"
+        ],
+        "window_hours": 6
+      }
+    },
+    {
+      "id": "evt_431d9a14f70e",
+      "type": "divergence_shift",
+      "timestamp": "2026-09-08T05:37:04.077532+00:00",
+      "claim_id": null,
+      "slice_id": "arutz_sheva_israel_news_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Strong narrative split between arutz_sheva_israel_news and cato",
+      "detail": {
+        "jsd": 1.0,
+        "platforms": [
+          "arutz_sheva_israel_news",
+          "cato"
+        ],
+        "window_hours": 6
+      }
+    },
+    {
+      "id": "evt_2fca365edbbb",
+      "type": "arousal_escalation",
+      "timestamp": "2026-09-08T06:37:04.077532+00:00",
+      "claim_id": "immigration_bluesky_29421e5e_0",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.81,
+      "summary": "Heated language rising in \"UK Deportation Policy\" — 63% emotionally charged claims",
+      "detail": {
+        "cluster_id": "clu_immigration_022",
+        "high_arousal_count": 23,
+        "total": 36,
+        "ratio": 0.64
       }
     },
     {
@@ -101,63 +237,127 @@
       "source": "fed_register"
     },
     {
+      "id": "evt_d5e68058888d",
+      "type": "lead_lag",
+      "timestamp": "2026-04-29T03:37:04.077532+00:00",
+      "claim_id": "immigration_daily_wire_70bc025a_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.9,
+      "summary": "salon leads Bluesky by ~3173h in \"Birthright Citizenship\"",
+      "detail": {
+        "source_platform": "salon",
+        "target_platform": "bluesky",
+        "lag_hours": 3173.8,
+        "cluster_id": "clu_immigration_001"
+      }
+    },
+    {
+      "id": "evt_72cb7c66c622",
+      "type": "lead_lag",
+      "timestamp": "2026-09-04T13:37:04.077532+00:00",
+      "claim_id": "immigration_daily_news_b9c93570_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.72,
+      "summary": "daily_news leads Bluesky by ~91h in \"Temporary Protected Status\"",
+      "detail": {
+        "source_platform": "daily_news",
+        "target_platform": "bluesky",
+        "lag_hours": 91.6,
+        "cluster_id": "clu_immigration_002"
+      }
+    },
+    {
+      "id": "evt_843709ca3c0d",
+      "type": "contestation_emergence",
+      "timestamp": "2026-09-08T05:37:04.077532+00:00",
+      "claim_id": "immigration_bluesky_3e598945_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.79,
+      "summary": "Active contestation in \"American Identity\" — 19 pro vs 30 anti",
+      "detail": {
+        "cluster_id": "clu_immigration_004",
+        "pro_count": 19,
+        "anti_count": 30,
+        "balance": 0.63
+      }
+    },
+    {
       "id": "evt_739ce4c1d2f7",
       "type": "momentum_spike",
-      "timestamp": "2026-05-27T06:40:56.300719+00:00",
-      "claim_id": "immigration_bluesky_672def39_0",
+      "timestamp": "2026-09-08T06:37:04.077532+00:00",
+      "claim_id": "immigration_bluesky_66284159_0",
       "slice_id": null,
       "severity": "medium",
       "confidence": 0.58,
-      "summary": "Rapid attention surge in \"American Identity\" (1 claims)",
+      "summary": "Rapid attention surge in \"German Politics\" (11 claims)",
       "detail": {
-        "cluster_id": "clu_immigration_004",
-        "avg_momentum": 0.645,
-        "member_count": 1
+        "cluster_id": "clu_immigration_060",
+        "avg_momentum": 0.644,
+        "member_count": 11
       }
     },
     {
       "id": "evt_7c64a3ffca84",
       "type": "momentum_spike",
-      "timestamp": "2026-05-27T06:40:56.300719+00:00",
-      "claim_id": "immigration_bluesky_6e21b6b4_1",
+      "timestamp": "2026-09-08T06:37:04.077532+00:00",
+      "claim_id": "immigration_breitbart_d9621c50_0",
       "slice_id": null,
       "severity": "medium",
       "confidence": 0.53,
-      "summary": "Rapid attention surge in \"Democratic Party\" (2 claims)",
+      "summary": "Rapid attention surge in \"Biden Administration's Border\" (13 claims)",
       "detail": {
-        "cluster_id": "clu_immigration_020",
-        "avg_momentum": 0.593,
-        "member_count": 2
+        "cluster_id": "clu_immigration_033",
+        "avg_momentum": 0.59,
+        "member_count": 13
       }
     },
     {
       "id": "evt_e63b6585d3eb",
       "type": "momentum_spike",
-      "timestamp": "2026-05-27T06:40:56.300719+00:00",
-      "claim_id": "immigration_bluesky_07381f58_0",
+      "timestamp": "2026-09-08T06:37:04.077532+00:00",
+      "claim_id": "immigration_youtube_9d0b8a14_0",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.53,
-      "summary": "Rapid attention surge in \"US Refugee Policy\" (2 claims)",
+      "confidence": 0.51,
+      "summary": "Rapid attention surge in \"Steve Descano\" (10 claims)",
       "detail": {
-        "cluster_id": "clu_immigration_025",
-        "avg_momentum": 0.593,
-        "member_count": 2
+        "cluster_id": "clu_immigration_019",
+        "avg_momentum": 0.563,
+        "member_count": 10
       }
     },
     {
       "id": "evt_5189a500ed65",
       "type": "momentum_spike",
-      "timestamp": "2026-05-27T06:40:56.300719+00:00",
-      "claim_id": "immigration_bluesky_a0342876_0",
+      "timestamp": "2026-09-08T06:37:04.077532+00:00",
+      "claim_id": "immigration_bluesky_8a1926d5_0",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.53,
-      "summary": "Rapid attention surge in \"UK Deportation Policy\" (3 claims)",
+      "confidence": 0.5,
+      "summary": "Rapid attention surge in \"ICE\" (32 claims)",
       "detail": {
-        "cluster_id": "clu_immigration_022",
-        "avg_momentum": 0.588,
-        "member_count": 3
+        "cluster_id": "clu_immigration_005",
+        "avg_momentum": 0.551,
+        "member_count": 32
+      }
+    },
+    {
+      "id": "evt_db2d3f32107b",
+      "type": "arousal_escalation",
+      "timestamp": "2026-09-08T06:37:04.077532+00:00",
+      "claim_id": "immigration_bluesky_8a1926d5_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.75,
+      "summary": "Heated language rising in \"ICE\" — 40% emotionally charged claims",
+      "detail": {
+        "cluster_id": "clu_immigration_005",
+        "high_arousal_count": 13,
+        "total": 32,
+        "ratio": 0.41
       }
     },
     {
@@ -419,127 +619,7 @@
       "summary": "Feds charge illegal immigrant in Loyola student killing as attorney says prosecutors lack  faith  in state",
       "detail": "Reported by wfmd.com. Tone: +0.0.",
       "source": "gdelt"
-    },
-    {
-      "id": "gdelt_38d0312635bc",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:64:50Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "EDITORIAL : Courtroom interpretation rights",
-      "detail": "Reported by taipeitimes.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_945c501431a6",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:64:50Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": " [ Webinar ] EB - 5 : What Ahead in 2026 - April 22nd , 11 : 00 am PT | American Lending Center",
-      "detail": "Reported by jdsupra.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_88012e78596c",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:64:50Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "It the silver lining from this terrible age of Donald Trump : he is pushing Britain closer to the EU | Gaby Hinsliff",
-      "detail": "Reported by theguardian.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_3168e1cb65d0",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:63:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Exclusive : Orbán challenger Magyar says election is a  referendum  on Hungary place in the world",
-      "detail": "Reported by clickondetroit.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_aba194f4ed88",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:63:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Exclusive : Orbán challenger Magyar says election is a  referendum  on Hungary place in the world",
-      "detail": "Reported by yoursourceone.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_4c645a02301b",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:54:50Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Exclusive : Orbán challenger Magyar says election is a  referendum  on Hungary place in the world",
-      "detail": "Reported by the-messenger.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_a5d54455825a",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:40:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Exclusive : Orbán challenger Magyar says election is a  referendum  on Hungary place in the world",
-      "detail": "Reported by clickorlando.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_10700e29335f",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:34:50Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Exclusive : Orbán challenger Magyar says election is a  referendum  on Hungary place in the world",
-      "detail": "Reported by sitkasentinel.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_0b55d9fc470f",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:21:50Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Abascal justifica los insultos islamófobos en el España - Egipto y da alas al  gran reemplazo  ",
-      "detail": "Reported by elplural.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_46cd607296bf",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:21:50Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Compromís carga contra la  deriva xenófoba  del PP por apoyar a Vox en inmigración",
-      "detail": "Reported by elperiodico.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_53d3d71e4a0c",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:21:50Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Four Indian American jurists appointed immigration judges",
-      "detail": "Reported by americanbazaaronline.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_bcd82302c883",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:20:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "US visa rules change : 12 new countries affected",
-      "detail": "Reported by vanguardngr.com. Tone: +0.0.",
-      "source": "gdelt"
     }
   ],
-  "total_count": 111
+  "total_count": 123
 }

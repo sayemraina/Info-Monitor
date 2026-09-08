@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "ai-bubble_youtube_bf4c19f7_0",
-    "cluster_id": "clu_ai-bubble_003",
-    "concept_id": "concept_ai-bubble_003",
+    "cluster_id": "clu_ai-bubble_042",
+    "concept_id": "concept_ai-bubble_002",
     "first_seen_platform": "youtube",
     "first_seen_timestamp": "2026-02-13T20:00:00Z",
     "source_document_id": "yt_yYe9YrdyJNQ",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 15,
-    "friction": 0.3947,
+    "persistence_windows": 14,
+    "friction": 0.4419,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 1,
+    "value": 0.4553,
     "confidence_interval": [
-      0.925,
-      1
+      0.3394,
+      0.5712
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.4553
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.3947,
+    "value": 0.4419,
     "confidence_interval": [
-      0.2743,
-      0.5151
+      0.325,
+      0.5588
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3947
+      0.4419
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.75,
+    "value": 0.7,
     "confidence_interval": [
-      0.6562,
-      0.8438
+      0.6025,
+      0.7975
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.75
+      0.7
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.993,
+    "value": 0.9872,
     "confidence_interval": [
-      0.9175,
+      0.9112,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.993
+      0.9872
     ],
     "source_distribution": "production"
   },
@@ -125,74 +125,48 @@
     "lead_lag": [
       {
         "platform": "Bluesky",
-        "lag_hours": 4443.6
+        "lag_hours": 4082.2
       },
       {
-        "platform": "The Motley Fool",
-        "lag_hours": 5365.4
+        "platform": "X Platform",
+        "lag_hours": 4132.1
       },
       {
-        "platform": "Aol",
-        "lag_hours": 5366.1
-      },
-      {
-        "platform": "Climate And Economy",
-        "lag_hours": 5366.8
-      },
-      {
-        "platform": "Newstarget.Com",
-        "lag_hours": 5368.8
-      },
-      {
-        "platform": "Zero Hedge",
-        "lag_hours": 5369.9
+        "platform": "Freedomsphoenix.Com",
+        "lag_hours": 4631.9
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_ai-bubble_003",
+    "concept_id": "concept_ai-bubble_002",
     "hops": [
       {
         "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2025-08-22T19:04:42+00:00",
+        "timestamp": "2025-10-14T16:01:35+00:00",
         "claim_id": "ai-bubble_youtube_bf4c19f7_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
         "platform": "Bluesky",
-        "timestamp": "2026-02-23T22:39:38.119000+00:00",
+        "timestamp": "2026-04-02T18:11:27.751000+00:00",
         "claim_id": "ai-bubble_youtube_bf4c19f7_0",
-        "fidelity_to_origin": 0.4239,
-        "fidelity_to_previous": 0.4239
+        "fidelity_to_origin": 0.3831,
+        "fidelity_to_previous": 0.3831
       },
       {
-        "platform": "The Motley Fool",
-        "timestamp": "2026-04-03T08:26:00+00:00",
+        "platform": "X Platform",
+        "timestamp": "2026-04-04T20:10:05+00:00",
         "claim_id": "ai-bubble_youtube_bf4c19f7_0",
-        "fidelity_to_origin": 0.3043,
-        "fidelity_to_previous": 0.7179
+        "fidelity_to_origin": 0.3755,
+        "fidelity_to_previous": 0.9802
       },
       {
-        "platform": "Aol",
-        "timestamp": "2026-04-03T09:10:59+00:00",
+        "platform": "Freedomsphoenix.Com",
+        "timestamp": "2026-04-25T15:54:54+00:00",
         "claim_id": "ai-bubble_youtube_bf4c19f7_0",
-        "fidelity_to_origin": 0.3042,
-        "fidelity_to_previous": 0.9997
-      },
-      {
-        "platform": "Climate And Economy",
-        "timestamp": "2026-04-03T09:50:02+00:00",
-        "claim_id": "ai-bubble_youtube_bf4c19f7_0",
-        "fidelity_to_origin": 0.3042,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Newstarget.Com",
-        "timestamp": "2026-04-03T11:53:47+00:00",
-        "claim_id": "ai-bubble_youtube_bf4c19f7_0",
-        "fidelity_to_origin": 0.3039,
-        "fidelity_to_previous": 0.999
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.7989
       }
     ],
     "observation_boundary": null
@@ -227,9 +201,19 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-bubble_bluesky_d907a91b_0",
-      "similarity": 0.7933,
-      "text": "The UK government's heavy investment in AI carries significant risk due to the potential for an AI bubble burst."
+      "claim_id": "ai-bubble_bluesky_5244b4fb_0",
+      "similarity": 0.9178,
+      "text": "The current level of investment and demand in AI may not be sustainable."
+    },
+    {
+      "claim_id": "ai-bubble_bluesky_39c4d2fa_0",
+      "similarity": 0.902,
+      "text": "The AI investment bubble is going to burst."
+    },
+    {
+      "claim_id": "ai-bubble_youtube_e8a78c79_0",
+      "similarity": 0.8353,
+      "text": "The current boom in artificial intelligence investment may be an unsustainable economic bubble."
     },
     {
       "claim_id": "ai-bubble_bluesky_403f434e_0",
@@ -237,36 +221,26 @@
       "text": "The AI investment bubble will burst, resulting in financial losses for ordinary individuals due to pension fund investments in AI companies."
     },
     {
-      "claim_id": "ai-bubble_bluesky_00497b85_0",
-      "similarity": 0.5072,
-      "text": "The AI boom has created economic opportunities for some individuals."
-    },
-    {
-      "claim_id": "ai-bubble_bluesky_c3d1b11b_1",
-      "similarity": 0.3027,
-      "text": "Economic recovery will take longer than two years."
-    },
-    {
-      "claim_id": "ai-bubble_bluesky_d212232f_1",
-      "similarity": 0.2839,
-      "text": "Billionaires should be taxed more heavily to fund environmental conservation efforts."
+      "claim_id": "ai-bubble_bluesky_e0418a2b_0",
+      "similarity": 0.7474,
+      "text": "Investment in AI is currently experiencing a speculative bubble."
     }
   ],
   "example_content": [
     {
-      "text": "Donald Trump's political actions are destructive to the United States.",
+      "text": "The AI investment bubble will burst, resulting in financial losses for ordinary individuals due to pension fund investments in AI companies.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Billionaires should be taxed more heavily to fund environmental conservation efforts.",
+      "text": "Investment in AI is currently experiencing a speculative bubble.",
       "platform": "Bluesky",
-      "confidence": 0.9,
+      "confidence": 0.7,
       "is_influencer_framing": false
     },
     {
-      "text": "Economic recovery will take longer than two years.",
+      "text": "AI proponents are overestimating the value and positive impact of AI investments.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

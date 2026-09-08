@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "israel-palestine_youtube_ba720e70_0",
-    "cluster_id": "clu_israel-palestine_006",
-    "concept_id": "concept_israel-palestine_003",
+    "cluster_id": "clu_israel-palestine_018",
+    "concept_id": "concept_israel-palestine_002",
     "first_seen_platform": "youtube",
     "first_seen_timestamp": "2026-03-16T09:14:26Z",
     "source_document_id": "yt_RGgYF1anhWY",
@@ -35,48 +35,48 @@
       0.925
     ],
     "source_distribution": "production",
-    "source_diversity": 0.75,
-    "bridge_ratio": 0.75,
-    "persistence_windows": 4,
-    "friction": 0.7692,
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 10,
+    "friction": 0.7333,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.1934,
+    "value": 0.3644,
     "confidence_interval": [
-      0.0579,
-      0.3289
+      0.2417,
+      0.4871
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1934
+      0.3644
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.7692,
+    "value": 0.7333,
     "confidence_interval": [
-      0.6769,
-      0.8615
+      0.6383,
+      0.8283
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.7692
+      0.7333
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.2,
+    "value": 0.5,
     "confidence_interval": [
-      0.065,
-      0.335
+      0.3875,
+      0.6125
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2
+      0.5
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.844,
+    "value": 0.8767,
     "confidence_interval": [
-      0.7573,
-      0.9307
+      0.7925,
+      0.9609
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.844
+      0.8767
     ],
     "source_distribution": "production"
   },
@@ -128,13 +128,29 @@
         "lag_hours": 4781.8
       },
       {
+        "platform": "The Forward",
+        "lag_hours": 4782.4
+      },
+      {
         "platform": "Bluesky",
-        "lag_hours": 4782.8
+        "lag_hours": 4783.5
+      },
+      {
+        "platform": "Asian News International (Ani)",
+        "lag_hours": 5361.2
+      },
+      {
+        "platform": "Asianet News Network Pvt Ltd",
+        "lag_hours": 5361.5
+      },
+      {
+        "platform": "Middle East Eye",
+        "lag_hours": 5403.4
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_israel-palestine_003",
+    "concept_id": "concept_israel-palestine_002",
     "hops": [
       {
         "platform": "YouTube (Influencer Framing)",
@@ -147,15 +163,36 @@
         "platform": "X Platform",
         "timestamp": "2026-04-03T14:20:07+00:00",
         "claim_id": "israel-palestine_youtube_ba720e70_0",
-        "fidelity_to_origin": 0.3002,
-        "fidelity_to_previous": 0.3002
+        "fidelity_to_origin": 0.397,
+        "fidelity_to_previous": 0.397
+      },
+      {
+        "platform": "The Forward",
+        "timestamp": "2026-04-03T14:58:41+00:00",
+        "claim_id": "israel-palestine_youtube_ba720e70_0",
+        "fidelity_to_origin": 0.3969,
+        "fidelity_to_previous": 0.9997
       },
       {
         "platform": "Bluesky",
-        "timestamp": "2026-04-03T15:23:38.276000+00:00",
+        "timestamp": "2026-04-03T16:05:05.731000+00:00",
         "claim_id": "israel-palestine_youtube_ba720e70_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9993
+        "fidelity_to_origin": 0.3968,
+        "fidelity_to_previous": 0.9997
+      },
+      {
+        "platform": "Asian News International (Ani)",
+        "timestamp": "2026-04-27T17:45:30+00:00",
+        "claim_id": "israel-palestine_youtube_ba720e70_0",
+        "fidelity_to_origin": 0.324,
+        "fidelity_to_previous": 0.8165
+      },
+      {
+        "platform": "Asianet News Network Pvt Ltd",
+        "timestamp": "2026-04-27T18:00:48+00:00",
+        "claim_id": "israel-palestine_youtube_ba720e70_0",
+        "fidelity_to_origin": 0.3239,
+        "fidelity_to_previous": 0.9997
       }
     ],
     "observation_boundary": null
@@ -210,9 +247,9 @@
       "text": "The United States and Israeli governments should be sanctioned for genocide against Palestinians."
     },
     {
-      "claim_id": "israel-palestine_x_8c85baca_0",
-      "similarity": 0.7426,
-      "text": "Israel's withdrawal from Gaza in 2005 demonstrates it is not committing genocide against Palestinians."
+      "claim_id": "israel-palestine_bluesky_907b507d_0",
+      "similarity": 0.6939,
+      "text": "The actions of certain actors in Gaza constitute genocide, war crimes, ecocide, and the assassination of Iranians."
     }
   ],
   "example_content": [
@@ -229,9 +266,9 @@
       "is_influencer_framing": false
     },
     {
-      "text": "The conflict in Gaza is comparable to a holocaust and is more severe than the situation in Xinjiang.",
+      "text": "Military intervention is justified to prevent genocide and maintain peace, even without a formal state membership.",
       "platform": "Bluesky",
-      "confidence": 0.8,
+      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

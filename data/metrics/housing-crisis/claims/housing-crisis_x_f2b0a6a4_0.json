@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "sarcastic",
     "id": "housing-crisis_x_f2b0a6a4_0",
-    "cluster_id": "clu_housing-crisis_033",
-    "concept_id": "concept_housing-crisis_029",
+    "cluster_id": "clu_housing-crisis_036",
+    "concept_id": "concept_housing-crisis_003",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-03T11:43:30.000Z",
     "source_document_id": "x_2040032441335714189",
@@ -35,48 +35,48 @@
       0.645
     ],
     "source_distribution": "production",
-    "source_diversity": 1.0,
-    "bridge_ratio": 1.0,
-    "persistence_windows": 2,
-    "friction": 0.6667,
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 3,
+    "friction": 0.9,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.2727,
+    "value": 0.2136,
     "confidence_interval": [
-      0.1432,
-      0.4022
+      0.0796,
+      0.3476
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2727
+      0.2136
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.6667,
+    "value": 0.9,
     "confidence_interval": [
-      0.5667,
-      0.7667
+      0.8175,
+      0.9825
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.6667
+      0.9
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.1,
+    "value": 0.15,
     "confidence_interval": [
-      0,
-      0.2425
+      0.0112,
+      0.2888
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1
+      0.15
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9848,
     "confidence_interval": [
-      0.925,
+      0.9087,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9848
     ],
     "source_distribution": "production"
   },
@@ -121,53 +121,31 @@
     ]
   },
   "provenance": {
-    "first_platform": "YouTube (Influencer Framing)",
+    "first_platform": "Bluesky",
     "first_timestamp": "2026-04-03T11:43:30.000Z",
     "lead_lag": [
       {
-        "platform": "Bluesky",
-        "lag_hours": 3801.6
-      },
-      {
         "platform": "X Platform",
-        "lag_hours": 3809.1
-      },
-      {
-        "platform": "Irish Independent",
-        "lag_hours": 3816.0
+        "lag_hours": 7.5
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_housing-crisis_029",
+    "concept_id": "concept_housing-crisis_003",
     "hops": [
       {
-        "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2025-10-26T14:18:20+00:00",
+        "platform": "Bluesky",
+        "timestamp": "2026-04-02T23:51:39.997000+00:00",
         "claim_id": "housing-crisis_x_f2b0a6a4_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-02T23:51:39.997000+00:00",
-        "claim_id": "housing-crisis_x_f2b0a6a4_0",
-        "fidelity_to_origin": 0.3026,
-        "fidelity_to_previous": 0.3026
-      },
-      {
         "platform": "X Platform",
         "timestamp": "2026-04-03T07:22:48+00:00",
         "claim_id": "housing-crisis_x_f2b0a6a4_0",
-        "fidelity_to_origin": 0.3013,
-        "fidelity_to_previous": 0.9957
-      },
-      {
-        "platform": "Irish Independent",
-        "timestamp": "2026-04-03T14:17:00+00:00",
-        "claim_id": "housing-crisis_x_f2b0a6a4_0",
         "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9957
+        "fidelity_to_previous": 0.3
       }
     ],
     "observation_boundary": null
@@ -207,24 +185,24 @@
       "text": "Government policies are exacerbating the housing crisis."
     },
     {
-      "claim_id": "housing-crisis_youtube_60e32c75_2",
-      "similarity": 0.7508,
-      "text": "Government policies intended to address the housing crisis often exacerbate the problem."
+      "claim_id": "housing-crisis_bluesky_da15f78b_0",
+      "similarity": 0.844,
+      "text": "The current administration is intentionally exacerbating the housing crisis to increase revenue."
     },
     {
-      "claim_id": "housing-crisis_irish_independent_91ea3ccb_0",
-      "similarity": 0.7269,
-      "text": "Vacant and neglected buildings are contributing to the housing crisis in Galway."
+      "claim_id": "housing-crisis_bluesky_f877b38d_1",
+      "similarity": 0.7863,
+      "text": "Developers are hoarding housing permits and lots, exacerbating the housing shortage."
     },
     {
-      "claim_id": "housing-crisis_x_beceba94_0",
-      "similarity": 0.6984,
-      "text": "Small-scale landlords who purchase properties to rent out are contributing significantly to high housing costs."
+      "claim_id": "housing-crisis_bluesky_9dca4298_0",
+      "similarity": 0.7571,
+      "text": "Los Angeles' zoning policies, high construction costs, debt, environmental issues, and restrictive housing policies exacerbate the housing crisis."
     },
     {
-      "claim_id": "housing-crisis_bluesky_271097c6_0",
-      "similarity": 0.614,
-      "text": "The termination of a VA mortgage safety net has led to a significant increase in foreclosures among US veterans."
+      "claim_id": "housing-crisis_bluesky_0f99b916_0",
+      "similarity": 0.6752,
+      "text": "The mini-budget confused the public and provided Labour with attack lines regarding the causes of inflation and rising mortgage rates."
     }
   ],
   "example_content": [
@@ -235,14 +213,14 @@
       "is_influencer_framing": false
     },
     {
-      "text": "Vacant and neglected buildings are contributing to the housing crisis in Galway.",
-      "platform": "Irish Independent",
+      "text": "Government policies are exacerbating the housing crisis.",
+      "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Government policies are exacerbating the housing crisis.",
-      "platform": "X Platform",
+      "text": "Los Angeles' zoning policies, high construction costs, debt, environmental issues, and restrictive housing policies exacerbate the housing crisis.",
+      "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

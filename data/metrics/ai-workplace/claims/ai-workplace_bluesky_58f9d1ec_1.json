@@ -24,107 +24,94 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": null,
+    "value": 0.6042,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.5042,
+      0.7042
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.6042
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.75,
+    "bridge_ratio": 0.75,
+    "persistence_windows": 4,
+    "friction": 0.1667,
+    "friction_quadrant": "unopposed_advance"
+  },
+  "salience": {
+    "value": 0.2156,
+    "confidence_interval": [
+      0.0818,
+      0.3494
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.2156
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.1667,
+    "confidence_interval": [
+      0.0292,
+      0.3042
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.1667
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.2,
+    "confidence_interval": [
+      0.065,
+      0.335
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.2
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.85,
     "confidence_interval": [
-      0,
-      0
+      0.7638,
+      0.9362
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.85
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 1,
     "confidence_interval": [
-      0,
-      0
+      0.925,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      1
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,21 +120,119 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-04-20T13:02:06.148Z",
+    "lead_lag": [
+      {
+        "platform": "The Ct Mirror",
+        "lag_hours": 15.8
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 345.0
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_ai-workplace_004",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-02T06:29:57.104166+00:00",
+        "claim_id": "ai-workplace_bluesky_58f9d1ec_1",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "The Ct Mirror",
+        "timestamp": "2026-04-02T22:16:30+00:00",
+        "claim_id": "ai-workplace_bluesky_58f9d1ec_1",
+        "fidelity_to_origin": 0.968,
+        "fidelity_to_previous": 0.968
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-16T15:30:49+00:00",
+        "claim_id": "ai-workplace_bluesky_58f9d1ec_1",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3099
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
-  "semantic_neighbors": [],
-  "example_content": []
+  "semantic_neighbors": [
+    {
+      "claim_id": "ai-workplace_bluesky_fcf459d7_0",
+      "similarity": 0.8761,
+      "text": "Government policies regarding AI are necessary."
+    },
+    {
+      "claim_id": "ai-workplace_bluesky_2e5d3e94_2",
+      "similarity": 0.8074,
+      "text": "Congress should legislate national AI-related safeguards."
+    },
+    {
+      "claim_id": "ai-workplace_bluesky_d23c89ea_0",
+      "similarity": 0.8062,
+      "text": "AI development is currently unregulated."
+    },
+    {
+      "claim_id": "ai-workplace_bluesky_b4bca840_1",
+      "similarity": 0.7831,
+      "text": "Genuine human oversight architectures are necessary to manage the societal consequences of AI-driven workforce displacement."
+    },
+    {
+      "claim_id": "ai-workplace_the_ct_mirror_fc3a07d0_0",
+      "similarity": 0.7326,
+      "text": "States need to regulate AI due to the absence of federal action."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Genuine human oversight architectures are necessary to manage the societal consequences of AI-driven workforce displacement.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Organizations need platforms to govern autonomous AI agents and manage shadow AI deployments.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "States need to regulate AI due to the absence of federal action.",
+      "platform": "The Ct Mirror",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
 }

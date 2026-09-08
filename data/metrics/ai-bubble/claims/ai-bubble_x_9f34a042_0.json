@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "ai-bubble_x_9f34a042_0",
-    "cluster_id": "clu_ai-bubble_007",
-    "concept_id": "concept_ai-bubble_000",
+    "cluster_id": "clu_ai-bubble_004",
+    "concept_id": "concept_ai-bubble_001",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-05-06T05:25:43.000Z",
     "source_document_id": "x_2051896166447493314",
@@ -35,48 +35,48 @@
       0.645
     ],
     "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 2,
-    "friction": 0.4286,
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 15,
+    "friction": 0.3906,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.3345,
+    "value": 0.6776,
     "confidence_interval": [
-      0.2096,
-      0.4594
+      0.5784,
+      0.7768
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3345
+      0.6776
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.4286,
+    "value": 0.3906,
     "confidence_interval": [
-      0.3107,
-      0.5465
+      0.2699,
+      0.5113
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.4286
+      0.3906
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.1,
+    "value": 0.75,
     "confidence_interval": [
-      0,
-      0.2425
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9518,
+    "value": 0.9238,
     "confidence_interval": [
-      0.8732,
+      0.8431,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9518
+      0.9238
     ],
     "source_distribution": "production"
   },
@@ -120,31 +120,79 @@
     ]
   },
   "provenance": {
-    "first_platform": "X Platform",
+    "first_platform": "YouTube (Influencer Framing)",
     "first_timestamp": "2026-05-06T05:25:43.000Z",
     "lead_lag": [
       {
         "platform": "Bluesky",
-        "lag_hours": 4.3
+        "lag_hours": 3010.0
+      },
+      {
+        "platform": "Renewable Energy World",
+        "lag_hours": 3938.7
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 3966.2
+      },
+      {
+        "platform": "Business Insider",
+        "lag_hours": 4461.0
+      },
+      {
+        "platform": "Coinpaper",
+        "lag_hours": 4461.2
+      },
+      {
+        "platform": "Tekedia",
+        "lag_hours": 4486.9
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_ai-bubble_000",
+    "concept_id": "concept_ai-bubble_001",
     "hops": [
       {
-        "platform": "X Platform",
-        "timestamp": "2026-05-06T01:56:13+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2025-10-21T12:38:46+00:00",
         "claim_id": "ai-bubble_x_9f34a042_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
         "platform": "Bluesky",
-        "timestamp": "2026-05-06T06:13:29.005213+00:00",
+        "timestamp": "2026-02-23T22:39:38.119000+00:00",
         "claim_id": "ai-bubble_x_9f34a042_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
+        "fidelity_to_origin": 0.5385,
+        "fidelity_to_previous": 0.5385
+      },
+      {
+        "platform": "Renewable Energy World",
+        "timestamp": "2026-04-03T15:19:43+00:00",
+        "claim_id": "ai-bubble_x_9f34a042_0",
+        "fidelity_to_origin": 0.3961,
+        "fidelity_to_previous": 0.7356
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-04T18:51:03+00:00",
+        "claim_id": "ai-bubble_x_9f34a042_0",
+        "fidelity_to_origin": 0.3919,
+        "fidelity_to_previous": 0.9894
+      },
+      {
+        "platform": "Business Insider",
+        "timestamp": "2026-04-25T09:40:02+00:00",
+        "claim_id": "ai-bubble_x_9f34a042_0",
+        "fidelity_to_origin": 0.3161,
+        "fidelity_to_previous": 0.8066
+      },
+      {
+        "platform": "Coinpaper",
+        "timestamp": "2026-04-25T09:48:49+00:00",
+        "claim_id": "ai-bubble_x_9f34a042_0",
+        "fidelity_to_origin": 0.316,
+        "fidelity_to_previous": 0.9997
       }
     ],
     "observation_boundary": null
@@ -179,47 +227,47 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-bubble_x_24676df7_0",
-      "similarity": 0.908,
-      "text": "The AI sector is currently experiencing a bubble, but it is still in an early phase."
+      "claim_id": "ai-bubble_bluesky_fbdddf4a_0",
+      "similarity": 0.9464,
+      "text": "The AI sector is experiencing a period of unsustainable growth that is about to end."
     },
     {
-      "claim_id": "ai-bubble_x_3fa56850_0",
-      "similarity": 0.8665,
-      "text": "The AI sector is experiencing a debt bubble that is beginning to collapse."
+      "claim_id": "ai-bubble_bluesky_9b487ccb_0",
+      "similarity": 0.9251,
+      "text": "The artificial intelligence sector is currently in a bubble."
     },
     {
-      "claim_id": "ai-bubble_x_39c5fada_0",
-      "similarity": 0.8665,
-      "text": "The AI sector is experiencing a debt bubble that is beginning to collapse."
+      "claim_id": "ai-bubble_bluesky_3ae42789_0",
+      "similarity": 0.92,
+      "text": "The AI sector is experiencing a bubble that will eventually burst, negatively impacting the economy."
     },
     {
-      "claim_id": "ai-bubble_x_d2375b1d_0",
-      "similarity": 0.6856,
-      "text": "There is a significant amount of capital expenditure in the AI sector."
+      "claim_id": "ai-bubble_bluesky_e2869f99_0",
+      "similarity": 0.8329,
+      "text": "The AI sector is currently experiencing a bubble in asset valuation."
     },
     {
-      "claim_id": "ai-bubble_bluesky_c28663d4_0",
-      "similarity": 0.6687,
-      "text": "The AI sector in China is attracting significant investment and interest."
+      "claim_id": "ai-bubble_bluesky_088ab96f_0",
+      "similarity": 0.8088,
+      "text": "The AI sector is currently overvalued."
     }
   ],
   "example_content": [
     {
-      "text": "The AI sector in China is attracting significant investment and interest.",
+      "text": "The AI sector is experiencing a bubble that will eventually burst, negatively impacting the economy.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The AI sector is experiencing a debt bubble that is beginning to collapse.",
-      "platform": "X Platform",
+      "text": "The AI sector is artificially propping up the economy and preventing a recession.",
+      "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The AI sector is experiencing a debt bubble that is beginning to collapse.",
-      "platform": "X Platform",
+      "text": "The AI sector is experiencing a period of unsustainable growth that is about to end.",
+      "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

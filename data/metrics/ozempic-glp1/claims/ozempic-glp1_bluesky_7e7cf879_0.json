@@ -9,8 +9,8 @@
     "arousal": "low",
     "register": "vernacular",
     "id": "ozempic-glp1_bluesky_7e7cf879_0",
-    "cluster_id": "",
-    "concept_id": "",
+    "cluster_id": "clu_ozempic-glp1_020",
+    "concept_id": "concept_ozempic-glp1_002",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-03T15:57:40.949Z",
     "source_document_id": "7e7cf879ebc7814e",
@@ -35,35 +35,35 @@
       0.227
     ],
     "source_distribution": "production",
-    "source_diversity": 0.25,
-    "bridge_ratio": 0.0,
+    "source_diversity": 0.75,
+    "bridge_ratio": 0.75,
     "persistence_windows": 15,
-    "friction": 0.2143,
-    "friction_quadrant": "dead"
+    "friction": 0.4286,
+    "friction_quadrant": "successful_suppression"
   },
   "salience": {
-    "value": 1,
+    "value": 0.5035,
     "confidence_interval": [
-      0.925,
-      1
+      0.3913,
+      0.6157
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.5035
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.2143,
+    "value": 0.4286,
     "confidence_interval": [
-      0.0804,
-      0.3482
+      0.3107,
+      0.5465
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2143
+      0.4286
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9547,
     "confidence_interval": [
-      0.925,
+      0.8763,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9547
     ],
     "source_distribution": "production"
   },
@@ -118,22 +118,45 @@
     "factors": []
   },
   "provenance": {
-    "first_platform": "Bluesky",
+    "first_platform": "YouTube (Influencer Framing)",
     "first_timestamp": "2026-04-03T15:57:40.949Z",
-    "lead_lag": []
-  },
-  "supply_chain": {
-    "concept_id": "",
-    "hops": [
+    "lead_lag": [
+      {
+        "platform": "X Platform",
+        "lag_hours": 8710.2
+      },
       {
         "platform": "Bluesky",
-        "timestamp": "2026-04-03T15:57:40.949Z",
+        "lag_hours": 8715.5
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_ozempic-glp1_002",
+    "hops": [
+      {
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2025-04-05T12:30:23+00:00",
         "claim_id": "ozempic-glp1_bluesky_7e7cf879_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-03T10:44:03+00:00",
+        "claim_id": "ozempic-glp1_bluesky_7e7cf879_0",
+        "fidelity_to_origin": 0.3004,
+        "fidelity_to_previous": 0.3004
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-03T15:57:40.949000+00:00",
+        "claim_id": "ozempic-glp1_bluesky_7e7cf879_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.9987
       }
     ],
-    "observation_boundary": "No public antecedent detected"
+    "observation_boundary": null
   },
   "coordination": {
     "burstiness": {
@@ -165,48 +188,48 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ozempic-glp1_bluesky_2b34b27a_0",
-      "similarity": 0.7493,
-      "text": "Novo Nordisk may significantly increase the price of Ozempic in the United States."
+      "claim_id": "ozempic-glp1_x_ee17791f_0",
+      "similarity": 0.9562,
+      "text": "Ozempic is being overused or misused."
     },
     {
-      "claim_id": "ozempic-glp1_bluesky_96416a0c_0",
-      "similarity": 0.7463,
-      "text": "Ozempic use is superficial and driven by vanity."
+      "claim_id": "ozempic-glp1_x_f6f1862b_0",
+      "similarity": 0.894,
+      "text": "Ozempic is being inappropriately used by individuals who do not need it."
     },
     {
-      "claim_id": "ozempic-glp1_bluesky_f7d92ff8_0",
-      "similarity": 0.5814,
-      "text": "Conservatives are allegedly overcharging for compounded medications containing Ozempic and Ivermectin."
+      "claim_id": "ozempic-glp1_x_03639a27_0",
+      "similarity": 0.7899,
+      "text": "Some individuals are using questionable methods to profit from the sale of Ozempic through online businesses."
     },
     {
-      "claim_id": "ozempic-glp1_bluesky_d1fdb736_0",
-      "similarity": 0.3895,
-      "text": "GLP-1 medications can have the unintended benefit of detecting underlying health conditions."
+      "claim_id": "ozempic-glp1_x_f6bae76f_0",
+      "similarity": 0.7857,
+      "text": "The prevalence of Ozempic use does not align with current obesity rates."
     },
     {
-      "claim_id": "ozempic-glp1_bluesky_0ea960fd_0",
-      "similarity": 0.356,
-      "text": "GLP-1 receptor agonists can reduce anxiety related to snacking."
+      "claim_id": "ozempic-glp1_bluesky_c63f3e26_0",
+      "similarity": 0.7707,
+      "text": "There are deceptive practices surrounding the marketing or consumption of Ozempic."
     }
   ],
   "example_content": [
     {
-      "text": "Conservatives are allegedly overcharging for compounded medications containing Ozempic and Ivermectin.",
+      "text": "There are deceptive practices surrounding the marketing or consumption of Ozempic.",
       "platform": "Bluesky",
       "confidence": 0.6,
       "is_influencer_framing": false
     },
     {
-      "text": "The food industry's response to the popularity of weight loss drugs is positive.",
-      "platform": "Bluesky",
-      "confidence": 0.8,
+      "text": "Some individuals without a medical need are abusing GLP-1 drugs like Ozempic for weight loss.",
+      "platform": "X Platform",
+      "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Ozempic use is superficial and driven by vanity.",
-      "platform": "Bluesky",
-      "confidence": 0.7,
+      "text": "Ozempic is being overused or misused.",
+      "platform": "X Platform",
+      "confidence": 0.6,
       "is_influencer_framing": false
     }
   ]

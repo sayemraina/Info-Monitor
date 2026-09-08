@@ -35,48 +35,48 @@
       0.6252
     ],
     "source_distribution": "production",
-    "source_diversity": 0.25,
-    "bridge_ratio": 0.25,
-    "persistence_windows": 1,
-    "friction": 1,
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 9,
+    "friction": 0.75,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.3241,
+    "value": 0.3201,
     "confidence_interval": [
-      0.1984,
-      0.4498
+      0.1941,
+      0.4461
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3241
+      0.3201
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 1,
+    "value": 0.75,
     "confidence_interval": [
-      0.925,
-      1
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.75
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0.45,
     "confidence_interval": [
-      0,
-      0.1962
+      0.3338,
+      0.5662
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0.45
     ],
     "source_distribution": "production"
   },
@@ -122,20 +122,54 @@
   "provenance": {
     "first_platform": "Bluesky",
     "first_timestamp": "2026-05-26T21:46:02.030Z",
-    "lead_lag": []
+    "lead_lag": [
+      {
+        "platform": "X Platform",
+        "lag_hours": 87.5
+      },
+      {
+        "platform": "Liberty Nation",
+        "lag_hours": 1213.2
+      },
+      {
+        "platform": "Digit",
+        "lag_hours": 1214.9
+      }
+    ]
   },
   "supply_chain": {
     "concept_id": "concept_ai-workplace_002",
     "hops": [
       {
         "platform": "Bluesky",
-        "timestamp": "2026-05-26T11:03:13.882000+00:00",
+        "timestamp": "2026-03-30T18:36:45.681000+00:00",
         "claim_id": "ai-workplace_bluesky_43a3ea39_1",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-03T10:04:11+00:00",
+        "claim_id": "ai-workplace_bluesky_43a3ea39_1",
+        "fidelity_to_origin": 0.9496,
+        "fidelity_to_previous": 0.9496
+      },
+      {
+        "platform": "Liberty Nation",
+        "timestamp": "2026-05-20T07:47:32+00:00",
+        "claim_id": "ai-workplace_bluesky_43a3ea39_1",
+        "fidelity_to_origin": 0.301,
+        "fidelity_to_previous": 0.317
+      },
+      {
+        "platform": "Digit",
+        "timestamp": "2026-05-20T09:31:00+00:00",
+        "claim_id": "ai-workplace_bluesky_43a3ea39_1",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.9967
       }
     ],
-    "observation_boundary": "No public antecedent detected"
+    "observation_boundary": null
   },
   "coordination": {
     "burstiness": {
@@ -167,16 +201,48 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-workplace_bluesky_b9937d7f_2",
-      "similarity": 0.7691,
-      "text": "The bursting of the AI investment bubble will be worse for the general public than the current state of AI development."
+      "claim_id": "ai-workplace_bluesky_774907d1_0",
+      "similarity": 0.8129,
+      "text": "Individuals should avoid contributing to the development and training of AI systems."
+    },
+    {
+      "claim_id": "ai-workplace_bluesky_5eca5149_1",
+      "similarity": 0.6861,
+      "text": "AI development is being promoted by individuals who are not trustworthy."
+    },
+    {
+      "claim_id": "ai-workplace_x_82c54c97_1",
+      "similarity": 0.6789,
+      "text": "The purported AI race with China is not clearly linked to specific goals like white-collar job replacement or unemployment reduction."
+    },
+    {
+      "claim_id": "ai-workplace_bluesky_b66a58b5_1",
+      "similarity": 0.6688,
+      "text": "AI development is creating an unsustainable economic bubble."
+    },
+    {
+      "claim_id": "ai-workplace_bluesky_b4e75525_1",
+      "similarity": 0.6486,
+      "text": "AI development will lead to widespread job displacement."
     }
   ],
   "example_content": [
     {
-      "text": "The bursting of the AI investment bubble will be worse for the general public than the current state of AI development.",
+      "text": "Oracle's investments in AI infrastructure are responsible for recent layoffs.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "AI development is being promoted by individuals who are not trustworthy.",
       "platform": "Bluesky",
       "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "AI implementation in the workplace will lead to significant workforce reductions.",
+      "platform": "X Platform",
+      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

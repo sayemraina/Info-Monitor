@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "inflation-cost-of-living_bluesky_5e954e34_0",
-    "cluster_id": "clu_inflation-cost-of-living_042",
-    "concept_id": "concept_inflation-cost-of-living_001",
+    "cluster_id": "clu_inflation-cost-of-living_047",
+    "concept_id": "concept_inflation-cost-of-living_000",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-29T17:09:31.116Z",
     "source_document_id": "1e5835cc9047403e",
@@ -24,107 +24,94 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": null,
+    "value": 0.82,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.72,
+      0.92
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.82
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.75,
+    "bridge_ratio": 0.75,
+    "persistence_windows": 4,
+    "friction": 1,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.2062,
+    "confidence_interval": [
+      0.0717,
+      0.3407
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.2062
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.2,
+    "confidence_interval": [
+      0.065,
+      0.335
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.2
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.5,
     "confidence_interval": [
-      0,
-      0
+      0.3875,
+      0.6125
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.5
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 0.9842,
     "confidence_interval": [
-      0,
-      0
+      0.908,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.9842
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,63 +120,116 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "YouTube (Influencer Framing)",
+    "first_timestamp": "2026-04-29T17:09:31.116Z",
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 595.9
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 1378.4
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_inflation-cost-of-living_000",
+    "hops": [
+      {
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-03-09T21:14:49+00:00",
+        "claim_id": "inflation-cost-of-living_bluesky_5e954e34_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-03T17:07:11.794000+00:00",
+        "claim_id": "inflation-cost-of-living_bluesky_5e954e34_0",
+        "fidelity_to_origin": 0.6974,
+        "fidelity_to_previous": 0.6974
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-05-06T07:36:26+00:00",
+        "claim_id": "inflation-cost-of-living_bluesky_5e954e34_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.4302
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "inflation-cost-of-living_bluesky_65c1f741_1",
-      "similarity": 0.6447,
-      "text": "Donald Trump's policies, including tariffs, taxes, and healthcare policies, have negatively impacted Americans by increasing inflation and prices."
+      "claim_id": "inflation-cost-of-living_bluesky_e06fd606_0",
+      "similarity": 0.9432,
+      "text": "Donald Trump's inflation record is the worst of any president."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_5043bf49_0",
-      "similarity": 0.5867,
-      "text": "Donald Trump's policies are responsible for the rising cost of living in California."
+      "claim_id": "inflation-cost-of-living_bluesky_5c0a8431_0",
+      "similarity": 0.7896,
+      "text": "Donald Trump's inflation record is worse than that of other recent presidents."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_ccb0c416_0",
-      "similarity": 0.5824,
-      "text": "Donald Trump's policies as president did not lower the cost of living for people."
+      "claim_id": "inflation-cost-of-living_youtube_59940ef4_0",
+      "similarity": 0.7255,
+      "text": "Donald Trump's handling of inflation and the cost of living is becoming increasingly unpopular."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_4dbbe388_0",
-      "similarity": 0.5518,
-      "text": "President Trump's policies are responsible for the current inflation and economic pessimism."
+      "claim_id": "inflation-cost-of-living_bluesky_33500a76_0",
+      "similarity": 0.6427,
+      "text": "Donald Trump is indifferent to the economic struggles of ordinary people."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_da65a775_0",
-      "similarity": 0.5436,
-      "text": "The current president is responsible for rising inflation and high gas prices."
+      "claim_id": "inflation-cost-of-living_bluesky_f7189713_1",
+      "similarity": 0.618,
+      "text": "Donald Trump was a poor president."
     }
   ],
   "example_content": [
     {
-      "text": "Donald Trump's policies and demands are contributing to increased cost of living for Americans.",
+      "text": "Donald Trump was a poor president.",
       "platform": "Bluesky",
+      "confidence": 1.0,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Donald Trump's handling of inflation and the cost of living is becoming increasingly unpopular.",
+      "platform": "YouTube (Influencer Framing)",
       "confidence": 0.9,
-      "is_influencer_framing": false
+      "is_influencer_framing": true
     },
     {
-      "text": "Donald Trump is responsible for the high cost of living.",
-      "platform": "Bluesky",
-      "confidence": 0.6,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "The Jones Act and reliance on diesel freighters and air freight contribute to a higher cost of living in affected areas.",
+      "text": "Trump is staging events to distract from the rising cost of living.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

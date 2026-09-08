@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "ozempic-glp1_bluesky_42682cbe_0",
-    "cluster_id": "clu_ozempic-glp1_000",
-    "concept_id": "concept_ozempic-glp1_000",
+    "cluster_id": "clu_ozempic-glp1_011",
+    "concept_id": "concept_ozempic-glp1_002",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-02T22:13:11.959Z",
     "source_document_id": "42682cbe3048bb81",
@@ -38,32 +38,32 @@
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
     "persistence_windows": 15,
-    "friction": 0.3497,
-    "friction_quadrant": "dead"
+    "friction": 0.6667,
+    "friction_quadrant": "successful_suppression"
   },
   "salience": {
-    "value": 1,
+    "value": 0.6782,
     "confidence_interval": [
-      0.925,
-      1
+      0.5791,
+      0.7773
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.6782
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.3497,
+    "value": 0.6667,
     "confidence_interval": [
-      0.2259,
-      0.4735
+      0.5667,
+      0.7667
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3497
+      0.6667
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9877,
+    "value": 0.9547,
     "confidence_interval": [
-      0.9118,
+      0.8763,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9877
+      0.9547
     ],
     "source_distribution": "production"
   },
@@ -125,74 +125,48 @@
     "lead_lag": [
       {
         "platform": "Bluesky",
-        "lag_hours": 8693.7
+        "lag_hours": 7300.2
       },
       {
         "platform": "X Platform",
-        "lag_hours": 8704.9
+        "lag_hours": 7313.3
       },
       {
-        "platform": "Finbold",
-        "lag_hours": 8709.0
-      },
-      {
-        "platform": "Healio",
-        "lag_hours": 8713.7
-      },
-      {
-        "platform": "The Blast",
-        "lag_hours": 8714.5
-      },
-      {
-        "platform": "Fox Wilmington",
-        "lag_hours": 8715.1
+        "platform": "Sgt Report",
+        "lag_hours": 7940.7
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_ozempic-glp1_000",
+    "concept_id": "concept_ozempic-glp1_002",
     "hops": [
       {
         "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2025-04-05T12:30:23+00:00",
+        "timestamp": "2025-06-02T18:00:29+00:00",
         "claim_id": "ozempic-glp1_bluesky_42682cbe_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
         "platform": "Bluesky",
-        "timestamp": "2026-04-02T18:14:12.031000+00:00",
+        "timestamp": "2026-04-02T22:13:11.959000+00:00",
         "claim_id": "ozempic-glp1_bluesky_42682cbe_0",
-        "fidelity_to_origin": 0.3017,
-        "fidelity_to_previous": 0.3017
+        "fidelity_to_origin": 0.3565,
+        "fidelity_to_previous": 0.3565
       },
       {
         "platform": "X Platform",
-        "timestamp": "2026-04-03T05:23:41+00:00",
+        "timestamp": "2026-04-03T11:17:20+00:00",
         "claim_id": "ozempic-glp1_bluesky_42682cbe_0",
-        "fidelity_to_origin": 0.3008,
-        "fidelity_to_previous": 0.997
+        "fidelity_to_origin": 0.3553,
+        "fidelity_to_previous": 0.9966
       },
       {
-        "platform": "Finbold",
-        "timestamp": "2026-04-03T09:31:12+00:00",
-        "claim_id": "ozempic-glp1_bluesky_42682cbe_0",
-        "fidelity_to_origin": 0.3005,
-        "fidelity_to_previous": 0.999
-      },
-      {
-        "platform": "Healio",
-        "timestamp": "2026-04-03T14:13:43+00:00",
-        "claim_id": "ozempic-glp1_bluesky_42682cbe_0",
-        "fidelity_to_origin": 0.3001,
-        "fidelity_to_previous": 0.9987
-      },
-      {
-        "platform": "The Blast",
-        "timestamp": "2026-04-03T15:00:00+00:00",
+        "platform": "Sgt Report",
+        "timestamp": "2026-04-29T14:40:38+00:00",
         "claim_id": "ozempic-glp1_bluesky_42682cbe_0",
         "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9997
+        "fidelity_to_previous": 0.8444
       }
     ],
     "observation_boundary": null
@@ -227,48 +201,48 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ozempic-glp1_bluesky_de6ea139_0",
-      "similarity": 0.8263,
-      "text": "Ozempic is ineffective."
+      "claim_id": "ozempic-glp1_x_2d63c1c4_0",
+      "similarity": 0.9057,
+      "text": "Ozempic has dangerous side effects."
     },
     {
-      "claim_id": "ozempic-glp1_bluesky_09627869_0",
-      "similarity": 0.7766,
-      "text": "Ozempic is being used for weight loss."
+      "claim_id": "ozempic-glp1_x_d09b9aeb_0",
+      "similarity": 0.9045,
+      "text": "Ozempic has significant negative consequences for individuals."
     },
     {
-      "claim_id": "ozempic-glp1_bluesky_7e7cf879_0",
-      "similarity": 0.7739,
-      "text": "Ozempic is being used for purposes beyond its intended medical application."
+      "claim_id": "ozempic-glp1_x_c74371a2_0",
+      "similarity": 0.8875,
+      "text": "Ozempic's side effects on physical appearance are worth the improvement in overall well-being."
     },
     {
-      "claim_id": "ozempic-glp1_bluesky_970ffc3a_0",
-      "similarity": 0.7265,
-      "text": "Ozempic can be used to treat high blood pressure."
+      "claim_id": "ozempic-glp1_x_8046a8ea_0",
+      "similarity": 0.8872,
+      "text": "Ozempic can cause negative psychological side effects."
     },
     {
-      "claim_id": "ozempic-glp1_bluesky_d9256ecb_0",
-      "similarity": 0.6949,
-      "text": "Ozempic and similar drugs are acceptable for legitimate health needs but not for minor weight loss."
+      "claim_id": "ozempic-glp1_x_89e272a7_0",
+      "similarity": 0.8714,
+      "text": "Ozempic and similar drugs may have negative long-term health consequences."
     }
   ],
   "example_content": [
     {
-      "text": "Ozempic is being used for weight loss.",
-      "platform": "Bluesky",
-      "confidence": 0.6,
+      "text": "Ozempic has dangerous side effects.",
+      "platform": "X Platform",
+      "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Ozempic is being used for purposes beyond its intended medical application.",
-      "platform": "Bluesky",
-      "confidence": 0.6,
+      "text": "Ozempic has significant negative consequences for individuals.",
+      "platform": "X Platform",
+      "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Ozempic can be used to treat high blood pressure.",
-      "platform": "Bluesky",
-      "confidence": 0.6,
+      "text": "Ozempic and similar drugs may have negative long-term health consequences.",
+      "platform": "X Platform",
+      "confidence": 0.7,
       "is_influencer_framing": false
     }
   ]

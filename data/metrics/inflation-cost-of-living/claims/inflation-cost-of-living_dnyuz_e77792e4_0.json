@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "inflation-cost-of-living_dnyuz_e77792e4_0",
-    "cluster_id": "clu_inflation-cost-of-living_003",
-    "concept_id": "concept_inflation-cost-of-living_003",
+    "cluster_id": "clu_inflation-cost-of-living_011",
+    "concept_id": "concept_inflation-cost-of-living_004",
     "first_seen_platform": "dnyuz",
     "first_seen_timestamp": "2026-04-26T11:28:54Z",
     "source_document_id": "0578cdafca978260",
@@ -35,48 +35,48 @@
       0.54
     ],
     "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 2,
-    "friction": 0,
+    "source_diversity": 0.75,
+    "bridge_ratio": 0.75,
+    "persistence_windows": 4,
+    "friction": 0.1538,
     "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 0.2875,
+    "value": 0.2062,
     "confidence_interval": [
-      0.1591,
-      0.4159
+      0.0717,
+      0.3407
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2875
+      0.2062
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0,
+    "value": 0.1538,
     "confidence_interval": [
-      0,
-      0.15
+      0.0153,
+      0.2923
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.1538
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.1,
+    "value": 0.2,
     "confidence_interval": [
-      0,
-      0.2425
+      0.065,
+      0.335
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1
+      0.2
     ],
     "source_distribution": "production"
   },
@@ -120,31 +120,42 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
+    "first_platform": "The Nation",
     "first_timestamp": "2026-04-26T11:28:54Z",
     "lead_lag": [
       {
+        "platform": "Bluesky",
+        "lag_hours": 542.7
+      },
+      {
         "platform": "Dnyuz",
-        "lag_hours": 3.6
+        "lag_hours": 546.3
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_inflation-cost-of-living_003",
+    "concept_id": "concept_inflation-cost-of-living_004",
     "hops": [
+      {
+        "platform": "The Nation",
+        "timestamp": "2026-04-03T17:10:16+00:00",
+        "claim_id": "inflation-cost-of-living_dnyuz_e77792e4_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
       {
         "platform": "Bluesky",
         "timestamp": "2026-04-26T07:52:09.502000+00:00",
         "claim_id": "inflation-cost-of-living_dnyuz_e77792e4_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
+        "fidelity_to_origin": 0.3046,
+        "fidelity_to_previous": 0.3046
       },
       {
         "platform": "Dnyuz",
         "timestamp": "2026-04-26T11:28:54+00:00",
         "claim_id": "inflation-cost-of-living_dnyuz_e77792e4_0",
         "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
+        "fidelity_to_previous": 0.9849
       }
     ],
     "observation_boundary": null
@@ -199,26 +210,26 @@
       "text": "The Russia-Ukraine war is causing the price of condoms to increase."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_92733c62_0",
-      "similarity": 0.3003,
-      "text": "The Russian economy is in severe decline."
+      "claim_id": "inflation-cost-of-living_the_nation_0c91b47e_0",
+      "similarity": 0.3542,
+      "text": "Uzbekistan's updated Uzbekistan-2030 Strategy aims to achieve national reform and development through measurable implementation and public consultation."
     }
   ],
   "example_content": [
     {
+      "text": "Uzbekistan's updated Uzbekistan-2030 Strategy aims to achieve national reform and development through measurable implementation and public consultation.",
+      "platform": "The Nation",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The Uzbekistan-2030 Strategy prioritizes human development by expanding access to education, healthcare, employment, and social protection.",
+      "platform": "The Nation",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
       "text": "The war in Ukraine has revived a sense of fear and fragility regarding safety.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "The Chernobyl disaster continues to have lasting effects on those who lived through it.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "The Russian economy is in severe decline.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

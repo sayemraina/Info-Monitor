@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "crypto-digital-money_bluesky_b7967743_1",
-    "cluster_id": "clu_crypto-digital-money_011",
-    "concept_id": "concept_crypto-digital-money_002",
+    "cluster_id": "clu_crypto-digital-money_042",
+    "concept_id": "concept_crypto-digital-money_003",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-01T21:13:26.851Z",
     "source_document_id": "b79677438a712451",
@@ -38,32 +38,32 @@
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
     "persistence_windows": 15,
-    "friction": 0.1094,
+    "friction": 0.0968,
     "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 0.5733,
+    "value": 1,
     "confidence_interval": [
-      0.4663,
-      0.6803
+      0.925,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.5733
+      1
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.1094,
+    "value": 0.0968,
     "confidence_interval": [
       0,
-      0.2512
+      0.2395
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1094
+      0.0968
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9945,
+    "value": 0.985,
     "confidence_interval": [
-      0.9191,
+      0.9089,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9945
+      0.985
     ],
     "source_distribution": "production"
   },
@@ -124,49 +124,75 @@
     "first_timestamp": "2026-04-01T21:13:26.851Z",
     "lead_lag": [
       {
-        "platform": "Fox Tech",
-        "lag_hours": 8305.3
-      },
-      {
         "platform": "Bluesky",
-        "lag_hours": 8464.6
+        "lag_hours": 7950.1
       },
       {
         "platform": "X Platform",
-        "lag_hours": 8524.7
+        "lag_hours": 7997.2
+      },
+      {
+        "platform": "The Intercept",
+        "lag_hours": 8349.0
+      },
+      {
+        "platform": "Techbullion",
+        "lag_hours": 8542.1
+      },
+      {
+        "platform": "Tokenpost",
+        "lag_hours": 8542.9
+      },
+      {
+        "platform": "Live Bitcoin News",
+        "lag_hours": 8543.7
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_crypto-digital-money_002",
+    "concept_id": "concept_crypto-digital-money_003",
     "hops": [
       {
         "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2025-04-13T12:31:06+00:00",
+        "timestamp": "2025-05-05T12:00:12+00:00",
         "claim_id": "crypto-digital-money_bluesky_b7967743_1",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Fox Tech",
-        "timestamp": "2026-03-25T13:51:32+00:00",
-        "claim_id": "crypto-digital-money_bluesky_b7967743_1",
-        "fidelity_to_origin": 0.318,
-        "fidelity_to_previous": 0.318
-      },
-      {
         "platform": "Bluesky",
-        "timestamp": "2026-04-01T05:04:53.318381+00:00",
+        "timestamp": "2026-04-01T18:05:26.761000+00:00",
         "claim_id": "crypto-digital-money_bluesky_b7967743_1",
-        "fidelity_to_origin": 0.3049,
-        "fidelity_to_previous": 0.9588
+        "fidelity_to_origin": 0.3977,
+        "fidelity_to_previous": 0.3977
       },
       {
         "platform": "X Platform",
         "timestamp": "2026-04-03T17:12:30+00:00",
         "claim_id": "crypto-digital-money_bluesky_b7967743_1",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9839
+        "fidelity_to_origin": 0.3941,
+        "fidelity_to_previous": 0.9909
+      },
+      {
+        "platform": "The Intercept",
+        "timestamp": "2026-04-18T09:00:00+00:00",
+        "claim_id": "crypto-digital-money_bluesky_b7967743_1",
+        "fidelity_to_origin": 0.3674,
+        "fidelity_to_previous": 0.9323
+      },
+      {
+        "platform": "Techbullion",
+        "timestamp": "2026-04-26T10:07:47+00:00",
+        "claim_id": "crypto-digital-money_bluesky_b7967743_1",
+        "fidelity_to_origin": 0.3528,
+        "fidelity_to_previous": 0.9603
+      },
+      {
+        "platform": "Tokenpost",
+        "timestamp": "2026-04-26T10:52:38+00:00",
+        "claim_id": "crypto-digital-money_bluesky_b7967743_1",
+        "fidelity_to_origin": 0.3527,
+        "fidelity_to_previous": 0.9997
       }
     ],
     "observation_boundary": null
@@ -201,6 +227,21 @@
   },
   "semantic_neighbors": [
     {
+      "claim_id": "crypto-digital-money_bluesky_79678147_1",
+      "similarity": 0.8539,
+      "text": "Some politicians advocate for stricter regulation of cryptocurrency."
+    },
+    {
+      "claim_id": "crypto-digital-money_bluesky_5888798e_0",
+      "similarity": 0.8187,
+      "text": "Cryptocurrency should be heavily regulated or criminalized."
+    },
+    {
+      "claim_id": "crypto-digital-money_bluesky_fcddf710_0",
+      "similarity": 0.7164,
+      "text": "The appointment of an interim Attorney General who previously advocated for a less aggressive approach to cryptocurrency regulation suggests a potential shift away from regulation by prosecution."
+    },
+    {
       "claim_id": "crypto-digital-money_bluesky_6476d396_0",
       "similarity": 0.693,
       "text": "Cryptocurrency users should maintain control of their private keys."
@@ -209,38 +250,23 @@
       "claim_id": "crypto-digital-money_bluesky_a23c2bbd_0",
       "similarity": 0.6868,
       "text": "Cryptocurrency regulation is becoming more structured and competitive globally."
-    },
-    {
-      "claim_id": "crypto-digital-money_bluesky_8a0a92d6_0",
-      "similarity": 0.6868,
-      "text": "Global cryptocurrency regulation is becoming more structured and competitive."
-    },
-    {
-      "claim_id": "crypto-digital-money_bluesky_932c9d7c_0",
-      "similarity": 0.6655,
-      "text": "Cryptocurrency companies are benefiting from the weakening of regulatory bodies like the FTC and CFTC."
-    },
-    {
-      "claim_id": "crypto-digital-money_bluesky_90a26961_0",
-      "similarity": 0.595,
-      "text": "The cryptocurrency industry is rife with corruption and should be investigated."
     }
   ],
   "example_content": [
     {
-      "text": "Bitcoin regulation will help its adoption.",
+      "text": "Cryptocurrency users should maintain control of their private keys.",
       "platform": "Bluesky",
-      "confidence": 0.9,
+      "confidence": 0.95,
       "is_influencer_framing": false
     },
     {
-      "text": "Bitcoin regulation will eliminate financial freedom.",
+      "text": "Cryptocurrency companies are benefiting from the weakening of regulatory bodies like the FTC and CFTC.",
       "platform": "Bluesky",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "is_influencer_framing": false
     },
     {
-      "text": "Bitcoin regulation will have no impact.",
+      "text": "Cryptocurrency regulation is becoming more structured and competitive globally.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

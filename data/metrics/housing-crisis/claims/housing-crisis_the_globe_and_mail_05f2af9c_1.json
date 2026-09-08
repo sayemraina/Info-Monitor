@@ -24,107 +24,94 @@
     "source_type": "elite_media"
   },
   "momentum": {
-    "value": null,
+    "value": 0.54,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.44,
+      0.64
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.54
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 4,
+    "friction": 0.1667,
+    "friction_quadrant": "unopposed_advance"
+  },
+  "salience": {
+    "value": 0.2009,
+    "confidence_interval": [
+      0.066,
+      0.3358
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.2009
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.1667,
+    "confidence_interval": [
+      0.0292,
+      0.3042
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.1667
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.2,
+    "confidence_interval": [
+      0.065,
+      0.335
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.2
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.5,
     "confidence_interval": [
-      0,
-      0
+      0.3875,
+      0.6125
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.5
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 0.6667,
     "confidence_interval": [
-      0,
-      0
+      0.5667,
+      0.7667
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.6667
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,21 +120,130 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "X Platform",
+    "first_timestamp": "2026-05-26T00:47:46Z",
+    "lead_lag": [
+      {
+        "platform": "Yahoo",
+        "lag_hours": 1250.6
+      },
+      {
+        "platform": "The Globe And Mail",
+        "lag_hours": 1258.6
+      },
+      {
+        "platform": "Castanet",
+        "lag_hours": 1259.4
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_housing-crisis_000",
+    "hops": [
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-03T14:10:43+00:00",
+        "claim_id": "housing-crisis_the_globe_and_mail_05f2af9c_1",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Yahoo",
+        "timestamp": "2026-05-25T16:45:56+00:00",
+        "claim_id": "housing-crisis_the_globe_and_mail_05f2af9c_1",
+        "fidelity_to_origin": 0.3049,
+        "fidelity_to_previous": 0.3049
+      },
+      {
+        "platform": "The Globe And Mail",
+        "timestamp": "2026-05-26T00:47:46+00:00",
+        "claim_id": "housing-crisis_the_globe_and_mail_05f2af9c_1",
+        "fidelity_to_origin": 0.3004,
+        "fidelity_to_previous": 0.9852
+      },
+      {
+        "platform": "Castanet",
+        "timestamp": "2026-05-26T01:36:00+00:00",
+        "claim_id": "housing-crisis_the_globe_and_mail_05f2af9c_1",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.9987
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
-  "semantic_neighbors": [],
-  "example_content": []
+  "semantic_neighbors": [
+    {
+      "claim_id": "housing-crisis_castanet_a3ffdf66_0",
+      "similarity": 0.6011,
+      "text": "Toronto needs to become more affordable, caring, and safe."
+    },
+    {
+      "claim_id": "housing-crisis_yahoo_66247410_0",
+      "similarity": 0.6011,
+      "text": "Toronto needs to become more affordable, caring, and safe."
+    },
+    {
+      "claim_id": "housing-crisis_castanet_a3ffdf66_1",
+      "similarity": 0.6005,
+      "text": "Toronto's current state of traffic, transit, and cost of living is unacceptable."
+    },
+    {
+      "claim_id": "housing-crisis_x_3cc20f6c_0",
+      "similarity": 0.4312,
+      "text": "Housing in Hamilton is more affordable than in Toronto."
+    },
+    {
+      "claim_id": "housing-crisis_x_3b9aa674_0",
+      "similarity": 0.4276,
+      "text": "Housing in Hamilton is significantly more affordable than in Toronto."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Housing in Hamilton is significantly more affordable than in Toronto.",
+      "platform": "X Platform",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Housing in Hamilton is significantly more affordable than in Toronto.",
+      "platform": "X Platform",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Housing in Hamilton is significantly more affordable than in Toronto.",
+      "platform": "X Platform",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
 }

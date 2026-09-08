@@ -35,48 +35,48 @@
       0.645
     ],
     "source_distribution": "production",
-    "source_diversity": 0.25,
-    "bridge_ratio": 0.25,
-    "persistence_windows": 1,
-    "friction": 0.6667,
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 13,
+    "friction": 0.5385,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.318,
+    "value": 0.4129,
     "confidence_interval": [
-      0.1919,
-      0.4441
+      0.2939,
+      0.5319
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.318
+      0.4129
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.6667,
+    "value": 0.5385,
     "confidence_interval": [
-      0.5667,
-      0.7667
+      0.4289,
+      0.6481
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.6667
+      0.5385
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0.65,
     "confidence_interval": [
-      0,
-      0.1962
+      0.5487,
+      0.7513
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0.65
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9778,
+    "value": 0.9238,
     "confidence_interval": [
-      0.9011,
+      0.8431,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9778
+      0.9238
     ],
     "source_distribution": "production"
   },
@@ -122,20 +122,80 @@
   "provenance": {
     "first_platform": "Bluesky",
     "first_timestamp": "2026-05-27T04:48:12.658Z",
-    "lead_lag": []
+    "lead_lag": [
+      {
+        "platform": "YouTube (Influencer Framing)",
+        "lag_hours": 159.4
+      },
+      {
+        "platform": "Cityam",
+        "lag_hours": 208.0
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 258.8
+      },
+      {
+        "platform": "Everything Pr.Com",
+        "lag_hours": 778.3
+      },
+      {
+        "platform": "Cms Wire",
+        "lag_hours": 859.6
+      },
+      {
+        "platform": "Fortune",
+        "lag_hours": 1339.8
+      }
+    ]
   },
   "supply_chain": {
     "concept_id": "concept_ai-bubble_001",
     "hops": [
       {
         "platform": "Bluesky",
-        "timestamp": "2026-05-27T04:09:35.097000+00:00",
+        "timestamp": "2026-03-24T22:35:44.846000+00:00",
         "claim_id": "ai-bubble_bluesky_d532c56b_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-03-31T14:01:07+00:00",
+        "claim_id": "ai-bubble_bluesky_d532c56b_0",
+        "fidelity_to_origin": 0.9167,
+        "fidelity_to_previous": 0.9167
+      },
+      {
+        "platform": "Cityam",
+        "timestamp": "2026-04-02T14:38:17+00:00",
+        "claim_id": "ai-bubble_bluesky_d532c56b_0",
+        "fidelity_to_origin": 0.8913,
+        "fidelity_to_previous": 0.9723
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-04T17:26:44+00:00",
+        "claim_id": "ai-bubble_bluesky_d532c56b_0",
+        "fidelity_to_origin": 0.8648,
+        "fidelity_to_previous": 0.9703
+      },
+      {
+        "platform": "Everything Pr.Com",
+        "timestamp": "2026-04-26T08:56:23+00:00",
+        "claim_id": "ai-bubble_bluesky_d532c56b_0",
+        "fidelity_to_origin": 0.5933,
+        "fidelity_to_previous": 0.6861
+      },
+      {
+        "platform": "Cms Wire",
+        "timestamp": "2026-04-29T18:09:00+00:00",
+        "claim_id": "ai-bubble_bluesky_d532c56b_0",
+        "fidelity_to_origin": 0.5509,
+        "fidelity_to_previous": 0.9285
       }
     ],
-    "observation_boundary": "No public antecedent detected"
+    "observation_boundary": null
   },
   "coordination": {
     "burstiness": {
@@ -167,27 +227,48 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-bubble_bluesky_8139ce8e_0",
-      "similarity": 0.6883,
-      "text": "Some individuals are strategically capitalizing on the current surge of investment and interest in artificial intelligence."
+      "claim_id": "ai-bubble_bluesky_f7874094_0",
+      "similarity": 0.964,
+      "text": "The current hype around artificial intelligence is unsustainable and will likely decline significantly by November 2025."
     },
     {
-      "claim_id": "ai-bubble_bluesky_5045b0fa_0",
-      "similarity": 0.6205,
-      "text": "The current surge of investment and interest in artificial intelligence is unsustainable and based on unethical practices."
+      "claim_id": "ai-bubble_youtube_123fa5f6_0",
+      "similarity": 0.9438,
+      "text": "The current AI boom is largely based on hype and may not be as substantial as it appears."
+    },
+    {
+      "claim_id": "ai-bubble_x_5f1e78e3_0",
+      "similarity": 0.9301,
+      "text": "The current hype and investment in artificial intelligence is unsustainable and will eventually decline."
+    },
+    {
+      "claim_id": "ai-bubble_x_69d3ca64_0",
+      "similarity": 0.9193,
+      "text": "The current hype around AI is unsustainable and will eventually collapse."
+    },
+    {
+      "claim_id": "ai-bubble_bluesky_7dcd4584_0",
+      "similarity": 0.9,
+      "text": "The current hype around artificial intelligence is unsustainable and will eventually collapse."
     }
   ],
   "example_content": [
     {
-      "text": "Some individuals are strategically capitalizing on the current surge of investment and interest in artificial intelligence.",
+      "text": "The current hype around artificial intelligence is unsustainable and will eventually collapse.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The current hype around artificial intelligence is unsustainable and will likely decline significantly by November 2025.",
       "platform": "Bluesky",
       "confidence": 0.8,
       "is_influencer_framing": false
     },
     {
-      "text": "The current surge of investment and interest in artificial intelligence is unsustainable and based on unethical practices.",
+      "text": "The focus on AI in post-industrial economies is a result of overvaluing nerds.",
       "platform": "Bluesky",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "is_influencer_framing": false
     }
   ]

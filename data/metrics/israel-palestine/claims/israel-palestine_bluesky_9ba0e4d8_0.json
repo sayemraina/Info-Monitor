@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "israel-palestine_bluesky_9ba0e4d8_0",
-    "cluster_id": "clu_israel-palestine_012",
-    "concept_id": "concept_israel-palestine_004",
+    "cluster_id": "clu_israel-palestine_039",
+    "concept_id": "concept_israel-palestine_000",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-27T19:54:34.480Z",
     "source_document_id": "1ca3783ee750fbd8",
@@ -24,107 +24,94 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": null,
+    "value": 0.645,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.545,
+      0.745
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.645
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 10,
+    "friction": 0.7812,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.3887,
+    "confidence_interval": [
+      0.2679,
+      0.5095
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3887
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.7812,
+    "confidence_interval": [
+      0.6898,
+      0.8726
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.7812
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.85,
     "confidence_interval": [
-      0,
-      0
+      0.7638,
+      0.9362
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.85
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 0.9127,
     "confidence_interval": [
-      0,
-      0
+      0.8312,
+      0.9942
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.9127
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,43 +120,128 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "YouTube (Influencer Framing)",
+    "first_timestamp": "2026-04-27T19:54:34.480Z",
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 19.1
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 19.5
+      },
+      {
+        "platform": "The National",
+        "lag_hours": 639.6
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_israel-palestine_000",
+    "hops": [
+      {
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-04-02T18:32:11+00:00",
+        "claim_id": "israel-palestine_bluesky_9ba0e4d8_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-03T13:40:30.228000+00:00",
+        "claim_id": "israel-palestine_bluesky_9ba0e4d8_0",
+        "fidelity_to_origin": 0.9791,
+        "fidelity_to_previous": 0.9791
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-03T14:03:10+00:00",
+        "claim_id": "israel-palestine_bluesky_9ba0e4d8_0",
+        "fidelity_to_origin": 0.9786,
+        "fidelity_to_previous": 0.9995
+      },
+      {
+        "platform": "The National",
+        "timestamp": "2026-04-29T10:05:53+00:00",
+        "claim_id": "israel-palestine_bluesky_9ba0e4d8_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3066
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "israel-palestine_the_national_a3d7b72c_1",
-      "similarity": 0.6793,
-      "text": "Benjamin Netanyahu should be prosecuted for war crimes at the ICC and ICJ."
+      "claim_id": "israel-palestine_bluesky_9186a738_1",
+      "similarity": 0.7048,
+      "text": "Benjamin Netanyahu is committing murder with impunity."
     },
     {
-      "claim_id": "israel-palestine_bluesky_ffe69719_2",
-      "similarity": 0.523,
-      "text": "Netanyahu wanted to commit genocide and knew Trump would support it."
+      "claim_id": "israel-palestine_x_c7d06987_2",
+      "similarity": 0.647,
+      "text": "Benjamin Netanyahu's actions are comparable to those of Adolf Hitler."
+    },
+    {
+      "claim_id": "israel-palestine_bluesky_91b47f92_0",
+      "similarity": 0.6371,
+      "text": "Benjamin Netanyahu is prolonging the Gaza war to avoid imprisonment."
+    },
+    {
+      "claim_id": "israel-palestine_bluesky_91b47f92_1",
+      "similarity": 0.5952,
+      "text": "Israelis should have investigated and prosecuted Benjamin Netanyahu for his role in the October 7th attack."
+    },
+    {
+      "claim_id": "israel-palestine_x_02ace5f9_0",
+      "similarity": 0.5722,
+      "text": "Donald Trump and Benjamin Netanyahu are dangerous terrorists."
     }
   ],
   "example_content": [
     {
-      "text": "Netanyahu wanted to commit genocide and knew Trump would support it.",
+      "text": "Benjamin Netanyahu is comparable to Genghis Khan.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Benjamin Netanyahu should be prosecuted for war crimes at the ICC and ICJ.",
-      "platform": "The National",
+      "text": "Benjamin Netanyahu is committing murder with impunity.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Benjamin Netanyahu is prolonging the Gaza war to avoid imprisonment.",
+      "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

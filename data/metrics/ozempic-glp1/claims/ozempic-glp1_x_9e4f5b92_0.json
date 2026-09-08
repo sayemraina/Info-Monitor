@@ -24,107 +24,94 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": null,
+    "value": 0.645,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.545,
+      0.745
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.645
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 12,
+    "friction": 0.4595,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.3802,
+    "confidence_interval": [
+      0.2587,
+      0.5017
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3802
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.4595,
+    "confidence_interval": [
+      0.344,
+      0.575
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.4595
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.6,
+    "confidence_interval": [
+      0.495,
+      0.705
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.6
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.85,
     "confidence_interval": [
-      0,
-      0
+      0.7638,
+      0.9362
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.85
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 0.9547,
     "confidence_interval": [
-      0,
-      0
+      0.8763,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.9547
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,63 +120,127 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "YouTube (Influencer Framing)",
+    "first_timestamp": "2026-04-29T17:27:07.000Z",
+    "lead_lag": [
+      {
+        "platform": "X Platform",
+        "lag_hours": 7313.3
+      },
+      {
+        "platform": "Bluesky",
+        "lag_hours": 7314.2
+      },
+      {
+        "platform": "البوابة",
+        "lag_hours": 7926.0
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_ozempic-glp1_002",
+    "hops": [
+      {
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2025-06-02T18:00:29+00:00",
+        "claim_id": "ozempic-glp1_x_9e4f5b92_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-03T11:17:35+00:00",
+        "claim_id": "ozempic-glp1_x_9e4f5b92_0",
+        "fidelity_to_origin": 0.3541,
+        "fidelity_to_previous": 0.3541
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-03T12:09:34.068000+00:00",
+        "claim_id": "ozempic-glp1_x_9e4f5b92_0",
+        "fidelity_to_origin": 0.354,
+        "fidelity_to_previous": 0.9997
+      },
+      {
+        "platform": "البوابة",
+        "timestamp": "2026-04-29T00:00:00+00:00",
+        "claim_id": "ozempic-glp1_x_9e4f5b92_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.8475
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ozempic-glp1_x_6cdcd97f_0",
-      "similarity": 0.8877,
-      "text": "Ozempic causes significant weight loss."
+      "claim_id": "ozempic-glp1_x_acbb6f3b_0",
+      "similarity": 0.8893,
+      "text": "Ozempic can cause significant weight loss and muscle atrophy."
     },
     {
-      "claim_id": "ozempic-glp1_x_92cb32ce_0",
-      "similarity": 0.8747,
-      "text": "Ozempic is an undesirable method for weight loss."
+      "claim_id": "ozempic-glp1_x_a66e649d_0",
+      "similarity": 0.8504,
+      "text": "Taking Ozempic for one month will lead to significant weight loss."
     },
     {
-      "claim_id": "ozempic-glp1_x_87cf5957_0",
-      "similarity": 0.82,
-      "text": "Ozempic use can lead to rapid weight loss, resulting in loose or sagging skin, particularly in the face and buttocks."
+      "claim_id": "ozempic-glp1_x_a2981e76_0",
+      "similarity": 0.8253,
+      "text": "Jason Lee used Ozempic to lose weight but still considers himself unattractive."
     },
     {
-      "claim_id": "ozempic-glp1_x_09ea5d3e_0",
-      "similarity": 0.7689,
-      "text": "Weight loss drugs like Ozempic do not address the underlying causes of weight gain."
+      "claim_id": "ozempic-glp1_x_7f5e0afb_0",
+      "similarity": 0.821,
+      "text": "Individuals using GLP-1 medications like Ozempic or those who have undergone bariatric surgery may require additional nutrients due to reduced food intake."
     },
     {
-      "claim_id": "ozempic-glp1_x_84fc3bbb_0",
-      "similarity": 0.7577,
-      "text": "Ozempic does not directly cause hair loss, but the weight loss it induces can."
+      "claim_id": "ozempic-glp1_bluesky_590eecfd_0",
+      "similarity": 0.8169,
+      "text": "Ozempic may cause osteoporosis."
     }
   ],
   "example_content": [
     {
-      "text": "Criticizing Ozempic for causing a 'skinny epidemic' is misguided because similar trends existed before the drug's widespread use.",
+      "text": "Ozempic may cause osteoporosis.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Ozempic can help individuals feel more confident about their appearance.",
-      "platform": "Bluesky",
+      "text": "Jason Lee used Ozempic to lose weight but still considers himself unattractive.",
+      "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Ozempic is an undesirable method for weight loss.",
+      "text": "Ozempic use leads to muscle loss in a significant percentage of weight loss.",
       "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false

@@ -9,7 +9,7 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "ozempic-glp1_x_8644f411_0",
-    "cluster_id": "clu_ozempic-glp1_015",
+    "cluster_id": "clu_ozempic-glp1_010",
     "concept_id": "concept_ozempic-glp1_002",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-05-06T02:44:08.000Z",
@@ -35,22 +35,22 @@
       0.645
     ],
     "source_distribution": "production",
-    "source_diversity": 0.25,
-    "bridge_ratio": 0.25,
-    "persistence_windows": 1,
+    "source_diversity": 0.75,
+    "bridge_ratio": 0.75,
+    "persistence_windows": 5,
     "friction": 1,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.3117,
+    "value": 0.1985,
     "confidence_interval": [
-      0.1851,
-      0.4383
+      0.0634,
+      0.3336
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3117
+      0.1985
     ],
     "source_distribution": "production"
   },
@@ -68,15 +68,15 @@
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0.25,
     "confidence_interval": [
-      0,
-      0.1962
+      0.1187,
+      0.3813
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0.25
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9737,
+    "value": 0.9547,
     "confidence_interval": [
-      0.8967,
+      0.8763,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9737
+      0.9547
     ],
     "source_distribution": "production"
   },
@@ -122,20 +122,43 @@
   "provenance": {
     "first_platform": "X Platform",
     "first_timestamp": "2026-05-06T02:44:08.000Z",
-    "lead_lag": []
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 536.5
+      },
+      {
+        "platform": "Drugs.Com",
+        "lag_hours": 628.0
+      }
+    ]
   },
   "supply_chain": {
     "concept_id": "concept_ozempic-glp1_002",
     "hops": [
       {
         "platform": "X Platform",
-        "timestamp": "2026-05-06T02:44:08+00:00",
+        "timestamp": "2026-04-03T13:49:09+00:00",
         "claim_id": "ozempic-glp1_x_8644f411_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-25T22:20:14.195000+00:00",
+        "claim_id": "ozempic-glp1_x_8644f411_0",
+        "fidelity_to_origin": 0.402,
+        "fidelity_to_previous": 0.402
+      },
+      {
+        "platform": "Drugs.Com",
+        "timestamp": "2026-04-29T17:49:07+00:00",
+        "claim_id": "ozempic-glp1_x_8644f411_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.7463
       }
     ],
-    "observation_boundary": "No public antecedent detected"
+    "observation_boundary": null
   },
   "coordination": {
     "burstiness": {
@@ -167,36 +190,46 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ozempic-glp1_x_4d026c57_0",
+      "claim_id": "ozempic-glp1_x_ed5fd87a_0",
       "similarity": 1.0,
-      "text": "Ozempic is a dangerous or harmful drug."
+      "text": "Ozempic is dangerous for long-term use."
     },
     {
-      "claim_id": "ozempic-glp1_x_0d288a87_0",
-      "similarity": 0.8659,
-      "text": "Ozempic should not be used for weight loss."
+      "claim_id": "ozempic-glp1_x_a4e21a9c_0",
+      "similarity": 0.9375,
+      "text": "Ozempic is potentially harmful."
     },
     {
-      "claim_id": "ozempic-glp1_x_69a9e85c_0",
-      "similarity": 0.8117,
-      "text": "People should discontinue using Ozempic."
+      "claim_id": "ozempic-glp1_x_e95f7163_0",
+      "similarity": 0.8461,
+      "text": "Ozempic should be banned."
+    },
+    {
+      "claim_id": "ozempic-glp1_x_ef13fbde_0",
+      "similarity": 0.8313,
+      "text": "Ozempic is causing significant negative consequences."
+    },
+    {
+      "claim_id": "ozempic-glp1_x_ae18e394_0",
+      "similarity": 0.8203,
+      "text": "I am unwilling to accept advice about Ozempic from anyone."
     }
   ],
   "example_content": [
     {
-      "text": "People should discontinue using Ozempic.",
+      "text": "Ozempic is dangerous for long-term use.",
       "platform": "X Platform",
-      "confidence": 0.6,
+      "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Ozempic is a dangerous or harmful drug.",
+      "text": "Ozempic is causing significant negative consequences.",
       "platform": "X Platform",
-      "confidence": 0.7,
+      "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Ozempic should not be used for weight loss.",
+      "text": "I am unwilling to accept advice about Ozempic from anyone.",
       "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false

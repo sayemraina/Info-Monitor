@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "ai-bubble_webpronews_83e069a6_1",
-    "cluster_id": "clu_ai-bubble_013",
-    "concept_id": "concept_ai-bubble_000",
+    "cluster_id": "clu_ai-bubble_040",
+    "concept_id": "concept_ai-bubble_007",
     "first_seen_platform": "webpronews",
     "first_seen_timestamp": "2026-04-25T18:00:12Z",
     "source_document_id": "c89a52bc08cac8ee",
@@ -24,107 +24,94 @@
     "source_type": "elite_media"
   },
   "momentum": {
-    "value": null,
+    "value": 0.54,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.44,
+      0.64
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.54
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 3,
+    "friction": 0.2,
+    "friction_quadrant": "unopposed_advance"
+  },
+  "salience": {
+    "value": 0.2196,
+    "confidence_interval": [
+      0.0861,
+      0.3531
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.2196
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.2,
+    "confidence_interval": [
+      0.065,
+      0.335
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.2
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.15,
+    "confidence_interval": [
+      0.0112,
+      0.2888
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.15
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.5,
     "confidence_interval": [
-      0,
-      0
+      0.3875,
+      0.6125
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.5
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 1,
     "confidence_interval": [
-      0,
-      0
+      0.925,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      1
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,66 +120,141 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "YouTube (Influencer Framing)",
+    "first_timestamp": "2026-04-25T18:00:12Z",
+    "lead_lag": [
+      {
+        "platform": "Webpronews",
+        "lag_hours": 2360.0
+      },
+      {
+        "platform": "Bluesky",
+        "lag_hours": 2375.2
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 2453.5
+      },
+      {
+        "platform": "India Infoline Ltd",
+        "lag_hours": 3117.6
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_ai-bubble_007",
+    "hops": [
+      {
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-01-17T10:00:49+00:00",
+        "claim_id": "ai-bubble_webpronews_83e069a6_1",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Webpronews",
+        "timestamp": "2026-04-25T18:00:12+00:00",
+        "claim_id": "ai-bubble_webpronews_83e069a6_1",
+        "fidelity_to_origin": 0.4701,
+        "fidelity_to_previous": 0.4701
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-26T09:10:17+00:00",
+        "claim_id": "ai-bubble_webpronews_83e069a6_1",
+        "fidelity_to_origin": 0.4667,
+        "fidelity_to_previous": 0.9928
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-29T15:29:31+00:00",
+        "claim_id": "ai-bubble_webpronews_83e069a6_1",
+        "fidelity_to_origin": 0.4491,
+        "fidelity_to_previous": 0.9623
+      },
+      {
+        "platform": "India Infoline Ltd",
+        "timestamp": "2026-05-27T07:39:06+00:00",
+        "claim_id": "ai-bubble_webpronews_83e069a6_1",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.668
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-bubble_the_motley_fool_47369c87_0",
-      "similarity": 0.4318,
-      "text": "Demand for AI chips is increasing, leading to revenue growth for relevant companies."
+      "claim_id": "ai-bubble_youtube_7a2e4f7b_0",
+      "similarity": 0.7312,
+      "text": "TSMC's financial performance is exceptionally strong, generating significant daily revenue."
     },
     {
-      "claim_id": "ai-bubble_nasdaq_stock_market_fc419c9d_0",
-      "similarity": 0.4049,
-      "text": "Demand for AI chips is increasing, leading to revenue growth for companies like Taiwan Semiconductor Manufacturing, ASML, and Intel."
+      "claim_id": "ai-bubble_bluesky_131b8d31_0",
+      "similarity": 0.7226,
+      "text": "TSMC is a worthwhile investment due to its dominance in advanced chip manufacturing, which is essential for AI and electric vehicles."
     },
     {
-      "claim_id": "ai-bubble_developing_telecoms_9ba7ae49_0",
-      "similarity": 0.3892,
-      "text": "Increased RAM prices due to AI development will disproportionately harm emerging markets."
+      "claim_id": "ai-bubble_webpronews_83e069a6_0",
+      "similarity": 0.694,
+      "text": "Taiwan's semiconductor industry, led by TSMC, is experiencing rapid growth due to high demand for AI chips."
     },
     {
-      "claim_id": "ai-bubble_bluesky_1400c7e0_0",
-      "similarity": 0.3585,
-      "text": "Increased investment in AI hardware research and development is the primary driver of decreased net profits for the company."
+      "claim_id": "ai-bubble_youtube_578ceb26_0",
+      "similarity": 0.6268,
+      "text": "TSMC's advanced manufacturing processes cannot be replicated simply by investing large sums of money."
     },
     {
-      "claim_id": "ai-bubble_gsm_arena_399fee06_0",
-      "similarity": 0.3226,
-      "text": "AI data centers are causing a RAM shortage, which is increasing the price of smartphones."
+      "claim_id": "ai-bubble_x_3c20a57e_0",
+      "similarity": 0.5734,
+      "text": "TSMC is a critical and dominant player in the AI hardware supply chain."
     }
   ],
   "example_content": [
     {
-      "text": "Increased RAM prices due to AI development will disproportionately harm emerging markets.",
-      "platform": "Developing Telecoms",
+      "text": "TSMC's advanced manufacturing processes cannot be replicated simply by investing large sums of money.",
+      "platform": "YouTube (Influencer Framing)",
       "confidence": 0.9,
-      "is_influencer_framing": false
+      "is_influencer_framing": true
     },
     {
-      "text": "The smartphone market in the Middle East and Africa is projected to decline significantly due to RAM price increases.",
-      "platform": "Developing Telecoms",
+      "text": "Intel's 18A process is inferior to TSMC's 3nm process.",
+      "platform": "YouTube (Influencer Framing)",
       "confidence": 0.9,
-      "is_influencer_framing": false
+      "is_influencer_framing": true
     },
     {
-      "text": "The impact of increased RAM prices may be less severe on lower-end devices in emerging markets.",
-      "platform": "Developing Telecoms",
-      "confidence": 0.7,
-      "is_influencer_framing": false
+      "text": "TSMC's financial performance is exceptionally strong, generating significant daily revenue.",
+      "platform": "YouTube (Influencer Framing)",
+      "confidence": 0.9,
+      "is_influencer_framing": true
     }
   ]
 }

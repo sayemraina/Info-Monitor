@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "war-on-iran_x_f4603e2e_0",
-    "cluster_id": "clu_war-on-iran_052",
-    "concept_id": "concept_war-on-iran_000",
+    "cluster_id": "clu_war-on-iran_064",
+    "concept_id": "concept_war-on-iran_002",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-05-06T07:50:33.000Z",
     "source_document_id": "x_2051932616799179100",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 4,
-    "friction": 0.6667,
+    "persistence_windows": 15,
+    "friction": 0.75,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.4902,
+    "value": 0.6401,
     "confidence_interval": [
-      0.377,
-      0.6034
+      0.5381,
+      0.7421
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.4902
+      0.6401
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.6667,
+    "value": 0.75,
     "confidence_interval": [
-      0.5667,
-      0.7667
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.6667
+      0.75
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.2,
+    "value": 0.75,
     "confidence_interval": [
-      0.065,
-      0.335
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9935,
     "confidence_interval": [
-      0.925,
+      0.918,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9935
     ],
     "source_distribution": "production"
   },
@@ -120,53 +120,79 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
+    "first_platform": "The Intercept",
     "first_timestamp": "2026-05-06T07:50:33.000Z",
     "lead_lag": [
       {
+        "platform": "Bbc News",
+        "lag_hours": 40.6
+      },
+      {
         "platform": "X Platform",
-        "lag_hours": 3.1
+        "lag_hours": 42.6
       },
       {
-        "platform": "Crooked Media",
-        "lag_hours": 3.6
+        "platform": "Arab News",
+        "lag_hours": 44.3
       },
       {
-        "platform": "Dw News",
-        "lag_hours": 4.5
+        "platform": "Bluesky",
+        "lag_hours": 45.5
+      },
+      {
+        "platform": "Joe.Co.Uk",
+        "lag_hours": 45.9
+      },
+      {
+        "platform": "YouTube (Influencer Framing)",
+        "lag_hours": 344.6
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_war-on-iran_000",
+    "concept_id": "concept_war-on-iran_002",
     "hops": [
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-05-06T03:53:57.513000+00:00",
+        "platform": "The Intercept",
+        "timestamp": "2026-04-01T18:51:44+00:00",
         "claim_id": "war-on-iran_x_f4603e2e_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
+        "platform": "Bbc News",
+        "timestamp": "2026-04-03T11:28:34+00:00",
+        "claim_id": "war-on-iran_x_f4603e2e_0",
+        "fidelity_to_origin": 0.9787,
+        "fidelity_to_previous": 0.9787
+      },
+      {
         "platform": "X Platform",
-        "timestamp": "2026-05-06T06:57:48+00:00",
+        "timestamp": "2026-04-03T13:29:34+00:00",
         "claim_id": "war-on-iran_x_f4603e2e_0",
-        "fidelity_to_origin": 0.524,
-        "fidelity_to_previous": 0.524
+        "fidelity_to_origin": 0.9776,
+        "fidelity_to_previous": 0.9989
       },
       {
-        "platform": "Crooked Media",
-        "timestamp": "2026-05-06T07:30:57+00:00",
+        "platform": "Arab News",
+        "timestamp": "2026-04-03T15:08:56+00:00",
         "claim_id": "war-on-iran_x_f4603e2e_0",
-        "fidelity_to_origin": 0.4382,
-        "fidelity_to_previous": 0.8363
+        "fidelity_to_origin": 0.9767,
+        "fidelity_to_previous": 0.9991
       },
       {
-        "platform": "Dw News",
-        "timestamp": "2026-05-06T08:24:19.658287+00:00",
+        "platform": "Bluesky",
+        "timestamp": "2026-04-03T16:22:18.848000+00:00",
         "claim_id": "war-on-iran_x_f4603e2e_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.6846
+        "fidelity_to_origin": 0.9761,
+        "fidelity_to_previous": 0.9994
+      },
+      {
+        "platform": "Joe.Co.Uk",
+        "timestamp": "2026-04-03T16:48:27+00:00",
+        "claim_id": "war-on-iran_x_f4603e2e_0",
+        "fidelity_to_origin": 0.9759,
+        "fidelity_to_previous": 0.9998
       }
     ],
     "observation_boundary": null
@@ -201,47 +227,47 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "war-on-iran_bluesky_9605f8f3_0",
-      "similarity": 0.7362,
-      "text": "The United States should not demand that other countries abandon nuclear weapons programs."
+      "claim_id": "war-on-iran_bluesky_050f6db6_0",
+      "similarity": 0.7967,
+      "text": "A U.S. president may initiate a nuclear attack on Iran."
     },
     {
-      "claim_id": "war-on-iran_bluesky_f3d1987a_0",
-      "similarity": 0.6943,
-      "text": "The United States is engaged in acts of aggression against Iran."
+      "claim_id": "war-on-iran_joe.co.uk_b658e5f2_2",
+      "similarity": 0.635,
+      "text": "Donald Trump should not abandon the situation he created."
     },
     {
-      "claim_id": "war-on-iran_crooked_media_16ee0fac_0",
-      "similarity": 0.6842,
-      "text": "The US military's plan to guide ships through the Strait of Hormuz is poorly conceived and executed."
+      "claim_id": "war-on-iran_bluesky_dad9fa46_0",
+      "similarity": 0.6197,
+      "text": "The United States has become a rogue nation."
     },
     {
-      "claim_id": "war-on-iran_bluesky_1a51b559_0",
-      "similarity": 0.6778,
-      "text": "The United States is losing influence and power in the Middle East."
+      "claim_id": "war-on-iran_bbc_news_7634eb9a_0",
+      "similarity": 0.5892,
+      "text": "US presidents have historically provided timelines for conflicts that later proved inaccurate."
     },
     {
-      "claim_id": "war-on-iran_bluesky_0de79996_0",
-      "similarity": 0.6697,
-      "text": "The United States is losing control in its foreign policy."
+      "claim_id": "war-on-iran_arab_news_56a40343_1",
+      "similarity": 0.567,
+      "text": "The UK is protecting its interests and allies by deploying resources to the Gulf region."
     }
   ],
   "example_content": [
     {
-      "text": "The United States is losing influence and power in the Middle East.",
+      "text": "The United States has become a rogue nation.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The United States should not demand that other countries abandon nuclear weapons programs.",
+      "text": "A U.S. president may initiate a nuclear attack on Iran.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The United States is engaged in acts of aggression against Iran.",
-      "platform": "Bluesky",
+      "text": "Keir Starmer was correct in his decision not to involve the UK in military action in Iran.",
+      "platform": "Joe.Co.Uk",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "dei-rollbacks_youtube_d6ebe8a7_1",
-    "cluster_id": "clu_dei-rollbacks_000",
-    "concept_id": "concept_dei-rollbacks_000",
+    "cluster_id": "clu_dei-rollbacks_015",
+    "concept_id": "concept_dei-rollbacks_003",
     "first_seen_platform": "youtube",
     "first_seen_timestamp": "2025-11-19T14:45:00Z",
     "source_document_id": "yt_aNLPhah36gY",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 15,
-    "friction": 0.4691,
+    "persistence_windows": 8,
+    "friction": 0.4583,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.5848,
+    "value": 0.2355,
     "confidence_interval": [
-      0.4787,
-      0.6909
+      0.1032,
+      0.3678
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.5848
+      0.2355
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.4691,
+    "value": 0.4583,
     "confidence_interval": [
-      0.3543,
-      0.5839
+      0.3427,
+      0.5739
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.4691
+      0.4583
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.75,
+    "value": 0.4,
     "confidence_interval": [
-      0.6562,
-      0.8438
+      0.28,
+      0.52
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.75
+      0.4
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9858,
     "confidence_interval": [
-      0.925,
+      0.9097,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9858
     ],
     "source_distribution": "production"
   },
@@ -122,33 +122,29 @@
     "first_timestamp": "2025-11-19T14:45:00Z",
     "lead_lag": [
       {
-        "platform": "Cato",
-        "lag_hours": 8225.5
-      },
-      {
-        "platform": "Propublica",
-        "lag_hours": 8508.5
-      },
-      {
-        "platform": "Salon",
-        "lag_hours": 8533.5
+        "platform": "Wapo Politics",
+        "lag_hours": 8583.6
       },
       {
         "platform": "Bluesky",
-        "lag_hours": 8547.7
+        "lag_hours": 8586.4
       },
       {
-        "platform": "Jacobin",
-        "lag_hours": 8560.7
+        "platform": "Amac   The Association Of Matu",
+        "lag_hours": 8587.2
       },
       {
-        "platform": "Freedomsphoenix.Com",
-        "lag_hours": 8571.5
+        "platform": "Https://Www.Wctv.Tv",
+        "lag_hours": 9167.8
+      },
+      {
+        "platform": "Rough Draft Atlanta",
+        "lag_hours": 9213.3
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_dei-rollbacks_000",
+    "concept_id": "concept_dei-rollbacks_003",
     "hops": [
       {
         "platform": "YouTube (Influencer Framing)",
@@ -158,39 +154,39 @@
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Cato",
-        "timestamp": "2026-03-19T14:01:47+00:00",
+        "platform": "Wapo Politics",
+        "timestamp": "2026-04-03T12:03:28+00:00",
         "claim_id": "dei-rollbacks_youtube_d6ebe8a7_1",
-        "fidelity_to_origin": 0.3296,
-        "fidelity_to_previous": 0.3296
-      },
-      {
-        "platform": "Propublica",
-        "timestamp": "2026-03-31T09:00:00+00:00",
-        "claim_id": "dei-rollbacks_youtube_d6ebe8a7_1",
-        "fidelity_to_origin": 0.3065,
-        "fidelity_to_previous": 0.9299
-      },
-      {
-        "platform": "Salon",
-        "timestamp": "2026-04-01T10:00:13+00:00",
-        "claim_id": "dei-rollbacks_youtube_d6ebe8a7_1",
-        "fidelity_to_origin": 0.3045,
-        "fidelity_to_previous": 0.9935
+        "fidelity_to_origin": 0.3478,
+        "fidelity_to_previous": 0.3478
       },
       {
         "platform": "Bluesky",
-        "timestamp": "2026-04-02T00:11:39.905000+00:00",
+        "timestamp": "2026-04-03T14:55:40.300000+00:00",
         "claim_id": "dei-rollbacks_youtube_d6ebe8a7_1",
-        "fidelity_to_origin": 0.3033,
-        "fidelity_to_previous": 0.9961
+        "fidelity_to_origin": 0.3476,
+        "fidelity_to_previous": 0.9994
       },
       {
-        "platform": "Jacobin",
-        "timestamp": "2026-04-02T13:10:03+00:00",
+        "platform": "Amac   The Association Of Matu",
+        "timestamp": "2026-04-03T15:43:42+00:00",
         "claim_id": "dei-rollbacks_youtube_d6ebe8a7_1",
-        "fidelity_to_origin": 0.3023,
-        "fidelity_to_previous": 0.9967
+        "fidelity_to_origin": 0.3476,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Https://Www.Wctv.Tv",
+        "timestamp": "2026-04-27T20:19:26+00:00",
+        "claim_id": "dei-rollbacks_youtube_d6ebe8a7_1",
+        "fidelity_to_origin": 0.3035,
+        "fidelity_to_previous": 0.8731
+      },
+      {
+        "platform": "Rough Draft Atlanta",
+        "timestamp": "2026-04-29T17:51:16+00:00",
+        "claim_id": "dei-rollbacks_youtube_d6ebe8a7_1",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.9885
       }
     ],
     "observation_boundary": null
@@ -225,38 +221,32 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "dei-rollbacks_bluesky_fca3d503_0",
-      "similarity": 0.7203,
-      "text": "The Justice Department has reversed policies that promoted diversity, equity, and inclusion."
+      "claim_id": "dei-rollbacks_wapo_politics_e743097c_1",
+      "similarity": 0.8029,
+      "text": "Efforts to dismantle DEI programs are part of a broader movement against affirmative action."
+    },
+    {
+      "claim_id": "dei-rollbacks_amac_-_the_association_of_matu_4467b049_0",
+      "similarity": 0.7212,
+      "text": "President Trump's 2027 budget proposes significant funding cuts for programs promoting progressive ideologies."
+    },
+    {
+      "claim_id": "dei-rollbacks_youtube_f96274fe_1",
+      "similarity": 0.7197,
+      "text": "Donald Trump asserts that his administration dismantled Diversity, Equity, and Inclusion (DEI) programs in the military."
+    },
+    {
+      "claim_id": "dei-rollbacks_bluesky_41c19772_0",
+      "similarity": 0.6912,
+      "text": "Laws are being enacted to restrict diversity, equity, and inclusion programs in local governments."
     },
     {
       "claim_id": "dei-rollbacks_bluesky_aac7cc5f_0",
       "similarity": 0.6531,
       "text": "The VA has increased funding by 9%, but this is being obscured by descriptions that call for defunding DEI initiatives without specifying dollar amounts."
-    },
-    {
-      "claim_id": "dei-rollbacks_bluesky_e4e1969e_0",
-      "similarity": 0.383,
-      "text": "Affirmative action policies are a contentious issue."
-    },
-    {
-      "claim_id": "dei-rollbacks_bluesky_7cff3b4d_0",
-      "similarity": 0.3805,
-      "text": "Affirmative action is an ineffective method of addressing inequality."
-    },
-    {
-      "claim_id": "dei-rollbacks_bluesky_f7374648_0",
-      "similarity": 0.3664,
-      "text": "Trump's policies have significantly influenced NASA's current operations and priorities."
     }
   ],
   "example_content": [
-    {
-      "text": "Conservatives are excessively focused on gender issues and are responsible for injecting gender into various contexts.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
     {
       "text": "The VA has increased funding by 9%, but this is being obscured by descriptions that call for defunding DEI initiatives without specifying dollar amounts.",
       "platform": "Bluesky",
@@ -264,9 +254,15 @@
       "is_influencer_framing": false
     },
     {
-      "text": "The Justice Department has reversed policies that promoted diversity, equity, and inclusion.",
-      "platform": "Bluesky",
+      "text": "President Trump's 2027 budget proposes significant funding cuts for programs promoting progressive ideologies.",
+      "platform": "Amac   The Association Of Matu",
       "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Efforts to dismantle DEI programs are part of a broader movement against affirmative action.",
+      "platform": "Wapo Politics",
+      "confidence": 0.8,
       "is_influencer_framing": false
     }
   ]

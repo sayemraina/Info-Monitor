@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "dei-rollbacks_bluesky_2deb1d0e_0",
-    "cluster_id": "clu_dei-rollbacks_001",
-    "concept_id": "concept_dei-rollbacks_001",
+    "cluster_id": "clu_dei-rollbacks_002",
+    "concept_id": "concept_dei-rollbacks_002",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-03T16:31:49.155Z",
     "source_document_id": "2deb1d0e7035e8ba",
@@ -38,32 +38,32 @@
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
     "persistence_windows": 15,
-    "friction": 0.7692,
+    "friction": 0.6172,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.3755,
+    "value": 1,
     "confidence_interval": [
-      0.2537,
-      0.4973
+      0.925,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3755
+      1
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.7692,
+    "value": 0.6172,
     "confidence_interval": [
-      0.6769,
-      0.8615
+      0.5135,
+      0.7209
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.7692
+      0.6172
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9956,
     "confidence_interval": [
-      0.925,
+      0.9203,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9956
     ],
     "source_distribution": "production"
   },
@@ -124,75 +124,75 @@
     "first_timestamp": "2026-04-03T16:31:49.155Z",
     "lead_lag": [
       {
-        "platform": "The Intercept",
-        "lag_hours": 7451.2
-      },
-      {
-        "platform": "Jacobin",
-        "lag_hours": 7469.5
+        "platform": "X Platform",
+        "lag_hours": 8525.1
       },
       {
         "platform": "Bluesky",
-        "lag_hours": 7474.5
+        "lag_hours": 8543.6
       },
       {
-        "platform": "The Atlantic",
-        "lag_hours": 7482.4
+        "platform": "Chicago Reader",
+        "lag_hours": 8588.5
       },
       {
-        "platform": "Wonkette",
-        "lag_hours": 7495.8
+        "platform": "Raw Story",
+        "lag_hours": 9120.2
       },
       {
-        "platform": "Free Press Journal",
-        "lag_hours": 7496.3
+        "platform": "Dnyuz",
+        "lag_hours": 9120.5
+      },
+      {
+        "platform": "Fast Company",
+        "lag_hours": 9743.1
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_dei-rollbacks_001",
+    "concept_id": "concept_dei-rollbacks_002",
     "hops": [
       {
         "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2025-05-26T07:40:58+00:00",
+        "timestamp": "2025-04-10T19:26:25+00:00",
         "claim_id": "dei-rollbacks_bluesky_2deb1d0e_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "The Intercept",
-        "timestamp": "2026-04-01T18:51:44+00:00",
+        "platform": "X Platform",
+        "timestamp": "2026-04-01T00:32:53+00:00",
         "claim_id": "dei-rollbacks_bluesky_2deb1d0e_0",
-        "fidelity_to_origin": 0.3043,
-        "fidelity_to_previous": 0.3043
-      },
-      {
-        "platform": "Jacobin",
-        "timestamp": "2026-04-02T13:10:03+00:00",
-        "claim_id": "dei-rollbacks_bluesky_2deb1d0e_0",
-        "fidelity_to_origin": 0.3026,
-        "fidelity_to_previous": 0.9944
+        "fidelity_to_origin": 0.395,
+        "fidelity_to_previous": 0.395
       },
       {
         "platform": "Bluesky",
-        "timestamp": "2026-04-02T18:08:38.365000+00:00",
+        "timestamp": "2026-04-01T19:04:17.760000+00:00",
         "claim_id": "dei-rollbacks_bluesky_2deb1d0e_0",
-        "fidelity_to_origin": 0.3021,
-        "fidelity_to_previous": 0.9983
+        "fidelity_to_origin": 0.3937,
+        "fidelity_to_previous": 0.9967
       },
       {
-        "platform": "The Atlantic",
-        "timestamp": "2026-04-03T02:05:00+00:00",
+        "platform": "Chicago Reader",
+        "timestamp": "2026-04-03T15:56:46+00:00",
         "claim_id": "dei-rollbacks_bluesky_2deb1d0e_0",
-        "fidelity_to_origin": 0.3014,
-        "fidelity_to_previous": 0.9977
+        "fidelity_to_origin": 0.3905,
+        "fidelity_to_previous": 0.9919
       },
       {
-        "platform": "Wonkette",
-        "timestamp": "2026-04-03T15:27:30+00:00",
+        "platform": "Raw Story",
+        "timestamp": "2026-04-25T19:37:21+00:00",
         "claim_id": "dei-rollbacks_bluesky_2deb1d0e_0",
-        "fidelity_to_origin": 0.3001,
-        "fidelity_to_previous": 0.9957
+        "fidelity_to_origin": 0.3528,
+        "fidelity_to_previous": 0.9035
+      },
+      {
+        "platform": "Dnyuz",
+        "timestamp": "2026-04-25T19:58:42+00:00",
+        "claim_id": "dei-rollbacks_bluesky_2deb1d0e_0",
+        "fidelity_to_origin": 0.3528,
+        "fidelity_to_previous": 1.0
       }
     ],
     "observation_boundary": null
@@ -227,46 +227,46 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "dei-rollbacks_bluesky_39880589_0",
-      "similarity": 0.768,
-      "text": "The removal of DEI initiatives in the military is a racist effort to remove qualified minority service members."
+      "claim_id": "dei-rollbacks_bluesky_d79effe5_1",
+      "similarity": 0.8354,
+      "text": "Removing leaders from the military based on DEI is detrimental to military readiness."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_d6a3f016_0",
-      "similarity": 0.6709,
-      "text": "DEI policies negatively impacted the UK's military campaigns in Afghanistan."
+      "claim_id": "dei-rollbacks_bluesky_0a97e464_0",
+      "similarity": 0.8159,
+      "text": "DEI initiatives in the US military are excessive and detrimental to military effectiveness."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_2b3d1276_0",
-      "similarity": 0.6707,
-      "text": "Pete Hegseth believes that DEI initiatives in the military led to failures in Afghanistan and Iraq."
+      "claim_id": "dei-rollbacks_bluesky_9e10967b_0",
+      "similarity": 0.7185,
+      "text": "The removal of an individual who opposes DEI initiatives is a positive development."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_92e02929_1",
-      "similarity": 0.6232,
-      "text": "DEI is defined as purging the armed forces of individuals who refuse to follow unlawful directives."
+      "claim_id": "dei-rollbacks_bluesky_b55c2a53_0",
+      "similarity": 0.7005,
+      "text": "Efforts to roll back Diversity, Equity, and Inclusion (DEI) initiatives have failed."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_92e02929_0",
-      "similarity": 0.5044,
-      "text": "The armed forces are being purged of individuals who refuse to follow unlawful directives."
+      "claim_id": "dei-rollbacks_bluesky_addad695_0",
+      "similarity": 0.6944,
+      "text": "Eliminating DEI initiatives will lead to societal decline in the United States."
     }
   ],
   "example_content": [
     {
-      "text": "DEI policies negatively impacted the UK's military campaigns in Afghanistan.",
-      "platform": "Bluesky",
-      "confidence": 0.7,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "The removal of DEI initiatives in the military is a racist effort to remove qualified minority service members.",
+      "text": "The speaker disapproves of the individual's views on race, racism, and DEI.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Pete Buttigieg should be charged with war crimes and dismissed from his position.",
+      "text": "Efforts to roll back Diversity, Equity, and Inclusion (DEI) initiatives have failed.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Eliminating DEI initiatives will lead to societal decline in the United States.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

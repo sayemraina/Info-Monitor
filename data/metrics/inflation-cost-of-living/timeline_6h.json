@@ -1,41 +1,41 @@
 {
   "events": [
     {
-      "id": "evt_88c48c9be897",
+      "id": "evt_526a331a2440",
       "type": "contestation_emergence",
-      "timestamp": "2026-05-27T05:55:57.418008+00:00",
-      "claim_id": "inflation-cost-of-living_the_star__07a0b971_0",
-      "slice_id": null,
-      "severity": "high",
-      "confidence": 0.84,
-      "summary": "Active contestation in \"Greek Government\" — 4 pro vs 5 anti",
-      "detail": {
-        "cluster_id": "clu_inflation-cost-of-living_012",
-        "pro_count": 4,
-        "anti_count": 5,
-        "balance": 0.8
-      }
-    },
-    {
-      "id": "evt_f2acd638707f",
-      "type": "contestation_emergence",
-      "timestamp": "2026-05-27T05:55:57.418008+00:00",
-      "claim_id": "inflation-cost-of-living_bluesky_550ba55a_1",
+      "timestamp": "2026-09-08T05:50:34.740494+00:00",
+      "claim_id": "inflation-cost-of-living_youtube_285f70ac_0",
       "slice_id": null,
       "severity": "high",
       "confidence": 0.82,
-      "summary": "Active contestation in \"Software Engineer Salaries\" — 4 pro vs 3 anti",
+      "summary": "Active contestation in \"Nigeria's Economy\" — 3 pro vs 4 anti",
       "detail": {
-        "cluster_id": "clu_inflation-cost-of-living_014",
-        "pro_count": 4,
-        "anti_count": 3,
+        "cluster_id": "clu_inflation-cost-of-living_001",
+        "pro_count": 3,
+        "anti_count": 4,
         "balance": 0.75
       }
     },
     {
-      "id": "evt_feacabe022cd",
+      "id": "evt_e990262f7a43",
+      "type": "contestation_emergence",
+      "timestamp": "2026-09-08T05:50:34.740494+00:00",
+      "claim_id": "inflation-cost-of-living_bluesky_5da8d66d_1",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.82,
+      "summary": "Active contestation in \"Grocery Prices\" — 30 pro vs 22 anti",
+      "detail": {
+        "cluster_id": "clu_inflation-cost-of-living_008",
+        "pro_count": 30,
+        "anti_count": 22,
+        "balance": 0.73
+      }
+    },
+    {
+      "id": "evt_24bf156f378b",
       "type": "phase_transition",
-      "timestamp": "2026-05-27T05:55:57.418008+00:00",
+      "timestamp": "2026-09-08T05:50:34.740494+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
@@ -48,9 +48,9 @@
       }
     },
     {
-      "id": "evt_4038744dd9de",
+      "id": "evt_abe6babb3d44",
       "type": "phase_transition",
-      "timestamp": "2026-05-27T05:55:57.418008+00:00",
+      "timestamp": "2026-09-08T05:50:34.740494+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
@@ -63,9 +63,9 @@
       }
     },
     {
-      "id": "evt_7ef14210db25",
+      "id": "evt_6c4fd38ac3eb",
       "type": "phase_transition",
-      "timestamp": "2026-05-27T05:55:57.418008+00:00",
+      "timestamp": "2026-09-08T05:50:34.740494+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
@@ -78,9 +78,9 @@
       }
     },
     {
-      "id": "evt_6c201a5519e9",
+      "id": "evt_dbc072d36d77",
       "type": "phase_transition",
-      "timestamp": "2026-05-27T05:55:57.418008+00:00",
+      "timestamp": "2026-09-08T05:50:34.740494+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
@@ -93,16 +93,34 @@
       }
     },
     {
-      "id": "evt_51858ae71439",
+      "id": "evt_378183c0fc58",
       "type": "divergence_shift",
-      "timestamp": "2026-05-27T05:55:57.418008+00:00",
+      "timestamp": "2026-09-08T05:50:34.740494+00:00",
+      "claim_id": null,
+      "slice_id": "action_forex_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Strong narrative split between action_forex and aol.com",
+      "detail": {
+        "jsd": 1.0,
+        "platforms": [
+          "action_forex",
+          "aol.com"
+        ],
+        "window_hours": 6
+      }
+    },
+    {
+      "id": "evt_bfd5893d5c59",
+      "type": "divergence_shift",
+      "timestamp": "2026-09-08T05:50:34.740494+00:00",
       "claim_id": null,
       "slice_id": "action_forex_platform",
       "severity": "high",
       "confidence": 0.95,
       "summary": "Strong narrative split between action_forex and Bluesky",
       "detail": {
-        "jsd": 0.9527,
+        "jsd": 0.9113,
         "platforms": [
           "action_forex",
           "bluesky"
@@ -111,55 +129,37 @@
       }
     },
     {
-      "id": "evt_a4b03329f7ce",
+      "id": "evt_9dc595ca5fea",
       "type": "divergence_shift",
-      "timestamp": "2026-05-27T05:55:57.418008+00:00",
+      "timestamp": "2026-09-08T05:50:34.740494+00:00",
       "claim_id": null,
       "slice_id": "action_forex_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Strong narrative split between action_forex and economic_times",
+      "summary": "Strong narrative split between action_forex and bpc",
       "detail": {
         "jsd": 1.0,
         "platforms": [
           "action_forex",
-          "economic_times"
+          "bpc"
         ],
         "window_hours": 6
       }
     },
     {
-      "id": "evt_6b6ea56769ae",
+      "id": "evt_c842accaf729",
       "type": "divergence_shift",
-      "timestamp": "2026-05-27T05:55:57.418008+00:00",
+      "timestamp": "2026-09-08T05:50:34.740494+00:00",
       "claim_id": null,
       "slice_id": "action_forex_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Strong narrative split between action_forex and the_twelfth_magpie",
+      "summary": "Strong narrative split between action_forex and cato",
       "detail": {
-        "jsd": 1.0,
+        "jsd": 0.805,
         "platforms": [
           "action_forex",
-          "the_twelfth_magpie"
-        ],
-        "window_hours": 6
-      }
-    },
-    {
-      "id": "evt_96d91fa8b65b",
-      "type": "divergence_shift",
-      "timestamp": "2026-05-27T05:55:57.418008+00:00",
-      "claim_id": null,
-      "slice_id": "bluesky_platform",
-      "severity": "high",
-      "confidence": 0.95,
-      "summary": "Strong narrative split between Bluesky and economic_times",
-      "detail": {
-        "jsd": 0.9408,
-        "platforms": [
-          "bluesky",
-          "economic_times"
+          "cato"
         ],
         "window_hours": 6
       }
@@ -183,6 +183,163 @@
       "summary": "GTA VI released before June 2026? — 1.5% Yes",
       "detail": "Polymarket gives 1.5% odds. Volume: $13,090,290",
       "source": "polymarket"
+    },
+    {
+      "id": "evt_7e2769b580e3",
+      "type": "lead_lag",
+      "timestamp": "2026-05-15T13:50:34.740494+00:00",
+      "claim_id": "inflation-cost-of-living_youtube_285f70ac_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.88,
+      "summary": "YouTube (Influencer Framing) leads the_guardian by ~2779h in \"Nigeria's Economy\"",
+      "detail": {
+        "source_platform": "youtube",
+        "target_platform": "the_guardian",
+        "lag_hours": 2779.4,
+        "cluster_id": "clu_inflation-cost-of-living_001"
+      }
+    },
+    {
+      "id": "evt_d9ec9102ec72",
+      "type": "lead_lag",
+      "timestamp": "2026-07-03T12:50:34.740494+00:00",
+      "claim_id": "inflation-cost-of-living_cato_c0670656_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.72,
+      "summary": "cato leads the_atlantic by ~1604h in \"Canadian Fiscal Policy\"",
+      "detail": {
+        "source_platform": "cato",
+        "target_platform": "the_atlantic",
+        "lag_hours": 1605.0,
+        "cluster_id": "clu_inflation-cost-of-living_002"
+      }
+    },
+    {
+      "id": "evt_4cbf669fe8f8",
+      "type": "lead_lag",
+      "timestamp": "2026-08-22T04:50:34.740494+00:00",
+      "claim_id": "inflation-cost-of-living_x_d797b6e8_1",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.86,
+      "summary": "X Platform leads the_atlantic by ~412h in \"Immigration Policy\"",
+      "detail": {
+        "source_platform": "x",
+        "target_platform": "the_atlantic",
+        "lag_hours": 412.8,
+        "cluster_id": "clu_inflation-cost-of-living_000"
+      }
+    },
+    {
+      "id": "evt_5b2e72b776a6",
+      "type": "contestation_emergence",
+      "timestamp": "2026-09-08T05:50:34.740494+00:00",
+      "claim_id": "inflation-cost-of-living_bluesky_0a4e8fbf_1",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.73,
+      "summary": "Active contestation in \"Corporations\" — 8 pro vs 18 anti",
+      "detail": {
+        "cluster_id": "clu_inflation-cost-of-living_003",
+        "pro_count": 8,
+        "anti_count": 18,
+        "balance": 0.44
+      }
+    },
+    {
+      "id": "evt_47bac0454b9b",
+      "type": "contestation_emergence",
+      "timestamp": "2026-09-08T05:50:34.740494+00:00",
+      "claim_id": "inflation-cost-of-living_todayville_0ab11ef6_1",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.78,
+      "summary": "Active contestation in \"SNAP\" — 5 pro vs 3 anti",
+      "detail": {
+        "cluster_id": "clu_inflation-cost-of-living_005",
+        "pro_count": 5,
+        "anti_count": 3,
+        "balance": 0.6
+      }
+    },
+    {
+      "id": "evt_28ab37e945b3",
+      "type": "momentum_spike",
+      "timestamp": "2026-09-08T06:50:34.740494+00:00",
+      "claim_id": "inflation-cost-of-living_todayville_0ab11ef6_1",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.56,
+      "summary": "Rapid attention surge in \"SNAP\" (15 claims)",
+      "detail": {
+        "cluster_id": "clu_inflation-cost-of-living_005",
+        "avg_momentum": 0.618,
+        "member_count": 15
+      }
+    },
+    {
+      "id": "evt_54c234b33ffa",
+      "type": "momentum_spike",
+      "timestamp": "2026-09-08T06:50:34.740494+00:00",
+      "claim_id": "inflation-cost-of-living_x_74b058c8_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.5,
+      "summary": "Rapid attention surge in \"Local Election\" (19 claims)",
+      "detail": {
+        "cluster_id": "clu_inflation-cost-of-living_071",
+        "avg_momentum": 0.551,
+        "member_count": 19
+      }
+    },
+    {
+      "id": "evt_3ad71e5461f3",
+      "type": "momentum_spike",
+      "timestamp": "2026-09-08T06:50:34.740494+00:00",
+      "claim_id": "inflation-cost-of-living_bluesky_1abd3356_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.5,
+      "summary": "Rapid attention surge in \"Republican Policies\" (15 claims)",
+      "detail": {
+        "cluster_id": "clu_inflation-cost-of-living_007",
+        "avg_momentum": 0.551,
+        "member_count": 15
+      }
+    },
+    {
+      "id": "evt_a200222fc7f9",
+      "type": "arousal_escalation",
+      "timestamp": "2026-09-08T06:50:34.740494+00:00",
+      "claim_id": "inflation-cost-of-living_bluesky_1abd3356_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.8,
+      "summary": "Heated language rising in \"Republican Policies\" — 60% emotionally charged claims",
+      "detail": {
+        "cluster_id": "clu_inflation-cost-of-living_007",
+        "high_arousal_count": 9,
+        "total": 15,
+        "ratio": 0.6
+      }
+    },
+    {
+      "id": "evt_16dc08d3ecaa",
+      "type": "arousal_escalation",
+      "timestamp": "2026-09-08T06:50:34.740494+00:00",
+      "claim_id": "inflation-cost-of-living_bluesky_9daf0656_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.76,
+      "summary": "Heated language rising in \"Current Administration\" — 44% emotionally charged claims",
+      "detail": {
+        "cluster_id": "clu_inflation-cost-of-living_032",
+        "high_arousal_count": 15,
+        "total": 34,
+        "ratio": 0.44
+      }
     },
     {
       "id": "poly_544092",
@@ -463,107 +620,7 @@
       "summary": "Discount is the new name of the game . What does that mean for conventional stores ? ",
       "detail": "Reported by stcatharinesstandard.ca. Tone: +0.0.",
       "source": "gdelt"
-    },
-    {
-      "id": "gdelt_f81b4b0d5b48",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:11:50Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Shocked by gas at $4 in America ? Try $16 in this Asian city",
-      "detail": "Reported by us.cnn.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "price_DX-Y.NYB_20260403",
-      "type": "external_signal",
-      "timestamp": "2026-04-03T17:19:11.695922+00:00",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "DX-Y.NYB: $100.18 (up 0.1%)",
-      "detail": "DX-Y.NYB closed at $100.18, up 0.1% from previous close of $100.03",
-      "source": "yahoo_finance"
-    },
-    {
-      "id": "poly_540844",
-      "type": "external_signal",
-      "timestamp": "2026-04-03T17:19:07.679263+00:00",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Will bitcoin hit $1m before GTA VI? — 48.9% Yes",
-      "detail": "Polymarket gives 48.9% odds. Volume: $3,848,533",
-      "source": "polymarket"
-    },
-    {
-      "id": "poly_540843",
-      "type": "external_signal",
-      "timestamp": "2026-04-03T17:19:07.679258+00:00",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Will China invades Taiwan before GTA VI? — 52.0% Yes",
-      "detail": "Polymarket gives 52.0% odds. Volume: $1,524,917",
-      "source": "polymarket"
-    },
-    {
-      "id": "poly_540820",
-      "type": "external_signal",
-      "timestamp": "2026-04-03T17:19:07.679252+00:00",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Trump out as President before GTA VI? — 53.0% Yes",
-      "detail": "Polymarket gives 53.0% odds. Volume: $572,401",
-      "source": "polymarket"
-    },
-    {
-      "id": "poly_540819",
-      "type": "external_signal",
-      "timestamp": "2026-04-03T17:19:07.679247+00:00",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Will Jesus Christ return before GTA VI? — 49.0% Yes",
-      "detail": "Polymarket gives 49.0% odds. Volume: $10,396,796",
-      "source": "polymarket"
-    },
-    {
-      "id": "poly_540818",
-      "type": "external_signal",
-      "timestamp": "2026-04-03T17:19:07.679241+00:00",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "New Playboi Carti Album before GTA VI? — 62.0% Yes",
-      "detail": "Polymarket gives 62.0% odds. Volume: $713,860",
-      "source": "polymarket"
-    },
-    {
-      "id": "poly_540817",
-      "type": "external_signal",
-      "timestamp": "2026-04-03T17:19:07.679235+00:00",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "New Rihanna Album before GTA VI? — 60.0% Yes",
-      "detail": "Polymarket gives 60.0% odds. Volume: $679,525",
-      "source": "polymarket"
-    },
-    {
-      "id": "poly_540816",
-      "type": "external_signal",
-      "timestamp": "2026-04-03T17:19:07.679211+00:00",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Russia-Ukraine Ceasefire before GTA VI? — 54.0% Yes",
-      "detail": "Polymarket gives 54.0% odds. Volume: $1,412,740",
-      "source": "polymarket"
-    },
-    {
-      "id": "fedreg_2026-06531",
-      "type": "external_signal",
-      "timestamp": "2026-04-03T00:00:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Lifeline and Link Up Reform and Modernization; Bridging the Digital Divide for Low-Income Consumers; Telecommunications Carriers Eligible for Universal Service Support; Affordable Connectivity Program",
-      "detail": "In this document, the Federal Communications Commission (Commission) seeks to ensure that Lifeline services are used to benefit and support eligible low-income Americans, that the program's funding is protected from waste, fraud, and abuse, and that service providers are in compliance with Commissio",
-      "source": "fed_register"
     }
   ],
-  "total_count": 73
+  "total_count": 83
 }

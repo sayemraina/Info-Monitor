@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "ai-bubble_youtube_64407604_0",
-    "cluster_id": "clu_ai-bubble_013",
-    "concept_id": "concept_ai-bubble_004",
+    "cluster_id": "clu_ai-bubble_055",
+    "concept_id": "concept_ai-bubble_000",
     "first_seen_platform": "youtube",
     "first_seen_timestamp": "2026-01-30T14:00:38Z",
     "source_document_id": "yt_L4bdfyu6Jnw",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 4,
-    "friction": 0.2857,
-    "friction_quadrant": "unopposed_advance"
+    "persistence_windows": 13,
+    "friction": 0.4359,
+    "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.2182,
+    "value": 0.4129,
     "confidence_interval": [
-      0.0846,
-      0.3518
+      0.2939,
+      0.5319
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2182
+      0.4129
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.2857,
+    "value": 0.4359,
     "confidence_interval": [
-      0.1571,
-      0.4143
+      0.3186,
+      0.5532
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2857
+      0.4359
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.2,
+    "value": 0.65,
     "confidence_interval": [
-      0.065,
-      0.335
+      0.5487,
+      0.7513
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2
+      0.65
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9741,
     "confidence_interval": [
-      0.925,
+      0.8972,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9741
     ],
     "source_distribution": "production"
   },
@@ -125,24 +125,36 @@
     "lead_lag": [
       {
         "platform": "Bluesky",
-        "lag_hours": 883.7
+        "lag_hours": 611.2
       },
       {
         "platform": "Cityam",
-        "lag_hours": 1761.1
+        "lag_hours": 1488.6
+      },
+      {
+        "platform": "Fortune",
+        "lag_hours": 1512.1
+      },
+      {
+        "platform": "Pajiba",
+        "lag_hours": 1512.6
       },
       {
         "platform": "X Platform",
-        "lag_hours": 1816.2
+        "lag_hours": 1543.7
+      },
+      {
+        "platform": "Punemirror.Com",
+        "lag_hours": 2057.3
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_ai-bubble_004",
+    "concept_id": "concept_ai-bubble_000",
     "hops": [
       {
         "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2026-01-19T05:30:03+00:00",
+        "timestamp": "2026-01-30T14:00:38+00:00",
         "claim_id": "ai-bubble_youtube_64407604_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
@@ -151,22 +163,36 @@
         "platform": "Bluesky",
         "timestamp": "2026-02-25T01:12:10.823000+00:00",
         "claim_id": "ai-bubble_youtube_64407604_0",
-        "fidelity_to_origin": 0.6594,
-        "fidelity_to_previous": 0.6594
+        "fidelity_to_origin": 0.8139,
+        "fidelity_to_previous": 0.8139
       },
       {
         "platform": "Cityam",
         "timestamp": "2026-04-02T14:38:17+00:00",
         "claim_id": "ai-bubble_youtube_64407604_0",
-        "fidelity_to_origin": 0.3212,
-        "fidelity_to_previous": 0.4871
+        "fidelity_to_origin": 0.5467,
+        "fidelity_to_previous": 0.6717
+      },
+      {
+        "platform": "Fortune",
+        "timestamp": "2026-04-03T14:04:20+00:00",
+        "claim_id": "ai-bubble_youtube_64407604_0",
+        "fidelity_to_origin": 0.5396,
+        "fidelity_to_previous": 0.987
+      },
+      {
+        "platform": "Pajiba",
+        "timestamp": "2026-04-03T14:36:32+00:00",
+        "claim_id": "ai-bubble_youtube_64407604_0",
+        "fidelity_to_origin": 0.5394,
+        "fidelity_to_previous": 0.9996
       },
       {
         "platform": "X Platform",
         "timestamp": "2026-04-04T21:44:00+00:00",
         "claim_id": "ai-bubble_youtube_64407604_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.934
+        "fidelity_to_origin": 0.53,
+        "fidelity_to_previous": 0.9826
       }
     ],
     "observation_boundary": null
@@ -240,7 +266,7 @@
       "is_influencer_framing": false
     },
     {
-      "text": "AI will not replace established companies with inferior alternatives.",
+      "text": "AI is eliminating entry-level tech jobs.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

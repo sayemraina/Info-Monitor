@@ -35,22 +35,22 @@
       0.585
     ],
     "source_distribution": "production",
-    "source_diversity": 0.25,
-    "bridge_ratio": 0.25,
-    "persistence_windows": 1,
+    "source_diversity": 0.75,
+    "bridge_ratio": 0.75,
+    "persistence_windows": 5,
     "friction": 1,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.3204,
+    "value": 0.1985,
     "confidence_interval": [
-      0.1944,
-      0.4464
+      0.0634,
+      0.3336
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3204
+      0.1985
     ],
     "source_distribution": "production"
   },
@@ -68,15 +68,15 @@
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0.25,
     "confidence_interval": [
-      0,
-      0.1962
+      0.1187,
+      0.3813
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0.25
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.975,
+    "value": 0.9547,
     "confidence_interval": [
-      0.8981,
+      0.8763,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.975
+      0.9547
     ],
     "source_distribution": "production"
   },
@@ -118,22 +118,45 @@
     "factors": []
   },
   "provenance": {
-    "first_platform": "Bluesky",
+    "first_platform": "X Platform",
     "first_timestamp": "2026-05-26T22:52:32.392Z",
-    "lead_lag": []
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 536.5
+      },
+      {
+        "platform": "Drugs.Com",
+        "lag_hours": 628.0
+      }
+    ]
   },
   "supply_chain": {
     "concept_id": "concept_ozempic-glp1_002",
     "hops": [
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-05-26T22:52:32.392000+00:00",
+        "platform": "X Platform",
+        "timestamp": "2026-04-03T13:49:09+00:00",
         "claim_id": "ozempic-glp1_bluesky_143af326_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-25T22:20:14.195000+00:00",
+        "claim_id": "ozempic-glp1_bluesky_143af326_0",
+        "fidelity_to_origin": 0.402,
+        "fidelity_to_previous": 0.402
+      },
+      {
+        "platform": "Drugs.Com",
+        "timestamp": "2026-04-29T17:49:07+00:00",
+        "claim_id": "ozempic-glp1_bluesky_143af326_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.7463
       }
     ],
-    "observation_boundary": "No public antecedent detected"
+    "observation_boundary": null
   },
   "coordination": {
     "burstiness": {
@@ -163,6 +186,51 @@
     "status": "insufficient_data",
     "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
-  "semantic_neighbors": [],
-  "example_content": []
+  "semantic_neighbors": [
+    {
+      "claim_id": "ozempic-glp1_x_ed5fd87a_0",
+      "similarity": 0.9488,
+      "text": "Ozempic is dangerous for long-term use."
+    },
+    {
+      "claim_id": "ozempic-glp1_x_a4e21a9c_0",
+      "similarity": 0.91,
+      "text": "Ozempic is potentially harmful."
+    },
+    {
+      "claim_id": "ozempic-glp1_x_e95f7163_0",
+      "similarity": 0.85,
+      "text": "Ozempic should be banned."
+    },
+    {
+      "claim_id": "ozempic-glp1_bluesky_00d7ae62_0",
+      "similarity": 0.8476,
+      "text": "Ozempic is an undesirable punishment."
+    },
+    {
+      "claim_id": "ozempic-glp1_x_ef13fbde_0",
+      "similarity": 0.8155,
+      "text": "Ozempic is causing significant negative consequences."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Ozempic is dangerous for long-term use.",
+      "platform": "X Platform",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Ozempic is causing significant negative consequences.",
+      "platform": "X Platform",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "I am unwilling to accept advice about Ozempic from anyone.",
+      "platform": "X Platform",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    }
+  ]
 }

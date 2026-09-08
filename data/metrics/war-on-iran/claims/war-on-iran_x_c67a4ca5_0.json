@@ -9,7 +9,7 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "war-on-iran_x_c67a4ca5_0",
-    "cluster_id": "clu_war-on-iran_000",
+    "cluster_id": "clu_war-on-iran_019",
     "concept_id": "concept_war-on-iran_000",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-03T17:00:32.000Z",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 8,
-    "friction": 0.2083,
+    "persistence_windows": 15,
+    "friction": 0.1146,
     "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 0.2238,
+    "value": 1,
     "confidence_interval": [
-      0.0906,
-      0.357
+      0.925,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2238
+      1
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.2083,
+    "value": 0.1146,
     "confidence_interval": [
-      0.0739,
-      0.3427
+      0,
+      0.256
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2083
+      0.1146
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.4,
+    "value": 0.75,
     "confidence_interval": [
-      0.28,
-      0.52
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.4
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9252,
     "confidence_interval": [
-      0.925,
+      0.8446,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9252
     ],
     "source_distribution": "production"
   },
@@ -125,27 +125,27 @@
     "lead_lag": [
       {
         "platform": "Cnbc Top",
-        "lag_hours": 16.8
+        "lag_hours": 706.8
       },
       {
         "platform": "Pbs Newshour",
-        "lag_hours": 20.7
-      },
-      {
-        "platform": "X Platform",
-        "lag_hours": 35.9
-      },
-      {
-        "platform": "The New York Times",
-        "lag_hours": 37.6
+        "lag_hours": 710.7
       },
       {
         "platform": "Bluesky",
-        "lag_hours": 38.3
+        "lag_hours": 721.7
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 725.9
+      },
+      {
+        "platform": "The New York Times",
+        "lag_hours": 727.6
       },
       {
         "platform": "Al Jazeera",
-        "lag_hours": 38.4
+        "lag_hours": 728.4
       }
     ]
   },
@@ -154,7 +154,7 @@
     "hops": [
       {
         "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2026-04-02T02:00:41+00:00",
+        "timestamp": "2026-03-04T08:00:43+00:00",
         "claim_id": "war-on-iran_x_c67a4ca5_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
@@ -163,36 +163,36 @@
         "platform": "Cnbc Top",
         "timestamp": "2026-04-02T18:46:52+00:00",
         "claim_id": "war-on-iran_x_c67a4ca5_0",
-        "fidelity_to_origin": 0.6942,
-        "fidelity_to_previous": 0.6942
+        "fidelity_to_origin": 0.7546,
+        "fidelity_to_previous": 0.7546
       },
       {
         "platform": "Pbs Newshour",
         "timestamp": "2026-04-02T22:45:36+00:00",
         "claim_id": "war-on-iran_x_c67a4ca5_0",
-        "fidelity_to_origin": 0.6217,
-        "fidelity_to_previous": 0.8956
+        "fidelity_to_origin": 0.7532,
+        "fidelity_to_previous": 0.9981
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-03T09:43:23.825000+00:00",
+        "claim_id": "war-on-iran_x_c67a4ca5_0",
+        "fidelity_to_origin": 0.7494,
+        "fidelity_to_previous": 0.995
       },
       {
         "platform": "X Platform",
         "timestamp": "2026-04-03T13:53:35+00:00",
         "claim_id": "war-on-iran_x_c67a4ca5_0",
-        "fidelity_to_origin": 0.3457,
-        "fidelity_to_previous": 0.5561
+        "fidelity_to_origin": 0.748,
+        "fidelity_to_previous": 0.9981
       },
       {
         "platform": "The New York Times",
         "timestamp": "2026-04-03T15:38:53+00:00",
         "claim_id": "war-on-iran_x_c67a4ca5_0",
-        "fidelity_to_origin": 0.3137,
-        "fidelity_to_previous": 0.9074
-      },
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-03T16:15:55.868000+00:00",
-        "claim_id": "war-on-iran_x_c67a4ca5_0",
-        "fidelity_to_origin": 0.3025,
-        "fidelity_to_previous": 0.9643
+        "fidelity_to_origin": 0.7474,
+        "fidelity_to_previous": 0.9992
       }
     ],
     "observation_boundary": null
@@ -237,6 +237,11 @@
       "text": "The war in Iran has caused the Strait of Hormuz to close."
     },
     {
+      "claim_id": "war-on-iran_x_3e95a9f2_0",
+      "similarity": 0.7588,
+      "text": "The War on Iran, which began in February 2026, has led to the closure of the Strait of Hormuz."
+    },
+    {
       "claim_id": "war-on-iran_cnbc_top_00a5e8ed_0",
       "similarity": 0.7296,
       "text": "Iran and Oman are collaborating to monitor traffic in the Strait of Hormuz."
@@ -245,11 +250,6 @@
       "claim_id": "war-on-iran_bluesky_4201fbe8_2",
       "similarity": 0.6976,
       "text": "Russian ships are the only vessels currently navigating the Strait of Hormuz."
-    },
-    {
-      "claim_id": "war-on-iran_al_jazeera_535cdf2f_0",
-      "similarity": 0.6277,
-      "text": "A French-owned container ship has traveled through the Strait of Hormuz for the first time since the start of the US-Israel war on Iran."
     }
   ],
   "example_content": [
@@ -260,15 +260,15 @@
       "is_influencer_framing": false
     },
     {
-      "text": "The War on Iran has undermined freedom of navigation in the region.",
+      "text": "Iran is willing to negotiate limits on its nuclear program and access to the Strait of Hormuz in exchange for the removal of all sanctions.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Trump's actions caused the Strait to close, leading to conflict.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
+      "text": "Iran has increased its power by controlling the Strait of Hormuz.",
+      "platform": "The New York Times",
+      "confidence": 0.8,
       "is_influencer_framing": false
     }
   ]

@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "ozempic-glp1_x_31d8e618_0",
-    "cluster_id": "clu_ozempic-glp1_009",
-    "concept_id": "concept_ozempic-glp1_006",
+    "cluster_id": "clu_ozempic-glp1_048",
+    "concept_id": "concept_ozempic-glp1_004",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-03T15:37:17.000Z",
     "source_document_id": "x_2040091272636199126",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 10,
-    "friction": 0.3333,
-    "friction_quadrant": "unopposed_advance"
+    "persistence_windows": 11,
+    "friction": 0.6364,
+    "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.3327,
+    "value": 0.3391,
     "confidence_interval": [
-      0.2077,
-      0.4577
+      0.2145,
+      0.4637
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3327
+      0.3391
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.3333,
+    "value": 0.6364,
     "confidence_interval": [
-      0.2083,
-      0.4583
+      0.5341,
+      0.7387
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3333
+      0.6364
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.5,
+    "value": 0.55,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0.4413,
+      0.6587
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.5
+      0.55
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9804,
+    "value": 0.9667,
     "confidence_interval": [
-      0.9039,
+      0.8892,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9804
+      0.9667
     ],
     "source_distribution": "production"
   },
@@ -122,71 +122,71 @@
     "first_timestamp": "2026-04-03T15:37:17.000Z",
     "lead_lag": [
       {
-        "platform": "Stat News",
-        "lag_hours": 456.3
-      },
-      {
         "platform": "Bluesky",
-        "lag_hours": 459.1
+        "lag_hours": 607.2
       },
       {
         "platform": "X Platform",
-        "lag_hours": 464.1
+        "lag_hours": 623.4
       },
       {
-        "platform": "Finbold",
-        "lag_hours": 476.0
+        "platform": "Nymag",
+        "lag_hours": 1169.8
       },
       {
-        "platform": "The Verge",
-        "lag_hours": 480.5
+        "platform": "Nz Herald",
+        "lag_hours": 1904.8
+      },
+      {
+        "platform": "The Korea Herald",
+        "lag_hours": 1911.3
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_ozempic-glp1_006",
+    "concept_id": "concept_ozempic-glp1_004",
     "hops": [
       {
         "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2026-03-14T13:30:18+00:00",
+        "timestamp": "2026-03-08T15:13:24+00:00",
         "claim_id": "ozempic-glp1_x_31d8e618_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Stat News",
-        "timestamp": "2026-04-02T13:47:33+00:00",
-        "claim_id": "ozempic-glp1_x_31d8e618_0",
-        "fidelity_to_origin": 0.3353,
-        "fidelity_to_previous": 0.3353
-      },
-      {
         "platform": "Bluesky",
-        "timestamp": "2026-04-02T16:38:48.752000+00:00",
+        "timestamp": "2026-04-02T22:27:30.849000+00:00",
         "claim_id": "ozempic-glp1_x_31d8e618_0",
-        "fidelity_to_origin": 0.3311,
-        "fidelity_to_previous": 0.9875
+        "fidelity_to_origin": 0.7776,
+        "fidelity_to_previous": 0.7776
       },
       {
         "platform": "X Platform",
-        "timestamp": "2026-04-02T21:34:56+00:00",
+        "timestamp": "2026-04-03T14:34:57+00:00",
         "claim_id": "ozempic-glp1_x_31d8e618_0",
-        "fidelity_to_origin": 0.3239,
-        "fidelity_to_previous": 0.9783
+        "fidelity_to_origin": 0.7717,
+        "fidelity_to_previous": 0.9924
       },
       {
-        "platform": "Finbold",
-        "timestamp": "2026-04-03T09:31:12+00:00",
+        "platform": "Nymag",
+        "timestamp": "2026-04-26T09:00:15+00:00",
         "claim_id": "ozempic-glp1_x_31d8e618_0",
-        "fidelity_to_origin": 0.3065,
-        "fidelity_to_previous": 0.9463
+        "fidelity_to_origin": 0.5716,
+        "fidelity_to_previous": 0.7407
       },
       {
-        "platform": "The Verge",
-        "timestamp": "2026-04-03T14:00:00+00:00",
+        "platform": "Nz Herald",
+        "timestamp": "2026-05-27T00:00:00+00:00",
+        "claim_id": "ozempic-glp1_x_31d8e618_0",
+        "fidelity_to_origin": 0.3024,
+        "fidelity_to_previous": 0.529
+      },
+      {
+        "platform": "The Korea Herald",
+        "timestamp": "2026-05-27T06:30:00+00:00",
         "claim_id": "ozempic-glp1_x_31d8e618_0",
         "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9788
+        "fidelity_to_previous": 0.9921
       }
     ],
     "observation_boundary": null
@@ -221,48 +221,48 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ozempic-glp1_bluesky_9632da4d_0",
-      "similarity": 0.612,
-      "text": "Telehealth providers prescribing GLP-1 weight loss drugs are concerning."
+      "claim_id": "ozempic-glp1_bluesky_b45e152e_0",
+      "similarity": 0.6731,
+      "text": "GLP-1 drugs are being aggressively advertised."
     },
     {
-      "claim_id": "ozempic-glp1_bluesky_44ae2030_0",
-      "similarity": 0.5725,
-      "text": "Telehealth providers are offering GLP-1 weight-loss drugs."
+      "claim_id": "ozempic-glp1_bluesky_fb0a73dd_0",
+      "similarity": 0.6398,
+      "text": "Advertisements for GLP-1 drugs are promoting unhealthy body image and targeting people who are already thin."
     },
     {
-      "claim_id": "ozempic-glp1_bluesky_623e737a_0",
-      "similarity": 0.3457,
-      "text": "AI-driven automation will lead to wealth consolidation."
+      "claim_id": "ozempic-glp1_bluesky_b2632cb0_0",
+      "similarity": 0.6363,
+      "text": "GLP-1 drugs are being overused to increase profits."
     },
     {
-      "claim_id": "ozempic-glp1_bluesky_f9ccfd38_0",
-      "similarity": 0.345,
-      "text": "Pharmaceutical advertising is becoming increasingly pervasive and influencing children."
+      "claim_id": "ozempic-glp1_bluesky_96d69481_0",
+      "similarity": 0.6066,
+      "text": "The current usage and accessibility of GLP-1 drugs are problematic due to their use by individuals without a clear medical need and their high cost."
     },
     {
-      "claim_id": "ozempic-glp1_finbold_26344805_0",
-      "similarity": 0.3294,
-      "text": "AI-powered portfolio managers can potentially outperform the wider market and human experts."
+      "claim_id": "ozempic-glp1_x_68c373c9_0",
+      "similarity": 0.5954,
+      "text": "Stricter regulations on GLP-1 drugs may not effectively stop off-label use, potentially leading to a growth in the black market."
     }
   ],
   "example_content": [
     {
-      "text": "AI-driven automation will lead to wealth consolidation.",
+      "text": "Social media content about GLP-1 drugs often promotes nutritionally deficient diets and disordered eating behaviors.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Pharmaceutical companies are primarily motivated to develop treatments for osteoarthritis (OA) for profit, similar to Humira.",
+      "text": "Doctors are too quick to prescribe GLP-1 drugs like Ozempic.",
       "platform": "Bluesky",
-      "confidence": 0.8,
+      "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Telehealth providers prescribing GLP-1 weight loss drugs are concerning.",
+      "text": "GLP-1 drugs are being aggressively advertised.",
       "platform": "Bluesky",
-      "confidence": 0.8,
+      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

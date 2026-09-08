@@ -9,7 +9,7 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "housing-crisis_bluesky_0181ab4f_2",
-    "cluster_id": "clu_housing-crisis_005",
+    "cluster_id": "clu_housing-crisis_054",
     "concept_id": "concept_housing-crisis_004",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-02T22:38:01.404Z",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 6,
-    "friction": 0.65,
-    "friction_quadrant": "contested_advance"
+    "persistence_windows": 15,
+    "friction": 0.3492,
+    "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 0.2552,
+    "value": 0.5908,
     "confidence_interval": [
-      0.1243,
-      0.3861
+      0.4851,
+      0.6965
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2552
+      0.5908
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.65,
+    "value": 0.3492,
     "confidence_interval": [
-      0.5487,
-      0.7513
+      0.2254,
+      0.473
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.65
+      0.3492
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.3,
+    "value": 0.75,
     "confidence_interval": [
-      0.1725,
-      0.4275
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9766,
     "confidence_interval": [
-      0.925,
+      0.8998,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9766
     ],
     "source_distribution": "production"
   },
@@ -120,20 +120,32 @@
     ]
   },
   "provenance": {
-    "first_platform": "YouTube (Influencer Framing)",
+    "first_platform": "Africa News Wire",
     "first_timestamp": "2026-04-02T22:38:01.404Z",
     "lead_lag": [
       {
         "platform": "Bluesky",
-        "lag_hours": 141.2
+        "lag_hours": 33.8
       },
       {
         "platform": "X Platform",
-        "lag_hours": 168.0
+        "lag_hours": 42.1
       },
       {
-        "platform": "Jacobin",
-        "lag_hours": 181.4
+        "platform": "Michigan Capitol Confidential",
+        "lag_hours": 49.8
+      },
+      {
+        "platform": "YouTube (Influencer Framing)",
+        "lag_hours": 354.1
+      },
+      {
+        "platform": "Propublica",
+        "lag_hours": 359.3
+      },
+      {
+        "platform": "Yahoo! Finance",
+        "lag_hours": 594.8
       }
     ]
   },
@@ -141,32 +153,46 @@
     "concept_id": "concept_housing-crisis_004",
     "hops": [
       {
-        "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2026-03-26T22:56:46+00:00",
+        "platform": "Africa News Wire",
+        "timestamp": "2026-04-01T10:13:51+00:00",
         "claim_id": "housing-crisis_bluesky_0181ab4f_2",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
         "platform": "Bluesky",
-        "timestamp": "2026-04-01T20:10:48.777000+00:00",
+        "timestamp": "2026-04-02T20:02:28.805000+00:00",
         "claim_id": "housing-crisis_bluesky_0181ab4f_2",
-        "fidelity_to_origin": 0.455,
-        "fidelity_to_previous": 0.455
+        "fidelity_to_origin": 0.9823,
+        "fidelity_to_previous": 0.9823
       },
       {
         "platform": "X Platform",
-        "timestamp": "2026-04-02T22:55:50+00:00",
+        "timestamp": "2026-04-03T04:21:57+00:00",
         "claim_id": "housing-crisis_bluesky_0181ab4f_2",
-        "fidelity_to_origin": 0.3517,
-        "fidelity_to_previous": 0.773
+        "fidelity_to_origin": 0.978,
+        "fidelity_to_previous": 0.9956
       },
       {
-        "platform": "Jacobin",
-        "timestamp": "2026-04-03T12:19:55+00:00",
+        "platform": "Michigan Capitol Confidential",
+        "timestamp": "2026-04-03T11:59:00+00:00",
         "claim_id": "housing-crisis_bluesky_0181ab4f_2",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.853
+        "fidelity_to_origin": 0.974,
+        "fidelity_to_previous": 0.9959
+      },
+      {
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-04-16T04:18:32+00:00",
+        "claim_id": "housing-crisis_bluesky_0181ab4f_2",
+        "fidelity_to_origin": 0.8149,
+        "fidelity_to_previous": 0.8367
+      },
+      {
+        "platform": "Propublica",
+        "timestamp": "2026-04-16T09:30:00+00:00",
+        "claim_id": "housing-crisis_bluesky_0181ab4f_2",
+        "fidelity_to_origin": 0.8122,
+        "fidelity_to_previous": 0.9967
       }
     ],
     "observation_boundary": null
@@ -201,46 +227,46 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "housing-crisis_bluesky_a8beeb76_0",
-      "similarity": 0.4745,
-      "text": "The speaker believes that many people in America are struggling financially."
+      "claim_id": "housing-crisis_bluesky_796a54fb_0",
+      "similarity": 0.6933,
+      "text": "There is a crisis regarding affordable housing."
     },
     {
-      "claim_id": "housing-crisis_bluesky_96108e01_0",
-      "similarity": 0.4535,
-      "text": "Economic sentiment has declined significantly since 2021."
+      "claim_id": "housing-crisis_bluesky_979afdfc_0",
+      "similarity": 0.5157,
+      "text": "The affordable housing crisis in Washington D.C. is the result of policy decisions."
     },
     {
-      "claim_id": "housing-crisis_bluesky_a703ef41_0",
-      "similarity": 0.4437,
-      "text": "Donald Trump's policies have not benefited the average American."
+      "claim_id": "housing-crisis_bluesky_979afdfc_1",
+      "similarity": 0.3919,
+      "text": "Everyone who wants to live in Washington D.C. should be able to."
     },
     {
-      "claim_id": "housing-crisis_bluesky_96108e01_1",
-      "similarity": 0.4342,
-      "text": "The current economic situation is not as severe as the 2008 financial crisis."
+      "claim_id": "housing-crisis_michigan_capitol_confidential_e7e241d4_1",
+      "similarity": 0.3482,
+      "text": "Opponents of the affordable housing development in Royal Oak are prioritizing the concerns of existing property owners over the need for affordable housing."
     },
     {
-      "claim_id": "housing-crisis_bluesky_bde152bb_0",
-      "similarity": 0.3929,
-      "text": "Donald Trump's trade policies were ineffective and did not improve the economic situation for Americans."
+      "claim_id": "housing-crisis_michigan_capitol_confidential_e7e241d4_0",
+      "similarity": 0.3308,
+      "text": "Royal Oak's Zoning Board of Appeals blocked an affordable housing development due to concerns about parking and neighborhood burden."
     }
   ],
   "example_content": [
     {
-      "text": "The current economic system is leading to a decline in common goods and worker exploitation.",
+      "text": "The affordable housing crisis in Washington D.C. is the result of policy decisions.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Donald Trump's trade policies were ineffective and did not improve the economic situation for Americans.",
+      "text": "Everyone who wants to live in Washington D.C. should be able to.",
       "platform": "Bluesky",
-      "confidence": 0.8,
+      "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Donald Trump made false promises about reducing grocery prices.",
+      "text": "There is a crisis regarding affordable housing.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

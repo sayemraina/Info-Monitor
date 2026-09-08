@@ -24,107 +24,94 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": null,
+    "value": 0.82,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.72,
+      0.92
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.82
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 13,
+    "friction": 0.3333,
+    "friction_quadrant": "unopposed_advance"
+  },
+  "salience": {
+    "value": 0.4458,
+    "confidence_interval": [
+      0.3292,
+      0.5624
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.4458
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.3333,
+    "confidence_interval": [
+      0.2083,
+      0.4583
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3333
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.65,
+    "confidence_interval": [
+      0.5487,
+      0.7513
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.65
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.5,
     "confidence_interval": [
-      0,
-      0
+      0.3875,
+      0.6125
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.5
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 1,
     "confidence_interval": [
-      0,
-      0
+      0.925,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      1
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,44 +120,155 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "American Enterprise Institute ",
+    "first_timestamp": "2026-03-29T23:14:30.979Z",
+    "lead_lag": [
+      {
+        "platform": "Board Of Governors Of The Fede",
+        "lag_hours": 189.7
+      },
+      {
+        "platform": "Bluesky",
+        "lag_hours": 243.2
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 312.3
+      },
+      {
+        "platform": "Digital Journal",
+        "lag_hours": 337.8
+      },
+      {
+        "platform": "Hr Executive",
+        "lag_hours": 351.9
+      },
+      {
+        "platform": "Zee News",
+        "lag_hours": 977.8
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_ai-workplace_002",
+    "hops": [
+      {
+        "platform": "American Enterprise Institute ",
+        "timestamp": "2026-03-19T20:03:25+00:00",
+        "claim_id": "ai-workplace_bluesky_5a4e5e86_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Board Of Governors Of The Fede",
+        "timestamp": "2026-03-27T17:47:00+00:00",
+        "claim_id": "ai-workplace_bluesky_5a4e5e86_0",
+        "fidelity_to_origin": 0.9158,
+        "fidelity_to_previous": 0.9158
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-03-29T23:14:30.979000+00:00",
+        "claim_id": "ai-workplace_bluesky_5a4e5e86_0",
+        "fidelity_to_origin": 0.8921,
+        "fidelity_to_previous": 0.9741
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-01T20:20:01+00:00",
+        "claim_id": "ai-workplace_bluesky_5a4e5e86_0",
+        "fidelity_to_origin": 0.8615,
+        "fidelity_to_previous": 0.9657
+      },
+      {
+        "platform": "Digital Journal",
+        "timestamp": "2026-04-02T21:48:44+00:00",
+        "claim_id": "ai-workplace_bluesky_5a4e5e86_0",
+        "fidelity_to_origin": 0.8502,
+        "fidelity_to_previous": 0.9869
+      },
+      {
+        "platform": "Hr Executive",
+        "timestamp": "2026-04-03T12:00:15+00:00",
+        "claim_id": "ai-workplace_bluesky_5a4e5e86_0",
+        "fidelity_to_origin": 0.8439,
+        "fidelity_to_previous": 0.9926
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-workplace_bluesky_67e63dba_0",
-      "similarity": 0.7204,
-      "text": "Economic downturns will accelerate the adoption of AI in the workplace."
+      "claim_id": "ai-workplace_bluesky_5036d7dc_1",
+      "similarity": 0.7363,
+      "text": "Widespread adoption of AI will take time."
     },
     {
-      "claim_id": "ai-workplace_bluesky_9060eb63_1",
-      "similarity": 0.6429,
-      "text": "Widespread adoption of AI will exacerbate economic recession through mass layoffs."
+      "claim_id": "ai-workplace_american_enterprise_institute__8c019c6d_1",
+      "similarity": 0.7355,
+      "text": "Rapid adoption of AI could overwhelm the retraining capacity for displaced workers, leading to labor force exits."
+    },
+    {
+      "claim_id": "ai-workplace_digital_journal_0ccd8219_0",
+      "similarity": 0.7244,
+      "text": "AI adoption has not led to widespread layoffs in creative and professional services agencies."
+    },
+    {
+      "claim_id": "ai-workplace_board_of_governors_of_the_fede_6042d3d5_0",
+      "similarity": 0.7033,
+      "text": "Current data does not indicate a reduction in overall job postings due to AI adoption."
+    },
+    {
+      "claim_id": "ai-workplace_x_0fef4b57_0",
+      "similarity": 0.6914,
+      "text": "Tracking AI adoption will help understand its economic impact on workers and jobs."
     }
   ],
   "example_content": [
     {
-      "text": "Economic downturns will accelerate the adoption of AI in the workplace.",
+      "text": "Widespread adoption of AI will take time.",
       "platform": "Bluesky",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Current data does not indicate a reduction in overall job postings due to AI adoption.",
+      "platform": "Board Of Governors Of The Fede",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Widespread adoption of AI will exacerbate economic recession through mass layoffs.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
+      "text": "Rapid adoption of AI could overwhelm the retraining capacity for displaced workers, leading to labor force exits.",
+      "platform": "American Enterprise Institute ",
+      "confidence": 0.8,
       "is_influencer_framing": false
     }
   ]

@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "inflation-cost-of-living_x_bd1f2b33_0",
-    "cluster_id": "clu_inflation-cost-of-living_008",
-    "concept_id": "concept_inflation-cost-of-living_005",
+    "cluster_id": "clu_inflation-cost-of-living_045",
+    "concept_id": "concept_inflation-cost-of-living_000",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-05T06:15:55.000Z",
     "source_document_id": "x_2040674776809685419",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 10,
-    "friction": 0.5484,
+    "persistence_windows": 15,
+    "friction": 0.8354,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.2707,
+    "value": 0.8367,
     "confidence_interval": [
-      0.141,
-      0.4004
+      0.7495,
+      0.9239
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2707
+      0.8367
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.5484,
+    "value": 0.8354,
     "confidence_interval": [
-      0.4395,
-      0.6573
+      0.7481,
+      0.9227
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.5484
+      0.8354
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.5,
+    "value": 0.75,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.5
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9677,
+    "value": 0.9842,
     "confidence_interval": [
-      0.8903,
+      0.908,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9677
+      0.9842
     ],
     "source_distribution": "production"
   },
@@ -120,64 +120,79 @@
     ]
   },
   "provenance": {
-    "first_platform": "YouTube (Influencer Framing)",
+    "first_platform": "Bluesky",
     "first_timestamp": "2026-04-05T06:15:55.000Z",
     "lead_lag": [
       {
-        "platform": "Bluesky",
-        "lag_hours": 1845.2
-      },
-      {
-        "platform": "Reason",
-        "lag_hours": 1850.5
-      },
-      {
-        "platform": "The Nation",
-        "lag_hours": 1856.2
-      },
-      {
         "platform": "X Platform",
-        "lag_hours": 1891.1
+        "lag_hours": 47.1
+      },
+      {
+        "platform": "Daily Wire",
+        "lag_hours": 536.8
+      },
+      {
+        "platform": "Thejournal.Ie",
+        "lag_hours": 589.2
+      },
+      {
+        "platform": "The Star",
+        "lag_hours": 589.2
+      },
+      {
+        "platform": "The Atlantic",
+        "lag_hours": 605.8
+      },
+      {
+        "platform": "Aol.Com",
+        "lag_hours": 636.7
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_inflation-cost-of-living_005",
+    "concept_id": "concept_inflation-cost-of-living_000",
     "hops": [
       {
-        "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2026-01-16T09:00:51+00:00",
+        "platform": "Bluesky",
+        "timestamp": "2026-04-03T06:10:15.684000+00:00",
         "claim_id": "inflation-cost-of-living_x_bd1f2b33_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-03T06:10:15.684000+00:00",
-        "claim_id": "inflation-cost-of-living_x_bd1f2b33_0",
-        "fidelity_to_origin": 0.317,
-        "fidelity_to_previous": 0.317
-      },
-      {
-        "platform": "Reason",
-        "timestamp": "2026-04-03T11:30:46+00:00",
-        "claim_id": "inflation-cost-of-living_x_bd1f2b33_0",
-        "fidelity_to_origin": 0.315,
-        "fidelity_to_previous": 0.9937
-      },
-      {
-        "platform": "The Nation",
-        "timestamp": "2026-04-03T17:10:16+00:00",
-        "claim_id": "inflation-cost-of-living_x_bd1f2b33_0",
-        "fidelity_to_origin": 0.3129,
-        "fidelity_to_previous": 0.9933
-      },
-      {
         "platform": "X Platform",
-        "timestamp": "2026-04-05T04:04:27+00:00",
+        "timestamp": "2026-04-05T05:17:31+00:00",
         "claim_id": "inflation-cost-of-living_x_bd1f2b33_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9588
+        "fidelity_to_origin": 0.9585,
+        "fidelity_to_previous": 0.9585
+      },
+      {
+        "platform": "Daily Wire",
+        "timestamp": "2026-04-25T15:00:12+00:00",
+        "claim_id": "inflation-cost-of-living_x_bd1f2b33_0",
+        "fidelity_to_origin": 0.527,
+        "fidelity_to_previous": 0.5498
+      },
+      {
+        "platform": "Thejournal.Ie",
+        "timestamp": "2026-04-27T19:21:43+00:00",
+        "claim_id": "inflation-cost-of-living_x_bd1f2b33_0",
+        "fidelity_to_origin": 0.4808,
+        "fidelity_to_previous": 0.9123
+      },
+      {
+        "platform": "The Star",
+        "timestamp": "2026-04-27T19:23:34+00:00",
+        "claim_id": "inflation-cost-of-living_x_bd1f2b33_0",
+        "fidelity_to_origin": 0.4808,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "The Atlantic",
+        "timestamp": "2026-04-28T12:00:00+00:00",
+        "claim_id": "inflation-cost-of-living_x_bd1f2b33_0",
+        "fidelity_to_origin": 0.4662,
+        "fidelity_to_previous": 0.9696
       }
     ],
     "observation_boundary": null
@@ -212,48 +227,48 @@
   },
   "semantic_neighbors": [
     {
+      "claim_id": "inflation-cost-of-living_bluesky_471596ef_0",
+      "similarity": 0.5711,
+      "text": "Elected officials often fail to address the crises that initially propelled them into power."
+    },
+    {
       "claim_id": "inflation-cost-of-living_bluesky_b94991e9_0",
       "similarity": 0.5649,
       "text": "Politicians are out of touch with the economic struggles of ordinary citizens."
     },
     {
+      "claim_id": "inflation-cost-of-living_bluesky_2fa12380_0",
+      "similarity": 0.5419,
+      "text": "Politicians are out of touch with the economic struggles of ordinary citizens."
+    },
+    {
+      "claim_id": "inflation-cost-of-living_x_664833b4_1",
+      "similarity": 0.5253,
+      "text": "Current politicians are not adequately addressing the serious issues facing the country."
+    },
+    {
       "claim_id": "inflation-cost-of-living_bluesky_d75cfd99_0",
       "similarity": 0.4937,
       "text": "Current government leadership is incompetent and detached from the needs of ordinary citizens."
-    },
-    {
-      "claim_id": "inflation-cost-of-living_bluesky_9daf0656_0",
-      "similarity": 0.4403,
-      "text": "The current war does not address Americans' concerns about inflation and political instability."
-    },
-    {
-      "claim_id": "inflation-cost-of-living_bluesky_0dfa5c6d_0",
-      "similarity": 0.4346,
-      "text": "The current United States government's policies are harmful."
-    },
-    {
-      "claim_id": "inflation-cost-of-living_bluesky_dd8d3c5d_0",
-      "similarity": 0.4049,
-      "text": "Politicians are not deliberately causing high prices."
     }
   ],
   "example_content": [
     {
-      "text": "Current global conditions necessitate a focus on survival and changing ineffective systems.",
+      "text": "Politicians are out of touch with the economic struggles of ordinary citizens.",
       "platform": "Bluesky",
       "confidence": 0.8,
       "is_influencer_framing": false
     },
     {
-      "text": "The current war does not address Americans' concerns about inflation and political instability.",
+      "text": "Current government leadership is incompetent and detached from the needs of ordinary citizens.",
       "platform": "Bluesky",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "is_influencer_framing": false
     },
     {
       "text": "Politicians are out of touch with the economic struggles of ordinary citizens.",
       "platform": "Bluesky",
-      "confidence": 0.8,
+      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

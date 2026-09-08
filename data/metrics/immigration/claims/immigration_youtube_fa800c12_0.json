@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "immigration_youtube_fa800c12_0",
-    "cluster_id": "clu_immigration_004",
-    "concept_id": "concept_immigration_002",
+    "cluster_id": "clu_immigration_028",
+    "concept_id": "concept_immigration_001",
     "first_seen_platform": "youtube",
     "first_seen_timestamp": "2026-02-02T19:23:06Z",
     "source_document_id": "yt_Ty9t24VccZI",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 5,
-    "friction": 0.5882,
+    "persistence_windows": 10,
+    "friction": 0.6562,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.1773,
+    "value": 0.3024,
     "confidence_interval": [
-      0.0406,
-      0.314
+      0.1751,
+      0.4297
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1773
+      0.3024
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.5882,
+    "value": 0.6562,
     "confidence_interval": [
-      0.4823,
-      0.6941
+      0.5554,
+      0.757
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.5882
+      0.6562
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.25,
+    "value": 0.5,
     "confidence_interval": [
-      0.1187,
-      0.3813
+      0.3875,
+      0.6125
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.25
+      0.5
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.965,
+    "value": 0.9732,
     "confidence_interval": [
-      0.8874,
+      0.8962,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.965
+      0.9732
     ],
     "source_distribution": "production"
   },
@@ -124,71 +124,75 @@
     "first_timestamp": "2026-02-02T19:23:06Z",
     "lead_lag": [
       {
-        "platform": "Bluesky",
-        "lag_hours": 1584.5
-      },
-      {
         "platform": "X Platform",
-        "lag_hours": 1587.3
-      },
-      {
-        "platform": "Nbc News",
-        "lag_hours": 1594.9
-      },
-      {
-        "platform": "Dc News Now | Washington, Dc",
-        "lag_hours": 1597.6
+        "lag_hours": 4096.1
       },
       {
         "platform": "Wola",
-        "lag_hours": 1598.0
+        "lag_hours": 4102.3
+      },
+      {
+        "platform": "Bluesky",
+        "lag_hours": 4640.6
+      },
+      {
+        "platform": "Salon",
+        "lag_hours": 4698.7
+      },
+      {
+        "platform": "Dnyuz",
+        "lag_hours": 4725.9
+      },
+      {
+        "platform": "Jacobin",
+        "lag_hours": 4873.1
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_immigration_002",
+    "concept_id": "concept_immigration_001",
     "hops": [
       {
         "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2026-01-27T00:22:02+00:00",
+        "timestamp": "2025-10-14T16:01:06+00:00",
         "claim_id": "immigration_youtube_fa800c12_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-03T00:53:53.058000+00:00",
-        "claim_id": "immigration_youtube_fa800c12_0",
-        "fidelity_to_origin": 0.3059,
-        "fidelity_to_previous": 0.3059
-      },
-      {
         "platform": "X Platform",
-        "timestamp": "2026-04-03T03:39:04+00:00",
+        "timestamp": "2026-04-03T08:09:56+00:00",
         "claim_id": "immigration_youtube_fa800c12_0",
-        "fidelity_to_origin": 0.3047,
-        "fidelity_to_previous": 0.9961
-      },
-      {
-        "platform": "Nbc News",
-        "timestamp": "2026-04-03T11:15:40+00:00",
-        "claim_id": "immigration_youtube_fa800c12_0",
-        "fidelity_to_origin": 0.3013,
-        "fidelity_to_previous": 0.9888
-      },
-      {
-        "platform": "Dc News Now | Washington, Dc",
-        "timestamp": "2026-04-03T13:56:13+00:00",
-        "claim_id": "immigration_youtube_fa800c12_0",
-        "fidelity_to_origin": 0.3002,
-        "fidelity_to_previous": 0.9963
+        "fidelity_to_origin": 0.4667,
+        "fidelity_to_previous": 0.4667
       },
       {
         "platform": "Wola",
         "timestamp": "2026-04-03T14:19:26+00:00",
         "claim_id": "immigration_youtube_fa800c12_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9993
+        "fidelity_to_origin": 0.4659,
+        "fidelity_to_previous": 0.9983
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-26T00:37:09.163000+00:00",
+        "claim_id": "immigration_youtube_fa800c12_0",
+        "fidelity_to_origin": 0.3958,
+        "fidelity_to_previous": 0.8495
+      },
+      {
+        "platform": "Salon",
+        "timestamp": "2026-04-28T10:45:06+00:00",
+        "claim_id": "immigration_youtube_fa800c12_0",
+        "fidelity_to_origin": 0.3882,
+        "fidelity_to_previous": 0.9808
+      },
+      {
+        "platform": "Dnyuz",
+        "timestamp": "2026-04-29T13:57:26+00:00",
+        "claim_id": "immigration_youtube_fa800c12_0",
+        "fidelity_to_origin": 0.3847,
+        "fidelity_to_previous": 0.991
       }
     ],
     "observation_boundary": null
@@ -223,14 +227,19 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "immigration_dc_news_now_|_washington,_dc_dd2588ef_2",
-      "similarity": 0.7525,
-      "text": "The Trump administration's immigration policies are unpopular."
+      "claim_id": "immigration_youtube_4e25330c_0",
+      "similarity": 0.7245,
+      "text": "Trump's immigration policies are being criticized by Grammy-winning artists."
     },
     {
-      "claim_id": "immigration_x_db0ee836_0",
-      "similarity": 0.6823,
-      "text": "Trump's immigration policies have negative economic consequences."
+      "claim_id": "immigration_youtube_0a5fcede_0",
+      "similarity": 0.6855,
+      "text": "Trump's immigration policies are unconstitutional."
+    },
+    {
+      "claim_id": "immigration_bluesky_0d810ab2_0",
+      "similarity": 0.6648,
+      "text": "The Trump administration's immigration policies faced legal challenges."
     },
     {
       "claim_id": "immigration_x_d2b3dc14_0",
@@ -238,34 +247,29 @@
       "text": "Critics of Trump's immigration policies who immigrated legally should not criticize those policies."
     },
     {
-      "claim_id": "immigration_bluesky_62fcfbb9_0",
-      "similarity": 0.6399,
-      "text": "Donald Trump's policies have negatively impacted immigration and border security, according to a majority of Asian Americans and Pacific Islanders in the US."
-    },
-    {
-      "claim_id": "immigration_x_6c773a07_0",
-      "similarity": 0.5992,
-      "text": "Mexico's restrictive immigration policies during the Holocaust are comparable to Trump's policies."
+      "claim_id": "immigration_youtube_136a82fa_1",
+      "similarity": 0.6302,
+      "text": "Trump's immigration policies have disrupted legal pathways to immigration."
     }
   ],
   "example_content": [
     {
-      "text": "Donald Trump's policies have negatively impacted immigration and border security, according to a majority of Asian Americans and Pacific Islanders in the US.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "The Trump administration's immigration policies are unpopular.",
-      "platform": "Dc News Now | Washington, Dc",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "The Supreme Court is likely to rule against Trump's immigration policies.",
+      "text": "Critics of Trump's immigration policies who immigrated legally should not criticize those policies.",
       "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false
+    },
+    {
+      "text": "President Trump's immigration policies are responsible for the student protest and subsequent arrests.",
+      "platform": "X Platform",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Trump's immigration policies are unconstitutional.",
+      "platform": "YouTube (Influencer Framing)",
+      "confidence": 0.9,
+      "is_influencer_framing": true
     }
   ]
 }

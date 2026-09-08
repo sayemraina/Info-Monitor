@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "housing-crisis_youtube_218aa4d8_0",
-    "cluster_id": "clu_housing-crisis_006",
-    "concept_id": "concept_housing-crisis_005",
+    "cluster_id": "clu_housing-crisis_004",
+    "concept_id": "concept_housing-crisis_004",
     "first_seen_platform": "youtube",
     "first_seen_timestamp": "2025-07-20T08:00:11Z",
     "source_document_id": "yt_BTlUyS-T-_4",
@@ -35,48 +35,48 @@
       0.82
     ],
     "source_distribution": "production",
-    "source_diversity": 0.75,
-    "bridge_ratio": 0.75,
-    "persistence_windows": 4,
-    "friction": 0.6667,
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 6,
+    "friction": 0.5556,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.2252,
+    "value": 0.1853,
     "confidence_interval": [
-      0.0921,
-      0.3583
+      0.0492,
+      0.3214
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2252
+      0.1853
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.6667,
+    "value": 0.5556,
     "confidence_interval": [
-      0.5667,
-      0.7667
+      0.4473,
+      0.6639
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.6667
+      0.5556
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.2,
+    "value": 0.3,
     "confidence_interval": [
-      0.065,
-      0.335
+      0.1725,
+      0.4275
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2
+      0.3
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9586,
+    "value": 0.9766,
     "confidence_interval": [
-      0.8805,
+      0.8998,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9586
+      0.9766
     ],
     "source_distribution": "production"
   },
@@ -129,12 +129,24 @@
       },
       {
         "platform": "X Platform",
-        "lag_hours": 7644.1
+        "lag_hours": 7649.2
+      },
+      {
+        "platform": "Eye On Annapolis",
+        "lag_hours": 8255.0
+      },
+      {
+        "platform": "Naked Capitalism",
+        "lag_hours": 8893.0
+      },
+      {
+        "platform": "The Guardian",
+        "lag_hours": 8907.1
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_housing-crisis_005",
+    "concept_id": "concept_housing-crisis_004",
     "hops": [
       {
         "platform": "YouTube (Influencer Framing)",
@@ -147,15 +159,36 @@
         "platform": "Bluesky",
         "timestamp": "2026-04-02T23:53:59.462000+00:00",
         "claim_id": "housing-crisis_youtube_218aa4d8_0",
-        "fidelity_to_origin": 0.3008,
-        "fidelity_to_previous": 0.3008
+        "fidelity_to_origin": 0.3999,
+        "fidelity_to_previous": 0.3999
       },
       {
         "platform": "X Platform",
-        "timestamp": "2026-04-03T08:08:51+00:00",
+        "timestamp": "2026-04-03T13:14:41+00:00",
+        "claim_id": "housing-crisis_youtube_218aa4d8_0",
+        "fidelity_to_origin": 0.3989,
+        "fidelity_to_previous": 0.9975
+      },
+      {
+        "platform": "Eye On Annapolis",
+        "timestamp": "2026-04-28T19:00:00+00:00",
+        "claim_id": "housing-crisis_youtube_218aa4d8_0",
+        "fidelity_to_origin": 0.3512,
+        "fidelity_to_previous": 0.8804
+      },
+      {
+        "platform": "Naked Capitalism",
+        "timestamp": "2026-05-25T09:00:34+00:00",
+        "claim_id": "housing-crisis_youtube_218aa4d8_0",
+        "fidelity_to_origin": 0.3011,
+        "fidelity_to_previous": 0.8573
+      },
+      {
+        "platform": "The Guardian",
+        "timestamp": "2026-05-25T23:05:16+00:00",
         "claim_id": "housing-crisis_youtube_218aa4d8_0",
         "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9973
+        "fidelity_to_previous": 0.9963
       }
     ],
     "observation_boundary": null
@@ -195,33 +228,27 @@
       "text": "The treatment of housing as an investment commodity exacerbates the housing crisis."
     },
     {
+      "claim_id": "housing-crisis_youtube_60e32c75_0",
+      "similarity": 0.76,
+      "text": "Housing is increasingly treated as an investment commodity rather than a basic need."
+    },
+    {
       "claim_id": "housing-crisis_youtube_38496231_0",
       "similarity": 0.7457,
       "text": "The housing market is treated as an investment vehicle rather than a basic need."
     },
     {
+      "claim_id": "housing-crisis_youtube_60e32c75_1",
+      "similarity": 0.6708,
+      "text": "Institutional investors are contributing to the housing crisis by purchasing large numbers of homes."
+    },
+    {
       "claim_id": "housing-crisis_x_69d4408c_0",
       "similarity": 0.63,
       "text": "Institutional investors are exploiting the housing market for profit."
-    },
-    {
-      "claim_id": "housing-crisis_bluesky_fb0237cf_0",
-      "similarity": 0.5949,
-      "text": "Real estate investors are exploiting the housing market by charging excessive rents."
-    },
-    {
-      "claim_id": "housing-crisis_youtube_c6af0580_1",
-      "similarity": 0.4797,
-      "text": "Using data analysis can help homebuyers and investors find undervalued properties."
     }
   ],
   "example_content": [
-    {
-      "text": "The housing system unfairly transfers wealth instead of providing secure housing.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
     {
       "text": "Real estate investors are exploiting the housing market by charging excessive rents.",
       "platform": "Bluesky",
@@ -233,6 +260,12 @@
       "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false
+    },
+    {
+      "text": "The housing market is treated as an investment vehicle rather than a basic need.",
+      "platform": "YouTube (Influencer Framing)",
+      "confidence": 0.9,
+      "is_influencer_framing": true
     }
   ]
 }

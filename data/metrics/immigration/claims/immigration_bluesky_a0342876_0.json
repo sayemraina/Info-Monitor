@@ -35,48 +35,48 @@
       0.5778
     ],
     "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 2,
-    "friction": 1,
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 12,
+    "friction": 0.9722,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.4142,
+    "value": 0.3402,
     "confidence_interval": [
-      0.2953,
-      0.5331
+      0.2157,
+      0.4647
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.4142
+      0.3402
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 1,
+    "value": 0.9722,
     "confidence_interval": [
-      0.925,
+      0.8951,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9722
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.1,
+    "value": 0.6,
     "confidence_interval": [
-      0,
-      0.2425
+      0.495,
+      0.705
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1
+      0.6
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9811,
     "confidence_interval": [
-      0.925,
+      0.9047,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9811
     ],
     "source_distribution": "production"
   },
@@ -120,12 +120,24 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
+    "first_platform": "X Platform",
     "first_timestamp": "2026-05-27T04:17:58.082Z",
     "lead_lag": [
       {
+        "platform": "Bluesky",
+        "lag_hours": 5.8
+      },
+      {
+        "platform": "Daily News",
+        "lag_hours": 565.2
+      },
+      {
+        "platform": "Fox News",
+        "lag_hours": 646.1
+      },
+      {
         "platform": "Democratic Underground",
-        "lag_hours": 6.1
+        "lag_hours": 1303.2
       }
     ]
   },
@@ -133,18 +145,39 @@
     "concept_id": "concept_immigration_007",
     "hops": [
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-05-26T20:55:27.449000+00:00",
+        "platform": "X Platform",
+        "timestamp": "2026-04-02T19:49:13+00:00",
         "claim_id": "immigration_bluesky_a0342876_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-03T01:35:18.064000+00:00",
+        "claim_id": "immigration_bluesky_a0342876_0",
+        "fidelity_to_origin": 0.9969,
+        "fidelity_to_previous": 0.9969
+      },
+      {
+        "platform": "Daily News",
+        "timestamp": "2026-04-26T09:00:03+00:00",
+        "claim_id": "immigration_bluesky_a0342876_0",
+        "fidelity_to_origin": 0.6964,
+        "fidelity_to_previous": 0.6986
+      },
+      {
+        "platform": "Fox News",
+        "timestamp": "2026-04-29T17:52:55+00:00",
+        "claim_id": "immigration_bluesky_a0342876_0",
+        "fidelity_to_origin": 0.653,
+        "fidelity_to_previous": 0.9377
       },
       {
         "platform": "Democratic Underground",
         "timestamp": "2026-05-27T02:59:02+00:00",
         "claim_id": "immigration_bluesky_a0342876_0",
         "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
+        "fidelity_to_previous": 0.4594
       }
     ],
     "observation_boundary": null
@@ -179,47 +212,47 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "immigration_bluesky_7d7c57df_1",
-      "similarity": 0.794,
-      "text": "Texas is complicit in inhumane treatment of immigrants."
+      "claim_id": "immigration_bluesky_9482d14a_0",
+      "similarity": 0.9064,
+      "text": "Current immigration enforcement policies are inhumane."
     },
     {
-      "claim_id": "immigration_bluesky_00d864e0_0",
-      "similarity": 0.7662,
-      "text": "Being tough on immigration is immoral and based on poor policy."
+      "claim_id": "immigration_bluesky_de166f1e_0",
+      "similarity": 0.9064,
+      "text": "Donald Trump's immigration policies are inhumane."
     },
     {
-      "claim_id": "immigration_bluesky_9be881de_0",
-      "similarity": 0.7653,
-      "text": "Stephen Miller's immigration policies are cruel and should not be implemented."
+      "claim_id": "immigration_bluesky_29421e5e_0",
+      "similarity": 0.766,
+      "text": "Current immigration policy in the United States violates human rights and dignity."
     },
     {
-      "claim_id": "immigration_bluesky_6e21b6b4_0",
-      "similarity": 0.7078,
-      "text": "Texas's immigration policies and practices are inhumane and resemble concentration camps."
+      "claim_id": "immigration_bluesky_e607df8c_0",
+      "similarity": 0.7523,
+      "text": "Current immigration policies are being violated and abused."
     },
     {
-      "claim_id": "immigration_bluesky_10f46f65_0",
-      "similarity": 0.6972,
-      "text": "The increase in automatic deportation orders is a deliberate tactic to deny due process."
+      "claim_id": "immigration_bluesky_11f6aa92_0",
+      "similarity": 0.7505,
+      "text": "Government immigration policies can be cruel and corrupt."
     }
   ],
   "example_content": [
     {
-      "text": "Being tough on immigration is immoral and based on poor policy.",
+      "text": "Current immigration policy in the United States violates human rights and dignity.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Stephen Miller's immigration policies are cruel and should not be implemented.",
-      "platform": "Bluesky",
+      "text": "Representative Mike Lawler is complicit in cruel immigration policies.",
+      "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Texas's immigration policies and practices are inhumane and resemble concentration camps.",
-      "platform": "Bluesky",
+      "text": "The Trump administration's policy of allowing immigration agents to enter homes without a judicial warrant is illegal and unconstitutional.",
+      "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

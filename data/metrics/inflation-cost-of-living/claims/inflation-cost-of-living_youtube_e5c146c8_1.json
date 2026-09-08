@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "inflation-cost-of-living_youtube_e5c146c8_1",
-    "cluster_id": "clu_inflation-cost-of-living_009",
-    "concept_id": "concept_inflation-cost-of-living_001",
+    "cluster_id": "clu_inflation-cost-of-living_006",
+    "concept_id": "concept_inflation-cost-of-living_000",
     "first_seen_platform": "youtube",
     "first_seen_timestamp": "2026-05-05T09:18:44Z",
     "source_document_id": "yt_BvaYtRPLy8U",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 6,
-    "friction": 0.6667,
+    "persistence_windows": 15,
+    "friction": 0.6042,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.7033,
+    "value": 0.5084,
     "confidence_interval": [
-      0.606,
-      0.8006
+      0.3965,
+      0.6203
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.7033
+      0.5084
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.6667,
+    "value": 0.6042,
     "confidence_interval": [
-      0.5667,
-      0.7667
+      0.4995,
+      0.7089
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.6667
+      0.6042
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.3,
+    "value": 0.75,
     "confidence_interval": [
-      0.1725,
-      0.4275
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9842,
     "confidence_interval": [
-      0.925,
+      0.908,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9842
     ],
     "source_distribution": "production"
   },
@@ -120,79 +120,79 @@
     ]
   },
   "provenance": {
-    "first_platform": "YouTube (Influencer Framing)",
+    "first_platform": "Cato",
     "first_timestamp": "2026-05-05T09:18:44Z",
     "lead_lag": [
       {
+        "platform": "Jacobin",
+        "lag_hours": 335.1
+      },
+      {
         "platform": "Bluesky",
-        "lag_hours": 8.8
+        "lag_hours": 360.3
       },
       {
         "platform": "X Platform",
-        "lag_hours": 22.7
+        "lag_hours": 398.2
       },
       {
-        "platform": "Guardian World",
-        "lag_hours": 22.9
+        "platform": "Fox Politics",
+        "lag_hours": 886.0
       },
       {
-        "platform": "Redlands Daily Facts",
-        "lag_hours": 23.1
+        "platform": "Thejournal.Ie",
+        "lag_hours": 941.3
       },
       {
-        "platform": "Zivvynews.Com",
-        "lag_hours": 23.7
-      },
-      {
-        "platform": "Las Vegas Sun",
-        "lag_hours": 23.7
+        "platform": "Spencer Daily Reporter",
+        "lag_hours": 941.8
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_inflation-cost-of-living_001",
+    "concept_id": "concept_inflation-cost-of-living_000",
     "hops": [
       {
-        "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2026-05-05T09:18:44+00:00",
+        "platform": "Cato",
+        "timestamp": "2026-03-19T14:01:47+00:00",
         "claim_id": "inflation-cost-of-living_youtube_e5c146c8_1",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-05-05T18:07:49.988000+00:00",
+        "platform": "Jacobin",
+        "timestamp": "2026-04-02T13:10:03+00:00",
         "claim_id": "inflation-cost-of-living_youtube_e5c146c8_1",
-        "fidelity_to_origin": 0.7394,
-        "fidelity_to_previous": 0.7394
+        "fidelity_to_origin": 0.8578,
+        "fidelity_to_previous": 0.8578
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-03T14:22:16.035000+00:00",
+        "claim_id": "inflation-cost-of-living_youtube_e5c146c8_1",
+        "fidelity_to_origin": 0.8472,
+        "fidelity_to_previous": 0.9876
       },
       {
         "platform": "X Platform",
-        "timestamp": "2026-05-06T08:01:17+00:00",
+        "timestamp": "2026-04-05T04:15:57+00:00",
         "claim_id": "inflation-cost-of-living_youtube_e5c146c8_1",
-        "fidelity_to_origin": 0.3289,
-        "fidelity_to_previous": 0.4448
+        "fidelity_to_origin": 0.8311,
+        "fidelity_to_previous": 0.981
       },
       {
-        "platform": "Guardian World",
-        "timestamp": "2026-05-06T08:11:37+00:00",
+        "platform": "Fox Politics",
+        "timestamp": "2026-04-25T12:00:43+00:00",
         "claim_id": "inflation-cost-of-living_youtube_e5c146c8_1",
-        "fidelity_to_origin": 0.3238,
-        "fidelity_to_previous": 0.9845
+        "fidelity_to_origin": 0.6242,
+        "fidelity_to_previous": 0.7511
       },
       {
-        "platform": "Redlands Daily Facts",
-        "timestamp": "2026-05-06T08:27:16+00:00",
+        "platform": "Thejournal.Ie",
+        "timestamp": "2026-04-27T19:21:43+00:00",
         "claim_id": "inflation-cost-of-living_youtube_e5c146c8_1",
-        "fidelity_to_origin": 0.3161,
-        "fidelity_to_previous": 0.9762
-      },
-      {
-        "platform": "Zivvynews.Com",
-        "timestamp": "2026-05-06T08:59:36+00:00",
-        "claim_id": "inflation-cost-of-living_youtube_e5c146c8_1",
-        "fidelity_to_origin": 0.3002,
-        "fidelity_to_previous": 0.9497
+        "fidelity_to_origin": 0.6007,
+        "fidelity_to_previous": 0.9624
       }
     ],
     "observation_boundary": null
@@ -227,46 +227,46 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "inflation-cost-of-living_bluesky_f325f655_0",
-      "similarity": 0.7286,
-      "text": "The government is prioritizing wasteful spending over addressing the cost of living crisis."
+      "claim_id": "inflation-cost-of-living_cato_c0670656_2",
+      "similarity": 0.7932,
+      "text": "Neither Democrats nor Republicans are willing to make the necessary fiscal adjustments."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_1b622eac_0",
-      "similarity": 0.6953,
-      "text": "Government spending is being misallocated, preventing resources from being used for affordable housing, healthcare, and food."
+      "claim_id": "inflation-cost-of-living_bluesky_6cd2c0ef_0",
+      "similarity": 0.6621,
+      "text": "Government spending leads to long-term financial burdens for future generations through debt and inflation."
     },
     {
-      "claim_id": "inflation-cost-of-living_guardian_world_175d5390_0",
-      "similarity": 0.5555,
-      "text": "Government cash handouts will likely increase inflation."
+      "claim_id": "inflation-cost-of-living_bluesky_f7189713_0",
+      "similarity": 0.631,
+      "text": "Government spending is being misallocated towards military spending at the expense of social programs."
     },
     {
-      "claim_id": "inflation-cost-of-living_guardian_world_175d5390_1",
-      "similarity": 0.5498,
-      "text": "The government will reduce spending in the budget."
+      "claim_id": "inflation-cost-of-living_bluesky_7190637c_0",
+      "similarity": 0.5919,
+      "text": "Increasing the defense budget while cutting domestic programs will worsen the cost of living crisis."
     },
     {
-      "claim_id": "inflation-cost-of-living_redlands_daily_facts_bda5c6ef_0",
-      "similarity": 0.4441,
-      "text": "California's budget should be balanced through a combination of spending cuts and new revenue streams."
+      "claim_id": "inflation-cost-of-living_bluesky_98b8d2a2_0",
+      "similarity": 0.5484,
+      "text": "Government resources should be redirected from military spending to address domestic issues like poverty, disease, hunger, and high cost of living."
     }
   ],
   "example_content": [
     {
-      "text": "A politician prioritized military action over humanitarian concerns.",
+      "text": "Government spending leads to long-term financial burdens for future generations through debt and inflation.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The government is prioritizing wasteful spending over addressing the cost of living crisis.",
+      "text": "Increased military spending is occurring despite persistent domestic issues such as healthcare, housing, and cost of living.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Government spending is being misallocated, preventing resources from being used for affordable housing, healthcare, and food.",
+      "text": "Increasing the defense budget while cutting domestic programs will worsen the cost of living crisis.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

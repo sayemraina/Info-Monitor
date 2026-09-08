@@ -9,7 +9,7 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "immigration_bluesky_5ce071b3_0",
-    "cluster_id": "clu_immigration_028",
+    "cluster_id": "clu_immigration_025",
     "concept_id": "concept_immigration_007",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-27T16:41:00.970554+00:00",
@@ -24,107 +24,94 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": null,
+    "value": 0.645,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.545,
+      0.745
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.645
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 13,
+    "friction": 0.9024,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.3874,
+    "confidence_interval": [
+      0.2665,
+      0.5083
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3874
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.9024,
+    "confidence_interval": [
+      0.8201,
+      0.9847
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.9024
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.65,
+    "confidence_interval": [
+      0.5487,
+      0.7513
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.65
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.85,
     "confidence_interval": [
-      0,
-      0
+      0.7638,
+      0.9362
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.85
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 0.9811,
     "confidence_interval": [
-      0,
-      0
+      0.9047,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.9811
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,64 +120,154 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-04-27T16:41:00.970554+00:00",
+    "lead_lag": [
+      {
+        "platform": "Nyt Politics",
+        "lag_hours": 2.7
+      },
+      {
+        "platform": "Pbs Newshour",
+        "lag_hours": 6.2
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 20.4
+      },
+      {
+        "platform": "Jacobin",
+        "lag_hours": 428.1
+      },
+      {
+        "platform": "Salon",
+        "lag_hours": 546.1
+      },
+      {
+        "platform": "Reason",
+        "lag_hours": 600.1
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_immigration_007",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-02T16:41:55.561000+00:00",
+        "claim_id": "immigration_bluesky_5ce071b3_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Nyt Politics",
+        "timestamp": "2026-04-02T19:25:11+00:00",
+        "claim_id": "immigration_bluesky_5ce071b3_0",
+        "fidelity_to_origin": 0.9985,
+        "fidelity_to_previous": 0.9985
+      },
+      {
+        "platform": "Pbs Newshour",
+        "timestamp": "2026-04-02T22:51:35+00:00",
+        "claim_id": "immigration_bluesky_5ce071b3_0",
+        "fidelity_to_origin": 0.9967,
+        "fidelity_to_previous": 0.9982
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-03T13:05:48+00:00",
+        "claim_id": "immigration_bluesky_5ce071b3_0",
+        "fidelity_to_origin": 0.9891,
+        "fidelity_to_previous": 0.9924
+      },
+      {
+        "platform": "Jacobin",
+        "timestamp": "2026-04-20T12:50:50+00:00",
+        "claim_id": "immigration_bluesky_5ce071b3_0",
+        "fidelity_to_origin": 0.7706,
+        "fidelity_to_previous": 0.7791
+      },
+      {
+        "platform": "Salon",
+        "timestamp": "2026-04-25T10:45:28+00:00",
+        "claim_id": "immigration_bluesky_5ce071b3_0",
+        "fidelity_to_origin": 0.7074,
+        "fidelity_to_previous": 0.918
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "immigration_bluesky_3d52cd4b_0",
-      "similarity": 0.7909,
-      "text": "Ending Temporary Protected Status for Haitian and Syrian migrants is cruel."
+      "claim_id": "immigration_bluesky_3543177e_0",
+      "similarity": 0.7805,
+      "text": "ICE's re-arrest and attempted deportation of an Egyptian family was inappropriate."
     },
     {
-      "claim_id": "immigration_bluesky_4b804653_0",
-      "similarity": 0.7703,
-      "text": "Immigration enforcement actions are motivated by cruelty and brutality rather than legitimate policy concerns."
+      "claim_id": "immigration_pbs_newshour_3fe41794_0",
+      "similarity": 0.7158,
+      "text": "The U.S. government is deporting asylum seekers to countries they have no connection to."
     },
     {
-      "claim_id": "immigration_bluesky_49adaa42_0",
-      "similarity": 0.754,
-      "text": "Government immigration enforcement actions are intentionally cruel."
+      "claim_id": "immigration_bluesky_94585465_0",
+      "similarity": 0.7067,
+      "text": "The El Gamal family, fearing persecution in Egypt, was wrongly deported despite court orders."
     },
     {
-      "claim_id": "immigration_bluesky_71c9a354_0",
-      "similarity": 0.7048,
-      "text": "The Department of Homeland Security is promoting the idea of reducing the US population through extreme measures against immigrants."
+      "claim_id": "immigration_bluesky_43f3ac15_0",
+      "similarity": 0.7065,
+      "text": "US refugee policy favors white South Africans as part of a historical effort to maintain the racial homogeneity of English-speaking nations."
     },
     {
-      "claim_id": "immigration_bluesky_8b7cc5ad_1",
-      "similarity": 0.6139,
-      "text": "Republican anti-immigration policies are perceived as evil."
+      "claim_id": "immigration_x_737bc75c_0",
+      "similarity": 0.6445,
+      "text": "Immigration tribunals are biased in favor of immigrants."
     }
   ],
   "example_content": [
     {
-      "text": "Republican anti-immigration policies are perceived as evil.",
+      "text": "Current immigration policies unfairly target Sikh truck drivers.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Ending Temporary Protected Status for Haitian and Syrian migrants is cruel.",
-      "platform": "Bluesky",
+      "text": "Immigration and Customs Enforcement (ICE) unjustly detains individuals even after they have been exonerated of any wrongdoing.",
+      "platform": "Nyt Politics",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Immigration enforcement actions are motivated by cruelty and brutality rather than legitimate policy concerns.",
-      "platform": "Bluesky",
+      "text": "The U.S. government is deporting asylum seekers to countries they have no connection to.",
+      "platform": "Pbs Newshour",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

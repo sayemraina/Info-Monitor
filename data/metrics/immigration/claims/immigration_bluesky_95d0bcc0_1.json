@@ -9,7 +9,7 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "immigration_bluesky_95d0bcc0_1",
-    "cluster_id": "clu_immigration_005",
+    "cluster_id": "clu_immigration_027",
     "concept_id": "concept_immigration_004",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-02T15:09:06.379Z",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 7,
-    "friction": 0.9545,
+    "persistence_windows": 15,
+    "friction": 0.7727,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.1937,
+    "value": 0.6237,
     "confidence_interval": [
-      0.0582,
-      0.3292
+      0.5205,
+      0.7269
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1937
+      0.6237
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.9545,
+    "value": 0.7727,
     "confidence_interval": [
-      0.8761,
-      1
+      0.6807,
+      0.8647
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9545
+      0.7727
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.35,
+    "value": 0.75,
     "confidence_interval": [
-      0.2263,
-      0.4737
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.35
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9793,
     "confidence_interval": [
-      0.925,
+      0.9027,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9793
     ],
     "source_distribution": "production"
   },
@@ -144,8 +144,8 @@
         "lag_hours": 71.4
       },
       {
-        "platform": "Fortune",
-        "lag_hours": 71.8
+        "platform": "Fox News",
+        "lag_hours": 72.3
       }
     ]
   },
@@ -163,36 +163,36 @@
         "platform": "X Platform",
         "timestamp": "2026-04-02T02:13:25+00:00",
         "claim_id": "immigration_bluesky_95d0bcc0_1",
-        "fidelity_to_origin": 0.6636,
-        "fidelity_to_previous": 0.6636
+        "fidelity_to_origin": 0.9819,
+        "fidelity_to_previous": 0.9819
       },
       {
         "platform": "Bluesky",
         "timestamp": "2026-04-02T14:10:23.218000+00:00",
         "claim_id": "immigration_bluesky_95d0bcc0_1",
-        "fidelity_to_origin": 0.5486,
-        "fidelity_to_previous": 0.8267
+        "fidelity_to_origin": 0.9757,
+        "fidelity_to_previous": 0.9937
       },
       {
         "platform": "The Atlantic",
         "timestamp": "2026-04-02T15:00:00+00:00",
         "claim_id": "immigration_bluesky_95d0bcc0_1",
-        "fidelity_to_origin": 0.5406,
-        "fidelity_to_previous": 0.9854
+        "fidelity_to_origin": 0.9753,
+        "fidelity_to_previous": 0.9996
       },
       {
         "platform": "The Washington Standard",
         "timestamp": "2026-04-03T07:46:14+00:00",
         "claim_id": "immigration_bluesky_95d0bcc0_1",
-        "fidelity_to_origin": 0.3793,
-        "fidelity_to_previous": 0.7016
+        "fidelity_to_origin": 0.9666,
+        "fidelity_to_previous": 0.9911
       },
       {
         "platform": "Mother Jones",
         "timestamp": "2026-04-03T14:40:12+00:00",
         "claim_id": "immigration_bluesky_95d0bcc0_1",
-        "fidelity_to_origin": 0.3129,
-        "fidelity_to_previous": 0.8249
+        "fidelity_to_origin": 0.9631,
+        "fidelity_to_previous": 0.9964
       }
     ],
     "observation_boundary": null
@@ -232,6 +232,11 @@
       "text": "Trump's foreign policy decisions have caused some of his supporters to become disillusioned."
     },
     {
+      "claim_id": "immigration_the_washington_standard_26bd1298_2",
+      "similarity": 0.5437,
+      "text": "Everyone in the Trump administration is a failure."
+    },
+    {
       "claim_id": "immigration_bluesky_f01af604_0",
       "similarity": 0.4662,
       "text": "Donald Trump should not be in power."
@@ -245,11 +250,6 @@
       "claim_id": "immigration_bluesky_4d9a5822_1",
       "similarity": 0.4035,
       "text": "Donald Trump has a history of paying individuals to remain silent."
-    },
-    {
-      "claim_id": "immigration_the_washington_standard_26bd1298_1",
-      "similarity": 0.3969,
-      "text": "Trump prioritizes loyalty over constitutional principles within his administration."
     }
   ],
   "example_content": [

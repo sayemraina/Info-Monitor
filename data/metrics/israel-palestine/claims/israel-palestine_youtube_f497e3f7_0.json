@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "israel-palestine_youtube_f497e3f7_0",
-    "cluster_id": "clu_israel-palestine_013",
-    "concept_id": "concept_israel-palestine_011",
+    "cluster_id": "clu_israel-palestine_027",
+    "concept_id": "concept_israel-palestine_000",
     "first_seen_platform": "youtube",
     "first_seen_timestamp": "2026-03-31T15:39:25Z",
     "source_document_id": "yt_WG1nGiAqPhQ",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 2,
-    "friction": 0.75,
+    "persistence_windows": 4,
+    "friction": 1,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.262,
+    "value": 0.2208,
     "confidence_interval": [
-      0.1317,
-      0.3923
+      0.0874,
+      0.3542
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.262
+      0.2208
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.75,
+    "value": 1,
     "confidence_interval": [
-      0.6562,
-      0.8438
+      0.925,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.75
+      1
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.1,
+    "value": 0.2,
     "confidence_interval": [
-      0,
-      0.2425
+      0.065,
+      0.335
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1
+      0.2
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9127,
     "confidence_interval": [
-      0.925,
-      1
+      0.8312,
+      0.9942
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9127
     ],
     "source_distribution": "production"
   },
@@ -124,60 +124,49 @@
     "first_timestamp": "2026-03-31T15:39:25Z",
     "lead_lag": [
       {
-        "platform": "Northwest Arkansas Democrat Ga",
-        "lag_hours": 63.5
-      },
-      {
-        "platform": "Arkansasonline",
-        "lag_hours": 63.5
-      },
-      {
         "platform": "Bluesky",
-        "lag_hours": 70.8
+        "lag_hours": 862.1
+      },
+      {
+        "platform": "The New Arab",
+        "lag_hours": 1486.1
       },
       {
         "platform": "X Platform",
-        "lag_hours": 71.7
+        "lag_hours": 1647.6
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_israel-palestine_011",
+    "concept_id": "concept_israel-palestine_000",
     "hops": [
       {
         "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2026-03-31T15:39:25+00:00",
+        "timestamp": "2026-02-26T17:18:51+00:00",
         "claim_id": "israel-palestine_youtube_f497e3f7_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Northwest Arkansas Democrat Ga",
-        "timestamp": "2026-04-03T07:08:00+00:00",
-        "claim_id": "israel-palestine_youtube_f497e3f7_0",
-        "fidelity_to_origin": 0.3805,
-        "fidelity_to_previous": 0.3805
-      },
-      {
-        "platform": "Arkansasonline",
-        "timestamp": "2026-04-03T07:08:00+00:00",
-        "claim_id": "israel-palestine_youtube_f497e3f7_0",
-        "fidelity_to_origin": 0.3805,
-        "fidelity_to_previous": 1.0
-      },
-      {
         "platform": "Bluesky",
-        "timestamp": "2026-04-03T14:25:33.176000+00:00",
+        "timestamp": "2026-04-03T15:24:50.048000+00:00",
         "claim_id": "israel-palestine_youtube_f497e3f7_0",
-        "fidelity_to_origin": 0.3093,
-        "fidelity_to_previous": 0.8129
+        "fidelity_to_origin": 0.6337,
+        "fidelity_to_previous": 0.6337
+      },
+      {
+        "platform": "The New Arab",
+        "timestamp": "2026-04-29T15:26:32+00:00",
+        "claim_id": "israel-palestine_youtube_f497e3f7_0",
+        "fidelity_to_origin": 0.3686,
+        "fidelity_to_previous": 0.5817
       },
       {
         "platform": "X Platform",
-        "timestamp": "2026-04-03T15:22:37+00:00",
+        "timestamp": "2026-05-06T08:54:04+00:00",
         "claim_id": "israel-palestine_youtube_f497e3f7_0",
         "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9699
+        "fidelity_to_previous": 0.8139
       }
     ],
     "observation_boundary": null
@@ -212,47 +201,47 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "israel-palestine_youtube_149fc551_0",
-      "similarity": 0.6922,
-      "text": "A new Israeli law imposing the death penalty for Palestinians convicted of deadly attacks in military courts is discriminatory."
+      "claim_id": "israel-palestine_bluesky_8c70c697_0",
+      "similarity": 0.7114,
+      "text": "Israel unjustly detains individuals who advocate for Palestinian rights."
     },
     {
-      "claim_id": "israel-palestine_x_7339f685_0",
-      "similarity": 0.6167,
-      "text": "LittleBig Bikes is discriminating against Israel by refusing to serve them due to the Gaza war."
+      "claim_id": "israel-palestine_youtube_7eebdbaa_2",
+      "similarity": 0.6394,
+      "text": "The Israeli army obstructed justice by failing to conduct a thorough internal investigation into the killing of 15 Palestinian medics and aid workers in Gaza."
     },
     {
-      "claim_id": "israel-palestine_arkansasonline_8f1254cc_0",
-      "similarity": 0.5648,
-      "text": "Equating the Israeli perspective to that of racist groups is inappropriate."
+      "claim_id": "israel-palestine_bluesky_37cddee3_0",
+      "similarity": 0.6355,
+      "text": "Israel is unjustly detaining Dr. Hussam Abu Safiya, director of Kamal Adwan Hospital in Gaza."
     },
     {
-      "claim_id": "israel-palestine_bluesky_ed64ff14_1",
-      "similarity": 0.4443,
-      "text": "Targeting Jewish people because of the actions of the Israeli government is antisemitic."
+      "claim_id": "israel-palestine_youtube_78bc9520_1",
+      "similarity": 0.6132,
+      "text": "Israeli forces treated two activists from a Gaza-bound flotilla with extreme brutality."
     },
     {
-      "claim_id": "israel-palestine_northwest_arkansas_democrat_ga_a00aaacb_0",
-      "similarity": 0.4241,
-      "text": "Equating the Israeli perspective to that of historical racists is inappropriate."
+      "claim_id": "israel-palestine_the_new_arab_3afd6847_1",
+      "similarity": 0.545,
+      "text": "The detention of healthcare workers by Israel negatively impacts the delivery of essential health services in Gaza."
     }
   ],
   "example_content": [
     {
-      "text": "Accusations of genocide against Jewish people predate the Holocaust and have been used to justify violence against them.",
+      "text": "Israel unjustly detains individuals who advocate for Palestinian rights.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Targeting Jewish people because of the actions of the Israeli government is antisemitic.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
+      "text": "The Israeli army obstructed justice by failing to conduct a thorough internal investigation into the killing of 15 Palestinian medics and aid workers in Gaza.",
+      "platform": "YouTube (Influencer Framing)",
+      "confidence": 0.8,
+      "is_influencer_framing": true
     },
     {
-      "text": "Equating the Israeli perspective to that of historical racists is inappropriate.",
-      "platform": "Northwest Arkansas Democrat Ga",
+      "text": "Israel is unjustly detaining Dr. Hussam Abu Safiya, director of Kamal Adwan Hospital in Gaza.",
+      "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

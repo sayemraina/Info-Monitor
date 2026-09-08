@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "housing-crisis_youtube_2cff46f5_2",
-    "cluster_id": "clu_housing-crisis_008",
-    "concept_id": "concept_housing-crisis_005",
+    "cluster_id": "clu_housing-crisis_017",
+    "concept_id": "concept_housing-crisis_004",
     "first_seen_platform": "youtube",
     "first_seen_timestamp": "2026-01-13T15:00:00Z",
     "source_document_id": "yt_-73cv64eM7Q",
@@ -37,37 +37,24 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 4,
-    "friction": 0.3333,
+    "persistence_windows": 15,
+    "friction": 0.2,
     "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 0.2252,
+    "value": 0.5158,
     "confidence_interval": [
-      0.0921,
-      0.3583
+      0.4045,
+      0.6271
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2252
+      0.5158
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.3333,
-    "confidence_interval": [
-      0.2083,
-      0.4583
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [
-      0.3333
-    ],
-    "source_distribution": "production"
-  },
-  "persistence": {
     "value": 0.2,
     "confidence_interval": [
       0.065,
@@ -77,6 +64,19 @@
     "time_window": "24h",
     "sparkline": [
       0.2
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.75,
+    "confidence_interval": [
+      0.6562,
+      0.8438
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9586,
+    "value": 0.9766,
     "confidence_interval": [
-      0.8805,
+      0.8998,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9586
+      0.9766
     ],
     "source_distribution": "production"
   },
@@ -122,21 +122,33 @@
     "first_timestamp": "2026-01-13T15:00:00Z",
     "lead_lag": [
       {
+        "platform": "Azfamily.Com",
+        "lag_hours": 1858.0
+      },
+      {
         "platform": "Austin American Statesman",
         "lag_hours": 1871.0
       },
       {
-        "platform": "X Platform",
-        "lag_hours": 1900.2
+        "platform": "Bluesky",
+        "lag_hours": 1877.5
       },
       {
-        "platform": "Bluesky",
-        "lag_hours": 1917.0
+        "platform": "X Platform",
+        "lag_hours": 1918.6
+      },
+      {
+        "platform": "301 Moved Permanently",
+        "lag_hours": 2490.6
+      },
+      {
+        "platform": "The Age",
+        "lag_hours": 2500.0
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_housing-crisis_005",
+    "concept_id": "concept_housing-crisis_004",
     "hops": [
       {
         "platform": "YouTube (Influencer Framing)",
@@ -146,25 +158,39 @@
         "fidelity_to_previous": 1.0
       },
       {
+        "platform": "Azfamily.Com",
+        "timestamp": "2026-04-01T01:01:05+00:00",
+        "claim_id": "housing-crisis_youtube_2cff46f5_2",
+        "fidelity_to_origin": 0.5915,
+        "fidelity_to_previous": 0.5915
+      },
+      {
         "platform": "Austin American Statesman",
         "timestamp": "2026-04-01T14:00:00+00:00",
         "claim_id": "housing-crisis_youtube_2cff46f5_2",
-        "fidelity_to_origin": 0.3168,
-        "fidelity_to_previous": 0.3168
-      },
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-02T19:09:25+00:00",
-        "claim_id": "housing-crisis_youtube_2cff46f5_2",
-        "fidelity_to_origin": 0.3061,
-        "fidelity_to_previous": 0.9662
+        "fidelity_to_origin": 0.5887,
+        "fidelity_to_previous": 0.9953
       },
       {
         "platform": "Bluesky",
-        "timestamp": "2026-04-03T11:58:16.634000+00:00",
+        "timestamp": "2026-04-01T20:32:26.478000+00:00",
         "claim_id": "housing-crisis_youtube_2cff46f5_2",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9801
+        "fidelity_to_origin": 0.5872,
+        "fidelity_to_previous": 0.9975
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-03T13:37:30+00:00",
+        "claim_id": "housing-crisis_youtube_2cff46f5_2",
+        "fidelity_to_origin": 0.5782,
+        "fidelity_to_previous": 0.9847
+      },
+      {
+        "platform": "301 Moved Permanently",
+        "timestamp": "2026-04-27T09:35:00+00:00",
+        "claim_id": "housing-crisis_youtube_2cff46f5_2",
+        "fidelity_to_origin": 0.4524,
+        "fidelity_to_previous": 0.7824
       }
     ],
     "observation_boundary": null
@@ -209,22 +235,28 @@
       "text": "Rising mortgage rates are making homeownership less affordable."
     },
     {
-      "claim_id": "housing-crisis_x_9f40d722_0",
-      "similarity": 0.8134,
-      "text": "Rising mortgage rates are negatively impacting housing affordability."
+      "claim_id": "housing-crisis_bluesky_c88918a2_0",
+      "similarity": 0.6906,
+      "text": "Homeownership is more affordable than renting or having a mortgage."
     },
     {
-      "claim_id": "housing-crisis_youtube_2cff46f5_0",
-      "similarity": 0.7351,
-      "text": "Unaffordable housing costs are forcing many people to live in hotels."
+      "claim_id": "housing-crisis_x_a9d96da6_0",
+      "similarity": 0.6888,
+      "text": "The buy-to-let industry is a major contributor to the housing affordability crisis."
     },
     {
-      "claim_id": "housing-crisis_x_1af86593_0",
-      "similarity": 0.7064,
-      "text": "Home affordability has decreased significantly due to rising mortgage rates."
+      "claim_id": "housing-crisis_bluesky_5e8f888a_0",
+      "similarity": 0.6668,
+      "text": "Republican policies have negatively impacted the economy and housing affordability."
     }
   ],
   "example_content": [
+    {
+      "text": "Rent prices are preferable to mortgage prices.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
     {
       "text": "Rising mortgage rates are negatively impacting housing affordability in the US.",
       "platform": "Bluesky",
@@ -234,12 +266,6 @@
     {
       "text": "Rising mortgage rates are making homeownership less affordable.",
       "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "New apartment construction in San Antonio and Austin is declining.",
-      "platform": "Austin American Statesman",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

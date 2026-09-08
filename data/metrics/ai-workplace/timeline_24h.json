@@ -1,9 +1,57 @@
 {
   "events": [
     {
-      "id": "evt_01f9d9d4581a",
+      "id": "evt_8e205c36e0e2",
+      "type": "contestation_emergence",
+      "timestamp": "2026-09-07T20:28:35.200197+00:00",
+      "claim_id": "ai-workplace_x_1c054286_0",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.84,
+      "summary": "Active contestation in \"AI and Job Market\" — 8 pro vs 10 anti",
+      "detail": {
+        "cluster_id": "clu_ai-workplace_001",
+        "pro_count": 8,
+        "anti_count": 10,
+        "balance": 0.8
+      }
+    },
+    {
+      "id": "evt_cd9e5772e03f",
+      "type": "contestation_emergence",
+      "timestamp": "2026-09-07T20:28:35.200197+00:00",
+      "claim_id": "ai-workplace_bluesky_9fcbf7c2_0",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.81,
+      "summary": "Active contestation in \"Economic Impact\" — 5 pro vs 7 anti",
+      "detail": {
+        "cluster_id": "clu_ai-workplace_003",
+        "pro_count": 5,
+        "anti_count": 7,
+        "balance": 0.71
+      }
+    },
+    {
+      "id": "evt_db8647b2137a",
+      "type": "contestation_emergence",
+      "timestamp": "2026-09-07T20:28:35.200197+00:00",
+      "claim_id": "ai-workplace_bluesky_6c97317c_0",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.82,
+      "summary": "Active contestation in \"AI and Automation Displace\" — 6 pro vs 8 anti",
+      "detail": {
+        "cluster_id": "clu_ai-workplace_007",
+        "pro_count": 6,
+        "anti_count": 8,
+        "balance": 0.75
+      }
+    },
+    {
+      "id": "evt_b1c257f6df0e",
       "type": "phase_transition",
-      "timestamp": "2026-05-26T20:30:09.580467+00:00",
+      "timestamp": "2026-09-07T20:28:35.200197+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
@@ -16,9 +64,9 @@
       }
     },
     {
-      "id": "evt_4b1974594530",
+      "id": "evt_04707763790c",
       "type": "phase_transition",
-      "timestamp": "2026-05-26T20:30:09.580467+00:00",
+      "timestamp": "2026-09-07T20:28:35.200197+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
@@ -31,9 +79,9 @@
       }
     },
     {
-      "id": "evt_9fa90854a39d",
+      "id": "evt_58e7d849dc65",
       "type": "phase_transition",
-      "timestamp": "2026-05-26T20:30:09.580467+00:00",
+      "timestamp": "2026-09-07T20:28:35.200197+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
@@ -46,9 +94,9 @@
       }
     },
     {
-      "id": "evt_fc1d8a19886e",
+      "id": "evt_f3e9ba00d836",
       "type": "phase_transition",
-      "timestamp": "2026-05-26T20:30:09.580467+00:00",
+      "timestamp": "2026-09-07T20:28:35.200197+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
@@ -61,21 +109,91 @@
       }
     },
     {
-      "id": "evt_f4be16bd19ab",
+      "id": "evt_328e7fcd69d6",
       "type": "divergence_shift",
-      "timestamp": "2026-05-26T20:30:09.580467+00:00",
+      "timestamp": "2026-09-07T20:28:35.200197+00:00",
+      "claim_id": null,
+      "slice_id": "bluesky_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Strong narrative split between Bluesky and bw_businessworld",
+      "detail": {
+        "jsd": 0.8473,
+        "platforms": [
+          "bluesky",
+          "bw_businessworld"
+        ],
+        "window_hours": 24
+      }
+    },
+    {
+      "id": "evt_946d9185d864",
+      "type": "divergence_shift",
+      "timestamp": "2026-09-07T20:28:35.200197+00:00",
+      "claim_id": null,
+      "slice_id": "bluesky_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Strong narrative split between Bluesky and digit",
+      "detail": {
+        "jsd": 0.8263,
+        "platforms": [
+          "bluesky",
+          "digit"
+        ],
+        "window_hours": 24
+      }
+    },
+    {
+      "id": "evt_83dedbfcce15",
+      "type": "divergence_shift",
+      "timestamp": "2026-09-07T20:28:35.200197+00:00",
+      "claim_id": null,
+      "slice_id": "bluesky_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Strong narrative split between Bluesky and economic_times",
+      "detail": {
+        "jsd": 0.8729,
+        "platforms": [
+          "bluesky",
+          "economic_times"
+        ],
+        "window_hours": 24
+      }
+    },
+    {
+      "id": "evt_b5522f96d05e",
+      "type": "divergence_shift",
+      "timestamp": "2026-09-07T20:28:35.200197+00:00",
       "claim_id": null,
       "slice_id": "bluesky_platform",
       "severity": "high",
       "confidence": 0.95,
       "summary": "Strong narrative split between Bluesky and fortune",
       "detail": {
-        "jsd": 0.8184,
+        "jsd": 0.7319,
         "platforms": [
           "bluesky",
           "fortune"
         ],
         "window_hours": 24
+      }
+    },
+    {
+      "id": "evt_796871f8c101",
+      "type": "arousal_escalation",
+      "timestamp": "2026-09-08T00:28:35.200197+00:00",
+      "claim_id": "ai-workplace_x_30abd4de_1",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.81,
+      "summary": "Heated language rising in \"Tech Billionaires\" — 63% emotionally charged claims",
+      "detail": {
+        "cluster_id": "clu_ai-workplace_043",
+        "high_arousal_count": 7,
+        "total": 11,
+        "ratio": 0.64
       }
     },
     {
@@ -99,33 +217,98 @@
       "source": "polymarket"
     },
     {
-      "id": "evt_1a45eb0073bd",
-      "type": "momentum_spike",
-      "timestamp": "2026-05-26T22:30:09.580467+00:00",
-      "claim_id": "ai-workplace_bluesky_b9937d7f_2",
+      "id": "evt_6d8e98c4199a",
+      "type": "lead_lag",
+      "timestamp": "2026-04-12T17:28:35.200197+00:00",
+      "claim_id": "ai-workplace_bluesky_9fcbf7c2_0",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.51,
-      "summary": "Rapid attention surge in \"AI Infrastructure\" (2 claims)",
+      "confidence": 0.9,
+      "summary": "YouTube (Influencer Framing) leads news18 by ~3567h in \"Economic Impact\"",
       "detail": {
-        "cluster_id": "clu_ai-workplace_034",
-        "avg_momentum": 0.568,
-        "member_count": 2
+        "source_platform": "youtube",
+        "target_platform": "news18",
+        "lag_hours": 3567.6,
+        "cluster_id": "clu_ai-workplace_003"
+      }
+    },
+    {
+      "id": "evt_10e60328077e",
+      "type": "lead_lag",
+      "timestamp": "2026-04-24T03:28:35.200197+00:00",
+      "claim_id": "ai-workplace_x_1c054286_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.9,
+      "summary": "YouTube (Influencer Framing) leads Bluesky by ~3293h in \"AI and Job Market\"",
+      "detail": {
+        "source_platform": "youtube",
+        "target_platform": "bluesky",
+        "lag_hours": 3293.6,
+        "cluster_id": "clu_ai-workplace_001"
+      }
+    },
+    {
+      "id": "evt_4fd286445b28",
+      "type": "lead_lag",
+      "timestamp": "2026-06-12T17:28:35.200197+00:00",
+      "claim_id": "ai-workplace_bluesky_082e4f7b_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.9,
+      "summary": "YouTube (Influencer Framing) leads Bluesky by ~2103h in \"AI and Jobs\"",
+      "detail": {
+        "source_platform": "youtube",
+        "target_platform": "bluesky",
+        "lag_hours": 2103.6,
+        "cluster_id": "clu_ai-workplace_000"
+      }
+    },
+    {
+      "id": "evt_ea282c1642d1",
+      "type": "lead_lag",
+      "timestamp": "2026-08-11T11:28:35.200197+00:00",
+      "claim_id": "ai-workplace_bluesky_bc6a67ba_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.76,
+      "summary": "X Platform leads fortune by ~669h in \"AI and Employment\"",
+      "detail": {
+        "source_platform": "x",
+        "target_platform": "fortune",
+        "lag_hours": 669.9,
+        "cluster_id": "clu_ai-workplace_002"
+      }
+    },
+    {
+      "id": "evt_110edd683c8c",
+      "type": "contestation_emergence",
+      "timestamp": "2026-09-07T20:28:35.200197+00:00",
+      "claim_id": "ai-workplace_bluesky_082e4f7b_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.77,
+      "summary": "Active contestation in \"AI and Jobs\" — 9 pro vs 5 anti",
+      "detail": {
+        "cluster_id": "clu_ai-workplace_000",
+        "pro_count": 9,
+        "anti_count": 5,
+        "balance": 0.56
       }
     },
     {
       "id": "evt_beab4a0865ca",
       "type": "momentum_spike",
-      "timestamp": "2026-05-27T00:30:09.580467+00:00",
-      "claim_id": "ai-workplace_bluesky_c842d17b_0",
+      "timestamp": "2026-09-07T22:28:35.200197+00:00",
+      "claim_id": "ai-workplace_x_30abd4de_1",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.58,
-      "summary": "Rapid attention surge in \"Poster\" (2 claims)",
+      "confidence": 0.51,
+      "summary": "Rapid attention surge in \"Tech Billionaires\" (11 claims)",
       "detail": {
-        "cluster_id": "clu_ai-workplace_012",
-        "avg_momentum": 0.645,
-        "member_count": 2
+        "cluster_id": "clu_ai-workplace_043",
+        "avg_momentum": 0.568,
+        "member_count": 11
       }
     },
     {
@@ -177,38 +360,6 @@
       "summary": "Reproductive Health Services",
       "detail": "The Department of Veterans Affairs (VA) adopts as final, without changes, a proposed rule to reinstate the exclusions on abortions and abortion counseling from the medical benefits package, which were removed in 2022. Before 2022, these exclusions had been firmly in place since the medical benefits ",
       "source": "fed_register"
-    },
-    {
-      "id": "evt_e168bf8ef55e",
-      "type": "lead_lag",
-      "timestamp": "2026-05-26T19:30:09.580467+00:00",
-      "claim_id": "ai-workplace_bluesky_9a566192_0",
-      "slice_id": null,
-      "severity": "low",
-      "confidence": 0.58,
-      "summary": "memeburn leads Bluesky by ~13h in \"Corporate Cost-Cutting\"",
-      "detail": {
-        "source_platform": "memeburn",
-        "target_platform": "bluesky",
-        "lag_hours": 13.4,
-        "cluster_id": "clu_ai-workplace_016"
-      }
-    },
-    {
-      "id": "evt_9bd63dbee1db",
-      "type": "lead_lag",
-      "timestamp": "2026-05-27T01:30:09.580467+00:00",
-      "claim_id": "ai-workplace_bluesky_4d4db620_0",
-      "slice_id": null,
-      "severity": "low",
-      "confidence": 0.6,
-      "summary": "fortune leads Bluesky by ~7h in \"AI and Employment\"",
-      "detail": {
-        "source_platform": "fortune",
-        "target_platform": "bluesky",
-        "lag_hours": 7.2,
-        "cluster_id": "clu_ai-workplace_002"
-      }
     },
     {
       "id": "gdelt_40941dbd0cba",
@@ -459,97 +610,7 @@
       "summary": "Will bitcoin hit $1m before GTA VI? — 48.9% Yes",
       "detail": "Polymarket gives 48.9% odds. Volume: $3,848,533",
       "source": "polymarket"
-    },
-    {
-      "id": "poly_540843",
-      "type": "external_signal",
-      "timestamp": "2026-04-03T17:10:34.614096+00:00",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Will China invades Taiwan before GTA VI? — 52.0% Yes",
-      "detail": "Polymarket gives 52.0% odds. Volume: $1,524,917",
-      "source": "polymarket"
-    },
-    {
-      "id": "poly_540820",
-      "type": "external_signal",
-      "timestamp": "2026-04-03T17:10:34.614091+00:00",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Trump out as President before GTA VI? — 53.0% Yes",
-      "detail": "Polymarket gives 53.0% odds. Volume: $572,401",
-      "source": "polymarket"
-    },
-    {
-      "id": "poly_540819",
-      "type": "external_signal",
-      "timestamp": "2026-04-03T17:10:34.614086+00:00",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Will Jesus Christ return before GTA VI? — 49.0% Yes",
-      "detail": "Polymarket gives 49.0% odds. Volume: $10,396,796",
-      "source": "polymarket"
-    },
-    {
-      "id": "poly_540818",
-      "type": "external_signal",
-      "timestamp": "2026-04-03T17:10:34.614079+00:00",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "New Playboi Carti Album before GTA VI? — 62.0% Yes",
-      "detail": "Polymarket gives 62.0% odds. Volume: $713,860",
-      "source": "polymarket"
-    },
-    {
-      "id": "poly_540817",
-      "type": "external_signal",
-      "timestamp": "2026-04-03T17:10:34.614073+00:00",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "New Rihanna Album before GTA VI? — 60.0% Yes",
-      "detail": "Polymarket gives 60.0% odds. Volume: $679,525",
-      "source": "polymarket"
-    },
-    {
-      "id": "poly_540816",
-      "type": "external_signal",
-      "timestamp": "2026-04-03T17:10:34.614053+00:00",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Russia-Ukraine Ceasefire before GTA VI? — 54.0% Yes",
-      "detail": "Polymarket gives 54.0% odds. Volume: $1,412,740",
-      "source": "polymarket"
-    },
-    {
-      "id": "fedreg_2026-06549",
-      "type": "external_signal",
-      "timestamp": "2026-04-03T00:00:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Statement of Organization, Functions, and Delegations of Authority",
-      "detail": "The Department of Health and Human Services (HHS) is issuing this notice to revise its Statement of Organization, Functions, and Delegations of Authority for the Office of the Secretary (OS). This reorganization removes the Office of the Chief Information Officer (OCIO) from the organizational descr",
-      "source": "fed_register"
-    },
-    {
-      "id": "fedreg_2026-06271",
-      "type": "external_signal",
-      "timestamp": "2026-04-01T00:00:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Whistleblower Incentives and Protections",
-      "detail": "FinCEN is proposing a rule to establish a whistleblower program that offers incentives and protections to encourage individuals who have information about potential violations of the Bank Secrecy Act (BSA), International Emergency Economic Powers Act (IEEPA), Trading With the Enemy Act of 1917 (TWEA",
-      "source": "fed_register"
-    },
-    {
-      "id": "sec_7344843bb793",
-      "type": "external_signal",
-      "timestamp": "2026-04-01T00:00:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Unknown —  filing (2026-04-01)",
-      "detail": "Unknown filed  mentioning 'artificial intelligence'. Filing date: 2026-04-01.",
-      "source": "sec_edgar"
     }
   ],
-  "total_count": 85
+  "total_count": 94
 }

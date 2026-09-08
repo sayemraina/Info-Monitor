@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "immigration_bluesky_ef76746f_0",
-    "cluster_id": "clu_immigration_003",
-    "concept_id": "concept_immigration_003",
+    "cluster_id": "clu_immigration_009",
+    "concept_id": "concept_immigration_005",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-02T19:05:41.105Z",
     "source_document_id": "c922570dd720e99b",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 15,
-    "friction": 0.5,
-    "friction_quadrant": "contested_advance"
+    "persistence_windows": 5,
+    "friction": 0.1875,
+    "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 0.4051,
+    "value": 0.1876,
     "confidence_interval": [
-      0.2855,
-      0.5247
+      0.0517,
+      0.3235
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.4051
+      0.1876
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.5,
+    "value": 0.1875,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0.0516,
+      0.3234
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.5
+      0.1875
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.75,
+    "value": 0.25,
     "confidence_interval": [
-      0.6562,
-      0.8438
+      0.1187,
+      0.3813
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.75
+      0.25
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9783,
+    "value": 1,
     "confidence_interval": [
-      0.9017,
+      0.925,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9783
+      1
     ],
     "source_distribution": "production"
   },
@@ -120,75 +120,53 @@
     ]
   },
   "provenance": {
-    "first_platform": "YouTube (Influencer Framing)",
+    "first_platform": "X Platform",
     "first_timestamp": "2026-04-02T19:05:41.105Z",
     "lead_lag": [
       {
         "platform": "Bluesky",
-        "lag_hours": 3369.6
+        "lag_hours": 5.9
       },
       {
-        "platform": "X Platform",
-        "lag_hours": 3374.2
+        "platform": "Infomigrants",
+        "lag_hours": 603.8
       },
       {
-        "platform": "Dnyuz",
-        "lag_hours": 3398.5
-      },
-      {
-        "platform": "Arutz Sheva Israel News",
-        "lag_hours": 3398.6
-      },
-      {
-        "platform": "Dc News Now | Washington, Dc",
-        "lag_hours": 3401.7
+        "platform": "Red Pepper",
+        "lag_hours": 810.1
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_immigration_003",
+    "concept_id": "concept_immigration_005",
     "hops": [
       {
-        "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2025-11-12T20:15:12+00:00",
+        "platform": "X Platform",
+        "timestamp": "2026-04-02T13:09:37+00:00",
         "claim_id": "immigration_bluesky_ef76746f_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
         "platform": "Bluesky",
-        "timestamp": "2026-04-02T05:49:59.459000+00:00",
+        "timestamp": "2026-04-02T19:05:41.105000+00:00",
         "claim_id": "immigration_bluesky_ef76746f_0",
-        "fidelity_to_origin": 0.3066,
-        "fidelity_to_previous": 0.3066
+        "fidelity_to_origin": 0.9949,
+        "fidelity_to_previous": 0.9949
       },
       {
-        "platform": "X Platform",
-        "timestamp": "2026-04-02T10:28:08+00:00",
+        "platform": "Infomigrants",
+        "timestamp": "2026-04-27T16:55:40+00:00",
         "claim_id": "immigration_bluesky_ef76746f_0",
-        "fidelity_to_origin": 0.3057,
-        "fidelity_to_previous": 0.9971
+        "fidelity_to_origin": 0.4783,
+        "fidelity_to_previous": 0.4808
       },
       {
-        "platform": "Dnyuz",
-        "timestamp": "2026-04-03T10:47:42+00:00",
-        "claim_id": "immigration_bluesky_ef76746f_0",
-        "fidelity_to_origin": 0.3006,
-        "fidelity_to_previous": 0.9833
-      },
-      {
-        "platform": "Arutz Sheva Israel News",
-        "timestamp": "2026-04-03T10:50:27+00:00",
-        "claim_id": "immigration_bluesky_ef76746f_0",
-        "fidelity_to_origin": 0.3006,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Dc News Now | Washington, Dc",
-        "timestamp": "2026-04-03T13:56:13+00:00",
+        "platform": "Red Pepper",
+        "timestamp": "2026-05-06T07:17:07+00:00",
         "claim_id": "immigration_bluesky_ef76746f_0",
         "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.998
+        "fidelity_to_previous": 0.6272
       }
     ],
     "observation_boundary": null
@@ -233,38 +211,38 @@
       "text": "A plurality of Scots would prefer to reduce overall immigration numbers."
     },
     {
+      "claim_id": "immigration_x_9771f7f5_0",
+      "similarity": 0.6648,
+      "text": "Immigration is a significant concern for a substantial portion of the Scottish population."
+    },
+    {
       "claim_id": "immigration_bluesky_fdc37b7c_0",
       "similarity": 0.6629,
       "text": "Scottish attitudes towards immigration are mixed and nuanced."
     },
     {
-      "claim_id": "immigration_bluesky_1f43048e_0",
-      "similarity": 0.3268,
-      "text": "Reform party falsely accuses Green parties of supporting irresponsible deregulation regarding drug policy and immigration."
-    },
-    {
-      "claim_id": "immigration_bluesky_3ba5a3bf_0",
-      "similarity": 0.3195,
-      "text": "No Democratic politician advocates for illegal immigration."
+      "claim_id": "immigration_bluesky_08f591bd_0",
+      "similarity": 0.6123,
+      "text": "Immigration is a high-priority issue for some political parties in Scotland but not others."
     }
   ],
   "example_content": [
     {
-      "text": "No Democratic politician advocates for illegal immigration.",
+      "text": "Scottish attitudes towards immigration are mixed and nuanced.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The Republican Party mistreats minority groups.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "The Democratic Party is too willing to compromise on immigration policy.",
+      "text": "A significant minority in Scotland holds negative views on immigration.",
       "platform": "Bluesky",
       "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "A plurality of Scots would prefer to reduce overall immigration numbers.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

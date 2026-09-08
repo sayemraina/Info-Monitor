@@ -9,7 +9,7 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "israel-palestine_bluesky_a0b9e8b6_1",
-    "cluster_id": "clu_israel-palestine_036",
+    "cluster_id": "clu_israel-palestine_039",
     "concept_id": "concept_israel-palestine_000",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-05-06T02:29:34.340Z",
@@ -35,48 +35,48 @@
       0.645
     ],
     "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 1,
-    "friction": 0.6667,
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 10,
+    "friction": 0.7812,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.3081,
+    "value": 0.3887,
     "confidence_interval": [
-      0.1812,
-      0.435
+      0.2679,
+      0.5095
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3081
+      0.3887
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.6667,
+    "value": 0.7812,
     "confidence_interval": [
-      0.5667,
-      0.7667
+      0.6898,
+      0.8726
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.6667
+      0.7812
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0.5,
     "confidence_interval": [
-      0,
-      0.1962
+      0.3875,
+      0.6125
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0.5
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9394,
+    "value": 0.9127,
     "confidence_interval": [
-      0.8599,
-      1
+      0.8312,
+      0.9942
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9394
+      0.9127
     ],
     "source_distribution": "production"
   },
@@ -120,12 +120,20 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
+    "first_platform": "YouTube (Influencer Framing)",
     "first_timestamp": "2026-05-06T02:29:34.340Z",
     "lead_lag": [
       {
+        "platform": "Bluesky",
+        "lag_hours": 19.1
+      },
+      {
         "platform": "X Platform",
-        "lag_hours": 5.5
+        "lag_hours": 19.5
+      },
+      {
+        "platform": "The National",
+        "lag_hours": 639.6
       }
     ]
   },
@@ -133,18 +141,32 @@
     "concept_id": "concept_israel-palestine_000",
     "hops": [
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-05-06T02:29:34.340000+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-04-02T18:32:11+00:00",
         "claim_id": "israel-palestine_bluesky_a0b9e8b6_1",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-03T13:40:30.228000+00:00",
+        "claim_id": "israel-palestine_bluesky_a0b9e8b6_1",
+        "fidelity_to_origin": 0.9791,
+        "fidelity_to_previous": 0.9791
+      },
+      {
         "platform": "X Platform",
-        "timestamp": "2026-05-06T08:00:56+00:00",
+        "timestamp": "2026-04-03T14:03:10+00:00",
+        "claim_id": "israel-palestine_bluesky_a0b9e8b6_1",
+        "fidelity_to_origin": 0.9786,
+        "fidelity_to_previous": 0.9995
+      },
+      {
+        "platform": "The National",
+        "timestamp": "2026-04-29T10:05:53+00:00",
         "claim_id": "israel-palestine_bluesky_a0b9e8b6_1",
         "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
+        "fidelity_to_previous": 0.3066
       }
     ],
     "observation_boundary": null
@@ -179,26 +201,47 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "israel-palestine_bluesky_dc5d0a73_1",
+      "claim_id": "israel-palestine_x_02ace5f9_0",
+      "similarity": 0.6497,
+      "text": "Donald Trump and Benjamin Netanyahu are dangerous terrorists."
+    },
+    {
+      "claim_id": "israel-palestine_x_91d54fb5_2",
       "similarity": 0.639,
       "text": "Donald Trump and Benjamin Netanyahu are war criminals."
     },
     {
-      "claim_id": "israel-palestine_x_dc7cc7e0_0",
-      "similarity": 0.5744,
-      "text": "Netanyahu may use renewed conflict in Gaza to improve his political standing."
+      "claim_id": "israel-palestine_x_c7d06987_2",
+      "similarity": 0.58,
+      "text": "Benjamin Netanyahu's actions are comparable to those of Adolf Hitler."
+    },
+    {
+      "claim_id": "israel-palestine_bluesky_9186a738_1",
+      "similarity": 0.561,
+      "text": "Benjamin Netanyahu is committing murder with impunity."
+    },
+    {
+      "claim_id": "israel-palestine_bluesky_91b47f92_0",
+      "similarity": 0.5533,
+      "text": "Benjamin Netanyahu is prolonging the Gaza war to avoid imprisonment."
     }
   ],
   "example_content": [
     {
-      "text": "Donald Trump and Benjamin Netanyahu are war criminals.",
+      "text": "Benjamin Netanyahu is comparable to Genghis Khan.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Netanyahu may use renewed conflict in Gaza to improve his political standing.",
-      "platform": "X Platform",
+      "text": "Benjamin Netanyahu is committing murder with impunity.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Benjamin Netanyahu is prolonging the Gaza war to avoid imprisonment.",
+      "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

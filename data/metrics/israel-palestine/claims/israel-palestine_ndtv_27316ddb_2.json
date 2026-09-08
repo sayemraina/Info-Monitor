@@ -9,7 +9,7 @@
     "arousal": "high",
     "register": "journalistic",
     "id": "israel-palestine_ndtv_27316ddb_2",
-    "cluster_id": "clu_israel-palestine_040",
+    "cluster_id": "clu_israel-palestine_014",
     "concept_id": "concept_israel-palestine_001",
     "first_seen_platform": "ndtv",
     "first_seen_timestamp": "2026-04-29T18:17:03Z",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 1,
-    "friction": 0.2,
+    "persistence_windows": 15,
+    "friction": 0.2595,
     "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 0.3346,
+    "value": 1,
     "confidence_interval": [
-      0.2097,
-      0.4595
+      0.925,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3346
+      1
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.2,
+    "value": 0.2595,
     "confidence_interval": [
-      0.065,
-      0.335
+      0.129,
+      0.39
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2
+      0.2595
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0.75,
     "confidence_interval": [
-      0,
-      0.1962
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9731,
     "confidence_interval": [
-      0.925,
+      0.8961,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9731
     ],
     "source_distribution": "production"
   },
@@ -118,20 +118,32 @@
     "factors": []
   },
   "provenance": {
-    "first_platform": "Religion News Service",
+    "first_platform": "YouTube (Influencer Framing)",
     "first_timestamp": "2026-04-29T18:17:03Z",
     "lead_lag": [
       {
-        "platform": "Business Insider",
-        "lag_hours": 0.5
+        "platform": "Cato",
+        "lag_hours": 310.4
       },
       {
-        "platform": "Bluesky",
-        "lag_hours": 1.4
+        "platform": "The Intercept",
+        "lag_hours": 385.7
       },
       {
-        "platform": "Ndtv",
-        "lag_hours": 3.0
+        "platform": "La Times",
+        "lag_hours": 457.9
+      },
+      {
+        "platform": "Vox",
+        "lag_hours": 514.3
+      },
+      {
+        "platform": "Jacobin",
+        "lag_hours": 525.3
+      },
+      {
+        "platform": "Salon",
+        "lag_hours": 546.7
       }
     ]
   },
@@ -139,32 +151,46 @@
     "concept_id": "concept_israel-palestine_001",
     "hops": [
       {
-        "platform": "Religion News Service",
-        "timestamp": "2026-04-29T15:19:10+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-03-11T15:50:08+00:00",
         "claim_id": "israel-palestine_ndtv_27316ddb_2",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Business Insider",
-        "timestamp": "2026-04-29T15:51:52+00:00",
+        "platform": "Cato",
+        "timestamp": "2026-03-24T14:12:49+00:00",
         "claim_id": "israel-palestine_ndtv_27316ddb_2",
-        "fidelity_to_origin": 0.8713,
-        "fidelity_to_previous": 0.8713
+        "fidelity_to_origin": 0.8818,
+        "fidelity_to_previous": 0.8818
       },
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T16:43:13.035000+00:00",
+        "platform": "The Intercept",
+        "timestamp": "2026-03-27T17:33:53+00:00",
         "claim_id": "israel-palestine_ndtv_27316ddb_2",
-        "fidelity_to_origin": 0.6692,
-        "fidelity_to_previous": 0.768
+        "fidelity_to_origin": 0.8532,
+        "fidelity_to_previous": 0.9676
       },
       {
-        "platform": "Ndtv",
-        "timestamp": "2026-04-29T18:17:03+00:00",
+        "platform": "La Times",
+        "timestamp": "2026-03-30T17:42:56+00:00",
         "claim_id": "israel-palestine_ndtv_27316ddb_2",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.4483
+        "fidelity_to_origin": 0.8257,
+        "fidelity_to_previous": 0.9678
+      },
+      {
+        "platform": "Vox",
+        "timestamp": "2026-04-02T02:10:09+00:00",
+        "claim_id": "israel-palestine_ndtv_27316ddb_2",
+        "fidelity_to_origin": 0.8042,
+        "fidelity_to_previous": 0.974
+      },
+      {
+        "platform": "Jacobin",
+        "timestamp": "2026-04-02T13:10:03+00:00",
+        "claim_id": "israel-palestine_ndtv_27316ddb_2",
+        "fidelity_to_origin": 0.8,
+        "fidelity_to_previous": 0.9948
       }
     ],
     "observation_boundary": null
@@ -199,43 +225,48 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "israel-palestine_religion_news_service_8c85d2c9_2",
-      "similarity": 0.8618,
-      "text": "Iran is using criminal proxies to conduct attacks against the Jewish community in Europe."
+      "claim_id": "israel-palestine_bluesky_80a5a799_0",
+      "similarity": 0.6335,
+      "text": "Iran is contributing to the escalation of the conflict by not allowing Trump to claim a victory."
     },
     {
-      "claim_id": "israel-palestine_bluesky_80422fb2_1",
-      "similarity": 0.5788,
-      "text": "Iran has the right to retaliate militarily."
+      "claim_id": "israel-palestine_bluesky_3a2b498e_0",
+      "similarity": 0.6235,
+      "text": "Iran strategically positions itself within the pro-Palestine movement."
     },
     {
-      "claim_id": "israel-palestine_bluesky_cf7cb24c_2",
-      "similarity": 0.5188,
-      "text": "Prior to Trump's actions, Iran was not a threat to Americans."
+      "claim_id": "israel-palestine_the_nation_3fdaf2fc_1",
+      "similarity": 0.493,
+      "text": "Regime change in Iran should be driven by internal forces within Iran, not external intervention."
     },
     {
-      "claim_id": "israel-palestine_business_insider_6985b510_0",
-      "similarity": 0.4213,
-      "text": "The US war against Iran has cost approximately $25 billion since Operation Epic Fury began."
+      "claim_id": "israel-palestine_the_nation_3fdaf2fc_0",
+      "similarity": 0.4576,
+      "text": "Netanyahu's policy of initiating war against Iran is unwise and counterproductive."
+    },
+    {
+      "claim_id": "israel-palestine_bluesky_258c3876_0",
+      "similarity": 0.4334,
+      "text": "The US military conducted an airstrike that destroyed an Iranian bridge."
     }
   ],
   "example_content": [
     {
-      "text": "Iran has the right to retaliate militarily.",
+      "text": "Iran strategically positions itself within the pro-Palestine movement.",
       "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Prior to Trump's actions, Iran was not a threat to Americans.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Iran is using criminal proxies to conduct attacks against the Jewish community in Europe.",
-      "platform": "Religion News Service",
       "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Iran is contributing to the escalation of the conflict by not allowing Trump to claim a victory.",
+      "platform": "Bluesky",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The US military conducted an airstrike that destroyed an Iranian bridge.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

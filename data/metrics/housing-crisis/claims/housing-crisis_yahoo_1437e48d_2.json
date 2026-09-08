@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "formal",
     "id": "housing-crisis_yahoo_1437e48d_2",
-    "cluster_id": "clu_housing-crisis_009",
-    "concept_id": "concept_housing-crisis_001",
+    "cluster_id": "clu_housing-crisis_035",
+    "concept_id": "concept_housing-crisis_004",
     "first_seen_platform": "yahoo",
     "first_seen_timestamp": "2026-04-26T10:03:03Z",
     "source_document_id": "8b6407abd5f63516",
@@ -24,107 +24,94 @@
     "source_type": "elite_media"
   },
   "momentum": {
-    "value": null,
+    "value": 0.645,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.545,
+      0.745
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.645
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 14,
+    "friction": 0.7209,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.4033,
+    "confidence_interval": [
+      0.2835,
+      0.5231
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.4033
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.7209,
+    "confidence_interval": [
+      0.625,
+      0.8168
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.7209
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.7,
+    "confidence_interval": [
+      0.6025,
+      0.7975
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.7
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.85,
     "confidence_interval": [
-      0,
-      0
+      0.7638,
+      0.9362
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.85
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 0.9766,
     "confidence_interval": [
-      0,
-      0
+      0.8998,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.9766
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,33 +120,155 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-04-26T10:03:03Z",
+    "lead_lag": [
+      {
+        "platform": "News 12   New Jersey",
+        "lag_hours": 5.2
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 21.8
+      },
+      {
+        "platform": "Yahoo",
+        "lag_hours": 36.7
+      },
+      {
+        "platform": "Carter Hart Agrees To Join The",
+        "lag_hours": 37.9
+      },
+      {
+        "platform": "The National Herald",
+        "lag_hours": 38.6
+      },
+      {
+        "platform": "Triblive",
+        "lag_hours": 38.7
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_housing-crisis_004",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-01T21:45:37.865000+00:00",
+        "claim_id": "housing-crisis_yahoo_1437e48d_2",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "News 12   New Jersey",
+        "timestamp": "2026-04-02T02:59:22+00:00",
+        "claim_id": "housing-crisis_yahoo_1437e48d_2",
+        "fidelity_to_origin": 0.9972,
+        "fidelity_to_previous": 0.9972
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-02T19:31:09+00:00",
+        "claim_id": "housing-crisis_yahoo_1437e48d_2",
+        "fidelity_to_origin": 0.9885,
+        "fidelity_to_previous": 0.9913
+      },
+      {
+        "platform": "Yahoo",
+        "timestamp": "2026-04-03T10:25:15+00:00",
+        "claim_id": "housing-crisis_yahoo_1437e48d_2",
+        "fidelity_to_origin": 0.9807,
+        "fidelity_to_previous": 0.9921
+      },
+      {
+        "platform": "Carter Hart Agrees To Join The",
+        "timestamp": "2026-04-03T11:41:39+00:00",
+        "claim_id": "housing-crisis_yahoo_1437e48d_2",
+        "fidelity_to_origin": 0.98,
+        "fidelity_to_previous": 0.9993
+      },
+      {
+        "platform": "The National Herald",
+        "timestamp": "2026-04-03T12:22:53+00:00",
+        "claim_id": "housing-crisis_yahoo_1437e48d_2",
+        "fidelity_to_origin": 0.9796,
+        "fidelity_to_previous": 0.9996
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "housing-crisis_the_courier_mail_4d4bacea_1",
-      "similarity": 0.162,
-      "text": "Government policies have contributed to the decline in public housing and the rise in private rental costs."
+      "claim_id": "housing-crisis_the_philadelphia_inquirer_b844c54d_1",
+      "similarity": 0.3321,
+      "text": "The use of LLCs by landlords makes it harder to hold negligent owners accountable."
+    },
+    {
+      "claim_id": "housing-crisis_ndtv_87c4dfcc_1",
+      "similarity": 0.2716,
+      "text": "Tenants in some New York City buildings face issues such as lack of maintenance, frequent utility outages, and safety concerns."
+    },
+    {
+      "claim_id": "housing-crisis_yahoo_9938bd3c_1",
+      "similarity": 0.2427,
+      "text": "Some landlords are chronically negligent and subject tenants to substandard living conditions."
+    },
+    {
+      "claim_id": "housing-crisis_the_philadelphia_inquirer_b844c54d_2",
+      "similarity": 0.229,
+      "text": "Some landlords in New York City are chronically negligent and provide substandard housing conditions."
+    },
+    {
+      "claim_id": "housing-crisis_the_frontier_post_ea47d0dc_1",
+      "similarity": 0.2132,
+      "text": "Tenants in some New York City buildings face issues such as lack of maintenance, heat and hot water outages, and drug use in common areas."
     }
   ],
   "example_content": [
     {
-      "text": "Government policies have contributed to the decline in public housing and the rise in private rental costs.",
-      "platform": "The Courier Mail",
-      "confidence": 0.8,
+      "text": "Real estate companies are conspiring to illegally raise rent prices globally.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Some landlords are chronically negligent and subject tenants to substandard living conditions.",
+      "platform": "Yahoo",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Tenants in some New York City buildings face issues such as lack of maintenance, frequent utility outages, and safety concerns.",
+      "platform": "Ndtv",
+      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "inflation-cost-of-living_star-gazette_14368622_0",
-    "cluster_id": "clu_inflation-cost-of-living_007",
-    "concept_id": "concept_inflation-cost-of-living_003",
+    "cluster_id": "clu_inflation-cost-of-living_013",
+    "concept_id": "concept_inflation-cost-of-living_005",
     "first_seen_platform": "star-gazette",
     "first_seen_timestamp": "2026-04-03T16:03:52Z",
     "source_document_id": "e815868d095b66e5",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 15,
-    "friction": 0.3214,
+    "persistence_windows": 4,
+    "friction": 0,
     "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 0.7336,
+    "value": 0.2062,
     "confidence_interval": [
-      0.6386,
-      0.8286
+      0.0717,
+      0.3407
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.7336
+      0.2062
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.3214,
+    "value": 0,
     "confidence_interval": [
-      0.1955,
-      0.4473
+      0,
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3214
+      0
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.75,
+    "value": 0.2,
     "confidence_interval": [
-      0.6562,
-      0.8438
+      0.065,
+      0.335
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.75
+      0.2
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9899,
+    "value": 1,
     "confidence_interval": [
-      0.9141,
+      0.925,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9899
+      1
     ],
     "source_distribution": "production"
   },
@@ -120,75 +120,75 @@
     ]
   },
   "provenance": {
-    "first_platform": "YouTube (Influencer Framing)",
+    "first_platform": "Bluesky",
     "first_timestamp": "2026-04-03T16:03:52Z",
     "lead_lag": [
       {
-        "platform": "Bluesky",
-        "lag_hours": 7936.0
-      },
-      {
         "platform": "Star Gazette",
-        "lag_hours": 7941.0
-      },
-      {
-        "platform": "San Diego Union Tribune",
-        "lag_hours": 7941.7
-      },
-      {
-        "platform": "Daily Mail Online",
-        "lag_hours": 7942.0
+        "lag_hours": 0.8
       },
       {
         "platform": "X Platform",
-        "lag_hours": 7976.8
+        "lag_hours": 41.4
+      },
+      {
+        "platform": "Fox Politics",
+        "lag_hours": 569.8
+      },
+      {
+        "platform": "Real Estate News & Insights | ",
+        "lag_hours": 580.4
+      },
+      {
+        "platform": "The Atlantic",
+        "lag_hours": 595.8
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_inflation-cost-of-living_003",
+    "concept_id": "concept_inflation-cost-of-living_005",
     "hops": [
       {
-        "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2025-05-07T19:05:35+00:00",
+        "platform": "Bluesky",
+        "timestamp": "2026-04-03T15:12:53.087000+00:00",
         "claim_id": "inflation-cost-of-living_star-gazette_14368622_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-03T11:06:13.791000+00:00",
-        "claim_id": "inflation-cost-of-living_star-gazette_14368622_0",
-        "fidelity_to_origin": 0.3036,
-        "fidelity_to_previous": 0.3036
-      },
-      {
         "platform": "Star Gazette",
         "timestamp": "2026-04-03T16:03:52+00:00",
         "claim_id": "inflation-cost-of-living_star-gazette_14368622_0",
-        "fidelity_to_origin": 0.3031,
-        "fidelity_to_previous": 0.9984
-      },
-      {
-        "platform": "San Diego Union Tribune",
-        "timestamp": "2026-04-03T16:44:42+00:00",
-        "claim_id": "inflation-cost-of-living_star-gazette_14368622_0",
-        "fidelity_to_origin": 0.3031,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Daily Mail Online",
-        "timestamp": "2026-04-03T17:05:04+00:00",
-        "claim_id": "inflation-cost-of-living_star-gazette_14368622_0",
-        "fidelity_to_origin": 0.3031,
-        "fidelity_to_previous": 1.0
+        "fidelity_to_origin": 0.999,
+        "fidelity_to_previous": 0.999
       },
       {
         "platform": "X Platform",
-        "timestamp": "2026-04-05T03:55:37+00:00",
+        "timestamp": "2026-04-05T08:35:48+00:00",
+        "claim_id": "inflation-cost-of-living_star-gazette_14368622_0",
+        "fidelity_to_origin": 0.9514,
+        "fidelity_to_previous": 0.9524
+      },
+      {
+        "platform": "Fox Politics",
+        "timestamp": "2026-04-27T09:00:51+00:00",
+        "claim_id": "inflation-cost-of-living_star-gazette_14368622_0",
+        "fidelity_to_origin": 0.3305,
+        "fidelity_to_previous": 0.3474
+      },
+      {
+        "platform": "Real Estate News & Insights | ",
+        "timestamp": "2026-04-27T19:37:54+00:00",
+        "claim_id": "inflation-cost-of-living_star-gazette_14368622_0",
+        "fidelity_to_origin": 0.3181,
+        "fidelity_to_previous": 0.9625
+      },
+      {
+        "platform": "The Atlantic",
+        "timestamp": "2026-04-28T11:00:00+00:00",
         "claim_id": "inflation-cost-of-living_star-gazette_14368622_0",
         "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9898
+        "fidelity_to_previous": 0.9431
       }
     ],
     "observation_boundary": null
@@ -223,47 +223,47 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "inflation-cost-of-living_bluesky_78d4cecd_0",
-      "similarity": 0.5081,
-      "text": "Healthcare and affordable cost of living are more desirable than the current economic situation."
+      "claim_id": "inflation-cost-of-living_real_estate_news_&_insights_|__e9162aae_2",
+      "similarity": 0.594,
+      "text": "The administration prioritizes affordability and ensuring that New Yorkers benefit from the World Cup."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_f1068a76_0",
-      "similarity": 0.5014,
-      "text": "Right-wing actors exploit cost of living crisis data to create money-making opportunities."
+      "claim_id": "inflation-cost-of-living_bluesky_9f390f45_1",
+      "similarity": 0.5605,
+      "text": "The cost of living in New York is disproportionately high."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_fae14560_0",
-      "similarity": 0.3886,
-      "text": "The cost of living has decreased."
+      "claim_id": "inflation-cost-of-living_fox_politics_ff9c1bae_1",
+      "similarity": 0.4937,
+      "text": "The high cost of living in New York City is not solved by increasing wages but by encouraging housing development."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_906af70a_0",
-      "similarity": 0.3807,
-      "text": "Government policies over the last two years have addressed the cost of living."
+      "claim_id": "inflation-cost-of-living_bluesky_2f747727_0",
+      "similarity": 0.4723,
+      "text": "New York City's cost of living is affected by its reliance on food being transported from other regions."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_0e6cf32d_0",
-      "similarity": 0.3765,
-      "text": "Workers' offered pay raise is insufficient to keep pace with inflation."
+      "claim_id": "inflation-cost-of-living_the_atlantic_a29d79ce_1",
+      "similarity": 0.4583,
+      "text": "New York City's public school system achieves only average educational outcomes despite its high per-pupil spending."
     }
   ],
   "example_content": [
     {
-      "text": "Workers' offered pay raise is insufficient to keep pace with inflation.",
+      "text": "The cost of living in New York is disproportionately high.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Right-wing actors exploit cost of living crisis data to create money-making opportunities.",
+      "text": "New York City's cost of living is affected by its reliance on food being transported from other regions.",
       "platform": "Bluesky",
-      "confidence": 0.8,
+      "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The cost of living has decreased.",
-      "platform": "Bluesky",
+      "text": "New York's high cost of living, taxes, and crime rate make it a difficult place to do business.",
+      "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

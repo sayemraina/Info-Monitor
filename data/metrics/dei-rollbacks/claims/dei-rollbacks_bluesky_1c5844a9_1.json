@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "dei-rollbacks_bluesky_1c5844a9_1",
-    "cluster_id": "clu_dei-rollbacks_014",
-    "concept_id": "concept_dei-rollbacks_005",
+    "cluster_id": "clu_dei-rollbacks_023",
+    "concept_id": "concept_dei-rollbacks_001",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-29T19:04:47.042Z",
     "source_document_id": "8c21cf5675a57959",
@@ -24,107 +24,94 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": null,
+    "value": 0.645,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.545,
+      0.745
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.645
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 15,
+    "friction": 0.5,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.5496,
+    "confidence_interval": [
+      0.4408,
+      0.6584
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5496
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.75,
+    "confidence_interval": [
+      0.6562,
+      0.8438
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.75
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.85,
     "confidence_interval": [
-      0,
-      0
+      0.7638,
+      0.9362
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.85
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 0.9959,
     "confidence_interval": [
-      0,
-      0
+      0.9206,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.9959
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,55 +120,155 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "Jacobin",
+    "first_timestamp": "2026-04-29T19:04:47.042Z",
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 4.3
+      },
+      {
+        "platform": "Wapo Politics",
+        "lag_hours": 20.2
+      },
+      {
+        "platform": "Amac   The Association Of Matu",
+        "lag_hours": 23.9
+      },
+      {
+        "platform": "Thegrio",
+        "lag_hours": 24.3
+      },
+      {
+        "platform": "Fox Politics",
+        "lag_hours": 593.1
+      },
+      {
+        "platform": "Conservative News Today",
+        "lag_hours": 602.0
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_dei-rollbacks_001",
+    "hops": [
+      {
+        "platform": "Jacobin",
+        "timestamp": "2026-04-02T15:51:55+00:00",
+        "claim_id": "dei-rollbacks_bluesky_1c5844a9_1",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-02T20:09:24.036000+00:00",
+        "claim_id": "dei-rollbacks_bluesky_1c5844a9_1",
+        "fidelity_to_origin": 0.9962,
+        "fidelity_to_previous": 0.9962
+      },
+      {
+        "platform": "Wapo Politics",
+        "timestamp": "2026-04-03T12:03:28+00:00",
+        "claim_id": "dei-rollbacks_bluesky_1c5844a9_1",
+        "fidelity_to_origin": 0.9823,
+        "fidelity_to_previous": 0.986
+      },
+      {
+        "platform": "Amac   The Association Of Matu",
+        "timestamp": "2026-04-03T15:43:42+00:00",
+        "claim_id": "dei-rollbacks_bluesky_1c5844a9_1",
+        "fidelity_to_origin": 0.9791,
+        "fidelity_to_previous": 0.9967
+      },
+      {
+        "platform": "Thegrio",
+        "timestamp": "2026-04-03T16:10:00+00:00",
+        "claim_id": "dei-rollbacks_bluesky_1c5844a9_1",
+        "fidelity_to_origin": 0.9787,
+        "fidelity_to_previous": 0.9996
+      },
+      {
+        "platform": "Fox Politics",
+        "timestamp": "2026-04-27T09:00:51+00:00",
+        "claim_id": "dei-rollbacks_bluesky_1c5844a9_1",
+        "fidelity_to_origin": 0.4806,
+        "fidelity_to_previous": 0.4911
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "dei-rollbacks_washington_free_beacon_e62ffeda_0",
-      "similarity": 0.2872,
-      "text": "Penn State Law School's antiracism strategic plan may be illegal due to its emphasis on race in decision-making."
+      "claim_id": "dei-rollbacks_bluesky_2dc98f20_0",
+      "similarity": 0.6348,
+      "text": "The Supreme Court's decisions are consistently favoring conservative interests and the wealthy."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_d0983ca4_1",
-      "similarity": 0.2609,
-      "text": "Scapegoating minorities is a strategy used by extractivist industries to promote GOP-led fascism."
+      "claim_id": "dei-rollbacks_bluesky_e4e1969e_0",
+      "similarity": 0.3127,
+      "text": "Affirmative action policies are a contentious issue."
     },
     {
-      "claim_id": "dei-rollbacks_washington_free_beacon_e62ffeda_1",
-      "similarity": 0.2435,
-      "text": "Penn State Law School's commitment to antiracist principles may lead to demographic discrimination."
+      "claim_id": "dei-rollbacks_bluesky_7cff3b4d_0",
+      "similarity": 0.3099,
+      "text": "Affirmative action is an ineffective method of addressing inequality."
+    },
+    {
+      "claim_id": "dei-rollbacks_bluesky_63ff72c6_0",
+      "similarity": 0.2979,
+      "text": "Affirmative action policies at Ivy League universities have failed because they have enabled the admission of right-wing and fascist individuals."
+    },
+    {
+      "claim_id": "dei-rollbacks_bluesky_20df3b04_0",
+      "similarity": 0.2699,
+      "text": "Affirmative action in university admissions is a contentious issue due to its widespread impact."
     }
   ],
   "example_content": [
     {
-      "text": "Scapegoating minorities is a strategy used by extractivist industries to promote GOP-led fascism.",
+      "text": "Affirmative action is an ineffective method of addressing inequality.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Penn State Law School's antiracism strategic plan may be illegal due to its emphasis on race in decision-making.",
-      "platform": "Washington Free Beacon",
+      "text": "Affirmative action policies are a contentious issue.",
+      "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Penn State Law School's commitment to antiracist principles may lead to demographic discrimination.",
-      "platform": "Washington Free Beacon",
-      "confidence": 0.8,
+      "text": "The Supreme Court's decisions are consistently favoring conservative interests and the wealthy.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

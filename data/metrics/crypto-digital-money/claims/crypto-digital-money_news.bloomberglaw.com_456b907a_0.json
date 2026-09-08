@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 4,
-    "friction": 0.3077,
-    "friction_quadrant": "unopposed_advance"
+    "persistence_windows": 15,
+    "friction": 0.359,
+    "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.6416,
+    "value": 0.7212,
     "confidence_interval": [
-      0.5397,
-      0.7435
+      0.6253,
+      0.8171
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.6416
+      0.7212
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.3077,
+    "value": 0.359,
     "confidence_interval": [
-      0.1808,
-      0.4346
+      0.2359,
+      0.4821
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3077
+      0.359
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.2,
+    "value": 0.75,
     "confidence_interval": [
-      0.065,
-      0.335
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.991,
     "confidence_interval": [
-      0.925,
+      0.9153,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.991
     ],
     "source_distribution": "production"
   },
@@ -120,32 +120,32 @@
     ]
   },
   "provenance": {
-    "first_platform": "Wired",
+    "first_platform": "Salon",
     "first_timestamp": "2026-05-27T08:38:45Z",
     "lead_lag": [
       {
+        "platform": "Fox Tech",
+        "lag_hours": 1345.0
+      },
+      {
         "platform": "Vox",
-        "lag_hours": 1.6
+        "lag_hours": 1491.0
       },
       {
-        "platform": "Reason",
-        "lag_hours": 5.0
+        "platform": "Banking Dive",
+        "lag_hours": 1506.9
       },
       {
-        "platform": "Bpc",
-        "lag_hours": 5.9
+        "platform": "The Atlantic",
+        "lag_hours": 2021.0
       },
       {
-        "platform": "Business Insider",
-        "lag_hours": 18.0
+        "platform": "Zero Hedge",
+        "lag_hours": 2058.0
       },
       {
-        "platform": "News.Bloomberglaw.Com",
-        "lag_hours": 22.6
-      },
-      {
-        "platform": "Techbullion",
-        "lag_hours": 22.7
+        "platform": "Bluesky",
+        "lag_hours": 2058.0
       }
     ]
   },
@@ -153,46 +153,46 @@
     "concept_id": "concept_crypto-digital-money_002",
     "hops": [
       {
-        "platform": "Wired",
-        "timestamp": "2026-05-26T10:00:00+00:00",
+        "platform": "Salon",
+        "timestamp": "2026-01-30T17:00:59+00:00",
         "claim_id": "crypto-digital-money_news.bloomberglaw.com_456b907a_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
+        "platform": "Fox Tech",
+        "timestamp": "2026-03-27T18:03:25+00:00",
+        "claim_id": "crypto-digital-money_news.bloomberglaw.com_456b907a_0",
+        "fidelity_to_origin": 0.6637,
+        "fidelity_to_previous": 0.6637
+      },
+      {
         "platform": "Vox",
-        "timestamp": "2026-05-26T11:38:11+00:00",
+        "timestamp": "2026-04-02T20:00:00+00:00",
         "claim_id": "crypto-digital-money_news.bloomberglaw.com_456b907a_0",
-        "fidelity_to_origin": 0.9495,
-        "fidelity_to_previous": 0.9495
+        "fidelity_to_origin": 0.6272,
+        "fidelity_to_previous": 0.945
       },
       {
-        "platform": "Reason",
-        "timestamp": "2026-05-26T15:01:57+00:00",
+        "platform": "Banking Dive",
+        "timestamp": "2026-04-03T11:53:47+00:00",
         "claim_id": "crypto-digital-money_news.bloomberglaw.com_456b907a_0",
-        "fidelity_to_origin": 0.8447,
-        "fidelity_to_previous": 0.8896
+        "fidelity_to_origin": 0.6232,
+        "fidelity_to_previous": 0.9936
       },
       {
-        "platform": "Bpc",
-        "timestamp": "2026-05-26T15:55:38+00:00",
+        "platform": "The Atlantic",
+        "timestamp": "2026-04-24T21:59:00+00:00",
         "claim_id": "crypto-digital-money_news.bloomberglaw.com_456b907a_0",
-        "fidelity_to_origin": 0.8171,
-        "fidelity_to_previous": 0.9673
+        "fidelity_to_origin": 0.4947,
+        "fidelity_to_previous": 0.7938
       },
       {
-        "platform": "Business Insider",
-        "timestamp": "2026-05-27T04:01:02+00:00",
+        "platform": "Zero Hedge",
+        "timestamp": "2026-04-26T11:00:00+00:00",
         "claim_id": "crypto-digital-money_news.bloomberglaw.com_456b907a_0",
-        "fidelity_to_origin": 0.4441,
-        "fidelity_to_previous": 0.5435
-      },
-      {
-        "platform": "News.Bloomberglaw.Com",
-        "timestamp": "2026-05-27T08:38:45+00:00",
-        "claim_id": "crypto-digital-money_news.bloomberglaw.com_456b907a_0",
-        "fidelity_to_origin": 0.3013,
-        "fidelity_to_previous": 0.6785
+        "fidelity_to_origin": 0.4854,
+        "fidelity_to_previous": 0.9812
       }
     ],
     "observation_boundary": null
@@ -227,47 +227,47 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "crypto-digital-money_news.bloomberglaw.com_456b907a_1",
-      "similarity": 0.6762,
-      "text": "AI-related securities lawsuits are increasing."
+      "claim_id": "crypto-digital-money_banking_dive_f279eff3_2",
+      "similarity": 0.4964,
+      "text": "AI will be used to provide customers with financial insights and product recommendations."
     },
     {
-      "claim_id": "crypto-digital-money_reason_b177c144_2",
-      "similarity": 0.4906,
-      "text": "AI models are rapidly approaching human-level intelligence, but society lacks sufficient awareness of the implications."
+      "claim_id": "crypto-digital-money_bluesky_a84e8ac1_1",
+      "similarity": 0.4864,
+      "text": "Criminal organizations are using artificial intelligence to enhance their fraudulent activities."
     },
     {
-      "claim_id": "crypto-digital-money_reason_b177c144_0",
-      "similarity": 0.4844,
-      "text": "AI technology poses a risk of being used for mass surveillance and autonomous warfare."
+      "claim_id": "crypto-digital-money_zero_hedge_75e183bb_2",
+      "similarity": 0.4785,
+      "text": "Klaus Schwab suggested that AI's ability to predict election outcomes could lead to the elimination of elections altogether."
     },
     {
-      "claim_id": "crypto-digital-money_vox_3dacf766_1",
-      "similarity": 0.4653,
-      "text": "Companies are implementing AI tools with unrealistic expectations of productivity gains, which can lead to negative consequences for employees."
+      "claim_id": "crypto-digital-money_brigitte_gabriel_479197d9_2",
+      "similarity": 0.4668,
+      "text": "Klaus Schwab suggested that AI's ability to predict election outcomes could lead to the elimination of elections altogether."
     },
     {
-      "claim_id": "crypto-digital-money_techbullion_7c7d5efa_1",
-      "similarity": 0.454,
-      "text": "Opinionated and structured content is more likely to be indexed and used by AI language models."
+      "claim_id": "crypto-digital-money_fox_tech_e2e71392_4",
+      "similarity": 0.4622,
+      "text": "Steve Wozniak is skeptical about the current state of AI."
     }
   ],
   "example_content": [
     {
-      "text": "AI-related securities lawsuits are increasing.",
-      "platform": "News.Bloomberglaw.Com",
+      "text": "AI will be used to provide customers with financial insights and product recommendations.",
+      "platform": "Banking Dive",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Opinionated and structured content is more likely to be indexed and used by AI language models.",
-      "platform": "Techbullion",
+      "text": "Cognitive training exercises do not significantly improve general intelligence.",
+      "platform": "Vox",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Startups should optimize their content for humans and AI models that might quote them.",
-      "platform": "Techbullion",
+      "text": "Pausing AI data center construction would disadvantage the United States.",
+      "platform": "Fox Tech",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

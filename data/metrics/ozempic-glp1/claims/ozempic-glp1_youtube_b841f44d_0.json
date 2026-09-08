@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "academic",
     "id": "ozempic-glp1_youtube_b841f44d_0",
-    "cluster_id": "clu_ozempic-glp1_029",
-    "concept_id": "concept_ozempic-glp1_022",
+    "cluster_id": "clu_ozempic-glp1_050",
+    "concept_id": "concept_ozempic-glp1_004",
     "first_seen_platform": "youtube",
     "first_seen_timestamp": "2026-02-17T18:00:06Z",
     "source_document_id": "yt_6ZlVOnjN8J8",
@@ -35,48 +35,48 @@
       0.82
     ],
     "source_distribution": "production",
-    "source_diversity": 0.75,
-    "bridge_ratio": 0.75,
-    "persistence_windows": 2,
-    "friction": 0,
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 13,
+    "friction": 0.225,
     "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 0.2696,
+    "value": 0.411,
     "confidence_interval": [
-      0.1398,
-      0.3994
+      0.2918,
+      0.5302
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2696
+      0.411
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0,
+    "value": 0.225,
     "confidence_interval": [
-      0,
-      0.15
+      0.0919,
+      0.3581
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.225
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.1,
+    "value": 0.65,
     "confidence_interval": [
-      0,
-      0.2425
+      0.5487,
+      0.7513
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1
+      0.65
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9667,
     "confidence_interval": [
-      0.925,
+      0.8892,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9667
     ],
     "source_distribution": "production"
   },
@@ -124,38 +124,75 @@
     "first_timestamp": "2026-02-17T18:00:06Z",
     "lead_lag": [
       {
-        "platform": "U.S. Food And Drug Administrat",
-        "lag_hours": 1078.3
+        "platform": "Bluesky",
+        "lag_hours": 5018.9
       },
       {
         "platform": "X Platform",
-        "lag_hours": 1078.6
+        "lag_hours": 5039.4
+      },
+      {
+        "platform": "U.S. Food And Drug Administrat",
+        "lag_hours": 5040.4
+      },
+      {
+        "platform": "Edmonton Sun",
+        "lag_hours": 5571.3
+      },
+      {
+        "platform": "News Directory 3",
+        "lag_hours": 5574.0
+      },
+      {
+        "platform": "Aboutlawsuits.Com",
+        "lag_hours": 5613.1
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_ozempic-glp1_022",
+    "concept_id": "concept_ozempic-glp1_004",
     "hops": [
       {
         "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2026-02-17T18:00:06+00:00",
+        "timestamp": "2025-09-05T15:52:45+00:00",
         "claim_id": "ozempic-glp1_youtube_b841f44d_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "U.S. Food And Drug Administrat",
-        "timestamp": "2026-04-03T16:19:18+00:00",
+        "platform": "Bluesky",
+        "timestamp": "2026-04-02T18:46:02.299000+00:00",
         "claim_id": "ozempic-glp1_youtube_b841f44d_0",
-        "fidelity_to_origin": 0.3002,
-        "fidelity_to_previous": 0.3002
+        "fidelity_to_origin": 0.4448,
+        "fidelity_to_previous": 0.4448
       },
       {
         "platform": "X Platform",
-        "timestamp": "2026-04-03T16:34:09+00:00",
+        "timestamp": "2026-04-03T15:14:26+00:00",
         "claim_id": "ozempic-glp1_youtube_b841f44d_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9993
+        "fidelity_to_origin": 0.4426,
+        "fidelity_to_previous": 0.9951
+      },
+      {
+        "platform": "U.S. Food And Drug Administrat",
+        "timestamp": "2026-04-03T16:19:18+00:00",
+        "claim_id": "ozempic-glp1_youtube_b841f44d_0",
+        "fidelity_to_origin": 0.4424,
+        "fidelity_to_previous": 0.9995
+      },
+      {
+        "platform": "Edmonton Sun",
+        "timestamp": "2026-04-25T19:10:44+00:00",
+        "claim_id": "ozempic-glp1_youtube_b841f44d_0",
+        "fidelity_to_origin": 0.3837,
+        "fidelity_to_previous": 0.8673
+      },
+      {
+        "platform": "News Directory 3",
+        "timestamp": "2026-04-25T21:53:03+00:00",
+        "claim_id": "ozempic-glp1_youtube_b841f44d_0",
+        "fidelity_to_origin": 0.3834,
+        "fidelity_to_previous": 0.9992
       }
     ],
     "observation_boundary": null
@@ -195,19 +232,19 @@
       "text": "The FDA is continuing to investigate a potential link between GLP-1 receptor agonists and suicidal thoughts or actions."
     },
     {
-      "claim_id": "ozempic-glp1_x_96022899_0",
-      "similarity": 0.7271,
-      "text": "The FDA is considering removing the warning about suicidal behavior and ideation from GLP-1 receptor agonist medications."
-    },
-    {
       "claim_id": "ozempic-glp1_u.s._food_and_drug_administrat_fd13fc46_0",
       "similarity": 0.7188,
       "text": "Current evidence does not establish a causal link between GLP-1 receptor agonists and suicidal thoughts or actions."
     },
     {
-      "claim_id": "ozempic-glp1_youtube_b841f44d_1",
-      "similarity": 0.692,
-      "text": "Clinical trials may not accurately detect psychiatric side effects of GLP-1 receptor agonists."
+      "claim_id": "ozempic-glp1_bluesky_3e5b7590_0",
+      "similarity": 0.7026,
+      "text": "People who are unfamiliar with GLP-1 receptor agonists often react negatively to the fact that someone is taking them."
+    },
+    {
+      "claim_id": "ozempic-glp1_x_8c09ab5a_0",
+      "similarity": 0.6897,
+      "text": "GLP-1 medications can cause gastrointestinal side effects."
     },
     {
       "claim_id": "ozempic-glp1_u.s._food_and_drug_administrat_541c8885_0",
@@ -217,20 +254,20 @@
   ],
   "example_content": [
     {
-      "text": "Current evidence does not establish a causal link between GLP-1 receptor agonists and suicidal thoughts or actions.",
-      "platform": "U.S. Food And Drug Administrat",
+      "text": "People who are unfamiliar with GLP-1 receptor agonists often react negatively to the fact that someone is taking them.",
+      "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The FDA is continuing to investigate a potential link between GLP-1 receptor agonists and suicidal thoughts or actions.",
-      "platform": "U.S. Food And Drug Administrat",
-      "confidence": 0.8,
+      "text": "Researchers have discovered an appetite suppressant that works in mice without the side effects of GLP-1 drugs.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The FDA has found no causal relationship between GLP-1 RA medications and suicidal thoughts or behaviors based on clinical trials, postmarketing data, and observational studies.",
-      "platform": "U.S. Food And Drug Administrat",
+      "text": "GLP-1 medications like Wegovy have unpleasant side effects, including reduced appetite and enjoyment of food.",
+      "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

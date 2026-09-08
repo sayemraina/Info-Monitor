@@ -35,48 +35,48 @@
       0.54
     ],
     "source_distribution": "production",
-    "source_diversity": 0.75,
-    "bridge_ratio": 0.75,
-    "persistence_windows": 5,
-    "friction": 0.8125,
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 15,
+    "friction": 0.5063,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 1,
+    "value": 0.8364,
     "confidence_interval": [
-      0.925,
-      1
+      0.7491,
+      0.9237
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.8364
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.8125,
+    "value": 0.5063,
     "confidence_interval": [
-      0.7234,
-      0.9016
+      0.3943,
+      0.6183
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.8125
+      0.5063
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.25,
+    "value": 0.75,
     "confidence_interval": [
-      0.1187,
-      0.3813
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.25
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9872,
     "confidence_interval": [
-      0.925,
+      0.9112,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9872
     ],
     "source_distribution": "production"
   },
@@ -120,16 +120,32 @@
     ]
   },
   "provenance": {
-    "first_platform": "Vox",
+    "first_platform": "Bluesky",
     "first_timestamp": "2026-05-27T01:16:35.601Z",
     "lead_lag": [
       {
-        "platform": "Bluesky",
-        "lag_hours": 0.1
+        "platform": "YouTube (Influencer Framing)",
+        "lag_hours": 463.0
       },
       {
-        "platform": "Truthdig: Expert Reporting, Cu",
-        "lag_hours": 4.3
+        "platform": "Pharmexec.Com",
+        "lag_hours": 817.8
+      },
+      {
+        "platform": "Medium",
+        "lag_hours": 821.9
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 850.1
+      },
+      {
+        "platform": "Times Square Chronicles Newspa",
+        "lag_hours": 1363.9
+      },
+      {
+        "platform": "Cape Cod Times",
+        "lag_hours": 1368.9
       }
     ]
   },
@@ -137,25 +153,46 @@
     "concept_id": "concept_ai-bubble_002",
     "hops": [
       {
-        "platform": "Vox",
-        "timestamp": "2026-05-26T11:38:11+00:00",
+        "platform": "Bluesky",
+        "timestamp": "2026-02-28T08:09:05.960000+00:00",
         "claim_id": "ai-bubble_bluesky_f55d86fd_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-05-26T11:41:12.473000+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-03-19T15:07:57+00:00",
         "claim_id": "ai-bubble_bluesky_f55d86fd_0",
-        "fidelity_to_origin": 0.9919,
-        "fidelity_to_previous": 0.9919
+        "fidelity_to_origin": 0.8454,
+        "fidelity_to_previous": 0.8454
       },
       {
-        "platform": "Truthdig: Expert Reporting, Cu",
-        "timestamp": "2026-05-26T15:58:50+00:00",
+        "platform": "Pharmexec.Com",
+        "timestamp": "2026-04-03T10:00:00+00:00",
         "claim_id": "ai-bubble_bluesky_f55d86fd_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3024
+        "fidelity_to_origin": 0.7268,
+        "fidelity_to_previous": 0.8597
+      },
+      {
+        "platform": "Medium",
+        "timestamp": "2026-04-03T14:01:02+00:00",
+        "claim_id": "ai-bubble_bluesky_f55d86fd_0",
+        "fidelity_to_origin": 0.7255,
+        "fidelity_to_previous": 0.9982
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-04T18:12:49+00:00",
+        "claim_id": "ai-bubble_bluesky_f55d86fd_0",
+        "fidelity_to_origin": 0.7161,
+        "fidelity_to_previous": 0.987
+      },
+      {
+        "platform": "Times Square Chronicles Newspa",
+        "timestamp": "2026-04-26T04:00:12+00:00",
+        "claim_id": "ai-bubble_bluesky_f55d86fd_0",
+        "fidelity_to_origin": 0.5445,
+        "fidelity_to_previous": 0.7604
       }
     ],
     "observation_boundary": null
@@ -190,46 +227,46 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-bubble_bluesky_1d3a26db_0",
-      "similarity": 0.744,
-      "text": "AI technology is overhyped by executives who do not understand its limitations."
+      "claim_id": "ai-bubble_bluesky_4980126a_0",
+      "similarity": 0.7691,
+      "text": "AI technology is currently overvalued."
     },
     {
-      "claim_id": "ai-bubble_bluesky_305713e0_0",
-      "similarity": 0.7431,
-      "text": "AI technology is fundamentally flawed and unreliable."
+      "claim_id": "ai-bubble_bluesky_5a377c37_0",
+      "similarity": 0.7691,
+      "text": "AI technology is overvalued and does not warrant its current level of investment or hype."
     },
     {
-      "claim_id": "ai-bubble_bluesky_f55d86fd_1",
-      "similarity": 0.717,
-      "text": "The promotion of AI technology is creating artificial scarcity."
+      "claim_id": "ai-bubble_bluesky_22ce6653_0",
+      "similarity": 0.7417,
+      "text": "The current valuation of AI technologies is likely inflated."
     },
     {
-      "claim_id": "ai-bubble_bluesky_817a0c21_0",
-      "similarity": 0.6981,
-      "text": "AI technology is readily available and free to use."
+      "claim_id": "ai-bubble_bluesky_d2a85ae3_0",
+      "similarity": 0.7412,
+      "text": "AI technologies are currently overvalued."
     },
     {
-      "claim_id": "ai-bubble_bluesky_10a4b856_0",
-      "similarity": 0.6282,
-      "text": "The media is failing to adequately represent the concerns of workers, students, and data communities regarding AI."
+      "claim_id": "ai-bubble_bluesky_787cbe20_1",
+      "similarity": 0.6759,
+      "text": "AI technology will persist and have lasting impact despite the market conditions."
     }
   ],
   "example_content": [
     {
-      "text": "AI technology is overhyped by executives who do not understand its limitations.",
+      "text": "AI technology is currently overvalued.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The promotion of AI technology is creating artificial scarcity.",
+      "text": "Individuals bear some responsibility for the potential negative consequences of the AI investment bubble due to their use of AI products.",
       "platform": "Bluesky",
-      "confidence": 0.8,
+      "confidence": 0.7,
       "is_influencer_framing": false
     },
     {
-      "text": "Investment in AI persuasion technologies is driven by a solipsistic desire for control.",
+      "text": "AI systems used for military purposes are legitimate targets for attack.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

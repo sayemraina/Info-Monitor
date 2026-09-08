@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "journalistic",
     "id": "war-on-iran_youtube_fefa4342_0",
-    "cluster_id": "clu_war-on-iran_005",
-    "concept_id": "concept_war-on-iran_002",
+    "cluster_id": "clu_war-on-iran_020",
+    "concept_id": "concept_war-on-iran_000",
     "first_seen_platform": "youtube",
     "first_seen_timestamp": "2026-05-06T04:25:58Z",
     "source_document_id": "yt_kL5hNi2-JFg",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 5,
-    "friction": 0.1875,
+    "persistence_windows": 14,
+    "friction": 0.2273,
     "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 0.701,
+    "value": 0.4694,
     "confidence_interval": [
-      0.6036,
-      0.7984
+      0.3546,
+      0.5842
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.701
+      0.4694
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.1875,
+    "value": 0.2273,
     "confidence_interval": [
-      0.0516,
-      0.3234
+      0.0943,
+      0.3603
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1875
+      0.2273
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.25,
+    "value": 0.7,
     "confidence_interval": [
-      0.1187,
-      0.3813
+      0.6025,
+      0.7975
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.25
+      0.7
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9014,
+    "value": 0.9252,
     "confidence_interval": [
-      0.819,
-      0.9838
+      0.8446,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9014
+      0.9252
     ],
     "source_distribution": "production"
   },
@@ -120,79 +120,79 @@
     ]
   },
   "provenance": {
-    "first_platform": "YouTube (Influencer Framing)",
+    "first_platform": "Bluesky",
     "first_timestamp": "2026-05-06T04:25:58Z",
     "lead_lag": [
       {
-        "platform": "Bluesky",
-        "lag_hours": 10.8
+        "platform": "YouTube (Influencer Framing)",
+        "lag_hours": 242.7
       },
       {
-        "platform": "Oman Observer",
-        "lag_hours": 15.2
+        "platform": "7 News Miami",
+        "lag_hours": 547.3
       },
       {
-        "platform": "X Platform",
-        "lag_hours": 20.3
+        "platform": "The Boston Globe",
+        "lag_hours": 547.3
       },
       {
-        "platform": "Mountain Democrat",
-        "lag_hours": 20.5
+        "platform": "Daily Wire",
+        "lag_hours": 571.2
       },
       {
-        "platform": "Kyivpost",
-        "lag_hours": 20.8
+        "platform": "Anadolu Ajansı",
+        "lag_hours": 578.9
       },
       {
-        "platform": "Dw News",
-        "lag_hours": 21.9
+        "platform": "The Herald Journal",
+        "lag_hours": 578.9
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_war-on-iran_002",
+    "concept_id": "concept_war-on-iran_000",
     "hops": [
       {
-        "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2026-05-05T10:31:38+00:00",
+        "platform": "Bluesky",
+        "timestamp": "2026-04-03T16:15:55.868000+00:00",
         "claim_id": "war-on-iran_youtube_fefa4342_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-05-05T21:20:14+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-04-13T19:00:01+00:00",
         "claim_id": "war-on-iran_youtube_fefa4342_0",
-        "fidelity_to_origin": 0.6541,
-        "fidelity_to_previous": 0.6541
+        "fidelity_to_origin": 0.868,
+        "fidelity_to_previous": 0.868
       },
       {
-        "platform": "Oman Observer",
-        "timestamp": "2026-05-06T01:46:23+00:00",
+        "platform": "7 News Miami",
+        "timestamp": "2026-04-26T11:31:40+00:00",
         "claim_id": "war-on-iran_youtube_fefa4342_0",
-        "fidelity_to_origin": 0.5122,
-        "fidelity_to_previous": 0.7831
+        "fidelity_to_origin": 0.7023,
+        "fidelity_to_previous": 0.8091
       },
       {
-        "platform": "X Platform",
-        "timestamp": "2026-05-06T06:50:06+00:00",
+        "platform": "The Boston Globe",
+        "timestamp": "2026-04-26T11:31:43+00:00",
         "claim_id": "war-on-iran_youtube_fefa4342_0",
-        "fidelity_to_origin": 0.3502,
-        "fidelity_to_previous": 0.6837
+        "fidelity_to_origin": 0.7023,
+        "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Mountain Democrat",
-        "timestamp": "2026-05-06T07:02:18+00:00",
+        "platform": "Daily Wire",
+        "timestamp": "2026-04-27T11:25:22+00:00",
         "claim_id": "war-on-iran_youtube_fefa4342_0",
-        "fidelity_to_origin": 0.3437,
-        "fidelity_to_previous": 0.9814
+        "fidelity_to_origin": 0.6893,
+        "fidelity_to_previous": 0.9815
       },
       {
-        "platform": "Kyivpost",
-        "timestamp": "2026-05-06T07:21:05+00:00",
+        "platform": "Anadolu Ajansı",
+        "timestamp": "2026-04-27T19:09:52+00:00",
         "claim_id": "war-on-iran_youtube_fefa4342_0",
-        "fidelity_to_origin": 0.3337,
-        "fidelity_to_previous": 0.9709
+        "fidelity_to_origin": 0.6851,
+        "fidelity_to_previous": 0.9939
       }
     ],
     "observation_boundary": null
@@ -227,46 +227,46 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "war-on-iran_bluesky_2cee8892_0",
-      "similarity": 0.7573,
-      "text": "Iran is disrupting freedom of navigation in the Strait of Hormuz."
+      "claim_id": "war-on-iran_bluesky_9a01b7d8_0",
+      "similarity": 0.6853,
+      "text": "The United States is actively intercepting Iranian vessels in the Arabian Sea."
     },
     {
-      "claim_id": "war-on-iran_bluesky_db87a9b3_0",
-      "similarity": 0.7128,
-      "text": "The UN is considering sanctions against Iran for restricting freedom of navigation."
+      "claim_id": "war-on-iran_bluesky_4531a9e4_0",
+      "similarity": 0.6404,
+      "text": "The War on Iran has undermined freedom of navigation in the region."
     },
     {
-      "claim_id": "war-on-iran_bluesky_20f346bd_0",
-      "similarity": 0.688,
-      "text": "Iran is circumventing the U.S. naval blockade by developing land routes with neighboring countries, particularly Pakistan."
+      "claim_id": "war-on-iran_youtube_ea9cfd75_1",
+      "similarity": 0.6222,
+      "text": "The US military is blockading Iranian ports to restrict the IRGC's control over Hormuz."
     },
     {
-      "claim_id": "war-on-iran_bluesky_46ee7633_0",
-      "similarity": 0.5725,
-      "text": "The United States military attacked civilian vessels in the Strait of Hormuz."
+      "claim_id": "war-on-iran_bluesky_00d15ecb_0",
+      "similarity": 0.606,
+      "text": "Former President Trump initiated a conflict with Iran that has negatively impacted the global shipping industry."
     },
     {
-      "claim_id": "war-on-iran_mountain_democrat_da845e19_2",
-      "similarity": 0.5317,
-      "text": "Iran is using control of the Strait of Hormuz as leverage in its conflict with the US."
+      "claim_id": "war-on-iran_bluesky_cf666a70_0",
+      "similarity": 0.5812,
+      "text": "The US military is actively enforcing sanctions against Iran by blockading ships."
     }
   ],
   "example_content": [
     {
-      "text": "African ports are not significantly benefiting from the rerouting of ships due to the conflict involving Iran.",
+      "text": "The War on Iran has undermined freedom of navigation in the region.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The United States military attacked civilian vessels in the Strait of Hormuz.",
+      "text": "Former President Trump initiated a conflict with Iran that has negatively impacted the global shipping industry.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Iran is circumventing the U.S. naval blockade by developing land routes with neighboring countries, particularly Pakistan.",
+      "text": "The United States is actively intercepting Iranian vessels in the Arabian Sea.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

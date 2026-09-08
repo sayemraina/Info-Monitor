@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "ai-bubble_x_ca6027a3_0",
-    "cluster_id": "clu_ai-bubble_034",
-    "concept_id": "concept_ai-bubble_003",
+    "cluster_id": "clu_ai-bubble_056",
+    "concept_id": "concept_ai-bubble_000",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-29T15:02:35.000Z",
     "source_document_id": "x_2049504625615663458",
@@ -24,107 +24,94 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": null,
+    "value": 0.645,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.545,
+      0.745
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.645
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 5,
+    "friction": 0.8824,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.203,
+    "confidence_interval": [
+      0.0682,
+      0.3378
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.203
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.8824,
+    "confidence_interval": [
+      0.7986,
+      0.9662
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.8824
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.25,
+    "confidence_interval": [
+      0.1187,
+      0.3813
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.25
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.85,
     "confidence_interval": [
-      0,
-      0
+      0.7638,
+      0.9362
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.85
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 0.9741,
     "confidence_interval": [
-      0,
-      0
+      0.8972,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.9741
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,43 +120,128 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-04-29T15:02:35.000Z",
+    "lead_lag": [
+      {
+        "platform": "X Platform",
+        "lag_hours": 150.5
+      },
+      {
+        "platform": "Entrepreneur",
+        "lag_hours": 697.1
+      },
+      {
+        "platform": "Fortune",
+        "lag_hours": 1227.4
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_ai-bubble_000",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-03-29T14:58:20.056000+00:00",
+        "claim_id": "ai-bubble_x_ca6027a3_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-04T21:30:24+00:00",
+        "claim_id": "ai-bubble_x_ca6027a3_0",
+        "fidelity_to_origin": 0.9141,
+        "fidelity_to_previous": 0.9141
+      },
+      {
+        "platform": "Entrepreneur",
+        "timestamp": "2026-04-27T16:03:03+00:00",
+        "claim_id": "ai-bubble_x_ca6027a3_0",
+        "fidelity_to_origin": 0.6024,
+        "fidelity_to_previous": 0.659
+      },
+      {
+        "platform": "Fortune",
+        "timestamp": "2026-05-19T18:21:17+00:00",
+        "claim_id": "ai-bubble_x_ca6027a3_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.498
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-bubble_x_1bfa6e86_0",
-      "similarity": 0.8645,
-      "text": "Fears about the impact of AI are overblown."
+      "claim_id": "ai-bubble_bluesky_0af16308_0",
+      "similarity": 0.9159,
+      "text": "AI is currently overhyped and overvalued."
     },
     {
-      "claim_id": "ai-bubble_x_d45f1afc_0",
-      "similarity": 0.8086,
-      "text": "The hype surrounding artificial intelligence has become excessive and normalized."
+      "claim_id": "ai-bubble_bluesky_bc072f61_0",
+      "similarity": 0.8645,
+      "text": "The hype surrounding artificial intelligence is unsustainable and has reached its peak."
+    },
+    {
+      "claim_id": "ai-bubble_bluesky_171926fb_0",
+      "similarity": 0.8546,
+      "text": "AI is being overhyped as a source of companionship."
+    },
+    {
+      "claim_id": "ai-bubble_entrepreneur_2d79392e_0",
+      "similarity": 0.8448,
+      "text": "AI is overhyped and its impact on productivity and employment is minimal."
+    },
+    {
+      "claim_id": "ai-bubble_bluesky_6fe8ae7f_0",
+      "similarity": 0.8037,
+      "text": "The current hype around 'AI' is primarily driven by advertising investment rather than genuine technological advancement."
     }
   ],
   "example_content": [
     {
-      "text": "The hype surrounding artificial intelligence has become excessive and normalized.",
-      "platform": "X Platform",
+      "text": "Artificial intelligence is fundamentally unsophisticated and overhyped.",
+      "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Fears about the impact of AI are overblown.",
-      "platform": "X Platform",
+      "text": "The hype surrounding artificial intelligence is unsustainable and has reached its peak.",
+      "platform": "Bluesky",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "AI is currently overhyped and overvalued.",
+      "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

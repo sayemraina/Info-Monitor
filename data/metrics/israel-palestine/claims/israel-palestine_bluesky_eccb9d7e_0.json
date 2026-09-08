@@ -37,8 +37,8 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 5,
-    "friction": 0.25,
+    "persistence_windows": 15,
+    "friction": 0.2595,
     "friction_quadrant": "unopposed_advance"
   },
   "salience": {
@@ -55,28 +55,28 @@
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.25,
+    "value": 0.2595,
     "confidence_interval": [
-      0.1187,
-      0.3813
+      0.129,
+      0.39
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.25
+      0.2595
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.25,
+    "value": 0.75,
     "confidence_interval": [
-      0.1187,
-      0.3813
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.25
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9833,
+    "value": 0.9731,
     "confidence_interval": [
-      0.907,
+      0.8961,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9833
+      0.9731
     ],
     "source_distribution": "production"
   },
@@ -120,32 +120,32 @@
     ]
   },
   "provenance": {
-    "first_platform": "Guardian Us",
+    "first_platform": "YouTube (Influencer Framing)",
     "first_timestamp": "2026-05-27T04:43:44.364Z",
     "lead_lag": [
       {
-        "platform": "International Business Times, ",
-        "lag_hours": 3.9
+        "platform": "Cato",
+        "lag_hours": 310.4
       },
       {
-        "platform": "France24",
-        "lag_hours": 5.8
+        "platform": "The Intercept",
+        "lag_hours": 385.7
+      },
+      {
+        "platform": "La Times",
+        "lag_hours": 457.9
       },
       {
         "platform": "Vox",
-        "lag_hours": 9.3
+        "lag_hours": 514.3
       },
       {
-        "platform": "Guardian World",
-        "lag_hours": 10.6
+        "platform": "Jacobin",
+        "lag_hours": 525.3
       },
       {
-        "platform": "Pbs Newshour",
-        "lag_hours": 13.2
-      },
-      {
-        "platform": "Bluesky",
-        "lag_hours": 19.0
+        "platform": "Salon",
+        "lag_hours": 546.7
       }
     ]
   },
@@ -153,46 +153,46 @@
     "concept_id": "concept_israel-palestine_001",
     "hops": [
       {
-        "platform": "Guardian Us",
-        "timestamp": "2026-05-26T09:42:18+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-03-11T15:50:08+00:00",
         "claim_id": "israel-palestine_bluesky_eccb9d7e_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "International Business Times, ",
-        "timestamp": "2026-05-26T13:38:31+00:00",
+        "platform": "Cato",
+        "timestamp": "2026-03-24T14:12:49+00:00",
         "claim_id": "israel-palestine_bluesky_eccb9d7e_0",
-        "fidelity_to_origin": 0.8805,
-        "fidelity_to_previous": 0.8805
+        "fidelity_to_origin": 0.8818,
+        "fidelity_to_previous": 0.8818
       },
       {
-        "platform": "France24",
-        "timestamp": "2026-05-26T15:29:52+00:00",
+        "platform": "The Intercept",
+        "timestamp": "2026-03-27T17:33:53+00:00",
         "claim_id": "israel-palestine_bluesky_eccb9d7e_0",
-        "fidelity_to_origin": 0.8242,
-        "fidelity_to_previous": 0.9361
+        "fidelity_to_origin": 0.8532,
+        "fidelity_to_previous": 0.9676
+      },
+      {
+        "platform": "La Times",
+        "timestamp": "2026-03-30T17:42:56+00:00",
+        "claim_id": "israel-palestine_bluesky_eccb9d7e_0",
+        "fidelity_to_origin": 0.8257,
+        "fidelity_to_previous": 0.9678
       },
       {
         "platform": "Vox",
-        "timestamp": "2026-05-26T19:00:00+00:00",
+        "timestamp": "2026-04-02T02:10:09+00:00",
         "claim_id": "israel-palestine_bluesky_eccb9d7e_0",
-        "fidelity_to_origin": 0.7179,
-        "fidelity_to_previous": 0.871
+        "fidelity_to_origin": 0.8042,
+        "fidelity_to_previous": 0.974
       },
       {
-        "platform": "Guardian World",
-        "timestamp": "2026-05-26T20:18:31+00:00",
+        "platform": "Jacobin",
+        "timestamp": "2026-04-02T13:10:03+00:00",
         "claim_id": "israel-palestine_bluesky_eccb9d7e_0",
-        "fidelity_to_origin": 0.6782,
-        "fidelity_to_previous": 0.9447
-      },
-      {
-        "platform": "Pbs Newshour",
-        "timestamp": "2026-05-26T22:55:02+00:00",
-        "claim_id": "israel-palestine_bluesky_eccb9d7e_0",
-        "fidelity_to_origin": 0.599,
-        "fidelity_to_previous": 0.8832
+        "fidelity_to_origin": 0.8,
+        "fidelity_to_previous": 0.9948
       }
     ],
     "observation_boundary": null
@@ -227,48 +227,48 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "israel-palestine_international_business_times,__c55a3ea8_0",
-      "similarity": 0.6601,
-      "text": "The United States is acting in bad faith during peace negotiations with Iran."
+      "claim_id": "israel-palestine_the_nation_3fdaf2fc_0",
+      "similarity": 0.5575,
+      "text": "Netanyahu's policy of initiating war against Iran is unwise and counterproductive."
     },
     {
-      "claim_id": "israel-palestine_guardian_us_e0ec1b2f_0",
-      "similarity": 0.5557,
-      "text": "Iran and the US are engaged in peace talks mediated by Pakistan and Qatar."
+      "claim_id": "israel-palestine_bluesky_80a5a799_0",
+      "similarity": 0.5418,
+      "text": "Iran is contributing to the escalation of the conflict by not allowing Trump to claim a victory."
     },
     {
-      "claim_id": "israel-palestine_guardian_us_d4d47dcb_1",
-      "similarity": 0.5265,
-      "text": "The Iranian government is insincere in its negotiations with the US."
+      "claim_id": "israel-palestine_bluesky_3a2b498e_0",
+      "similarity": 0.5405,
+      "text": "Iran strategically positions itself within the pro-Palestine movement."
     },
     {
-      "claim_id": "israel-palestine_bluesky_ceee0b7d_1",
-      "similarity": 0.5027,
-      "text": "Negotiations with Iran are progressing positively."
+      "claim_id": "israel-palestine_the_nation_3fdaf2fc_1",
+      "similarity": 0.4692,
+      "text": "Regime change in Iran should be driven by internal forces within Iran, not external intervention."
     },
     {
-      "claim_id": "israel-palestine_guardian_world_ed10a62e_1",
-      "similarity": 0.483,
-      "text": "Iran is continuing peace talks with the US despite recent US military actions."
+      "claim_id": "israel-palestine_bluesky_258c3876_1",
+      "similarity": 0.4353,
+      "text": "Donald Trump threatened to bomb Iran if ceasefire talks fail."
     }
   ],
   "example_content": [
     {
-      "text": "Donald Trump's actions regarding Iran and a ceasefire are inconsistent and untrustworthy.",
+      "text": "Iran strategically positions itself within the pro-Palestine movement.",
       "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Negotiations with Iran are progressing positively.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Donald Trump is leveraging the Gaza conflict to expand the Abraham Accords and establish lasting peace in the Middle East.",
-      "platform": "Operation Disclosure Official",
       "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Iran is contributing to the escalation of the conflict by not allowing Trump to claim a victory.",
+      "platform": "Bluesky",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The US military conducted an airstrike that destroyed an Iranian bridge.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

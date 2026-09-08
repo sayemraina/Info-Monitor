@@ -35,48 +35,48 @@
       0.54
     ],
     "source_distribution": "production",
-    "source_diversity": 0.75,
-    "bridge_ratio": 0.75,
-    "persistence_windows": 5,
-    "friction": 0.3333,
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 15,
+    "friction": 0.3191,
     "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 0.6812,
+    "value": 0.8883,
     "confidence_interval": [
-      0.5823,
-      0.7801
+      0.8049,
+      0.9717
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.6812
+      0.8883
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.3333,
+    "value": 0.3191,
     "confidence_interval": [
-      0.2083,
-      0.4583
+      0.193,
+      0.4452
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3333
+      0.3191
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.25,
+    "value": 0.75,
     "confidence_interval": [
-      0.1187,
-      0.3813
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.25
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9762,
+    "value": 0.9732,
     "confidence_interval": [
-      0.8994,
+      0.8962,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9762
+      0.9732
     ],
     "source_distribution": "production"
   },
@@ -120,16 +120,32 @@
     ]
   },
   "provenance": {
-    "first_platform": "The Atlantic",
+    "first_platform": "Salon",
     "first_timestamp": "2026-05-06T04:36:50.000Z",
     "lead_lag": [
       {
-        "platform": "Bluesky",
-        "lag_hours": 7.1
+        "platform": "YouTube (Influencer Framing)",
+        "lag_hours": 9217.7
       },
       {
         "platform": "X Platform",
-        "lag_hours": 9.6
+        "lag_hours": 14291.8
+      },
+      {
+        "platform": "Bluesky",
+        "lag_hours": 14305.5
+      },
+      {
+        "platform": "The American Bazaar",
+        "lag_hours": 14324.9
+      },
+      {
+        "platform": "Breitbart",
+        "lag_hours": 14327.2
+      },
+      {
+        "platform": "Guardian World",
+        "lag_hours": 14870.6
       }
     ]
   },
@@ -137,25 +153,46 @@
     "concept_id": "concept_immigration_001",
     "hops": [
       {
-        "platform": "The Atlantic",
-        "timestamp": "2026-05-05T12:00:00+00:00",
+        "platform": "Salon",
+        "timestamp": "2024-08-14T15:43:51+00:00",
         "claim_id": "immigration_x_f5cf1acb_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-05-05T19:08:36.227000+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2025-09-02T17:22:55+00:00",
         "claim_id": "immigration_x_f5cf1acb_0",
-        "fidelity_to_origin": 0.4792,
-        "fidelity_to_previous": 0.4792
+        "fidelity_to_origin": 0.5725,
+        "fidelity_to_previous": 0.5725
       },
       {
         "platform": "X Platform",
-        "timestamp": "2026-05-05T21:36:03+00:00",
+        "timestamp": "2026-04-02T03:31:46+00:00",
         "claim_id": "immigration_x_f5cf1acb_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.626
+        "fidelity_to_origin": 0.3371,
+        "fidelity_to_previous": 0.5888
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-02T17:11:37.369000+00:00",
+        "claim_id": "immigration_x_f5cf1acb_0",
+        "fidelity_to_origin": 0.3365,
+        "fidelity_to_previous": 0.9982
+      },
+      {
+        "platform": "The American Bazaar",
+        "timestamp": "2026-04-03T12:37:19+00:00",
+        "claim_id": "immigration_x_f5cf1acb_0",
+        "fidelity_to_origin": 0.3356,
+        "fidelity_to_previous": 0.9973
+      },
+      {
+        "platform": "Breitbart",
+        "timestamp": "2026-04-03T14:56:41+00:00",
+        "claim_id": "immigration_x_f5cf1acb_0",
+        "fidelity_to_origin": 0.3355,
+        "fidelity_to_previous": 0.9997
       }
     ],
     "observation_boundary": null
@@ -190,46 +227,46 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "immigration_bluesky_88b1ed01_0",
-      "similarity": 0.6948,
-      "text": "Large-scale deportation and repatriation of slaves from the US, Brazil, and the Caribbean occurred in the early to mid-19th century due to increased support for the American Colonization Society."
+      "claim_id": "immigration_bluesky_018e6088_1",
+      "similarity": 0.7175,
+      "text": "The American immigration system fails to translate the welcoming attitude of Americans into effective policy."
     },
     {
-      "claim_id": "immigration_bluesky_0aad8c7f_0",
-      "similarity": 0.683,
-      "text": "Funding for border security improvements is being attached to a bill related to a ballroom project promoted by Trump."
+      "claim_id": "immigration_bluesky_018e6088_0",
+      "similarity": 0.704,
+      "text": "The typical American attitude towards immigrants is more welcoming and inclusive than that of most other countries."
     },
     {
-      "claim_id": "immigration_bluesky_47941f87_0",
-      "similarity": 0.6432,
-      "text": "The US government mistreats immigrants and minorities."
+      "claim_id": "immigration_bluesky_3e598945_0",
+      "similarity": 0.6709,
+      "text": "Thomas-Symonds's statements on immigration and American identity are disingenuous."
     },
     {
-      "claim_id": "immigration_bluesky_3626b392_0",
-      "similarity": 0.6249,
-      "text": "Republicans are allocating excessive taxpayer funds to border security and immigration enforcement, including projects with questionable justification."
+      "claim_id": "immigration_the_american_bazaar_60e81a1f_0",
+      "similarity": 0.6216,
+      "text": "Immigrants should assimilate into American culture and adopt American customs and norms."
     },
     {
-      "claim_id": "immigration_bluesky_9e8021fd_0",
-      "similarity": 0.6211,
-      "text": "Taxpayer funds will be used to finance immigration and border security enhancements."
+      "claim_id": "immigration_bluesky_1559ff8f_0",
+      "similarity": 0.613,
+      "text": "Police district councils are seeking expert analysis on the relationship between federal immigration enforcement, local policing, and police accountability."
     }
   ],
   "example_content": [
     {
-      "text": "The Swiss-French border may temporarily close during the G7 summit in June due to security concerns.",
+      "text": "Thomas-Symonds's statements on immigration and American identity are disingenuous.",
+      "platform": "Bluesky",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Black Americans have historically faced demands for documentation to prove their right to be in America.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Taxpayer funds will be used to finance immigration and border security enhancements.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Funding for border security improvements is being attached to a bill related to a ballroom project promoted by Trump.",
+      "text": "The history of free movement within the US reveals problematic aspects of federalism.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

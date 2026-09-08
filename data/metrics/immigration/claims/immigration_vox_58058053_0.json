@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "journalistic",
     "id": "immigration_vox_58058053_0",
-    "cluster_id": "clu_immigration_019",
-    "concept_id": "concept_immigration_002",
+    "cluster_id": "clu_immigration_027",
+    "concept_id": "concept_immigration_004",
     "first_seen_platform": "vox",
     "first_seen_timestamp": "2026-04-29T11:30:00Z",
     "source_document_id": "ce3cc30202f4a657",
@@ -24,107 +24,94 @@
     "source_type": "elite_media"
   },
   "momentum": {
-    "value": null,
+    "value": 0.645,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.545,
+      0.745
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.645
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 15,
+    "friction": 0.7727,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.6237,
+    "confidence_interval": [
+      0.5205,
+      0.7269
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.6237
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.7727,
+    "confidence_interval": [
+      0.6807,
+      0.8647
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.7727
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.75,
+    "confidence_interval": [
+      0.6562,
+      0.8438
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.75
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.85,
     "confidence_interval": [
-      0,
-      0
+      0.7638,
+      0.9362
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.85
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 0.9793,
     "confidence_interval": [
-      0,
-      0
+      0.9027,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.9793
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,54 +120,154 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "The Intercept",
+    "first_timestamp": "2026-04-29T11:30:00Z",
+    "lead_lag": [
+      {
+        "platform": "X Platform",
+        "lag_hours": 35.0
+      },
+      {
+        "platform": "Bluesky",
+        "lag_hours": 46.9
+      },
+      {
+        "platform": "The Atlantic",
+        "lag_hours": 47.7
+      },
+      {
+        "platform": "The Washington Standard",
+        "lag_hours": 64.5
+      },
+      {
+        "platform": "Mother Jones",
+        "lag_hours": 71.4
+      },
+      {
+        "platform": "Fox News",
+        "lag_hours": 72.3
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_immigration_004",
+    "hops": [
+      {
+        "platform": "The Intercept",
+        "timestamp": "2026-03-31T15:15:12+00:00",
+        "claim_id": "immigration_vox_58058053_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-02T02:13:25+00:00",
+        "claim_id": "immigration_vox_58058053_0",
+        "fidelity_to_origin": 0.9819,
+        "fidelity_to_previous": 0.9819
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-02T14:10:23.218000+00:00",
+        "claim_id": "immigration_vox_58058053_0",
+        "fidelity_to_origin": 0.9757,
+        "fidelity_to_previous": 0.9937
+      },
+      {
+        "platform": "The Atlantic",
+        "timestamp": "2026-04-02T15:00:00+00:00",
+        "claim_id": "immigration_vox_58058053_0",
+        "fidelity_to_origin": 0.9753,
+        "fidelity_to_previous": 0.9996
+      },
+      {
+        "platform": "The Washington Standard",
+        "timestamp": "2026-04-03T07:46:14+00:00",
+        "claim_id": "immigration_vox_58058053_0",
+        "fidelity_to_origin": 0.9666,
+        "fidelity_to_previous": 0.9911
+      },
+      {
+        "platform": "Mother Jones",
+        "timestamp": "2026-04-03T14:40:12+00:00",
+        "claim_id": "immigration_vox_58058053_0",
+        "fidelity_to_origin": 0.9631,
+        "fidelity_to_previous": 0.9964
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "immigration_jacobin_0fb329e0_1",
-      "similarity": 0.627,
-      "text": "The Trump administration has pursued authoritarian policies and violence both domestically and internationally."
+      "claim_id": "immigration_the_washington_standard_26bd1298_1",
+      "similarity": 0.5537,
+      "text": "Trump prioritizes loyalty over constitutional principles within his administration."
     },
     {
-      "claim_id": "immigration_mandatory_485ebea4_1",
-      "similarity": 0.526,
-      "text": "The Trump administration used AI to mock the opposition regarding immigration."
+      "claim_id": "immigration_bluesky_95d0bcc0_1",
+      "similarity": 0.4944,
+      "text": "Trump's policies have caused significant harm both domestically and internationally."
     },
     {
-      "claim_id": "immigration_bluesky_d7b03c18_0",
-      "similarity": 0.2967,
-      "text": "Chuck Grassley is mentally unfit to serve as Senate Judiciary Committee Chair."
+      "claim_id": "immigration_bluesky_f01af604_0",
+      "similarity": 0.449,
+      "text": "Donald Trump should not be in power."
+    },
+    {
+      "claim_id": "immigration_bluesky_15473b22_0",
+      "similarity": 0.4466,
+      "text": "Trump's foreign policy decisions have caused some of his supporters to become disillusioned."
+    },
+    {
+      "claim_id": "immigration_bluesky_18924472_0",
+      "similarity": 0.4162,
+      "text": "Donald Trump's promise to pay Homeland Security employees is insincere."
     }
   ],
   "example_content": [
     {
-      "text": "Chuck Grassley is mentally unfit to serve as Senate Judiciary Committee Chair.",
+      "text": "Donald Trump's promise to pay Homeland Security employees is insincere.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The Trump administration used AI to mock the opposition regarding immigration.",
-      "platform": "Mandatory",
-      "confidence": 0.8,
+      "text": "Donald Trump is preventing individuals from testifying by concealing their whereabouts.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The Trump administration has pursued authoritarian policies and violence both domestically and internationally.",
-      "platform": "Jacobin",
+      "text": "Donald Trump has a history of paying individuals to remain silent.",
+      "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

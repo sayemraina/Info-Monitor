@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "dei-rollbacks_bluesky_a5a3cd2b_0",
-    "cluster_id": "clu_dei-rollbacks_000",
-    "concept_id": "concept_dei-rollbacks_000",
+    "cluster_id": "",
+    "concept_id": "",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-03T16:54:37.921Z",
     "source_document_id": "a5a3cd2b0568d123",
@@ -35,35 +35,35 @@
       0.4208
     ],
     "source_distribution": "production",
-    "source_diversity": 1.0,
-    "bridge_ratio": 1.0,
+    "source_diversity": 0.25,
+    "bridge_ratio": 0.0,
     "persistence_windows": 15,
-    "friction": 0.4691,
+    "friction": 0.5829,
     "friction_quadrant": "successful_suppression"
   },
   "salience": {
-    "value": 0.5848,
+    "value": 1,
     "confidence_interval": [
-      0.4787,
-      0.6909
+      0.925,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.5848
+      1
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.4691,
+    "value": 0.5829,
     "confidence_interval": [
-      0.3543,
-      0.5839
+      0.4766,
+      0.6892
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.4691
+      0.5829
     ],
     "source_distribution": "production"
   },
@@ -120,82 +120,22 @@
     ]
   },
   "provenance": {
-    "first_platform": "YouTube (Influencer Framing)",
+    "first_platform": "Bluesky",
     "first_timestamp": "2026-04-03T16:54:37.921Z",
-    "lead_lag": [
-      {
-        "platform": "Cato",
-        "lag_hours": 8225.5
-      },
-      {
-        "platform": "Propublica",
-        "lag_hours": 8508.5
-      },
-      {
-        "platform": "Salon",
-        "lag_hours": 8533.5
-      },
-      {
-        "platform": "Bluesky",
-        "lag_hours": 8547.7
-      },
-      {
-        "platform": "Jacobin",
-        "lag_hours": 8560.7
-      },
-      {
-        "platform": "Freedomsphoenix.Com",
-        "lag_hours": 8571.5
-      }
-    ]
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_dei-rollbacks_000",
+    "concept_id": "",
     "hops": [
       {
-        "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2025-04-10T20:30:24+00:00",
+        "platform": "Bluesky",
+        "timestamp": "2026-04-03T16:54:37.921Z",
         "claim_id": "dei-rollbacks_bluesky_a5a3cd2b_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Cato",
-        "timestamp": "2026-03-19T14:01:47+00:00",
-        "claim_id": "dei-rollbacks_bluesky_a5a3cd2b_0",
-        "fidelity_to_origin": 0.3296,
-        "fidelity_to_previous": 0.3296
-      },
-      {
-        "platform": "Propublica",
-        "timestamp": "2026-03-31T09:00:00+00:00",
-        "claim_id": "dei-rollbacks_bluesky_a5a3cd2b_0",
-        "fidelity_to_origin": 0.3065,
-        "fidelity_to_previous": 0.9299
-      },
-      {
-        "platform": "Salon",
-        "timestamp": "2026-04-01T10:00:13+00:00",
-        "claim_id": "dei-rollbacks_bluesky_a5a3cd2b_0",
-        "fidelity_to_origin": 0.3045,
-        "fidelity_to_previous": 0.9935
-      },
-      {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-02T00:11:39.905000+00:00",
-        "claim_id": "dei-rollbacks_bluesky_a5a3cd2b_0",
-        "fidelity_to_origin": 0.3033,
-        "fidelity_to_previous": 0.9961
-      },
-      {
-        "platform": "Jacobin",
-        "timestamp": "2026-04-02T13:10:03+00:00",
-        "claim_id": "dei-rollbacks_bluesky_a5a3cd2b_0",
-        "fidelity_to_origin": 0.3023,
-        "fidelity_to_previous": 0.9967
       }
     ],
-    "observation_boundary": null
+    "observation_boundary": "No public antecedent detected"
   },
   "coordination": {
     "burstiness": {
@@ -227,48 +167,48 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "dei-rollbacks_bluesky_2dc98f20_0",
-      "similarity": 0.4723,
-      "text": "The Supreme Court's decisions are consistently favoring conservative interests and the wealthy."
+      "claim_id": "dei-rollbacks_bluesky_47f8998e_0",
+      "similarity": 0.3435,
+      "text": "DEI initiatives are unfairly targeting and removing qualified individuals, including veterans."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_55289685_0",
-      "similarity": 0.4288,
-      "text": "Affirmative action policies disproportionately benefit white men."
+      "claim_id": "dei-rollbacks_bluesky_65465a22_0",
+      "similarity": 0.2883,
+      "text": "Trump's administration prioritized loyalty over competence in its DEI initiatives."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_e4e1969e_0",
-      "similarity": 0.3975,
-      "text": "Affirmative action policies are a contentious issue."
+      "claim_id": "dei-rollbacks_bluesky_e81793eb_0",
+      "similarity": 0.2862,
+      "text": "The President's decision to eliminate DEI initiatives is morally wrong."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_7cff3b4d_0",
-      "similarity": 0.3593,
-      "text": "Affirmative action is an ineffective method of addressing inequality."
+      "claim_id": "dei-rollbacks_bluesky_39880589_0",
+      "similarity": 0.2762,
+      "text": "The removal of DEI initiatives in the military is a racist effort to remove qualified minority service members."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_20df3b04_0",
-      "similarity": 0.3574,
-      "text": "Affirmative action in university admissions is a contentious issue due to its widespread impact."
+      "claim_id": "dei-rollbacks_bluesky_d3a69f1c_0",
+      "similarity": 0.242,
+      "text": "A candidate for national office will need to support DEI to gain support."
     }
   ],
   "example_content": [
     {
-      "text": "The VA has increased funding by 9%, but this is being obscured by descriptions that call for defunding DEI initiatives without specifying dollar amounts.",
-      "platform": "Bluesky",
-      "confidence": 0.8,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "The Justice Department has reversed policies that promoted diversity, equity, and inclusion.",
+      "text": "The removal of DEI initiatives in the military is a racist effort to remove qualified minority service members.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Trump's policies have significantly influenced NASA's current operations and priorities.",
+      "text": "The President's decision to eliminate DEI initiatives is morally wrong.",
       "platform": "Bluesky",
-      "confidence": 0.8,
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Trump's administration prioritized loyalty over competence in its DEI initiatives.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

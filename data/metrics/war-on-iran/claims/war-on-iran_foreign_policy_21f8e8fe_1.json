@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "war-on-iran_foreign_policy_21f8e8fe_1",
-    "cluster_id": "clu_war-on-iran_009",
-    "concept_id": "concept_war-on-iran_006",
+    "cluster_id": "clu_war-on-iran_087",
+    "concept_id": "concept_war-on-iran_007",
     "first_seen_platform": "foreign_policy",
     "first_seen_timestamp": "2026-04-03T16:49:55Z",
     "source_document_id": "7a4e6c144201d198",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 4,
-    "friction": 0.0769,
+    "persistence_windows": 5,
+    "friction": 0.0588,
     "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 0.1975,
+    "value": 0.2041,
     "confidence_interval": [
-      0.0623,
-      0.3327
+      0.0694,
+      0.3388
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1975
+      0.2041
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.0769,
+    "value": 0.0588,
     "confidence_interval": [
       0,
-      0.2211
+      0.2044
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.0769
+      0.0588
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.2,
+    "value": 0.25,
     "confidence_interval": [
-      0.065,
-      0.335
+      0.1187,
+      0.3813
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2
+      0.25
     ],
     "source_distribution": "production"
   },
@@ -120,79 +120,79 @@
     ]
   },
   "provenance": {
-    "first_platform": "Common Dreams",
+    "first_platform": "Cnbc Top",
     "first_timestamp": "2026-04-03T16:49:55Z",
     "lead_lag": [
       {
-        "platform": "Guardian Us",
-        "lag_hours": 145.0
-      },
-      {
-        "platform": "Cnbc Top",
-        "lag_hours": 191.5
-      },
-      {
-        "platform": "Nyt Business",
-        "lag_hours": 191.9
-      },
-      {
         "platform": "Business Insider",
-        "lag_hours": 210.6
-      },
-      {
-        "platform": "Sportskeeda",
-        "lag_hours": 213.3
+        "lag_hours": 1.1
       },
       {
         "platform": "Foreign Policy",
-        "lag_hours": 213.4
+        "lag_hours": 3.8
+      },
+      {
+        "platform": "Bluesky",
+        "lag_hours": 550.5
+      },
+      {
+        "platform": "The Atlantic",
+        "lag_hours": 727.8
+      },
+      {
+        "platform": "Vox",
+        "lag_hours": 766.0
+      },
+      {
+        "platform": "Guardian World",
+        "lag_hours": 784.8
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_war-on-iran_006",
+    "concept_id": "concept_war-on-iran_007",
     "hops": [
       {
-        "platform": "Common Dreams",
-        "timestamp": "2026-03-25T19:28:10+00:00",
+        "platform": "Cnbc Top",
+        "timestamp": "2026-04-03T13:00:01+00:00",
         "claim_id": "war-on-iran_foreign_policy_21f8e8fe_1",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Guardian Us",
-        "timestamp": "2026-03-31T20:29:25+00:00",
-        "claim_id": "war-on-iran_foreign_policy_21f8e8fe_1",
-        "fidelity_to_origin": 0.5246,
-        "fidelity_to_previous": 0.5246
-      },
-      {
-        "platform": "Cnbc Top",
-        "timestamp": "2026-04-02T18:59:44+00:00",
-        "claim_id": "war-on-iran_foreign_policy_21f8e8fe_1",
-        "fidelity_to_origin": 0.3722,
-        "fidelity_to_previous": 0.7095
-      },
-      {
-        "platform": "Nyt Business",
-        "timestamp": "2026-04-02T19:24:30+00:00",
-        "claim_id": "war-on-iran_foreign_policy_21f8e8fe_1",
-        "fidelity_to_origin": 0.3708,
-        "fidelity_to_previous": 0.9962
-      },
-      {
         "platform": "Business Insider",
         "timestamp": "2026-04-03T14:05:43+00:00",
         "claim_id": "war-on-iran_foreign_policy_21f8e8fe_1",
-        "fidelity_to_origin": 0.3096,
-        "fidelity_to_previous": 0.835
+        "fidelity_to_origin": 0.999,
+        "fidelity_to_previous": 0.999
       },
       {
-        "platform": "Sportskeeda",
-        "timestamp": "2026-04-03T16:46:34+00:00",
+        "platform": "Foreign Policy",
+        "timestamp": "2026-04-03T16:49:55+00:00",
         "claim_id": "war-on-iran_foreign_policy_21f8e8fe_1",
-        "fidelity_to_origin": 0.3008,
-        "fidelity_to_previous": 0.9716
+        "fidelity_to_origin": 0.9966,
+        "fidelity_to_previous": 0.9976
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-26T11:32:16+00:00",
+        "claim_id": "war-on-iran_foreign_policy_21f8e8fe_1",
+        "fidelity_to_origin": 0.5103,
+        "fidelity_to_previous": 0.512
+      },
+      {
+        "platform": "The Atlantic",
+        "timestamp": "2026-05-03T20:46:00+00:00",
+        "claim_id": "war-on-iran_foreign_policy_21f8e8fe_1",
+        "fidelity_to_origin": 0.3527,
+        "fidelity_to_previous": 0.6912
+      },
+      {
+        "platform": "Vox",
+        "timestamp": "2026-05-05T11:00:00+00:00",
+        "claim_id": "war-on-iran_foreign_policy_21f8e8fe_1",
+        "fidelity_to_origin": 0.3187,
+        "fidelity_to_previous": 0.9036
       }
     ],
     "observation_boundary": null
@@ -227,24 +227,24 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "war-on-iran_foreign_policy_21f8e8fe_2",
-      "similarity": 0.6725,
-      "text": "Jet fuel prices are a leading indicator of future price increases in other refined petroleum products."
+      "claim_id": "war-on-iran_business_insider_3cd296b4_2",
+      "similarity": 0.7217,
+      "text": "Airlines are increasing fares and bag fees in response to rising jet fuel costs."
     },
     {
-      "claim_id": "war-on-iran_foreign_policy_21f8e8fe_0",
-      "similarity": 0.6656,
-      "text": "The cost of jet fuel has significantly increased since the beginning of the U.S.-Israeli war on Iran."
+      "claim_id": "war-on-iran_business_insider_3cd296b4_1",
+      "similarity": 0.5964,
+      "text": "US airlines are more vulnerable to rising fuel costs because they generally do not hedge against these costs."
     },
     {
-      "claim_id": "war-on-iran_sportskeeda_a1566da1_0",
-      "similarity": 0.5759,
-      "text": "The war in Iran is causing increased fuel prices."
+      "claim_id": "war-on-iran_plymouth_herald_f3fde4cb_1",
+      "similarity": 0.5532,
+      "text": "Airlines are reducing flights and seat capacity in response to rising jet fuel costs."
     },
     {
-      "claim_id": "war-on-iran_cnbc_top_6877d37a_1",
-      "similarity": 0.5491,
-      "text": "Amazon is adding a fuel and logistics surcharge for sellers due to increased energy prices."
+      "claim_id": "war-on-iran_bluesky_47a016be_0",
+      "similarity": 0.5375,
+      "text": "The Trump administration's actions regarding Iran led to increased fuel costs, contributing to Spirit Airlines' financial difficulties."
     },
     {
       "claim_id": "war-on-iran_cnbc_top_90cec17c_0",
@@ -254,20 +254,20 @@
   ],
   "example_content": [
     {
-      "text": "The cost of jet fuel has significantly increased since the beginning of the U.S.-Israeli war on Iran.",
-      "platform": "Foreign Policy",
+      "text": "The cost of private air travel has increased significantly due to rising fuel prices and geopolitical tensions.",
+      "platform": "Cnbc Top",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Jet fuel prices are a leading indicator of future price increases in other refined petroleum products.",
-      "platform": "Foreign Policy",
-      "confidence": 0.8,
+      "text": "US airlines are more vulnerable to rising fuel costs because they generally do not hedge against these costs.",
+      "platform": "Business Insider",
+      "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The war in Iran is causing increased fuel prices.",
-      "platform": "Sportskeeda",
+      "text": "Airlines are increasing fares and bag fees in response to rising jet fuel costs.",
+      "platform": "Business Insider",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

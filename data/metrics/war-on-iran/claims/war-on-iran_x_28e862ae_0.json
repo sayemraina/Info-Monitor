@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "war-on-iran_x_28e862ae_0",
-    "cluster_id": "clu_war-on-iran_006",
-    "concept_id": "concept_war-on-iran_004",
+    "cluster_id": "clu_war-on-iran_054",
+    "concept_id": "concept_war-on-iran_002",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-03T16:17:10.000Z",
     "source_document_id": "x_2040101313237704781",
@@ -38,32 +38,32 @@
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
     "persistence_windows": 15,
-    "friction": 0.6957,
+    "friction": 0.6582,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.4289,
+    "value": 0.8427,
     "confidence_interval": [
-      0.3111,
-      0.5467
+      0.7559,
+      0.9295
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.4289
+      0.8427
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.6957,
+    "value": 0.6582,
     "confidence_interval": [
-      0.5979,
-      0.7935
+      0.5576,
+      0.7588
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.6957
+      0.6582
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9935,
     "confidence_interval": [
-      0.925,
+      0.918,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9935
     ],
     "source_distribution": "production"
   },
@@ -128,10 +128,6 @@
         "lag_hours": 6847.0
       },
       {
-        "platform": "The Intercept",
-        "lag_hours": 6878.5
-      },
-      {
         "platform": "Salon",
         "lag_hours": 6919.7
       },
@@ -146,11 +142,15 @@
       {
         "platform": "Bluesky",
         "lag_hours": 6966.9
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 6970.7
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_war-on-iran_004",
+    "concept_id": "concept_war-on-iran_002",
     "hops": [
       {
         "platform": "YouTube (Influencer Framing)",
@@ -163,35 +163,35 @@
         "platform": "La Times",
         "timestamp": "2026-03-29T10:00:00+00:00",
         "claim_id": "war-on-iran_x_28e862ae_0",
-        "fidelity_to_origin": 0.3127,
-        "fidelity_to_previous": 0.3127
-      },
-      {
-        "platform": "The Intercept",
-        "timestamp": "2026-03-30T17:30:17+00:00",
-        "claim_id": "war-on-iran_x_28e862ae_0",
-        "fidelity_to_origin": 0.3095,
-        "fidelity_to_previous": 0.9898
+        "fidelity_to_origin": 0.4195,
+        "fidelity_to_previous": 0.4195
       },
       {
         "platform": "Salon",
         "timestamp": "2026-04-01T10:45:10+00:00",
         "claim_id": "war-on-iran_x_28e862ae_0",
-        "fidelity_to_origin": 0.3054,
-        "fidelity_to_previous": 0.9868
+        "fidelity_to_origin": 0.4134,
+        "fidelity_to_previous": 0.9855
       },
       {
         "platform": "Guardian World",
         "timestamp": "2026-04-02T17:34:37+00:00",
         "claim_id": "war-on-iran_x_28e862ae_0",
-        "fidelity_to_origin": 0.3023,
-        "fidelity_to_previous": 0.9898
+        "fidelity_to_origin": 0.4108,
+        "fidelity_to_previous": 0.9937
       },
       {
         "platform": "The Atlantic",
         "timestamp": "2026-04-02T23:53:00+00:00",
         "claim_id": "war-on-iran_x_28e862ae_0",
-        "fidelity_to_origin": 0.3017,
+        "fidelity_to_origin": 0.4102,
+        "fidelity_to_previous": 0.9985
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-03T09:55:54.223000+00:00",
+        "claim_id": "war-on-iran_x_28e862ae_0",
+        "fidelity_to_origin": 0.4094,
         "fidelity_to_previous": 0.998
       }
     ],
@@ -237,19 +237,19 @@
       "text": "Donald Trump has been a Russian asset since April 9, 1977."
     },
     {
-      "claim_id": "war-on-iran_bluesky_f03f3840_1",
-      "similarity": 0.4985,
-      "text": "Donald Trump is seeking a pretext to use nuclear weapons against Iran."
+      "claim_id": "war-on-iran_salon_d14047e5_0",
+      "similarity": 0.5125,
+      "text": "Donald Trump surrounds himself with mediocre and talentless people who are willing to debase themselves for him."
+    },
+    {
+      "claim_id": "war-on-iran_guardian_world_113dde1f_0",
+      "similarity": 0.4943,
+      "text": "Donald Trump's statements on Iran and NATO are inconsistent and undermine stability."
     },
     {
       "claim_id": "war-on-iran_bluesky_d1afc6c2_0",
       "similarity": 0.4858,
       "text": "Donald Trump is colluding with Russia in the contexts of the War in Iran and the War in Ukraine."
-    },
-    {
-      "claim_id": "war-on-iran_bluesky_1cb3d96c_2",
-      "similarity": 0.4386,
-      "text": "Vladimir Putin possesses compromising material on Donald Trump."
     }
   ],
   "example_content": [
@@ -260,13 +260,13 @@
       "is_influencer_framing": false
     },
     {
-      "text": "Donald Trump is seeking a pretext to use nuclear weapons against Iran.",
+      "text": "Donald Trump is helping Russia destabilize Europe by reducing sanctions.",
       "platform": "Bluesky",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "is_influencer_framing": false
     },
     {
-      "text": "Donald Trump is helping Russia destabilize Europe by reducing sanctions.",
+      "text": "Donald Trump has been a Russian asset since April 9, 1977.",
       "platform": "Bluesky",
       "confidence": 0.8,
       "is_influencer_framing": false

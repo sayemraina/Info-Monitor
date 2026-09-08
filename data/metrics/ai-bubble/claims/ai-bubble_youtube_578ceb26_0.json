@@ -9,7 +9,7 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "ai-bubble_youtube_578ceb26_0",
-    "cluster_id": "clu_ai-bubble_008",
+    "cluster_id": "clu_ai-bubble_040",
     "concept_id": "concept_ai-bubble_007",
     "first_seen_platform": "youtube",
     "first_seen_timestamp": "2026-01-17T10:00:49Z",
@@ -35,48 +35,48 @@
       0.4368
     ],
     "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 1,
-    "friction": 0.4,
-    "friction_quadrant": "successful_suppression"
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 3,
+    "friction": 0.2,
+    "friction_quadrant": "dead"
   },
   "salience": {
-    "value": 0.281,
+    "value": 0.2196,
     "confidence_interval": [
-      0.1521,
-      0.4099
+      0.0861,
+      0.3531
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.281
+      0.2196
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.4,
+    "value": 0.2,
     "confidence_interval": [
-      0.28,
-      0.52
+      0.065,
+      0.335
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.4
+      0.2
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0.15,
     "confidence_interval": [
-      0,
-      0.1962
+      0.0112,
+      0.2888
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0.15
     ],
     "source_distribution": "production"
   },
@@ -124,8 +124,20 @@
     "first_timestamp": "2026-01-17T10:00:49Z",
     "lead_lag": [
       {
+        "platform": "Webpronews",
+        "lag_hours": 2360.0
+      },
+      {
         "platform": "Bluesky",
-        "lag_hours": 1822.9
+        "lag_hours": 2375.2
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 2453.5
+      },
+      {
+        "platform": "India Infoline Ltd",
+        "lag_hours": 3117.6
       }
     ]
   },
@@ -140,11 +152,32 @@
         "fidelity_to_previous": 1.0
       },
       {
+        "platform": "Webpronews",
+        "timestamp": "2026-04-25T18:00:12+00:00",
+        "claim_id": "ai-bubble_youtube_578ceb26_0",
+        "fidelity_to_origin": 0.4701,
+        "fidelity_to_previous": 0.4701
+      },
+      {
         "platform": "Bluesky",
-        "timestamp": "2026-04-03T08:53:52.552794+00:00",
+        "timestamp": "2026-04-26T09:10:17+00:00",
+        "claim_id": "ai-bubble_youtube_578ceb26_0",
+        "fidelity_to_origin": 0.4667,
+        "fidelity_to_previous": 0.9928
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-29T15:29:31+00:00",
+        "claim_id": "ai-bubble_youtube_578ceb26_0",
+        "fidelity_to_origin": 0.4491,
+        "fidelity_to_previous": 0.9623
+      },
+      {
+        "platform": "India Infoline Ltd",
+        "timestamp": "2026-05-27T07:39:06+00:00",
         "claim_id": "ai-bubble_youtube_578ceb26_0",
         "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
+        "fidelity_to_previous": 0.668
       }
     ],
     "observation_boundary": null
@@ -184,28 +217,27 @@
       "text": "TSMC's financial performance is exceptionally strong, generating significant daily revenue."
     },
     {
+      "claim_id": "ai-bubble_bluesky_131b8d31_0",
+      "similarity": 0.7109,
+      "text": "TSMC is a worthwhile investment due to its dominance in advanced chip manufacturing, which is essential for AI and electric vehicles."
+    },
+    {
+      "claim_id": "ai-bubble_x_3c20a57e_0",
+      "similarity": 0.6645,
+      "text": "TSMC is a critical and dominant player in the AI hardware supply chain."
+    },
+    {
+      "claim_id": "ai-bubble_webpronews_83e069a6_1",
+      "similarity": 0.6268,
+      "text": "TSMC's dominance in AI chip manufacturing is significantly boosting Taiwan's economic growth."
+    },
+    {
       "claim_id": "ai-bubble_youtube_578ceb26_2",
       "similarity": 0.5606,
       "text": "Intel's 18A process is inferior to TSMC's 3nm process."
-    },
-    {
-      "claim_id": "ai-bubble_youtube_7a2e4f7b_2",
-      "similarity": 0.4519,
-      "text": "China is investing heavily in semiconductor technology development, but faces significant challenges."
-    },
-    {
-      "claim_id": "ai-bubble_bluesky_c9a81cf3_0",
-      "similarity": 0.2888,
-      "text": "China is heavily investing in its robotics sector, particularly in humanoid robots and AI development."
     }
   ],
   "example_content": [
-    {
-      "text": "China is heavily investing in its robotics sector, particularly in humanoid robots and AI development.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
     {
       "text": "Intel's 18A process is inferior to TSMC's 3nm process.",
       "platform": "YouTube (Influencer Framing)",
@@ -216,6 +248,12 @@
       "text": "TSMC's financial performance is exceptionally strong, generating significant daily revenue.",
       "platform": "YouTube (Influencer Framing)",
       "confidence": 0.9,
+      "is_influencer_framing": true
+    },
+    {
+      "text": "China is investing heavily in semiconductor technology development, but faces significant challenges.",
+      "platform": "YouTube (Influencer Framing)",
+      "confidence": 0.8,
       "is_influencer_framing": true
     }
   ]

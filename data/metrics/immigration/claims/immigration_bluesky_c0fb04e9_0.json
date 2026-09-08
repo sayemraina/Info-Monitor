@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "immigration_bluesky_c0fb04e9_0",
-    "cluster_id": "clu_immigration_011",
-    "concept_id": "concept_immigration_005",
+    "cluster_id": "clu_immigration_022",
+    "concept_id": "concept_immigration_007",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-27T16:30:33.430Z",
     "source_document_id": "c0fb04e97048ed16",
@@ -35,48 +35,48 @@
       0.645
     ],
     "source_distribution": "production",
-    "source_diversity": 0.75,
-    "bridge_ratio": 0.75,
-    "persistence_windows": 7,
-    "friction": 0.8261,
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 12,
+    "friction": 0.9722,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 1,
+    "value": 0.3402,
     "confidence_interval": [
-      0.925,
-      1
+      0.2157,
+      0.4647
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.3402
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.8261,
+    "value": 0.9722,
     "confidence_interval": [
-      0.7381,
-      0.9141
+      0.8951,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.8261
+      0.9722
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.35,
+    "value": 0.6,
     "confidence_interval": [
-      0.2263,
-      0.4737
+      0.495,
+      0.705
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.35
+      0.6
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9811,
     "confidence_interval": [
-      0.925,
+      0.9047,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9811
     ],
     "source_distribution": "production"
   },
@@ -120,42 +120,64 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
+    "first_platform": "X Platform",
     "first_timestamp": "2026-04-27T16:30:33.430Z",
     "lead_lag": [
       {
-        "platform": "Reason",
-        "lag_hours": 9.4
+        "platform": "Bluesky",
+        "lag_hours": 5.8
       },
       {
-        "platform": "Raw Story",
-        "lag_hours": 17.9
+        "platform": "Daily News",
+        "lag_hours": 565.2
+      },
+      {
+        "platform": "Fox News",
+        "lag_hours": 646.1
+      },
+      {
+        "platform": "Democratic Underground",
+        "lag_hours": 1303.2
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_immigration_005",
+    "concept_id": "concept_immigration_007",
     "hops": [
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-27T01:35:15.698000+00:00",
+        "platform": "X Platform",
+        "timestamp": "2026-04-02T19:49:13+00:00",
         "claim_id": "immigration_bluesky_c0fb04e9_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Reason",
-        "timestamp": "2026-04-27T11:00:52+00:00",
+        "platform": "Bluesky",
+        "timestamp": "2026-04-03T01:35:18.064000+00:00",
         "claim_id": "immigration_bluesky_c0fb04e9_0",
-        "fidelity_to_origin": 0.6306,
-        "fidelity_to_previous": 0.6306
+        "fidelity_to_origin": 0.9969,
+        "fidelity_to_previous": 0.9969
       },
       {
-        "platform": "Raw Story",
-        "timestamp": "2026-04-27T19:27:00+00:00",
+        "platform": "Daily News",
+        "timestamp": "2026-04-26T09:00:03+00:00",
+        "claim_id": "immigration_bluesky_c0fb04e9_0",
+        "fidelity_to_origin": 0.6964,
+        "fidelity_to_previous": 0.6986
+      },
+      {
+        "platform": "Fox News",
+        "timestamp": "2026-04-29T17:52:55+00:00",
+        "claim_id": "immigration_bluesky_c0fb04e9_0",
+        "fidelity_to_origin": 0.653,
+        "fidelity_to_previous": 0.9377
+      },
+      {
+        "platform": "Democratic Underground",
+        "timestamp": "2026-05-27T02:59:02+00:00",
         "claim_id": "immigration_bluesky_c0fb04e9_0",
         "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.4757
+        "fidelity_to_previous": 0.4594
       }
     ],
     "observation_boundary": null
@@ -190,47 +212,47 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "immigration_bluesky_f70b5008_0",
-      "similarity": 0.6542,
-      "text": "Inspecting social media posts at US immigration is an unacceptable policy."
+      "claim_id": "immigration_bluesky_11f6aa92_0",
+      "similarity": 0.6323,
+      "text": "Government immigration policies can be cruel and corrupt."
     },
     {
-      "claim_id": "immigration_bluesky_2690a1d5_0",
-      "similarity": 0.5875,
-      "text": "Current immigration policies are rooted in racism and cruelty."
+      "claim_id": "immigration_bluesky_9482d14a_0",
+      "similarity": 0.6225,
+      "text": "Current immigration enforcement policies are inhumane."
     },
     {
-      "claim_id": "immigration_bluesky_51918e6f_0",
-      "similarity": 0.5701,
-      "text": "Political elites in Washington D.C. are disconnected from the reality that violence is inherent in the policies they create, including those related to immigration and the Middle East."
+      "claim_id": "immigration_bluesky_de166f1e_0",
+      "similarity": 0.6225,
+      "text": "Donald Trump's immigration policies are inhumane."
     },
     {
-      "claim_id": "immigration_bluesky_aeef9ca9_0",
-      "similarity": 0.5418,
-      "text": "Mariola, a mother and educator, should not be deported and should be allowed to remain in her community."
+      "claim_id": "immigration_bluesky_29421e5e_0",
+      "similarity": 0.5947,
+      "text": "Current immigration policy in the United States violates human rights and dignity."
     },
     {
-      "claim_id": "immigration_bluesky_0676e258_0",
-      "similarity": 0.5238,
-      "text": "A company retaliated against a former employee by reporting them to ICE, leading to their deportation."
+      "claim_id": "immigration_bluesky_e607df8c_0",
+      "similarity": 0.5836,
+      "text": "Current immigration policies are being violated and abused."
     }
   ],
   "example_content": [
     {
-      "text": "Inspecting social media posts at US immigration is an unacceptable policy.",
+      "text": "Current immigration policy in the United States violates human rights and dignity.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Political elites in Washington D.C. are disconnected from the reality that violence is inherent in the policies they create, including those related to immigration and the Middle East.",
-      "platform": "Bluesky",
+      "text": "Representative Mike Lawler is complicit in cruel immigration policies.",
+      "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Current immigration policies are rooted in racism and cruelty.",
-      "platform": "Bluesky",
+      "text": "The Trump administration's policy of allowing immigration agents to enter homes without a judicial warrant is illegal and unconstitutional.",
+      "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

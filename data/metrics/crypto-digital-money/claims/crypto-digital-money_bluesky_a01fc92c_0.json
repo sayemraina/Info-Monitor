@@ -35,48 +35,48 @@
       0.54
     ],
     "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 2,
-    "friction": 0.7143,
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 15,
+    "friction": 0.6857,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.3689,
+    "value": 0.6472,
     "confidence_interval": [
-      0.2466,
-      0.4912
+      0.5457,
+      0.7487
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3689
+      0.6472
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.7143,
+    "value": 0.6857,
     "confidence_interval": [
-      0.6179,
-      0.8107
+      0.5871,
+      0.7843
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.7143
+      0.6857
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.1,
+    "value": 0.75,
     "confidence_interval": [
-      0,
-      0.2425
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9848,
+    "value": 0.985,
     "confidence_interval": [
-      0.9087,
+      0.9089,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9848
+      0.985
     ],
     "source_distribution": "production"
   },
@@ -120,12 +120,32 @@
     ]
   },
   "provenance": {
-    "first_platform": "Fox Tech",
+    "first_platform": "YouTube (Influencer Framing)",
     "first_timestamp": "2026-05-26T23:13:22+00:00",
     "lead_lag": [
       {
+        "platform": "Fox Tech",
+        "lag_hours": 1937.2
+      },
+      {
         "platform": "Bluesky",
-        "lag_hours": 0.8
+        "lag_hours": 1970.3
+      },
+      {
+        "platform": "Wnbf News Radio 1290",
+        "lag_hours": 2032.8
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 2033.7
+      },
+      {
+        "platform": "Fox News",
+        "lag_hours": 2611.4
+      },
+      {
+        "platform": "La Weekly",
+        "lag_hours": 2611.8
       }
     ]
   },
@@ -133,18 +153,46 @@
     "concept_id": "concept_crypto-digital-money_003",
     "hops": [
       {
-        "platform": "Fox Tech",
-        "timestamp": "2026-05-26T13:57:29+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-01-08T23:13:04+00:00",
         "claim_id": "crypto-digital-money_bluesky_a01fc92c_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-05-26T14:45:00.410705+00:00",
+        "platform": "Fox Tech",
+        "timestamp": "2026-03-30T16:22:42+00:00",
         "claim_id": "crypto-digital-money_bluesky_a01fc92c_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
+        "fidelity_to_origin": 0.4902,
+        "fidelity_to_previous": 0.4902
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-01T01:28:20.688495+00:00",
+        "claim_id": "crypto-digital-money_bluesky_a01fc92c_0",
+        "fidelity_to_origin": 0.4815,
+        "fidelity_to_previous": 0.9823
+      },
+      {
+        "platform": "Wnbf News Radio 1290",
+        "timestamp": "2026-04-03T15:58:19+00:00",
+        "claim_id": "crypto-digital-money_bluesky_a01fc92c_0",
+        "fidelity_to_origin": 0.465,
+        "fidelity_to_previous": 0.9657
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-03T16:55:56+00:00",
+        "claim_id": "crypto-digital-money_bluesky_a01fc92c_0",
+        "fidelity_to_origin": 0.4648,
+        "fidelity_to_previous": 0.9996
+      },
+      {
+        "platform": "Fox News",
+        "timestamp": "2026-04-27T18:39:28+00:00",
+        "claim_id": "crypto-digital-money_bluesky_a01fc92c_0",
+        "fidelity_to_origin": 0.3127,
+        "fidelity_to_previous": 0.6728
       }
     ],
     "observation_boundary": null
@@ -179,48 +227,48 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "crypto-digital-money_bluesky_edff1a2f_0",
-      "similarity": 0.8248,
-      "text": "Cryptocurrency ATMs facilitate scams despite crackdowns on cryptocurrency."
+      "claim_id": "crypto-digital-money_bluesky_a4514951_0",
+      "similarity": 0.7703,
+      "text": "Cryptocurrency ATMs pose a risk of fraud and money laundering."
     },
     {
-      "claim_id": "crypto-digital-money_bluesky_c315964d_0",
-      "similarity": 0.4746,
-      "text": "Creating and promoting a cryptocurrency with the intention of defrauding investors is a viable path to financial gain."
+      "claim_id": "crypto-digital-money_bluesky_ed261cbb_0",
+      "similarity": 0.5584,
+      "text": "Cryptocurrencies promoted by Elon Musk are frequently scams."
     },
     {
-      "claim_id": "crypto-digital-money_fox_tech_3ef7462b_1",
-      "similarity": 0.4297,
-      "text": "Scammers and aggressive telemarketers target individuals when they are most vulnerable, such as when dealing with money, health, or personal information."
+      "claim_id": "crypto-digital-money_bluesky_41023efa_0",
+      "similarity": 0.5503,
+      "text": "Cryptocurrency scams are becoming more prevalent."
     },
     {
-      "claim_id": "crypto-digital-money_bluesky_332a93d7_0",
-      "similarity": 0.3766,
-      "text": "The CLARITY Act may prohibit cryptocurrency platforms from providing returns to users for holding tokens."
+      "claim_id": "crypto-digital-money_bluesky_de3f6b88_0",
+      "similarity": 0.5303,
+      "text": "Cryptocurrency scams are causing significant financial losses for Nevadans."
     },
     {
-      "claim_id": "crypto-digital-money_fox_tech_3ef7462b_2",
-      "similarity": 0.3504,
-      "text": "Illegal robocalls persist because the low cost of calling technology and caller ID spoofing make it profitable for scammers."
+      "claim_id": "crypto-digital-money_wnbf_news_radio_1290_3fab5cbe_0",
+      "similarity": 0.3998,
+      "text": "Scammers are impersonating law enforcement officers to defraud New Yorkers, particularly older adults, by falsely claiming outstanding warrants or fines."
     }
   ],
   "example_content": [
     {
-      "text": "Creating and promoting a cryptocurrency with the intention of defrauding investors is a viable path to financial gain.",
-      "platform": "Bluesky",
-      "confidence": 0.6,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Cryptocurrency ATMs facilitate scams despite crackdowns on cryptocurrency.",
+      "text": "Cryptocurrency scams are causing significant financial losses for Nevadans.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The CLARITY Act may prohibit cryptocurrency platforms from providing returns to users for holding tokens.",
+      "text": "The cryptocurrency and NFT-embracing app has repeatedly posted Nazi dogwhistles in its announcements.",
       "platform": "Bluesky",
       "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "FIFA's partnership with ADIPredictstree, a cryptocurrency firm, is questionable.",
+      "platform": "Bluesky",
+      "confidence": 0.7,
       "is_influencer_framing": false
     }
   ]

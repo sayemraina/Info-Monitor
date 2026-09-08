@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "crypto-digital-money_crypto.news_a3df66fd_2",
-    "cluster_id": "clu_crypto-digital-money_022",
-    "concept_id": "concept_crypto-digital-money_001",
+    "cluster_id": "clu_crypto-digital-money_042",
+    "concept_id": "concept_crypto-digital-money_003",
     "first_seen_platform": "crypto.news",
     "first_seen_timestamp": "2026-04-29T18:11:55Z",
     "source_document_id": "a988e1421a3d6c97",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 3,
-    "friction": 0.2727,
+    "persistence_windows": 15,
+    "friction": 0.0968,
     "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 0.4511,
+    "value": 1,
     "confidence_interval": [
-      0.3349,
-      0.5673
+      0.925,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.4511
+      1
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.2727,
+    "value": 0.0968,
     "confidence_interval": [
-      0.1432,
-      0.4022
+      0,
+      0.2395
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2727
+      0.0968
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.15,
+    "value": 0.75,
     "confidence_interval": [
-      0.0112,
-      0.2888
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.15
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.925,
+    "value": 0.985,
     "confidence_interval": [
-      0.8444,
+      0.9089,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.925
+      0.985
     ],
     "source_distribution": "production"
   },
@@ -120,53 +120,79 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
+    "first_platform": "YouTube (Influencer Framing)",
     "first_timestamp": "2026-04-29T18:11:55Z",
     "lead_lag": [
       {
-        "platform": "Crypto.News",
-        "lag_hours": 18.7
-      },
-      {
-        "platform": "Decrypt",
-        "lag_hours": 18.8
+        "platform": "Bluesky",
+        "lag_hours": 7950.1
       },
       {
         "platform": "X Platform",
-        "lag_hours": 20.0
+        "lag_hours": 7997.2
+      },
+      {
+        "platform": "The Intercept",
+        "lag_hours": 8349.0
+      },
+      {
+        "platform": "Techbullion",
+        "lag_hours": 8542.1
+      },
+      {
+        "platform": "Tokenpost",
+        "lag_hours": 8542.9
+      },
+      {
+        "platform": "Live Bitcoin News",
+        "lag_hours": 8543.7
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_crypto-digital-money_001",
+    "concept_id": "concept_crypto-digital-money_003",
     "hops": [
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-28T23:29:23.587000+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2025-05-05T12:00:12+00:00",
         "claim_id": "crypto-digital-money_crypto.news_a3df66fd_2",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Crypto.News",
-        "timestamp": "2026-04-29T18:11:55+00:00",
+        "platform": "Bluesky",
+        "timestamp": "2026-04-01T18:05:26.761000+00:00",
         "claim_id": "crypto-digital-money_crypto.news_a3df66fd_2",
-        "fidelity_to_origin": 0.3455,
-        "fidelity_to_previous": 0.3455
-      },
-      {
-        "platform": "Decrypt",
-        "timestamp": "2026-04-29T18:14:42+00:00",
-        "claim_id": "crypto-digital-money_crypto.news_a3df66fd_2",
-        "fidelity_to_origin": 0.3438,
-        "fidelity_to_previous": 0.9951
+        "fidelity_to_origin": 0.3977,
+        "fidelity_to_previous": 0.3977
       },
       {
         "platform": "X Platform",
-        "timestamp": "2026-04-29T19:29:54+00:00",
+        "timestamp": "2026-04-03T17:12:30+00:00",
         "claim_id": "crypto-digital-money_crypto.news_a3df66fd_2",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.8726
+        "fidelity_to_origin": 0.3941,
+        "fidelity_to_previous": 0.9909
+      },
+      {
+        "platform": "The Intercept",
+        "timestamp": "2026-04-18T09:00:00+00:00",
+        "claim_id": "crypto-digital-money_crypto.news_a3df66fd_2",
+        "fidelity_to_origin": 0.3674,
+        "fidelity_to_previous": 0.9323
+      },
+      {
+        "platform": "Techbullion",
+        "timestamp": "2026-04-26T10:07:47+00:00",
+        "claim_id": "crypto-digital-money_crypto.news_a3df66fd_2",
+        "fidelity_to_origin": 0.3528,
+        "fidelity_to_previous": 0.9603
+      },
+      {
+        "platform": "Tokenpost",
+        "timestamp": "2026-04-26T10:52:38+00:00",
+        "claim_id": "crypto-digital-money_crypto.news_a3df66fd_2",
+        "fidelity_to_origin": 0.3527,
+        "fidelity_to_previous": 0.9997
       }
     ],
     "observation_boundary": null
@@ -201,46 +227,46 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "crypto-digital-money_bluesky_c9ff9372_2",
-      "similarity": 0.5838,
-      "text": "Cryptocurrency should not be legal."
+      "claim_id": "crypto-digital-money_bluesky_79678147_1",
+      "similarity": 0.5501,
+      "text": "Some politicians advocate for stricter regulation of cryptocurrency."
     },
     {
-      "claim_id": "crypto-digital-money_bluesky_d0f7463b_0",
-      "similarity": 0.5214,
-      "text": "Minnesota has passed a bill to ban cryptocurrency kiosks statewide."
+      "claim_id": "crypto-digital-money_bluesky_5888798e_0",
+      "similarity": 0.5423,
+      "text": "Cryptocurrency should be heavily regulated or criminalized."
     },
     {
-      "claim_id": "crypto-digital-money_bluesky_0c707f95_0",
-      "similarity": 0.5082,
-      "text": "Cryptocurrency should be eliminated through policy changes."
+      "claim_id": "crypto-digital-money_bluesky_b28231f6_0",
+      "similarity": 0.5067,
+      "text": "Cryptocurrency exchanges should comply with local regulations."
     },
     {
-      "claim_id": "crypto-digital-money_bluesky_6d1d0354_0",
-      "similarity": 0.4744,
-      "text": "Stricter cryptocurrency regulations in the U.S. will reveal vulnerabilities in poorly secured digital wallets."
+      "claim_id": "crypto-digital-money_bluesky_932c9d7c_0",
+      "similarity": 0.4793,
+      "text": "Cryptocurrency companies are benefiting from the weakening of regulatory bodies like the FTC and CFTC."
     },
     {
-      "claim_id": "crypto-digital-money_bluesky_138f3ced_0",
-      "similarity": 0.4059,
-      "text": "Dubai is becoming a leading hub for cryptocurrency regulation."
+      "claim_id": "crypto-digital-money_bluesky_fcddf710_0",
+      "similarity": 0.4779,
+      "text": "The appointment of an interim Attorney General who previously advocated for a less aggressive approach to cryptocurrency regulation suggests a potential shift away from regulation by prosecution."
     }
   ],
   "example_content": [
     {
-      "text": "Cryptocurrency should not be legal.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Cryptocurrency should be eliminated through policy changes.",
+      "text": "Cryptocurrency users should maintain control of their private keys.",
       "platform": "Bluesky",
       "confidence": 0.95,
       "is_influencer_framing": false
     },
     {
-      "text": "Minnesota has passed a bill to ban cryptocurrency kiosks statewide.",
+      "text": "Cryptocurrency companies are benefiting from the weakening of regulatory bodies like the FTC and CFTC.",
+      "platform": "Bluesky",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Cryptocurrency regulation is becoming more structured and competitive globally.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

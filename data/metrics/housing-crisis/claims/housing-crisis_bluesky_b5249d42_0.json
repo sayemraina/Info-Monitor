@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "housing-crisis_bluesky_b5249d42_0",
-    "cluster_id": "clu_housing-crisis_020",
-    "concept_id": "concept_housing-crisis_007",
+    "cluster_id": "clu_housing-crisis_061",
+    "concept_id": "concept_housing-crisis_003",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-03T14:00:07.998Z",
     "source_document_id": "b5249d42be018ada",
@@ -35,48 +35,48 @@
       0.54
     ],
     "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 4,
-    "friction": 0.6667,
+    "source_diversity": 0.75,
+    "bridge_ratio": 0.75,
+    "persistence_windows": 15,
+    "friction": 0.7544,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.2252,
+    "value": 0.5346,
     "confidence_interval": [
-      0.0921,
-      0.3583
+      0.4247,
+      0.6445
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2252
+      0.5346
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.6667,
+    "value": 0.7544,
     "confidence_interval": [
-      0.5667,
-      0.7667
+      0.661,
+      0.8478
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.6667
+      0.7544
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.2,
+    "value": 0.75,
     "confidence_interval": [
-      0.065,
-      0.335
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9784,
+    "value": 0.9848,
     "confidence_interval": [
-      0.9018,
+      0.9087,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9784
+      0.9848
     ],
     "source_distribution": "production"
   },
@@ -125,26 +125,37 @@
     "lead_lag": [
       {
         "platform": "X Platform",
-        "lag_hours": 4.6
+        "lag_hours": 3.0
+      },
+      {
+        "platform": "Caerphilly Observer",
+        "lag_hours": 637.1
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_housing-crisis_007",
+    "concept_id": "concept_housing-crisis_003",
     "hops": [
       {
         "platform": "Bluesky",
-        "timestamp": "2026-04-02T23:08:10.193000+00:00",
+        "timestamp": "2026-04-03T00:59:19.648000+00:00",
         "claim_id": "housing-crisis_bluesky_b5249d42_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
         "platform": "X Platform",
-        "timestamp": "2026-04-03T03:42:24+00:00",
+        "timestamp": "2026-04-03T03:56:25+00:00",
+        "claim_id": "housing-crisis_bluesky_b5249d42_0",
+        "fidelity_to_origin": 0.9968,
+        "fidelity_to_previous": 0.9968
+      },
+      {
+        "platform": "Caerphilly Observer",
+        "timestamp": "2026-04-29T14:07:00+00:00",
         "claim_id": "housing-crisis_bluesky_b5249d42_0",
         "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
+        "fidelity_to_previous": 0.301
       }
     ],
     "observation_boundary": null
@@ -179,19 +190,19 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "housing-crisis_x_413f212d_0",
-      "similarity": 0.9031,
-      "text": "Government officials are failing to address the housing crisis."
-    },
-    {
       "claim_id": "housing-crisis_x_3b8489ee_0",
       "similarity": 0.8894,
       "text": "Politicians are failing to address the housing crisis."
     },
     {
-      "claim_id": "housing-crisis_x_92acbdad_0",
-      "similarity": 0.866,
-      "text": "Politicians are failing to address the housing crisis."
+      "claim_id": "housing-crisis_x_aa306724_0",
+      "similarity": 0.8389,
+      "text": "Government interventions are ineffective at resolving the housing crisis."
+    },
+    {
+      "claim_id": "housing-crisis_x_ac457418_0",
+      "similarity": 0.8326,
+      "text": "The housing crisis has not been adequately addressed."
     },
     {
       "claim_id": "housing-crisis_x_bffa6fe1_0",
@@ -199,14 +210,14 @@
       "text": "Politicians are failing to address the housing crisis in New York City."
     },
     {
-      "claim_id": "housing-crisis_x_94663057_0",
-      "similarity": 0.7298,
-      "text": "State and federal authorities should address the urbanization and housing crises."
+      "claim_id": "housing-crisis_x_b05656bb_1",
+      "similarity": 0.7824,
+      "text": "The current situation is not a housing crisis."
     }
   ],
   "example_content": [
     {
-      "text": "Actions are needed to resolve the Australian housing crisis.",
+      "text": "Pro-housing political candidates are gaining traction and winning elections.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
@@ -218,7 +229,7 @@
       "is_influencer_framing": false
     },
     {
-      "text": "Mayor Harrell's initial inaction on housing created an opportunity for a successor to address the housing crisis effectively.",
+      "text": "The current political party and leader are actively working to address various social and global issues.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

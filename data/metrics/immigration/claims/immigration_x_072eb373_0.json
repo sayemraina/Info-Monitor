@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "immigration_x_072eb373_0",
-    "cluster_id": "clu_immigration_002",
-    "concept_id": "concept_immigration_002",
+    "cluster_id": "clu_immigration_004",
+    "concept_id": "concept_immigration_001",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-03T09:47:07.000Z",
     "source_document_id": "x_2040003150342713601",
@@ -38,32 +38,32 @@
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
     "persistence_windows": 15,
-    "friction": 0.3333,
+    "friction": 0.3191,
     "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 0.4491,
+    "value": 0.8883,
     "confidence_interval": [
-      0.3328,
-      0.5654
+      0.8049,
+      0.9717
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.4491
+      0.8883
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.3333,
+    "value": 0.3191,
     "confidence_interval": [
-      0.2083,
-      0.4583
+      0.193,
+      0.4452
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3333
+      0.3191
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.965,
+    "value": 0.9732,
     "confidence_interval": [
-      0.8874,
+      0.8962,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.965
+      0.9732
     ],
     "source_distribution": "production"
   },
@@ -125,32 +125,32 @@
     "lead_lag": [
       {
         "platform": "YouTube (Influencer Framing)",
-        "lag_hours": 10924.5
+        "lag_hours": 9217.7
       },
       {
         "platform": "X Platform",
         "lag_hours": 14291.8
       },
       {
-        "platform": "The Atlantic",
-        "lag_hours": 14303.1
-      },
-      {
         "platform": "Bluesky",
         "lag_hours": 14305.5
       },
       {
-        "platform": "The Financial Express",
-        "lag_hours": 14324.7
-      },
-      {
         "platform": "The American Bazaar",
         "lag_hours": 14324.9
+      },
+      {
+        "platform": "Breitbart",
+        "lag_hours": 14327.2
+      },
+      {
+        "platform": "Guardian World",
+        "lag_hours": 14870.6
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_immigration_002",
+    "concept_id": "concept_immigration_001",
     "hops": [
       {
         "platform": "Salon",
@@ -161,38 +161,38 @@
       },
       {
         "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2025-11-12T20:15:12+00:00",
+        "timestamp": "2025-09-02T17:22:55+00:00",
         "claim_id": "immigration_x_072eb373_0",
-        "fidelity_to_origin": 0.4662,
-        "fidelity_to_previous": 0.4662
+        "fidelity_to_origin": 0.5725,
+        "fidelity_to_previous": 0.5725
       },
       {
         "platform": "X Platform",
         "timestamp": "2026-04-02T03:31:46+00:00",
         "claim_id": "immigration_x_072eb373_0",
-        "fidelity_to_origin": 0.3017,
-        "fidelity_to_previous": 0.6471
-      },
-      {
-        "platform": "The Atlantic",
-        "timestamp": "2026-04-02T14:50:34+00:00",
-        "claim_id": "immigration_x_072eb373_0",
-        "fidelity_to_origin": 0.3012,
-        "fidelity_to_previous": 0.9983
+        "fidelity_to_origin": 0.3371,
+        "fidelity_to_previous": 0.5888
       },
       {
         "platform": "Bluesky",
         "timestamp": "2026-04-02T17:11:37.369000+00:00",
         "claim_id": "immigration_x_072eb373_0",
-        "fidelity_to_origin": 0.3011,
-        "fidelity_to_previous": 0.9997
+        "fidelity_to_origin": 0.3365,
+        "fidelity_to_previous": 0.9982
       },
       {
-        "platform": "The Financial Express",
-        "timestamp": "2026-04-03T12:24:39+00:00",
+        "platform": "The American Bazaar",
+        "timestamp": "2026-04-03T12:37:19+00:00",
         "claim_id": "immigration_x_072eb373_0",
-        "fidelity_to_origin": 0.3001,
-        "fidelity_to_previous": 0.9967
+        "fidelity_to_origin": 0.3356,
+        "fidelity_to_previous": 0.9973
+      },
+      {
+        "platform": "Breitbart",
+        "timestamp": "2026-04-03T14:56:41+00:00",
+        "claim_id": "immigration_x_072eb373_0",
+        "fidelity_to_origin": 0.3355,
+        "fidelity_to_previous": 0.9997
       }
     ],
     "observation_boundary": null

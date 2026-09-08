@@ -35,48 +35,48 @@
       0.54
     ],
     "source_distribution": "production",
-    "source_diversity": 0.25,
-    "bridge_ratio": 0.25,
-    "persistence_windows": 1,
-    "friction": 0,
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 15,
+    "friction": 0.0816,
     "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 0.3124,
+    "value": 0.4531,
     "confidence_interval": [
-      0.1858,
-      0.439
+      0.3371,
+      0.5691
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3124
+      0.4531
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0,
+    "value": 0.0816,
     "confidence_interval": [
       0,
-      0.15
+      0.2255
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.0816
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0.75,
     "confidence_interval": [
-      0,
-      0.1962
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.8943,
     "confidence_interval": [
-      0.925,
-      1
+      0.8114,
+      0.9772
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.8943
     ],
     "source_distribution": "production"
   },
@@ -120,22 +120,82 @@
     ]
   },
   "provenance": {
-    "first_platform": "Blockonomi",
+    "first_platform": "YouTube (Influencer Framing)",
     "first_timestamp": "2026-05-27T07:54:15Z",
-    "lead_lag": []
+    "lead_lag": [
+      {
+        "platform": "Usethebitcoin",
+        "lag_hours": 6939.9
+      },
+      {
+        "platform": "Bluesky",
+        "lag_hours": 6940.9
+      },
+      {
+        "platform": "Crypto Reporter",
+        "lag_hours": 6940.9
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 6941.2
+      },
+      {
+        "platform": "The Motley Fool",
+        "lag_hours": 7724.0
+      },
+      {
+        "platform": "Coinpedia   Fintech & Cryptocu",
+        "lag_hours": 7724.1
+      }
+    ]
   },
   "supply_chain": {
     "concept_id": "concept_crypto-digital-money_000",
     "hops": [
       {
-        "platform": "Blockonomi",
-        "timestamp": "2026-05-27T07:54:15+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2025-06-18T12:00:10+00:00",
         "claim_id": "crypto-digital-money_blockonomi_200928d3_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Usethebitcoin",
+        "timestamp": "2026-04-03T15:54:19+00:00",
+        "claim_id": "crypto-digital-money_blockonomi_200928d3_0",
+        "fidelity_to_origin": 0.4096,
+        "fidelity_to_previous": 0.4096
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-03T16:54:15.528000+00:00",
+        "claim_id": "crypto-digital-money_blockonomi_200928d3_0",
+        "fidelity_to_origin": 0.4095,
+        "fidelity_to_previous": 0.9998
+      },
+      {
+        "platform": "Crypto Reporter",
+        "timestamp": "2026-04-03T16:56:00+00:00",
+        "claim_id": "crypto-digital-money_blockonomi_200928d3_0",
+        "fidelity_to_origin": 0.4095,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-03T17:12:51+00:00",
+        "claim_id": "crypto-digital-money_blockonomi_200928d3_0",
+        "fidelity_to_origin": 0.4095,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "The Motley Fool",
+        "timestamp": "2026-05-06T08:00:00+00:00",
+        "claim_id": "crypto-digital-money_blockonomi_200928d3_0",
+        "fidelity_to_origin": 0.3429,
+        "fidelity_to_previous": 0.8374
       }
     ],
-    "observation_boundary": "No public antecedent detected"
+    "observation_boundary": null
   },
   "coordination": {
     "burstiness": {
@@ -167,15 +227,47 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "crypto-digital-money_blockonomi_200928d3_1",
-      "similarity": 0.6883,
-      "text": "Bermuda's transition to blockchain-based systems will lower transaction fees by eliminating intermediary banking processes."
+      "claim_id": "crypto-digital-money_x_62f668b8_0",
+      "similarity": 0.5744,
+      "text": "Blockchain technology is transforming various sectors, including finance and transportation."
+    },
+    {
+      "claim_id": "crypto-digital-money_bluesky_0b891970_0",
+      "similarity": 0.4889,
+      "text": "The architecture of the atproto protocol initially caused concern that it would incorporate blockchain technology."
+    },
+    {
+      "claim_id": "crypto-digital-money_usethebitcoin_e023a789_2",
+      "similarity": 0.4438,
+      "text": "Blockchain-based freelance platforms reduce reliance on intermediaries through smart contracts and direct payments."
+    },
+    {
+      "claim_id": "crypto-digital-money_usethebitcoin_e023a789_0",
+      "similarity": 0.44,
+      "text": "Blockchain-based freelance platforms offer faster payments, lower fees, and more transparent systems."
+    },
+    {
+      "claim_id": "crypto-digital-money_usethebitcoin_e023a789_1",
+      "similarity": 0.4278,
+      "text": "Web3 and blockchain growth has created more freelance opportunities for those with crypto-related skills."
     }
   ],
   "example_content": [
     {
-      "text": "Bermuda's transition to blockchain-based systems will lower transaction fees by eliminating intermediary banking processes.",
-      "platform": "Blockonomi",
+      "text": "The architecture of the atproto protocol initially caused concern that it would incorporate blockchain technology.",
+      "platform": "Bluesky",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Cardano's reliable technology and growing ecosystem of tools and NFT marketplaces position it as a potential cryptocurrency for future growth.",
+      "platform": "Crypto Reporter",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Blockchain-based freelance platforms offer faster payments, lower fees, and more transparent systems.",
+      "platform": "Usethebitcoin",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

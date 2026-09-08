@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "inflation-cost-of-living_x_ee9ec9e3_0",
-    "cluster_id": "clu_inflation-cost-of-living_010",
-    "concept_id": "concept_inflation-cost-of-living_007",
+    "cluster_id": "clu_inflation-cost-of-living_045",
+    "concept_id": "concept_inflation-cost-of-living_000",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-05T08:33:46.000Z",
     "source_document_id": "x_2040709469596704812",
@@ -35,48 +35,48 @@
       0.645
     ],
     "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 4,
-    "friction": 0.5,
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 15,
+    "friction": 0.8354,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.1962,
+    "value": 0.8367,
     "confidence_interval": [
-      0.0609,
-      0.3315
+      0.7495,
+      0.9239
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1962
+      0.8367
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.5,
+    "value": 0.8354,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0.7481,
+      0.9227
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.5
+      0.8354
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.2,
+    "value": 0.75,
     "confidence_interval": [
-      0.065,
-      0.335
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9842,
     "confidence_interval": [
-      0.925,
+      0.908,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9842
     ],
     "source_distribution": "production"
   },
@@ -125,26 +125,74 @@
     "lead_lag": [
       {
         "platform": "X Platform",
-        "lag_hours": 37.6
+        "lag_hours": 47.1
+      },
+      {
+        "platform": "Daily Wire",
+        "lag_hours": 536.8
+      },
+      {
+        "platform": "Thejournal.Ie",
+        "lag_hours": 589.2
+      },
+      {
+        "platform": "The Star",
+        "lag_hours": 589.2
+      },
+      {
+        "platform": "The Atlantic",
+        "lag_hours": 605.8
+      },
+      {
+        "platform": "Aol.Com",
+        "lag_hours": 636.7
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_inflation-cost-of-living_007",
+    "concept_id": "concept_inflation-cost-of-living_000",
     "hops": [
       {
         "platform": "Bluesky",
-        "timestamp": "2026-04-03T15:22:16.886000+00:00",
+        "timestamp": "2026-04-03T06:10:15.684000+00:00",
         "claim_id": "inflation-cost-of-living_x_ee9ec9e3_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
         "platform": "X Platform",
-        "timestamp": "2026-04-05T04:56:38+00:00",
+        "timestamp": "2026-04-05T05:17:31+00:00",
         "claim_id": "inflation-cost-of-living_x_ee9ec9e3_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
+        "fidelity_to_origin": 0.9585,
+        "fidelity_to_previous": 0.9585
+      },
+      {
+        "platform": "Daily Wire",
+        "timestamp": "2026-04-25T15:00:12+00:00",
+        "claim_id": "inflation-cost-of-living_x_ee9ec9e3_0",
+        "fidelity_to_origin": 0.527,
+        "fidelity_to_previous": 0.5498
+      },
+      {
+        "platform": "Thejournal.Ie",
+        "timestamp": "2026-04-27T19:21:43+00:00",
+        "claim_id": "inflation-cost-of-living_x_ee9ec9e3_0",
+        "fidelity_to_origin": 0.4808,
+        "fidelity_to_previous": 0.9123
+      },
+      {
+        "platform": "The Star",
+        "timestamp": "2026-04-27T19:23:34+00:00",
+        "claim_id": "inflation-cost-of-living_x_ee9ec9e3_0",
+        "fidelity_to_origin": 0.4808,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "The Atlantic",
+        "timestamp": "2026-04-28T12:00:00+00:00",
+        "claim_id": "inflation-cost-of-living_x_ee9ec9e3_0",
+        "fidelity_to_origin": 0.4662,
+        "fidelity_to_previous": 0.9696
       }
     ],
     "observation_boundary": null
@@ -179,46 +227,46 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "inflation-cost-of-living_bluesky_e1a2696a_0",
-      "similarity": 0.4869,
-      "text": "Many members of parliament are either deeply weird or deeply self-interested and egotistical."
+      "claim_id": "inflation-cost-of-living_x_ee9ec9e3_1",
+      "similarity": 0.7328,
+      "text": "Members of Congress receive excessive benefits, such as free healthcare and fuel."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_e1a2696a_1",
-      "similarity": 0.3125,
-      "text": "The public often mistakes MPs' weirdness or self-interest for unawareness of the cost of living crisis, which is the MPs' fault."
+      "claim_id": "inflation-cost-of-living_x_664833b4_1",
+      "similarity": 0.4192,
+      "text": "Current politicians are not adequately addressing the serious issues facing the country."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_4421b81b_0",
-      "similarity": 0.2858,
-      "text": "British Members of Parliament are aware of and responsive to the cost of living crisis and the challenges faced by their constituents."
+      "claim_id": "inflation-cost-of-living_bluesky_2fa12380_0",
+      "similarity": 0.4024,
+      "text": "Politicians are out of touch with the economic struggles of ordinary citizens."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_d67577d9_0",
-      "similarity": 0.2835,
-      "text": "Keir Starmer is intentionally misleading the public about Britain's involvement in an international conflict."
+      "claim_id": "inflation-cost-of-living_x_dbc619f4_1",
+      "similarity": 0.3922,
+      "text": "Courts are exploiting people during the cost of living crisis."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_d67577d9_1",
-      "similarity": 0.2723,
-      "text": "Keir Starmer is acting in the interests of Israel."
+      "claim_id": "inflation-cost-of-living_bluesky_471596ef_0",
+      "similarity": 0.3776,
+      "text": "Elected officials often fail to address the crises that initially propelled them into power."
     }
   ],
   "example_content": [
     {
-      "text": "Charlie Kirk is overweight.",
+      "text": "Politicians are out of touch with the economic struggles of ordinary citizens.",
       "platform": "Bluesky",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "is_influencer_framing": false
     },
     {
-      "text": "The Labour party is genuinely concerned about the cost of living.",
+      "text": "Current government leadership is incompetent and detached from the needs of ordinary citizens.",
       "platform": "Bluesky",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "is_influencer_framing": false
     },
     {
-      "text": "Many members of parliament are either deeply weird or deeply self-interested and egotistical.",
+      "text": "Politicians are out of touch with the economic struggles of ordinary citizens.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

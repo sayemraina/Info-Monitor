@@ -9,7 +9,7 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "ai-bubble_x_668746ff_2",
-    "cluster_id": "clu_ai-bubble_020",
+    "cluster_id": "clu_ai-bubble_017",
     "concept_id": "concept_ai-bubble_004",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-05-06T08:06:25.000Z",
@@ -35,48 +35,48 @@
       0.615
     ],
     "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 1,
-    "friction": 1,
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 15,
+    "friction": 0.3514,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.305,
+    "value": 0.7835,
     "confidence_interval": [
-      0.1779,
-      0.4321
+      0.6923,
+      0.8747
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.305
+      0.7835
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 1,
+    "value": 0.3514,
     "confidence_interval": [
-      0.925,
-      1
+      0.2278,
+      0.475
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.3514
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0.75,
     "confidence_interval": [
-      0,
-      0.1962
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9865,
     "confidence_interval": [
-      0.925,
+      0.9105,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9865
     ],
     "source_distribution": "production"
   },
@@ -118,12 +118,32 @@
     "factors": []
   },
   "provenance": {
-    "first_platform": "Bluesky",
+    "first_platform": "YouTube (Influencer Framing)",
     "first_timestamp": "2026-05-06T08:06:25.000Z",
     "lead_lag": [
       {
-        "platform": "X Platform",
-        "lag_hours": 8.7
+        "platform": "Bluesky",
+        "lag_hours": 3010.0
+      },
+      {
+        "platform": "The Motley Fool",
+        "lag_hours": 3931.8
+      },
+      {
+        "platform": "Aol",
+        "lag_hours": 3932.5
+      },
+      {
+        "platform": "Climate And Economy",
+        "lag_hours": 3933.2
+      },
+      {
+        "platform": "Newstarget.Com",
+        "lag_hours": 3935.3
+      },
+      {
+        "platform": "Zero Hedge",
+        "lag_hours": 3936.4
       }
     ]
   },
@@ -131,18 +151,46 @@
     "concept_id": "concept_ai-bubble_004",
     "hops": [
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-05-05T23:22:51.512000+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2025-10-21T12:38:46+00:00",
         "claim_id": "ai-bubble_x_668746ff_2",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "X Platform",
-        "timestamp": "2026-05-06T08:06:25+00:00",
+        "platform": "Bluesky",
+        "timestamp": "2026-02-23T22:39:38.119000+00:00",
         "claim_id": "ai-bubble_x_668746ff_2",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
+        "fidelity_to_origin": 0.597,
+        "fidelity_to_previous": 0.597
+      },
+      {
+        "platform": "The Motley Fool",
+        "timestamp": "2026-04-03T08:26:00+00:00",
+        "claim_id": "ai-bubble_x_668746ff_2",
+        "fidelity_to_origin": 0.4736,
+        "fidelity_to_previous": 0.7933
+      },
+      {
+        "platform": "Aol",
+        "timestamp": "2026-04-03T09:10:59+00:00",
+        "claim_id": "ai-bubble_x_668746ff_2",
+        "fidelity_to_origin": 0.4735,
+        "fidelity_to_previous": 0.9998
+      },
+      {
+        "platform": "Climate And Economy",
+        "timestamp": "2026-04-03T09:50:02+00:00",
+        "claim_id": "ai-bubble_x_668746ff_2",
+        "fidelity_to_origin": 0.4734,
+        "fidelity_to_previous": 0.9998
+      },
+      {
+        "platform": "Newstarget.Com",
+        "timestamp": "2026-04-03T11:53:47+00:00",
+        "claim_id": "ai-bubble_x_668746ff_2",
+        "fidelity_to_origin": 0.4731,
+        "fidelity_to_previous": 0.9994
       }
     ],
     "observation_boundary": null
@@ -177,26 +225,47 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-bubble_bluesky_ac875794_0",
-      "similarity": 0.4764,
-      "text": "The convergence of an oil crisis, an AI bubble, and a debt bubble will lead to an economic crash."
+      "claim_id": "ai-bubble_bluesky_2891fc88_2",
+      "similarity": 0.3996,
+      "text": "Increased volatility and repricing are expected in the private capital ecosystem."
     },
     {
-      "claim_id": "ai-bubble_x_668746ff_1",
-      "similarity": 0.3503,
-      "text": "Global fertilizer shortages will cause national instability."
+      "claim_id": "ai-bubble_bluesky_2891fc88_1",
+      "similarity": 0.3727,
+      "text": "Gating risk combined with opaque valuations creates a fragile confidence loop within the private capital ecosystem."
+    },
+    {
+      "claim_id": "ai-bubble_bluesky_c3d1b11b_1",
+      "similarity": 0.3492,
+      "text": "Economic recovery will take longer than two years."
+    },
+    {
+      "claim_id": "ai-bubble_bluesky_2891fc88_0",
+      "similarity": 0.338,
+      "text": "The private capital ecosystem is facing liquidity issues due to retail inflows, illiquidity, and rising redemption pressure."
+    },
+    {
+      "claim_id": "ai-bubble_bluesky_eaa3f497_0",
+      "similarity": 0.3142,
+      "text": "Paramount's survival is threatened by a potential takeover."
     }
   ],
   "example_content": [
     {
-      "text": "The convergence of an oil crisis, an AI bubble, and a debt bubble will lead to an economic crash.",
+      "text": "Donald Trump's political actions are destructive to the United States.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Global fertilizer shortages will cause national instability.",
-      "platform": "X Platform",
+      "text": "Economic recovery will take longer than two years.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "There is a connection between the potential Iran war and the Paramount/Skydance-WB deal.",
+      "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

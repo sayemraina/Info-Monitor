@@ -1,9 +1,41 @@
 {
   "events": [
     {
-      "id": "evt_b37600f54e51",
+      "id": "evt_f8e6a4476d2c",
+      "type": "contestation_emergence",
+      "timestamp": "2026-09-08T05:39:54.459848+00:00",
+      "claim_id": "housing-crisis_the_manc_93a331fc_1",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.83,
+      "summary": "Active contestation in \"Immigration\" — 25 pro vs 32 anti",
+      "detail": {
+        "cluster_id": "clu_housing-crisis_002",
+        "pro_count": 25,
+        "anti_count": 32,
+        "balance": 0.78
+      }
+    },
+    {
+      "id": "evt_ba2762a00bf2",
+      "type": "contestation_emergence",
+      "timestamp": "2026-09-08T05:39:54.459848+00:00",
+      "claim_id": "housing-crisis_bluesky_fb0237cf_1",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.9,
+      "summary": "Active contestation in \"Mortgage Rates\" — 20 pro vs 20 anti",
+      "detail": {
+        "cluster_id": "clu_housing-crisis_005",
+        "pro_count": 20,
+        "anti_count": 20,
+        "balance": 1.0
+      }
+    },
+    {
+      "id": "evt_bae487ac5d3c",
       "type": "phase_transition",
-      "timestamp": "2026-05-27T05:44:24.356992+00:00",
+      "timestamp": "2026-09-08T05:39:54.459848+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
@@ -16,9 +48,9 @@
       }
     },
     {
-      "id": "evt_41f5d49f3d38",
+      "id": "evt_f83aef4a09b7",
       "type": "phase_transition",
-      "timestamp": "2026-05-27T05:44:24.356992+00:00",
+      "timestamp": "2026-09-08T05:39:54.459848+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
@@ -31,9 +63,9 @@
       }
     },
     {
-      "id": "evt_77157f7489e7",
+      "id": "evt_14d2ceb71340",
       "type": "phase_transition",
-      "timestamp": "2026-05-27T05:44:24.356992+00:00",
+      "timestamp": "2026-09-08T05:39:54.459848+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
@@ -46,9 +78,9 @@
       }
     },
     {
-      "id": "evt_b99bbc57de6f",
+      "id": "evt_1baed031ecdf",
       "type": "phase_transition",
-      "timestamp": "2026-05-27T05:44:24.356992+00:00",
+      "timestamp": "2026-09-08T05:39:54.459848+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
@@ -58,6 +90,78 @@
         "cluster_id": "clu_housing-crisis_008",
         "direction": "radicalizing",
         "magnitude": 0.6605
+      }
+    },
+    {
+      "id": "evt_1c47c2ad9c2f",
+      "type": "divergence_shift",
+      "timestamp": "2026-09-08T05:39:54.459848+00:00",
+      "claim_id": null,
+      "slice_id": "berkeleyside_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Strong narrative split between berkeleyside and Bluesky",
+      "detail": {
+        "jsd": 0.9625,
+        "platforms": [
+          "berkeleyside",
+          "bluesky"
+        ],
+        "window_hours": 6
+      }
+    },
+    {
+      "id": "evt_a702ca66e9ed",
+      "type": "divergence_shift",
+      "timestamp": "2026-09-08T05:39:54.459848+00:00",
+      "claim_id": null,
+      "slice_id": "berkeleyside_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Strong narrative split between berkeleyside and business_insider",
+      "detail": {
+        "jsd": 1.0,
+        "platforms": [
+          "berkeleyside",
+          "business_insider"
+        ],
+        "window_hours": 6
+      }
+    },
+    {
+      "id": "evt_4784945b0919",
+      "type": "divergence_shift",
+      "timestamp": "2026-09-08T05:39:54.459848+00:00",
+      "claim_id": null,
+      "slice_id": "berkeleyside_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Strong narrative split between berkeleyside and castanet",
+      "detail": {
+        "jsd": 1.0,
+        "platforms": [
+          "berkeleyside",
+          "castanet"
+        ],
+        "window_hours": 6
+      }
+    },
+    {
+      "id": "evt_68b347d93deb",
+      "type": "divergence_shift",
+      "timestamp": "2026-09-08T05:39:54.459848+00:00",
+      "claim_id": null,
+      "slice_id": "berkeleyside_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Strong narrative split between berkeleyside and cato",
+      "detail": {
+        "jsd": 1.0,
+        "platforms": [
+          "berkeleyside",
+          "cato"
+        ],
+        "window_hours": 6
       }
     },
     {
@@ -111,33 +215,159 @@
       "source": "fred"
     },
     {
-      "id": "evt_f88208602443",
-      "type": "momentum_spike",
-      "timestamp": "2026-05-27T06:44:24.356992+00:00",
-      "claim_id": "housing-crisis_bluesky_5f71bc79_0",
+      "id": "evt_03fbe3d36469",
+      "type": "lead_lag",
+      "timestamp": "2026-03-03T13:39:54.459848+00:00",
+      "claim_id": "housing-crisis_bluesky_fb0237cf_0",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.58,
-      "summary": "Rapid attention surge in \"Economic Performance\" (1 claims)",
+      "confidence": 0.86,
+      "summary": "YouTube (Influencer Framing) leads the_guardian by ~4531h in \"Institutional Investors\"",
       "detail": {
-        "cluster_id": "clu_housing-crisis_048",
-        "avg_momentum": 0.645,
-        "member_count": 1
+        "source_platform": "youtube",
+        "target_platform": "the_guardian",
+        "lag_hours": 4531.6,
+        "cluster_id": "clu_housing-crisis_004"
+      }
+    },
+    {
+      "id": "evt_a299ef54294d",
+      "type": "lead_lag",
+      "timestamp": "2026-07-14T19:39:54.459848+00:00",
+      "claim_id": "housing-crisis_the_manc_93a331fc_1",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.9,
+      "summary": "cato leads the_spectator by ~1333h in \"Immigration\"",
+      "detail": {
+        "source_platform": "cato",
+        "target_platform": "the_spectator",
+        "lag_hours": 1333.9,
+        "cluster_id": "clu_housing-crisis_002"
+      }
+    },
+    {
+      "id": "evt_959ebe3b66cc",
+      "type": "lead_lag",
+      "timestamp": "2026-07-17T22:39:54.459848+00:00",
+      "claim_id": "housing-crisis_x_3b9aa674_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.74,
+      "summary": "X Platform leads castanet by ~1258h in \"Toronto\"",
+      "detail": {
+        "source_platform": "x",
+        "target_platform": "castanet",
+        "lag_hours": 1258.0,
+        "cluster_id": "clu_housing-crisis_000"
+      }
+    },
+    {
+      "id": "evt_e6080c41dd12",
+      "type": "lead_lag",
+      "timestamp": "2026-08-20T09:39:54.459848+00:00",
+      "claim_id": "housing-crisis_bluesky_668ad0af_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.9,
+      "summary": "YouTube (Influencer Framing) leads Bluesky by ~455h in \"Mortgages\"",
+      "detail": {
+        "source_platform": "youtube",
+        "target_platform": "bluesky",
+        "lag_hours": 456.0,
+        "cluster_id": "clu_housing-crisis_003"
+      }
+    },
+    {
+      "id": "evt_bedf751bb116",
+      "type": "contestation_emergence",
+      "timestamp": "2026-09-08T05:39:54.459848+00:00",
+      "claim_id": "housing-crisis_bluesky_fb0237cf_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.78,
+      "summary": "Active contestation in \"Institutional Investors\" — 6 pro vs 10 anti",
+      "detail": {
+        "cluster_id": "clu_housing-crisis_004",
+        "pro_count": 6,
+        "anti_count": 10,
+        "balance": 0.6
+      }
+    },
+    {
+      "id": "evt_03bc37a834be",
+      "type": "contestation_emergence",
+      "timestamp": "2026-09-08T05:39:54.459848+00:00",
+      "claim_id": "housing-crisis_bluesky_046e616f_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.79,
+      "summary": "Active contestation in \"Homelessness\" — 14 pro vs 9 anti",
+      "detail": {
+        "cluster_id": "clu_housing-crisis_006",
+        "pro_count": 14,
+        "anti_count": 9,
+        "balance": 0.64
+      }
+    },
+    {
+      "id": "evt_f88208602443",
+      "type": "momentum_spike",
+      "timestamp": "2026-09-08T06:39:54.459848+00:00",
+      "claim_id": "housing-crisis_youtube_74158d9c_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.57,
+      "summary": "Rapid attention surge in \"Stock Market\" (18 claims)",
+      "detail": {
+        "cluster_id": "clu_housing-crisis_031",
+        "avg_momentum": 0.633,
+        "member_count": 18
       }
     },
     {
       "id": "evt_9f23ec7ab43a",
       "type": "momentum_spike",
-      "timestamp": "2026-05-27T06:44:24.356992+00:00",
-      "claim_id": "housing-crisis_bluesky_1a9c7be7_0",
+      "timestamp": "2026-09-08T06:39:54.459848+00:00",
+      "claim_id": "housing-crisis_euro_weekly_news_spain_afe111dd_0",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.53,
-      "summary": "Rapid attention surge in \"Doug Ford\" (2 claims)",
+      "confidence": 0.52,
+      "summary": "Rapid attention surge in \"Airbnb\" (17 claims)",
       "detail": {
-        "cluster_id": "clu_housing-crisis_049",
-        "avg_momentum": 0.593,
-        "member_count": 2
+        "cluster_id": "clu_housing-crisis_025",
+        "avg_momentum": 0.578,
+        "member_count": 17
+      }
+    },
+    {
+      "id": "evt_3edc9972c70c",
+      "type": "momentum_spike",
+      "timestamp": "2026-09-08T06:39:54.459848+00:00",
+      "claim_id": "housing-crisis_bluesky_fa5c5dfd_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.5,
+      "summary": "Rapid attention surge in \"Squatting\" (11 claims)",
+      "detail": {
+        "cluster_id": "clu_housing-crisis_008",
+        "avg_momentum": 0.558,
+        "member_count": 11
+      }
+    },
+    {
+      "id": "evt_cc8157087c40",
+      "type": "momentum_spike",
+      "timestamp": "2026-09-08T06:39:54.459848+00:00",
+      "claim_id": "housing-crisis_bluesky_fb0237cf_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.5,
+      "summary": "Rapid attention surge in \"Institutional Investors\" (18 claims)",
+      "detail": {
+        "cluster_id": "clu_housing-crisis_004",
+        "avg_momentum": 0.556,
+        "member_count": 18
       }
     },
     {
@@ -389,147 +619,7 @@
       "summary": "Gold Investment : सोन्यात गुंतवणूक करताना शुद्धता कशी ओळखावी ? पहा सविस्तर मार्गदर्शक माहिती",
       "detail": "Reported by loksatta.com. Tone: +0.0.",
       "source": "gdelt"
-    },
-    {
-      "id": "gdelt_74fa8d05f4c1",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:64:50Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Bondi struggled to prosecute Trump foes . But will a new attorney general make a difference ? ",
-      "detail": "Reported by smdailyjournal.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_7f15b1d7201d",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:63:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "  À la Sambrienne , la mauvaise gestion nest pas lexception , cest la règle : la ministre Neven dresse un constat accablant et contacte le parquet",
-      "detail": "Reported by dhnet.be. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_4e704fdef430",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:63:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Kansas energy program left in limbo when Trump administration pulled grant",
-      "detail": "Reported by hppr.org. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_3efc73ea2741",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:63:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Trump vol augmentar un 40 % la despesa militar dels EUA en plena guerra contra lIran",
-      "detail": "Reported by ara.cat. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_b6f6d8d2ae5a",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:63:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Iran - Krieg im Liveticker : +++ 18 : 12 Israel greift  Terror - Infrastruktur  in Libanons Hauptstadt Beirut an +++",
-      "detail": "Reported by n-tv.de. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_604afabd54b4",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:63:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Lebanon displaced Shiites face hostility as airstrikes fuel fear",
-      "detail": "Reported by sandiegouniontribune.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_88045a0cf72b",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:63:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Asked on Reddit : How much is too much to pay for rent ? ",
-      "detail": "Reported by theoaklandpress.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_59ecb5554408",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:63:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "İstanbulun dönüşümü için yeni destek paketi",
-      "detail": "Reported by aa.com.tr. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_118c6fdbdb9c",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:63:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Thủ tướng Chính phủ yêu cầu tăng cường , nâng cao hiệu lực , hiệu quả , trách nhiệm trong công tác đấu thầu",
-      "detail": "Reported by baomoi.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_21089742adb5",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:63:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Opinie | We leven in een gelukkig land met steeds ongelukkigere jongeren",
-      "detail": "Reported by nrc.nl. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_48857c040027",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:63:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Good Morning , News ! US Fighter Jet Downed , AG Pam Bondi Out , NASA Moonshot , Measles in PDX , New County Homelessness Director",
-      "detail": "Reported by portlandmercury.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_ce451517013d",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:63:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Thanh Phú Centre Point : Tâm điểm đầu tư và an cư tại thị trường bất động sản Bến Tre",
-      "detail": "Reported by vietbao.vn. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_33475ad5d7c4",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:63:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "The Farmer Exchange Online Farmland Values Projected Up , Crop Margins Down",
-      "detail": "Reported by farmers-exchange.net. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_509073cc5867",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:63:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Bondi struggled to prosecute Trump foes . But will a new attorney general make a difference ? ",
-      "detail": "Reported by thehour.com. Tone: +0.0.",
-      "source": "gdelt"
     }
   ],
-  "total_count": 102
+  "total_count": 116
 }

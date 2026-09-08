@@ -9,7 +9,7 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "crypto-digital-money_youtube_c0b6736d_0",
-    "cluster_id": "clu_crypto-digital-money_043",
+    "cluster_id": "clu_crypto-digital-money_016",
     "concept_id": "concept_crypto-digital-money_002",
     "first_seen_platform": "youtube",
     "first_seen_timestamp": "2026-05-06T05:43:50Z",
@@ -35,48 +35,48 @@
       0.82
     ],
     "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 1,
-    "friction": 0.3333,
-    "friction_quadrant": "unopposed_advance"
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 10,
+    "friction": 0.6129,
+    "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.303,
+    "value": 0.2866,
     "confidence_interval": [
-      0.1757,
-      0.4303
+      0.1581,
+      0.4151
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.303
+      0.2866
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.3333,
+    "value": 0.6129,
     "confidence_interval": [
-      0.2083,
-      0.4583
+      0.5089,
+      0.7169
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3333
+      0.6129
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0.5,
     "confidence_interval": [
-      0,
-      0.1962
+      0.3875,
+      0.6125
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0.5
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9748,
+    "value": 0.991,
     "confidence_interval": [
-      0.8979,
+      0.9153,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9748
+      0.991
     ],
     "source_distribution": "production"
   },
@@ -120,12 +120,24 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
+    "first_platform": "YouTube (Influencer Framing)",
     "first_timestamp": "2026-05-06T05:43:50Z",
     "lead_lag": [
       {
-        "platform": "YouTube (Influencer Framing)",
-        "lag_hours": 0.1
+        "platform": "Bluesky",
+        "lag_hours": 1846.6
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 1891.3
+      },
+      {
+        "platform": "Bloomberg Politics",
+        "lag_hours": 2424.7
+      },
+      {
+        "platform": "Common Dreams",
+        "lag_hours": 2487.1
       }
     ]
   },
@@ -133,18 +145,39 @@
     "concept_id": "concept_crypto-digital-money_002",
     "hops": [
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-05-06T05:37:27.913000+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-01-14T21:30:08+00:00",
         "claim_id": "crypto-digital-money_youtube_c0b6736d_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2026-05-06T05:43:50+00:00",
+        "platform": "Bluesky",
+        "timestamp": "2026-04-01T20:04:57.016000+00:00",
+        "claim_id": "crypto-digital-money_youtube_c0b6736d_0",
+        "fidelity_to_origin": 0.4803,
+        "fidelity_to_previous": 0.4803
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-03T16:45:20+00:00",
+        "claim_id": "crypto-digital-money_youtube_c0b6736d_0",
+        "fidelity_to_origin": 0.4677,
+        "fidelity_to_previous": 0.9738
+      },
+      {
+        "platform": "Bloomberg Politics",
+        "timestamp": "2026-04-25T22:09:24+00:00",
+        "claim_id": "crypto-digital-money_youtube_c0b6736d_0",
+        "fidelity_to_origin": 0.3176,
+        "fidelity_to_previous": 0.6791
+      },
+      {
+        "platform": "Common Dreams",
+        "timestamp": "2026-04-28T12:33:58+00:00",
         "claim_id": "crypto-digital-money_youtube_c0b6736d_0",
         "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
+        "fidelity_to_previous": 0.9446
       }
     ],
     "observation_boundary": null
@@ -179,28 +212,49 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "crypto-digital-money_youtube_c0b6736d_1",
-      "similarity": 0.6242,
-      "text": "The Trump family's cryptocurrency venture is likely to fail."
+      "claim_id": "crypto-digital-money_bluesky_8c3aa479_0",
+      "similarity": 0.7403,
+      "text": "Donald Trump and his family profited significantly from cryptocurrency ventures during his time in office."
     },
     {
-      "claim_id": "crypto-digital-money_bluesky_c625df53_0",
-      "similarity": 0.5966,
-      "text": "The Trump administration was supportive of cryptocurrency and related ventures."
+      "claim_id": "crypto-digital-money_bluesky_fea881fe_1",
+      "similarity": 0.6785,
+      "text": "The Trump family profits by promoting cryptocurrency schemes."
+    },
+    {
+      "claim_id": "crypto-digital-money_bluesky_f64a48f9_1",
+      "similarity": 0.6442,
+      "text": "Donald Trump aims to establish the United States as the world's leading cryptocurrency hub."
+    },
+    {
+      "claim_id": "crypto-digital-money_x_00c3c776_0",
+      "similarity": 0.6437,
+      "text": "Numerous officials in the Trump administration held or invested in cryptocurrency and blockchain companies."
+    },
+    {
+      "claim_id": "crypto-digital-money_bluesky_fea881fe_0",
+      "similarity": 0.6289,
+      "text": "Donald Trump opposes cryptocurrency regulation."
     }
   ],
   "example_content": [
     {
-      "text": "The Trump administration was supportive of cryptocurrency and related ventures.",
+      "text": "Donald Trump and his family profited significantly from cryptocurrency ventures during his time in office.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The Trump family's cryptocurrency venture is likely to fail.",
-      "platform": "YouTube (Influencer Framing)",
-      "confidence": 0.7,
-      "is_influencer_framing": true
+      "text": "The Trump family is rapidly accumulating wealth through various ventures.",
+      "platform": "Bluesky",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Donald Trump opposes cryptocurrency regulation.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
     }
   ]
 }

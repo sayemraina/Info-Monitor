@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "inflation-cost-of-living_x_e764dd35_0",
-    "cluster_id": "clu_inflation-cost-of-living_007",
-    "concept_id": "concept_inflation-cost-of-living_003",
+    "cluster_id": "clu_inflation-cost-of-living_067",
+    "concept_id": "concept_inflation-cost-of-living_002",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-05T05:41:19.000Z",
     "source_document_id": "x_2040666070629916848",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 15,
-    "friction": 0.3214,
-    "friction_quadrant": "unopposed_advance"
+    "persistence_windows": 10,
+    "friction": 0.4516,
+    "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.7336,
+    "value": 0.3283,
     "confidence_interval": [
-      0.6386,
-      0.8286
+      0.2029,
+      0.4537
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.7336
+      0.3283
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.3214,
+    "value": 0.4516,
     "confidence_interval": [
-      0.1955,
-      0.4473
+      0.3355,
+      0.5677
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3214
+      0.4516
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.75,
+    "value": 0.5,
     "confidence_interval": [
-      0.6562,
-      0.8438
+      0.3875,
+      0.6125
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.75
+      0.5
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9899,
+    "value": 0.9867,
     "confidence_interval": [
-      0.9141,
+      0.9107,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9899
+      0.9867
     ],
     "source_distribution": "production"
   },
@@ -120,75 +120,53 @@
     ]
   },
   "provenance": {
-    "first_platform": "YouTube (Influencer Framing)",
+    "first_platform": "Bluesky",
     "first_timestamp": "2026-04-05T05:41:19.000Z",
     "lead_lag": [
       {
-        "platform": "Bluesky",
-        "lag_hours": 7936.0
-      },
-      {
-        "platform": "Star Gazette",
-        "lag_hours": 7941.0
-      },
-      {
-        "platform": "San Diego Union Tribune",
-        "lag_hours": 7941.7
-      },
-      {
-        "platform": "Daily Mail Online",
-        "lag_hours": 7942.0
-      },
-      {
         "platform": "X Platform",
-        "lag_hours": 7976.8
+        "lag_hours": 38.3
+      },
+      {
+        "platform": "Cato",
+        "lag_hours": 287.0
+      },
+      {
+        "platform": "Chek",
+        "lag_hours": 580.1
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_inflation-cost-of-living_003",
+    "concept_id": "concept_inflation-cost-of-living_002",
     "hops": [
       {
-        "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2025-05-07T19:05:35+00:00",
+        "platform": "Bluesky",
+        "timestamp": "2026-04-03T15:25:06.133000+00:00",
         "claim_id": "inflation-cost-of-living_x_e764dd35_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-03T11:06:13.791000+00:00",
-        "claim_id": "inflation-cost-of-living_x_e764dd35_0",
-        "fidelity_to_origin": 0.3036,
-        "fidelity_to_previous": 0.3036
-      },
-      {
-        "platform": "Star Gazette",
-        "timestamp": "2026-04-03T16:03:52+00:00",
-        "claim_id": "inflation-cost-of-living_x_e764dd35_0",
-        "fidelity_to_origin": 0.3031,
-        "fidelity_to_previous": 0.9984
-      },
-      {
-        "platform": "San Diego Union Tribune",
-        "timestamp": "2026-04-03T16:44:42+00:00",
-        "claim_id": "inflation-cost-of-living_x_e764dd35_0",
-        "fidelity_to_origin": 0.3031,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Daily Mail Online",
-        "timestamp": "2026-04-03T17:05:04+00:00",
-        "claim_id": "inflation-cost-of-living_x_e764dd35_0",
-        "fidelity_to_origin": 0.3031,
-        "fidelity_to_previous": 1.0
-      },
-      {
         "platform": "X Platform",
-        "timestamp": "2026-04-05T03:55:37+00:00",
+        "timestamp": "2026-04-05T05:41:19+00:00",
+        "claim_id": "inflation-cost-of-living_x_e764dd35_0",
+        "fidelity_to_origin": 0.9538,
+        "fidelity_to_previous": 0.9538
+      },
+      {
+        "platform": "Cato",
+        "timestamp": "2026-04-15T14:24:32+00:00",
+        "claim_id": "inflation-cost-of-living_x_e764dd35_0",
+        "fidelity_to_origin": 0.6537,
+        "fidelity_to_previous": 0.6854
+      },
+      {
+        "platform": "Chek",
+        "timestamp": "2026-04-27T19:30:00+00:00",
         "claim_id": "inflation-cost-of-living_x_e764dd35_0",
         "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9898
+        "fidelity_to_previous": 0.4589
       }
     ],
     "observation_boundary": null
@@ -228,43 +206,43 @@
       "text": "Government policies over the last two years have addressed the cost of living."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_78d4cecd_0",
-      "similarity": 0.7132,
-      "text": "Healthcare and affordable cost of living are more desirable than the current economic situation."
+      "claim_id": "inflation-cost-of-living_chek_075a1c87_0",
+      "similarity": 0.7495,
+      "text": "Canadians believe the government has not met expectations regarding affordability and cost of living."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_f1068a76_0",
-      "similarity": 0.6414,
-      "text": "Right-wing actors exploit cost of living crisis data to create money-making opportunities."
+      "claim_id": "inflation-cost-of-living_x_dbc619f4_0",
+      "similarity": 0.712,
+      "text": "The government should take action to address the cost of living crisis."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_00b522c6_0",
-      "similarity": 0.6076,
-      "text": "The perception that recurring car payments are an unavoidable cost of living is misguided."
+      "claim_id": "inflation-cost-of-living_bluesky_48854993_0",
+      "similarity": 0.712,
+      "text": "The cost of living crisis requires government intervention."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_fae14560_0",
-      "similarity": 0.5625,
-      "text": "The cost of living has decreased."
+      "claim_id": "inflation-cost-of-living_bluesky_6feebb99_0",
+      "similarity": 0.6614,
+      "text": "Government assistance programs mitigate the impact of inflation on vulnerable populations."
     }
   ],
   "example_content": [
     {
-      "text": "Workers' offered pay raise is insufficient to keep pace with inflation.",
+      "text": "Government policies over the last two years have addressed the cost of living.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Right-wing actors exploit cost of living crisis data to create money-making opportunities.",
+      "text": "Government assistance programs mitigate the impact of inflation on vulnerable populations.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The current Premier of Manitoba and the Prime Minister of Canada are capable of handling the cost of living issues.",
       "platform": "Bluesky",
       "confidence": 0.8,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "The cost of living has decreased.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

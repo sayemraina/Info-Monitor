@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "housing-crisis_business_insider_0de514d4_0",
-    "cluster_id": "clu_housing-crisis_000",
-    "concept_id": "concept_housing-crisis_000",
+    "cluster_id": "clu_housing-crisis_005",
+    "concept_id": "concept_housing-crisis_002",
     "first_seen_platform": "business_insider",
     "first_seen_timestamp": "2026-04-03T13:14:01Z",
     "source_document_id": "97fd2801a416fbc3",
@@ -38,32 +38,32 @@
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
     "persistence_windows": 15,
-    "friction": 0.125,
+    "friction": 0.1227,
     "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 0.6124,
+    "value": 1,
     "confidence_interval": [
-      0.5083,
-      0.7165
+      0.925,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.6124
+      1
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.125,
+    "value": 0.1227,
     "confidence_interval": [
       0,
-      0.2656
+      0.2635
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.125
+      0.1227
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9792,
+    "value": 0.9803,
     "confidence_interval": [
-      0.9026,
+      0.9038,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9792
+      0.9803
     ],
     "source_distribution": "production"
   },
@@ -124,6 +124,10 @@
     "first_timestamp": "2026-04-03T13:14:01Z",
     "lead_lag": [
       {
+        "platform": "X Platform",
+        "lag_hours": 1612.5
+      },
+      {
         "platform": "Bluesky",
         "lag_hours": 1613.1
       },
@@ -132,13 +136,21 @@
         "lag_hours": 1630.2
       },
       {
-        "platform": "X Platform",
-        "lag_hours": 1630.3
+        "platform": "The Motley Fool",
+        "lag_hours": 2134.2
+      },
+      {
+        "platform": "Bbc",
+        "lag_hours": 2189.9
+      },
+      {
+        "platform": "Yahoo",
+        "lag_hours": 2189.9
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_housing-crisis_000",
+    "concept_id": "concept_housing-crisis_002",
     "hops": [
       {
         "platform": "YouTube (Influencer Framing)",
@@ -148,25 +160,39 @@
         "fidelity_to_previous": 1.0
       },
       {
+        "platform": "X Platform",
+        "timestamp": "2026-04-02T19:31:09+00:00",
+        "claim_id": "housing-crisis_business_insider_0de514d4_0",
+        "fidelity_to_origin": 0.5002,
+        "fidelity_to_previous": 0.5002
+      },
+      {
         "platform": "Bluesky",
         "timestamp": "2026-04-02T20:08:41.393000+00:00",
         "claim_id": "housing-crisis_business_insider_0de514d4_0",
-        "fidelity_to_origin": 0.3074,
-        "fidelity_to_previous": 0.3074
+        "fidelity_to_origin": 0.5,
+        "fidelity_to_previous": 0.9996
       },
       {
         "platform": "Business Insider",
         "timestamp": "2026-04-03T13:14:01+00:00",
         "claim_id": "housing-crisis_business_insider_0de514d4_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9759
+        "fidelity_to_origin": 0.4948,
+        "fidelity_to_previous": 0.9896
       },
       {
-        "platform": "X Platform",
-        "timestamp": "2026-04-03T13:20:11+00:00",
+        "platform": "The Motley Fool",
+        "timestamp": "2026-04-24T13:14:37+00:00",
         "claim_id": "housing-crisis_business_insider_0de514d4_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 1.0
+        "fidelity_to_origin": 0.3385,
+        "fidelity_to_previous": 0.6841
+      },
+      {
+        "platform": "Bbc",
+        "timestamp": "2026-04-26T20:56:20+00:00",
+        "claim_id": "housing-crisis_business_insider_0de514d4_0",
+        "fidelity_to_origin": 0.3213,
+        "fidelity_to_previous": 0.9492
       }
     ],
     "observation_boundary": null
@@ -201,19 +227,9 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "housing-crisis_bluesky_725b8653_0",
-      "similarity": 0.7018,
-      "text": "Rising mortgage rates are detrimental to housing affordability."
-    },
-    {
       "claim_id": "housing-crisis_bluesky_1babb658_0",
       "similarity": 0.6728,
       "text": "A proposal to cut mortgage interest rates and allow periods of zero mortgage payments is unclear and potentially unsustainable."
-    },
-    {
-      "claim_id": "housing-crisis_bluesky_d278a322_0",
-      "similarity": 0.6567,
-      "text": "US mortgage rates are increasing due to geopolitical tensions and rising oil prices."
     },
     {
       "claim_id": "housing-crisis_bluesky_fb0237cf_1",
@@ -224,6 +240,16 @@
       "claim_id": "housing-crisis_bluesky_daa401e7_0",
       "similarity": 0.6224,
       "text": "Fixing mortgage rates at inflation plus 1% is a bad plan."
+    },
+    {
+      "claim_id": "housing-crisis_bluesky_81641d60_0",
+      "similarity": 0.6024,
+      "text": "Mortgage rates are holding steady at around 6.4%."
+    },
+    {
+      "claim_id": "housing-crisis_bluesky_37df5d1b_0",
+      "similarity": 0.5452,
+      "text": "The conflict in Iran is negatively impacting the UK mortgage market."
     }
   ],
   "example_content": [
@@ -240,9 +266,9 @@
       "is_influencer_framing": false
     },
     {
-      "text": "A proposal to cut mortgage interest rates and allow periods of zero mortgage payments is unclear and potentially unsustainable.",
+      "text": "The conflict in Iran is negatively impacting the UK mortgage market.",
       "platform": "Bluesky",
-      "confidence": 0.8,
+      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

@@ -35,48 +35,48 @@
       0.5258
     ],
     "source_distribution": "production",
-    "source_diversity": 0.25,
-    "bridge_ratio": 0.25,
-    "persistence_windows": 1,
-    "friction": 0.3333,
-    "friction_quadrant": "unopposed_advance"
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 15,
+    "friction": 0.3906,
+    "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.318,
+    "value": 0.6776,
     "confidence_interval": [
-      0.1919,
-      0.4441
+      0.5784,
+      0.7768
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.318
+      0.6776
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.3333,
+    "value": 0.3906,
     "confidence_interval": [
-      0.2083,
-      0.4583
+      0.2699,
+      0.5113
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3333
+      0.3906
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0.75,
     "confidence_interval": [
-      0,
-      0.1962
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9778,
+    "value": 0.9238,
     "confidence_interval": [
-      0.9011,
+      0.8431,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9778
+      0.9238
     ],
     "source_distribution": "production"
   },
@@ -120,22 +120,82 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
+    "first_platform": "YouTube (Influencer Framing)",
     "first_timestamp": "2026-05-27T02:46:10.023Z",
-    "lead_lag": []
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 3010.0
+      },
+      {
+        "platform": "Renewable Energy World",
+        "lag_hours": 3938.7
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 3966.2
+      },
+      {
+        "platform": "Business Insider",
+        "lag_hours": 4461.0
+      },
+      {
+        "platform": "Coinpaper",
+        "lag_hours": 4461.2
+      },
+      {
+        "platform": "Tekedia",
+        "lag_hours": 4486.9
+      }
+    ]
   },
   "supply_chain": {
     "concept_id": "concept_ai-bubble_001",
     "hops": [
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-05-27T01:24:38.394000+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2025-10-21T12:38:46+00:00",
         "claim_id": "ai-bubble_bluesky_0ecbb0d7_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-02-23T22:39:38.119000+00:00",
+        "claim_id": "ai-bubble_bluesky_0ecbb0d7_0",
+        "fidelity_to_origin": 0.5385,
+        "fidelity_to_previous": 0.5385
+      },
+      {
+        "platform": "Renewable Energy World",
+        "timestamp": "2026-04-03T15:19:43+00:00",
+        "claim_id": "ai-bubble_bluesky_0ecbb0d7_0",
+        "fidelity_to_origin": 0.3961,
+        "fidelity_to_previous": 0.7356
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-04T18:51:03+00:00",
+        "claim_id": "ai-bubble_bluesky_0ecbb0d7_0",
+        "fidelity_to_origin": 0.3919,
+        "fidelity_to_previous": 0.9894
+      },
+      {
+        "platform": "Business Insider",
+        "timestamp": "2026-04-25T09:40:02+00:00",
+        "claim_id": "ai-bubble_bluesky_0ecbb0d7_0",
+        "fidelity_to_origin": 0.3161,
+        "fidelity_to_previous": 0.8066
+      },
+      {
+        "platform": "Coinpaper",
+        "timestamp": "2026-04-25T09:48:49+00:00",
+        "claim_id": "ai-bubble_bluesky_0ecbb0d7_0",
+        "fidelity_to_origin": 0.316,
+        "fidelity_to_previous": 0.9997
       }
     ],
-    "observation_boundary": "No public antecedent detected"
+    "observation_boundary": null
   },
   "coordination": {
     "burstiness": {
@@ -167,25 +227,46 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-bubble_bluesky_5b8c422d_0",
-      "similarity": 0.9542,
-      "text": "The AI sector is currently in a bubble that is predicted to burst around 2026 or 2027."
+      "claim_id": "ai-bubble_bluesky_3ae42789_0",
+      "similarity": 0.9408,
+      "text": "The AI sector is experiencing a bubble that will eventually burst, negatively impacting the economy."
     },
     {
-      "claim_id": "ai-bubble_bluesky_e91e268a_0",
-      "similarity": 0.9458,
-      "text": "The AI sector is currently in a bubble that may burst."
+      "claim_id": "ai-bubble_bluesky_fbdddf4a_0",
+      "similarity": 0.9299,
+      "text": "The AI sector is experiencing a period of unsustainable growth that is about to end."
+    },
+    {
+      "claim_id": "ai-bubble_bluesky_9b487ccb_0",
+      "similarity": 0.8917,
+      "text": "The artificial intelligence sector is currently in a bubble."
+    },
+    {
+      "claim_id": "ai-bubble_bluesky_e2869f99_0",
+      "similarity": 0.7937,
+      "text": "The AI sector is currently experiencing a bubble in asset valuation."
+    },
+    {
+      "claim_id": "ai-bubble_bluesky_088ab96f_0",
+      "similarity": 0.7694,
+      "text": "The AI sector is currently overvalued."
     }
   ],
   "example_content": [
     {
-      "text": "The AI sector is currently in a bubble that is predicted to burst around 2026 or 2027.",
+      "text": "The AI sector is experiencing a bubble that will eventually burst, negatively impacting the economy.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The AI sector is currently in a bubble that may burst.",
+      "text": "The AI sector is artificially propping up the economy and preventing a recession.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The AI sector is experiencing a period of unsustainable growth that is about to end.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

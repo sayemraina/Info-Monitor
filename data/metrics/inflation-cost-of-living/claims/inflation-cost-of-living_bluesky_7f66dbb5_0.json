@@ -35,48 +35,48 @@
       0.54
     ],
     "source_distribution": "production",
-    "source_diversity": 0.25,
-    "bridge_ratio": 0.25,
-    "persistence_windows": 2,
-    "friction": 0.8571,
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 15,
+    "friction": 0.8354,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.396,
+    "value": 0.8367,
     "confidence_interval": [
-      0.2757,
-      0.5163
+      0.7495,
+      0.9239
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.396
+      0.8367
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.8571,
+    "value": 0.8354,
     "confidence_interval": [
-      0.7714,
-      0.9428
+      0.7481,
+      0.9227
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.8571
+      0.8354
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.1,
+    "value": 0.75,
     "confidence_interval": [
-      0,
-      0.2425
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9661,
+    "value": 0.9842,
     "confidence_interval": [
-      0.8886,
+      0.908,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9661
+      0.9842
     ],
     "source_distribution": "production"
   },
@@ -122,20 +122,80 @@
   "provenance": {
     "first_platform": "Bluesky",
     "first_timestamp": "2026-05-27T02:20:25.538Z",
-    "lead_lag": []
+    "lead_lag": [
+      {
+        "platform": "X Platform",
+        "lag_hours": 47.1
+      },
+      {
+        "platform": "Daily Wire",
+        "lag_hours": 536.8
+      },
+      {
+        "platform": "Thejournal.Ie",
+        "lag_hours": 589.2
+      },
+      {
+        "platform": "The Star",
+        "lag_hours": 589.2
+      },
+      {
+        "platform": "The Atlantic",
+        "lag_hours": 605.8
+      },
+      {
+        "platform": "Aol.Com",
+        "lag_hours": 636.7
+      }
+    ]
   },
   "supply_chain": {
     "concept_id": "concept_inflation-cost-of-living_000",
     "hops": [
       {
         "platform": "Bluesky",
-        "timestamp": "2026-05-26T22:47:16.498000+00:00",
+        "timestamp": "2026-04-03T06:10:15.684000+00:00",
         "claim_id": "inflation-cost-of-living_bluesky_7f66dbb5_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-05T05:17:31+00:00",
+        "claim_id": "inflation-cost-of-living_bluesky_7f66dbb5_0",
+        "fidelity_to_origin": 0.9585,
+        "fidelity_to_previous": 0.9585
+      },
+      {
+        "platform": "Daily Wire",
+        "timestamp": "2026-04-25T15:00:12+00:00",
+        "claim_id": "inflation-cost-of-living_bluesky_7f66dbb5_0",
+        "fidelity_to_origin": 0.527,
+        "fidelity_to_previous": 0.5498
+      },
+      {
+        "platform": "Thejournal.Ie",
+        "timestamp": "2026-04-27T19:21:43+00:00",
+        "claim_id": "inflation-cost-of-living_bluesky_7f66dbb5_0",
+        "fidelity_to_origin": 0.4808,
+        "fidelity_to_previous": 0.9123
+      },
+      {
+        "platform": "The Star",
+        "timestamp": "2026-04-27T19:23:34+00:00",
+        "claim_id": "inflation-cost-of-living_bluesky_7f66dbb5_0",
+        "fidelity_to_origin": 0.4808,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "The Atlantic",
+        "timestamp": "2026-04-28T12:00:00+00:00",
+        "claim_id": "inflation-cost-of-living_bluesky_7f66dbb5_0",
+        "fidelity_to_origin": 0.4662,
+        "fidelity_to_previous": 0.9696
       }
     ],
-    "observation_boundary": "No public antecedent detected"
+    "observation_boundary": null
   },
   "coordination": {
     "burstiness": {
@@ -167,46 +227,46 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "inflation-cost-of-living_bluesky_8543630f_1",
-      "similarity": 0.6198,
-      "text": "Politicians are controlled by the wealthy."
+      "claim_id": "inflation-cost-of-living_x_664833b4_1",
+      "similarity": 0.6312,
+      "text": "Current politicians are not adequately addressing the serious issues facing the country."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_886c0d67_0",
-      "similarity": 0.5033,
-      "text": "Politicians have broken promises regarding cost of living, healthcare, and war."
+      "claim_id": "inflation-cost-of-living_x_ee9ec9e3_1",
+      "similarity": 0.5792,
+      "text": "Members of Congress receive excessive benefits, such as free healthcare and fuel."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_e3f0a167_1",
-      "similarity": 0.4917,
-      "text": "Billionaires are making deals with a corrupt government to the detriment of wages and consumer prices."
+      "claim_id": "inflation-cost-of-living_bluesky_b94991e9_0",
+      "similarity": 0.5571,
+      "text": "Politicians are out of touch with the economic struggles of ordinary citizens."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_e491a0fc_2",
-      "similarity": 0.334,
-      "text": "People are distracted by entertainment and gambling instead of addressing economic problems."
+      "claim_id": "inflation-cost-of-living_bluesky_2fa12380_0",
+      "similarity": 0.555,
+      "text": "Politicians are out of touch with the economic struggles of ordinary citizens."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_eb08c344_0",
-      "similarity": 0.2943,
-      "text": "MAGA voters prioritize candidates who express discriminatory rhetoric over effective policy."
+      "claim_id": "inflation-cost-of-living_x_ee9ec9e3_0",
+      "similarity": 0.4871,
+      "text": "Members of Congress are corrupt and enrich themselves through illegal means."
     }
   ],
   "example_content": [
     {
-      "text": "Right-wing voters prioritize hatred of marginalized groups over other concerns.",
+      "text": "Politicians are out of touch with the economic struggles of ordinary citizens.",
       "platform": "Bluesky",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "is_influencer_framing": false
     },
     {
-      "text": "MAGA voters prioritize candidates who express discriminatory rhetoric over effective policy.",
+      "text": "Current government leadership is incompetent and detached from the needs of ordinary citizens.",
       "platform": "Bluesky",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "is_influencer_framing": false
     },
     {
-      "text": "Politicians have broken promises regarding cost of living, healthcare, and war.",
+      "text": "Politicians are out of touch with the economic struggles of ordinary citizens.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

@@ -9,7 +9,7 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "israel-palestine_bluesky_a43df008_1",
-    "cluster_id": "clu_israel-palestine_016",
+    "cluster_id": "clu_israel-palestine_014",
     "concept_id": "concept_israel-palestine_001",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-27T16:14:31.276Z",
@@ -35,48 +35,48 @@
       0.645
     ],
     "source_distribution": "production",
-    "source_diversity": 0.25,
-    "bridge_ratio": 0.25,
-    "persistence_windows": 1,
-    "friction": 0.5,
-    "friction_quadrant": "contested_advance"
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 15,
+    "friction": 0.2595,
+    "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 0.3124,
+    "value": 1,
     "confidence_interval": [
-      0.1858,
-      0.439
+      0.925,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3124
+      1
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.5,
+    "value": 0.2595,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0.129,
+      0.39
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.5
+      0.2595
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0.75,
     "confidence_interval": [
-      0,
-      0.1962
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9412,
+    "value": 0.9731,
     "confidence_interval": [
-      0.8618,
+      0.8961,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9412
+      0.9731
     ],
     "source_distribution": "production"
   },
@@ -120,22 +120,82 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
+    "first_platform": "YouTube (Influencer Framing)",
     "first_timestamp": "2026-04-27T16:14:31.276Z",
-    "lead_lag": []
+    "lead_lag": [
+      {
+        "platform": "Cato",
+        "lag_hours": 310.4
+      },
+      {
+        "platform": "The Intercept",
+        "lag_hours": 385.7
+      },
+      {
+        "platform": "La Times",
+        "lag_hours": 457.9
+      },
+      {
+        "platform": "Vox",
+        "lag_hours": 514.3
+      },
+      {
+        "platform": "Jacobin",
+        "lag_hours": 525.3
+      },
+      {
+        "platform": "Salon",
+        "lag_hours": 546.7
+      }
+    ]
   },
   "supply_chain": {
     "concept_id": "concept_israel-palestine_001",
     "hops": [
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-27T16:14:31.276000+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-03-11T15:50:08+00:00",
         "claim_id": "israel-palestine_bluesky_a43df008_1",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Cato",
+        "timestamp": "2026-03-24T14:12:49+00:00",
+        "claim_id": "israel-palestine_bluesky_a43df008_1",
+        "fidelity_to_origin": 0.8818,
+        "fidelity_to_previous": 0.8818
+      },
+      {
+        "platform": "The Intercept",
+        "timestamp": "2026-03-27T17:33:53+00:00",
+        "claim_id": "israel-palestine_bluesky_a43df008_1",
+        "fidelity_to_origin": 0.8532,
+        "fidelity_to_previous": 0.9676
+      },
+      {
+        "platform": "La Times",
+        "timestamp": "2026-03-30T17:42:56+00:00",
+        "claim_id": "israel-palestine_bluesky_a43df008_1",
+        "fidelity_to_origin": 0.8257,
+        "fidelity_to_previous": 0.9678
+      },
+      {
+        "platform": "Vox",
+        "timestamp": "2026-04-02T02:10:09+00:00",
+        "claim_id": "israel-palestine_bluesky_a43df008_1",
+        "fidelity_to_origin": 0.8042,
+        "fidelity_to_previous": 0.974
+      },
+      {
+        "platform": "Jacobin",
+        "timestamp": "2026-04-02T13:10:03+00:00",
+        "claim_id": "israel-palestine_bluesky_a43df008_1",
+        "fidelity_to_origin": 0.8,
+        "fidelity_to_previous": 0.9948
       }
     ],
-    "observation_boundary": "No public antecedent detected"
+    "observation_boundary": null
   },
   "coordination": {
     "burstiness": {
@@ -167,14 +227,46 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "israel-palestine_bluesky_46e0a566_1",
-      "similarity": 0.6897,
-      "text": "Israel is exerting significant influence on Trump, encouraging military action against Iran."
+      "claim_id": "israel-palestine_bluesky_80a5a799_0",
+      "similarity": 0.6579,
+      "text": "Iran is contributing to the escalation of the conflict by not allowing Trump to claim a victory."
+    },
+    {
+      "claim_id": "israel-palestine_bluesky_3a2b498e_0",
+      "similarity": 0.609,
+      "text": "Iran strategically positions itself within the pro-Palestine movement."
+    },
+    {
+      "claim_id": "israel-palestine_the_nation_3fdaf2fc_0",
+      "similarity": 0.5575,
+      "text": "Netanyahu's policy of initiating war against Iran is unwise and counterproductive."
+    },
+    {
+      "claim_id": "israel-palestine_bluesky_258c3876_0",
+      "similarity": 0.4924,
+      "text": "The US military conducted an airstrike that destroyed an Iranian bridge."
+    },
+    {
+      "claim_id": "israel-palestine_bluesky_258c3876_1",
+      "similarity": 0.478,
+      "text": "Donald Trump threatened to bomb Iran if ceasefire talks fail."
     }
   ],
   "example_content": [
     {
-      "text": "Israel is exerting significant influence on Trump, encouraging military action against Iran.",
+      "text": "Iran strategically positions itself within the pro-Palestine movement.",
+      "platform": "Bluesky",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Iran is contributing to the escalation of the conflict by not allowing Trump to claim a victory.",
+      "platform": "Bluesky",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The US military conducted an airstrike that destroyed an Iranian bridge.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

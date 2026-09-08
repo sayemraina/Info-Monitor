@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "inflation-cost-of-living_bluesky_36c69b3b_0",
-    "cluster_id": "clu_inflation-cost-of-living_023",
-    "concept_id": "concept_inflation-cost-of-living_006",
+    "cluster_id": "clu_inflation-cost-of-living_045",
+    "concept_id": "concept_inflation-cost-of-living_000",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-27T17:57:46.607Z",
     "source_document_id": "36c69b3bac8b5f76",
@@ -35,48 +35,48 @@
       0.4264
     ],
     "source_distribution": "production",
-    "source_diversity": 0.75,
-    "bridge_ratio": 0.75,
-    "persistence_windows": 5,
-    "friction": 0.9333,
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 15,
+    "friction": 0.8354,
     "friction_quadrant": "successful_suppression"
   },
   "salience": {
-    "value": 0.457,
+    "value": 0.8367,
     "confidence_interval": [
-      0.3413,
-      0.5727
+      0.7495,
+      0.9239
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.457
+      0.8367
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.9333,
+    "value": 0.8354,
     "confidence_interval": [
-      0.8533,
-      1
+      0.7481,
+      0.9227
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9333
+      0.8354
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.25,
+    "value": 0.75,
     "confidence_interval": [
-      0.1187,
-      0.3813
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.25
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9842,
     "confidence_interval": [
-      0.925,
+      0.908,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9842
     ],
     "source_distribution": "production"
   },
@@ -124,38 +124,75 @@
     "first_timestamp": "2026-04-27T17:57:46.607Z",
     "lead_lag": [
       {
+        "platform": "X Platform",
+        "lag_hours": 47.1
+      },
+      {
+        "platform": "Daily Wire",
+        "lag_hours": 536.8
+      },
+      {
         "platform": "Thejournal.Ie",
-        "lag_hours": 8.1
+        "lag_hours": 589.2
       },
       {
         "platform": "The Star",
-        "lag_hours": 8.1
+        "lag_hours": 589.2
+      },
+      {
+        "platform": "The Atlantic",
+        "lag_hours": 605.8
+      },
+      {
+        "platform": "Aol.Com",
+        "lag_hours": 636.7
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_inflation-cost-of-living_006",
+    "concept_id": "concept_inflation-cost-of-living_000",
     "hops": [
       {
         "platform": "Bluesky",
-        "timestamp": "2026-04-27T11:18:41.038000+00:00",
+        "timestamp": "2026-04-03T06:10:15.684000+00:00",
         "claim_id": "inflation-cost-of-living_bluesky_36c69b3b_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
+        "platform": "X Platform",
+        "timestamp": "2026-04-05T05:17:31+00:00",
+        "claim_id": "inflation-cost-of-living_bluesky_36c69b3b_0",
+        "fidelity_to_origin": 0.9585,
+        "fidelity_to_previous": 0.9585
+      },
+      {
+        "platform": "Daily Wire",
+        "timestamp": "2026-04-25T15:00:12+00:00",
+        "claim_id": "inflation-cost-of-living_bluesky_36c69b3b_0",
+        "fidelity_to_origin": 0.527,
+        "fidelity_to_previous": 0.5498
+      },
+      {
         "platform": "Thejournal.Ie",
         "timestamp": "2026-04-27T19:21:43+00:00",
         "claim_id": "inflation-cost-of-living_bluesky_36c69b3b_0",
-        "fidelity_to_origin": 0.3027,
-        "fidelity_to_previous": 0.3027
+        "fidelity_to_origin": 0.4808,
+        "fidelity_to_previous": 0.9123
       },
       {
         "platform": "The Star",
         "timestamp": "2026-04-27T19:23:34+00:00",
         "claim_id": "inflation-cost-of-living_bluesky_36c69b3b_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9911
+        "fidelity_to_origin": 0.4808,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "The Atlantic",
+        "timestamp": "2026-04-28T12:00:00+00:00",
+        "claim_id": "inflation-cost-of-living_bluesky_36c69b3b_0",
+        "fidelity_to_origin": 0.4662,
+        "fidelity_to_previous": 0.9696
       }
     ],
     "observation_boundary": null
@@ -190,46 +227,46 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "inflation-cost-of-living_bluesky_7aa25d89_0",
-      "similarity": 0.5337,
-      "text": "Politicians will exploit any situation, even unrelated ones, to justify their desired policies."
+      "claim_id": "inflation-cost-of-living_bluesky_b94991e9_0",
+      "similarity": 0.4094,
+      "text": "Politicians are out of touch with the economic struggles of ordinary citizens."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_c9f3954d_0",
-      "similarity": 0.4522,
-      "text": "Right-wing media misled voters about the implications of their votes."
+      "claim_id": "inflation-cost-of-living_x_664833b4_1",
+      "similarity": 0.396,
+      "text": "Current politicians are not adequately addressing the serious issues facing the country."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_aacc7b62_0",
-      "similarity": 0.4522,
-      "text": "Right-wing media misled voters about the likely outcomes of voting for MAGA politicians."
+      "claim_id": "inflation-cost-of-living_bluesky_2fa12380_0",
+      "similarity": 0.3922,
+      "text": "Politicians are out of touch with the economic struggles of ordinary citizens."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_decc2294_1",
-      "similarity": 0.4182,
-      "text": "The media is failing to hold lawmakers accountable for their actions."
+      "claim_id": "inflation-cost-of-living_bluesky_d75cfd99_0",
+      "similarity": 0.3734,
+      "text": "Current government leadership is incompetent and detached from the needs of ordinary citizens."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_76a52b52_1",
-      "similarity": 0.4097,
-      "text": "The current political administration is being protected despite numerous offenses."
+      "claim_id": "inflation-cost-of-living_bluesky_471596ef_0",
+      "similarity": 0.366,
+      "text": "Elected officials often fail to address the crises that initially propelled them into power."
     }
   ],
   "example_content": [
     {
-      "text": "Jaime Watt is attempting to deflect blame for a scandal.",
+      "text": "Politicians are out of touch with the economic struggles of ordinary citizens.",
       "platform": "Bluesky",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "is_influencer_framing": false
     },
     {
-      "text": "Government officials are incapable of addressing multiple issues simultaneously.",
+      "text": "Current government leadership is incompetent and detached from the needs of ordinary citizens.",
       "platform": "Bluesky",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "is_influencer_framing": false
     },
     {
-      "text": "Right-wing media misled voters about the implications of their votes.",
+      "text": "Politicians are out of touch with the economic struggles of ordinary citizens.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

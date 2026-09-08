@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "israel-palestine_youtube_406527a0_1",
-    "cluster_id": "clu_israel-palestine_007",
-    "concept_id": "concept_israel-palestine_004",
+    "cluster_id": "clu_israel-palestine_014",
+    "concept_id": "concept_israel-palestine_001",
     "first_seen_platform": "youtube",
     "first_seen_timestamp": "2026-04-02T20:10:49Z",
     "source_document_id": "yt_FBxSyj3KHas",
@@ -38,7 +38,7 @@
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
     "persistence_windows": 15,
-    "friction": 0.2946,
+    "friction": 0.2595,
     "friction_quadrant": "unopposed_advance"
   },
   "salience": {
@@ -55,15 +55,15 @@
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.2946,
+    "value": 0.2595,
     "confidence_interval": [
-      0.1667,
-      0.4225
+      0.129,
+      0.39
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2946
+      0.2595
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9921,
+    "value": 0.9731,
     "confidence_interval": [
-      0.9165,
+      0.8961,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9921
+      0.9731
     ],
     "source_distribution": "production"
   },
@@ -123,36 +123,36 @@
     "lead_lag": [
       {
         "platform": "Cato",
-        "lag_hours": 6677.2
+        "lag_hours": 310.4
       },
       {
         "platform": "The Intercept",
-        "lag_hours": 6752.5
+        "lag_hours": 385.7
       },
       {
         "platform": "La Times",
-        "lag_hours": 6824.7
+        "lag_hours": 457.9
       },
       {
         "platform": "Vox",
-        "lag_hours": 6881.1
+        "lag_hours": 514.3
       },
       {
         "platform": "Jacobin",
-        "lag_hours": 6892.1
+        "lag_hours": 525.3
       },
       {
         "platform": "Salon",
-        "lag_hours": 6913.5
+        "lag_hours": 546.7
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_israel-palestine_004",
+    "concept_id": "concept_israel-palestine_001",
     "hops": [
       {
         "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2025-06-19T09:01:35+00:00",
+        "timestamp": "2026-03-11T15:50:08+00:00",
         "claim_id": "israel-palestine_youtube_406527a0_1",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
@@ -161,36 +161,36 @@
         "platform": "Cato",
         "timestamp": "2026-03-24T14:12:49+00:00",
         "claim_id": "israel-palestine_youtube_406527a0_1",
-        "fidelity_to_origin": 0.3244,
-        "fidelity_to_previous": 0.3244
+        "fidelity_to_origin": 0.8818,
+        "fidelity_to_previous": 0.8818
       },
       {
         "platform": "The Intercept",
         "timestamp": "2026-03-27T17:33:53+00:00",
         "claim_id": "israel-palestine_youtube_406527a0_1",
-        "fidelity_to_origin": 0.3168,
-        "fidelity_to_previous": 0.9766
+        "fidelity_to_origin": 0.8532,
+        "fidelity_to_previous": 0.9676
       },
       {
         "platform": "La Times",
         "timestamp": "2026-03-30T17:42:56+00:00",
         "claim_id": "israel-palestine_youtube_406527a0_1",
-        "fidelity_to_origin": 0.3095,
-        "fidelity_to_previous": 0.977
+        "fidelity_to_origin": 0.8257,
+        "fidelity_to_previous": 0.9678
       },
       {
         "platform": "Vox",
         "timestamp": "2026-04-02T02:10:09+00:00",
         "claim_id": "israel-palestine_youtube_406527a0_1",
-        "fidelity_to_origin": 0.3037,
-        "fidelity_to_previous": 0.9813
+        "fidelity_to_origin": 0.8042,
+        "fidelity_to_previous": 0.974
       },
       {
         "platform": "Jacobin",
         "timestamp": "2026-04-02T13:10:03+00:00",
         "claim_id": "israel-palestine_youtube_406527a0_1",
-        "fidelity_to_origin": 0.3026,
-        "fidelity_to_previous": 0.9964
+        "fidelity_to_origin": 0.8,
+        "fidelity_to_previous": 0.9948
       }
     ],
     "observation_boundary": null
@@ -230,33 +230,27 @@
       "text": "Iran is contributing to the escalation of the conflict by not allowing Trump to claim a victory."
     },
     {
+      "claim_id": "israel-palestine_the_nation_3fdaf2fc_0",
+      "similarity": 0.6427,
+      "text": "Netanyahu's policy of initiating war against Iran is unwise and counterproductive."
+    },
+    {
       "claim_id": "israel-palestine_bluesky_3a2b498e_0",
       "similarity": 0.6262,
       "text": "Iran strategically positions itself within the pro-Palestine movement."
     },
     {
-      "claim_id": "israel-palestine_bluesky_8821f581_0",
-      "similarity": 0.6053,
-      "text": "The conflict in Iran is intentionally diverting attention from the ongoing events in Gaza."
+      "claim_id": "israel-palestine_vox_5208d958_1",
+      "similarity": 0.5007,
+      "text": "Iran may continue fighting even if the U.S. ceases bombing."
     },
     {
-      "claim_id": "israel-palestine_bluesky_27f8b7d1_1",
-      "similarity": 0.5872,
-      "text": "The Iranian regime has used proxy wars in Gaza, Lebanon, and Yemen to fight Israel, causing destruction in those countries."
-    },
-    {
-      "claim_id": "israel-palestine_bluesky_067289e9_1",
-      "similarity": 0.5839,
-      "text": "Israel initiated the conflict with Iran."
+      "claim_id": "israel-palestine_bluesky_258c3876_1",
+      "similarity": 0.4739,
+      "text": "Donald Trump threatened to bomb Iran if ceasefire talks fail."
     }
   ],
   "example_content": [
-    {
-      "text": "The 9/11 hijackers intentionally caused mass casualties to provoke a war.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
     {
       "text": "Iran strategically positions itself within the pro-Palestine movement.",
       "platform": "Bluesky",
@@ -264,7 +258,13 @@
       "is_influencer_framing": false
     },
     {
-      "text": "The Gaza conflict has significantly altered American perceptions of the potential conflict with Iran.",
+      "text": "Iran is contributing to the escalation of the conflict by not allowing Trump to claim a victory.",
+      "platform": "Bluesky",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The US military conducted an airstrike that destroyed an Iranian bridge.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

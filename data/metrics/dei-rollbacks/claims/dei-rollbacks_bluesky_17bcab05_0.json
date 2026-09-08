@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "dei-rollbacks_bluesky_17bcab05_0",
-    "cluster_id": "clu_dei-rollbacks_018",
-    "concept_id": "concept_dei-rollbacks_001",
+    "cluster_id": "clu_dei-rollbacks_019",
+    "concept_id": "concept_dei-rollbacks_003",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-05-06T07:37:14.440Z",
     "source_document_id": "17bcab05e7272839",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 5,
-    "friction": 0.0588,
-    "friction_quadrant": "unopposed_advance"
+    "persistence_windows": 10,
+    "friction": 0.7812,
+    "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 1,
+    "value": 0.314,
     "confidence_interval": [
-      0.925,
-      1
+      0.1876,
+      0.4404
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.314
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.0588,
+    "value": 0.7812,
     "confidence_interval": [
-      0,
-      0.2044
+      0.6898,
+      0.8726
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.0588
+      0.7812
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.25,
+    "value": 0.5,
     "confidence_interval": [
-      0.1187,
-      0.3813
+      0.3875,
+      0.6125
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.25
+      0.5
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9858,
     "confidence_interval": [
-      0.925,
+      0.9097,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9858
     ],
     "source_distribution": "production"
   },
@@ -120,53 +120,79 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
+    "first_platform": "YouTube (Influencer Framing)",
     "first_timestamp": "2026-05-06T07:37:14.440Z",
     "lead_lag": [
       {
-        "platform": "The Spectator Australia",
-        "lag_hours": 20.4
+        "platform": "Bluesky",
+        "lag_hours": 761.7
       },
       {
-        "platform": "Corriere Toscano",
-        "lag_hours": 23.1
+        "platform": "Jacobin",
+        "lag_hours": 763.9
       },
       {
-        "platform": "Nine O' Clock   First Exclusiv",
-        "lag_hours": 23.5
+        "platform": "The Age",
+        "lag_hours": 1333.9
+      },
+      {
+        "platform": "Castanet",
+        "lag_hours": 1335.0
+      },
+      {
+        "platform": "Conservative News Today",
+        "lag_hours": 1365.8
+      },
+      {
+        "platform": "Wyff4",
+        "lag_hours": 1413.1
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_dei-rollbacks_001",
+    "concept_id": "concept_dei-rollbacks_003",
     "hops": [
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-05-05T09:19:46.681000+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-03-01T20:00:11+00:00",
         "claim_id": "dei-rollbacks_bluesky_17bcab05_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "The Spectator Australia",
-        "timestamp": "2026-05-06T05:45:00+00:00",
+        "platform": "Bluesky",
+        "timestamp": "2026-04-02T13:42:31.306000+00:00",
         "claim_id": "dei-rollbacks_bluesky_17bcab05_0",
-        "fidelity_to_origin": 0.3916,
-        "fidelity_to_previous": 0.3916
+        "fidelity_to_origin": 0.6227,
+        "fidelity_to_previous": 0.6227
       },
       {
-        "platform": "Corriere Toscano",
-        "timestamp": "2026-05-06T08:27:53+00:00",
+        "platform": "Jacobin",
+        "timestamp": "2026-04-02T15:51:55+00:00",
         "claim_id": "dei-rollbacks_bluesky_17bcab05_0",
-        "fidelity_to_origin": 0.3108,
-        "fidelity_to_previous": 0.7937
+        "fidelity_to_origin": 0.6216,
+        "fidelity_to_previous": 0.9982
       },
       {
-        "platform": "Nine O' Clock   First Exclusiv",
-        "timestamp": "2026-05-06T08:49:33+00:00",
+        "platform": "The Age",
+        "timestamp": "2026-04-26T09:53:00+00:00",
         "claim_id": "dei-rollbacks_bluesky_17bcab05_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9653
+        "fidelity_to_origin": 0.3393,
+        "fidelity_to_previous": 0.5458
+      },
+      {
+        "platform": "Castanet",
+        "timestamp": "2026-04-26T11:00:00+00:00",
+        "claim_id": "dei-rollbacks_bluesky_17bcab05_0",
+        "fidelity_to_origin": 0.3387,
+        "fidelity_to_previous": 0.9982
+      },
+      {
+        "platform": "Conservative News Today",
+        "timestamp": "2026-04-27T17:49:30+00:00",
+        "claim_id": "dei-rollbacks_bluesky_17bcab05_0",
+        "fidelity_to_origin": 0.3234,
+        "fidelity_to_previous": 0.9548
       }
     ],
     "observation_boundary": null
@@ -201,46 +227,46 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "dei-rollbacks_bluesky_8794be40_0",
-      "similarity": 0.7223,
-      "text": "DEI initiatives are necessary to counter the advantages enjoyed by mediocre white men."
+      "claim_id": "dei-rollbacks_bluesky_c4d79ba0_1",
+      "similarity": 0.8155,
+      "text": "Harvard faculty should be aware of the problems with DEI."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_c6c0e49d_0",
-      "similarity": 0.7187,
-      "text": "South Carolina State University students objected to a speaker due to her opposition to DEI, her pro-life stance, and her association with Trump conservatism."
+      "claim_id": "dei-rollbacks_bluesky_d8a16a93_0",
+      "similarity": 0.781,
+      "text": "DEI initiatives are not being implemented in this person's household."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_f8de1751_0",
-      "similarity": 0.7097,
-      "text": "The organization has released a statement affirming its commitment to equity, diversity, inclusion, belonging, and justice."
+      "claim_id": "dei-rollbacks_bluesky_a2c50703_0",
+      "similarity": 0.7678,
+      "text": "Individuals who advocate for diversity, equity, and inclusion can be arrogant and hinder progress."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_62e3ce4b_0",
-      "similarity": 0.6652,
-      "text": "Costco's commitment to DEI gives them a competitive advantage."
+      "claim_id": "dei-rollbacks_bluesky_a9742412_0",
+      "similarity": 0.7105,
+      "text": "DEI initiatives are perceived negatively by individuals with prejudiced views."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_d835b745_0",
-      "similarity": 0.6148,
-      "text": "DEI initiatives may lead to accusations of non-compliance with federal regulations."
+      "claim_id": "dei-rollbacks_bluesky_606b200c_0",
+      "similarity": 0.6981,
+      "text": "DEI initiatives exclude a significant portion of the population."
     }
   ],
   "example_content": [
     {
-      "text": "Costco's commitment to DEI is a positive factor influencing consumer purchasing decisions.",
+      "text": "If problems arise, opponents of diversity, equity, and inclusion (DEI) will blame DEI initiatives.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "South Carolina State University students objected to a speaker due to her opposition to DEI, her pro-life stance, and her association with Trump conservatism.",
+      "text": "Harvard faculty should be aware of the problems with DEI.",
       "platform": "Bluesky",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "is_influencer_framing": false
     },
     {
-      "text": "Costco's commitment to DEI gives them a competitive advantage.",
+      "text": "DEI initiatives are not being implemented in this person's household.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

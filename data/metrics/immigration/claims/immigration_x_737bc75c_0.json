@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "immigration_x_737bc75c_0",
-    "cluster_id": "clu_immigration_018",
-    "concept_id": "concept_immigration_018",
+    "cluster_id": "clu_immigration_025",
+    "concept_id": "concept_immigration_007",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-03T13:05:48.000Z",
     "source_document_id": "x_2040053153245139124",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 4,
-    "friction": 0.2857,
-    "friction_quadrant": "unopposed_advance"
+    "persistence_windows": 13,
+    "friction": 0.9024,
+    "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.2554,
+    "value": 0.3874,
     "confidence_interval": [
-      0.1246,
-      0.3862
+      0.2665,
+      0.5083
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2554
+      0.3874
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.2857,
+    "value": 0.9024,
     "confidence_interval": [
-      0.1571,
-      0.4143
+      0.8201,
+      0.9847
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2857
+      0.9024
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.2,
+    "value": 0.65,
     "confidence_interval": [
-      0.065,
-      0.335
+      0.5487,
+      0.7513
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2
+      0.65
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9811,
     "confidence_interval": [
-      0.925,
+      0.9047,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9811
     ],
     "source_distribution": "production"
   },
@@ -120,53 +120,79 @@
     ]
   },
   "provenance": {
-    "first_platform": "YouTube (Influencer Framing)",
+    "first_platform": "Bluesky",
     "first_timestamp": "2026-04-03T13:05:48.000Z",
     "lead_lag": [
       {
-        "platform": "Bluesky",
-        "lag_hours": 5059.7
+        "platform": "Nyt Politics",
+        "lag_hours": 2.7
+      },
+      {
+        "platform": "Pbs Newshour",
+        "lag_hours": 6.2
       },
       {
         "platform": "X Platform",
-        "lag_hours": 5061.1
+        "lag_hours": 20.4
       },
       {
-        "platform": "The American Bazaar",
-        "lag_hours": 5077.9
+        "platform": "Jacobin",
+        "lag_hours": 428.1
+      },
+      {
+        "platform": "Salon",
+        "lag_hours": 546.1
+      },
+      {
+        "platform": "Reason",
+        "lag_hours": 600.1
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_immigration_018",
+    "concept_id": "concept_immigration_007",
     "hops": [
       {
-        "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2025-09-03T22:45:01+00:00",
+        "platform": "Bluesky",
+        "timestamp": "2026-04-02T16:41:55.561000+00:00",
         "claim_id": "immigration_x_737bc75c_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-02T18:25:27.710000+00:00",
+        "platform": "Nyt Politics",
+        "timestamp": "2026-04-02T19:25:11+00:00",
         "claim_id": "immigration_x_737bc75c_0",
-        "fidelity_to_origin": 0.3025,
-        "fidelity_to_previous": 0.3025
+        "fidelity_to_origin": 0.9985,
+        "fidelity_to_previous": 0.9985
+      },
+      {
+        "platform": "Pbs Newshour",
+        "timestamp": "2026-04-02T22:51:35+00:00",
+        "claim_id": "immigration_x_737bc75c_0",
+        "fidelity_to_origin": 0.9967,
+        "fidelity_to_previous": 0.9982
       },
       {
         "platform": "X Platform",
-        "timestamp": "2026-04-02T19:50:00+00:00",
+        "timestamp": "2026-04-03T13:05:48+00:00",
         "claim_id": "immigration_x_737bc75c_0",
-        "fidelity_to_origin": 0.3023,
-        "fidelity_to_previous": 0.9993
+        "fidelity_to_origin": 0.9891,
+        "fidelity_to_previous": 0.9924
       },
       {
-        "platform": "The American Bazaar",
-        "timestamp": "2026-04-03T12:37:19+00:00",
+        "platform": "Jacobin",
+        "timestamp": "2026-04-20T12:50:50+00:00",
         "claim_id": "immigration_x_737bc75c_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9924
+        "fidelity_to_origin": 0.7706,
+        "fidelity_to_previous": 0.7791
+      },
+      {
+        "platform": "Salon",
+        "timestamp": "2026-04-25T10:45:28+00:00",
+        "claim_id": "immigration_x_737bc75c_0",
+        "fidelity_to_origin": 0.7074,
+        "fidelity_to_previous": 0.918
       }
     ],
     "observation_boundary": null
@@ -201,48 +227,48 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "immigration_x_7e314506_2",
-      "similarity": 0.5928,
-      "text": "Immigration courts are burdened with a large number of pending cases."
+      "claim_id": "immigration_bluesky_3543177e_0",
+      "similarity": 0.6437,
+      "text": "ICE's re-arrest and attempted deportation of an Egyptian family was inappropriate."
     },
     {
-      "claim_id": "immigration_bluesky_1613cb48_0",
-      "similarity": 0.5919,
-      "text": "Current immigration policies are causing immigration courts to deny many cases."
+      "claim_id": "immigration_bluesky_43f3ac15_0",
+      "similarity": 0.6083,
+      "text": "US refugee policy favors white South Africans as part of a historical effort to maintain the racial homogeneity of English-speaking nations."
     },
     {
-      "claim_id": "immigration_x_737bc75c_1",
-      "similarity": 0.5644,
-      "text": "Asylum seekers from India are abusing the system."
+      "claim_id": "immigration_jacobin_d2331b18_0",
+      "similarity": 0.5958,
+      "text": "The Trump administration has been targeting immigrants with disfavored beliefs for detention and deportation."
     },
     {
-      "claim_id": "immigration_bluesky_5b58cff8_0",
-      "similarity": 0.5243,
-      "text": "Changes in U.S. immigration policy have created uncertainty for asylum seekers."
+      "claim_id": "immigration_pbs_newshour_3fe41794_0",
+      "similarity": 0.5863,
+      "text": "The U.S. government is deporting asylum seekers to countries they have no connection to."
     },
     {
-      "claim_id": "immigration_the_american_bazaar_60e81a1f_1",
-      "similarity": 0.4725,
-      "text": "A large percentage of individuals seeking asylum in the United States are primarily economic migrants rather than refugees fleeing war or persecution."
+      "claim_id": "immigration_bluesky_94585465_0",
+      "similarity": 0.5659,
+      "text": "The El Gamal family, fearing persecution in Egypt, was wrongly deported despite court orders."
     }
   ],
   "example_content": [
     {
-      "text": "Changes in U.S. immigration policy have created uncertainty for asylum seekers.",
+      "text": "Current immigration policies unfairly target Sikh truck drivers.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Current immigration policies are causing immigration courts to deny many cases.",
-      "platform": "Bluesky",
+      "text": "Immigration and Customs Enforcement (ICE) unjustly detains individuals even after they have been exonerated of any wrongdoing.",
+      "platform": "Nyt Politics",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "A large percentage of individuals seeking asylum in the United States are primarily economic migrants rather than refugees fleeing war or persecution.",
-      "platform": "The American Bazaar",
-      "confidence": 0.8,
+      "text": "The U.S. government is deporting asylum seekers to countries they have no connection to.",
+      "platform": "Pbs Newshour",
+      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

@@ -9,7 +9,7 @@
     "arousal": "medium",
     "register": "academic",
     "id": "ozempic-glp1_eurasia_review_1ad10dee_1",
-    "cluster_id": "clu_ozempic-glp1_005",
+    "cluster_id": "clu_ozempic-glp1_000",
     "concept_id": "concept_ozempic-glp1_000",
     "first_seen_platform": "eurasia_review",
     "first_seen_timestamp": "2026-04-26T01:14:17Z",
@@ -24,107 +24,94 @@
     "source_type": "elite_media"
   },
   "momentum": {
-    "value": null,
+    "value": 0.54,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.44,
+      0.64
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.54
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 5,
+    "friction": 0.3125,
+    "friction_quadrant": "unopposed_advance"
+  },
+  "salience": {
+    "value": 0.1982,
+    "confidence_interval": [
+      0.0631,
+      0.3333
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.1982
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.3125,
+    "confidence_interval": [
+      0.1859,
+      0.4391
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3125
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.25,
+    "confidence_interval": [
+      0.1187,
+      0.3813
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.25
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.5,
     "confidence_interval": [
-      0,
-      0
+      0.3875,
+      0.6125
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.5
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 1,
     "confidence_interval": [
-      0,
-      0
+      0.925,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      1
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,33 +120,155 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "Propublica",
+    "first_timestamp": "2026-04-26T01:14:17Z",
+    "lead_lag": [
+      {
+        "platform": "Eurasia Review",
+        "lag_hours": 544.2
+      },
+      {
+        "platform": "Fox 35 Orlando",
+        "lag_hours": 546.7
+      },
+      {
+        "platform": "The Jerusalem Post",
+        "lag_hours": 553.0
+      },
+      {
+        "platform": "Medical News Bulletin |  Healt",
+        "lag_hours": 581.9
+      },
+      {
+        "platform": "Bluesky",
+        "lag_hours": 627.8
+      },
+      {
+        "platform": "The Atlantic",
+        "lag_hours": 1275.7
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_ozempic-glp1_000",
+    "hops": [
+      {
+        "platform": "Propublica",
+        "timestamp": "2026-04-03T09:00:00+00:00",
+        "claim_id": "ozempic-glp1_eurasia_review_1ad10dee_1",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Eurasia Review",
+        "timestamp": "2026-04-26T01:14:17+00:00",
+        "claim_id": "ozempic-glp1_eurasia_review_1ad10dee_1",
+        "fidelity_to_origin": 0.7045,
+        "fidelity_to_previous": 0.7045
+      },
+      {
+        "platform": "Fox 35 Orlando",
+        "timestamp": "2026-04-26T03:40:36+00:00",
+        "claim_id": "ozempic-glp1_eurasia_review_1ad10dee_1",
+        "fidelity_to_origin": 0.7031,
+        "fidelity_to_previous": 0.998
+      },
+      {
+        "platform": "The Jerusalem Post",
+        "timestamp": "2026-04-26T10:02:35+00:00",
+        "claim_id": "ozempic-glp1_eurasia_review_1ad10dee_1",
+        "fidelity_to_origin": 0.6997,
+        "fidelity_to_previous": 0.9952
+      },
+      {
+        "platform": "Medical News Bulletin |  Healt",
+        "timestamp": "2026-04-27T14:55:37+00:00",
+        "claim_id": "ozempic-glp1_eurasia_review_1ad10dee_1",
+        "fidelity_to_origin": 0.684,
+        "fidelity_to_previous": 0.9776
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-29T12:49:02.559000+00:00",
+        "claim_id": "ozempic-glp1_eurasia_review_1ad10dee_1",
+        "fidelity_to_origin": 0.6591,
+        "fidelity_to_previous": 0.9636
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ozempic-glp1_bluesky_74405900_0",
-      "similarity": 0.6158,
-      "text": "Peptides such as Tirzepatide and Semaglutide are available for purchase."
+      "claim_id": "ozempic-glp1_fox_35_orlando_0ba190f5_1",
+      "similarity": 0.7606,
+      "text": "Current FDA regulations on peptides have inadvertently fostered a dangerous, unregulated market for substandard and potentially harmful products."
+    },
+    {
+      "claim_id": "ozempic-glp1_propublica_fa73742d_2",
+      "similarity": 0.7445,
+      "text": "The demand for unregulated peptides has increased due to social media promotion, leading to a growing gray market."
+    },
+    {
+      "claim_id": "ozempic-glp1_medical_news_bulletin_|__healt_91ff0ad5_0",
+      "similarity": 0.7063,
+      "text": "The safety of peptides depends on the specific compound, research quality, and real-world usage, rather than inherent properties."
+    },
+    {
+      "claim_id": "ozempic-glp1_eurasia_review_1ad10dee_0",
+      "similarity": 0.6832,
+      "text": "Restricting the use of certain peptides by compounding pharmacies may limit public access to potentially beneficial molecules."
+    },
+    {
+      "claim_id": "ozempic-glp1_propublica_fa73742d_1",
+      "similarity": 0.6495,
+      "text": "The FDA's decision to ban certain peptides was based on legitimate safety concerns, not just a lack of evidence of effectiveness."
     }
   ],
   "example_content": [
     {
-      "text": "Peptides such as Tirzepatide and Semaglutide are available for purchase.",
-      "platform": "Bluesky",
+      "text": "Robert F. Kennedy Jr. is attempting to reverse the FDA's ban on certain peptides based on a mischaracterization of the agency's safety concerns.",
+      "platform": "Propublica",
       "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The FDA's decision to ban certain peptides was based on legitimate safety concerns, not just a lack of evidence of effectiveness.",
+      "platform": "Propublica",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The demand for unregulated peptides has increased due to social media promotion, leading to a growing gray market.",
+      "platform": "Propublica",
+      "confidence": 0.8,
       "is_influencer_framing": false
     }
   ]

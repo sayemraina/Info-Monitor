@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "immigration_x_a7e060d8_0",
-    "cluster_id": "clu_immigration_017",
-    "concept_id": "concept_immigration_006",
+    "cluster_id": "clu_immigration_049",
+    "concept_id": "concept_immigration_007",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-29T11:49:25.000Z",
     "source_document_id": "x_2049456014760571161",
@@ -24,107 +24,94 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": null,
+    "value": 0.87,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.77,
+      0.97
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.87
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 10,
+    "friction": 0.9,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.2835,
+    "confidence_interval": [
+      0.1548,
+      0.4122
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.2835
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.9,
+    "confidence_interval": [
+      0.8175,
+      0.9825
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.9
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.85,
     "confidence_interval": [
-      0,
-      0
+      0.7638,
+      0.9362
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.85
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 0.9811,
     "confidence_interval": [
-      0,
-      0
+      0.9047,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.9811
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.95,
@@ -133,65 +120,155 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "YouTube (Influencer Framing)",
+    "first_timestamp": "2026-04-29T11:49:25.000Z",
+    "lead_lag": [
+      {
+        "platform": "X Platform",
+        "lag_hours": 5052.3
+      },
+      {
+        "platform": "Salon",
+        "lag_hours": 5059.2
+      },
+      {
+        "platform": "Thenevadaindependent.Com",
+        "lag_hours": 5067.2
+      },
+      {
+        "platform": "Bluesky",
+        "lag_hours": 5073.1
+      },
+      {
+        "platform": "East Bay Times",
+        "lag_hours": 5075.0
+      },
+      {
+        "platform": "Vox",
+        "lag_hours": 5824.8
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_immigration_007",
+    "hops": [
+      {
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2025-09-03T22:45:01+00:00",
+        "claim_id": "immigration_x_a7e060d8_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-02T11:05:47+00:00",
+        "claim_id": "immigration_x_a7e060d8_0",
+        "fidelity_to_origin": 0.3928,
+        "fidelity_to_previous": 0.3928
+      },
+      {
+        "platform": "Salon",
+        "timestamp": "2026-04-02T17:54:45+00:00",
+        "claim_id": "immigration_x_a7e060d8_0",
+        "fidelity_to_origin": 0.392,
+        "fidelity_to_previous": 0.998
+      },
+      {
+        "platform": "Thenevadaindependent.Com",
+        "timestamp": "2026-04-03T02:00:00+00:00",
+        "claim_id": "immigration_x_a7e060d8_0",
+        "fidelity_to_origin": 0.391,
+        "fidelity_to_previous": 0.9974
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-03T07:50:14.594000+00:00",
+        "claim_id": "immigration_x_a7e060d8_0",
+        "fidelity_to_origin": 0.3903,
+        "fidelity_to_previous": 0.9982
+      },
+      {
+        "platform": "East Bay Times",
+        "timestamp": "2026-04-03T09:45:58+00:00",
+        "claim_id": "immigration_x_a7e060d8_0",
+        "fidelity_to_origin": 0.3901,
+        "fidelity_to_previous": 0.9995
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "immigration_x_14f328bd_0",
-      "similarity": 0.7551,
-      "text": "Tony Burke admitted responsibility for disastrous immigration policy."
+      "claim_id": "immigration_x_41e9a424_0",
+      "similarity": 0.7848,
+      "text": "The Conservative Party's immigration policies have been harmful."
     },
     {
-      "claim_id": "immigration_bluesky_44eeeef3_1",
-      "similarity": 0.694,
-      "text": "Deportation policies disproportionately affect immigrant workers who contribute to American society."
+      "claim_id": "immigration_x_3b6d61e9_1",
+      "similarity": 0.7424,
+      "text": "Anti-immigration policies are detrimental to the USA."
     },
     {
-      "claim_id": "immigration_fortune_19add3b6_0",
-      "similarity": 0.6607,
-      "text": "Increased immigration enforcement negatively impacts the overall labor market."
+      "claim_id": "immigration_thenevadaindependent.com_61826b16_0",
+      "similarity": 0.7348,
+      "text": "The Trump administration's mandatory detention policy for immigrants facing deportation violates federal law and causes irreparable harm."
     },
     {
-      "claim_id": "immigration_x_a9d526a7_0",
-      "similarity": 0.5873,
-      "text": "Left-leaning immigration policies have made California unsafe."
+      "claim_id": "immigration_x_c61bc16f_0",
+      "similarity": 0.7242,
+      "text": "Denmark changed its immigration policy because the previous policy was harmful."
     },
     {
-      "claim_id": "immigration_x_cb5daea2_0",
-      "similarity": 0.5649,
-      "text": "Left-leaning immigration policies have made California unsafe."
+      "claim_id": "immigration_x_69491f39_0",
+      "similarity": 0.7121,
+      "text": "Current immigration enforcement practices, such as ICE raids, are harmful and should be ended."
     }
   ],
   "example_content": [
     {
-      "text": "Current federal immigration policies are causing family separations and increased fear among immigrant families.",
+      "text": "Appeasing anti-immigration groups is morally wrong and politically self-destructive.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Deportation policies disproportionately affect immigrant workers who contribute to American society.",
-      "platform": "Bluesky",
+      "text": "The Trump administration's mandatory detention policy for immigrants facing deportation violates federal law and causes irreparable harm.",
+      "platform": "Thenevadaindependent.Com",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The government's crackdown on Dreamers undermines the values and ideals of the American dream.",
+      "platform": "East Bay Times",
       "confidence": 0.8,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "The individual is untrustworthy and would betray California.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

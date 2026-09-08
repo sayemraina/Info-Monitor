@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "dei-rollbacks_the_harvard_crimson_ed8970ce_2",
-    "cluster_id": "clu_dei-rollbacks_007",
-    "concept_id": "concept_dei-rollbacks_005",
+    "cluster_id": "clu_dei-rollbacks_022",
+    "concept_id": "concept_dei-rollbacks_006",
     "first_seen_platform": "the_harvard_crimson",
     "first_seen_timestamp": "2026-04-27T18:28:45Z",
     "source_document_id": "4ae55e1e543e1e8e",
@@ -35,48 +35,48 @@
       0.51
     ],
     "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 1,
-    "friction": 0.25,
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 3,
+    "friction": 0.1,
     "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 0.2983,
+    "value": 0.2157,
     "confidence_interval": [
-      0.1707,
-      0.4259
+      0.0819,
+      0.3495
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2983
+      0.2157
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.25,
+    "value": 0.1,
     "confidence_interval": [
-      0.1187,
-      0.3813
+      0,
+      0.2425
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.25
+      0.1
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0.15,
     "confidence_interval": [
-      0,
-      0.1962
+      0.0112,
+      0.2888
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0.15
     ],
     "source_distribution": "production"
   },
@@ -118,31 +118,64 @@
     "factors": []
   },
   "provenance": {
-    "first_platform": "The Harvard Crimson",
+    "first_platform": "Fortune",
     "first_timestamp": "2026-04-27T18:28:45Z",
     "lead_lag": [
       {
+        "platform": "Vox",
+        "lag_hours": 525.2
+      },
+      {
+        "platform": "The Harvard Crimson",
+        "lag_hours": 580.4
+      },
+      {
         "platform": "Bluesky",
-        "lag_hours": 1.4
+        "lag_hours": 581.8
+      },
+      {
+        "platform": "The Hechinger Report",
+        "lag_hours": 1274.8
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_dei-rollbacks_005",
+    "concept_id": "concept_dei-rollbacks_006",
     "hops": [
       {
-        "platform": "The Harvard Crimson",
-        "timestamp": "2026-04-27T18:28:45+00:00",
+        "platform": "Fortune",
+        "timestamp": "2026-04-03T14:04:20+00:00",
         "claim_id": "dei-rollbacks_the_harvard_crimson_ed8970ce_2",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
+        "platform": "Vox",
+        "timestamp": "2026-04-25T11:15:00+00:00",
+        "claim_id": "dei-rollbacks_the_harvard_crimson_ed8970ce_2",
+        "fidelity_to_origin": 0.7116,
+        "fidelity_to_previous": 0.7116
+      },
+      {
+        "platform": "The Harvard Crimson",
+        "timestamp": "2026-04-27T18:28:45+00:00",
+        "claim_id": "dei-rollbacks_the_harvard_crimson_ed8970ce_2",
+        "fidelity_to_origin": 0.6813,
+        "fidelity_to_previous": 0.9574
+      },
+      {
         "platform": "Bluesky",
         "timestamp": "2026-04-27T19:53:08.281000+00:00",
         "claim_id": "dei-rollbacks_the_harvard_crimson_ed8970ce_2",
+        "fidelity_to_origin": 0.6805,
+        "fidelity_to_previous": 0.9988
+      },
+      {
+        "platform": "The Hechinger Report",
+        "timestamp": "2026-05-26T16:55:14+00:00",
+        "claim_id": "dei-rollbacks_the_harvard_crimson_ed8970ce_2",
         "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
+        "fidelity_to_previous": 0.4409
       }
     ],
     "observation_boundary": null
@@ -187,6 +220,16 @@
       "text": "Harvard University is reducing its investment in the Women, Gender, and Sexuality Studies department."
     },
     {
+      "claim_id": "dei-rollbacks_the_hechinger_report_66440c8a_0",
+      "similarity": 0.4312,
+      "text": "Women are increasingly dominating enrollment in higher education, particularly in professional fields like medicine and law."
+    },
+    {
+      "claim_id": "dei-rollbacks_vox_5cf91cce_0",
+      "similarity": 0.4269,
+      "text": "Small colleges are increasingly at risk of closing due to financial, demographic, and cultural challenges."
+    },
+    {
       "claim_id": "dei-rollbacks_bluesky_515c8263_0",
       "similarity": 0.3612,
       "text": "Federal universities in Brazil are experiencing deterioration due to inadequate funding."
@@ -194,20 +237,20 @@
   ],
   "example_content": [
     {
-      "text": "Federal universities in Brazil are experiencing deterioration due to inadequate funding.",
-      "platform": "Bluesky",
+      "text": "Recent college graduates are facing a difficult job market.",
+      "platform": "Fortune",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Enrollment in Women, Gender, and Sexuality Studies at Harvard has significantly decreased.",
-      "platform": "The Harvard Crimson",
-      "confidence": 1.0,
+      "text": "Small colleges are increasingly at risk of closing due to financial, demographic, and cultural challenges.",
+      "platform": "Vox",
+      "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Harvard University is reducing its investment in the Women, Gender, and Sexuality Studies department.",
-      "platform": "The Harvard Crimson",
+      "text": "Colleges are accumulating significant institutional debt, which strains their operating budgets.",
+      "platform": "Vox",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

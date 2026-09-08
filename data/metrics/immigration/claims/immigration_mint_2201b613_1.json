@@ -37,8 +37,8 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 7,
-    "friction": 0.1818,
+    "persistence_windows": 15,
+    "friction": 0.2653,
     "friction_quadrant": "unopposed_advance"
   },
   "salience": {
@@ -55,28 +55,28 @@
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.1818,
+    "value": 0.2653,
     "confidence_interval": [
-      0.0454,
-      0.3182
+      0.1352,
+      0.3954
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1818
+      0.2653
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.35,
+    "value": 0.75,
     "confidence_interval": [
-      0.2263,
-      0.4737
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.35
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9793,
     "confidence_interval": [
-      0.925,
+      0.9027,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9793
     ],
     "source_distribution": "production"
   },
@@ -120,32 +120,32 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
+    "first_platform": "YouTube (Influencer Framing)",
     "first_timestamp": "2026-05-27T07:16:54Z",
     "lead_lag": [
       {
-        "platform": "5 Dariya News",
-        "lag_hours": 19.6
+        "platform": "Bluesky",
+        "lag_hours": 1028.1
       },
       {
-        "platform": "Ndtv",
-        "lag_hours": 19.8
+        "platform": "Breitbart",
+        "lag_hours": 1044.3
       },
       {
-        "platform": "Mint",
-        "lag_hours": 19.9
+        "platform": "X Platform",
+        "lag_hours": 1045.2
       },
       {
-        "platform": "Trade Brains",
-        "lag_hours": 20.3
+        "platform": "Lbc",
+        "lag_hours": 1050.3
       },
       {
-        "platform": "Newkerala.Com",
-        "lag_hours": 20.4
+        "platform": "Mysa",
+        "lag_hours": 1051.4
       },
       {
-        "platform": "Free Press Journal",
-        "lag_hours": 21.1
+        "platform": "Daily Wire",
+        "lag_hours": 1558.8
       }
     ]
   },
@@ -153,46 +153,46 @@
     "concept_id": "concept_immigration_004",
     "hops": [
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-05-26T11:22:46.337000+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-02-18T18:02:21+00:00",
         "claim_id": "immigration_mint_2201b613_1",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "5 Dariya News",
-        "timestamp": "2026-05-27T06:56:12+00:00",
+        "platform": "Bluesky",
+        "timestamp": "2026-04-02T14:10:23.218000+00:00",
         "claim_id": "immigration_mint_2201b613_1",
-        "fidelity_to_origin": 0.3524,
-        "fidelity_to_previous": 0.3524
+        "fidelity_to_origin": 0.6928,
+        "fidelity_to_previous": 0.6928
       },
       {
-        "platform": "Ndtv",
-        "timestamp": "2026-05-27T07:10:01+00:00",
+        "platform": "Breitbart",
+        "timestamp": "2026-04-03T06:22:11+00:00",
         "claim_id": "immigration_mint_2201b613_1",
-        "fidelity_to_origin": 0.3447,
-        "fidelity_to_previous": 0.9781
+        "fidelity_to_origin": 0.6879,
+        "fidelity_to_previous": 0.9929
       },
       {
-        "platform": "Mint",
-        "timestamp": "2026-05-27T07:16:54+00:00",
+        "platform": "X Platform",
+        "timestamp": "2026-04-03T07:16:43+00:00",
         "claim_id": "immigration_mint_2201b613_1",
-        "fidelity_to_origin": 0.3409,
-        "fidelity_to_previous": 0.989
+        "fidelity_to_origin": 0.6877,
+        "fidelity_to_previous": 0.9997
       },
       {
-        "platform": "Trade Brains",
-        "timestamp": "2026-05-27T07:42:41+00:00",
+        "platform": "Lbc",
+        "timestamp": "2026-04-03T12:23:04+00:00",
         "claim_id": "immigration_mint_2201b613_1",
-        "fidelity_to_origin": 0.3267,
-        "fidelity_to_previous": 0.9583
+        "fidelity_to_origin": 0.6861,
+        "fidelity_to_previous": 0.9977
       },
       {
-        "platform": "Newkerala.Com",
-        "timestamp": "2026-05-27T07:48:45+00:00",
+        "platform": "Mysa",
+        "timestamp": "2026-04-03T13:25:51+00:00",
         "claim_id": "immigration_mint_2201b613_1",
-        "fidelity_to_origin": 0.3233,
-        "fidelity_to_previous": 0.9896
+        "fidelity_to_origin": 0.6858,
+        "fidelity_to_previous": 0.9996
       }
     ],
     "observation_boundary": null
@@ -227,46 +227,46 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "immigration_bluesky_1a02f10c_0",
-      "similarity": 0.5344,
-      "text": "The Indian government is committed to modernizing its security forces with technology."
+      "claim_id": "immigration_bluesky_09789b09_0",
+      "similarity": 0.4293,
+      "text": "Securing the border and critical infrastructure is a complex and ongoing challenge."
     },
     {
-      "claim_id": "immigration_bluesky_f11fc7bb_0",
-      "similarity": 0.4863,
-      "text": "Strengthening border security is important for maintaining statehood."
+      "claim_id": "immigration_bluesky_5de6e5ca_0",
+      "similarity": 0.4096,
+      "text": "Border security between the US and Canada is inadequate."
     },
     {
-      "claim_id": "immigration_bluesky_c3c83499_1",
-      "similarity": 0.432,
-      "text": "Border security under Donald Trump's administration has significantly deteriorated."
+      "claim_id": "immigration_bluesky_56612a11_0",
+      "similarity": 0.3789,
+      "text": "The Finnish Border Guard performs both internal security and military defense functions."
     },
     {
-      "claim_id": "immigration_bluesky_12d6b35a_0",
-      "similarity": 0.3845,
-      "text": "Border security at airports is unnecessary and should be discontinued."
+      "claim_id": "immigration_bluesky_c677e52a_0",
+      "similarity": 0.351,
+      "text": "Increased border security is based on misinformation."
     },
     {
-      "claim_id": "immigration_bluesky_438d27c5_0",
-      "similarity": 0.3843,
-      "text": "Strengthening security measures on Europe's eastern border is a priority."
+      "claim_id": "immigration_bluesky_3428a71c_0",
+      "similarity": 0.348,
+      "text": "Customs and Border Protection's security protocols are inadequate."
     }
   ],
   "example_content": [
     {
-      "text": "Border security at airports is unnecessary and should be discontinued.",
-      "platform": "Bluesky",
-      "confidence": 0.7,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "NATO is concerned about potential attacks on the energy infrastructure of the Baltic States.",
+      "text": "Increased border security is based on misinformation.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Bilateral treaties between European nations are supplanting NATO's role.",
+      "text": "Customs and Border Protection's security practices are inadequate.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Securing the border and critical infrastructure is a complex and ongoing challenge.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

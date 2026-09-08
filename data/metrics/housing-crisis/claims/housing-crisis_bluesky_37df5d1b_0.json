@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "housing-crisis_bluesky_37df5d1b_0",
-    "cluster_id": "clu_housing-crisis_014",
-    "concept_id": "concept_housing-crisis_014",
+    "cluster_id": "clu_housing-crisis_005",
+    "concept_id": "concept_housing-crisis_002",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-03T13:45:19+00:00",
     "source_document_id": "34fdea9dedc77daf",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 6,
-    "friction": 0.2222,
+    "persistence_windows": 15,
+    "friction": 0.1227,
     "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 0.3877,
+    "value": 1,
     "confidence_interval": [
-      0.2668,
-      0.5086
+      0.925,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3877
+      1
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.2222,
+    "value": 0.1227,
     "confidence_interval": [
-      0.0889,
-      0.3555
+      0,
+      0.2635
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2222
+      0.1227
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.3,
+    "value": 0.75,
     "confidence_interval": [
-      0.1725,
-      0.4275
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.8333,
+    "value": 0.9803,
     "confidence_interval": [
-      0.7458,
-      0.9208
+      0.9038,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.8333
+      0.9803
     ],
     "source_distribution": "production"
   },
@@ -124,21 +124,33 @@
     "first_timestamp": "2026-04-03T13:45:19+00:00",
     "lead_lag": [
       {
-        "platform": "Mirage News",
-        "lag_hours": 1570.4
+        "platform": "X Platform",
+        "lag_hours": 1612.5
       },
       {
         "platform": "Bluesky",
-        "lag_hours": 1616.0
+        "lag_hours": 1613.1
       },
       {
-        "platform": "X Platform",
-        "lag_hours": 1630.9
+        "platform": "Business Insider",
+        "lag_hours": 1630.2
+      },
+      {
+        "platform": "The Motley Fool",
+        "lag_hours": 2134.2
+      },
+      {
+        "platform": "Bbc",
+        "lag_hours": 2189.9
+      },
+      {
+        "platform": "Yahoo",
+        "lag_hours": 2189.9
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_housing-crisis_014",
+    "concept_id": "concept_housing-crisis_002",
     "hops": [
       {
         "platform": "YouTube (Influencer Framing)",
@@ -148,25 +160,39 @@
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Mirage News",
-        "timestamp": "2026-04-01T01:24:10+00:00",
+        "platform": "X Platform",
+        "timestamp": "2026-04-02T19:31:09+00:00",
         "claim_id": "housing-crisis_bluesky_37df5d1b_0",
-        "fidelity_to_origin": 0.326,
-        "fidelity_to_previous": 0.326
+        "fidelity_to_origin": 0.5002,
+        "fidelity_to_previous": 0.5002
       },
       {
         "platform": "Bluesky",
-        "timestamp": "2026-04-02T23:00:16+00:00",
+        "timestamp": "2026-04-02T20:08:41.393000+00:00",
         "claim_id": "housing-crisis_bluesky_37df5d1b_0",
-        "fidelity_to_origin": 0.3064,
-        "fidelity_to_previous": 0.9399
+        "fidelity_to_origin": 0.5,
+        "fidelity_to_previous": 0.9996
       },
       {
-        "platform": "X Platform",
-        "timestamp": "2026-04-03T13:56:13+00:00",
+        "platform": "Business Insider",
+        "timestamp": "2026-04-03T13:14:01+00:00",
         "claim_id": "housing-crisis_bluesky_37df5d1b_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9791
+        "fidelity_to_origin": 0.4948,
+        "fidelity_to_previous": 0.9896
+      },
+      {
+        "platform": "The Motley Fool",
+        "timestamp": "2026-04-24T13:14:37+00:00",
+        "claim_id": "housing-crisis_bluesky_37df5d1b_0",
+        "fidelity_to_origin": 0.3385,
+        "fidelity_to_previous": 0.6841
+      },
+      {
+        "platform": "Bbc",
+        "timestamp": "2026-04-26T20:56:20+00:00",
+        "claim_id": "housing-crisis_bluesky_37df5d1b_0",
+        "fidelity_to_origin": 0.3213,
+        "fidelity_to_previous": 0.9492
       }
     ],
     "observation_boundary": null
@@ -201,48 +227,48 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "housing-crisis_bluesky_e45c74bf_0",
-      "similarity": 1.0,
-      "text": "The conflict in Iran is negatively impacting the UK mortgage market."
+      "claim_id": "housing-crisis_bluesky_725b8653_0",
+      "similarity": 0.7204,
+      "text": "Rising mortgage rates are detrimental to housing affordability."
     },
     {
-      "claim_id": "housing-crisis_bluesky_0b66790a_0",
-      "similarity": 0.807,
-      "text": "Geopolitical instability is negatively impacting the American housing market."
+      "claim_id": "housing-crisis_bluesky_1babb658_0",
+      "similarity": 0.5785,
+      "text": "A proposal to cut mortgage interest rates and allow periods of zero mortgage payments is unclear and potentially unsustainable."
     },
     {
-      "claim_id": "housing-crisis_bluesky_b4b657b3_0",
-      "similarity": 0.7592,
-      "text": "Rising mortgage rates are negatively impacting the housing market."
+      "claim_id": "housing-crisis_bluesky_81641d60_0",
+      "similarity": 0.5345,
+      "text": "Mortgage rates are holding steady at around 6.4%."
     },
     {
-      "claim_id": "housing-crisis_mirage_news_de0f51e3_0",
-      "similarity": 0.6211,
-      "text": "Rising oil prices and supply chain issues are increasing building costs and delaying construction, exacerbating housing market pressures."
+      "claim_id": "housing-crisis_bluesky_dcccd765_0",
+      "similarity": 0.5197,
+      "text": "The Federal Reserve can influence the 10-year Treasury yield, which indirectly affects mortgage rates."
     },
     {
-      "claim_id": "housing-crisis_bluesky_4e8d0a4e_1",
-      "similarity": 0.6064,
-      "text": "Rising gas prices and mortgage rates are negatively impacting economic approval."
+      "claim_id": "housing-crisis_bluesky_daa401e7_0",
+      "similarity": 0.512,
+      "text": "Fixing mortgage rates at inflation plus 1% is a bad plan."
     }
   ],
   "example_content": [
     {
-      "text": "High oil prices negatively impact the economy and real estate market.",
+      "text": "Mortgage companies are unfairly increasing interest rates, harming veterans.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Geopolitical instability is negatively impacting the American housing market.",
+      "text": "Mortgage rates are holding steady at around 6.4%.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Iranian actions have negatively impacted the UK economy by increasing mortgage rates and petrol prices.",
+      "text": "A proposal to cut mortgage interest rates and allow periods of zero mortgage payments is unclear and potentially unsustainable.",
       "platform": "Bluesky",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "is_influencer_framing": false
     }
   ]

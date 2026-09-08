@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "ozempic-glp1_youtube_62706e75_2",
-    "cluster_id": "clu_ozempic-glp1_000",
-    "concept_id": "concept_ozempic-glp1_000",
+    "cluster_id": "clu_ozempic-glp1_013",
+    "concept_id": "concept_ozempic-glp1_002",
     "first_seen_platform": "youtube",
     "first_seen_timestamp": "2025-06-02T18:00:29Z",
     "source_document_id": "yt_ZwJJuy_IQYU",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 15,
-    "friction": 0.3497,
-    "friction_quadrant": "unopposed_advance"
+    "persistence_windows": 12,
+    "friction": 0.4595,
+    "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 1,
+    "value": 0.3802,
     "confidence_interval": [
-      0.925,
-      1
+      0.2587,
+      0.5017
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.3802
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.3497,
+    "value": 0.4595,
     "confidence_interval": [
-      0.2259,
-      0.4735
+      0.344,
+      0.575
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3497
+      0.4595
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.75,
+    "value": 0.6,
     "confidence_interval": [
-      0.6562,
-      0.8438
+      0.495,
+      0.705
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.75
+      0.6
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9877,
+    "value": 0.9547,
     "confidence_interval": [
-      0.9118,
+      0.8763,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9877
+      0.9547
     ],
     "source_distribution": "production"
   },
@@ -122,75 +122,49 @@
     "first_timestamp": "2025-06-02T18:00:29Z",
     "lead_lag": [
       {
-        "platform": "Bluesky",
-        "lag_hours": 8693.7
-      },
-      {
         "platform": "X Platform",
-        "lag_hours": 8704.9
+        "lag_hours": 7313.3
       },
       {
-        "platform": "Finbold",
-        "lag_hours": 8709.0
+        "platform": "Bluesky",
+        "lag_hours": 7314.2
       },
       {
-        "platform": "Healio",
-        "lag_hours": 8713.7
-      },
-      {
-        "platform": "The Blast",
-        "lag_hours": 8714.5
-      },
-      {
-        "platform": "Fox Wilmington",
-        "lag_hours": 8715.1
+        "platform": "البوابة",
+        "lag_hours": 7926.0
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_ozempic-glp1_000",
+    "concept_id": "concept_ozempic-glp1_002",
     "hops": [
       {
         "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2025-04-05T12:30:23+00:00",
+        "timestamp": "2025-06-02T18:00:29+00:00",
         "claim_id": "ozempic-glp1_youtube_62706e75_2",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-02T18:14:12.031000+00:00",
-        "claim_id": "ozempic-glp1_youtube_62706e75_2",
-        "fidelity_to_origin": 0.3017,
-        "fidelity_to_previous": 0.3017
-      },
-      {
         "platform": "X Platform",
-        "timestamp": "2026-04-03T05:23:41+00:00",
+        "timestamp": "2026-04-03T11:17:35+00:00",
         "claim_id": "ozempic-glp1_youtube_62706e75_2",
-        "fidelity_to_origin": 0.3008,
-        "fidelity_to_previous": 0.997
+        "fidelity_to_origin": 0.3541,
+        "fidelity_to_previous": 0.3541
       },
       {
-        "platform": "Finbold",
-        "timestamp": "2026-04-03T09:31:12+00:00",
+        "platform": "Bluesky",
+        "timestamp": "2026-04-03T12:09:34.068000+00:00",
         "claim_id": "ozempic-glp1_youtube_62706e75_2",
-        "fidelity_to_origin": 0.3005,
-        "fidelity_to_previous": 0.999
+        "fidelity_to_origin": 0.354,
+        "fidelity_to_previous": 0.9997
       },
       {
-        "platform": "Healio",
-        "timestamp": "2026-04-03T14:13:43+00:00",
-        "claim_id": "ozempic-glp1_youtube_62706e75_2",
-        "fidelity_to_origin": 0.3001,
-        "fidelity_to_previous": 0.9987
-      },
-      {
-        "platform": "The Blast",
-        "timestamp": "2026-04-03T15:00:00+00:00",
+        "platform": "البوابة",
+        "timestamp": "2026-04-29T00:00:00+00:00",
         "claim_id": "ozempic-glp1_youtube_62706e75_2",
         "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9997
+        "fidelity_to_previous": 0.8475
       }
     ],
     "observation_boundary": null
@@ -225,48 +199,48 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ozempic-glp1_bluesky_09627869_0",
-      "similarity": 0.8382,
-      "text": "Ozempic is being used for weight loss."
+      "claim_id": "ozempic-glp1_x_a66e649d_0",
+      "similarity": 0.8391,
+      "text": "Taking Ozempic for one month will lead to significant weight loss."
     },
     {
-      "claim_id": "ozempic-glp1_bluesky_de6ea139_0",
-      "similarity": 0.8129,
-      "text": "Ozempic is ineffective."
+      "claim_id": "ozempic-glp1_x_acbb6f3b_0",
+      "similarity": 0.8314,
+      "text": "Ozempic can cause significant weight loss and muscle atrophy."
     },
     {
-      "claim_id": "ozempic-glp1_bluesky_7e7cf879_0",
-      "similarity": 0.784,
-      "text": "Ozempic is being used for purposes beyond its intended medical application."
+      "claim_id": "ozempic-glp1_x_a2981e76_0",
+      "similarity": 0.8207,
+      "text": "Jason Lee used Ozempic to lose weight but still considers himself unattractive."
     },
     {
-      "claim_id": "ozempic-glp1_bluesky_d9256ecb_0",
-      "similarity": 0.7639,
-      "text": "Ozempic and similar drugs are acceptable for legitimate health needs but not for minor weight loss."
+      "claim_id": "ozempic-glp1_x_2c889de8_0",
+      "similarity": 0.8,
+      "text": "Ozempic only suppresses appetite without addressing the underlying causes of weight gain."
     },
     {
-      "claim_id": "ozempic-glp1_bluesky_e5319ec0_0",
-      "similarity": 0.744,
-      "text": "The increased use of drugs like Ozempic is leading to the erasure of fat people from media representation."
+      "claim_id": "ozempic-glp1_x_7f5e0afb_0",
+      "similarity": 0.795,
+      "text": "Individuals using GLP-1 medications like Ozempic or those who have undergone bariatric surgery may require additional nutrients due to reduced food intake."
     }
   ],
   "example_content": [
     {
-      "text": "Ozempic is being used for weight loss.",
+      "text": "Ozempic may cause osteoporosis.",
       "platform": "Bluesky",
-      "confidence": 0.6,
+      "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Ozempic is being used for purposes beyond its intended medical application.",
-      "platform": "Bluesky",
-      "confidence": 0.6,
+      "text": "Jason Lee used Ozempic to lose weight but still considers himself unattractive.",
+      "platform": "X Platform",
+      "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Ozempic can be used to treat high blood pressure.",
-      "platform": "Bluesky",
-      "confidence": 0.6,
+      "text": "Ozempic use leads to muscle loss in a significant percentage of weight loss.",
+      "platform": "X Platform",
+      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

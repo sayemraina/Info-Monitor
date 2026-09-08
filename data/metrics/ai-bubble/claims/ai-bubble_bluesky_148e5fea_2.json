@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "ai-bubble_bluesky_148e5fea_2",
-    "cluster_id": "clu_ai-bubble_028",
-    "concept_id": "concept_ai-bubble_005",
+    "cluster_id": "clu_ai-bubble_048",
+    "concept_id": "concept_ai-bubble_002",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-27T19:51:12.806Z",
     "source_document_id": "da6767b9ff02fa47",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 4,
-    "friction": 0.3571,
+    "persistence_windows": 15,
+    "friction": 0.5063,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.6118,
+    "value": 0.8364,
     "confidence_interval": [
-      0.5077,
-      0.7159
+      0.7491,
+      0.9237
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.6118
+      0.8364
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.3571,
+    "value": 0.5063,
     "confidence_interval": [
-      0.2339,
-      0.4803
+      0.3943,
+      0.6183
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3571
+      0.5063
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.2,
+    "value": 0.75,
     "confidence_interval": [
-      0.065,
-      0.335
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9853,
+    "value": 0.9872,
     "confidence_interval": [
-      0.9092,
+      0.9112,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9853
+      0.9872
     ],
     "source_distribution": "production"
   },
@@ -120,75 +120,79 @@
     ]
   },
   "provenance": {
-    "first_platform": "Thebignewsletter.Com",
+    "first_platform": "Bluesky",
     "first_timestamp": "2026-04-27T19:51:12.806Z",
     "lead_lag": [
       {
-        "platform": "Economic Times",
-        "lag_hours": 9.4
+        "platform": "YouTube (Influencer Framing)",
+        "lag_hours": 463.0
       },
       {
-        "platform": "Bluesky",
-        "lag_hours": 12.3
+        "platform": "Pharmexec.Com",
+        "lag_hours": 817.8
       },
       {
-        "platform": "Global Gov Forum",
-        "lag_hours": 12.6
+        "platform": "Medium",
+        "lag_hours": 821.9
       },
       {
-        "platform": "Investing.Com India",
-        "lag_hours": 12.9
+        "platform": "X Platform",
+        "lag_hours": 850.1
       },
       {
-        "platform": "Knowledge Hub Media",
-        "lag_hours": 13.2
+        "platform": "Times Square Chronicles Newspa",
+        "lag_hours": 1363.9
+      },
+      {
+        "platform": "Cape Cod Times",
+        "lag_hours": 1368.9
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_ai-bubble_005",
+    "concept_id": "concept_ai-bubble_002",
     "hops": [
       {
-        "platform": "Thebignewsletter.Com",
-        "timestamp": "2026-04-27T02:01:04+00:00",
+        "platform": "Bluesky",
+        "timestamp": "2026-02-28T08:09:05.960000+00:00",
         "claim_id": "ai-bubble_bluesky_148e5fea_2",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Economic Times",
-        "timestamp": "2026-04-27T11:27:00+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-03-19T15:07:57+00:00",
         "claim_id": "ai-bubble_bluesky_148e5fea_2",
-        "fidelity_to_origin": 0.5013,
-        "fidelity_to_previous": 0.5013
+        "fidelity_to_origin": 0.8454,
+        "fidelity_to_previous": 0.8454
       },
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-27T14:17:42.898000+00:00",
+        "platform": "Pharmexec.Com",
+        "timestamp": "2026-04-03T10:00:00+00:00",
         "claim_id": "ai-bubble_bluesky_148e5fea_2",
-        "fidelity_to_origin": 0.3508,
-        "fidelity_to_previous": 0.6998
+        "fidelity_to_origin": 0.7268,
+        "fidelity_to_previous": 0.8597
       },
       {
-        "platform": "Global Gov Forum",
-        "timestamp": "2026-04-27T14:34:14+00:00",
+        "platform": "Medium",
+        "timestamp": "2026-04-03T14:01:02+00:00",
         "claim_id": "ai-bubble_bluesky_148e5fea_2",
-        "fidelity_to_origin": 0.3362,
-        "fidelity_to_previous": 0.9584
+        "fidelity_to_origin": 0.7255,
+        "fidelity_to_previous": 0.9982
       },
       {
-        "platform": "Investing.Com India",
-        "timestamp": "2026-04-27T14:52:11+00:00",
+        "platform": "X Platform",
+        "timestamp": "2026-04-04T18:12:49+00:00",
         "claim_id": "ai-bubble_bluesky_148e5fea_2",
-        "fidelity_to_origin": 0.3204,
-        "fidelity_to_previous": 0.953
+        "fidelity_to_origin": 0.7161,
+        "fidelity_to_previous": 0.987
       },
       {
-        "platform": "Knowledge Hub Media",
-        "timestamp": "2026-04-27T15:15:22+00:00",
+        "platform": "Times Square Chronicles Newspa",
+        "timestamp": "2026-04-26T04:00:12+00:00",
         "claim_id": "ai-bubble_bluesky_148e5fea_2",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9363
+        "fidelity_to_origin": 0.5445,
+        "fidelity_to_previous": 0.7604
       }
     ],
     "observation_boundary": null
@@ -223,46 +227,46 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-bubble_bluesky_148e5fea_0",
-      "similarity": 0.7321,
-      "text": "AI systems lack necessary ethical considerations."
+      "claim_id": "ai-bubble_bluesky_eff2e29c_0",
+      "similarity": 0.6828,
+      "text": "Current AI systems are overvalued and dependent on computer-controlled systems for self-sustenance."
     },
     {
-      "claim_id": "ai-bubble_bluesky_f7852e68_0",
-      "similarity": 0.5967,
-      "text": "AI technology should be abandoned."
+      "claim_id": "ai-bubble_bluesky_403f434e_1",
+      "similarity": 0.599,
+      "text": "Individuals bear some responsibility for the potential negative consequences of the AI investment bubble due to their use of AI products."
     },
     {
-      "claim_id": "ai-bubble_bluesky_062fa681_0",
-      "similarity": 0.5729,
-      "text": "The current focus on AI technology is primarily to sustain an unsustainable speculative bubble."
+      "claim_id": "ai-bubble_bluesky_d2a85ae3_0",
+      "similarity": 0.5561,
+      "text": "AI technologies are currently overvalued."
     },
     {
-      "claim_id": "ai-bubble_bluesky_117af800_0",
-      "similarity": 0.5542,
-      "text": "Current AI technology is not ready for widespread use."
+      "claim_id": "ai-bubble_bluesky_22ce6653_0",
+      "similarity": 0.5412,
+      "text": "The current valuation of AI technologies is likely inflated."
     },
     {
-      "claim_id": "ai-bubble_bluesky_8a4b1c6b_0",
-      "similarity": 0.4868,
-      "text": "AI technology will continue to be utilized even if the current hype diminishes."
+      "claim_id": "ai-bubble_bluesky_4980126a_0",
+      "similarity": 0.5384,
+      "text": "AI technology is currently overvalued."
     }
   ],
   "example_content": [
     {
-      "text": "Current AI technology is not ready for widespread use.",
+      "text": "AI technology is currently overvalued.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "AI technology will continue to be utilized even if the current hype diminishes.",
+      "text": "Individuals bear some responsibility for the potential negative consequences of the AI investment bubble due to their use of AI products.",
       "platform": "Bluesky",
-      "confidence": 0.9,
+      "confidence": 0.7,
       "is_influencer_framing": false
     },
     {
-      "text": "AI technology should be abandoned.",
+      "text": "AI systems used for military purposes are legitimate targets for attack.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

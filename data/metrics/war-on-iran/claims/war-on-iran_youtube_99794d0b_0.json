@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "journalistic",
     "id": "war-on-iran_youtube_99794d0b_0",
-    "cluster_id": "clu_war-on-iran_012",
-    "concept_id": "concept_war-on-iran_007",
+    "cluster_id": "clu_war-on-iran_026",
+    "concept_id": "concept_war-on-iran_000",
     "first_seen_platform": "youtube",
     "first_seen_timestamp": "2025-06-13T14:35:14Z",
     "source_document_id": "yt_UzJg19Z8nlg",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 15,
-    "friction": 0.3353,
+    "persistence_windows": 12,
+    "friction": 0.2973,
     "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 1,
+    "value": 0.3947,
     "confidence_interval": [
-      0.925,
-      1
+      0.2743,
+      0.5151
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.3947
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.3353,
+    "value": 0.2973,
     "confidence_interval": [
-      0.2104,
-      0.4602
+      0.1696,
+      0.425
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3353
+      0.2973
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.75,
+    "value": 0.6,
     "confidence_interval": [
-      0.6562,
-      0.8438
+      0.495,
+      0.705
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.75
+      0.6
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9733,
+    "value": 0.9252,
     "confidence_interval": [
-      0.8963,
+      0.8446,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9733
+      0.9252
     ],
     "source_distribution": "production"
   },
@@ -124,33 +124,25 @@
     "first_timestamp": "2025-06-13T14:35:14Z",
     "lead_lag": [
       {
-        "platform": "La Times",
-        "lag_hours": 6983.7
+        "platform": "X Platform",
+        "lag_hours": 7055.1
       },
       {
         "platform": "Bluesky",
-        "lag_hours": 7054.4
+        "lag_hours": 7600.9
       },
       {
-        "platform": "X Platform",
-        "lag_hours": 7054.9
+        "platform": "Ndtv",
+        "lag_hours": 7603.5
       },
       {
-        "platform": "Kivi",
-        "lag_hours": 7054.9
-      },
-      {
-        "platform": "Morning Star",
-        "lag_hours": 7055.5
-      },
-      {
-        "platform": "Arab News",
-        "lag_hours": 7056.6
+        "platform": "The Guardian",
+        "lag_hours": 7603.9
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_war-on-iran_007",
+    "concept_id": "concept_war-on-iran_000",
     "hops": [
       {
         "platform": "YouTube (Influencer Framing)",
@@ -160,39 +152,32 @@
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "La Times",
-        "timestamp": "2026-03-31T14:15:31+00:00",
+        "platform": "X Platform",
+        "timestamp": "2026-04-03T13:38:18+00:00",
         "claim_id": "war-on-iran_youtube_99794d0b_0",
-        "fidelity_to_origin": 0.3074,
-        "fidelity_to_previous": 0.3074
+        "fidelity_to_origin": 0.3505,
+        "fidelity_to_previous": 0.3505
       },
       {
         "platform": "Bluesky",
-        "timestamp": "2026-04-03T12:57:10.963000+00:00",
-        "claim_id": "war-on-iran_youtube_99794d0b_0",
-        "fidelity_to_origin": 0.3004,
-        "fidelity_to_previous": 0.9772
-      },
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-03T13:29:34+00:00",
-        "claim_id": "war-on-iran_youtube_99794d0b_0",
-        "fidelity_to_origin": 0.3004,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Kivi",
-        "timestamp": "2026-04-03T13:31:34+00:00",
-        "claim_id": "war-on-iran_youtube_99794d0b_0",
-        "fidelity_to_origin": 0.3004,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Morning Star",
-        "timestamp": "2026-04-03T14:06:39+00:00",
+        "timestamp": "2026-04-26T07:28:13.214000+00:00",
         "claim_id": "war-on-iran_youtube_99794d0b_0",
         "fidelity_to_origin": 0.3003,
-        "fidelity_to_previous": 0.9997
+        "fidelity_to_previous": 0.8568
+      },
+      {
+        "platform": "Ndtv",
+        "timestamp": "2026-04-26T10:07:02+00:00",
+        "claim_id": "war-on-iran_youtube_99794d0b_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.999
+      },
+      {
+        "platform": "The Guardian",
+        "timestamp": "2026-04-26T10:30:23+00:00",
+        "claim_id": "war-on-iran_youtube_99794d0b_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 1.0
       }
     ],
     "observation_boundary": null
@@ -227,47 +212,47 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "war-on-iran_bluesky_3ce31894_0",
-      "similarity": 0.6648,
-      "text": "Iran does not possess nuclear weapons."
+      "claim_id": "war-on-iran_x_012329bc_0",
+      "similarity": 0.7523,
+      "text": "Iran possesses nuclear weapons."
     },
     {
-      "claim_id": "war-on-iran_bluesky_e3e50e9c_0",
-      "similarity": 0.6378,
-      "text": "The 2015 Iran nuclear agreement gave Iran the right to develop advanced nuclear weapons."
+      "claim_id": "war-on-iran_x_77ee9ade_1",
+      "similarity": 0.7523,
+      "text": "Iran possesses nuclear weapons."
     },
     {
-      "claim_id": "war-on-iran_bluesky_56a37b34_0",
-      "similarity": 0.6337,
-      "text": "Iran did not have a nuclear arsenal that was destroyed last year."
+      "claim_id": "war-on-iran_x_b8b45656_0",
+      "similarity": 0.7507,
+      "text": "Iran is actively seeking to develop nuclear weapons."
     },
     {
-      "claim_id": "war-on-iran_bluesky_4201fbe8_1",
-      "similarity": 0.6276,
-      "text": "Russia controls Iran's nuclear facilities."
+      "claim_id": "war-on-iran_x_efe729f7_0",
+      "similarity": 0.7443,
+      "text": "Iran has successfully detonated a nuclear weapon."
     },
     {
-      "claim_id": "war-on-iran_bluesky_e67ec26f_0",
-      "similarity": 0.6071,
-      "text": "Iran does not have a legitimate right to possess nuclear weapons."
+      "claim_id": "war-on-iran_x_e6987fa4_0",
+      "similarity": 0.7247,
+      "text": "Iran is on the verge of becoming a nuclear power."
     }
   ],
   "example_content": [
     {
-      "text": "Iran does not have a legitimate right to possess nuclear weapons.",
-      "platform": "Bluesky",
+      "text": "Israel is providing Iran with materials for nuclear production.",
+      "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Iran did not have a nuclear arsenal that was destroyed last year.",
-      "platform": "Bluesky",
+      "text": "Iran has successfully detonated a nuclear weapon.",
+      "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "A journalist falsely reported that US national security briefs suggest Iran poses an imminent threat of nuclear war.",
-      "platform": "Bluesky",
+      "text": "The current US leadership's weakness has enabled Iran to advance its nuclear weapons program.",
+      "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

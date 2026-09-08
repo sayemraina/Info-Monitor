@@ -9,7 +9,7 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "ozempic-glp1_bluesky_b2d7553e_0",
-    "cluster_id": "clu_ozempic-glp1_002",
+    "cluster_id": "clu_ozempic-glp1_008",
     "concept_id": "concept_ozempic-glp1_001",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-29T15:11:51.417Z",
@@ -35,48 +35,48 @@
       0.4228
     ],
     "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 1,
-    "friction": 0,
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 15,
+    "friction": 0.1782,
     "friction_quadrant": "dead"
   },
   "salience": {
-    "value": 0.3029,
+    "value": 1,
     "confidence_interval": [
-      0.1756,
-      0.4302
+      0.925,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3029
+      1
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0,
+    "value": 0.1782,
     "confidence_interval": [
-      0,
-      0.15
+      0.0416,
+      0.3148
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.1782
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0.75,
     "confidence_interval": [
-      0,
-      0.1962
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9528,
+    "value": 0.9837,
     "confidence_interval": [
-      0.8743,
+      0.9075,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9528
+      0.9837
     ],
     "source_distribution": "production"
   },
@@ -120,12 +120,32 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
+    "first_platform": "Cnbc Business",
     "first_timestamp": "2026-04-29T15:11:51.417Z",
     "lead_lag": [
       {
+        "platform": "Bluesky",
+        "lag_hours": 45.6
+      },
+      {
         "platform": "X Platform",
-        "lag_hours": 16.5
+        "lag_hours": 46.6
+      },
+      {
+        "platform": "Wallstreet:Online",
+        "lag_hours": 851.4
+      },
+      {
+        "platform": "Finanznachrichten.De",
+        "lag_hours": 851.6
+      },
+      {
+        "platform": "Taiwan News",
+        "lag_hours": 851.7
+      },
+      {
+        "platform": "The Manila Times",
+        "lag_hours": 851.7
       }
     ]
   },
@@ -133,18 +153,46 @@
     "concept_id": "concept_ozempic-glp1_001",
     "hops": [
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-29T00:59:12.745000+00:00",
+        "platform": "Cnbc Business",
+        "timestamp": "2026-03-31T18:10:14+00:00",
         "claim_id": "ozempic-glp1_bluesky_b2d7553e_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "X Platform",
-        "timestamp": "2026-04-29T17:30:35+00:00",
+        "platform": "Bluesky",
+        "timestamp": "2026-04-02T15:46:56.816000+00:00",
         "claim_id": "ozempic-glp1_bluesky_b2d7553e_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
+        "fidelity_to_origin": 0.9765,
+        "fidelity_to_previous": 0.9765
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-02T16:47:00+00:00",
+        "claim_id": "ozempic-glp1_bluesky_b2d7553e_0",
+        "fidelity_to_origin": 0.976,
+        "fidelity_to_previous": 0.9995
+      },
+      {
+        "platform": "Wallstreet:Online",
+        "timestamp": "2026-05-06T05:36:01+00:00",
+        "claim_id": "ozempic-glp1_bluesky_b2d7553e_0",
+        "fidelity_to_origin": 0.5612,
+        "fidelity_to_previous": 0.575
+      },
+      {
+        "platform": "Finanznachrichten.De",
+        "timestamp": "2026-05-06T05:46:00+00:00",
+        "claim_id": "ozempic-glp1_bluesky_b2d7553e_0",
+        "fidelity_to_origin": 0.5611,
+        "fidelity_to_previous": 0.9998
+      },
+      {
+        "platform": "Taiwan News",
+        "timestamp": "2026-05-06T05:49:15+00:00",
+        "claim_id": "ozempic-glp1_bluesky_b2d7553e_0",
+        "fidelity_to_origin": 0.561,
+        "fidelity_to_previous": 0.9998
       }
     ],
     "observation_boundary": null
@@ -179,38 +227,48 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ozempic-glp1_bluesky_782cb3ae_0",
-      "similarity": 0.5044,
-      "text": "Ozempic costs approximately $150 per month, while Wegovy costs around $250 per month."
+      "claim_id": "ozempic-glp1_bluesky_68eac903_0",
+      "similarity": 0.6519,
+      "text": "Novo Nordisk believes its Wegovy pill is superior to Eli Lilly's new obesity drug."
     },
     {
-      "claim_id": "ozempic-glp1_x_a1d14074_0",
-      "similarity": 0.4616,
-      "text": "Individuals who discontinue Ozempic treatment often regain the weight they lost."
+      "claim_id": "ozempic-glp1_bluesky_6142966a_0",
+      "similarity": 0.6475,
+      "text": "Wegovy is not effectively suppressing my appetite."
     },
     {
-      "claim_id": "ozempic-glp1_bluesky_23606638_0",
-      "similarity": 0.4341,
-      "text": "The government may be incentivizing pharmaceutical companies to promote weight loss drugs like Ozempic and Wegovy to increase the number of eligible military recruits."
+      "claim_id": "ozempic-glp1_bluesky_97538db3_0",
+      "similarity": 0.4886,
+      "text": "Wegovy is effective for weight management."
+    },
+    {
+      "claim_id": "ozempic-glp1_bluesky_d13fdee4_0",
+      "similarity": 0.4784,
+      "text": "Wegovy is not effective for weight loss."
+    },
+    {
+      "claim_id": "ozempic-glp1_bluesky_137583b1_0",
+      "similarity": 0.4672,
+      "text": "Oral Wegovy requires a strict and inconvenient dosing regimen."
     }
   ],
   "example_content": [
     {
-      "text": "Ozempic costs approximately $150 per month, while Wegovy costs around $250 per month.",
+      "text": "Roche's CT-388 is a promising drug for obesity treatment.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The government may be incentivizing pharmaceutical companies to promote weight loss drugs like Ozempic and Wegovy to increase the number of eligible military recruits.",
+      "text": "Wegovy is not effectively suppressing my appetite.",
+      "platform": "Bluesky",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Wegovy is not effective for weight loss.",
       "platform": "Bluesky",
       "confidence": 0.6,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Individuals who discontinue Ozempic treatment often regain the weight they lost.",
-      "platform": "X Platform",
-      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

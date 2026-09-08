@@ -9,7 +9,7 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "immigration_bluesky_966b94ac_0",
-    "cluster_id": "clu_immigration_026",
+    "cluster_id": "clu_immigration_059",
     "concept_id": "concept_immigration_007",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-25T15:01:07.608Z",
@@ -24,107 +24,94 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": null,
+    "value": 0.855,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.755,
+      0.955
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.855
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 10,
+    "friction": 0.5625,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.3024,
+    "confidence_interval": [
+      0.1751,
+      0.4297
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3024
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.5625,
+    "confidence_interval": [
+      0.4547,
+      0.6703
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5625
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.5,
+    "confidence_interval": [
+      0.3875,
+      0.6125
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.85,
     "confidence_interval": [
-      0,
-      0
+      0.7638,
+      0.9362
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.85
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 0.9811,
     "confidence_interval": [
-      0,
-      0
+      0.9047,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.9811
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,64 +120,154 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "X Platform",
+    "first_timestamp": "2026-04-25T15:01:07.608Z",
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 2.2
+      },
+      {
+        "platform": "Arutz Sheva Israel News",
+        "lag_hours": 23.4
+      },
+      {
+        "platform": "Thewillnews.Com",
+        "lag_hours": 655.1
+      },
+      {
+        "platform": "Fox News",
+        "lag_hours": 1311.2
+      },
+      {
+        "platform": "Asianet News Network Pvt Ltd",
+        "lag_hours": 1316.6
+      },
+      {
+        "platform": "India Tv News",
+        "lag_hours": 1316.6
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_immigration_007",
+    "hops": [
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-02T11:26:54+00:00",
+        "claim_id": "immigration_bluesky_966b94ac_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-02T13:37:46.145000+00:00",
+        "claim_id": "immigration_bluesky_966b94ac_0",
+        "fidelity_to_origin": 0.9988,
+        "fidelity_to_previous": 0.9988
+      },
+      {
+        "platform": "Arutz Sheva Israel News",
+        "timestamp": "2026-04-03T10:50:27+00:00",
+        "claim_id": "immigration_bluesky_966b94ac_0",
+        "fidelity_to_origin": 0.9876,
+        "fidelity_to_previous": 0.9888
+      },
+      {
+        "platform": "Thewillnews.Com",
+        "timestamp": "2026-04-29T18:33:41+00:00",
+        "claim_id": "immigration_bluesky_966b94ac_0",
+        "fidelity_to_origin": 0.6517,
+        "fidelity_to_previous": 0.6599
+      },
+      {
+        "platform": "Fox News",
+        "timestamp": "2026-05-27T02:41:42+00:00",
+        "claim_id": "immigration_bluesky_966b94ac_0",
+        "fidelity_to_origin": 0.3028,
+        "fidelity_to_previous": 0.4646
+      },
+      {
+        "platform": "Asianet News Network Pvt Ltd",
+        "timestamp": "2026-05-27T08:00:55+00:00",
+        "claim_id": "immigration_bluesky_966b94ac_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.9908
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "immigration_thewillnews.com_96a001f5_0",
-      "similarity": 1.0,
-      "text": "The South African government should deport all undocumented foreign nationals."
+      "claim_id": "immigration_x_a8313cf9_0",
+      "similarity": 0.975,
+      "text": "New Zealand's immigration policies should be more restrictive to avoid problems experienced by other countries."
     },
     {
-      "claim_id": "immigration_x_8b8f18bf_0",
-      "similarity": 0.7358,
-      "text": "Immigration policies should prohibit Muslims from entering the UK."
+      "claim_id": "immigration_x_d2b3dc14_1",
+      "similarity": 0.6852,
+      "text": "The user is not anti-immigrant, but believes immigrants should come to America legally."
     },
     {
-      "claim_id": "immigration_fox_wilmington_3da693d1_2",
-      "similarity": 0.6386,
-      "text": "Congress should simplify immigration law and consolidate immigration agencies to prevent fraud."
+      "claim_id": "immigration_x_efb68528_1",
+      "similarity": 0.6784,
+      "text": "Immigration to the U.S. should occur through legal channels."
     },
     {
-      "claim_id": "immigration_aol_9d0e1dfc_0",
-      "similarity": 0.5923,
-      "text": "The complexity of immigration law and the fragmented immigration bureaucracy create opportunities for fraud."
+      "claim_id": "immigration_bluesky_3ae496e3_0",
+      "similarity": 0.64,
+      "text": "Illegal immigration should be stopped."
     },
     {
-      "claim_id": "immigration_aol_9d0e1dfc_2",
-      "similarity": 0.586,
-      "text": "Congress should simplify immigration law and consolidate immigration agencies to prevent fraud."
+      "claim_id": "immigration_x_7a7835da_0",
+      "similarity": 0.6213,
+      "text": "Banks that have loaned money to immigrants should forfeit that money."
     }
   ],
   "example_content": [
     {
-      "text": "The complexity of immigration law and the fragmented immigration bureaucracy create opportunities for fraud.",
-      "platform": "Aol",
+      "text": "Anti-BDS laws should be reversed.",
+      "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Congress should simplify immigration law and consolidate immigration agencies to prevent fraud.",
-      "platform": "Aol",
-      "confidence": 0.9,
+      "text": "Illegal immigration should be stopped.",
+      "platform": "Bluesky",
+      "confidence": 1.0,
       "is_influencer_framing": false
     },
     {
-      "text": "Congress should simplify immigration law and consolidate immigration agencies to prevent fraud.",
-      "platform": "Fox Wilmington",
+      "text": "Significant portions of Western Muslim communities support Sharia law elements that conflict with liberal democracy.",
+      "platform": "Arutz Sheva Israel News",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

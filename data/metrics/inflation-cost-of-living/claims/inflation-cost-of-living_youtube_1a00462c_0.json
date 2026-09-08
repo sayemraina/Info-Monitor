@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "inflation-cost-of-living_youtube_1a00462c_0",
-    "cluster_id": "clu_inflation-cost-of-living_002",
-    "concept_id": "concept_inflation-cost-of-living_002",
+    "cluster_id": "clu_inflation-cost-of-living_008",
+    "concept_id": "concept_inflation-cost-of-living_003",
     "first_seen_platform": "youtube",
     "first_seen_timestamp": "2025-10-23T16:01:23Z",
     "source_document_id": "yt_lyuMEsGb0I0",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 12,
-    "friction": 0.2368,
+    "persistence_windows": 15,
+    "friction": 0.3143,
     "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 0.3319,
+    "value": 0.7414,
     "confidence_interval": [
-      0.2068,
-      0.457
+      0.647,
+      0.8358
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3319
+      0.7414
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.2368,
+    "value": 0.3143,
     "confidence_interval": [
-      0.1046,
-      0.369
+      0.1879,
+      0.4407
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2368
+      0.3143
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.6,
+    "value": 0.75,
     "confidence_interval": [
-      0.495,
-      0.705
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.6
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9832,
     "confidence_interval": [
-      0.925,
+      0.9069,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9832
     ],
     "source_distribution": "production"
   },
@@ -123,24 +123,20 @@
     "lead_lag": [
       {
         "platform": "Bluesky",
-        "lag_hours": 8410.4
+        "lag_hours": 8411.9
       },
       {
         "platform": "Todayville",
         "lag_hours": 8422.9
       },
       {
-        "platform": "Mirror",
-        "lag_hours": 8422.9
-      },
-      {
         "platform": "X Platform",
-        "lag_hours": 8460.1
+        "lag_hours": 9206.0
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_inflation-cost-of-living_002",
+    "concept_id": "concept_inflation-cost-of-living_003",
     "hops": [
       {
         "platform": "YouTube (Influencer Framing)",
@@ -151,31 +147,24 @@
       },
       {
         "platform": "Bluesky",
-        "timestamp": "2026-04-03T04:24:52.731000+00:00",
+        "timestamp": "2026-04-03T05:53:39.870000+00:00",
         "claim_id": "inflation-cost-of-living_youtube_1a00462c_0",
-        "fidelity_to_origin": 0.3041,
-        "fidelity_to_previous": 0.3041
+        "fidelity_to_origin": 0.3604,
+        "fidelity_to_previous": 0.3604
       },
       {
         "platform": "Todayville",
         "timestamp": "2026-04-03T16:52:44+00:00",
         "claim_id": "inflation-cost-of-living_youtube_1a00462c_0",
-        "fidelity_to_origin": 0.3031,
-        "fidelity_to_previous": 0.9967
-      },
-      {
-        "platform": "Mirror",
-        "timestamp": "2026-04-03T16:54:57+00:00",
-        "claim_id": "inflation-cost-of-living_youtube_1a00462c_0",
-        "fidelity_to_origin": 0.3031,
-        "fidelity_to_previous": 1.0
+        "fidelity_to_origin": 0.3595,
+        "fidelity_to_previous": 0.9975
       },
       {
         "platform": "X Platform",
-        "timestamp": "2026-04-05T06:06:28+00:00",
+        "timestamp": "2026-05-06T08:02:14+00:00",
         "claim_id": "inflation-cost-of-living_youtube_1a00462c_0",
         "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9898
+        "fidelity_to_previous": 0.8345
       }
     ],
     "observation_boundary": null
@@ -210,9 +199,14 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "inflation-cost-of-living_bluesky_3068262d_0",
-      "similarity": 0.6417,
-      "text": "Gas and grocery prices should be a prominent topic of discussion."
+      "claim_id": "inflation-cost-of-living_todayville_0ab11ef6_0",
+      "similarity": 0.7617,
+      "text": "Government intervention in the grocery market, such as government-run grocery stores, is unlikely to effectively address food inflation."
+    },
+    {
+      "claim_id": "inflation-cost-of-living_bluesky_a7b5fcbd_0",
+      "similarity": 0.6835,
+      "text": "The cost of groceries is too high."
     },
     {
       "claim_id": "inflation-cost-of-living_bluesky_d4f6b5dd_1",
@@ -228,28 +222,23 @@
       "claim_id": "inflation-cost-of-living_bluesky_2b16ae54_0",
       "similarity": 0.6204,
       "text": "Grocery prices are very high and causing financial distress for consumers."
-    },
-    {
-      "claim_id": "inflation-cost-of-living_bluesky_d7285ecb_0",
-      "similarity": 0.6077,
-      "text": "Rising gas prices lead to increased grocery prices."
     }
   ],
   "example_content": [
     {
-      "text": "The cost of groceries has increased significantly.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "The cost of groceries, even with recent inflation, is lower than it was 70 years ago when adjusted for inflation.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
       "text": "The government should intervene to ensure consistent pricing across all store formats.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Grocery chains are artificially inflating food prices.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Monopolistic meatpacking and grocery companies are responsible for high food prices.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

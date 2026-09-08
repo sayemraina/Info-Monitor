@@ -35,22 +35,22 @@
       0.645
     ],
     "source_distribution": "production",
-    "source_diversity": 0.25,
-    "bridge_ratio": 0.25,
-    "persistence_windows": 1,
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 4,
     "friction": 1,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.3204,
+    "value": 0.2208,
     "confidence_interval": [
-      0.1944,
-      0.4464
+      0.0874,
+      0.3542
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3204
+      0.2208
     ],
     "source_distribution": "production"
   },
@@ -68,15 +68,15 @@
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0.2,
     "confidence_interval": [
-      0,
-      0.1962
+      0.065,
+      0.335
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0.2
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.86,
+    "value": 0.9127,
     "confidence_interval": [
-      0.7745,
-      0.9455
+      0.8312,
+      0.9942
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.86
+      0.9127
     ],
     "source_distribution": "production"
   },
@@ -120,22 +120,56 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
+    "first_platform": "YouTube (Influencer Framing)",
     "first_timestamp": "2026-05-27T04:45:45.000Z",
-    "lead_lag": []
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 862.1
+      },
+      {
+        "platform": "The New Arab",
+        "lag_hours": 1486.1
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 1647.6
+      }
+    ]
   },
   "supply_chain": {
     "concept_id": "concept_israel-palestine_000",
     "hops": [
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-05-27T04:45:45+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-02-26T17:18:51+00:00",
         "claim_id": "israel-palestine_bluesky_72e4f976_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-03T15:24:50.048000+00:00",
+        "claim_id": "israel-palestine_bluesky_72e4f976_0",
+        "fidelity_to_origin": 0.6337,
+        "fidelity_to_previous": 0.6337
+      },
+      {
+        "platform": "The New Arab",
+        "timestamp": "2026-04-29T15:26:32+00:00",
+        "claim_id": "israel-palestine_bluesky_72e4f976_0",
+        "fidelity_to_origin": 0.3686,
+        "fidelity_to_previous": 0.5817
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-05-06T08:54:04+00:00",
+        "claim_id": "israel-palestine_bluesky_72e4f976_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.8139
       }
     ],
-    "observation_boundary": "No public antecedent detected"
+    "observation_boundary": null
   },
   "coordination": {
     "burstiness": {
@@ -165,6 +199,51 @@
     "status": "insufficient_data",
     "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
-  "semantic_neighbors": [],
-  "example_content": []
+  "semantic_neighbors": [
+    {
+      "claim_id": "israel-palestine_youtube_7eebdbaa_2",
+      "similarity": 0.63,
+      "text": "The Israeli army obstructed justice by failing to conduct a thorough internal investigation into the killing of 15 Palestinian medics and aid workers in Gaza."
+    },
+    {
+      "claim_id": "israel-palestine_youtube_f497e3f7_0",
+      "similarity": 0.559,
+      "text": "A recently passed Israeli law unfairly targets Palestinian prisoners."
+    },
+    {
+      "claim_id": "israel-palestine_x_7f546fc6_0",
+      "similarity": 0.5294,
+      "text": "The Israeli army is accused of concealing data regarding soldiers discharged for psychological reasons during the Gaza war."
+    },
+    {
+      "claim_id": "israel-palestine_bluesky_8c70c697_0",
+      "similarity": 0.5071,
+      "text": "Israel unjustly detains individuals who advocate for Palestinian rights."
+    },
+    {
+      "claim_id": "israel-palestine_the_new_arab_3afd6847_1",
+      "similarity": 0.4938,
+      "text": "The detention of healthcare workers by Israel negatively impacts the delivery of essential health services in Gaza."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Israel unjustly detains individuals who advocate for Palestinian rights.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "A recently passed Israeli law unfairly targets Palestinian prisoners.",
+      "platform": "YouTube (Influencer Framing)",
+      "confidence": 0.9,
+      "is_influencer_framing": true
+    },
+    {
+      "text": "The Israeli army obstructed justice by failing to conduct a thorough internal investigation into the killing of 15 Palestinian medics and aid workers in Gaza.",
+      "platform": "YouTube (Influencer Framing)",
+      "confidence": 0.8,
+      "is_influencer_framing": true
+    }
+  ]
 }

@@ -24,107 +24,94 @@
     "source_type": "elite_media"
   },
   "momentum": {
-    "value": null,
+    "value": 0.645,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.545,
+      0.745
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.645
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 15,
+    "friction": 0.5938,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.6281,
+    "confidence_interval": [
+      0.5252,
+      0.731
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.6281
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.5938,
+    "confidence_interval": [
+      0.4883,
+      0.6993
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5938
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.75,
+    "confidence_interval": [
+      0.6562,
+      0.8438
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.75
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.85,
     "confidence_interval": [
-      0,
-      0
+      0.7638,
+      0.9362
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.85
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 0.9959,
     "confidence_interval": [
-      0,
-      0
+      0.9206,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.9959
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,65 +120,155 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "Daily Wire",
+    "first_timestamp": "2026-05-21T05:45:44Z",
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 6.8
+      },
+      {
+        "platform": "Brigitte Gabriel",
+        "lag_hours": 23.5
+      },
+      {
+        "platform": "Free Press Journal",
+        "lag_hours": 23.7
+      },
+      {
+        "platform": "Pj Media",
+        "lag_hours": 23.8
+      },
+      {
+        "platform": "聯合新聞網 Udn.Com",
+        "lag_hours": 568.3
+      },
+      {
+        "platform": "The Guardian",
+        "lag_hours": 568.8
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_dei-rollbacks_001",
+    "hops": [
+      {
+        "platform": "Daily Wire",
+        "timestamp": "2026-04-02T16:15:13+00:00",
+        "claim_id": "dei-rollbacks_common_dreams_097b2c7f_2",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-02T23:04:20.650000+00:00",
+        "claim_id": "dei-rollbacks_common_dreams_097b2c7f_2",
+        "fidelity_to_origin": 0.9964,
+        "fidelity_to_previous": 0.9964
+      },
+      {
+        "platform": "Brigitte Gabriel",
+        "timestamp": "2026-04-03T15:46:24+00:00",
+        "claim_id": "dei-rollbacks_common_dreams_097b2c7f_2",
+        "fidelity_to_origin": 0.9874,
+        "fidelity_to_previous": 0.991
+      },
+      {
+        "platform": "Free Press Journal",
+        "timestamp": "2026-04-03T15:57:14+00:00",
+        "claim_id": "dei-rollbacks_common_dreams_097b2c7f_2",
+        "fidelity_to_origin": 0.9873,
+        "fidelity_to_previous": 0.9999
+      },
+      {
+        "platform": "Pj Media",
+        "timestamp": "2026-04-03T16:01:00+00:00",
+        "claim_id": "dei-rollbacks_common_dreams_097b2c7f_2",
+        "fidelity_to_origin": 0.9873,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "聯合新聞網 Udn.Com",
+        "timestamp": "2026-04-26T08:32:45+00:00",
+        "claim_id": "dei-rollbacks_common_dreams_097b2c7f_2",
+        "fidelity_to_origin": 0.6965,
+        "fidelity_to_previous": 0.7055
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "dei-rollbacks_bluesky_31040c85_0",
-      "similarity": 0.6823,
-      "text": "The Department of Homeland Security and Immigration and Customs Enforcement are overtly promoting white supremacist messaging."
+      "claim_id": "dei-rollbacks_bluesky_02101b31_0",
+      "similarity": 0.4195,
+      "text": "Government officials who promote religious viewpoints should face legal consequences."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_31040c85_1",
-      "similarity": 0.4751,
-      "text": "The Department of Justice's attack on the Southern Poverty Law Center, the 1776 fund, and the rollback of DEI initiatives indicate a rise in Nazi mobilization."
+      "claim_id": "dei-rollbacks_daily_wire_42f98b2c_1",
+      "similarity": 0.383,
+      "text": "Hollywood's progressive values and potential for virtue signaling pose a threat to the Christian morality and themes present in Tolkien's works."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_ded4ceb0_1",
-      "similarity": 0.3862,
-      "text": "White Christian Nationalists blame others for their declining social position."
+      "claim_id": "dei-rollbacks_bluesky_1f7628a9_1",
+      "similarity": 0.3203,
+      "text": "The association of God with open carry gun rights is wrong."
     },
     {
-      "claim_id": "dei-rollbacks_american_thinker_dd9583e1_0",
-      "similarity": 0.3559,
-      "text": "Republicans are acting inconsistently by opposing DEI while supporting the creation of a Smithsonian American Women's History Museum."
+      "claim_id": "dei-rollbacks_brigitte_gabriel_7a05a01d_1",
+      "similarity": 0.2314,
+      "text": "Historical achievements should be viewed as human achievements, not through the lens of identity politics."
     },
     {
-      "claim_id": "dei-rollbacks_american_thinker_dd9583e1_2",
-      "similarity": 0.316,
-      "text": "The Smithsonian American Women's History Museum will likely be controlled by individuals with ideologies that Republicans oppose."
+      "claim_id": "dei-rollbacks_free_press_journal_ba8b96cd_1",
+      "similarity": 0.2186,
+      "text": "Authorities are using anti-terror laws to suppress democratic dissent against mining projects in tribal areas."
     }
   ],
   "example_content": [
     {
-      "text": "The Department of Homeland Security and Immigration and Customs Enforcement are overtly promoting white supremacist messaging.",
+      "text": "Government officials who promote religious viewpoints should face legal consequences.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The Department of Justice's attack on the Southern Poverty Law Center, the 1776 fund, and the rollback of DEI initiatives indicate a rise in Nazi mobilization.",
+      "text": "The association of God with open carry gun rights is wrong.",
       "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Historical achievements should be viewed as human achievements, not through the lens of identity politics.",
+      "platform": "Brigitte Gabriel",
       "confidence": 0.8,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "White Christian Nationalists blame others for their declining social position.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

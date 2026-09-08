@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "ai-bubble_bluesky_ee784697_1",
-    "cluster_id": "clu_ai-bubble_015",
-    "concept_id": "concept_ai-bubble_013",
+    "cluster_id": "clu_ai-bubble_008",
+    "concept_id": "concept_ai-bubble_003",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-03T00:00:30.854Z",
     "source_document_id": "7fa1d487bb39372e",
@@ -35,48 +35,48 @@
       0.4958
     ],
     "source_distribution": "production",
-    "source_diversity": 0.25,
-    "bridge_ratio": 0.25,
-    "persistence_windows": 1,
-    "friction": 1,
+    "source_diversity": 0.75,
+    "bridge_ratio": 0.75,
+    "persistence_windows": 6,
+    "friction": 0.5263,
     "friction_quadrant": "successful_suppression"
   },
   "salience": {
-    "value": 0.281,
+    "value": 0.2078,
     "confidence_interval": [
-      0.1521,
-      0.4099
+      0.0734,
+      0.3422
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.281
+      0.2078
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 1,
+    "value": 0.5263,
     "confidence_interval": [
-      0.925,
-      1
+      0.4158,
+      0.6368
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.5263
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0.3,
     "confidence_interval": [
-      0,
-      0.1962
+      0.1725,
+      0.4275
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0.3
     ],
     "source_distribution": "production"
   },
@@ -120,10 +120,19 @@
   "provenance": {
     "first_platform": "Bluesky",
     "first_timestamp": "2026-04-03T00:00:30.854Z",
-    "lead_lag": []
+    "lead_lag": [
+      {
+        "platform": "The Twelfth Magpie",
+        "lag_hours": 1702.2
+      },
+      {
+        "platform": "Financial Times News",
+        "lag_hours": 1707.7
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "concept_ai-bubble_013",
+    "concept_id": "concept_ai-bubble_003",
     "hops": [
       {
         "platform": "Bluesky",
@@ -131,9 +140,23 @@
         "claim_id": "ai-bubble_bluesky_ee784697_1",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "The Twelfth Magpie",
+        "timestamp": "2026-05-26T14:55:00+00:00",
+        "claim_id": "ai-bubble_bluesky_ee784697_1",
+        "fidelity_to_origin": 0.3023,
+        "fidelity_to_previous": 0.3023
+      },
+      {
+        "platform": "Financial Times News",
+        "timestamp": "2026-05-26T20:26:20+00:00",
+        "claim_id": "ai-bubble_bluesky_ee784697_1",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.9924
       }
     ],
-    "observation_boundary": "No public antecedent detected"
+    "observation_boundary": null
   },
   "coordination": {
     "burstiness": {
@@ -178,6 +201,11 @@
       "claim_id": "ai-bubble_bluesky_b157a161_0",
       "similarity": 0.5458,
       "text": "Elon Musk is attempting to inflate the valuation of SpaceX by consolidating less successful ventures under it."
+    },
+    {
+      "claim_id": "ai-bubble_bluesky_b731dbdd_0",
+      "similarity": 0.5384,
+      "text": "SpaceX is significantly overvalued."
     },
     {
       "claim_id": "ai-bubble_bluesky_ee784697_0",

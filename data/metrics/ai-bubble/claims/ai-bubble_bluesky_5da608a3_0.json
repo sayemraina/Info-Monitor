@@ -35,26 +35,39 @@
       0.5378
     ],
     "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 1,
-    "friction": 0.75,
-    "friction_quadrant": "contested_advance"
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 15,
+    "friction": 0.3167,
+    "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 0.3283,
+    "value": 0.6353,
     "confidence_interval": [
-      0.2029,
-      0.4537
+      0.5329,
+      0.7377
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3283
+      0.6353
     ],
     "source_distribution": "production"
   },
   "friction": {
+    "value": 0.3167,
+    "confidence_interval": [
+      0.1905,
+      0.4429
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3167
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
     "value": 0.75,
     "confidence_interval": [
       0.6562,
@@ -64,19 +77,6 @@
     "time_window": "24h",
     "sparkline": [
       0.75
-    ],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0.05,
-    "confidence_interval": [
-      0,
-      0.1962
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [
-      0.05
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9741,
     "confidence_interval": [
-      0.925,
+      0.8972,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9741
     ],
     "source_distribution": "production"
   },
@@ -120,12 +120,32 @@
     ]
   },
   "provenance": {
-    "first_platform": "The Guardian",
+    "first_platform": "YouTube (Influencer Framing)",
     "first_timestamp": "2026-05-27T03:47:44.380Z",
     "lead_lag": [
       {
         "platform": "Bluesky",
-        "lag_hours": 12.7
+        "lag_hours": 900.1
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 1812.8
+      },
+      {
+        "platform": "Medium",
+        "lag_hours": 2300.5
+      },
+      {
+        "platform": "Barchart.Com",
+        "lag_hours": 2323.9
+      },
+      {
+        "platform": "Blockonomi",
+        "lag_hours": 2361.2
+      },
+      {
+        "platform": "The Star ",
+        "lag_hours": 2361.7
       }
     ]
   },
@@ -133,18 +153,46 @@
     "concept_id": "concept_ai-bubble_000",
     "hops": [
       {
-        "platform": "The Guardian",
-        "timestamp": "2026-05-26T12:01:26+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-01-19T05:30:03+00:00",
         "claim_id": "ai-bubble_bluesky_5da608a3_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
         "platform": "Bluesky",
-        "timestamp": "2026-05-27T00:44:38.536000+00:00",
+        "timestamp": "2026-02-25T17:34:24.066000+00:00",
         "claim_id": "ai-bubble_bluesky_5da608a3_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
+        "fidelity_to_origin": 0.7937,
+        "fidelity_to_previous": 0.7937
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-04T18:15:51+00:00",
+        "claim_id": "ai-bubble_bluesky_5da608a3_0",
+        "fidelity_to_origin": 0.5846,
+        "fidelity_to_previous": 0.7366
+      },
+      {
+        "platform": "Medium",
+        "timestamp": "2026-04-25T02:01:01+00:00",
+        "claim_id": "ai-bubble_bluesky_5da608a3_0",
+        "fidelity_to_origin": 0.4728,
+        "fidelity_to_previous": 0.8088
+      },
+      {
+        "platform": "Barchart.Com",
+        "timestamp": "2026-04-26T01:24:10+00:00",
+        "claim_id": "ai-bubble_bluesky_5da608a3_0",
+        "fidelity_to_origin": 0.4674,
+        "fidelity_to_previous": 0.9886
+      },
+      {
+        "platform": "Blockonomi",
+        "timestamp": "2026-04-27T14:43:38+00:00",
+        "claim_id": "ai-bubble_bluesky_5da608a3_0",
+        "fidelity_to_origin": 0.4589,
+        "fidelity_to_previous": 0.9818
       }
     ],
     "observation_boundary": null
@@ -179,37 +227,47 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-bubble_bluesky_e8d1c297_1",
-      "similarity": 0.6962,
-      "text": "AI is negatively impacting people's cognitive abilities."
+      "claim_id": "ai-bubble_bluesky_d2a85ae3_1",
+      "similarity": 0.7486,
+      "text": "AI is detrimental to creative endeavors."
     },
     {
-      "claim_id": "ai-bubble_bluesky_9a113828_0",
-      "similarity": 0.604,
-      "text": "The author is excessively promoting AI while ignoring the impact of climate change."
+      "claim_id": "ai-bubble_bluesky_0af16308_1",
+      "similarity": 0.7016,
+      "text": "AI is having a significant impact, unlike previous fads."
     },
     {
-      "claim_id": "ai-bubble_the_guardian_aabc83b2_0",
-      "similarity": 0.5948,
-      "text": "Control over artificial intelligence is concentrated in the hands of a small group of people."
+      "claim_id": "ai-bubble_youtube_32dca76a_1",
+      "similarity": 0.6284,
+      "text": "The capabilities of AI are rapidly improving."
+    },
+    {
+      "claim_id": "ai-bubble_bluesky_097a1402_2",
+      "similarity": 0.5851,
+      "text": "The efficiency and use of AI is rapidly increasing."
+    },
+    {
+      "claim_id": "ai-bubble_youtube_5b51d267_1",
+      "similarity": 0.5716,
+      "text": "AI is a valuable tool because it can rapidly analyze and provide answers from vast datasets."
     }
   ],
   "example_content": [
     {
-      "text": "The author is excessively promoting AI while ignoring the impact of climate change.",
+      "text": "AI is detrimental to creative endeavors.",
+      "platform": "Bluesky",
+      "confidence": 1.0,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "AI is having a significant impact, unlike previous fads.",
       "platform": "Bluesky",
       "confidence": 0.8,
       "is_influencer_framing": false
     },
     {
-      "text": "AI is negatively impacting people's cognitive abilities.",
+      "text": "AI is superior to basic search technologies.",
       "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Control over artificial intelligence is concentrated in the hands of a small group of people.",
-      "platform": "The Guardian",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

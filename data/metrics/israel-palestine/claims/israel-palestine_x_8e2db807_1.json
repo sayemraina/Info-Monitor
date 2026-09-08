@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "israel-palestine_x_8e2db807_1",
-    "cluster_id": "clu_israel-palestine_025",
-    "concept_id": "concept_israel-palestine_002",
+    "cluster_id": "clu_israel-palestine_034",
+    "concept_id": "concept_israel-palestine_001",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-05-06T07:28:19.000Z",
     "source_document_id": "x_2051927020339093620",
@@ -35,48 +35,48 @@
       0.925
     ],
     "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 1,
-    "friction": 0.75,
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 6,
+    "friction": 0.8889,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.3108,
+    "value": 0.2301,
     "confidence_interval": [
-      0.1841,
-      0.4375
+      0.0974,
+      0.3628
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3108
+      0.2301
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.75,
+    "value": 0.8889,
     "confidence_interval": [
-      0.6562,
-      0.8438
+      0.8056,
+      0.9722
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.75
+      0.8889
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0.3,
     "confidence_interval": [
-      0,
-      0.1962
+      0.1725,
+      0.4275
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0.3
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9888,
+    "value": 0.9731,
     "confidence_interval": [
-      0.913,
+      0.8961,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9888
+      0.9731
     ],
     "source_distribution": "production"
   },
@@ -124,27 +124,60 @@
     "first_timestamp": "2026-05-06T07:28:19.000Z",
     "lead_lag": [
       {
+        "platform": "Internewscast Journal",
+        "lag_hours": 576.7
+      },
+      {
+        "platform": "The National",
+        "lag_hours": 618.6
+      },
+      {
         "platform": "X Platform",
-        "lag_hours": 7.1
+        "lag_hours": 781.0
+      },
+      {
+        "platform": "Jacobin",
+        "lag_hours": 1275.0
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_israel-palestine_002",
+    "concept_id": "concept_israel-palestine_001",
     "hops": [
       {
         "platform": "Bluesky",
-        "timestamp": "2026-05-06T00:22:42.904000+00:00",
+        "timestamp": "2026-04-03T15:27:31.140000+00:00",
         "claim_id": "israel-palestine_x_8e2db807_1",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
+        "platform": "Internewscast Journal",
+        "timestamp": "2026-04-27T16:09:52+00:00",
+        "claim_id": "israel-palestine_x_8e2db807_1",
+        "fidelity_to_origin": 0.6834,
+        "fidelity_to_previous": 0.6834
+      },
+      {
+        "platform": "The National",
+        "timestamp": "2026-04-29T10:05:53+00:00",
+        "claim_id": "israel-palestine_x_8e2db807_1",
+        "fidelity_to_origin": 0.6603,
+        "fidelity_to_previous": 0.9662
+      },
+      {
         "platform": "X Platform",
-        "timestamp": "2026-05-06T07:28:19+00:00",
+        "timestamp": "2026-05-06T04:26:34+00:00",
+        "claim_id": "israel-palestine_x_8e2db807_1",
+        "fidelity_to_origin": 0.5712,
+        "fidelity_to_previous": 0.8651
+      },
+      {
+        "platform": "Jacobin",
+        "timestamp": "2026-05-26T18:24:50+00:00",
         "claim_id": "israel-palestine_x_8e2db807_1",
         "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
+        "fidelity_to_previous": 0.5252
       }
     ],
     "observation_boundary": null
@@ -179,36 +212,46 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "israel-palestine_bluesky_d9709411_0",
-      "similarity": 0.7741,
-      "text": "The Biden administration is complicit in a genocide in Gaza."
+      "claim_id": "israel-palestine_bluesky_6f150f6b_0",
+      "similarity": 0.7718,
+      "text": "The Biden administration is complicit in the alleged genocide of Palestinians."
     },
     {
-      "claim_id": "israel-palestine_bluesky_5674914b_0",
-      "similarity": 0.6914,
-      "text": "The United States is complicit in genocide in Gaza."
+      "claim_id": "israel-palestine_bluesky_182c763f_0",
+      "similarity": 0.7718,
+      "text": "The Biden administration is complicit in the genocide of Palestinians."
     },
     {
-      "claim_id": "israel-palestine_bluesky_ccaefc7f_0",
-      "similarity": 0.6195,
-      "text": "The Democratic Party is complicit in genocide."
+      "claim_id": "israel-palestine_bluesky_1870b6cf_1",
+      "similarity": 0.696,
+      "text": "Joe Biden is enabling genocide in Gaza."
+    },
+    {
+      "claim_id": "israel-palestine_bluesky_eea5e863_2",
+      "similarity": 0.6849,
+      "text": "The United States government is backing genocidal actions in Gaza, Lebanon and Iran."
+    },
+    {
+      "claim_id": "israel-palestine_bluesky_21ecc2ef_2",
+      "similarity": 0.5465,
+      "text": "The British government is arming Israel's genocide in Gaza."
     }
   ],
   "example_content": [
     {
-      "text": "The United States is complicit in genocide in Gaza.",
+      "text": "A US spy-tech company is complicit in genocide in Gaza, ICE deportations, and conflict with Iran.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The Biden administration is complicit in a genocide in Gaza.",
+      "text": "Joe Biden is enabling genocide in Gaza.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The Democratic Party is complicit in genocide.",
+      "text": "The British government is arming Israel's genocide in Gaza.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

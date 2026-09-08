@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "dei-rollbacks_bluesky_97d4de55_0",
-    "cluster_id": "clu_dei-rollbacks_010",
-    "concept_id": "concept_dei-rollbacks_004",
+    "cluster_id": "clu_dei-rollbacks_026",
+    "concept_id": "concept_dei-rollbacks_001",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-26T10:29:47.443Z",
     "source_document_id": "97d4de55430ad4b4",
@@ -24,107 +24,94 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": null,
+    "value": 0.645,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.545,
+      0.745
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.645
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 8,
+    "friction": 0.8846,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.2552,
+    "confidence_interval": [
+      0.1243,
+      0.3861
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.2552
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.8846,
+    "confidence_interval": [
+      0.8009,
+      0.9683
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.8846
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.4,
+    "confidence_interval": [
+      0.28,
+      0.52
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.4
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.85,
     "confidence_interval": [
-      0,
-      0
+      0.7638,
+      0.9362
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.85
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 0.9959,
     "confidence_interval": [
-      0,
-      0
+      0.9206,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.9959
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,65 +120,155 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-04-26T10:29:47.443Z",
+    "lead_lag": [
+      {
+        "platform": "The Atlantic",
+        "lag_hours": 2.8
+      },
+      {
+        "platform": "Wonkette",
+        "lag_hours": 16.2
+      },
+      {
+        "platform": "Internewscast Journal",
+        "lag_hours": 17.7
+      },
+      {
+        "platform": "News One",
+        "lag_hours": 17.7
+      },
+      {
+        "platform": "Witf",
+        "lag_hours": 595.7
+      },
+      {
+        "platform": "Fox Politics",
+        "lag_hours": 641.3
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_dei-rollbacks_001",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-02T23:15:42.136000+00:00",
+        "claim_id": "dei-rollbacks_bluesky_97d4de55_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "The Atlantic",
+        "timestamp": "2026-04-03T02:05:00+00:00",
+        "claim_id": "dei-rollbacks_bluesky_97d4de55_0",
+        "fidelity_to_origin": 0.9969,
+        "fidelity_to_previous": 0.9969
+      },
+      {
+        "platform": "Wonkette",
+        "timestamp": "2026-04-03T15:27:30+00:00",
+        "claim_id": "dei-rollbacks_bluesky_97d4de55_0",
+        "fidelity_to_origin": 0.9823,
+        "fidelity_to_previous": 0.9854
+      },
+      {
+        "platform": "Internewscast Journal",
+        "timestamp": "2026-04-03T16:55:27+00:00",
+        "claim_id": "dei-rollbacks_bluesky_97d4de55_0",
+        "fidelity_to_origin": 0.9807,
+        "fidelity_to_previous": 0.9984
+      },
+      {
+        "platform": "News One",
+        "timestamp": "2026-04-03T16:59:00+00:00",
+        "claim_id": "dei-rollbacks_bluesky_97d4de55_0",
+        "fidelity_to_origin": 0.9807,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Witf",
+        "timestamp": "2026-04-27T18:56:53+00:00",
+        "claim_id": "dei-rollbacks_bluesky_97d4de55_0",
+        "fidelity_to_origin": 0.3498,
+        "fidelity_to_previous": 0.3567
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "dei-rollbacks_crooks_and_liars_cd0da973_0",
-      "similarity": 0.3997,
-      "text": "Bernie Sanders is a threat to national security due to his alleged communist sympathies."
+      "claim_id": "dei-rollbacks_bluesky_ad3657e7_2",
+      "similarity": 0.4439,
+      "text": "Pete Hegseth should be removed from his position."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_ed8e356d_1",
-      "similarity": 0.351,
-      "text": "The Democratic Party supports state sponsors of terrorism."
+      "claim_id": "dei-rollbacks_bluesky_2b3d1276_1",
+      "similarity": 0.3909,
+      "text": "Pete Hegseth is implementing policies based on the belief that white men are superior in the military."
     },
     {
-      "claim_id": "dei-rollbacks_crooks_and_liars_cd0da973_1",
-      "similarity": 0.3315,
-      "text": "Republicans consider a wide range of entities and activities, including diversity programs and tariff critics, to be national security threats."
+      "claim_id": "dei-rollbacks_internewscast_journal_b8f9e667_0",
+      "similarity": 0.3787,
+      "text": "Pete Hegseth's leadership of the Defense Department has been marked by missteps and controversial decisions."
     },
     {
-      "claim_id": "dei-rollbacks_fox_politics_336079cd_1",
-      "similarity": 0.3019,
-      "text": "Governor Walz is falsely taking credit for federal efforts to combat fraud."
+      "claim_id": "dei-rollbacks_bluesky_b17720c7_0",
+      "similarity": 0.3683,
+      "text": "Texas Governor Greg Abbott's policies are harmful and warrant his removal from office."
     },
     {
-      "claim_id": "dei-rollbacks_fox_politics_336079cd_0",
-      "similarity": 0.2927,
-      "text": "Governor Walz is avoiding accountability for the massive fraud scandal in Minnesota."
+      "claim_id": "dei-rollbacks_bluesky_5af487bd_0",
+      "similarity": 0.3635,
+      "text": "Pete Hegseth is unqualified for his job due to being hired through affirmative action."
     }
   ],
   "example_content": [
     {
-      "text": "The Democratic Party supports state sponsors of terrorism.",
+      "text": "Pete Buttigieg should be charged with war crimes and dismissed from his position.",
       "platform": "Bluesky",
-      "confidence": 0.8,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Governor Walz is avoiding accountability for the massive fraud scandal in Minnesota.",
-      "platform": "Fox Politics",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Governor Walz is falsely taking credit for federal efforts to combat fraud.",
-      "platform": "Fox Politics",
-      "confidence": 0.8,
+      "text": "Pete Hegseth is racist.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Pete Hegseth is implementing policies based on the belief that white men are superior in the military.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

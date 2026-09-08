@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "immigration_x_30b3140c_0",
-    "cluster_id": "clu_immigration_044",
-    "concept_id": "concept_immigration_006",
+    "cluster_id": "clu_immigration_038",
+    "concept_id": "concept_immigration_007",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-29T11:45:00.000Z",
     "source_document_id": "x_2049454901747499470",
@@ -24,107 +24,94 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": null,
+    "value": 0.82,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.72,
+      0.92
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.82
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 9,
+    "friction": 0.8148,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.2551,
+    "confidence_interval": [
+      0.1242,
+      0.386
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.2551
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.8148,
+    "confidence_interval": [
+      0.7259,
+      0.9037
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.8148
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.45,
+    "confidence_interval": [
+      0.3338,
+      0.5662
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.45
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.5,
     "confidence_interval": [
-      0,
-      0
+      0.3875,
+      0.6125
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.5
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 0.9811,
     "confidence_interval": [
-      0,
-      0
+      0.9047,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.9811
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,58 +120,153 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "YouTube (Influencer Framing)",
+    "first_timestamp": "2026-04-29T11:45:00.000Z",
+    "lead_lag": [
+      {
+        "platform": "X Platform",
+        "lag_hours": 8111.0
+      },
+      {
+        "platform": "International Business Times U",
+        "lag_hours": 8122.7
+      },
+      {
+        "platform": "Bluesky",
+        "lag_hours": 8127.9
+      },
+      {
+        "platform": "Cato",
+        "lag_hours": 8630.1
+      },
+      {
+        "platform": "Cnhi News",
+        "lag_hours": 8746.5
+      },
+      {
+        "platform": "Fox Politics",
+        "lag_hours": 8750.2
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_immigration_007",
+    "hops": [
+      {
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2025-04-30T01:00:28+00:00",
+        "claim_id": "immigration_x_30b3140c_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-03T00:01:09+00:00",
+        "claim_id": "immigration_x_30b3140c_0",
+        "fidelity_to_origin": 0.3513,
+        "fidelity_to_previous": 0.3513
+      },
+      {
+        "platform": "International Business Times U",
+        "timestamp": "2026-04-03T11:42:48+00:00",
+        "claim_id": "immigration_x_30b3140c_0",
+        "fidelity_to_origin": 0.3504,
+        "fidelity_to_previous": 0.9974
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-03T16:57:20.974000+00:00",
+        "claim_id": "immigration_x_30b3140c_0",
+        "fidelity_to_origin": 0.3499,
+        "fidelity_to_previous": 0.9986
+      },
+      {
+        "platform": "Cato",
+        "timestamp": "2026-04-24T15:08:33+00:00",
+        "claim_id": "immigration_x_30b3140c_0",
+        "fidelity_to_origin": 0.3098,
+        "fidelity_to_previous": 0.8854
+      },
+      {
+        "platform": "Cnhi News",
+        "timestamp": "2026-04-29T11:30:00+00:00",
+        "claim_id": "immigration_x_30b3140c_0",
+        "fidelity_to_origin": 0.3005,
+        "fidelity_to_previous": 0.97
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "immigration_x_af919150_0",
-      "similarity": 0.8646,
-      "text": "European Union immigration policy is dangerously permissive."
+      "claim_id": "immigration_x_09979180_1",
+      "similarity": 0.878,
+      "text": "Japan's strict immigration and religious expression policies are excessive."
     },
     {
-      "claim_id": "immigration_fox_politics_a5944b4e_2",
-      "similarity": 0.7186,
-      "text": "The Obama administration's immigration policies allowed dangerous criminals into the country."
+      "claim_id": "immigration_x_5c768208_1",
+      "similarity": 0.8601,
+      "text": "The United States had an imprudent and permissive immigration policy for many years."
     },
     {
-      "claim_id": "immigration_x_592ac133_1",
-      "similarity": 0.7178,
-      "text": "Current immigration levels in Canada are too high."
+      "claim_id": "immigration_international_business_times_u_76d0eff0_1",
+      "similarity": 0.8325,
+      "text": "Some Republicans believe that passing the Senate's DHS bill would lead to an open border."
     },
     {
-      "claim_id": "immigration_x_63969851_0",
-      "similarity": 0.6542,
-      "text": "Plaid Cymru's immigration policy involves open borders and devolved control."
+      "claim_id": "immigration_youtube_ec8d161d_0",
+      "similarity": 0.8146,
+      "text": "Illegal migrants receive unduly lenient treatment compared to legal immigrants."
+    },
+    {
+      "claim_id": "immigration_x_bf435606_0",
+      "similarity": 0.6757,
+      "text": "Democratic immigration policies aim to eliminate border enforcement and allow unrestricted entry."
     }
   ],
   "example_content": [
     {
-      "text": "The Obama administration's immigration policies allowed dangerous criminals into the country.",
-      "platform": "Fox Politics",
+      "text": "Some Republicans believe that passing the Senate's DHS bill would lead to an open border.",
+      "platform": "International Business Times U",
       "confidence": 0.8,
       "is_influencer_framing": false
     },
     {
-      "text": "European Union immigration policy is dangerously permissive.",
+      "text": "The United States had an imprudent and permissive immigration policy for many years.",
       "platform": "X Platform",
-      "confidence": 0.8,
+      "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Current immigration levels in Canada are too high.",
+      "text": "Japan's strict immigration and religious expression policies are excessive.",
       "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false

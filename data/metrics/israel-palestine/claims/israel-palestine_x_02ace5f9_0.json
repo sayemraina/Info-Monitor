@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "israel-palestine_x_02ace5f9_0",
-    "cluster_id": "clu_israel-palestine_008",
-    "concept_id": "concept_israel-palestine_005",
+    "cluster_id": "clu_israel-palestine_039",
+    "concept_id": "concept_israel-palestine_000",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-03T14:33:13.000Z",
     "source_document_id": "x_2040075152222736550",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 4,
-    "friction": 0.8571,
+    "persistence_windows": 10,
+    "friction": 0.7812,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.1889,
+    "value": 0.3887,
     "confidence_interval": [
-      0.0531,
-      0.3247
+      0.2679,
+      0.5095
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1889
+      0.3887
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.8571,
+    "value": 0.7812,
     "confidence_interval": [
-      0.7714,
-      0.9428
+      0.6898,
+      0.8726
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.8571
+      0.7812
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.2,
+    "value": 0.5,
     "confidence_interval": [
-      0.065,
-      0.335
+      0.3875,
+      0.6125
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2
+      0.5
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9286,
+    "value": 0.9127,
     "confidence_interval": [
-      0.8482,
-      1
+      0.8312,
+      0.9942
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9286
+      0.9127
     ],
     "source_distribution": "production"
   },
@@ -124,21 +124,21 @@
     "first_timestamp": "2026-04-03T14:33:13.000Z",
     "lead_lag": [
       {
-        "platform": "The Intercept",
-        "lag_hours": 15.5
-      },
-      {
         "platform": "Bluesky",
         "lag_hours": 19.1
       },
       {
         "platform": "X Platform",
-        "lag_hours": 20.0
+        "lag_hours": 19.5
+      },
+      {
+        "platform": "The National",
+        "lag_hours": 639.6
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_israel-palestine_005",
+    "concept_id": "concept_israel-palestine_000",
     "hops": [
       {
         "platform": "YouTube (Influencer Framing)",
@@ -148,25 +148,25 @@
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "The Intercept",
-        "timestamp": "2026-04-03T10:00:00+00:00",
-        "claim_id": "israel-palestine_x_02ace5f9_0",
-        "fidelity_to_origin": 0.4592,
-        "fidelity_to_previous": 0.4592
-      },
-      {
         "platform": "Bluesky",
         "timestamp": "2026-04-03T13:40:30.228000+00:00",
         "claim_id": "israel-palestine_x_02ace5f9_0",
-        "fidelity_to_origin": 0.3307,
-        "fidelity_to_previous": 0.7202
+        "fidelity_to_origin": 0.9791,
+        "fidelity_to_previous": 0.9791
       },
       {
         "platform": "X Platform",
-        "timestamp": "2026-04-03T14:33:13+00:00",
+        "timestamp": "2026-04-03T14:03:10+00:00",
+        "claim_id": "israel-palestine_x_02ace5f9_0",
+        "fidelity_to_origin": 0.9786,
+        "fidelity_to_previous": 0.9995
+      },
+      {
+        "platform": "The National",
+        "timestamp": "2026-04-29T10:05:53+00:00",
         "claim_id": "israel-palestine_x_02ace5f9_0",
         "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9072
+        "fidelity_to_previous": 0.3066
       }
     ],
     "observation_boundary": null
@@ -201,6 +201,11 @@
   },
   "semantic_neighbors": [
     {
+      "claim_id": "israel-palestine_x_91d54fb5_2",
+      "similarity": 0.8103,
+      "text": "Donald Trump and Benjamin Netanyahu are war criminals."
+    },
+    {
       "claim_id": "israel-palestine_x_c7d06987_2",
       "similarity": 0.6439,
       "text": "Benjamin Netanyahu's actions are comparable to those of Adolf Hitler."
@@ -216,14 +221,9 @@
       "text": "Benjamin Netanyahu is comparable to Genghis Khan."
     },
     {
-      "claim_id": "israel-palestine_the_intercept_60a2d9fe_2",
-      "similarity": 0.4839,
-      "text": "The Christian right has a deep ideological connection with Donald Trump."
-    },
-    {
-      "claim_id": "israel-palestine_bluesky_91b47f92_0",
-      "similarity": 0.4781,
-      "text": "Benjamin Netanyahu is prolonging the Gaza war to avoid imprisonment."
+      "claim_id": "israel-palestine_bluesky_91b47f92_1",
+      "similarity": 0.5028,
+      "text": "Israelis should have investigated and prosecuted Benjamin Netanyahu for his role in the October 7th attack."
     }
   ],
   "example_content": [

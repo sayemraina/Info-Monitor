@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "ai-bubble_bluesky_970df231_0",
-    "cluster_id": "clu_ai-bubble_025",
-    "concept_id": "concept_ai-bubble_006",
+    "cluster_id": "clu_ai-bubble_038",
+    "concept_id": "concept_ai-bubble_002",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-05-05T20:53:45.553Z",
     "source_document_id": "8020a83bcd0b4017",
@@ -35,48 +35,48 @@
       0.82
     ],
     "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 1,
-    "friction": 1,
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 10,
+    "friction": 0.5667,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.305,
+    "value": 0.3176,
     "confidence_interval": [
-      0.1779,
-      0.4321
+      0.1914,
+      0.4438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.305
+      0.3176
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 1,
+    "value": 0.5667,
     "confidence_interval": [
-      0.925,
-      1
+      0.4592,
+      0.6742
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.5667
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0.5,
     "confidence_interval": [
-      0,
-      0.1962
+      0.3875,
+      0.6125
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0.5
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9872,
     "confidence_interval": [
-      0.925,
+      0.9112,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9872
     ],
     "source_distribution": "production"
   },
@@ -120,31 +120,79 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
+    "first_platform": "YouTube (Influencer Framing)",
     "first_timestamp": "2026-05-05T20:53:45.553Z",
     "lead_lag": [
       {
+        "platform": "Bluesky",
+        "lag_hours": 315.8
+      },
+      {
+        "platform": "Pajiba",
+        "lag_hours": 1170.6
+      },
+      {
         "platform": "X Platform",
-        "lag_hours": 10.8
+        "lag_hours": 1197.9
+      },
+      {
+        "platform": "Yourstory.Com",
+        "lag_hours": 1710.0
+      },
+      {
+        "platform": "Business Day",
+        "lag_hours": 1746.8
+      },
+      {
+        "platform": "El Balad.Com",
+        "lag_hours": 1785.1
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_ai-bubble_006",
+    "concept_id": "concept_ai-bubble_002",
     "hops": [
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-05-05T20:17:08.905000+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-02-13T20:00:00+00:00",
         "claim_id": "ai-bubble_bluesky_970df231_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "X Platform",
-        "timestamp": "2026-05-06T07:07:16+00:00",
+        "platform": "Bluesky",
+        "timestamp": "2026-02-26T23:47:23.452000+00:00",
         "claim_id": "ai-bubble_bluesky_970df231_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
+        "fidelity_to_origin": 0.8762,
+        "fidelity_to_previous": 0.8762
+      },
+      {
+        "platform": "Pajiba",
+        "timestamp": "2026-04-03T14:36:32+00:00",
+        "claim_id": "ai-bubble_bluesky_970df231_0",
+        "fidelity_to_origin": 0.541,
+        "fidelity_to_previous": 0.6174
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-04T17:53:26+00:00",
+        "claim_id": "ai-bubble_bluesky_970df231_0",
+        "fidelity_to_origin": 0.5303,
+        "fidelity_to_previous": 0.9802
+      },
+      {
+        "platform": "Yourstory.Com",
+        "timestamp": "2026-04-26T02:00:00+00:00",
+        "claim_id": "ai-bubble_bluesky_970df231_0",
+        "fidelity_to_origin": 0.3295,
+        "fidelity_to_previous": 0.6213
+      },
+      {
+        "platform": "Business Day",
+        "timestamp": "2026-04-27T14:50:52+00:00",
+        "claim_id": "ai-bubble_bluesky_970df231_0",
+        "fidelity_to_origin": 0.315,
+        "fidelity_to_previous": 0.956
       }
     ],
     "observation_boundary": null
@@ -179,27 +227,48 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-bubble_bluesky_48271a9b_0",
-      "similarity": 0.5817,
-      "text": "AI-generated art poses a threat to human artists because tech companies are artificially inflating the market with low-quality AI art through unsustainable investment practices."
+      "claim_id": "ai-bubble_pajiba_e3d94cc1_1",
+      "similarity": 0.5329,
+      "text": "AI developers and users lack creativity and are attempting to steal creative gifts from artists."
     },
     {
-      "claim_id": "ai-bubble_x_950ebe14_0",
-      "similarity": 0.4789,
-      "text": "AI-generated content is of poor quality and unappealing."
+      "claim_id": "ai-bubble_bluesky_48330e43_0",
+      "similarity": 0.5201,
+      "text": "AI-generated music will harm the music industry."
+    },
+    {
+      "claim_id": "ai-bubble_bluesky_f463b4e0_1",
+      "similarity": 0.5012,
+      "text": "The focus on AI-generated sexual content in public discourse is disproportionate."
+    },
+    {
+      "claim_id": "ai-bubble_pajiba_e3d94cc1_2",
+      "similarity": 0.496,
+      "text": "AI-generated content is limited and unoriginal, relying on plagiarism and lacking imagination."
+    },
+    {
+      "claim_id": "ai-bubble_youtube_bf4c19f7_1",
+      "similarity": 0.4848,
+      "text": "Public interest in AI products is declining after initial hype."
     }
   ],
   "example_content": [
     {
-      "text": "AI-generated art poses a threat to human artists because tech companies are artificially inflating the market with low-quality AI art through unsustainable investment practices.",
+      "text": "AI-generated depictions of individuals are not inherently defamatory.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "AI-generated content is of poor quality and unappealing.",
-      "platform": "X Platform",
-      "confidence": 0.9,
+      "text": "The focus on AI-generated sexual content in public discourse is disproportionate.",
+      "platform": "Bluesky",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The creation of AI-generated deepfakes, particularly sexual ones, is voyeuristic rather than feminist.",
+      "platform": "Bluesky",
+      "confidence": 0.8,
       "is_influencer_framing": false
     }
   ]

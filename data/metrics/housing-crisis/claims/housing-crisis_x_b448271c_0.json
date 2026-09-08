@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "housing-crisis_x_b448271c_0",
-    "cluster_id": "clu_housing-crisis_008",
-    "concept_id": "concept_housing-crisis_000",
+    "cluster_id": "clu_housing-crisis_019",
+    "concept_id": "concept_housing-crisis_002",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-05-05T22:44:52.000Z",
     "source_document_id": "x_2051795292878455208",
@@ -35,48 +35,48 @@
       0.645
     ],
     "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 1,
-    "friction": 0.3333,
-    "friction_quadrant": "unopposed_advance"
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 15,
+    "friction": 0.4681,
+    "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.3111,
+    "value": 0.4408,
     "confidence_interval": [
-      0.1844,
-      0.4378
+      0.3239,
+      0.5577
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3111
+      0.4408
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.3333,
+    "value": 0.4681,
     "confidence_interval": [
-      0.2083,
-      0.4583
+      0.3532,
+      0.583
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3333
+      0.4681
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0.75,
     "confidence_interval": [
-      0,
-      0.1962
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9803,
     "confidence_interval": [
-      0.925,
+      0.9038,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9803
     ],
     "source_distribution": "production"
   },
@@ -120,31 +120,79 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
+    "first_platform": "YouTube (Influencer Framing)",
     "first_timestamp": "2026-05-05T22:44:52.000Z",
     "lead_lag": [
       {
+        "platform": "Bluesky",
+        "lag_hours": 141.2
+      },
+      {
         "platform": "X Platform",
-        "lag_hours": 2.7
+        "lag_hours": 165.2
+      },
+      {
+        "platform": "Southwark News",
+        "lag_hours": 688.6
+      },
+      {
+        "platform": "Stl.News",
+        "lag_hours": 735.3
+      },
+      {
+        "platform": "Yahoo News Uk",
+        "lag_hours": 783.8
+      },
+      {
+        "platform": "The Spectator",
+        "lag_hours": 1473.7
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_housing-crisis_000",
+    "concept_id": "concept_housing-crisis_002",
     "hops": [
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-05-05T20:03:04.258000+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-03-26T22:56:46+00:00",
         "claim_id": "housing-crisis_x_b448271c_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "X Platform",
-        "timestamp": "2026-05-05T22:44:52+00:00",
+        "platform": "Bluesky",
+        "timestamp": "2026-04-01T20:10:48.777000+00:00",
         "claim_id": "housing-crisis_x_b448271c_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
+        "fidelity_to_origin": 0.9329,
+        "fidelity_to_previous": 0.9329
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-02T20:06:42+00:00",
+        "claim_id": "housing-crisis_x_b448271c_0",
+        "fidelity_to_origin": 0.9215,
+        "fidelity_to_previous": 0.9878
+      },
+      {
+        "platform": "Southwark News",
+        "timestamp": "2026-04-24T15:34:51+00:00",
+        "claim_id": "housing-crisis_x_b448271c_0",
+        "fidelity_to_origin": 0.6729,
+        "fidelity_to_previous": 0.7302
+      },
+      {
+        "platform": "Stl.News",
+        "timestamp": "2026-04-26T14:16:21+00:00",
+        "claim_id": "housing-crisis_x_b448271c_0",
+        "fidelity_to_origin": 0.6507,
+        "fidelity_to_previous": 0.967
+      },
+      {
+        "platform": "Yahoo News Uk",
+        "timestamp": "2026-04-28T14:46:33+00:00",
+        "claim_id": "housing-crisis_x_b448271c_0",
+        "fidelity_to_origin": 0.6277,
+        "fidelity_to_previous": 0.9647
       }
     ],
     "observation_boundary": null
@@ -179,25 +227,46 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "housing-crisis_bluesky_7c2e8b02_0",
-      "similarity": 0.4691,
-      "text": "The US economy is entering a period of stagflation."
+      "claim_id": "housing-crisis_bluesky_a8beeb76_0",
+      "similarity": 0.5874,
+      "text": "The speaker believes that many people in America are struggling financially."
     },
     {
-      "claim_id": "housing-crisis_bluesky_3901d54a_0",
-      "similarity": 0.2848,
-      "text": "The housing crisis, rising food prices, declining job markets, increased surveillance, service degradation, conflict, and genocide are causing widespread frustration and a negative societal trend."
+      "claim_id": "housing-crisis_bluesky_96108e01_0",
+      "similarity": 0.4815,
+      "text": "Economic sentiment has declined significantly since 2021."
+    },
+    {
+      "claim_id": "housing-crisis_bluesky_96108e01_1",
+      "similarity": 0.4495,
+      "text": "The current economic situation is not as severe as the 2008 financial crisis."
+    },
+    {
+      "claim_id": "housing-crisis_bluesky_8eea5779_0",
+      "similarity": 0.4424,
+      "text": "The current economy already operates as a planned economy due to algorithmic control over supply chains and financial trading."
+    },
+    {
+      "claim_id": "housing-crisis_bluesky_69e4cf88_0",
+      "similarity": 0.4109,
+      "text": "De-dollarization will negatively impact the US economy."
     }
   ],
   "example_content": [
     {
-      "text": "The US economy is entering a period of stagflation.",
+      "text": "The current economic system is leading to a decline in common goods and worker exploitation.",
       "platform": "Bluesky",
-      "confidence": 0.8,
+      "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The housing crisis, rising food prices, declining job markets, increased surveillance, service degradation, conflict, and genocide are causing widespread frustration and a negative societal trend.",
+      "text": "The current economy already operates as a planned economy due to algorithmic control over supply chains and financial trading.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Economic sentiment has declined significantly since 2021.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

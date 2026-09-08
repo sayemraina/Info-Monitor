@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "dei-rollbacks_the_observer_6f276a0a_0",
-    "cluster_id": "",
-    "concept_id": "",
+    "cluster_id": "clu_dei-rollbacks_018",
+    "concept_id": "concept_dei-rollbacks_005",
     "first_seen_platform": "the_observer",
     "first_seen_timestamp": "2026-05-06T07:21:36Z",
     "source_document_id": "110ae9285d8f1a73",
@@ -35,35 +35,35 @@
       0.54
     ],
     "source_distribution": "production",
-    "source_diversity": 0.25,
-    "bridge_ratio": 0.0,
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
     "persistence_windows": 4,
-    "friction": 0.2143,
+    "friction": 0,
     "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 0.9282,
+    "value": 0.1996,
     "confidence_interval": [
-      0.8478,
-      1
+      0.0646,
+      0.3346
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9282
+      0.1996
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.2143,
+    "value": 0,
     "confidence_interval": [
-      0.0804,
-      0.3482
+      0,
+      0.15
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2143
+      0
     ],
     "source_distribution": "production"
   },
@@ -120,22 +120,56 @@
     ]
   },
   "provenance": {
-    "first_platform": "The Observer",
+    "first_platform": "YouTube (Influencer Framing)",
     "first_timestamp": "2026-05-06T07:21:36Z",
-    "lead_lag": []
-  },
-  "supply_chain": {
-    "concept_id": "",
-    "hops": [
+    "lead_lag": [
+      {
+        "platform": "Rolling Out",
+        "lag_hours": 325.7
+      },
+      {
+        "platform": "Maltatoday.Com.Mt",
+        "lag_hours": 329.1
+      },
       {
         "platform": "The Observer",
-        "timestamp": "2026-05-06T07:21:36Z",
+        "lag_hours": 487.3
+      }
+    ]
+  },
+  "supply_chain": {
+    "concept_id": "concept_dei-rollbacks_005",
+    "hops": [
+      {
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-04-16T00:00:56+00:00",
         "claim_id": "dei-rollbacks_the_observer_6f276a0a_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Rolling Out",
+        "timestamp": "2026-04-29T13:45:41+00:00",
+        "claim_id": "dei-rollbacks_the_observer_6f276a0a_0",
+        "fidelity_to_origin": 0.5321,
+        "fidelity_to_previous": 0.5321
+      },
+      {
+        "platform": "Maltatoday.Com.Mt",
+        "timestamp": "2026-04-29T17:07:27+00:00",
+        "claim_id": "dei-rollbacks_the_observer_6f276a0a_0",
+        "fidelity_to_origin": 0.5273,
+        "fidelity_to_previous": 0.991
+      },
+      {
+        "platform": "The Observer",
+        "timestamp": "2026-05-06T07:21:36+00:00",
+        "claim_id": "dei-rollbacks_the_observer_6f276a0a_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.5689
       }
     ],
-    "observation_boundary": "No public antecedent detected"
+    "observation_boundary": null
   },
   "coordination": {
     "burstiness": {
@@ -167,47 +201,47 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "dei-rollbacks_bluesky_779e99a7_0",
-      "similarity": 0.4081,
-      "text": "Diversity, equity, and inclusion initiatives undermine national security policy."
+      "claim_id": "dei-rollbacks_youtube_edd23929_0",
+      "similarity": 0.3388,
+      "text": "Environmental regulations regarding PFAS chemicals are necessary to protect women's health and fertility."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_eb421529_1",
-      "similarity": 0.317,
-      "text": "The United States is a republic, not a democracy."
+      "claim_id": "dei-rollbacks_maltatoday.com.mt_3bd09791_0",
+      "similarity": 0.2783,
+      "text": "The Nationalist Party proposes establishing a 'National Healthcare Park' to promote healthier lifestyles and rehabilitation."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_0e5364a7_0",
-      "similarity": 0.2963,
-      "text": "US organizations, including large private foundations, have decreased their public emphasis on diversity, equity, and inclusion (DEI) since 2020."
+      "claim_id": "dei-rollbacks_maltatoday.com.mt_3bd09791_2",
+      "similarity": 0.2436,
+      "text": "The Nationalist Party plans to introduce a unified digital medical record system and a 'digital front door' for accessing healthcare services."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_6b325f27_0",
-      "similarity": 0.1892,
-      "text": "Coors beer should be avoided due to the Coors family's funding of Christian nationalism."
+      "claim_id": "dei-rollbacks_rolling_out_65132063_2",
+      "similarity": 0.2344,
+      "text": "Black physicians face challenges within the medical institution that affect their ability to support patients."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_c863e565_0",
-      "similarity": 0.1632,
-      "text": "Costco's commitment to diversity, equity, and inclusion (DEI) is commendable."
+      "claim_id": "dei-rollbacks_rolling_out_65132063_0",
+      "similarity": 0.2273,
+      "text": "Racial disparities in healthcare persist due to systemic and individual racism, not biological differences."
     }
   ],
   "example_content": [
     {
-      "text": "Costco's treatment of its employees is declining.",
-      "platform": "Bluesky",
-      "confidence": 0.8,
-      "is_influencer_framing": false
+      "text": "Environmental regulations regarding PFAS chemicals are necessary to protect women's health and fertility.",
+      "platform": "YouTube (Influencer Framing)",
+      "confidence": 0.9,
+      "is_influencer_framing": true
     },
     {
-      "text": "Costco's commitment to DEI is commendable.",
-      "platform": "Bluesky",
+      "text": "Racial disparities in healthcare persist due to systemic and individual racism, not biological differences.",
+      "platform": "Rolling Out",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The United States is a republic, not a democracy.",
-      "platform": "Bluesky",
+      "text": "Black patients often face dismissal, minimization, or ignorance of their concerns within the healthcare system.",
+      "platform": "Rolling Out",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

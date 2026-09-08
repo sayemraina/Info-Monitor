@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "dei-rollbacks_guardian_tech_2995c3a8_0",
-    "cluster_id": "clu_dei-rollbacks_003",
-    "concept_id": "concept_dei-rollbacks_003",
+    "cluster_id": "clu_dei-rollbacks_000",
+    "concept_id": "concept_dei-rollbacks_000",
     "first_seen_platform": "guardian_tech",
     "first_seen_timestamp": "2026-04-02T14:00:27Z",
     "source_document_id": "1bc851f6ec10fe11",
@@ -38,32 +38,32 @@
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
     "persistence_windows": 15,
-    "friction": 0.4912,
-    "friction_quadrant": "contested_advance"
+    "friction": 0.2353,
+    "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 0.4116,
+    "value": 0.5005,
     "confidence_interval": [
-      0.2925,
-      0.5307
+      0.388,
+      0.613
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.4116
+      0.5005
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.4912,
+    "value": 0.2353,
     "confidence_interval": [
-      0.378,
-      0.6044
+      0.1029,
+      0.3677
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.4912
+      0.2353
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9649,
+    "value": 1,
     "confidence_interval": [
-      0.8873,
+      0.925,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9649
+      1
     ],
     "source_distribution": "production"
   },
@@ -124,75 +124,75 @@
     "first_timestamp": "2026-04-02T14:00:27Z",
     "lead_lag": [
       {
-        "platform": "Bluesky",
-        "lag_hours": 7193.2
-      },
-      {
         "platform": "Guardian Tech",
-        "lag_hours": 7216.7
-      },
-      {
-        "platform": "Jacobin",
-        "lag_hours": 7218.6
-      },
-      {
-        "platform": "Freedomsphoenix.Com",
-        "lag_hours": 7226.7
-      },
-      {
-        "platform": "Breitbart Feed",
-        "lag_hours": 7236.3
+        "lag_hours": 5164.5
       },
       {
         "platform": "Fortune",
-        "lag_hours": 7240.8
+        "lag_hours": 5188.6
+      },
+      {
+        "platform": "Bluesky",
+        "lag_hours": 5734.8
+      },
+      {
+        "platform": "Sportskeeda",
+        "lag_hours": 5737.8
+      },
+      {
+        "platform": "Npr Tech",
+        "lag_hours": 5748.6
+      },
+      {
+        "platform": "The Atlantic",
+        "lag_hours": 5761.5
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_dei-rollbacks_003",
+    "concept_id": "concept_dei-rollbacks_000",
     "hops": [
       {
         "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2025-06-05T21:16:58+00:00",
+        "timestamp": "2025-08-30T09:30:14+00:00",
         "claim_id": "dei-rollbacks_guardian_tech_2995c3a8_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-01T14:28:30.170000+00:00",
-        "claim_id": "dei-rollbacks_guardian_tech_2995c3a8_0",
-        "fidelity_to_origin": 0.3048,
-        "fidelity_to_previous": 0.3048
-      },
-      {
         "platform": "Guardian Tech",
         "timestamp": "2026-04-02T14:00:27+00:00",
         "claim_id": "dei-rollbacks_guardian_tech_2995c3a8_0",
-        "fidelity_to_origin": 0.3025,
-        "fidelity_to_previous": 0.9925
+        "fidelity_to_origin": 0.4412,
+        "fidelity_to_previous": 0.4412
       },
       {
-        "platform": "Jacobin",
-        "timestamp": "2026-04-02T15:51:55+00:00",
+        "platform": "Fortune",
+        "timestamp": "2026-04-03T14:04:20+00:00",
         "claim_id": "dei-rollbacks_guardian_tech_2995c3a8_0",
-        "fidelity_to_origin": 0.3023,
-        "fidelity_to_previous": 0.9993
+        "fidelity_to_origin": 0.4386,
+        "fidelity_to_previous": 0.9941
       },
       {
-        "platform": "Freedomsphoenix.Com",
-        "timestamp": "2026-04-03T00:00:00+00:00",
+        "platform": "Bluesky",
+        "timestamp": "2026-04-26T08:19:36.293000+00:00",
         "claim_id": "dei-rollbacks_guardian_tech_2995c3a8_0",
-        "fidelity_to_origin": 0.3015,
-        "fidelity_to_previous": 0.9974
+        "fidelity_to_origin": 0.3795,
+        "fidelity_to_previous": 0.8653
       },
       {
-        "platform": "Breitbart Feed",
-        "timestamp": "2026-04-03T09:36:23+00:00",
+        "platform": "Sportskeeda",
+        "timestamp": "2026-04-26T11:17:18+00:00",
         "claim_id": "dei-rollbacks_guardian_tech_2995c3a8_0",
-        "fidelity_to_origin": 0.3006,
-        "fidelity_to_previous": 0.997
+        "fidelity_to_origin": 0.3792,
+        "fidelity_to_previous": 0.9992
+      },
+      {
+        "platform": "Npr Tech",
+        "timestamp": "2026-04-26T22:03:31+00:00",
+        "claim_id": "dei-rollbacks_guardian_tech_2995c3a8_0",
+        "fidelity_to_origin": 0.378,
+        "fidelity_to_previous": 0.9968
       }
     ],
     "observation_boundary": null
@@ -227,49 +227,49 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "dei-rollbacks_bluesky_c4d79ba0_1",
-      "similarity": 0.3341,
-      "text": "Harvard faculty should be aware of the problems with DEI."
+      "claim_id": "dei-rollbacks_fortune_8559fcb5_2",
+      "similarity": 0.6897,
+      "text": "Investment in AI is disrupting employment by causing companies to prioritize capital expenditures over labor."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_e81793eb_0",
-      "similarity": 0.3253,
-      "text": "The President's decision to eliminate DEI initiatives is morally wrong."
+      "claim_id": "dei-rollbacks_youtube_9ae9c23e_0",
+      "similarity": 0.573,
+      "text": "A staffer at the National Endowment for the Humanities used ChatGPT to undermine DEI initiatives."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_b9bfc8fb_0",
-      "similarity": 0.3251,
-      "text": "Companies that embrace diversity and inclusion will be more successful."
+      "claim_id": "dei-rollbacks_guardian_tech_2995c3a8_1",
+      "similarity": 0.5332,
+      "text": "Anthropic is attempting to promote a positive image of AI to policymakers."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_01333e59_0",
-      "similarity": 0.2838,
-      "text": "If problems arise, opponents of diversity, equity, and inclusion (DEI) will blame DEI initiatives."
+      "claim_id": "dei-rollbacks_bluesky_0108208a_1",
+      "similarity": 0.5167,
+      "text": "Kamala Harris would hinder the development of AI technology through censorship and DEI initiatives."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_c88de2af_1",
-      "similarity": 0.2707,
-      "text": "DEI initiatives prevent discrimination against marginalized groups."
+      "claim_id": "dei-rollbacks_bluesky_e763e7fb_0",
+      "similarity": 0.5085,
+      "text": "Artificial intelligence is an expensive solution for low-cost tasks."
     }
   ],
   "example_content": [
     {
-      "text": "If problems arise, opponents of diversity, equity, and inclusion (DEI) will blame DEI initiatives.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "DEI initiatives are necessary to counteract the effects of unqualified individuals in positions of power.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "DEI initiatives prevent discrimination against marginalized groups.",
-      "platform": "Bluesky",
+      "text": "Anthropic is attempting to promote a positive image of AI to policymakers.",
+      "platform": "Guardian Tech",
       "confidence": 0.8,
       "is_influencer_framing": false
+    },
+    {
+      "text": "Investment in AI is disrupting employment by causing companies to prioritize capital expenditures over labor.",
+      "platform": "Fortune",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "A staffer at the National Endowment for the Humanities used ChatGPT to undermine DEI initiatives.",
+      "platform": "YouTube (Influencer Framing)",
+      "confidence": 0.9,
+      "is_influencer_framing": true
     }
   ]
 }

@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "housing-crisis_bluesky_27f4e26d_0",
-    "cluster_id": "clu_housing-crisis_020",
-    "concept_id": "concept_housing-crisis_003",
+    "cluster_id": "clu_housing-crisis_035",
+    "concept_id": "concept_housing-crisis_004",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-26T15:41:27.545Z",
     "source_document_id": "2af3aefd6e6ede14",
@@ -24,107 +24,94 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": null,
+    "value": 0.5258,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.4258,
+      0.6258
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.5258
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 14,
+    "friction": 0.7209,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.4033,
+    "confidence_interval": [
+      0.2835,
+      0.5231
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.4033
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.7209,
+    "confidence_interval": [
+      0.625,
+      0.8168
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.7209
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.7,
+    "confidence_interval": [
+      0.6025,
+      0.7975
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.7
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.85,
     "confidence_interval": [
-      0,
-      0
+      0.7638,
+      0.9362
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.85
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 0.9766,
     "confidence_interval": [
-      0,
-      0
+      0.8998,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.9766
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,65 +120,155 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-04-26T15:41:27.545Z",
+    "lead_lag": [
+      {
+        "platform": "News 12   New Jersey",
+        "lag_hours": 5.2
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 21.8
+      },
+      {
+        "platform": "Yahoo",
+        "lag_hours": 36.7
+      },
+      {
+        "platform": "Carter Hart Agrees To Join The",
+        "lag_hours": 37.9
+      },
+      {
+        "platform": "The National Herald",
+        "lag_hours": 38.6
+      },
+      {
+        "platform": "Triblive",
+        "lag_hours": 38.7
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_housing-crisis_004",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-01T21:45:37.865000+00:00",
+        "claim_id": "housing-crisis_bluesky_27f4e26d_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "News 12   New Jersey",
+        "timestamp": "2026-04-02T02:59:22+00:00",
+        "claim_id": "housing-crisis_bluesky_27f4e26d_0",
+        "fidelity_to_origin": 0.9972,
+        "fidelity_to_previous": 0.9972
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-02T19:31:09+00:00",
+        "claim_id": "housing-crisis_bluesky_27f4e26d_0",
+        "fidelity_to_origin": 0.9885,
+        "fidelity_to_previous": 0.9913
+      },
+      {
+        "platform": "Yahoo",
+        "timestamp": "2026-04-03T10:25:15+00:00",
+        "claim_id": "housing-crisis_bluesky_27f4e26d_0",
+        "fidelity_to_origin": 0.9807,
+        "fidelity_to_previous": 0.9921
+      },
+      {
+        "platform": "Carter Hart Agrees To Join The",
+        "timestamp": "2026-04-03T11:41:39+00:00",
+        "claim_id": "housing-crisis_bluesky_27f4e26d_0",
+        "fidelity_to_origin": 0.98,
+        "fidelity_to_previous": 0.9993
+      },
+      {
+        "platform": "The National Herald",
+        "timestamp": "2026-04-03T12:22:53+00:00",
+        "claim_id": "housing-crisis_bluesky_27f4e26d_0",
+        "fidelity_to_origin": 0.9796,
+        "fidelity_to_previous": 0.9996
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "housing-crisis_bluesky_8cbbe05b_0",
-      "similarity": 0.5906,
-      "text": "Most landlords are motivated by greed."
+      "claim_id": "housing-crisis_bluesky_f419fee0_0",
+      "similarity": 0.6479,
+      "text": "Real estate companies are conspiring to illegally raise rent prices globally."
     },
     {
-      "claim_id": "housing-crisis_gistlover_225ffb6e_1",
-      "similarity": 0.5442,
-      "text": "Some landlords prefer civil servants as tenants due to a perception that they are less likely to attract unwanted attention from law enforcement."
+      "claim_id": "housing-crisis_the_philadelphia_inquirer_b844c54d_2",
+      "similarity": 0.5782,
+      "text": "Some landlords in New York City are chronically negligent and provide substandard housing conditions."
     },
     {
-      "claim_id": "housing-crisis_thetimes.com.ng_426b989c_1",
-      "similarity": 0.4814,
-      "text": "Some landlords prefer civil servants as tenants due to a perception of stability or other factors."
+      "claim_id": "housing-crisis_yahoo_9938bd3c_1",
+      "similarity": 0.572,
+      "text": "Some landlords are chronically negligent and subject tenants to substandard living conditions."
     },
     {
-      "claim_id": "housing-crisis_the_guardian_ac72983c_2",
-      "similarity": 0.4532,
-      "text": "The government has broken its promise to end the leasehold system."
+      "claim_id": "housing-crisis_the_frontier_post_ea47d0dc_1",
+      "similarity": 0.5529,
+      "text": "Tenants in some New York City buildings face issues such as lack of maintenance, heat and hot water outages, and drug use in common areas."
     },
     {
-      "claim_id": "housing-crisis_thetimes.com.ng_426b989c_2",
-      "similarity": 0.4189,
-      "text": "Some civil servants engage in corruption to afford high rents."
+      "claim_id": "housing-crisis_triblive_f860162c_1",
+      "similarity": 0.5374,
+      "text": "Tenants in some NYC buildings face issues such as lack of maintenance, heat and hot water outages, and drug use in common areas."
     }
   ],
   "example_content": [
     {
-      "text": "Most landlords are motivated by greed.",
+      "text": "Real estate companies are conspiring to illegally raise rent prices globally.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The government has broken its promise to end the leasehold system.",
-      "platform": "The Guardian",
-      "confidence": 0.7,
+      "text": "Some landlords are chronically negligent and subject tenants to substandard living conditions.",
+      "platform": "Yahoo",
+      "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Some landlords prefer civil servants as tenants due to a perception of stability or other factors.",
-      "platform": "Thetimes.Com.Ng",
-      "confidence": 0.8,
+      "text": "Tenants in some New York City buildings face issues such as lack of maintenance, frequent utility outages, and safety concerns.",
+      "platform": "Ndtv",
+      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

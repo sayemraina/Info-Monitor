@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 0.75,
     "bridge_ratio": 0.75,
-    "persistence_windows": 2,
-    "friction": 0.2857,
-    "friction_quadrant": "unopposed_advance"
+    "persistence_windows": 6,
+    "friction": 0.5263,
+    "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.4054,
+    "value": 0.2078,
     "confidence_interval": [
-      0.2858,
-      0.525
+      0.0734,
+      0.3422
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.4054
+      0.2078
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.2857,
+    "value": 0.5263,
     "confidence_interval": [
-      0.1571,
-      0.4143
+      0.4158,
+      0.6368
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2857
+      0.5263
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.1,
+    "value": 0.3,
     "confidence_interval": [
-      0,
-      0.2425
+      0.1725,
+      0.4275
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1
+      0.3
     ],
     "source_distribution": "production"
   },
@@ -125,11 +125,11 @@
     "lead_lag": [
       {
         "platform": "The Twelfth Magpie",
-        "lag_hours": 3.2
+        "lag_hours": 1702.2
       },
       {
         "platform": "Financial Times News",
-        "lag_hours": 8.8
+        "lag_hours": 1707.7
       }
     ]
   },
@@ -138,7 +138,7 @@
     "hops": [
       {
         "platform": "Bluesky",
-        "timestamp": "2026-05-26T11:41:12.473000+00:00",
+        "timestamp": "2026-03-16T16:42:38.859000+00:00",
         "claim_id": "ai-bubble_financial_times_news_9296ea23_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
@@ -147,15 +147,15 @@
         "platform": "The Twelfth Magpie",
         "timestamp": "2026-05-26T14:55:00+00:00",
         "claim_id": "ai-bubble_financial_times_news_9296ea23_0",
-        "fidelity_to_origin": 0.7417,
-        "fidelity_to_previous": 0.7417
+        "fidelity_to_origin": 0.3023,
+        "fidelity_to_previous": 0.3023
       },
       {
         "platform": "Financial Times News",
         "timestamp": "2026-05-26T20:26:20+00:00",
         "claim_id": "ai-bubble_financial_times_news_9296ea23_0",
         "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.4045
+        "fidelity_to_previous": 0.9924
       }
     ],
     "observation_boundary": null
@@ -190,48 +190,48 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-bubble_the_twelfth_magpie_1acf0ba3_2",
-      "similarity": 0.7347,
-      "text": "Investing in SpaceX is a risky endeavor due to the uncertainty of its long-term prospects."
+      "claim_id": "ai-bubble_bluesky_b731dbdd_0",
+      "similarity": 1.0,
+      "text": "SpaceX is significantly overvalued."
     },
     {
-      "claim_id": "ai-bubble_financial_times_news_9296ea23_1",
-      "similarity": 0.6732,
-      "text": "SpaceX's mission is to make life multi-planetary, understand the universe, and extend consciousness to the stars."
+      "claim_id": "ai-bubble_bluesky_b157a161_0",
+      "similarity": 0.7533,
+      "text": "Elon Musk is attempting to inflate the valuation of SpaceX by consolidating less successful ventures under it."
     },
     {
-      "claim_id": "ai-bubble_bluesky_bd9f384f_1",
-      "similarity": 0.6454,
-      "text": "Tesla's valuation is based on the false perception that it is an AI company."
+      "claim_id": "ai-bubble_bluesky_ee784697_0",
+      "similarity": 0.7391,
+      "text": "Tesla's valuation is inflated."
     },
     {
-      "claim_id": "ai-bubble_financial_times_news_9296ea23_2",
-      "similarity": 0.6009,
-      "text": "SpaceX aims to prevent human extinction by establishing colonies on Mars and developing space-based infrastructure."
+      "claim_id": "ai-bubble_bluesky_ee784697_2",
+      "similarity": 0.72,
+      "text": "SpaceX's IPO is intended to perpetuate Elon Musk's financial scam."
     },
     {
-      "claim_id": "ai-bubble_the_twelfth_magpie_1acf0ba3_0",
-      "similarity": 0.5095,
-      "text": "Scottish Mortgage Investment Trust's past success is largely attributable to its early investment in SpaceX."
+      "claim_id": "ai-bubble_bluesky_8eeb3399_1",
+      "similarity": 0.5579,
+      "text": "Tesla's stock price is irrationally high due to hype surrounding AI and other unreleased products."
     }
   ],
   "example_content": [
     {
-      "text": "Elon Musk is a conman who misleads investors.",
+      "text": "Elon Musk also uses hype to inflate the value of his companies.",
+      "platform": "Bluesky",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Tesla's valuation is inflated.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Tesla's valuation is based on the false perception that it is an AI company.",
+      "text": "Elon Musk is perpetrating a financial scam.",
       "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Scottish Mortgage Investment Trust's past success is largely attributable to its early investment in SpaceX.",
-      "platform": "The Twelfth Magpie",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "is_influencer_framing": false
     }
   ]

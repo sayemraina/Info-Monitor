@@ -9,7 +9,7 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "ozempic-glp1_x_e9a17646_0",
-    "cluster_id": "clu_ozempic-glp1_015",
+    "cluster_id": "clu_ozempic-glp1_010",
     "concept_id": "concept_ozempic-glp1_002",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-29T18:43:17.000Z",
@@ -24,107 +24,94 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": null,
+    "value": 0.5354,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.4354,
+      0.6354
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.5354
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.75,
+    "bridge_ratio": 0.75,
+    "persistence_windows": 5,
+    "friction": 1,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.1985,
+    "confidence_interval": [
+      0.0634,
+      0.3336
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.1985
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.25,
+    "confidence_interval": [
+      0.1187,
+      0.3813
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.25
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.85,
     "confidence_interval": [
-      0,
-      0
+      0.7638,
+      0.9362
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.85
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 0.9547,
     "confidence_interval": [
-      0,
-      0
+      0.8763,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.9547
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,58 +120,116 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "X Platform",
+    "first_timestamp": "2026-04-29T18:43:17.000Z",
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 536.5
+      },
+      {
+        "platform": "Drugs.Com",
+        "lag_hours": 628.0
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_ozempic-glp1_002",
+    "hops": [
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-03T13:49:09+00:00",
+        "claim_id": "ozempic-glp1_x_e9a17646_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-25T22:20:14.195000+00:00",
+        "claim_id": "ozempic-glp1_x_e9a17646_0",
+        "fidelity_to_origin": 0.402,
+        "fidelity_to_previous": 0.402
+      },
+      {
+        "platform": "Drugs.Com",
+        "timestamp": "2026-04-29T17:49:07+00:00",
+        "claim_id": "ozempic-glp1_x_e9a17646_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.7463
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ozempic-glp1_x_4d026c57_0",
+      "claim_id": "ozempic-glp1_x_a4e21a9c_0",
+      "similarity": 0.8375,
+      "text": "Ozempic is potentially harmful."
+    },
+    {
+      "claim_id": "ozempic-glp1_x_ed5fd87a_0",
       "similarity": 0.8283,
-      "text": "Ozempic is a dangerous or harmful drug."
+      "text": "Ozempic is dangerous for long-term use."
     },
     {
-      "claim_id": "ozempic-glp1_x_8644f411_0",
-      "similarity": 0.8283,
-      "text": "Ozempic is a dangerous or harmful drug."
+      "claim_id": "ozempic-glp1_x_e95f7163_0",
+      "similarity": 0.7894,
+      "text": "Ozempic should be banned."
     },
     {
-      "claim_id": "ozempic-glp1_x_0d288a87_0",
-      "similarity": 0.7754,
-      "text": "Ozempic should not be used for weight loss."
+      "claim_id": "ozempic-glp1_x_ae18e394_0",
+      "similarity": 0.7584,
+      "text": "I am unwilling to accept advice about Ozempic from anyone."
     },
     {
-      "claim_id": "ozempic-glp1_x_69a9e85c_0",
-      "similarity": 0.7553,
-      "text": "People should discontinue using Ozempic."
+      "claim_id": "ozempic-glp1_x_ef13fbde_0",
+      "similarity": 0.7519,
+      "text": "Ozempic is causing significant negative consequences."
     }
   ],
   "example_content": [
     {
-      "text": "People should discontinue using Ozempic.",
+      "text": "Ozempic is dangerous for long-term use.",
       "platform": "X Platform",
-      "confidence": 0.6,
+      "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Ozempic is a dangerous or harmful drug.",
+      "text": "Ozempic is causing significant negative consequences.",
       "platform": "X Platform",
-      "confidence": 0.7,
+      "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Ozempic should not be used for weight loss.",
+      "text": "I am unwilling to accept advice about Ozempic from anyone.",
       "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false

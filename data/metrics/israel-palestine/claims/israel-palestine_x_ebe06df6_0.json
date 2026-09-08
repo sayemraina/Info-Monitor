@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "israel-palestine_x_ebe06df6_0",
-    "cluster_id": "clu_israel-palestine_029",
-    "concept_id": "concept_israel-palestine_002",
+    "cluster_id": "clu_israel-palestine_045",
+    "concept_id": "concept_israel-palestine_000",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-05-06T07:06:34.000Z",
     "source_document_id": "x_2051921548009693590",
@@ -35,48 +35,48 @@
       0.8222
     ],
     "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 1,
-    "friction": 1,
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 3,
+    "friction": 0.7273,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.311,
+    "value": 0.2235,
     "confidence_interval": [
-      0.1843,
-      0.4377
+      0.0903,
+      0.3567
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.311
+      0.2235
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 1,
+    "value": 0.7273,
     "confidence_interval": [
-      0.925,
-      1
+      0.6318,
+      0.8228
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.7273
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0.15,
     "confidence_interval": [
-      0,
-      0.1962
+      0.0112,
+      0.2888
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0.15
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9888,
+    "value": 0.9127,
     "confidence_interval": [
-      0.913,
-      1
+      0.8312,
+      0.9942
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9888
+      0.9127
     ],
     "source_distribution": "production"
   },
@@ -120,31 +120,79 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
+    "first_platform": "The Intercept",
     "first_timestamp": "2026-05-06T07:06:34.000Z",
     "lead_lag": [
       {
+        "platform": "Jacobin",
+        "lag_hours": 121.5
+      },
+      {
+        "platform": "The Times Of Israel",
+        "lag_hours": 171.2
+      },
+      {
+        "platform": "Rt",
+        "lag_hours": 720.0
+      },
+      {
+        "platform": "Thetimes.Com.Ng",
+        "lag_hours": 720.1
+      },
+      {
+        "platform": "Bluesky",
+        "lag_hours": 953.5
+      },
+      {
         "platform": "X Platform",
-        "lag_hours": 3.6
+        "lag_hours": 957.1
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_israel-palestine_002",
+    "concept_id": "concept_israel-palestine_000",
     "hops": [
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-05-06T03:30:02.750000+00:00",
+        "platform": "The Intercept",
+        "timestamp": "2026-03-27T10:00:00+00:00",
         "claim_id": "israel-palestine_x_ebe06df6_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "X Platform",
-        "timestamp": "2026-05-06T07:06:34+00:00",
+        "platform": "Jacobin",
+        "timestamp": "2026-04-01T11:30:58+00:00",
         "claim_id": "israel-palestine_x_ebe06df6_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
+        "fidelity_to_origin": 0.9111,
+        "fidelity_to_previous": 0.9111
+      },
+      {
+        "platform": "The Times Of Israel",
+        "timestamp": "2026-04-03T13:09:29+00:00",
+        "claim_id": "israel-palestine_x_ebe06df6_0",
+        "fidelity_to_origin": 0.8748,
+        "fidelity_to_previous": 0.9602
+      },
+      {
+        "platform": "Rt",
+        "timestamp": "2026-04-26T09:59:00+00:00",
+        "claim_id": "israel-palestine_x_ebe06df6_0",
+        "fidelity_to_origin": 0.4734,
+        "fidelity_to_previous": 0.5412
+      },
+      {
+        "platform": "Thetimes.Com.Ng",
+        "timestamp": "2026-04-26T10:05:01+00:00",
+        "claim_id": "israel-palestine_x_ebe06df6_0",
+        "fidelity_to_origin": 0.4734,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-05-06T03:30:02.750000+00:00",
+        "claim_id": "israel-palestine_x_ebe06df6_0",
+        "fidelity_to_origin": 0.3026,
+        "fidelity_to_previous": 0.6392
       }
     ],
     "observation_boundary": null
@@ -179,15 +227,47 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "israel-palestine_bluesky_7d164537_0",
-      "similarity": 0.3355,
-      "text": "The New South Wales (NSW) police are engaging in violent and fascist behavior."
+      "claim_id": "israel-palestine_thetimes.com.ng_8c15c046_0",
+      "similarity": 0.7399,
+      "text": "Israeli police are suppressing protests by confiscating flags and signs perceived as supportive of Palestine, even if they are not explicitly Palestinian."
+    },
+    {
+      "claim_id": "israel-palestine_rt_05af9f95_0",
+      "similarity": 0.7334,
+      "text": "Israeli police are suppressing protests by confiscating flags and signs deemed provocative."
+    },
+    {
+      "claim_id": "israel-palestine_the_times_of_israel_57eae545_0",
+      "similarity": 0.7107,
+      "text": "Israeli police are suppressing anti-government protests under the guise of wartime regulations."
+    },
+    {
+      "claim_id": "israel-palestine_the_intercept_93aaf773_0",
+      "similarity": 0.7035,
+      "text": "The Trump administration violently suppressed protests against the war in Gaza."
+    },
+    {
+      "claim_id": "israel-palestine_jacobin_e9ea5d19_1",
+      "similarity": 0.6508,
+      "text": "The British military used overwhelming force to suppress the Palestinian uprising in the 1930s."
     }
   ],
   "example_content": [
     {
-      "text": "The New South Wales (NSW) police are engaging in violent and fascist behavior.",
-      "platform": "Bluesky",
+      "text": "Israeli police are suppressing anti-government protests under the guise of wartime regulations.",
+      "platform": "The Times Of Israel",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The Trump administration violently suppressed protests against the war in Gaza.",
+      "platform": "The Intercept",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The British military used overwhelming force to suppress the Palestinian uprising in the 1930s.",
+      "platform": "Jacobin",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

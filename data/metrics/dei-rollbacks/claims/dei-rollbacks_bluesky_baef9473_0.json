@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "dei-rollbacks_bluesky_baef9473_0",
-    "cluster_id": "clu_dei-rollbacks_013",
-    "concept_id": "concept_dei-rollbacks_004",
+    "cluster_id": "clu_dei-rollbacks_008",
+    "concept_id": "concept_dei-rollbacks_003",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-27T17:50:00.249Z",
     "source_document_id": "baef94736d5140e2",
@@ -24,107 +24,94 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": null,
+    "value": 0.5274,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.4274,
+      0.6274
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.5274
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 5,
+    "friction": 0.75,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.1923,
+    "confidence_interval": [
+      0.0567,
+      0.3279
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.1923
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.75,
+    "confidence_interval": [
+      0.6562,
+      0.8438
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.75
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.25,
+    "confidence_interval": [
+      0.1187,
+      0.3813
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.25
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.85,
     "confidence_interval": [
-      0,
-      0
+      0.7638,
+      0.9362
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.85
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 0.9858,
     "confidence_interval": [
-      0,
-      0
+      0.9097,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.9858
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,54 +120,128 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-04-27T17:50:00.249Z",
+    "lead_lag": [
+      {
+        "platform": "Fortune",
+        "lag_hours": 17.6
+      },
+      {
+        "platform": "The Guardian",
+        "lag_hours": 564.5
+      },
+      {
+        "platform": "Sportskeeda",
+        "lag_hours": 566.1
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_dei-rollbacks_003",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-02T20:30:07.781000+00:00",
+        "claim_id": "dei-rollbacks_bluesky_baef9473_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Fortune",
+        "timestamp": "2026-04-03T14:04:20+00:00",
+        "claim_id": "dei-rollbacks_bluesky_baef9473_0",
+        "fidelity_to_origin": 0.9783,
+        "fidelity_to_previous": 0.9783
+      },
+      {
+        "platform": "The Guardian",
+        "timestamp": "2026-04-26T09:02:56+00:00",
+        "claim_id": "dei-rollbacks_bluesky_baef9473_0",
+        "fidelity_to_origin": 0.3019,
+        "fidelity_to_previous": 0.3086
+      },
+      {
+        "platform": "Sportskeeda",
+        "timestamp": "2026-04-26T10:36:34+00:00",
+        "claim_id": "dei-rollbacks_bluesky_baef9473_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.9937
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "dei-rollbacks_bluesky_48d486f9_0",
-      "similarity": 0.8023,
-      "text": "The person in question is unqualified for their job."
+      "claim_id": "dei-rollbacks_sportskeeda_b29b3802_1",
+      "similarity": 0.7814,
+      "text": "DEI hiring practices are prevalent in the NFL."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_3bac7eb1_0",
-      "similarity": 0.799,
-      "text": "DEI initiatives lead to incompetent hires."
+      "claim_id": "dei-rollbacks_bluesky_c7638b8f_0",
+      "similarity": 0.7714,
+      "text": "Diversity, equity, and inclusion (DEI) initiatives result in the hiring of unqualified individuals."
     },
     {
       "claim_id": "dei-rollbacks_bluesky_3801678e_0",
       "similarity": 0.7352,
       "text": "Pete Hegseth was hired due to DEI initiatives despite lacking qualifications."
+    },
+    {
+      "claim_id": "dei-rollbacks_bluesky_d3b97b2e_0",
+      "similarity": 0.7346,
+      "text": "DEI initiatives lead to unqualified individuals being placed in positions of power."
+    },
+    {
+      "claim_id": "dei-rollbacks_bluesky_cf3c9163_0",
+      "similarity": 0.6213,
+      "text": "DEI initiatives in academic hiring are reasonable and not insane."
     }
   ],
   "example_content": [
     {
-      "text": "Pete Hegseth was hired due to DEI initiatives despite lacking qualifications.",
+      "text": "DEI initiatives in academic hiring are reasonable and not insane.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The person in question is unqualified for their job.",
+      "text": "DEI initiatives lead to unqualified individuals being placed in positions of power.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "DEI initiatives lead to incompetent hires.",
-      "platform": "Bluesky",
+      "text": "Employers are increasingly seeking candidates with more years of experience, reducing opportunities for entry-level workers.",
+      "platform": "Fortune",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

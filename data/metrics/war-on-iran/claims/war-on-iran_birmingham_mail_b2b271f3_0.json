@@ -9,7 +9,7 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "war-on-iran_birmingham_mail_b2b271f3_0",
-    "cluster_id": "clu_war-on-iran_064",
+    "cluster_id": "clu_war-on-iran_087",
     "concept_id": "concept_war-on-iran_007",
     "first_seen_platform": "birmingham_mail",
     "first_seen_timestamp": "2026-05-06T07:52:34Z",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 3,
-    "friction": 0.1,
+    "persistence_windows": 5,
+    "friction": 0.0588,
     "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 0.4145,
+    "value": 0.2041,
     "confidence_interval": [
-      0.2956,
-      0.5334
+      0.0694,
+      0.3388
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.4145
+      0.2041
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.1,
+    "value": 0.0588,
     "confidence_interval": [
       0,
-      0.2425
+      0.2044
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1
+      0.0588
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.15,
+    "value": 0.25,
     "confidence_interval": [
-      0.0112,
-      0.2888
+      0.1187,
+      0.3813
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.15
+      0.25
     ],
     "source_distribution": "production"
   },
@@ -120,28 +120,32 @@
     ]
   },
   "provenance": {
-    "first_platform": "Vox",
+    "first_platform": "Cnbc Top",
     "first_timestamp": "2026-05-06T07:52:34Z",
     "lead_lag": [
       {
-        "platform": "Guardian World",
-        "lag_hours": 18.8
+        "platform": "Business Insider",
+        "lag_hours": 1.1
+      },
+      {
+        "platform": "Foreign Policy",
+        "lag_hours": 3.8
       },
       {
         "platform": "Bluesky",
-        "lag_hours": 19.7
+        "lag_hours": 550.5
       },
       {
-        "platform": "Al Jazeera",
-        "lag_hours": 20.1
+        "platform": "The Atlantic",
+        "lag_hours": 727.8
       },
       {
-        "platform": "Birmingham Mail",
-        "lag_hours": 20.9
+        "platform": "Vox",
+        "lag_hours": 766.0
       },
       {
-        "platform": "Plymouth Herald",
-        "lag_hours": 21.0
+        "platform": "Guardian World",
+        "lag_hours": 784.8
       }
     ]
   },
@@ -149,46 +153,46 @@
     "concept_id": "concept_war-on-iran_007",
     "hops": [
       {
-        "platform": "Vox",
-        "timestamp": "2026-05-05T11:00:00+00:00",
+        "platform": "Cnbc Top",
+        "timestamp": "2026-04-03T13:00:01+00:00",
         "claim_id": "war-on-iran_birmingham_mail_b2b271f3_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Guardian World",
-        "timestamp": "2026-05-06T05:47:15+00:00",
+        "platform": "Business Insider",
+        "timestamp": "2026-04-03T14:05:43+00:00",
         "claim_id": "war-on-iran_birmingham_mail_b2b271f3_0",
-        "fidelity_to_origin": 0.3748,
-        "fidelity_to_previous": 0.3748
+        "fidelity_to_origin": 0.999,
+        "fidelity_to_previous": 0.999
+      },
+      {
+        "platform": "Foreign Policy",
+        "timestamp": "2026-04-03T16:49:55+00:00",
+        "claim_id": "war-on-iran_birmingham_mail_b2b271f3_0",
+        "fidelity_to_origin": 0.9966,
+        "fidelity_to_previous": 0.9976
       },
       {
         "platform": "Bluesky",
-        "timestamp": "2026-05-06T06:41:01.395000+00:00",
+        "timestamp": "2026-04-26T11:32:16+00:00",
         "claim_id": "war-on-iran_birmingham_mail_b2b271f3_0",
-        "fidelity_to_origin": 0.345,
-        "fidelity_to_previous": 0.9205
+        "fidelity_to_origin": 0.5103,
+        "fidelity_to_previous": 0.512
       },
       {
-        "platform": "Al Jazeera",
-        "timestamp": "2026-05-06T07:04:11+00:00",
+        "platform": "The Atlantic",
+        "timestamp": "2026-05-03T20:46:00+00:00",
         "claim_id": "war-on-iran_birmingham_mail_b2b271f3_0",
-        "fidelity_to_origin": 0.3322,
-        "fidelity_to_previous": 0.9629
+        "fidelity_to_origin": 0.3527,
+        "fidelity_to_previous": 0.6912
       },
       {
-        "platform": "Birmingham Mail",
-        "timestamp": "2026-05-06T07:52:34+00:00",
+        "platform": "Vox",
+        "timestamp": "2026-05-05T11:00:00+00:00",
         "claim_id": "war-on-iran_birmingham_mail_b2b271f3_0",
-        "fidelity_to_origin": 0.3053,
-        "fidelity_to_previous": 0.919
-      },
-      {
-        "platform": "Plymouth Herald",
-        "timestamp": "2026-05-06T08:02:11+00:00",
-        "claim_id": "war-on-iran_birmingham_mail_b2b271f3_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9826
+        "fidelity_to_origin": 0.3187,
+        "fidelity_to_previous": 0.9036
       }
     ],
     "observation_boundary": null
@@ -223,47 +227,47 @@
   },
   "semantic_neighbors": [
     {
+      "claim_id": "war-on-iran_cnbc_top_90cec17c_0",
+      "similarity": 0.4438,
+      "text": "The cost of private air travel has increased significantly due to rising fuel prices and geopolitical tensions."
+    },
+    {
+      "claim_id": "war-on-iran_business_insider_3cd296b4_1",
+      "similarity": 0.4119,
+      "text": "US airlines are more vulnerable to rising fuel costs because they generally do not hedge against these costs."
+    },
+    {
+      "claim_id": "war-on-iran_business_insider_3cd296b4_2",
+      "similarity": 0.367,
+      "text": "Airlines are increasing fares and bag fees in response to rising jet fuel costs."
+    },
+    {
       "claim_id": "war-on-iran_birmingham_mail_b2b271f3_1",
       "similarity": 0.3659,
       "text": "The UK government is taking steps to mitigate potential disruptions to air travel caused by the conflict in the Middle East."
     },
     {
-      "claim_id": "war-on-iran_plymouth_herald_f3fde4cb_2",
-      "similarity": 0.3506,
-      "text": "The UK government is considering measures to prevent flight disruptions due to potential jet fuel shortages."
-    },
-    {
       "claim_id": "war-on-iran_plymouth_herald_f3fde4cb_1",
       "similarity": 0.3502,
       "text": "Airlines are reducing flights and seat capacity in response to rising jet fuel costs."
-    },
-    {
-      "claim_id": "war-on-iran_vox_5738c071_0",
-      "similarity": 0.3367,
-      "text": "Rising fuel prices, exacerbated by the Iran war, contributed to Spirit Airlines' financial difficulties."
-    },
-    {
-      "claim_id": "war-on-iran_al_jazeera_1167a4ae_0",
-      "similarity": 0.3135,
-      "text": "Rising jet fuel prices, driven by the War on Iran, are causing airlines to increase fares and reduce flight availability."
     }
   ],
   "example_content": [
     {
-      "text": "The Trump administration's actions regarding Iran led to increased fuel costs, contributing to Spirit Airlines' financial difficulties.",
-      "platform": "Bluesky",
+      "text": "The rising cost of jet fuel is negatively impacting airlines and economies, particularly in Asia and Europe.",
+      "platform": "Foreign Policy",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The UK government is taking steps to mitigate potential disruptions to air travel caused by the conflict in the Middle East.",
-      "platform": "Birmingham Mail",
-      "confidence": 0.8,
+      "text": "The cost of private air travel has increased significantly due to rising fuel prices and geopolitical tensions.",
+      "platform": "Cnbc Top",
+      "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Airlines are reducing flights and seat capacity in response to rising jet fuel costs.",
-      "platform": "Plymouth Herald",
+      "text": "US airlines are more vulnerable to rising fuel costs because they generally do not hedge against these costs.",
+      "platform": "Business Insider",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

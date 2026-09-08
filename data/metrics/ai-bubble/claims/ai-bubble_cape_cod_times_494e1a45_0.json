@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "formal",
     "id": "ai-bubble_cape_cod_times_494e1a45_0",
-    "cluster_id": "clu_ai-bubble_019",
-    "concept_id": "concept_ai-bubble_003",
+    "cluster_id": "clu_ai-bubble_048",
+    "concept_id": "concept_ai-bubble_002",
     "first_seen_platform": "cape_cod_times",
     "first_seen_timestamp": "2026-04-26T09:02:39Z",
     "source_document_id": "d8fc6f5649b9bfee",
@@ -35,48 +35,48 @@
       0.54
     ],
     "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 1,
-    "friction": 0.5,
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 15,
+    "friction": 0.5063,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.3107,
+    "value": 0.8364,
     "confidence_interval": [
-      0.184,
-      0.4374
+      0.7491,
+      0.9237
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3107
+      0.8364
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.5,
+    "value": 0.5063,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0.3943,
+      0.6183
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.5
+      0.5063
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0.75,
     "confidence_interval": [
-      0,
-      0.1962
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9872,
     "confidence_interval": [
-      0.925,
+      0.9112,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9872
     ],
     "source_distribution": "production"
   },
@@ -124,27 +124,75 @@
     "first_timestamp": "2026-04-26T09:02:39Z",
     "lead_lag": [
       {
+        "platform": "YouTube (Influencer Framing)",
+        "lag_hours": 463.0
+      },
+      {
+        "platform": "Pharmexec.Com",
+        "lag_hours": 817.8
+      },
+      {
+        "platform": "Medium",
+        "lag_hours": 821.9
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 850.1
+      },
+      {
+        "platform": "Times Square Chronicles Newspa",
+        "lag_hours": 1363.9
+      },
+      {
         "platform": "Cape Cod Times",
-        "lag_hours": 0.6
+        "lag_hours": 1368.9
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_ai-bubble_003",
+    "concept_id": "concept_ai-bubble_002",
     "hops": [
       {
         "platform": "Bluesky",
-        "timestamp": "2026-04-26T08:27:06.251000+00:00",
+        "timestamp": "2026-02-28T08:09:05.960000+00:00",
         "claim_id": "ai-bubble_cape_cod_times_494e1a45_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Cape Cod Times",
-        "timestamp": "2026-04-26T09:02:39+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-03-19T15:07:57+00:00",
         "claim_id": "ai-bubble_cape_cod_times_494e1a45_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
+        "fidelity_to_origin": 0.8454,
+        "fidelity_to_previous": 0.8454
+      },
+      {
+        "platform": "Pharmexec.Com",
+        "timestamp": "2026-04-03T10:00:00+00:00",
+        "claim_id": "ai-bubble_cape_cod_times_494e1a45_0",
+        "fidelity_to_origin": 0.7268,
+        "fidelity_to_previous": 0.8597
+      },
+      {
+        "platform": "Medium",
+        "timestamp": "2026-04-03T14:01:02+00:00",
+        "claim_id": "ai-bubble_cape_cod_times_494e1a45_0",
+        "fidelity_to_origin": 0.7255,
+        "fidelity_to_previous": 0.9982
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-04T18:12:49+00:00",
+        "claim_id": "ai-bubble_cape_cod_times_494e1a45_0",
+        "fidelity_to_origin": 0.7161,
+        "fidelity_to_previous": 0.987
+      },
+      {
+        "platform": "Times Square Chronicles Newspa",
+        "timestamp": "2026-04-26T04:00:12+00:00",
+        "claim_id": "ai-bubble_cape_cod_times_494e1a45_0",
+        "fidelity_to_origin": 0.5445,
+        "fidelity_to_previous": 0.7604
       }
     ],
     "observation_boundary": null
@@ -179,14 +227,46 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-bubble_bluesky_a78b3241_0",
-      "similarity": 0.5386,
-      "text": "AI integration in some products is not genuinely useful but is being promoted to maintain inflated valuations."
+      "claim_id": "ai-bubble_bluesky_4980126a_0",
+      "similarity": 0.6327,
+      "text": "AI technology is currently overvalued."
+    },
+    {
+      "claim_id": "ai-bubble_bluesky_5a377c37_0",
+      "similarity": 0.6326,
+      "text": "AI technology is overvalued and does not warrant its current level of investment or hype."
+    },
+    {
+      "claim_id": "ai-bubble_bluesky_787cbe20_1",
+      "similarity": 0.6293,
+      "text": "AI technology will persist and have lasting impact despite the market conditions."
+    },
+    {
+      "claim_id": "ai-bubble_bluesky_403f434e_1",
+      "similarity": 0.606,
+      "text": "Individuals bear some responsibility for the potential negative consequences of the AI investment bubble due to their use of AI products."
+    },
+    {
+      "claim_id": "ai-bubble_bluesky_d2a85ae3_0",
+      "similarity": 0.6048,
+      "text": "AI technologies are currently overvalued."
     }
   ],
   "example_content": [
     {
-      "text": "AI integration in some products is not genuinely useful but is being promoted to maintain inflated valuations.",
+      "text": "AI technology is currently overvalued.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Individuals bear some responsibility for the potential negative consequences of the AI investment bubble due to their use of AI products.",
+      "platform": "Bluesky",
+      "confidence": 0.7,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "AI systems used for military purposes are legitimate targets for attack.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

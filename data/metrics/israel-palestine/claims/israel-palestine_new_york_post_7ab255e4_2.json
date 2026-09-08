@@ -35,48 +35,48 @@
       0.645
     ],
     "source_distribution": "production",
-    "source_diversity": 0.25,
-    "bridge_ratio": 0.25,
-    "persistence_windows": 1,
-    "friction": 1,
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 4,
+    "friction": 0.75,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.3204,
+    "value": 0.2208,
     "confidence_interval": [
-      0.1944,
-      0.4464
+      0.0874,
+      0.3542
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3204
+      0.2208
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 1,
+    "value": 0.75,
     "confidence_interval": [
-      0.925,
-      1
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.75
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0.2,
     "confidence_interval": [
-      0,
-      0.1962
+      0.065,
+      0.335
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0.2
     ],
     "source_distribution": "production"
   },
@@ -120,22 +120,82 @@
     ]
   },
   "provenance": {
-    "first_platform": "New York Post",
+    "first_platform": "Daily Wire",
     "first_timestamp": "2026-05-27T03:29:42Z",
-    "lead_lag": []
+    "lead_lag": [
+      {
+        "platform": "Fox Politics",
+        "lag_hours": 52.6
+      },
+      {
+        "platform": "Jacobin",
+        "lag_hours": 147.1
+      },
+      {
+        "platform": "The Atlantic",
+        "lag_hours": 197.0
+      },
+      {
+        "platform": "Bluesky",
+        "lag_hours": 211.1
+      },
+      {
+        "platform": "New Statesman",
+        "lag_hours": 211.4
+      },
+      {
+        "platform": "New York Post",
+        "lag_hours": 713.6
+      }
+    ]
   },
   "supply_chain": {
     "concept_id": "concept_israel-palestine_006",
     "hops": [
       {
-        "platform": "New York Post",
-        "timestamp": "2026-05-27T03:29:42+00:00",
+        "platform": "Daily Wire",
+        "timestamp": "2026-04-27T09:52:08+00:00",
         "claim_id": "israel-palestine_new_york_post_7ab255e4_2",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Fox Politics",
+        "timestamp": "2026-04-29T14:25:14+00:00",
+        "claim_id": "israel-palestine_new_york_post_7ab255e4_2",
+        "fidelity_to_origin": 0.9485,
+        "fidelity_to_previous": 0.9485
+      },
+      {
+        "platform": "Jacobin",
+        "timestamp": "2026-05-03T12:57:36+00:00",
+        "claim_id": "israel-palestine_new_york_post_7ab255e4_2",
+        "fidelity_to_origin": 0.8557,
+        "fidelity_to_previous": 0.9022
+      },
+      {
+        "platform": "The Atlantic",
+        "timestamp": "2026-05-05T14:51:56+00:00",
+        "claim_id": "israel-palestine_new_york_post_7ab255e4_2",
+        "fidelity_to_origin": 0.8068,
+        "fidelity_to_previous": 0.9429
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-05-06T04:56:54.213000+00:00",
+        "claim_id": "israel-palestine_new_york_post_7ab255e4_2",
+        "fidelity_to_origin": 0.793,
+        "fidelity_to_previous": 0.9829
+      },
+      {
+        "platform": "New Statesman",
+        "timestamp": "2026-05-06T05:15:48+00:00",
+        "claim_id": "israel-palestine_new_york_post_7ab255e4_2",
+        "fidelity_to_origin": 0.7926,
+        "fidelity_to_previous": 0.9995
       }
     ],
-    "observation_boundary": "No public antecedent detected"
+    "observation_boundary": null
   },
   "coordination": {
     "burstiness": {
@@ -165,6 +225,51 @@
     "status": "insufficient_data",
     "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
-  "semantic_neighbors": [],
-  "example_content": []
+  "semantic_neighbors": [
+    {
+      "claim_id": "israel-palestine_daily_wire_14a8af15_1",
+      "similarity": 0.6575,
+      "text": "Zohran Mamdani's associations with Hasan Piker and Rama Duwaji undermine his condemnation of political violence."
+    },
+    {
+      "claim_id": "israel-palestine_new_statesman_815b1162_0",
+      "similarity": 0.4037,
+      "text": "Hasan Piker's views on the Israel-Palestine conflict are controversial within the Democratic Party."
+    },
+    {
+      "claim_id": "israel-palestine_fox_politics_78ef9fb9_0",
+      "similarity": 0.3614,
+      "text": "Hasan Piker's rhetoric has contributed to a culture of political violence."
+    },
+    {
+      "claim_id": "israel-palestine_jacobin_40b4e6bf_0",
+      "similarity": 0.3312,
+      "text": "Tony Mazzocchi was a labor leader who championed progressive causes and welcomed activists from various social movements into the labor movement."
+    },
+    {
+      "claim_id": "israel-palestine_bluesky_124447ff_0",
+      "similarity": 0.2654,
+      "text": "Rama Duwaji, wife of NYC Mayor Zohran Mamdan, had a negative encounter with Miss Israel Melanie Shiraz."
+    }
+  ],
+  "example_content": [
+    {
+      "text": "Zohran Mamdani's associations with Hasan Piker and Rama Duwaji undermine his condemnation of political violence.",
+      "platform": "Daily Wire",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Rama Duwaji supports violence against Israelis.",
+      "platform": "Daily Wire",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Hasan Piker's rhetoric has contributed to a culture of political violence.",
+      "platform": "Fox Politics",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    }
+  ]
 }

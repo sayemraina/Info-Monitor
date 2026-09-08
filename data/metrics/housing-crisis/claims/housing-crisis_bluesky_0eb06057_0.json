@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "housing-crisis_bluesky_0eb06057_0",
-    "cluster_id": "clu_housing-crisis_008",
-    "concept_id": "concept_housing-crisis_000",
+    "cluster_id": "clu_housing-crisis_019",
+    "concept_id": "concept_housing-crisis_002",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-05-04T14:01:45.206Z",
     "source_document_id": "025feebfee3ded37",
@@ -24,107 +24,94 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": null,
+    "value": 0.925,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.825,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.925
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 15,
+    "friction": 0.4681,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.4408,
+    "confidence_interval": [
+      0.3239,
+      0.5577
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.4408
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.4681,
+    "confidence_interval": [
+      0.3532,
+      0.583
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.4681
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.75,
+    "confidence_interval": [
+      0.6562,
+      0.8438
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.75
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.85,
     "confidence_interval": [
-      0,
-      0
+      0.7638,
+      0.9362
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.85
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 0.9803,
     "confidence_interval": [
-      0,
-      0
+      0.9038,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.9803
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,54 +120,154 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "YouTube (Influencer Framing)",
+    "first_timestamp": "2026-05-04T14:01:45.206Z",
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 141.2
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 165.2
+      },
+      {
+        "platform": "Southwark News",
+        "lag_hours": 688.6
+      },
+      {
+        "platform": "Stl.News",
+        "lag_hours": 735.3
+      },
+      {
+        "platform": "Yahoo News Uk",
+        "lag_hours": 783.8
+      },
+      {
+        "platform": "The Spectator",
+        "lag_hours": 1473.7
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_housing-crisis_002",
+    "hops": [
+      {
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-03-26T22:56:46+00:00",
+        "claim_id": "housing-crisis_bluesky_0eb06057_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-01T20:10:48.777000+00:00",
+        "claim_id": "housing-crisis_bluesky_0eb06057_0",
+        "fidelity_to_origin": 0.9329,
+        "fidelity_to_previous": 0.9329
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-02T20:06:42+00:00",
+        "claim_id": "housing-crisis_bluesky_0eb06057_0",
+        "fidelity_to_origin": 0.9215,
+        "fidelity_to_previous": 0.9878
+      },
+      {
+        "platform": "Southwark News",
+        "timestamp": "2026-04-24T15:34:51+00:00",
+        "claim_id": "housing-crisis_bluesky_0eb06057_0",
+        "fidelity_to_origin": 0.6729,
+        "fidelity_to_previous": 0.7302
+      },
+      {
+        "platform": "Stl.News",
+        "timestamp": "2026-04-26T14:16:21+00:00",
+        "claim_id": "housing-crisis_bluesky_0eb06057_0",
+        "fidelity_to_origin": 0.6507,
+        "fidelity_to_previous": 0.967
+      },
+      {
+        "platform": "Yahoo News Uk",
+        "timestamp": "2026-04-28T14:46:33+00:00",
+        "claim_id": "housing-crisis_bluesky_0eb06057_0",
+        "fidelity_to_origin": 0.6277,
+        "fidelity_to_previous": 0.9647
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "housing-crisis_bluesky_7c2e8b02_0",
-      "similarity": 0.5717,
-      "text": "The US economy is entering a period of stagflation."
+      "claim_id": "housing-crisis_bluesky_96108e01_0",
+      "similarity": 0.6812,
+      "text": "Economic sentiment has declined significantly since 2021."
     },
     {
-      "claim_id": "housing-crisis_x_b448271c_0",
-      "similarity": 0.5186,
-      "text": "Canada's economy is in poor condition."
+      "claim_id": "housing-crisis_bluesky_96108e01_1",
+      "similarity": 0.6346,
+      "text": "The current economic situation is not as severe as the 2008 financial crisis."
     },
     {
-      "claim_id": "housing-crisis_bluesky_3901d54a_0",
-      "similarity": 0.4959,
-      "text": "The housing crisis, rising food prices, declining job markets, increased surveillance, service degradation, conflict, and genocide are causing widespread frustration and a negative societal trend."
+      "claim_id": "housing-crisis_bluesky_045e97be_0",
+      "similarity": 0.6197,
+      "text": "The current economic system is leading to a decline in common goods and worker exploitation."
+    },
+    {
+      "claim_id": "housing-crisis_bluesky_a8beeb76_0",
+      "similarity": 0.6193,
+      "text": "The speaker believes that many people in America are struggling financially."
+    },
+    {
+      "claim_id": "housing-crisis_x_0fb3a6c5_1",
+      "similarity": 0.553,
+      "text": "Current geopolitical actions will exacerbate economic problems."
     }
   ],
   "example_content": [
     {
-      "text": "The US economy is entering a period of stagflation.",
-      "platform": "Bluesky",
-      "confidence": 0.8,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "The housing crisis, rising food prices, declining job markets, increased surveillance, service degradation, conflict, and genocide are causing widespread frustration and a negative societal trend.",
+      "text": "The current economic system is leading to a decline in common goods and worker exploitation.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Canada's economy is in poor condition.",
-      "platform": "X Platform",
+      "text": "The current economy already operates as a planned economy due to algorithmic control over supply chains and financial trading.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Economic sentiment has declined significantly since 2021.",
+      "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

@@ -35,48 +35,48 @@
       0.645
     ],
     "source_distribution": "production",
-    "source_diversity": 0.25,
-    "bridge_ratio": 0.25,
-    "persistence_windows": 4,
-    "friction": 0.4615,
-    "friction_quadrant": "contested_advance"
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 15,
+    "friction": 0.3143,
+    "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 0.7352,
+    "value": 0.7414,
     "confidence_interval": [
-      0.6403,
-      0.8301
+      0.647,
+      0.8358
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.7352
+      0.7414
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.4615,
+    "value": 0.3143,
     "confidence_interval": [
-      0.3461,
-      0.5769
+      0.1879,
+      0.4407
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.4615
+      0.3143
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.2,
+    "value": 0.75,
     "confidence_interval": [
-      0.065,
-      0.335
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9833,
+    "value": 0.9832,
     "confidence_interval": [
-      0.907,
+      0.9069,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9833
+      0.9832
     ],
     "source_distribution": "production"
   },
@@ -120,22 +120,56 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
+    "first_platform": "YouTube (Influencer Framing)",
     "first_timestamp": "2026-05-27T01:48:22.976Z",
-    "lead_lag": []
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 8411.9
+      },
+      {
+        "platform": "Todayville",
+        "lag_hours": 8422.9
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 9206.0
+      }
+    ]
   },
   "supply_chain": {
     "concept_id": "concept_inflation-cost-of-living_003",
     "hops": [
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-05-26T20:56:15.169000+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2025-04-17T18:00:12+00:00",
         "claim_id": "inflation-cost-of-living_bluesky_27c2529e_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-03T05:53:39.870000+00:00",
+        "claim_id": "inflation-cost-of-living_bluesky_27c2529e_0",
+        "fidelity_to_origin": 0.3604,
+        "fidelity_to_previous": 0.3604
+      },
+      {
+        "platform": "Todayville",
+        "timestamp": "2026-04-03T16:52:44+00:00",
+        "claim_id": "inflation-cost-of-living_bluesky_27c2529e_0",
+        "fidelity_to_origin": 0.3595,
+        "fidelity_to_previous": 0.9975
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-05-06T08:02:14+00:00",
+        "claim_id": "inflation-cost-of-living_bluesky_27c2529e_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.8345
       }
     ],
-    "observation_boundary": "No public antecedent detected"
+    "observation_boundary": null
   },
   "coordination": {
     "burstiness": {
@@ -167,46 +201,46 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "inflation-cost-of-living_bluesky_b55f41fe_0",
-      "similarity": 0.8221,
-      "text": "The current administration is not effectively addressing the issue of rising grocery prices."
+      "claim_id": "inflation-cost-of-living_bluesky_a7b5fcbd_0",
+      "similarity": 0.7679,
+      "text": "The cost of groceries is too high."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_d8a9672b_0",
-      "similarity": 0.7603,
-      "text": "Grocery prices are excessively high."
+      "claim_id": "inflation-cost-of-living_bluesky_2b16ae54_0",
+      "similarity": 0.7458,
+      "text": "Grocery prices are very high and causing financial distress for consumers."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_b8eb7a52_0",
-      "similarity": 0.7603,
-      "text": "Grocery prices are excessively high."
+      "claim_id": "inflation-cost-of-living_bluesky_d4f6b5dd_1",
+      "similarity": 0.6925,
+      "text": "Grocery chains are artificially inflating food prices."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_a8610ea0_0",
-      "similarity": 0.5985,
-      "text": "Grocery prices in Texas are so high that people are struggling to afford basic goods."
+      "claim_id": "inflation-cost-of-living_youtube_2e2e4497_0",
+      "similarity": 0.6736,
+      "text": "Grocery prices are higher now than they were before the pandemic."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_4befbd5b_0",
-      "similarity": 0.5769,
-      "text": "Wab and his party are actively working to lower food prices through policy changes."
+      "claim_id": "inflation-cost-of-living_youtube_9e6a8ced_0",
+      "similarity": 0.64,
+      "text": "The cost of groceries will become unaffordable for many people by 2025."
     }
   ],
   "example_content": [
     {
-      "text": "Grocery prices in Texas are so high that people are struggling to afford basic goods.",
+      "text": "The government should intervene to ensure consistent pricing across all store formats.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The current administration is not effectively addressing the issue of rising grocery prices.",
+      "text": "Grocery chains are artificially inflating food prices.",
       "platform": "Bluesky",
-      "confidence": 0.8,
+      "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Grocery stores in some countries are run by cartels that fix prices, contributing to inflation.",
+      "text": "Monopolistic meatpacking and grocery companies are responsible for high food prices.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

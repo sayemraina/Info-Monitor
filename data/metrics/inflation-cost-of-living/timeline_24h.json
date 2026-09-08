@@ -1,73 +1,41 @@
 {
   "events": [
     {
-      "id": "evt_e2f732d6bdfe",
-      "type": "contestation_emergence",
-      "timestamp": "2026-05-26T20:55:57.450175+00:00",
-      "claim_id": "inflation-cost-of-living_bluesky_a8610ea0_0",
-      "slice_id": null,
-      "severity": "high",
-      "confidence": 0.85,
-      "summary": "Active contestation in \"Grocery Prices\" — 5 pro vs 6 anti",
-      "detail": {
-        "cluster_id": "clu_inflation-cost-of-living_008",
-        "pro_count": 5,
-        "anti_count": 6,
-        "balance": 0.83
-      }
-    },
-    {
       "id": "evt_526a331a2440",
       "type": "contestation_emergence",
-      "timestamp": "2026-05-26T20:55:57.450175+00:00",
-      "claim_id": "inflation-cost-of-living_the_star__07a0b971_0",
-      "slice_id": null,
-      "severity": "high",
-      "confidence": 0.9,
-      "summary": "Active contestation in \"Greek Government\" — 5 pro vs 5 anti",
-      "detail": {
-        "cluster_id": "clu_inflation-cost-of-living_012",
-        "pro_count": 5,
-        "anti_count": 5,
-        "balance": 1.0
-      }
-    },
-    {
-      "id": "evt_5b2e72b776a6",
-      "type": "contestation_emergence",
-      "timestamp": "2026-05-26T20:55:57.450175+00:00",
-      "claim_id": "inflation-cost-of-living_bluesky_550ba55a_1",
+      "timestamp": "2026-09-07T20:50:37.281649+00:00",
+      "claim_id": "inflation-cost-of-living_youtube_285f70ac_0",
       "slice_id": null,
       "severity": "high",
       "confidence": 0.82,
-      "summary": "Active contestation in \"Software Engineer Salaries\" — 4 pro vs 3 anti",
+      "summary": "Active contestation in \"Nigeria's Economy\" — 3 pro vs 4 anti",
       "detail": {
-        "cluster_id": "clu_inflation-cost-of-living_014",
-        "pro_count": 4,
-        "anti_count": 3,
+        "cluster_id": "clu_inflation-cost-of-living_001",
+        "pro_count": 3,
+        "anti_count": 4,
         "balance": 0.75
       }
     },
     {
-      "id": "evt_47bac0454b9b",
+      "id": "evt_e990262f7a43",
       "type": "contestation_emergence",
-      "timestamp": "2026-05-26T20:55:57.450175+00:00",
-      "claim_id": "inflation-cost-of-living_bluesky_9fb4ba7b_0",
+      "timestamp": "2026-09-07T20:50:37.281649+00:00",
+      "claim_id": "inflation-cost-of-living_bluesky_5da8d66d_1",
       "slice_id": null,
       "severity": "high",
       "confidence": 0.82,
-      "summary": "Active contestation in \"Taxation\" — 4 pro vs 3 anti",
+      "summary": "Active contestation in \"Grocery Prices\" — 30 pro vs 22 anti",
       "detail": {
-        "cluster_id": "clu_inflation-cost-of-living_043",
-        "pro_count": 4,
-        "anti_count": 3,
-        "balance": 0.75
+        "cluster_id": "clu_inflation-cost-of-living_008",
+        "pro_count": 30,
+        "anti_count": 22,
+        "balance": 0.73
       }
     },
     {
-      "id": "evt_427f68f24a65",
+      "id": "evt_24bf156f378b",
       "type": "phase_transition",
-      "timestamp": "2026-05-26T20:55:57.450175+00:00",
+      "timestamp": "2026-09-07T20:50:37.281649+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
@@ -80,9 +48,9 @@
       }
     },
     {
-      "id": "evt_6146334765d0",
+      "id": "evt_abe6babb3d44",
       "type": "phase_transition",
-      "timestamp": "2026-05-26T20:55:57.450175+00:00",
+      "timestamp": "2026-09-07T20:50:37.281649+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
@@ -95,9 +63,9 @@
       }
     },
     {
-      "id": "evt_b685918ee327",
+      "id": "evt_6c4fd38ac3eb",
       "type": "phase_transition",
-      "timestamp": "2026-05-26T20:55:57.450175+00:00",
+      "timestamp": "2026-09-07T20:50:37.281649+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
@@ -110,9 +78,9 @@
       }
     },
     {
-      "id": "evt_db51223d8ab4",
+      "id": "evt_dbc072d36d77",
       "type": "phase_transition",
-      "timestamp": "2026-05-26T20:55:57.450175+00:00",
+      "timestamp": "2026-09-07T20:50:37.281649+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
@@ -125,16 +93,34 @@
       }
     },
     {
-      "id": "evt_cae5c256d027",
+      "id": "evt_378183c0fc58",
       "type": "divergence_shift",
-      "timestamp": "2026-05-26T20:55:57.450175+00:00",
+      "timestamp": "2026-09-07T20:50:37.281649+00:00",
+      "claim_id": null,
+      "slice_id": "action_forex_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Strong narrative split between action_forex and aol.com",
+      "detail": {
+        "jsd": 1.0,
+        "platforms": [
+          "action_forex",
+          "aol.com"
+        ],
+        "window_hours": 24
+      }
+    },
+    {
+      "id": "evt_bfd5893d5c59",
+      "type": "divergence_shift",
+      "timestamp": "2026-09-07T20:50:37.281649+00:00",
       "claim_id": null,
       "slice_id": "action_forex_platform",
       "severity": "high",
       "confidence": 0.95,
       "summary": "Strong narrative split between action_forex and Bluesky",
       "detail": {
-        "jsd": 0.9689,
+        "jsd": 0.9113,
         "platforms": [
           "action_forex",
           "bluesky"
@@ -143,73 +129,39 @@
       }
     },
     {
-      "id": "evt_bf28619905d3",
+      "id": "evt_9dc595ca5fea",
       "type": "divergence_shift",
-      "timestamp": "2026-05-26T20:55:57.450175+00:00",
+      "timestamp": "2026-09-07T20:50:37.281649+00:00",
       "claim_id": null,
       "slice_id": "action_forex_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Strong narrative split between action_forex and economic_times",
+      "summary": "Strong narrative split between action_forex and bpc",
       "detail": {
         "jsd": 1.0,
         "platforms": [
           "action_forex",
-          "economic_times"
+          "bpc"
         ],
         "window_hours": 24
       }
     },
     {
-      "id": "evt_c27d34df49b4",
+      "id": "evt_c842accaf729",
       "type": "divergence_shift",
-      "timestamp": "2026-05-26T20:55:57.450175+00:00",
+      "timestamp": "2026-09-07T20:50:37.281649+00:00",
       "claim_id": null,
       "slice_id": "action_forex_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Strong narrative split between action_forex and the_twelfth_magpie",
+      "summary": "Strong narrative split between action_forex and cato",
       "detail": {
-        "jsd": 1.0,
+        "jsd": 0.805,
         "platforms": [
           "action_forex",
-          "the_twelfth_magpie"
+          "cato"
         ],
         "window_hours": 24
-      }
-    },
-    {
-      "id": "evt_731cf230a3b6",
-      "type": "divergence_shift",
-      "timestamp": "2026-05-26T20:55:57.450175+00:00",
-      "claim_id": null,
-      "slice_id": "bluesky_platform",
-      "severity": "high",
-      "confidence": 0.95,
-      "summary": "Strong narrative split between Bluesky and economic_times",
-      "detail": {
-        "jsd": 0.9453,
-        "platforms": [
-          "bluesky",
-          "economic_times"
-        ],
-        "window_hours": 24
-      }
-    },
-    {
-      "id": "evt_54e98d3b065e",
-      "type": "arousal_escalation",
-      "timestamp": "2026-05-27T00:55:57.450175+00:00",
-      "claim_id": "inflation-cost-of-living_bluesky_6e453afa_0",
-      "slice_id": null,
-      "severity": "high",
-      "confidence": 0.84,
-      "summary": "Heated language rising in \"Current Administration\" — 75% emotionally charged claims",
-      "detail": {
-        "cluster_id": "clu_inflation-cost-of-living_032",
-        "high_arousal_count": 3,
-        "total": 4,
-        "ratio": 0.75
       }
     },
     {
@@ -233,49 +185,160 @@
       "source": "polymarket"
     },
     {
+      "id": "evt_7e2769b580e3",
+      "type": "lead_lag",
+      "timestamp": "2026-05-15T13:50:37.281649+00:00",
+      "claim_id": "inflation-cost-of-living_youtube_285f70ac_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.88,
+      "summary": "YouTube (Influencer Framing) leads the_guardian by ~2779h in \"Nigeria's Economy\"",
+      "detail": {
+        "source_platform": "youtube",
+        "target_platform": "the_guardian",
+        "lag_hours": 2779.4,
+        "cluster_id": "clu_inflation-cost-of-living_001"
+      }
+    },
+    {
+      "id": "evt_d9ec9102ec72",
+      "type": "lead_lag",
+      "timestamp": "2026-07-03T12:50:37.281649+00:00",
+      "claim_id": "inflation-cost-of-living_cato_c0670656_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.72,
+      "summary": "cato leads the_atlantic by ~1604h in \"Canadian Fiscal Policy\"",
+      "detail": {
+        "source_platform": "cato",
+        "target_platform": "the_atlantic",
+        "lag_hours": 1605.0,
+        "cluster_id": "clu_inflation-cost-of-living_002"
+      }
+    },
+    {
+      "id": "evt_4cbf669fe8f8",
+      "type": "lead_lag",
+      "timestamp": "2026-08-22T04:50:37.281649+00:00",
+      "claim_id": "inflation-cost-of-living_x_d797b6e8_1",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.86,
+      "summary": "X Platform leads the_atlantic by ~412h in \"Immigration Policy\"",
+      "detail": {
+        "source_platform": "x",
+        "target_platform": "the_atlantic",
+        "lag_hours": 412.8,
+        "cluster_id": "clu_inflation-cost-of-living_000"
+      }
+    },
+    {
+      "id": "evt_5b2e72b776a6",
+      "type": "contestation_emergence",
+      "timestamp": "2026-09-07T20:50:37.281649+00:00",
+      "claim_id": "inflation-cost-of-living_bluesky_0a4e8fbf_1",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.73,
+      "summary": "Active contestation in \"Corporations\" — 8 pro vs 18 anti",
+      "detail": {
+        "cluster_id": "clu_inflation-cost-of-living_003",
+        "pro_count": 8,
+        "anti_count": 18,
+        "balance": 0.44
+      }
+    },
+    {
+      "id": "evt_47bac0454b9b",
+      "type": "contestation_emergence",
+      "timestamp": "2026-09-07T20:50:37.281649+00:00",
+      "claim_id": "inflation-cost-of-living_todayville_0ab11ef6_1",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.78,
+      "summary": "Active contestation in \"SNAP\" — 5 pro vs 3 anti",
+      "detail": {
+        "cluster_id": "clu_inflation-cost-of-living_005",
+        "pro_count": 5,
+        "anti_count": 3,
+        "balance": 0.6
+      }
+    },
+    {
       "id": "evt_54c234b33ffa",
       "type": "momentum_spike",
-      "timestamp": "2026-05-26T22:55:57.450175+00:00",
-      "claim_id": "inflation-cost-of-living_bluesky_6e453afa_0",
+      "timestamp": "2026-09-07T22:50:37.281649+00:00",
+      "claim_id": "inflation-cost-of-living_x_74b058c8_0",
       "slice_id": null,
       "severity": "medium",
       "confidence": 0.5,
-      "summary": "Rapid attention surge in \"Current Administration\" (4 claims)",
+      "summary": "Rapid attention surge in \"Local Election\" (19 claims)",
       "detail": {
-        "cluster_id": "clu_inflation-cost-of-living_032",
-        "avg_momentum": 0.559,
-        "member_count": 4
+        "cluster_id": "clu_inflation-cost-of-living_071",
+        "avg_momentum": 0.551,
+        "member_count": 19
+      }
+    },
+    {
+      "id": "evt_3ad71e5461f3",
+      "type": "momentum_spike",
+      "timestamp": "2026-09-07T22:50:37.281649+00:00",
+      "claim_id": "inflation-cost-of-living_bluesky_1abd3356_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.5,
+      "summary": "Rapid attention surge in \"Republican Policies\" (15 claims)",
+      "detail": {
+        "cluster_id": "clu_inflation-cost-of-living_007",
+        "avg_momentum": 0.551,
+        "member_count": 15
       }
     },
     {
       "id": "evt_28ab37e945b3",
       "type": "momentum_spike",
-      "timestamp": "2026-05-27T00:55:57.450175+00:00",
-      "claim_id": "inflation-cost-of-living_bluesky_4ec484d0_0",
+      "timestamp": "2026-09-07T23:50:37.281649+00:00",
+      "claim_id": "inflation-cost-of-living_todayville_0ab11ef6_1",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.58,
-      "summary": "Rapid attention surge in \"Green Party\" (1 claims)",
+      "confidence": 0.56,
+      "summary": "Rapid attention surge in \"SNAP\" (15 claims)",
       "detail": {
-        "cluster_id": "clu_inflation-cost-of-living_060",
-        "avg_momentum": 0.645,
-        "member_count": 1
+        "cluster_id": "clu_inflation-cost-of-living_005",
+        "avg_momentum": 0.618,
+        "member_count": 15
       }
     },
     {
-      "id": "evt_a16939c104df",
+      "id": "evt_a200222fc7f9",
       "type": "arousal_escalation",
-      "timestamp": "2026-05-27T00:55:57.450175+00:00",
-      "claim_id": "inflation-cost-of-living_bluesky_ba2f4d4a_0",
+      "timestamp": "2026-09-08T00:50:37.281649+00:00",
+      "claim_id": "inflation-cost-of-living_bluesky_1abd3356_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.8,
+      "summary": "Heated language rising in \"Republican Policies\" — 60% emotionally charged claims",
+      "detail": {
+        "cluster_id": "clu_inflation-cost-of-living_007",
+        "high_arousal_count": 9,
+        "total": 15,
+        "ratio": 0.6
+      }
+    },
+    {
+      "id": "evt_16dc08d3ecaa",
+      "type": "arousal_escalation",
+      "timestamp": "2026-09-08T00:50:37.281649+00:00",
+      "claim_id": "inflation-cost-of-living_bluesky_9daf0656_0",
       "slice_id": null,
       "severity": "medium",
       "confidence": 0.76,
-      "summary": "Heated language rising in \"Politicians\" — 42% emotionally charged claims",
+      "summary": "Heated language rising in \"Current Administration\" — 44% emotionally charged claims",
       "detail": {
-        "cluster_id": "clu_inflation-cost-of-living_045",
-        "high_arousal_count": 3,
-        "total": 7,
-        "ratio": 0.43
+        "cluster_id": "clu_inflation-cost-of-living_032",
+        "high_arousal_count": 15,
+        "total": 34,
+        "ratio": 0.44
       }
     },
     {
@@ -367,54 +430,6 @@
       "summary": "Unemployment Rate: 4.30 (down 2.3%)",
       "detail": "Unemployment Rate (UNRATE) at 4.30 as of 2026-03-01. Previous: 4.40 (down 2.3%).",
       "source": "fred"
-    },
-    {
-      "id": "evt_6c0f187841ab",
-      "type": "lead_lag",
-      "timestamp": "2026-05-26T11:55:57.450175+00:00",
-      "claim_id": "inflation-cost-of-living_the_star__07a0b971_0",
-      "slice_id": null,
-      "severity": "low",
-      "confidence": 0.8,
-      "summary": "reason leads yen.com.gh_-_ghana_news. by ~21h in \"Greek Government\"",
-      "detail": {
-        "source_platform": "reason",
-        "target_platform": "yen.com.gh_-_ghana_news.",
-        "lag_hours": 21.7,
-        "cluster_id": "clu_inflation-cost-of-living_012"
-      }
-    },
-    {
-      "id": "evt_ee1e2acc587c",
-      "type": "lead_lag",
-      "timestamp": "2026-05-26T14:55:57.450175+00:00",
-      "claim_id": "inflation-cost-of-living_bluesky_0f998980_0",
-      "slice_id": null,
-      "severity": "low",
-      "confidence": 0.6,
-      "summary": "the_atlantic leads Bluesky by ~18h in \"Corporations\"",
-      "detail": {
-        "source_platform": "the_atlantic",
-        "target_platform": "bluesky",
-        "lag_hours": 18.2,
-        "cluster_id": "clu_inflation-cost-of-living_003"
-      }
-    },
-    {
-      "id": "evt_e4007c5bfcbb",
-      "type": "lead_lag",
-      "timestamp": "2026-05-26T22:55:57.450175+00:00",
-      "claim_id": "inflation-cost-of-living_bluesky_5fc96022_0",
-      "slice_id": null,
-      "severity": "low",
-      "confidence": 0.6,
-      "summary": "the_hill leads rtl_today by ~10h in \"Iran War\"",
-      "detail": {
-        "source_platform": "the_hill",
-        "target_platform": "rtl_today",
-        "lag_hours": 10.6,
-        "cluster_id": "clu_inflation-cost-of-living_053"
-      }
     },
     {
       "id": "gdelt_1b235b60c20a",
@@ -605,17 +620,7 @@
       "summary": "Discount is the new name of the game . What does that mean for conventional stores ? ",
       "detail": "Reported by stcatharinesstandard.ca. Tone: +0.0.",
       "source": "gdelt"
-    },
-    {
-      "id": "gdelt_f81b4b0d5b48",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:11:50Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Shocked by gas at $4 in America ? Try $16 in this Asian city",
-      "detail": "Reported by us.cnn.com. Tone: +0.0.",
-      "source": "gdelt"
     }
   ],
-  "total_count": 82
+  "total_count": 83
 }

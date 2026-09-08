@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "immigration_bluesky_29421e5e_0",
-    "cluster_id": "clu_immigration_016",
-    "concept_id": "concept_immigration_016",
+    "cluster_id": "clu_immigration_022",
+    "concept_id": "concept_immigration_007",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-03T01:35:18.064Z",
     "source_document_id": "6619ef079f538b41",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 14,
-    "friction": 0.4419,
+    "persistence_windows": 12,
+    "friction": 0.9722,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.6816,
+    "value": 0.3402,
     "confidence_interval": [
-      0.5827,
-      0.7805
+      0.2157,
+      0.4647
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.6816
+      0.3402
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.4419,
+    "value": 0.9722,
     "confidence_interval": [
-      0.325,
-      0.5588
+      0.8951,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.4419
+      0.9722
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.7,
+    "value": 0.6,
     "confidence_interval": [
-      0.6025,
-      0.7975
+      0.495,
+      0.705
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.7
+      0.6
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9767,
+    "value": 0.9811,
     "confidence_interval": [
-      0.9,
+      0.9047,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9767
+      0.9811
     ],
     "source_distribution": "production"
   },
@@ -120,79 +120,64 @@
     ]
   },
   "provenance": {
-    "first_platform": "The Intercept",
+    "first_platform": "X Platform",
     "first_timestamp": "2026-04-03T01:35:18.064Z",
     "lead_lag": [
       {
-        "platform": "X Platform",
-        "lag_hours": 50.3
-      },
-      {
         "platform": "Bluesky",
-        "lag_hours": 50.8
+        "lag_hours": 5.8
       },
       {
-        "platform": "Daily Wire",
-        "lag_hours": 67.1
+        "platform": "Daily News",
+        "lag_hours": 565.2
       },
       {
-        "platform": "Fox Politics",
-        "lag_hours": 73.8
+        "platform": "Fox News",
+        "lag_hours": 646.1
       },
       {
-        "platform": "Cuba Headlines Digital Edition",
-        "lag_hours": 85.6
-      },
-      {
-        "platform": "The Detroit News",
-        "lag_hours": 86.4
+        "platform": "Democratic Underground",
+        "lag_hours": 1303.2
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_immigration_016",
+    "concept_id": "concept_immigration_007",
     "hops": [
       {
-        "platform": "The Intercept",
-        "timestamp": "2026-03-30T22:24:18+00:00",
+        "platform": "X Platform",
+        "timestamp": "2026-04-02T19:49:13+00:00",
         "claim_id": "immigration_bluesky_29421e5e_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "X Platform",
-        "timestamp": "2026-04-02T00:43:21+00:00",
-        "claim_id": "immigration_bluesky_29421e5e_0",
-        "fidelity_to_origin": 0.6105,
-        "fidelity_to_previous": 0.6105
-      },
-      {
         "platform": "Bluesky",
-        "timestamp": "2026-04-02T01:12:49.913000+00:00",
+        "timestamp": "2026-04-03T01:35:18.064000+00:00",
         "claim_id": "immigration_bluesky_29421e5e_0",
-        "fidelity_to_origin": 0.6067,
-        "fidelity_to_previous": 0.9938
+        "fidelity_to_origin": 0.9969,
+        "fidelity_to_previous": 0.9969
       },
       {
-        "platform": "Daily Wire",
-        "timestamp": "2026-04-02T17:31:09+00:00",
+        "platform": "Daily News",
+        "timestamp": "2026-04-26T09:00:03+00:00",
         "claim_id": "immigration_bluesky_29421e5e_0",
-        "fidelity_to_origin": 0.4805,
-        "fidelity_to_previous": 0.792
+        "fidelity_to_origin": 0.6964,
+        "fidelity_to_previous": 0.6986
       },
       {
-        "platform": "Fox Politics",
-        "timestamp": "2026-04-03T00:10:28+00:00",
+        "platform": "Fox News",
+        "timestamp": "2026-04-29T17:52:55+00:00",
         "claim_id": "immigration_bluesky_29421e5e_0",
-        "fidelity_to_origin": 0.429,
-        "fidelity_to_previous": 0.8928
+        "fidelity_to_origin": 0.653,
+        "fidelity_to_previous": 0.9377
       },
       {
-        "platform": "Cuba Headlines Digital Edition",
-        "timestamp": "2026-04-03T12:02:11+00:00",
+        "platform": "Democratic Underground",
+        "timestamp": "2026-05-27T02:59:02+00:00",
         "claim_id": "immigration_bluesky_29421e5e_0",
-        "fidelity_to_origin": 0.3372,
-        "fidelity_to_previous": 0.786
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.4594
       }
     ],
     "observation_boundary": null
@@ -227,48 +212,48 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "immigration_bluesky_d6d6e7f0_0",
-      "similarity": 0.6127,
-      "text": "Current immigration enforcement practices by the U.S. government violate the Fourth Amendment."
+      "claim_id": "immigration_bluesky_9482d14a_0",
+      "similarity": 0.7846,
+      "text": "Current immigration enforcement policies are inhumane."
     },
     {
-      "claim_id": "immigration_thebostonsun.com_d4c5e0f8_0",
-      "similarity": 0.5863,
-      "text": "Massachusetts' PROTECT Act aims to protect due process and public safety by establishing standards for state and local systems' interaction with federal immigration enforcement."
+      "claim_id": "immigration_bluesky_de166f1e_0",
+      "similarity": 0.7846,
+      "text": "Donald Trump's immigration policies are inhumane."
     },
     {
-      "claim_id": "immigration_bluesky_2d1bd2bb_0",
-      "similarity": 0.5678,
-      "text": "Increased border crossing fees may be connected to potential security threats to Americans."
+      "claim_id": "immigration_bluesky_e607df8c_0",
+      "similarity": 0.767,
+      "text": "Current immigration policies are being violated and abused."
     },
     {
-      "claim_id": "immigration_bluesky_982aa740_0",
-      "similarity": 0.4637,
-      "text": "People smuggling gangs are changing their methods to transport illegal immigrants across the English Channel."
+      "claim_id": "immigration_x_099404d6_0",
+      "similarity": 0.7215,
+      "text": "The Trump administration's policy of allowing immigration agents to enter homes without a judicial warrant is illegal and unconstitutional."
     },
     {
-      "claim_id": "immigration_bluesky_d2379b6e_0",
-      "similarity": 0.4418,
-      "text": "The White House authorized the Department of Homeland Security to allocate $205 million for border security executive travel, including private jet rentals."
+      "claim_id": "immigration_x_943745a6_0",
+      "similarity": 0.7215,
+      "text": "The Trump administration's policy of allowing immigration agents to enter homes without a judicial warrant is illegal and unconstitutional."
     }
   ],
   "example_content": [
     {
-      "text": "Donald Trump supports a plan to fund the Department of Homeland Security and immigration enforcement through a special procedure.",
-      "platform": "Bluesky",
+      "text": "Representative Mike Lawler is complicit in cruel immigration policies.",
+      "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Current immigration enforcement practices by the U.S. government violate the Fourth Amendment.",
-      "platform": "Bluesky",
+      "text": "The Trump administration's policy of allowing immigration agents to enter homes without a judicial warrant is illegal and unconstitutional.",
+      "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Increased border crossing fees may be connected to potential security threats to Americans.",
-      "platform": "Bluesky",
-      "confidence": 0.7,
+      "text": "The Trump administration's policy of allowing immigration agents to enter homes without a judicial warrant is illegal and unconstitutional.",
+      "platform": "X Platform",
+      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

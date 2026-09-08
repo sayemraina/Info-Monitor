@@ -35,48 +35,48 @@
       0.645
     ],
     "source_distribution": "production",
-    "source_diversity": 0.75,
-    "bridge_ratio": 0.75,
-    "persistence_windows": 1,
-    "friction": 0.75,
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 13,
+    "friction": 0.9024,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.3202,
+    "value": 0.3874,
     "confidence_interval": [
-      0.1942,
-      0.4462
+      0.2665,
+      0.5083
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3202
+      0.3874
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.75,
+    "value": 0.9024,
     "confidence_interval": [
-      0.6562,
-      0.8438
+      0.8201,
+      0.9847
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.75
+      0.9024
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0.65,
     "confidence_interval": [
-      0,
-      0.1962
+      0.5487,
+      0.7513
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0.65
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9811,
     "confidence_interval": [
-      0.925,
+      0.9047,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9811
     ],
     "source_distribution": "production"
   },
@@ -120,16 +120,32 @@
     ]
   },
   "provenance": {
-    "first_platform": "Daily Wire",
+    "first_platform": "Bluesky",
     "first_timestamp": "2026-05-27T08:06:57.177Z",
     "lead_lag": [
       {
-        "platform": "Bluesky",
-        "lag_hours": 12.5
+        "platform": "Nyt Politics",
+        "lag_hours": 2.7
       },
       {
-        "platform": "Democratic Underground",
-        "lag_hours": 14.7
+        "platform": "Pbs Newshour",
+        "lag_hours": 6.2
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 20.4
+      },
+      {
+        "platform": "Jacobin",
+        "lag_hours": 428.1
+      },
+      {
+        "platform": "Salon",
+        "lag_hours": 546.1
+      },
+      {
+        "platform": "Reason",
+        "lag_hours": 600.1
       }
     ]
   },
@@ -137,25 +153,46 @@
     "concept_id": "concept_immigration_007",
     "hops": [
       {
-        "platform": "Daily Wire",
-        "timestamp": "2026-05-26T12:14:47+00:00",
+        "platform": "Bluesky",
+        "timestamp": "2026-04-02T16:41:55.561000+00:00",
         "claim_id": "immigration_bluesky_07381f58_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-05-27T00:42:50.172000+00:00",
+        "platform": "Nyt Politics",
+        "timestamp": "2026-04-02T19:25:11+00:00",
         "claim_id": "immigration_bluesky_07381f58_0",
-        "fidelity_to_origin": 0.4078,
-        "fidelity_to_previous": 0.4078
+        "fidelity_to_origin": 0.9985,
+        "fidelity_to_previous": 0.9985
       },
       {
-        "platform": "Democratic Underground",
-        "timestamp": "2026-05-27T02:59:02+00:00",
+        "platform": "Pbs Newshour",
+        "timestamp": "2026-04-02T22:51:35+00:00",
         "claim_id": "immigration_bluesky_07381f58_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.7357
+        "fidelity_to_origin": 0.9967,
+        "fidelity_to_previous": 0.9982
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-03T13:05:48+00:00",
+        "claim_id": "immigration_bluesky_07381f58_0",
+        "fidelity_to_origin": 0.9891,
+        "fidelity_to_previous": 0.9924
+      },
+      {
+        "platform": "Jacobin",
+        "timestamp": "2026-04-20T12:50:50+00:00",
+        "claim_id": "immigration_bluesky_07381f58_0",
+        "fidelity_to_origin": 0.7706,
+        "fidelity_to_previous": 0.7791
+      },
+      {
+        "platform": "Salon",
+        "timestamp": "2026-04-25T10:45:28+00:00",
+        "claim_id": "immigration_bluesky_07381f58_0",
+        "fidelity_to_origin": 0.7074,
+        "fidelity_to_previous": 0.918
       }
     ],
     "observation_boundary": null
@@ -190,37 +227,47 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "immigration_democratic_underground_157bc449_0",
-      "similarity": 0.7378,
-      "text": "The national origins quota system in US immigration policy was unjust."
+      "claim_id": "immigration_bluesky_3543177e_0",
+      "similarity": 0.7625,
+      "text": "ICE's re-arrest and attempted deportation of an Egyptian family was inappropriate."
     },
     {
-      "claim_id": "immigration_bluesky_dca8852b_0",
-      "similarity": 0.7093,
-      "text": "Canadian immigration enforcement is unfairly targeting families by deporting parents while allowing their spouses or children to remain in the country."
+      "claim_id": "immigration_pbs_newshour_3fe41794_0",
+      "similarity": 0.7287,
+      "text": "The U.S. government is deporting asylum seekers to countries they have no connection to."
     },
     {
-      "claim_id": "immigration_daily_wire_5344f437_0",
-      "similarity": 0.5444,
-      "text": "The Trump administration's changes to visa and immigration procedures are not specifically targeted at India."
+      "claim_id": "immigration_bluesky_94585465_0",
+      "similarity": 0.6804,
+      "text": "The El Gamal family, fearing persecution in Egypt, was wrongly deported despite court orders."
+    },
+    {
+      "claim_id": "immigration_bluesky_edf5d92b_0",
+      "similarity": 0.6421,
+      "text": "Deporting a woman whose loved one died in the Baltimore bridge collapse is an unjust action by DHS."
+    },
+    {
+      "claim_id": "immigration_bluesky_aceb5388_0",
+      "similarity": 0.63,
+      "text": "Current immigration policies unfairly target Sikh truck drivers."
     }
   ],
   "example_content": [
     {
-      "text": "Canadian immigration enforcement is unfairly targeting families by deporting parents while allowing their spouses or children to remain in the country.",
+      "text": "Current immigration policies unfairly target Sikh truck drivers.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The national origins quota system in US immigration policy was unjust.",
-      "platform": "Democratic Underground",
+      "text": "Immigration and Customs Enforcement (ICE) unjustly detains individuals even after they have been exonerated of any wrongdoing.",
+      "platform": "Nyt Politics",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The Trump administration's changes to visa and immigration procedures are not specifically targeted at India.",
-      "platform": "Daily Wire",
+      "text": "The U.S. government is deporting asylum seekers to countries they have no connection to.",
+      "platform": "Pbs Newshour",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

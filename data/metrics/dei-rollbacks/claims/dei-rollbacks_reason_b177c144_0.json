@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 2,
-    "friction": 0,
+    "persistence_windows": 15,
+    "friction": 0.2353,
     "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 0.4424,
+    "value": 0.5005,
     "confidence_interval": [
-      0.3256,
-      0.5592
+      0.388,
+      0.613
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.4424
+      0.5005
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0,
+    "value": 0.2353,
     "confidence_interval": [
-      0,
-      0.15
+      0.1029,
+      0.3677
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.2353
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.1,
+    "value": 0.75,
     "confidence_interval": [
-      0,
-      0.2425
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -120,20 +120,32 @@
     ]
   },
   "provenance": {
-    "first_platform": "Reason",
+    "first_platform": "YouTube (Influencer Framing)",
     "first_timestamp": "2026-05-26T16:05:32Z",
     "lead_lag": [
       {
-        "platform": "Fortune",
-        "lag_hours": 4.5
+        "platform": "Guardian Tech",
+        "lag_hours": 5164.5
       },
       {
-        "platform": "Stat",
-        "lag_hours": 7.3
+        "platform": "Fortune",
+        "lag_hours": 5188.6
       },
       {
         "platform": "Bluesky",
-        "lag_hours": 12.9
+        "lag_hours": 5734.8
+      },
+      {
+        "platform": "Sportskeeda",
+        "lag_hours": 5737.8
+      },
+      {
+        "platform": "Npr Tech",
+        "lag_hours": 5748.6
+      },
+      {
+        "platform": "The Atlantic",
+        "lag_hours": 5761.5
       }
     ]
   },
@@ -141,32 +153,46 @@
     "concept_id": "concept_dei-rollbacks_000",
     "hops": [
       {
-        "platform": "Reason",
-        "timestamp": "2026-05-26T16:05:32+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2025-08-30T09:30:14+00:00",
         "claim_id": "dei-rollbacks_reason_b177c144_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Fortune",
-        "timestamp": "2026-05-26T20:34:01+00:00",
+        "platform": "Guardian Tech",
+        "timestamp": "2026-04-02T14:00:27+00:00",
         "claim_id": "dei-rollbacks_reason_b177c144_0",
-        "fidelity_to_origin": 0.7573,
-        "fidelity_to_previous": 0.7573
+        "fidelity_to_origin": 0.4412,
+        "fidelity_to_previous": 0.4412
       },
       {
-        "platform": "Stat",
-        "timestamp": "2026-05-26T23:20:55+00:00",
+        "platform": "Fortune",
+        "timestamp": "2026-04-03T14:04:20+00:00",
         "claim_id": "dei-rollbacks_reason_b177c144_0",
-        "fidelity_to_origin": 0.6064,
-        "fidelity_to_previous": 0.8007
+        "fidelity_to_origin": 0.4386,
+        "fidelity_to_previous": 0.9941
       },
       {
         "platform": "Bluesky",
-        "timestamp": "2026-05-27T04:59:54.604000+00:00",
+        "timestamp": "2026-04-26T08:19:36.293000+00:00",
         "claim_id": "dei-rollbacks_reason_b177c144_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.4947
+        "fidelity_to_origin": 0.3795,
+        "fidelity_to_previous": 0.8653
+      },
+      {
+        "platform": "Sportskeeda",
+        "timestamp": "2026-04-26T11:17:18+00:00",
+        "claim_id": "dei-rollbacks_reason_b177c144_0",
+        "fidelity_to_origin": 0.3792,
+        "fidelity_to_previous": 0.9992
+      },
+      {
+        "platform": "Npr Tech",
+        "timestamp": "2026-04-26T22:03:31+00:00",
+        "claim_id": "dei-rollbacks_reason_b177c144_0",
+        "fidelity_to_origin": 0.378,
+        "fidelity_to_previous": 0.9968
       }
     ],
     "observation_boundary": null
@@ -201,48 +227,48 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "dei-rollbacks_fortune_b9a3a6cf_2",
-      "similarity": 0.5499,
-      "text": "David Solomon maintains that concerns about AI causing a job apocalypse were exaggerated."
+      "claim_id": "dei-rollbacks_guardian_tech_2995c3a8_0",
+      "similarity": 0.8365,
+      "text": "AI technology poses a risk of creative destruction to society."
     },
     {
-      "claim_id": "dei-rollbacks_fortune_b9a3a6cf_0",
-      "similarity": 0.5268,
-      "text": "Sam Altman has revised his previous warnings about AI's negative impact on employment, acknowledging that his initial predictions were likely overstated."
+      "claim_id": "dei-rollbacks_fortune_8559fcb5_2",
+      "similarity": 0.6292,
+      "text": "Investment in AI is disrupting employment by causing companies to prioritize capital expenditures over labor."
     },
     {
-      "claim_id": "dei-rollbacks_fortune_b9a3a6cf_1",
-      "similarity": 0.4859,
-      "text": "Dario Amodei now believes that AI automation will augment human productivity rather than eliminate a large percentage of white-collar jobs."
+      "claim_id": "dei-rollbacks_youtube_9ae9c23e_0",
+      "similarity": 0.5638,
+      "text": "A staffer at the National Endowment for the Humanities used ChatGPT to undermine DEI initiatives."
     },
     {
-      "claim_id": "dei-rollbacks_reason_b177c144_1",
-      "similarity": 0.4469,
-      "text": "AI development should not be halted despite its risks, as it offers significant benefits and a moratorium would give geopolitical rivals an advantage."
+      "claim_id": "dei-rollbacks_guardian_tech_2995c3a8_1",
+      "similarity": 0.5346,
+      "text": "Anthropic is attempting to promote a positive image of AI to policymakers."
     },
     {
-      "claim_id": "dei-rollbacks_reason_b177c144_2",
-      "similarity": 0.4459,
-      "text": "AI regulation is necessary to prevent misuse by governments, such as mass surveillance and autonomous warfare."
+      "claim_id": "dei-rollbacks_bluesky_0108208a_1",
+      "similarity": 0.5099,
+      "text": "Kamala Harris would hinder the development of AI technology through censorship and DEI initiatives."
     }
   ],
   "example_content": [
     {
-      "text": "The decline in the avian population is primarily due to the use of pesticides which decimate insects, a crucial food source for birds.",
-      "platform": "Bluesky",
+      "text": "AI technology poses a risk of creative destruction to society.",
+      "platform": "Guardian Tech",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Current scientific research practices can produce statistically significant results that do not accurately reflect real-world phenomena.",
-      "platform": "Stat",
-      "confidence": 0.9,
+      "text": "Anthropic is attempting to promote a positive image of AI to policymakers.",
+      "platform": "Guardian Tech",
+      "confidence": 0.8,
       "is_influencer_framing": false
     },
     {
-      "text": "AI development should not be halted despite its risks, as it offers significant benefits and a moratorium would give geopolitical rivals an advantage.",
-      "platform": "Reason",
-      "confidence": 0.9,
+      "text": "Investment in AI is disrupting employment by causing companies to prioritize capital expenditures over labor.",
+      "platform": "Fortune",
+      "confidence": 0.8,
       "is_influencer_framing": false
     }
   ]

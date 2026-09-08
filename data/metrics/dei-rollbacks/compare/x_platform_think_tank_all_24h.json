@@ -3,37 +3,30 @@
     "id": "x_platform",
     "type": "platform",
     "label": "X Platform",
-    "active_volume": 0,
+    "active_volume": 9,
     "meets_minimum_threshold": false,
-    "base_rate_weight": 0.0,
+    "base_rate_weight": 0.0091,
     "is_influencer_framing": false
   },
   "slice_b": {
     "id": "think_tank_all",
     "type": "source_type",
     "label": "Think Tanks",
-    "active_volume": 0,
+    "active_volume": 7,
     "meets_minimum_threshold": false,
-    "base_rate_weight": 0.0,
+    "base_rate_weight": 0.0071,
     "is_influencer_framing": false
   },
   "divergence": {
-    "jsd": 0.0,
-    "jsd_sqrt": 0.0,
+    "jsd": 1.0,
+    "jsd_sqrt": 1.0,
     "trend": [
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0
+      1.0
     ],
     "typology": {
-      "information_asymmetry": 0.0,
-      "interpretive": 0.0,
-      "paradigmatic": 0.0,
+      "information_asymmetry": 0.3939,
+      "interpretive": 0.2121,
+      "paradigmatic": 0.3939,
       "dominant_mode": "Information Asymmetry",
       "paradigmatic_caveat": false
     }
@@ -62,9 +55,9 @@
     {
       "cluster_id": "clu_dei-rollbacks_002",
       "label": "Target",
-      "salience_a": 0.0,
+      "salience_a": 0.7778,
       "salience_b": 0.0,
-      "arousal_a": 0,
+      "arousal_a": 0.35,
       "arousal_b": 0,
       "mutation_a": "stable",
       "mutation_b": "stable"
@@ -72,9 +65,9 @@
     {
       "cluster_id": "clu_dei-rollbacks_003",
       "label": "American Roots Music",
-      "salience_a": 0.0,
+      "salience_a": 0.2222,
       "salience_b": 0.0,
-      "arousal_a": 0,
+      "arousal_a": 0.5,
       "arousal_b": 0,
       "mutation_a": "stable",
       "mutation_b": "stable"
@@ -103,9 +96,9 @@
       "cluster_id": "clu_dei-rollbacks_006",
       "label": "Tech Companies",
       "salience_a": 0.0,
-      "salience_b": 0.0,
+      "salience_b": 0.1429,
       "arousal_a": 0,
-      "arousal_b": 0,
+      "arousal_b": 0.5,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
@@ -173,9 +166,9 @@
       "cluster_id": "clu_dei-rollbacks_013",
       "label": "Housing Regulations",
       "salience_a": 0.0,
-      "salience_b": 0.0,
+      "salience_b": 0.5714,
       "arousal_a": 0,
-      "arousal_b": 0,
+      "arousal_b": 0.4125,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
@@ -321,33 +314,33 @@
     }
   ],
   "arousal_comparison": {
-    "slice_a_avg": 0,
-    "slice_b_avg": 0
+    "slice_a_avg": 0.3833,
+    "slice_b_avg": 0.4
   },
   "exposure_comparison": {
     "slice_a": {
-      "value": 0,
+      "value": 0.0162,
       "confidence_interval": [
         0,
-        0.15
+        0.165
       ],
       "baseline": "global",
       "time_window": "24h",
       "sparkline": [
-        0
+        0.0162
       ],
       "source_distribution": "production"
     },
     "slice_b": {
-      "value": 0,
+      "value": 0.0128,
       "confidence_interval": [
         0,
-        0.15
+        0.1618
       ],
       "baseline": "global",
       "time_window": "24h",
       "sparkline": [
-        0
+        0.0128
       ],
       "source_distribution": "production"
     }

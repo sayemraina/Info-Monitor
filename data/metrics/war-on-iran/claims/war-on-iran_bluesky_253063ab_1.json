@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "war-on-iran_bluesky_253063ab_1",
-    "cluster_id": "clu_war-on-iran_024",
-    "concept_id": "concept_war-on-iran_003",
+    "cluster_id": "clu_war-on-iran_054",
+    "concept_id": "concept_war-on-iran_002",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-29T18:14:53.967Z",
     "source_document_id": "6b497ed86356abb3",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 3,
-    "friction": 0.4444,
+    "persistence_windows": 15,
+    "friction": 0.6582,
     "friction_quadrant": "successful_suppression"
   },
   "salience": {
-    "value": 0.339,
+    "value": 0.8427,
     "confidence_interval": [
-      0.2144,
-      0.4636
+      0.7559,
+      0.9295
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.339
+      0.8427
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.4444,
+    "value": 0.6582,
     "confidence_interval": [
-      0.3277,
-      0.5611
+      0.5576,
+      0.7588
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.4444
+      0.6582
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.15,
+    "value": 0.75,
     "confidence_interval": [
-      0.0112,
-      0.2888
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.15
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9762,
+    "value": 0.9935,
     "confidence_interval": [
-      0.8994,
+      0.918,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9762
+      0.9935
     ],
     "source_distribution": "production"
   },
@@ -118,64 +118,79 @@
     "factors": []
   },
   "provenance": {
-    "first_platform": "The Atlantic",
+    "first_platform": "YouTube (Influencer Framing)",
     "first_timestamp": "2026-04-29T18:14:53.967Z",
     "lead_lag": [
       {
+        "platform": "La Times",
+        "lag_hours": 6847.0
+      },
+      {
+        "platform": "Salon",
+        "lag_hours": 6919.7
+      },
+      {
+        "platform": "Guardian World",
+        "lag_hours": 6950.5
+      },
+      {
+        "platform": "The Atlantic",
+        "lag_hours": 6956.8
+      },
+      {
         "platform": "Bluesky",
-        "lag_hours": 8.2
+        "lag_hours": 6966.9
       },
       {
-        "platform": "Https://Www.Firstalert4.Com",
-        "lag_hours": 8.3
-      },
-      {
-        "platform": "Dpa International",
-        "lag_hours": 8.7
-      },
-      {
-        "platform": "The National",
-        "lag_hours": 8.7
+        "platform": "X Platform",
+        "lag_hours": 6970.7
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_war-on-iran_003",
+    "concept_id": "concept_war-on-iran_002",
     "hops": [
       {
-        "platform": "The Atlantic",
-        "timestamp": "2026-04-29T10:00:00+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2025-06-17T03:02:51+00:00",
         "claim_id": "war-on-iran_bluesky_253063ab_1",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
+        "platform": "La Times",
+        "timestamp": "2026-03-29T10:00:00+00:00",
+        "claim_id": "war-on-iran_bluesky_253063ab_1",
+        "fidelity_to_origin": 0.4195,
+        "fidelity_to_previous": 0.4195
+      },
+      {
+        "platform": "Salon",
+        "timestamp": "2026-04-01T10:45:10+00:00",
+        "claim_id": "war-on-iran_bluesky_253063ab_1",
+        "fidelity_to_origin": 0.4134,
+        "fidelity_to_previous": 0.9855
+      },
+      {
+        "platform": "Guardian World",
+        "timestamp": "2026-04-02T17:34:37+00:00",
+        "claim_id": "war-on-iran_bluesky_253063ab_1",
+        "fidelity_to_origin": 0.4108,
+        "fidelity_to_previous": 0.9937
+      },
+      {
+        "platform": "The Atlantic",
+        "timestamp": "2026-04-02T23:53:00+00:00",
+        "claim_id": "war-on-iran_bluesky_253063ab_1",
+        "fidelity_to_origin": 0.4102,
+        "fidelity_to_previous": 0.9985
+      },
+      {
         "platform": "Bluesky",
-        "timestamp": "2026-04-29T18:14:53.967000+00:00",
+        "timestamp": "2026-04-03T09:55:54.223000+00:00",
         "claim_id": "war-on-iran_bluesky_253063ab_1",
-        "fidelity_to_origin": 0.3397,
-        "fidelity_to_previous": 0.3397
-      },
-      {
-        "platform": "Https://Www.Firstalert4.Com",
-        "timestamp": "2026-04-29T18:18:35+00:00",
-        "claim_id": "war-on-iran_bluesky_253063ab_1",
-        "fidelity_to_origin": 0.3347,
-        "fidelity_to_previous": 0.9853
-      },
-      {
-        "platform": "Dpa International",
-        "timestamp": "2026-04-29T18:42:18+00:00",
-        "claim_id": "war-on-iran_bluesky_253063ab_1",
-        "fidelity_to_origin": 0.3031,
-        "fidelity_to_previous": 0.9056
-      },
-      {
-        "platform": "The National",
-        "timestamp": "2026-04-29T18:44:37+00:00",
-        "claim_id": "war-on-iran_bluesky_253063ab_1",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9898
+        "fidelity_to_origin": 0.4094,
+        "fidelity_to_previous": 0.998
       }
     ],
     "observation_boundary": null
@@ -210,48 +225,48 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "war-on-iran_the_atlantic_bcc4c8ff_1",
-      "similarity": 0.6168,
-      "text": "Donald Trump's actions as president are driven by a desire to be remembered as a historically great leader."
+      "claim_id": "war-on-iran_bluesky_59ee978d_0",
+      "similarity": 0.4651,
+      "text": "Donald Trump is acting traitorously by supporting Russia and Iran."
     },
     {
-      "claim_id": "war-on-iran_https://www.firstalert4.com_45cd0eb7_2",
-      "similarity": 0.5858,
-      "text": "The Trump administration's strategy involves excessive violence, threats, and coercion to impose its will on the world."
+      "claim_id": "war-on-iran_salon_d14047e5_0",
+      "similarity": 0.4487,
+      "text": "Donald Trump surrounds himself with mediocre and talentless people who are willing to debase themselves for him."
     },
     {
-      "claim_id": "war-on-iran_the_atlantic_bcc4c8ff_2",
-      "similarity": 0.5476,
-      "text": "Donald Trump's administration believes his actions are guided by what is truly right, not by political interests."
+      "claim_id": "war-on-iran_bluesky_1cb3d96c_1",
+      "similarity": 0.4247,
+      "text": "Donald Trump has been a Russian asset since April 9, 1977."
     },
     {
-      "claim_id": "war-on-iran_bluesky_0d785141_0",
-      "similarity": 0.4836,
-      "text": "Donald Trump is easily manipulated by Vladimir Putin."
+      "claim_id": "war-on-iran_guardian_world_113dde1f_0",
+      "similarity": 0.4093,
+      "text": "Donald Trump's statements on Iran and NATO are inconsistent and undermine stability."
     },
     {
-      "claim_id": "war-on-iran_the_national_aab571f9_1",
-      "similarity": 0.4537,
-      "text": "The Trump administration is likely to disregard the War Powers Resolution regarding military actions against Iran."
+      "claim_id": "war-on-iran_bluesky_1cb3d96c_2",
+      "similarity": 0.3826,
+      "text": "Vladimir Putin possesses compromising material on Donald Trump."
     }
   ],
   "example_content": [
     {
-      "text": "The current administration has initiated military conflicts in Gaza, against Iran, and against American citizens.",
+      "text": "Donald Trump will create a private security force to prevent people from voting against him.",
       "platform": "Bluesky",
-      "confidence": 0.9,
+      "confidence": 0.7,
       "is_influencer_framing": false
     },
     {
-      "text": "Donald Trump is easily manipulated by Vladimir Putin.",
+      "text": "Donald Trump is helping Russia destabilize Europe by reducing sanctions.",
       "platform": "Bluesky",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "is_influencer_framing": false
     },
     {
-      "text": "The Trump administration's strategy involves excessive violence, threats, and coercion to impose its will on the world.",
-      "platform": "Https://Www.Firstalert4.Com",
-      "confidence": 0.9,
+      "text": "Donald Trump has been a Russian asset since April 9, 1977.",
+      "platform": "Bluesky",
+      "confidence": 0.8,
       "is_influencer_framing": false
     }
   ]

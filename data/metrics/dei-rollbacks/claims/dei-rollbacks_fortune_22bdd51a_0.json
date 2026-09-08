@@ -24,107 +24,94 @@
     "source_type": "elite_media"
   },
   "momentum": {
-    "value": null,
+    "value": 0.54,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.44,
+      0.64
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.54
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 15,
+    "friction": 0.2353,
+    "friction_quadrant": "unopposed_advance"
+  },
+  "salience": {
+    "value": 0.5005,
+    "confidence_interval": [
+      0.388,
+      0.613
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5005
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.2353,
+    "confidence_interval": [
+      0.1029,
+      0.3677
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.2353
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.75,
+    "confidence_interval": [
+      0.6562,
+      0.8438
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.75
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.5,
     "confidence_interval": [
-      0,
-      0
+      0.3875,
+      0.6125
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.5
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 1,
     "confidence_interval": [
-      0,
-      0
+      0.925,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      1
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,65 +120,155 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "YouTube (Influencer Framing)",
+    "first_timestamp": "2026-04-26T08:00:00Z",
+    "lead_lag": [
+      {
+        "platform": "Guardian Tech",
+        "lag_hours": 5164.5
+      },
+      {
+        "platform": "Fortune",
+        "lag_hours": 5188.6
+      },
+      {
+        "platform": "Bluesky",
+        "lag_hours": 5734.8
+      },
+      {
+        "platform": "Sportskeeda",
+        "lag_hours": 5737.8
+      },
+      {
+        "platform": "Npr Tech",
+        "lag_hours": 5748.6
+      },
+      {
+        "platform": "The Atlantic",
+        "lag_hours": 5761.5
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_dei-rollbacks_000",
+    "hops": [
+      {
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2025-08-30T09:30:14+00:00",
+        "claim_id": "dei-rollbacks_fortune_22bdd51a_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Guardian Tech",
+        "timestamp": "2026-04-02T14:00:27+00:00",
+        "claim_id": "dei-rollbacks_fortune_22bdd51a_0",
+        "fidelity_to_origin": 0.4412,
+        "fidelity_to_previous": 0.4412
+      },
+      {
+        "platform": "Fortune",
+        "timestamp": "2026-04-03T14:04:20+00:00",
+        "claim_id": "dei-rollbacks_fortune_22bdd51a_0",
+        "fidelity_to_origin": 0.4386,
+        "fidelity_to_previous": 0.9941
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-26T08:19:36.293000+00:00",
+        "claim_id": "dei-rollbacks_fortune_22bdd51a_0",
+        "fidelity_to_origin": 0.3795,
+        "fidelity_to_previous": 0.8653
+      },
+      {
+        "platform": "Sportskeeda",
+        "timestamp": "2026-04-26T11:17:18+00:00",
+        "claim_id": "dei-rollbacks_fortune_22bdd51a_0",
+        "fidelity_to_origin": 0.3792,
+        "fidelity_to_previous": 0.9992
+      },
+      {
+        "platform": "Npr Tech",
+        "timestamp": "2026-04-26T22:03:31+00:00",
+        "claim_id": "dei-rollbacks_fortune_22bdd51a_0",
+        "fidelity_to_origin": 0.378,
+        "fidelity_to_previous": 0.9968
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "dei-rollbacks_business_insider_985a8a90_1",
-      "similarity": 0.4573,
-      "text": "AI companies are currently spending more on infrastructure than they are earning in revenue."
+      "claim_id": "dei-rollbacks_fortune_8559fcb5_2",
+      "similarity": 0.723,
+      "text": "Investment in AI is disrupting employment by causing companies to prioritize capital expenditures over labor."
     },
     {
-      "claim_id": "dei-rollbacks_business_insider_985a8a90_0",
-      "similarity": 0.435,
-      "text": "OpenAI secured a significant lead in AI compute infrastructure ahead of its competitors."
+      "claim_id": "dei-rollbacks_guardian_tech_2995c3a8_0",
+      "similarity": 0.5888,
+      "text": "AI technology poses a risk of creative destruction to society."
     },
     {
-      "claim_id": "dei-rollbacks_mother_jones_32bf99f7_2",
-      "similarity": 0.4219,
-      "text": "Larry Page believes concerns about the impact of AGI on humans are misguided."
+      "claim_id": "dei-rollbacks_youtube_9ae9c23e_0",
+      "similarity": 0.5192,
+      "text": "A staffer at the National Endowment for the Humanities used ChatGPT to undermine DEI initiatives."
     },
     {
-      "claim_id": "dei-rollbacks_mother_jones_32bf99f7_0",
-      "similarity": 0.3972,
-      "text": "Elon Musk believes OpenAI has abandoned its original mission as a non-profit and has become a for-profit subsidiary of Microsoft."
+      "claim_id": "dei-rollbacks_bluesky_0108208a_1",
+      "similarity": 0.4757,
+      "text": "Kamala Harris would hinder the development of AI technology through censorship and DEI initiatives."
     },
     {
-      "claim_id": "dei-rollbacks_the_atlantic_76387f05_0",
-      "similarity": 0.3603,
-      "text": "OpenAI has violated its founding charter by prioritizing profits over its original mission."
+      "claim_id": "dei-rollbacks_bluesky_0108208a_0",
+      "similarity": 0.4435,
+      "text": "Donald Trump's presidency would be beneficial for the advancement of AI technology."
     }
   ],
   "example_content": [
     {
-      "text": "OpenAI secured a significant lead in AI compute infrastructure ahead of its competitors.",
-      "platform": "Business Insider",
+      "text": "AI technology poses a risk of creative destruction to society.",
+      "platform": "Guardian Tech",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "AI companies are currently spending more on infrastructure than they are earning in revenue.",
-      "platform": "Business Insider",
-      "confidence": 0.9,
+      "text": "Anthropic is attempting to promote a positive image of AI to policymakers.",
+      "platform": "Guardian Tech",
+      "confidence": 0.8,
       "is_influencer_framing": false
     },
     {
-      "text": "Elon Musk believes OpenAI has abandoned its original mission as a non-profit and has become a for-profit subsidiary of Microsoft.",
-      "platform": "Mother Jones",
-      "confidence": 0.9,
+      "text": "Investment in AI is disrupting employment by causing companies to prioritize capital expenditures over labor.",
+      "platform": "Fortune",
+      "confidence": 0.8,
       "is_influencer_framing": false
     }
   ]

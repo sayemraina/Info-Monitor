@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "crypto-digital-money_youtube_4eb5685a_0",
-    "cluster_id": "clu_crypto-digital-money_029",
-    "concept_id": "concept_crypto-digital-money_001",
+    "cluster_id": "clu_crypto-digital-money_049",
+    "concept_id": "concept_crypto-digital-money_000",
     "first_seen_platform": "youtube",
     "first_seen_timestamp": "2026-05-05T03:56:50Z",
     "source_document_id": "yt_QmNyAGbATEM",
@@ -24,39 +24,37 @@
     "source_type": "elite_media"
   },
   "momentum": {
-    "value": null,
+    "value": 0.925,
     "confidence_interval": [
-      0,
-      0
+      0.825,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
+    "sparkline": [
+      0.925
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 7,
+    "friction": 0,
+    "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": null,
+    "value": 0.2034,
     "confidence_interval": [
-      0,
-      0
+      0.0687,
+      0.3381
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.2034
+    ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
     "value": 0,
     "confidence_interval": [
       0,
@@ -69,62 +67,51 @@
     ],
     "source_distribution": "production"
   },
-  "arousal": {
-    "value": null,
+  "persistence": {
+    "value": 0.35,
     "confidence_interval": [
-      0,
-      0
+      0.2263,
+      0.4737
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.35
+    ],
+    "source_distribution": "production"
+  },
+  "arousal": {
+    "value": 0.85,
+    "confidence_interval": [
+      0.7638,
+      0.9362
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.85
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 0.8943,
     "confidence_interval": [
-      0,
-      0
+      0.8114,
+      0.9772
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.8943
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,65 +120,155 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "YouTube (Influencer Framing)",
+    "first_timestamp": "2026-05-05T03:56:50Z",
+    "lead_lag": [
+      {
+        "platform": "Coinpedia   Fintech & Cryptocu",
+        "lag_hours": 101.6
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 102.2
+      },
+      {
+        "platform": "Bluesky",
+        "lag_hours": 601.2
+      },
+      {
+        "platform": "Techbullion",
+        "lag_hours": 647.2
+      },
+      {
+        "platform": "Finbold",
+        "lag_hours": 680.6
+      },
+      {
+        "platform": "Foreign Policy Journal",
+        "lag_hours": 1389.7
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_crypto-digital-money_000",
+    "hops": [
+      {
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-03-30T10:50:52+00:00",
+        "claim_id": "crypto-digital-money_youtube_4eb5685a_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Coinpedia   Fintech & Cryptocu",
+        "timestamp": "2026-04-03T16:29:47+00:00",
+        "claim_id": "crypto-digital-money_youtube_4eb5685a_0",
+        "fidelity_to_origin": 0.9488,
+        "fidelity_to_previous": 0.9488
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-03T17:05:35+00:00",
+        "claim_id": "crypto-digital-money_youtube_4eb5685a_0",
+        "fidelity_to_origin": 0.9485,
+        "fidelity_to_previous": 0.9997
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-24T12:01:05.251159+00:00",
+        "claim_id": "crypto-digital-money_youtube_4eb5685a_0",
+        "fidelity_to_origin": 0.6972,
+        "fidelity_to_previous": 0.7351
+      },
+      {
+        "platform": "Techbullion",
+        "timestamp": "2026-04-26T10:00:41+00:00",
+        "claim_id": "crypto-digital-money_youtube_4eb5685a_0",
+        "fidelity_to_origin": 0.674,
+        "fidelity_to_previous": 0.9667
+      },
+      {
+        "platform": "Finbold",
+        "timestamp": "2026-04-27T19:28:59+00:00",
+        "claim_id": "crypto-digital-money_youtube_4eb5685a_0",
+        "fidelity_to_origin": 0.6572,
+        "fidelity_to_previous": 0.9751
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "crypto-digital-money_x_3c398b23_0",
-      "similarity": 0.9157,
-      "text": "Bitcoin's price is predicted to increase if it reaches the 81300-80800 demand zone."
+      "claim_id": "crypto-digital-money_x_d4605c52_0",
+      "similarity": 0.9142,
+      "text": "Bitcoin's price will significantly increase in the future."
     },
     {
-      "claim_id": "crypto-digital-money_bluesky_5a5956f0_0",
-      "similarity": 0.9121,
-      "text": "Bitcoin's price may increase significantly."
+      "claim_id": "crypto-digital-money_youtube_b30e7132_0",
+      "similarity": 0.9142,
+      "text": "Bitcoin's price is poised for a significant upward movement."
     },
     {
-      "claim_id": "crypto-digital-money_bluesky_35d0b3e8_0",
-      "similarity": 0.9019,
-      "text": "Bitcoin's price is likely to increase."
+      "claim_id": "crypto-digital-money_bluesky_e95b7f4e_0",
+      "similarity": 0.9142,
+      "text": "Bitcoin's value will increase significantly."
     },
     {
-      "claim_id": "crypto-digital-money_bluesky_a812e6a4_0",
-      "similarity": 0.659,
-      "text": "Bitcoin and cryptocurrencies will soon experience a period of growth."
+      "claim_id": "crypto-digital-money_coinpedia_-_fintech_&_cryptocu_6ce41e9b_0",
+      "similarity": 0.889,
+      "text": "Bitcoin's price may increase to $74,000 if it breaks through the $69,000 resistance level."
     },
     {
-      "claim_id": "crypto-digital-money_x_3080aba7_0",
-      "similarity": 0.5439,
-      "text": "WAL coin is predicted to increase in value."
+      "claim_id": "crypto-digital-money_bluesky_5a6b9a03_0",
+      "similarity": 0.862,
+      "text": "Bitcoin is likely to experience price increases in the near future."
     }
   ],
   "example_content": [
     {
-      "text": "Bitcoin's price is likely to increase.",
-      "platform": "Bluesky",
+      "text": "Bitcoin's price may increase to $74,000 if it breaks through the $69,000 resistance level.",
+      "platform": "Coinpedia   Fintech & Cryptocu",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Bitcoin's price may increase significantly.",
-      "platform": "Bluesky",
-      "confidence": 0.6,
+      "text": "The cryptocurrency INJ is exhibiting similar patterns to those seen before a price increase.",
+      "platform": "X Platform",
+      "confidence": 0.7,
       "is_influencer_framing": false
     },
     {
-      "text": "Bitcoin and cryptocurrencies will soon experience a period of growth.",
-      "platform": "Bluesky",
-      "confidence": 0.7,
+      "text": "Bitcoin's price will significantly increase in the future.",
+      "platform": "X Platform",
+      "confidence": 0.8,
       "is_influencer_framing": false
     }
   ]

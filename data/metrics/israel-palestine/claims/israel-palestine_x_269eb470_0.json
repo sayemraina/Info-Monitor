@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "israel-palestine_x_269eb470_0",
-    "cluster_id": "clu_israel-palestine_018",
-    "concept_id": "concept_israel-palestine_016",
+    "cluster_id": "clu_israel-palestine_066",
+    "concept_id": "concept_israel-palestine_002",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-03T15:46:28.000Z",
     "source_document_id": "x_2040093587157700920",
@@ -35,48 +35,48 @@
       0.66
     ],
     "source_distribution": "production",
-    "source_diversity": 0.75,
-    "bridge_ratio": 0.75,
-    "persistence_windows": 6,
-    "friction": 0.8947,
+    "source_diversity": 0.5,
+    "bridge_ratio": 0.5,
+    "persistence_windows": 15,
+    "friction": 0.9149,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.3666,
+    "value": 0.5709,
     "confidence_interval": [
-      0.2441,
-      0.4891
+      0.4637,
+      0.6781
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3666
+      0.5709
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.8947,
+    "value": 0.9149,
     "confidence_interval": [
-      0.8118,
-      0.9776
+      0.8335,
+      0.9963
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.8947
+      0.9149
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.3,
+    "value": 0.75,
     "confidence_interval": [
-      0.1725,
-      0.4275
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.8767,
     "confidence_interval": [
-      0.925,
-      1
+      0.7925,
+      0.9609
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.8767
     ],
     "source_distribution": "production"
   },
@@ -120,42 +120,31 @@
     ]
   },
   "provenance": {
-    "first_platform": "Economic Times",
+    "first_platform": "Bluesky",
     "first_timestamp": "2026-04-03T15:46:28.000Z",
     "lead_lag": [
       {
-        "platform": "Bluesky",
-        "lag_hours": 0.8
-      },
-      {
         "platform": "X Platform",
-        "lag_hours": 1.8
+        "lag_hours": 1.0
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_israel-palestine_016",
+    "concept_id": "concept_israel-palestine_002",
     "hops": [
-      {
-        "platform": "Economic Times",
-        "timestamp": "2026-04-03T12:43:50+00:00",
-        "claim_id": "israel-palestine_x_269eb470_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
       {
         "platform": "Bluesky",
         "timestamp": "2026-04-03T13:30:18.305000+00:00",
         "claim_id": "israel-palestine_x_269eb470_0",
-        "fidelity_to_origin": 0.7026,
-        "fidelity_to_previous": 0.7026
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
       },
       {
         "platform": "X Platform",
         "timestamp": "2026-04-03T14:33:13+00:00",
         "claim_id": "israel-palestine_x_269eb470_0",
         "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.427
+        "fidelity_to_previous": 0.3
       }
     ],
     "observation_boundary": null
@@ -210,12 +199,18 @@
       "text": "The Israeli government is murdering Palestinian prisoners."
     },
     {
-      "claim_id": "israel-palestine_x_88ef82b2_0",
-      "similarity": 0.6001,
-      "text": "Israel is deliberately destroying universities in Palestine, Lebanon, and Iran."
+      "claim_id": "israel-palestine_x_804f4065_0",
+      "similarity": 0.7231,
+      "text": "Israel is responsible for the destruction of Gaza's civilian population."
     }
   ],
   "example_content": [
+    {
+      "text": "Israel's military actions are targeting specific entities rather than the abstract concept of Palestine.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
     {
       "text": "Israel is intentionally killing civilians in Palestine.",
       "platform": "Bluesky",
@@ -223,14 +218,8 @@
       "is_influencer_framing": false
     },
     {
-      "text": "Since October 7, 2023, Israel has faced a large number of aerial attacks, necessitating advanced defense systems.",
-      "platform": "Economic Times",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "The Israeli government is murdering Palestinian prisoners.",
-      "platform": "X Platform",
+      "text": "Israel is intentionally prolonging the conflict to divert attention from their actions in Gaza and to repeat similar actions in South Lebanon.",
+      "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

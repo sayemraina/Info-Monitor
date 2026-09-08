@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "war-on-iran_bluesky_79a61210_0",
-    "cluster_id": "clu_war-on-iran_016",
-    "concept_id": "concept_war-on-iran_002",
+    "cluster_id": "clu_war-on-iran_019",
+    "concept_id": "concept_war-on-iran_000",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-05-06T02:52:36.112Z",
     "source_document_id": "e2489dfb8e369c93",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 2,
-    "friction": 0.3333,
+    "persistence_windows": 15,
+    "friction": 0.1146,
     "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 0.3225,
+    "value": 1,
     "confidence_interval": [
-      0.1967,
-      0.4483
+      0.925,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3225
+      1
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.3333,
+    "value": 0.1146,
     "confidence_interval": [
-      0.2083,
-      0.4583
+      0,
+      0.256
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3333
+      0.1146
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.1,
+    "value": 0.75,
     "confidence_interval": [
-      0,
-      0.2425
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9014,
+    "value": 0.9252,
     "confidence_interval": [
-      0.819,
-      0.9838
+      0.8446,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9014
+      0.9252
     ],
     "source_distribution": "production"
   },
@@ -120,64 +120,79 @@
     ]
   },
   "provenance": {
-    "first_platform": "The Atlantic",
+    "first_platform": "YouTube (Influencer Framing)",
     "first_timestamp": "2026-05-06T02:52:36.112Z",
     "lead_lag": [
       {
+        "platform": "Cnbc Top",
+        "lag_hours": 706.8
+      },
+      {
+        "platform": "Pbs Newshour",
+        "lag_hours": 710.7
+      },
+      {
         "platform": "Bluesky",
-        "lag_hours": 0.8
+        "lag_hours": 721.7
       },
       {
-        "platform": "Oman Observer",
-        "lag_hours": 4.5
+        "platform": "X Platform",
+        "lag_hours": 725.9
       },
       {
-        "platform": "YouTube (Influencer Framing)",
-        "lag_hours": 8.9
+        "platform": "The New York Times",
+        "lag_hours": 727.6
       },
       {
-        "platform": "Vanguard",
-        "lag_hours": 9.9
+        "platform": "Al Jazeera",
+        "lag_hours": 728.4
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_war-on-iran_002",
+    "concept_id": "concept_war-on-iran_000",
     "hops": [
       {
-        "platform": "The Atlantic",
-        "timestamp": "2026-05-05T21:18:00+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-03-04T08:00:43+00:00",
         "claim_id": "war-on-iran_bluesky_79a61210_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
+        "platform": "Cnbc Top",
+        "timestamp": "2026-04-02T18:46:52+00:00",
+        "claim_id": "war-on-iran_bluesky_79a61210_0",
+        "fidelity_to_origin": 0.7546,
+        "fidelity_to_previous": 0.7546
+      },
+      {
+        "platform": "Pbs Newshour",
+        "timestamp": "2026-04-02T22:45:36+00:00",
+        "claim_id": "war-on-iran_bluesky_79a61210_0",
+        "fidelity_to_origin": 0.7532,
+        "fidelity_to_previous": 0.9981
+      },
+      {
         "platform": "Bluesky",
-        "timestamp": "2026-05-05T22:07:04.502000+00:00",
+        "timestamp": "2026-04-03T09:43:23.825000+00:00",
         "claim_id": "war-on-iran_bluesky_79a61210_0",
-        "fidelity_to_origin": 0.942,
-        "fidelity_to_previous": 0.942
+        "fidelity_to_origin": 0.7494,
+        "fidelity_to_previous": 0.995
       },
       {
-        "platform": "Oman Observer",
-        "timestamp": "2026-05-06T01:46:23+00:00",
+        "platform": "X Platform",
+        "timestamp": "2026-04-03T13:53:35+00:00",
         "claim_id": "war-on-iran_bluesky_79a61210_0",
-        "fidelity_to_origin": 0.6829,
-        "fidelity_to_previous": 0.7249
+        "fidelity_to_origin": 0.748,
+        "fidelity_to_previous": 0.9981
       },
       {
-        "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2026-05-06T06:14:25+00:00",
+        "platform": "The New York Times",
+        "timestamp": "2026-04-03T15:38:53+00:00",
         "claim_id": "war-on-iran_bluesky_79a61210_0",
-        "fidelity_to_origin": 0.3662,
-        "fidelity_to_previous": 0.5362
-      },
-      {
-        "platform": "Vanguard",
-        "timestamp": "2026-05-06T07:10:28+00:00",
-        "claim_id": "war-on-iran_bluesky_79a61210_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.8192
+        "fidelity_to_origin": 0.7474,
+        "fidelity_to_previous": 0.9992
       }
     ],
     "observation_boundary": null
@@ -212,48 +227,48 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "war-on-iran_oman_observer_6100de49_2",
-      "similarity": 0.619,
-      "text": "Iran's control of the Strait of Hormuz is a criminal act and a violation of international law."
+      "claim_id": "war-on-iran_pbs_newshour_438ab9b2_0",
+      "similarity": 0.6911,
+      "text": "The war in Iran has caused the Strait of Hormuz to close."
     },
     {
-      "claim_id": "war-on-iran_bluesky_bf58b24b_0",
-      "similarity": 0.6169,
-      "text": "Iran's actions in the Strait of Hormuz are provoking threats of sanctions from Gulf allies."
+      "claim_id": "war-on-iran_x_3e95a9f2_0",
+      "similarity": 0.6897,
+      "text": "The War on Iran, which began in February 2026, has led to the closure of the Strait of Hormuz."
     },
     {
-      "claim_id": "war-on-iran_vanguard_72b39a31_2",
-      "similarity": 0.6158,
-      "text": "Iran is using control of the Strait of Hormuz as leverage in its conflict with the US."
+      "claim_id": "war-on-iran_cnbc_top_00a5e8ed_1",
+      "similarity": 0.6663,
+      "text": "The Strait of Hormuz has been effectively closed due to the war on Iran."
     },
     {
-      "claim_id": "war-on-iran_the_atlantic_0aedda6b_0",
-      "similarity": 0.593,
-      "text": "Iran has gained significant control over the Strait of Hormuz as a result of the war."
+      "claim_id": "war-on-iran_the_new_york_times_e7a585ba_1",
+      "similarity": 0.5733,
+      "text": "Iran has increased its power by controlling the Strait of Hormuz."
     },
     {
-      "claim_id": "war-on-iran_youtube_a3843b2b_0",
-      "similarity": 0.593,
-      "text": "Iran is using the Strait of Hormuz to exert strategic pressure."
+      "claim_id": "war-on-iran_bluesky_80fc0d8b_0",
+      "similarity": 0.5486,
+      "text": "Iran is willing to negotiate limits on its nuclear program and access to the Strait of Hormuz in exchange for the removal of all sanctions."
     }
   ],
   "example_content": [
     {
-      "text": "Iran's actions in the Strait of Hormuz are provoking threats of sanctions from Gulf allies.",
+      "text": "Russian ships are the only vessels currently navigating the Strait of Hormuz.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Iran is using control of the Strait of Hormuz as leverage in its conflict with the US.",
-      "platform": "Vanguard",
+      "text": "Iran is willing to negotiate limits on its nuclear program and access to the Strait of Hormuz in exchange for the removal of all sanctions.",
+      "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Iran's control of the Strait of Hormuz is a criminal act and a violation of international law.",
-      "platform": "Oman Observer",
-      "confidence": 0.9,
+      "text": "Iran has increased its power by controlling the Strait of Hormuz.",
+      "platform": "The New York Times",
+      "confidence": 0.8,
       "is_influencer_framing": false
     }
   ]

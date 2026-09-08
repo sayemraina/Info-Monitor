@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "ai-bubble_weekly_voice_aef65ad6_2",
-    "cluster_id": "clu_ai-bubble_030",
-    "concept_id": "concept_ai-bubble_003",
+    "cluster_id": "clu_ai-bubble_048",
+    "concept_id": "concept_ai-bubble_002",
     "first_seen_platform": "weekly_voice",
     "first_seen_timestamp": "2026-05-06T08:20:24Z",
     "source_document_id": "cd240074313ddee8",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 4,
-    "friction": 0.25,
-    "friction_quadrant": "unopposed_advance"
+    "persistence_windows": 15,
+    "friction": 0.5063,
+    "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.4797,
+    "value": 0.8364,
     "confidence_interval": [
-      0.3657,
-      0.5937
+      0.7491,
+      0.9237
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.4797
+      0.8364
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.25,
+    "value": 0.5063,
     "confidence_interval": [
-      0.1187,
-      0.3813
+      0.3943,
+      0.6183
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.25
+      0.5063
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.2,
+    "value": 0.75,
     "confidence_interval": [
-      0.065,
-      0.335
+      0.6562,
+      0.8438
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2
+      0.75
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9767,
+    "value": 0.9872,
     "confidence_interval": [
-      0.9,
+      0.9112,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9767
+      0.9872
     ],
     "source_distribution": "production"
   },
@@ -124,60 +124,75 @@
     "first_timestamp": "2026-05-06T08:20:24Z",
     "lead_lag": [
       {
-        "platform": "Weekly Voice",
-        "lag_hours": 10.0
+        "platform": "YouTube (Influencer Framing)",
+        "lag_hours": 463.0
+      },
+      {
+        "platform": "Pharmexec.Com",
+        "lag_hours": 817.8
+      },
+      {
+        "platform": "Medium",
+        "lag_hours": 821.9
       },
       {
         "platform": "X Platform",
-        "lag_hours": 10.3
+        "lag_hours": 850.1
       },
       {
-        "platform": "Techafrica News",
-        "lag_hours": 10.8
+        "platform": "Times Square Chronicles Newspa",
+        "lag_hours": 1363.9
       },
       {
-        "platform": "Crypto.News",
-        "lag_hours": 10.8
+        "platform": "Cape Cod Times",
+        "lag_hours": 1368.9
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_ai-bubble_003",
+    "concept_id": "concept_ai-bubble_002",
     "hops": [
       {
         "platform": "Bluesky",
-        "timestamp": "2026-05-05T21:45:13.900000+00:00",
+        "timestamp": "2026-02-28T08:09:05.960000+00:00",
         "claim_id": "ai-bubble_weekly_voice_aef65ad6_2",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Weekly Voice",
-        "timestamp": "2026-05-06T07:43:58+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-03-19T15:07:57+00:00",
         "claim_id": "ai-bubble_weekly_voice_aef65ad6_2",
-        "fidelity_to_origin": 0.3512,
-        "fidelity_to_previous": 0.3512
+        "fidelity_to_origin": 0.8454,
+        "fidelity_to_previous": 0.8454
+      },
+      {
+        "platform": "Pharmexec.Com",
+        "timestamp": "2026-04-03T10:00:00+00:00",
+        "claim_id": "ai-bubble_weekly_voice_aef65ad6_2",
+        "fidelity_to_origin": 0.7268,
+        "fidelity_to_previous": 0.8597
+      },
+      {
+        "platform": "Medium",
+        "timestamp": "2026-04-03T14:01:02+00:00",
+        "claim_id": "ai-bubble_weekly_voice_aef65ad6_2",
+        "fidelity_to_origin": 0.7255,
+        "fidelity_to_previous": 0.9982
       },
       {
         "platform": "X Platform",
-        "timestamp": "2026-05-06T08:00:51+00:00",
+        "timestamp": "2026-04-04T18:12:49+00:00",
         "claim_id": "ai-bubble_weekly_voice_aef65ad6_2",
-        "fidelity_to_origin": 0.3329,
-        "fidelity_to_previous": 0.9479
+        "fidelity_to_origin": 0.7161,
+        "fidelity_to_previous": 0.987
       },
       {
-        "platform": "Techafrica News",
-        "timestamp": "2026-05-06T08:30:14+00:00",
+        "platform": "Times Square Chronicles Newspa",
+        "timestamp": "2026-04-26T04:00:12+00:00",
         "claim_id": "ai-bubble_weekly_voice_aef65ad6_2",
-        "fidelity_to_origin": 0.3011,
-        "fidelity_to_previous": 0.9045
-      },
-      {
-        "platform": "Crypto.News",
-        "timestamp": "2026-05-06T08:31:14+00:00",
-        "claim_id": "ai-bubble_weekly_voice_aef65ad6_2",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9963
+        "fidelity_to_origin": 0.5445,
+        "fidelity_to_previous": 0.7604
       }
     ],
     "observation_boundary": null
@@ -212,46 +227,46 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-bubble_techafrica_news_626a4af3_0",
-      "similarity": 0.4662,
-      "text": "Conversational AI is gaining confidence from financial institutions and industry leaders."
+      "claim_id": "ai-bubble_bluesky_787cbe20_1",
+      "similarity": 0.4757,
+      "text": "AI technology will persist and have lasting impact despite the market conditions."
     },
     {
-      "claim_id": "ai-bubble_bluesky_fecbcaca_0",
-      "similarity": 0.466,
-      "text": "AI systems are fundamentally flawed due to their training data."
+      "claim_id": "ai-bubble_bluesky_eff2e29c_0",
+      "similarity": 0.4737,
+      "text": "Current AI systems are overvalued and dependent on computer-controlled systems for self-sustenance."
     },
     {
-      "claim_id": "ai-bubble_bluesky_d8ffd1c6_1",
-      "similarity": 0.4298,
-      "text": "The average person's experience with AI has been negative and unavoidable."
+      "claim_id": "ai-bubble_bluesky_d2a85ae3_0",
+      "similarity": 0.4574,
+      "text": "AI technologies are currently overvalued."
     },
     {
-      "claim_id": "ai-bubble_crypto.news_6ac191b7_1",
-      "similarity": 0.4044,
-      "text": "Stablecoins are evolving beyond price stability to serve as infrastructure for payments and financial applications on blockchains."
+      "claim_id": "ai-bubble_bluesky_22ce6653_0",
+      "similarity": 0.4516,
+      "text": "The current valuation of AI technologies is likely inflated."
     },
     {
-      "claim_id": "ai-bubble_bluesky_479525f2_1",
-      "similarity": 0.395,
-      "text": "Blockchain technology's potential remains largely untapped."
+      "claim_id": "ai-bubble_bluesky_4980126a_0",
+      "similarity": 0.4482,
+      "text": "AI technology is currently overvalued."
     }
   ],
   "example_content": [
     {
-      "text": "The error rates of current AI systems are too high for practical use.",
+      "text": "AI technology is currently overvalued.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The average person's experience with AI has been negative and unavoidable.",
+      "text": "Individuals bear some responsibility for the potential negative consequences of the AI investment bubble due to their use of AI products.",
       "platform": "Bluesky",
-      "confidence": 0.9,
+      "confidence": 0.7,
       "is_influencer_framing": false
     },
     {
-      "text": "AI systems are fundamentally flawed due to their training data.",
+      "text": "AI systems used for military purposes are legitimate targets for attack.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "immigration_x_d127608e_1",
-    "cluster_id": "clu_immigration_006",
-    "concept_id": "concept_immigration_002",
+    "cluster_id": "clu_immigration_032",
+    "concept_id": "concept_immigration_007",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-03T10:21:10.000Z",
     "source_document_id": "x_2040011720479932812",
@@ -38,32 +38,32 @@
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
     "persistence_windows": 15,
-    "friction": 0.26,
-    "friction_quadrant": "unopposed_advance"
+    "friction": 0.4875,
+    "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.4403,
+    "value": 0.756,
     "confidence_interval": [
-      0.3233,
-      0.5573
+      0.6627,
+      0.8493
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.4403
+      0.756
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.26,
+    "value": 0.4875,
     "confidence_interval": [
-      0.1295,
-      0.3905
+      0.3741,
+      0.6009
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.26
+      0.4875
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.965,
+    "value": 0.9811,
     "confidence_interval": [
-      0.8874,
+      0.9047,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.965
+      0.9811
     ],
     "source_distribution": "production"
   },
@@ -124,75 +124,75 @@
     "first_timestamp": "2026-04-03T10:21:10.000Z",
     "lead_lag": [
       {
-        "platform": "Bluesky",
-        "lag_hours": 3122.8
-      },
-      {
         "platform": "X Platform",
-        "lag_hours": 3131.7
+        "lag_hours": 5081.1
       },
       {
-        "platform": "Nature",
-        "lag_hours": 3145.2
+        "platform": "Bluesky",
+        "lag_hours": 5090.0
       },
       {
         "platform": "Fun 107",
-        "lag_hours": 3153.3
+        "lag_hours": 5102.7
       },
       {
         "platform": "Minnpost",
-        "lag_hours": 3155.2
+        "lag_hours": 5104.6
       },
       {
-        "platform": "Dnyuz",
-        "lag_hours": 3156.0
+        "platform": "Usa Today",
+        "lag_hours": 5107.5
+      },
+      {
+        "platform": "Money Talks News",
+        "lag_hours": 5107.7
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_immigration_002",
+    "concept_id": "concept_immigration_007",
     "hops": [
       {
         "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2025-11-22T22:45:04+00:00",
+        "timestamp": "2025-09-02T17:22:55+00:00",
         "claim_id": "immigration_x_d127608e_1",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-02T01:34:04.063000+00:00",
-        "claim_id": "immigration_x_d127608e_1",
-        "fidelity_to_origin": 0.3085,
-        "fidelity_to_previous": 0.3085
-      },
-      {
         "platform": "X Platform",
         "timestamp": "2026-04-02T10:28:08+00:00",
         "claim_id": "immigration_x_d127608e_1",
-        "fidelity_to_origin": 0.3065,
-        "fidelity_to_previous": 0.9935
+        "fidelity_to_origin": 0.4439,
+        "fidelity_to_previous": 0.4439
       },
       {
-        "platform": "Nature",
-        "timestamp": "2026-04-03T00:00:00+00:00",
+        "platform": "Bluesky",
+        "timestamp": "2026-04-02T19:22:00.978000+00:00",
         "claim_id": "immigration_x_d127608e_1",
-        "fidelity_to_origin": 0.3035,
-        "fidelity_to_previous": 0.9902
+        "fidelity_to_origin": 0.4429,
+        "fidelity_to_previous": 0.9977
       },
       {
         "platform": "Fun 107",
         "timestamp": "2026-04-03T08:04:00+00:00",
         "claim_id": "immigration_x_d127608e_1",
-        "fidelity_to_origin": 0.3017,
-        "fidelity_to_previous": 0.9941
+        "fidelity_to_origin": 0.4415,
+        "fidelity_to_previous": 0.9968
       },
       {
         "platform": "Minnpost",
         "timestamp": "2026-04-03T10:00:00+00:00",
         "claim_id": "immigration_x_d127608e_1",
-        "fidelity_to_origin": 0.3013,
-        "fidelity_to_previous": 0.9987
+        "fidelity_to_origin": 0.4413,
+        "fidelity_to_previous": 0.9995
+      },
+      {
+        "platform": "Usa Today",
+        "timestamp": "2026-04-03T12:51:41+00:00",
+        "claim_id": "immigration_x_d127608e_1",
+        "fidelity_to_origin": 0.441,
+        "fidelity_to_previous": 0.9993
       }
     ],
     "observation_boundary": null
@@ -227,9 +227,19 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "immigration_bluesky_c1f6a560_0",
-      "similarity": 0.6063,
-      "text": "Economic insecurity leads to authoritarian views on immigration policy."
+      "claim_id": "immigration_money_talks_news_d60c5c82_1",
+      "similarity": 0.6468,
+      "text": "Recent changes in US immigration policy have decreased both labor supply and demand."
+    },
+    {
+      "claim_id": "immigration_minnpost_2cb62c1a_0",
+      "similarity": 0.6287,
+      "text": "Changes in immigration policy have negatively impacted the national economy."
+    },
+    {
+      "claim_id": "immigration_usa_today_9a68c911_2",
+      "similarity": 0.6277,
+      "text": "Changes in immigration policy have impacted both the demand for and supply of workers in the US."
     },
     {
       "claim_id": "immigration_bluesky_48ad4699_0",
@@ -237,28 +247,12 @@
       "text": "Trump's political movement manipulated people into blaming immigration and progressive ideals for their economic decline."
     },
     {
-      "claim_id": "immigration_bluesky_c931b2dd_0",
-      "similarity": 0.5794,
-      "text": "Canadian immigration reform legislation may negatively impact refugee rights."
-    },
-    {
       "claim_id": "immigration_bluesky_0a5a542e_0",
       "similarity": 0.5697,
       "text": "Changes to Canada's immigration policies and declining international student enrollment are causing workforce reductions at Brampton Transit."
-    },
-    {
-      "claim_id": "immigration_twin_cities_14ef9661_1",
-      "similarity": 0.4837,
-      "text": "Federal policies, particularly changes in immigration policy and tariffs, have negatively impacted Minnesota's economy."
     }
   ],
   "example_content": [
-    {
-      "text": "Economic insecurity leads to authoritarian views on immigration policy.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
     {
       "text": "Changes to Canada's immigration policies and declining international student enrollment are causing workforce reductions at Brampton Transit.",
       "platform": "Bluesky",
@@ -266,8 +260,14 @@
       "is_influencer_framing": false
     },
     {
-      "text": "Current immigration policies unfairly target Sikh truck drivers.",
+      "text": "Trump's political movement manipulated people into blaming immigration and progressive ideals for their economic decline.",
       "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Minnesota's labor market is weakening, with slower job growth and a rising unemployment rate.",
+      "platform": "Twin Cities",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

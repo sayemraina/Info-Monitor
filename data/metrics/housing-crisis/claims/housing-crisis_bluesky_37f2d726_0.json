@@ -35,48 +35,48 @@
       0.645
     ],
     "source_distribution": "production",
-    "source_diversity": 0.25,
-    "bridge_ratio": 0.25,
-    "persistence_windows": 1,
-    "friction": 0.4,
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 12,
+    "friction": 0.6111,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.3333,
+    "value": 0.3376,
     "confidence_interval": [
-      0.2083,
-      0.4583
+      0.2129,
+      0.4623
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3333
+      0.3376
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.4,
+    "value": 0.6111,
     "confidence_interval": [
-      0.28,
-      0.52
+      0.5069,
+      0.7153
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.4
+      0.6111
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0.6,
     "confidence_interval": [
-      0,
-      0.1962
+      0.495,
+      0.705
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0.6
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9803,
     "confidence_interval": [
-      0.925,
+      0.9038,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9803
     ],
     "source_distribution": "production"
   },
@@ -120,22 +120,82 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
+    "first_platform": "YouTube (Influencer Framing)",
     "first_timestamp": "2026-05-26T20:30:43.074Z",
-    "lead_lag": []
+    "lead_lag": [
+      {
+        "platform": "Jacobin",
+        "lag_hours": 453.9
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 484.6
+      },
+      {
+        "platform": "Bluesky",
+        "lag_hours": 989.4
+      },
+      {
+        "platform": "My Northwest",
+        "lag_hours": 1032.1
+      },
+      {
+        "platform": "Fox Tech",
+        "lag_hours": 1076.6
+      },
+      {
+        "platform": "The Sofia Globe",
+        "lag_hours": 1081.7
+      }
+    ]
   },
   "supply_chain": {
     "concept_id": "concept_housing-crisis_002",
     "hops": [
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-05-26T13:03:27.725000+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-03-13T14:35:57+00:00",
         "claim_id": "housing-crisis_bluesky_37f2d726_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Jacobin",
+        "timestamp": "2026-04-01T12:27:21+00:00",
+        "claim_id": "housing-crisis_bluesky_37f2d726_0",
+        "fidelity_to_origin": 0.7187,
+        "fidelity_to_previous": 0.7187
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-02T19:09:25+00:00",
+        "claim_id": "housing-crisis_bluesky_37f2d726_0",
+        "fidelity_to_origin": 0.6997,
+        "fidelity_to_previous": 0.9736
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-23T19:59:19.121000+00:00",
+        "claim_id": "housing-crisis_bluesky_37f2d726_0",
+        "fidelity_to_origin": 0.3868,
+        "fidelity_to_previous": 0.5528
+      },
+      {
+        "platform": "My Northwest",
+        "timestamp": "2026-04-25T14:43:55+00:00",
+        "claim_id": "housing-crisis_bluesky_37f2d726_0",
+        "fidelity_to_origin": 0.3603,
+        "fidelity_to_previous": 0.9315
+      },
+      {
+        "platform": "Fox Tech",
+        "timestamp": "2026-04-27T11:13:46+00:00",
+        "claim_id": "housing-crisis_bluesky_37f2d726_0",
+        "fidelity_to_origin": 0.3327,
+        "fidelity_to_previous": 0.9234
       }
     ],
-    "observation_boundary": "No public antecedent detected"
+    "observation_boundary": null
   },
   "coordination": {
     "burstiness": {
@@ -167,42 +227,47 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "housing-crisis_bluesky_6b339e07_1",
-      "similarity": 0.5008,
-      "text": "Data centers have a significant impact on energy and water costs."
+      "claim_id": "housing-crisis_bluesky_3fb7a48d_0",
+      "similarity": 0.4687,
+      "text": "Data centers consume excessive resources and exacerbate the housing crisis."
     },
     {
-      "claim_id": "housing-crisis_bluesky_5b0b1969_0",
-      "similarity": 0.3871,
-      "text": "The construction of a data center has caused rent prices to increase and families to move away."
+      "claim_id": "housing-crisis_youtube_ab407eeb_1",
+      "similarity": 0.3725,
+      "text": "Corporations are using AI to increase profits, making housing unaffordable."
     },
     {
-      "claim_id": "housing-crisis_bluesky_2139ad7c_1",
-      "similarity": 0.3865,
-      "text": "Reduced overhead costs, such as rent, could give AI companies a competitive advantage."
+      "claim_id": "housing-crisis_jacobin_4b7681e6_1",
+      "similarity": 0.3511,
+      "text": "Mallory McMorrow has voted to provide state tax incentives to build data centers that enable surveillance pricing."
     },
     {
-      "claim_id": "housing-crisis_bluesky_2139ad7c_0",
-      "similarity": 0.2852,
-      "text": "Artificial intelligence is unlikely to solve supply chain issues or lower the price of essential goods."
+      "claim_id": "housing-crisis_bluesky_32e81eec_0",
+      "similarity": 0.2887,
+      "text": "AI development is causing job losses and environmental damage."
+    },
+    {
+      "claim_id": "housing-crisis_jacobin_4b7681e6_0",
+      "similarity": 0.2819,
+      "text": "Mallory McMorrow is falsely presenting herself as a champion against surveillance pricing."
     }
   ],
   "example_content": [
     {
-      "text": "The construction of a data center has caused rent prices to increase and families to move away.",
-      "platform": "Bluesky",
+      "text": "Mallory McMorrow is falsely presenting herself as a champion against surveillance pricing.",
+      "platform": "Jacobin",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Artificial intelligence is unlikely to solve supply chain issues or lower the price of essential goods.",
-      "platform": "Bluesky",
+      "text": "Mallory McMorrow has voted to provide state tax incentives to build data centers that enable surveillance pricing.",
+      "platform": "Jacobin",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Reduced overhead costs, such as rent, could give AI companies a competitive advantage.",
-      "platform": "Bluesky",
+      "text": "Artificial intelligence is eliminating employment opportunities.",
+      "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

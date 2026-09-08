@@ -9,7 +9,7 @@
     "arousal": "high",
     "register": "journalistic",
     "id": "crypto-digital-money_youtube_8071b9b5_0",
-    "cluster_id": "clu_crypto-digital-money_005",
+    "cluster_id": "clu_crypto-digital-money_016",
     "concept_id": "concept_crypto-digital-money_002",
     "first_seen_platform": "youtube",
     "first_seen_timestamp": "2026-01-14T21:30:08Z",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 4,
-    "friction": 0.5385,
+    "persistence_windows": 10,
+    "friction": 0.6129,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.1924,
+    "value": 0.2866,
     "confidence_interval": [
-      0.0568,
-      0.328
+      0.1581,
+      0.4151
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1924
+      0.2866
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.5385,
+    "value": 0.6129,
     "confidence_interval": [
-      0.4289,
-      0.6481
+      0.5089,
+      0.7169
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.5385
+      0.6129
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.2,
+    "value": 0.5,
     "confidence_interval": [
-      0.065,
-      0.335
+      0.3875,
+      0.6125
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2
+      0.5
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9945,
+    "value": 0.991,
     "confidence_interval": [
-      0.9191,
+      0.9153,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9945
+      0.991
     ],
     "source_distribution": "production"
   },
@@ -125,15 +125,19 @@
     "lead_lag": [
       {
         "platform": "Bluesky",
-        "lag_hours": 1823.3
-      },
-      {
-        "platform": "Business Insider",
-        "lag_hours": 1890.9
+        "lag_hours": 1846.6
       },
       {
         "platform": "X Platform",
         "lag_hours": 1891.3
+      },
+      {
+        "platform": "Bloomberg Politics",
+        "lag_hours": 2424.7
+      },
+      {
+        "platform": "Common Dreams",
+        "lag_hours": 2487.1
       }
     ]
   },
@@ -149,24 +153,31 @@
       },
       {
         "platform": "Bluesky",
-        "timestamp": "2026-03-31T20:50:41.644798+00:00",
+        "timestamp": "2026-04-01T20:04:57.016000+00:00",
         "claim_id": "crypto-digital-money_youtube_8071b9b5_0",
-        "fidelity_to_origin": 0.3251,
-        "fidelity_to_previous": 0.3251
-      },
-      {
-        "platform": "Business Insider",
-        "timestamp": "2026-04-03T16:24:08+00:00",
-        "claim_id": "crypto-digital-money_youtube_8071b9b5_0",
-        "fidelity_to_origin": 0.3001,
-        "fidelity_to_previous": 0.9231
+        "fidelity_to_origin": 0.4803,
+        "fidelity_to_previous": 0.4803
       },
       {
         "platform": "X Platform",
         "timestamp": "2026-04-03T16:45:20+00:00",
         "claim_id": "crypto-digital-money_youtube_8071b9b5_0",
+        "fidelity_to_origin": 0.4677,
+        "fidelity_to_previous": 0.9738
+      },
+      {
+        "platform": "Bloomberg Politics",
+        "timestamp": "2026-04-25T22:09:24+00:00",
+        "claim_id": "crypto-digital-money_youtube_8071b9b5_0",
+        "fidelity_to_origin": 0.3176,
+        "fidelity_to_previous": 0.6791
+      },
+      {
+        "platform": "Common Dreams",
+        "timestamp": "2026-04-28T12:33:58+00:00",
+        "claim_id": "crypto-digital-money_youtube_8071b9b5_0",
         "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9997
+        "fidelity_to_previous": 0.9446
       }
     ],
     "observation_boundary": null
@@ -206,6 +217,11 @@
       "text": "Donald Trump and his family profited significantly from cryptocurrency ventures during his time in office."
     },
     {
+      "claim_id": "crypto-digital-money_x_00c3c776_0",
+      "similarity": 0.6723,
+      "text": "Numerous officials in the Trump administration held or invested in cryptocurrency and blockchain companies."
+    },
+    {
       "claim_id": "crypto-digital-money_bluesky_fea881fe_0",
       "similarity": 0.6397,
       "text": "Donald Trump opposes cryptocurrency regulation."
@@ -219,11 +235,6 @@
       "claim_id": "crypto-digital-money_bluesky_f64a48f9_1",
       "similarity": 0.6073,
       "text": "Donald Trump aims to establish the United States as the world's leading cryptocurrency hub."
-    },
-    {
-      "claim_id": "crypto-digital-money_bluesky_f64a48f9_0",
-      "similarity": 0.5634,
-      "text": "Donald Trump is expediting the construction of data centers to benefit from weak regulation, which also supports cryptocurrency mining."
     }
   ],
   "example_content": [

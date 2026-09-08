@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "ozempic-glp1_youtube_b813cbd5_0",
-    "cluster_id": "clu_ozempic-glp1_000",
-    "concept_id": "concept_ozempic-glp1_000",
+    "cluster_id": "clu_ozempic-glp1_020",
+    "concept_id": "concept_ozempic-glp1_002",
     "first_seen_platform": "youtube",
     "first_seen_timestamp": "2025-06-08T10:01:19Z",
     "source_document_id": "yt_tK0U_s9Qx-s",
@@ -35,35 +35,35 @@
       0.82
     ],
     "source_distribution": "production",
-    "source_diversity": 1.0,
-    "bridge_ratio": 1.0,
+    "source_diversity": 0.75,
+    "bridge_ratio": 0.75,
     "persistence_windows": 15,
-    "friction": 0.3497,
-    "friction_quadrant": "unopposed_advance"
+    "friction": 0.4286,
+    "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 1,
+    "value": 0.5035,
     "confidence_interval": [
-      0.925,
-      1
+      0.3913,
+      0.6157
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.5035
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.3497,
+    "value": 0.4286,
     "confidence_interval": [
-      0.2259,
-      0.4735
+      0.3107,
+      0.5465
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3497
+      0.4286
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9877,
+    "value": 0.9547,
     "confidence_interval": [
-      0.9118,
+      0.8763,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9877
+      0.9547
     ],
     "source_distribution": "production"
   },
@@ -124,33 +124,17 @@
     "first_timestamp": "2025-06-08T10:01:19Z",
     "lead_lag": [
       {
-        "platform": "Bluesky",
-        "lag_hours": 8693.7
-      },
-      {
         "platform": "X Platform",
-        "lag_hours": 8704.9
+        "lag_hours": 8710.2
       },
       {
-        "platform": "Finbold",
-        "lag_hours": 8709.0
-      },
-      {
-        "platform": "Healio",
-        "lag_hours": 8713.7
-      },
-      {
-        "platform": "The Blast",
-        "lag_hours": 8714.5
-      },
-      {
-        "platform": "Fox Wilmington",
-        "lag_hours": 8715.1
+        "platform": "Bluesky",
+        "lag_hours": 8715.5
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_ozempic-glp1_000",
+    "concept_id": "concept_ozempic-glp1_002",
     "hops": [
       {
         "platform": "YouTube (Influencer Framing)",
@@ -160,39 +144,18 @@
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-04-02T18:14:12.031000+00:00",
-        "claim_id": "ozempic-glp1_youtube_b813cbd5_0",
-        "fidelity_to_origin": 0.3017,
-        "fidelity_to_previous": 0.3017
-      },
-      {
         "platform": "X Platform",
-        "timestamp": "2026-04-03T05:23:41+00:00",
+        "timestamp": "2026-04-03T10:44:03+00:00",
         "claim_id": "ozempic-glp1_youtube_b813cbd5_0",
-        "fidelity_to_origin": 0.3008,
-        "fidelity_to_previous": 0.997
+        "fidelity_to_origin": 0.3004,
+        "fidelity_to_previous": 0.3004
       },
       {
-        "platform": "Finbold",
-        "timestamp": "2026-04-03T09:31:12+00:00",
-        "claim_id": "ozempic-glp1_youtube_b813cbd5_0",
-        "fidelity_to_origin": 0.3005,
-        "fidelity_to_previous": 0.999
-      },
-      {
-        "platform": "Healio",
-        "timestamp": "2026-04-03T14:13:43+00:00",
-        "claim_id": "ozempic-glp1_youtube_b813cbd5_0",
-        "fidelity_to_origin": 0.3001,
-        "fidelity_to_previous": 0.9987
-      },
-      {
-        "platform": "The Blast",
-        "timestamp": "2026-04-03T15:00:00+00:00",
+        "platform": "Bluesky",
+        "timestamp": "2026-04-03T15:57:40.949000+00:00",
         "claim_id": "ozempic-glp1_youtube_b813cbd5_0",
         "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9997
+        "fidelity_to_previous": 0.9987
       }
     ],
     "observation_boundary": null
@@ -232,14 +195,14 @@
       "text": "Ozempic is being used for purposes beyond its intended medical application."
     },
     {
-      "claim_id": "ozempic-glp1_bluesky_09627869_0",
-      "similarity": 0.72,
-      "text": "Ozempic is being used for weight loss."
+      "claim_id": "ozempic-glp1_x_f6f1862b_0",
+      "similarity": 0.7166,
+      "text": "Ozempic is being inappropriately used by individuals who do not need it."
     },
     {
-      "claim_id": "ozempic-glp1_bluesky_de6ea139_0",
-      "similarity": 0.6857,
-      "text": "Ozempic is ineffective."
+      "claim_id": "ozempic-glp1_x_ee17791f_0",
+      "similarity": 0.706,
+      "text": "Ozempic is being overused or misused."
     },
     {
       "claim_id": "ozempic-glp1_bluesky_c63f3e26_0",
@@ -247,18 +210,12 @@
       "text": "There are deceptive practices surrounding the marketing or consumption of Ozempic."
     },
     {
-      "claim_id": "ozempic-glp1_bluesky_e5319ec0_0",
-      "similarity": 0.6608,
-      "text": "The increased use of drugs like Ozempic is leading to the erasure of fat people from media representation."
+      "claim_id": "ozempic-glp1_x_f6bae76f_0",
+      "similarity": 0.6631,
+      "text": "The prevalence of Ozempic use does not align with current obesity rates."
     }
   ],
   "example_content": [
-    {
-      "text": "Ozempic is being used for weight loss.",
-      "platform": "Bluesky",
-      "confidence": 0.6,
-      "is_influencer_framing": false
-    },
     {
       "text": "Ozempic is being used for purposes beyond its intended medical application.",
       "platform": "Bluesky",
@@ -266,9 +223,15 @@
       "is_influencer_framing": false
     },
     {
-      "text": "Ozempic can be used to treat high blood pressure.",
+      "text": "There are deceptive practices surrounding the marketing or consumption of Ozempic.",
       "platform": "Bluesky",
       "confidence": 0.6,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Some individuals without a medical need are abusing GLP-1 drugs like Ozempic for weight loss.",
+      "platform": "X Platform",
+      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

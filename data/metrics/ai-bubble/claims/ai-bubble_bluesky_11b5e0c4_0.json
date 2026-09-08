@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "vernacular",
     "id": "ai-bubble_bluesky_11b5e0c4_0",
-    "cluster_id": "clu_ai-bubble_014",
-    "concept_id": "concept_ai-bubble_004",
+    "cluster_id": "clu_ai-bubble_056",
+    "concept_id": "concept_ai-bubble_000",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-03T05:07:08.961Z",
     "source_document_id": "dcd86880236f6a67",
@@ -35,48 +35,48 @@
       0.644
     ],
     "source_distribution": "production",
-    "source_diversity": 0.5,
-    "bridge_ratio": 0.5,
-    "persistence_windows": 3,
-    "friction": 0.7273,
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 5,
+    "friction": 0.8824,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.2229,
+    "value": 0.203,
     "confidence_interval": [
-      0.0896,
-      0.3562
+      0.0682,
+      0.3378
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2229
+      0.203
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.7273,
+    "value": 0.8824,
     "confidence_interval": [
-      0.6318,
-      0.8228
+      0.7986,
+      0.9662
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.7273
+      0.8824
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.15,
+    "value": 0.25,
     "confidence_interval": [
-      0.0112,
-      0.2888
+      0.1187,
+      0.3813
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.15
+      0.25
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9741,
     "confidence_interval": [
-      0.925,
+      0.8972,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9741
     ],
     "source_distribution": "production"
   },
@@ -125,26 +125,48 @@
     "lead_lag": [
       {
         "platform": "X Platform",
-        "lag_hours": 929.0
+        "lag_hours": 150.5
+      },
+      {
+        "platform": "Entrepreneur",
+        "lag_hours": 697.1
+      },
+      {
+        "platform": "Fortune",
+        "lag_hours": 1227.4
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_ai-bubble_004",
+    "concept_id": "concept_ai-bubble_000",
     "hops": [
       {
         "platform": "Bluesky",
-        "timestamp": "2026-02-25T01:12:10.823000+00:00",
+        "timestamp": "2026-03-29T14:58:20.056000+00:00",
         "claim_id": "ai-bubble_bluesky_11b5e0c4_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
         "platform": "X Platform",
-        "timestamp": "2026-04-04T18:11:56+00:00",
+        "timestamp": "2026-04-04T21:30:24+00:00",
+        "claim_id": "ai-bubble_bluesky_11b5e0c4_0",
+        "fidelity_to_origin": 0.9141,
+        "fidelity_to_previous": 0.9141
+      },
+      {
+        "platform": "Entrepreneur",
+        "timestamp": "2026-04-27T16:03:03+00:00",
+        "claim_id": "ai-bubble_bluesky_11b5e0c4_0",
+        "fidelity_to_origin": 0.6024,
+        "fidelity_to_previous": 0.659
+      },
+      {
+        "platform": "Fortune",
+        "timestamp": "2026-05-19T18:21:17+00:00",
         "claim_id": "ai-bubble_bluesky_11b5e0c4_0",
         "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.3
+        "fidelity_to_previous": 0.498
       }
     ],
     "observation_boundary": null
@@ -184,6 +206,16 @@
       "text": "Artificial intelligence is fundamentally unsophisticated and overhyped."
     },
     {
+      "claim_id": "ai-bubble_bluesky_171926fb_0",
+      "similarity": 0.7017,
+      "text": "AI is being overhyped as a source of companionship."
+    },
+    {
+      "claim_id": "ai-bubble_x_6f4bf7d5_0",
+      "similarity": 0.6921,
+      "text": "Most people outside the tech industry are unaware of recent developments in artificial intelligence."
+    },
+    {
       "claim_id": "ai-bubble_bluesky_bc072f61_0",
       "similarity": 0.69,
       "text": "The hype surrounding artificial intelligence is unsustainable and has reached its peak."
@@ -192,16 +224,6 @@
       "claim_id": "ai-bubble_bluesky_0af16308_0",
       "similarity": 0.6775,
       "text": "AI is currently overhyped and overvalued."
-    },
-    {
-      "claim_id": "ai-bubble_bluesky_d737addf_0",
-      "similarity": 0.6407,
-      "text": "Artificial intelligence is currently overvalued."
-    },
-    {
-      "claim_id": "ai-bubble_bluesky_b4a3df15_0",
-      "similarity": 0.6407,
-      "text": "Artificial intelligence is currently in a bubble phase."
     }
   ],
   "example_content": [
@@ -218,7 +240,7 @@
       "is_influencer_framing": false
     },
     {
-      "text": "AI and Magnificent Seven stocks are currently overvalued.",
+      "text": "AI is currently overhyped and overvalued.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

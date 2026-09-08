@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "journalistic",
     "id": "israel-palestine_arab_news_ef7db12e_0",
-    "cluster_id": "clu_israel-palestine_048",
-    "concept_id": "concept_israel-palestine_002",
+    "cluster_id": "clu_israel-palestine_077",
+    "concept_id": "concept_israel-palestine_000",
     "first_seen_platform": "arab_news",
     "first_seen_timestamp": "2026-04-26T10:28:11Z",
     "source_document_id": "a454f7a66e66fbba",
@@ -24,107 +24,94 @@
     "source_type": "elite_media"
   },
   "momentum": {
-    "value": null,
+    "value": 0.645,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.545,
+      0.745
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.645
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 11,
+    "friction": 0.6857,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.4252,
+    "confidence_interval": [
+      0.3071,
+      0.5433
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.4252
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.6857,
+    "confidence_interval": [
+      0.5871,
+      0.7843
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.6857
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.55,
+    "confidence_interval": [
+      0.4413,
+      0.6587
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.55
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.85,
     "confidence_interval": [
-      0,
-      0
+      0.7638,
+      0.9362
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.85
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 0.9127,
     "confidence_interval": [
-      0,
-      0
+      0.8312,
+      0.9942
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.9127
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,43 +120,154 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "YouTube (Influencer Framing)",
+    "first_timestamp": "2026-04-26T10:28:11Z",
+    "lead_lag": [
+      {
+        "platform": "X Platform",
+        "lag_hours": 6955.3
+      },
+      {
+        "platform": "The Intercept",
+        "lag_hours": 7290.0
+      },
+      {
+        "platform": "Bluesky",
+        "lag_hours": 7493.8
+      },
+      {
+        "platform": "U.S. News & World Report",
+        "lag_hours": 7495.8
+      },
+      {
+        "platform": "1470 & 100.3 Wmbd",
+        "lag_hours": 7499.8
+      },
+      {
+        "platform": "Arab News",
+        "lag_hours": 7500.0
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_israel-palestine_000",
+    "hops": [
+      {
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2025-06-17T20:00:28+00:00",
+        "claim_id": "israel-palestine_arab_news_ef7db12e_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-03T15:19:04+00:00",
+        "claim_id": "israel-palestine_arab_news_ef7db12e_0",
+        "fidelity_to_origin": 0.4094,
+        "fidelity_to_previous": 0.4094
+      },
+      {
+        "platform": "The Intercept",
+        "timestamp": "2026-04-17T13:57:48+00:00",
+        "claim_id": "israel-palestine_arab_news_ef7db12e_0",
+        "fidelity_to_origin": 0.381,
+        "fidelity_to_previous": 0.9306
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-26T01:51:12.198000+00:00",
+        "claim_id": "israel-palestine_arab_news_ef7db12e_0",
+        "fidelity_to_origin": 0.3637,
+        "fidelity_to_previous": 0.9546
+      },
+      {
+        "platform": "U.S. News & World Report",
+        "timestamp": "2026-04-26T03:49:00+00:00",
+        "claim_id": "israel-palestine_arab_news_ef7db12e_0",
+        "fidelity_to_origin": 0.3636,
+        "fidelity_to_previous": 0.9997
+      },
+      {
+        "platform": "1470 & 100.3 Wmbd",
+        "timestamp": "2026-04-26T07:49:10+00:00",
+        "claim_id": "israel-palestine_arab_news_ef7db12e_0",
+        "fidelity_to_origin": 0.3632,
+        "fidelity_to_previous": 0.9989
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "israel-palestine_daily_sabah_0833dab6_1",
-      "similarity": 0.7011,
-      "text": "Israeli forces killed a Palestinian man during a military operation in the West Bank."
+      "claim_id": "israel-palestine_the_peninsula_73596f5d_0",
+      "similarity": 0.8215,
+      "text": "Israeli military actions have resulted in civilian casualties in Gaza, including the deaths of at least three people."
     },
     {
-      "claim_id": "israel-palestine_bluesky_71187427_0",
-      "similarity": 0.6847,
-      "text": "Israeli forces are killing Palestinians in the occupied West Bank."
+      "claim_id": "israel-palestine_bluesky_171877e4_0",
+      "similarity": 0.819,
+      "text": "Israeli forces are responsible for civilian deaths in Gaza."
+    },
+    {
+      "claim_id": "israel-palestine_bluesky_a9f27734_0",
+      "similarity": 0.8121,
+      "text": "Israeli military actions have resulted in civilian casualties in Lebanon."
+    },
+    {
+      "claim_id": "israel-palestine_bluesky_d5dae98a_0",
+      "similarity": 0.7855,
+      "text": "Israeli forces killed at least four people in Gaza despite a declared ceasefire."
+    },
+    {
+      "claim_id": "israel-palestine_bluesky_d7e9c517_0",
+      "similarity": 0.7355,
+      "text": "Israeli military operations in Lebanon have resulted in a high number of fatalities."
     }
   ],
   "example_content": [
     {
-      "text": "Israeli forces are killing Palestinians in the occupied West Bank.",
+      "text": "Israel has killed over 700,000 people in Gaza since October 7, 2023, with half of the victims being children aged five and under.",
+      "platform": "X Platform",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The Israeli military has killed a large number of journalists since October 2023.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Israeli forces killed a Palestinian man during a military operation in the West Bank.",
-      "platform": "Daily Sabah",
+      "text": "Israeli forces are responsible for civilian deaths in Gaza.",
+      "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

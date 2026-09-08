@@ -35,48 +35,48 @@
       0.645
     ],
     "source_distribution": "production",
-    "source_diversity": 0.25,
-    "bridge_ratio": 0.25,
-    "persistence_windows": 1,
-    "friction": 1,
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 11,
+    "friction": 0.7879,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.3433,
+    "value": 0.352,
     "confidence_interval": [
-      0.219,
-      0.4676
+      0.2284,
+      0.4756
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3433
+      0.352
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 1,
+    "value": 0.7879,
     "confidence_interval": [
-      0.925,
-      1
+      0.697,
+      0.8788
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.7879
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.05,
+    "value": 0.55,
     "confidence_interval": [
-      0,
-      0.1962
+      0.4413,
+      0.6587
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.05
+      0.55
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.9252,
     "confidence_interval": [
-      0.925,
+      0.8446,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.9252
     ],
     "source_distribution": "production"
   },
@@ -120,22 +120,82 @@
     ]
   },
   "provenance": {
-    "first_platform": "Bluesky",
+    "first_platform": "YouTube (Influencer Framing)",
     "first_timestamp": "2026-05-27T02:49:01.524Z",
-    "lead_lag": []
+    "lead_lag": [
+      {
+        "platform": "The Atlantic",
+        "lag_hours": 37.5
+      },
+      {
+        "platform": "Salon",
+        "lag_hours": 44.5
+      },
+      {
+        "platform": "La Times",
+        "lag_hours": 50.0
+      },
+      {
+        "platform": "Bbc World",
+        "lag_hours": 50.9
+      },
+      {
+        "platform": "Breitbart Feed",
+        "lag_hours": 67.3
+      },
+      {
+        "platform": "Bluesky",
+        "lag_hours": 72.7
+      }
+    ]
   },
   "supply_chain": {
     "concept_id": "concept_war-on-iran_000",
     "hops": [
       {
-        "platform": "Bluesky",
-        "timestamp": "2026-05-26T15:02:17.599000+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-03-31T14:18:03+00:00",
         "claim_id": "war-on-iran_bluesky_e7ff6335_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "The Atlantic",
+        "timestamp": "2026-04-02T03:46:48+00:00",
+        "claim_id": "war-on-iran_bluesky_e7ff6335_0",
+        "fidelity_to_origin": 0.9693,
+        "fidelity_to_previous": 0.9693
+      },
+      {
+        "platform": "Salon",
+        "timestamp": "2026-04-02T10:45:25+00:00",
+        "claim_id": "war-on-iran_bluesky_e7ff6335_0",
+        "fidelity_to_origin": 0.9636,
+        "fidelity_to_previous": 0.9941
+      },
+      {
+        "platform": "La Times",
+        "timestamp": "2026-04-02T16:18:14+00:00",
+        "claim_id": "war-on-iran_bluesky_e7ff6335_0",
+        "fidelity_to_origin": 0.9591,
+        "fidelity_to_previous": 0.9953
+      },
+      {
+        "platform": "Bbc World",
+        "timestamp": "2026-04-02T17:13:00+00:00",
+        "claim_id": "war-on-iran_bluesky_e7ff6335_0",
+        "fidelity_to_origin": 0.9583,
+        "fidelity_to_previous": 0.9992
+      },
+      {
+        "platform": "Breitbart Feed",
+        "timestamp": "2026-04-03T09:36:26+00:00",
+        "claim_id": "war-on-iran_bluesky_e7ff6335_0",
+        "fidelity_to_origin": 0.9449,
+        "fidelity_to_previous": 0.986
       }
     ],
-    "observation_boundary": "No public antecedent detected"
+    "observation_boundary": null
   },
   "coordination": {
     "burstiness": {
@@ -167,43 +227,48 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "war-on-iran_bluesky_27b2892a_0",
-      "similarity": 0.7104,
-      "text": "Donald Trump is attempting to provide financial assistance to Iran in exchange for their silence to improve his chances in the midterm elections."
+      "claim_id": "war-on-iran_the_atlantic_ea049f8c_0",
+      "similarity": 0.6932,
+      "text": "Donald Trump's speech regarding the conflict with Iran was poorly delivered and uninformative."
     },
     {
-      "claim_id": "war-on-iran_bluesky_de67f51a_1",
-      "similarity": 0.6365,
-      "text": "Donald Trump is responsible for the War on Iran."
+      "claim_id": "war-on-iran_bluesky_2194b45c_1",
+      "similarity": 0.6893,
+      "text": "Donald Trump is seeking a pretext to use nuclear weapons against Iran."
     },
     {
-      "claim_id": "war-on-iran_bluesky_139ae716_1",
-      "similarity": 0.6071,
-      "text": "Donald Trump had better options to prevent Iran from developing a nuclear bomb."
+      "claim_id": "war-on-iran_bbc_world_7273b30c_0",
+      "similarity": 0.6663,
+      "text": "Donald Trump has changed the timeline for ending military conflict with Iran."
     },
     {
-      "claim_id": "war-on-iran_bluesky_d8afac42_0",
-      "similarity": 0.5496,
-      "text": "Donald Trump and his supporters should be convicted for initiating an illegal war with Iran and causing global damage."
+      "claim_id": "war-on-iran_salon_353df297_1",
+      "similarity": 0.6621,
+      "text": "Trump is not receiving the best advice regarding the war with Iran."
+    },
+    {
+      "claim_id": "war-on-iran_bluesky_9c45dcb4_0",
+      "similarity": 0.6339,
+      "text": "Donald Trump is likely to initiate a nuclear war with Iran."
     }
   ],
   "example_content": [
     {
-      "text": "Donald Trump and his supporters should be convicted for initiating an illegal war with Iran and causing global damage.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Donald Trump is responsible for the War on Iran.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Donald Trump is attempting to provide financial assistance to Iran in exchange for their silence to improve his chances in the midterm elections.",
+      "text": "Donald Trump is likely to initiate a nuclear war with Iran.",
       "platform": "Bluesky",
       "confidence": 0.7,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Donald Trump is seeking a pretext to use nuclear weapons against Iran.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Donald Trump is seeking a pretext to use nuclear weapons against Iran.",
+      "platform": "Bluesky",
+      "confidence": 0.8,
       "is_influencer_framing": false
     }
   ]

@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "inflation-cost-of-living_youtube_58267f8d_0",
-    "cluster_id": "clu_inflation-cost-of-living_007",
-    "concept_id": "concept_inflation-cost-of-living_003",
+    "cluster_id": "clu_inflation-cost-of-living_069",
+    "concept_id": "concept_inflation-cost-of-living_002",
     "first_seen_platform": "youtube",
     "first_seen_timestamp": "2025-06-22T18:00:51Z",
     "source_document_id": "yt_u6uAC1nDsaA",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 15,
-    "friction": 0.3214,
+    "persistence_windows": 8,
+    "friction": 0.1154,
     "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 0.7336,
+    "value": 0.2754,
     "confidence_interval": [
-      0.6386,
-      0.8286
+      0.1461,
+      0.4047
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.7336
+      0.2754
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.3214,
+    "value": 0.1154,
     "confidence_interval": [
-      0.1955,
-      0.4473
+      0,
+      0.2567
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3214
+      0.1154
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.75,
+    "value": 0.4,
     "confidence_interval": [
-      0.6562,
-      0.8438
+      0.28,
+      0.52
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.75
+      0.4
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9899,
+    "value": 0.9867,
     "confidence_interval": [
-      0.9141,
+      0.9107,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9899
+      0.9867
     ],
     "source_distribution": "production"
   },
@@ -125,70 +125,70 @@
     "lead_lag": [
       {
         "platform": "Bluesky",
-        "lag_hours": 7936.0
-      },
-      {
-        "platform": "Star Gazette",
-        "lag_hours": 7941.0
-      },
-      {
-        "platform": "San Diego Union Tribune",
-        "lag_hours": 7941.7
-      },
-      {
-        "platform": "Daily Mail Online",
-        "lag_hours": 7942.0
+        "lag_hours": 7070.8
       },
       {
         "platform": "X Platform",
-        "lag_hours": 7976.8
+        "lag_hours": 7111.3
+      },
+      {
+        "platform": "The Nerd Stash",
+        "lag_hours": 7618.8
+      },
+      {
+        "platform": "Economic Times",
+        "lag_hours": 7650.5
+      },
+      {
+        "platform": "The Nation Online",
+        "lag_hours": 7855.6
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_inflation-cost-of-living_003",
+    "concept_id": "concept_inflation-cost-of-living_002",
     "hops": [
       {
         "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2025-05-07T19:05:35+00:00",
+        "timestamp": "2025-06-13T01:11:23+00:00",
         "claim_id": "inflation-cost-of-living_youtube_58267f8d_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
         "platform": "Bluesky",
-        "timestamp": "2026-04-03T11:06:13.791000+00:00",
+        "timestamp": "2026-04-03T15:57:01.887000+00:00",
         "claim_id": "inflation-cost-of-living_youtube_58267f8d_0",
-        "fidelity_to_origin": 0.3036,
-        "fidelity_to_previous": 0.3036
-      },
-      {
-        "platform": "Star Gazette",
-        "timestamp": "2026-04-03T16:03:52+00:00",
-        "claim_id": "inflation-cost-of-living_youtube_58267f8d_0",
-        "fidelity_to_origin": 0.3031,
-        "fidelity_to_previous": 0.9984
-      },
-      {
-        "platform": "San Diego Union Tribune",
-        "timestamp": "2026-04-03T16:44:42+00:00",
-        "claim_id": "inflation-cost-of-living_youtube_58267f8d_0",
-        "fidelity_to_origin": 0.3031,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Daily Mail Online",
-        "timestamp": "2026-04-03T17:05:04+00:00",
-        "claim_id": "inflation-cost-of-living_youtube_58267f8d_0",
-        "fidelity_to_origin": 0.3031,
-        "fidelity_to_previous": 1.0
+        "fidelity_to_origin": 0.3699,
+        "fidelity_to_previous": 0.3699
       },
       {
         "platform": "X Platform",
-        "timestamp": "2026-04-05T03:55:37+00:00",
+        "timestamp": "2026-04-05T08:31:16+00:00",
+        "claim_id": "inflation-cost-of-living_youtube_58267f8d_0",
+        "fidelity_to_origin": 0.3663,
+        "fidelity_to_previous": 0.9903
+      },
+      {
+        "platform": "The Nerd Stash",
+        "timestamp": "2026-04-26T12:00:00+00:00",
+        "claim_id": "inflation-cost-of-living_youtube_58267f8d_0",
+        "fidelity_to_origin": 0.3211,
+        "fidelity_to_previous": 0.8766
+      },
+      {
+        "platform": "Economic Times",
+        "timestamp": "2026-04-27T19:40:18+00:00",
+        "claim_id": "inflation-cost-of-living_youtube_58267f8d_0",
+        "fidelity_to_origin": 0.3183,
+        "fidelity_to_previous": 0.9913
+      },
+      {
+        "platform": "The Nation Online",
+        "timestamp": "2026-05-06T08:44:57+00:00",
         "claim_id": "inflation-cost-of-living_youtube_58267f8d_0",
         "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9898
+        "fidelity_to_previous": 0.9425
       }
     ],
     "observation_boundary": null
@@ -223,49 +223,49 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "inflation-cost-of-living_bluesky_78d4cecd_0",
-      "similarity": 0.7223,
-      "text": "Healthcare and affordable cost of living are more desirable than the current economic situation."
+      "claim_id": "inflation-cost-of-living_bluesky_43aacf65_0",
+      "similarity": 0.7901,
+      "text": "Current economic conditions are causing financial hardship for families."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_f1068a76_0",
-      "similarity": 0.69,
-      "text": "Right-wing actors exploit cost of living crisis data to create money-making opportunities."
+      "claim_id": "inflation-cost-of-living_the_nerd_stash_8b90763d_0",
+      "similarity": 0.7785,
+      "text": "The current cost of living is causing significant financial hardship for working Americans."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_fae14560_0",
-      "similarity": 0.5901,
-      "text": "The cost of living has decreased."
+      "claim_id": "inflation-cost-of-living_bluesky_6654dca7_0",
+      "similarity": 0.7764,
+      "text": "Rising costs at grocery stores and gas pumps are negatively impacting Americans."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_00b522c6_0",
-      "similarity": 0.5834,
-      "text": "The perception that recurring car payments are an unavoidable cost of living is misguided."
+      "claim_id": "inflation-cost-of-living_x_ebd9bf07_0",
+      "similarity": 0.7622,
+      "text": "The increasing cost of living is making it harder to survive."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_906af70a_0",
-      "similarity": 0.5733,
-      "text": "Government policies over the last two years have addressed the cost of living."
+      "claim_id": "inflation-cost-of-living_youtube_f298e8cc_0",
+      "similarity": 0.7084,
+      "text": "Many Americans are struggling to afford basic needs due to the rising cost of living."
     }
   ],
   "example_content": [
     {
-      "text": "Workers' offered pay raise is insufficient to keep pace with inflation.",
+      "text": "Current economic conditions are causing financial hardship for families.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Right-wing actors exploit cost of living crisis data to create money-making opportunities.",
-      "platform": "Bluesky",
+      "text": "Many Americans are struggling to afford basic needs due to the rising cost of living.",
+      "platform": "YouTube (Influencer Framing)",
+      "confidence": 0.9,
+      "is_influencer_framing": true
+    },
+    {
+      "text": "Consumers are increasingly going into debt to afford groceries.",
+      "platform": "YouTube (Influencer Framing)",
       "confidence": 0.8,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "The cost of living has decreased.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
+      "is_influencer_framing": true
     }
   ]
 }

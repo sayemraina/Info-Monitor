@@ -24,107 +24,94 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": null,
+    "value": 0.54,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.44,
+      0.64
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.54
+    ],
+    "source_distribution": "production",
+    "source_diversity": 0.75,
+    "bridge_ratio": 0.75,
+    "persistence_windows": 15,
+    "friction": 0.7544,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.5346,
+    "confidence_interval": [
+      0.4247,
+      0.6445
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5346
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.7544,
+    "confidence_interval": [
+      0.661,
+      0.8478
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.7544
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.75,
+    "confidence_interval": [
+      0.6562,
+      0.8438
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.75
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.5,
     "confidence_interval": [
-      0,
-      0
+      0.3875,
+      0.6125
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.5
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 0.9848,
     "confidence_interval": [
-      0,
-      0
+      0.9087,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.9848
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,53 +120,116 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-05-26T05:00:50.655Z",
+    "lead_lag": [
+      {
+        "platform": "X Platform",
+        "lag_hours": 3.0
+      },
+      {
+        "platform": "Caerphilly Observer",
+        "lag_hours": 637.1
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_housing-crisis_003",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-03T00:59:19.648000+00:00",
+        "claim_id": "housing-crisis_bluesky_ae24b313_2",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-03T03:56:25+00:00",
+        "claim_id": "housing-crisis_bluesky_ae24b313_2",
+        "fidelity_to_origin": 0.9968,
+        "fidelity_to_previous": 0.9968
+      },
+      {
+        "platform": "Caerphilly Observer",
+        "timestamp": "2026-04-29T14:07:00+00:00",
+        "claim_id": "housing-crisis_bluesky_ae24b313_2",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.301
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "housing-crisis_bluesky_f877b38d_0",
-      "similarity": 0.5599,
-      "text": "Congress is failing to address the housing crisis despite having the means to do so."
+      "claim_id": "housing-crisis_x_aa306724_0",
+      "similarity": 0.6096,
+      "text": "Government interventions are ineffective at resolving the housing crisis."
     },
     {
-      "claim_id": "housing-crisis_bluesky_b291ccd1_1",
-      "similarity": 0.3601,
-      "text": "The Obama administration did not adequately punish Wall Street for its role in the 2008 housing crisis."
+      "claim_id": "housing-crisis_bluesky_b5249d42_0",
+      "similarity": 0.5978,
+      "text": "Policies addressing the housing crisis do not effectively address other cost-of-living issues."
     },
     {
-      "claim_id": "housing-crisis_bluesky_074db434_0",
-      "similarity": 0.2613,
-      "text": "Educational curricula avoid teaching about societal problems."
+      "claim_id": "housing-crisis_x_ac457418_0",
+      "similarity": 0.5787,
+      "text": "The housing crisis has not been adequately addressed."
+    },
+    {
+      "claim_id": "housing-crisis_bluesky_eac613a0_0",
+      "similarity": 0.5287,
+      "text": "Pro-housing political candidates are gaining traction and winning elections."
+    },
+    {
+      "claim_id": "housing-crisis_bluesky_bbfaf5bc_0",
+      "similarity": 0.5172,
+      "text": "Oregon's government is not adequately addressing the housing crisis."
     }
   ],
   "example_content": [
     {
-      "text": "Congress is failing to address the housing crisis despite having the means to do so.",
+      "text": "Pro-housing political candidates are gaining traction and winning elections.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The Obama administration did not adequately punish Wall Street for its role in the 2008 housing crisis.",
+      "text": "Oregon's government is not adequately addressing the housing crisis.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Educational curricula avoid teaching about societal problems.",
+      "text": "The current political party and leader are actively working to address various social and global issues.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

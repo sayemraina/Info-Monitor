@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "journalistic",
     "id": "dei-rollbacks_cnhi_news_7a5df8de_0",
-    "cluster_id": "clu_dei-rollbacks_000",
-    "concept_id": "concept_dei-rollbacks_000",
+    "cluster_id": "clu_dei-rollbacks_012",
+    "concept_id": "concept_dei-rollbacks_004",
     "first_seen_platform": "cnhi_news",
     "first_seen_timestamp": "2026-04-03T15:38:00Z",
     "source_document_id": "4e4b8cd6a679d86d",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 15,
-    "friction": 0.4691,
+    "persistence_windows": 4,
+    "friction": 0.8333,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.5848,
+    "value": 0.204,
     "confidence_interval": [
-      0.4787,
-      0.6909
+      0.0693,
+      0.3387
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.5848
+      0.204
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.4691,
+    "value": 0.8333,
     "confidence_interval": [
-      0.3543,
-      0.5839
+      0.7458,
+      0.9208
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.4691
+      0.8333
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.75,
+    "value": 0.2,
     "confidence_interval": [
-      0.6562,
-      0.8438
+      0.065,
+      0.335
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.75
+      0.2
     ],
     "source_distribution": "production"
   },
@@ -120,79 +120,53 @@
     ]
   },
   "provenance": {
-    "first_platform": "YouTube (Influencer Framing)",
+    "first_platform": "Cnhi News",
     "first_timestamp": "2026-04-03T15:38:00Z",
     "lead_lag": [
       {
-        "platform": "Cato",
-        "lag_hours": 8225.5
+        "platform": "Fox Politics",
+        "lag_hours": 571.4
       },
       {
-        "platform": "Propublica",
-        "lag_hours": 8508.5
-      },
-      {
-        "platform": "Salon",
-        "lag_hours": 8533.5
+        "platform": "Fox News",
+        "lag_hours": 578.5
       },
       {
         "platform": "Bluesky",
-        "lag_hours": 8547.7
-      },
-      {
-        "platform": "Jacobin",
-        "lag_hours": 8560.7
-      },
-      {
-        "platform": "Freedomsphoenix.Com",
-        "lag_hours": 8571.5
+        "lag_hours": 1203.4
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_dei-rollbacks_000",
+    "concept_id": "concept_dei-rollbacks_004",
     "hops": [
       {
-        "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2025-04-10T20:30:24+00:00",
+        "platform": "Cnhi News",
+        "timestamp": "2026-04-03T15:38:00+00:00",
         "claim_id": "dei-rollbacks_cnhi_news_7a5df8de_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Cato",
-        "timestamp": "2026-03-19T14:01:47+00:00",
+        "platform": "Fox Politics",
+        "timestamp": "2026-04-27T11:00:24+00:00",
         "claim_id": "dei-rollbacks_cnhi_news_7a5df8de_0",
-        "fidelity_to_origin": 0.3296,
-        "fidelity_to_previous": 0.3296
+        "fidelity_to_origin": 0.6676,
+        "fidelity_to_previous": 0.6676
       },
       {
-        "platform": "Propublica",
-        "timestamp": "2026-03-31T09:00:00+00:00",
+        "platform": "Fox News",
+        "timestamp": "2026-04-27T18:09:12+00:00",
         "claim_id": "dei-rollbacks_cnhi_news_7a5df8de_0",
-        "fidelity_to_origin": 0.3065,
-        "fidelity_to_previous": 0.9299
-      },
-      {
-        "platform": "Salon",
-        "timestamp": "2026-04-01T10:00:13+00:00",
-        "claim_id": "dei-rollbacks_cnhi_news_7a5df8de_0",
-        "fidelity_to_origin": 0.3045,
-        "fidelity_to_previous": 0.9935
+        "fidelity_to_origin": 0.6635,
+        "fidelity_to_previous": 0.9939
       },
       {
         "platform": "Bluesky",
-        "timestamp": "2026-04-02T00:11:39.905000+00:00",
+        "timestamp": "2026-05-23T18:59:34.866000+00:00",
         "claim_id": "dei-rollbacks_cnhi_news_7a5df8de_0",
-        "fidelity_to_origin": 0.3033,
-        "fidelity_to_previous": 0.9961
-      },
-      {
-        "platform": "Jacobin",
-        "timestamp": "2026-04-02T13:10:03+00:00",
-        "claim_id": "dei-rollbacks_cnhi_news_7a5df8de_0",
-        "fidelity_to_origin": 0.3023,
-        "fidelity_to_previous": 0.9967
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.4521
       }
     ],
     "observation_boundary": null
@@ -227,47 +201,47 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "dei-rollbacks_bluesky_7cff3b4d_0",
-      "similarity": 0.3828,
-      "text": "Affirmative action is an ineffective method of addressing inequality."
+      "claim_id": "dei-rollbacks_cnhi_news_7a5df8de_1",
+      "similarity": 0.7323,
+      "text": "The USDA's decision to terminate farm grants was due to discriminatory preferences based on Diversity, Equity, and Inclusion (DEI) and wasteful spending."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_e4e1969e_0",
-      "similarity": 0.3349,
-      "text": "Affirmative action policies are a contentious issue."
+      "claim_id": "dei-rollbacks_fox_news_14332343_0",
+      "similarity": 0.4743,
+      "text": "The Republican farm bill will worsen food prices, farm bankruptcies, and the effects of agrochemicals on public health."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_aac7cc5f_0",
-      "similarity": 0.3326,
-      "text": "The VA has increased funding by 9%, but this is being obscured by descriptions that call for defunding DEI initiatives without specifying dollar amounts."
+      "claim_id": "dei-rollbacks_fox_news_411634e8_0",
+      "similarity": 0.4624,
+      "text": "The Republican farm bill will worsen food prices, farm bankruptcies, and the health impacts of agrochemicals."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_20df3b04_0",
-      "similarity": 0.3149,
-      "text": "Affirmative action in university admissions is a contentious issue due to its widespread impact."
+      "claim_id": "dei-rollbacks_fox_news_14332343_2",
+      "similarity": 0.4256,
+      "text": "The Trump administration supports chemical companies over farmers in cases of pesticide-related harm."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_fca3d503_0",
-      "similarity": 0.2836,
-      "text": "The Justice Department has reversed policies that promoted diversity, equity, and inclusion."
+      "claim_id": "dei-rollbacks_fox_news_411634e8_1",
+      "similarity": 0.416,
+      "text": "The Republican farm bill prioritizes large industrial producers and chemical companies over food assistance programs and healthy food investments."
     }
   ],
   "example_content": [
     {
-      "text": "Conservatives are excessively focused on gender issues and are responsible for injecting gender into various contexts.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "The VA has increased funding by 9%, but this is being obscured by descriptions that call for defunding DEI initiatives without specifying dollar amounts.",
-      "platform": "Bluesky",
+      "text": "The USDA's decision to terminate farm grants was due to discriminatory preferences based on Diversity, Equity, and Inclusion (DEI) and wasteful spending.",
+      "platform": "Cnhi News",
       "confidence": 0.8,
       "is_influencer_framing": false
     },
     {
-      "text": "The Justice Department has reversed policies that promoted diversity, equity, and inclusion.",
-      "platform": "Bluesky",
+      "text": "The Republican farm bill will worsen food prices, farm bankruptcies, and the health impacts of agrochemicals.",
+      "platform": "Fox News",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "The Republican farm bill prioritizes large industrial producers and chemical companies over food assistance programs and healthy food investments.",
+      "platform": "Fox News",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

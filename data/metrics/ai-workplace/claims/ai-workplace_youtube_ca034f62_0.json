@@ -24,107 +24,94 @@
     "source_type": "elite_media"
   },
   "momentum": {
-    "value": null,
+    "value": 0.925,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.825,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.925
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 5,
+    "friction": 0.5333,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.2119,
+    "confidence_interval": [
+      0.0778,
+      0.346
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.2119
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.5333,
+    "confidence_interval": [
+      0.4233,
+      0.6433
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.5333
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.25,
+    "confidence_interval": [
+      0.1187,
+      0.3813
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.25
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.85,
     "confidence_interval": [
-      0,
-      0
+      0.7638,
+      0.9362
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.85
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 0.9647,
     "confidence_interval": [
-      0,
-      0
+      0.8871,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.9647
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,32 +120,139 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "YouTube (Influencer Framing)",
+    "first_timestamp": "2025-10-07T23:20:39Z",
+    "lead_lag": [
+      {
+        "platform": "The Times Of India",
+        "lag_hours": 4100.0
+      },
+      {
+        "platform": "X Platform",
+        "lag_hours": 4261.6
+      },
+      {
+        "platform": "Bluesky",
+        "lag_hours": 4264.8
+      },
+      {
+        "platform": "Global.Chinadaily.Com.Cn",
+        "lag_hours": 4585.0
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_ai-workplace_001",
+    "hops": [
+      {
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2025-10-07T23:20:39+00:00",
+        "claim_id": "ai-workplace_youtube_ca034f62_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "The Times Of India",
+        "timestamp": "2026-03-27T19:20:00+00:00",
+        "claim_id": "ai-workplace_youtube_ca034f62_0",
+        "fidelity_to_origin": 0.374,
+        "fidelity_to_previous": 0.374
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-03T12:55:06+00:00",
+        "claim_id": "ai-workplace_youtube_ca034f62_0",
+        "fidelity_to_origin": 0.3494,
+        "fidelity_to_previous": 0.9342
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-03T16:09:22.125000+00:00",
+        "claim_id": "ai-workplace_youtube_ca034f62_0",
+        "fidelity_to_origin": 0.3489,
+        "fidelity_to_previous": 0.9986
+      },
+      {
+        "platform": "Global.Chinadaily.Com.Cn",
+        "timestamp": "2026-04-17T00:19:00+00:00",
+        "claim_id": "ai-workplace_youtube_ca034f62_0",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.8598
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ai-workplace_bluesky_80f267fb_0",
-      "similarity": 0.8148,
-      "text": "AI implementation leads to job losses for clerical workers."
+      "claim_id": "ai-workplace_bluesky_34b61aa1_0",
+      "similarity": 0.9385,
+      "text": "AI and robotics will displace a significant number of jobs, leaving limited alternative employment options for those affected."
+    },
+    {
+      "claim_id": "ai-workplace_bluesky_7b80199a_0",
+      "similarity": 0.8918,
+      "text": "AI and automation will cause widespread job displacement."
+    },
+    {
+      "claim_id": "ai-workplace_x_731c846d_0",
+      "similarity": 0.8467,
+      "text": "Many individuals will face significant challenges due to job displacement caused by AI and automation."
+    },
+    {
+      "claim_id": "ai-workplace_x_e290d482_0",
+      "similarity": 0.8156,
+      "text": "Oracle laid off 30,000 employees to invest in AI and automation."
+    },
+    {
+      "claim_id": "ai-workplace_bluesky_2b9adc7a_0",
+      "similarity": 0.657,
+      "text": "AI and automation will negatively impact Latino-American culture by displacing workers in manufacturing and warehouse jobs in the Southwest."
     }
   ],
   "example_content": [
     {
-      "text": "AI implementation leads to job losses for clerical workers.",
+      "text": "AI and automation will negatively impact Latino-American culture by displacing workers in manufacturing and warehouse jobs in the Southwest.",
       "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Telangana is focusing on creating blue-collar jobs that AI cannot replace.",
+      "platform": "The Times Of India",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Oracle laid off 30,000 employees to invest in AI and automation.",
+      "platform": "X Platform",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "israel-palestine_bluesky_ec2afcf3_1",
-    "cluster_id": "clu_israel-palestine_001",
-    "concept_id": "concept_israel-palestine_001",
+    "cluster_id": "clu_israel-palestine_031",
+    "concept_id": "concept_israel-palestine_004",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-03T15:34:39.015Z",
     "source_document_id": "3862ae6ab6591da2",
@@ -38,32 +38,32 @@
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
     "persistence_windows": 7,
-    "friction": 0.2727,
+    "friction": 0.1905,
     "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 0.1997,
+    "value": 0.2551,
     "confidence_interval": [
-      0.0647,
-      0.3347
+      0.1242,
+      0.386
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.1997
+      0.2551
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.2727,
+    "value": 0.1905,
     "confidence_interval": [
-      0.1432,
-      0.4022
+      0.0548,
+      0.3262
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2727
+      0.1905
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9545,
+    "value": 0.9524,
     "confidence_interval": [
-      0.8761,
+      0.8738,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9545
+      0.9524
     ],
     "source_distribution": "production"
   },
@@ -118,79 +118,79 @@
     "factors": []
   },
   "provenance": {
-    "first_platform": "The Atlantic",
+    "first_platform": "YouTube (Influencer Framing)",
     "first_timestamp": "2026-04-03T15:34:39.015Z",
     "lead_lag": [
       {
-        "platform": "YouTube (Influencer Framing)",
-        "lag_hours": 8.1
-      },
-      {
         "platform": "Court House News Service",
-        "lag_hours": 20.3
+        "lag_hours": 7044.3
       },
       {
         "platform": "Mountain Democrat",
-        "lag_hours": 24.6
+        "lag_hours": 7048.6
       },
       {
         "platform": "Economic Times",
-        "lag_hours": 25.7
+        "lag_hours": 7049.7
       },
       {
         "platform": "Thesun.My",
-        "lag_hours": 26.2
+        "lag_hours": 7050.2
       },
       {
-        "platform": "The Times Of Israel",
-        "lag_hours": 26.3
+        "platform": "Bluesky",
+        "lag_hours": 7051.0
+      },
+      {
+        "platform": "Salon",
+        "lag_hours": 7822.5
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_israel-palestine_001",
+    "concept_id": "concept_israel-palestine_004",
     "hops": [
       {
-        "platform": "The Atlantic",
-        "timestamp": "2026-04-02T11:00:00+00:00",
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2025-06-13T18:59:55+00:00",
         "claim_id": "israel-palestine_bluesky_ec2afcf3_1",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2026-04-02T19:06:41+00:00",
-        "claim_id": "israel-palestine_bluesky_ec2afcf3_1",
-        "fidelity_to_origin": 0.8101,
-        "fidelity_to_previous": 0.8101
-      },
-      {
         "platform": "Court House News Service",
         "timestamp": "2026-04-03T07:20:47+00:00",
         "claim_id": "israel-palestine_bluesky_ec2afcf3_1",
-        "fidelity_to_origin": 0.5237,
-        "fidelity_to_previous": 0.6465
+        "fidelity_to_origin": 0.3696,
+        "fidelity_to_previous": 0.3696
       },
       {
         "platform": "Mountain Democrat",
         "timestamp": "2026-04-03T11:37:19+00:00",
         "claim_id": "israel-palestine_bluesky_ec2afcf3_1",
-        "fidelity_to_origin": 0.4237,
-        "fidelity_to_previous": 0.8091
+        "fidelity_to_origin": 0.3693,
+        "fidelity_to_previous": 0.9992
       },
       {
         "platform": "Economic Times",
         "timestamp": "2026-04-03T12:43:50+00:00",
         "claim_id": "israel-palestine_bluesky_ec2afcf3_1",
-        "fidelity_to_origin": 0.3977,
-        "fidelity_to_previous": 0.9386
+        "fidelity_to_origin": 0.3692,
+        "fidelity_to_previous": 0.9997
       },
       {
         "platform": "Thesun.My",
         "timestamp": "2026-04-03T13:14:28+00:00",
         "claim_id": "israel-palestine_bluesky_ec2afcf3_1",
-        "fidelity_to_origin": 0.3858,
-        "fidelity_to_previous": 0.9701
+        "fidelity_to_origin": 0.3691,
+        "fidelity_to_previous": 0.9997
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-03T14:01:57+00:00",
+        "claim_id": "israel-palestine_bluesky_ec2afcf3_1",
+        "fidelity_to_origin": 0.369,
+        "fidelity_to_previous": 0.9997
       }
     ],
     "observation_boundary": null

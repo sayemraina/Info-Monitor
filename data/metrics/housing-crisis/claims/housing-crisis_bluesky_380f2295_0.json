@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "housing-crisis_bluesky_380f2295_0",
-    "cluster_id": "clu_housing-crisis_015",
-    "concept_id": "concept_housing-crisis_005",
+    "cluster_id": "clu_housing-crisis_005",
+    "concept_id": "concept_housing-crisis_002",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-05-05T05:45:52+00:00",
     "source_document_id": "380f22953afbb970",
@@ -24,107 +24,94 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": null,
+    "value": 0.54,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.44,
+      0.64
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.54
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 15,
+    "friction": 0.1227,
+    "friction_quadrant": "unopposed_advance"
+  },
+  "salience": {
+    "value": 1,
+    "confidence_interval": [
+      0.925,
+      1
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      1
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.1227,
+    "confidence_interval": [
+      0,
+      0.2635
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.1227
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.75,
+    "confidence_interval": [
+      0.6562,
+      0.8438
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.75
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.5,
     "confidence_interval": [
-      0,
-      0
+      0.3875,
+      0.6125
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.5
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 0.9803,
     "confidence_interval": [
-      0,
-      0
+      0.9038,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.9803
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,58 +120,153 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "YouTube (Influencer Framing)",
+    "first_timestamp": "2026-05-05T05:45:52+00:00",
+    "lead_lag": [
+      {
+        "platform": "X Platform",
+        "lag_hours": 1612.5
+      },
+      {
+        "platform": "Bluesky",
+        "lag_hours": 1613.1
+      },
+      {
+        "platform": "Business Insider",
+        "lag_hours": 1630.2
+      },
+      {
+        "platform": "The Motley Fool",
+        "lag_hours": 2134.2
+      },
+      {
+        "platform": "Bbc",
+        "lag_hours": 2189.9
+      },
+      {
+        "platform": "Yahoo",
+        "lag_hours": 2189.9
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_housing-crisis_002",
+    "hops": [
+      {
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2026-01-25T15:00:00+00:00",
+        "claim_id": "housing-crisis_bluesky_380f2295_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-02T19:31:09+00:00",
+        "claim_id": "housing-crisis_bluesky_380f2295_0",
+        "fidelity_to_origin": 0.5002,
+        "fidelity_to_previous": 0.5002
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-02T20:08:41.393000+00:00",
+        "claim_id": "housing-crisis_bluesky_380f2295_0",
+        "fidelity_to_origin": 0.5,
+        "fidelity_to_previous": 0.9996
+      },
+      {
+        "platform": "Business Insider",
+        "timestamp": "2026-04-03T13:14:01+00:00",
+        "claim_id": "housing-crisis_bluesky_380f2295_0",
+        "fidelity_to_origin": 0.4948,
+        "fidelity_to_previous": 0.9896
+      },
+      {
+        "platform": "The Motley Fool",
+        "timestamp": "2026-04-24T13:14:37+00:00",
+        "claim_id": "housing-crisis_bluesky_380f2295_0",
+        "fidelity_to_origin": 0.3385,
+        "fidelity_to_previous": 0.6841
+      },
+      {
+        "platform": "Bbc",
+        "timestamp": "2026-04-26T20:56:20+00:00",
+        "claim_id": "housing-crisis_bluesky_380f2295_0",
+        "fidelity_to_origin": 0.3213,
+        "fidelity_to_previous": 0.9492
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "housing-crisis_bluesky_0b262dbc_0",
-      "similarity": 0.6906,
-      "text": "Mortgage rates in Luxembourg are not decreasing."
+      "claim_id": "housing-crisis_bluesky_92205716_0",
+      "similarity": 0.7967,
+      "text": "The conflict between the US and Israel has caused increased mortgage rates, affecting homeowners."
     },
     {
-      "claim_id": "housing-crisis_bluesky_22f37b1e_0",
-      "similarity": 0.636,
-      "text": "Interest rates have increased, making mortgages more expensive."
+      "claim_id": "housing-crisis_bluesky_fb0237cf_1",
+      "similarity": 0.6354,
+      "text": "Mortgage companies are unfairly increasing interest rates, harming veterans."
     },
     {
-      "claim_id": "housing-crisis_bluesky_eee6d72d_0",
-      "similarity": 0.5469,
-      "text": "Bank of England's interest rate hikes are causing increased mortgage rates and higher profits for HSBC."
+      "claim_id": "housing-crisis_bluesky_81641d60_0",
+      "similarity": 0.6191,
+      "text": "Mortgage rates are holding steady at around 6.4%."
     },
     {
-      "claim_id": "housing-crisis_bluesky_1f1ce80c_0",
-      "similarity": 0.4546,
-      "text": "Adjustable Rate Mortgages offer benefits such as lower initial interest rates and flexible payment options."
+      "claim_id": "housing-crisis_bluesky_1babb658_0",
+      "similarity": 0.6052,
+      "text": "A proposal to cut mortgage interest rates and allow periods of zero mortgage payments is unclear and potentially unsustainable."
+    },
+    {
+      "claim_id": "housing-crisis_bluesky_dcccd765_0",
+      "similarity": 0.5636,
+      "text": "The Federal Reserve can influence the 10-year Treasury yield, which indirectly affects mortgage rates."
     }
   ],
   "example_content": [
     {
-      "text": "Mortgage rates in Luxembourg are not decreasing.",
+      "text": "Mortgage companies are unfairly increasing interest rates, harming veterans.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Bank of England's interest rate hikes are causing increased mortgage rates and higher profits for HSBC.",
+      "text": "Mortgage rates are holding steady at around 6.4%.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Interest rates have increased, making mortgages more expensive.",
+      "text": "The conflict in Iran is negatively impacting the UK mortgage market.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

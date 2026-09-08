@@ -1,25 +1,25 @@
 {
   "events": [
     {
-      "id": "evt_b4d727b7f50f",
+      "id": "evt_59837f10a661",
       "type": "contestation_emergence",
-      "timestamp": "2026-05-27T05:48:18.721503+00:00",
-      "claim_id": "israel-palestine_bluesky_901cf74c_0",
+      "timestamp": "2026-09-08T05:42:57.063833+00:00",
+      "claim_id": "israel-palestine_bluesky_ca1bcff0_1",
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.9,
-      "summary": "Active contestation in \"Hamas and Palestinian People\" — 3 pro vs 3 anti",
+      "confidence": 0.82,
+      "summary": "Active contestation in \"Artificial Intelligence\" — 3 pro vs 4 anti",
       "detail": {
-        "cluster_id": "clu_israel-palestine_037",
+        "cluster_id": "clu_israel-palestine_031",
         "pro_count": 3,
-        "anti_count": 3,
-        "balance": 1.0
+        "anti_count": 4,
+        "balance": 0.75
       }
     },
     {
-      "id": "evt_ea8ee4e76c41",
+      "id": "evt_dd70e75bbbe1",
       "type": "phase_transition",
-      "timestamp": "2026-05-27T05:48:18.721503+00:00",
+      "timestamp": "2026-09-08T05:42:57.063833+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
@@ -32,9 +32,9 @@
       }
     },
     {
-      "id": "evt_782b6a6ace07",
+      "id": "evt_5e3b492b6269",
       "type": "phase_transition",
-      "timestamp": "2026-05-27T05:48:18.721503+00:00",
+      "timestamp": "2026-09-08T05:42:57.063833+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
@@ -47,9 +47,9 @@
       }
     },
     {
-      "id": "evt_bfb5fb9b8751",
+      "id": "evt_23af28d3a5c5",
       "type": "phase_transition",
-      "timestamp": "2026-05-27T05:48:18.721503+00:00",
+      "timestamp": "2026-09-08T05:42:57.063833+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
@@ -62,9 +62,9 @@
       }
     },
     {
-      "id": "evt_5952fba1b5f4",
+      "id": "evt_76382b327150",
       "type": "phase_transition",
-      "timestamp": "2026-05-27T05:48:18.721503+00:00",
+      "timestamp": "2026-09-08T05:42:57.063833+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
@@ -77,51 +77,139 @@
       }
     },
     {
-      "id": "evt_3c4523e2ada0",
+      "id": "evt_eabf105df902",
+      "type": "divergence_shift",
+      "timestamp": "2026-09-08T05:42:57.063833+00:00",
+      "claim_id": null,
+      "slice_id": "al_jazeera_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Strong narrative split between al_jazeera and arab_news",
+      "detail": {
+        "jsd": 0.6784,
+        "platforms": [
+          "al_jazeera",
+          "arab_news"
+        ],
+        "window_hours": 6
+      }
+    },
+    {
+      "id": "evt_5ba3db5bcfee",
+      "type": "divergence_shift",
+      "timestamp": "2026-09-08T05:42:57.063833+00:00",
+      "claim_id": null,
+      "slice_id": "al_jazeera_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Strong narrative split between al_jazeera and asianet_news_network_pvt_ltd",
+      "detail": {
+        "jsd": 1.0,
+        "platforms": [
+          "al_jazeera",
+          "asianet_news_network_pvt_ltd"
+        ],
+        "window_hours": 6
+      }
+    },
+    {
+      "id": "evt_f9865797433e",
+      "type": "divergence_shift",
+      "timestamp": "2026-09-08T05:42:57.063833+00:00",
+      "claim_id": null,
+      "slice_id": "al_jazeera_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Strong narrative split between al_jazeera and bbc_world",
+      "detail": {
+        "jsd": 0.8651,
+        "platforms": [
+          "al_jazeera",
+          "bbc_world"
+        ],
+        "window_hours": 6
+      }
+    },
+    {
+      "id": "evt_2fc3d70a2586",
+      "type": "divergence_shift",
+      "timestamp": "2026-09-08T05:42:57.063833+00:00",
+      "claim_id": null,
+      "slice_id": "al_jazeera_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Strong narrative split between al_jazeera and bloomberg_politics",
+      "detail": {
+        "jsd": 0.5629,
+        "platforms": [
+          "al_jazeera",
+          "bloomberg_politics"
+        ],
+        "window_hours": 6
+      }
+    },
+    {
+      "id": "evt_81a7ebb10b73",
       "type": "arousal_escalation",
-      "timestamp": "2026-05-27T06:48:18.721503+00:00",
-      "claim_id": "israel-palestine_bluesky_09162eff_0",
+      "timestamp": "2026-09-08T06:42:57.063833+00:00",
+      "claim_id": "israel-palestine_x_2914bcf4_1",
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.9,
-      "summary": "Heated language rising in \"Israel and Palestine\" — 100% emotionally charged claims",
+      "confidence": 0.86,
+      "summary": "Heated language rising in \"Israel and Palestine\" — 85% emotionally charged claims",
       "detail": {
         "cluster_id": "clu_israel-palestine_004",
-        "high_arousal_count": 5,
-        "total": 5,
-        "ratio": 1.0
+        "high_arousal_count": 12,
+        "total": 14,
+        "ratio": 0.86
       }
     },
     {
-      "id": "evt_7d5560a1dac0",
+      "id": "evt_9206de1e1107",
       "type": "arousal_escalation",
-      "timestamp": "2026-05-27T06:48:18.721503+00:00",
-      "claim_id": "israel-palestine_bluesky_3141388b_0",
+      "timestamp": "2026-09-08T06:42:57.063833+00:00",
+      "claim_id": "israel-palestine_bluesky_02212b51_1",
       "slice_id": null,
       "severity": "high",
       "confidence": 0.9,
-      "summary": "Heated language rising in \"Israel Subject\" — 100% emotionally charged claims",
+      "summary": "Heated language rising in \"Israel Subject\" — 98% emotionally charged claims",
       "detail": {
         "cluster_id": "clu_israel-palestine_005",
-        "high_arousal_count": 3,
-        "total": 3,
-        "ratio": 1.0
+        "high_arousal_count": 56,
+        "total": 57,
+        "ratio": 0.98
       }
     },
     {
-      "id": "evt_5e42376713f4",
+      "id": "evt_20e114b8db41",
       "type": "arousal_escalation",
-      "timestamp": "2026-05-27T06:48:18.721503+00:00",
-      "claim_id": "israel-palestine_bluesky_aacb766c_0",
+      "timestamp": "2026-09-08T06:42:57.063833+00:00",
+      "claim_id": "israel-palestine_bluesky_df29d376_0",
       "slice_id": null,
       "severity": "high",
-      "confidence": 0.9,
-      "summary": "Heated language rising in \"Israeli-Palestinian Conflict\" — 100% emotionally charged claims",
+      "confidence": 0.84,
+      "summary": "Heated language rising in \"Keir Starmer\" — 75% emotionally charged claims",
       "detail": {
-        "cluster_id": "clu_israel-palestine_018",
-        "high_arousal_count": 4,
-        "total": 4,
-        "ratio": 1.0
+        "cluster_id": "clu_israel-palestine_016",
+        "high_arousal_count": 9,
+        "total": 12,
+        "ratio": 0.75
+      }
+    },
+    {
+      "id": "evt_d66efe3b795e",
+      "type": "arousal_escalation",
+      "timestamp": "2026-09-08T06:42:57.063833+00:00",
+      "claim_id": "israel-palestine_bluesky_4112a8a1_1",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.87,
+      "summary": "Heated language rising in \"Gaza War\" — 88% emotionally charged claims",
+      "detail": {
+        "cluster_id": "clu_israel-palestine_017",
+        "high_arousal_count": 16,
+        "total": 18,
+        "ratio": 0.89
       }
     },
     {
@@ -185,79 +273,111 @@
       "source": "fed_register"
     },
     {
+      "id": "evt_8dcc8ec16352",
+      "type": "contestation_emergence",
+      "timestamp": "2026-09-08T05:42:57.063833+00:00",
+      "claim_id": "israel-palestine_bluesky_3a2b498e_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.75,
+      "summary": "Active contestation in \"Iran War\" — 21 pro vs 41 anti",
+      "detail": {
+        "cluster_id": "clu_israel-palestine_014",
+        "pro_count": 21,
+        "anti_count": 41,
+        "balance": 0.51
+      }
+    },
+    {
+      "id": "evt_1ff4bcda7a15",
+      "type": "contestation_emergence",
+      "timestamp": "2026-09-08T05:42:57.063833+00:00",
+      "claim_id": "israel-palestine_bluesky_4112a8a1_1",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.72,
+      "summary": "Active contestation in \"Gaza War\" — 5 pro vs 12 anti",
+      "detail": {
+        "cluster_id": "clu_israel-palestine_017",
+        "pro_count": 5,
+        "anti_count": 12,
+        "balance": 0.42
+      }
+    },
+    {
+      "id": "evt_e79678bc5313",
+      "type": "contestation_emergence",
+      "timestamp": "2026-09-08T05:42:57.063833+00:00",
+      "claim_id": "israel-palestine_x_d9872383_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.74,
+      "summary": "Active contestation in \"Christian Population\" — 5 pro vs 11 anti",
+      "detail": {
+        "cluster_id": "clu_israel-palestine_021",
+        "pro_count": 5,
+        "anti_count": 11,
+        "balance": 0.45
+      }
+    },
+    {
       "id": "evt_0212fd9e385e",
       "type": "momentum_spike",
-      "timestamp": "2026-05-27T06:48:18.721503+00:00",
-      "claim_id": "israel-palestine_bluesky_0061d3ef_2",
+      "timestamp": "2026-09-08T06:42:57.063833+00:00",
+      "claim_id": "israel-palestine_bluesky_067289e9_1",
       "slice_id": null,
       "severity": "medium",
       "confidence": 0.58,
-      "summary": "Rapid attention surge in \"Gaza War\" (1 claims)",
+      "summary": "Rapid attention surge in \"Iranian Missile Attack\" (16 claims)",
       "detail": {
-        "cluster_id": "clu_israel-palestine_017",
-        "avg_momentum": 0.645,
-        "member_count": 1
+        "cluster_id": "clu_israel-palestine_012",
+        "avg_momentum": 0.646,
+        "member_count": 16
       }
     },
     {
       "id": "evt_6f5c1ca5534a",
       "type": "momentum_spike",
-      "timestamp": "2026-05-27T06:48:18.721503+00:00",
-      "claim_id": "israel-palestine_bluesky_2bfc2100_0",
+      "timestamp": "2026-09-08T06:42:57.063833+00:00",
+      "claim_id": "israel-palestine_bluesky_8c70c697_0",
       "slice_id": null,
       "severity": "medium",
       "confidence": 0.58,
-      "summary": "Rapid attention surge in \"Sabrina Singh\" (1 claims)",
+      "summary": "Rapid attention surge in \"Dr. Hussam Abu Safiya\" (12 claims)",
       "detail": {
-        "cluster_id": "clu_israel-palestine_026",
-        "avg_momentum": 0.645,
-        "member_count": 1
+        "cluster_id": "clu_israel-palestine_027",
+        "avg_momentum": 0.642,
+        "member_count": 12
       }
     },
     {
       "id": "evt_287f99335d9e",
       "type": "momentum_spike",
-      "timestamp": "2026-05-27T06:48:18.721503+00:00",
-      "claim_id": "israel-palestine_bluesky_72e4f976_0",
+      "timestamp": "2026-09-08T06:42:57.063833+00:00",
+      "claim_id": "israel-palestine_x_68fdc3ab_0",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.58,
-      "summary": "Rapid attention surge in \"Dr. Hussam Abu Safiya\" (1 claims)",
+      "confidence": 0.57,
+      "summary": "Rapid attention surge in \"United States\" (10 claims)",
       "detail": {
-        "cluster_id": "clu_israel-palestine_027",
-        "avg_momentum": 0.645,
-        "member_count": 1
+        "cluster_id": "clu_israel-palestine_042",
+        "avg_momentum": 0.632,
+        "member_count": 10
       }
     },
     {
       "id": "evt_3fdcce3efd02",
       "type": "momentum_spike",
-      "timestamp": "2026-05-27T06:48:18.721503+00:00",
-      "claim_id": "israel-palestine_bluesky_8bdfd5f5_2",
+      "timestamp": "2026-09-08T06:42:57.063833+00:00",
+      "claim_id": "israel-palestine_bluesky_ca1bcff0_0",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.58,
-      "summary": "Rapid attention surge in \"Biden Administration\" (1 claims)",
+      "confidence": 0.57,
+      "summary": "Rapid attention surge in \"Biden Administration\" (18 claims)",
       "detail": {
         "cluster_id": "clu_israel-palestine_034",
-        "avg_momentum": 0.645,
-        "member_count": 1
-      }
-    },
-    {
-      "id": "evt_c5624ff3bb0d",
-      "type": "arousal_escalation",
-      "timestamp": "2026-05-27T06:48:18.721503+00:00",
-      "claim_id": "israel-palestine_bluesky_42bbf824_0",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.8,
-      "summary": "Heated language rising in \"Keir Starmer\" — 60% emotionally charged claims",
-      "detail": {
-        "cluster_id": "clu_israel-palestine_016",
-        "high_arousal_count": 3,
-        "total": 5,
-        "ratio": 0.6
+        "avg_momentum": 0.629,
+        "member_count": 18
       }
     },
     {
@@ -499,77 +619,7 @@
       "summary": "Descoperire arheologică incredibilă în Țara Sfântă . Mesaj sumbru din vremea lui Iisus : „ Este pentru prima dată când găsim așa ceva  ",
       "detail": "Reported by romaniatv.net. Tone: +0.0.",
       "source": "gdelt"
-    },
-    {
-      "id": "gdelt_f6022bd24fbc",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:60:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Proposition de loi sur lantisémitisme de la députée Caroline Yadan . Un texte signé par 90 députés . ",
-      "detail": "Reported by israelvalley.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_febab06a8f78",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:54:50Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Jewish students cant sue Northwestern over antisemitic protest response",
-      "detail": "Reported by cities929.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_db411cbcb959",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:54:50Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Gazzede soykırımın ikinci yılı : Neler yaşandı ? ",
-      "detail": "Reported by mansethaber.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_cb344c72da5d",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:53:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Israel campaign against Unrwa could set precedent to dismantle other UN agencies , chief warns",
-      "detail": "Reported by middleeasteye.net. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_f83643b0e8bd",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:53:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Turkey establishes Istanbul maritime command for Ukraine security mission",
-      "detail": "Reported by middleeasteye.net. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_12cf07e55666",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:53:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "בוגדת ? דואה ליפה תחת מתקפה חריפה של פרו - פלסטינים",
-      "detail": "Reported by srugim.co.il. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "poly_540844",
-      "type": "external_signal",
-      "timestamp": "2026-04-03T17:16:25.758872+00:00",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Will bitcoin hit $1m before GTA VI? — 48.9% Yes",
-      "detail": "Polymarket gives 48.9% odds. Volume: $3,848,533",
-      "source": "polymarket"
     }
   ],
-  "total_count": 73
+  "total_count": 80
 }

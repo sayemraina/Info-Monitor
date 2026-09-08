@@ -24,107 +24,94 @@
     "source_type": "population"
   },
   "momentum": {
-    "value": null,
+    "value": 0.5262,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.4262,
+      0.6262
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.5262
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 15,
+    "friction": 0.3125,
+    "friction_quadrant": "unopposed_advance"
+  },
+  "salience": {
+    "value": 0.4711,
+    "confidence_interval": [
+      0.3564,
+      0.5858
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.4711
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.3125,
+    "confidence_interval": [
+      0.1859,
+      0.4391
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.3125
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.75,
+    "confidence_interval": [
+      0.6562,
+      0.8438
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.75
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.85,
     "confidence_interval": [
-      0,
-      0
+      0.7638,
+      0.9362
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.85
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 0.9858,
     "confidence_interval": [
-      0,
-      0
+      0.9097,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.9858
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,44 +120,155 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "YouTube (Influencer Framing)",
+    "first_timestamp": "2026-05-23T12:48:27.420Z",
+    "lead_lag": [
+      {
+        "platform": "Bluesky",
+        "lag_hours": 8291.5
+      },
+      {
+        "platform": "Breitbart Feed",
+        "lag_hours": 8333.6
+      },
+      {
+        "platform": "Reuters",
+        "lag_hours": 8773.5
+      },
+      {
+        "platform": "Breitbart",
+        "lag_hours": 8918.1
+      },
+      {
+        "platform": "Https://Www.Wctv.Tv",
+        "lag_hours": 8920.3
+      },
+      {
+        "platform": "Black Enterprise",
+        "lag_hours": 8965.0
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_dei-rollbacks_003",
+    "hops": [
+      {
+        "platform": "YouTube (Influencer Framing)",
+        "timestamp": "2025-04-21T04:00:34+00:00",
+        "claim_id": "dei-rollbacks_bluesky_6531153c_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-01T15:31:47.382000+00:00",
+        "claim_id": "dei-rollbacks_bluesky_6531153c_0",
+        "fidelity_to_origin": 0.3865,
+        "fidelity_to_previous": 0.3865
+      },
+      {
+        "platform": "Breitbart Feed",
+        "timestamp": "2026-04-03T09:36:23+00:00",
+        "claim_id": "dei-rollbacks_bluesky_6531153c_0",
+        "fidelity_to_origin": 0.3834,
+        "fidelity_to_previous": 0.992
+      },
+      {
+        "platform": "Reuters",
+        "timestamp": "2026-04-21T17:28:40+00:00",
+        "claim_id": "dei-rollbacks_bluesky_6531153c_0",
+        "fidelity_to_origin": 0.3509,
+        "fidelity_to_previous": 0.9152
+      },
+      {
+        "platform": "Breitbart",
+        "timestamp": "2026-04-27T18:04:17+00:00",
+        "claim_id": "dei-rollbacks_bluesky_6531153c_0",
+        "fidelity_to_origin": 0.3402,
+        "fidelity_to_previous": 0.9695
+      },
+      {
+        "platform": "Https://Www.Wctv.Tv",
+        "timestamp": "2026-04-27T20:19:26+00:00",
+        "claim_id": "dei-rollbacks_bluesky_6531153c_0",
+        "fidelity_to_origin": 0.34,
+        "fidelity_to_previous": 0.9994
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "dei-rollbacks_bluesky_77f4eda8_0",
-      "similarity": 0.6265,
-      "text": "Egalitarian principles inherently support diversity, equity, and inclusion initiatives."
+      "claim_id": "dei-rollbacks_bluesky_c88de2af_1",
+      "similarity": 0.8164,
+      "text": "DEI initiatives prevent discrimination against marginalized groups."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_0660acad_0",
-      "similarity": 0.5721,
-      "text": "Pension holders should have the right to express their preferences regarding DEI policies and executive compensation."
+      "claim_id": "dei-rollbacks_bluesky_c4d79ba0_0",
+      "similarity": 0.7067,
+      "text": "DEI initiatives are already illegal."
+    },
+    {
+      "claim_id": "dei-rollbacks_bluesky_128efe3b_0",
+      "similarity": 0.69,
+      "text": "Coca-Cola is facing a lawsuit related to workplace diversity, equity, and inclusion (DEI) policies."
+    },
+    {
+      "claim_id": "dei-rollbacks_bluesky_fca3d503_0",
+      "similarity": 0.5819,
+      "text": "The Justice Department has reversed policies that promoted diversity, equity, and inclusion."
+    },
+    {
+      "claim_id": "dei-rollbacks_bluesky_103ffb17_0",
+      "similarity": 0.5774,
+      "text": "White Americans benefit from diversity, equity, and inclusion initiatives more than any other group."
     }
   ],
   "example_content": [
     {
-      "text": "Pension holders should have the right to express their preferences regarding DEI policies and executive compensation.",
+      "text": "DEI initiatives prevent discrimination against marginalized groups.",
+      "platform": "Bluesky",
+      "confidence": 0.8,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "DEI initiatives are already illegal.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Egalitarian principles inherently support diversity, equity, and inclusion initiatives.",
+      "text": "White Americans benefit from diversity, equity, and inclusion initiatives more than any other group.",
       "platform": "Bluesky",
-      "confidence": 0.9,
+      "confidence": 0.7,
       "is_influencer_framing": false
     }
   ]
