@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "inflation-cost-of-living_bluesky_f80bc3e7_0",
-    "cluster_id": "clu_inflation-cost-of-living_001",
-    "concept_id": "concept_inflation-cost-of-living_001",
+    "cluster_id": "clu_inflation-cost-of-living_057",
+    "concept_id": "concept_inflation-cost-of-living_006",
     "first_seen_platform": "bluesky",
     "first_seen_timestamp": "2026-04-03T11:57:44.398Z",
     "source_document_id": "5b321ca202d24225",
@@ -35,48 +35,48 @@
       0.645
     ],
     "source_distribution": "production",
-    "source_diversity": 1.0,
-    "bridge_ratio": 1.0,
-    "persistence_windows": 15,
-    "friction": 0.9149,
+    "source_diversity": 0.25,
+    "bridge_ratio": 0.25,
+    "persistence_windows": 4,
+    "friction": 1,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.4105,
+    "value": 0.2084,
     "confidence_interval": [
-      0.2913,
-      0.5297
+      0.074,
+      0.3428
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.4105
+      0.2084
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.9149,
+    "value": 1,
     "confidence_interval": [
-      0.8335,
-      0.9963
+      0.925,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9149
+      1
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.75,
+    "value": 0.2,
     "confidence_interval": [
-      0.6562,
-      0.8438
+      0.065,
+      0.335
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.75
+      0.2
     ],
     "source_distribution": "production"
   },
@@ -120,78 +120,22 @@
     ]
   },
   "provenance": {
-    "first_platform": "YouTube (Influencer Framing)",
+    "first_platform": "Bluesky",
     "first_timestamp": "2026-04-03T11:57:44.398Z",
-    "lead_lag": [
-      {
-        "platform": "Bloomberg Tech",
-        "lag_hours": 6047.0
-      },
-      {
-        "platform": "Reason",
-        "lag_hours": 6050.0
-      },
-      {
-        "platform": "Bluesky",
-        "lag_hours": 6061.0
-      },
-      {
-        "platform": "Cuba Headlines Digital Edition",
-        "lag_hours": 6071.1
-      },
-      {
-        "platform": "X Platform",
-        "lag_hours": 6106.2
-      }
-    ]
+    "lead_lag": []
   },
   "supply_chain": {
-    "concept_id": "concept_inflation-cost-of-living_001",
+    "concept_id": "concept_inflation-cost-of-living_006",
     "hops": [
-      {
-        "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2025-07-24T18:01:02+00:00",
-        "claim_id": "inflation-cost-of-living_bluesky_f80bc3e7_0",
-        "fidelity_to_origin": 1.0,
-        "fidelity_to_previous": 1.0
-      },
-      {
-        "platform": "Bloomberg Tech",
-        "timestamp": "2026-04-02T16:58:47+00:00",
-        "claim_id": "inflation-cost-of-living_bluesky_f80bc3e7_0",
-        "fidelity_to_origin": 0.3068,
-        "fidelity_to_previous": 0.3068
-      },
-      {
-        "platform": "Reason",
-        "timestamp": "2026-04-02T20:00:40+00:00",
-        "claim_id": "inflation-cost-of-living_bluesky_f80bc3e7_0",
-        "fidelity_to_origin": 0.3064,
-        "fidelity_to_previous": 0.9987
-      },
       {
         "platform": "Bluesky",
         "timestamp": "2026-04-03T06:59:10.264000+00:00",
         "claim_id": "inflation-cost-of-living_bluesky_f80bc3e7_0",
-        "fidelity_to_origin": 0.3052,
-        "fidelity_to_previous": 0.9961
-      },
-      {
-        "platform": "Cuba Headlines Digital Edition",
-        "timestamp": "2026-04-03T17:05:52+00:00",
-        "claim_id": "inflation-cost-of-living_bluesky_f80bc3e7_0",
-        "fidelity_to_origin": 0.304,
-        "fidelity_to_previous": 0.9961
-      },
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-05T04:15:57+00:00",
-        "claim_id": "inflation-cost-of-living_bluesky_f80bc3e7_0",
-        "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9868
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
       }
     ],
-    "observation_boundary": null
+    "observation_boundary": "No public antecedent detected"
   },
   "coordination": {
     "burstiness": {
@@ -223,46 +167,46 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "inflation-cost-of-living_bluesky_362cf671_0",
-      "similarity": 0.5707,
-      "text": "Donald Trump is making false statements regarding discussions with Iran."
+      "claim_id": "inflation-cost-of-living_bluesky_362cf671_1",
+      "similarity": 0.75,
+      "text": "Donald Trump made false statements about creating a healthcare plan."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_65a957e6_0",
-      "similarity": 0.4708,
-      "text": "The Trump administration engaged in corrupt practices that harmed American citizens."
+      "claim_id": "inflation-cost-of-living_bluesky_362cf671_2",
+      "similarity": 0.75,
+      "text": "Donald Trump made false statements about improvements to infrastructure."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_ba046d10_0",
-      "similarity": 0.4379,
-      "text": "Donald Trump's economic policies, specifically tariffs, are responsible for inflation and increased cost of living."
+      "claim_id": "inflation-cost-of-living_bluesky_12983a8b_0",
+      "similarity": 0.75,
+      "text": "Joe Biden has failed to fulfill his promise to bring back coal mining jobs."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_47cf9ede_0",
-      "similarity": 0.4056,
-      "text": "Donald Trump's policies are increasing the national debt."
+      "claim_id": "inflation-cost-of-living_bluesky_531a6480_0",
+      "similarity": 0.75,
+      "text": "Donald Trump has failed to fulfill his promise to reduce gasoline prices."
     },
     {
-      "claim_id": "inflation-cost-of-living_bluesky_92050af3_1",
-      "similarity": 0.4051,
-      "text": "Donald Trump and MAGA are responsible for inflation and economic problems."
+      "claim_id": "inflation-cost-of-living_bluesky_12aafd24_0",
+      "similarity": 0.75,
+      "text": "Donald Trump made unrealistic promises about gasoline and grocery prices during his campaign."
     }
   ],
   "example_content": [
     {
-      "text": "The Trump administration's policies have exacerbated inflation.",
+      "text": "Donald Trump made false statements about creating a healthcare plan.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Trump's tariffs on Canada, Mexico, and China increased core inflation.",
+      "text": "Donald Trump made false statements about improvements to infrastructure.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Donald Trump's economic policies, specifically tariffs, are responsible for inflation and increased cost of living.",
+      "text": "Joe Biden has failed to fulfill his promise to bring back coal mining jobs.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false

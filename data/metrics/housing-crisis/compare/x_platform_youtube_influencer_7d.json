@@ -3,9 +3,9 @@
     "id": "x_platform",
     "type": "platform",
     "label": "X Platform",
-    "active_volume": 551,
+    "active_volume": 552,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.2628,
+    "base_rate_weight": 0.2564,
     "is_influencer_framing": false
   },
   "slice_b": {
@@ -14,19 +14,19 @@
     "label": "YouTube (Influencer Framing)",
     "active_volume": 170,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.0811,
+    "base_rate_weight": 0.079,
     "is_influencer_framing": true
   },
   "divergence": {
-    "jsd": 0.5234,
-    "jsd_sqrt": 0.7235,
+    "jsd": 0.5239,
+    "jsd_sqrt": 0.7238,
     "trend": [
-      0.7235
+      0.7238
     ],
     "typology": {
-      "information_asymmetry": 0.3615,
-      "interpretive": 0.2771,
-      "paradigmatic": 0.3615,
+      "information_asymmetry": 0.3714,
+      "interpretive": 0.2571,
+      "paradigmatic": 0.3714,
       "dominant_mode": "Information Asymmetry",
       "paradigmatic_caveat": false
     }
@@ -43,9 +43,19 @@
       "mutation_b": "radicalizing"
     },
     {
+      "cluster_id": "clu_housing-crisis_001",
+      "label": "Donald Trump",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
       "cluster_id": "clu_housing-crisis_002",
       "label": "Immigration",
-      "salience_a": 0.0871,
+      "salience_a": 0.087,
       "salience_b": 0.0118,
       "arousal_a": 0.6021,
       "arousal_b": 0.5,
@@ -55,7 +65,7 @@
     {
       "cluster_id": "clu_housing-crisis_003",
       "label": "Mortgages",
-      "salience_a": 0.02,
+      "salience_a": 0.0199,
       "salience_b": 0.0059,
       "arousal_a": 0.2455,
       "arousal_b": 0.5,
@@ -75,7 +85,7 @@
     {
       "cluster_id": "clu_housing-crisis_005",
       "label": "Mortgage Rates",
-      "salience_a": 0.0454,
+      "salience_a": 0.0453,
       "salience_b": 0.0176,
       "arousal_a": 0.206,
       "arousal_b": 0.5,
@@ -185,7 +195,7 @@
     {
       "cluster_id": "clu_housing-crisis_016",
       "label": "Moving Trends",
-      "salience_a": 0.0073,
+      "salience_a": 0.0072,
       "salience_b": 0.0647,
       "arousal_a": 0.325,
       "arousal_b": 0.5318,
@@ -241,6 +251,16 @@
       "arousal_b": 0.3833,
       "mutation_a": "stable",
       "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_housing-crisis_022",
+      "label": "Thomas Dinapoli",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_housing-crisis_023",
@@ -305,10 +325,20 @@
     {
       "cluster_id": "clu_housing-crisis_029",
       "label": "Cost of Living",
-      "salience_a": 0.02,
+      "salience_a": 0.0199,
       "salience_b": 0.0118,
       "arousal_a": 0.5636,
       "arousal_b": 0.5,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_housing-crisis_030",
+      "label": "Landlords",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
@@ -345,7 +375,7 @@
     {
       "cluster_id": "clu_housing-crisis_034",
       "label": "Rent Control",
-      "salience_a": 0.0073,
+      "salience_a": 0.0072,
       "salience_b": 0.0118,
       "arousal_a": 0.15,
       "arousal_b": 0.5,
@@ -365,7 +395,7 @@
     {
       "cluster_id": "clu_housing-crisis_036",
       "label": "Current Administration",
-      "salience_a": 0.0073,
+      "salience_a": 0.0072,
       "salience_b": 0.0,
       "arousal_a": 0.7625,
       "arousal_b": 0,
@@ -375,7 +405,7 @@
     {
       "cluster_id": "clu_housing-crisis_037",
       "label": "Federal Reserve",
-      "salience_a": 0.0672,
+      "salience_a": 0.067,
       "salience_b": 0.0235,
       "arousal_a": 0.4054,
       "arousal_b": 0.325,
@@ -405,7 +435,7 @@
     {
       "cluster_id": "clu_housing-crisis_040",
       "label": "Rent Prices",
-      "salience_a": 0.0218,
+      "salience_a": 0.0217,
       "salience_b": 0.0,
       "arousal_a": 0.4708,
       "arousal_b": 0,
@@ -425,7 +455,7 @@
     {
       "cluster_id": "clu_housing-crisis_042",
       "label": "Reits",
-      "salience_a": 0.0218,
+      "salience_a": 0.0217,
       "salience_b": 0.0,
       "arousal_a": 0.325,
       "arousal_b": 0,
@@ -453,9 +483,19 @@
       "mutation_b": "stable"
     },
     {
+      "cluster_id": "clu_housing-crisis_045",
+      "label": "Canadian Environmental Policy",
+      "salience_a": 0.0018,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
       "cluster_id": "clu_housing-crisis_046",
       "label": "Childbearing",
-      "salience_a": 0.0309,
+      "salience_a": 0.0308,
       "salience_b": 0.0,
       "arousal_a": 0.5206,
       "arousal_b": 0,
@@ -465,7 +505,7 @@
     {
       "cluster_id": "clu_housing-crisis_047",
       "label": "Cities",
-      "salience_a": 0.0653,
+      "salience_a": 0.0652,
       "salience_b": 0.0059,
       "arousal_a": 0.4806,
       "arousal_b": 0.5,
@@ -525,7 +565,7 @@
     {
       "cluster_id": "clu_housing-crisis_053",
       "label": "Green Party",
-      "salience_a": 0.0073,
+      "salience_a": 0.0072,
       "salience_b": 0.0,
       "arousal_a": 0.5,
       "arousal_b": 0,
@@ -605,7 +645,7 @@
     {
       "cluster_id": "clu_housing-crisis_061",
       "label": "Politicians",
-      "salience_a": 0.0454,
+      "salience_a": 0.0453,
       "salience_b": 0.0,
       "arousal_a": 0.514,
       "arousal_b": 0,
@@ -614,33 +654,33 @@
     }
   ],
   "arousal_comparison": {
-    "slice_a_avg": 0.4339,
+    "slice_a_avg": 0.4341,
     "slice_b_avg": 0.4135
   },
   "exposure_comparison": {
     "slice_a": {
-      "value": 0.4676,
+      "value": 0.4562,
       "confidence_interval": [
-        0.3527,
-        0.5825
+        0.3404,
+        0.572
       ],
       "baseline": "global",
       "time_window": "7d",
       "sparkline": [
-        0.4676
+        0.4562
       ],
       "source_distribution": "production"
     },
     "slice_b": {
-      "value": 0.1424,
+      "value": 0.1387,
       "confidence_interval": [
-        0.0031,
-        0.2817
+        0,
+        0.2783
       ],
       "baseline": "global",
       "time_window": "7d",
       "sparkline": [
-        0.1424
+        0.1387
       ],
       "source_distribution": "production"
     }

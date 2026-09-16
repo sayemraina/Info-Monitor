@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "housing-crisis_yahoo_9938bd3c_0",
-    "cluster_id": "clu_housing-crisis_002",
-    "concept_id": "concept_housing-crisis_002",
+    "cluster_id": "clu_housing-crisis_030",
+    "concept_id": "concept_housing-crisis_006",
     "first_seen_platform": "yahoo",
     "first_seen_timestamp": "2026-04-03T10:25:15Z",
     "source_document_id": "003c3677b6422ec4",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 4,
-    "friction": 0.7692,
+    "persistence_windows": 3,
+    "friction": 0.8,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.2267,
+    "value": 0.2154,
     "confidence_interval": [
-      0.0937,
-      0.3597
+      0.0816,
+      0.3492
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2267
+      0.2154
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.7692,
+    "value": 0.8,
     "confidence_interval": [
-      0.6769,
-      0.8615
+      0.71,
+      0.89
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.7692
+      0.8
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.2,
+    "value": 0.15,
     "confidence_interval": [
-      0.065,
-      0.335
+      0.0112,
+      0.2888
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2
+      0.15
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.8462,
+    "value": 0.8,
     "confidence_interval": [
-      0.7597,
-      0.9327
+      0.71,
+      0.89
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.8462
+      0.8
     ],
     "source_distribution": "production"
   },
@@ -150,7 +150,7 @@
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_housing-crisis_002",
+    "concept_id": "concept_housing-crisis_006",
     "hops": [
       {
         "platform": "Bluesky",
@@ -163,36 +163,36 @@
         "platform": "Yahoo",
         "timestamp": "2026-04-03T10:25:15+00:00",
         "claim_id": "housing-crisis_yahoo_9938bd3c_0",
-        "fidelity_to_origin": 0.4796,
-        "fidelity_to_previous": 0.4796
+        "fidelity_to_origin": 0.4627,
+        "fidelity_to_previous": 0.4627
       },
       {
         "platform": "Carter Hart Agrees To Join The",
         "timestamp": "2026-04-03T11:41:39+00:00",
         "claim_id": "housing-crisis_yahoo_9938bd3c_0",
-        "fidelity_to_origin": 0.4443,
-        "fidelity_to_previous": 0.9264
+        "fidelity_to_origin": 0.4263,
+        "fidelity_to_previous": 0.9213
       },
       {
         "platform": "The National Herald",
         "timestamp": "2026-04-03T12:22:53+00:00",
         "claim_id": "housing-crisis_yahoo_9938bd3c_0",
-        "fidelity_to_origin": 0.4252,
-        "fidelity_to_previous": 0.957
+        "fidelity_to_origin": 0.4066,
+        "fidelity_to_previous": 0.9538
       },
       {
         "platform": "Triblive",
         "timestamp": "2026-04-03T12:28:30+00:00",
         "claim_id": "housing-crisis_yahoo_9938bd3c_0",
-        "fidelity_to_origin": 0.4226,
-        "fidelity_to_previous": 0.9939
+        "fidelity_to_origin": 0.404,
+        "fidelity_to_previous": 0.9936
       },
       {
         "platform": "Pbs.Org",
         "timestamp": "2026-04-03T14:05:18+00:00",
         "claim_id": "housing-crisis_yahoo_9938bd3c_0",
-        "fidelity_to_origin": 0.3779,
-        "fidelity_to_previous": 0.8942
+        "fidelity_to_origin": 0.3578,
+        "fidelity_to_previous": 0.8856
       }
     ],
     "observation_boundary": null
@@ -227,38 +227,32 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "housing-crisis_the_frontier_post_ea47d0dc_0",
-      "similarity": 0.8442,
-      "text": "Landlords in New York City increasingly use LLCs to hide their identities, which complicates efforts to hold them accountable for negligence."
-    },
-    {
-      "claim_id": "housing-crisis_triblive_f860162c_0",
-      "similarity": 0.8442,
-      "text": "Landlords are increasingly shielding their identities behind LLCs, which complicates efforts to hold them accountable."
+      "claim_id": "housing-crisis_bluesky_0a862edb_0",
+      "similarity": 0.75,
+      "text": "Reliance on LLMs will lead to exploitation by providers through price increases and arbitrary changes."
     },
     {
       "claim_id": "housing-crisis_ndtv_87c4dfcc_0",
-      "similarity": 0.8036,
+      "similarity": 0.75,
       "text": "Landlords in New York City are increasingly using LLCs to hide their identities, making it difficult to hold them accountable for negligence."
     },
     {
+      "claim_id": "housing-crisis_the_frontier_post_ea47d0dc_0",
+      "similarity": 0.75,
+      "text": "Landlords in New York City increasingly use LLCs to hide their identities, which complicates efforts to hold them accountable for negligence."
+    },
+    {
       "claim_id": "housing-crisis_the_philadelphia_inquirer_b844c54d_0",
-      "similarity": 0.7496,
+      "similarity": 0.75,
       "text": "Landlords in New York City are increasingly using LLCs to hide their identities."
     },
     {
-      "claim_id": "housing-crisis_the_national_herald_8ec0730b_0",
-      "similarity": 0.7496,
-      "text": "Landlords in New York City are increasingly using LLCs to hide their identities."
+      "claim_id": "housing-crisis_chicago_tribune_ef5b8fc5_0",
+      "similarity": 0.75,
+      "text": "Corporate owners are using LLCs to hide their identities, making it harder to hold negligent landlords accountable."
     }
   ],
   "example_content": [
-    {
-      "text": "Industry lobbyists are given undue credibility compared to independent researchers.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
-      "is_influencer_framing": false
-    },
     {
       "text": "Reliance on LLMs will lead to exploitation by providers through price increases and arbitrary changes.",
       "platform": "Bluesky",
@@ -268,6 +262,12 @@
     {
       "text": "Landlords in New York City are increasingly using LLCs to hide their identities, making it difficult to hold them accountable for negligence.",
       "platform": "Ndtv",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Landlords in New York City increasingly use LLCs to hide their identities, which complicates efforts to hold them accountable for negligence.",
+      "platform": "The Frontier Post",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

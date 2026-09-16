@@ -3,9 +3,9 @@
     "id": "bluesky_platform",
     "type": "platform",
     "label": "Bluesky",
-    "active_volume": 908,
+    "active_volume": 909,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.4152,
+    "base_rate_weight": 0.4089,
     "is_influencer_framing": false
   },
   "slice_b": {
@@ -14,24 +14,34 @@
     "label": "YouTube (Influencer Framing)",
     "active_volume": 123,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.0562,
+    "base_rate_weight": 0.0553,
     "is_influencer_framing": true
   },
   "divergence": {
-    "jsd": 0.4423,
-    "jsd_sqrt": 0.665,
+    "jsd": 0.4427,
+    "jsd_sqrt": 0.6653,
     "trend": [
-      0.665
+      0.6653
     ],
     "typology": {
-      "information_asymmetry": 0.3543,
-      "interpretive": 0.2914,
-      "paradigmatic": 0.3543,
+      "information_asymmetry": 0.362,
+      "interpretive": 0.2759,
+      "paradigmatic": 0.362,
       "dominant_mode": "Information Asymmetry",
       "paradigmatic_caveat": false
     }
   },
   "per_cluster": [
+    {
+      "cluster_id": "clu_immigration_000",
+      "label": "Transgender Athletes",
+      "salience_a": 0.0011,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
     {
       "cluster_id": "clu_immigration_001",
       "label": "Birthright Citizenship",
@@ -53,9 +63,19 @@
       "mutation_b": "radicalizing"
     },
     {
+      "cluster_id": "clu_immigration_003",
+      "label": "BJP",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
       "cluster_id": "clu_immigration_004",
       "label": "American Identity",
-      "salience_a": 0.043,
+      "salience_a": 0.0429,
       "salience_b": 0.0163,
       "arousal_a": 0.3385,
       "arousal_b": 0.5,
@@ -118,6 +138,16 @@
       "salience_a": 0.0176,
       "salience_b": 0.0,
       "arousal_a": 0.4563,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_immigration_011",
+      "label": "Pakistan's ISI",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
       "arousal_b": 0,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
@@ -475,7 +505,7 @@
     {
       "cluster_id": "clu_immigration_047",
       "label": "Border Security",
-      "salience_a": 0.0749,
+      "salience_a": 0.0748,
       "salience_b": 0.0163,
       "arousal_a": 0.3713,
       "arousal_b": 0.325,
@@ -644,33 +674,33 @@
     }
   ],
   "arousal_comparison": {
-    "slice_a_avg": 0.4333,
+    "slice_a_avg": 0.4334,
     "slice_b_avg": 0.3606
   },
   "exposure_comparison": {
     "slice_a": {
-      "value": 0.7305,
+      "value": 0.7194,
       "confidence_interval": [
-        0.6353,
-        0.8257
+        0.6234,
+        0.8154
       ],
       "baseline": "global",
       "time_window": "6h",
       "sparkline": [
-        0.7305
+        0.7194
       ],
       "source_distribution": "production"
     },
     "slice_b": {
-      "value": 0.0989,
+      "value": 0.0973,
       "confidence_interval": [
         0,
-        0.2415
+        0.24
       ],
       "baseline": "global",
       "time_window": "6h",
       "sparkline": [
-        0.0989
+        0.0973
       ],
       "source_distribution": "production"
     }

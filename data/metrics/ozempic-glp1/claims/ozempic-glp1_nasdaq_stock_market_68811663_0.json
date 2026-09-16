@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "ozempic-glp1_nasdaq_stock_market_68811663_0",
-    "cluster_id": "clu_ozempic-glp1_011",
-    "concept_id": "concept_ozempic-glp1_005",
+    "cluster_id": "clu_ozempic-glp1_040",
+    "concept_id": "concept_ozempic-glp1_006",
     "first_seen_platform": "nasdaq_stock_market",
     "first_seen_timestamp": "2026-04-26T10:45:00Z",
     "source_document_id": "372f2b03a8c35c84",
@@ -24,107 +24,94 @@
     "source_type": "elite_media"
   },
   "momentum": {
-    "value": null,
+    "value": 0.54,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.44,
+      0.64
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.54
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 8,
+    "friction": 0.1667,
+    "friction_quadrant": "unopposed_advance"
+  },
+  "salience": {
+    "value": 0.2564,
+    "confidence_interval": [
+      0.1256,
+      0.3872
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.2564
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.1667,
+    "confidence_interval": [
+      0.0292,
+      0.3042
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.1667
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.4,
+    "confidence_interval": [
+      0.28,
+      0.52
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.4
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.5,
     "confidence_interval": [
-      0,
-      0
+      0.3875,
+      0.6125
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.5
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 0.9583,
     "confidence_interval": [
-      0,
-      0
+      0.8802,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.9583
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,64 +120,154 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "X Platform",
+    "first_timestamp": "2026-04-26T10:45:00Z",
+    "lead_lag": [
+      {
+        "platform": "Finbold",
+        "lag_hours": 11.9
+      },
+      {
+        "platform": "Bluesky",
+        "lag_hours": 19.3
+      },
+      {
+        "platform": "News Directory 3",
+        "lag_hours": 558.3
+      },
+      {
+        "platform": "Nasdaq Stock Market",
+        "lag_hours": 565.2
+      },
+      {
+        "platform": "The Motley Fool",
+        "lag_hours": 565.2
+      },
+      {
+        "platform": "Webpronews",
+        "lag_hours": 596.8
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_ozempic-glp1_006",
+    "hops": [
+      {
+        "platform": "X Platform",
+        "timestamp": "2026-04-02T21:34:56+00:00",
+        "claim_id": "ozempic-glp1_nasdaq_stock_market_68811663_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Finbold",
+        "timestamp": "2026-04-03T09:31:12+00:00",
+        "claim_id": "ozempic-glp1_nasdaq_stock_market_68811663_0",
+        "fidelity_to_origin": 0.9896,
+        "fidelity_to_previous": 0.9896
+      },
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-03T16:53:39.120000+00:00",
+        "claim_id": "ozempic-glp1_nasdaq_stock_market_68811663_0",
+        "fidelity_to_origin": 0.9831,
+        "fidelity_to_previous": 0.9934
+      },
+      {
+        "platform": "News Directory 3",
+        "timestamp": "2026-04-26T03:54:03+00:00",
+        "claim_id": "ozempic-glp1_nasdaq_stock_market_68811663_0",
+        "fidelity_to_origin": 0.5118,
+        "fidelity_to_previous": 0.5206
+      },
+      {
+        "platform": "Nasdaq Stock Market",
+        "timestamp": "2026-04-26T10:45:00+00:00",
+        "claim_id": "ozempic-glp1_nasdaq_stock_market_68811663_0",
+        "fidelity_to_origin": 0.5058,
+        "fidelity_to_previous": 0.9883
+      },
+      {
+        "platform": "The Motley Fool",
+        "timestamp": "2026-04-26T10:45:00+00:00",
+        "claim_id": "ozempic-glp1_nasdaq_stock_market_68811663_0",
+        "fidelity_to_origin": 0.5058,
+        "fidelity_to_previous": 1.0
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ozempic-glp1_cnbc_48ddd068_0",
-      "similarity": 0.4288,
-      "text": "The amended Microsoft-OpenAI deal allows OpenAI to serve its products to customers across any cloud provider."
+      "claim_id": "ozempic-glp1_bluesky_623e737a_0",
+      "similarity": 0.75,
+      "text": "AI-driven automation will lead to wealth consolidation."
     },
     {
-      "claim_id": "ozempic-glp1_webpronews_2f89a77b_0",
-      "similarity": 0.417,
-      "text": "Companies are reducing employee benefits to fund investments in artificial intelligence."
+      "claim_id": "ozempic-glp1_finbold_26344805_0",
+      "similarity": 0.75,
+      "text": "AI-powered portfolio managers can potentially outperform the wider market and human experts."
     },
     {
-      "claim_id": "ozempic-glp1_drugs.com_106dd7ee_1",
-      "similarity": 0.2095,
-      "text": "The BALANCE model's implementation in Medicare faces an uncertain future due to a lack of participation from Part D plan sponsors."
+      "claim_id": "ozempic-glp1_x_c89c1419_0",
+      "similarity": 0.75,
+      "text": "Individuals can generate substantial profits in the pharmaceutical market using readily available AI tools."
     },
     {
-      "claim_id": "ozempic-glp1_u.s._news_&_world_report_f49ea72d_1",
-      "similarity": 0.1361,
-      "text": "The BALANCE model's financial incentives were insufficient to encourage Part D plan sponsors to participate."
+      "claim_id": "ozempic-glp1_x_d4766c99_0",
+      "similarity": 0.75,
+      "text": "AI can be used to rapidly develop and deploy telehealth startups focused on selling GLP-1 medications."
     },
     {
-      "claim_id": "ozempic-glp1_business_standard_0e264379_1",
-      "similarity": 0.1172,
-      "text": "BSES discoms are prepared to reliably supply power to their consumers in Delhi despite the increased demand."
+      "claim_id": "ozempic-glp1_x_0e6ce345_0",
+      "similarity": 0.75,
+      "text": "AI tools enable individuals to build highly profitable companies with minimal initial investment."
     }
   ],
   "example_content": [
     {
-      "text": "Companies are reducing employee benefits to fund investments in artificial intelligence.",
-      "platform": "Webpronews",
+      "text": "AI-driven automation will lead to wealth consolidation.",
+      "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The BALANCE model's financial incentives were insufficient to encourage Part D plan sponsors to participate.",
-      "platform": "U.S. News & World Report",
-      "confidence": 0.9,
+      "text": "AI-powered portfolio managers can potentially outperform the wider market and human experts.",
+      "platform": "Finbold",
+      "confidence": 0.7,
       "is_influencer_framing": false
     },
     {
-      "text": "The BALANCE model's implementation in Medicare faces an uncertain future due to a lack of participation from Part D plan sponsors.",
-      "platform": "Drugs.Com",
+      "text": "Individuals can generate substantial profits in the pharmaceutical market using readily available AI tools.",
+      "platform": "X Platform",
       "confidence": 0.8,
       "is_influencer_framing": false
     }

@@ -1,14 +1,14 @@
 {
   "events": [
     {
-      "id": "evt_3b8e831dd207",
+      "id": "evt_e327d378cd4c",
       "type": "phase_transition",
-      "timestamp": "2026-09-07T20:34:08.786769+00:00",
+      "timestamp": "2026-09-15T19:28:43.124402+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
       "confidence": 0.83,
-      "summary": "\"Peptides\" cluster is shifting toward more extreme language",
+      "summary": "Mutation trajectory: radicalizing in \"Peptides\"",
       "detail": {
         "cluster_id": "clu_ozempic-glp1_000",
         "direction": "radicalizing",
@@ -16,14 +16,14 @@
       }
     },
     {
-      "id": "evt_a6ae428f9314",
+      "id": "evt_f890c3cb9e8a",
       "type": "phase_transition",
-      "timestamp": "2026-09-07T20:34:08.786769+00:00",
+      "timestamp": "2026-09-15T19:28:43.124402+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
       "confidence": 0.79,
-      "summary": "\"Medications from India\" cluster is shifting toward more extreme language",
+      "summary": "Mutation trajectory: radicalizing in \"Medications from India\"",
       "detail": {
         "cluster_id": "clu_ozempic-glp1_001",
         "direction": "radicalizing",
@@ -31,14 +31,14 @@
       }
     },
     {
-      "id": "evt_e327d378cd4c",
+      "id": "evt_d4810a6960a9",
       "type": "phase_transition",
-      "timestamp": "2026-09-07T20:34:08.786769+00:00",
+      "timestamp": "2026-09-15T19:28:43.124402+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
       "confidence": 0.8,
-      "summary": "\"Retatrutide\" cluster is shifting toward more extreme language",
+      "summary": "Mutation trajectory: radicalizing in \"Retatrutide\"",
       "detail": {
         "cluster_id": "clu_ozempic-glp1_002",
         "direction": "radicalizing",
@@ -46,14 +46,14 @@
       }
     },
     {
-      "id": "evt_f890c3cb9e8a",
+      "id": "evt_2804a62f23c5",
       "type": "phase_transition",
-      "timestamp": "2026-09-07T20:34:08.786769+00:00",
+      "timestamp": "2026-09-15T19:28:43.124402+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
       "confidence": 0.79,
-      "summary": "\"Ozempic Causes\" cluster is shifting toward more extreme language",
+      "summary": "Mutation trajectory: radicalizing in \"Ozempic Causes\"",
       "detail": {
         "cluster_id": "clu_ozempic-glp1_003",
         "direction": "radicalizing",
@@ -61,16 +61,34 @@
       }
     },
     {
-      "id": "evt_40eef0637f50",
+      "id": "evt_411119ccc6cf",
       "type": "divergence_shift",
-      "timestamp": "2026-09-07T20:34:08.786769+00:00",
+      "timestamp": "2026-09-15T19:28:43.124402+00:00",
       "claim_id": null,
       "slice_id": "bluesky_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Strong narrative split between Bluesky and cnbc_business",
+      "summary": "Narrative divergence between Bluesky and cnbc (JSD=0.863)",
       "detail": {
-        "jsd": 0.7162,
+        "jsd": 0.8632,
+        "platforms": [
+          "bluesky",
+          "cnbc"
+        ],
+        "window_hours": 24
+      }
+    },
+    {
+      "id": "evt_f31df2af85b1",
+      "type": "divergence_shift",
+      "timestamp": "2026-09-15T19:28:43.124402+00:00",
+      "claim_id": null,
+      "slice_id": "bluesky_platform",
+      "severity": "high",
+      "confidence": 0.95,
+      "summary": "Narrative divergence between Bluesky and cnbc_business (JSD=0.721)",
+      "detail": {
+        "jsd": 0.721,
         "platforms": [
           "bluesky",
           "cnbc_business"
@@ -79,16 +97,16 @@
       }
     },
     {
-      "id": "evt_5e290412e9e6",
+      "id": "evt_9c66170a04e2",
       "type": "divergence_shift",
-      "timestamp": "2026-09-07T20:34:08.786769+00:00",
+      "timestamp": "2026-09-15T19:28:43.124402+00:00",
       "claim_id": null,
       "slice_id": "bluesky_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Strong narrative split between Bluesky and drugs.com",
+      "summary": "Narrative divergence between Bluesky and drugs.com (JSD=0.839)",
       "detail": {
-        "jsd": 0.8364,
+        "jsd": 0.8394,
         "platforms": [
           "bluesky",
           "drugs.com"
@@ -97,16 +115,16 @@
       }
     },
     {
-      "id": "evt_56354a6e0c5e",
+      "id": "evt_473f71d05245",
       "type": "divergence_shift",
-      "timestamp": "2026-09-07T20:34:08.786769+00:00",
+      "timestamp": "2026-09-15T19:28:43.124402+00:00",
       "claim_id": null,
       "slice_id": "bluesky_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Strong narrative split between Bluesky and foodbusinessnews",
+      "summary": "Narrative divergence between Bluesky and foodbusinessnews (JSD=0.939)",
       "detail": {
-        "jsd": 0.9377,
+        "jsd": 0.939,
         "platforms": [
           "bluesky",
           "foodbusinessnews"
@@ -115,111 +133,73 @@
       }
     },
     {
-      "id": "evt_b93f2eaf2e8e",
-      "type": "divergence_shift",
-      "timestamp": "2026-09-07T20:34:08.786769+00:00",
-      "claim_id": null,
-      "slice_id": "bluesky_platform",
-      "severity": "high",
-      "confidence": 0.95,
-      "summary": "Strong narrative split between Bluesky and internewscast_journal",
+      "id": "evt_e9186c5be01f",
+      "type": "lead_lag",
+      "timestamp": "2026-08-20T06:28:43.124402+00:00",
+      "claim_id": "ozempic-glp1_bluesky_9f2d5570_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.8,
+      "summary": "stat_news leads scitechdaily by ~649h in \"Orforglipron\"",
       "detail": {
-        "jsd": 0.9536,
-        "platforms": [
-          "bluesky",
-          "internewscast_journal"
-        ],
-        "window_hours": 24
+        "source_platform": "stat_news",
+        "target_platform": "scitechdaily",
+        "lag_hours": 649.3,
+        "cluster_id": "clu_ozempic-glp1_007"
       }
     },
     {
-      "id": "poly_544093",
-      "type": "external_signal",
-      "timestamp": "2026-04-03T17:13:06.567113+00:00",
-      "severity": "high",
-      "confidence": 0.95,
-      "summary": "Will Harvey Weinstein be sentenced to less than 5 years in prison? — 14.6% Yes",
-      "detail": "Polymarket gives 14.6% odds. Volume: $54,616",
-      "source": "polymarket"
-    },
-    {
-      "id": "poly_540881",
-      "type": "external_signal",
-      "timestamp": "2026-04-03T17:13:06.567100+00:00",
-      "severity": "high",
-      "confidence": 0.95,
-      "summary": "GTA VI released before June 2026? — 1.5% Yes",
-      "detail": "Polymarket gives 1.5% odds. Volume: $13,090,290",
-      "source": "polymarket"
-    },
-    {
-      "id": "evt_8822a5292f33",
+      "id": "evt_fe3731ba240d",
       "type": "lead_lag",
-      "timestamp": "2026-03-07T02:34:08.786769+00:00",
-      "claim_id": "ozempic-glp1_youtube_12cb3aca_0",
+      "timestamp": "2026-09-05T05:28:43.124402+00:00",
+      "claim_id": "ozempic-glp1_x_ed5fd87a_0",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.9,
-      "summary": "YouTube (Influencer Framing) leads benzinga by ~4446h in \"Retatrutide\"",
+      "confidence": 0.84,
+      "summary": "X Platform leads Bluesky by ~266h in \"Youth Football\"",
       "detail": {
-        "source_platform": "youtube",
-        "target_platform": "benzinga",
-        "lag_hours": 4446.9,
-        "cluster_id": "clu_ozempic-glp1_002"
+        "source_platform": "x",
+        "target_platform": "bluesky",
+        "lag_hours": 266.6,
+        "cluster_id": "clu_ozempic-glp1_010"
       }
     },
     {
-      "id": "evt_4141fea675b3",
+      "id": "evt_aca0753c6ba5",
       "type": "lead_lag",
-      "timestamp": "2026-05-28T08:34:08.786769+00:00",
-      "claim_id": "ozempic-glp1_bluesky_9d62efb6_0",
+      "timestamp": "2026-09-07T08:28:43.124402+00:00",
+      "claim_id": "ozempic-glp1_bluesky_97de2c6e_0",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.9,
-      "summary": "YouTube (Influencer Framing) leads u.s._food_and_drug_administrat by ~2472h in \"Medications from India\"",
+      "confidence": 0.88,
+      "summary": "morningstar leads Bluesky by ~215h in \"Ozempic Available\"",
       "detail": {
-        "source_platform": "youtube",
-        "target_platform": "u.s._food_and_drug_administrat",
-        "lag_hours": 2472.6,
-        "cluster_id": "clu_ozempic-glp1_001"
+        "source_platform": "morningstar",
+        "target_platform": "bluesky",
+        "lag_hours": 215.7,
+        "cluster_id": "clu_ozempic-glp1_016"
       }
     },
     {
-      "id": "evt_0cd546e8b17c",
+      "id": "evt_0e86059e75dd",
       "type": "lead_lag",
-      "timestamp": "2026-05-31T07:34:08.786769+00:00",
-      "claim_id": "ozempic-glp1_bluesky_9973aec6_0",
+      "timestamp": "2026-09-08T05:28:43.124402+00:00",
+      "claim_id": "ozempic-glp1_bluesky_4a4db5ca_0",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.72,
-      "summary": "YouTube (Influencer Framing) leads the_upcoming by ~2401h in \"Ozempic Causes\"",
+      "confidence": 0.8,
+      "summary": "X Platform leads Bluesky by ~194h in \"Side Effects\"",
       "detail": {
-        "source_platform": "youtube",
-        "target_platform": "the_upcoming",
-        "lag_hours": 2401.9,
-        "cluster_id": "clu_ozempic-glp1_003"
-      }
-    },
-    {
-      "id": "evt_840bf79f9e43",
-      "type": "lead_lag",
-      "timestamp": "2026-07-16T15:34:08.786769+00:00",
-      "claim_id": "ozempic-glp1_propublica_fa73742d_0",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.82,
-      "summary": "propublica leads the_indian_express by ~1289h in \"Peptides\"",
-      "detail": {
-        "source_platform": "propublica",
-        "target_platform": "the_indian_express",
-        "lag_hours": 1289.0,
-        "cluster_id": "clu_ozempic-glp1_000"
+        "source_platform": "x",
+        "target_platform": "bluesky",
+        "lag_hours": 194.4,
+        "cluster_id": "clu_ozempic-glp1_009"
       }
     },
     {
       "id": "evt_4697b1add918",
       "type": "contestation_emergence",
-      "timestamp": "2026-09-07T20:34:08.786769+00:00",
+      "timestamp": "2026-09-15T19:28:43.124402+00:00",
       "claim_id": "ozempic-glp1_bluesky_29df8415_0",
       "slice_id": null,
       "severity": "medium",
@@ -235,7 +215,7 @@
     {
       "id": "evt_7d6185c65cb6",
       "type": "contestation_emergence",
-      "timestamp": "2026-09-07T20:34:08.786769+00:00",
+      "timestamp": "2026-09-15T19:28:43.124402+00:00",
       "claim_id": "ozempic-glp1_bluesky_1b2b9e4f_0",
       "slice_id": null,
       "severity": "medium",
@@ -251,7 +231,7 @@
     {
       "id": "evt_68a4e09875af",
       "type": "contestation_emergence",
-      "timestamp": "2026-09-07T20:34:08.786769+00:00",
+      "timestamp": "2026-09-15T19:28:43.124402+00:00",
       "claim_id": "ozempic-glp1_bluesky_7eaceba6_1",
       "slice_id": null,
       "severity": "medium",
@@ -267,7 +247,7 @@
     {
       "id": "evt_2645d6f1f1a5",
       "type": "contestation_emergence",
-      "timestamp": "2026-09-07T20:34:08.786769+00:00",
+      "timestamp": "2026-09-15T19:28:43.124402+00:00",
       "claim_id": "ozempic-glp1_bluesky_216a3aba_0",
       "slice_id": null,
       "severity": "medium",
@@ -281,60 +261,20 @@
       }
     },
     {
-      "id": "evt_bee0c854825a",
+      "id": "evt_bd20c745ae1f",
       "type": "arousal_escalation",
-      "timestamp": "2026-09-08T00:34:08.786769+00:00",
+      "timestamp": "2026-09-15T23:28:43.124402+00:00",
       "claim_id": "ozempic-glp1_x_ed5fd87a_0",
       "slice_id": null,
       "severity": "medium",
       "confidence": 0.77,
-      "summary": "Heated language rising in \"Youth Football\" — 47% emotionally charged claims",
+      "summary": "Arousal escalation in \"Youth Football\" — 47% high-arousal claims",
       "detail": {
         "cluster_id": "clu_ozempic-glp1_010",
         "high_arousal_count": 8,
         "total": 17,
         "ratio": 0.47
       }
-    },
-    {
-      "id": "poly_544092",
-      "type": "external_signal",
-      "timestamp": "2026-04-03T17:13:06.567106+00:00",
-      "severity": "medium",
-      "confidence": 0.95,
-      "summary": "Will Harvey Weinstein be sentenced to no prison time? — 34.0% Yes",
-      "detail": "Polymarket gives 34.0% odds. Volume: $300,300",
-      "source": "polymarket"
-    },
-    {
-      "id": "fedreg_2025-14679",
-      "type": "external_signal",
-      "timestamp": "2025-08-04T00:00:00Z",
-      "severity": "medium",
-      "confidence": 0.95,
-      "summary": "Medicare Program; Prospective Payment System and Consolidated Billing for Skilled Nursing Facilities; Updates to the Quality Reporting Program for Federal Fiscal Year 2026",
-      "detail": "This final rule finalizes changes and updates to the policies and payment rates used under the Skilled Nursing Facility (SNF) Prospective Payment System (PPS) for fiscal year 2026. This final rule also updates the requirements for the SNF Quality Reporting Program and the SNF Value-Based Purchasing ",
-      "source": "fed_register"
-    },
-    {
-      "id": "fedreg_2025-00640",
-      "type": "external_signal",
-      "timestamp": "2025-01-15T00:00:00Z",
-      "severity": "medium",
-      "confidence": 0.95,
-      "summary": "Patient Protection and Affordable Care Act; HHS Notice of Benefit and Payment Parameters for 2026; and Basic Health Program",
-      "detail": "This final rule includes payment parameters and provisions related to the HHS-operated risk adjustment and risk adjustment data validation (HHS-RADV) programs, as well as 2026 benefit year user fee rates for issuers that participate in the HHS-operated risk adjustment program and the 2026 benefit ye",
-      "source": "fed_register"
-    },
-    {
-      "id": "fedreg_2024-07274",
-      "type": "external_signal",
-      "timestamp": "2024-04-15T00:00:00Z",
-      "severity": "medium",
-      "confidence": 0.95,
-      "summary": "Patient Protection and Affordable Care Act, HHS Notice of Benefit and Payment Parameters for 2025; Updating Section 1332 Waiver Public Notice Procedures; Medicaid; Consumer Operated and Oriented Plan ",
-      "detail": "This final rule includes payment parameters and provisions related to the HHS-operated risk adjustment program, as well as 2025 user fee rates for issuers offering qualified health plans (QHPs) through federally facilitated Exchanges (FFEs) and State-based Exchanges on the Federal platform (SBE-FPs)",
-      "source": "fed_register"
     },
     {
       "id": "gdelt_5d2e0351f5f7",
@@ -344,16 +284,6 @@
       "confidence": 0.95,
       "summary": "Novo Nordisk Shares Down 43 % in a Year as Generic Rivals Force 48 % Price Cuts",
       "detail": "Reported by 247wallst.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_6ec1a8aebc38",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:63:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "My itchy , red facial rash was so bad I looked sunburned . Then , after years of suffering , I made this simple lifestyle tweak that cleared it up quickly … and saw me lose two stone",
-      "detail": "Reported by dailymail.co.uk. Tone: +0.0.",
       "source": "gdelt"
     },
     {
@@ -417,146 +347,6 @@
       "source": "gdelt"
     },
     {
-      "id": "gdelt_d5ea270b747f",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT0:13:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Ottawa , drug companies launch task force to prepare for USMCA talks",
-      "detail": "Reported by theglobeandmail.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_52ad642be5f8",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT0:13:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Smaller Portions , Protein Everything : How GLP - 1s Are Changing Restaurant Menus",
-      "detail": "Reported by vogue.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_a3f0253e021c",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT0:13:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Amanda Bynes & Boyfriend Enjoy Some PDA in Los Angeles After Grabbing Lunch",
-      "detail": "Reported by justjared.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_f44adb518ff1",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT0:04:50Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Lilly weight - loss pill approval sets up clash with Novo",
-      "detail": "Reported by myanmarnews.net. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_41a3d2c78059",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT0:03:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Amy Schumer shows off VERY slim figure in black bathing suit after using weight - loss drug to lose 50lbs",
-      "detail": "Reported by dailymail.co.uk. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_1700f3ea3b66",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT0:03:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Khloe Kardashian vamps it up in a plunging red dress to launch her Khloud Protein Chips",
-      "detail": "Reported by dailymail.co.uk. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_91006939ce13",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT0:03:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Can Taking a GLP - 1 Before Pregnancy Endanger Mother or Baby ? ",
-      "detail": "Reported by everydayhealth.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_f06b58afde7d",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT0:03:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "FDA clears Lilly obesity pill , intensifying rivalry with Novo",
-      "detail": "Reported by israelherald.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_d464a651a6e2",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT0:03:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "FDA clears Lilly obesity pill , intensifying rivalry with Novo",
-      "detail": "Reported by pittsburghstar.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_f4b8974e2353",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT0:01:50Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "FDA clears Lilly obesity pill , intensifying rivalry with Novo",
-      "detail": "Reported by dallassun.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_10536b2f0320",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT0:00:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Lilly weight - loss pill approval sets up clash with Novo",
-      "detail": "Reported by australiannews.net. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_a719f9496e91",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT0:00:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "FDA clears Lilly obesity pill , intensifying rivalry with Novo",
-      "detail": "Reported by mainemirror.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_082a1779ce1b",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT0:00:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "FDA clears Lilly obesity pill , intensifying rivalry with Novo",
-      "detail": "Reported by singaporestar.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_3f57b534d4ac",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT0:00:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "FDA clears Lilly obesity pill , intensifying rivalry with Novo",
-      "detail": "Reported by philippinetimes.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
       "id": "price_LLY_20260403",
       "type": "external_signal",
       "timestamp": "2026-04-03T17:13:17.630008+00:00",
@@ -577,35 +367,15 @@
       "source": "yahoo_finance"
     },
     {
-      "id": "poly_540844",
+      "id": "fedreg_2019-25850",
       "type": "external_signal",
-      "timestamp": "2026-04-03T17:13:06.567093+00:00",
+      "timestamp": "2019-11-29T00:00:00Z",
       "severity": "low",
       "confidence": 0.95,
-      "summary": "Will bitcoin hit $1m before GTA VI? — 48.9% Yes",
-      "detail": "Polymarket gives 48.9% odds. Volume: $3,848,533",
-      "source": "polymarket"
-    },
-    {
-      "id": "poly_540843",
-      "type": "external_signal",
-      "timestamp": "2026-04-03T17:13:06.567086+00:00",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Will China invades Taiwan before GTA VI? — 52.0% Yes",
-      "detail": "Polymarket gives 52.0% odds. Volume: $1,524,917",
-      "source": "polymarket"
-    },
-    {
-      "id": "poly_540820",
-      "type": "external_signal",
-      "timestamp": "2026-04-03T17:13:06.567079+00:00",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Trump out as President before GTA VI? — 53.0% Yes",
-      "detail": "Polymarket gives 53.0% odds. Volume: $572,401",
-      "source": "polymarket"
+      "summary": "Determination of Regulatory Review Period for Purposes of Patent Extension; OZEMPIC",
+      "detail": "The Food and Drug Administration (FDA or the Agency) has determined the regulatory review period for OZEMPIC and is publishing this notice of that determination as required by law. FDA has made the determination because of the submission of an application to the Director of the U.S. Patent and Trade",
+      "source": "fed_register"
     }
   ],
-  "total_count": 87
+  "total_count": 27
 }

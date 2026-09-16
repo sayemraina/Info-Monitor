@@ -3,30 +3,30 @@
     "id": "x_platform",
     "type": "platform",
     "label": "X Platform",
-    "active_volume": 501,
+    "active_volume": 502,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.1963,
+    "base_rate_weight": 0.1933,
     "is_influencer_framing": false
   },
   "slice_b": {
     "id": "think_tank_all",
     "type": "source_type",
     "label": "Think Tanks",
-    "active_volume": 23,
+    "active_volume": 24,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.009,
+    "base_rate_weight": 0.0092,
     "is_influencer_framing": false
   },
   "divergence": {
-    "jsd": 0.8095,
-    "jsd_sqrt": 0.8997,
+    "jsd": 0.8131,
+    "jsd_sqrt": 0.9017,
     "trend": [
-      0.8997
+      0.9017
     ],
     "typology": {
-      "information_asymmetry": 0.3872,
-      "interpretive": 0.2256,
-      "paradigmatic": 0.3872,
+      "information_asymmetry": 0.384,
+      "interpretive": 0.232,
+      "paradigmatic": 0.384,
       "dominant_mode": "Information Asymmetry",
       "paradigmatic_caveat": false
     }
@@ -85,7 +85,7 @@
     {
       "cluster_id": "clu_israel-palestine_005",
       "label": "Israel Subject",
-      "salience_a": 0.0419,
+      "salience_a": 0.0418,
       "salience_b": 0.0,
       "arousal_a": 0.85,
       "arousal_b": 0,
@@ -133,6 +133,16 @@
       "mutation_b": "radicalizing"
     },
     {
+      "cluster_id": "clu_israel-palestine_010",
+      "label": "Strait of Hormuz",
+      "salience_a": 0.002,
+      "salience_b": 0.0,
+      "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
       "cluster_id": "clu_israel-palestine_011",
       "label": "Uae-Iran Relations",
       "salience_a": 0.002,
@@ -156,7 +166,7 @@
       "cluster_id": "clu_israel-palestine_013",
       "label": "Trump Administration",
       "salience_a": 0.006,
-      "salience_b": 0.0435,
+      "salience_b": 0.0417,
       "arousal_a": 0.2667,
       "arousal_b": 0.5,
       "mutation_a": "radicalizing",
@@ -165,8 +175,8 @@
     {
       "cluster_id": "clu_israel-palestine_014",
       "label": "Iran War",
-      "salience_a": 0.0559,
-      "salience_b": 0.087,
+      "salience_a": 0.0558,
+      "salience_b": 0.0833,
       "arousal_a": 0.45,
       "arousal_b": 0.325,
       "mutation_a": "radicalizing",
@@ -225,7 +235,7 @@
     {
       "cluster_id": "clu_israel-palestine_020",
       "label": "Israelis",
-      "salience_a": 0.016,
+      "salience_a": 0.0159,
       "salience_b": 0.0,
       "arousal_a": 0.85,
       "arousal_b": 0,
@@ -255,7 +265,7 @@
     {
       "cluster_id": "clu_israel-palestine_023",
       "label": "Israel Commits",
-      "salience_a": 0.014,
+      "salience_a": 0.0139,
       "salience_b": 0.0,
       "arousal_a": 0.85,
       "arousal_b": 0,
@@ -265,7 +275,7 @@
     {
       "cluster_id": "clu_israel-palestine_024",
       "label": "Jewish People",
-      "salience_a": 0.02,
+      "salience_a": 0.0199,
       "salience_b": 0.0,
       "arousal_a": 0.85,
       "arousal_b": 0,
@@ -285,7 +295,7 @@
     {
       "cluster_id": "clu_israel-palestine_026",
       "label": "Sabrina Singh",
-      "salience_a": 0.02,
+      "salience_a": 0.0199,
       "salience_b": 0.0,
       "arousal_a": 0.675,
       "arousal_b": 0,
@@ -315,12 +325,22 @@
     {
       "cluster_id": "clu_israel-palestine_029",
       "label": "Iranian Regime",
-      "salience_a": 0.022,
+      "salience_a": 0.0219,
       "salience_b": 0.0,
       "arousal_a": 0.8182,
       "arousal_b": 0,
       "mutation_a": "stable",
       "mutation_b": "stable"
+    },
+    {
+      "cluster_id": "clu_israel-palestine_030",
+      "label": "AI and Job Displacement",
+      "salience_a": 0.0,
+      "salience_b": 0.0417,
+      "arousal_a": 0,
+      "arousal_b": 0.15,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
     },
     {
       "cluster_id": "clu_israel-palestine_031",
@@ -366,7 +386,7 @@
       "cluster_id": "clu_israel-palestine_035",
       "label": "Donald Trump",
       "salience_a": 0.01,
-      "salience_b": 0.0435,
+      "salience_b": 0.0417,
       "arousal_a": 0.78,
       "arousal_b": 0.5,
       "mutation_a": "radicalizing",
@@ -376,7 +396,7 @@
       "cluster_id": "clu_israel-palestine_036",
       "label": "US Cannabis Policy",
       "salience_a": 0.008,
-      "salience_b": 0.2174,
+      "salience_b": 0.2083,
       "arousal_a": 0.675,
       "arousal_b": 0.36,
       "mutation_a": "radicalizing",
@@ -396,7 +416,7 @@
       "cluster_id": "clu_israel-palestine_038",
       "label": "Germany",
       "salience_a": 0.008,
-      "salience_b": 0.0435,
+      "salience_b": 0.0417,
       "arousal_a": 0.4125,
       "arousal_b": 0.15,
       "mutation_a": "radicalizing",
@@ -413,10 +433,20 @@
       "mutation_b": "radicalizing"
     },
     {
+      "cluster_id": "clu_israel-palestine_040",
+      "label": "Capitalism",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
       "cluster_id": "clu_israel-palestine_041",
       "label": "EPA",
       "salience_a": 0.0,
-      "salience_b": 0.3478,
+      "salience_b": 0.3333,
       "arousal_a": 0,
       "arousal_b": 0.2812,
       "mutation_a": "radicalizing",
@@ -466,7 +496,7 @@
       "cluster_id": "clu_israel-palestine_046",
       "label": "Political Violence",
       "salience_a": 0.0,
-      "salience_b": 0.0435,
+      "salience_b": 0.0417,
       "arousal_a": 0,
       "arousal_b": 0.15,
       "mutation_a": "radicalizing",
@@ -525,7 +555,7 @@
     {
       "cluster_id": "clu_israel-palestine_052",
       "label": "Palestinian Land Rights",
-      "salience_a": 0.022,
+      "salience_a": 0.0219,
       "salience_b": 0.0,
       "arousal_a": 0.5955,
       "arousal_b": 0,
@@ -566,7 +596,7 @@
       "cluster_id": "clu_israel-palestine_056",
       "label": "Jerusalem",
       "salience_a": 0.01,
-      "salience_b": 0.0435,
+      "salience_b": 0.0417,
       "arousal_a": 0.64,
       "arousal_b": 0.5,
       "mutation_a": "stable",
@@ -576,7 +606,7 @@
       "cluster_id": "clu_israel-palestine_057",
       "label": "Israel Involved",
       "salience_a": 0.0,
-      "salience_b": 0.0435,
+      "salience_b": 0.0417,
       "arousal_a": 0,
       "arousal_b": 0.5,
       "mutation_a": "stable",
@@ -615,7 +645,7 @@
     {
       "cluster_id": "clu_israel-palestine_061",
       "label": "Israel Eliminated",
-      "salience_a": 0.0399,
+      "salience_a": 0.0398,
       "salience_b": 0.0,
       "arousal_a": 0.815,
       "arousal_b": 0,
@@ -665,7 +695,7 @@
     {
       "cluster_id": "clu_israel-palestine_066",
       "label": "Lebanon",
-      "salience_a": 0.0379,
+      "salience_a": 0.0378,
       "salience_b": 0.0,
       "arousal_a": 0.8132,
       "arousal_b": 0,
@@ -695,7 +725,7 @@
     {
       "cluster_id": "clu_israel-palestine_069",
       "label": "Israel and Gaza",
-      "salience_a": 0.014,
+      "salience_a": 0.0139,
       "salience_b": 0.0,
       "arousal_a": 0.4,
       "arousal_b": 0,
@@ -825,7 +855,7 @@
     {
       "cluster_id": "clu_israel-palestine_082",
       "label": "Humanitarian Aid to Gaza",
-      "salience_a": 0.02,
+      "salience_a": 0.0199,
       "salience_b": 0.0,
       "arousal_a": 0.64,
       "arousal_b": 0,
@@ -865,7 +895,7 @@
     {
       "cluster_id": "clu_israel-palestine_086",
       "label": "Gaza Ceasefire",
-      "salience_a": 0.02,
+      "salience_a": 0.0199,
       "salience_b": 0.0,
       "arousal_a": 0.325,
       "arousal_b": 0,
@@ -875,7 +905,7 @@
     {
       "cluster_id": "clu_israel-palestine_087",
       "label": "Diplomacy",
-      "salience_a": 0.02,
+      "salience_a": 0.0199,
       "salience_b": 0.0,
       "arousal_a": 0.15,
       "arousal_b": 0,
@@ -935,7 +965,7 @@
     {
       "cluster_id": "clu_israel-palestine_093",
       "label": "Jared Kushner",
-      "salience_a": 0.022,
+      "salience_a": 0.0219,
       "salience_b": 0.0,
       "arousal_a": 0.3727,
       "arousal_b": 0,
@@ -954,33 +984,33 @@
     }
   ],
   "arousal_comparison": {
-    "slice_a_avg": 0.6188,
-    "slice_b_avg": 0.3326
+    "slice_a_avg": 0.6185,
+    "slice_b_avg": 0.325
   },
   "exposure_comparison": {
     "slice_a": {
-      "value": 0.3505,
+      "value": 0.3451,
       "confidence_interval": [
-        0.2268,
-        0.4742
+        0.221,
+        0.4692
       ],
       "baseline": "global",
       "time_window": "7d",
       "sparkline": [
-        0.3505
+        0.3451
       ],
       "source_distribution": "production"
     },
     "slice_b": {
-      "value": 0.016,
+      "value": 0.0164,
       "confidence_interval": [
         0,
-        0.1648
+        0.1652
       ],
       "baseline": "global",
       "time_window": "7d",
       "sparkline": [
-        0.016
+        0.0164
       ],
       "source_distribution": "production"
     }

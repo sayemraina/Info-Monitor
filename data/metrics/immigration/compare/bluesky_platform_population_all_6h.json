@@ -3,18 +3,18 @@
     "id": "bluesky_platform",
     "type": "platform",
     "label": "Bluesky",
-    "active_volume": 908,
+    "active_volume": 909,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.4152,
+    "base_rate_weight": 0.4089,
     "is_influencer_framing": false
   },
   "slice_b": {
     "id": "population_all",
     "type": "source_type",
     "label": "Population Discourse",
-    "active_volume": 1416,
+    "active_volume": 1417,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.6475,
+    "base_rate_weight": 0.6374,
     "is_influencer_framing": false
   },
   "divergence": {
@@ -24,14 +24,24 @@
       0.1521
     ],
     "typology": {
-      "information_asymmetry": 0.4041,
-      "interpretive": 0.1918,
-      "paradigmatic": 0.4041,
+      "information_asymmetry": 0.4143,
+      "interpretive": 0.1714,
+      "paradigmatic": 0.4143,
       "dominant_mode": "Information Asymmetry",
       "paradigmatic_caveat": true
     }
   },
   "per_cluster": [
+    {
+      "cluster_id": "clu_immigration_000",
+      "label": "Transgender Athletes",
+      "salience_a": 0.0011,
+      "salience_b": 0.0007,
+      "arousal_a": 0.5,
+      "arousal_b": 0.5,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
     {
       "cluster_id": "clu_immigration_001",
       "label": "Birthright Citizenship",
@@ -53,9 +63,19 @@
       "mutation_b": "radicalizing"
     },
     {
+      "cluster_id": "clu_immigration_003",
+      "label": "BJP",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
       "cluster_id": "clu_immigration_004",
       "label": "American Identity",
-      "salience_a": 0.043,
+      "salience_a": 0.0429,
       "salience_b": 0.0579,
       "arousal_a": 0.3385,
       "arousal_b": 0.3549,
@@ -119,6 +139,16 @@
       "salience_b": 0.0155,
       "arousal_a": 0.4563,
       "arousal_b": 0.4682,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_immigration_011",
+      "label": "Pakistan's ISI",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
@@ -326,7 +356,7 @@
       "cluster_id": "clu_immigration_032",
       "label": "Minnesota Labor Market",
       "salience_a": 0.0198,
-      "salience_b": 0.0304,
+      "salience_b": 0.0303,
       "arousal_a": 0.4611,
       "arousal_b": 0.4105,
       "mutation_a": "stable",
@@ -456,7 +486,7 @@
       "cluster_id": "clu_immigration_045",
       "label": "NHS",
       "salience_a": 0.0176,
-      "salience_b": 0.0184,
+      "salience_b": 0.0183,
       "arousal_a": 0.3687,
       "arousal_b": 0.3788,
       "mutation_a": "stable",
@@ -475,8 +505,8 @@
     {
       "cluster_id": "clu_immigration_047",
       "label": "Border Security",
-      "salience_a": 0.0749,
-      "salience_b": 0.0756,
+      "salience_a": 0.0748,
+      "salience_b": 0.0755,
       "arousal_a": 0.3713,
       "arousal_b": 0.3364,
       "mutation_a": "radicalizing",
@@ -644,20 +674,20 @@
     }
   ],
   "arousal_comparison": {
-    "slice_a_avg": 0.4333,
-    "slice_b_avg": 0.4231
+    "slice_a_avg": 0.4334,
+    "slice_b_avg": 0.4232
   },
   "exposure_comparison": {
     "slice_a": {
-      "value": 0.7305,
+      "value": 0.7194,
       "confidence_interval": [
-        0.6353,
-        0.8257
+        0.6234,
+        0.8154
       ],
       "baseline": "global",
       "time_window": "6h",
       "sparkline": [
-        0.7305
+        0.7194
       ],
       "source_distribution": "production"
     },

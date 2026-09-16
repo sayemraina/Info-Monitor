@@ -5,7 +5,7 @@
     "label": "YouTube (Influencer Framing)",
     "active_volume": 132,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.0723,
+    "base_rate_weight": 0.0719,
     "is_influencer_framing": true
   },
   "slice_b": {
@@ -14,7 +14,7 @@
     "label": "Elite Media",
     "active_volume": 659,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.3609,
+    "base_rate_weight": 0.3587,
     "is_influencer_framing": false
   },
   "divergence": {
@@ -24,9 +24,9 @@
       0.4379
     ],
     "typology": {
-      "information_asymmetry": 0.3689,
-      "interpretive": 0.2622,
-      "paradigmatic": 0.3689,
+      "information_asymmetry": 0.3723,
+      "interpretive": 0.2553,
+      "paradigmatic": 0.3723,
       "dominant_mode": "Information Asymmetry",
       "paradigmatic_caveat": false
     }
@@ -209,6 +209,16 @@
       "salience_b": 0.0653,
       "arousal_a": 0.65,
       "arousal_b": 0.4756,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_ai-bubble_018",
+      "label": "White Nationalists",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
     },
@@ -609,28 +619,28 @@
   },
   "exposure_comparison": {
     "slice_a": {
-      "value": 0.1256,
+      "value": 0.1249,
       "confidence_interval": [
         0,
-        0.2662
+        0.2655
       ],
       "baseline": "global",
       "time_window": "7d",
       "sparkline": [
-        0.1256
+        0.1249
       ],
       "source_distribution": "production"
     },
     "slice_b": {
-      "value": 0.6288,
+      "value": 0.625,
       "confidence_interval": [
-        0.526,
-        0.7316
+        0.5219,
+        0.7281
       ],
       "baseline": "global",
       "time_window": "7d",
       "sparkline": [
-        0.6288
+        0.625
       ],
       "source_distribution": "production"
     }

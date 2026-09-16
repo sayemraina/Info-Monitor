@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "dei-rollbacks_the_news-press_022a44ea_1",
-    "cluster_id": "clu_dei-rollbacks_010",
-    "concept_id": "concept_dei-rollbacks_004",
+    "cluster_id": "clu_dei-rollbacks_025",
+    "concept_id": "concept_dei-rollbacks_007",
     "first_seen_platform": "the_news-press",
     "first_seen_timestamp": "2026-04-26T10:02:14Z",
     "source_document_id": "6a9194ba064c3b38",
@@ -24,107 +24,94 @@
     "source_type": "elite_media"
   },
   "momentum": {
-    "value": null,
+    "value": 0.645,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.545,
+      0.745
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.645
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 4,
+    "friction": 0.7692,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.2013,
+    "confidence_interval": [
+      0.0664,
+      0.3362
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.2013
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.7692,
+    "confidence_interval": [
+      0.6769,
+      0.8615
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.7692
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.2,
+    "confidence_interval": [
+      0.065,
+      0.335
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.2
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.85,
     "confidence_interval": [
-      0,
-      0
+      0.7638,
+      0.9362
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.85
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 1,
     "confidence_interval": [
-      0,
-      0
+      0.925,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      1
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,65 +120,140 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "Bluesky",
+    "first_timestamp": "2026-04-26T10:02:14Z",
+    "lead_lag": [
+      {
+        "platform": "The News Press",
+        "lag_hours": 34.4
+      },
+      {
+        "platform": "Stl.News",
+        "lag_hours": 38.7
+      },
+      {
+        "platform": "The Daily Beast",
+        "lag_hours": 66.9
+      },
+      {
+        "platform": "Common Dreams",
+        "lag_hours": 487.6
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_dei-rollbacks_007",
+    "hops": [
+      {
+        "platform": "Bluesky",
+        "timestamp": "2026-04-24T23:36:15.039000+00:00",
+        "claim_id": "dei-rollbacks_the_news-press_022a44ea_1",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "The News Press",
+        "timestamp": "2026-04-26T10:02:14+00:00",
+        "claim_id": "dei-rollbacks_the_news-press_022a44ea_1",
+        "fidelity_to_origin": 0.9506,
+        "fidelity_to_previous": 0.9506
+      },
+      {
+        "platform": "Stl.News",
+        "timestamp": "2026-04-26T14:16:21+00:00",
+        "claim_id": "dei-rollbacks_the_news-press_022a44ea_1",
+        "fidelity_to_origin": 0.9445,
+        "fidelity_to_previous": 0.9936
+      },
+      {
+        "platform": "The Daily Beast",
+        "timestamp": "2026-04-27T18:32:32+00:00",
+        "claim_id": "dei-rollbacks_the_news-press_022a44ea_1",
+        "fidelity_to_origin": 0.9039,
+        "fidelity_to_previous": 0.957
+      },
+      {
+        "platform": "Common Dreams",
+        "timestamp": "2026-05-15T07:13:49+00:00",
+        "claim_id": "dei-rollbacks_the_news-press_022a44ea_1",
+        "fidelity_to_origin": 0.3,
+        "fidelity_to_previous": 0.3319
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "dei-rollbacks_crooks_and_liars_cd0da973_0",
-      "similarity": 0.6158,
-      "text": "Bernie Sanders is a threat to national security due to his alleged communist sympathies."
+      "claim_id": "dei-rollbacks_bluesky_27d551e7_0",
+      "similarity": 0.75,
+      "text": "Donald Trump will likely blame various groups and ideologies for negative events."
     },
     {
-      "claim_id": "dei-rollbacks_crooks_and_liars_cd0da973_1",
-      "similarity": 0.4541,
-      "text": "Republicans consider a wide range of entities and activities, including diversity programs and tariff critics, to be national security threats."
+      "claim_id": "dei-rollbacks_bluesky_0f4308e4_0",
+      "similarity": 0.75,
+      "text": "Donald Trump is morally reprehensible."
     },
     {
-      "claim_id": "dei-rollbacks_bluesky_ed8e356d_1",
-      "similarity": 0.389,
-      "text": "The Democratic Party supports state sponsors of terrorism."
+      "claim_id": "dei-rollbacks_stl.news_6d0a79a6_0",
+      "similarity": 0.75,
+      "text": "Donald Trump's second term policies aimed to correct pre-existing economic problems like inflation and high household costs."
     },
     {
-      "claim_id": "dei-rollbacks_fox_politics_336079cd_1",
-      "similarity": 0.2994,
-      "text": "Governor Walz is falsely taking credit for federal efforts to combat fraud."
+      "claim_id": "dei-rollbacks_the_daily_beast_1bff2384_1",
+      "similarity": 0.75,
+      "text": "Donald Trump does not harbor animosity towards gay people."
     },
     {
-      "claim_id": "dei-rollbacks_fox_politics_336079cd_0",
-      "similarity": 0.2887,
-      "text": "Governor Walz is avoiding accountability for the massive fraud scandal in Minnesota."
+      "claim_id": "dei-rollbacks_bluesky_9f1a2ec6_2",
+      "similarity": 0.75,
+      "text": "Donald Trump was unaware of the cuts to the Homeland Security Grant Program."
     }
   ],
   "example_content": [
     {
-      "text": "The Democratic Party supports state sponsors of terrorism.",
+      "text": "Donald Trump will likely blame various groups and ideologies for negative events.",
       "platform": "Bluesky",
-      "confidence": 0.8,
-      "is_influencer_framing": false
-    },
-    {
-      "text": "Governor Walz is avoiding accountability for the massive fraud scandal in Minnesota.",
-      "platform": "Fox Politics",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Governor Walz is falsely taking credit for federal efforts to combat fraud.",
-      "platform": "Fox Politics",
-      "confidence": 0.8,
+      "text": "Donald Trump is morally reprehensible.",
+      "platform": "Bluesky",
+      "confidence": 0.9,
+      "is_influencer_framing": false
+    },
+    {
+      "text": "Donald Trump's second term policies aimed to correct pre-existing economic problems like inflation and high household costs.",
+      "platform": "Stl.News",
+      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

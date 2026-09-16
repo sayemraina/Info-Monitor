@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "journalistic",
     "id": "immigration_the_frontier_post_584b0098_0",
-    "cluster_id": "clu_immigration_010",
-    "concept_id": "concept_immigration_004",
+    "cluster_id": "clu_immigration_011",
+    "concept_id": "concept_immigration_006",
     "first_seen_platform": "the_frontier_post",
     "first_seen_timestamp": "2026-04-27T19:07:57Z",
     "source_document_id": "28d8b006db1532c9",
@@ -24,107 +24,94 @@
     "source_type": "elite_media"
   },
   "momentum": {
-    "value": null,
+    "value": 0.645,
     "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "salience": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "friction": {
-    "value": null,
-    "confidence_interval": [
-      0,
-      0
-    ],
-    "baseline": "global",
-    "time_window": "24h",
-    "sparkline": [],
-    "source_distribution": "production"
-  },
-  "persistence": {
-    "value": 0,
-    "confidence_interval": [
-      0,
-      0.15
+      0.545,
+      0.745
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0
+      0.645
+    ],
+    "source_distribution": "production",
+    "source_diversity": 1.0,
+    "bridge_ratio": 1.0,
+    "persistence_windows": 5,
+    "friction": 0.4667,
+    "friction_quadrant": "contested_advance"
+  },
+  "salience": {
+    "value": 0.193,
+    "confidence_interval": [
+      0.0575,
+      0.3285
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.193
+    ],
+    "source_distribution": "production"
+  },
+  "friction": {
+    "value": 0.4667,
+    "confidence_interval": [
+      0.3517,
+      0.5817
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.4667
+    ],
+    "source_distribution": "production"
+  },
+  "persistence": {
+    "value": 0.25,
+    "confidence_interval": [
+      0.1187,
+      0.3813
+    ],
+    "baseline": "global",
+    "time_window": "24h",
+    "sparkline": [
+      0.25
     ],
     "source_distribution": "production"
   },
   "arousal": {
-    "value": null,
+    "value": 0.85,
     "confidence_interval": [
-      0,
-      0
+      0.7638,
+      0.9362
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.85
+    ],
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": null,
+    "value": 0.9333,
     "confidence_interval": [
-      0,
-      0
+      0.8533,
+      1
     ],
     "baseline": "global",
     "time_window": "24h",
-    "sparkline": [],
+    "sparkline": [
+      0.9333
+    ],
     "source_distribution": "production"
   },
   "exposure": {
-    "production": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "amplification": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    },
-    "estimated_exposure": {
-      "value": null,
-      "confidence_interval": [
-        0,
-        0
-      ],
-      "baseline": "global",
-      "time_window": "24h",
-      "sparkline": [],
-      "source_distribution": "production"
-    }
+    "production": null,
+    "amplification": null,
+    "estimated_exposure": null,
+    "status": "insufficient_data",
+    "explanation": "Engagement-weighted exposure requires follower count data not yet available"
   },
   "confidence_detail": {
     "score": 0.9,
@@ -133,65 +120,155 @@
     ]
   },
   "provenance": {
-    "first_platform": "unknown",
-    "first_timestamp": "",
-    "lead_lag": []
+    "first_platform": "Radio Pakistan",
+    "first_timestamp": "2026-04-27T19:07:57Z",
+    "lead_lag": [
+      {
+        "platform": "The Nation",
+        "lag_hours": 533.0
+      },
+      {
+        "platform": "The Frontier Post",
+        "lag_hours": 581.2
+      },
+      {
+        "platform": "Asian News International (Ani)",
+        "lag_hours": 786.1
+      },
+      {
+        "platform": "Ommcom News",
+        "lag_hours": 786.1
+      },
+      {
+        "platform": "Newsdrum",
+        "lag_hours": 786.3
+      },
+      {
+        "platform": "Theprint",
+        "lag_hours": 786.3
+      }
+    ]
   },
   "supply_chain": {
-    "concept_id": "",
-    "hops": [],
+    "concept_id": "concept_immigration_006",
+    "hops": [
+      {
+        "platform": "Radio Pakistan",
+        "timestamp": "2026-04-03T13:57:46+00:00",
+        "claim_id": "immigration_the_frontier_post_584b0098_0",
+        "fidelity_to_origin": 1.0,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "The Nation",
+        "timestamp": "2026-04-25T19:00:00+00:00",
+        "claim_id": "immigration_the_frontier_post_584b0098_0",
+        "fidelity_to_origin": 0.5256,
+        "fidelity_to_previous": 0.5256
+      },
+      {
+        "platform": "The Frontier Post",
+        "timestamp": "2026-04-27T19:07:57+00:00",
+        "claim_id": "immigration_the_frontier_post_584b0098_0",
+        "fidelity_to_origin": 0.4828,
+        "fidelity_to_previous": 0.9186
+      },
+      {
+        "platform": "Asian News International (Ani)",
+        "timestamp": "2026-05-06T08:03:51+00:00",
+        "claim_id": "immigration_the_frontier_post_584b0098_0",
+        "fidelity_to_origin": 0.3004,
+        "fidelity_to_previous": 0.6222
+      },
+      {
+        "platform": "Ommcom News",
+        "timestamp": "2026-05-06T08:06:33+00:00",
+        "claim_id": "immigration_the_frontier_post_584b0098_0",
+        "fidelity_to_origin": 0.3004,
+        "fidelity_to_previous": 1.0
+      },
+      {
+        "platform": "Newsdrum",
+        "timestamp": "2026-05-06T08:15:34+00:00",
+        "claim_id": "immigration_the_frontier_post_584b0098_0",
+        "fidelity_to_origin": 0.3002,
+        "fidelity_to_previous": 0.9993
+      }
+    ],
     "observation_boundary": null
   },
   "coordination": {
-    "burstiness": null,
-    "near_duplicate": null,
-    "cross_platform_sync": null,
-    "source_diversity_anomaly": null
+    "burstiness": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "near_duplicate": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "cross_platform_sync": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "source_diversity_anomaly": {
+      "score": null,
+      "organic_baseline": null,
+      "severity": null,
+      "status": "insufficient_data"
+    },
+    "status": "insufficient_data",
+    "explanation": "Coordination detection requires temporal burst analysis algorithm not yet available"
   },
   "semantic_neighbors": [
     {
-      "claim_id": "immigration_bluesky_5a2a38d0_0",
-      "similarity": 0.194,
-      "text": "The United States is funding a border security project in Tunisia."
+      "claim_id": "immigration_radio_pakistan_fe415653_2",
+      "similarity": 0.75,
+      "text": "Pakistan has made unparalleled sacrifices in combating terrorism."
     },
     {
-      "claim_id": "immigration_bluesky_6492c09e_1",
-      "similarity": 0.1778,
-      "text": "Current border control processes cannot be justified by national security concerns."
+      "claim_id": "immigration_the_nation_0cb0a7cd_0",
+      "similarity": 0.75,
+      "text": "The Islamabad talks will enhance Pakistan's global standing."
     },
     {
-      "claim_id": "immigration_bluesky_a2b28393_0",
-      "similarity": 0.1618,
-      "text": "New border security arrangements are causing travel delays."
+      "claim_id": "immigration_the_nation_0cb0a7cd_1",
+      "similarity": 0.75,
+      "text": "The Islamabad talks may contribute to peace and stability in the Gulf region."
     },
     {
-      "claim_id": "immigration_bluesky_51350fba_0",
-      "similarity": 0.1491,
-      "text": "The Department of Homeland Security needs to understand the realities of the Texas border region."
+      "claim_id": "immigration_the_nation_0cb0a7cd_2",
+      "similarity": 0.75,
+      "text": "The Islamabad talks would ease Pakistan's challenge in maintaining a balance between Saudi Arabia and Iran."
     },
     {
-      "claim_id": "immigration_bluesky_f7a4a927_0",
-      "similarity": 0.1389,
-      "text": "There is a consensus in favor of border security."
+      "claim_id": "immigration_the_pioneer_5aba144c_0",
+      "similarity": 0.75,
+      "text": "Pakistan's ISI is likely attempting to destabilize Punjab through orchestrated disturbances."
     }
   ],
   "example_content": [
     {
-      "text": "New border security arrangements are causing travel delays.",
-      "platform": "Bluesky",
+      "text": "Pakistan has made unparalleled sacrifices in combating terrorism.",
+      "platform": "Radio Pakistan",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The Department of Homeland Security needs to understand the realities of the Texas border region.",
-      "platform": "Bluesky",
+      "text": "The Islamabad talks will enhance Pakistan's global standing.",
+      "platform": "The Nation",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "The UK government preferred a sea border arrangement prior to the 2016 Brexit vote.",
-      "platform": "Bluesky",
-      "confidence": 0.9,
+      "text": "The Islamabad talks may contribute to peace and stability in the Gulf region.",
+      "platform": "The Nation",
+      "confidence": 0.8,
       "is_influencer_framing": false
     }
   ]

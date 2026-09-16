@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "vernacular",
     "id": "ozempic-glp1_x_fdf00621_0",
-    "cluster_id": "clu_ozempic-glp1_009",
-    "concept_id": "concept_ozempic-glp1_006",
+    "cluster_id": "clu_ozempic-glp1_042",
+    "concept_id": "concept_ozempic-glp1_007",
     "first_seen_platform": "x",
     "first_seen_timestamp": "2026-04-03T15:44:50.000Z",
     "source_document_id": "x_2040093173481885894",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 10,
-    "friction": 0.3333,
-    "friction_quadrant": "unopposed_advance"
+    "persistence_windows": 3,
+    "friction": 0.8,
+    "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.3327,
+    "value": 0.2201,
     "confidence_interval": [
-      0.2077,
-      0.4577
+      0.0866,
+      0.3536
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3327
+      0.2201
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.3333,
+    "value": 0.8,
     "confidence_interval": [
-      0.2083,
-      0.4583
+      0.71,
+      0.89
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.3333
+      0.8
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.5,
+    "value": 0.15,
     "confidence_interval": [
-      0.3875,
-      0.6125
+      0.0112,
+      0.2888
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.5
+      0.15
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 0.9804,
+    "value": 1,
     "confidence_interval": [
-      0.9039,
+      0.925,
       1
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.9804
+      1
     ],
     "source_distribution": "production"
   },
@@ -120,75 +120,64 @@
     ]
   },
   "provenance": {
-    "first_platform": "YouTube (Influencer Framing)",
+    "first_platform": "Stat News",
     "first_timestamp": "2026-04-03T15:44:50.000Z",
     "lead_lag": [
       {
-        "platform": "Stat News",
-        "lag_hours": 456.3
+        "platform": "X Platform",
+        "lag_hours": 26.0
+      },
+      {
+        "platform": "Politico",
+        "lag_hours": 213.2
+      },
+      {
+        "platform": "The Daily Upside",
+        "lag_hours": 566.2
       },
       {
         "platform": "Bluesky",
-        "lag_hours": 459.1
-      },
-      {
-        "platform": "X Platform",
-        "lag_hours": 464.1
-      },
-      {
-        "platform": "Finbold",
-        "lag_hours": 476.0
-      },
-      {
-        "platform": "The Verge",
-        "lag_hours": 480.5
+        "lag_hours": 567.9
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_ozempic-glp1_006",
+    "concept_id": "concept_ozempic-glp1_007",
     "hops": [
       {
-        "platform": "YouTube (Influencer Framing)",
-        "timestamp": "2026-03-14T13:30:18+00:00",
+        "platform": "Stat News",
+        "timestamp": "2026-04-02T13:47:33+00:00",
         "claim_id": "ozempic-glp1_x_fdf00621_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Stat News",
-        "timestamp": "2026-04-02T13:47:33+00:00",
+        "platform": "X Platform",
+        "timestamp": "2026-04-03T15:44:50+00:00",
         "claim_id": "ozempic-glp1_x_fdf00621_0",
-        "fidelity_to_origin": 0.3353,
-        "fidelity_to_previous": 0.3353
+        "fidelity_to_origin": 0.968,
+        "fidelity_to_previous": 0.968
+      },
+      {
+        "platform": "Politico",
+        "timestamp": "2026-04-11T11:00:00+00:00",
+        "claim_id": "ozempic-glp1_x_fdf00621_0",
+        "fidelity_to_origin": 0.7372,
+        "fidelity_to_previous": 0.7616
+      },
+      {
+        "platform": "The Daily Upside",
+        "timestamp": "2026-04-26T04:01:00+00:00",
+        "claim_id": "ozempic-glp1_x_fdf00621_0",
+        "fidelity_to_origin": 0.3021,
+        "fidelity_to_previous": 0.4098
       },
       {
         "platform": "Bluesky",
-        "timestamp": "2026-04-02T16:38:48.752000+00:00",
-        "claim_id": "ozempic-glp1_x_fdf00621_0",
-        "fidelity_to_origin": 0.3311,
-        "fidelity_to_previous": 0.9875
-      },
-      {
-        "platform": "X Platform",
-        "timestamp": "2026-04-02T21:34:56+00:00",
-        "claim_id": "ozempic-glp1_x_fdf00621_0",
-        "fidelity_to_origin": 0.3239,
-        "fidelity_to_previous": 0.9783
-      },
-      {
-        "platform": "Finbold",
-        "timestamp": "2026-04-03T09:31:12+00:00",
-        "claim_id": "ozempic-glp1_x_fdf00621_0",
-        "fidelity_to_origin": 0.3065,
-        "fidelity_to_previous": 0.9463
-      },
-      {
-        "platform": "The Verge",
-        "timestamp": "2026-04-03T14:00:00+00:00",
+        "timestamp": "2026-04-26T05:41:24.818000+00:00",
         "claim_id": "ozempic-glp1_x_fdf00621_0",
         "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9788
+        "fidelity_to_previous": 0.993
       }
     ],
     "observation_boundary": null
@@ -223,48 +212,48 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "ozempic-glp1_bluesky_f9ccfd38_0",
-      "similarity": 0.5105,
-      "text": "Pharmaceutical advertising is becoming increasingly pervasive and influencing children."
+      "claim_id": "ozempic-glp1_stat_news_b658ad34_1",
+      "similarity": 0.75,
+      "text": "The FDA faces scrutiny regarding transparency issues related to advisory committee conflicts."
     },
     {
-      "claim_id": "ozempic-glp1_bluesky_c30882ff_0",
-      "similarity": 0.4527,
-      "text": "Pharmaceutical companies are primarily motivated to develop treatments for osteoarthritis (OA) for profit, similar to Humira."
+      "claim_id": "ozempic-glp1_x_31985376_0",
+      "similarity": 0.75,
+      "text": "Tech companies are held to a lower standard of accountability than pharmaceutical companies."
     },
     {
-      "claim_id": "ozempic-glp1_bluesky_9632da4d_0",
-      "similarity": 0.4445,
-      "text": "Telehealth providers prescribing GLP-1 weight loss drugs are concerning."
+      "claim_id": "ozempic-glp1_bluesky_4178494a_0",
+      "similarity": 0.75,
+      "text": "CVS is intentionally over-saturating the market with stores to prevent competitors from establishing locations."
     },
     {
-      "claim_id": "ozempic-glp1_bluesky_44ae2030_0",
-      "similarity": 0.3345,
-      "text": "Telehealth providers are offering GLP-1 weight-loss drugs."
+      "claim_id": "ozempic-glp1_bluesky_72679373_0",
+      "similarity": 0.75,
+      "text": "Using consumer shame as a justification for business practices is questionable."
     },
     {
-      "claim_id": "ozempic-glp1_the_verge_1d7c3b4d_0",
-      "similarity": 0.3239,
-      "text": "The Apple Watch Series 4 was a turning point, shifting the focus of wearables from fitness to overall health."
+      "claim_id": "ozempic-glp1_the_daily_upside_eba48400_0",
+      "similarity": 0.75,
+      "text": "Luxury retail is currently facing a significant crisis, not just a temporary slowdown."
     }
   ],
   "example_content": [
     {
-      "text": "AI-driven automation will lead to wealth consolidation.",
-      "platform": "Bluesky",
+      "text": "The FDA faces scrutiny regarding transparency issues related to advisory committee conflicts.",
+      "platform": "Stat News",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Pharmaceutical companies are primarily motivated to develop treatments for osteoarthritis (OA) for profit, similar to Humira.",
-      "platform": "Bluesky",
-      "confidence": 0.8,
+      "text": "Tech companies are held to a lower standard of accountability than pharmaceutical companies.",
+      "platform": "X Platform",
+      "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Telehealth providers prescribing GLP-1 weight loss drugs are concerning.",
+      "text": "CVS is intentionally over-saturating the market with stores to prevent competitors from establishing locations.",
       "platform": "Bluesky",
-      "confidence": 0.8,
+      "confidence": 0.9,
       "is_influencer_framing": false
     }
   ]

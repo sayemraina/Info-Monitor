@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "journalistic",
     "id": "crypto-digital-money_fox_news_647be666_0",
-    "cluster_id": "clu_crypto-digital-money_013",
-    "concept_id": "concept_crypto-digital-money_003",
+    "cluster_id": "clu_crypto-digital-money_057",
+    "concept_id": "concept_crypto-digital-money_006",
     "first_seen_platform": "fox_news",
     "first_seen_timestamp": "2026-04-03T14:18:11Z",
     "source_document_id": "d2dea8b01c2283cd",
@@ -38,32 +38,32 @@
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
     "persistence_windows": 3,
-    "friction": 0.6,
-    "friction_quadrant": "contested_advance"
+    "friction": 0.1818,
+    "friction_quadrant": "unopposed_advance"
   },
   "salience": {
-    "value": 0.2239,
+    "value": 0.2127,
     "confidence_interval": [
-      0.0907,
-      0.3571
+      0.0787,
+      0.3467
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.2239
+      0.2127
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.6,
+    "value": 0.1818,
     "confidence_interval": [
-      0.495,
-      0.705
+      0.0454,
+      0.3182
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.6
+      0.1818
     ],
     "source_distribution": "production"
   },
@@ -120,64 +120,75 @@
     ]
   },
   "provenance": {
-    "first_platform": "Cato",
+    "first_platform": "Fox News",
     "first_timestamp": "2026-04-03T14:18:11Z",
     "lead_lag": [
       {
+        "platform": "Business Insider",
+        "lag_hours": 547.1
+      },
+      {
+        "platform": "Daily Wire",
+        "lag_hours": 574.0
+      },
+      {
+        "platform": "Bpc",
+        "lag_hours": 982.8
+      },
+      {
         "platform": "Jacobin",
-        "lag_hours": 333.6
+        "lag_hours": 1201.6
       },
       {
-        "platform": "The Intercept",
-        "lag_hours": 335.0
-      },
-      {
-        "platform": "Bloomberg Politics",
-        "lag_hours": 355.1
-      },
-      {
-        "platform": "Fox News",
-        "lag_hours": 360.3
+        "platform": "Fortune",
+        "lag_hours": 1241.7
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_crypto-digital-money_003",
+    "concept_id": "concept_crypto-digital-money_006",
     "hops": [
       {
-        "platform": "Cato",
-        "timestamp": "2026-03-19T14:01:47+00:00",
+        "platform": "Fox News",
+        "timestamp": "2026-04-03T14:18:11+00:00",
         "claim_id": "crypto-digital-money_fox_news_647be666_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
+        "platform": "Business Insider",
+        "timestamp": "2026-04-26T09:27:01+00:00",
+        "claim_id": "crypto-digital-money_fox_news_647be666_0",
+        "fidelity_to_origin": 0.6915,
+        "fidelity_to_previous": 0.6915
+      },
+      {
+        "platform": "Daily Wire",
+        "timestamp": "2026-04-27T12:16:16+00:00",
+        "claim_id": "crypto-digital-money_fox_news_647be666_0",
+        "fidelity_to_origin": 0.6764,
+        "fidelity_to_previous": 0.9782
+      },
+      {
+        "platform": "Bpc",
+        "timestamp": "2026-05-14T13:07:59+00:00",
+        "claim_id": "crypto-digital-money_fox_news_647be666_0",
+        "fidelity_to_origin": 0.4459,
+        "fidelity_to_previous": 0.6592
+      },
+      {
         "platform": "Jacobin",
-        "timestamp": "2026-04-02T11:38:17+00:00",
+        "timestamp": "2026-05-23T15:53:31+00:00",
         "claim_id": "crypto-digital-money_fox_news_647be666_0",
-        "fidelity_to_origin": 0.3518,
-        "fidelity_to_previous": 0.3518
+        "fidelity_to_origin": 0.3226,
+        "fidelity_to_previous": 0.7235
       },
       {
-        "platform": "The Intercept",
-        "timestamp": "2026-04-02T13:00:00+00:00",
-        "claim_id": "crypto-digital-money_fox_news_647be666_0",
-        "fidelity_to_origin": 0.3492,
-        "fidelity_to_previous": 0.9926
-      },
-      {
-        "platform": "Bloomberg Politics",
-        "timestamp": "2026-04-03T09:09:14+00:00",
-        "claim_id": "crypto-digital-money_fox_news_647be666_0",
-        "fidelity_to_origin": 0.31,
-        "fidelity_to_previous": 0.8877
-      },
-      {
-        "platform": "Fox News",
-        "timestamp": "2026-04-03T14:18:11+00:00",
+        "platform": "Fortune",
+        "timestamp": "2026-05-25T08:00:00+00:00",
         "claim_id": "crypto-digital-money_fox_news_647be666_0",
         "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9677
+        "fidelity_to_previous": 0.9299
       }
     ],
     "observation_boundary": null
@@ -212,48 +223,48 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "crypto-digital-money_jacobin_81299345_1",
-      "similarity": 0.5194,
-      "text": "Kathy Hochul's refusal to raise taxes on the wealthy negatively impacts vulnerable New Yorkers."
+      "claim_id": "crypto-digital-money_business_insider_14152939_0",
+      "similarity": 0.75,
+      "text": "Traditional homeownership is increasingly unattainable for younger generations due to financial constraints."
     },
     {
-      "claim_id": "crypto-digital-money_cato_c0670656_0",
-      "similarity": 0.4057,
-      "text": "The United States faces a fiscal crisis due to unsustainable spending, particularly on programs for older Americans."
+      "claim_id": "crypto-digital-money_business_insider_14152939_1",
+      "similarity": 0.75,
+      "text": "Tiny home villages offer an alternative, affordable housing solution, particularly in urban areas."
     },
     {
-      "claim_id": "crypto-digital-money_jacobin_81299345_0",
-      "similarity": 0.3671,
-      "text": "Julie Menin is obstructing progressive budget priorities in New York City."
+      "claim_id": "crypto-digital-money_daily_wire_498f44cd_1",
+      "similarity": 0.75,
+      "text": "Gen Z is an anxious generation overwhelmed by news and social media."
     },
     {
-      "claim_id": "crypto-digital-money_jacobin_abe81f19_0",
-      "similarity": 0.2891,
-      "text": "Cutting Social Security and Medicare is not a viable solution to the system's problems."
+      "claim_id": "crypto-digital-money_jacobin_3b71afab_0",
+      "similarity": 0.75,
+      "text": "Los Angeles should increase the availability of socially owned housing with income-based rent."
     },
     {
-      "claim_id": "crypto-digital-money_cato_c0670656_1",
-      "similarity": 0.285,
-      "text": "Both Democrats and Republicans engage in political posturing regarding the federal budget but fail to enact meaningful changes."
+      "claim_id": "crypto-digital-money_jacobin_3b71afab_1",
+      "similarity": 0.75,
+      "text": "Los Angeles should utilize Tenant Opportunity Purchase Act and Community Opportunity Purchase Act to empower tenants and community organizations to purchase buildings."
     }
   ],
   "example_content": [
     {
-      "text": "Italy's deficit exceeds the EU limit.",
-      "platform": "Bloomberg Politics",
+      "text": "Traditional homeownership is increasingly unattainable for younger generations due to financial constraints.",
+      "platform": "Business Insider",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Congress needs more representatives with working-class backgrounds.",
-      "platform": "The Intercept",
+      "text": "Tiny home villages offer an alternative, affordable housing solution, particularly in urban areas.",
+      "platform": "Business Insider",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Cutting Social Security and Medicare is not a viable solution to the system's problems.",
-      "platform": "Jacobin",
-      "confidence": 0.9,
+      "text": "Gen Z is an anxious generation overwhelmed by news and social media.",
+      "platform": "Daily Wire",
+      "confidence": 0.8,
       "is_influencer_framing": false
     }
   ]

@@ -5,7 +5,7 @@
     "label": "X Platform",
     "active_volume": 9,
     "meets_minimum_threshold": false,
-    "base_rate_weight": 0.0091,
+    "base_rate_weight": 0.009,
     "is_influencer_framing": false
   },
   "slice_b": {
@@ -14,7 +14,7 @@
     "label": "Think Tanks",
     "active_volume": 7,
     "meets_minimum_threshold": false,
-    "base_rate_weight": 0.0071,
+    "base_rate_weight": 0.007,
     "is_influencer_framing": false
   },
   "divergence": {
@@ -24,9 +24,9 @@
       1.0
     ],
     "typology": {
-      "information_asymmetry": 0.3939,
-      "interpretive": 0.2121,
-      "paradigmatic": 0.3939,
+      "information_asymmetry": 0.3942,
+      "interpretive": 0.2117,
+      "paradigmatic": 0.3942,
       "dominant_mode": "Information Asymmetry",
       "paradigmatic_caveat": false
     }
@@ -283,6 +283,16 @@
       "mutation_b": "radicalizing"
     },
     {
+      "cluster_id": "clu_dei-rollbacks_025",
+      "label": "Donald Trump",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
       "cluster_id": "clu_dei-rollbacks_026",
       "label": "Pete Hegseth",
       "salience_a": 0.0,
@@ -319,28 +329,28 @@
   },
   "exposure_comparison": {
     "slice_a": {
-      "value": 0.0162,
+      "value": 0.016,
       "confidence_interval": [
         0,
-        0.165
+        0.1648
       ],
       "baseline": "global",
       "time_window": "24h",
       "sparkline": [
-        0.0162
+        0.016
       ],
       "source_distribution": "production"
     },
     "slice_b": {
-      "value": 0.0128,
+      "value": 0.0126,
       "confidence_interval": [
         0,
-        0.1618
+        0.1617
       ],
       "baseline": "global",
       "time_window": "24h",
       "sparkline": [
-        0.0128
+        0.0126
       ],
       "source_distribution": "production"
     }

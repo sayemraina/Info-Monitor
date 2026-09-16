@@ -5,7 +5,7 @@
     "label": "X Platform",
     "active_volume": 508,
     "meets_minimum_threshold": true,
-    "base_rate_weight": 0.2323,
+    "base_rate_weight": 0.2285,
     "is_influencer_framing": false
   },
   "slice_b": {
@@ -14,7 +14,7 @@
     "label": "Think Tanks",
     "active_volume": 7,
     "meets_minimum_threshold": false,
-    "base_rate_weight": 0.0032,
+    "base_rate_weight": 0.0031,
     "is_influencer_framing": false
   },
   "divergence": {
@@ -24,14 +24,24 @@
       0.9316
     ],
     "typology": {
-      "information_asymmetry": 0.3963,
-      "interpretive": 0.2073,
-      "paradigmatic": 0.3963,
+      "information_asymmetry": 0.3981,
+      "interpretive": 0.2038,
+      "paradigmatic": 0.3981,
       "dominant_mode": "Information Asymmetry",
       "paradigmatic_caveat": false
     }
   },
   "per_cluster": [
+    {
+      "cluster_id": "clu_immigration_000",
+      "label": "Transgender Athletes",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
     {
       "cluster_id": "clu_immigration_001",
       "label": "Birthright Citizenship",
@@ -45,6 +55,16 @@
     {
       "cluster_id": "clu_immigration_002",
       "label": "Temporary Protected Status",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_immigration_003",
+      "label": "BJP",
       "salience_a": 0.0,
       "salience_b": 0.0,
       "arousal_a": 0,
@@ -118,6 +138,16 @@
       "salience_a": 0.0118,
       "salience_b": 0.0,
       "arousal_a": 0.5,
+      "arousal_b": 0,
+      "mutation_a": "radicalizing",
+      "mutation_b": "radicalizing"
+    },
+    {
+      "cluster_id": "clu_immigration_011",
+      "label": "Pakistan's ISI",
+      "salience_a": 0.0,
+      "salience_b": 0.0,
+      "arousal_a": 0,
       "arousal_b": 0,
       "mutation_a": "radicalizing",
       "mutation_b": "radicalizing"
@@ -649,28 +679,28 @@
   },
   "exposure_comparison": {
     "slice_a": {
-      "value": 0.4128,
+      "value": 0.4061,
       "confidence_interval": [
-        0.2938,
-        0.5318
+        0.2866,
+        0.5256
       ],
       "baseline": "global",
       "time_window": "6h",
       "sparkline": [
-        0.4128
+        0.4061
       ],
       "source_distribution": "production"
     },
     "slice_b": {
-      "value": 0.0057,
+      "value": 0.0056,
       "confidence_interval": [
         0,
-        0.1553
+        0.1552
       ],
       "baseline": "global",
       "time_window": "6h",
       "sparkline": [
-        0.0057
+        0.0056
       ],
       "source_distribution": "production"
     }

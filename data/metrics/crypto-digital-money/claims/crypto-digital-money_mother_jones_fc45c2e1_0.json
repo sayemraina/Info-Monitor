@@ -9,8 +9,8 @@
     "arousal": "high",
     "register": "journalistic",
     "id": "crypto-digital-money_mother_jones_fc45c2e1_0",
-    "cluster_id": "clu_crypto-digital-money_007",
-    "concept_id": "concept_crypto-digital-money_004",
+    "cluster_id": "clu_crypto-digital-money_072",
+    "concept_id": "concept_crypto-digital-money_007",
     "first_seen_platform": "mother_jones",
     "first_seen_timestamp": "2026-04-01T20:00:11Z",
     "source_document_id": "9bd649ab3283400d",
@@ -35,48 +35,48 @@
       0.645
     ],
     "source_distribution": "production",
-    "source_diversity": 1.0,
-    "bridge_ratio": 1.0,
-    "persistence_windows": 5,
-    "friction": 0.7333,
+    "source_diversity": 0.75,
+    "bridge_ratio": 0.75,
+    "persistence_windows": 3,
+    "friction": 0.5,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.212,
+    "value": 0.2185,
     "confidence_interval": [
-      0.0779,
-      0.3461
+      0.0849,
+      0.3521
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.212
+      0.2185
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.7333,
+    "value": 0.5,
     "confidence_interval": [
-      0.6383,
-      0.8283
+      0.3875,
+      0.6125
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.7333
+      0.5
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.25,
+    "value": 0.15,
     "confidence_interval": [
-      0.1187,
-      0.3813
+      0.0112,
+      0.2888
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.25
+      0.15
     ],
     "source_distribution": "production"
   },
@@ -120,64 +120,42 @@
     ]
   },
   "provenance": {
-    "first_platform": "Cato",
+    "first_platform": "Salon",
     "first_timestamp": "2026-04-01T20:00:11Z",
     "lead_lag": [
       {
-        "platform": "Jacobin",
-        "lag_hours": 164.0
-      },
-      {
-        "platform": "Salon",
-        "lag_hours": 164.0
-      },
-      {
         "platform": "Mother Jones",
-        "lag_hours": 173.5
+        "lag_hours": 9.5
       },
       {
         "platform": "Reason",
-        "lag_hours": 191.3
+        "lag_hours": 27.3
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_crypto-digital-money_004",
+    "concept_id": "concept_crypto-digital-money_007",
     "hops": [
       {
-        "platform": "Cato",
-        "timestamp": "2026-03-25T14:30:19+00:00",
+        "platform": "Salon",
+        "timestamp": "2026-04-01T10:30:05+00:00",
         "claim_id": "crypto-digital-money_mother_jones_fc45c2e1_0",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
-        "platform": "Jacobin",
-        "timestamp": "2026-04-01T10:28:05+00:00",
-        "claim_id": "crypto-digital-money_mother_jones_fc45c2e1_0",
-        "fidelity_to_origin": 0.4,
-        "fidelity_to_previous": 0.4
-      },
-      {
-        "platform": "Salon",
-        "timestamp": "2026-04-01T10:30:05+00:00",
-        "claim_id": "crypto-digital-money_mother_jones_fc45c2e1_0",
-        "fidelity_to_origin": 0.3999,
-        "fidelity_to_previous": 0.9997
-      },
-      {
         "platform": "Mother Jones",
         "timestamp": "2026-04-01T20:00:11+00:00",
         "claim_id": "crypto-digital-money_mother_jones_fc45c2e1_0",
-        "fidelity_to_origin": 0.3651,
-        "fidelity_to_previous": 0.913
+        "fidelity_to_origin": 0.7563,
+        "fidelity_to_previous": 0.7563
       },
       {
         "platform": "Reason",
         "timestamp": "2026-04-02T13:47:36+00:00",
         "claim_id": "crypto-digital-money_mother_jones_fc45c2e1_0",
         "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.8217
+        "fidelity_to_previous": 0.3967
       }
     ],
     "observation_boundary": null
@@ -212,29 +190,29 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "crypto-digital-money_salon_1fae8520_0",
-      "similarity": 0.616,
-      "text": "Reinterpreting the 14th Amendment to require parental citizenship would create a generationally stateless class of American residents."
-    },
-    {
       "claim_id": "crypto-digital-money_mother_jones_373e793f_0",
-      "similarity": 0.6071,
+      "similarity": 0.75,
       "text": "Birthright citizenship in the United States, as defined by the 14th Amendment and the Wong Kim Ark case, is under threat due to political challenges."
     },
     {
       "claim_id": "crypto-digital-money_reason_49f3c55d_0",
-      "similarity": 0.6037,
+      "similarity": 0.75,
       "text": "Denying birthright citizenship to children born in the U.S. to undocumented or temporary visa-holding parents is unconstitutional."
     },
     {
+      "claim_id": "crypto-digital-money_reason_49f3c55d_1",
+      "similarity": 0.75,
+      "text": "The legal concept of 'domicile' as understood in 1868 does not support denying citizenship based on parents' immigration status."
+    },
+    {
       "claim_id": "crypto-digital-money_reason_49f3c55d_2",
-      "similarity": 0.5388,
+      "similarity": 0.75,
       "text": "Denying birthright citizenship based on parents' immigration status would contradict the citizenship rights of children born to enslaved people."
     },
     {
-      "claim_id": "crypto-digital-money_reason_49f3c55d_1",
-      "similarity": 0.4628,
-      "text": "The legal concept of 'domicile' as understood in 1868 does not support denying citizenship based on parents' immigration status."
+      "claim_id": "crypto-digital-money_salon_1fae8520_0",
+      "similarity": 0.75,
+      "text": "Reinterpreting the 14th Amendment to require parental citizenship would create a generationally stateless class of American residents."
     }
   ],
   "example_content": [
@@ -245,14 +223,14 @@
       "is_influencer_framing": false
     },
     {
-      "text": "Revising the definition of American citizenship is a chilling prospect.",
-      "platform": "Mother Jones",
+      "text": "Denying birthright citizenship to children born in the U.S. to undocumented or temporary visa-holding parents is unconstitutional.",
+      "platform": "Reason",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Canada's Bill C-12 restricts asylum eligibility and expands government powers related to immigration.",
-      "platform": "Jacobin",
+      "text": "The legal concept of 'domicile' as understood in 1868 does not support denying citizenship based on parents' immigration status.",
+      "platform": "Reason",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

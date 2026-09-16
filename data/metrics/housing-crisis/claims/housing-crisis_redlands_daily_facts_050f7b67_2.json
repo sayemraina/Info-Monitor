@@ -9,8 +9,8 @@
     "arousal": "medium",
     "register": "formal",
     "id": "housing-crisis_redlands_daily_facts_050f7b67_2",
-    "cluster_id": "clu_housing-crisis_027",
-    "concept_id": "concept_housing-crisis_000",
+    "cluster_id": "clu_housing-crisis_022",
+    "concept_id": "concept_housing-crisis_005",
     "first_seen_platform": "redlands_daily_facts",
     "first_seen_timestamp": "2026-05-05T18:36:40Z",
     "source_document_id": "82f77a9b731970b9",
@@ -37,46 +37,46 @@
     "source_distribution": "production",
     "source_diversity": 1.0,
     "bridge_ratio": 1.0,
-    "persistence_windows": 5,
-    "friction": 0.5333,
+    "persistence_windows": 3,
+    "friction": 0.7273,
     "friction_quadrant": "contested_advance"
   },
   "salience": {
-    "value": 0.7784,
+    "value": 0.209,
     "confidence_interval": [
-      0.6868,
-      0.87
+      0.0747,
+      0.3433
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.7784
+      0.209
     ],
     "source_distribution": "production"
   },
   "friction": {
-    "value": 0.5333,
+    "value": 0.7273,
     "confidence_interval": [
-      0.4233,
-      0.6433
+      0.6318,
+      0.8228
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.5333
+      0.7273
     ],
     "source_distribution": "production"
   },
   "persistence": {
-    "value": 0.25,
+    "value": 0.15,
     "confidence_interval": [
-      0.1187,
-      0.3813
+      0.0112,
+      0.2888
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      0.25
+      0.15
     ],
     "source_distribution": "production"
   },
@@ -94,15 +94,15 @@
     "source_distribution": "production"
   },
   "expressibility": {
-    "value": 1,
+    "value": 0.8182,
     "confidence_interval": [
-      0.925,
-      1
+      0.7296,
+      0.9068
     ],
     "baseline": "global",
     "time_window": "24h",
     "sparkline": [
-      1
+      0.8182
     ],
     "source_distribution": "production"
   },
@@ -124,71 +124,60 @@
     "first_timestamp": "2026-05-05T18:36:40Z",
     "lead_lag": [
       {
+        "platform": "Daily Breeze",
+        "lag_hours": 195.0
+      },
+      {
         "platform": "Redlands Daily Facts",
-        "lag_hours": 2.5
+        "lag_hours": 212.0
       },
       {
-        "platform": "Reason",
-        "lag_hours": 3.3
+        "platform": "The New York Times",
+        "lag_hours": 728.4
       },
       {
-        "platform": "X Platform",
-        "lag_hours": 3.6
-      },
-      {
-        "platform": "The Orange County Register",
-        "lag_hours": 14.9
-      },
-      {
-        "platform": "Daily News",
-        "lag_hours": 15.4
+        "platform": "Dnyuz",
+        "lag_hours": 728.5
       }
     ]
   },
   "supply_chain": {
-    "concept_id": "concept_housing-crisis_000",
+    "concept_id": "concept_housing-crisis_005",
     "hops": [
       {
         "platform": "Bluesky",
-        "timestamp": "2026-05-05T16:05:16.065000+00:00",
+        "timestamp": "2026-04-26T22:35:01.306000+00:00",
         "claim_id": "housing-crisis_redlands_daily_facts_050f7b67_2",
         "fidelity_to_origin": 1.0,
         "fidelity_to_previous": 1.0
       },
       {
+        "platform": "Daily Breeze",
+        "timestamp": "2026-05-05T01:36:13+00:00",
+        "claim_id": "housing-crisis_redlands_daily_facts_050f7b67_2",
+        "fidelity_to_origin": 0.8126,
+        "fidelity_to_previous": 0.8126
+      },
+      {
         "platform": "Redlands Daily Facts",
         "timestamp": "2026-05-05T18:36:40+00:00",
         "claim_id": "housing-crisis_redlands_daily_facts_050f7b67_2",
-        "fidelity_to_origin": 0.8852,
-        "fidelity_to_previous": 0.8852
+        "fidelity_to_origin": 0.7963,
+        "fidelity_to_previous": 0.9799
       },
       {
-        "platform": "Reason",
-        "timestamp": "2026-05-05T19:25:59+00:00",
+        "platform": "The New York Times",
+        "timestamp": "2026-05-27T07:00:07+00:00",
         "claim_id": "housing-crisis_redlands_daily_facts_050f7b67_2",
-        "fidelity_to_origin": 0.8478,
-        "fidelity_to_previous": 0.9577
+        "fidelity_to_origin": 0.3001,
+        "fidelity_to_previous": 0.3769
       },
       {
-        "platform": "X Platform",
-        "timestamp": "2026-05-05T19:43:19+00:00",
-        "claim_id": "housing-crisis_redlands_daily_facts_050f7b67_2",
-        "fidelity_to_origin": 0.8346,
-        "fidelity_to_previous": 0.9844
-      },
-      {
-        "platform": "The Orange County Register",
-        "timestamp": "2026-05-06T06:56:58+00:00",
-        "claim_id": "housing-crisis_redlands_daily_facts_050f7b67_2",
-        "fidelity_to_origin": 0.3237,
-        "fidelity_to_previous": 0.3879
-      },
-      {
-        "platform": "Daily News",
-        "timestamp": "2026-05-06T07:28:14+00:00",
+        "platform": "Dnyuz",
+        "timestamp": "2026-05-27T07:05:46+00:00",
         "claim_id": "housing-crisis_redlands_daily_facts_050f7b67_2",
         "fidelity_to_origin": 0.3,
-        "fidelity_to_previous": 0.9268
+        "fidelity_to_previous": 0.9997
       }
     ],
     "observation_boundary": null
@@ -223,47 +212,47 @@
   },
   "semantic_neighbors": [
     {
-      "claim_id": "housing-crisis_reason_5f0c166d_1",
-      "similarity": 0.3142,
-      "text": "Reforming CEQA by creating binding timelines for reviews and lawsuits will expedite essential projects like housing and infrastructure."
+      "claim_id": "housing-crisis_bluesky_5b178029_0",
+      "similarity": 0.75,
+      "text": "State government needs to be safeguarded from corruption."
     },
     {
-      "claim_id": "housing-crisis_the_orange_county_register_bd946796_0",
-      "similarity": 0.2861,
-      "text": "California should address budget deficits through a combination of spending cuts and increased revenue."
+      "claim_id": "housing-crisis_bluesky_d1095c6c_0",
+      "similarity": 0.75,
+      "text": "Voter perception of 'lower prices' is based on tangible experiences like gas, groceries, and rent, rather than subjective effort evaluations."
     },
     {
-      "claim_id": "housing-crisis_daily_news_fa024f2a_0",
-      "similarity": 0.268,
-      "text": "California's budget should be balanced through a combination of new revenue streams and spending cuts."
+      "claim_id": "housing-crisis_daily_breeze_24ff05f6_2",
+      "similarity": 0.75,
+      "text": "Voter ID laws requiring proof of citizenship are unnecessary and risk disenfranchising eligible voters."
     },
     {
-      "claim_id": "housing-crisis_daily_news_fa024f2a_2",
-      "similarity": 0.2675,
-      "text": "Budget cuts that negatively affect housing, healthcare, and vulnerable populations are unacceptable."
+      "claim_id": "housing-crisis_redlands_daily_facts_050f7b67_1",
+      "similarity": 0.75,
+      "text": "California lawmakers permit dishonest people to thrive, leading to election integrity issues."
     },
     {
-      "claim_id": "housing-crisis_the_orange_county_register_bd946796_1",
-      "similarity": 0.2579,
-      "text": "Cuts to public education, healthcare, housing, homelessness prevention, and public safety are unacceptable when balancing the budget."
+      "claim_id": "housing-crisis_dnyuz_197b18c2_0",
+      "similarity": 0.75,
+      "text": "Thomas DiNapoli has not effectively managed New York's retirement fund."
     }
   ],
   "example_content": [
     {
-      "text": "California's wine grape industry faces a crisis due to the lack of alternative crops for farmers.",
+      "text": "State government needs to be safeguarded from corruption.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "Farmland in the central San Joaquin Valley is increasingly becoming fallow, with limited potential for housing development due to its distance from employment centers.",
+      "text": "Voter perception of 'lower prices' is based on tangible experiences like gas, groceries, and rent, rather than subjective effort evaluations.",
       "platform": "Bluesky",
       "confidence": 0.9,
       "is_influencer_framing": false
     },
     {
-      "text": "California should address budget deficits through a combination of spending cuts and increased revenue.",
-      "platform": "The Orange County Register",
+      "text": "Voter ID laws requiring proof of citizenship are unnecessary and risk disenfranchising eligible voters.",
+      "platform": "Daily Breeze",
       "confidence": 0.9,
       "is_influencer_framing": false
     }

@@ -1,9 +1,9 @@
 {
   "events": [
     {
-      "id": "evt_36b2ab73cb14",
+      "id": "evt_018f6da2cb6c",
       "type": "contestation_emergence",
-      "timestamp": "2026-09-07T20:45:53.267009+00:00",
+      "timestamp": "2026-09-15T19:29:19.173791+00:00",
       "claim_id": "crypto-digital-money_bluesky_2d22afd6_0",
       "slice_id": null,
       "severity": "high",
@@ -17,14 +17,30 @@
       }
     },
     {
-      "id": "evt_0fa1d49db8ad",
+      "id": "evt_8d229b554735",
+      "type": "contestation_emergence",
+      "timestamp": "2026-09-15T19:29:19.173791+00:00",
+      "claim_id": "crypto-digital-money_fox_politics_f2d3aa90_0",
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.82,
+      "summary": "Active contestation in \"CVS and Planned Parenthood\" — 6 pro vs 8 anti",
+      "detail": {
+        "cluster_id": "clu_crypto-digital-money_013",
+        "pro_count": 6,
+        "anti_count": 8,
+        "balance": 0.75
+      }
+    },
+    {
+      "id": "evt_412ab19dff9c",
       "type": "phase_transition",
-      "timestamp": "2026-09-07T20:45:53.267009+00:00",
+      "timestamp": "2026-09-15T19:29:19.173791+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
       "confidence": 0.82,
-      "summary": "\"Bitcoin\" cluster is shifting toward more extreme language",
+      "summary": "Mutation trajectory: radicalizing in \"Bitcoin\"",
       "detail": {
         "cluster_id": "clu_crypto-digital-money_000",
         "direction": "radicalizing",
@@ -32,14 +48,14 @@
       }
     },
     {
-      "id": "evt_de6b87ffdb3f",
+      "id": "evt_9ddf7377bbd2",
       "type": "phase_transition",
-      "timestamp": "2026-09-07T20:45:53.267009+00:00",
+      "timestamp": "2026-09-15T19:29:19.173791+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
       "confidence": 0.83,
-      "summary": "\"XRP\" cluster is shifting toward more extreme language",
+      "summary": "Mutation trajectory: radicalizing in \"XRP\"",
       "detail": {
         "cluster_id": "clu_crypto-digital-money_001",
         "direction": "radicalizing",
@@ -47,14 +63,29 @@
       }
     },
     {
-      "id": "evt_518e21cf7ee4",
+      "id": "evt_e7820a581c50",
       "type": "phase_transition",
-      "timestamp": "2026-09-07T20:45:53.267009+00:00",
+      "timestamp": "2026-09-15T19:29:19.173791+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
       "confidence": 0.85,
-      "summary": "\"AI Automated Trading\" cluster is shifting toward more extreme language",
+      "summary": "Mutation trajectory: radicalizing in \"Federal Reserve\"",
+      "detail": {
+        "cluster_id": "clu_crypto-digital-money_002",
+        "direction": "radicalizing",
+        "magnitude": 0.8431
+      }
+    },
+    {
+      "id": "evt_f38667f172fd",
+      "type": "phase_transition",
+      "timestamp": "2026-09-15T19:29:19.173791+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.85,
+      "summary": "Mutation trajectory: radicalizing in \"AI Automated Trading\"",
       "detail": {
         "cluster_id": "clu_crypto-digital-money_003",
         "direction": "radicalizing",
@@ -62,29 +93,14 @@
       }
     },
     {
-      "id": "evt_acee0eb53f7c",
-      "type": "phase_transition",
-      "timestamp": "2026-09-07T20:45:53.267009+00:00",
-      "claim_id": null,
-      "slice_id": null,
-      "severity": "high",
-      "confidence": 0.82,
-      "summary": "\"Gold Trading\" cluster is shifting toward more extreme language",
-      "detail": {
-        "cluster_id": "clu_crypto-digital-money_004",
-        "direction": "radicalizing",
-        "magnitude": 0.7369
-      }
-    },
-    {
-      "id": "evt_bb92f1444f41",
+      "id": "evt_de3c1e902f4e",
       "type": "divergence_shift",
-      "timestamp": "2026-09-07T20:45:53.267009+00:00",
+      "timestamp": "2026-09-15T19:29:19.173791+00:00",
       "claim_id": null,
       "slice_id": "ambcrypto_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Strong narrative split between ambcrypto and ars_technica",
+      "summary": "Narrative divergence between ambcrypto and ars_technica (JSD=1.000)",
       "detail": {
         "jsd": 1.0,
         "platforms": [
@@ -95,14 +111,14 @@
       }
     },
     {
-      "id": "evt_aa158136a3f7",
+      "id": "evt_21fba43a1187",
       "type": "divergence_shift",
-      "timestamp": "2026-09-07T20:45:53.267009+00:00",
+      "timestamp": "2026-09-15T19:29:19.173791+00:00",
       "claim_id": null,
       "slice_id": "ambcrypto_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Strong narrative split between ambcrypto and benzinga",
+      "summary": "Narrative divergence between ambcrypto and benzinga (JSD=1.000)",
       "detail": {
         "jsd": 1.0,
         "platforms": [
@@ -113,14 +129,14 @@
       }
     },
     {
-      "id": "evt_c416d5d057a2",
+      "id": "evt_4fe23dfdb99f",
       "type": "divergence_shift",
-      "timestamp": "2026-09-07T20:45:53.267009+00:00",
+      "timestamp": "2026-09-15T19:29:19.173791+00:00",
       "claim_id": null,
       "slice_id": "ambcrypto_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Strong narrative split between ambcrypto and bitcoin_sistemi",
+      "summary": "Narrative divergence between ambcrypto and bitcoin_sistemi (JSD=0.788)",
       "detail": {
         "jsd": 0.7881,
         "platforms": [
@@ -131,14 +147,14 @@
       }
     },
     {
-      "id": "evt_f2ab4fd13b5f",
+      "id": "evt_4c83f772b364",
       "type": "divergence_shift",
-      "timestamp": "2026-09-07T20:45:53.267009+00:00",
+      "timestamp": "2026-09-15T19:29:19.173791+00:00",
       "claim_id": null,
       "slice_id": "ambcrypto_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Strong narrative split between ambcrypto and blockonomi",
+      "summary": "Narrative divergence between ambcrypto and blockonomi (JSD=0.610)",
       "detail": {
         "jsd": 0.61,
         "platforms": [
@@ -149,14 +165,14 @@
       }
     },
     {
-      "id": "evt_436b8c3ba96a",
+      "id": "evt_a1b25dc42d59",
       "type": "arousal_escalation",
-      "timestamp": "2026-09-08T00:45:53.267009+00:00",
+      "timestamp": "2026-09-15T23:29:19.173791+00:00",
       "claim_id": "crypto-digital-money_nft_plazas_dfc6501d_1",
       "slice_id": null,
       "severity": "high",
       "confidence": 0.89,
-      "summary": "Heated language rising in \"AI Automated Trading\" — 94% emotionally charged claims",
+      "summary": "Arousal escalation in \"AI Automated Trading\" — 94% high-arousal claims",
       "detail": {
         "cluster_id": "clu_crypto-digital-money_003",
         "high_arousal_count": 16,
@@ -165,14 +181,14 @@
       }
     },
     {
-      "id": "evt_abfa871256ed",
+      "id": "evt_978cdd90163b",
       "type": "arousal_escalation",
-      "timestamp": "2026-09-08T00:45:53.267009+00:00",
+      "timestamp": "2026-09-15T23:29:19.173791+00:00",
       "claim_id": "crypto-digital-money_x_476d724d_0",
       "slice_id": null,
       "severity": "high",
       "confidence": 0.85,
-      "summary": "Heated language rising in \"Gold Trading\" — 81% emotionally charged claims",
+      "summary": "Arousal escalation in \"Gold Trading\" — 81% high-arousal claims",
       "detail": {
         "cluster_id": "clu_crypto-digital-money_004",
         "high_arousal_count": 9,
@@ -181,14 +197,14 @@
       }
     },
     {
-      "id": "evt_7e6ca8961abe",
+      "id": "evt_99d748cc40fd",
       "type": "arousal_escalation",
-      "timestamp": "2026-09-08T00:45:53.267009+00:00",
+      "timestamp": "2026-09-15T23:29:19.173791+00:00",
       "claim_id": "crypto-digital-money_x_4a37f403_0",
       "slice_id": null,
       "severity": "high",
       "confidence": 0.9,
-      "summary": "Heated language rising in \"Can Generate High Profits\" — 100% emotionally charged claims",
+      "summary": "Arousal escalation in \"Can Generate High Profits\" — 100% high-arousal claims",
       "detail": {
         "cluster_id": "clu_crypto-digital-money_005",
         "high_arousal_count": 10,
@@ -197,45 +213,9 @@
       }
     },
     {
-      "id": "poly_544093",
-      "type": "external_signal",
-      "timestamp": "2026-04-03T17:17:29.393899+00:00",
-      "severity": "high",
-      "confidence": 0.95,
-      "summary": "Will Harvey Weinstein be sentenced to less than 5 years in prison? — 14.6% Yes",
-      "detail": "Polymarket gives 14.6% odds. Volume: $54,616",
-      "source": "polymarket"
-    },
-    {
-      "id": "poly_540881",
-      "type": "external_signal",
-      "timestamp": "2026-04-03T17:17:29.393889+00:00",
-      "severity": "high",
-      "confidence": 0.95,
-      "summary": "GTA VI released before June 2026? — 1.5% Yes",
-      "detail": "Polymarket gives 1.5% odds. Volume: $13,090,290",
-      "source": "polymarket"
-    },
-    {
-      "id": "evt_cf5016ab1965",
-      "type": "lead_lag",
-      "timestamp": "2026-08-15T00:45:53.267009+00:00",
-      "claim_id": "crypto-digital-money_bluesky_1af7644f_0",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.9,
-      "summary": "bitcoin_sistemi leads X Platform by ~584h in \"Bitcoin\"",
-      "detail": {
-        "source_platform": "bitcoin_sistemi",
-        "target_platform": "x",
-        "lag_hours": 584.7,
-        "cluster_id": "clu_crypto-digital-money_000"
-      }
-    },
-    {
-      "id": "evt_1038e62b2502",
+      "id": "evt_36b2ab73cb14",
       "type": "contestation_emergence",
-      "timestamp": "2026-09-07T20:45:53.267009+00:00",
+      "timestamp": "2026-09-15T19:29:19.173791+00:00",
       "claim_id": "crypto-digital-money_bluesky_41ef75ff_1",
       "slice_id": null,
       "severity": "medium",
@@ -249,9 +229,9 @@
       }
     },
     {
-      "id": "evt_018f6da2cb6c",
+      "id": "evt_51905030eca6",
       "type": "contestation_emergence",
-      "timestamp": "2026-09-07T20:45:53.267009+00:00",
+      "timestamp": "2026-09-15T19:29:19.173791+00:00",
       "claim_id": "crypto-digital-money_bluesky_3f68c15a_0",
       "slice_id": null,
       "severity": "medium",
@@ -265,30 +245,14 @@
       }
     },
     {
-      "id": "evt_51905030eca6",
-      "type": "contestation_emergence",
-      "timestamp": "2026-09-07T20:45:53.267009+00:00",
-      "claim_id": "crypto-digital-money_nasdaq_stock_market_08bc3f91_0",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.75,
-      "summary": "Active contestation in \"Dogecoin\" — 6 pro vs 3 anti",
-      "detail": {
-        "cluster_id": "clu_crypto-digital-money_022",
-        "pro_count": 6,
-        "anti_count": 3,
-        "balance": 0.5
-      }
-    },
-    {
       "id": "evt_67bfc13613ae",
       "type": "momentum_spike",
-      "timestamp": "2026-09-07T23:45:53.267009+00:00",
+      "timestamp": "2026-09-15T22:29:19.173791+00:00",
       "claim_id": "crypto-digital-money_x_476d724d_0",
       "slice_id": null,
       "severity": "medium",
       "confidence": 0.55,
-      "summary": "Rapid attention surge in \"Gold Trading\" (11 claims)",
+      "summary": "Momentum surge in \"Gold Trading\" cluster (11 claims)",
       "detail": {
         "cluster_id": "clu_crypto-digital-money_004",
         "avg_momentum": 0.607,
@@ -298,12 +262,12 @@
     {
       "id": "evt_0ba6bc38adcf",
       "type": "momentum_spike",
-      "timestamp": "2026-09-08T00:45:53.267009+00:00",
+      "timestamp": "2026-09-15T23:29:19.173791+00:00",
       "claim_id": "crypto-digital-money_youtube_0210a9b0_0",
       "slice_id": null,
       "severity": "medium",
       "confidence": 0.6,
-      "summary": "Rapid attention surge in \"Cryptocurrency Tax in India\" (13 claims)",
+      "summary": "Momentum surge in \"Cryptocurrency Tax in India\" cluster (13 claims)",
       "detail": {
         "cluster_id": "clu_crypto-digital-money_010",
         "avg_momentum": 0.663,
@@ -313,12 +277,12 @@
     {
       "id": "evt_0bba3dcc6936",
       "type": "momentum_spike",
-      "timestamp": "2026-09-08T00:45:53.267009+00:00",
+      "timestamp": "2026-09-15T23:29:19.173791+00:00",
       "claim_id": "crypto-digital-money_x_4a37f403_0",
       "slice_id": null,
       "severity": "medium",
       "confidence": 0.57,
-      "summary": "Rapid attention surge in \"Can Generate High Profits\" (10 claims)",
+      "summary": "Momentum surge in \"Can Generate High Profits\" cluster (10 claims)",
       "detail": {
         "cluster_id": "clu_crypto-digital-money_005",
         "avg_momentum": 0.633,
@@ -328,12 +292,12 @@
     {
       "id": "evt_a1dd44ff9f7f",
       "type": "momentum_spike",
-      "timestamp": "2026-09-08T00:45:53.267009+00:00",
+      "timestamp": "2026-09-15T23:29:19.173791+00:00",
       "claim_id": "crypto-digital-money_nft_plazas_dfc6501d_1",
       "slice_id": null,
       "severity": "medium",
       "confidence": 0.57,
-      "summary": "Rapid attention surge in \"AI Automated Trading\" (17 claims)",
+      "summary": "Momentum surge in \"AI Automated Trading\" cluster (17 claims)",
       "detail": {
         "cluster_id": "clu_crypto-digital-money_003",
         "avg_momentum": 0.633,
@@ -341,84 +305,20 @@
       }
     },
     {
-      "id": "poly_544092",
-      "type": "external_signal",
-      "timestamp": "2026-04-03T17:17:29.393894+00:00",
+      "id": "evt_c36040193220",
+      "type": "arousal_escalation",
+      "timestamp": "2026-09-15T23:29:19.173791+00:00",
+      "claim_id": "crypto-digital-money_the_intercept_93aaf773_0",
+      "slice_id": null,
       "severity": "medium",
-      "confidence": 0.95,
-      "summary": "Will Harvey Weinstein be sentenced to no prison time? — 34.0% Yes",
-      "detail": "Polymarket gives 34.0% odds. Volume: $300,300",
-      "source": "polymarket"
-    },
-    {
-      "id": "fedreg_2026-05635",
-      "type": "external_signal",
-      "timestamp": "2026-03-23T00:00:00Z",
-      "severity": "medium",
-      "confidence": 0.95,
-      "summary": "Application of the Federal Securities Laws to Certain Types of Crypto Assets and Certain Transactions Involving Crypto Assets",
-      "detail": "The Securities and Exchange Commission (\"Commission\" or \"SEC\") issues herein an interpretation regarding the application of the Federal securities laws to certain types of crypto assets and certain transactions involving crypto assets. The references in this release to \"we\" and \"our\" are to the Comm",
-      "source": "fed_register"
-    },
-    {
-      "id": "fedreg_2025-20606",
-      "type": "external_signal",
-      "timestamp": "2025-11-21T00:00:00Z",
-      "severity": "medium",
-      "confidence": 0.95,
-      "summary": "Enhanced Air Cargo Advance Screening (ACAS)",
-      "detail": "To address ongoing aviation security threats, U.S. Customs and Border Protection (CBP) is amending its regulations pertaining to the Air Cargo Advance Screening (ACAS) program to require the transmission of additional data elements. The ACAS program enhances the security of flights carrying cargo in",
-      "source": "fed_register"
-    },
-    {
-      "id": "gdelt_17f500f52ea3",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:64:50Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Blord :  Ill send you to prison too  VDM issues warning to Sowore",
-      "detail": "Reported by premiumtimesng.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_1fa5f690bb33",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:64:50Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "How Scammers Are Targeting New Yorkers With Fake Arrest Threats",
-      "detail": "Reported by wnbf.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_d129a5d818f1",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:64:50Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "CFDs vs Options : What the Difference ? ",
-      "detail": "Reported by markets.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_980ff4f10703",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:64:50Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "CERT - EU blames Trivy supply chain attack for Europa . eu data breach",
-      "detail": "Reported by csoonline.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_7fe8b293e518",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:64:50Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Investing basics for beginners : What are the 4 economic indicators ? ",
-      "detail": "Reported by markets.com. Tone: +0.0.",
-      "source": "gdelt"
+      "confidence": 0.76,
+      "summary": "Arousal escalation in \"Trump Administration\" — 45% high-arousal claims",
+      "detail": {
+        "cluster_id": "clu_crypto-digital-money_063",
+        "high_arousal_count": 5,
+        "total": 11,
+        "ratio": 0.45
+      }
     },
     {
       "id": "gdelt_18e7c684e88b",
@@ -428,26 +328,6 @@
       "confidence": 0.95,
       "summary": "Where Next for Bitcoin After Worst Quarter Since 2018 ? ",
       "detail": "Reported by finance.yahoo.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_5749accacbd8",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:64:50Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "State Police Make Arrest in Connection With Fake Warrant Scam",
-      "detail": "Reported by wicz.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_c10f7d8806a7",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:64:50Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Crude oil prices rise to $112 per barrel : Will UAE fuel prices rise in April 2026 ? ",
-      "detail": "Reported by markets.com. Tone: +0.0.",
       "source": "gdelt"
     },
     {
@@ -461,76 +341,6 @@
       "source": "gdelt"
     },
     {
-      "id": "gdelt_cd85bfda2e5f",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:63:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "AI - aligned super PACs are pouring millions into Texas congressional races",
-      "detail": "Reported by hppr.org. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_9afee7d9991c",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:63:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "How Scammers Are Targeting New Yorkers With Fake Arrest Threats",
-      "detail": "Reported by 991thewhale.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_6bca6968affb",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:63:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Fake letter led a CT resident to lose $234k in crypto heist , feds say",
-      "detail": "Reported by thehour.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_2fc1f862fb23",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:63:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Nancy Guthrie disappearance : Day 62 latest updates",
-      "detail": "Reported by fox2detroit.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_92d23139bf1b",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:63:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "FBI Says Athens , Tn ., Widow Money Laundered $2 . 3 Million For Online  Boyfriend ; Non - Profit Was Defrauded",
-      "detail": "Reported by chattanoogan.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_e1f80184fc40",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:63:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Fake letter led a CT resident to lose $234k in crypto heist , feds say",
-      "detail": "Reported by nhregister.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_18fe353e1d9d",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:54:50Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Hidden charges : K Narayanan talks to author Sven Beckert about the surprising history of capitalism",
-      "detail": "Reported by hindustantimes.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
       "id": "gdelt_ce3a6b2ae035",
       "type": "external_signal",
       "timestamp": "2026-04-03TT1:54:50Z",
@@ -538,36 +348,6 @@
       "confidence": 0.95,
       "summary": "Riot Platforms Sold 3 , 778 Bitcoin In First Quarter",
       "detail": "Reported by finance.yahoo.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_908051560b90",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:53:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Nancy Guthrie disappearance : Day 62 latest updates",
-      "detail": "Reported by fox10phoenix.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_725198bfb121",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:53:00Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "This Week in Cyber Mayhem : A Not - So - Dead Tortoise , a Very Alive Hack , and Free Money",
-      "detail": "Reported by pcmag.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_89bbe0016410",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:21:50Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Analysts Offer Predictions for Bitfarms Q2 Earnings",
-      "detail": "Reported by dailypolitical.com. Tone: +0.0.",
       "source": "gdelt"
     },
     {
@@ -601,25 +381,25 @@
       "source": "polymarket"
     },
     {
-      "id": "poly_540843",
+      "id": "fedreg_2026-06353",
       "type": "external_signal",
-      "timestamp": "2026-04-03T17:17:29.393878+00:00",
+      "timestamp": "2026-04-02T00:00:00Z",
       "severity": "low",
       "confidence": 0.95,
-      "summary": "Will China invades Taiwan before GTA VI? — 52.0% Yes",
-      "detail": "Polymarket gives 52.0% odds. Volume: $1,524,917",
-      "source": "polymarket"
+      "summary": "Self-Regulatory Organizations; Cboe BZX Exchange, Inc.; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change To Amend the ARK 21Shares Bitcoin ETF",
+      "detail": "Notice by Securities and Exchange Commission",
+      "source": "fed_register"
     },
     {
-      "id": "poly_540820",
+      "id": "fedreg_2025-24052",
       "type": "external_signal",
-      "timestamp": "2026-04-03T17:17:29.393873+00:00",
+      "timestamp": "2025-12-31T00:00:00Z",
       "severity": "low",
       "confidence": 0.95,
-      "summary": "Trump out as President before GTA VI? — 53.0% Yes",
-      "detail": "Polymarket gives 53.0% odds. Volume: $572,401",
-      "source": "polymarket"
+      "summary": "Self-Regulatory Organizations; Nasdaq PHLX LLC; Order Instituting Proceedings To Determine Whether To Approve or Disapprove a Proposed Rule Change To List and Trade Nasdaq Bitcoin Index Options",
+      "detail": "Notice by Securities and Exchange Commission",
+      "source": "fed_register"
     }
   ],
-  "total_count": 97
+  "total_count": 28
 }

@@ -3,7 +3,7 @@
     {
       "id": "evt_f8e6a4476d2c",
       "type": "contestation_emergence",
-      "timestamp": "2026-09-08T05:39:54.459848+00:00",
+      "timestamp": "2026-09-16T04:28:57.287997+00:00",
       "claim_id": "housing-crisis_the_manc_93a331fc_1",
       "slice_id": null,
       "severity": "high",
@@ -19,7 +19,7 @@
     {
       "id": "evt_ba2762a00bf2",
       "type": "contestation_emergence",
-      "timestamp": "2026-09-08T05:39:54.459848+00:00",
+      "timestamp": "2026-09-16T04:28:57.287997+00:00",
       "claim_id": "housing-crisis_bluesky_fb0237cf_1",
       "slice_id": null,
       "severity": "high",
@@ -33,14 +33,14 @@
       }
     },
     {
-      "id": "evt_bae487ac5d3c",
+      "id": "evt_f83aef4a09b7",
       "type": "phase_transition",
-      "timestamp": "2026-09-08T05:39:54.459848+00:00",
+      "timestamp": "2026-09-16T04:28:57.287997+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
       "confidence": 0.84,
-      "summary": "\"Toronto\" cluster is shifting toward more extreme language",
+      "summary": "Mutation trajectory: radicalizing in \"Toronto\"",
       "detail": {
         "cluster_id": "clu_housing-crisis_000",
         "direction": "radicalizing",
@@ -48,14 +48,29 @@
       }
     },
     {
-      "id": "evt_f83aef4a09b7",
+      "id": "evt_14d2ceb71340",
       "type": "phase_transition",
-      "timestamp": "2026-09-08T05:39:54.459848+00:00",
+      "timestamp": "2026-09-16T04:28:57.287997+00:00",
+      "claim_id": null,
+      "slice_id": null,
+      "severity": "high",
+      "confidence": 0.87,
+      "summary": "Mutation trajectory: radicalizing in \"Donald Trump\"",
+      "detail": {
+        "cluster_id": "clu_housing-crisis_001",
+        "direction": "radicalizing",
+        "magnitude": 0.9027
+      }
+    },
+    {
+      "id": "evt_1baed031ecdf",
+      "type": "phase_transition",
+      "timestamp": "2026-09-16T04:28:57.287997+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
       "confidence": 0.82,
-      "summary": "\"Mortgage Rates\" cluster is shifting toward more extreme language",
+      "summary": "Mutation trajectory: radicalizing in \"Mortgage Rates\"",
       "detail": {
         "cluster_id": "clu_housing-crisis_005",
         "direction": "radicalizing",
@@ -63,14 +78,14 @@
       }
     },
     {
-      "id": "evt_14d2ceb71340",
+      "id": "evt_79b4046e3948",
       "type": "phase_transition",
-      "timestamp": "2026-09-08T05:39:54.459848+00:00",
+      "timestamp": "2026-09-16T04:28:57.287997+00:00",
       "claim_id": null,
       "slice_id": null,
       "severity": "high",
       "confidence": 0.78,
-      "summary": "\"Homelessness\" cluster is shifting toward more extreme language",
+      "summary": "Mutation trajectory: radicalizing in \"Homelessness\"",
       "detail": {
         "cluster_id": "clu_housing-crisis_006",
         "direction": "radicalizing",
@@ -78,31 +93,16 @@
       }
     },
     {
-      "id": "evt_1baed031ecdf",
-      "type": "phase_transition",
-      "timestamp": "2026-09-08T05:39:54.459848+00:00",
-      "claim_id": null,
-      "slice_id": null,
-      "severity": "high",
-      "confidence": 0.8,
-      "summary": "\"Squatting\" cluster is shifting toward more extreme language",
-      "detail": {
-        "cluster_id": "clu_housing-crisis_008",
-        "direction": "radicalizing",
-        "magnitude": 0.6605
-      }
-    },
-    {
-      "id": "evt_1c47c2ad9c2f",
+      "id": "evt_34a857e3c8ff",
       "type": "divergence_shift",
-      "timestamp": "2026-09-08T05:39:54.459848+00:00",
+      "timestamp": "2026-09-16T04:28:57.287997+00:00",
       "claim_id": null,
       "slice_id": "berkeleyside_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Strong narrative split between berkeleyside and Bluesky",
+      "summary": "Narrative divergence between berkeleyside and Bluesky (JSD=0.963)",
       "detail": {
-        "jsd": 0.9625,
+        "jsd": 0.9633,
         "platforms": [
           "berkeleyside",
           "bluesky"
@@ -111,14 +111,14 @@
       }
     },
     {
-      "id": "evt_a702ca66e9ed",
+      "id": "evt_3f40f114b069",
       "type": "divergence_shift",
-      "timestamp": "2026-09-08T05:39:54.459848+00:00",
+      "timestamp": "2026-09-16T04:28:57.287997+00:00",
       "claim_id": null,
       "slice_id": "berkeleyside_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Strong narrative split between berkeleyside and business_insider",
+      "summary": "Narrative divergence between berkeleyside and business_insider (JSD=1.000)",
       "detail": {
         "jsd": 1.0,
         "platforms": [
@@ -129,14 +129,14 @@
       }
     },
     {
-      "id": "evt_4784945b0919",
+      "id": "evt_27f1b4a61f64",
       "type": "divergence_shift",
-      "timestamp": "2026-09-08T05:39:54.459848+00:00",
+      "timestamp": "2026-09-16T04:28:57.287997+00:00",
       "claim_id": null,
       "slice_id": "berkeleyside_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Strong narrative split between berkeleyside and castanet",
+      "summary": "Narrative divergence between berkeleyside and castanet (JSD=1.000)",
       "detail": {
         "jsd": 1.0,
         "platforms": [
@@ -147,14 +147,14 @@
       }
     },
     {
-      "id": "evt_68b347d93deb",
+      "id": "evt_7e16e5e6b3df",
       "type": "divergence_shift",
-      "timestamp": "2026-09-08T05:39:54.459848+00:00",
+      "timestamp": "2026-09-16T04:28:57.287997+00:00",
       "claim_id": null,
       "slice_id": "berkeleyside_platform",
       "severity": "high",
       "confidence": 0.95,
-      "summary": "Strong narrative split between berkeleyside and cato",
+      "summary": "Narrative divergence between berkeleyside and cato (JSD=1.000)",
       "detail": {
         "jsd": 1.0,
         "platforms": [
@@ -163,46 +163,6 @@
         ],
         "window_hours": 6
       }
-    },
-    {
-      "id": "poly_544093",
-      "type": "external_signal",
-      "timestamp": "2026-04-03T17:15:19.765115+00:00",
-      "severity": "high",
-      "confidence": 0.95,
-      "summary": "Will Harvey Weinstein be sentenced to less than 5 years in prison? — 14.6% Yes",
-      "detail": "Polymarket gives 14.6% odds. Volume: $54,616",
-      "source": "polymarket"
-    },
-    {
-      "id": "poly_540881",
-      "type": "external_signal",
-      "timestamp": "2026-04-03T17:15:19.765095+00:00",
-      "severity": "high",
-      "confidence": 0.95,
-      "summary": "GTA VI released before June 2026? — 1.5% Yes",
-      "detail": "Polymarket gives 1.5% odds. Volume: $13,090,290",
-      "source": "polymarket"
-    },
-    {
-      "id": "fedreg_2026-02249",
-      "type": "external_signal",
-      "timestamp": "2026-02-03T00:00:00Z",
-      "severity": "high",
-      "confidence": 0.95,
-      "summary": "[Presidential Document] Addressing Addiction Through the Great American Recovery Initiative",
-      "detail": "Presidential Document by Executive Office of the President",
-      "source": "fed_register"
-    },
-    {
-      "id": "fedreg_2026-01572",
-      "type": "external_signal",
-      "timestamp": "2026-01-26T00:00:00Z",
-      "severity": "high",
-      "confidence": 0.95,
-      "summary": "[Presidential Document] National Day of Patriotic Devotion, 2026",
-      "detail": "Presidential Document by Executive Office of the President",
-      "source": "fed_register"
     },
     {
       "id": "fred_HOUST_2026-01-01",
@@ -215,57 +175,25 @@
       "source": "fred"
     },
     {
-      "id": "evt_03fbe3d36469",
+      "id": "evt_d330f2a64ceb",
       "type": "lead_lag",
-      "timestamp": "2026-03-03T13:39:54.459848+00:00",
-      "claim_id": "housing-crisis_bluesky_fb0237cf_0",
+      "timestamp": "2026-08-20T03:28:57.287997+00:00",
+      "claim_id": "housing-crisis_donegal_daily_0d78cc80_0",
       "slice_id": null,
       "severity": "medium",
-      "confidence": 0.86,
-      "summary": "YouTube (Influencer Framing) leads the_guardian by ~4531h in \"Institutional Investors\"",
+      "confidence": 0.76,
+      "summary": "the_manc leads the_independent by ~652h in \"Hmos in Birmingham\"",
       "detail": {
-        "source_platform": "youtube",
-        "target_platform": "the_guardian",
-        "lag_hours": 4531.6,
-        "cluster_id": "clu_housing-crisis_004"
+        "source_platform": "the_manc",
+        "target_platform": "the_independent",
+        "lag_hours": 652.3,
+        "cluster_id": "clu_housing-crisis_012"
       }
     },
     {
-      "id": "evt_a299ef54294d",
+      "id": "evt_6e7da04c0d4b",
       "type": "lead_lag",
-      "timestamp": "2026-07-14T19:39:54.459848+00:00",
-      "claim_id": "housing-crisis_the_manc_93a331fc_1",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.9,
-      "summary": "cato leads the_spectator by ~1333h in \"Immigration\"",
-      "detail": {
-        "source_platform": "cato",
-        "target_platform": "the_spectator",
-        "lag_hours": 1333.9,
-        "cluster_id": "clu_housing-crisis_002"
-      }
-    },
-    {
-      "id": "evt_959ebe3b66cc",
-      "type": "lead_lag",
-      "timestamp": "2026-07-17T22:39:54.459848+00:00",
-      "claim_id": "housing-crisis_x_3b9aa674_0",
-      "slice_id": null,
-      "severity": "medium",
-      "confidence": 0.74,
-      "summary": "X Platform leads castanet by ~1258h in \"Toronto\"",
-      "detail": {
-        "source_platform": "x",
-        "target_platform": "castanet",
-        "lag_hours": 1258.0,
-        "cluster_id": "clu_housing-crisis_000"
-      }
-    },
-    {
-      "id": "evt_e6080c41dd12",
-      "type": "lead_lag",
-      "timestamp": "2026-08-20T09:39:54.459848+00:00",
+      "timestamp": "2026-08-28T08:28:57.287997+00:00",
       "claim_id": "housing-crisis_bluesky_668ad0af_0",
       "slice_id": null,
       "severity": "medium",
@@ -279,9 +207,41 @@
       }
     },
     {
+      "id": "evt_68d1a8068908",
+      "type": "lead_lag",
+      "timestamp": "2026-09-02T17:28:57.287997+00:00",
+      "claim_id": "housing-crisis_bluesky_bde152bb_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.9,
+      "summary": "cato leads Bluesky by ~326h in \"Donald Trump\"",
+      "detail": {
+        "source_platform": "cato",
+        "target_platform": "bluesky",
+        "lag_hours": 326.6,
+        "cluster_id": "clu_housing-crisis_001"
+      }
+    },
+    {
+      "id": "evt_04359d502610",
+      "type": "lead_lag",
+      "timestamp": "2026-09-06T21:28:57.287997+00:00",
+      "claim_id": "housing-crisis_bluesky_0181ab4f_0",
+      "slice_id": null,
+      "severity": "medium",
+      "confidence": 0.76,
+      "summary": "X Platform leads Bluesky by ~226h in \"Healthcare Access in New\"",
+      "detail": {
+        "source_platform": "x",
+        "target_platform": "bluesky",
+        "lag_hours": 226.3,
+        "cluster_id": "clu_housing-crisis_010"
+      }
+    },
+    {
       "id": "evt_bedf751bb116",
       "type": "contestation_emergence",
-      "timestamp": "2026-09-08T05:39:54.459848+00:00",
+      "timestamp": "2026-09-16T04:28:57.287997+00:00",
       "claim_id": "housing-crisis_bluesky_fb0237cf_0",
       "slice_id": null,
       "severity": "medium",
@@ -297,7 +257,7 @@
     {
       "id": "evt_03bc37a834be",
       "type": "contestation_emergence",
-      "timestamp": "2026-09-08T05:39:54.459848+00:00",
+      "timestamp": "2026-09-16T04:28:57.287997+00:00",
       "claim_id": "housing-crisis_bluesky_046e616f_0",
       "slice_id": null,
       "severity": "medium",
@@ -313,12 +273,12 @@
     {
       "id": "evt_f88208602443",
       "type": "momentum_spike",
-      "timestamp": "2026-09-08T06:39:54.459848+00:00",
+      "timestamp": "2026-09-16T05:28:57.287997+00:00",
       "claim_id": "housing-crisis_youtube_74158d9c_0",
       "slice_id": null,
       "severity": "medium",
       "confidence": 0.57,
-      "summary": "Rapid attention surge in \"Stock Market\" (18 claims)",
+      "summary": "Momentum surge in \"Stock Market\" cluster (18 claims)",
       "detail": {
         "cluster_id": "clu_housing-crisis_031",
         "avg_momentum": 0.633,
@@ -328,12 +288,12 @@
     {
       "id": "evt_9f23ec7ab43a",
       "type": "momentum_spike",
-      "timestamp": "2026-09-08T06:39:54.459848+00:00",
+      "timestamp": "2026-09-16T05:28:57.287997+00:00",
       "claim_id": "housing-crisis_euro_weekly_news_spain_afe111dd_0",
       "slice_id": null,
       "severity": "medium",
       "confidence": 0.52,
-      "summary": "Rapid attention surge in \"Airbnb\" (17 claims)",
+      "summary": "Momentum surge in \"Airbnb\" cluster (17 claims)",
       "detail": {
         "cluster_id": "clu_housing-crisis_025",
         "avg_momentum": 0.578,
@@ -343,12 +303,12 @@
     {
       "id": "evt_3edc9972c70c",
       "type": "momentum_spike",
-      "timestamp": "2026-09-08T06:39:54.459848+00:00",
+      "timestamp": "2026-09-16T05:28:57.287997+00:00",
       "claim_id": "housing-crisis_bluesky_fa5c5dfd_0",
       "slice_id": null,
       "severity": "medium",
       "confidence": 0.5,
-      "summary": "Rapid attention surge in \"Squatting\" (11 claims)",
+      "summary": "Momentum surge in \"Squatting\" cluster (11 claims)",
       "detail": {
         "cluster_id": "clu_housing-crisis_008",
         "avg_momentum": 0.558,
@@ -358,27 +318,17 @@
     {
       "id": "evt_cc8157087c40",
       "type": "momentum_spike",
-      "timestamp": "2026-09-08T06:39:54.459848+00:00",
+      "timestamp": "2026-09-16T05:28:57.287997+00:00",
       "claim_id": "housing-crisis_bluesky_fb0237cf_0",
       "slice_id": null,
       "severity": "medium",
       "confidence": 0.5,
-      "summary": "Rapid attention surge in \"Institutional Investors\" (18 claims)",
+      "summary": "Momentum surge in \"Institutional Investors\" cluster (18 claims)",
       "detail": {
         "cluster_id": "clu_housing-crisis_004",
         "avg_momentum": 0.556,
         "member_count": 18
       }
-    },
-    {
-      "id": "poly_544092",
-      "type": "external_signal",
-      "timestamp": "2026-04-03T17:15:19.765105+00:00",
-      "severity": "medium",
-      "confidence": 0.95,
-      "summary": "Will Harvey Weinstein be sentenced to no prison time? — 34.0% Yes",
-      "detail": "Polymarket gives 34.0% odds. Volume: $300,300",
-      "source": "polymarket"
     },
     {
       "id": "fred_MORTGAGE30US_2026-04-02",
@@ -391,96 +341,6 @@
       "source": "fred"
     },
     {
-      "id": "fedreg_2026-06048",
-      "type": "external_signal",
-      "timestamp": "2026-03-30T00:00:00Z",
-      "severity": "medium",
-      "confidence": 0.95,
-      "summary": "[Rule] Risk-Informed, Technology-Inclusive Regulatory Framework for Advanced Reactors",
-      "detail": "The U.S. Nuclear Regulatory Commission (NRC) is amending its regulations by adding a risk-informed, performance-based, and technology-inclusive regulatory framework for commercial nuclear plants in response to the Nuclear Energy Innovation and Modernization Act (NEIMA). The current application and l",
-      "source": "fed_register"
-    },
-    {
-      "id": "fedreg_2026-05960",
-      "type": "external_signal",
-      "timestamp": "2026-03-27T00:00:00Z",
-      "severity": "medium",
-      "confidence": 0.95,
-      "summary": "[Proposed Rule] Regulatory Capital Rules: Regulatory Capital and Standardized Approach for Risk-Weighted Assets",
-      "detail": "The Office of the Comptroller of the Currency, the Board of Governors of the Federal Reserve System, and the Federal Deposit Insurance Corporation are proposing to modify certain aspects of the regulatory capital rule (the proposal). The proposal would revise the risk-based capital treatment of cert",
-      "source": "fed_register"
-    },
-    {
-      "id": "fedreg_2026-05959",
-      "type": "external_signal",
-      "timestamp": "2026-03-27T00:00:00Z",
-      "severity": "medium",
-      "confidence": 0.95,
-      "summary": "[Proposed Rule] Regulatory Capital Rule: Category I and II Banking Organizations, Banking Organizations With Significant Trading Activity, and Optional Adoption for O",
-      "detail": "The Office of the Comptroller of the Currency, the Board of Governors of the Federal Reserve System, and the Federal Deposit Insurance Corporation are proposing to modernize the capital requirements applicable to Category I and II depository institution holding companies and depository institutions,",
-      "source": "fed_register"
-    },
-    {
-      "id": "fedreg_2026-04907",
-      "type": "external_signal",
-      "timestamp": "2026-03-13T00:00:00Z",
-      "severity": "medium",
-      "confidence": 0.95,
-      "summary": "[Proposed Rule] Rule on Unfair or Deceptive Rental Housing Fee Practices",
-      "detail": "The Federal Trade Commission (\"Commission\") proposes to commence a rulemaking proceeding to address unfair or deceptive acts or practices relating to advertised rent and other fees and charges in the rental housing industry. To assist the Commission in determining the existence and prevalence of any",
-      "source": "fed_register"
-    },
-    {
-      "id": "fedreg_2026-03962",
-      "type": "external_signal",
-      "timestamp": "2026-02-27T00:00:00Z",
-      "severity": "medium",
-      "confidence": 0.95,
-      "summary": "[Proposed Rule] Employee or Independent Contractor Status Under the Fair Labor Standards Act, Family and Medical Leave Act, and Migrant and Seasonal Agricultural Work",
-      "detail": "The Department is proposing to rescind the analysis for determining employee or independent contractor status under the Fair Labor Standards Act (FLSA) currently set forth in 29 CFR part 795 and replace it with the analysis that it published and adopted in a prior final rule dated January 7, 2021, w",
-      "source": "fed_register"
-    },
-    {
-      "id": "fedreg_2026-02965",
-      "type": "external_signal",
-      "timestamp": "2026-02-13T00:00:00Z",
-      "severity": "medium",
-      "confidence": 0.95,
-      "summary": "[Rule] Restoring Integrity to the Issuance of Non-Domiciled Commercial Drivers Licenses (CDL)",
-      "detail": "FMCSA amends the Federal regulations for State Driver's Licensing Agencies (SDLAs) issuing commercial driving credentials to non-domiciled individuals. This final rule reaffirms, with minor changes, the provisions of the interim final rule (IFR) published on September 29, 2025. Specifically, this fi",
-      "source": "fed_register"
-    },
-    {
-      "id": "fedreg_2026-01797",
-      "type": "external_signal",
-      "timestamp": "2026-01-29T00:00:00Z",
-      "severity": "medium",
-      "confidence": 0.95,
-      "summary": "[Rule] Improving SBA Disaster Loan Ability To Provide Meaningful and Timely Assistance",
-      "detail": "The U.S. Small Business Administration (SBA or Agency) is issuing this interim final rule (IFR) to ensure the timely and effective delivery of assistance under the Disaster Loan Program authorized under section 7(b) of the Small Business Act (15 U.S.C. 636(b)) (\"Disaster Loan Program\") following a P",
-      "source": "fed_register"
-    },
-    {
-      "id": "fedreg_2026-01382",
-      "type": "external_signal",
-      "timestamp": "2026-01-26T00:00:00Z",
-      "severity": "medium",
-      "confidence": 0.95,
-      "summary": "[Proposed Rule] Dependent Care and Board Member Expense Reimbursement",
-      "detail": "The NCUA Board proposes to amend its regulations concerning the reimbursement of reasonable expenses for federal credit union (FCU) officials. The proposed rule would enable FCU boards to establish policies that allow for the payment of reasonable dependent care costs incurred by volunteer officials",
-      "source": "fed_register"
-    },
-    {
-      "id": "fedreg_2026-00121",
-      "type": "external_signal",
-      "timestamp": "2026-01-08T00:00:00Z",
-      "severity": "medium",
-      "confidence": 0.95,
-      "summary": "[Rule] Reissuance and Modification of Nationwide Permits",
-      "detail": "Nationwide Permits (NWPs) authorize activities under Section 404 of the Clean Water Act and Section 10 of the Rivers and Harbors Act of 1899 that have no more than minimal individual and cumulative adverse environmental effects. The NWPs help protect the aquatic environment and the public interest b",
-      "source": "fed_register"
-    },
-    {
       "id": "fred_MSPUS_2025-10-01",
       "type": "external_signal",
       "timestamp": "2025-10-01T00:00:00Z",
@@ -491,135 +351,65 @@
       "source": "fred"
     },
     {
-      "id": "gdelt_68e059a99da5",
+      "id": "price_DHI_20260403",
       "type": "external_signal",
-      "timestamp": "2026-04-03TT1:64:50Z",
+      "timestamp": "2026-04-03T17:15:24.670950+00:00",
       "severity": "low",
       "confidence": 0.95,
-      "summary": "安华 ： 政府全力应对能源危机 强调政策协同出击 | 国内",
-      "detail": "Reported by orientaldaily.com.my. Tone: +0.0.",
-      "source": "gdelt"
+      "summary": "DHI: $139.69 (up 1.0%)",
+      "detail": "DHI closed at $139.69, up 1.0% from previous close of $138.25",
+      "source": "yahoo_finance"
     },
     {
-      "id": "gdelt_979453c99daa",
+      "id": "price_LEN_20260403",
       "type": "external_signal",
-      "timestamp": "2026-04-03TT1:64:50Z",
+      "timestamp": "2026-04-03T17:15:24.389639+00:00",
       "severity": "low",
       "confidence": 0.95,
-      "summary": "Université de Sherbrooke : des résidences étudiantes bientôt au privé - SOCIÉTÉ - Estrieplus . com | Actualités locales , culture et événements en Estrie",
-      "detail": "Reported by estrieplus.com. Tone: +0.0.",
-      "source": "gdelt"
+      "summary": "LEN: $86.49 (up 1.2%)",
+      "detail": "LEN closed at $86.49, up 1.2% from previous close of $85.44",
+      "source": "yahoo_finance"
     },
     {
-      "id": "gdelt_1acc1d5fdaf8",
+      "id": "price_XHB_20260403",
       "type": "external_signal",
-      "timestamp": "2026-04-03TT1:64:50Z",
+      "timestamp": "2026-04-03T17:15:24.102424+00:00",
       "severity": "low",
       "confidence": 0.95,
-      "summary": "Sabah to review project costs amid rising prices : Masidi",
-      "detail": "Reported by dailyexpress.com.my. Tone: +0.0.",
-      "source": "gdelt"
+      "summary": "XHB: $98.22 (down 1.0%)",
+      "detail": "XHB closed at $98.22, down 1.0% from previous close of $99.21",
+      "source": "yahoo_finance"
     },
     {
-      "id": "gdelt_7c0abd659750",
+      "id": "price_DHI_20260330",
       "type": "external_signal",
-      "timestamp": "2026-04-03TT1:64:50Z",
+      "timestamp": "2026-03-30T07:24:11.659558+00:00",
       "severity": "low",
       "confidence": 0.95,
-      "summary": "The human cost of Kenya expanding lakes",
-      "detail": "Reported by africasacountry.com. Tone: +0.0.",
-      "source": "gdelt"
+      "summary": "DHI: $134.19 (down 1.3%)",
+      "detail": "DHI closed at $134.19, down 1.3% from previous close of $135.96",
+      "source": "yahoo_finance"
     },
     {
-      "id": "gdelt_491b92385718",
+      "id": "price_LEN_20260330",
       "type": "external_signal",
-      "timestamp": "2026-04-03TT1:64:50Z",
+      "timestamp": "2026-03-30T07:24:11.442753+00:00",
       "severity": "low",
       "confidence": 0.95,
-      "summary": "Community editorial board : Easter to focus on gratitude , not concerns",
-      "detail": "Reported by intelligencer.ca. Tone: +0.0.",
-      "source": "gdelt"
+      "summary": "LEN: $90.25 (down 0.9%)",
+      "detail": "LEN closed at $90.25, down 0.9% from previous close of $91.11",
+      "source": "yahoo_finance"
     },
     {
-      "id": "gdelt_681cdff59f04",
+      "id": "price_XHB_20260330",
       "type": "external_signal",
-      "timestamp": "2026-04-03TT1:64:50Z",
+      "timestamp": "2026-03-30T07:24:11.231472+00:00",
       "severity": "low",
       "confidence": 0.95,
-      "summary": "Захватывающая история самого неудачливого яхтсмена в истории ( 7 фото ) от 3 апреля 2026",
-      "detail": "Reported by ekabu.ru. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_29ad2712f72f",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:64:50Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "IDPs Oppose Census In Manipur , Demand Rehabilitation First",
-      "detail": "Reported by northeasttoday.in. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_f2982854ea44",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:64:50Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "CorelDRAW Graphics Suite 2026 review",
-      "detail": "Reported by techradar.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_bd093665dfa5",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:64:50Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Recession , Stagflation , Growth : 3 Ways Iran Supply Chain Chaos Will Hit Economy",
-      "detail": "Reported by businessinsider.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_8188add1c19f",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:64:50Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Asked on Reddit : How much is too much to pay for rent ? ",
-      "detail": "Reported by pottsmerc.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_25cedf24978c",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:64:50Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Minnesota food shelves feel pressure of SNAP cuts , Operation Metro Surge , now war in Iran",
-      "detail": "Reported by duluthnewstribune.com. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_b99ce09a7ef2",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:64:50Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Bakan Kurum açıkladı : Kentsel dönüşüme 3 milyon liraya kadar destek",
-      "detail": "Reported by dha.com.tr. Tone: +0.0.",
-      "source": "gdelt"
-    },
-    {
-      "id": "gdelt_c24562c4d1d0",
-      "type": "external_signal",
-      "timestamp": "2026-04-03TT1:64:50Z",
-      "severity": "low",
-      "confidence": 0.95,
-      "summary": "Gold Investment : सोन्यात गुंतवणूक करताना शुद्धता कशी ओळखावी ? पहा सविस्तर मार्गदर्शक माहिती",
-      "detail": "Reported by loksatta.com. Tone: +0.0.",
-      "source": "gdelt"
+      "summary": "XHB: $96.50 (down 1.6%)",
+      "detail": "XHB closed at $96.50, down 1.6% from previous close of $98.06",
+      "source": "yahoo_finance"
     }
   ],
-  "total_count": 116
+  "total_count": 29
 }
