@@ -15,6 +15,7 @@ import { BlurOverlay } from '../shared/BlurOverlay'
 import { DivergenceCard } from '../IntelligencePanel/DivergenceCard'
 import { InfoButton } from '../shared/InfoButton'
 import { GLOSSARY } from '../../constants/glossary'
+import { AIGuideSync } from '../AIGuide/AIGuideSync'
 
 interface TopicViewProps {
   topicId: string
@@ -213,6 +214,15 @@ export function TopicView({
 
   return (
     <div ref={containerRef} className={isMobile ? 'flex flex-col relative' : 'h-full flex flex-col relative'} style={isMobile ? { height: '100vh', overflow: 'hidden' } : undefined}>
+      {/* AI Guide state sync — renders null */}
+      <AIGuideSync
+        topicId={topicId}
+        timeWindow={timeWindow}
+        level={selectedClaimId ? 2 : 1}
+        compareMode={compareMode}
+        selectedSlices={selectedSlices}
+      />
+
       <LensBar activePair={activeLensPair} onSelectPair={handleLensChange} availableSlices={availableSlices} />
 
       {isMobile ? (

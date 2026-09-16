@@ -129,17 +129,29 @@ export function AIGuideCompactPanel({
 
       if (!response.ok) throw new Error(`HTTP ${response.status}`)
 
+      // Guard: a 200 with HTML means the API route is missing and the SPA
+      // fallback served index.html instead of an SSE stream.
+      const contentType = response.headers.get('content-type') ?? ''
+      if (!contentType.includes('text/event-stream')) {
+        throw new Error('AI Guide backend unavailable')
+      }
+
       const reader = response.body?.getReader()
       if (!reader) throw new Error('No response body')
 
       const decoder = new TextDecoder()
+      // Buffer partial lines: SSE events can split across TCP chunks.
+      let buffer = ''
 
       while (true) {
         const { done, value } = await reader.read()
         if (done) break
 
-        const chunk = decoder.decode(value)
-        for (const line of chunk.split('\n')) {
+        buffer += decoder.decode(value, { stream: true })
+        const lines = buffer.split('\n')
+        buffer = lines.pop() ?? '' // keep incomplete trailing line for next chunk
+
+        for (const line of lines) {
           if (line.startsWith('data: ')) {
             try {
               const data = JSON.parse(line.slice(6))

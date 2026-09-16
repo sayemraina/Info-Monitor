@@ -461,6 +461,13 @@ export const useAIGuide = create<AIGuideState>((set, get) => ({
 
       if (!response.ok) throw new Error(`HTTP ${response.status}`)
 
+      // Guard: backend must return an SSE stream. A 200 with HTML means the API
+      // route is missing and the SPA fallback served index.html instead.
+      const contentType = response.headers.get('content-type') ?? ''
+      if (!contentType.includes('text/event-stream')) {
+        throw new Error('AI Guide backend unavailable')
+      }
+
       // Stream response
       const reader = response.body?.getReader()
       if (!reader) throw new Error('No response body')
@@ -472,37 +479,68 @@ export const useAIGuide = create<AIGuideState>((set, get) => ({
       // Add empty AI message to start streaming
       set({ messages: [...get().messages, aiMsg] })
 
+      // Buffer partial lines: SSE events can split across TCP chunks.
+      let buffer = ''
+      let streamError: string | null = null
+
       while (true) {
         const { done, value } = await reader.read()
         if (done) break
 
-        const chunk = decoder.decode(value)
-        const lines = chunk.split('\n')
+        buffer += decoder.decode(value, { stream: true })
+        const lines = buffer.split('\n')
+        buffer = lines.pop() ?? '' // keep incomplete trailing line for next chunk
 
         for (const line of lines) {
-          if (line.startsWith('data: ')) {
-            try {
-              const data = JSON.parse(line.slice(6))
-              if (data.text) {
-                fullResponseText += data.text
-                aiMsg.content += data.text
-                // Update last message
-                const currentMessages = get().messages
-                set({
-                  messages: [
-                    ...currentMessages.slice(0, -1),
-                    { ...aiMsg },
-                  ],
-                })
-              }
-              if (data.actions) {
-                console.log('Actions received:', data.actions)
-              }
-            } catch (e) {
-              // Skip malformed JSON
+          if (!line.startsWith('data: ')) continue
+          try {
+            const data = JSON.parse(line.slice(6))
+            if (data.error) {
+              streamError = data.error
+              continue
             }
+            if (data.text) {
+              fullResponseText += data.text
+              aiMsg.content += data.text
+              // Update last message
+              const currentMessages = get().messages
+              set({
+                messages: [
+                  ...currentMessages.slice(0, -1),
+                  { ...aiMsg },
+                ],
+              })
+            }
+          } catch (e) {
+            // Skip malformed JSON
           }
         }
+      }
+
+      // Backend reported an error mid-stream — surface it instead of a blank bubble.
+      if (streamError) {
+        const currentMessages = get().messages
+        set({
+          messages: [
+            ...currentMessages.slice(0, -1),
+            { role: 'assistant', content: streamError, isError: true },
+          ],
+          isStreaming: false,
+        })
+        return
+      }
+
+      // Stream produced nothing — surface it instead of a blank bubble.
+      if (!fullResponseText) {
+        const currentMessages = get().messages
+        set({
+          messages: [
+            ...currentMessages.slice(0, -1),
+            { role: 'assistant', content: "I didn't get a response. Try again in a moment?", isError: true },
+          ],
+          isStreaming: false,
+        })
+        return
       }
 
       // After streaming completes, parse and execute actions from response text

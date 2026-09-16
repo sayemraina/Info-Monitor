@@ -6,6 +6,10 @@ import { TopicOverview } from './components/Level0/TopicOverview'
 import { TopicView } from './components/TopicView/TopicView'
 import { InfoButtonProvider } from './components/shared/InfoButtonContext'
 import { DebugOverlay } from './components/DebugOverlay'
+import { AIGuideButton } from './components/AIGuide/AIGuideButton'
+import { AIGuidePrompt } from './components/AIGuide/AIGuidePrompt'
+import { AIGuideBriefingShell } from './components/AIGuide/AIGuideBriefingShell'
+import { AIGuideMouseTracker } from './components/AIGuide/AIGuideMouseTracker'
 import { mark, isDebug } from './utils/perf'
 
 function App() {
@@ -138,6 +142,13 @@ function App() {
           </div>
         ) : null}
       </main>
+
+      {/* AI Guide — floating overlays, no layout impact */}
+      <AIGuideMouseTracker />
+      <AIGuidePrompt />
+      <AIGuideButton />
+      <AIGuideBriefingShell />
+
       {isDebug() && <DebugOverlay />}
     </div>
     </InfoButtonProvider>
