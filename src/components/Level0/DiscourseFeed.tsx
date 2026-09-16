@@ -8,15 +8,23 @@ interface DiscourseFeedProps {
   onNavigateToLevel1: (topicId: string) => void
 }
 
-// Simulated "time ago" for liveness
-const TIME_LABELS = [
-  'just now', '1 min ago', '2 min ago', '3 min ago', '5 min ago',
-  '8 min ago', '12 min ago', '15 min ago', '20 min ago', '25 min ago',
-]
+function timeAgo(iso: string): string {
+  const ms = Date.now() - new Date(iso).getTime()
+  if (isNaN(ms) || ms < 0) return 'recent'
+  const min = Math.floor(ms / 60000)
+  if (min < 1) return 'just now'
+  if (min < 60) return `${min}m ago`
+  const hrs = Math.floor(min / 60)
+  if (hrs < 24) return `${hrs}h ago`
+  const days = Math.floor(hrs / 24)
+  if (days < 7) return `${days}d ago`
+  const weeks = Math.floor(days / 7)
+  return `${weeks}w ago`
+}
 
-function DiscourseCard({ post, index, isMobile }: { post: DiscoursePost; index: number; isMobile: boolean }) {
+function DiscourseCard({ post, isMobile }: { post: DiscoursePost; isMobile: boolean }) {
   const platformIcon = post.platform === 'x' ? '𝕏' : '💬'
-  const timeLabel = TIME_LABELS[index % TIME_LABELS.length]
+  const timeLabel = timeAgo(post.extracted_at)
 
   // Severity color from system tags
   const hasFire = post.system_tags.some(t => t.includes('arousal: high'))
@@ -138,7 +146,7 @@ export function DiscourseFeed({ activeTopic, onNavigateToLevel1 }: DiscourseFeed
       >
         {displayPosts.map((post, i) => (
           <div key={`${post.username}-${i}`} onClick={() => onNavigateToLevel1(activeTopic)}>
-            <DiscourseCard post={post} index={i} isMobile={isMobile} />
+            <DiscourseCard post={post} isMobile={isMobile} />
           </div>
         ))}
       </div>

@@ -69,6 +69,9 @@ class PolymarketIngester(BaseIngester):
                     if not question:
                         continue
 
+                    if not self.is_relevant(question, keywords):
+                        continue
+
                     # Get current probability
                     outcomes = market.get("outcomes", [])
                     best_ask = market.get("bestAsk", 0)

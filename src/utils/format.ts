@@ -7,9 +7,11 @@ export function formatConfidenceInterval(ci: [number, number]): string {
 }
 
 export function formatTimeAgo(timestamp: string): string {
-  const now = Date.now()
+  if (!timestamp) return ''
   const then = new Date(timestamp).getTime()
-  const diffMs = now - then
+  if (isNaN(then)) return ''
+  const diffMs = Date.now() - then
+  if (diffMs < 0) return 'recent'
   const diffMinutes = Math.floor(diffMs / 60000)
   const diffHours = Math.floor(diffMs / 3600000)
   const diffDays = Math.floor(diffMs / 86400000)

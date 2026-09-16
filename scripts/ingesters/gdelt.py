@@ -53,6 +53,9 @@ class GDELTIngester(BaseIngester):
                     if not title or not url:
                         continue
 
+                    if not self.is_relevant(title, keywords):
+                        continue
+
                     url_hash = self.content_hash(url)[:12]
 
                     tone = art.get("tone", 0)

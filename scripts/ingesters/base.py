@@ -135,6 +135,12 @@ class BaseIngester(ABC):
         }
 
     @staticmethod
+    def is_relevant(text: str, keywords: list[str]) -> bool:
+        """Check if text contains at least one topic keyword (case-insensitive)."""
+        text_lower = text.lower()
+        return any(kw.lower() in text_lower for kw in keywords)
+
+    @staticmethod
     def make_signal(
         id: str,
         source: str,

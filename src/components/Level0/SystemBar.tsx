@@ -137,9 +137,16 @@ function ChevronIcon({ expanded }: { expanded: boolean }) {
   )
 }
 
+function deriveStatus(ageMs: number): SourceStatus {
+  if (ageMs < 24 * 60 * 60 * 1000) return 'LIVE'
+  if (ageMs < 7 * 24 * 60 * 60 * 1000) return 'DELAYED'
+  return 'CACHED'
+}
+
 export function SystemBar({ systemConfidence }: SystemBarProps) {
   const isMobile = useIsMobile()
   const [time, setTime] = useState(new Date())
+  const [dataStatus, setDataStatus] = useState<SourceStatus>('CACHED')
   const [showInfo, setShowInfo] = useState(false)
   const [popupPos, setPopupPos] = useState({ top: 0, left: 0 })
   const hideTimer = useRef<ReturnType<typeof setTimeout>>(null)
@@ -165,6 +172,19 @@ export function SystemBar({ systemConfidence }: SystemBarProps) {
   useEffect(() => {
     const interval = setInterval(() => setTime(new Date()), 1000)
     return () => clearInterval(interval)
+  }, [])
+
+  useEffect(() => {
+    fetch('/data/discourse/ai-workplace.json')
+      .then(r => r.json())
+      .then((posts: Array<{ extracted_at?: string }>) => {
+        const latest = posts.reduce((max, p) => {
+          const t = p.extracted_at ? new Date(p.extracted_at).getTime() : 0
+          return t > max ? t : max
+        }, 0)
+        if (latest > 0) setDataStatus(deriveStatus(Date.now() - latest))
+      })
+      .catch(() => {})
   }, [])
 
   const et = time.toLocaleTimeString('en-US', { timeZone: 'America/New_York', hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit' })
@@ -236,12 +256,15 @@ export function SystemBar({ systemConfidence }: SystemBarProps) {
     >
       {/* Data sources — left */}
       <div className="flex items-center gap-4">
-        {INLINE_SOURCES.map(s => (
-          <span key={s.name}>
-            <span style={{ color: dotColor(s.status) }}>●</span>
-            {!isMobile && ` ${s.name.replace(' (Twitter)', '')}: ${s.status}`}
-          </span>
-        ))}
+        {INLINE_SOURCES.map(s => {
+          const status = s.name === 'YouTube' ? 'CACHED' : dataStatus
+          return (
+            <span key={s.name}>
+              <span style={{ color: dotColor(status) }}>●</span>
+              {!isMobile && ` ${s.name.replace(' (Twitter)', '')}: ${status}`}
+            </span>
+          )
+        })}
         <span
           ref={sourcesRef}
           onMouseEnter={handleSourcesEnter}

@@ -1262,7 +1262,7 @@ def generate_events(claims: list[dict], clusters: list[dict], momentum: dict,
                 leader, leader_ts = sorted_plats[0]
                 follower, follower_ts = sorted_plats[-1]
                 lag_hours = (follower_ts - leader_ts) / 3600
-                if lag_hours > 6:
+                if 6 < lag_hours <= 720:
                     _add("lead_lag", {
                         "id": event_id(topic_id, "lead_lag", idx),
                         "type": "lead_lag",

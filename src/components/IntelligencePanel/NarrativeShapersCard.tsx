@@ -5,6 +5,12 @@ interface NarrativeShapersCardProps {
   clusters?: Cluster[]
 }
 
+function formatPropagation(hours: number): string {
+  if (!hours || hours <= 0) return '—'
+  if (hours > 720) return '—'
+  return `~${hours.toFixed(1)}h avg`
+}
+
 function directionLabel(dir: string): { text: string; color: string } {
   switch (dir) {
     case 'top_down': return { text: 'Top-down driven', color: '#EF4444' }
@@ -77,16 +83,16 @@ export function NarrativeShapersCard({ impact, clusters }: NarrativeShapersCardP
           <span className="text-[9px]" style={{ color: 'var(--color-text-muted)' }}>
             Reaches X in
           </span>
-          <span className="font-data text-[10px]" style={{ color: 'var(--color-text-secondary)' }}>
-            ~{impact.avg_propagation_x}h avg
+          <span className="font-data text-[10px]" style={{ color: 'var(--color-text-secondary)', opacity: impact.avg_propagation_x > 720 || !impact.avg_propagation_x ? 0.3 : 1 }}>
+            {formatPropagation(impact.avg_propagation_x)}
           </span>
         </div>
         <div className="flex items-center justify-between">
           <span className="text-[9px]" style={{ color: 'var(--color-text-muted)' }}>
             Reaches Reddit in
           </span>
-          <span className="font-data text-[10px]" style={{ color: 'var(--color-text-secondary)' }}>
-            ~{impact.avg_propagation_reddit}h avg
+          <span className="font-data text-[10px]" style={{ color: 'var(--color-text-secondary)', opacity: impact.avg_propagation_reddit > 720 || !impact.avg_propagation_reddit ? 0.3 : 1 }}>
+            {formatPropagation(impact.avg_propagation_reddit)}
           </span>
         </div>
 
@@ -134,7 +140,7 @@ export function NarrativeShapersCard({ impact, clusters }: NarrativeShapersCardP
                     </span>
                   </div>
                   <div className="text-[8px] mt-0.5" style={{ color: 'var(--color-text-muted)' }}>
-                    Reaches X in ~{seeding.avg_propagation_hours.x}h · Reddit in ~{seeding.avg_propagation_hours.reddit}h
+                    Reaches X in {formatPropagation(seeding.avg_propagation_hours.x)} · Reddit in {formatPropagation(seeding.avg_propagation_hours.reddit)}
                   </div>
                 </div>
               )
