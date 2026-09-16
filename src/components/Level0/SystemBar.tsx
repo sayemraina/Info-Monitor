@@ -143,10 +143,23 @@ function deriveStatus(ageMs: number): SourceStatus {
   return 'CACHED'
 }
 
+// Label the actual pipeline run date rather than a vague freshness word.
+// Includes the year only when it differs from now, so stale data can't read as recent.
+function formatRunDate(ms: number): string {
+  const d = new Date(ms)
+  const sameYear = d.getFullYear() === new Date().getFullYear()
+  return d.toLocaleDateString('en-US', {
+    month: 'short',
+    day: 'numeric',
+    ...(sameYear ? {} : { year: 'numeric' }),
+  })
+}
+
 export function SystemBar({ systemConfidence }: SystemBarProps) {
   const isMobile = useIsMobile()
   const [time, setTime] = useState(new Date())
   const [dataStatus, setDataStatus] = useState<SourceStatus>('CACHED')
+  const [dataRunAt, setDataRunAt] = useState<number | null>(null)
   const [showInfo, setShowInfo] = useState(false)
   const [popupPos, setPopupPos] = useState({ top: 0, left: 0 })
   const hideTimer = useRef<ReturnType<typeof setTimeout>>(null)
@@ -182,7 +195,10 @@ export function SystemBar({ systemConfidence }: SystemBarProps) {
           const t = p.extracted_at ? new Date(p.extracted_at).getTime() : 0
           return t > max ? t : max
         }, 0)
-        if (latest > 0) setDataStatus(deriveStatus(Date.now() - latest))
+        if (latest > 0) {
+          setDataStatus(deriveStatus(Date.now() - latest))
+          setDataRunAt(latest)
+        }
       })
       .catch(() => {})
   }, [])
@@ -261,10 +277,32 @@ export function SystemBar({ systemConfidence }: SystemBarProps) {
           return (
             <span key={s.name}>
               <span style={{ color: dotColor(status) }}>●</span>
-              {!isMobile && ` ${s.name.replace(' (Twitter)', '')}: ${status}`}
+              {!isMobile && ` ${s.name.replace(' (Twitter)', '')}`}
             </span>
           )
         })}
+
+        {/* Pipeline run date — concrete date beats a vague freshness word */}
+        {dataRunAt && (
+          <span
+            title={`Data pipeline last run ${new Date(dataRunAt).toLocaleString()}`}
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '4px',
+              fontSize: '8px',
+              color: dotColor(dataStatus),
+              border: `1px solid ${dotColor(dataStatus)}40`,
+              borderRadius: '3px',
+              padding: '0px 5px',
+              lineHeight: '14px',
+              letterSpacing: '0.3px',
+              whiteSpace: 'nowrap',
+            }}
+          >
+            As of {formatRunDate(dataRunAt)}
+          </span>
+        )}
         <span
           ref={sourcesRef}
           onMouseEnter={handleSourcesEnter}
