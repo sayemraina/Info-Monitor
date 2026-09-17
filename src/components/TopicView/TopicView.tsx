@@ -15,7 +15,8 @@ import { BlurOverlay } from '../shared/BlurOverlay'
 import { DivergenceCard } from '../IntelligencePanel/DivergenceCard'
 import { InfoButton } from '../shared/InfoButton'
 import { GLOSSARY } from '../../constants/glossary'
-import { AIGuideSync } from '../AIGuide/AIGuideSync'
+import { useAIGuide } from '../../hooks/useAIGuide'
+import type { ActionExecutor } from '../../utils/aiGuideActionsExecutor'
 
 interface TopicViewProps {
   topicId: string
@@ -34,6 +35,8 @@ interface TopicViewProps {
   onSetSelectedSlices: (slices: [string, string] | null) => void
   onSetEventTypeFilter: (filter: EventType | 'all') => void
   onClearEntryHint: () => void
+  /** Switch topics. Needed by the AI Guide's navigate_topic action. */
+  onNavigateTopic: (topicId: string) => void
 }
 
 export function TopicView({
@@ -53,12 +56,84 @@ export function TopicView({
   onSetSelectedSlices,
   onSetEventTypeFilter,
   onClearEntryHint,
+  onNavigateTopic,
 }: TopicViewProps) {
   const isMobile = useIsMobile()
   const { landscape, loading, error } = useLandscape(topicId, timeWindow)
   const cascade = useEntryCascade(entryHint, onClearEntryHint)
   const containerRef = useRef<HTMLDivElement>(null)
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false)
+
+  // --- AI Guide action execution -------------------------------------------
+  // The store holds an ActionExecutor that tour steps call into. Until it is
+  // registered the guide narrates actions ("look at the highlighted cluster")
+  // that never visibly happen.
+  const setActionExecutor = useAIGuide(s => s.setActionExecutor)
+  const [highlightedClusterId, setHighlightedClusterId] = useState<string | null>(null)
+  const highlightTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
+
+  useEffect(() => {
+    const executor: ActionExecutor = {
+      highlightCluster: async (clusterId, durationMs = 8000) => {
+        // Validate against real data — a hallucinated ID must fail loudly, not silently no-op.
+        if (!landscape?.clusters.some(c => c.id === clusterId)) {
+          return { success: false, message: `Cluster ${clusterId} not in current landscape` }
+        }
+        if (highlightTimer.current) clearTimeout(highlightTimer.current)
+        setHighlightedClusterId(clusterId)
+        highlightTimer.current = setTimeout(() => setHighlightedClusterId(null), durationMs)
+        return { success: true }
+      },
+      navigateTopic: async (topicId) => {
+        onNavigateTopic(topicId)
+        return { success: true }
+      },
+      scrollZoneD: async (eventType, eventId) => {
+        // Zone D nests two scroll containers inside a scale(0.85) transform, so
+        // absolute offset math is unreliable. scrollIntoView with block:'nearest'
+        // walks the scroll ancestors itself and is transform-aware.
+        const sel = eventId
+          ? `[data-event-id="${CSS.escape(eventId)}"]`
+          : eventType
+            ? `[data-event-type="${CSS.escape(eventType)}"]`
+            : '[data-event-id]'
+        const el = document.querySelector<HTMLElement>(sel)
+        if (!el) {
+          return { success: false, message: `No signal matching ${eventId ?? eventType ?? 'any'} in Zone D` }
+        }
+        el.scrollIntoView({ block: 'center', behavior: 'smooth' })
+        // Scrolling is invisible when the target is already in view — flash it
+        // so the user can tell which signal the guide means.
+        const prevOutline = el.style.outline
+        const prevOffset = el.style.outlineOffset
+        el.style.outline = '1px solid #06B6D4'
+        el.style.outlineOffset = '2px'
+        setTimeout(() => {
+          el.style.outline = prevOutline
+          el.style.outlineOffset = prevOffset
+        }, 2600)
+        return { success: true }
+      },
+      selectClaim: async (claimId) => {
+        if (!landscape?.claims.some(c => c.id === claimId)) {
+          return { success: false, message: `Claim ${claimId} not in current landscape` }
+        }
+        onSelectClaim(claimId)
+        return { success: true }
+      },
+    }
+    setActionExecutor(executor)
+  }, [landscape, onSelectClaim, onNavigateTopic, setActionExecutor])
+
+  // Drop any active highlight when the topic or window changes
+  useEffect(() => {
+    if (highlightTimer.current) clearTimeout(highlightTimer.current)
+    setHighlightedClusterId(null)
+  }, [topicId, timeWindow])
+
+  useEffect(() => () => {
+    if (highlightTimer.current) clearTimeout(highlightTimer.current)
+  }, [])
 
   // Auto-select top claim in cluster when entering via map hotspot
   useEffect(() => {
@@ -203,6 +278,7 @@ export function TopicView({
         selectedClaimId={selectedClaimId}
         onSelectClaim={onSelectClaim}
         onDeselectClaim={onDeselectClaim}
+        highlightedClusterId={highlightedClusterId}
       />
     )
   ) : null
@@ -214,15 +290,6 @@ export function TopicView({
 
   return (
     <div ref={containerRef} className={isMobile ? 'flex flex-col relative' : 'h-full flex flex-col relative'} style={isMobile ? { height: '100vh', overflow: 'hidden' } : undefined}>
-      {/* AI Guide state sync — renders null */}
-      <AIGuideSync
-        topicId={topicId}
-        timeWindow={timeWindow}
-        level={selectedClaimId ? 2 : 1}
-        compareMode={compareMode}
-        selectedSlices={selectedSlices}
-      />
-
       <LensBar activePair={activeLensPair} onSelectPair={handleLensChange} availableSlices={availableSlices} />
 
       {isMobile ? (

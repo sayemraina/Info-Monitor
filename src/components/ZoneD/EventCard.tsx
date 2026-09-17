@@ -27,6 +27,8 @@ export function EventCard({ event, onClick, index = 0 }: EventCardProps) {
   return (
     <button
       onClick={onClick}
+      data-event-id={event.id}
+      data-event-type={event.type}
       className="w-full text-left px-2 py-1.5 rounded transition-colors cursor-pointer animate-slide-in animate-highlight-pulse"
       style={{ backgroundColor: 'transparent', animationDelay: staggerDelay }}
       onMouseEnter={e => { e.currentTarget.style.backgroundColor = 'var(--color-bg-panel-hover)' }}

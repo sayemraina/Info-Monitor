@@ -10,6 +10,9 @@ import { AIGuideButton } from './components/AIGuide/AIGuideButton'
 import { AIGuidePrompt } from './components/AIGuide/AIGuidePrompt'
 import { AIGuideBriefingShell } from './components/AIGuide/AIGuideBriefingShell'
 import { AIGuideMouseTracker } from './components/AIGuide/AIGuideMouseTracker'
+import { AIGuideSync } from './components/AIGuide/AIGuideSync'
+import { WelcomeModal } from './components/Level0/WelcomeModal'
+import { useAIGuide } from './hooks/useAIGuide'
 import { mark, isDebug } from './utils/perf'
 
 function App() {
@@ -41,6 +44,32 @@ function App() {
       entryClusterId: clusterId,
     }))
   }, [])
+
+  const openBriefing = useAIGuide(s => s.openBriefing)
+  const switchMode = useAIGuide(s => s.switchMode)
+
+  // Welcome modal handoff — drop the user straight into the guided walkthrough
+  // instead of the mode selector, since they already chose "guide me".
+  const startGuidedTour = useCallback(() => {
+    openBriefing()
+    switchMode('auto-sequence')
+  }, [openBriefing, switchMode])
+
+  // TopicView owns the full executor, but it only mounts at level 1+. Without
+  // this, the overview tour narrates "taking you there now" and never moves.
+  const setActionExecutor = useAIGuide(s => s.setActionExecutor)
+  useEffect(() => {
+    if (state.selectedTopicId) return
+    setActionExecutor({
+      highlightCluster: async () => ({ success: false, message: 'No landscape at overview level' }),
+      navigateTopic: async (topicId: string) => {
+        selectTopic(topicId)
+        return { success: true }
+      },
+      scrollZoneD: async () => ({ success: false, message: 'No signals panel at overview level' }),
+      selectClaim: async () => ({ success: false, message: 'No landscape at overview level' }),
+    })
+  }, [state.selectedTopicId, selectTopic, setActionExecutor])
 
   const clearEntryHint = useCallback(() => {
     setState(s => ({ ...s, entryHint: undefined, entryClusterId: undefined }))
@@ -138,10 +167,23 @@ function App() {
               onSetSelectedSlices={setSelectedSlices}
               onSetEventTypeFilter={setEventTypeFilter}
               onClearEntryHint={clearEntryHint}
+              onNavigateTopic={selectTopic}
             />
           </div>
         ) : null}
       </main>
+
+      {/* Mounted at App level, not inside TopicView: TopicView only exists at
+          level 1+, which silently disabled the Level 0 overview tour. */}
+      <AIGuideSync
+        topicId={state.selectedTopicId}
+        timeWindow={state.timeWindow}
+        level={state.level}
+        compareMode={state.compareMode}
+        selectedSlices={state.selectedSlices}
+      />
+
+      <WelcomeModal onStartGuide={startGuidedTour} onEnter={() => {}} />
 
       {/* AI Guide — floating overlays, no layout impact */}
       <AIGuideMouseTracker />

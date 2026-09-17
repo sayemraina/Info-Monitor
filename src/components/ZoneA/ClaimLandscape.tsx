@@ -24,6 +24,8 @@ interface ClaimLandscapeProps {
   compareSalience?: Map<string, number>
   /** Label shown in corner during compare mode */
   compareLabel?: string
+  /** Cluster the AI Guide is pointing at. Its nodes stay lit; everything else dims. */
+  highlightedClusterId?: string | null
 }
 
 // Map arousal level to numeric value
@@ -42,6 +44,7 @@ export function ClaimLandscape({
   onDeselectClaim,
   compareSalience,
   compareLabel,
+  highlightedClusterId,
 }: ClaimLandscapeProps) {
   const isMobile = useIsMobile()
   const containerRef = useRef<HTMLDivElement>(null)
@@ -451,6 +454,8 @@ export function ClaimLandscape({
         {nodes.map(node => {
           const isSelected = node.id === selectedClaimId
           const isOtherSelected = selectedClaimId && !isSelected
+          const inHighlight = !!highlightedClusterId && node.claim.cluster_id === highlightedClusterId
+          const dimmedByHighlight = !!highlightedClusterId && !inHighlight
           const glowFilter = getArousalGlowFilter(node.arousalValue, node.color)
 
           return (
@@ -462,12 +467,13 @@ export function ClaimLandscape({
               r={isSelected ? node.radius + 2 : node.radius}
               fill={node.color}
               fillOpacity={
-                node.claim.confidence < 0.5 ? 0.4
+                dimmedByHighlight ? 0.08
+                : node.claim.confidence < 0.5 ? 0.4
                 : isOtherSelected ? 0.35
-                : 0.85
+                : 0.9
               }
-              stroke={isSelected ? '#F1F5F9' : 'transparent'}
-              strokeWidth={isSelected ? 2 : 0}
+              stroke={isSelected ? '#F1F5F9' : inHighlight ? '#06B6D4' : 'transparent'}
+              strokeWidth={isSelected ? 2 : inHighlight ? 1.5 : 0}
               style={{
                 filter: glowFilter !== 'none' ? glowFilter : undefined,
                 cursor: 'pointer',

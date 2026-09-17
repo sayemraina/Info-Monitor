@@ -103,9 +103,21 @@ export function parseActionsFromText(text: string): {
         actions.push({ type: 'navigate_topic', topicId: actionData })
         break
 
-      case 'scroll_zone_d':
-        actions.push({ type: 'scroll_zone_d', eventType: actionData })
+      case 'scroll_zone_d': {
+        // The marker carries a single data field, so an event ID could never reach
+        // eventId — it always landed in eventType. Event IDs are prefixed (evt_...),
+        // event types are bare words, so route on that. Also accept an explicit
+        // "type:id" pair for callers that want both.
+        if (actionData.includes(':')) {
+          const [t, id] = actionData.split(':')
+          actions.push({ type: 'scroll_zone_d', eventType: t || undefined, eventId: id || undefined })
+        } else if (/^(evt|ev|event)[_-]/i.test(actionData)) {
+          actions.push({ type: 'scroll_zone_d', eventId: actionData })
+        } else {
+          actions.push({ type: 'scroll_zone_d', eventType: actionData })
+        }
         break
+      }
 
       case 'select_claim':
         actions.push({ type: 'select_claim', claimId: actionData })
