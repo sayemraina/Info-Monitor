@@ -23,36 +23,45 @@ const WM_LINK = (
   </a>
 )
 
-const SECTIONS: Array<{ label: string; body?: React.ReactNode; bullets?: string[] }> = [
+const SECTIONS: Array<{ label: string; lead?: React.ReactNode; bullets?: React.ReactNode[]; paras?: React.ReactNode[]; trailer?: React.ReactNode }> = [
   {
     label: 'What this is',
-    body: (
+    lead: <>A self-updating narrative topology instrument. It:</>,
+    bullets: [
+      'Extracts structured claims from public discourse',
+      'Maps them into a semantic topology of competing positions on any contested topic',
+      'Measures how that topology differs across platforms, populations, and time',
+    ],
+    trailer: (
       <>
-        A feed shows you posts. This shows you the argument underneath them — every side being
-        made, which one is winning, and whether it's winning on its own or being pushed by a
-        few accounts.
+        Every contested topic — immigration, AI regulation, vaccine policy, any subject where
+        people disagree — has a structure. There are distinct positions, they cluster into
+        narratives, different populations hold different distributions of those positions, and the
+        distributions shift over time. That structure is the topology of the disagreement, and it
+        is normally invisible. InfoMonitor makes it visible and measurable.
       </>
     ),
   },
   {
     label: 'Who uses this kind of thing',
-    body: (
+    paras: [
+      'Newsrooms, think tanks, and government agencies buy tools like this — Dataminr, Graphika, Blackbird.AI — at enterprise prices.',
       <>
-        Newsrooms, think tanks and funds pay five figures a year for tools like this — Dataminr,
-        Graphika, Blackbird.AI. This is the free, simpler version, the way {WM_LINK} did it for
-        world events. Built entirely on public posts anyone can read.
-      </>
-    ),
+        This is a free, stripped-down version of the same idea, built entirely on public posts
+        anyone can read. {WM_LINK} tracks what happens in the world. This tracks what people
+        make of it.
+      </>,
+    ],
   },
   {
     label: 'What you can do here',
     bullets: [
-      'See every position on one map — size is reach, colour is what\u2019s accelerating, glow is heat',
-      'Split the screen and compare two groups — which arguments exist in one and not the other',
-      'Find out why they disagree: different facts, same facts framed differently, or incompatible worldviews',
-      'Trace any claim backwards to where it first surfaced and how it changed on the way',
-      'Watch an argument go mainstream, or get more extreme',
-      'Check whether something spreads on its own or through a handful of accounts',
+      'Pick a topic and the whole argument appears as a map — every position, sized by how far it reaches, coloured by what\u2019s accelerating',
+      'Split it in two to see where two groups have stopped sharing the same reality',
+      'Find out why they split: different facts, the same facts framed differently, or incompatible worldviews',
+      'Trace any claim backwards to where it first surfaced and what it turned into on the way',
+      'Watch an argument go mainstream, or turn more extreme',
+      'Check whether something is spreading on its own or through a handful of accounts',
       'Catch claims that went quiet — active one day, silent the next',
       'Read the actual posts behind any of it',
     ],
@@ -98,21 +107,21 @@ export function WelcomeModal({ onStartGuide, onEnter }: WelcomeModalProps) {
           as a real instrument behind the glass, not a black screen. */}
       <div
         className="absolute inset-0"
-        style={{ backgroundColor: 'rgba(3,5,8,0.55)', backdropFilter: 'blur(7px)' }}
+        style={{ backgroundColor: 'rgba(3,5,8,0.32)', backdropFilter: 'blur(6px)' }}
       />
       {/* Radial vignette keeps contrast behind the panel without flattening the edges. */}
       <div
         className="absolute inset-0"
         style={{
           background:
-            'radial-gradient(ellipse at center, rgba(3,5,8,0.72) 0%, rgba(3,5,8,0.45) 45%, rgba(3,5,8,0.15) 100%)',
+            'radial-gradient(ellipse at center, rgba(3,5,8,0.48) 0%, rgba(3,5,8,0.26) 45%, rgba(3,5,8,0.04) 100%)',
         }}
       />
 
       <div
         className="relative animate-fade-in"
         style={{
-          width: isMobile ? 'calc(100% - 32px)' : '560px',
+          width: isMobile ? 'calc(100% - 32px)' : '640px',
           // Constrained on every viewport, not just mobile: the bullet list pushes
           // the panel to ~724px, which overflows a short laptop with no way to scroll.
           maxHeight: isMobile ? '88vh' : '90vh',
@@ -156,14 +165,14 @@ export function WelcomeModal({ onStartGuide, onEnter }: WelcomeModalProps) {
               lineHeight: 1.4,
             }}
           >
-            See the shape of any argument, before it reaches you.
+            The structure of every narrative, made visible.
           </p>
         </div>
 
         <div style={{ height: '1px', background: 'rgba(148,163,184,0.1)', marginBottom: '18px' }} />
 
         {/* Body */}
-        <div className="flex flex-col" style={{ gap: '15px' }}>
+        <div className="flex flex-col" style={{ gap: '19px' }}>
           {SECTIONS.map(s => (
             <div key={s.label}>
               <div
@@ -172,41 +181,69 @@ export function WelcomeModal({ onStartGuide, onEnter }: WelcomeModalProps) {
                   fontSize: '8.5px',
                   letterSpacing: '1.1px',
                   color: '#64748B',
-                  marginBottom: '5px',
+                  marginBottom: '7px',
                 }}
               >
                 {s.label}
               </div>
-              {s.bullets ? (
-                <ul
-                  style={{
-                    fontSize: isMobile ? '12px' : '12.5px',
-                    lineHeight: 1.5,
-                    color: '#CBD5E1',
-                    listStyle: 'none',
-                    padding: 0,
-                    margin: 0,
-                    display: 'flex',
-                    flexDirection: 'column',
-                    gap: '5px',
-                  }}
-                >
-                  {s.bullets.map(b => (
-                    <li key={b} style={{ display: 'flex', gap: '8px' }}>
-                      <span style={{ color: '#06B6D4', flexShrink: 0, lineHeight: 1.5 }}>›</span>
-                      <span>{b}</span>
-                    </li>
-                  ))}
-                </ul>
-              ) : (
+              {s.lead && (
                 <div
                   style={{
                     fontSize: isMobile ? '12.5px' : '13px',
-                    lineHeight: 1.55,
+                    lineHeight: 1.6,
+                    color: '#CBD5E1',
+                    marginBottom: '7px',
+                  }}
+                >
+                  {s.lead}
+                </div>
+              )}
+              {s.paras && (
+                <div
+                  style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '9px',
+                    fontSize: isMobile ? '12.5px' : '13px',
+                    lineHeight: 1.6,
                     color: '#CBD5E1',
                   }}
                 >
-                  {s.body}
+                  {s.paras.map((para, i) => <p key={i}>{para}</p>)}
+                </div>
+              )}
+              {s.bullets && (
+              <ul
+                style={{
+                  fontSize: isMobile ? '12.5px' : '13px',
+                  lineHeight: 1.6,
+                  color: '#CBD5E1',
+                  listStyle: 'none',
+                  padding: 0,
+                  margin: 0,
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: '7px',
+                }}
+              >
+                {s.bullets.map((b, i) => (
+                  <li key={i} style={{ display: 'flex', gap: '9px' }}>
+                    <span style={{ color: '#06B6D4', flexShrink: 0, lineHeight: 1.6 }}>›</span>
+                    <span>{b}</span>
+                  </li>
+                ))}
+              </ul>
+              )}
+              {s.trailer && (
+                <div
+                  style={{
+                    fontSize: isMobile ? '12.5px' : '13px',
+                    lineHeight: 1.6,
+                    color: '#CBD5E1',
+                    marginTop: '11px',
+                  }}
+                >
+                  {s.trailer}
                 </div>
               )}
             </div>
@@ -214,9 +251,20 @@ export function WelcomeModal({ onStartGuide, onEnter }: WelcomeModalProps) {
         </div>
 
         {/* Actions */}
+        {/* Sticky so the primary action is always reachable — the content can
+            exceed 90vh and the CTAs were falling below the fold. */}
         <div
           className={isMobile ? 'flex flex-col' : 'flex items-center'}
-          style={{ gap: '10px', marginTop: '24px' }}
+          style={{
+            gap: '10px',
+            position: 'sticky',
+            bottom: isMobile ? '-22px' : '-28px',
+            marginTop: '20px',
+            marginBottom: isMobile ? '-22px' : '-28px',
+            paddingTop: '16px',
+            paddingBottom: isMobile ? '22px' : '28px',
+            background: 'linear-gradient(to top, rgba(10,16,24,0.99) 78%, rgba(10,16,24,0))',
+          }}
         >
           <button
             onClick={handleEnter}
