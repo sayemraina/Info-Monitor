@@ -2,16 +2,18 @@ import { useState } from 'react'
 import { useAIGuide } from '../../hooks/useAIGuide'
 
 export function AIGuideAmbient() {
-  const { switchMode, exitBriefing, sessionId } = useAIGuide()
+  const { switchMode, exitBriefing, sessionId, sendMessage } = useAIGuide()
   const [isCollapsed, setIsCollapsed] = useState(false)
   const [quickQuery, setQuickQuery] = useState('')
 
   const handleQuickQuery = () => {
-    if (!quickQuery.trim()) return
-    // Switch to query mode (which will handle the question)
+    const q = quickQuery.trim()
+    if (!q) return
+    setQuickQuery('')
+    // switchMode clears messages synchronously, so sending after it starts a
+    // clean conversation seeded with the user's question instead of dropping it.
     switchMode('query')
-    // Note: The question input will be lost in transition
-    // In a full implementation, we'd preserve it
+    sendMessage(q)
   }
 
   const handleKeyPress = (e: React.KeyboardEvent) => {
@@ -217,7 +219,7 @@ export function AIGuideAmbient() {
             type="text"
             value={quickQuery}
             onChange={(e) => setQuickQuery(e.target.value)}
-            onKeyPress={handleKeyPress}
+            onKeyDown={handleKeyPress}
             placeholder="Ask about what you're seeing..."
             style={{
               width: '100%',

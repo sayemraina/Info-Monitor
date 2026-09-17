@@ -371,7 +371,7 @@ export function AIGuideCompactPanel({
           type="text"
           value={followUpInput}
           onChange={handleInputChange}
-          onKeyPress={handleKeyPress}
+          onKeyDown={handleKeyPress}
           placeholder={inFollowUpMode ? 'Ask another question...' : 'Ask about this...'}
           disabled={isFollowUpStreaming}
           style={{

@@ -255,7 +255,7 @@ function QueryPanel({
             type="text"
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
-            onKeyPress={handleKeyPress}
+            onKeyDown={handleKeyPress}
             placeholder="Ask about signals, patterns, or specific components..."
             disabled={isStreaming}
             style={{
