@@ -38,10 +38,11 @@ const SECTIONS: Array<{ label: string; lead?: React.ReactNode; bullets?: React.R
           Every contested topic — immigration, AI regulation, vaccine policy, any subject where
           people disagree — has a structure. There are distinct positions, they cluster into
           narratives, different populations hold different distributions of those positions, and
-          the distributions shift over time. That structure is the topology of the disagreement.
+          the distributions shift over time. That structure is the topology of the disagreement,
+          and it is normally invisible.
         </p>
         <p style={{ marginTop: '11px' }}>
-          It is normally invisible. InfoMonitor makes it visible and measurable.
+          InfoMonitor makes it visible and measurable.
         </p>
       </>
     ),
