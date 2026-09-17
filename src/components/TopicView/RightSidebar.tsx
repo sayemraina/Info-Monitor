@@ -43,7 +43,7 @@ export const RightSidebar: FC<RightSidebarProps> = ({
     <div className="h-full flex flex-col gap-2 overflow-y-auto p-2 min-h-0 rounded-lg custom-scrollbar" style={{ backgroundColor: 'var(--color-bg-panel)', border: '1px solid var(--color-border)' }}>
 
       {!selectedClaimId && landscape && (
-        <div className="flex flex-col gap-2 flex-1 min-h-0">
+        <div className="flex flex-col gap-2">
           {landscape.topic_metrics.situations && (
             <div className={`shrink-0 pb-1 border-b border-[#1E3044] rounded-lg ${cascadeZones?.situations ?? ''}`}>
               <SituationsCard
@@ -66,7 +66,7 @@ export const RightSidebar: FC<RightSidebarProps> = ({
             </div>
           )}
 
-          <div className={`flex-1 min-h-0 flex flex-col rounded-lg ${cascadeZones?.signals ?? ''}`}>
+          <div className={`flex flex-col rounded-lg h-[38vh] min-h-[260px] max-h-[460px] ${cascadeZones?.signals ?? ''}`}>
              <SignalsCard
                topicId={topicId}
                timeWindow={timeWindow}
