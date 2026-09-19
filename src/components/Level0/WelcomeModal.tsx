@@ -43,7 +43,7 @@ const SECTIONS: Array<{ label: string; lead?: React.ReactNode; bullets?: React.R
   {
     label: 'Who uses this kind of thing',
     paras: [
-      'Newsrooms, PR firms, think tanks, security agencies, and political campaign teams buy tools like this - Dataminr, Graphika, Blackbird.AI - at enterprise prices.',
+      'Newsrooms, PR firms, political campaign teams, and security agencies buy tools like this - Dataminr, Graphika, Blackbird.AI - at enterprise prices.',
       'This is a free, stripped-down version of the same idea, built entirely on public posts anyone can read.',
       <>{WM_LINK} tracks what happens in the world. This tracks what people make of it.</>,
     ],
