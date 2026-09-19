@@ -32,20 +32,13 @@ const SECTIONS: Array<{ label: string; lead?: React.ReactNode; bullets?: React.R
       'Maps them into a semantic topology of competing positions on any contested topic',
       'Measures how that topology differs across platforms, populations, and time',
     ],
-    trailer: (
-      <>
-        <p>
-          Every contested topic — immigration, AI regulation, vaccine policy, any subject where
-          people disagree — has a structure. There are distinct positions, they cluster into
-          narratives, different populations hold different distributions of those positions, and
-          the distributions shift over time. That structure is the topology of the disagreement,
-          and it is normally invisible.
-        </p>
-        <p style={{ marginTop: '11px' }}>
-          InfoMonitor makes it visible and measurable.
-        </p>
-      </>
-    ),
+  },
+  {
+    label: 'Why InfoMonitor?',
+    paras: [
+      'Every contested topic — immigration, AI regulation, vaccine policy, any subject where people disagree — has a structure. There are distinct positions, they cluster into narratives, different populations hold different distributions of those positions, and the distributions shift over time. That structure is the topology of the disagreement, and it is normally invisible.',
+      'InfoMonitor makes it visible and measurable.',
+    ],
   },
   {
     label: 'Who uses this kind of thing',
@@ -61,7 +54,7 @@ const SECTIONS: Array<{ label: string; lead?: React.ReactNode; bullets?: React.R
   {
     label: 'What you can do here',
     bullets: [
-      'Pick a topic and the whole argument appears as a map — every position, sized by how far it reaches, coloured by what\u2019s accelerating',
+      'Pick a topic and the whole argument appears as a map — every position, sized by how far it reaches, coloured by what’s accelerating',
       'Split it in two to see where two groups have stopped sharing the same reality',
       'Find out why they split: different facts, the same facts framed differently, or incompatible worldviews',
       'Trace any claim backwards to where it first surfaced and what it turned into on the way',
@@ -183,9 +176,10 @@ export function WelcomeModal({ onStartGuide, onEnter }: WelcomeModalProps) {
               <div
                 className="font-data uppercase"
                 style={{
-                  fontSize: '8.5px',
+                  fontSize: '10px',
                   letterSpacing: '1.1px',
-                  color: '#64748B',
+                  color: '#F1F5F9',
+                  fontWeight: 700,
                   marginBottom: '7px',
                 }}
               >
@@ -196,7 +190,7 @@ export function WelcomeModal({ onStartGuide, onEnter }: WelcomeModalProps) {
                   style={{
                     fontSize: isMobile ? '12.5px' : '13px',
                     lineHeight: 1.6,
-                    color: '#CBD5E1',
+                    color: '#64748B',
                     marginBottom: '7px',
                   }}
                 >
@@ -211,7 +205,7 @@ export function WelcomeModal({ onStartGuide, onEnter }: WelcomeModalProps) {
                     gap: '9px',
                     fontSize: isMobile ? '12.5px' : '13px',
                     lineHeight: 1.6,
-                    color: '#CBD5E1',
+                    color: '#64748B',
                   }}
                 >
                   {s.paras.map((para, i) => <p key={i}>{para}</p>)}
@@ -222,7 +216,7 @@ export function WelcomeModal({ onStartGuide, onEnter }: WelcomeModalProps) {
                 style={{
                   fontSize: isMobile ? '12.5px' : '13px',
                   lineHeight: 1.6,
-                  color: '#CBD5E1',
+                  color: '#64748B',
                   listStyle: 'none',
                   padding: 0,
                   margin: 0,
@@ -244,7 +238,7 @@ export function WelcomeModal({ onStartGuide, onEnter }: WelcomeModalProps) {
                   style={{
                     fontSize: isMobile ? '12.5px' : '13px',
                     lineHeight: 1.6,
-                    color: '#CBD5E1',
+                    color: '#64748B',
                     marginTop: '11px',
                   }}
                 >
