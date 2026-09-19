@@ -44,11 +44,8 @@ const SECTIONS: Array<{ label: string; lead?: React.ReactNode; bullets?: React.R
     label: 'Who uses this kind of thing',
     paras: [
       'Newsrooms, think tanks, and government agencies buy tools like this — Dataminr, Graphika, Blackbird.AI — at enterprise prices.',
-      <>
-        This is a free, stripped-down version of the same idea, built entirely on public posts
-        anyone can read. {WM_LINK} tracks what happens in the world. This tracks what people
-        make of it.
-      </>,
+      'This is a free, stripped-down version of the same idea, built entirely on public posts anyone can read.',
+      <>{WM_LINK} tracks what happens in the world. This tracks what people make of it.</>,
     ],
   },
   {
@@ -163,7 +160,7 @@ export function WelcomeModal({ onStartGuide, onEnter }: WelcomeModalProps) {
               lineHeight: 1.4,
             }}
           >
-            The structure of every narrative, made visible.
+            The structure of every narrative, made visible, and measurable.
           </p>
         </div>
 
