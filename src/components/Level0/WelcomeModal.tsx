@@ -36,14 +36,14 @@ const SECTIONS: Array<{ label: string; lead?: React.ReactNode; bullets?: React.R
   {
     label: 'Why InfoMonitor?',
     paras: [
-      'Every contested topic — immigration, AI regulation, vaccine policy, any subject where people disagree — has a structure. There are distinct positions, they cluster into narratives, different populations hold different distributions of those positions, and the distributions shift over time. That structure is the topology of the disagreement, and it is normally invisible.',
+      'Every contested topic - immigration, AI regulation, vaccine policy, any subject where people disagree - has a structure. There are distinct positions, they cluster into narratives, different populations hold different distributions of those positions, and the distributions shift over time. That structure is the topology of the disagreement, and it is normally invisible.',
       'InfoMonitor makes it visible and measurable.',
     ],
   },
   {
     label: 'Who uses this kind of thing',
     paras: [
-      'Newsrooms, think tanks, and government agencies buy tools like this — Dataminr, Graphika, Blackbird.AI — at enterprise prices.',
+      'Newsrooms, think tanks, and government agencies buy tools like this - Dataminr, Graphika, Blackbird.AI - at enterprise prices.',
       'This is a free, stripped-down version of the same idea, built entirely on public posts anyone can read.',
       <>{WM_LINK} tracks what happens in the world. This tracks what people make of it.</>,
     ],
@@ -51,13 +51,13 @@ const SECTIONS: Array<{ label: string; lead?: React.ReactNode; bullets?: React.R
   {
     label: 'What you can do here',
     bullets: [
-      'Pick a topic and the whole argument appears as a map — every position, sized by how far it reaches, coloured by what’s accelerating',
+      'Pick a topic and the whole argument appears as a map - every position, sized by how far it reaches, coloured by what\'s accelerating',
       'Split it in two to see where two groups have stopped sharing the same reality',
       'Find out why they split: different facts, the same facts framed differently, or incompatible worldviews',
       'Trace any claim backwards to where it first surfaced and what it turned into on the way',
       'Watch an argument go mainstream, or turn more extreme',
       'Check whether something is spreading on its own or through a handful of accounts',
-      'Catch claims that went quiet — active one day, silent the next',
+      'Catch claims that went quiet - active one day, silent the next',
       'Read the actual posts behind any of it',
     ],
   },
@@ -87,7 +87,7 @@ export function WelcomeModal({ onStartGuide, onEnter }: WelcomeModalProps) {
 
   const handleGuide = () => {
     close()
-    // Already entering a guided tour — don't let the dwell prompt offer one too.
+    // Already entering a guided tour - don't let the dwell prompt offer one too.
     dismissPrompt()
     onStartGuide()
   }
@@ -160,7 +160,7 @@ export function WelcomeModal({ onStartGuide, onEnter }: WelcomeModalProps) {
               lineHeight: 1.4,
             }}
           >
-            The structure of every narrative, made visible, and measurable.
+            The structure of every narrative - made visible, and measurable.
           </p>
         </div>
 
@@ -247,7 +247,7 @@ export function WelcomeModal({ onStartGuide, onEnter }: WelcomeModalProps) {
         </div>
 
         {/* Actions */}
-        {/* Sticky so the primary action is always reachable — the content can
+        {/* Sticky so the primary action is always reachable - the content can
             exceed 90vh and the CTAs were falling below the fold. */}
         <div
           className={isMobile ? 'flex flex-col' : 'flex items-center'}
